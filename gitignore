@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Throwaway session state — never committed (README: no session state)
+*.registry.json
+*.state.json
+*.session.json
+
+# Editor/OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
