@@ -46,6 +46,9 @@ every sync pairs with a Canon Change Log entry, per standing law.
 | `spell_lookup.py` | SRD 3.5 (bundled JSON) + Spell Compendium text extraction at `I:\Sourcebooks\_md\Spell_Compendium.md`; SRD wins name collisions |
 | `monster_lookup.py` | ten text-layer bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` (MM3 and Draconomicon absent until OCR'd) |
 | `prose_gate.py` | Standing Law prose section; military-fantasy-prose skill |
+| `session_open.py` | Notion Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` (all steps incl. 4.5A–E); District Gazetteer `399e8214-84b0-81e8-a738-f93f1e833aeb`; thread/NPC rosters live in user-maintained `threads.json`, the page wins on conflict |
+| `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules (project knowledge); uncovered layers print NO COVERAGE, never improvise |
+| `deferred_dice.py` | World-Move Law + Deferred Dice register (Notion data source `da0db9c0`); emits paste-ready provenance blocks, never writes Notion |
 
 ## Rules for any instance touching this repo
 
