@@ -65,6 +65,9 @@ import re
 from dataclasses import dataclass, field, asdict
 from typing import Optional, List, Dict, Any
 
+if sys.platform == "win32":          # cp1252 consoles choke on box glyphs
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 # ============================================================================
 # DICE ENGINE — secrets-backed, no rerolls, raw values always retained
 # ============================================================================

@@ -44,6 +44,9 @@ import secrets
 import sys
 from typing import Any, Dict, Optional
 
+if sys.platform == "win32":          # cp1252 consoles choke on box glyphs
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 
 # ============================================================================
 # DICE ENGINE
