@@ -1,0 +1,97 @@
+{
+  "_source": "Session Start Protocol page 364e8214-84b0-8144-bfc4-cd1f25ae3c3a, Step 3 'Currently Active' + Step 4 tables, transcribed 2026-07-17. Edit as the page changes; on any disagreement the page wins.",
+  "threads": [
+    {
+      "name": "Northern Reserve Expansion -- Phase 1 (Mithral Hall)",
+      "modifier": 3,
+      "interval": "monthly",
+      "roll": true,
+      "note": "Korgan's clan credentials +3; page 34ee8214-84b0-8106-889f-d4ba0ccd23b5"
+    },
+    {
+      "name": "Northern Reserve Expansion -- Phase 2 (Ten-Towns)",
+      "modifier": 0,
+      "interval": "bi-monthly",
+      "roll": true,
+      "note": "No skilled lead, no modifier; low-stakes"
+    },
+    {
+      "name": "Operation Unbinding",
+      "modifier": 4,
+      "interval": "phase-gated",
+      "roll": true,
+      "note": "Lirien + Veil network bonus +4 during planning phases; page 34de8214-84b0-811d-8fa2-efb66949ee08"
+    },
+    {
+      "name": "Project Burning Gate (Shi'van-side)",
+      "modifier": 0,
+      "interval": "quarterly (Shi'van-side sessions only)",
+      "roll": false,
+      "note": "Roll only if Shi'van-side; page 34ce8214-84b0-8125-b0cc-fa8966ff42f0"
+    },
+    {
+      "name": "Aldric Cold-War posture",
+      "modifier": 0,
+      "interval": "monthly stance",
+      "roll": false,
+      "note": "Stance roll resolved under Step 7's Aldric band table"
+    },
+    {
+      "name": "Lolth Attention Clock",
+      "modifier": 0,
+      "interval": "quarterly accumulator",
+      "roll": false,
+      "note": "Flag input --lolth-accumulator; thresholds 12/18/24; never stored"
+    },
+    {
+      "name": "Klauth Gem Liquidation Pace",
+      "modifier": 0,
+      "interval": "monthly gp realized",
+      "roll": false,
+      "note": "Financial-phase math, not a d20 progress roll; page 34ce8214-84b0-81c0-8dd4-c3122711cc8e"
+    }
+  ],
+  "principals": [
+    {
+      "name": "Vara Torsten",
+      "modifier": 2,
+      "domain": "Empire finance, NCF, monetary system"
+    },
+    {
+      "name": "Lirien Nightwalker",
+      "modifier": 4,
+      "domain": "Veil, intelligence, counter-intelligence"
+    },
+    {
+      "name": "Korgan Bloodaxe",
+      "modifier": 1,
+      "domain": "Bloodaxe Legion, military, dwarven diplomacy"
+    },
+    {
+      "name": "Selene Vanris",
+      "modifier": 0,
+      "domain": "Storm operations, griffon corps, Skyreach"
+    },
+    {
+      "name": "Seliara Frostwind",
+      "modifier": 2,
+      "domain": "Eternal Dancer program, R&D"
+    },
+    {
+      "name": "Sania Valmorra",
+      "modifier": 1,
+      "domain": "Soul-binding, dimensional research"
+    },
+    {
+      "name": "Frieren",
+      "modifier": 3,
+      "domain": "Magical methodology, archmage consultation"
+    },
+    {
+      "name": "Gromph Baenre",
+      "modifier": null,
+      "domain": "Hosttower, Underdark Crown integration, Lolth defense",
+      "note": "variable -- apply per this session's Quenthel-Favor result"
+    }
+  ]
+}
