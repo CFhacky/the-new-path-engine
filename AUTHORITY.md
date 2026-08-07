@@ -49,6 +49,7 @@ every sync pairs with a Canon Change Log entry, per standing law.
 | `session_open.py` | Notion Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` (all steps incl. 4.5A–E); District Gazetteer `399e8214-84b0-81e8-a738-f93f1e833aeb`; thread/NPC rosters live in user-maintained `threads.json`, the page wins on conflict |
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules (project knowledge); uncovered layers print NO COVERAGE, never improvise |
 | `deferred_dice.py` | World-Move Law + Deferred Dice register (Notion data source `da0db9c0`); emits paste-ready provenance blocks, never writes Notion |
+| `term_harvest.py` | DMG v3.5 special-ability descriptions (pp. 218–227) + GURPS Basic Set: Characters B102–B117, via the `I:\Sourcebooks\_text` extractions; regenerates `reference/terms_and_affixes.{md,json}` with per-entry provenance; a missing anchor prints NO COVERAGE, never improvises. Conditions stay in `conditions.py` / `gurps_conditions.py` — the reference points at them, never copies them |
 
 ## Rules for any instance touching this repo
 

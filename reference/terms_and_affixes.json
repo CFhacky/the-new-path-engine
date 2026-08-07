@@ -1,0 +1,871 @@
+{
+ "generated_by": "scripts/term_harvest.py",
+ "sections": [
+  {
+   "key": "dnd_weapon_abilities",
+   "title": "D&D 3.5 magic weapon special abilities (the weapon affixes)",
+   "system": "dnd35",
+   "book": "D&D 3.5e\\Core\\Dungeon Masters Guide v3.5.md",
+   "citation": "DMG v3.5, Magic Weapon Special Ability Descriptions (pp. 223-226)",
+   "coverage": "ok \u2014 lines 38468..38917 of Dungeon Masters Guide v3.5.md",
+   "entries": [
+    {
+     "name": "Anarchic",
+     "gloss": "An anarchic weapon is chaotically aligned and in- fused with the power of chaos, It makes the weapon chaos-aligned and thus bypasses the corresponding damage reduction, It deals an extra 2d6 points of damage against all of lawful alignment.",
+     "cost": null,
+     "page": null,
+     "source_line": 38474
+    },
+    {
+     "name": "Axiomatic",
+     "gloss": "An axiomatic weapon is lawfully aligned and infused with the power of law.",
+     "cost": null,
+     "page": null,
+     "source_line": 38493
+    },
+    {
+     "name": "Bane",
+     "gloss": "A bane weapon excels at attacking one type or subtype of icreature.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38511
+    },
+    {
+     "name": "Brilliant Energy",
+     "gloss": "A brilliant energy weapon has its significant portion\u2014such as its blade, axe head, or arrowhead\u2014transformed into light, although this does not modify the item's weight.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38555
+    },
+    {
+     "name": "Dancing",
+     "gloss": "Asa standard action, a dancing weapon can be loosed, to attack on irs.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38573
+    },
+    {
+     "name": "Defending",
+     "gloss": "A defending weapon allows the wielder to transfer some or all of the sword\u2019 enhancement bonus to his AC as a bonus., irhar stacks with all others, Asa free action, the wielder chooses how to",
+     "cost": null,
+     "page": 225,
+     "source_line": 38596
+    },
+    {
+     "name": "Disruption",
+     "gloss": "A weapon of disruption is the bane of all undead Any undead crearure struck in combat.must succeed ona DC 14 Will save or be destroyed.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38607
+    },
+    {
+     "name": "Distance",
+     "gloss": "This property can only be placed on a ranged weapon.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38616
+    },
+    {
+     "name": "Flaming",
+     "gloss": "Upon command, a flaming weapon_is. sheathed in fire. The fire does not harm the wielder. The effect remains until another command is given. A flaming weapon deals an extra id\u00e9 points of fire damage on asuccessful hit. Bows, crossbows, and slings so crafted bes",
+     "cost": null,
+     "page": 225,
+     "source_line": 38623
+    },
+    {
+     "name": "Flaming Burst",
+     "gloss": "A flaming burst weapon functions as a flaming weapon that also explodes with flame upon striking a successful critical hit.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38632
+    },
+    {
+     "name": "Frost",
+     "gloss": "Upon command, a frost weapon is sheathed in icy cold.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38647
+    },
+    {
+     "name": "Holy",
+     "gloss": "A holy weapon is imbued with holy power. This power \\makes the weapon good-aligned and thus bypasses the cormespon- ding damage reduction. It deals an extra 2d6 points of damage | .against all of evil alignment. It bestows one negative level on any | jevil cre",
+     "cost": null,
+     "page": 226,
+     "source_line": 38673
+    },
+    {
+     "name": "Icy Burst",
+     "gloss": "Anicy burst weapon functions as a frost weapon.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38688
+    },
+    {
+     "name": "Keen",
+     "gloss": "This ability doubles the threatrange of a weapon.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38703
+    },
+    {
+     "name": "Ki Focus",
+     "gloss": "The magic weapon serves as a channel for the wielder's, ki, allowing her to use her special kiattacks through the weapon as if they were unarmed attacks.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38716
+    },
+    {
+     "name": "Merciful",
+     "gloss": "The weapon deals an extra_td\u00e9 points of damage, and (all damage it deals is nonlethal damage, On command, the weapon suppresses this ability until commanded to resume in.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38725
+    },
+    {
+     "name": "Mighty Cleaving",
+     "gloss": "A mighty cleaving weapon allows a wielder with the Cleave feat to make one additional cleave attempt ina round.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38735
+    },
+    {
+     "name": "Returning",
+     "gloss": "This special abiliry can.only be placed on aweapon ithat can be thrown.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38742
+    },
+    {
+     "name": "Seeking",
+     "gloss": "Only ranged weapons.can have the seekingabiliry.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38754
+    },
+    {
+     "name": "Shock",
+     "gloss": "Upon command, a shock weapon is sheathed in crack-_ ling electriciry.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38766
+    },
+    {
+     "name": "Shocking Burst",
+     "gloss": "A shocking burst weapon functions as.a shock uweapon that also explodes with electriciry upon striking a success- ful critical hit.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38777
+    },
+    {
+     "name": "Speed",
+     "gloss": "When making a full attack action, the wielder of a speed | weapon may make one-extra attack with it.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38796
+    },
+    {
+     "name": "Spell Storing",
+     "gloss": "A spell storing weapon allows a spellcaster to store a single targeted spell of wp to 3rd level in the weapon.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38805
+    },
+    {
+     "name": "Thundering",
+     "gloss": "A thundering weapon creates a cacophonous roar like thunder upon striking a successful critical hit.",
+     "cost": null,
+     "page": 226,
+     "source_line": 38824
+    },
+    {
+     "name": "Throwing",
+     "gloss": "This ability can only be placed on a melee weapon, A melee weapon crafted with this ability gains a range increment of 10 feet and.can:-be thrown by a wielder proficient in its normal use",
+     "cost": null,
+     "page": 227,
+     "source_line": 38843
+    },
+    {
+     "name": "Unholy",
+     "gloss": "An unholy weapon is imbued wwith unholy power.",
+     "cost": null,
+     "page": 227,
+     "source_line": 38851
+    },
+    {
+     "name": "Vicious",
+     "gloss": "When a vicious weapon srrikes an opponent, it creates a flash of disruptive Lenerpy that resonates between the opponent land the wielder.",
+     "cost": null,
+     "page": 227,
+     "source_line": 38873
+    },
+    {
+     "name": "Vorpal",
+     "gloss": "This potent and feared ability allows the weapon to sever the heads of those it strikes.",
+     "cost": null,
+     "page": 227,
+     "source_line": 38886
+    },
+    {
+     "name": "Wounding",
+     "gloss": "A wounding weapon deals 1 point of Constitution damage from blood loss when ir hirs a creature.",
+     "cost": null,
+     "page": 227,
+     "source_line": 38907
+    }
+   ]
+  },
+  {
+   "key": "dnd_armor_abilities",
+   "title": "D&D 3.5 magic armor and shield special abilities (the armor affixes)",
+   "system": "dnd35",
+   "book": "D&D 3.5e\\Core\\Dungeon Masters Guide v3.5.md",
+   "citation": "DMG v3.5, Magic Armor and Shield Special Ability Descriptions (pp. 218-219)",
+   "coverage": "ok \u2014 lines 37371..37758 of Dungeon Masters Guide v3.5.md",
+   "entries": [
+    {
+     "name": "Acid Resistance",
+     "gloss": "A suit of armor or a shield with this property normally has.a dull gray appearance.",
+     "cost": null,
+     "page": null,
+     "source_line": 37378
+    },
+    {
+     "name": "Animated",
+     "gloss": "Upon command, an animated shield floats within 2 feet of the wielder, protecting ber as if she were using it herself but freeing up both her hands.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37454
+    },
+    {
+     "name": "Arrow Catching",
+     "gloss": "A shield with this ability attracts ranged weapons to it It has deflection bonus of +1 against ranged weapons because projectiles and thrown weapons veer toward it, Additionally, any projectile or thrown weapon aimed at a target within \u00a7 feet of the shield\u2019s w",
+     "cost": null,
+     "page": 219,
+     "source_line": 37466
+    },
+    {
+     "name": "Arrow Deflection",
+     "gloss": "This shield provects the wielder as if he had the Deflect Arrows feat, Once per round when he would normally be struck by a ranged weapon, he can make a DC 20 Reflex save.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37487
+    },
+    {
+     "name": "Bashing",
+     "gloss": "A shield with this special abiliry is designed to per: form a shield bash.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37500
+    },
+    {
+     "name": "Blinding",
+     "gloss": "A shield wirh this abiliry flashes with a brilliant light up to twice per day upon.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37510
+    },
+    {
+     "name": "Cold Resistance",
+     "gloss": "A suit of armor ora shield with this property normally hasa bluish, icv hue ot is adored with furs and shagey | pelts.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37518
+    },
+    {
+     "name": "Electricity Resistance",
+     "gloss": "A-suitof armor. ora shield with this property normally has abluish hue and often bears a storm or lighting motif The armorabsorbs the first 10 points of electriciry damage per atteck that che wearer would normally take (similar to the resishenergy spell)",
+     "cost": null,
+     "page": 219,
+     "source_line": 37539
+    },
+    {
+     "name": "Etherealness",
+     "gloss": "On command, this ability allows the wearer of the armor to become ethereal (as the ethereal jaunt spell) once per day.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37560
+    },
+    {
+     "name": "Fire Resistance",
+     "gloss": "A suitot armor with this abiliry normally has / a reddish hue and often is.",
+     "cost": null,
+     "page": 219,
+     "source_line": 37569
+    },
+    {
+     "name": "Fortification",
+     "gloss": "This suit of armor_or shield produces a magical force that protects vital areas of the wearer more effectively, When | a critical hit or sneak attack is scored on the wearer, there is.a Lchance thar the critical hit orsneak attack is negated and damage isinste",
+     "cost": null,
+     "page": 220,
+     "source_line": 37594
+    },
+    {
+     "name": "Ghost Touch",
+     "gloss": "This armor or shield seems almost translucent Both its enhancement bonus and its armor bonus count against the artacks of incorporeal creatures.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37613
+    },
+    {
+     "name": "Glamered",
+     "gloss": "A suit of armor with this ability appears normal.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37625
+    },
+    {
+     "name": "Reflecting",
+     "gloss": "This shield seems like a mirror. Its surface is com- pletely reflective. Once per day, itcan be called on to reflect.a spell back at its caster exactly like the spell turning spell Strong abjuration; CL 14th; Craft Magic Arms and Armor, spell",
+     "cost": null,
+     "page": 220,
+     "source_line": 37644
+    },
+    {
+     "name": "Shadow",
+     "gloss": "This armor is jet black and blurs the wearer whenever ishe tries ro hide, granting a+5 competence bonus on Hide checks.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37652
+    },
+    {
+     "name": "Silent Moves",
+     "gloss": "This armor is well oiled and magically con- \u2018structed so.that it not.only makes little sound, but it dampens sound around it.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37667
+    },
+    {
+     "name": "Slick",
+     "gloss": "Slick armor seems coated at all times.with aslightly_ greasy oil, It provides.a +5 competence bonus.on_ its wearers Escape Artist checks.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37691
+    },
+    {
+     "name": "Sonic Resistance",
+     "gloss": "A suit of armor or ashield with this prop- erty normally has a glistening appearance.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37712
+    },
+    {
+     "name": "Spell Resistance",
+     "gloss": "This property grants the armors wearer spell resistance while the armor is worn.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37732
+    },
+    {
+     "name": "Undead Controlling",
+     "gloss": "The wearer of a suit of armor or a shield with this property may control up.to 26.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37740
+    },
+    {
+     "name": "Wild",
+     "gloss": "The wearer of a suit of armoror a shield with this ability preserves his armor bonus (and any.",
+     "cost": null,
+     "page": 220,
+     "source_line": 37750
+    }
+   ]
+  },
+  {
+   "key": "gurps_enhancements",
+   "title": "GURPS 4e enhancements (the +% affixes an ability can carry)",
+   "system": "gurps4e",
+   "book": "GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md",
+   "citation": "GURPS Basic Set: Characters, ENHANCEMENTS (B102-B109)",
+   "coverage": "ok \u2014 lines 15358..16523 of GURPS 4e - Basic Set - Characters.md",
+   "entries": [
+    {
+     "name": "Accurate",
+     "gloss": "Your attack is unusually accurate. Each +1 to Accuracy is a +5% enhancement.",
+     "cost": "+5%/level",
+     "page": null,
+     "source_line": 15373
+    },
+    {
+     "name": "Affects Insubstantial",
+     "gloss": "Your ability affects insubstantial targets in addition to normal, substantial things.",
+     "cost": "+20%",
+     "page": null,
+     "source_line": 15378
+    },
+    {
+     "name": "Affects Substantial",
+     "gloss": "Your ability affects substantial tar- gets even when you are insubstantial.",
+     "cost": "+40%",
+     "page": null,
+     "source_line": 15387
+    },
+    {
+     "name": "Area Effect",
+     "gloss": "Your ability works as an area power instead of affecting a single target.",
+     "cost": "+50%/level",
+     "page": null,
+     "source_line": 15403
+    },
+    {
+     "name": "Armor Divisor",
+     "gloss": "Your attack can pierce more armor than its base damage would indicate.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 15434
+    },
+    {
+     "name": "Aura",
+     "gloss": "Your attack takes the form of a malefic aura that affects anyone you touch (reach C) or who touches you.",
+     "cost": "+80%",
+     "page": null,
+     "source_line": 15454
+    },
+    {
+     "name": "Blood Agent",
+     "gloss": "On an attack with Area Effect or Cone, this is an enhancement.",
+     "cost": "+100%",
+     "page": null,
+     "source_line": 15486
+    },
+    {
+     "name": "Cone",
+     "gloss": "Your attack spreads to affect every- one in a cone-shaped area.",
+     "cost": "Variable",
+     "page": 105,
+     "source_line": 15510
+    },
+    {
+     "name": "Contact Agent",
+     "gloss": "On an attack with Area Effect or Cone, this is an enhancement.",
+     "cost": "+150%",
+     "page": 105,
+     "source_line": 15523
+    },
+    {
+     "name": "Cosmic",
+     "gloss": "Your ability operates on a \u201chigher level\u201d than is usual in your game world.",
+     "cost": "Variable",
+     "page": 105,
+     "source_line": 15529
+    },
+    {
+     "name": "Cyclic",
+     "gloss": "This enhancement is only available for Innate Attacks that inflict burning, corrosion, fatigue, or toxic damage.",
+     "cost": "Variable",
+     "page": 105,
+     "source_line": 15577
+    },
+    {
+     "name": "Damage Modifiers",
+     "gloss": "You may give an Innate Attack one or more of these modifiers to further qualify the way it does damage.",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 15662
+    },
+    {
+     "name": "Hazard",
+     "gloss": "You may give an Innate Attack that inflicts fatigue damage one of these enhancements: Dehydration, +20%; Drowning, +0%; Freezing, +20%; Missed Sleep, +50%; Starvation, +40%; or Suffocation, +0%.",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 15744
+    },
+    {
+     "name": "Delay",
+     "gloss": "This enhancement delays the attack\u2019s effects until sometime after you hit the target.",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 15801
+    },
+    {
+     "name": "Drifting",
+     "gloss": "You may add this enhancement to any attack with Delay (above) or Persistent (p.",
+     "cost": "+20%",
+     "page": 106,
+     "source_line": 15824
+    },
+    {
+     "name": "Extended Duration",
+     "gloss": "This enhancement increases the normal duration of your ability.",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 15834
+    },
+    {
+     "name": "Follow-Up",
+     "gloss": "Your attack\u2019s effects are delivered by a \u201ccarrier.\u201d Use this to represent poison on a dart, an explosive in an armor-piercing shell, etc.",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 15884
+    },
+    {
+     "name": "Guided or Homing",
+     "gloss": "You can guide your attack \u2013 or per- haps it \u201chomes in\u201d by itself!",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 15935
+    },
+    {
+     "name": "Increased Range",
+     "gloss": "You may add this enhancement to any advantage that has a range; e.g., Innate Attack or Scanning Sense.",
+     "cost": "+10%/level",
+     "page": 106,
+     "source_line": 15990
+    },
+    {
+     "name": "Jet",
+     "gloss": "Your attack is a continuous stream, like a flamethrower.",
+     "cost": "+0%",
+     "page": 106,
+     "source_line": 16023
+    },
+    {
+     "name": "Malediction",
+     "gloss": "Your attack is not a conventional ranged attack; it works more like a Regular spell (p.",
+     "cost": "Variable",
+     "page": 106,
+     "source_line": 16078
+    },
+    {
+     "name": "Mobile",
+     "gloss": "You may only add this enhance- ment to an attack that has both Area Effect (p.",
+     "cost": "+40%/level",
+     "page": 109,
+     "source_line": 16134
+    },
+    {
+     "name": "Overhead",
+     "gloss": "Your attack can alter its angle to strike from a different side of the tar- get \u2013 usually the top.",
+     "cost": "+30%",
+     "page": 109,
+     "source_line": 16156
+    },
+    {
+     "name": "Persistent",
+     "gloss": "You may only add this enhance- ment to an Area Effect (p.",
+     "cost": "+40%",
+     "page": 109,
+     "source_line": 16170
+    },
+    {
+     "name": "Ranged",
+     "gloss": "This enhancement gives range to an advantage that normally affects your immediate area, or that requires a touch to affect others.",
+     "cost": "+40%",
+     "page": 109,
+     "source_line": 16181
+    },
+    {
+     "name": "Rapid Fire",
+     "gloss": "An Innate Attack\u2019s base Rate of Fire (RoF) is 1.",
+     "cost": "Variable",
+     "page": 110,
+     "source_line": 16210
+    },
+    {
+     "name": "Reduced Fatigue Cost",
+     "gloss": "You may only take this enhance- ment for abilities that cost FP, and never in conjunction with the special modifier \u201cUsually On.\u201d You can take it any number of times.",
+     "cost": "+20%/level",
+     "page": 110,
+     "source_line": 16249
+    },
+    {
+     "name": "Reduced Time",
+     "gloss": "You may only add this enhance- ment to abilities that require time to activate.",
+     "cost": "+20%/level",
+     "page": 110,
+     "source_line": 16261
+    },
+    {
+     "name": "Respiratory Agent",
+     "gloss": "Your attack must be inhaled to have any effect, but it ignores all DR.",
+     "cost": "+50%",
+     "page": 110,
+     "source_line": 16277
+    },
+    {
+     "name": "Selective Area",
+     "gloss": "You may add this enhancement to any Area Effect (p.",
+     "cost": "+20%",
+     "page": 110,
+     "source_line": 16299
+    },
+    {
+     "name": "Selectivity",
+     "gloss": "This enhancement lets you turn a trait\u2019s other enhancements off and on at will.",
+     "cost": "+10%",
+     "page": 110,
+     "source_line": 16306
+    },
+    {
+     "name": "Sense-Based",
+     "gloss": "Your attack is channeled through your victim\u2019s senses, allowing it to ignore DR!",
+     "cost": "Variable",
+     "page": 111,
+     "source_line": 16331
+    },
+    {
+     "name": "Side Effect",
+     "gloss": "You may only add this enhance- ment to an Innate Attack, and you cannot combine it with penetration modifiers other than Armor Divisor.",
+     "cost": "Variable",
+     "page": 111,
+     "source_line": 16381
+    },
+    {
+     "name": "Symptoms",
+     "gloss": "Symptoms are effects that occur if the cumulative damage (HP or FP loss) inflicted by the enhanced Innate Attack exceeds a fraction of the vic- tim\u2019s basic HP or FP.",
+     "cost": "Variable",
+     "page": 111,
+     "source_line": 16423
+    },
+    {
+     "name": "Underwater",
+     "gloss": "Attacks are assumed to be usable in air or in vacuum, but ineffective in liq- uid.",
+     "cost": "+20%",
+     "page": 111,
+     "source_line": 16467
+    },
+    {
+     "name": "Variable",
+     "gloss": "You can reduce the level of your attack. For example, if you have an Innate Attack that normally does 3d damage, you could reduce it to 1d or 2d damage. You must indicate this before you make your attack roll. Wall 6 +30% or +60% You may only add this enhance-",
+     "cost": "+5%",
+     "page": 111,
+     "source_line": 16473
+    }
+   ]
+  },
+  {
+   "key": "gurps_limitations",
+   "title": "GURPS 4e limitations (the -% affixes an ability can carry)",
+   "system": "gurps4e",
+   "book": "GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md",
+   "citation": "GURPS Basic Set: Characters, LIMITATIONS (B110-B117)",
+   "coverage": "ok \u2014 lines 16524..17844 of GURPS 4e - Basic Set - Characters.md",
+   "entries": [
+    {
+     "name": "Accessibility",
+     "gloss": "Accessibility is a catchall limitation you can use to cover any restriction not specifically defined elsewhere.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16543
+    },
+    {
+     "name": "Always On",
+     "gloss": "You cannot switch your advantage off. You may only add this to an abili- ty that can normally be switched off and that is inconvenient if you can\u2019t turn it off. It is worth -10% if the effects are social or cosmetic, -20% if they are physically inconvenient, a",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16619
+    },
+    {
+     "name": "Armor Divisor",
+     "gloss": "Your attack can pierce less armor than its base damage would indicate.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16633
+    },
+    {
+     "name": "Blood Agent",
+     "gloss": "Your attack must reach a mucous membrane (eyes, open mouth, nose, etc.) or an open wound to have any effect at all.",
+     "cost": "-40%",
+     "page": null,
+     "source_line": 16663
+    },
+    {
+     "name": "Bombardment",
+     "gloss": "You may only take this limitation in conjunction with Area Effect (p.",
+     "cost": "Variable",
+     "page": 113,
+     "source_line": 16710
+    },
+    {
+     "name": "Contact Agent",
+     "gloss": "Your attack must touch bare skin or porous clothing to have any effect at all.",
+     "cost": "-30%",
+     "page": 113,
+     "source_line": 16740
+    },
+    {
+     "name": "Costs Fatigue",
+     "gloss": "Your ability costs FP to use. This is worth -5% per FP per use. What con- stitutes a \u201cuse\u201d depends on the under- lying trait. For abilities that produce instanta- neous effects (e.g., Innate Attack), you must pay this FP cost every time you trigger the ability",
+     "cost": "Variable",
+     "page": 113,
+     "source_line": 16763
+    },
+    {
+     "name": "Damage Limitations",
+     "gloss": "You may add the following limitations to an Innate Attack: No Blunt Trauma (nbt) -20% An attack that inflicts crushing, cutting, impaling, or piercing damage normally inflicts blunt trauma (see p.",
+     "cost": "Variable",
+     "page": 113,
+     "source_line": 16786
+    },
+    {
+     "name": "Dissipation",
+     "gloss": "You may only take this limitation in conjunction with Area Effect (p.",
+     "cost": "-50%",
+     "page": 114,
+     "source_line": 16845
+    },
+    {
+     "name": "Emanation",
+     "gloss": "You may only take this limitation in conjunction with Area Effect (p.",
+     "cost": "-20%",
+     "page": 114,
+     "source_line": 16854
+    },
+    {
+     "name": "Emergencies Only",
+     "gloss": "Your ability is triggered by your fear or excitement; you cannot use it under \u201croutine\u201d conditions.",
+     "cost": "-30%",
+     "page": 114,
+     "source_line": 16864
+    },
+    {
+     "name": "Inaccurate",
+     "gloss": "Your attack benefits little from careful aiming.",
+     "cost": "-5%/level",
+     "page": 114,
+     "source_line": 16899
+    },
+    {
+     "name": "Limited Use",
+     "gloss": "You can use your ability only a lim- ited number of times in a 24-hour peri- od.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 16906
+    },
+    {
+     "name": "Melee Attack",
+     "gloss": "Your attack functions as a melee weapon. It has no range, but allows you to parry, use Rapid Strike, Feint, etc. It lacks Malf., 1/2D, Max, Acc, RoF, Shots, and Recoil statistics, and may not have any enhancement or limitation that modifies these statis- tics.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 16951
+    },
+    {
+     "name": "Mitigator",
+     "gloss": "You may only apply this limitation to a disadvantage.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 16973
+    },
+    {
+     "name": "Nuisance Effect",
+     "gloss": "Your ability has a \u201cside effect\u201d that causes you serious inconvenience.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 17018
+    },
+    {
+     "name": "Onset",
+     "gloss": "You must \u201cstack\u201d this limitation with one of Blood Agent, Contact Agent, Follow-Up, Malediction, or Respiratory Agent.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 17060
+    },
+    {
+     "name": "Pact",
+     "gloss": "A Higher Power \u2013 god, spirit, etc. \u2013 grants your ability under the condi- tion that you follow a strict moral code. This code must take the form of one or more of the traits listed under Self-Imposed Mental Disadvantages (p. 121). These disadvantages give you",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 17094
+    },
+    {
+     "name": "Preparation Required",
+     "gloss": "Your ability requires special prepa- ration before you can use it.",
+     "cost": "Variable",
+     "page": 116,
+     "source_line": 17116
+    },
+    {
+     "name": "Reduced Range",
+     "gloss": "You may add this limitation to any advantage that has a range; e.g., Innate Attack or Scanning Sense.",
+     "cost": "-10%/level",
+     "page": 117,
+     "source_line": 17191
+    },
+    {
+     "name": "Resistible",
+     "gloss": "This limitation is only available for Innate Attacks that inflict fatigue or toxic damage.",
+     "cost": "Variable",
+     "page": 117,
+     "source_line": 17212
+    },
+    {
+     "name": "Sense-Based",
+     "gloss": "On an attack with Malediction or an ability that normally ignores DR (e.g., Mind Control), this is a limita- tion.",
+     "cost": "Variable",
+     "page": 117,
+     "source_line": 17234
+    },
+    {
+     "name": "Takes Extra Time",
+     "gloss": "You can only apply this limitation to abilities that require time to acti- vate and that work fast enough to be useful in an emergency (e.g., combat).",
+     "cost": "-10%/level",
+     "page": 117,
+     "source_line": 17241
+    },
+    {
+     "name": "Takes Recharge",
+     "gloss": "Your ability requires \u201crecharging\u201d after each use.",
+     "cost": "Variable",
+     "page": 117,
+     "source_line": 17265
+    },
+    {
+     "name": "Disadvantage",
+     "gloss": "You may add this limitation to any advantage that can be switched off and on at will, and that takes at least one second to switch.",
+     "cost": "Variable",
+     "page": 117,
+     "source_line": 17281
+    },
+    {
+     "name": "Trigger",
+     "gloss": "Your advantage requires exposure to a specific substance or condition (e.g., a dose of a drug) to function.",
+     "cost": "Variable",
+     "page": 117,
+     "source_line": 17343
+    },
+    {
+     "name": "Unconscious Only",
+     "gloss": "You may only take this limitation in conjunction with Uncontrollable (below).",
+     "cost": "-20%",
+     "page": 117,
+     "source_line": 17362
+    },
+    {
+     "name": "Unreliable",
+     "gloss": "Sometimes your ability works and sometimes it doesn\u2019t!",
+     "cost": "Variable",
+     "page": 117,
+     "source_line": 17423
+    },
+    {
+     "name": "Untrainable",
+     "gloss": "You may only apply this limitation to abilities that normally require a skill to use.",
+     "cost": "-40%",
+     "page": 117,
+     "source_line": 17474
+    },
+    {
+     "name": "Breakable",
+     "gloss": "Your foes can destroy the item. Once destroyed, it will cease to grant you its benefits until repaired. Add the following elements together to find the final limitation value. Durability: The easier the object is to break, the greater the limitation. Decide on",
+     "cost": "Variable",
+     "page": 119,
+     "source_line": 17542
+    },
+    {
+     "name": "Can Be Stolen",
+     "gloss": "Your foes can take this item from you, depriving you of its benefits.",
+     "cost": "Variable",
+     "page": 119,
+     "source_line": 17594
+    },
+    {
+     "name": "Unique",
+     "gloss": "You may only take this limitation in conjunction with Breakable or Can Be Stolen.",
+     "cost": "-25%",
+     "page": 119,
+     "source_line": 17615
+    }
+   ]
+  }
+ ]
+}
