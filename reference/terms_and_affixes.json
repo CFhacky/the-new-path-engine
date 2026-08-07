@@ -87,6 +87,13 @@
      "source_line": 38647
     },
     {
+     "name": "Ghost Touch",
+     "gloss": "A ghost touch weapon deals damage normally lagainst incorporeal.creatures, regardless of its bonus.",
+     "cost": null,
+     "page": 225,
+     "source_line": 38656
+    },
+    {
      "name": "Holy",
      "gloss": "A holy weapon is imbued with holy power. This power \\makes the weapon good-aligned and thus bypasses the cormespon- ding damage reduction. It deals an extra 2d6 points of damage | .against all of evil alignment. It bestows one negative level on any | jevil cre",
      "cost": null,

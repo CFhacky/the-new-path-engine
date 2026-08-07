@@ -125,8 +125,11 @@ SECTIONS: list[Section] = [
 
 # "Flaming: Upon command, a flaming weapon is sheathed in fire..." — a name of
 # at most four words, starting a line, followed by a colon and prose. The OCR
-# drops punctuation strangely, so the name charset is generous but bounded.
-COLON_DEF = re.compile(r"^([A-Z][A-Za-z'’\- ]{1,32}?)\s*:\s+(\S.*)$")
+# drops punctuation strangely — "Ghost Touch:.A ghost touch weapon" cost the
+# first harvest an entry — so stray punctuation right after the colon is
+# tolerated and stripped. Checked against the extraction; the PDFs on
+# I:\Sourcebooks are the court of appeal for anything the text layer garbles.
+COLON_DEF = re.compile(r"^([A-Z][A-Za-z'’\- ]{1,32}?)\s*:[.,]?\s*(\S.*)$")
 
 # Words that mean a COLON_DEF match is layout, not an affix.
 COLON_DEF_REJECT = re.compile(
@@ -347,6 +350,9 @@ fire. The fire does not harm the wielder.
 Random Generation: To generate magic weapons randomly,
 first roll on Table 7-9.
 
+Ghost Touch:.A ghost touch weapon deals damage normally
+lagainst incorporeal.creatures, regardless of its bonus.
+
 Keen: This ability doubles the threatrange of a weapon. For
 example a longsword.
 """
@@ -373,8 +379,11 @@ def selftest() -> int:
 
     dmg = parse_colon_defs(DMG_FIXTURE.splitlines(), 0)
     names = [e.name for e in dmg]
-    if names != ["Anarchic", "Flaming", "Keen"]:
-        failures.append(f"colon_defs harvested {names}, wanted Anarchic/Flaming/Keen (and Random Generation rejected)")
+    if names != ["Anarchic", "Flaming", "Ghost Touch", "Keen"]:
+        failures.append(
+            f"colon_defs harvested {names}, wanted Anarchic/Flaming/Ghost Touch/Keen "
+            f"(Random Generation rejected; the OCR's 'Touch:.A' tolerated)"
+        )
     if dmg and "chaotically aligned" not in dmg[0].gloss:
         failures.append(f"colon_defs gloss wrong: {dmg[0].gloss!r}")
 

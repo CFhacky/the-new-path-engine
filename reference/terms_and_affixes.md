@@ -14,7 +14,7 @@ what GURPS calls enhancements and limitations.
 ## D&D 3.5 magic weapon special abilities (the weapon affixes)
 
 *Source: DMG v3.5, Magic Weapon Special Ability Descriptions (pp. 223-226).*  
-*Harvest: ok — lines 38468..38917 of Dungeon Masters Guide v3.5.md. 29 entries.*
+*Harvest: ok — lines 38468..38917 of Dungeon Masters Guide v3.5.md. 30 entries.*
 
 | Name | What it does | Page |
 |---|---|---|
@@ -29,6 +29,7 @@ what GURPS calls enhancements and limitations.
 | Flaming | Upon command, a flaming weapon_is. sheathed in fire. The fire does not harm the wielder. The effect remains until another command is given. A flaming weapon deals an extra idé points of fire damage on asuccessful hit. Bows, crossbows, and slings so crafted bes | 225 |
 | Flaming Burst | A flaming burst weapon functions as a flaming weapon that also explodes with flame upon striking a successful critical hit. | 225 |
 | Frost | Upon command, a frost weapon is sheathed in icy cold. | 225 |
+| Ghost Touch | A ghost touch weapon deals damage normally lagainst incorporeal.creatures, regardless of its bonus. | 225 |
 | Holy | A holy weapon is imbued with holy power. This power \makes the weapon good-aligned and thus bypasses the cormespon- ding damage reduction. It deals an extra 2d6 points of damage / .against all of evil alignment. It bestows one negative level on any / jevil cre | 226 |
 | Icy Burst | Anicy burst weapon functions as a frost weapon. | 226 |
 | Keen | This ability doubles the threatrange of a weapon. | 226 |
