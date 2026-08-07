@@ -50,6 +50,7 @@ every sync pairs with a Canon Change Log entry, per standing law.
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules (project knowledge); uncovered layers print NO COVERAGE, never improvise |
 | `deferred_dice.py` | World-Move Law + Deferred Dice register (Notion data source `da0db9c0`); emits paste-ready provenance blocks, never writes Notion |
 | `term_harvest.py` | DMG v3.5 special-ability descriptions (pp. 218–227) + GURPS Basic Set: Characters B102–B117, via the `I:\Sourcebooks\_text` extractions; regenerates `reference/terms_and_affixes.{md,json}` with per-entry provenance; a missing anchor prints NO COVERAGE, never improvises. Conditions stay in `conditions.py` / `gurps_conditions.py` — the reference points at them, never copies them |
+| `creature_harvest.py` | the twelve bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` (same set as `monster_lookup.py`; detection duplicated per the no-cross-imports law); regenerates `reference/creature_index.{md,json}` and emits translator-ready packets via `--export` for the system-translator skill (both 3.5e AND GURPS halves required in any conversion, per that skill). Raw book text stays on `I:\Sourcebooks`; the PDFs stand behind every extraction |
 
 ## Rules for any instance touching this repo
 
