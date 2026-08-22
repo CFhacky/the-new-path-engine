@@ -1,66 +1,63 @@
 # AUTHORITY — read this before using anything in this repository
 
-This repository is the MECHANICS layer of The New Path campaign engine.
-It is the least authoritative layer in the stack. If anything in these
-scripts conflicts with a Notion page or Chad's live instruction, the
-script is wrong.
+This repository is the MECHANICS and RUNTIME-CONTROL layer of The New Path campaign engine. It is less authoritative than Chad's instruction, live Notion, and ratified campaign procedure. If anything here conflicts with those authorities, this repository is wrong.
 
 ## The authority order (binding)
 
 1. **Chad's live instruction** — outranks everything.
-2. **Notion** — ALL campaign canon: characters, factions, registers,
-   session prose, the Canon Change Log. Fetched live, every session,
-   before anything is asserted. A script never substitutes for a fetch.
-3. **Skill files** — procedure: when engines fire, session protocol,
-   prose law, arc state routing.
-4. **These scripts** — deterministic arithmetic and book RAW only.
-   They hold the rules that never change so no instance ever
-   re-derives (or mis-remembers) them.
+2. **Notion** — campaign canon, current lane state, current resume cards, registers, session prose, and the Canon Change Log. Fetch live before asserting state.
+3. **Skill and protocol files** — procedure: when engines fire, session lifecycle, prose law, and arc routing.
+4. **Stable runtime-control documents in this repository** — the live-play contract, resume schema, validation rules, and mirror policy, each paired to a Notion operational page.
+5. **Resolver scripts** — deterministic arithmetic and source-checked rules.
+6. **Dated GitHub mirrors, transcripts, uploads, and archives** — evidence only.
 
 ## What each layer owns
 
 | Layer | Owns | Never owns |
 |---|---|---|
-| Notion | campaign state, registers, canon, change log | dice mechanics |
-| Skills | procedure, protocol, prose law | campaign facts, dice results |
-| Scripts | dice, stacking law, condition RAW, stat lookups, state mirrors | canon, invented facts, cross-session truth |
+| Notion | canon, current state, current resumes, registers, change log | executable resolver code |
+| Skills / protocols | procedure, routing, prose law | campaign facts or dice results |
+| Runtime-control docs | stable operating contract, resume schema, mirror law | current lane facts |
+| Scripts | dice, stacking law, condition RAW, validation, stat lookups | canon, invented facts, cross-session truth |
+| Dated mirrors | recovery, audit, historical diff | live authority or script input |
 
-The only cross-session files scripts own are `*.character.json`
-operational mirrors. **Notion remains canon for the character** — the
-mirror syncs to the Advancement & Training Register at session end, and
-every sync pairs with a Canon Change Log entry, per standing law.
-`*.registry.json` files are session-local and disposable.
+The only cross-session files scripts may own are explicitly ratified operational mirrors such as `*.character.json`; Notion remains canon for the character. Session-local registries are disposable.
 
-## Governing sources per script
+## Governing sources per script / control document
 
-| Script | Governed by |
+| File | Governed by |
 |---|---|
-| `fused_round.py` | surface-campaign-master-gm SKILL.md §3 (THE FUSED ENGINE); Notion Talent Catalog page `37ce8214-84b0-81d3-ab92-fb245a10f9a1` (Parts VII–VIII) |
+| `fused_round.py` | surface-campaign-master-gm §3; Notion Talent Catalog `37ce8214-84b0-81d3-ab92-fb245a10f9a1` |
 | `skill_check.py` | PH Ch.4 skill DCs; GURPS Basic Set quick-contest rules |
-| `personality_roll.py` | campaign-session-protocol skill (NPC action framework) |
-| `conditions.py` | DMG 3.5 Condition Summary (pp. 300–301) + DM Screen roster — verified verbatim against the OCR at `I:\Sourcebooks\_md\Dungeon_Masters_Guide_3.5.md` |
-| `gurps_conditions.py` | GURPS 4e Basic Set — Campaigns: B419–429, B551 (extracted from the text-layer PDF, page = PDF − 335) |
+| `personality_roll.py` | campaign-session-protocol NPC action framework |
+| `conditions.py` | DMG 3.5 Condition Summary pp. 300–301 + verified DM Screen roster |
+| `gurps_conditions.py` | GURPS 4e Basic Set — Campaigns B419–429, B551 |
 | `combat_registry.py` | DMG dying/stabilization RAW; session-local only |
-| `character_state.py` | PH p.171 typed-bonus stacking law; PH Ch.3 class tables; spell effects at cited PH pages; **canon source: Notion Advancement & Training Register (fetch by name at session start)** |
+| `character_state.py` | PH typed-bonus stacking and class tables; Notion Advancement & Training Register |
 | `pc_add.py` | bridge only — inherits both parents' sources |
-| `spell_lookup.py` | SRD 3.5 (bundled JSON) + Spell Compendium text extraction at `I:\Sourcebooks\_md\Spell_Compendium.md`; SRD wins name collisions |
-| `monster_lookup.py` | ten text-layer bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` (MM3 and Draconomicon absent until OCR'd) |
-| `prose_gate.py` | Standing Law prose section; military-fantasy-prose skill |
-| `session_open.py` | Notion Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` (all steps incl. 4.5A–E); District Gazetteer `399e8214-84b0-81e8-a738-f93f1e833aeb`; thread/NPC rosters live in user-maintained `threads.json`, the page wins on conflict |
-| `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules (project knowledge); uncovered layers print NO COVERAGE, never improvise |
-| `deferred_dice.py` | World-Move Law + Deferred Dice register (Notion data source `da0db9c0`); emits paste-ready provenance blocks, never writes Notion |
-| `term_harvest.py` | DMG v3.5 special-ability descriptions (pp. 218–227) + GURPS Basic Set: Characters B102–B117, via the `I:\Sourcebooks\_text` extractions; regenerates `reference/terms_and_affixes.{md,json}` with per-entry provenance; a missing anchor prints NO COVERAGE, never improvises. Conditions stay in `conditions.py` / `gurps_conditions.py` — the reference points at them, never copies them |
-| `creature_harvest.py` | the twelve bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` (same set as `monster_lookup.py`; detection duplicated per the no-cross-imports law); regenerates `reference/creature_index.{md,json}` and emits translator-ready packets via `--export` for the system-translator skill (both 3.5e AND GURPS halves required in any conversion, per that skill). Raw book text stays on `I:\Sourcebooks`; the PDFs stand behind every extraction |
+| `spell_lookup.py` | SRD 3.5 + Spell Compendium extraction; SRD wins name collisions |
+| `monster_lookup.py` | sourcebook bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` |
+| `prose_gate.py` | standing prose law + military-fantasy-prose skill |
+| `session_open.py` | Notion Arik Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` and cited state pages |
+| `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules |
+| `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |
+| `term_harvest.py` | cited DMG/GURPS source extractions; missing anchors print NO COVERAGE |
+| `creature_harvest.py` | cited bestiary extractions; conversions require both 3.5e and GURPS halves |
+| `resume_card.py` | Notion Resume Schema `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`; validates dated mirrors only |
+| `docs/runtime-control/PLAY_CONTRACT.md` | Notion Play Contract `3c4e8214-84b0-818f-93c0-df1da2e52043` |
+
+## Runtime-control boundary
+
+- The Play Contract applies to live play, exact-freeze recovery, runtime-module resolution, and session close.
+- Research, design, conversion, auditing, and repository maintenance are development mode and do not require a session boot receipt.
+- Current resumes live in Notion beneath Resume Router `3c4e8214-84b0-8106-ae12-f50082ed43ff`.
+- GitHub may store campaign facts only under `mirrors/notion/YYYY-MM-DD/`, visibly marked `NON-AUTHORITATIVE MIRROR`.
+- Resolver scripts must never import or parse those mirrors as current state.
 
 ## Rules for any instance touching this repo
 
-- **Scripts never invent campaign facts.** If a resolution needs a fact
-  (an NPC's stats, a register value, a ruling), it comes from a Notion
-  page read this session, passed in as flags.
-- **Dice discipline is in the scripts** — python `secrets`, raw stdout
-  before outcomes, four throws mode-else-median where the protocol says
-  so. Do not re-implement dice in chat.
-- **A script disagreeing with a page is a bug.** Fix the script; never
-  "correct" the page from code.
-- **Adding a script?** It ships with a `--selftest`, cites its governing
-  sources in the docstring, and gets a row in this table.
+- **Scripts never invent campaign facts.** Required facts come from a live Notion read and are passed in explicitly.
+- **Dice discipline lives in the scripts.** Do not re-implement dice in chat.
+- **A script or control document disagreeing with its governing Notion page is a bug.** Patch the repository; never “correct” live canon from code.
+- **Adding a script?** Ship a selftest, cite governing sources, and update this table.
+- **Adding a state mirror?** Date it, mark it non-authoritative, cite Notion, validate it, and never overwrite an older export.
