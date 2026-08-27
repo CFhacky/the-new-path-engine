@@ -43,6 +43,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |
 | `term_harvest.py` | cited DMG/GURPS source extractions; missing anchors print NO COVERAGE |
 | `creature_harvest.py` | cited bestiary extractions; conversions require both 3.5e and GURPS halves |
+| `item_harvest.py` | cited magic-item extractions (Magic Item Compendium); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `resume_card.py` | Notion Resume Schema `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`; validates dated mirrors only |
 | `docs/runtime-control/PLAY_CONTRACT.md` | Notion Play Contract `3c4e8214-84b0-818f-93c0-df1da2e52043` |
 
