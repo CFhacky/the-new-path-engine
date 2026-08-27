@@ -24,7 +24,7 @@ extraction and are the court of appeal for any garbled number.
 
 | Reference file | Built by | Source(s) | Count | Selftest |
 |---|---|---|---|---|
-| `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110) | 4 sections | `python scripts/term_harvest.py --selftest` |
+| `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (168 entries) | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 specific/wondrous items (216) | 1058 items / 2 sources (982 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
@@ -73,10 +73,7 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    intended next Sections; their extractions exist in the corpus):
    Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-3. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
-   `_md\GURPS\GURPS 4e - Powers.md` (present, 37,745 lines) — Powers has its
-   own enhancement/limitation set beyond the Basic Set.
-4. **Supplemental spells beyond the Compendium** → add sources to
+3. **Supplemental spells beyond the Compendium** → add sources to
    `spell_harvest.py`. The SRD core and the Spell Compendium are indexed; the
    Complete series and other splatbook spell lists (under `_text\D&D
    3.5e\Player Options\`) are not. Their header grammar matches the
@@ -147,6 +144,12 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Extended `term_harvest.py` with two GURPS 4e **Powers**
+  Sections (New Enhancements p.107, New Limitations p.110): 11 + 13 = 24 new
+  modifiers (Affects Others, Force Field, Reflexive, Insubstantial Only, ...),
+  balancing the thin GURPS side of this D&D/GURPS hybrid. The existing
+  `gurps_modifiers` parser handled the Powers grammar unchanged; the existing
+  four Sections are untouched.
 - **2026-08-27** — Added `spell_harvest.py`; built the spell index (1587
   spells: bundled SRD core 605 + Spell Compendium 982, all with school +
   level). School-anchored detection with the name gathered above, joining

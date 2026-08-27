@@ -873,6 +873,194 @@
      "source_line": 17615
     }
    ]
+  },
+  {
+   "key": "gurps_powers_enhancements",
+   "title": "GURPS 4e Powers enhancements (the new +% affixes from Powers)",
+   "system": "gurps4e",
+   "book": "GURPS\\GURPS 4e\\GURPS 4e - Powers.md",
+   "citation": "GURPS Powers, New Enhancements (p.107)",
+   "coverage": "ok \u2014 lines 16206..16606 of GURPS 4e - Powers.md",
+   "entries": [
+    {
+     "name": "Affects Others",
+     "gloss": "You can extend your advantage\u2019s benefits to others.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16213
+    },
+    {
+     "name": "Can Carry Objects",
+     "gloss": "A physical transformation normal- ly affects your body but not your belongings.",
+     "cost": "Variable",
+     "page": 110,
+     "source_line": 16318
+    },
+    {
+     "name": "Erosive",
+     "gloss": "Erosive must accompany one of Blood Agent, Contact Agent, or Respiratory Agent, and either Area Effect or Cone.",
+     "cost": "+10%",
+     "page": 110,
+     "source_line": 16343
+    },
+    {
+     "name": "Force Field",
+     "gloss": "This enhancement converts a defensive trait into a field projected a short distance from your body.",
+     "cost": "+20%",
+     "page": 110,
+     "source_line": 16363
+    },
+    {
+     "name": "Game Time",
+     "gloss": "Some traits \u2013 including Luck, Serendipity, and Wild Talent \u2013 rely on real time.",
+     "cost": "+0%",
+     "page": 110,
+     "source_line": 16394
+    },
+    {
+     "name": "Long-Range",
+     "gloss": "Your ranged ability uses a better class of range penalties than usual.",
+     "cost": "+50%/level",
+     "page": 110,
+     "source_line": 16441
+    },
+    {
+     "name": "Once On, Stays On",
+     "gloss": "Only for physical transformations that end if you\u2019re knocked out or killed \u2013 mainly Elastic Skin, Shadow Form, and Shapeshifting.",
+     "cost": "+50%",
+     "page": 110,
+     "source_line": 16461
+    },
+    {
+     "name": "Reflexive",
+     "gloss": "Reflexive is for defenses that take a second to activate, senses that require a second of concentration (e.g., Detect), and anything the GM feels serves a purpose similar to either.",
+     "cost": "+40%",
+     "page": 110,
+     "source_line": 16474
+    },
+    {
+     "name": "Ricochet",
+     "gloss": "When using Ricochets (p. 166), your attack doesn\u2019t lose damage on each bounce. Selective Effect see Selective Area, p. 105 Surprise Attack see Overhead, p. 104",
+     "cost": "+10%",
+     "page": 110,
+     "source_line": 16518
+    },
+    {
+     "name": "Switchable",
+     "gloss": "This enhancement only exists for physiological features (e.g., Claws), defenses, and other traits that are nor- mally \u201calways on.\u201d It lets you switch your advantage off and on with a Ready maneuver.",
+     "cost": "+10%",
+     "page": 110,
+     "source_line": 16527
+    },
+    {
+     "name": "Time-Spanning",
+     "gloss": "Your ability works across time. Rolls to use it this way have a penalty for the time gap between you and your target; use Long-Distance Modifiers (p. B241) and substitute \u201cdays\u201d for \u201cmiles.\u201d Find the distance in space as if you were at the same point in time.",
+     "cost": "Variable",
+     "page": 110,
+     "source_line": 16557
+    }
+   ]
+  },
+  {
+   "key": "gurps_powers_limitations",
+   "title": "GURPS 4e Powers limitations (the new -% affixes from Powers)",
+   "system": "gurps4e",
+   "book": "GURPS\\GURPS 4e\\GURPS 4e - Powers.md",
+   "citation": "GURPS Powers, New Limitations (p.110)",
+   "coverage": "ok \u2014 lines 16607..17157 of GURPS 4e - Powers.md",
+   "entries": [
+    {
+     "name": "All-Out",
+     "gloss": "Your ability requires an All-Out Attack maneuver; you can\u2019t use it with any other maneuver (e.g., Move or Change Posture).",
+     "cost": "-25%",
+     "page": null,
+     "source_line": 16621
+    },
+    {
+     "name": "Aspected",
+     "gloss": "Your ability works only when pur- suing a specific class of related tasks or activities (e.g., athletics, combat, investigation, or social interaction), or in a specific area of daily life (e.g., job, personal health, or romance).",
+     "cost": "-20%",
+     "page": null,
+     "source_line": 16640
+    },
+    {
+     "name": "Costs Hit Points",
+     "gloss": "This limitation works exactly like Costs Fatigue (p.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16697
+    },
+    {
+     "name": "Environmental",
+     "gloss": "Only advantages that affect others can have this limitation.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16708
+    },
+    {
+     "name": "Fickle",
+     "gloss": "Your ability is or seems sentient, and sometimes reacts poorly.",
+     "cost": "-20%",
+     "page": null,
+     "source_line": 16776
+    },
+    {
+     "name": "Glamour",
+     "gloss": "Only available for Chameleon, Elastic Skin, Invisibility, Shape- shifting (with the Cosmetic limita- tion), Silence, and similar traits that alter how others perceive you.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16850
+    },
+    {
+     "name": "Insubstantial Only",
+     "gloss": "Your ability only affects intangible targets: beings with the Spirit meta- trait, individuals using Insubstan- tiality, and those using Clairsentience, Jumper, or Warp with the Projection special modifier.",
+     "cost": "-30%",
+     "page": null,
+     "source_line": 16870
+    },
+    {
+     "name": "Maximum Duration",
+     "gloss": "Only available for switchable, beneficial abilities that you could normally leave \u201con\u201d indefinitely (e.g., Insubstantiality).",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16882
+    },
+    {
+     "name": "Minimum Duration",
+     "gloss": "Only available for switchable abil- ities that would \u2013 in the GM\u2019s opinion \u2013 seriously inconvenience you if you couldn\u2019t deactivate them at will.",
+     "cost": "Variable",
+     "page": null,
+     "source_line": 16907
+    },
+    {
+     "name": "Greater than one month",
+     "gloss": "On an advantage that allows Always On, this limitation is worth at most -5% less than Always On; e.g., if Always On is -20%, Minimum Duration can\u2019t go beyond -15%.",
+     "cost": "-30%",
+     "page": null,
+     "source_line": 16933
+    },
+    {
+     "name": "Short-Range",
+     "gloss": "Your ranged ability is subject to more severe range penalties than usual.",
+     "cost": "-10%/level",
+     "page": 114,
+     "source_line": 17023
+    },
+    {
+     "name": "Specific",
+     "gloss": "Specific restricts an ability that lets you interact with a material to a sub- set of what it normally affects.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 17043
+    },
+    {
+     "name": "Terminal Condition",
+     "gloss": "Only allowed on abilities that affect others for at least a minute.",
+     "cost": "Variable",
+     "page": 114,
+     "source_line": 17070
+    }
+   ]
   }
  ]
 }

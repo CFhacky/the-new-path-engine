@@ -29,8 +29,10 @@ GOVERNING SOURCES
     authoritative rosters. One source of truth per layer; this file points
     at them rather than copying them.
 
-Extend by adding a Section to SECTIONS — Warhammer wargear, PHB glossary,
-Magic Item Compendium and the GURPS 3e magic item books are the intended
+Extend by adding a Section to SECTIONS. The GURPS Powers enhancement and
+limitation sets are now folded in; the Magic Item Compendium went to its own
+harvest (scripts/item_harvest.py) because items want a full field index, not
+just a modifier gloss. Warhammer wargear and the PHB glossary are the intended
 next targets; their extractions already exist in the corpus.
 
 Run:      python term_harvest.py            (writes both reference files)
@@ -115,6 +117,26 @@ SECTIONS: list[Section] = [
         citation="GURPS Basic Set: Characters, LIMITATIONS (B110-B117)",
         start_anchor=r"^LIMITATIONS$",
         end_anchor=r"^DISADVANTAGES$|^SKILLS$",
+        parser="gurps_modifiers",
+    ),
+    Section(
+        key="gurps_powers_enhancements",
+        title="GURPS 4e Powers enhancements (the new +% affixes from Powers)",
+        system="gurps4e",
+        book=Path("GURPS/GURPS 4e/GURPS 4e - Powers.md"),
+        citation="GURPS Powers, New Enhancements (p.107)",
+        start_anchor=r"^ENHANCEMENTS$",
+        end_anchor=r"^LIMITATIONS$",
+        parser="gurps_modifiers",
+    ),
+    Section(
+        key="gurps_powers_limitations",
+        title="GURPS 4e Powers limitations (the new -% affixes from Powers)",
+        system="gurps4e",
+        book=Path("GURPS/GURPS 4e/GURPS 4e - Powers.md"),
+        citation="GURPS Powers, New Limitations (p.110)",
+        start_anchor=r"^LIMITATIONS$",
+        end_anchor=r"^SPECIAL EFFECTS$|^SPECIAL CASES$",
         parser="gurps_modifiers",
     ),
 ]

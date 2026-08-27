@@ -161,3 +161,43 @@ what GURPS calls enhancements and limitations.
 | Breakable | Variable | Your foes can destroy the item. Once destroyed, it will cease to grant you its benefits until repaired. Add the following elements together to find the final limitation value. Durability: The easier the object is to break, the greater the limitation. Decide on | 119 |
 | Can Be Stolen | Variable | Your foes can take this item from you, depriving you of its benefits. | 119 |
 | Unique | -25% | You may only take this limitation in conjunction with Breakable or Can Be Stolen. | 119 |
+
+## GURPS 4e Powers enhancements (the new +% affixes from Powers)
+
+*Source: GURPS Powers, New Enhancements (p.107).*  
+*Harvest: ok — lines 16206..16606 of GURPS 4e - Powers.md. 11 entries.*
+
+| Name | Cost | What it does | Page |
+|---|---|---|---|
+| Affects Others | Variable | You can extend your advantage’s benefits to others. | — |
+| Can Carry Objects | Variable | A physical transformation normal- ly affects your body but not your belongings. | 110 |
+| Erosive | +10% | Erosive must accompany one of Blood Agent, Contact Agent, or Respiratory Agent, and either Area Effect or Cone. | 110 |
+| Force Field | +20% | This enhancement converts a defensive trait into a field projected a short distance from your body. | 110 |
+| Game Time | +0% | Some traits – including Luck, Serendipity, and Wild Talent – rely on real time. | 110 |
+| Long-Range | +50%/level | Your ranged ability uses a better class of range penalties than usual. | 110 |
+| Once On, Stays On | +50% | Only for physical transformations that end if you’re knocked out or killed – mainly Elastic Skin, Shadow Form, and Shapeshifting. | 110 |
+| Reflexive | +40% | Reflexive is for defenses that take a second to activate, senses that require a second of concentration (e.g., Detect), and anything the GM feels serves a purpose similar to either. | 110 |
+| Ricochet | +10% | When using Ricochets (p. 166), your attack doesn’t lose damage on each bounce. Selective Effect see Selective Area, p. 105 Surprise Attack see Overhead, p. 104 | 110 |
+| Switchable | +10% | This enhancement only exists for physiological features (e.g., Claws), defenses, and other traits that are nor- mally “always on.” It lets you switch your advantage off and on with a Ready maneuver. | 110 |
+| Time-Spanning | Variable | Your ability works across time. Rolls to use it this way have a penalty for the time gap between you and your target; use Long-Distance Modifiers (p. B241) and substitute “days” for “miles.” Find the distance in space as if you were at the same point in time. | 110 |
+
+## GURPS 4e Powers limitations (the new -% affixes from Powers)
+
+*Source: GURPS Powers, New Limitations (p.110).*  
+*Harvest: ok — lines 16607..17157 of GURPS 4e - Powers.md. 13 entries.*
+
+| Name | Cost | What it does | Page |
+|---|---|---|---|
+| All-Out | -25% | Your ability requires an All-Out Attack maneuver; you can’t use it with any other maneuver (e.g., Move or Change Posture). | — |
+| Aspected | -20% | Your ability works only when pur- suing a specific class of related tasks or activities (e.g., athletics, combat, investigation, or social interaction), or in a specific area of daily life (e.g., job, personal health, or romance). | — |
+| Costs Hit Points | Variable | This limitation works exactly like Costs Fatigue (p. | — |
+| Environmental | Variable | Only advantages that affect others can have this limitation. | — |
+| Fickle | -20% | Your ability is or seems sentient, and sometimes reacts poorly. | — |
+| Glamour | Variable | Only available for Chameleon, Elastic Skin, Invisibility, Shape- shifting (with the Cosmetic limita- tion), Silence, and similar traits that alter how others perceive you. | — |
+| Insubstantial Only | -30% | Your ability only affects intangible targets: beings with the Spirit meta- trait, individuals using Insubstan- tiality, and those using Clairsentience, Jumper, or Warp with the Projection special modifier. | — |
+| Maximum Duration | Variable | Only available for switchable, beneficial abilities that you could normally leave “on” indefinitely (e.g., Insubstantiality). | — |
+| Minimum Duration | Variable | Only available for switchable abil- ities that would – in the GM’s opinion – seriously inconvenience you if you couldn’t deactivate them at will. | — |
+| Greater than one month | -30% | On an advantage that allows Always On, this limitation is worth at most -5% less than Always On; e.g., if Always On is -20%, Minimum Duration can’t go beyond -15%. | — |
+| Short-Range | -10%/level | Your ranged ability is subject to more severe range penalties than usual. | 114 |
+| Specific | Variable | Specific restricts an ability that lets you interact with a material to a sub- set of what it normally affects. | 114 |
+| Terminal Condition | Variable | Only allowed on abilities that affect others for at least a minute. | 114 |
