@@ -30,6 +30,7 @@ extraction and are the court of appeal for any garbled number.
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
+| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium extraction (982) | 1587 spells / 2 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -49,8 +50,11 @@ made redundant by the index (spells and creatures already run this way, and now
 feats do too):
 
 - `scripts/spell_lookup.py` — SRD 3.5 (605 spells, bundled JSON) + Spell
-  Compendium (live parse). SRD wins name collisions. (No spell harvest index
-  yet — a candidate; see NEXT.)
+  Compendium (live parse). SRD wins name collisions. Its index sibling is
+  `spell_harvest.py`. (Its `DEFAULT_COMPENDIUM` was pointing at a stale
+  `_md\Spell_Compendium.md` that no longer exists — the Compendium had gone
+  silently inaccessible; fixed 2026-08-27 to the `_text\...\Spell Compendium
+  (Premium).md` path, restoring 1031 Compendium spells to the tool.)
 - `scripts/feat_lookup.py` — SRD 3.5 (bundled JSON) + supplement extractions
   under `_md\_feats\` (live parse). Its index sibling is `feat_harvest.py`.
 - `scripts/monster_lookup.py` — `_md\_bestiary\` (live parse); its index
@@ -72,13 +76,12 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
 3. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
    `_md\GURPS\GURPS 4e - Powers.md` (present, 37,745 lines) — Powers has its
    own enhancement/limitation set beyond the Basic Set.
-4. **Spell index / supplemental spells** → a `spell_harvest.py` mirroring the
-   others. `spell_lookup.py` already retrieves SRD + Spell Compendium, but
-   there is no browsable spell *index*, and supplement spell lists (the
-   Complete series, Races of the Dragon, etc. under `_md\_feats\` and
-   `_text\D&D 3.5e\Player Options\`) are not collated. The Spell Compendium's
-   header grammar (name / school / `Level:`) is already parsed by
-   `spell_lookup._is_header` and can be duplicated into a harvest.
+4. **Supplemental spells beyond the Compendium** → add sources to
+   `spell_harvest.py`. The SRD core and the Spell Compendium are indexed; the
+   Complete series and other splatbook spell lists (under `_text\D&D
+   3.5e\Player Options\`) are not. Their header grammar matches the
+   `detect_compendium` school-anchored detector, so most can be added as new
+   `Source(detector="compendium")` entries with per-book paths.
 
 ### How to add a source (the pattern, do not deviate)
 
@@ -144,6 +147,19 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added `spell_harvest.py`; built the spell index (1587
+  spells: bundled SRD core 605 + Spell Compendium 982, all with school +
+  level). School-anchored detection with the name gathered above, joining
+  wrapped names ("ACCELERATED MOVEMENT") once and stripping the three-line
+  running page header ("CHAPTER 1 / SPELL / DESCRIPTIONS") the OCR drops above
+  spell names — while keeping real "SPELL ..."-prefixed names. Completes the
+  core reference layer (creatures, items, feats, powers, maneuvers, spells all
+  have both a lookup and an index). Registered in AUTHORITY.md.
+- **2026-08-27** — Fixed `spell_lookup.py`'s stale `DEFAULT_COMPENDIUM`: it
+  pointed at `_md\Spell_Compendium.md`, which no longer exists, so the Spell
+  Compendium had gone silently inaccessible to the play-time tool. Repointed to
+  `_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md`; its selftest
+  Compendium checks (Orb of Acid, >900 spells) now run and pass (1031 spells).
 - **2026-08-27** — Extended `item_harvest.py` with a `dmg` detector; harvested
   the DMG v3.5 specific and wondrous items (216, all with aura + caster level,
   145 priced) — the canonical items nothing else covered. Detection anchors on
