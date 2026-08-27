@@ -1,7 +1,7 @@
 {
  "generated_by": "scripts/spell_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_spells": 1587,
+ "total_spells": 1804,
  "sources": [
   {
    "key": "srd",
@@ -15886,6 +15886,2200 @@
      "school": "Divination",
      "subschool": null,
      "level": "Cleric 5"
+    }
+   ]
+  },
+  {
+   "key": "cmage",
+   "book": "Complete Mage",
+   "citation": "Complete Mage (WotC, 2006), spell descriptions",
+   "coverage": "ok \u2014 130 spells from Complete Mage.md",
+   "spells": [
+    {
+     "name": "Adamantine Wings",
+     "book": "Complete Mage",
+     "page": 96,
+     "start": 11488,
+     "end": 11532,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 7, wu jen 7"
+    },
+    {
+     "name": "Allied Footsteps",
+     "book": "Complete Mage",
+     "page": 96,
+     "start": 11532,
+     "end": 11558,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Animate Weapon",
+     "book": "Complete Mage",
+     "page": 96,
+     "start": 11558,
+     "end": 11647,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Assassin 2, hexblade 2,"
+    },
+    {
+     "name": "Arcane Fusion",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11647,
+     "end": 11679,
+     "school": "Universal",
+     "subschool": null,
+     "level": "Sorcerer 5"
+    },
+    {
+     "name": "Arcane Fusion, Greater",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11679,
+     "end": 11691,
+     "school": "Universal",
+     "subschool": null,
+     "level": "Sorcerer 8"
+    },
+    {
+     "name": "Arcane Turmoil",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11691,
+     "end": 11716,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Hexblade 2, sorcerer/wizard 2"
+    },
+    {
+     "name": "Aspect Of The Icy Hunter",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11716,
+     "end": 11734,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Attentive Alarm",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11734,
+     "end": 11747,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Battlecry",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11747,
+     "end": 11779,
+     "school": "Evocation",
+     "subschool": "[Mind-Affecting, Sonic]",
+     "level": "Bard 4"
+    },
+    {
+     "name": "Blackrot",
+     "book": "Complete Mage",
+     "page": 97,
+     "start": 11779,
+     "end": 11818,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Druid 2, wu jen 2 (wood)"
+    },
+    {
+     "name": "Bloodletting",
+     "book": "Complete Mage",
+     "page": 98,
+     "start": 11818,
+     "end": 11871,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Assassin 1, hexblade 1"
+    },
+    {
+     "name": "Boiling Blood",
+     "book": "Complete Mage",
+     "page": 98,
+     "start": 11871,
+     "end": 11907,
+     "school": "Transmutation",
+     "subschool": "[Fire]",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Bothersome Babble",
+     "book": "Complete Mage",
+     "page": 98,
+     "start": 11907,
+     "end": 11953,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Bard 2, hexblade 2, sorcerer/"
+    },
+    {
+     "name": "Cacophonous Alarm",
+     "book": "Complete Mage",
+     "page": 99,
+     "start": 11953,
+     "end": 11966,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 2"
+    },
+    {
+     "name": "Caterwaul",
+     "book": "Complete Mage",
+     "page": 99,
+     "start": 11966,
+     "end": 11985,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Bard 2"
+    },
+    {
+     "name": "Catsfeet",
+     "book": "Complete Mage",
+     "page": 99,
+     "start": 11985,
+     "end": 12002,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Assassin 1, bard 1, hexblade 1"
+    },
+    {
+     "name": "Caustic Mire",
+     "book": "Complete Mage",
+     "page": 99,
+     "start": 12002,
+     "end": 12030,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Caustic Smoke",
+     "book": "Complete Mage",
+     "page": 99,
+     "start": 12030,
+     "end": 12063,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Channeled Lifetheft",
+     "book": "Complete Mage",
+     "page": 99,
+     "start": 12063,
+     "end": 12115,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Channeled Sound Blast",
+     "book": "Complete Mage",
+     "page": 100,
+     "start": 12115,
+     "end": 12159,
+     "school": "Evocation",
+     "subschool": "(Sonic)",
+     "level": "Bard 5, sorcerer/wizard 5"
+    },
+    {
+     "name": "Choking Cobwebs",
+     "book": "Complete Mage",
+     "page": 100,
+     "start": 12159,
+     "end": 12210,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 7"
+    },
+    {
+     "name": "Climbing Tree",
+     "book": "Complete Mage",
+     "page": 100,
+     "start": 12210,
+     "end": 12241,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Druid 1, ranger 1, wu jen 1"
+    },
+    {
+     "name": "Coat Of Arms",
+     "book": "Complete Mage",
+     "page": 100,
+     "start": 12241,
+     "end": 12287,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Combined Talent",
+     "book": "Complete Mage",
+     "page": 101,
+     "start": 12287,
+     "end": 12320,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Bard 1"
+    },
+    {
+     "name": "Critical Strike",
+     "book": "Complete Mage",
+     "page": 101,
+     "start": 12320,
+     "end": 12340,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 1"
+    },
+    {
+     "name": "Cryptwarden'S Grasp",
+     "book": "Complete Mage",
+     "page": 101,
+     "start": 12340,
+     "end": 12386,
+     "school": "Necromancy",
+     "subschool": "[Evil]",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Crystalline Memories",
+     "book": "Complete Mage",
+     "page": 101,
+     "start": 12386,
+     "end": 12427,
+     "school": "Transmutation",
+     "subschool": "(Mind-Affecting)",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Dawn Burst",
+     "book": "Complete Mage",
+     "page": 102,
+     "start": 12427,
+     "end": 12451,
+     "school": "Evocation",
+     "subschool": "[Light]",
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Deadly Lahar",
+     "book": "Complete Mage",
+     "page": 102,
+     "start": 12451,
+     "end": 12476,
+     "school": "Conjuration",
+     "subschool": "[Earth, Fire]",
+     "level": "Druid 8, sorcerer/wizard 8, wu"
+    },
+    {
+     "name": "Deadly Sunstroke",
+     "book": "Complete Mage",
+     "page": 102,
+     "start": 12476,
+     "end": 12507,
+     "school": "Evocation",
+     "subschool": "[Light]",
+     "level": "Sorcerer/wizard 9, wu jen 9"
+    },
+    {
+     "name": "Deafening Blast",
+     "book": "Complete Mage",
+     "page": 102,
+     "start": 12507,
+     "end": 12531,
+     "school": "Evocation",
+     "subschool": "[Sonic]",
+     "level": "Bard 3"
+    },
+    {
+     "name": "Death'S Call",
+     "book": "Complete Mage",
+     "page": 102,
+     "start": 12531,
+     "end": 12563,
+     "school": "Necromancy",
+     "subschool": "[Sonic]",
+     "level": "Hexblade 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Deathsight",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12563,
+     "end": 12585,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 4"
+    },
+    {
+     "name": "Deceptive Facade",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12585,
+     "end": 12620,
+     "school": "Illusion",
+     "subschool": "(Glamer)",
+     "level": "Bard 2, sorcerer/wizard 3"
+    },
+    {
+     "name": "Dimension Jumper",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12620,
+     "end": 12644,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Bard 5, sorcerer/wizard 5"
+    },
+    {
+     "name": "Dimension Jumper, Greater",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12644,
+     "end": 12655,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Sorcerer/Wizard 9"
+    },
+    {
+     "name": "Discordant Malediction",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12655,
+     "end": 12675,
+     "school": "Transmutation",
+     "subschool": "[Sonic]",
+     "level": "Bard 5"
+    },
+    {
+     "name": "Doublespeak",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12675,
+     "end": 12711,
+     "school": "Illusion",
+     "subschool": "(Glamer)",
+     "level": "Bard 2"
+    },
+    {
+     "name": "Dreaded Form Of The Eye Tyrant",
+     "book": "Complete Mage",
+     "page": 103,
+     "start": 12711,
+     "end": 12744,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 8"
+    },
+    {
+     "name": "Elemental Eye",
+     "book": "Complete Mage",
+     "page": 104,
+     "start": 12744,
+     "end": 12783,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Wu jen 3"
+    },
+    {
+     "name": "Endless Slumber",
+     "book": "Complete Mage",
+     "page": 104,
+     "start": 12783,
+     "end": 12808,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Bard 5, sorcerer/wizard 6"
+    },
+    {
+     "name": "Enduring Scrutiny",
+     "book": "Complete Mage",
+     "page": 104,
+     "start": 12808,
+     "end": 12836,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 3, bard 3, paladin 3,"
+    },
+    {
+     "name": "Energy Absorption",
+     "book": "Complete Mage",
+     "page": 104,
+     "start": 12836,
+     "end": 12872,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 7, wu jen 7"
+    },
+    {
+     "name": "Escalating Enfeeblement",
+     "book": "Complete Mage",
+     "page": 104,
+     "start": 12872,
+     "end": 12893,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "False Lie",
+     "book": "Complete Mage",
+     "page": 105,
+     "start": 12893,
+     "end": 12918,
+     "school": "Illusion",
+     "subschool": "(Glamer)",
+     "level": "Bard 2"
+    },
+    {
+     "name": "Familiar Refuge",
+     "book": "Complete Mage",
+     "page": 105,
+     "start": 12918,
+     "end": 12935,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Fever Dream",
+     "book": "Complete Mage",
+     "page": 105,
+     "start": 12935,
+     "end": 12981,
+     "school": "Illusion",
+     "subschool": "(Phantasm) [Mind-Affecting]",
+     "level": "Bard 5, sorcerer/wizard 5"
+    },
+    {
+     "name": "Finger Of Agony",
+     "book": "Complete Mage",
+     "page": 105,
+     "start": 12981,
+     "end": 13000,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Hexblade 4, sorcerer/wizard 4"
+    },
+    {
+     "name": "Fire And Brimstone",
+     "book": "Complete Mage",
+     "page": 105,
+     "start": 13000,
+     "end": 13021,
+     "school": "Conjuration",
+     "subschool": "(Creation) [Fire]",
+     "level": "Sorcerer/wizard 5, wu jen 5"
+    },
+    {
+     "name": "Flaying Tendrils",
+     "book": "Complete Mage",
+     "page": 105,
+     "start": 13021,
+     "end": 13077,
+     "school": "Transmutation",
+     "subschool": "[Evil]",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Form Of The Threefold Beast",
+     "book": "Complete Mage",
+     "page": 106,
+     "start": 13077,
+     "end": 13101,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Genius Loci",
+     "book": "Complete Mage",
+     "page": 106,
+     "start": 13101,
+     "end": 13191,
+     "school": "Conjuration",
+     "subschool": "(Creation) [see text]",
+     "level": "Sorcerer/wizard 9"
+    },
+    {
+     "name": "Ghost Lantern",
+     "book": "Complete Mage",
+     "page": 107,
+     "start": 13197,
+     "end": 13231,
+     "school": "Evocation",
+     "subschool": "[Light]",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Great Worm Of The Earth",
+     "book": "Complete Mage",
+     "page": 107,
+     "start": 13231,
+     "end": 13278,
+     "school": "Conjuration",
+     "subschool": "(Creation) [Earth]",
+     "level": "Druid 7, wu jen 7 (earth)"
+    },
+    {
+     "name": "Guided Path",
+     "book": "Complete Mage",
+     "page": 107,
+     "start": 13278,
+     "end": 13305,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Bard 1"
+    },
+    {
+     "name": "Heart Of Air",
+     "book": "Complete Mage",
+     "page": 107,
+     "start": 13305,
+     "end": 13336,
+     "school": "Transmutation",
+     "subschool": "[Air]",
+     "level": "Druid 2, sorcerer/wizard 2, wu"
+    },
+    {
+     "name": "Heart Of Earth",
+     "book": "Complete Mage",
+     "page": 107,
+     "start": 13336,
+     "end": 13378,
+     "school": "Transmutation",
+     "subschool": "[Earth]",
+     "level": "Druid 4, sorcerer/wizard 4, wu"
+    },
+    {
+     "name": "Heart Of Fire",
+     "book": "Complete Mage",
+     "page": 108,
+     "start": 13378,
+     "end": 13415,
+     "school": "Transmutation",
+     "subschool": "[Fire]",
+     "level": "Druid 5,"
+    },
+    {
+     "name": "Heart Of Water",
+     "book": "Complete Mage",
+     "page": 108,
+     "start": 13415,
+     "end": 13452,
+     "school": "Transmutation",
+     "subschool": "[Water]",
+     "level": "Druid 3, sorcerer/wizard 3, wu"
+    },
+    {
+     "name": "Hood Of The Cobra",
+     "book": "Complete Mage",
+     "page": 108,
+     "start": 13452,
+     "end": 13507,
+     "school": "Illusion",
+     "subschool": "(Phantasm) [Fear,",
+     "level": "Hexblade 3, sorcerer/"
+    },
+    {
+     "name": "Horrid Sickness",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13507,
+     "end": 13530,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Hexblade 4, sorcerer/wizard 4"
+    },
+    {
+     "name": "Immediate Assistance",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13530,
+     "end": 13551,
+     "school": "Enchantment",
+     "subschool": "(Compulsion)",
+     "level": "Bard 1"
+    },
+    {
+     "name": "Incendiary Slime",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13551,
+     "end": 13566,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Incendiary Surge",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13566,
+     "end": 13589,
+     "school": "Evocation",
+     "subschool": "[Fire]",
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Interminable Echo",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13589,
+     "end": 13608,
+     "school": "Illusion",
+     "subschool": "(Phantasm) [Mind-Affecting,",
+     "level": "Bard 4"
+    },
+    {
+     "name": "Jet Of Steam",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13608,
+     "end": 13630,
+     "school": "Evocation",
+     "subschool": "[Water]",
+     "level": "Sorcerer/wizard 1, wu jen 1"
+    },
+    {
+     "name": "Karmic Aura",
+     "book": "Complete Mage",
+     "page": 109,
+     "start": 13630,
+     "end": 13684,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Hexblade 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Karmick Backlash",
+     "book": "Complete Mage",
+     "page": 110,
+     "start": 13684,
+     "end": 13693,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Hexblade 2, sorcerer/wizard 3"
+    },
+    {
+     "name": "Karmic Retribution",
+     "book": "Complete Mage",
+     "page": 110,
+     "start": 13693,
+     "end": 13703,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Hexblade 4, sorcerer/wizard 6"
+    },
+    {
+     "name": "Lash Of Force",
+     "book": "Complete Mage",
+     "page": 110,
+     "start": 13703,
+     "end": 13737,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer/wizard 9"
+    },
+    {
+     "name": "Lighting Leap",
+     "book": "Complete Mage",
+     "page": 110,
+     "start": 13737,
+     "end": 13775,
+     "school": "Transmutation",
+     "subschool": "[Electricity]",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Lingering Chorus",
+     "book": "Complete Mage",
+     "page": 111,
+     "start": 13775,
+     "end": 13802,
+     "school": "Illusion",
+     "subschool": "(Figment)",
+     "level": "Bard 4"
+    },
+    {
+     "name": "Lingering Flames",
+     "book": "Complete Mage",
+     "page": 111,
+     "start": 13802,
+     "end": 13826,
+     "school": "Evocation",
+     "subschool": "[Fire]",
+     "level": "Sorcerer/wizard 6, wu jen 6"
+    },
+    {
+     "name": "Luminous Swarm",
+     "book": "Complete Mage",
+     "page": 111,
+     "start": 13826,
+     "end": 13852,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Magic Savant",
+     "book": "Complete Mage",
+     "page": 111,
+     "start": 13852,
+     "end": 13870,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Bard 2"
+    },
+    {
+     "name": "Mask Of The Ideal",
+     "book": "Complete Mage",
+     "page": 111,
+     "start": 13870,
+     "end": 13894,
+     "school": "Illusion",
+     "subschool": "(Glamer)",
+     "level": "Bard 2, sorcerer/wizard 3"
+    },
+    {
+     "name": "Melf'S Slumber Arrows",
+     "book": "Complete Mage",
+     "page": 111,
+     "start": 13894,
+     "end": 13934,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Bard 4, sorcerer/wizard 4"
+    },
+    {
+     "name": "Mordenkainen'S Trusted Bloodhound",
+     "book": "Complete Mage",
+     "page": 112,
+     "start": 13934,
+     "end": 13962,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Assassin 4, sorcerer/wizard 6"
+    },
+    {
+     "name": "Mysterious Redirection",
+     "book": "Complete Mage",
+     "page": 112,
+     "start": 13962,
+     "end": 14012,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 8, wu jen 8"
+    },
+    {
+     "name": "Near Horizon",
+     "book": "Complete Mage",
+     "page": 112,
+     "start": 14012,
+     "end": 14028,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 2, ranger 2"
+    },
+    {
+     "name": "Necrotic Curse",
+     "book": "Complete Mage",
+     "page": 112,
+     "start": 14028,
+     "end": 14061,
+     "school": "Necromancy",
+     "subschool": "[Evil]",
+     "level": "Cleric 7, sorcerer/wizard 7"
+    },
+    {
+     "name": "Nightmare Terrain",
+     "book": "Complete Mage",
+     "page": 112,
+     "start": 14061,
+     "end": 14107,
+     "school": "Illusion",
+     "subschool": "(Shadow)",
+     "level": "Assassin 3, bard 3, hexblade 3,"
+    },
+    {
+     "name": "Otiluke'S Impressing Field",
+     "book": "Complete Mage",
+     "page": 113,
+     "start": 14107,
+     "end": 14143,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Otto'S Imperative Ambulation",
+     "book": "Complete Mage",
+     "page": 113,
+     "start": 14143,
+     "end": 14169,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Bard 3"
+    },
+    {
+     "name": "Painful Echoes",
+     "book": "Complete Mage",
+     "page": 113,
+     "start": 14169,
+     "end": 14219,
+     "school": "Evocation",
+     "subschool": "[Sonic]",
+     "level": "Bard 2"
+    },
+    {
+     "name": "Pall Of Twilight",
+     "book": "Complete Mage",
+     "page": 114,
+     "start": 14219,
+     "end": 14241,
+     "school": "Illusion",
+     "subschool": "(Pattern) [Darkness,",
+     "level": "Assassin 3, sorcerer/wizard 3"
+    },
+    {
+     "name": "Phantasmal Strangler",
+     "book": "Complete Mage",
+     "page": 114,
+     "start": 14241,
+     "end": 14280,
+     "school": "Illusion",
+     "subschool": "(Phantasm) [Fear,",
+     "level": "Hexblade 3, sorcerer/wizard 3"
+    },
+    {
+     "name": "Prickling Torment",
+     "book": "Complete Mage",
+     "page": 114,
+     "start": 14280,
+     "end": 14312,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Druid 3, sorcerer/wizard 3"
+    },
+    {
+     "name": "Prismatic Aura",
+     "book": "Complete Mage",
+     "page": 114,
+     "start": 14312,
+     "end": 14340,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Prismatic Bow",
+     "book": "Complete Mage",
+     "page": 114,
+     "start": 14340,
+     "end": 14391,
+     "school": "Evocation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 8"
+    },
+    {
+     "name": "Prismatic Deluge",
+     "book": "Complete Mage",
+     "page": 115,
+     "start": 14391,
+     "end": 14420,
+     "school": "Evocation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 9"
+    },
+    {
+     "name": "Rain Of Spines",
+     "book": "Complete Mage",
+     "page": 115,
+     "start": 14420,
+     "end": 14450,
+     "school": "Conjuration",
+     "subschool": "(Creation) [Earth]",
+     "level": "Wu jen 4 (metal)"
+    },
+    {
+     "name": "Rary'S Arcane Conversion",
+     "book": "Complete Mage",
+     "page": 115,
+     "start": 14450,
+     "end": 14474,
+     "school": "Universal",
+     "subschool": null,
+     "level": "Wizard 6"
+    },
+    {
+     "name": "Reaving Aura",
+     "book": "Complete Mage",
+     "page": 115,
+     "start": 14474,
+     "end": 14497,
+     "school": "Necromancy",
+     "subschool": "[Evil]",
+     "level": "Assassin 1, cleric 1,"
+    },
+    {
+     "name": "Rebirth Of Iron",
+     "book": "Complete Mage",
+     "page": 115,
+     "start": 14497,
+     "end": 14541,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 4, wu jen 3"
+    },
+    {
+     "name": "Repelling Shield",
+     "book": "Complete Mage",
+     "page": 116,
+     "start": 14541,
+     "end": 14564,
+     "school": "Abjuration",
+     "subschool": "[Force]",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Resinous Tar",
+     "book": "Complete Mage",
+     "page": 116,
+     "start": 14564,
+     "end": 14605,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Bard 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Resonating Agony",
+     "book": "Complete Mage",
+     "page": 116,
+     "start": 14605,
+     "end": 14633,
+     "school": "Evocation",
+     "subschool": "[Sonic]",
+     "level": "Bard 6"
+    },
+    {
+     "name": "Resounding Thunder",
+     "book": "Complete Mage",
+     "page": 116,
+     "start": 14633,
+     "end": 14669,
+     "school": "Evocation",
+     "subschool": "[Sonic]",
+     "level": "Bard 4, sorcerer/wizard 5"
+    },
+    {
+     "name": "Retributive Enervation",
+     "book": "Complete Mage",
+     "page": 117,
+     "start": 14669,
+     "end": 14706,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Sorcerer/wizard 7"
+    },
+    {
+     "name": "Retributive Image",
+     "book": "Complete Mage",
+     "page": 117,
+     "start": 14706,
+     "end": 14736,
+     "school": "Illusion",
+     "subschool": "(Pattern) [Mind-Affecting]",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Rusted Blade",
+     "book": "Complete Mage",
+     "page": 117,
+     "start": 14736,
+     "end": 14770,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Assassin 3, druid 3, sorcerer/"
+    },
+    {
+     "name": "Seed Of Undeath",
+     "book": "Complete Mage",
+     "page": 117,
+     "start": 14770,
+     "end": 14804,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Cleric 4, sorcerer/wizard 4"
+    },
+    {
+     "name": "Seed Of Undeath, Greater",
+     "book": "Complete Mage",
+     "page": 117,
+     "start": 14804,
+     "end": 14831,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Cleric 7, sorcerer/wizard 7"
+    },
+    {
+     "name": "Shape Of The Hellspawned Stalker",
+     "book": "Complete Mage",
+     "page": 118,
+     "start": 14831,
+     "end": 14854,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Smoky Confinement",
+     "book": "Complete Mage",
+     "page": 118,
+     "start": 14854,
+     "end": 14883,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Spellcaster'S Bane",
+     "book": "Complete Mage",
+     "page": 118,
+     "start": 14883,
+     "end": 14933,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Steal Summoning",
+     "book": "Complete Mage",
+     "page": 119,
+     "start": 14933,
+     "end": 14969,
+     "school": "Conjuration",
+     "subschool": "(Summoning)",
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Storm Of Fire And Ice",
+     "book": "Complete Mage",
+     "page": 119,
+     "start": 14969,
+     "end": 14996,
+     "school": "Evocation",
+     "subschool": "[Cold, Fire]",
+     "level": "Druid 6, sorcerer/wizard 6, wu"
+    },
+    {
+     "name": "Storm Of Needles",
+     "book": "Complete Mage",
+     "page": 119,
+     "start": 14996,
+     "end": 15015,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Wu jen 4 (metal)"
+    },
+    {
+     "name": "Summon Component",
+     "book": "Complete Mage",
+     "page": 119,
+     "start": 15015,
+     "end": 15039,
+     "school": "Conjuration",
+     "subschool": "(Summoning)",
+     "level": "Bard 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Summon Weapon",
+     "book": "Complete Mage",
+     "page": 119,
+     "start": 15039,
+     "end": 15055,
+     "school": "Conjuration",
+     "subschool": "(Summoning)",
+     "level": "Assassin 2, bard 2"
+    },
+    {
+     "name": "Tactical Teleportation",
+     "book": "Complete Mage",
+     "page": 119,
+     "start": 15055,
+     "end": 15139,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Torrent Of Tears",
+     "book": "Complete Mage",
+     "page": 120,
+     "start": 15139,
+     "end": 15160,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Bard 2, sorcerer/wizard 2, wu"
+    },
+    {
+     "name": "Touch Of The Graveborn",
+     "book": "Complete Mage",
+     "page": 120,
+     "start": 15160,
+     "end": 15210,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Sorcerer/wizard 8"
+    },
+    {
+     "name": "Touch Of Vecna",
+     "book": "Complete Mage",
+     "page": 121,
+     "start": 15210,
+     "end": 15238,
+     "school": "Necromancy",
+     "subschool": "[Evil, Fear]",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Touch Of Years",
+     "book": "Complete Mage",
+     "page": 121,
+     "start": 15238,
+     "end": 15282,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Towering Thunderhead",
+     "book": "Complete Mage",
+     "page": 121,
+     "start": 15282,
+     "end": 15317,
+     "school": "Conjuration",
+     "subschool": "(Creation) [Air]",
+     "level": "Druid 9, sorcerer/wizard 9"
+    },
+    {
+     "name": "Toxic Tongue",
+     "book": "Complete Mage",
+     "page": 121,
+     "start": 15317,
+     "end": 15355,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Assassin 3"
+    },
+    {
+     "name": "Transcend Mortality",
+     "book": "Complete Mage",
+     "page": 121,
+     "start": 15355,
+     "end": 15399,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Wu jen 9"
+    },
+    {
+     "name": "True Casting",
+     "book": "Complete Mage",
+     "page": 122,
+     "start": 15399,
+     "end": 15414,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Unicorn Blood",
+     "book": "Complete Mage",
+     "page": 122,
+     "start": 15414,
+     "end": 15442,
+     "school": "Transmutation",
+     "subschool": "(Good)",
+     "level": "Druid 5, sorcerer/wizard 5"
+    },
+    {
+     "name": "Unicorn Heart",
+     "book": "Complete Mage",
+     "page": 122,
+     "start": 15442,
+     "end": 15492,
+     "school": "Transmutation",
+     "subschool": "(Good)",
+     "level": "Druid 7, sorcerer/wizard 7"
+    },
+    {
+     "name": "Unicorn Horn",
+     "book": "Complete Mage",
+     "page": 122,
+     "start": 15492,
+     "end": 15541,
+     "school": "Transmutation",
+     "subschool": "(Good)",
+     "level": "Druid 3, sorcerer/wizard 3"
+    },
+    {
+     "name": "Unseen Strike",
+     "book": "Complete Mage",
+     "page": 123,
+     "start": 15541,
+     "end": 15558,
+     "school": "Illusion",
+     "subschool": "(Glamer)",
+     "level": "Assassin 4, hexblade 4"
+    },
+    {
+     "name": "Unyielding Form Of Inevitable Death",
+     "book": "Complete Mage",
+     "page": 123,
+     "start": 15558,
+     "end": 15583,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 8"
+    },
+    {
+     "name": "Vecna Malevolent Whisper",
+     "book": "Complete Mage",
+     "page": 123,
+     "start": 15583,
+     "end": 15606,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Death,",
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Vigilant Slumber",
+     "book": "Complete Mage",
+     "page": 123,
+     "start": 15606,
+     "end": 15631,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 1, bard 1, sorcerer/"
+    },
+    {
+     "name": "Vital Strike",
+     "book": "Complete Mage",
+     "page": 123,
+     "start": 15631,
+     "end": 15721,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 3"
+    },
+    {
+     "name": "Bigby'S Slapping Hand",
+     "book": "Complete Mage",
+     "page": 145,
+     "start": 18218,
+     "end": 18308,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer/wizard 2"
+    }
+   ]
+  },
+  {
+   "key": "cchampion",
+   "book": "Complete Champion",
+   "citation": "Complete Champion (WotC, 2007), spell descriptions",
+   "coverage": "ok \u2014 52 spells from Complete Champion.md",
+   "spells": [
+    {
+     "name": "Aligned Aura",
+     "book": "Complete Champion",
+     "page": 117,
+     "start": 19263,
+     "end": 19322,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Blackguard 4, cleric 4, paladin 4"
+    },
+    {
+     "name": "Benediction",
+     "book": "Complete Champion",
+     "page": 117,
+     "start": 19322,
+     "end": 19357,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 2, paladin 2"
+    },
+    {
+     "name": "Bewildering Mischance",
+     "book": "Complete Champion",
+     "page": 117,
+     "start": 19357,
+     "end": 19382,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Adept 5, cleric 5, shugenja 5"
+    },
+    {
+     "name": "Bewildering Substitution",
+     "book": "Complete Champion",
+     "page": 117,
+     "start": 19382,
+     "end": 19412,
+     "school": "Illusion",
+     "subschool": "(Phantasm) [Mind-A ffecting]",
+     "level": "Adept 2, cleric 2, shugenja 2"
+    },
+    {
+     "name": "Bewildering Visions",
+     "book": "Complete Champion",
+     "page": 118,
+     "start": 19412,
+     "end": 19431,
+     "school": "Illusion",
+     "subschool": "(Phantasm) [Mind-A ffecting]",
+     "level": "Adept 2, cleric 2, shugenja 2"
+    },
+    {
+     "name": "Bleed",
+     "book": "Complete Champion",
+     "page": 118,
+     "start": 19431,
+     "end": 19507,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Blackguard 4, cleric 5, druid 5"
+    },
+    {
+     "name": "Body Ward",
+     "book": "Complete Champion",
+     "page": 118,
+     "start": 19507,
+     "end": 19540,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 2, druid 2"
+    },
+    {
+     "name": "Bolster Aura",
+     "book": "Complete Champion",
+     "page": 118,
+     "start": 19540,
+     "end": 19576,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 3, paladin 4"
+    },
+    {
+     "name": "Conduit Of Life",
+     "book": "Complete Champion",
+     "page": 119,
+     "start": 19576,
+     "end": 19605,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Cleric 2, paladin 2"
+    },
+    {
+     "name": "Confound",
+     "book": "Complete Champion",
+     "page": 119,
+     "start": 19605,
+     "end": 19640,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-A ffecting]",
+     "level": "Cleric 4"
+    },
+    {
+     "name": "Dampen Magic",
+     "book": "Complete Champion",
+     "page": 119,
+     "start": 19640,
+     "end": 19704,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 4"
+    },
+    {
+     "name": "Darts Of Life",
+     "book": "Complete Champion",
+     "page": 119,
+     "start": 19704,
+     "end": 19740,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Cleric 5"
+    },
+    {
+     "name": "Deific Bastion",
+     "book": "Complete Champion",
+     "page": 120,
+     "start": 19740,
+     "end": 19823,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Blackguard 3, cleric 3, paladin 3"
+    },
+    {
+     "name": "Divine Presence",
+     "book": "Complete Champion",
+     "page": 120,
+     "start": 19823,
+     "end": 19885,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Blackguard 2, cleric 2, druid 2, paladin 2"
+    },
+    {
+     "name": "Divine Retribution",
+     "book": "Complete Champion",
+     "page": 120,
+     "start": 19885,
+     "end": 19975,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 5"
+    },
+    {
+     "name": "Door Of Decay",
+     "book": "Complete Champion",
+     "page": 121,
+     "start": 19996,
+     "end": 20043,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Cleric 5"
+    },
+    {
+     "name": "Execration",
+     "book": "Complete Champion",
+     "page": 121,
+     "start": 20043,
+     "end": 20077,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Blackguard 2, cleric 2"
+    },
+    {
+     "name": "Footsteps Of The Divine",
+     "book": "Complete Champion",
+     "page": 121,
+     "start": 20077,
+     "end": 20154,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Cleric 3"
+    },
+    {
+     "name": "Forest Child",
+     "book": "Complete Champion",
+     "page": 122,
+     "start": 20154,
+     "end": 20217,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 8"
+    },
+    {
+     "name": "Forest Eyes",
+     "book": "Complete Champion",
+     "page": 122,
+     "start": 20217,
+     "end": 20258,
+     "school": "Divination",
+     "subschool": "(Scrying)",
+     "level": "Druid 3"
+    },
+    {
+     "name": "Forest Voice",
+     "book": "Complete Champion",
+     "page": 123,
+     "start": 20258,
+     "end": 20298,
+     "school": "Transmutation",
+     "subschool": "(Language-Dependent)",
+     "level": "Druid 3"
+    },
+    {
+     "name": "Healing Circle",
+     "book": "Complete Champion",
+     "page": 123,
+     "start": 20298,
+     "end": 20336,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Cleric 5"
+    },
+    {
+     "name": "Iconic Manifestation",
+     "book": "Complete Champion",
+     "page": 123,
+     "start": 20336,
+     "end": 20380,
+     "school": "Transmutation",
+     "subschool": "[Chaotic, Evil, Good, or Lawful]",
+     "level": "Druid 4"
+    },
+    {
+     "name": "Impede",
+     "book": "Complete Champion",
+     "page": 123,
+     "start": 20380,
+     "end": 20429,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Cleric 1"
+    },
+    {
+     "name": "Interfaith Blessing",
+     "book": "Complete Champion",
+     "page": 124,
+     "start": 20429,
+     "end": 20487,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-A ffecting]",
+     "level": "Adept 2, cleric 2,"
+    },
+    {
+     "name": "Light Of Courage",
+     "book": "Complete Champion",
+     "page": 124,
+     "start": 20487,
+     "end": 20517,
+     "school": "Abjuration",
+     "subschool": "[Good]",
+     "level": "Cleric 6"
+    },
+    {
+     "name": "Light Of Faith",
+     "book": "Complete Champion",
+     "page": 124,
+     "start": 20517,
+     "end": 20537,
+     "school": "Abjuration",
+     "subschool": "[Good]",
+     "level": "Cleric 2"
+    },
+    {
+     "name": "Light Of Purity",
+     "book": "Complete Champion",
+     "page": 124,
+     "start": 20537,
+     "end": 20582,
+     "school": "Abjuration",
+     "subschool": "[Good]",
+     "level": "Cleric 4"
+    },
+    {
+     "name": "Light Of Wisdom",
+     "book": "Complete Champion",
+     "page": 125,
+     "start": 20582,
+     "end": 20618,
+     "school": "Abjuration",
+     "subschool": "[Good]",
+     "level": "Cleric 3"
+    },
+    {
+     "name": "Lore Of The Gods",
+     "book": "Complete Champion",
+     "page": 125,
+     "start": 20618,
+     "end": 20649,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Cleric 2"
+    },
+    {
+     "name": "Mark Of Sin",
+     "book": "Complete Champion",
+     "page": 125,
+     "start": 20649,
+     "end": 20704,
+     "school": "Enchantment",
+     "subschool": "[Mind-Affecting]",
+     "level": "Cleric 5"
+    },
+    {
+     "name": "Master Cavalier",
+     "book": "Complete Champion",
+     "page": 125,
+     "start": 20704,
+     "end": 20736,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Blackguard 2, cleric 2, paladin 2"
+    },
+    {
+     "name": "Metal Fang",
+     "book": "Complete Champion",
+     "page": 125,
+     "start": 20736,
+     "end": 20778,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 2, ranger 2"
+    },
+    {
+     "name": "Moral Facade",
+     "book": "Complete Champion",
+     "page": 126,
+     "start": 20778,
+     "end": 20802,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 3, cleric 4, paladin 4"
+    },
+    {
+     "name": "Phantom Charge",
+     "book": "Complete Champion",
+     "page": 126,
+     "start": 20802,
+     "end": 20869,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Blackguard 4, paladin 4"
+    },
+    {
+     "name": "Profane Item",
+     "book": "Complete Champion",
+     "page": 127,
+     "start": 20869,
+     "end": 20911,
+     "school": "Transmutation",
+     "subschool": "[Evil]",
+     "level": "Cleric 4, blackguard 4"
+    },
+    {
+     "name": "Ravenous Darkness",
+     "book": "Complete Champion",
+     "page": 127,
+     "start": 20911,
+     "end": 20957,
+     "school": "Necromancy",
+     "subschool": "[Darkness]",
+     "level": "Cleric 7"
+    },
+    {
+     "name": "Rejuvenating Light",
+     "book": "Complete Champion",
+     "page": 127,
+     "start": 20957,
+     "end": 20990,
+     "school": "Conjuration",
+     "subschool": "(Healing) [Light]",
+     "level": "Cleric 7"
+    },
+    {
+     "name": "Sacred Item",
+     "book": "Complete Champion",
+     "page": 127,
+     "start": 20990,
+     "end": 21041,
+     "school": "Transmutation",
+     "subschool": "[Good]",
+     "level": "Cleric 4, paladin 4"
+    },
+    {
+     "name": "Seed Of Life",
+     "book": "Complete Champion",
+     "page": 128,
+     "start": 21041,
+     "end": 21074,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Cleric 4, druid 5, paladin 4"
+    },
+    {
+     "name": "Soul Ward",
+     "book": "Complete Champion",
+     "page": 128,
+     "start": 21074,
+     "end": 21096,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 2, druid 2"
+    },
+    {
+     "name": "Spiritual Advisor",
+     "book": "Complete Champion",
+     "page": 128,
+     "start": 21096,
+     "end": 21124,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Cleric 4"
+    },
+    {
+     "name": "Spiritual Guardian",
+     "book": "Complete Champion",
+     "page": 128,
+     "start": 21124,
+     "end": 21190,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Cleric 6"
+    },
+    {
+     "name": "Subdue Aura",
+     "book": "Complete Champion",
+     "page": 129,
+     "start": 21190,
+     "end": 21238,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Cleric 3, pala-"
+    },
+    {
+     "name": "Substitute Domain",
+     "book": "Complete Champion",
+     "page": 129,
+     "start": 21238,
+     "end": 21299,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Cleric 2"
+    },
+    {
+     "name": "Summon Holy Symbol",
+     "book": "Complete Champion",
+     "page": 129,
+     "start": 21299,
+     "end": 21327,
+     "school": "Conjuration",
+     "subschool": "(Summoning)",
+     "level": "Cleric 0, paladin 1"
+    },
+    {
+     "name": "Surge Of Fortune",
+     "book": "Complete Champion",
+     "page": 129,
+     "start": 21327,
+     "end": 21362,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Cleric 5"
+    },
+    {
+     "name": "Touch Of Restoration",
+     "book": "Complete Champion",
+     "page": 130,
+     "start": 21362,
+     "end": 21392,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Paladin 2"
+    },
+    {
+     "name": "Turn Anathema",
+     "book": "Complete Champion",
+     "page": 130,
+     "start": 21392,
+     "end": 21436,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind Affecting and Chaotic,",
+     "level": "Blackguard 2, cleric 2, paladin 2"
+    },
+    {
+     "name": "War-Mount",
+     "book": "Complete Champion",
+     "page": 130,
+     "start": 21436,
+     "end": 21471,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Blackguard 3, paladin 3"
+    },
+    {
+     "name": "Weight Of Sin",
+     "book": "Complete Champion",
+     "page": 130,
+     "start": 21471,
+     "end": 21561,
+     "school": "Evocation",
+     "subschool": "[Chaotic, Evil, Good, or Lawful]",
+     "level": "Cleric 6"
+    },
+    {
+     "name": "Wooden Blight",
+     "book": "Complete Champion",
+     "page": 131,
+     "start": 21573,
+     "end": 21663,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 6"
+    }
+   ]
+  },
+  {
+   "key": "rotd",
+   "book": "Races of the Dragon",
+   "citation": "Races of the Dragon (WotC, 2006), spell descriptions",
+   "coverage": "ok \u2014 35 spells from Races of the Dragon.md",
+   "spells": [
+    {
+     "name": "Create Trap",
+     "book": "Races of the Dragon",
+     "page": 113,
+     "start": 12773,
+     "end": 12798,
+     "school": "Conjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Essence Of The Dragon",
+     "book": "Races of the Dragon",
+     "page": 113,
+     "start": 12798,
+     "end": 12841,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer 2"
+    },
+    {
+     "name": "Ghostly Reload",
+     "book": "Races of the Dragon",
+     "page": 114,
+     "start": 12841,
+     "end": 12881,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Ghostly Tail",
+     "book": "Races of the Dragon",
+     "page": 114,
+     "start": 12881,
+     "end": 12913,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 1"
+    },
+    {
+     "name": "Gnome Blight",
+     "book": "Races of the Dragon",
+     "page": 114,
+     "start": 12913,
+     "end": 12950,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Hoard Life",
+     "book": "Races of the Dragon",
+     "page": 114,
+     "start": 12950,
+     "end": 12999,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Sorcerer 4"
+    },
+    {
+     "name": "Instant Diversion",
+     "book": "Races of the Dragon",
+     "page": 114,
+     "start": 12999,
+     "end": 13039,
+     "school": "Illusion",
+     "subschool": "(Figment)",
+     "level": "Bard 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Local Tremor",
+     "book": "Races of the Dragon",
+     "page": 115,
+     "start": 13039,
+     "end": 13081,
+     "school": "Evocation",
+     "subschool": "[Earth]",
+     "level": "Cleric 2, druid 2, sorcerer/"
+    },
+    {
+     "name": "Manifest Dragon Heritage",
+     "book": "Races of the Dragon",
+     "page": 115,
+     "start": 13081,
+     "end": 13113,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer 5"
+    },
+    {
+     "name": "Manifest Dragon Heritage, Greater",
+     "book": "Races of the Dragon",
+     "page": 115,
+     "start": 13113,
+     "end": 13120,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer 8"
+    },
+    {
+     "name": "Mighty Wallop",
+     "book": "Races of the Dragon",
+     "page": 115,
+     "start": 13120,
+     "end": 13179,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Mighty Wallop, Greater",
+     "book": "Races of the Dragon",
+     "page": 116,
+     "start": 13179,
+     "end": 13199,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Peaceful Serenity Of Io",
+     "book": "Races of the Dragon",
+     "page": 116,
+     "start": 13199,
+     "end": 13227,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 2, cleric 2, druid 2"
+    },
+    {
+     "name": "Power Word Deafen",
+     "book": "Races of the Dragon",
+     "page": 116,
+     "start": 13227,
+     "end": 13258,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Power Word Disable",
+     "book": "Races of the Dragon",
+     "page": 116,
+     "start": 13258,
+     "end": 13278,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 5"
+    },
+    {
+     "name": "Power Word Distract",
+     "book": "Races of the Dragon",
+     "page": 116,
+     "start": 13278,
+     "end": 13302,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Power Word Fatigue",
+     "book": "Races of the Dragon",
+     "page": 116,
+     "start": 13302,
+     "end": 13346,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Power Word Maladroit",
+     "book": "Races of the Dragon",
+     "page": 117,
+     "start": 13346,
+     "end": 13389,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Power Word Nauseate",
+     "book": "Races of the Dragon",
+     "page": 117,
+     "start": 13389,
+     "end": 13421,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Power Word Pain",
+     "book": "Races of the Dragon",
+     "page": 117,
+     "start": 13421,
+     "end": 13453,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Power Word Petrify",
+     "book": "Races of the Dragon",
+     "page": 117,
+     "start": 13453,
+     "end": 13474,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 8"
+    },
+    {
+     "name": "Power Word Sicken",
+     "book": "Races of the Dragon",
+     "page": 117,
+     "start": 13474,
+     "end": 13512,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Power Word Weaken",
+     "book": "Races of the Dragon",
+     "page": 118,
+     "start": 13512,
+     "end": 13554,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-Affecting]",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Sense Of The Dragon",
+     "book": "Races of the Dragon",
+     "page": 118,
+     "start": 13554,
+     "end": 13591,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Steal Size",
+     "book": "Races of the Dragon",
+     "page": 118,
+     "start": 13591,
+     "end": 13629,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Sticky Floor",
+     "book": "Races of the Dragon",
+     "page": 118,
+     "start": 13629,
+     "end": 13680,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Summon Aspect Of Bahamut",
+     "book": "Races of the Dragon",
+     "page": 119,
+     "start": 13680,
+     "end": 13712,
+     "school": "Conjuration",
+     "subschool": "(Summoning, Good)",
+     "level": "Cleric 7, sorcerer 7/wizard 7"
+    },
+    {
+     "name": "Tail Slap",
+     "book": "Races of the Dragon",
+     "page": 119,
+     "start": 13712,
+     "end": 13756,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 2"
+    },
+    {
+     "name": "Tail Sweep",
+     "book": "Races of the Dragon",
+     "page": 119,
+     "start": 13756,
+     "end": 13782,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 4"
+    },
+    {
+     "name": "Unfettered Grasp",
+     "book": "Races of the Dragon",
+     "page": 119,
+     "start": 13782,
+     "end": 13810,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Wall Of Scales",
+     "book": "Races of the Dragon",
+     "page": 119,
+     "start": 13810,
+     "end": 13870,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer 4"
+    },
+    {
+     "name": "Wings Of Bounding",
+     "book": "Races of the Dragon",
+     "page": 120,
+     "start": 13870,
+     "end": 13897,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 1"
+    },
+    {
+     "name": "Wings Of Cover",
+     "book": "Races of the Dragon",
+     "page": 120,
+     "start": 13897,
+     "end": 13944,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 2"
+    },
+    {
+     "name": "Wings Of Flurry",
+     "book": "Races of the Dragon",
+     "page": 120,
+     "start": 13944,
+     "end": 13970,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 4"
+    },
+    {
+     "name": "Wings Of Swift Flying",
+     "book": "Races of the Dragon",
+     "page": 120,
+     "start": 13970,
+     "end": 14060,
+     "school": "Evocation",
+     "subschool": "[Force]",
+     "level": "Sorcerer 1"
     }
    ]
   }

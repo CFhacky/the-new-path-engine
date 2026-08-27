@@ -77,13 +77,18 @@ LEVEL = re.compile(r"^Level\s*:\s*(.+)$", re.IGNORECASE)
 # Title Case, handled separately.
 CAPS_NAME = re.compile(r"^[A-Z][A-Z0-9 ,'’\-/]{1,52}$")
 BRACKET_DESC = re.compile(r"^\[[^\]]*\]$")
-# A running page header the OCR drops above a spell name, wrapped across three
-# lines ("CHAPTER 1" / "SPELL" / "DESCRIPTIONS"). Each matches CAPS_NAME, so the
-# name-gather must stop at it. Matched as standalone header tokens so real names
-# that merely start with the word ("SPELL TURNING", "TABLE") are NOT rejected.
+# A running page header the OCR drops above a spell name. The Compendium wraps
+# it across three lines ("CHAPTER 1" / "SPELL" / "DESCRIPTIONS"); the splatbooks
+# use their own chapter titles ("SPELLS AND INVOCATIONS", "NEW SPELLS"). Each
+# fragment matches CAPS_NAME, so the name-gather must stop at it. The header
+# words SPELLS / INVOCATIONS / DESCRIPTIONS (plural, or the "-tions" nouns) and
+# a leading CHAPTER are matched as whole words — none appears in a real spell
+# name — while the singular "SPELL" is rejected only as a whole standalone line,
+# so real names like "Spell Matrix" and "Spell Turning" survive.
 HEADER_REJECT = re.compile(
-    r"^(CHAPTER\b|SPELL$|DESCRIPTIONS$|SPELL DESCRIPTIONS$|APPENDIX\b|"
-    r"CONTENTS$|INDEX$|TABLE OF\b|INTRODUCTION$|GLOSSARY$)", re.IGNORECASE)
+    r"^(CHAPTER\b|SPELL$|APPENDIX\b|CONTENTS$|INDEX$|TABLE OF\b|"
+    r"INTRODUCTION$|GLOSSARY$)|\b(SPELLS|INVOCATIONS|DESCRIPTIONS)\b",
+    re.IGNORECASE)
 
 
 @dataclass
@@ -260,6 +265,24 @@ SOURCES: List[Source] = [
     Source(key="compendium", book="Spell Compendium",
            path=Path("D&D 3.5e/Magic and Items/Spell Compendium (Premium).md"),
            citation="Spell Compendium (WotC, 2005), spell descriptions",
+           detector="compendium"),
+    # Post-2005 splatbooks: their spells POSTDATE the Spell Compendium and so
+    # are genuinely new (Complete Mage overlaps the Compendium by 1 of 130).
+    # Same school-anchored grammar; validated clean and clustered in each book's
+    # spell chapter. Pre-2005 books are deliberately NOT added — their spells
+    # were folded into the Compendium already. Books whose spell blocks use a
+    # different format (PHB2, Complete Scoundrel yield 0 here) are left out.
+    Source(key="cmage", book="Complete Mage",
+           path=Path("D&D 3.5e/Player Options/Complete Mage.md"),
+           citation="Complete Mage (WotC, 2006), spell descriptions",
+           detector="compendium"),
+    Source(key="cchampion", book="Complete Champion",
+           path=Path("D&D 3.5e/Player Options/Complete Champion.md"),
+           citation="Complete Champion (WotC, 2007), spell descriptions",
+           detector="compendium"),
+    Source(key="rotd", book="Races of the Dragon",
+           path=Path("D&D 3.5e/Player Options/Races of the Dragon.md"),
+           citation="Races of the Dragon (WotC, 2006), spell descriptions",
            detector="compendium"),
 ]
 

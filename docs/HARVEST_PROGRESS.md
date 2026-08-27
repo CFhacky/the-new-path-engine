@@ -30,7 +30,7 @@ extraction and are the court of appeal for any garbled number.
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
-| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium extraction (982) | 1587 spells / 2 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
+| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35) | 1804 spells / 5 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -73,23 +73,19 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    intended next Sections; their extractions exist in the corpus):
    Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-3. **Supplemental spells beyond the Compendium** → add sources to
-   `spell_harvest.py`. The SRD core and the Spell Compendium are indexed; the
-   POST-2005 splatbooks (PHB2, Complete Mage/Champion/Scoundrel, Races of the
-   Dragon, under `_text\D&D 3.5e\Player Options\`) carry genuinely new spells
-   the 2005 Compendium predates. Pre-2005 books (Complete Arcane/Divine, etc.)
-   mostly duplicate the Compendium — skip them.
-   **Do this carefully, per book — it is NOT a clean drop-in.** Validated
-   findings (2026-08-27): `detect_compendium` fires on the splatbook grammar,
-   BUT (a) each book has its OWN running page header that pollutes names — e.g.
-   Complete Mage yields "Spells And Invocations Arcane Fusion"; `HEADER_REJECT`
-   only knows the Compendium's "SPELL DESCRIPTIONS", so each book's header must
-   be added; and (b) counts look over-detected (Complete Mage returned 130,
-   well above its ~50 real spells — likely the by-class spell-LIST tables also
-   matching school+Level). So: add one book, run, eyeball the names AND the
-   count against the book's real spell list, add its running header to
-   `HEADER_REJECT`, and add a spell-list-section mask if needed, before moving
-   on. Held back this pass to protect the clean SRD+Compendium index.
+3. **More supplemental spells** → add sources to `spell_harvest.py`. The core
+   splatbooks are now DONE (Complete Mage, Complete Champion, Races of the
+   Dragon — all validated clean and clustered in their spell chapters). What
+   remains is lower-value / needs-work:
+   - **PHB2** and **Complete Scoundrel** yield 0 with `detect_compendium` — a
+     different spell-block format (no ALL-CAPS name / school / `Level:` triple).
+     Would need a format-specific detector.
+   - Other post-2005 books (Complete Arcane is PRE-2005 and already in the
+     Compendium; check publication date before adding — pre-2005 = skip).
+   - When adding any book: run it, confirm 0 header-polluted names and that the
+     hits cluster in the spell chapter (not scattered), then keep it.
+     `HEADER_REJECT` now catches the generic SPELLS / INVOCATIONS / DESCRIPTIONS
+     / CHAPTER running-header words, so most books need no per-book header work.
 
 ### How to add a source (the pattern, do not deviate)
 
@@ -155,6 +151,15 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added three post-2005 splatbooks to `spell_harvest.py`
+  (Complete Mage 130, Complete Champion 52, Races of the Dragon 35 = 217 new
+  spells; index now 1804). These spells postdate the 2005 Spell Compendium and
+  are genuinely new — Complete Mage overlaps the Compendium by only 1 of 130.
+  Generalised `HEADER_REJECT` to strip any book's spell-chapter running header
+  (SPELLS / INVOCATIONS / DESCRIPTIONS / CHAPTER as whole words) while keeping
+  real "Spell ..."-named spells; all three books validated 0-junk and clustered
+  in their spell chapters. PHB2 and Complete Scoundrel use a different block
+  format (0 hits) and were left out.
 - **2026-08-27** — Extended `term_harvest.py` with two GURPS 4e **Powers**
   Sections (New Enhancements p.107, New Limitations p.110): 11 + 13 = 24 new
   modifiers (Affects Others, Force Field, Reflexive, Insubstantial Only, ...),

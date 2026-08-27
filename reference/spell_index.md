@@ -1612,3 +1612,244 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 | Zealot Pact | Evocation | — | Cleric 6, Competition 6, Pact 6 | 245 |
 | Zone Of Respite | Abjuration | — | Cleric 5, sorcerer/wizard 5 | 245 |
 | Zone Of Revelation | Divination | — | Cleric 5 | 245 |
+
+## Complete Mage — 130 spells
+
+*Source: Complete Mage (WotC, 2006), spell descriptions.*  
+*Harvest: ok — 130 spells from Complete Mage.md.*
+
+| Spell | School | Subschool / Descriptor | Level | Page |
+|---|---|---|---|---|
+| Adamantine Wings | Transmutation | — | Sorcerer/wizard 7, wu jen 7 | 96 |
+| Allied Footsteps | Divination | — | Sorcerer/wizard 2 | 96 |
+| Animate Weapon | Transmutation | — | Assassin 2, hexblade 2, | 96 |
+| Arcane Fusion | Universal | — | Sorcerer 5 | 97 |
+| Arcane Fusion, Greater | Universal | — | Sorcerer 8 | 97 |
+| Arcane Turmoil | Abjuration | — | Hexblade 2, sorcerer/wizard 2 | 97 |
+| Aspect Of The Icy Hunter | Transmutation | (Polymorph) | Sorcerer/wizard 4 | 97 |
+| Attentive Alarm | Abjuration | — | Sorcerer/wizard 2 | 97 |
+| Battlecry | Evocation | [Mind-Affecting, Sonic] | Bard 4 | 97 |
+| Blackrot | Necromancy | — | Druid 2, wu jen 2 (wood) | 97 |
+| Bloodletting | Necromancy | — | Assassin 1, hexblade 1 | 98 |
+| Boiling Blood | Transmutation | [Fire] | Sorcerer/wizard 2 | 98 |
+| Bothersome Babble | Enchantment | (Compulsion) [Mind-Affecting] | Bard 2, hexblade 2, sorcerer/ | 98 |
+| Cacophonous Alarm | Abjuration | — | Bard 2 | 99 |
+| Caterwaul | Enchantment | (Compulsion) [Mind- | Bard 2 | 99 |
+| Catsfeet | Transmutation | — | Assassin 1, bard 1, hexblade 1 | 99 |
+| Caustic Mire | Conjuration | (Creation) | Sorcerer/wizard 4 | 99 |
+| Caustic Smoke | Conjuration | (Creation) | Sorcerer/wizard 3 | 99 |
+| Channeled Lifetheft | Necromancy | — | Sorcerer/wizard 5 | 99 |
+| Channeled Sound Blast | Evocation | (Sonic) | Bard 5, sorcerer/wizard 5 | 100 |
+| Choking Cobwebs | Conjuration | (Creation) | Sorcerer/wizard 7 | 100 |
+| Climbing Tree | Conjuration | (Creation) | Druid 1, ranger 1, wu jen 1 | 100 |
+| Coat Of Arms | Evocation | [Force] | Sorcerer/wizard 5 | 100 |
+| Combined Talent | Divination | — | Bard 1 | 101 |
+| Critical Strike | Divination | — | Assassin 1 | 101 |
+| Cryptwarden'S Grasp | Necromancy | [Evil] | Sorcerer/wizard 5 | 101 |
+| Crystalline Memories | Transmutation | (Mind-Affecting) | Sorcerer/wizard 2 | 101 |
+| Dawn Burst | Evocation | [Light] | Sorcerer/wizard 1 | 102 |
+| Deadly Lahar | Conjuration | [Earth, Fire] | Druid 8, sorcerer/wizard 8, wu | 102 |
+| Deadly Sunstroke | Evocation | [Light] | Sorcerer/wizard 9, wu jen 9 | 102 |
+| Deafening Blast | Evocation | [Sonic] | Bard 3 | 102 |
+| Death'S Call | Necromancy | [Sonic] | Hexblade 1, sorcerer/wizard 1 | 102 |
+| Deathsight | Divination | — | Assassin 4 | 103 |
+| Deceptive Facade | Illusion | (Glamer) | Bard 2, sorcerer/wizard 3 | 103 |
+| Dimension Jumper | Conjuration | (Teleportation) | Bard 5, sorcerer/wizard 5 | 103 |
+| Dimension Jumper, Greater | Conjuration | (Teleportation) | Sorcerer/Wizard 9 | 103 |
+| Discordant Malediction | Transmutation | [Sonic] | Bard 5 | 103 |
+| Doublespeak | Illusion | (Glamer) | Bard 2 | 103 |
+| Dreaded Form Of The Eye Tyrant | Transmutation | (Polymorph) | Sorcerer/wizard 8 | 103 |
+| Elemental Eye | Divination | — | Wu jen 3 | 104 |
+| Endless Slumber | Enchantment | (Compulsion) [Mind-Affecting] | Bard 5, sorcerer/wizard 6 | 104 |
+| Enduring Scrutiny | Divination | — | Assassin 3, bard 3, paladin 3, | 104 |
+| Energy Absorption | Abjuration | — | Sorcerer/wizard 7, wu jen 7 | 104 |
+| Escalating Enfeeblement | Necromancy | — | Sorcerer/wizard 2 | 104 |
+| False Lie | Illusion | (Glamer) | Bard 2 | 105 |
+| Familiar Refuge | Conjuration | (Teleportation) | Sorcerer/wizard 6 | 105 |
+| Fever Dream | Illusion | (Phantasm) [Mind-Affecting] | Bard 5, sorcerer/wizard 5 | 105 |
+| Finger Of Agony | Necromancy | — | Hexblade 4, sorcerer/wizard 4 | 105 |
+| Fire And Brimstone | Conjuration | (Creation) [Fire] | Sorcerer/wizard 5, wu jen 5 | 105 |
+| Flaying Tendrils | Transmutation | [Evil] | Sorcerer/wizard 5 | 105 |
+| Form Of The Threefold Beast | Transmutation | (Polymorph) | Sorcerer/wizard 5 | 106 |
+| Genius Loci | Conjuration | (Creation) [see text] | Sorcerer/wizard 9 | 106 |
+| Ghost Lantern | Evocation | [Light] | Sorcerer/wizard 3 | 107 |
+| Great Worm Of The Earth | Conjuration | (Creation) [Earth] | Druid 7, wu jen 7 (earth) | 107 |
+| Guided Path | Divination | — | Bard 1 | 107 |
+| Heart Of Air | Transmutation | [Air] | Druid 2, sorcerer/wizard 2, wu | 107 |
+| Heart Of Earth | Transmutation | [Earth] | Druid 4, sorcerer/wizard 4, wu | 107 |
+| Heart Of Fire | Transmutation | [Fire] | Druid 5, | 108 |
+| Heart Of Water | Transmutation | [Water] | Druid 3, sorcerer/wizard 3, wu | 108 |
+| Hood Of The Cobra | Illusion | (Phantasm) [Fear, | Hexblade 3, sorcerer/ | 108 |
+| Horrid Sickness | Necromancy | — | Hexblade 4, sorcerer/wizard 4 | 109 |
+| Immediate Assistance | Enchantment | (Compulsion) | Bard 1 | 109 |
+| Incendiary Slime | Conjuration | (Creation) | Sorcerer/wizard 2 | 109 |
+| Incendiary Surge | Evocation | [Fire] | Sorcerer/wizard 4 | 109 |
+| Interminable Echo | Illusion | (Phantasm) [Mind-Affecting, | Bard 4 | 109 |
+| Jet Of Steam | Evocation | [Water] | Sorcerer/wizard 1, wu jen 1 | 109 |
+| Karmic Aura | Abjuration | — | Hexblade 1, sorcerer/wizard 1 | 109 |
+| Karmick Backlash | Abjuration | — | Hexblade 2, sorcerer/wizard 3 | 110 |
+| Karmic Retribution | Abjuration | — | Hexblade 4, sorcerer/wizard 6 | 110 |
+| Lash Of Force | Evocation | [Force] | Sorcerer/wizard 9 | 110 |
+| Lighting Leap | Transmutation | [Electricity] | Sorcerer/wizard 5 | 110 |
+| Lingering Chorus | Illusion | (Figment) | Bard 4 | 111 |
+| Lingering Flames | Evocation | [Fire] | Sorcerer/wizard 6, wu jen 6 | 111 |
+| Luminous Swarm | Evocation | [Force] | Sorcerer/wizard 2 | 111 |
+| Magic Savant | Divination | — | Bard 2 | 111 |
+| Mask Of The Ideal | Illusion | (Glamer) | Bard 2, sorcerer/wizard 3 | 111 |
+| Melf'S Slumber Arrows | Enchantment | (Compulsion) [Mind-Affecting] | Bard 4, sorcerer/wizard 4 | 111 |
+| Mordenkainen'S Trusted Bloodhound | Conjuration | (Creation) | Assassin 4, sorcerer/wizard 6 | 112 |
+| Mysterious Redirection | Abjuration | — | Sorcerer/wizard 8, wu jen 8 | 112 |
+| Near Horizon | Divination | — | Assassin 2, ranger 2 | 112 |
+| Necrotic Curse | Necromancy | [Evil] | Cleric 7, sorcerer/wizard 7 | 112 |
+| Nightmare Terrain | Illusion | (Shadow) | Assassin 3, bard 3, hexblade 3, | 112 |
+| Otiluke'S Impressing Field | Abjuration | — | Sorcerer/wizard 4 | 113 |
+| Otto'S Imperative Ambulation | Enchantment | (Compulsion) [Mind-Affecting] | Bard 3 | 113 |
+| Painful Echoes | Evocation | [Sonic] | Bard 2 | 113 |
+| Pall Of Twilight | Illusion | (Pattern) [Darkness, | Assassin 3, sorcerer/wizard 3 | 114 |
+| Phantasmal Strangler | Illusion | (Phantasm) [Fear, | Hexblade 3, sorcerer/wizard 3 | 114 |
+| Prickling Torment | Necromancy | — | Druid 3, sorcerer/wizard 3 | 114 |
+| Prismatic Aura | Abjuration | — | Sorcerer/wizard 6 | 114 |
+| Prismatic Bow | Evocation | — | Sorcerer/wizard 8 | 114 |
+| Prismatic Deluge | Evocation | — | Sorcerer/wizard 9 | 115 |
+| Rain Of Spines | Conjuration | (Creation) [Earth] | Wu jen 4 (metal) | 115 |
+| Rary'S Arcane Conversion | Universal | — | Wizard 6 | 115 |
+| Reaving Aura | Necromancy | [Evil] | Assassin 1, cleric 1, | 115 |
+| Rebirth Of Iron | Transmutation | — | Sorcerer/wizard 4, wu jen 3 | 115 |
+| Repelling Shield | Abjuration | [Force] | Sorcerer/wizard 3 | 116 |
+| Resinous Tar | Conjuration | (Creation) | Bard 1, sorcerer/wizard 1 | 116 |
+| Resonating Agony | Evocation | [Sonic] | Bard 6 | 116 |
+| Resounding Thunder | Evocation | [Sonic] | Bard 4, sorcerer/wizard 5 | 116 |
+| Retributive Enervation | Necromancy | — | Sorcerer/wizard 7 | 117 |
+| Retributive Image | Illusion | (Pattern) [Mind-Affecting] | Sorcerer/wizard 5 | 117 |
+| Rusted Blade | Transmutation | — | Assassin 3, druid 3, sorcerer/ | 117 |
+| Seed Of Undeath | Necromancy | — | Cleric 4, sorcerer/wizard 4 | 117 |
+| Seed Of Undeath, Greater | Necromancy | — | Cleric 7, sorcerer/wizard 7 | 117 |
+| Shape Of The Hellspawned Stalker | Transmutation | (Polymorph) | Sorcerer/wizard 3 | 118 |
+| Smoky Confinement | Transmutation | — | Sorcerer/wizard 6 | 118 |
+| Spellcaster'S Bane | Divination | — | Sorcerer/wizard 3 | 118 |
+| Steal Summoning | Conjuration | (Summoning) | Sorcerer/wizard 6 | 119 |
+| Storm Of Fire And Ice | Evocation | [Cold, Fire] | Druid 6, sorcerer/wizard 6, wu | 119 |
+| Storm Of Needles | Conjuration | (Creation) | Wu jen 4 (metal) | 119 |
+| Summon Component | Conjuration | (Summoning) | Bard 1, sorcerer/wizard 1 | 119 |
+| Summon Weapon | Conjuration | (Summoning) | Assassin 2, bard 2 | 119 |
+| Tactical Teleportation | Conjuration | (Teleportation) | Sorcerer/wizard 6 | 119 |
+| Torrent Of Tears | Enchantment | (Compulsion) [Mind-Affecting] | Bard 2, sorcerer/wizard 2, wu | 120 |
+| Touch Of The Graveborn | Necromancy | — | Sorcerer/wizard 8 | 120 |
+| Touch Of Vecna | Necromancy | [Evil, Fear] | Sorcerer/wizard 5 | 121 |
+| Touch Of Years | Necromancy | — | Sorcerer/wizard 4 | 121 |
+| Towering Thunderhead | Conjuration | (Creation) [Air] | Druid 9, sorcerer/wizard 9 | 121 |
+| Toxic Tongue | Conjuration | (Creation) | Assassin 3 | 121 |
+| Transcend Mortality | Transmutation | — | Wu jen 9 | 121 |
+| True Casting | Divination | — | Sorcerer/wizard 1 | 122 |
+| Unicorn Blood | Transmutation | (Good) | Druid 5, sorcerer/wizard 5 | 122 |
+| Unicorn Heart | Transmutation | (Good) | Druid 7, sorcerer/wizard 7 | 122 |
+| Unicorn Horn | Transmutation | (Good) | Druid 3, sorcerer/wizard 3 | 122 |
+| Unseen Strike | Illusion | (Glamer) | Assassin 4, hexblade 4 | 123 |
+| Unyielding Form Of Inevitable Death | Transmutation | (Polymorph) | Sorcerer/wizard 8 | 123 |
+| Vecna Malevolent Whisper | Enchantment | (Compulsion) [Death, | Sorcerer/wizard 4 | 123 |
+| Vigilant Slumber | Divination | — | Assassin 1, bard 1, sorcerer/ | 123 |
+| Vital Strike | Divination | — | Assassin 3 | 123 |
+| Bigby'S Slapping Hand | Evocation | [Force] | Sorcerer/wizard 2 | 145 |
+
+## Complete Champion — 52 spells
+
+*Source: Complete Champion (WotC, 2007), spell descriptions.*  
+*Harvest: ok — 52 spells from Complete Champion.md.*
+
+| Spell | School | Subschool / Descriptor | Level | Page |
+|---|---|---|---|---|
+| Aligned Aura | Abjuration | — | Blackguard 4, cleric 4, paladin 4 | 117 |
+| Benediction | Abjuration | — | Cleric 2, paladin 2 | 117 |
+| Bewildering Mischance | Enchantment | (Compulsion) [Mind-Affecting] | Adept 5, cleric 5, shugenja 5 | 117 |
+| Bewildering Substitution | Illusion | (Phantasm) [Mind-A ffecting] | Adept 2, cleric 2, shugenja 2 | 117 |
+| Bewildering Visions | Illusion | (Phantasm) [Mind-A ffecting] | Adept 2, cleric 2, shugenja 2 | 118 |
+| Bleed | Necromancy | — | Blackguard 4, cleric 5, druid 5 | 118 |
+| Body Ward | Abjuration | — | Cleric 2, druid 2 | 118 |
+| Bolster Aura | Abjuration | — | Cleric 3, paladin 4 | 118 |
+| Conduit Of Life | Conjuration | (Healing) | Cleric 2, paladin 2 | 119 |
+| Confound | Enchantment | (Compulsion) [Mind-A ffecting] | Cleric 4 | 119 |
+| Dampen Magic | Abjuration | — | Cleric 4 | 119 |
+| Darts Of Life | Conjuration | (Healing) | Cleric 5 | 119 |
+| Deific Bastion | Transmutation | — | Blackguard 3, cleric 3, paladin 3 | 120 |
+| Divine Presence | Transmutation | — | Blackguard 2, cleric 2, druid 2, pala... | 120 |
+| Divine Retribution | Abjuration | — | Cleric 5 | 120 |
+| Door Of Decay | Conjuration | (Teleportation) | Cleric 5 | 121 |
+| Execration | Necromancy | — | Blackguard 2, cleric 2 | 121 |
+| Footsteps Of The Divine | Transmutation | — | Cleric 3 | 121 |
+| Forest Child | Transmutation | — | Druid 8 | 122 |
+| Forest Eyes | Divination | (Scrying) | Druid 3 | 122 |
+| Forest Voice | Transmutation | (Language-Dependent) | Druid 3 | 123 |
+| Healing Circle | Conjuration | (Healing) | Cleric 5 | 123 |
+| Iconic Manifestation | Transmutation | [Chaotic, Evil, Good, or Lawful] | Druid 4 | 123 |
+| Impede | Enchantment | (Compulsion) [Mind-Affecting] | Cleric 1 | 123 |
+| Interfaith Blessing | Enchantment | (Compulsion) [Mind-A ffecting] | Adept 2, cleric 2, | 124 |
+| Light Of Courage | Abjuration | [Good] | Cleric 6 | 124 |
+| Light Of Faith | Abjuration | [Good] | Cleric 2 | 124 |
+| Light Of Purity | Abjuration | [Good] | Cleric 4 | 124 |
+| Light Of Wisdom | Abjuration | [Good] | Cleric 3 | 125 |
+| Lore Of The Gods | Divination | — | Cleric 2 | 125 |
+| Mark Of Sin | Enchantment | [Mind-Affecting] | Cleric 5 | 125 |
+| Master Cavalier | Transmutation | — | Blackguard 2, cleric 2, paladin 2 | 125 |
+| Metal Fang | Transmutation | — | Druid 2, ranger 2 | 125 |
+| Moral Facade | Abjuration | — | Bard 3, cleric 4, paladin 4 | 126 |
+| Phantom Charge | Conjuration | (Teleportation) | Blackguard 4, paladin 4 | 126 |
+| Profane Item | Transmutation | [Evil] | Cleric 4, blackguard 4 | 127 |
+| Ravenous Darkness | Necromancy | [Darkness] | Cleric 7 | 127 |
+| Rejuvenating Light | Conjuration | (Healing) [Light] | Cleric 7 | 127 |
+| Sacred Item | Transmutation | [Good] | Cleric 4, paladin 4 | 127 |
+| Seed Of Life | Conjuration | (Healing) | Cleric 4, druid 5, paladin 4 | 128 |
+| Soul Ward | Abjuration | — | Cleric 2, druid 2 | 128 |
+| Spiritual Advisor | Divination | — | Cleric 4 | 128 |
+| Spiritual Guardian | Evocation | [Force] | Cleric 6 | 128 |
+| Subdue Aura | Abjuration | — | Cleric 3, pala- | 129 |
+| Substitute Domain | Transmutation | — | Cleric 2 | 129 |
+| Summon Holy Symbol | Conjuration | (Summoning) | Cleric 0, paladin 1 | 129 |
+| Surge Of Fortune | Transmutation | — | Cleric 5 | 129 |
+| Touch Of Restoration | Conjuration | (Healing) | Paladin 2 | 130 |
+| Turn Anathema | Enchantment | (Compulsion) [Mind Affecting and Chaotic, | Blackguard 2, cleric 2, paladin 2 | 130 |
+| War-Mount | Transmutation | — | Blackguard 3, paladin 3 | 130 |
+| Weight Of Sin | Evocation | [Chaotic, Evil, Good, or Lawful] | Cleric 6 | 130 |
+| Wooden Blight | Transmutation | — | Druid 6 | 131 |
+
+## Races of the Dragon — 35 spells
+
+*Source: Races of the Dragon (WotC, 2006), spell descriptions.*  
+*Harvest: ok — 35 spells from Races of the Dragon.md.*
+
+| Spell | School | Subschool / Descriptor | Level | Page |
+|---|---|---|---|---|
+| Create Trap | Conjuration | — | Sorcerer/wizard 1 | 113 |
+| Essence Of The Dragon | Transmutation | — | Sorcerer 2 | 113 |
+| Ghostly Reload | Transmutation | — | Sorcerer/wizard 1 | 114 |
+| Ghostly Tail | Evocation | [Force] | Sorcerer 1 | 114 |
+| Gnome Blight | Conjuration | (Creation) | Sorcerer/wizard 2 | 114 |
+| Hoard Life | Conjuration | (Healing) | Sorcerer 4 | 114 |
+| Instant Diversion | Illusion | (Figment) | Bard 1, sorcerer/wizard 1 | 114 |
+| Local Tremor | Evocation | [Earth] | Cleric 2, druid 2, sorcerer/ | 115 |
+| Manifest Dragon Heritage | Conjuration | (Creation) | Sorcerer 5 | 115 |
+| Manifest Dragon Heritage, Greater | Conjuration | (Creation) | Sorcerer 8 | 115 |
+| Mighty Wallop | Transmutation | — | Sorcerer/wizard 1 | 115 |
+| Mighty Wallop, Greater | Transmutation | — | Sorcerer/wizard 3 | 116 |
+| Peaceful Serenity Of Io | Abjuration | — | Bard 2, cleric 2, druid 2 | 116 |
+| Power Word Deafen | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 3 | 116 |
+| Power Word Disable | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 5 | 116 |
+| Power Word Distract | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 4 | 116 |
+| Power Word Fatigue | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 1 | 116 |
+| Power Word Maladroit | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 3 | 117 |
+| Power Word Nauseate | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 6 | 117 |
+| Power Word Pain | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 1 | 117 |
+| Power Word Petrify | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 8 | 117 |
+| Power Word Sicken | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 2 | 117 |
+| Power Word Weaken | Enchantment | (Compulsion) [Mind-Affecting] | Sorcerer/wizard 3 | 118 |
+| Sense Of The Dragon | Transmutation | — | Sorcerer/wizard 3 | 118 |
+| Steal Size | Transmutation | — | Sorcerer/wizard 2 | 118 |
+| Sticky Floor | Conjuration | (Creation) | Sorcerer/wizard 1 | 118 |
+| Summon Aspect Of Bahamut | Conjuration | (Summoning, Good) | Cleric 7, sorcerer 7/wizard 7 | 119 |
+| Tail Slap | Evocation | [Force] | Sorcerer 2 | 119 |
+| Tail Sweep | Evocation | [Force] | Sorcerer 4 | 119 |
+| Unfettered Grasp | Enchantment | (Compulsion) [Mind- | Sorcerer/wizard 2 | 119 |
+| Wall Of Scales | Conjuration | (Creation) | Sorcerer 4 | 119 |
+| Wings Of Bounding | Evocation | [Force] | Sorcerer 1 | 120 |
+| Wings Of Cover | Evocation | [Force] | Sorcerer 2 | 120 |
+| Wings Of Flurry | Evocation | [Force] | Sorcerer 4 | 120 |
+| Wings Of Swift Flying | Evocation | [Force] | Sorcerer 1 | 120 |
