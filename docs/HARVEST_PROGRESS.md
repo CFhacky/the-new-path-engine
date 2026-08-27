@@ -75,10 +75,21 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
 3. **Supplemental spells beyond the Compendium** → add sources to
    `spell_harvest.py`. The SRD core and the Spell Compendium are indexed; the
-   Complete series and other splatbook spell lists (under `_text\D&D
-   3.5e\Player Options\`) are not. Their header grammar matches the
-   `detect_compendium` school-anchored detector, so most can be added as new
-   `Source(detector="compendium")` entries with per-book paths.
+   POST-2005 splatbooks (PHB2, Complete Mage/Champion/Scoundrel, Races of the
+   Dragon, under `_text\D&D 3.5e\Player Options\`) carry genuinely new spells
+   the 2005 Compendium predates. Pre-2005 books (Complete Arcane/Divine, etc.)
+   mostly duplicate the Compendium — skip them.
+   **Do this carefully, per book — it is NOT a clean drop-in.** Validated
+   findings (2026-08-27): `detect_compendium` fires on the splatbook grammar,
+   BUT (a) each book has its OWN running page header that pollutes names — e.g.
+   Complete Mage yields "Spells And Invocations Arcane Fusion"; `HEADER_REJECT`
+   only knows the Compendium's "SPELL DESCRIPTIONS", so each book's header must
+   be added; and (b) counts look over-detected (Complete Mage returned 130,
+   well above its ~50 real spells — likely the by-class spell-LIST tables also
+   matching school+Level). So: add one book, run, eyeball the names AND the
+   count against the book's real spell list, add its running header to
+   `HEADER_REJECT`, and add a spell-list-section mask if needed, before moving
+   on. Held back this pass to protect the clean SRD+Compendium index.
 
 ### How to add a source (the pattern, do not deviate)
 
