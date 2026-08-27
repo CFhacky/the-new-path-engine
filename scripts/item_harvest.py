@@ -303,8 +303,102 @@ def detect_mic(lines: List[str], pages: List[int], book: str) -> List[Item]:
     return items
 
 
+# ---------------------------------------------------------------------------
+# DMG detector — a different grammar: "Name: description ... TRAILER", where the
+# trailer is "Aura School; CL Nth; <prereqs>; Price N gp; Weight W". The name is
+# the nearest "Name:" colon-line above a trailer. term_harvest.py OWNS the two
+# weapon/armor "special ability" sections of this same book (the affixes), so
+# those ranges are masked here — the affixes are not re-listed as items. Rods
+# and staffs whose entries are charge tables, and ring entries the OCR garbled,
+# are an accepted partial gap (see docs/HARVEST_PROGRESS.md).
+# ---------------------------------------------------------------------------
+
+DMG_TRAILER = re.compile(
+    r"^(Faint|Moderate|Strong|Overwhelming)\s+([A-Za-z]+)\s*[;,.]?\s*CL\s+([\w/]+)",
+    re.IGNORECASE)
+DMG_NAME = re.compile(r"^([A-Z][A-Za-z0-9'’\-()/,. ]{2,46}?):\s+(\S.*)$")
+DMG_NAME_REJECT = re.compile(
+    r"^(Note|Price|Weight|CL|Prerequisites?|Cost|Aura|Special|Lore|DC|Caster Level|"
+    r"Market Price|Construction|Strong|Moderate|Faint|Overwhelming|Table|Activation|"
+    r"Description|Benefit|Normal|Duration|Range|Target|Saving Throw|Example|XP Cost)\b",
+    re.IGNORECASE)
+DMG_PRICE = re.compile(r"Price\s+([0-9][\d,]*)", re.IGNORECASE)
+# The two sections term_harvest.py governs; skipped here to avoid double-listing.
+DMG_MASK = [
+    (r"Magic Armor.{0,3}and Shield Special Ability Descriptions", r"^Specific Armors"),
+    (r"Magic Weapon Special Ability Descriptions", r"^Specific Weapons"),
+]
+
+
+def detect_dmg(lines: List[str], pages: List[int], book: str) -> List[Item]:
+    n = len(lines)
+    masks: List[Tuple[int, int]] = []
+    for s_anchor, e_anchor in DMG_MASK:
+        sr, er = re.compile(s_anchor), re.compile(e_anchor)
+        s = next((i for i, l in enumerate(lines) if sr.search(l)), None)
+        if s is None:
+            continue
+        e = next((i for i in range(s + 1, n) if er.search(lines[i])), n)
+        masks.append((s, e))
+
+    def masked(i: int) -> bool:
+        return any(a <= i < b for a, b in masks)
+
+    items: List[Item] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        if masked(i) or not DMG_TRAILER.match(ln.strip()):
+            continue
+        tm = DMG_TRAILER.match(ln.strip())
+        # Name: the nearest "Name:" colon-line above, stopping at a prior trailer.
+        j, steps, name_idx, name = i - 1, 0, None, None
+        while j >= 0 and steps < 40:
+            s = lines[j].strip()
+            if s and not PAGE.search(lines[j]):
+                if DMG_TRAILER.match(s):
+                    break
+                nm = DMG_NAME.match(s)
+                if nm and not DMG_NAME_REJECT.match(s):
+                    name_idx, name = j, nm.group(1).strip()
+                    break
+            j -= 1
+            steps += 1
+        if name_idx is None or name_idx in used:
+            continue
+        used.add(name_idx)
+        # Gather the trailer text (it wraps) for the price, and set the block end.
+        ttext, k, steps, end = [ln.strip()], i + 1, 0, i + 1
+        while k < n and steps < 4:
+            s = lines[k].strip()
+            if PAGE.search(lines[k]):
+                k += 1
+                continue
+            if s == "":
+                break
+            if DMG_NAME.match(s) and not DMG_NAME_REJECT.match(s):
+                end = k
+                break
+            ttext.append(s)
+            end = k + 1
+            if re.search(r"Weigh", s, re.IGNORECASE):
+                break
+            k += 1
+            steps += 1
+        item = Item(name=name, book=book, page=pages[name_idx], start=name_idx, end=end)
+        item.aura = tm.group(1).title()
+        item.aura_school = tm.group(2).lower()
+        item.caster_level = tm.group(3)
+        pm = DMG_PRICE.search(" ".join(ttext))
+        if pm:
+            item.price = f"{pm.group(1)} gp"
+        items.append(item)
+    items.sort(key=lambda it: it.start)
+    return items
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Item]]] = {
     "mic": detect_mic,
+    "dmg": detect_dmg,
 }
 
 
@@ -328,14 +422,18 @@ SOURCES: List[Source] = [
         citation="Magic Item Compendium (WotC, 2007), item entries",
         detector="mic",
     ),
+    Source(
+        key="dmg",
+        book="Dungeon Master's Guide v3.5",
+        path=Path("D&D 3.5e/Core/Dungeon Masters Guide v3.5.md"),
+        citation="Dungeon Master's Guide v3.5, specific items and wondrous "
+                 "items (weapon/armor special abilities are term_harvest.py's)",
+        detector="dmg",
+    ),
     # NEXT TARGETS (documented, not yet detected — never improvised):
-    #   * DMG v3.5 magic items — rings, rods, staffs, wondrous items. Its
-    #     grammar puts Caster Level / Prerequisites / Market Price / Weight at
-    #     the END of each description, not the top, so it needs its own
-    #     detector. Source file: "D&D 3.5e/Core/Dungeon Masters Guide v3.5.md".
     #   * Arms and Equipment Guide (3.0) — "D&D 3.0/Arms And Equipment Guide.md".
-    # Add a Source above with a new detector in DETECTORS; see
-    # docs/HARVEST_PROGRESS.md for the gap log.
+    #     Add a Source above with a new detector in DETECTORS; see
+    #     docs/HARVEST_PROGRESS.md for the gap log.
 ]
 
 
@@ -557,6 +655,17 @@ YOU CHANGED MY MAGIC ITEMS!
 Yes, we did. Chances are, if your character owns a magic item.
 """
 
+DMG_FIXTURE = """## [PDF page 218]
+Magic Weapon Special Ability Descriptions
+Flaming: Upon command, a flaming weapon is sheathed in fire.
+Strong evocation; CL 10th; Craft Magic Arms and Armor, flame blade; Price +1 bonus; Weight —.
+Specific Weapons
+Flame Tongue: This sword deals extra fire damage on a hit.
+Strong evocation; CL 12th; Craft Magic Arms and Armor, fireball; Price 20,700 gp; Weight 3 lb.
+Boots of Speed: As a free action, the wearer can act as though hasted for 10 rounds/day.
+Moderate transmutation; CL 10th; Craft Wondrous Item, haste; Price 12,000 gp; Weight 1 lb.
+"""
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -599,6 +708,34 @@ def selftest(base: Path) -> int:
                 failures.append(f"Belt of the Champion tag={champ.tag!r} "
                                 f"level={champ.item_level!r}, wanted RELIC / 9th")
 
+    # DMG detector: the trailer grammar, with the masked affix section excluded.
+    with tempfile.TemporaryDirectory() as tmp:
+        d = Path(tmp)
+        (d / "D&D 3.5e" / "Core").mkdir(parents=True)
+        (d / "D&D 3.5e" / "Core" / "Dungeon Masters Guide v3.5.md").write_text(
+            DMG_FIXTURE, encoding="utf-8")
+        corpus = Corpus(d, [Source(key="dmg", book="Dungeon Master's Guide v3.5",
+                                   path=Path("D&D 3.5e/Core/Dungeon Masters Guide v3.5.md"),
+                                   citation="fixture", detector="dmg")])
+        dmg_items = [it for _, it in corpus.all_items()]
+        dmg_names = [it.name for it in dmg_items]
+        # Flaming is inside the masked weapon-abilities section (term_harvest's);
+        # only the two specific/wondrous items are harvested here.
+        if dmg_names != ["Flame Tongue", "Boots of Speed"]:
+            failures.append(f"DMG fixture detected {dmg_names}, wanted "
+                            f"['Flame Tongue', 'Boots of Speed'] (Flaming affix "
+                            f"must be masked out — term_harvest owns it)")
+        else:
+            ft = dmg_items[0]
+            got = (ft.aura, ft.aura_school, ft.caster_level, ft.price)
+            if got != ("Strong", "evocation", "12th", "20,700 gp"):
+                failures.append(f"Flame Tongue trailer {got}, wanted "
+                                f"Strong / evocation / 12th / 20,700 gp")
+            bs = dmg_items[1]
+            if (bs.aura, bs.caster_level, bs.price) != ("Moderate", "10th", "12,000 gp"):
+                failures.append(f"Boots of Speed {(bs.aura, bs.caster_level, bs.price)}, "
+                                f"wanted Moderate / 10th / 12,000 gp")
+
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
         total = sum(len(s.items) for s in corpus.sources)
@@ -619,6 +756,20 @@ def selftest(base: Path) -> int:
         heal = corpus.find("healing belt", book="mic")
         if not heal:
             failures.append("Healing Belt not found in live MIC")
+        # Live DMG source: specific/wondrous items, affixes masked out.
+        dmg_src = next((s for s in corpus.sources if s.key == "dmg"), None)
+        if dmg_src and (base / dmg_src.path).exists():
+            if len(dmg_src.items) < 150:
+                failures.append(f"only {len(dmg_src.items)} DMG items indexed; expected > 150")
+            bs = corpus.find("boots of speed", book="dmg")
+            if not bs:
+                failures.append("Boots of Speed not found in live DMG")
+            elif bs[0][1].aura_school != "transmutation":
+                failures.append(f"live Boots of Speed school={bs[0][1].aura_school!r}, "
+                                f"wanted transmutation")
+            if corpus.find("ghost touch", book="dmg"):
+                failures.append("Ghost Touch (a weapon special ability) leaked into "
+                                "the DMG item harvest — the affix mask failed")
     else:
         print(f"  [SKIP] MIC extraction not found under {base} — fixture checks only")
 

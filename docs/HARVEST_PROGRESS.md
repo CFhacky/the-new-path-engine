@@ -26,7 +26,7 @@ extraction and are the court of appeal for any garbled number.
 |---|---|---|---|---|
 | `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110) | 4 sections | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
-| `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | `_text\D&D 3.5e\Magic and Items\Magic Item Compendium.md` | 842 items (837 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
+| `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 specific/wondrous items (216) | 1058 items / 2 sources (982 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
@@ -63,25 +63,16 @@ feats do too):
 All source OCR listed below was verified present on `I:\Sourcebooks` on
 2026-08-27. Each is a *new detector/section*, not new OCR.
 
-1. **DMG v3.5 magic items** → extend `item_harvest.py` with a `dmg` detector.
-   Source: `_text\D&D 3.5e\Core\Dungeon Masters Guide v3.5.md` (present, 53,566
-   lines). Grammar differs from the MIC: the DMG lists Caster Level /
-   Prerequisites / Market Price / Weight at the END of each item description,
-   not the top, and groups items under type headers (Rings, Rods, Staffs,
-   Wands, Wondrous Items). Add a `Source(key="dmg", ..., detector="dmg")` to
-   `SOURCES` and a `detect_dmg` in `DETECTORS`. This closes the biggest item
-   gap — the "generic" items everyone knows (Ring of Protection, Staff of
-   Fire, Boots of Speed, etc.).
-2. **Arms & Equipment Guide (3.0) items** → `item_harvest.py` `aeg` detector.
+1. **Arms & Equipment Guide (3.0) items** → `item_harvest.py` `aeg` detector.
    Source: `_text\D&D 3.0\Arms And Equipment Guide.md` (present, 22,767 lines).
-3. **`term_harvest.py` extensions** (named in that script's own docstring as
+2. **`term_harvest.py` extensions** (named in that script's own docstring as
    intended next Sections; their extractions exist in the corpus):
    Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-4. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
+3. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
    `_md\GURPS\GURPS 4e - Powers.md` (present, 37,745 lines) — Powers has its
    own enhancement/limitation set beyond the Basic Set.
-5. **Spell index / supplemental spells** → a `spell_harvest.py` mirroring the
+4. **Spell index / supplemental spells** → a `spell_harvest.py` mirroring the
    others. `spell_lookup.py` already retrieves SRD + Spell Compendium, but
    there is no browsable spell *index*, and supplement spell lists (the
    Complete series, Races of the Dragon, etc. under `_md\_feats\` and
@@ -117,6 +108,13 @@ extraction is absent, the harvest prints `NO COVERAGE — extraction missing:
 <path>` and this section should record the book and the missing extraction so
 the OCR pipeline can be pointed at it.
 
+Partial-coverage gap (detector limitation, not missing OCR): in the DMG item
+harvest, rod and staff entries whose block opens with a charge/spell table
+before any prose (e.g. Rod of Absorption) are not caught by the trailer+name
+detector and are absent from `magic_item_index`. Closing this needs a
+table-aware pass over the DMG `RODS`/`STAFFS`/`WANDS` sections; low priority
+since the MIC already supplies a large clean item set.
+
 Known genuinely-un-OCR'd shelves (different grammars; not yet worth a detector
 until OCR'd and prioritized): Warhammer 40k RPG bestiaries and WFRP profiles
 (WS/BS/S/T/W/I/A/Ld percentile blocks), AD&D 2e monstrous compendia. These are
@@ -146,6 +144,16 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Extended `item_harvest.py` with a `dmg` detector; harvested
+  the DMG v3.5 specific and wondrous items (216, all with aura + caster level,
+  145 priced) — the canonical items nothing else covered. Detection anchors on
+  the trailer line (`Aura School; CL Nth; ...; Price`) and takes the name from
+  the nearest `Name:` colon-line above. The two weapon/armor "special ability"
+  sections (the affixes) are MASKED because `term_harvest.py` owns them — the
+  selftest asserts Ghost Touch does not leak. Rings and staffs listed by
+  property ("Protection:" = Ring of Protection, "Frost:" = Staff of Frost) are
+  captured under those terse names; rods/staffs whose entries begin with a
+  charge table (e.g. Rod of Absorption) are the accepted partial gap below.
 - **2026-08-27** — Added `feat_harvest.py`; built the feat index (1253 feats
   across the bundled SRD core + 18 supplement extractions; 742 typed, 962 with
   a prerequisite). Detection duplicated from `feat_lookup.py`; adds inline

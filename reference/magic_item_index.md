@@ -861,3 +861,227 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Choker Of Life Protection | — | 14,000 gp | 14th | Throat | 7th | Moderate conjuration DC18 | 217 |
 | Gauntlets Of Ghost Fighting | — | 4,000 gp | 8th | Hands | 13th | Strong conjuration DC21 | 217 |
 | Shirt Of Wraith Stalking | — | 6,000 gp | 10th | Torso | 3rd | Faint abjuration DC16 | 217 |
+
+## Dungeon Master's Guide v3.5 — 216 items
+
+*Source: Dungeon Master's Guide v3.5, specific items and wondrous items (weapon/armor special abilities are term_harvest.py's).*  
+*Harvest: ok — 216 items from Dungeon Masters Guide v3.5.md.*
+
+| Item | Tag | Price | Lvl | Body Slot / Property | CL | Aura | Page |
+|---|---|---|---|---|---|---|---|
+| Banded Mail of Luck | — | — | — | — | 12th | Strong enchantment | 221 |
+| Breastplate of Command | — | 25,400 gp | — | — | 15th | Strong enchantment | 221 |
+| Absorbing Shield | — | — | — | — | i7th | Strong rransmutation | 222 |
+| Caster’s Shield | — | 3 gp | — | — | éth | Moderate abjuration | 222 |
+| Spined Shield | — | — | — | — | 6th | Moderate evocation | 222 |
+| Winged Shield | — | — | — | — | Sth | Faint transmutation | 222 |
+| Dagger of Venom | — | 8,302 gp | — | — | Sth | Faint necromancy | 227 |
+| Dwarven Thrower | — | 60,312 gp | — | — | 10th | Moderate evocation | 227 |
+| Flame Tongue | — | 20,715 gp | — | — | 12th | Moderate evocation | 227 |
+| Frost Brand | — | 54,475 gp | — | — | 14th | Strong evocation | 227 |
+| Javelin of Lightning | — | 1,500 gp | — | — | 5th | Faint evocation | 227 |
+| Luck Blade | — | 22,060 gp | — | — | 17th | Strong evocation | 228 |
+| Shatterspike | — | — | — | — | 13th | Strong evocation | 229 |
+| Shifter’s Sorrow | — | 12,780 gp | — | — | 15th | Strong transmutation | 229 |
+| Slaying Arrow | — | — | — | — | 13th | Strong mectomancy | 229 |
+| Sleep Arrow | — | 132 gp | — | — | Sth | Faint enchantment | 229 |
+| Sun Blade | — | — | — | — | 10th | Moderate evocation | 229 |
+| Sword of Life Stealing | — | 25,715 gp | — | — | 17th | Strong mecromancy | 229 |
+| Sword of the Planes | — | — | — | — | 1sth | Strong evocation | 229 |
+| Sword of Subtlety | — | 22,3 gp | — | — | 7th | Moderate illusion | 229 |
+| Sylvan Scimitar | — | 47,315 gp | — | — | 11th | Moderate evocation | 230 |
+| Trident of Fish Command | — | 18,650 gp | — | — | 7th | Moderate enchantment | 230 |
+| Trident of Warning | — | 10,115 gp | — | — | 7th | Moderate divination | 230 |
+| Animal Friendship | — | 10,800 gp | — | — | 3rd | Faint enchantment | 231 |
+| Blinking | — | 27,000 gp | — | — | 7th | Moderate transmutation | 231 |
+| Climbing, Improved | — | 10,000 gp | — | — | 5th | Faint transmutation | 231 |
+| Counterspells | — | — | — | — | 11th | Moderate evocation | 231 |
+| Djinni Calling | — | 125,000 gp | — | — | 17th | Strong conjuration | 231 |
+| Evasion | — | — | — | — | 7th | Moderate transmutation | 233 |
+| Feather Falling | — | 2,200 gp | — | — | 1st | Faint transmutation | 233 |
+| Force Shield | — | 8500 gp | — | — | 9th | Moderate evocation | 233 |
+| Freedom of Movement | — | 40,000 gp | — | — | 7th | Moderate abjuration | 233 |
+| Friend Shield | — | — | — | — | 10th | Moderate abjuration | 233 |
+| Invisibility | — | 20,000 gp | — | — | 3rd | Faint illusion | 233 |
+| Jumping | — | — | — | — | 2nd | Faint transmutation | 233 |
+| Mind Shielding | — | 8,000 gp | — | — | 3rd | Faint aburation | 233 |
+| Protection | — | 2,000 gp | — | — | 5th | Faint abjuration | 233 |
+| Ram | — | 8,600 gp | — | — | 9th | Moderate transmutation | 233 |
+| Regeneration | — | — | — | — | 15th | Strong conjuration | 233 |
+| Spell Storing | — | — | — | — | 9th | Moderate evocation | 234 |
+| Spell Storing, Major | — | 200,000 gp | — | — | 17th | Strong evocation | 234 |
+| Spell Turning | — | 195,280 gp | — | — | 13th | Strong abjuration | 234 |
+| Sustenance | — | 2,500 gp | — | — | sth | Faint conjuration | 234 |
+| Swimming, Improved | — | 10,000 gp | — | — | 7th | Moderate transmutation | 234 |
+| Telekinesis | — | 75,000 gp | — | — | 9th | Moderate transmutation | 234 |
+| Water Walking | — | — | — | — | 9th | Moderate transmutation | 234 |
+| X-Ray Vision | — | 25,000 gp | — | — | 6th | Moderate divination | 234 |
+| A more specific example | — | 50,000 gp | — | — | 15th | Strong abjuration | 235 |
+| Cancellation | — | 11,000 gp | — | — | 17th | Strong abjuration | 235 |
+| Enemy Detection | — | — | — | — | aw | Moderate divination | 236 |
+| Flame Extinguishing | — | 15,000 gp | — | — | 12th | Strong transmutation | 236 |
+| Immovable Rod | — | — | — | — | 10th | Moderate transmutation | 236 |
+| Metal and Mineral Detection | — | — | — | — | 9th | Moderate divination | 237 |
+| Python | — | — | — | — | 10th | Moderate transmutation | 237 |
+| Rulership | — | — | — | — | 20th | Strong enchantment | 237 |
+| Security | — | 61,000 gp | — | — | 20th | Strong conjuuration | 237 |
+| Viper | — | 19,000 gp | — | — | 10th | Moderate necromancy | 238 |
+| Withering | — | — | — | — | 13th | Strong necromancy | 238 |
+| Random Generation | — | — | — | — | 13th | Strong abjuration | 244 |
+| Charming | — | 16,500 gp | — | — | 8th | Moderate enchantment | 245 |
+| Conjuration | — | — | — | — | 13th | Strong conjuration | 245 |
+| Defense | — | 58,250 gp | — | — | 15th | Strong abjuration | 245 |
+| Earth and Stone | — | 60,500 gp | — | — | 11th | Moderate transmutation | 245 |
+| Enchantment | — | 65,000 gp | — | — | 13th | Strong enchantment | 245 |
+| Evocation | — | — | — | — | 13th | Strong evocation | 245 |
+| Fire | — | — | — | — | 8th | Moderate evocation | 245 |
+| Frost | — | 56,250 gp | — | — | 10th | Moderate evocation | 245 |
+| Healing | — | 27,750 gp | — | — | sth | Moderate conjuration | 245 |
+| Tusion | — | 65,000 gp | — | — | 13th | Strong illusion | 245 |
+| Ulumination | — | 48,250 gp | — | — | 5th | Strong evocation | 245 |
+| Life | — | 155,750 gp | — | — | 11th | Moderate conjuration | 245 |
+| Passage | — | 170,500 gp | — | — | 17th | Strong varied | 246 |
+| Size Alteration | — | — | — | — | sth | Faint conjuration | 246 |
+| Transmutation | — | 45400 gp | — | — | 13th | Strong transmutation | 246 |
+| Amulet of Health | — | 4,000 gp | — | — | 8th | Moderate transmutation | 247 |
+| Amulet of Mighty Fists | — | 6,000 gp | — | — | sth | Faint evocation | 247 |
+| Amulet of Proof against Detection and Location | — | — | — | — | 8th | Moderate abjuration | 248 |
+| Bag of Holding | — | — | — | — | 9th | Moderate conjuration | 249 |
+| Bead of Force | — | 3,000 gp | — | — | 10th | Moderate evocation | 249 |
+| Belt, Monk's | — | 13,000 gp | — | — | 10th | Moderate transmutation | 249 |
+| Belt of Dwarvenkind | — | 14,900 gp | — | — | 12th | Moderate divination | 249 |
+| Belt of Giant Strength | — | 16,000 gp | — | — | 10th | Moderate transmutation | 249 |
+| Boccob's Blessed Book | — | 12 gp | — | — | 7th | Moderate mansmutation | 250 |
+| Boots of Levitation | — | — | — | — | 3rd | Faint transmutation | 251 |
+| Boots of Speed | — | — | — | — | 10th | Moderate transmutation | 251 |
+| Boots of Striding and Springing | — | 5,500 gp | — | — | 3rd | Faint transmutation | 251 |
+| Boots of Teleportation | — | — | — | — | 9th | Moderate conjuration | 251 |
+| Boots, Winged | — | 16,000 gp | — | — | 5th | Faint transmutation | 251 |
+| Bottle of Air | — | 7,250 gp | — | — | 7th | Moderate transmutation | 251 |
+| Bowl of Commanding Water Elementals | — | 100,000 gp | — | — | 13th | Strong conjuration | 251 |
+| Bracelet of Friends | — | — | — | — | th | Strong conjuration | 251 |
+| Bracers of Archery, Greater | — | 25,000 gp | — | — | 8th | Moderate transmutation | 251 |
+| Bracers of Armor | — | 1,000 gp | — | — | 7th | Moderate conjuration | 251 |
+| Brazier of Commanding Fire Elementals | — | 100,000 gp | — | — | 131h | Strong conjuration | 251 |
+| Candle of Truth | — | 2,500 gp | — | — | 3rd | Faint enchantment | 252 |
+| Cape of the Mountebank | — | 10,080 gp | — | — | 9th | Moderate conjuration | 253 |
+| Carpet of Flying | — | — | — | — | 10th | Moderate transmutation | 253 |
+| Chaos Diamond | — | 160,000 gp | — | — | 19th | Strong varied | 253 |
+| Chime of Opening | — | 3,000 gp | — | — | 1ith | Moderate transmutation | 253 |
+| Cirelet of Blasting, Minor | — | 6,480 gp | — | — | 6th | Faint evecation | 253 |
+| Wf Circlet of Persuasion | — | 4,500 gp | — | — | Sth | Faint wransmurarion | 253 |
+| Cloak of Charisma | — | 4,000 gp | — | — | 8th | Moderate transmutation | 254 |
+| Cloak of Displacement, Major | — | 50,000 gp | — | — | 7th | Moderate illusion | 254 |
+| Cloak of Etherealness | — | — | — | — | 15th | Strong transmutation | 254 |
+| Cloak of the Manta Ray | — | 7,200 gp | — | — | 9th | Moderate transmutation | 254 |
+| Cloak of Resistance | — | — | — | — | sth | Faint abjuration | 254 |
+| Crystal Ball | — | — | — | — | 10th | Moderate divination | 254 |
+| Cube of Frost Resistance | — | — | — | — | Sth | Faint abjuration | 254 |
+| Deck of Wlusions | — | 8,100 gp | — | — | 6th | Faint illusion | 255 |
+| Dimensional Shackles | — | 28,000 gp | — | — | 1ith | Moderate abjuration | 256 |
+| Dust of Disappearance | — | 3,500 gp | — | — | 7th | Moderate illusion | 256 |
+| Dust of Dryness | — | 650 gp | — | — | 1th | Moderate transmuration | 256 |
+| Dust of (usion | — | 11,200 gp | — | — | éth | Faint illusion | 256 |
+| Dust of Tracelessness | — | — | — | — | 3rd | Faint transmutation | 256 |
+| Efreeti Bottle | — | 145,000 gp | — | — | 14th | Strong conjuration | 256 |
+| Elemental Gem | — | 2,250 gp | — | — | Lith | Moderate conjuration | 256 |
+| Elixir of Fire Breath | — | 1 gp | — | — | 11th | Moderate evocation | 256 |
+| Elixir of Hiding | — | 250 gp | — | — | 5th | Faint illusion | 256 |
+| Elixir of Sneaking | — | — | — | — | 5th | Faint illusion | 256 |
+| Elixir of Swimming | — | — | — | — | Ind | Faint illusion | 256 |
+| Elixir of Truth | — | 500 gp | — | — | Sth | Faint enchantment | 257 |
+| Elixir of Vision | — | — | — | — | 2nd | Faint divination | 257 |
+| Eversmoking Bottle | — | 5,400 gp | — | — | 3rd | Faint transmutation | 257 |
+| Eyes of Charming | — | — | — | — | 7th | Moderate enchantment | 257 |
+| Eyes of Doom | — | 25,000 gp | — | — | 11th | Moderate necromancy | 257 |
+| Bronze Griffon | — | — | — | — | Lith | Moderate transmuration | 257 |
+| Golden Lions | — | 16,500 gp | — | — | 11th | Moderate transmutation | 257 |
+| Ivory Goats | — | — | — | — | tith | Moderate transmutation | 257 |
+| Mitrble Elephant | — | — | — | — | Lith | Moderate transmutation | 257 |
+| Onyx Dog | — | 15,500 gp | — | — | 11th | Moderate transmutation | 258 |
+| Serpentine Owl | — | 9,100 gp | — | — | Lith | Moderate transmutation | 258 |
+| Gauntlets of Ogre Power | — | 4,000 gp | — | — | 6th | Faint transmutation | 258 |
+| Gauntlet of Rust | — | — | — | — | 7th | Moderate transmutation | 258 |
+| Gem of Seeing | — | — | — | — | 10ch | Moderate divination | 258 |
+| Gloves of Arrow Snaring | — | 4,000 gp | — | — | 4rd | Faint abjuration | 258 |
+| Gloves of Dexterity | — | 4,000 gp | — | — | ath | Moderate transmutation | 258 |
+| Glove of Storing | — | 10,000 gp | — | — | 6th | Faint transmutation | 258 |
+| Gloves of Swimming and Climbing | — | — | — | — | 5th | Faint transmutation | 258 |
+| Goggles of Minute Seeing | — | 1,250 gp | — | — | 3nd | Faint divination | 258 |
+| Goggles of Night | — | — | — | — | 3rd | Faint transmutation | 259 |
+| Hand of the Mage | — | 900 gp | — | — | 2nd | Faint transmutation | 259 |
+| Hat of Disguise | — | 1,800 gp | — | — | ist | Faint illusion | 259 |
+| Headband of Intellect | — | 4,000 gp | — | — | 8th | Moderate transmutation | 259 |
+| Magic | — | 5,200 gp | — | — | 4th | Faint divination | 260 |
+| Helm of Teleportation | — | 73,500 gp | — | — | 9th | Moderate conjuration | 260 |
+| Helm of Underwater Action | — | 57,000 gp | — | — | 5th | Faint transmutation | 260 |
+| Horn of Goodness/Evil | — | — | — | — | 6th | Faint abjuration | 260 |
+| Horn of Valhalla | — | — | — | — | 13th | Strong conjuration | 261 |
+| Horseshoes of Speed | — | — | — | — | 3rd | Faint transmutation | 261 |
+| Horseshoes of a Zephyr | — | 6,000 gp | — | — | 3rd | Faint transmutation | 261 |
+| Incense of Meditation | — | 4,900 gp | — | — | 7th | Moderate enchantment | 261 |
+| Keoghtom's Ointment | — | — | — | — | 5th | Faint conjuration | 262 |
+| Lantern of Revealing | — | 30,000 gp | — | — | Sth | Faint evocation | 262 |
+| Lyre of Building | — | 143,000 gp | — | — | 6th | Faint transmutation | 262 |
+| Mantle of Spell Resistance | — | 90,000 gp | — | — | 9th | Moderate abjuration | 262 |
+| Mattock of the Titans | — | 23,348 gp | — | — | 16th | Strong transmutation | 263 |
+| Maul of the Titans | — | — | — | — | 15th | Strong evocation | 263 |
+| Medallion of Thoughts | — | 12,000 gp | — | — | Sth | Faint divination | 263 |
+| Murlynd's Spoon | — | 5,400 gp | — | — | Sth | Faint conjuration | 263 |
+| Each necklace of fireballs contains | — | — | — | — | 10th | Moderate evocation | 264 |
+| Orb of Storms | — | 48,000 gp | — | — | 18th | Strong varied | 264 |
+| Pearl of Power | — | 1,000 gp | — | — | 17th | Strong transmutation | 264 |
+| Periapt.of Wisdom | — | 4,000 gp | — | — | 8th | Moderate transmutation | 264 |
+| Periapt of Wound Closure | — | 15,000 gp | — | — | 10th | Moderate conjuration | 265 |
+| Phylactery of Faithfulness | — | 1,000 gp | — | — | ist | Faint divination | 265 |
+| Pipes of Haunting | — | — | — | — | 4th | Faint nectomancy | 265 |
+| Pipes of the Sewers | — | — | — | — | 2nd | Faint illusion | 265 |
+| Portable Hole | — | 20,000 gp | — | — | 12th | Moderate conjuration | 265 |
+| Quiver of Ehlonna | — | 1,800 gp | — | — | 9th | Moderate conjuration | 266 |
+| Ring Gates | — | 40,000 gp | — | — | 17th | Strong conjuration | 266 |
+| Robe of the Archmagi | — | 75,000 gp | — | — | 14th | Strong varied | 266 |
+| Robe of Blending | — | — | — | — | 10th | Moderate illusion | 266 |
+| Robe of Eyes | — | 120,000 gp | — | — | 11th | Moderate divination | 266 |
+| Robe of Stars | — | — | — | — | 15th | Strong varied | 266 |
+| Rope.of Climbing | — | 3,000 gp | — | — | 3rd | Faint transmutation | 267 |
+| Rope of Entanglement | — | 21,000 gp | — | — | 12th | Moderate transmutation | 267 |
+| Scabbard of Keen Edges | — | 16,000 gp | — | — | Sth | Faint transmutation | 267 |
+| Scarab, Golembane | — | 2,500 gp | — | — | 8th | Moderate divination | 267 |
+| Shrouds of Disintegration | — | 6,600 gp | — | — | 1 | Strong transmutation | 267 |
+| Silversheen | — | 250 gp | — | — | 5th | Faint transmutation | 267 |
+| Slippers of Spider Climbing | — | — | — | — | 4th | Faint ransmutation | 267 |
+| Stone of Alarm | — | — | — | — | 3rd | Faint abjuration | 268 |
+| Stone of Controlling Earth Elementals | — | 100,000 gp | — | — | 13h | Strong conjuration | 268 |
+| Stone of Good Luck (Luckstone) | — | 20,000 gp | — | — | Sth | Faint evocation | 268 |
+| Destriey | — | 10,000 gp | — | — | 14th | Strong transmutation | 268 |
+| Unguent of Timelessness | — | 150 gp | — | — | 3rd | Faint transmutation | 269 |
+| Vestment, Druid’s | — | 10,000 gp | — | — | 10th | Moderate transmutation | 269 |
+| Well of Many Worlds | — | 82,000 gp | — | — | 17th | Strong conjuration | 269 |
+| Personality | — | 56,500 gp | — | — | 15th | Moderate conjuration | 273 |
+| Armor of Arrow Attraction | — | 9,000 gp | — | — | 16th | Strong abjuration | 275 |
+| Armor of Rage | — | 1,600 gp | — | — | 1éeth | Strong necromancy | 275 |
+| Bag of Devouring | — | — | — | — | 17th | Moderate conjuration | 275 |
+| Boots of Dancing | — | 30,000 gp | — | — | 1éth | Strong enchantment | 275 |
+| Bracers of Defenselessness | — | 1,200 gp | — | — | 16th | Moderate conjuration | 275 |
+| Broom of Animated Attack | — | — | — | — | 10th | Moderate transmutation | 276 |
+| Cloak of Poisonousness | — | — | — | — | 15th | Strong abjuration | 276 |
+| Dust of Sneezing and Choking | — | 2,400 gp | — | — | 7th | Faint conjuration | 276 |
+| Elask of Curses | — | 2,100 gp | — | — | 7th | Moderate conjuration | 276 |
+| Gauntlets of Fumbling | — | 1,300 gp | — | — | 7th | Moderate transmutation | 276 |
+| Helm of Opposite Alignment | — | 4,000 gp | — | — | 12th | Strong transmutation | 276 |
+| Incense of Obsession | — | 200 gp | — | — | 6th | Moderate enchantment | 276 |
+| Mace of Blood | — | 16,000 gp | — | — | 8th | Moderate abjuration | 276 |
+| Medallion of Thought Projection | — | 1 gp | — | — | 7th | Faint divination | 276 |
+| Necklace of Strangulation | — | — | — | — | 18th | Strong conjuration | 277 |
+| Net of Snaring | — | — | — | — | ath | Moderate evocation | 277 |
+| Periapt of Foul Rotting | — | 17,000 gp | — | — | 10th | Faint abjuration | 277 |
+| Potion of Poison | — | 5,000 gp | — | — | 12th | Moderate conjuration | 277 |
+| Robe of Powerlessness | — | 5,500 gp | — | — | 13th | Moderate transmutation | 277 |
+| Lire nacure of the garment is revealed | — | 16,500 gp | — | — | 13th | Moderate abjuration | 277 |
+| Scarab of Death | — | — | — | — | 19th | Strong abjuration | 277 |
+| Stone of Weight (Loadstone) | — | — | — | — | 5th | Faint transmutation | 277 |
+| Sword, Berserking | — | 17,500 gp | — | — | Sth | Moderate evocation | 277 |
+| Vacuous Grimoire | — | 6,000 gp | — | — | 20th | Strong enchantment | 277 |
+| Philosopher's Stone | — | — | — | — | 20th | Strong transmutation | 280 |
+| Talisman of the Sphere | — | — | — | — | 16th | Strong transmutation | 281 |
+| Talisman of Zagy | — | — | — | — | 20th | Strong conjuration | 281 |
