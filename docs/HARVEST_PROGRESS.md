@@ -18,9 +18,9 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-27).** Seven reference index families, ~6,200 entries:
+**At a glance (2026-08-27).** Seven reference index families, ~6,350 entries:
 terms/affixes (143), creatures (1509), magic items (1058), psionic powers
-(281), martial maneuvers (171), feats (1253), spells (1804). Each has a
+(409), martial maneuvers (171), feats (1253), spells (1804). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to
 rebuild its index.
 
@@ -40,7 +40,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (143 entries) | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 specific/wondrous items (216) | 1058 items / 2 sources (982 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
-| `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
+| `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35) | 1804 spells / 5 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
@@ -115,6 +115,38 @@ GURPS 4e mechanics worth harvesting (in `_text\GURPS\GURPS 4e\`, 478 files
 total): GURPS Magic (spell list), GURPS creature books (bestiary lines),
 GURPS Fantasy/Dungeon Fantasy gear and templates. These need GURPS-format
 detectors, not the D&D ones.
+
+### KEY finding — detector robustness × OCR pipeline (read before harvesting more)
+
+Two OCR pipelines exist on the drive: the `_md` pipeline (`_md\_bestiary`,
+`_md\_feats`, and `_md\*.md`) is CLEANER, and the `_text` pipeline (pytesseract,
+column-aware) is ROUGHER — both are near-full books, not curated subsets. Which
+matters depends on the detector:
+
+- **Robust anchor detectors handle rough `_text` fine.** The spell (school
+  line + Level below), power (discipline + psionics field), maneuver (`(Type)`
+  token + Level), and item (trailer / `Name:` colon) detectors all produced
+  clean output from raw `_text` books — that is why MIC, DMG, XPH, ToB, the
+  Spell Compendium, the splatbook spells, AND Complete Psionic all worked.
+- **Fragile name-above detectors produce GARBAGE on rough `_text`.** The feat
+  (`Benefit:` anchor, name gathered above) and creature (stat line + name
+  above) detectors, run against `_text` books, grabbed prose fragments as names
+  (Epic Level Handbook feats → "A minimum ability", "Your", "Noucancast";
+  Book of Vile Darkness creatures → "Outsider (Chaotic, Evil); Hd 6D8+6..."). On
+  the `_md` pipeline (where feat_harvest/creature_harvest source their books)
+  the SAME detectors are clean.
+
+**Implication for the remaining work:** feed each detector the pipeline it likes.
+Anchor-detector content (more spells/powers/items/maneuvers) can be pulled from
+`_text` and validated per book (as Complete Psionic was — verify 0 junk, hits
+clustered in the right chapter, count sane). Name-above content (feats,
+creatures) from `_text`-only books (Epic Level Handbook, Book of Vile Darkness,
+Deities and Demigods, the third-party bestiaries) needs EITHER a hardened
+detector (wrapped-name gathering + a stricter name test, the way power_harvest
+was hardened for Complete Psionic) OR an `_md`-pipeline re-OCR of that book.
+Do not add them as-is — they degrade the clean index. The `_text` bestiaries
+also use varied stat-block grammars (inline `CR X; Size Type; HD Y`, deity
+blocks, prose-embedded NPCs), so a `_text` creature detector is its own task.
 
 ## NEXT — queued harvest targets (in priority order)
 
@@ -205,6 +237,14 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Corpus review (prompted by Chad): the harvested set is a
+  high-value SLICE of ~1,700 OCR'd files, not the whole corpus. Added
+  `reference/README.md` (folder manifest), a CORPUS SCOPE inventory, and the
+  detector-robustness finding above. Then, validating that robust detectors work
+  on rough `_text`, added **Complete Psionic** to `power_harvest.py`: +128
+  powers (125 new; index 281 → 409). Hardened the power detector with ALL-CAPS
+  wrapped-name gathering ("ANALYZE DWEOMER," / "PSIONIC" → "Analyze Dweomer,
+  Psionic") + conditional title-casing; XPH output unchanged (still 281).
 - **2026-08-27** — Added three post-2005 splatbooks to `spell_harvest.py`
   (Complete Mage 130, Complete Champion 52, Races of the Dragon 35 = 217 new
   spells; index now 1804). These spells postdate the 2005 Spell Compendium and

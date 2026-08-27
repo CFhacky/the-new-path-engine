@@ -208,6 +208,47 @@ def _name_above(lines: List[str], disc_idx: int, limit: int = 4) -> Optional[int
     return None
 
 
+def _find_name(lines: List[str], disc_idx: int) -> Optional[Tuple[int, str]]:
+    """The power name above the discipline line. XPH names are single-line Title
+    Case; other books (Complete Psionic) use ALL-CAPS names that WRAP across the
+    column break ("ANALYZE DWEOMER," / "PSIONIC"). Gather extra ALL-CAPS
+    fragments upward ONLY when the nearest name line is itself ALL-CAPS — so a
+    Title-Case XPH name is never over-gathered — and title-case an ALL-CAPS
+    result so it reads like the Title-Case XPH names. Returns (top line, name).
+    """
+    idx = _name_above(lines, disc_idx)
+    if idx is None:
+        return None
+    name = lines[idx].strip()
+    top = idx
+    if name.isupper():
+        frags = [name]
+        j, gap = idx - 1, 0
+        while j >= 0 and len(frags) < 4:
+            s = lines[j].strip()
+            if s == "" or PAGE.search(lines[j]):
+                gap += 1
+                if gap > 1:
+                    break
+                j -= 1
+                continue
+            # A wrapped ALL-CAPS fragment may legitimately end in a comma
+            # ("ANALYZE DWEOMER," / "PSIONIC"), which _plausible_name forbids;
+            # use a looser continuation test here.
+            if s.isupper() and 3 <= len(s) <= 44 \
+                    and not FIELD_LABEL.match(s) and not DISC_ANCHOR.match(s):
+                frags.append(s)
+                top, gap = j, 0
+                j -= 1
+                continue
+            break
+        frags.reverse()
+        name = " ".join(frags)
+    if name.isupper():
+        name = name.title()
+    return top, re.sub(r"\s+", " ", name).strip()
+
+
 def _has_psi_field(lines: List[str], disc_idx: int, n: int,
                    window: int = 10) -> bool:
     j, seen = disc_idx + 1, 0
@@ -233,12 +274,13 @@ def detect_xph(lines: List[str], pages: List[int], book: str) -> List[Power]:
             continue
         if not _has_psi_field(lines, i, n):
             continue
-        name_idx = _name_above(lines, i)
-        if name_idx is None or name_idx in used:
+        got = _find_name(lines, i)
+        if got is None or got[0] in used:
             continue
-        used.add(name_idx)
+        top, name = got
+        used.add(top)
         sub = _complete_descriptor(lines, i, m.group(2))
-        starts.append((name_idx, i, lines[name_idx].strip(), m.group(1), sub))
+        starts.append((top, i, name, m.group(1), sub))
 
     starts.sort()
     powers: List[Power] = []
@@ -277,9 +319,14 @@ SOURCES: List[Source] = [
         citation="Expanded Psionics Handbook (WotC, 2004), power descriptions",
         detector="xph",
     ),
+    Source(
+        key="cpsi",
+        book="Complete Psionic",
+        path=Path("D&D 3.5e/Player Options/Complete Psionic.md"),
+        citation="Complete Psionic (WotC, 2006), power descriptions",
+        detector="xph",
+    ),
     # NEXT TARGETS (documented, not yet detected — never improvised):
-    #   * Complete Psionic — same grammar; add Source(detector="xph") once the
-    #     extraction path is confirmed under _text or _md\_feats.
     #   * SRD psionic powers — Open Game Content; could bundle as JSON like the
     #     spell/feat SRD sets. See docs/HARVEST_PROGRESS.md.
 ]
@@ -529,6 +576,23 @@ Saving Throw: Will negates
 Power Points: 7
 
 You can control the actions of a humanoid creature.
+
+ANALYZE DWEOMER,
+PSIONIC
+
+Clairsentience
+
+Level: Seer 6
+
+Display: Visual
+
+Manifesting Time: 1 standard action
+
+Range: Close (25 ft. + 5 ft./2 levels)
+
+Power Points: 11
+
+You discern the powers of a creature or object.
 """
 
 
@@ -549,11 +613,13 @@ def selftest(base: Path) -> int:
         # The three named powers are detected; the bare "Clairsentience" intro
         # header (no Display/PP/Manifesting Time below it) is rejected. Dominate
         # exercises a descriptor that WRAPS across the column break.
-        want_names = ["Bite of the Wolf", "Apopsi", "Dominate, Psionic"]
+        want_names = ["Bite of the Wolf", "Apopsi", "Dominate, Psionic",
+                      "Analyze Dweomer, Psionic"]
         if names != want_names:
             failures.append(f"fixture detected {names}, wanted {want_names} "
-                            f"(the Clairsentience intro rejected; the wrapped "
-                            f"Dominate descriptor joined and detected)")
+                            f"(Clairsentience intro rejected; wrapped Dominate "
+                            f"descriptor joined; the ALL-CAPS wrapped name "
+                            f"'ANALYZE DWEOMER,'/'PSIONIC' joined + title-cased)")
         else:
             bite = powers[0]
             got = (bite.discipline, bite.level, bite.range, bite.power_points, bite.save)

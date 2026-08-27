@@ -300,3 +300,139 @@ power points, range, and save — never invented facts; a field left as
 | Wall of Ectoplasm | Metacreativity (Creation) | Psion/wilder 4 | 7 | Close (25 ft. + 5 ft./2 levels) | None | 140 |
 | Wall Walker | Psychoportation | Psychic warrior 2 | 3 | Personal | — | 140 |
 | Weapon of Enerqy | Psychokinesis [see text] | Psychic warrior 4 | 7 | Touch | Fortitude negates | 140 |
+
+## Complete Psionic — 128 powers
+
+*Source: Complete Psionic (WotC, 2006), power descriptions.*  
+*Harvest: ok — 128 powers from Complete Psionic.md.*
+
+| Power | Discipline | Level | PP | Range | Save | Page |
+|---|---|---|---|---|---|---|
+| Adrenaline Boost | Psychometabolism | Lurk 1, Physical Power 1, | 1 | Personal | — | 79 |
+| Affinity Field, Pain | Psychometabolism | Pain and Suffering 9, psion/ | 17 | 20 ft. | Fortitude negates | 79 |
+| Analyze Dweomer, Psionic | Clairsentience | Magic 6 | 11 | Close (25 ft. + 5 ft./2 levels) | None or Will negates; | 79 |
+| Animate Plants, Psionic | Psychokinesis | Natural World 7 | 13 | Close (25 ft. + 5 ft/2 levels) | None | 79 |
+| Anticipatory Strike | Psychoportation | Psion/wilder 5, Time 5 | 9 | Personal | — | 79 |
+| Astral Construct | Metacreativity (Creation) | Creation 1, shaper 1 | 1 | Close (25 ft. + 5 ft./2 levels) | None | 80 |
+| Blackstone Hammer | Psychometabolism | Elements 6, psychic warrior 6 | 11 | Touch | None (object, harm-less) | 80 |
+| Breathless | Psychometabolism | Elements 3 | 5 | Personal; see text | None | 80 |
+| Burrowing Bonds | Metacreativity (Creation) | Shaper 4 | 7 | Medium (100 ft. + 10 ft./level) | Reflex negates | 80 |
+| Call Armor | Psychoportation (Teleportation) | Justice 2, psychic war- | Justice 3, | 0 ft. | None | 81 |
+| Celestial Conduit | Psychokinesis | Good 5, psion/wilder 5 | 9 | 120 ft. | Reflex halt | 81 |
+| Cerebral Phantasm | Telepathy [Fear, Mind-Affecting] | Psion/wilder 3 | 5 | Medium (100 ft. + 10 ft./level) | Will negates | 81 |
+| Chaos Fissure | Telepathy (Compulsion) [Mind-Affecting] | Chaos 8 | 15 | Close (25 ft. + 5 ft./2 levels) | Will negates or none | 81 |
+| Claws Of Darkness | Psychometabolism [Darkness] | Light and Darkness 2 | 3 | Personal | — | 82 |
+| Concussive Detonation | Psychokinesis [Force] | Force 6 | 11 | Medium (100 ft. + 10 ft./level) | Reflex half | 82 |
+| Cranial Deluge | Psychometabolism | Mental Power 6, psion/wilder 5 | Mental Power 11, | Close (25 ft. + 5 ft./2 levels) | Fortitude negates | 82 |
+| Crystalstorm | Metacreativity (Creation) | Psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Fortitude partial; see | 82 |
+| Damp Power | Psychometabolism | Guardian 2, psion/wilder 2, | 3 | Personal | — | 83 |
+| Dark Despair | Psychometabolism [Evil] | Evil 8 | 15 | 10 ft. | See text | 83 |
+| Deaden Blow | Metacreativity | Guardian 1, lurk 1, psychic | 3 | Close (25 ft. + 5 ft./2 levels) | Will negates; see text | 83 |
+| Death Knell, Psionic | Psychometabolism [Death, Evil] | Evil 2 | 3 | Touch | Will negates | 83 |
+| Deflection Field | Psychokinesis [Force] | Force 1, psion/wilder 1, psychic | 1 | Personal | — | 83 |
+| Detain Ectoplasm | Metacreativity | Psion/wilder 5 | 9 | Medium (100 ft. +10 ft./level) | Will negates; see text | 83 |
+| Dimension Door, Psionic | Psychoportation (Teleportation) | Lurk 4, psion/wilder 4, psychic | 7 | Long (400 ft. + 40 ft./level) | None and Will negates | 84 |
+| Dimension Hop | Psychoportation (Teleportation) | Freedom 1 | 1 | 10 feet | — | 84 |
+| Dimension Twister | Psychoportation (Teleportation) | Psion/wilder 3 | 5 | Close (25 ft. + 5 ft./2 levels) | Will negates | 84 |
+| Dimensional Pocket | Psychoportation | Lurk 1 | 1 | Touch | None | 84 |
+| Discern Lies, Psionic | Clairsentience | Justice 4 | 7 | Close (25 ft. + 5 ft./2 levels) | Will negates | 85 |
+| Distracting Shout | Psychometabolism [Mind-Affecting] | Chaos 2, psychic warrior 2 | 3 | 15 ft. | Will negates | 85 |
+| Earth Walk | Psychometabolism | Elements 2, psion/wilder 2, | 3 | Personal | — | 85 |
+| Earthquake, Psionic | Psychokinesis | Natural World 9 | 17 | Long (400 ft. + 40 ft/level) | See text for earthquake | 85 |
+| Ectoplasmic Swarm | Metacreativity (Creation) | Psion/wilder 4 | 7 | Close (25 ft. + 5 ft./2 levels) | None | 85 |
+| Eidetic Lock | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 1 | 1 | Touch | Will negates (harmless) | 85 |
+| Elemental Steward | Psychoportation [see text] | Elements 1, psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | None | 86 |
+| Empathic Transfer, Hostile | Telepathy [Mind-Affecting] | Pain and Suffering 3, psychic | 5 | Touch | Will half | 86 |
+| Empower Weapon | Psychometabolism | Psychic warrior 5 | 9 | Touch | Will negates (object) | 86 |
+| Endure Elements, Psionic | Psychometabolism | Psion/wilder 1, psychic war- | 1 | Touch | Will negates (harmless) | 86 |
+| Energy Arc | Psychokinesis [see text] | Psion/wilder 1 | 1 | — | Reflex half (object) | 86 |
+| Energy Barrage | Psychokinesis [see text] | Psion/wilder 6 | 11 | Medium (100 ft. + 10 | Reflex half; | 87 |
+| Energy Claw | Metacreativity (Creation) [see text] | Psion/wilder 7 | 13 | Medium (100 ft. + 10 ft./level) | None | 87 |
+| Energy Emanation | Psychokinesis [see text] | Psion/wilder 2, psychic war- | 3 | 5 ft. | None | 87 |
+| Energy Flash | Psychokinesis [see text] | Psion/wilder 4 | 7 | Touch | Fortitude half | 88 |
+| Energy Lance | Psychokinesis [see text] | Psion/wilder 3 | 5 | Close (25 ft. + 5 ft./2 levels) | Fortitude half (object); | 88 |
+| Energy Manipulation | Psychokinesis | Energy 5 | 9 | Close (25 ft. + 5 ft/2 levels) | None | 88 |
+| Chapter 4 Powers, Mantles And Items Energy Missile | Psychokinesis [see text] | Kineticist 2 | 3 | Medium (100 ft. + 10 ft./level) | Reflex half | 89 |
+| Energy Nullification Field | Psychokinesis | Kineticist 5, psion/wilder 6 | 9 | 10 ft. | None | 89 |
+| Energy Stun | Psychokinesis [see text) Level: Psion/wilder 2 Display: Auditory | Psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Reflex half | 89 |
+| Ethereal Abduction | Psychoportation | Psion/wilder 6 | 11 | Close (25 ft. + 5 ft./2 levels) | Will negates | 89 |
+| Ethereal Agent | Clairsentience | Lurk 5, psion/wilder 5 | 9 | Unlimited | None | 89 |
+| Ethereal Volley | Psychokinesis [Force] | Force 3, psychic warrior 2 | 5 | Close (25 ft. + 5 ft/2 levels) | None | 89 |
+| Evade Attack | Psychoportation | Lurk 2, nomad 2 | 3 | Personal | — | 90 |
+| Exhalation Of The Bronze Dragon | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 3, psychic war- | 5 | 30 ft. | Will negates | 90 |
+| Extend Range | Psychokinesis | Lurk 1, psychic warrior 1 | 1 | Touch | — | 90 |
+| Extend Reach | Psychokinesis | Lurk 2, psychic warrior 2 | 3 | Touch | — | 90 |
+| Eyes Of The Basilisk | Psychometabolism | Psion/wilder 7 | 13 | 30 ft. | Fortitude negates | 90 |
+| From The Brink | Psychometabolism (Healing) | Life 2 | 3 | Close (25 ft. + 5 ft/2 levels) | Will negates (harmless) | 91 |
+| Glyph Of Warding, Psionic | Metacreativity | Psion/wilder 3 | 5 | Touch | No (object) or yes; see | 91 |
+| Greater Glory | Psychometabolism [Good] | Good 8 | 15 | 20 ft. | See text | 91 |
+| Heavy Earth | Psychometabolism | Law 3, psion/wilder 3 | 5 | 20 ft. | Fortitude negates | 91 |
+| Hungry Touch | Psychometabolism | Consumption 1 | 1 | Touch | Fortitude half; see | 91 |
+| Incite Bravery | Telepathy (Compulsion) [Mind-Affecting] | Justice 2, psychic warrior 2 | 3 | 20 ft. | Will negates (harmless) | 92 |
+| Inconstant Location | Psychoportation (Teleportation) | Chaos 6, psion/wilder 6, psychic | 11 | Personal | — | 92 |
+| Inspire Mount | Psychometabolism | Psychic warrior 1 | 1 | Touch | Will negates (harmless) | 92 |
+| Intellect Bomb | Psychokinesis | Destruction 9 | 17 | Close (25 ft. + 5 ft./2 levels) | Will negates and | 92 |
+| Larval Flayers | Psychoportation | Psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | None; see text | 92 |
+| Light Beam | Psychokinesis [see text] | Light and Darkness 4 | 7 | 120 ft. | Reflex half | 93 |
+| Light Burst | Psychokinesis | Light and Darkness 8 | 15 | Long (400 ft. + 40 ft/level) | Reflex partial; see text | 93 |
+| Living Arrow | Metacreativity | Psychic warrior 5 | 9 | Touch | Will negates (object) | 93 |
+| Mend Wounds | Psychometabolism (Healing) | Life 6 | 11 | Touch | Will negates (harm- | 93 |
+| Mental Turmoil | Telepathy (Compulsion) [Mind-Affecting] | Corruption and Madness 3, Pain | 5 | Close (25 ft. + 5 ft./2 levels) | Will negates | 93 |
+| Mighty Spring | Psychokinesis | Lurk 1, psychic warrior 1 | 1 | Personal | — | 94 |
+| Mind Over Energy | Psychometabolism | Guardian 6, psion/wilder 6, | 11 | Personal | — | 94 |
+| Mindfire | Psychometabolism | Psion/wilder 3 | 5 | Touch | Fortitude negates | 94 |
+| Moment Of Insight | Clairsentience | Lurk 2, psychic warrior 2 | 3 | Personal | — | 94 |
+| Perfect Archery | Clairsentience | Psychic warrior 2 | 3 | Personal | — | 94 |
+| Perfect Riposte | Clairsentience | Justice 6, psychic warrior 5 | 11 | Touch | None (object, harmless) | 94 |
+| Planar Apotheosis | Psychometabolism [see text] | Evil 4, Good 4, psion/wilder 4, | 7 | Personal | — | 94 |
+| Planar Champion | Psychoportation [see text] | Psion/wilder 7 | 13 | Close (25 ft. + 5 ft./2 levels) | None | 95 |
+| Planar Embrace | Psychometabolism [see text] | Evil 6, Good 6, psion/ | 15 | Personal | — | 95 |
+| Power Claws | Psychokinesis [Force] | Psychic warrior 2 | 3 | Personal | — | 95 |
+| Power Thief | Telepathy (Compulsion) [Mind-Affecting] | Consumption 7 | 13 | Close (25 ft. + 5 ft./2 levels) | Will negates | 96 |
+| Power Weapon | Psychokinesis [Force] | Psychic warrior 2 | 3 | Touch | None | 96 |
+| Primal Fear | Telepathy [Mind-Affecting] | Corruption and Madness 1, | 1 | Medium (100 ft. + 10 ft./level) | Will negates | 96 |
+| Protection From Evil, Psionic | Telepathy | Good 1 | 1 | Touch | Will negates (harmless) | 96 |
+| Protection From Good, Psionic | Telepathy | Evil 1 | — | — | — | 96 |
+| Protection From Psionics | Clairsentience | Guardian 5 | 9 | Touch | Will negates (harmless) | 96 |
+| Protection From Spells, Psionic | Psychometabolism | Magic 8 | 15 | Touch | Will negates (harm- | 96 |
+| Psychic Containment | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 3 | 5 | Close (25 ft. + 5 ft./2 levels) | Will negates | 97 |
+| Psychic Scimitar | Psychometabolism | Psion/wilder 2 | 3 | Medium (100 ft. +10 ft./level) | None | 97 |
+| Psychokinetic Weapon | Psychokinesis | Psychic warrior 4 | 7 | Close (25 ft. + 5 ft/2 levels) | Yes (object) | 97 |
+| Psychometry | Clairsentience | Knowledge 6, psion/wilder 6 | 11 | 10 ft. | None | 97 |
+| Psychoportive Shelter | Psychoportation | Psion/wilder 2 | 3 | 10 ft. | None | 98 |
+| Psychotic Break | Telepathy (Compulsion) [Mind-Affecting] | Pain and Suffering 5, psion/ | 9 | Medium (100 ft. +10 ft/level) | Will negates | 98 |
+| Rage Of The Remorhaz | Psychometabolism | Psychic warrior 6 | 11 | Personal | — | 98 |
+| Realized Potential | Clairsentience | Psion/wilder 3 | 5 | Touch | Will negates (harmless) | 98 |
+| Powers, Mantles And Items See Invisibility, Psionic | Clairsentience | Lurk 2 | 3 | Personal | — | 99 |
+| Sensory Gloom | Psychometabolism | Lurk 1 | 1 | Close (25 ft. + 5 ft./2 levels) | Fortitude negates | 99 |
+| Serenity | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 2, Repose 2 | 3 | Medium (100 ft. + 10 ft./level) | Will negates | 99 |
+| Shadow Eft | Psychoportation [Evil] | Psion/wilder 4 | 7 | Close (25 ft. + 5 ft./2 levels) | None | 99 |
+| Shadow Walk, Psionic | Psychoportation | Light and Darkness 5 | 9 | Touch | Will negates | 99 |
+| Slow Breathing | Psychometabolism | Psion/wilder 1, psychic war- | 1 | Personal | — | 100 |
+| Speak With Dead, Psionic | Clairsentience | Death 3, lurk 3 | 5 | Touch | Will negates; see text | 100 |
+| Spirit Of War | Telepathy | Conflict 8 | 15 | 40 ft. | — | 100 |
+| Stomp, Greater | Psychokinesis | Psion/wilder 5, psychic war- | 9 | 120 ft. | Reflex negates | 100 |
+| Stone Mind | Psychometabolism | Natural World 1, psion/wilder | 1 | Personal | — | 100 |
+| Stygian Bane | Psychometabolism | Psychic warrior 3 | 5 | Touch | Will negates (harm- | 100 |
+| Stygian Bolt | Psychometabolism | Psion/wilder 6 | 11 | 120 ft. | Reflex | 100 |
+| Stygian Conflagration | Psychometabolism | Psion/wilder 9 | 17 | Medium (100 ft. +10 ft./level) | Fortitude partial; see | 101 |
+| Stygian Discernment | Clairsentience | Death 1, psion/wilder 1, psychic | 1 | 60 ft. | None | 101 |
+| Stygian Disruption | Psychometabolism | Psychic warrior 4 | 7 | Touch | Will negates (harm- | 102 |
+| Stygian Dominion | Psychometabolism | Death 5, psion/wilder 5 | 9 | Medium (100 ft. + 10 ft./level) | None; see text | 102 |
+| Stygian Erasure | Psychometabolism | Psychic warrior 2 | 3 | Personal | — | 102 |
+| Stygian Ray | Psychometabolism | Death 2, psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | None | 102 |
+| Stygian Touch | Psychometabolism | Psychic warrior 6 | 11 | Touch | Fortitude negates | 103 |
+| Stygian Veil | Psychometabolism | Death 8, psion/wilder 8 | 15 | Personal | — | 103 |
+| Stygian Ward | Psychometabolism | Life 4 | 7 | Touch | Will negates (harmless) | 103 |
+| Stygian Weapon | Psychometabolism | Lurk 2, psychic warrior 2 | 3 | Touch | None (object) | 103 |
+| Suggestion, Implanted | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 4 | 7 | Close (25 ft. + 5ft./2 levels) | Will negates | 103 |
+| Suppress Schism | Psychokinesis | Psion/wilder 5 | 9 | Close (25 ft. + 5 ft./2 levels) | Will partial; see text | 104 |
+| Synchronicity | Clairsentience | Psion/wilder 1 | 1 | Personal | — | 104 |
+| Telekinetic Boomerang | Psychokinesis | Kineticist 3, psychic warrior 3 | 5 | Touch | Will negates (object) | 104 |
+| Telekinetic Buffer | Psychokinesis | Psion/wilder 5 | 9 | Up to 15 ft. | None | 104 |
+| Temporal Reiteration | Psychoportation | Nomad 5 | 9 | Personal | — | 105 |
+| Touch Of Health | Psychometabolism (Healing) | Life 1 | 1 | Touch | Will negates (harm- | 105 |
+| Urban Strider | Psychometabolism | Psion/wilder 1, psychic war- | 1 | Personal | — | 105 |
+| Urge Extermination | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 9 | 17 | Close (25 ft. + 5 ft./2 levels) | None | 105 |
+| Zone Of Alertness | Telepathy (Compulsion) [Mind-Affecting] | Lurk 2, psion/wilder 2 | 3 | 10 ft. | Will negates (harmless) | 105 |
+| Zone Of Truth, Psionic | Telepathy (Compulsion) [Mind-Affecting] | Justice 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Will negates | 106 |

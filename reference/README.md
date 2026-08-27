@@ -17,7 +17,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `spell_index.{json,md}` | spell index (school, level) | 1804 | `scripts/spell_harvest.py` | SRD 3.5 core + Spell Compendium + Complete Mage/Champion + Races of the Dragon |
 | `feat_index.{json,md}` | feat index (type, prerequisite) | 1253 | `scripts/feat_harvest.py` | SRD 3.5 core + 18 supplement books |
 | `magic_item_index.{json,md}` | magic-item index (price, slot, aura, CL) | 1058 | `scripts/item_harvest.py` | Magic Item Compendium + DMG v3.5 specific/wondrous items |
-| `power_index.{json,md}` | psionic-power index (discipline, level, PP) | 281 | `scripts/power_harvest.py` | Expanded Psionics Handbook |
+| `power_index.{json,md}` | psionic-power index (discipline, level, PP) | 409 | `scripts/power_harvest.py` | Expanded Psionics Handbook + Complete Psionic |
 | `maneuver_index.{json,md}` | Tome of Battle maneuver/stance index | 171 | `scripts/maneuver_harvest.py` | Tome of Battle: Book of Nine Swords |
 | `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
 
