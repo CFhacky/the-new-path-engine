@@ -18,13 +18,19 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
+**At a glance (2026-08-27).** Seven reference index families, ~6,200 entries:
+terms/affixes (143), creatures (1509), magic items (1058), psionic powers
+(281), martial maneuvers (171), feats (1253), spells (1804). Every core D&D
+system and the GURPS modifier side is indexed; each has a `--selftest` that
+passes. Run any `scripts/*_harvest.py` with no args to rebuild its index.
+
 ---
 
 ## DONE — reference indices built
 
 | Reference file | Built by | Source(s) | Count | Selftest |
 |---|---|---|---|---|
-| `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (168 entries) | `python scripts/term_harvest.py --selftest` |
+| `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (143 entries) | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 specific/wondrous items (216) | 1058 items / 2 sources (982 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
