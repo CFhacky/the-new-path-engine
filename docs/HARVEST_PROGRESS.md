@@ -27,6 +27,7 @@ extraction and are the court of appeal for any garbled number.
 | `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110) | 4 sections | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | `_text\D&D 3.5e\Magic and Items\Magic Item Compendium.md` | 842 items (837 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
+| `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -62,22 +63,16 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    Fire, Boots of Speed, etc.).
 2. **Arms & Equipment Guide (3.0) items** → `item_harvest.py` `aeg` detector.
    Source: `_text\D&D 3.0\Arms And Equipment Guide.md` (present, 22,767 lines).
-3. **Psionic powers** → a new `power_harvest.py` (parallel to a spell index) or
-   a `power_lookup.py` (parallel to `spell_lookup.py`). Source: `_text\D&D
-   3.5e\Player Options\Expanded Psionics Handbook.md` (present, 49,767 lines).
-   Power block grammar: name → Discipline line → "Level:" / "Display:" /
-   "Manifesting Time:" — analogous to the spell three-line test. Psionic items
-   also live in the XPH and could feed `item_harvest.py`.
-4. **Martial maneuvers & stances (Tome of Battle)** → `maneuver_harvest.py`.
+3. **Martial maneuvers & stances (Tome of Battle)** → `maneuver_harvest.py`.
    Source: `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine
    Swords.md` (present, 26,121 lines). Nine disciplines; block grammar: name →
    "[Discipline] (Boost/Strike/Stance/Counter)" → "Level:" → "Initiation
    Action:" → "Range:".
-5. **`term_harvest.py` extensions** (named in that script's own docstring as
+4. **`term_harvest.py` extensions** (named in that script's own docstring as
    intended next Sections; their extractions exist in the corpus):
    Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-6. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
+5. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
    `_md\GURPS\GURPS 4e - Powers.md` (present, 37,745 lines) — Powers has its
    own enhancement/limitation set beyond the Basic Set.
 
@@ -122,7 +117,11 @@ asks for them here.
 - **(Logged, non-blocking) Raw-OCR fidelity vs. obvious fixes.** The harvest
   deliberately keeps obvious OCR misreads verbatim — e.g. a caster level read
   as `sth` for `5th`, an em-dash rendered as `�`, a name like `Runestatf` for
-  `Runestaff`. This follows the harvest-RAW discipline (the PDF is the court of
+  `Runestaff`, and psionic power names like `30dy Equilibrium` for `Body
+  Equilibrium` or a wholly illegible `yy` (a real Kineticist-4 power whose name
+  line the OCR could not resolve — kept, because dropping it would lose a real
+  power, and its page provenance recovers the name). This follows the
+  harvest-RAW discipline (the PDF is the court of
   appeal; per-entry page provenance lets anyone recover the true value). A
   future session should **not** "correct" these into the index — that would be
   inventing content the source did not cleanly yield. If Chad wants a
@@ -134,6 +133,11 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added `power_harvest.py`; harvested the Expanded Psionics
+  Handbook (281 powers, all with 3+ quick fields). Discipline-anchored
+  detection with a psionics-field test; tolerates descriptor lines that wrap
+  across the OCR column break (recovered the 20 Telepathy [Compulsion] powers —
+  Dominate, Insanity, Suggestion, etc.). Registered in AUTHORITY.md.
 - **2026-08-27** — Added `item_harvest.py`; harvested the Magic Item Compendium
   (842 items, 837 with 3+ quick fields). Handles wrapped multi-line names and
   inline `[RELIC]`/`[SYNERGY]` tags. Registered in AUTHORITY.md. Created this
