@@ -28,6 +28,7 @@ extraction and are the court of appeal for any garbled number.
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | `_text\D&D 3.5e\Magic and Items\Magic Item Compendium.md` | 842 items (837 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
+| `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -63,16 +64,11 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    Fire, Boots of Speed, etc.).
 2. **Arms & Equipment Guide (3.0) items** → `item_harvest.py` `aeg` detector.
    Source: `_text\D&D 3.0\Arms And Equipment Guide.md` (present, 22,767 lines).
-3. **Martial maneuvers & stances (Tome of Battle)** → `maneuver_harvest.py`.
-   Source: `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine
-   Swords.md` (present, 26,121 lines). Nine disciplines; block grammar: name →
-   "[Discipline] (Boost/Strike/Stance/Counter)" → "Level:" → "Initiation
-   Action:" → "Range:".
-4. **`term_harvest.py` extensions** (named in that script's own docstring as
+3. **`term_harvest.py` extensions** (named in that script's own docstring as
    intended next Sections; their extractions exist in the corpus):
    Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-5. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
+4. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
    `_md\GURPS\GURPS 4e - Powers.md` (present, 37,745 lines) — Powers has its
    own enhancement/limitation set beyond the Basic Set.
 
@@ -133,6 +129,14 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added `maneuver_harvest.py`; harvested Tome of Battle (171
+  maneuvers/stances across all nine disciplines, 170 with 3+ quick fields). The
+  discipline word is badly OCR-corrupted in this book (Iron Heart appears as
+  Tron/[ron/Jron/4ton Heart), so detection anchors on the reliable `(Type)`
+  token + a Level/Class line below, and recovers the discipline by keyword
+  (each discipline has a unique surviving word — "heart" -> Iron Heart, "wind"
+  -> Desert Wind). That lifted Iron Heart from 8 to 16 and balanced the
+  distribution. Registered in AUTHORITY.md.
 - **2026-08-27** — Added `power_harvest.py`; harvested the Expanded Psionics
   Handbook (281 powers, all with 3+ quick fields). Discipline-anchored
   detection with a psionics-field test; tolerates descriptor lines that wrap
