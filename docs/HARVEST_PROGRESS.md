@@ -20,9 +20,16 @@ extraction and are the court of appeal for any garbled number.
 
 **At a glance (2026-08-27).** Seven reference index families, ~6,200 entries:
 terms/affixes (143), creatures (1509), magic items (1058), psionic powers
-(281), martial maneuvers (171), feats (1253), spells (1804). Every core D&D
-system and the GURPS modifier side is indexed; each has a `--selftest` that
-passes. Run any `scripts/*_harvest.py` with no args to rebuild its index.
+(281), martial maneuvers (171), feats (1253), spells (1804). Each has a
+`--selftest` that passes. Run any `scripts/*_harvest.py` with no args to
+rebuild its index.
+
+**This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
+~1,700 OCR'd `.md` extractions; these indices harvest the mainline 3.5e systems
+plus the GURPS modifier set — on the order of 15–20 books. Substantial
+harvestable mechanics remain unindexed; see **CORPUS SCOPE** below for the
+inventory and what is worth harvesting next. Do not read "the core is done" as
+"the corpus is done."
 
 ---
 
@@ -67,6 +74,47 @@ feats do too):
   sibling is `creature_harvest.py` (detector duplicated, not imported).
 
 ---
+
+## CORPUS SCOPE — what is on the drive vs. what is harvested
+
+`I:\Sourcebooks` is far larger than the harvested slice. Counts from a
+2026-08-27 sweep (`.md` extractions; `_text` tree unless noted):
+
+| Shelf | `.md` files | Harvested so far |
+|---|---|---|
+| D&D 3.5e | 121 | ~12 books (Core DMG/PHB spells, MIC, XPH, ToB, Spell Compendium, +feat supplements from `_md\_feats`) |
+| D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
+| D&D 5e | 35 | none (wrong edition for a 3.5/GURPS game — low priority) |
+| AD&D | 19 | none (older edition — low priority) |
+| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers only (`term_harvest`) — the GURPS side is barely touched |
+| Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
+| Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
+| Forgotten Realms | 71 | none (setting + some crunch) |
+| Other RPG systems | 8 | none |
+| **`_text` total** | **1,714** | — |
+
+Highest-value UNHARVESTED 3.5e content, by directory (all under
+`_text\D&D 3.5e\`), that the existing scripts can absorb by adding sources:
+
+- **`Monsters and Fiends\`** — bestiaries BEYOND the `_md\_bestiary` twelve:
+  **Book of Vile Darkness**, **Book of Exalted Deeds**, **Deities and
+  Demigods**, **Monsters of the Planes**. (Draconomicon, Fiend Folio, FC1/FC2,
+  Libris Mortis, Lords of Madness here are duplicates of the harvested set.)
+  → extend `creature_harvest.py` to a second source directory, deduping by book.
+- **`DM Toolkits\`** — Epic Level Handbook (epic feats/spells/items — creatures
+  already indexed), Elder Evils, Exemplars of Evil (more stat blocks), Manual of
+  the Planes, Planar Handbook, Stronghold Builders Guidebook.
+- **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
+  (soulmelds), **Tome of Magic** (pact/shadow/truename magic), Savage Species
+  (monster classes), Incantatrix/variant material in Unearthed Arcana. The
+  Complete-series and Races-of books' feats are already in `feat_index`; their
+  pre-2005 spells are already in the Spell Compendium.
+- **`Magic and Items\`** — Tome of Feats (3pp, more feats).
+
+GURPS 4e mechanics worth harvesting (in `_text\GURPS\GURPS 4e\`, 478 files
+total): GURPS Magic (spell list), GURPS creature books (bestiary lines),
+GURPS Fantasy/Dungeon Fantasy gear and templates. These need GURPS-format
+detectors, not the D&D ones.
 
 ## NEXT — queued harvest targets (in priority order)
 
