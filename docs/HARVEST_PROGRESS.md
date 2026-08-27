@@ -29,22 +29,32 @@ extraction and are the court of appeal for any garbled number.
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | `_text\D&D 3.5e\Magic and Items\Magic Item Compendium.md` | 842 items (837 with 3+ quick fields) | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | `_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md` | 281 powers (all with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
+| `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
 Draconomicon = 96). The earlier note in the work queue is stale.
 
-### Related lookup scripts (retrieval, not harvest-indices)
+**Caveat on the feat count.** `feat_harvest.py` (like `feat_lookup.py`, whose
+detector it duplicates) anchors on a `Benefit:` line, so the 1253 total
+includes a minority of non-feat blocks that also carry a `Benefit:` line —
+some class features and alternative class features. This is inherited and
+honest; a translator triaging the index should expect a few such rows.
 
-These already give ready-to-paste RAW and do **not** need a harvest index; do
-not duplicate them:
+### Related lookup scripts (retrieval — the play-time siblings of the indices)
+
+These print one entry, ready to paste, for live play; the harvest indices above
+give the browsable/translatable collation. Both are wanted; the lookup is not
+made redundant by the index (spells and creatures already run this way, and now
+feats do too):
 
 - `scripts/spell_lookup.py` — SRD 3.5 (605 spells, bundled JSON) + Spell
-  Compendium (live parse). SRD wins name collisions.
-- `scripts/feat_lookup.py` — SRD 3.5 (bundled JSON) + 19 supplement
-  extractions under `_md\_feats\` (live parse).
-- `scripts/monster_lookup.py` — `_md\_bestiary\` (live parse); shares its
-  block detector's shape with `creature_harvest.py` (duplicated, not imported).
+  Compendium (live parse). SRD wins name collisions. (No spell harvest index
+  yet — a candidate; see NEXT.)
+- `scripts/feat_lookup.py` — SRD 3.5 (bundled JSON) + supplement extractions
+  under `_md\_feats\` (live parse). Its index sibling is `feat_harvest.py`.
+- `scripts/monster_lookup.py` — `_md\_bestiary\` (live parse); its index
+  sibling is `creature_harvest.py` (detector duplicated, not imported).
 
 ---
 
@@ -71,6 +81,13 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
 4. **GURPS 4e Powers modifiers** → `term_harvest.py` new Section. Source:
    `_md\GURPS\GURPS 4e - Powers.md` (present, 37,745 lines) — Powers has its
    own enhancement/limitation set beyond the Basic Set.
+5. **Spell index / supplemental spells** → a `spell_harvest.py` mirroring the
+   others. `spell_lookup.py` already retrieves SRD + Spell Compendium, but
+   there is no browsable spell *index*, and supplement spell lists (the
+   Complete series, Races of the Dragon, etc. under `_md\_feats\` and
+   `_text\D&D 3.5e\Player Options\`) are not collated. The Spell Compendium's
+   header grammar (name / school / `Level:`) is already parsed by
+   `spell_lookup._is_header` and can be duplicated into a harvest.
 
 ### How to add a source (the pattern, do not deviate)
 
@@ -129,6 +146,12 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added `feat_harvest.py`; built the feat index (1253 feats
+  across the bundled SRD core + 18 supplement extractions; 742 typed, 962 with
+  a prerequisite). Detection duplicated from `feat_lookup.py`; adds inline
+  `[Type]`-tag splitting (peeling multiple OCR-mangled tags off the name line)
+  and SRD prerequisite parsing. Completes the reference-layer symmetry (every
+  family now has both a lookup and an index). Registered in AUTHORITY.md.
 - **2026-08-27** — Added `maneuver_harvest.py`; harvested Tome of Battle (171
   maneuvers/stances across all nine disciplines, 170 with 3+ quick fields). The
   discipline word is badly OCR-corrupted in this book (Iron Heart appears as
