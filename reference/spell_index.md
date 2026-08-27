@@ -1853,3 +1853,48 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 | Wings Of Cover | Evocation | [Force] | Sorcerer 2 | 120 |
 | Wings Of Flurry | Evocation | [Force] | Sorcerer 4 | 120 |
 | Wings Of Swift Flying | Evocation | [Force] | Sorcerer 1 | 120 |
+
+## Dragon Magic — 37 spells
+
+*Source: Dragon Magic (WotC, 2006), spell descriptions.*  
+*Harvest: ok — 37 spells from Dragon Magic.md.*
+
+| Spell | School | Subschool / Descriptor | Level | Page |
+|---|---|---|---|---|
+| Adoration Of The Frightful | Enchantment | (Charm) [Mind-A ffecting] | Bard 3, cleric 3, hexblade 2, | 65 |
+| Arcane Spellsurge | Universal | — | Sorcerer/wizard 7, wu jen 7 | 65 |
+| Aspect Of The Chromatic Dragon | Transmutation | (Polymorph) [Evil] | Sorcerer 8 | 65 |
+| Aspect Of The Platinum Dragon | Transmutation | (Polymorph) [Good] | Sorcerer 7 | 65 |
+| Burst Of Glacial Wrath | Evocation | /Transmutation [Cold] | Sorcerer/wizard 9 | 65 |
+| Call Of The Twilight Defender | Conjuration | (Summoning) | Druid 6, sorcerer/wizard 6 | 66 |
+| Channel The Dragon | Transmutation | — | Wu jen 7 (all) | 66 |
+| Curse Of The Elemental Lords | Necromancy | — | Sorcerer/wizard 4 | 66 |
+| Dragoneye Rune | Universal | — | Sorcerer/wizard 2, wu jen 2 | 67 |
+| Dragonshape, Least | Transmutation | (Polymorph) | Sorcerer/wizard 3 | 67 |
+| Dragonshape, Lesser | Transmutation | (Polymorph) | Sorcerer/wizard 6 | 67 |
+| Eyes Of The Oracle | Divination | — | Cleric 6, sorcerer/wizard 6, | 67 |
+| Ferocity Of Sanguine Rage | Transmutation | /Divination | Assassin 4, sorcerer/wizard 3 | 68 |
+| Firestride Exhalation | Conjuration | (Teleportation)/ | Sorcerer/wizard 4, wu jen 4 | 68 |
+| Haze Of Smoldering Stone | Evocation | [Fire] | Druid 7, sorcerer/wizard 6, | 69 |
+| Hoard Gullet | Transmutation | — | Sorcerer/wizard 1 | 69 |
+| Justice Of The Wyrm King | Abjuration | [Force] | Sorcerer/wizard 7 | 69 |
+| Kiss Of Draconic Defiance | Abjuration | — | Sorcerer/wizard 7 | 70 |
+| Lord Of The Sky | Evocation | /Transmutation [Electricity] | Shugenja 5 (air), sorcerer/ | 70 |
+| Magic Of The Dragonheart | Transmutation | — | Sorcerer 2 | 71 |
+| Mark Of The Enlightened Soul | Transmutation | [Good] | Cleric 4, sorcerer/wizard 4 | 71 |
+| Mind Of The Labyrinth | Enchantment | (Compulsion) [Mind-A ffecting] | Sorcerer/wizard 8 | 71 |
+| Passage Of The Shifting Sands | Transmutation | /Evocation [Air] | Druid 4, sorcerer/wizard 4 | 71 |
+| Path Of Frost Primal Hunter | Transmutation | [Cold] | Druid 1, sorcerer/wizard 1 | 72 |
+| Primal Instinct | Transmutation | — | Druid 3, ranger 2, sorcerer 3 | 73 |
+| Primal Senses | Transmutation | — | Druid 4, ranger 3, sorcerer 4 | 73 |
+| Primal Speed | Transmutation | — | Druid 6, ranger 4, sorcerer 6 | 73 |
+| Rot Of Ages | Conjuration | (Creation)/Necromancy | Druid 1, sorcerer/wizard 1 | 73 |
+| Soul Of Anarchy | Transmutation | [Chaotic] | Bard 2, sorcerer/wizard 2 | 73 |
+| Soul Of Light | Transmutation | [Good] | Cleric 3, paladin 2 | 74 |
+| Soul Of Order | Transmutation | [Lawful] | Paladin 1, sorcerer/wizard 2 | 74 |
+| Soul Of Shadow Touch Of The Blackened Soul | Transmutation | [Evil] | Blackguard 2, cleric 3 | 74 |
+| Trance Of The Verdant Domain | Enchantment | (Compulsion) [Mind-A ffecting] | Hexblade 3, sorcerer/wizard 4 | 75 |
+| Undying Vigor Of The Dragonlords | Conjuration | (Healing) | Sorcerer 5 | 75 |
+| Vision Of The Omniscient Eye | Divination | /Evocation [Light] | Bard 3, cleric 3, druid 3, | 75 |
+| Wingblast | Evocation | [Air]/Transmutation | Druid 3, shugenja 3 (air), | 75 |
+| Wreath Of Flames | Evocation | [Fire] | Druid 3, sorcerer/wizard 3, wu | 76 |

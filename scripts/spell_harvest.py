@@ -284,6 +284,18 @@ SOURCES: List[Source] = [
            path=Path("D&D 3.5e/Player Options/Races of the Dragon.md"),
            citation="Races of the Dragon (WotC, 2006), spell descriptions",
            detector="compendium"),
+    Source(key="dmagic", book="Dragon Magic",
+           path=Path("D&D 3.5e/Player Options/Dragon Magic.md"),
+           citation="Dragon Magic (WotC, 2006), spell descriptions",
+           detector="compendium"),
+    # NOT added — deliberately (see docs/HARVEST_PROGRESS.md): the 2004-2005
+    # books (Complete Arcane/Divine/Adventurer, Races of Stone/Destiny/Wild,
+    # Sandstorm, Stormwrack, Frostburn, Heroes of Horror, Magic of Incarnum)
+    # PRE-date or coincide with the 2005 Spell Compendium, so their spells are
+    # already in it; harvesting them injects OCR-variant DUPLICATES (e.g.
+    # "Bsorption" for "Absorption"). Tome of Magic is truename/pact/shadow
+    # subsystem content, not standard spells. Add any of these only with a
+    # dedupe pass against the existing index.
 ]
 
 

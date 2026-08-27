@@ -20,7 +20,7 @@ extraction and are the court of appeal for any garbled number.
 
 **At a glance (2026-08-27).** Seven reference index families, ~6,350 entries:
 terms/affixes (143), creatures (1509), magic items (1058), psionic powers
-(409), martial maneuvers (171), feats (1253), spells (1804). Each has a
+(409), martial maneuvers (171), feats (1253), spells (1841). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to
 rebuild its index.
 
@@ -43,7 +43,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
-| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35) | 1804 spells / 5 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
+| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -159,10 +159,18 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    intended next Sections; their extractions exist in the corpus):
    Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-3. **More supplemental spells** → add sources to `spell_harvest.py`. The core
-   splatbooks are now DONE (Complete Mage, Complete Champion, Races of the
-   Dragon — all validated clean and clustered in their spell chapters). What
-   remains is lower-value / needs-work:
+3. **More supplemental spells** → add sources to `spell_harvest.py`. The clean
+   post-2005 books are DONE (Complete Mage, Complete Champion, Races of the
+   Dragon, Dragon Magic — validated clean, clustered, genuinely new). **Do not
+   bulk-add the rest without a dedupe pass:** a 2026-08-27 sweep found the
+   2004-2005 books (Complete Arcane/Divine/Adventurer, Races of Stone/Destiny/
+   Wild, Sandstorm/Stormwrack/Frostburn, Heroes of Horror, Magic of Incarnum)
+   PRE-date or coincide with the 2005 Spell Compendium, so most of their spells
+   are already indexed — harvesting them injects OCR-variant duplicates
+   ("Bsorption" for "Absorption"). Tome of Magic is truename/pact/shadow
+   subsystem content (school+level-shaped but not standard spells). To add any
+   of these, first dedupe against the existing index by normalised name. What
+   remains cleanly harvestable:
    - **PHB2** and **Complete Scoundrel** yield 0 with `detect_compendium` — a
      different spell-block format (no ALL-CAPS name / school / `Level:` triple).
      Would need a format-specific detector.
@@ -237,6 +245,11 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added Dragon Magic (2006) to `spell_harvest.py`: +37 clean
+  spells (index 1804 → 1841), genuinely new (post-Compendium). Swept the other
+  spell-bearing books and found the 2004-2005 ones overlap the Compendium with
+  OCR-variant duplicates — left out, with the dedupe requirement recorded in
+  NEXT.
 - **2026-08-27** — Corpus review (prompted by Chad): the harvested set is a
   high-value SLICE of ~1,700 OCR'd files, not the whole corpus. Added
   `reference/README.md` (folder manifest), a CORPUS SCOPE inventory, and the

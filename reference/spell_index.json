@@ -1,7 +1,7 @@
 {
  "generated_by": "scripts/spell_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_spells": 1804,
+ "total_spells": 1841,
  "sources": [
   {
    "key": "srd",
@@ -18080,6 +18080,384 @@
      "school": "Evocation",
      "subschool": "[Force]",
      "level": "Sorcerer 1"
+    }
+   ]
+  },
+  {
+   "key": "dmagic",
+   "book": "Dragon Magic",
+   "citation": "Dragon Magic (WotC, 2006), spell descriptions",
+   "coverage": "ok \u2014 37 spells from Dragon Magic.md",
+   "spells": [
+    {
+     "name": "Adoration Of The Frightful",
+     "book": "Dragon Magic",
+     "page": 65,
+     "start": 10750,
+     "end": 10792,
+     "school": "Enchantment",
+     "subschool": "(Charm) [Mind-A ffecting]",
+     "level": "Bard 3, cleric 3, hexblade 2,"
+    },
+    {
+     "name": "Arcane Spellsurge",
+     "book": "Dragon Magic",
+     "page": 65,
+     "start": 10792,
+     "end": 10859,
+     "school": "Universal",
+     "subschool": null,
+     "level": "Sorcerer/wizard 7, wu jen 7"
+    },
+    {
+     "name": "Aspect Of The Chromatic Dragon",
+     "book": "Dragon Magic",
+     "page": 65,
+     "start": 10859,
+     "end": 10892,
+     "school": "Transmutation",
+     "subschool": "(Polymorph) [Evil]",
+     "level": "Sorcerer 8"
+    },
+    {
+     "name": "Aspect Of The Platinum Dragon",
+     "book": "Dragon Magic",
+     "page": 65,
+     "start": 10892,
+     "end": 10924,
+     "school": "Transmutation",
+     "subschool": "(Polymorph) [Good]",
+     "level": "Sorcerer 7"
+    },
+    {
+     "name": "Burst Of Glacial Wrath",
+     "book": "Dragon Magic",
+     "page": 65,
+     "start": 10924,
+     "end": 10979,
+     "school": "Evocation",
+     "subschool": "/Transmutation [Cold]",
+     "level": "Sorcerer/wizard 9"
+    },
+    {
+     "name": "Call Of The Twilight Defender",
+     "book": "Dragon Magic",
+     "page": 66,
+     "start": 10979,
+     "end": 11020,
+     "school": "Conjuration",
+     "subschool": "(Summoning)",
+     "level": "Druid 6, sorcerer/wizard 6"
+    },
+    {
+     "name": "Channel The Dragon",
+     "book": "Dragon Magic",
+     "page": 66,
+     "start": 11020,
+     "end": 11077,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Wu jen 7 (all)"
+    },
+    {
+     "name": "Curse Of The Elemental Lords",
+     "book": "Dragon Magic",
+     "page": 66,
+     "start": 11077,
+     "end": 11167,
+     "school": "Necromancy",
+     "subschool": null,
+     "level": "Sorcerer/wizard 4"
+    },
+    {
+     "name": "Dragoneye Rune",
+     "book": "Dragon Magic",
+     "page": 67,
+     "start": 11249,
+     "end": 11306,
+     "school": "Universal",
+     "subschool": null,
+     "level": "Sorcerer/wizard 2, wu jen 2"
+    },
+    {
+     "name": "Dragonshape, Least",
+     "book": "Dragon Magic",
+     "page": 67,
+     "start": 11306,
+     "end": 11330,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Dragonshape, Lesser",
+     "book": "Dragon Magic",
+     "page": 67,
+     "start": 11330,
+     "end": 11409,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Sorcerer/wizard 6"
+    },
+    {
+     "name": "Eyes Of The Oracle",
+     "book": "Dragon Magic",
+     "page": 67,
+     "start": 11409,
+     "end": 11463,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Cleric 6, sorcerer/wizard 6,"
+    },
+    {
+     "name": "Ferocity Of Sanguine Rage",
+     "book": "Dragon Magic",
+     "page": 68,
+     "start": 11463,
+     "end": 11507,
+     "school": "Transmutation",
+     "subschool": "/Divination",
+     "level": "Assassin 4, sorcerer/wizard 3"
+    },
+    {
+     "name": "Firestride Exhalation",
+     "book": "Dragon Magic",
+     "page": 68,
+     "start": 11507,
+     "end": 11597,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)/",
+     "level": "Sorcerer/wizard 4, wu jen 4"
+    },
+    {
+     "name": "Haze Of Smoldering Stone",
+     "book": "Dragon Magic",
+     "page": 69,
+     "start": 11672,
+     "end": 11762,
+     "school": "Evocation",
+     "subschool": "[Fire]",
+     "level": "Druid 7, sorcerer/wizard 6,"
+    },
+    {
+     "name": "Hoard Gullet",
+     "book": "Dragon Magic",
+     "page": 69,
+     "start": 11763,
+     "end": 11822,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 1"
+    },
+    {
+     "name": "Justice Of The Wyrm King",
+     "book": "Dragon Magic",
+     "page": 69,
+     "start": 11822,
+     "end": 11866,
+     "school": "Abjuration",
+     "subschool": "[Force]",
+     "level": "Sorcerer/wizard 7"
+    },
+    {
+     "name": "Kiss Of Draconic Defiance",
+     "book": "Dragon Magic",
+     "page": 70,
+     "start": 11866,
+     "end": 11936,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Sorcerer/wizard 7"
+    },
+    {
+     "name": "Lord Of The Sky",
+     "book": "Dragon Magic",
+     "page": 70,
+     "start": 11936,
+     "end": 12026,
+     "school": "Evocation",
+     "subschool": "/Transmutation [Electricity]",
+     "level": "Shugenja 5 (air), sorcerer/"
+    },
+    {
+     "name": "Magic Of The Dragonheart",
+     "book": "Dragon Magic",
+     "page": 71,
+     "start": 12081,
+     "end": 12136,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer 2"
+    },
+    {
+     "name": "Mark Of The Enlightened Soul",
+     "book": "Dragon Magic",
+     "page": 71,
+     "start": 12136,
+     "end": 12183,
+     "school": "Transmutation",
+     "subschool": "[Good]",
+     "level": "Cleric 4, sorcerer/wizard 4"
+    },
+    {
+     "name": "Mind Of The Labyrinth",
+     "book": "Dragon Magic",
+     "page": 71,
+     "start": 12183,
+     "end": 12229,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-A ffecting]",
+     "level": "Sorcerer/wizard 8"
+    },
+    {
+     "name": "Passage Of The Shifting Sands",
+     "book": "Dragon Magic",
+     "page": 71,
+     "start": 12229,
+     "end": 12289,
+     "school": "Transmutation",
+     "subschool": "/Evocation [Air]",
+     "level": "Druid 4, sorcerer/wizard 4"
+    },
+    {
+     "name": "Path Of Frost Primal Hunter",
+     "book": "Dragon Magic",
+     "page": 72,
+     "start": 12289,
+     "end": 12379,
+     "school": "Transmutation",
+     "subschool": "[Cold]",
+     "level": "Druid 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Primal Instinct",
+     "book": "Dragon Magic",
+     "page": 73,
+     "start": 12455,
+     "end": 12498,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 3, ranger 2, sorcerer 3"
+    },
+    {
+     "name": "Primal Senses",
+     "book": "Dragon Magic",
+     "page": 73,
+     "start": 12498,
+     "end": 12537,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 4, ranger 3, sorcerer 4"
+    },
+    {
+     "name": "Primal Speed",
+     "book": "Dragon Magic",
+     "page": 73,
+     "start": 12537,
+     "end": 12580,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 6, ranger 4, sorcerer 6"
+    },
+    {
+     "name": "Rot Of Ages",
+     "book": "Dragon Magic",
+     "page": 73,
+     "start": 12580,
+     "end": 12628,
+     "school": "Conjuration",
+     "subschool": "(Creation)/Necromancy",
+     "level": "Druid 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Soul Of Anarchy",
+     "book": "Dragon Magic",
+     "page": 73,
+     "start": 12628,
+     "end": 12681,
+     "school": "Transmutation",
+     "subschool": "[Chaotic]",
+     "level": "Bard 2, sorcerer/wizard 2"
+    },
+    {
+     "name": "Soul Of Light",
+     "book": "Dragon Magic",
+     "page": 74,
+     "start": 12681,
+     "end": 12727,
+     "school": "Transmutation",
+     "subschool": "[Good]",
+     "level": "Cleric 3, paladin 2"
+    },
+    {
+     "name": "Soul Of Order",
+     "book": "Dragon Magic",
+     "page": 74,
+     "start": 12727,
+     "end": 12774,
+     "school": "Transmutation",
+     "subschool": "[Lawful]",
+     "level": "Paladin 1, sorcerer/wizard 2"
+    },
+    {
+     "name": "Soul Of Shadow Touch Of The Blackened Soul",
+     "book": "Dragon Magic",
+     "page": 74,
+     "start": 12774,
+     "end": 12864,
+     "school": "Transmutation",
+     "subschool": "[Evil]",
+     "level": "Blackguard 2, cleric 3"
+    },
+    {
+     "name": "Trance Of The Verdant Domain",
+     "book": "Dragon Magic",
+     "page": 75,
+     "start": 12932,
+     "end": 12966,
+     "school": "Enchantment",
+     "subschool": "(Compulsion) [Mind-A ffecting]",
+     "level": "Hexblade 3, sorcerer/wizard 4"
+    },
+    {
+     "name": "Undying Vigor Of The Dragonlords",
+     "book": "Dragon Magic",
+     "page": 75,
+     "start": 12966,
+     "end": 13010,
+     "school": "Conjuration",
+     "subschool": "(Healing)",
+     "level": "Sorcerer 5"
+    },
+    {
+     "name": "Vision Of The Omniscient Eye",
+     "book": "Dragon Magic",
+     "page": 75,
+     "start": 13010,
+     "end": 13051,
+     "school": "Divination",
+     "subschool": "/Evocation [Light]",
+     "level": "Bard 3, cleric 3, druid 3,"
+    },
+    {
+     "name": "Wingblast",
+     "book": "Dragon Magic",
+     "page": 75,
+     "start": 13051,
+     "end": 13122,
+     "school": "Evocation",
+     "subschool": "[Air]/Transmutation",
+     "level": "Druid 3, shugenja 3 (air),"
+    },
+    {
+     "name": "Wreath Of Flames",
+     "book": "Dragon Magic",
+     "page": 76,
+     "start": 13122,
+     "end": 13212,
+     "school": "Evocation",
+     "subschool": "[Fire]",
+     "level": "Druid 3, sorcerer/wizard 3, wu"
     }
    ]
   }
