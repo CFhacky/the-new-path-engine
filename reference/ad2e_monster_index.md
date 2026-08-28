@@ -4,36 +4,109 @@
 the harvest.** **AD&D 2nd Edition** monsters — a DIFFERENT edition from the
 3.5e `creature_index` and the 5e `dnd5e_creature_index`. Every row is
 stamped `system: AD&D 2e` and is SOURCE MATERIAL for the system-translator
-skill. **Vision-transcribed from the Planescape MC Appendix II PDF page
-images** (the OCR text layer scrambles the stat columns) — still book RAW,
-read off the page. AD&D 2e uses DESCENDING Armor Class and THAC0.
+skill. **Vision-transcribed from the Planescape Monstrous Compendium
+Appendix II AND Appendix III PDF page images** (the OCR text layer scrambles
+/ does not exist for the stat columns) — still book RAW, read off the page.
+Each row carries its own `book` (the `App` column below). AD&D 2e uses
+DESCENDING Armor Class and THAC0.
 
-*25 monsters, Planescape MC Appendix II.*
+*96 monsters — 25 from MC Appendix II, 71 from MC Appendix III.*
 
-| Monster | AC | HD | THAC0 | No. App. | Move | Alignment | Size | XP | Page |
-|---|---|---|---|---|---|---|---|---|---|
-| Aasimar | 3 (10) | 3+3 | 17 | 1 (1-2) | 12 | Any nonevil | M (5.5-6.5' tall) | 420 | 7 |
-| Abrian | 6 | 2+3 | 17 | 4-40 | 18 | Chaotic evil | M (7' tall) | 175 | 9 |
-| Eladrin, Bralani (Lesser) | 2 (-2) | 6+9 | 15 | 1-3 (3-24) | 15, Fl 30 (A) | Chaotic good | M (5' tall) | 9,000 | 31 |
-| Eladrin, Firre (Greater) | -3 | 7+10 | 13 | 1-4 | 15, Fl 36 (A) | Chaotic good | M (6' tall) | 14,000 | 33 |
-| Eladrin, Ghaele (Greater) | -5 | 10+15 | 11 | 1 (1-3) | 18, Fl 60 (A) | Chaotic good | M (6' tall) or L (20' wingspan) | 19,000 | 34 |
-| Eladrin, Noviere (Lesser) | 3 (-3) | 5+7 | 15 | 2-16 | 15, Sw 24 | Chaotic good | M (5' tall or 7' long) | 5,000 | 35 |
-| Eladrin, Shiere (Lesser) | 4 (-4) | 8+12 | 13 | 3-24 | 15, Fl 24 (A) | Chaotic good | M (7' tall) | 11,000 | 36 |
-| Fhorge | 6, head 3 | 5+5 | 15 | 1 (2-8) | 15 | Neutral | L (5' high at shoulder) | 1,400 | 39 |
-| Guardinal, Cervidal | 2 | 4+2 | 17 | 1 (2-5) | 18, Ju 3 | Neutral good | M (5.5' tall) | 3,000 | 46 |
-| Guardinal, Lupinal | -2 | 8+4 | 13 | 1-8 | 18 | Neutral good | M (6' tall) | 9,000 | 49 |
-| Guardinal, Ursinal | -4 | 10+5 | 11 | 1 (1-2) | 12 | Neutral good | L (8' tall) | 14,000 | 50 |
-| Incantifer | 0 or better | 9d4+18 to 9d4+26 | 13 | 1 | 12 | Neutral (evil) | M (5-6' tall) | 13,000+ | 53 |
-| Leomarh | 4 | 6+2 | 15 | 2-12 | 15 | Neutral | L (6'-7' long) | 1,400 | 61 |
-| Monster of Legend | 0 or better (-6) | 75-150 hit points (120 hp) | 5 | 1 | Per prime-material monster (18, Fl 30 D) | Per prime-material monster | Varies (H, 12' tall) | Special (35,000) | 65 |
-| Noctral | 1 | 5 | 15 | 1 | 1, Fl 36 (C) | Lawful good | M (20' wingspan) | 3,000 | 69 |
-| Rager | Varies | 3d10 to 8d10 | Varies | 1-8 | 12 | Any chaotic | M (5'-7' tall) | 270-2,000 (by HD) | 77 |
-| Razorvine | 5 | 5 hp per vine | 20 | 2-20 vines | 0 | Neutral | M (12'-20' long) | 35 per vine | 79 |
-| Rilmani, Argenach | -1 | 9 | 11 | 1 (1-4 at the Spire) | 15 | Neutral | M (7' tall) | 16,000 | 88 |
-| Rilmani, Aurumach | -3 (-7 in armor) | 12 | 9 | 1 (1-3 on the Spire) | 15 | Neutral | L (10' tall) | 27,000 | 89 |
-| Simpathetic | 7 | 1-4 hp | 20 | 1-6 (family) or 4-400 (flock) | 3, Fl 18 (B) | Chaotic evil | T (2' wingspan) | 175 | 95 |
-| Tanar'ri, Alkilith (True) | 3 | 11 | 9 | 1-3 | 6 | Chaotic evil | L (6' diameter) | 17,000 | 107 |
-| Terlen | 5 | 4+3 | 17 | 1-8 | 3, Sw 15, Fl 15 (C) | Neutral (evil) | M (7' long) | 975 | 115 |
-| Tso | 1 (0) | 7 | 13 | 3-18 | 9, Cl 3 | Lawful evil | M (5.5' tall) | 3,000 | 117 |
-| Wastrel | 6 | 1+1 | 19 | 10-100 | 3, Fl 15 (C) | Neutral evil | S (3' wingspan) | 270 | 123 |
-| Wraithworm | 5 | 5+3 | 15 | 1 | 9 | Neutral | M (10' long) | 3,000 | 125 |
+| Monster | AC | HD | THAC0 | No. App. | Move | Alignment | Size | XP | Page | App |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Aasimar | 3 (10) | 3+3 | 17 | 1 (1-2) | 12 | Any nonevil | M (5.5-6.5' tall) | 420 | 7 | II |
+| Abrian | 6 | 2+3 | 17 | 4-40 | 18 | Chaotic evil | M (7' tall) | 175 | 9 | II |
+| Eladrin, Bralani (Lesser) | 2 (-2) | 6+9 | 15 | 1-3 (3-24) | 15, Fl 30 (A) | Chaotic good | M (5' tall) | 9,000 | 31 | II |
+| Eladrin, Firre (Greater) | -3 | 7+10 | 13 | 1-4 | 15, Fl 36 (A) | Chaotic good | M (6' tall) | 14,000 | 33 | II |
+| Eladrin, Ghaele (Greater) | -5 | 10+15 | 11 | 1 (1-3) | 18, Fl 60 (A) | Chaotic good | M (6' tall) or L (20' wingspan) | 19,000 | 34 | II |
+| Eladrin, Noviere (Lesser) | 3 (-3) | 5+7 | 15 | 2-16 | 15, Sw 24 | Chaotic good | M (5' tall or 7' long) | 5,000 | 35 | II |
+| Eladrin, Shiere (Lesser) | 4 (-4) | 8+12 | 13 | 3-24 | 15, Fl 24 (A) | Chaotic good | M (7' tall) | 11,000 | 36 | II |
+| Fhorge | 6, head 3 | 5+5 | 15 | 1 (2-8) | 15 | Neutral | L (5' high at shoulder) | 1,400 | 39 | II |
+| Guardinal, Cervidal | 2 | 4+2 | 17 | 1 (2-5) | 18, Ju 3 | Neutral good | M (5.5' tall) | 3,000 | 46 | II |
+| Guardinal, Lupinal | -2 | 8+4 | 13 | 1-8 | 18 | Neutral good | M (6' tall) | 9,000 | 49 | II |
+| Guardinal, Ursinal | -4 | 10+5 | 11 | 1 (1-2) | 12 | Neutral good | L (8' tall) | 14,000 | 50 | II |
+| Incantifer | 0 or better | 9d4+18 to 9d4+26 | 13 | 1 | 12 | Neutral (evil) | M (5-6' tall) | 13,000+ | 53 | II |
+| Leomarh | 4 | 6+2 | 15 | 2-12 | 15 | Neutral | L (6'-7' long) | 1,400 | 61 | II |
+| Monster of Legend | 0 or better (-6) | 75-150 hit points (120 hp) | 5 | 1 | Per prime-material monster (18, Fl 30 D) | Per prime-material monster | Varies (H, 12' tall) | Special (35,000) | 65 | II |
+| Noctral | 1 | 5 | 15 | 1 | 1, Fl 36 (C) | Lawful good | M (20' wingspan) | 3,000 | 69 | II |
+| Rager | Varies | 3d10 to 8d10 | Varies | 1-8 | 12 | Any chaotic | M (5'-7' tall) | 270-2,000 (by HD) | 77 | II |
+| Razorvine | 5 | 5 hp per vine | 20 | 2-20 vines | 0 | Neutral | M (12'-20' long) | 35 per vine | 79 | II |
+| Rilmani, Argenach | -1 | 9 | 11 | 1 (1-4 at the Spire) | 15 | Neutral | M (7' tall) | 16,000 | 88 | II |
+| Rilmani, Aurumach | -3 (-7 in armor) | 12 | 9 | 1 (1-3 on the Spire) | 15 | Neutral | L (10' tall) | 27,000 | 89 | II |
+| Simpathetic | 7 | 1-4 hp | 20 | 1-6 (family) or 4-400 (flock) | 3, Fl 18 (B) | Chaotic evil | T (2' wingspan) | 175 | 95 | II |
+| Tanar'ri, Alkilith (True) | 3 | 11 | 9 | 1-3 | 6 | Chaotic evil | L (6' diameter) | 17,000 | 107 | II |
+| Terlen | 5 | 4+3 | 17 | 1-8 | 3, Sw 15, Fl 15 (C) | Neutral (evil) | M (7' long) | 975 | 115 | II |
+| Tso | 1 (0) | 7 | 13 | 3-18 | 9, Cl 3 | Lawful evil | M (5.5' tall) | 3,000 | 117 | II |
+| Wastrel | 6 | 1+1 | 19 | 10-100 | 3, Fl 15 (C) | Neutral evil | S (3' wingspan) | 270 | 123 | II |
+| Wraithworm | 5 | 5+3 | 15 | 1 | 9 | Neutral | M (10' long) | 3,000 | 125 | II |
+| Animental | Varies | Varies | Varies | Varies (usually 1) | Varies | Neutral | Varies | Varies | 14 | III |
+| Archomental (Evil), Cryonax | -6 | 90 hp | 5 | 1 | 9 | Neutral evil | L (15' tall) | 28,000 | 16 | III |
+| Archomental (Evil), Imix | -4 | 90 hp | 5 | 1 | 18 | Neutral evil | L (18' tall) | 25,000 | 16 | III |
+| Archomental (Evil), Ogremoch | -7 | 110 hp | 5 | 1 | 9 | Neutral evil | L (10' tall) | 28,000 | 16 | III |
+| Archomental (Evil), Olhydra | -5 | 90 hp | 5 | 1 | 6, Sw 18 | Neutral evil | L (20' dia.) | 27,000 | 16 | III |
+| Archomental (Evil), Yan-C-Bin | -6 | 85 hp | 5 | 1 | Fl 48 (A) | Neutral evil | L (10' dia.) | 28,000 | 16 | III |
+| Archomental (Good), Ben-hadar | -4 | 90 hp | 5 | 1 | 12, Sw 18 | Neutral good | L (18' tall) | 24,000 | 20 | III |
+| Archomental (Good), Chan | -6 | 90 hp | 5 | 1 | Fl 48 (A) | Neutral good | L (10' diameter) | 28,000 | 20 | III |
+| Archomental (Good), Sunnis | -7 | 115 hp | 5 | 1 | 9 | Neutral good | L (12' tall) | 29,000 | 20 | III |
+| Archomental (Good), Zaaman Rul | -3 | 80 hp | 5 | 1 | 12 | Neutral good | L (10' tall) | 23,000 | 20 | III |
+| Belker | -2 | 7+3 | 13 | 1 or 1d3 | 12, Fl 18 (B) | Neutral evil | L (7'-9' tall) | 5,000 | 22 | III |
+| Bzastra | 6 (or 0) | 5 | 15 | 1d6 | Sw 9 | Neutral (rarely, any) | M (5' tall) | 650 | 24 | III |
+| Chososion | -5 | 8 | 13 | 1 | Fl 12 (A) | Neutral | M (6' across) | 8,000 | 26 | III |
+| Darklight | 0 | 6+6 (but see below) | 13 (but see below) | 1 | Fl 12 (C) | Any evil | M (6' tall) | 7,000 | 28 | III |
+| Devete | 6 | 4 | 17 | 1 (rarely, 1d3) | 12 (42 on the Astral) | Neutral (rarely, neutral evil) | M (5' tall) | 975 | 30 | III |
+| Devourer | 2 | 9+3 | 11 | 1 | 12 | Neutral evil | L (8' tall) | 13,000 | 32 | III |
+| Dharum Suhn | 0 | 24 | 5 | 1d4 | 6 | Neutral (lawful) | H (20' tall) | 32,000 | 34 | III |
+| Egarus | 10 | N/A | N/A | 1d3 patches | Nil | Neutral | T (one patch is 6" across) | 270 | 36 | III |
+| Entrope | 3 | 11+6 | 9 | 1 | 12 | Chaotic neutral | H (20' long) | 10,000 | 38 | III |
+| Facet | 4 | 3 (see below) | 17 (see below) | 2d6 | 9 | Neutral | M (5' tall) (see below) | 175 (combined facet: 2-member 420, 3-member 1,400, 4-member 3,000, 5-member 6,000) | 40 | III |
+| Fire Bat | 8 | 2 | 19 | 10 + 1d10 | 6, Fl 21 (B) | Neutral evil | S (2' long, 4' wingspan) | 175 | 42 | III |
+| Frost Salamander | 3 | 12 | 9 | 1d3 | 12 | Chaotic evil | L (8' long) | 9,000 | 44 | III |
+| Fundamental | 3-6 (see below) | 1+1 | 19 | 2d10 | 9-24 (see below) | Neutral | T (1-2' "wingspan") | 175 | 46 | III |
+| Garmorm | 4 or 0 | 5-10 | 15 (5-6 HD), 13 (7-8 HD), 11 (9-10 HD) | 1d3 | 18 | Chaotic evil | L (12' long) | 8,000 (5 HD) / 9,000 (6 HD) / 10,000 (7 HD) / 11,000 (8 HD) / 12,000 (9 HD) / 13,000 (10 HD) | 48 | III |
+| Homunculus, Elemental (Breather) | 8 | 1d3 hp | N/A | 1 | Nil | Neutral | T (3" tall) | 15 | 50 | III |
+| Homunculus, Elemental (Skin) | 10 | 2 | N/A | 1 | Nil | Neutral | M (6' tall) | 65 | 50 | III |
+| Immoth | 2 | 10+3 | 9 | 1 | 12 | Neutral | L (8' tall) | 8,000 | 52 | III |
+| Khargra | -3 | 6 | 9 | 1d8 | 15 (3 out of element) | Neutral | S (3 1/2' long) | 1,400 | 54 | III |
+| Klyndes | 4 | 4 | 17 | 1 | Fl 12 (A) | Neutral | M (6' tall) | 650 | 56 | III |
+| Magran | 3 | 12 | 9 | 1d3 (or 3d6) | 18 | Neutral | H (20' long) | 8,000 | 58 | III |
+| Menglis | -4 | 9 | 11 | 1 | 18 | Neutral | L (10' tall) | 8,000 | 60 | III |
+| Nathri | 6 | 1+1 | 19 | 2d20 (rarely, 2d100) | 18 | Chaotic neutral | S (4' tall) | 120 | 62 | III |
+| Ooze Sprite | 6 | 3 (king 10) | 17 | 1d6 (sometimes 3d6) | 6 | Neutral | M (5'-6' long) | 650 (Ooze Sprite King: 5,000) | 64 | III |
+| Opposition | Varies (4) | Varies (4d10) | Varies (17) | 1d6 | Varies (12) | Varies (generally neutral) | Varies (M) | Varies | 66 | III |
+| Paraelemental, Ice | 3 | 8, 12 or 16 | 13 (8 HD), 9 (12 HD), 5 (16 HD) | 1d6 | 6 | Neutral | L (8'-16' tall) | 7,000 (8 HD) / 11,000 (12 HD) / 15,000 (16 HD) | 68 | III |
+| Paraelemental, Magma | 3 | 8, 12 or 16 | 13 (8 HD), 9 (12 HD), 5 (16 HD) | 2d4 | 6 | Neutral | L (8'-16' tall) | 3,000 (8 HD) / 7,000 (12 HD) / 11,000 (16 HD) | 68 | III |
+| Paraelemental, Ooze | 0 | 8, 12 or 16 | 13 (8 HD), 9 (12 HD), 5 (16 HD) | 1d6 | 36 | Neutral | L (8'-16' tall) | 3,000 (8 HD) / 7,000 (12 HD) / 11,000 (16 HD) | 68 | III |
+| Paraelemental, Smoke | 2 | 8, 12 or 16 | 13 (8 HD), 9 (12 HD), 5 (16 HD) | 1d6 | Fl 18 (E) | Neutral | L (8'-16' tall) | 3,000 (8 HD) / 7,000 (12 HD) / 11,000 (16 HD) | 68 | III |
+| Phirblas | 8 (1 with plate mail) | 5 | 15 | 1d4 | 9 | Neutral good | M (6' tall) | 1,400 | 72 | III |
+| Primal | Varies (10) | Varies (6d4 hp) | Varies (19) | 1d4 | 12 | Any | M (5'-7' tall) | Varies (1,400) | 74 | III |
+| Psurlon | 4 | 7 | 13 | 1d4 | 9 | Lawful evil | M (7' long) | 4,000 | 76 | III |
+| Psurlon, Adept | 3 | 12 | 9 | 1 | 9 | Lawful evil | M (10' long) | 9,000 | 76 | III |
+| Psurlon, Giant | 2 | 18 | 3 | 1 | 15 | Neutral evil | H (20' long) | 15,000 | 76 | III |
+| Quasielemental (Negative), Ash | 3 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | 12 | Neutral | M (6' tall) | 2,000 (6 HD) / 5,000 (9 HD) / 8,000 (12 HD) | 78 | III |
+| Quasielemental (Negative), Dust | -1 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | 12 | Neutral | M (6' tall) | 3,000 (6 HD) / 6,000 (9 HD) / 9,000 (12 HD) | 78 | III |
+| Quasielemental (Negative), Salt | 1 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | 3 | Neutral | L (9'-12' tall) | 2,000 (6 HD) / 5,000 (9 HD) / 8,000 (12 HD) | 78 | III |
+| Quasielemental (Negative), Vacuum | -1 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | 36 | Neutral | S (4' diameter) | 2,000 (6 HD) / 5,000 (9 HD) / 8,000 (12 HD) | 78 | III |
+| Quasielemental (Positive), Lightning | 2 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | Fl 18 (E) (plus special) | Neutral | S (3' diameter) | 2,000 (6 HD) / 5,000 (9 HD) / 8,000 (12 HD) | 82 | III |
+| Quasielemental (Positive), Mineral | 0 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | 6 | Neutral | L (9'-12' high) | 3,000 (6 HD) / 6,000 (9 HD) / 8,000 (12 HD) | 82 | III |
+| Quasielemental (Positive), Radiance | 0 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | Fl 48 (E) | Neutral | S (3' diameter) | 3,000 (6 HD) / 6,000 (9 HD) / 9,000 (12 HD) | 82 | III |
+| Quasielemental (Positive), Steam | 2 | 6, 9 or 12 | 15 (6 HD), 11 (9 HD), 9 (12 HD) | 1d6 | Fl 12 (E) | Neutral | G (60' wide) | 2,000 (6 HD) / 5,000 (9 HD) / 8,000 (12 HD) | 82 | III |
+| Rast | 5 | 4+2 | 17 | 1d6+1 (rarely, 1) | Fl 18 (B) | Neutral | M (5' across) | 975 | 86 | III |
+| Ravid | -4 | 3 | 17 | 1 | Fl 24 (A) | Neutral | M (6' long) | 1,400 | 88 | III |
+| Ruvoka | 6 or better | 3+ | 17 or better | 1 | 12 (18 within element) | Neutral | M-L (7' to 12' tall) | 975 (3 HD) / 1,400 (4 HD) / 2,000 (5 HD) / 3,000 (6 HD) / 4,000 + 1,000/HD (7+ HD) | 90 | III |
+| Salamander, Lesser | 8 | 2+2 | 19 | 3d6 | 12 | Neutral evil | M (6' long) | 175 | 92 | III |
+| Salamander, Noble | 0 | 12 | 9 | 1 | 18 | Lawful evil | L (10' long) | 10,000 | 92 | III |
+| Scile | 0 | 1 hp | 20 | 10d10 | Fl 9 (A) | Neutral | T (1/100" long) | 35 | 94 | III |
+| Shad | 6 | 2+1 | 19 | 2d8 | 12 | Neutral | S-M (4'-5 1/2' tall) | 175 | 96 | III |
+| Shocker, Contented One | 10 or 0 | 1+2 | 19 | 6d4 | 9 | Chaotic neutral | M (6' tall) | 270 | 98 | III |
+| Shocker, Sojourner | 10 or 0 | 5-10 | 15 (5-6 HD), 13 (7-8 HD), 11 (9-10 HD) | 2d4 | 15 | Chaotic neutral | M (6' tall) | 2,000 (5 HD) / 3,000 (6 HD) / 4,000 (7 HD) / 5,000 (8 HD) / 6,000 (9 HD) / 7,000 (10 HD) | 98 | III |
+| Sislan | 2 | 6+3 | 15 (12 vs. nonflyers) | 1d3 | Fl 24 (A) | Chaotic neutral | L (12' tall) | 4,000 | 100 | III |
+| Suisseen | 3 (membrane), 0 (water) | 8 | 13 | 1 | Sw 15 | Neutral (neutral evil) | L (10' long) | 2,000 | 102 | III |
+| Terithran | 6 (3 on the Prime) | 5+1 | 15 | 1 | 18 (15 on the Prime) | Neutral | S (4' tall) | 2,000 | 104 | III |
+| Thoqqua | 2 | 3 (but see below) | 17 | 1d2 | 12, Br 3 | Neutral | M (4'-5' long) | 650 | 106 | III |
+| Trilloch | N/A | N/A | N/A | 1 | 12 | Neutral | S-M (2'-6' diameter) | 650 | 108 | III |
+| Tsnng | 2 | 6 | 15 | 2d4 | 9 | Neutral | M (5'-6' tall) | 2,000 | 110 | III |
+| Ungulosin | 6 | 5 | 15 | 1 | Sw 18 | Neutral | H (15'+ long) | 1,400 | 112 | III |
+| Vacuous | 4 | 4+2 | 17 | 1d6 | 9, Fl 18 (B) | Lawful evil | M (5' tall) | 1,400 | 114 | III |
+| Wavefire | 1 (6 out of water) | 8 | 13 | 1d3 | Sw 48 (3 out of water) | Neutral | L (12' tall) | 4,000 | 116 | III |
+| Xag-ya/Xeg-yi | 0 | 5-8 | 15 (5-6 HD), 13 (7-8 HD) | 1 | Fl 6 (B) | Neutral | M (4' diameter) | 5,000 (5 HD) / 6,000 (6 HD) / 7,000 (7 HD) / 8,000 (8 HD) | 118 | III |
+| Xill | 0 | 5 | 15 (13 with missiles) | 1d6 | 15 | Lawful evil | M (4'-5' tall) | 3,000 | 120 | III |
