@@ -1,0 +1,2502 @@
+{
+  "system": "WH40K",
+  "note": "Warhammer 40,000 tabletop WARGAME unit profiles (datasheet characteristic lines). Distinct from the WH40K Roleplay line. Extracted from born-digital codex PDF text layers only; scanned codexes are listed under no_coverage.",
+  "methodology_notes": [
+    "Profiles reconstructed geometrically from the PDF text layer (PyMuPDF words mode): a header row of characteristic labels fixes each column's x-centre, and every value row maps its stat tokens to the nearest column. No number is ever guessed or corrected -- unreadable cells are left empty.",
+    "3rd-5th ed infantry schema: WS BS S T W I A Ld Sv (some tables prefix a Points column). Values keep any parenthetical modifiers verbatim, e.g. T4(5) on bikes, S6(10) / A2(3) on Dreadnoughts.",
+    "Vehicles use Armour Values: tanks are BS + Front/Side/Rear; walkers are WS BS S (Front Side Rear) I A. The header token 'Armour' is merged into its Front/Side/Rear column, and a walker's abbreviated F/S/R triple is relabelled Front/Side/Rear so it never collides with S (Strength).",
+    "Codex Imperialis 1993 (2nd ed) is a special case: its profile tables' characteristic labels are NOT in the PDF text layer (they are part of the table graphic) and the surrounding text is OCR-mangled. Its rows are therefore captured POSITIONALLY -- name + raw ordered values under c1..cN keys -- and EVERY such row is flagged 'soft'. The 2nd-ed M/WS/BS/.../Int/Cl/WP labels are intentionally NOT fabricated onto these values.",
+    "Summary/reference tables duplicate per-datasheet profiles; exact (name, profile) duplicates are merged within each book (space/case insensitive), keeping the datasheet citation."
+  ],
+  "total_profiles": 136,
+  "digital_books": [
+    "Blood Angels - 2007 - 5th Edition",
+    "Codex Imperialis - 1993 - 2nd Edition",
+    "Harlequins",
+    "Space Marines - 2008 - 5th Edition"
+  ],
+  "no_coverage_scanned": [
+    "Armageddon - 2000",
+    "Assassins - 1999",
+    "Astronomicon",
+    "Black Templars - 2005 (2)",
+    "Black Templars - 2005",
+    "Blood Angels - 1998",
+    "Blood Angels - 2009",
+    "Catachan - 2006",
+    "Chaos Daemons - 2008",
+    "Chaos Space Marines - 1999",
+    "Chaos Space Marines - 2002",
+    "Chaos Space Marines - 2007",
+    "Cityfight - 2001",
+    "Craftworld Eldar - 2000",
+    "Daemonhunters - 2003 - 3rd Edition",
+    "Dark Angels - 1999",
+    "Dark Angels - 2006 - 4th Edition",
+    "Dark Eldar - 1998",
+    "Eldar - 1999",
+    "Eldar - 2006 - 4th Edition",
+    "Eye Of Terror - 2003 OCR",
+    "Eye Of Terror - 2003",
+    "Genestealer Cults",
+    "Grey Knights & Deathwatch - 2001",
+    "Grey Knights - 2010",
+    "Imperial Guard - 1995",
+    "Imperial Guard - 1999",
+    "Imperial Guard - 2003",
+    "Imperial Guard - 2008 - 5th Edition",
+    "Necrons - 2002 - 3rd Edition",
+    "Orks - 1991",
+    "Orks - 1999",
+    "Orks - 2007 - 4th Edition",
+    "Sisters of Battle - 1997",
+    "Space Marines - 1999",
+    "Space Marines - 2004",
+    "Space Wolves - 2000",
+    "Space Wolves - 2009 - 5th Edition",
+    "Tau Empire - 2001",
+    "Tau Empire - 2005 - 4th Edition",
+    "Tyranids - 2001",
+    "Tyranids - 2004 - 4th Edition",
+    "Tyranids - 2009 - 5th Edition",
+    "Ultramarines - 1993 - 2nd Edition",
+    "Witch Hunters - 2003 - 4th Edition"
+  ],
+  "page_gaps": [],
+  "per_book_counts": {
+    "Blood Angels - 2007 - 5th Edition": 41,
+    "Codex Imperialis - 1993 - 2nd Edition": 23,
+    "Harlequins": 18,
+    "Space Marines - 2008 - 5th Edition": 54
+  },
+  "soft_count": 23,
+  "rows": [
+    {
+      "name": "Lord Dante",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 7]",
+      "unit_context": "COMMANDER DANTE"
+    },
+    {
+      "name": "Brother-Captain Tycho",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 7]",
+      "unit_context": "BROTHER-CAPTAIN TYCHO"
+    },
+    {
+      "name": "Mephiston",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "5",
+        "T": "5",
+        "W": "3",
+        "I": "6",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 8]",
+      "unit_context": "CHIEF LIBRARIAN MEPHISTON"
+    },
+    {
+      "name": "Brother Corbulo",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 9]",
+      "unit_context": "CORBULO, SANGUINARY HIGH PRIEST"
+    },
+    {
+      "name": "Chaplain Lemartes",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 9]",
+      "unit_context": "CHAPLAIN LEMARTES"
+    },
+    {
+      "name": "Death Company",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 10]",
+      "unit_context": "THE DEATH COMPANY"
+    },
+    {
+      "name": "Honor Guard",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 11]",
+      "unit_context": "BLOOD ANGELS HONOR GUARD"
+    },
+    {
+      "name": "Veteran",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 11]",
+      "unit_context": "VETERAN ASSAULT SQUAD"
+    },
+    {
+      "name": "Furioso Dreadnought",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "6(10)",
+        "I": "4",
+        "A": "2(3)",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 13]",
+      "unit_context": "FURIOSO DREADNOUGHT"
+    },
+    {
+      "name": "Dante",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 16]",
+      "unit_context": "DANTE, LORD OF THE BLOOD ANGELS POINTS"
+    },
+    {
+      "name": "Lemartes",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 16]",
+      "unit_context": "LEMARTES, GUARDIAN OF THE LOST POINTS"
+    },
+    {
+      "name": "Corbulo",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 16]",
+      "unit_context": "BROTHER CORBULO POINTS"
+    },
+    {
+      "name": "Cpt. Tycho",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 17]",
+      "unit_context": "TYCHO, CAPTAIN OF THE 3RD COMPANY POINTS"
+    },
+    {
+      "name": "Chaplain",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "5",
+        "A": "3",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 17]",
+      "unit_context": "CHAPLAIN POINTS"
+    },
+    {
+      "name": "Librarian",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "5",
+        "A": "3",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 17]",
+      "unit_context": "LIBRARIAN POINTS"
+    },
+    {
+      "name": "Captain",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 18]",
+      "unit_context": "COMPANY CAPTAIN POINTS"
+    },
+    {
+      "name": "Company",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 19]",
+      "unit_context": "DEATH COMPANY NO POINTS"
+    },
+    {
+      "name": "Terminator",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 19]",
+      "unit_context": "TERMINATOR SQUAD POINTS"
+    },
+    {
+      "name": "Furioso",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "6",
+        "I": "4",
+        "A": "2(3)",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
+      "unit_context": "FURIOSO DREADNOUGHT POINTS"
+    },
+    {
+      "name": "Dreadnought",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "6",
+        "I": "4",
+        "A": "2",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
+      "unit_context": "DREADNOUGHT POINTS"
+    },
+    {
+      "name": "Techmarine",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
+      "unit_context": "TECHMARINES POINTS"
+    },
+    {
+      "name": "Servitor",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "3",
+        "A": "1",
+        "Ld": "9",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
+      "unit_context": "TECHMARINES POINTS"
+    },
+    {
+      "name": "Veteran Sgt",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 21]",
+      "unit_context": "SCOUT SQUAD POINTS"
+    },
+    {
+      "name": "Scout",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 21]",
+      "unit_context": "SCOUT SQUAD POINTS"
+    },
+    {
+      "name": "Veteran Sgt",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 22]",
+      "unit_context": "ASSAULT SQUAD POINTS"
+    },
+    {
+      "name": "Space Marine",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 22]",
+      "unit_context": "ASSAULT SQUAD POINTS"
+    },
+    {
+      "name": "Veteran Sgt",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 23]",
+      "unit_context": "BIKE SQUADRON POINTS"
+    },
+    {
+      "name": "Biker",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 23]",
+      "unit_context": "BIKE SQUADRON POINTS"
+    },
+    {
+      "name": "Attack Bike",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "8",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 23]",
+      "unit_context": "ATTACK BIKE SQUADRON POINTS"
+    },
+    {
+      "name": "Company Captain",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "unit_context": "TROOP TYPES RANGED WEAPONS"
+    },
+    {
+      "name": "Servitor",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "3",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "unit_context": "TROOP TYPES RANGED WEAPONS"
+    },
+    {
+      "name": "Tycho",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "unit_context": "TROOP TYPES RANGED WEAPONS"
+    },
+    {
+      "name": "Drop Pod",
+      "profile": {
+        "BS": "2",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "12"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Land Raider",
+      "profile": {
+        "BS": "4",
+        "Front": "14",
+        "Side": "14",
+        "Rear": "14"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Land Raider Crusader",
+      "profile": {
+        "BS": "4",
+        "Front": "14",
+        "Side": "14",
+        "Rear": "14"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Land Speeder",
+      "profile": {
+        "BS": "4",
+        "Front": "10",
+        "Side": "10",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Predator/Baal Predator",
+      "profile": {
+        "BS": "4",
+        "Front": "13",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Razorback",
+      "profile": {
+        "BS": "4",
+        "Front": "11",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Rhino",
+      "profile": {
+        "BS": "4",
+        "Front": "11",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Vindicator",
+      "profile": {
+        "BS": "4",
+        "Front": "13",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Whirlwind",
+      "profile": {
+        "BS": "4",
+        "Front": "11",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Blood Angels - 2007 - 5th Edition",
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+    },
+    {
+      "name": "Champion",
+      "profile": {
+        "c1": "4",
+        "c2": "4",
+        "c3": "5",
+        "c4": "3",
+        "c5": "4",
+        "c6": "1",
+        "c7": "5",
+        "c8": "1",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Hero",
+      "profile": {
+        "c1": "4",
+        "c2": "5",
+        "c3": "6",
+        "c4": "4",
+        "c5": "5",
+        "c6": "2",
+        "c7": "6",
+        "c8": "2",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "MightyHero",
+      "profile": {
+        "c1": "4",
+        "c2": "6",
+        "c3": "7",
+        "c4": "4",
+        "c5": "5",
+        "c6": "3",
+        "c7": "7",
+        "c8": "3",
+        "c9": "10",
+        "c10": "0"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Hero",
+      "profile": {
+        "c1": "4",
+        "c2": "5",
+        "c3": "5",
+        "c4": "4",
+        "c5": "4",
+        "c6": "2",
+        "c7": "5",
+        "c8": "2",
+        "c9": "8"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 46]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "MlghtyHero",
+      "profile": {
+        "c1": "4",
+        "c2": "6",
+        "c3": "6",
+        "c4": "4",
+        "c5": "4",
+        "c6": "3",
+        "c7": "6",
+        "c8": "3",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 46]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Electro Priests",
+      "profile": {
+        "c1": "4",
+        "c2": "4",
+        "c3": "3",
+        "c4": "8",
+        "c5": "3",
+        "c6": "1",
+        "c7": "3",
+        "c8": "1",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 47]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Servitor",
+      "profile": {
+        "c1": "4",
+        "c2": "3",
+        "c3": "1",
+        "c4": "4",
+        "c5": "3",
+        "c6": "4",
+        "c7": "1",
+        "c8": "1",
+        "c9": "4",
+        "c10": "1",
+        "c11": "1",
+        "c12": "7"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 47]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Ork",
+      "profile": {
+        "c1": "1",
+        "c2": "4",
+        "c3": "1",
+        "c4": "3",
+        "c5": "1",
+        "c6": "3",
+        "c7": "3",
+        "c8": "1",
+        "c9": "4",
+        "c10": "1",
+        "c11": "2",
+        "c12": "1",
+        "c13": "7"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 56]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "N0b",
+      "profile": {
+        "c1": "4",
+        "c2": "4",
+        "c3": "4",
+        "c4": "3",
+        "c5": "4",
+        "c6": "1",
+        "c7": "3",
+        "c8": "1",
+        "c9": "8"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 56]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Bigboss",
+      "profile": {
+        "c1": "4",
+        "c2": "5",
+        "c3": "5",
+        "c4": "4",
+        "c5": "5",
+        "c6": "2",
+        "c7": "4",
+        "c8": "2",
+        "c9": "8"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 56]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Warboss",
+      "profile": {
+        "c1": "4",
+        "c2": "6",
+        "c3": "6",
+        "c4": "4",
+        "c5": "5",
+        "c6": "3",
+        "c7": "5",
+        "c8": "3",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 56]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Runtherd",
+      "profile": {
+        "c1": "4",
+        "c2": "4",
+        "c3": "1",
+        "c4": "1",
+        "c5": "4",
+        "c6": "4",
+        "c7": "4"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 57]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Madboy",
+      "profile": {
+        "c1": "4",
+        "c2": "3",
+        "c3": "3",
+        "c4": "3",
+        "c5": "4",
+        "c6": "1",
+        "c7": "2",
+        "c8": "1",
+        "c9": "7"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 61]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Dire Avenger",
+      "profile": {
+        "c1": "5",
+        "c2": "4",
+        "c3": "4",
+        "c4": "3",
+        "c5": "3",
+        "c6": "1",
+        "c7": "6",
+        "c8": "1",
+        "c9": "1",
+        "c10": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 67]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "SwoopingHwk",
+      "profile": {
+        "c1": "5",
+        "c2": "4",
+        "c3": "4",
+        "c4": "3",
+        "c5": "3",
+        "c6": "1",
+        "c7": "6",
+        "c8": "1",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 67]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Dark Reaper",
+      "profile": {
+        "c1": "4",
+        "c2": "4",
+        "c3": "4",
+        "c4": "3",
+        "c5": "3",
+        "c6": "1",
+        "c7": "4",
+        "c8": "1",
+        "c9": "9"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 67]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Farseers",
+      "profile": {
+        "c1": "5",
+        "c2": "7",
+        "c3": "7",
+        "c4": "4",
+        "c5": "5",
+        "c6": "4",
+        "c7": "9",
+        "c8": "3",
+        "c9": "1",
+        "c10": "0"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 69]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Harlequ~n",
+      "profile": {
+        "c1": "6",
+        "c2": "5",
+        "c3": "5",
+        "c4": "3",
+        "c5": "3",
+        "c6": "1",
+        "c7": "7",
+        "c8": "1",
+        "c9": "1",
+        "c10": "0"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 72]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Lord",
+      "profile": {
+        "c1": "3",
+        "c2": "8",
+        "c3": "6",
+        "c4": "5",
+        "c5": "6",
+        "c6": "4",
+        "c7": "5",
+        "c8": "4",
+        "c9": "1",
+        "c10": "0"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 77]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Beastman",
+      "profile": {
+        "c1": "4",
+        "c2": "1",
+        "c3": "4",
+        "c4": "3",
+        "c5": "1",
+        "c6": "3",
+        "c7": "7",
+        "c8": "4"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 91]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Hound",
+      "profile": {
+        "c1": "6",
+        "c2": "4",
+        "c3": "0",
+        "c4": "4",
+        "c5": "4",
+        "c6": "1",
+        "c7": "4",
+        "c8": "2",
+        "c9": "6"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 91]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Hybrid",
+      "profile": {
+        "c1": "4",
+        "c2": "4",
+        "c3": "2",
+        "c4": "4",
+        "c5": "3",
+        "c6": "1",
+        "c7": "5",
+        "c8": "1",
+        "c9": "8"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 94]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Termagant",
+      "profile": {
+        "c1": "6",
+        "c2": "4",
+        "c3": "3",
+        "c4": "3",
+        "c5": "3",
+        "c6": "1",
+        "c7": "4",
+        "c8": "1",
+        "c9": "5"
+      },
+      "edition": "2nd",
+      "system": "WH40K",
+      "book": "Codex Imperialis - 1993 - 2nd Edition",
+      "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 96]",
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+    },
+    {
+      "name": "Great Harlequin",
+      "profile": {
+        "Points": "60",
+        "WS": "7",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "3",
+        "I": "8",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 4]",
+      "unit_context": "GREAT HARLEQUIN"
+    },
+    {
+      "name": "Shadowseer",
+      "profile": {
+        "Points": "70",
+        "WS": "6",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "2",
+        "I": "7",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 4]",
+      "unit_context": "SHADOWSEER"
+    },
+    {
+      "name": "Solitaire",
+      "profile": {
+        "Points": "90",
+        "WS": "8",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "3",
+        "I": "8",
+        "A": "4",
+        "Ld": "-",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 5]",
+      "unit_context": "SOLITAIRE"
+    },
+    {
+      "name": "Death Jester",
+      "profile": {
+        "Points": "47",
+        "WS": "6",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 5]"
+    },
+    {
+      "name": "Harlequin",
+      "profile": {
+        "Points": "25",
+        "WS": "5",
+        "BS": "3",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 6]",
+      "unit_context": "HARLEQUIN TROUPE"
+    },
+    {
+      "name": "Troupe leader",
+      "profile": {
+        "Points": "+12",
+        "WS": "6",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 6]",
+      "unit_context": "HARLEQUIN TROUPE"
+    },
+    {
+      "name": "Harlequin Jetbike",
+      "profile": {
+        "Points": "45",
+        "WS": "5",
+        "BS": "3",
+        "S": "3",
+        "T": "3(4)",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-/3+"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 6]",
+      "unit_context": "FAST ATTACK"
+    },
+    {
+      "name": "Troupe leader",
+      "profile": {
+        "Points": "+15",
+        "WS": "6",
+        "BS": "4",
+        "S": "3",
+        "T": "3(4)",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-/3+"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 6]",
+      "unit_context": "FAST ATTACK"
+    },
+    {
+      "name": "Venom",
+      "profile": {
+        "Points": "45",
+        "Front": "10",
+        "Side": "10",
+        "Rear": "10",
+        "BS": "3"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 7]",
+      "unit_context": "HEAVY SUPPORT"
+    },
+    {
+      "name": "Gt Harlequin",
+      "profile": {
+        "WS": "7",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "3",
+        "I": "8",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Shadowseer",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "2",
+        "I": "7",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Solitaire",
+      "profile": {
+        "WS": "8",
+        "BS": "5",
+        "S": "4",
+        "T": "3",
+        "W": "3",
+        "I": "8",
+        "A": "4",
+        "Ld": "-",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Death Jester",
+      "profile": {
+        "WS": "6",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Harlequin",
+      "profile": {
+        "WS": "5",
+        "BS": "3",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Troupe Ld",
+      "profile": {
+        "WS": "6",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "-"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Harl. Jetbike",
+      "profile": {
+        "WS": "5",
+        "BS": "3",
+        "S": "3",
+        "T": "4",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "-/3+"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Harl. Jetbike Ld",
+      "profile": {
+        "WS": "6",
+        "BS": "4",
+        "S": "3",
+        "T": "4",
+        "W": "1",
+        "I": "6",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "-/3+"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Venom",
+      "profile": {
+        "Front": "10",
+        "Side": "10",
+        "Rear": "10",
+        "BS": "3"
+      },
+      "edition": "unknown",
+      "system": "WH40K",
+      "book": "Harlequins",
+      "citation": "Harlequins [PDF page 9]"
+    },
+    {
+      "name": "Chapter Master",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 54]"
+    },
+    {
+      "name": "Chapter Champion",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 55]"
+    },
+    {
+      "name": "Honour Guard",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 55]"
+    },
+    {
+      "name": "Captain",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 56]"
+    },
+    {
+      "name": "Company Champion",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 57]",
+      "unit_context": "C O M M A N D S Q U A D"
+    },
+    {
+      "name": "Veteran",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 57]",
+      "unit_context": "C O M M A N D S Q U A D"
+    },
+    {
+      "name": "Apothecary",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 57]",
+      "unit_context": "C O M M A N D S Q U A D"
+    },
+    {
+      "name": "Librarian",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 58]"
+    },
+    {
+      "name": "Chaplain",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 60]"
+    },
+    {
+      "name": "Space Marine Sergeant",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 61]"
+    },
+    {
+      "name": "Space Marine",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 61]"
+    },
+    {
+      "name": "Terminator Sergeant",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 66]",
+      "unit_context": "TERMINATOR S Q U A D"
+    },
+    {
+      "name": "Terminator",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 66]",
+      "unit_context": "TERMINATOR S Q U A D"
+    },
+    {
+      "name": "Venerable Dreadnought",
+      "profile": {
+        "WS": "5",
+        "BS": "5",
+        "S": "6",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "10",
+        "I": "4",
+        "A": "2"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 67]",
+      "unit_context": "DREADNOUGHT"
+    },
+    {
+      "name": "Dreadnought",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "6",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "10",
+        "I": "4",
+        "A": "2"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 67]",
+      "unit_context": "DREADNOUGHT"
+    },
+    {
+      "name": "Ironclad Dreadnought",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "6",
+        "Front": "13",
+        "Side": "13",
+        "Rear": "10",
+        "I": "4",
+        "A": "2(3)"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 67]",
+      "unit_context": "DREADNOUGHT"
+    },
+    {
+      "name": "Scout Sergeant",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 68]"
+    },
+    {
+      "name": "Scout",
+      "profile": {
+        "WS": "3",
+        "BS": "3",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 68]"
+    },
+    {
+      "name": "Scout Biker Sergeant",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 69]",
+      "unit_context": "S C O U T BIKE S Q U A D"
+    },
+    {
+      "name": "Scout Biker",
+      "profile": {
+        "WS": "3",
+        "BS": "3",
+        "S": "4",
+        "T": "4(5)",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 69]",
+      "unit_context": "S C O U T BIKE S Q U A D"
+    },
+    {
+      "name": "Biker Sergeant",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]"
+    },
+    {
+      "name": "Space Marine Biker",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]"
+    },
+    {
+      "name": "Attack Bike",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4(5)",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "8",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]"
+    },
+    {
+      "name": "Master of the Forge",
+      "profile": {
+        "WS": "4",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 72]"
+    },
+    {
+      "name": "Techmarine",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 73]"
+    },
+    {
+      "name": "Servitor",
+      "profile": {
+        "WS": "3",
+        "BS": "3",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "3",
+        "A": "1",
+        "Ld": "8",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 74]"
+    },
+    {
+      "name": "Marneus Calqar",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "4",
+        "I": "5",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 86]"
+    },
+    {
+      "name": "Cato Sicarius",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 87]"
+    },
+    {
+      "name": "Varro Tigurius",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 88]"
+    },
+    {
+      "name": "Ortan Cassius",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "6",
+        "W": "2",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 89]",
+      "unit_context": "ULTRAMARINES CHAPLAIN, MASTER OF SANCTITY"
+    },
+    {
+      "name": "Sergeant Telion",
+      "profile": {
+        "WS": "5",
+        "BS": "6",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "4+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 90]"
+    },
+    {
+      "name": "Antaro Chronus",
+      "profile": {
+        "WS": "4",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 91]"
+    },
+    {
+      "name": "Pedro Kantor",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 92]"
+    },
+    {
+      "name": "Darnath Lysander",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "4",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 93]",
+      "unit_context": "CAPTAIN OF THE IMPERIAL FISTS st COMPANY"
+    },
+    {
+      "name": "Kayvaan Shrike",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 94]"
+    },
+    {
+      "name": "Vulkan He'stan",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "2+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 95]",
+      "unit_context": "FORGEFATHER OF THE SALAMANDERS"
+    },
+    {
+      "name": "Kor'sarro Khan",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "3",
+        "I": "5",
+        "A": "3",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 96]"
+    },
+    {
+      "name": "Damned Sergeant",
+      "profile": {
+        "WS": "5",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 97]"
+    },
+    {
+      "name": "Damned Legionnaire",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 97]"
+    },
+    {
+      "name": "Marneus Calgar",
+      "profile": {
+        "WS": "6",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "4",
+        "I": "5",
+        "A": "4",
+        "Ld": "10",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 131]"
+    },
+    {
+      "name": "Chronus",
+      "profile": {
+        "WS": "4",
+        "BS": "5",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "unit_context": "TROOP TYPES WEAPON TYPES"
+    },
+    {
+      "name": "Space Marine Sgt",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "4",
+        "T": "4",
+        "W": "1",
+        "I": "4",
+        "A": "2",
+        "Ld": "9",
+        "Sv": "3+"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "unit_context": "TROOP TYPES WEAPON TYPES"
+    },
+    {
+      "name": "Drop Pod",
+      "profile": {
+        "BS": "4",
+        "Front": "12",
+        "Side": "12",
+        "Rear": "12"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Land Raider",
+      "profile": {
+        "BS": "4",
+        "Front": "14",
+        "Side": "14",
+        "Rear": "14"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Land Raider Crusader",
+      "profile": {
+        "BS": "4",
+        "Front": "14",
+        "Side": "14",
+        "Rear": "14"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Land Raider Redeemer",
+      "profile": {
+        "BS": "4",
+        "Front": "14",
+        "Side": "14",
+        "Rear": "14"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Land Speeder",
+      "profile": {
+        "BS": "4",
+        "Front": "10",
+        "Side": "10",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Land Speeder Storm",
+      "profile": {
+        "BS": "3",
+        "Front": "10",
+        "Side": "10",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Predator",
+      "profile": {
+        "BS": "4",
+        "Front": "13",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Razorback",
+      "profile": {
+        "BS": "4",
+        "Front": "11",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Rhino",
+      "profile": {
+        "BS": "4",
+        "Front": "11",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Vindicator",
+      "profile": {
+        "BS": "4",
+        "Front": "13",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Whirlwind",
+      "profile": {
+        "BS": "4",
+        "Front": "11",
+        "Side": "11",
+        "Rear": "10"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    },
+    {
+      "name": "Ironclad",
+      "profile": {
+        "WS": "4",
+        "BS": "4",
+        "S": "6",
+        "Front": "13",
+        "Side": "13",
+        "Rear": "10",
+        "I": "4",
+        "A": "2(3)"
+      },
+      "edition": "5th",
+      "system": "WH40K",
+      "book": "Space Marines - 2008 - 5th Edition",
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+    }
+  ]
+}
