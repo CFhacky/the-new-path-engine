@@ -18,12 +18,12 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-28).** Thirty-nine reference index families, ~16,445 entries.
+**At a glance (2026-08-28).** Thirty-nine reference index families, ~16,775 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (153), D&D epic spells (70), D&D prestige classes (145), D&D epic magic items (153), D&D epic monsters (64), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (31), D&D incarnum soulmelds (88). Separately labeled other editions/systems:
-D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (291) + weapons (327) + armour (102) + gear (367) + psychic powers (242) + talents (657); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, from the born-digital codexes — 45 scanned codexes remain vision-pending). Each has a
+D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (291) + weapons (657, cores+11 supplements) + armour (102) + gear (367) + psychic powers (242) + talents (657); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, from the born-digital codexes — 45 scanned codexes remain vision-pending). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
 

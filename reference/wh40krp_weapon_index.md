@@ -375,3 +375,439 @@ yield. Use `--export "NAME"` for the translator packet.
 | Improvised | Melee | — | — | 1d10 I | 0 | — | — | Primitive (7), Unbalanced, Varies Plentiful, Knife, Melee/ | — | — | 166 |
 | Scythe | Melee | — | — | 1d10+4 R | 3 | — | — | Unbalanced, Felling (1) | 6 kg | Common | 166 |
 | Shield | Melee | — | — | 1d10 I | 0 | — | — | Primitive (6), Defensive | 3 kg | — | 166 |
+
+## Dark Heresy — The Inquisitor's Handbook — 137 weapons  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Inquisitor's Handbook (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 137 weapons from Dark Heresy - The Inquisitor's Handbook.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Blunderbuss | Basic | 10m | S/–/– | 1d10+1 I | 0 | 1 | 5Full | Inaccurate, Primitive | 4kg | Rare | 96 |
+| Unreliable Composite Bow | Basic | 40m | S/–/– | 1d10+2 R | 1 | 1 | Half | Accurate, Primitive | 3kg | common | 96 |
+| Deuce Pistol | Pistol | 15m | S/2/– | 1d10+2 I | 0 | 2 | 3Full | Primitive, Unreliable | 2kg | Common | 96 |
+| Flick Bow | Pistol | 15m | S/–/– | 1d10 R | 0 | 1 | Full | Primitive, Special | 1kg | Scarce | 96 |
+| Longbow | Basic | 50m | S/–/– | 1d10+2 R | 2 | 1 | Half | Primitive | 3kg | Average | 96 |
+| Siskan Musket | Basic | 40m | S/–/– | 1d10+3 I | 0 | 1 | 5Full | Primitive | 8kg | Scarce | 96 |
+| Volonx Thunderclap | Exotic | 9m | S/–/– | 1d5+3 X | 0 | 1 | — | Blast (2), Inaccurate | 1kg | Very Rare | 96 |
+| Bastard Sword | Melee | — | — | 1d10+1 R | 1 | — | — | Primitive | 5kg | Average | 100 |
+| Buckler | Melee | — | — | 1d5–2 I | 0 | — | — | Balanced, Primitive | 1kg | Common | 100 |
+| Chain-Stick | Exotic | — | — | 1d10+1 I | 0 | — | — | Fast, Primitive, Toxic | 1kg | Scarce | 100 |
+| Cutlass | Melee | — | — | 1d10 R | 0 | — | — | Primitive, Unbalanced | 3kg | Common | 100 |
+| Double Flail | Exotic | — | — | 1d10 I | 0 | — | — | Flexible, Primitive | 4kg | Scarce | 100 |
+| Lightning Gauntlet | Exotic | — | — | 1d10 I | 0 | — | — | Primitive, Shocking | 2kg | Scarce | 100 |
+| Lightning Chain | Exotic | — | — | 1d10+1 I | 0 | — | — | Flexible, Primitive, Shocking | 4kg | Very Rare | 100 |
+| Long-Sabre | Melee | — | — | 1d10+2 R | 2 | — | — | Balanced, Primitive | 3kg | Very Rare | 100 |
+| Mirror Shield | Melee | — | — | 1d5–1 I | 0 | — | — | Defensive, Primitive | 3kg | Rare | 100 |
+| Moon Blade | Melee | 5m | — | 1d10 R | 0 | — | — | Fast, Primitive, Unwieldy | 3kg | Rare | 100 |
+| Thrown Punch Dagger | Melee | — | — | 1d5+1 R | 2 | — | — | Primitive | 0.5kg | Plentiful | 100 |
+| Sabre | Melee | — | — | 1d10 R | 0 | — | — | Balanced, Primitive | 2kg | Common | 100 |
+| Scythe | Melee | — | — | 1d10+2 R | 0 | — | — | Primitive, Unwieldy | 5kg | common | 100 |
+| Spetum | Melee | — | — | 1d10 R | 2 | — | — | Primitive, Unbalanced | 6kg | Rare | 100 |
+| Steam Drill | Melee | — | — | 2d10 I | 3 | — | — | Primitive, Unbalanced, Unwieldy | 18kg | Very Rare | 100 |
+| Stiletto | Melee | — | — | 1d5–1 R | 2 | — | — | Fast, Primitive | 0.2kg | common | 100 |
+| Tower Shield (metal) | Melee | — | — | 1d5+2 I | 0 | — | — | Defensive, Primitive | 7kg | Rare | 100 |
+| Tower Shield (wood) | Melee | — | — | 1d5+1 I | 0 | — | — | Defensive, Primitive | 5kg | common | 100 |
+| Angelus | Basic | 100m | S/–/– | 2d10 X | 5 | 3 | 3Full | Accurate | 11kg | Very Rare | 121 |
+| Mauler | Pistol | 30m | S/3/– | 1d10+5 X | 4 | 6 | Full | Reliable | 2.75kg | Very Rare | 121 |
+| Spitfire | Pistol | 20m | S/–/– | 1d10+3 X | 0 | 3 | Full | Unreliable | 3kg | Scarce | 121 |
+| Galvian Needler | Pistol | 30m | S/3/– | 1d10–1 R | 0 | 7 | Full | Toxic | 1kg | Very Rare | 121 |
+| Widower | Pistol | 35m | S/–/– | 1d10+3 R | 4 | 1 | Full | Accurate | 2kg | Rare | 121 |
+| Destroyer | Pistol | 15m | S/–/– | 1d10+5 E | 2 | 5 | 2Full | Flame | 2.1kg | Very Rare | 121 |
+| Gas Torch | Basic | 5m | S/–/– | 1d10+1 E | 2 | 5 | 2Full | Flame | 20kg | Very Rare | 121 |
+| Tox Spray | Basic | 10m | S/–/– | 1d10 E | 0 | 3 | 3Full | Flame, Toxic | 8kg | Rare | 121 |
+| Civitas | Pistol | 25m | S/2/– | 1d10+1 E | 0 | 25 | Full | Reliable | 2kg | Common | 121 |
+| Death Light | Basic | 80m | S/3/– | 1d10+5 E | 2 | 18 | Full | — | 7.2kg | Very Rare | 121 |
+| Drusus Prime | Basic | 100m | S/2/– | 1d10+3 E | 0 | 50 | Full | — | 7kg | Common | 121 |
+| Duelling Las | Pistol | 30m | S/–/– | 1d10+4 E | 4 | 1 | Full | Accurate, Tearing | 1.7kg | Very Rare | 121 |
+| Minerva-Aegis | Basic | 60m | S/4/8 | 1d10+2 E | 0 | 40 | Full | Reliable | 4.1kg | Scarce | 121 |
+| Palantine | Pistol | 20m | S/3/– | 1d10+2 E | 0 | 20 | Full | Reliable | 1.1kg | Average | 121 |
+| Series-S Venom | Pistol | 10m | S/–/– | 1d10+1 E | 0 | 15 | — | — | 0.5kg | Scarce | 121 |
+| Steel Burner | Pistol | 30m | S/–/– | 1d10+4 E | 2 | 10 | Full | — | 2.5kg | Very Rare | 121 |
+| Drive Nailer | Basic | 5m | –/3/– | 1d10+1 R | 4 | 15 | 3Full | Primitive | 7kg | Common | 121 |
+| Impaler | Heavy | 30m | S/–/– | 1d10+5 I | 2 | 1 | 2Full | Primitive, Unreliable | 22kg | Scarce | 121 |
+| Scrap Cannon | Heavy | 15m | S/–/– | 1d10+3 R | 0 | 1 | 3Full | Scatter, Unreliable | 40kg | Very Rare | 121 |
+| Armageddon | Basic | 100m | S/2/6 | 1d10+4 I | 0 | 15 | Full | Reliable, 8.5kg 100 | — | Average | 122 |
+| Armsman-10 | Pistol | 35m | S/3/– | 1d10+3 I | 0 | 13 | Full | — | 1.5kg | Plentiful | 122 |
+| Carnodon | Pistol | 35m | S/3/– | 1d10+4 I | 2 | 6 | Full | Accurate, 2.5kg 200 | — | Scarce | 122 |
+| VI Crank Cannon | Heavy | 70m | –/–/5 | 1d10+5 I | 0 | 100 | 3Full | Unreliable | 38kg | Average | 122 |
+| Creed-9 | Basic | 50m | S/3/10 | 1d10+3 I | 0 | 35 | Full | — | — | — | 122 |
+| Encarmine | Pistol | 20m | S/3/8 | 1d10 I | 0 | 24 | Full | — | 2kg | Average | 122 |
+| Fate Bringer | Pistol | 40m | S/–/– | 1d10+3 I | 2 | 5 | 2Full | Accurate, Reliable, 1.6kg 200 | — | Rare | 122 |
+| Flametongue | Pistol | 20m | S/–/– | 1d10+6 I | 0 | 2 | 2Full | Primitive, Reliable | 2kg | Rare | 122 |
+| Hack Shotgun | Pistol | 10m | S/–/– | 1d10+4 I | 0 | 1 | 2Full | Inaccurate, Scatter | 3kg | Common | 122 |
+| Hecuter | Pistol | 30m | S/3/6 | 1d10+3 I | 0 | 15 | Full | Reliable | 2kg | Average | 122 |
+| Mariette | Pistol | 20m | S/–/– | 2d5+3 I | 0 | 1 | 2Full | — | — | — | 122 |
+| Mercy Killer | Pistol | 20m | S/–/– | 1d10+2 I | 0 | 1 | 2Full | Inaccurate, Unreliable | 1kg | Plentiful | 122 |
+| Meat Hammer | Basic | 30m | S/–/– | 2d5+6 I | 0 | 1 | 3Full | Scatter, Tearing | 5kg | Scarce | 122 |
+| Nomad | Basic | 250m | S/–/– | 1d10+5 I | 3 | 4 | Full | Accurate, Reliable, 10kg 2,000 Very Rare | — | — | 122 |
+| Phobos Stubber | Pistol | 30m | S/3/– | 1d10+3 I | 0 | 9 | Full | — | 1.3kg | Plentiful | 122 |
+| Puritan-14 | Pistol | 20m | S/3/6 | 1d10+2 I | 0 | 14 | Full | — | — | — | 122 |
+| Salvation | Pistol | 10m | S/3/– | 1d10 I | 0 | 7 | — | — | 0.7kg | Common | 122 |
+| Scalptaker | Pistol | 30m | S/–/– | 1d10+3 I | 0 | 6 | 2Full | Reliable | 2kg | Plentiful | 122 |
+| Slayer | Basic | 30m | S/–/– | 1d10+4 I | 0 | 6 | 3Full | Scatter | 3.5kg | Average | 122 |
+| Spectre | Basic | 80m | S/3/10 | 1d10+3 I | — | — | — | 6.5kg 375 | — | Rare | 122 |
+| Steadholder | Basic | 100m | S/–/– | 1d10+4 I | 0 | 6 | Full | — | 5kg | Plentiful | 122 |
+| Stormchild | Pistol | 35m | S/–/– | 1d10+4 I | 2 | 5 | 2Full | — | 3kg | Average | 122 |
+| Talon Mark III | Pistol | 30m | S/2/6 | 1d10+2 I | 0 | 18 | Full | — | 2.3kg | Common | 122 |
+| Unreliable | Pistol | 30m | S/2/– | 1d10+5 I | 2 | 7 | Full | — | 3.5kg | Common | 122 |
+| Chain Knife | Melee | — | — | 1d5+3 R | 2 | — | — | Tearing | 2.5kg | Scarce | 125 |
+| Serpentine | Melee | — | — | 1d10+2 E | 6 | — | — | Fast, Power Field | 1.5kg | Very Rare | 125 |
+| Bolo Knife | Melee | — | — | 2d5 R | 2 | — | — | — | 2kg | Rare | 125 |
+| Devil’s Kiss | Melee | — | — | 1d5 R | 3 | — | — | Fast, Primitive | 0.3kg | Rare | 125 |
+| Emperor’s Whisper | Thrown | 5m | — | 1d5+1 R | 2 | — | — | Balanced | 0.5kg | Very Rare | 125 |
+| Punisher Baton | Melee | — | — | 1d10 I | 0 | — | — | — | 3kg | Average | 125 |
+| Render | Melee | — | — | 1d5+1 R | 0 | — | — | Primitive, Tearing | 1.2kg | Rare | 125 |
+| Sigilite | Melee | — | — | 1d5 R | 3 | — | — | Defensive | 0.75kg | Rare | 125 |
+| Rad-Cleanser | Exotic | 30m | S/–/– | 2d10+2 E | 7 | 20 | — | Blast (2) | 26kg | Very Rare | 135 |
+| Toxic Shock Blaster | Exotic | 20m | S/2/– | 1d10+2 E | 4 | 7 | Full | Shock | 3kg | Rare | 135 |
+| D’laku Hellgun | Basic | 100m | S/3/5 | 1d10+3 E | 4 | 40 | 2 Full | — | 10kg | Scarce | 135 |
+| Kronos | Pistol | 30m | S/–/– | 1d10+6 E | 6 | 10 | 4 Full | Recharge | 4kg | Very Rare | 135 |
+| Panoptic | Pistol | 35m | S/2/– | 1d10+3 I | 0 | — | — | — | — | — | 135 |
+| Vanaheim | Basic | 40m | S/3/6 | 1d10+4 I | 0 | 15 | Full | Scatter | 8kg | Average | 135 |
+| Breacher | Exotic | — | — | 1d10+5 R | 4 | — | — | Special, Tearing, Unwieldy | 18kg | Scarce | 136 |
+| Vivisector | Exotic | — | — | 1d5+5 R | 0 | — | — | Tearing, Unwieldy | 1.5kg | Rare | 136 |
+| Energy Blade | Melee | — | — | 1d10+6 E | 7 | — | — | Balanced, Power Field | 1kg | Very Rare | 136 |
+| Omnisian Axe | Melee | — | — | 2d10+5 E | 6 | — | — | Power Field, Unwieldy | 7kg | — | 136 |
+| Flamers Burst | Basic | 5m | S/–/– | 1d5 E | 0 | 1 | 2Full | Flame, Primitive | 3kg | Scarce | 162 |
+| Shotcannon | Heavy | 40m | S/3/– | 2d10 I | 0 | — | — | 24 2Full, Scatter, Unreliable | 7kg | Scarce | 162 |
+| Exotics Bulkhead Cutters | Melee | — | — | 1d10+3 R | 6 | — | — | Tearing, Unwieldy | 6kg | Average | 164 |
+| Armoured Gauntlet | Melee | — | — | 1d5 I | 0 | — | — | Primitive | 0.5kg | Common | 164 |
+| Boarding Pike | Melee | — | — | 1d10+3 X | 2 | — | — | Primitive | 4kg | Common | 164 |
+| Chimera Pistol Sword | Melee | — | — | 1d10+1 R | 2 | — | — | Primitive | 3.5kg | Scarce | 164 |
+| Kraken Tooth Dagger | Thrown | 5m | — | 1d5+1 R | 1 | — | — | Primitive | 0.4kg | Rare | 164 |
+| Man-Catcher | Melee | — | — | 1d10 I | 0 | — | — | Primitive, Snare | 8kg | Scarce | 164 |
+| Naval Shield | Melee | — | — | 1d5+2 I | 0 | — | — | Defensive, Primitive | 9kg | Average | 164 |
+| Short Sword | Melee | — | — | 1d10–1 R | 0 | — | — | Primitive | 1.5kg | Common | 164 |
+| Neural Whip | Melee | 3m | — | 1d10+1 E | 0 | — | — | Flexible, Shocking | 4kg | Rare | 164 |
+| Officer’s Cutlass | Melee | — | — | 1d10 R | 0 | — | — | Shocking | 3kg | Scarce | 164 |
+| Shock-Staff | Melee | — | — | 1d5+1 I | 2 | — | — | Shocking | 2kg | Average | 164 |
+| Garm Pattern | Pistol | 30m | S/2/– | 1d10+5 X | 4 | 8 | Full | — | 4.5kg | Rare | 178 |
+| Scourge Boltgun | Basic | 90m | S/2/– | 1d10+5 X | 4 | 24 | Full | Reliable | 10kg | Very Rare | 178 |
+| Heavy Flamer | Heavy | 30m | S/–/– | 2d10+4 E | 4 | 10 | 2Full | Flame | 45kg | Rare | 178 |
+| Voss Pattern | Basic | 20m | S/–/– | 1d10+5 E | 2 | 3 | 2Full | Flame, Toxic | 6kg | Very Rare | 178 |
+| Fury | Pistol | 20m | S/2/5 | 1d10+2 E | 0 | 30 | Full | Reliable | 1.5kg | Scarce | 178 |
+| Hellgun | Basic | 110m | S/3/– | 1d10+4 E | 3 | 40 | 3Full | — | — | — | 178 |
+| Hellpistol | Pistol | 35m | S/2/– | 1d10+3 E | 3 | 20 | 2Full | — | — | — | 178 |
+| Laslock | Basic | 70m | S/–/– | 1d10+4 E | 0 | 1 | Full | Unreliable | 4kg | Plentiful | 178 |
+| Mark III | Basic | 100m | S/3/– | 1d10+3 E | 0 | 60 | Full | Reliable | 4kg | Average | 178 |
+| Mark IV | Pistol | 70m | S/2/– | 1d10+3 E | 0 | 15 | Full | Accurate, Reliable | 1.75kg | Rare | 178 |
+| Multi-Laser | Heavy | 250m | –/–/10 | 3d10+3 E | 4 | 60 | 3Full | — | — | — | 178 |
+| Roth Pattern | Basic | 120m | S/2/– | 1d10+2 E | 0 | 60 | Full | Reliable | 4kg | Rare | 178 |
+| Stormfront | Basic | 100m | S/3/– | 1d10+3 E | 0 | 60 | Full | Reliable | 5kg | Very Rare | 178 |
+| Twin Lasgun | Basic | 100m | S/2/– | 1d10+4 E | 0 | 18 | Full | Tearing, Unreliable | 7kg | Rare | 178 |
+| Multi-Melta | Heavy | 60m | S/–/– | 4d10+12 E | 12 | 10 | 2Full | Blast (1) | 55kg | Very Rare | 178 |
+| Ultimo | Basic | 40m | S/–/– | 2d10+2 E | 8 | 5 | 2Full | — | 10kg | Very Rare | 178 |
+| Thermal Lance | Heavy | 10m | S/–/– | 2d10+4 E | 12 | 2 | 2Full | — | 14kg | Rare | 178 |
+| Plasma Blaster | Basic | 60m | S/–/– | 2d10+6 E | 6 | 6 | 2Full | Overheats, Recharge | 20kg | Very Rare | 178 |
+| Plasma Cannon | Heavy | 120m | S/–/– | 2d10+10 E | 8 | 16 | 5Full | Overheats, Recharge | 38kg | Very Rare | 178 |
+| Mark III Sunfury | Basic | 80m | S/2/– | 1d10+10 E | 6 | 10 | 2Full | Overheats, Recharge | 12kg | Very Rare | 178 |
+| Alcher Mark IV | Basic | 60m | S/–/10 | 1d10+3 I | 0 | 40 | Full | — | 3.5kg | Average | 178 |
+| Assault Cannon | Heavy | 120m | –/–/10 | 3d10+5 I | 5 | 200 | 2Full | Tearing, Unreliable | 60kg | Very Rare | 178 |
+| Autocannon | Heavy | 300m | S/2/5 | 4d10+5 I | 4 | 20 | 2Full | — | 55kg | Scarce | 178 |
+| Dorcas Pattern | Pistol | 30m | S/3/– | 1d10+3 I | 0 | 9 | Half | — | 1.5kg | Rare | 178 |
+| Orthlak Mark IV | Pistol | 30m | S/–/6 | 1d10+4 I | 0 | 12 | Full | — | 2.5kg | Scarce | 178 |
+| Mark III FG | Thrown | SB×3m | S/–/– | 2d10 X | 0 | 1 | — | Blast (5) | 0.8kg | Scarce | 178 |
+| Power Fist | Melee | — | — | 2d10† E | 8 | — | — | Power Field, Unwieldy | 12kg | Very Rare | 181 |
+| Power Longsword | Melee | — | — | 1d10+6 E | 6 | — | — | Power Field | 4.5kg | Very Rare | 181 |
+| Combat Knife | Melee | — | — | 1d5+3 R | 0 | — | — | Primitive | 0.8kg | Average | 181 |
+| Guard Shield | Melee | — | — | 1d5 I | 0 | — | — | Defensive, Primitive | 3.5kg | Scarce | 181 |
+| Trophy Knife | Melee | — | — | 1d5+1 R | 1 | — | — | Balanced, Primitive | 0.3kg | Very Rare | 181 |
+| Catechist | Basic | 40m | S/–/– | 1d10+4 R | 3 | 5 | 2Full | Special | 4kg | Rare | 188 |
+| Sacristan Bolter | Pistol | 30m | S/2/– | 1d10+6 X | 4 | 6 | Full | — | — | — | 188 |
+| Eviscerator | Melee | — | — | 1d10+10 R | — | — | — | — | 12kg | Scarce | 189 |
+| Witch Lance | Thrown | — | — | 1d10+4 E | 6 | — | — | Power Field, Special | 5kg | Very Rare | 189 |
+| Force Axe | Melee | — | — | 1d10+3 R | 2 | — | — | Special, Unbalanced | 4.5kg | Very Rare | 189 |
+| Force Staff | Melee | — | — | 1d10 I | 0 | — | — | Balanced, Special | 3kg | Very Rare | 189 |
+| Force Sword | Melee | — | — | 1d10+1 R | 2 | — | — | Balanced, Special | 3.5kg | Very Rare | 189 |
+
+## Dark Heresy — The Radical's Handbook — 17 weapons  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Radical's Handbook (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 17 weapons from Dark Heresy - The Radical's Handbook.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Haywire Rifle | Basic | 10m | 1/–/– | 1d10+3 I | 2 | 6 | 1 Full | — | 5 kg | Very Rare | 153 |
+| Garrotte | Melee | — | — | 1d10 R | 0 | — | — | Flexible, Primitive | 0.5 kg | Scarce | 153 |
+| Shock Gauntlets | Melee | — | — | 1d5 E | 0 | — | — | Shocking | 1.0 kg | Scarce | 153 |
+| Anguish | Melee | — | — | 1d10+7 R | 7 | — | — | Balanced, †Sharp As Sin, Void Chill, Rend Reality | 1.1kg | — | 183 |
+| Whisper of Delight | Melee, Thrown | 3m | — | 1d5+3 R | 3 | — | — | — | — | — | 183 |
+| Gore Thirster | Melee | — | — | 1d10+5 R | 5 | — | — | — | — | — | 183 |
+| Lash of Bitterness | Melee | — | — | 1d10+4 I | 3 | — | — | — | — | — | 183 |
+| Mace of Judgement | Melee | — | — | 1d10+5 I | 5 | — | — | — | — | — | 183 |
+| Midnight | Melee | — | — | 1d10+7 E | — | — | — | — | — | — | 183 |
+| Rot Giver | Melee | — | — | 2d10+2 R | 4 | — | — | — | — | — | 183 |
+| Hesht | Melee, Thrown | 3m | — | 1d5+5 R | — | — | — | — | — | — | 183 |
+| Sceptre of a Thousand Moons | Melee | — | — | 1d10+5 I | 5 | — | — | Null, Incandescent Blast | 2 kg | — | 183 |
+| Spear of Countless Eyes | Melee, Thrown | 10m | — | 1d10+2 R | 2 | — | — | — | — | — | 183 |
+| Apostatic Matrix | Melee | — | — | 1d10 I | 0 | — | — | Balanced, Shocking | 4 kg | Very Rare | 192 |
+| Empyric Conduit Blade | Melee | — | — | 1d10 R | 2 | — | — | Balanced | 3 kg | Very Rare | 192 |
+| Morgauth Burn Caster | Basic | 20m | S/3/– | 1d10+4 E | 9 | 12 | 3 Full | Unstable | 4 kg | Scarce | 202 |
+| Xenarch Death-Arc | Basic | 100m | S/3/6 | 1d10+3 E | 0 | 100 | Full | Inaccurate, Shocking | 10 kg | Very Rare | 202 |
+
+## Dark Heresy — The Lathe Worlds — 0 weapons  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Lathe Worlds (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 weapons from Dark Heresy - The Lathe Worlds.md.*
+
+
+## Dark Heresy — Ascension — 20 weapons  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Ascension (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 20 weapons from Dark Heresy - Ascension.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Hellgun | Basic | 50m | S/3/– | 1d10+4 E | 7 | 30 | 2 Full | — | 6 kg | Rare | 138 |
+| Hellpistol | Pistol | 20m | S/2/– | 1d10+4 E | 7 | 40 | 2 Full | — | 4 kg | Rare | 138 |
+| Digi-las | Pistol | 3m | S/–/– | 2d5+5 E | 5 | 1 | — | Special | 0.1 kg | Extremely Rare | 138 |
+| Digital Explosive | Thrown | SBx3 | S/–/– | 3d10 X | 5 | — | — | — | 0.1 kg | — | 138 |
+| Purgatus Crossbow | Basic | 50m | S/–/– | 1d10+5 I | 2 | 5 | 2 Full | — | 6.5 kg | — | 138 |
+| Executor Pistol (Bolt) | Pistol | 30m | S/2/– | 2d10+4 X | 5 | 16 | Full | — | 5.5 kg | — | 138 |
+| Executor Pistol (Needle) | Pistol | 30m | S/2/– | 1d10+5 R | 3 | 16 | Full | — | — | — | 138 |
+| Exitus Pistol | Pistol | 30m | S/3/– | 2d10+2 I | 9 | 5 | Full | — | 5 kg | — | 138 |
+| Exitus Rifle | Basic | 200m | S/–/– | 2d10+2 I | 9 | 10 | Full | — | 9 kg | — | 138 |
+| Hellax Infernus | Pistol | 10m | S/–/– | 2d10+6 E | 14 | 5 | 2 Full | — | 2 kg | — | 138 |
+| Ryza-pattern Plasma Pistol | Pistol | 30m | S/2/– | 1d10+6 E | 6 | 10 | 3 Full | — | 4 kg | — | 138 |
+| Ryza-pattern Plasma Gun | Basic | 90m | S/2/– | 1d10+7 E | 7 | 40 | — | Rld 5 | — | — | 138 |
+| Malleus Psycannon | Heavy | 120m | S/–/5 | 2d10+5 X | 5 | 40 | 3 Full | — | 20 kg | — | 138 |
+| Ryza-pattern Storm Bolter | Basic | 90m | S/2/4 | 1d10+5 X | 4 | 60 | Full | — | 9 kg | — | 138 |
+| Arbites Ultima-pattern Power Maul (Low Power) | Melee | — | — | 1d10 I | 0 | — | — | — | 3 kg | — | 142 |
+| Arbites Ultima-pattern Power Maul (High Power) | Melee | — | — | 1d10+5 I | 5 | — | — | — | 3 kg | — | 142 |
+| Daemonhammer | Melee | — | — | 2d10+1 | — | — | — | — | 8 | — | 142 |
+| Power Stake | Melee | — | — | 1d10+7 E | 5 | — | — | — | 1 kg | — | 142 |
+| Suppression Shield | Melee | — | — | 1d10 I | 0 | — | — | — | 5 kg | — | 142 |
+| Neuro-Gauntlet | Melee | — | — | 1d10 R | 8 | — | — | — | 2.5 kg | — | 142 |
+
+## Dark Heresy — Blood of Martyrs — 10 weapons  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Blood of Martyrs (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 10 weapons from Dark Heresy - Blood of Martyrs.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Godwyn-De’az Pattern Bolter | Basic | 90m | S/2/— | 1d10+5 X | 4 | 30 | Full | Reliable, Tearing | 6 kg | Very Rare | 115 |
+| Godwyn-De'az Storm Bolter | Basic | 90m | S/2/4 | 1d10+5 X | 4 | 60 | Full | Reliable, Tearing, Storm | 12 kg | Extremely Rare | 115 |
+| Seraphim Inferno Pistol | Pistol | 10m | S/—/— | 2d10+2 E | 10 | 6 | Full | Reliable | 2 kg | Extremely Rare | 115 |
+| Seraphim Hand Flamer | Pistol | 10m | S/—/— | 1d10+4 E | 2 | 6 | Full | Flame | 2 kg | Extremely Rare | 115 |
+| Daemon Pike | Melee | — | — | 1d10 R | 2 | — | — | Holy | 4 kg | Rare | 117 |
+| Ecclesiarchy Corsesque | Melee | — | — | 1d10 R | 2 | — | — | Unbalanced, Holy | 6 kg | — | 117 |
+| Issued Only Eviscerator | Melee | — | — | 1d10+10 R | 5 | — | — | Tearing, Special, Unwieldy | 12 kg | Scarce | 117 |
+| Fire Lance | Melee | — | — | 1d10 R | 0 | — | — | Special | 4 kg | Rare | 117 |
+| Flame Hammer | Melee | — | — | 2d10 I | 2 | — | — | Unwieldy, Special | 8 kg | Rare | 117 |
+| Mancatcher | Melee | — | — | 1d10 | 0 | — | — | Unwieldy, Special | 4 kg | Rare | 117 |
+
+## Rogue Trader — Into the Storm (Explorer's Handbook) — 28 weapons  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Into the Storm (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 28 weapons from Rogue Trader - Into The Storm  - The Explorer's Handbook.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Assault Lasgun | Basic | 50m | 1/–/5 | 1d10+3 E | 0 | 120 | 2 Full | Reliable | 4.5 kg | Average | 114 |
+| Mark IV “Dervish” | Pistol | 25m | S/4/– | 1d10+3 E | 0 | 20 | 1 Full | Reliable | 1.5 kg | Scarce | 114 |
+| Mezoa Lascutter | Heavy | 5m | S/–/– | 2d10+3 E | 6 | 10 | 2 Full | — | 8 kg | Rare | 114 |
+| Assault Stubber | Basic | 100m | –/–/6 | 1d10+4 I | 3 | 200 | 2 Full | Storm | 21 kg | Average | 114 |
+| Civilian Firearm | Basic | 60m | S/2/– | 1d10+3 I | 0 | 6 | Full | — | 3 kg | Common | 114 |
+| Disposable Handgun | Pistol | 30m | S/2/– | 1d10+2 I | 0 | 8 | 2 Full | Inaccurate, Unreliable | 2 kg | Ubiquitous | 114 |
+| Ripper Pistol | Pistol | 30m | S/2/– | 1d10+3 I | 7 | 8 | Full | Tearing, Toxic | 4 kg | Extremely Rare | 114 |
+| Sniper Rifle | Basic | 220m | S/–/– | 1d10+4 I | 0 | 6 | Full | Accurate | 4 kg | Rare | 114 |
+| Void Speargun | Basic | 10m | S/–/– | 1d10+2 R | 2 | 1 | Full | — | 1.5 kg | Average | 114 |
+| Bolter Cane | Pistol | 30m | S/–/– | 1d10+5 X | 4 | 1 | 2 Full | Tearing | 3 kg | Very Rare | 114 |
+| Solo Boltgun | Basic | 100m | S/–/– | 1d10+5 X | 4 | 8 | Full | Accurate, Tearing, Reliable | 7 kg | Very Rare | 114 |
+| Beamer Meltagun | Basic | 40m | S/–/– | 2d10+6 E | 12 | 6 | 2 Full | — | 9 kg | Very Rare | 114 |
+| Clovis Plasma Gun | Basic | 60m | 1/3/5 | 1d10+5 E | 6 | 40 | 5 Full | Overheat | 20 kg | Extremely Rare | 114 |
+| Wrath Plasma Pistol | Pistol | 40m | 1/–/– | 1d10+8 E | 6 | 8 | 3 Full | Overheat, Accurate | 5 kg | Extremely Rare | 114 |
+| Assault Flamer | Basic | 10m | S/–/– | 1d10+4 E | 1 | 12 | 3 Full | Flame | 6 kg | Scarce | 114 |
+| Blunderbuss | Basic | 30m | S/–/– | 1d10+2 I | 0 | 1 | 2 Full | Primitive, Unreliable, Inaccurate | 4 kg | Plentiful | 114 |
+| Hunting Quoit | Thrown | 10m | S/–/– | 1d10 R | 0 | 1 | — | Primitive, .5 kg | — | Common | 114 |
+| Javelin | Thrown | 10m | S/–/– | 1d10 R | 0 | 1 | — | Primitive, .5 kg | — | Common | 114 |
+| Bola Launcher | Basic | 20m | S/–/– | 1d10 I | 0 | 6 | Full | Primitive, Snare | 8.75 kg | Scarce | 114 |
+| Disposable Launcher | Heavy | 200m | S/–/– | 3d10+3 X | 4 | 1 | — | — | 10 kg | Rare | 114 |
+| Hunter-Killer Missile | Heavy | 350m | S/–/– | 3d10+6 X | 6 | 1 | — | — | 64 kg | Very Rare | 114 |
+| Big Shoota | Basic | 80m | S/3/10 | 1d10+6 I | 1 | 40 | 1 Full | Inaccurate, Unreliable | 6 | Average | 144 |
+| Burna | Basic | 15m | S/–/– | 1d10+5 E | 3 | 8 | 2 Full | Inaccurate, Unreliable, Flame | 8 | — | 144 |
+| Deffgun | Heavy | 90m | S/4/8 | 1d10+10 I | 2 | 50 | 2 Full | Inaccurate, Unreliable, Unwieldy, Storm | 45 | — | 144 |
+| Rokkit Launcha | Basic | 120m | S/–/– | 3d10+5 | 6 | 1 | Half | Inaccurate, Unreliable | 15 | — | 144 |
+| Stikkbomb | Thrown | SBx3 | S/–/– | 2d10+5 X | 2 | — | — | Blast (1) | 1 | Common | 144 |
+| Big Choppa | Melee | – | — | 2d10 R | 2 | — | — | Tearing, Unbalanced | 10 | Average | 145 |
+| Power Klaw | Melee | – | — | 2d10 E | 10 | — | — | Power Field, Tearing, Unwieldy | 17 | Very Rare | 145 |
+
+## Rogue Trader — Hostile Acquisitions — 27 weapons  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Hostile Acquisitions (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 27 weapons from Rogue Trader - Hostile Acquisitions.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Auto-Stubber | Basic | 60m | S/3/– | 1d10+4 I | 0 | 20 | 2 Full | Inaccurate, Tearing, Unreliable | 4 | Scarce | 50 |
+| Boarding Gun | Basic | 30m | S/3/– | 1d10+5 I | 1 | 3 | 2 Full | Inaccurate, Reliable, Scatter | 6 | Scarce | 50 |
+| Shotgun (Persecutor) | Basic | 35m | S/3/– | 1d10+4 I | 0 | 20 | Full | Reliable, Scatter | 6 | Rare | 50 |
+| Aetherfare | Thrown | SBx3 | S/–/– | 1d10+6 E | 0 | — | — | Blast (4) | 1 | Unique | 53 |
+| Microgrenade (Frag) | Thrown | SBx3 | S/4/– | 2d10 X | 0 | — | — | Blast (2) | 0.5 | Extremely Rare | 53 |
+| Microgrenade (Krak) | Thrown | SBx3 | S/4/– | 2d10+2 X | 5 | — | — | — | 0.5 | Extremely Rare | 53 |
+| Rad | Thrown | SBx3 | S/–/– | 1d10 E | 0 | — | — | Blast (10) | 1 | Extremely Rare | 53 |
+| Shardcaster | Basic | 40m | S/3/– | 1d10+4 R | 4 | 60 | 6 Full | Scatter, Tearing | 5 | Very Rare | 54 |
+| Fusion Gun | Basic | 20m | S/–/– | 2d10+6 E | 13 | 10 | 2 Full | Reliable | 3 | Near Unique | 54 |
+| Hawk’s Talon | Basic | 100m | S/3/10 | 2d10+2 E | 4 | 60 | Full | Reliable | 4 | Unique | 54 |
+| Shredder | Basic | 60m | S/–/– | 3d10+5 R | 2 | 12 | 2 Full | Reliable, Blast (4), Tearing | 2 | Near Unique | 54 |
+| Shuriken Cannon | Heavy | 110m | –/–/6 | 2d10+6 R | 3 | 200 | 3 Full | Reliable | 25 | Extremely Rare | 54 |
+| Spinneret Rife | Basic | 60m | S/–/– | 1d10+1 R | 10 | 1 | Half | Accurate, Tearing | 4 | Unique | 54 |
+| Foul Sceptre | Basic | 70m | S/–/– | 2d10+5 E | 10 | — | — | Recharge, Shocking, Toxic | 4 | Near Unique | 54 |
+| Kustom Blasta | Basic | 90m | S/–/– | 2d10+8 E | 8 | 7 | 4 Full | Inaccurate, Overheats, Unreliable, Unstable | 15 | Very Rare | 54 |
+| Ripper Ray | Pistol | 20m | S/–/– | 1d10+6 X | 4 | 15 | Full | Reliable, Tearing | 1 | Rare | 54 |
+| Lightburner | Basic | 80m | S/–/– | 1d10+4 E | 2 | 6 | Full | Overheats | 6 | Rare | 54 |
+| Chainsword (Hydraphur) | Melee | – | — | 1d10+3 R | 2 | — | — | Tearing | 9 | Scarce | 56 |
+| Chainsword (Eldar) | Melee | – | — | 1d10+4 R | 3 | — | — | Balanced, Tearing | 3 | Near Unique | 56 |
+| Eldar Biting Blade | Melee | – | — | 1d10+6 R | 2 | — | — | Tearing, Unbalanced | 7 | Unique | 56 |
+| Eldar Mirrorswords | Melee | – | — | 1d10+5 E | 8 | — | — | Balanced, Power Field | 2 | Unique | 56 |
+| Dark Eldar Scissorhand | Melee | – | — | 3d5 R | 2 | — | — | Tearing | 0.5 | Near Unique | 56 |
+| Nadueshi Twinblade | Melee | – | — | 1d10+6 R | 0 | — | — | Balanced, Tearing | 5 | Rare | 56 |
+| Stryxis Aetherlash | Melee | 3m | — | 2d5 R | 0 | — | — | Flexible | 1 | Near Unique | 56 |
+| Stryxis Curseblade | Melee | – | — | 1d10–1 R | 2 | — | — | Balanced | 2 | Extremely Rare | 56 |
+| Zaythan Warblade | Melee | – | — | 2d10+6 E | 6 | — | — | Power Field, Tearing, Unbalanced | 9 | Very Rare | 56 |
+| Stunsphere | Thrown | SBx3m | — | 1d10 I | 0 | — | — | Shocking | 0.2 | Rare | 56 |
+
+## Deathwatch — Rites of Battle — 0 weapons  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: Rites of Battle (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 weapons from Deathwatch - Rites of Battle.md.*
+
+
+## Deathwatch — First Founding — 16 weapons  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: First Founding (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 16 weapons from Deathwatch - First Founding.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Frag Cannon | Mounted | 20m | S/2/– | 3d10+5 R | 4 | 40 | — | Blast (3), Razor-Sharp, Scatter | 43 | — | 43 |
+| Angelus Bolter | Basic | 50m | S/3/– | 1d10+9 X | 6 | 36 | 2 Full | Tearing | 16 | Respected | 98 |
+| Gilded Boltgun | Basic | 100m | S/2/4 | 1d10+9 X | 4 | 30 | Full | Tearing | 20 | Distinguished | 98 |
+| Raven Shotgun | Basic | 30m | S/–/– | 1d10+6 I | 0 | 18 | Full | Reliable, Scatter | 10 | — | 98 |
+| Artifcer Omnissian Axe | Melee | — | — | 1d10+9 E | — | — | — | — | 7 | — | 100 |
+| Chogoris Lightning Blade | Melee | — | — | 1d10+7 E | 10 | — | — | Balanced, Power Field | 3 | Famed | 100 |
+| Cruciform of the Crusade | Melee | — | — | 2d10+5 I | 0 | — | — | Concussive, Unwieldy | 30 | Respected | 100 |
+| Duelling Tulwar | Melee | — | — | 1d10+2 R | 0 | — | — | Balanced, Primitive | 2 | — | 100 |
+| Glaive Encarmine | Melee | — | — | 2d10+2 E | 6 | — | — | Balanced, Power Field | 7 | Famed | 100 |
+| Honour Blades | Melee | — | — | 1d10+5 | 6 | — | — | Balanced, Power Field | 8 | Respected | 100 |
+| The Needle of Truth | Melee | — | — | 1d10+7 E | 6 | — | — | Balanced, Power Field | 5 | Distinguished | 100 |
+| Power Lance | Melee | — | — | 1d10+6E | 7 | — | — | Power Field | 9 | — | 100 |
+| The Righteous Fist | Melee | — | — | 2d10†E | 9 | — | — | Power Field, Unwieldy | 35 | Famed | 100 |
+| Rune Staff | Melee | — | — | 1d10+1 I | 0 | — | — | Balanced | 5 | Respected | 100 |
+| The Shadow in the Sky | Melee | — | — | 1d10+5 E | 6 | — | — | Balanced, Power Field | 6 | Respected | 100 |
+| Shard of Bekrin | Melee | — | — | 1d10+4 E | 5 | — | — | Power Field, Unwieldy | 4 | Distinguished | 100 |
+
+## Deathwatch — Honour the Chapter — 0 weapons  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: Honour the Chapter (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 weapons from Deathwatch - Honour the Chapter.md.*
+
+
+## Only War — Hammer of the Emperor — 26 weapons  *(system: WH40K Roleplay)*
+
+*Source: Only War: Hammer of the Emperor (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 26 weapons from Only War - Hammer of The Emperor.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Accatran-pattern MkII Heavy Laspistol | Pistol | 40m | S/2/– | 1d10+3 E | 0 | 60 | Full | Reliable | 2 kg | Average | 112 |
+| Accatran-pattern MkIV Lasgun | Basic | 80m | S/3/– | 1d10+3 E | 0 | 60 | Full | Reliable | 4 kg | Average | 112 |
+| Lucius-pattern Lasgun | Basic | 100m | S/–/– | 1d10+5 E | 0 | 35 | Full | — | 5 kg | Average | 112 |
+| Naval Pistol | Pistol | 20m | S/3/– | 1d10+4 I | 0 | 6 | Full | Tearing | 3 kg | Rare | 112 |
+| Ripper Pistol | Pistol | 30m | S/2/– | 1d10+3 I | 5 | 8 | Full | Tearing, Toxic (2) | 4 kg | Extremely Rare | 112 |
+| Hesh-pattern M38 MkII Bolt Pistol | Pistol | 25m | S/3/– | 1d10+5 X | 4 | 12 | 2 Full | Tearing | 4 kg | Very Rare | 113 |
+| Hades Assault Flamer | Basic | 20m | S/–/– | 1d10+4 E | 2 | 10 | 2 Full | Flame, Spray, Reliable | 12 kg | Scarce | 113 |
+| Blowgun | Basic | 10m | S/–/– | 1d5+2 I | 0 | 1 | Half | Toxic (0) | 0.5 kg | Common | 114 |
+| Maccabian Frag Grenade | Thrown | SBx3 | S/–/– | 2d10+1 X | 0 | 1 | — | Blast (3), Sanctified | 0.5 kg | Rare | 116 |
+| Iron-Eater Grenade | Thrown | SBx3 | S/–/– | 2d10 E | 5 | 1 | — | Blast (2), Corrosive | 0.5 kg | Very Rare | 116 |
+| Tube Charge | Thrown | SBx2 | S/–/– | 3d10 X | 0 | 1 | — | Blast (4) | 1 kg | Scarce | 116 |
+| Chainaxe | Melee | — | — | 1d10+3 R | 2 | — | — | Tearing, Unbalanced | 11 kg | Rare | 117 |
+| Chainflail | Melee | — | — | 1d10+4 R | 2 | — | — | Flexible, Tearing, Unwieldy | 14 kg | Very Rare | 117 |
+| Chain Glaive | Melee | — | — | 1d10+3 R | 2 | — | — | Razor-Sharp, Tearing, Unbalanced | 12 kg | Very Rare | 117 |
+| Chain Knife | Melee | — | — | 1d10+1 R | 2 | — | — | Tearing | 4 kg | Rare | 117 |
+| Cavalry Sabre | Melee | — | — | 1d10+6 E | 4 | — | — | Power Field, Razor Sharp | 4 kg | Very Rare | 118 |
+| Power Flail | Melee | — | — | 1d10+8 E | 3 | — | — | Flexible, Power Field, Un-, wieldy | 7 kg | Extremely Rare | 118 |
+| Power Spear | Melee | — | — | 1d10+4 E | 8 | — | — | Power Field, Proven (2) | 7 kg | Extremely Rare | 118 |
+| Force Axe | Melee | — | — | 1d10+3 R | 2 | — | — | Force, Unbalanced | 6.5 kg | Near Unique | 118 |
+| Force Dagger | Melee | — | — | 1d5+2 R | 2 | — | — | Force | 1.5 kg | Extremely Rare | 118 |
+| Command Baton | Melee | — | — | 1d10+1 E | 0 | — | — | Shocking | 4 kg | Very Rare | 119 |
+| Shock Glove | Melee | — | — | 1d10 I | 0 | — | — | Shocking | 1 kg | Extremely Rare | 119 |
+| Suppression Shield | Melee | — | — | 1d10 I | 0 | — | — | Defensive, Recharge, Shocking | 7 kg | Extremely Rare | 119 |
+| Axe | Melee | — | — | 1d10+1 R | 0 | — | — | Unbalanced | 4 kg | Common | 120 |
+| Cavalry Spear | Melee | — | — | 1d10 R | 0 | — | — | Proven (2), Unbalanced | 7 kg | Scarce | 120 |
+| Warknife | Melee | — | — | 1d5+3 R | 0 | — | — | — | 2 kg | Average | 120 |
+
+## Black Crusade — Tome of Blood — 14 weapons  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Blood (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 14 weapons from Black Crusade - Tome of Blood.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Boiler Cannon | Heavy | 20m | S/–/– | 3d10 E | 0 | 10 | 3Full | Primitive (7), Overheats, Spray, Toxic (3), 30kg† | — | Common | 38 |
+| Combi-Weapon | Basic | 100m | S/3/– | 1d10+5 X | 4 | 24 | Full | Tearing | 18kg | Extremely Rare | 38 |
+| Legion Combi- Weapon | Basic | 100m | S/3/– | 1d10+9 X | 4 | 24 | Full | Tearing | 25kg | Extremely Rare | 38 |
+| Thresher Support Gun | Heavy | 120m | –/–/6 | 1d10+5 R | 0 | 200 | 2Full | Crippling (2), Primitive (8), Tearing, 23kg† | — | Scarce | 38 |
+| Kursian | Heavy | — | — | 1d10 I | 0 | — | — | Primitive (6), Unwieldy | 12kg | Very Rare | 39 |
+| Firestorm Blade (Ranged) | Basic | 50m | S/–/– | 2d10+15 E | 8 | — | — | Flame, Proven (3), Spray +, Howling, Piercing, Rampage | 7kg | — | 43 |
+| Heart-Ripper | Heavy | 300m | S/4/– | 3d10+8 I | 6 | 80 | 2 Full | Reliable, Tearing, Twin-Linked +, Howling, Skull Taker, Vicious | 55kg | — | 43 |
+| Soulfire Lance (Ranged) | Basic | 30m | S/–/– | 2d10+6 I | 0 | — | — | Felling (2), Spray, Warp Weapon +, Howling, Piercing | 4kg | — | 43 |
+| Kroot Shortbow | Basic | 30m | S/–/– | 1d10 R | 0 | 1 | Half | Primitive (8), Toxic (2) | 1kg | Common | 80 |
+| Kroot Flintlock | Basic | 30m | S/–/– | 1d10+3 I | 0 | 1 | 2 Full | Inaccurate, Primitive (8), Unreliable | 6kg | Rare | 80 |
+| Snappa Gun | Melee | 3m | S/–/– | 1d10+6 R | 0 | — | — | Living Weapon††, Tearing | 7.5kg | Scarce | 84 |
+| Buzza Bomb | Thrown | SBx3 | S/–/– | 1d10+5 R | 0 | 1 | — | Blast (4), Crippling (1), Devastating (1), Living, Weapon††, Primitive (7) | 1kg | Scarce | 84 |
+| Rokkit Launcha | Heavy | 100m | S/–/– | 3D10+3 X | 6 | 2 | 2 Full | Blast (2), Concussive (2), Overheats | 30kg | Rare | 84 |
+| Buggy Busta | Thrown | SBx3 | S/–/– | 2D10+2 X | 8 | 1 | — | Blast (1), Concussive (3), Devastating (1) | 1.5kg | Rare | 84 |
+
+## Black Crusade — Tome of Excess — 12 weapons  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Excess (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 12 weapons from Black Crusade - Tome of Excess.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Man-Portable Ectoplasma Cannon | Heavy | 60m | S/–/– | 3d10+6 E | 8 | 12 | 4 Full | Blast (2), Maximal, Overheats | 50kg | Extremely Rare | 38 |
+| Ghibelline Shrieking Pistol | Pistol | 40m | S/–/– | 1d10+4E | 4 | 12 | Full | Concussive (0), Overcharge | 8kg | Rare | 38 |
+| Ghibelline Howler Rifle | Basic | 90m | S/–/– | 2d10 E | 4 | 36 | Full | Accurate, Concussive, (0), Overcharge | 16kg | Rare | 38 |
+| Ghibelline Hyperwave Clarion Cannon | Heavy | 40m | S/–/– | 6d10 E | 6 | 24 | 6 Full | Concussive (1), Devastating (3), Melta, Overcharge, Overheats, Spray | 45kg | Very Rare | 38 |
+| Æthéme Blade | Melee | – | — | 1d5 R | 1 | — | — | Varies with loaded toxins | 1kg | Rare | 39 |
+| Accursed Crozius | Melee | – | — | 2d10+6 E | 7 | — | — | Balanced, Concussive (0)†, Felling (4), Power Field | 16kg | Near Unique | 39 |
+| Whispering Blade | Melee | – | — | 1d10+9 E | 5 | — | — | Balanced, Razor Sharp, Tearing | 8kg | Unique | 39 |
+| Lash of Torment | Melee | 6m | — | 1d10+6 R | 4 | — | — | Concussive (2), Flexible, Gyro-Stabilised, Snare (2), Tearing | 7kg | Near Unique | 39 |
+| Membrane Dagger | Melee | – | — | 1d10 R | 4 | — | — | Crippling (3), Razor Sharp | 1kg | Very Rare | 39 |
+| Needle of Desire | Melee | – | — | 2d10 R | 0 | — | — | Crippling (6), Toxic (3), Unwieldy | 4kg | Near Unique | 39 |
+| Thunder Hammer (human) | Melee | – | — | 2d10+8 E | 8 | — | — | Concussive (2), Power Field, Unwieldy | 16kg | Extremely Rare | 39 |
+| Thunder Hammer (Legion) | Melee | – | — | 2d10+9 E | 9 | — | — | Concussive (3), Power Field, Unwieldy | 18kg | Near Unique | 39 |
+
+## Black Crusade — Tome of Fate — 23 weapons  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Fate (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 23 weapons from Black Crusade - Tome of Fate.md.*
+
+| Weapon | Class | Range | RoF | Damage | Pen | Clip | Reload | Special | Wt | Avail | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Q’Sal Crystal Caster | Pistol | 15m | S/–/– | 1d10+4 E | 5 | — | Full | Razor Sharp, Crippling (6)† | 0.5kg | Rare | 40 |
+| Q’Sal Soul Cannon | Heavy | 75m | S/–/– | 2d10+10 E | 0 | 10 | — | Flame, Shocking, Warp Weapon | 45kg | Extremely Rare | 40 |
+| Bedlam Staff | Melee | — | — | 1d10+4 I | 4 | — | — | Balanced, Concussive (2), Flame, Proven (3) | 4kg | Near Unique | 40 |
+| Castir Lightning Khopesh | Melee | — | — | 1d10+4 E | 4 | — | — | Balanced, Flexible, Power Field | 2kg | Very Rare | 40 |
+| Polix Heavy Khopesh | Melee | — | — | 1d10+8 E | 8 | — | — | Balanced, Concussive (1)†††, Power Field | 6kg | Very Rare | 40 |
+| Pandemonium Stave | Melee | — | — | 2d10+8 I | 8 | — | — | Balanced, Felling (4) | 6kg | Near Unique | 40 |
+| Warp Staff | Melee | — | — | 1d10 I | 0 | — | — | Balanced | 3kg | Extremely Rare | 40 |
+| Gauntlet of Fire (Ranged) | Pistol | 15m | S/–/– | 1d10+9 E | 5 | — | — | Flame, Spray | 3kg | Unique | 122 |
+| Gauss Cannon | Heavy | 100m | S/4/6 | 1d10+12 E | 5 | — | — | Gauss† | 35kg | Near Unique | 122 |
+| Heavy Gauss Cannon | Heavy | 200m | S/–/– | 4d10+10 E | 10 | — | — | Gauss†, Proven (4) | 50kg | Near Unique | 122 |
+| Particle Beamer | Heavy | 70m | S/–/– | 3d10+8 X | 5 | — | — | Blast (4), Concussive (3), Reliable | 25kg | Unique | 122 |
+| Particle Caster | Pistol | 30m | S/3/– | 2d10+5 X | 4 | — | — | Concussive (1), Reliable | 4kg | Unique | 122 |
+| Rod of Covenant (Ranged) | Basic | 15m | S/–/– | 1d10+12 E | 10 | — | — | Proven (5), Reliable | 6kg | Unique | 122 |
+| Staff of Light (Ranged) | Basic | 25m | S/4/– | 1d10+8 E | 7 | — | — | — | 10kg | Unique | 122 |
+| Tachyon Arrow | Basic | 300m | S/–/– | 10d10 I | 20 | 1 | — | Concussive (6), Proven (3) | 5kg | Unique | 122 |
+| Tesla Carbine | Basic | 75m | S/–/– | 2d10+3 E | 3 | — | — | Shocking, Special†† | 20kg | Unique | 122 |
+| Dispersion Shield | Melee | — | — | 1d10+25 I | 0 | — | — | Defensive, Special††† | 20kg | Unique | 122 |
+| Gauntlet of Fire (Melee) | Melee | — | — | 1d10+6 E | 5 | — | — | Flame, Tearing | 3kg | Unique | 122 |
+| Hyperphase Sword | Melee | — | — | 1d10+17 E | 6 | — | — | Balanced, Power Field | 10kg | Unique | 122 |
+| Rod of Covenant (Melee) | Melee | — | — | 1d10+17 E | 8 | — | — | Concussive (1), Power Field | 6kg | Unique | 122 |
+| Staff of Light (Melee) | Melee | — | — | 1d10+2 I | 1 | — | — | Balanced, Shocking | 10kg | Unique | 122 |
+| Void Blade | Melee | — | — | 1d10+11 R | 5 | — | — | Crippling (5), Felling (2) | 15kg | Unique | 122 |
+| Warscythe | Melee | — | — | 2d10+17 E | 9 | — | — | Felling (3), Power Field, Unbalanced | 12kg | Unique | 122 |

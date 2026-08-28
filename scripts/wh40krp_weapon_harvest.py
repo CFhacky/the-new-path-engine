@@ -432,9 +432,15 @@ def _parse_forward(fcells: List[str], ranged: bool) -> dict:
     return out
 
 
-def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[Weapon]:
-    region = _regions(lines)
-    cells = _build_cells(lines, pages, region)
+def _detect_weapons_from_cells(
+        cells: List[Cell], book: str,
+        forward_fn: Callable[[List[str], bool], dict] = _parse_forward,
+        sanitize_fn: Optional[Callable[[Weapon], Optional[Weapon]]] = None,
+) -> List[Weapon]:
+    """The shared anchor/identity/forward pipeline. `forward_fn` assigns the
+    trailing cells; `sanitize_fn` (supplement path only) may scrub or reject a
+    row. With the defaults this reproduces the original core behaviour exactly —
+    the five core sources run through here unchanged."""
     n = len(cells)
 
     anchors: List[Tuple[int, dict]] = []
@@ -464,7 +470,7 @@ def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[Weapon
                 continue
             name, k = rec
             fcells = fcells[:k] + fcells[k + 1:]       # keep it out of the stats
-        fwd = _parse_forward(fcells, idn["ranged"])
+        fwd = forward_fn(fcells, idn["ranged"])
         w = Weapon(name=name, book=book, page=cells[p].page,
                    start=cells[idn["id_start"]].line + 1, end=cells[p].line + 8,
                    weapon_class=idn["weapon_class"], rng=idn["rng"],
@@ -476,6 +482,11 @@ def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[Weapon
         w.weight = fwd.get("weight")
         w.availability = fwd.get("availability")
         w.cost = fwd.get("cost")
+        if sanitize_fn is not None:
+            scrubbed = sanitize_fn(w)
+            if scrubbed is None:                  # structurally broken row → skip
+                continue
+            w = scrubbed
         weapons.append(w)
 
     # one row per (name, book): keep the richest, then the first seen.
@@ -488,8 +499,299 @@ def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[Weapon
     return sorted(best.values(), key=lambda w: w.start)
 
 
+def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[Weapon]:
+    region = _regions(lines)
+    cells = _build_cells(lines, pages, region)
+    return _detect_weapons_from_cells(cells, book)
+
+
+# ---------------------------------------------------------------------------
+# SUPPLEMENT PATH — the weapon-bearing 40K RP splatbooks.
+#
+# The supplements were OCR'd in the SAME column-dump format as the cores, but
+# their scans are rougher, so three things defeat the core detector and are
+# handled here ADDITIVELY (the five core sources never run through this path):
+#   1. Region titles name the weapon FAMILY ("Las and SP Weapons", "Xenos
+#      Weapons", "Necron Weapons", a bare "Weapons"), not "... Ranged Weapons",
+#      and OCR sometimes mangles MELEE ("ITIELEE"). `_regions_supp` opens on any
+#      "Table ...: <family> Weapon(s)" while still excluding the weapon-adjacent
+#      NON-list tables (Weapon Upgrades / Pattern / Emplacements / Attributes).
+#   2. Adjacent stat cells are space-fused onto one physical line
+#      ("100m S/-/-", "S/3/- 1d10+5 X", "12 kg Scarce"). `_defuse_supp_line`
+#      re-splits them at high-confidence token boundaries (identity fields only,
+#      so a weapon NAME — which never holds a range/RoF/damage token — is safe).
+#   3. Rows carry dash / "N/A" placeholders and are followed by footnote prose
+#      that the core's type-based, read-from-both-ends forward pass mishandles.
+#      `_parse_forward_supp` walks the trailing columns strictly LEFT-TO-RIGHT
+#      and stops after Availability; `_sanitize_supp` then scrubs or rejects
+#      anything still malformed so no fabricated field ever reaches the index.
+# ---------------------------------------------------------------------------
+
+# A weapon-adjacent table whose title carries one of these words is NOT a
+# weapon list (upgrades, customisation patterns, emplacements, daemon-weapon
+# attribute menus, ammunition-only, etc.) and must not open a region.
+RE_TBL_NOT_WEAPON_LIST = re.compile(
+    r"\b(?:Upgrades?|Pattern|Emplacements?|Attributes?|Modif\w*|Qualit\w+|"
+    r"Training|Advances?|Costs?|Positive|Negative|Tips|Ammunition)\b",
+    re.IGNORECASE)
+
+
+def _title_opens_supp_region(ln: str) -> bool:
+    if re.search(r"\b(?:Grenades|Missiles|Explosives)\b", ln, re.IGNORECASE):
+        return True                              # thrown-weapon lists (as cores)
+    if re.search(r"Weapons?\b", ln, re.IGNORECASE) and \
+            not RE_TBL_NOT_WEAPON_LIST.search(ln):
+        return True                              # any "<family> Weapon(s)" list
+    return False
+
+
+def _regions_supp(lines: List[str]) -> List[bool]:
+    inside = [False] * len(lines)
+    open_ = False
+    for i, ln in enumerate(lines):
+        if RE_TBL_ANY.match(ln):
+            open_ = _title_opens_supp_region(ln)
+        inside[i] = open_
+    return inside
+
+
+_SUPP_RANGE_TOK = r"(?:\d{1,3}(?:\.\d)?\s?k?m|SB\s?[x\u00d7]\s?\d\s?m?)"
+_SUPP_ROF_TOK = rf"[SBsb\d]\s?/\s?[SBsb\d{DASHES}]*\s?/\s?[SBsb\d{DASHES}]*"
+_SUPP_DAM_START = r"\d{1,2}\s?[dD]\s?\d"
+_SUPP_WT_TOK = r"\d{1,3}(?:\.\d{1,2})?\s?kg\b"
+
+
+def _defuse_supp_line(ln: str) -> str:
+    """Insert tab boundaries between space-fused stat tokens on one physical
+    line. High-precision: only the Range|RoF, RoF|Damage, x|Weight and
+    Weight|Availability seams — each anchored on an unmistakable stat token, so
+    a real weapon name is never split."""
+    s = ln
+    s = re.sub(rf"({_SUPP_RANGE_TOK})\s+(?={_SUPP_ROF_TOK})", "\\1\t", s)
+    s = re.sub(rf"({_SUPP_ROF_TOK})\s+(?={_SUPP_DAM_START})", "\\1\t", s)
+    s = re.sub(rf"(?<=\D)\s+(?={_SUPP_WT_TOK})", "\t", s)          # <x> | Weight
+    s = re.sub(rf"({_SUPP_WT_TOK})\s+(?=[A-Z(])", "\\1\t", s)      # Weight | Avail
+    return s
+
+
+def _norm_supp_cell(s: str) -> str:
+    """A rarity cell carrying only a trailing footnote dagger ("Scarce†") is
+    normalised to the bare rarity, so the identity read recognises it as a stat
+    (not a name fragment) and the availability parse still matches it."""
+    base = s.rstrip("†‡*").rstrip()
+    if base != s and base.lower() in RARITIES:
+        return base
+    return s
+
+
+def _build_cells_supp(lines: List[str], pages: List[int], region: List[bool]) -> List[Cell]:
+    cells: List[Cell] = []
+    for i, ln in enumerate(lines):
+        if PAGE.search(ln):
+            continue
+        src = _defuse_supp_line(ln) if region[i] else ln
+        for piece in src.split("\t"):
+            s = piece.strip()
+            if s:
+                cells.append(Cell(_norm_supp_cell(s), i, pages[i], region[i]))
+    return cells
+
+
+RE_CLIP_INT = re.compile(r"^(\d{1,4})[\u2020\u2021*]*$")   # clip: digits + daggers
+NA_TOK = re.compile(rf"^(?:n\s*/?\s*a|[{DASHES}]+)$", re.IGNORECASE)
+
+
+def _clip_int(t: str) -> Optional[str]:
+    m = RE_CLIP_INT.match(t.strip())
+    return m.group(1) if m else None
+
+
+def _supp_special_stop(t: str) -> bool:
+    """True at the cell that ends a special-quality run: a weight, a rarity /
+    Renown cell, a footnote marker, or a prose sentence (OCR over-read tail)."""
+    t = t.strip()
+    if RE_WT.match(t):
+        return True
+    low = t.lower().rstrip("\u2020\u2021*").strip()
+    if low in RARITIES or low in RENOWN:
+        return True
+    if t[:1] in "\u2020\u2021*":
+        return True
+    if re.search(r"\bSee page\b|Rulebook\b", t, re.IGNORECASE):
+        return True
+    if len(t.split()) >= 8:                       # a sentence, not a stat cell
+        return True
+    return False
+
+
+def _parse_forward_supp(fcells: List[str], ranged: bool) -> dict:
+    """Assign the trailing cells strictly left-to-right in column order —
+    Pen, Clip, Rld, Special.., Wt, [Cost], Availability — treating dash / N/A
+    as empty-cell placeholders, and STOPPING after Availability so the footnote
+    prose that follows the last row of a table is never absorbed."""
+    out: dict = {}
+    cells = [c.strip() for c in fcells if c.strip()]
+    if not cells:
+        return out
+    out["pen"] = cells.pop(0)
+    if ranged:
+        if cells:                                 # Clip
+            ci = _clip_int(cells[0])
+            if ci is not None:
+                out["clip"] = ci
+                cells.pop(0)
+            elif NA_TOK.match(cells[0]):
+                cells.pop(0)                      # empty clip
+        if cells:                                 # Reload
+            if NA_TOK.match(cells[0]):
+                cells.pop(0)                      # empty reload
+            elif RE_RLD.match(cells[0]):
+                out["reload"] = cells.pop(0)
+            else:
+                m = RE_RLD_PREFIX.match(cells[0])
+                if m and m.group(2).strip():      # "2 Full Reliable" fused
+                    out["reload"] = m.group(1).strip()
+                    cells[0] = m.group(2).strip()
+    specials: List[str] = []                      # Special (ranged and melee)
+    while cells and _is_special_cell(cells[0]) and not _supp_special_stop(cells[0]):
+        specials.append(cells.pop(0).strip(" ,"))
+        if len(specials) >= 8:
+            break
+    if specials:
+        out["special"] = ", ".join(s for s in specials if s)
+    while cells and NA_TOK.match(cells[0]):
+        cells.pop(0)                              # empty special placeholder
+    if cells and RE_WT.match(cells[0]):           # Weight
+        out["weight"] = _first_num_token(cells.pop(0))
+    while cells and NA_TOK.match(cells[0]):
+        cells.pop(0)
+    if cells and RE_INT.match(cells[0]):          # Cost (optional)
+        out["cost"] = cells.pop(0)
+    if cells:                                     # Availability, then STOP
+        two = (cells[0] + " " + cells[1]).strip() if len(cells) >= 2 else ""
+        if two and two.lower().rstrip("\u2020*") in RARITIES:
+            out["availability"] = two
+        elif cells[0].lower().rstrip("\u2020*") in RARITIES or cells[0].lower() in RENOWN:
+            out["availability"] = cells[0].rstrip("\u2020*")
+        else:
+            m = RARITY_TAIL.search(cells[0])
+            if m and not RE_WT.match(cells[0]):
+                out["availability"] = m.group(1)
+    return out
+
+
+# Leading name tokens that never begin a weapon name — column labels, rarity
+# words, Renown ranks, and the bare quality word "Special" — safe to strip off
+# the FRONT of a name when OCR spilled them in from an adjacent cell/row.
+_NAME_LEAD_DROP = (set(HEADER_WORDS) | {r.split()[0] for r in RARITIES} |
+                   set(RENOWN) | {"rare", "unique", "special", "req", "renown"})
+# Header labels that must NEVER survive inside a name (a fused-header leak).
+_NAME_HARD_HEADER = {"availability", "reload", "rof", "rld", "clip", "cost"}
+# A leading special quality with a parenthetical VALUE ("Blast (3) (in addition)")
+# spilled from the previous row — a real name never carries a "(digit)".
+_NAME_LEAD_SPECIAL = re.compile(r"^(?:[A-Za-z][\w'’-]*\s*\(\d+\)(?:\s*\([^)]*\))?[\s,]*)+")
+# A trailing combo-class fragment: "... Melee or" (from a "Melee or Thrown"
+# class), or a bare trailing class word that can never end a real weapon name.
+_NAME_TAIL_COMBO = re.compile(rf"[\s,]+(?:{CLASS_ALT})\s+or$", re.IGNORECASE)
+_NAME_TAIL_CLASS = re.compile(r"[\s,]+(?:Basic|Melee|Thrown|Exotic)$", re.IGNORECASE)
+_CLASS_WORDS_LOW = {c.lower() for c in CLASS_ALT.split("|")}
+
+
+def _sanitize_supp(w: Weapon) -> Optional[Weapon]:
+    """Scrub a supplement row; return None to reject it (soft skip). Never
+    invents a value — a field that cannot be trusted is blanked, not guessed."""
+    # name: strip a leading special-with-value fragment spilled from the row above
+    w.name = _NAME_LEAD_SPECIAL.sub("", w.name).strip()
+    # name: strip a leading run of header/rarity/quality junk (OCR spill)
+    toks = w.name.split()
+    i = 0
+    while i < len(toks):
+        low = toks[i].lower().strip(",").strip("\u2020\u2021*").strip()
+        if low in _NAME_LEAD_DROP or toks[i].endswith(","):
+            i += 1
+            continue
+        break
+    name = _clean_name(" ".join(toks[i:]))
+    if name:
+        w.name = name
+    # name: strip a trailing combo-class fragment / bare non-name class word
+    w.name = _clean_name(_NAME_TAIL_CLASS.sub("", _NAME_TAIL_COMBO.sub("", w.name)))
+    if not _plausible_name(w.name) or w.name.lower() in _CLASS_WORDS_LOW:
+        return None
+    if any(t.lower().strip(",").strip("\u2020\u2021*") in _NAME_HARD_HEADER
+           for t in w.name.split()):
+        return None                               # fused-header leak → soft skip
+    # A "damage" that is really a randomised RANGE ("3d10m", an Ork throw range)
+    # mis-anchored as the damage cell — a real 40K damage never ends in "m".
+    if w.damage and re.search(r"[dD]\s?\d{1,3}\s?m$", w.damage.strip()):
+        return None
+    if w.weapon_class:                             # tidy stray dagger/dash on class
+        w.weapon_class = w.weapon_class.rstrip(" †‡*–—-").strip() or w.weapon_class
+    # a damage-type letter split off into Pen ("1d10+4" | pen "E") → restore it
+    if w.pen and re.match(r"^[eirxEIRX]$", w.pen.strip()) and w.damage and \
+            not re.search(r"[A-Za-z]$", w.damage.strip().rstrip("\u2020*")):
+        w.damage = w.damage.strip() + " " + w.pen.strip().upper()
+        w.pen = None
+    if w.pen is not None:                          # Pen is an integer, or blank
+        pc = w.pen.strip().rstrip("\u2020\u2021*").strip()
+        w.pen = pc if RE_INT.match(pc) else None
+    if w.clip is not None and not RE_INT.match(w.clip.strip()):
+        w.clip = None
+    if w.weight is not None and not RE_WT.match(w.weight.strip()):
+        w.weight = None
+    if w.availability is not None:                 # a known rarity / Renown rank
+        av = w.availability.strip().rstrip("\u2020*").strip()
+        w.availability = av if (av.lower() in RARITIES or av.lower() in RENOWN) else None
+    if w.special is not None:                      # drop any absorbed footnote
+        sp = re.sub(r"\s+", " ", w.special).strip(" ,\u2013\u2014-")
+        cut = re.search(r"(See page|Rulebook)", sp, re.IGNORECASE)
+        if cut:
+            sp = sp[:cut.start()].strip(" ,")
+        w.special = sp or None
+    return w
+
+
+# A damage cell OCR'd WITHOUT its trailing type letter, and the lone type letter
+# (E/I/R/X = Energy/Impact/Rending/eXplosive) OCR frequently drops onto the next
+# line. Likewise a weight number and its "kg" unit are sometimes split. Both get
+# stitched back before parsing so the trailing columns don't shift by one cell.
+RE_DAM_NOTYPE = re.compile(
+    rf"^\d{{1,2}}\s*[dD]\s*\d{{1,3}}(?:\s*[+{DASHES}]\s*\d{{1,3}})?\s*[†*]?$")
+RE_DAM_TYPE = re.compile(r"^[EIRXeirx]\.?$")
+RE_KG_UNIT = re.compile(r"^kg\.?$", re.IGNORECASE)
+RE_BARE_NUM = re.compile(r"^\d{1,3}(?:\.\d{1,2})?$")
+
+
+def _stitch_supp_cells(cells: List[Cell]) -> List[Cell]:
+    out: List[Cell] = []
+    k = 0
+    while k < len(cells):
+        c = cells[k]
+        nxt = cells[k + 1] if k + 1 < len(cells) else None
+        if (nxt is not None and c.region and nxt.region and
+                RE_DAM_NOTYPE.match(c.text) and RE_DAM_TYPE.match(nxt.text)):
+            out.append(Cell(f"{c.text.strip()} {nxt.text.strip().upper().rstrip('.')}",
+                            c.line, c.page, c.region))
+            k += 2
+        elif (nxt is not None and c.region and nxt.region and
+                RE_BARE_NUM.match(c.text) and RE_KG_UNIT.match(nxt.text)):
+            out.append(Cell(f"{c.text.strip()} kg", c.line, c.page, c.region))
+            k += 2
+        else:
+            out.append(c)
+            k += 1
+    return out
+
+
+def detect_weapons_supp(lines: List[str], pages: List[int], book: str) -> List[Weapon]:
+    region = _regions_supp(lines)
+    cells = _stitch_supp_cells(_build_cells_supp(lines, pages, region))
+    return _detect_weapons_from_cells(cells, book, _parse_forward_supp, _sanitize_supp)
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Weapon]]] = {
     "wh40krp": detect_weapons,
+    "wh40krp_supp": detect_weapons_supp,
 }
 
 
@@ -523,6 +825,57 @@ SOURCES: List[Source] = [
     Source("bc-core", "Black Crusade — Core Rulebook",
            _40K / "Black Crusade/Rulebooks/Black Crusade - Core Rulebook.md",
            "Black Crusade Core Rulebook (FFG, WH40K Roleplay), Armoury", "wh40krp"),
+
+    # --- SUPPLEMENTS (added later; the wh40krp_supp detector) ----------------
+    # Dark Heresy line
+    Source("dh-inquisitor", "Dark Heresy — The Inquisitor's Handbook",
+           _40K / "Dark Heresy/Rulebooks/Dark Heresy - The Inquisitor's Handbook.md",
+           "Dark Heresy: The Inquisitor's Handbook (FFG, WH40K Roleplay), Armoury",
+           "wh40krp_supp"),
+    Source("dh-radicals", "Dark Heresy — The Radical's Handbook",
+           _40K / "Dark Heresy/Rulebooks/Dark Heresy - The Radical's Handbook.md",
+           "Dark Heresy: The Radical's Handbook (FFG, WH40K Roleplay), Armoury",
+           "wh40krp_supp"),
+    Source("dh-lathe", "Dark Heresy — The Lathe Worlds",
+           _40K / "Dark Heresy/Rulebooks/Dark Heresy - The Lathe Worlds.md",
+           "Dark Heresy: The Lathe Worlds (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("dh-ascension", "Dark Heresy — Ascension",
+           _40K / "Dark Heresy/Rulebooks/Dark Heresy - Ascension.md",
+           "Dark Heresy: Ascension (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("dh-blood", "Dark Heresy — Blood of Martyrs",
+           _40K / "Dark Heresy/Rulebooks/Dark Heresy - Blood of Martyrs.md",
+           "Dark Heresy: Blood of Martyrs (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    # Rogue Trader line
+    Source("rt-storm", "Rogue Trader — Into the Storm (Explorer's Handbook)",
+           _40K / "Rogue Trader/Rulebooks/Rogue Trader - Into The Storm  - The Explorer's Handbook.md",
+           "Rogue Trader: Into the Storm (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("rt-hostile", "Rogue Trader — Hostile Acquisitions",
+           _40K / "Rogue Trader/Rulebooks/Rogue Trader - Hostile Acquisitions.md",
+           "Rogue Trader: Hostile Acquisitions (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    # Deathwatch line  (armoury grades by Req/Renown, not Cost/Availability)
+    Source("dw-rites", "Deathwatch — Rites of Battle",
+           _40K / "Deathwatch/Rulebooks/Deathwatch - Rites of Battle.md",
+           "Deathwatch: Rites of Battle (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("dw-founding", "Deathwatch — First Founding",
+           _40K / "Deathwatch/Rulebooks/Deathwatch - First Founding.md",
+           "Deathwatch: First Founding (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("dw-honour", "Deathwatch — Honour the Chapter",
+           _40K / "Deathwatch/Rulebooks/Deathwatch - Honour the Chapter.md",
+           "Deathwatch: Honour the Chapter (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    # Only War line
+    Source("ow-hammer", "Only War — Hammer of the Emperor",
+           _40K / "Only War/Rulebooks/Only War - Hammer of The Emperor.md",
+           "Only War: Hammer of the Emperor (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    # Black Crusade line
+    Source("bc-blood", "Black Crusade — Tome of Blood",
+           _40K / "Black Crusade/Rulebooks/Black Crusade - Tome of Blood.md",
+           "Black Crusade: Tome of Blood (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("bc-excess", "Black Crusade — Tome of Excess",
+           _40K / "Black Crusade/Rulebooks/Black Crusade - Tome of Excess.md",
+           "Black Crusade: Tome of Excess (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
+    Source("bc-fate", "Black Crusade — Tome of Fate",
+           _40K / "Black Crusade/Rulebooks/Black Crusade - Tome of Fate.md",
+           "Black Crusade: Tome of Fate (FFG, WH40K Roleplay), Armoury", "wh40krp_supp"),
 ]
 
 
@@ -743,6 +1096,91 @@ Name
 """
 
 
+# A supplement fixture exercising the wh40krp_supp path: a FAMILY-named weapon
+# table title ("Las and SP Weapons"), a split damage-type letter ("1d10+4" then
+# "E" on the next line) with a fused reload+special ("3 Full Unstable") and a
+# dagger-suffixed rarity ("Scarce†"), and a Necron-style table with a fused
+# "Range RoF" header and dash clip/reload placeholders.
+SUPP_FIXTURE = """## [PDF page 200]
+Table 3-6: Las and SP Weapons
+Las Weapons
+Name
+Class
+Range
+RoF
+Damage
+Pen
+Clip
+Reload
+Special
+Wt.
+Availability
+Accatran-pattern
+MkIV Lasgun
+Basic
+80m
+S/3/–
+1d10+3 E
+0
+60
+Full
+Reliable
+4 kg
+Average
+Table 6-1: Xenos Weapons
+Ranged Weapons
+Name
+Class
+Range
+Rof
+Dam
+Pen
+Clip
+Rld
+Special
+Wt
+Cost
+Availability
+Morgauth
+Burn Caster
+Basic
+20m
+S/3/–
+1d10+4
+E
+9
+12
+3 Full Unstable
+4 kg
+2,750
+Scarce†
+Table 3-4: Necron Weapons
+Ranged Weapons
+Name
+Class
+Range RoF
+Dam
+Pen Clip Rld
+Special
+Wt.
+Availability
+Gauss Cannon
+Heavy
+100m
+S/4/6
+1d10+12 E
+5
+–
+–
+Gauss†
+35kg
+Near Unique
+## [PDF page 201]
+Table 3-7: Weapon Upgrades
+Name
+"""
+
+
 def selftest(base: Path) -> int:
     failures: List[str] = []
 
@@ -792,16 +1230,60 @@ def selftest(base: Path) -> int:
     if stray:
         failures.append(f"prose produced phantom weapons: {[w.name for w in stray]}")
 
+    # --- SUPPLEMENT fixture: the wh40krp_supp path -------------------------
+    slines = SUPP_FIXTURE.splitlines()
+    sws = detect_weapons_supp(slines, _pages_for(slines), "Fixture Supplement")
+    snames = [w.name for w in sws]
+    swant = ["Accatran-pattern MkIV Lasgun", "Morgauth Burn Caster", "Gauss Cannon"]
+    if snames != swant:
+        failures.append(f"supp fixture detected {snames}, wanted {swant}")
+    else:
+        sby = {w.name: w for w in sws}
+        acc = sby["Accatran-pattern MkIV Lasgun"]       # family-titled region
+        if (acc.weapon_class, acc.damage, acc.clip, acc.reload, acc.special,
+                acc.weight, acc.availability) != \
+                ("Basic", "1d10+3 E", "60", "Full", "Reliable", "4 kg", "Average"):
+            failures.append(f"supp Accatran parsed "
+                            f"{(acc.weapon_class, acc.damage, acc.clip, acc.reload, acc.special, acc.weight, acc.availability)!r}")
+        mor = sby["Morgauth Burn Caster"]               # split damage-type letter
+        got = (mor.weapon_class, mor.damage, mor.pen, mor.clip, mor.reload,
+               mor.special, mor.weight, mor.cost, mor.availability)
+        exp = ("Basic", "1d10+4 E", "9", "12", "3 Full", "Unstable", "4 kg",
+               "2,750", "Scarce")
+        if got != exp:
+            failures.append(f"supp Morgauth parsed {got}, wanted {exp}")
+        gc = sby["Gauss Cannon"]                         # fused header + dash cells
+        if (gc.weapon_class, gc.rng, gc.rof, gc.damage, gc.pen, gc.clip,
+                gc.reload, gc.weight, gc.availability) != \
+                ("Heavy", "100m", "S/4/6", "1d10+12 E", "5", None, None, "35kg",
+                 "Near Unique"):
+            failures.append(f"supp Gauss Cannon parsed "
+                            f"{(gc.weapon_class, gc.rng, gc.rof, gc.damage, gc.pen, gc.clip, gc.reload, gc.weight, gc.availability)!r}")
+        if any(w.system != SYSTEM for w in sws):
+            failures.append("supp fixture weapon missing system stamp")
+
     if base.is_dir() and any((base / s.path).exists() for s in SOURCES):
         corpus = Corpus(base, _fresh_sources())
-        total = sum(len(s.weapons) for s in corpus.sources)
-        if total < 300:
-            failures.append(f"only {total} weapons indexed across the cores; "
-                            f"expected >= 300")
-        for src in corpus.sources:
-            if (base / src.path).exists() and len(src.weapons) < 25:
-                failures.append(f"{src.key} yielded only {len(src.weapons)} "
-                                f"weapons; a core armoury should exceed 25")
+        by_key = {s.key: s for s in corpus.sources}
+        # HARD CONSTRAINT: the five cores stay byte-count exact (53/81/31/62/100).
+        core_expect = {"dh-core": 53, "rt-core": 81, "dw-core": 31,
+                       "ow-core": 62, "bc-core": 100}
+        core_total = 0
+        for key, exp_n in core_expect.items():
+            src = by_key.get(key)
+            if src is None or not (base / src.path).exists():
+                continue
+            core_total += len(src.weapons)
+            if len(src.weapons) != exp_n:
+                failures.append(f"CORE PRESERVATION: {key} yielded "
+                                f"{len(src.weapons)} weapons; must be exactly {exp_n}")
+        if core_total and core_total != 327:
+            failures.append(f"CORE PRESERVATION: cores total {core_total}, must be 327")
+        supp_total = sum(len(s.weapons) for s in corpus.sources
+                         if s.key not in core_expect)
+        if core_total == 327 and supp_total < 100:
+            failures.append(f"only {supp_total} supplement weapons harvested; "
+                            f"expected the splatbooks to add well over 100")
         for wpn in ("Lasgun", "Bolt Pistol", "Chainsword"):
             if not corpus.find(wpn):
                 failures.append(f"known weapon not found in live corpus: {wpn}")
@@ -815,6 +1297,16 @@ def selftest(base: Path) -> int:
         nodmg = sum(1 for _, w in corpus.all_weapons() if not w.damage)
         if nodmg:
             failures.append(f"{nodmg} live weapons missing damage (anchor invariant)")
+        # a specific SUPPLEMENT weapon, harvested live, parses correctly
+        hits = corpus.find("Hades Assault Flamer")
+        if not hits:
+            failures.append("supplement weapon 'Hades Assault Flamer' not found live")
+        else:
+            hw = hits[0][1]
+            if (hw.weapon_class, hw.damage) != ("Basic", "1d10+4 E"):
+                failures.append(f"live Hades Assault Flamer parsed "
+                                f"{(hw.weapon_class, hw.damage)!r}, wanted "
+                                f"('Basic', '1d10+4 E')")
     else:
         print("  [SKIP] 40K RP extractions not found — fixture checks only")
 
