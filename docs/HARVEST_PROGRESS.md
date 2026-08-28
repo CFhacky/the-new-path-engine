@@ -18,11 +18,14 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-27).** Nine reference index families, ~7,400 entries:
-terms/affixes (143), D&D creatures (1498), magic items (1421), psionic powers
-(409), martial maneuvers (171), feats (1244), D&D spells (1841), GURPS spells
-(557), GURPS creatures (139), GURPS weapons (153); plus D&D 5e monsters (517), 5e magic items (575), and 5e spells (102), separately labeled. Each has a `--selftest` that passes. Run any
-`scripts/*_harvest.py` with no args to rebuild its index.
+**At a glance (2026-08-28).** Fourteen reference index families, ~9,300 entries.
+Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
+(1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
+(1841), GURPS spells (557), GURPS creatures (139), GURPS gear — weapons + armor
+(186), GURPS advantages/disadvantages (467). Separately labeled other editions:
+D&D 5e monsters (517), 5e magic items (575), 5e spells (102). Each has a
+`--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
+its index.
 
 **This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
 ~1,700 OCR'd `.md` extractions; these indices harvest the mainline 3.5e systems
@@ -45,7 +48,8 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
 | `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | GURPS Magic (520) + Plant Spells (19) + Thaumatology: Urban Magics (12) + Thaumatology (6) | 557 GURPS spells (541 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
-| `reference/gurps_gear_index.{md,json}` | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech Melee Weapon Table | 153 weapons (all with damage; ~half with full cost/weight/ST — the column-dump OCR breaks many rows) | `python scripts/gurps_gear_harvest.py --selftest` |
+| `reference/gurps_gear_index.{md,json}` | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech Melee Weapon Table + Armor Table | 186 gear (153 weapons + 33 torso-armor pieces, TL0–TL4, DR up to 9; armor rows carry full TL/DR/cost/weight/don) | `python scripts/gurps_gear_harvest.py --selftest` |
+| `reference/gurps_trait_index.{md,json}` | `scripts/gurps_trait_harvest.py` | GURPS Basic Set: Characters — Trait Lists appendix | 467 traits (276 advantages + 191 disadvantages, all with type / exotic-super / point cost / book page) | `python scripts/gurps_trait_harvest.py --selftest` |
 | `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters 1 (25), Creatures of the Night 1–5 (18), Fantasy (8), Banestorm (19), Lands Out of Time (6), DF Allies (32), DF Summoners (18), Big Lizzie (13) | 139 GURPS creatures / 11 books (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
@@ -183,8 +187,13 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
      hits cluster in the spell chapter (not scattered), then keep it.
      `HEADER_REJECT` now catches the generic SPELLS / INVOCATIONS / DESCRIPTIONS
      / CHAPTER running-header words, so most books need no per-book header work.
-
-### How to add a source (the pattern, do not deviate)
+4. **GURPS Skills** → a new detector in `gurps_trait_harvest.py` (or its own
+   `gurps_skill_harvest.py`). The Basic Set Trait Lists appendix continues past
+   the advantages/disadvantages into a SKILLS list (`GURPS 4e - Basic Set -
+   Characters.md`, the "Skill" column-header blocks from line ~49040 on). Its
+   columns differ — Skill / difficulty (e.g. DX/E, IQ/H) / defaults / page —
+   so it needs its own row signature, not the trait one. This is the last big
+   native-GURPS-4e mechanics gap after traits and gear.
 
 - **`item_harvest.py`**: append a `Source(...)` to `SOURCES` with a new
   `detector` key, write `detect_<key>(lines, pages, book)` returning

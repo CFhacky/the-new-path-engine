@@ -25,6 +25,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `dnd5e_item_index.{json,md}` | **D&D 5e** magic items (type, rarity, attunement) — labeled `system: D&D 5e`, separate from 3.5e | 575 | `scripts/dnd5e_item_harvest.py` | 10 5e books: Mordenkainen’s Tome of Marvelous Magic, Diabolical Designs, Treasures of Avernus, ... |
 | `dnd5e_creature_index.{json,md}` | **D&D 5e** monsters (size, type, AC, HP, CR, ability scores) — labeled `system: D&D 5e`, separate from 3.5e | 517 | `scripts/dnd5e_creature_harvest.py` | 12 5e books: Diabolical Designs, Chains of Asmodeus, Descent into Avernus, Blood War Bestiary, Dante’s Guide to Hell, Xanathar’s, ... |
 | `gurps_gear_index.{json,md}` | GURPS Low-Tech **weapons** (damage, reach, parry, cost, weight, ST) AND **armor** (TL, DR, cost, weight, don) | 186 | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech (4e) — native GURPS gear, separate index |
+| `gurps_trait_index.{json,md}` | GURPS 4e **advantages & disadvantages** (type, exotic/super, point cost, book page) | 467 | `scripts/gurps_trait_harvest.py` | GURPS Basic Set: Characters (4e) — Trait Lists appendix |
 | `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
 
 ## How to use them
