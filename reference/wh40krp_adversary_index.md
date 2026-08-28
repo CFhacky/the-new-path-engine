@@ -363,3 +363,481 @@ cleanly yield. Use `--export "NAME"` for the translator packet.
 | Inevitable Guard | Troop | 45/35/44/46/30/20/35/35/20 (Inf —) | 3/6/9/18 | 10 | 392 |
 | Renkard Copax | Master | 22/29/21/34/23/54/45/56/37 (Inf 35) | 3/6/9/18 | 40 | 392 |
 | Phase-Assassin | Elite | 55/55/35/35/50/40/40/52/21 (Inf —) | 5/10/15/30 | 18 | 393 |
+
+## Only War: Enemies of the Imperium — 39 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Only War: Enemies of the Imperium (FFG, 40kRP d100).*  
+*Harvest: ok — 39 adversaries from Only War - Enemies of the Imperium.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Adult Cuyavale Drakon | Master | 55/—/52/58/45/12/37/30/— | — | — | 16 |
+| Severan Dominate Soldier | Troop | 36/34/35/35/37/28/34/26/33 | 3/6/9/18 | 12 | 29 |
+| Severan Dominate Sergeant | Elite | 37/36/35/35/37/30/35/30/39 | 3/6/9/18 | 18 | 30 |
+| Severan Dominate Lieutenant | Elite | 38/40/35/35/35/35/37/39/40 | — | — | 31 |
+| Severan Commander | Master | 40/40/33/36/39/37/38/40/38 | — | — | 31 |
+| Ducal Legate | Elite | 43/43/39/42/40/45/41/45/47 | — | — | 33 |
+| Warboss | Master | 60/30/60/60/40/30/35/40/30 | — | — | 50 |
+| Mekboy | Elite | 40/20/45/40/35/35/35/35/25 | — | — | 52 |
+| Nob | Elite | 45/20/50/47/39/30/30/35/35 | 4/8/12/– | 25 | 53 |
+| Meganob | Elite | 45/20/80/49/39/30/30/35/35 | — | — | 54 |
+| Killa Kan | Elite | 35/33/40/—/30/30/40/20/25 | — | — | 56 |
+| Deff Dread | Master | 45/20/55/—/20/25/35/30/20 | — | — | 58 |
+| Squiggoth | Master | 55/—/90/90/25/10/25/30/05 | — | — | 60 |
+| Gargantuan Squiggoth | Master | 55/—/90/90/25/10/25/30/05 | — | — | 60 |
+| Archon | Master | 68/68/48/44/66/58/58/59/57 | 8/16/24/48 | 13 | 79 |
+| Kabalite Trueborn | Elite | 47/51/37/41/59/41/49/39/49 | — | — | 80 |
+| Ur-Ghul | Elite | 48/11/55/36/54/24/48/29/14 | — | — | 82 |
+| Medusae | Elite | 33/33/35/35/55/28/36/58/11 | 8/16/24/48 | 13 | 82 |
+| Lhamaean | Elite | 49/44/33/33/58/52/44/39/51 | 5/10/15/30 | 28 | 83 |
+| Sslyth | Elite | 45/45/55/52/48/31/38/23/32 | 10/20/60/60 | 23 | 84 |
+| Succubus | Master | 75/55/44/43/72/44/56/54/51 | — | — | 85 |
+| Hekatrix Bloodbride | Elite | 52/46/41/41/61/38/49/39/48 | 7/14/21/42 | 27 | 86 |
+| Haemonculus | Master | 54/57/36/45/48/59/54/48/39 | — | — | 87 |
+| Scourge | Elite | 46/51/45/42/58/36/52/37/41 | 9/18/27/54 | 12 | 89 |
+| Hellion | Troop | 48/48/38/36/61/31/34/31/44 | — | — | 90 |
+| Incubus | Elite | 59/44/45/45/57/35/37/39/30 | — | — | 92 |
+| Reaver | Troop | 47/49/35/37/66/33/34/33/39 | 8/16/24/48 | 14 | 92 |
+| Mandrake | Elite | 48/46/51/41/58/33/33/40/35 | — | — | 93 |
+| Kroot Shaper | Elite | 50/36/45/44/52/35/54/40/28 | 5/10/15/30 | 12 | 100 |
+| Kroot Mercenary | Troop | 42/33/40/41/52/26/44/30/19 | 8/16/24/48 | 16 | 101 |
+| Kroot Hound | Minion | 44/—/41/34/40/18/45/30/06 | — | — | 102 |
+| Krootox | Minion | 40/—/60/55/30/10/25/25/08 | — | — | 104 |
+| Knarloc | Minion | 46/—/52/47/46/15/36/40/04 | 6/12/18/36 | 95 | 105 |
+| Great Knarloc | Minion | 55/—/62/50/30/14/32/44/03 | — | — | 106 |
+| Dark Apostle | Master | 65/55/53/61/51/67/55/60/66 | — | — | 114 |
+| Chaos Space Marine | Elite | 56/55/51/48/45/42/45/50/29 | — | — | 116 |
+| Hellbrute | Master | 50/50/71/—/25/34/33/40/02 | 9/18/27/54 | 35 | 118 |
+| Chaos Spawn | Minion | 35/—/66/63/22/03/16/25/01 | — | 80 | 119 |
+| Daemon Prince | Master | 75/60/67/65/48/54/43/75/31 | — | — | 120 |
+
+## Black Crusade: Tome of Blood — 35 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Blood (FFG, 40kRP d100).*  
+*Harvest: ok — 35 adversaries from Black Crusade - Tome of Blood.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Bloodcaller | Troop | 05/05/10/20/30/30/10/30/10 (Inf —) | 3/6/9/18 | 4 | 47 |
+| Brass Harbinger | Elite | 50/20/52/45/45/35/25/50/43 (Inf —) | 4/8/12/24 | 15 | 47 |
+| Asphodel Kroot Warrior | Troop | 45/25/45/40/45/18/44/30/15 (Inf —) | 6/12/18/36 | 12 | 78 |
+| Kroot Shaper | Elite | 45/30/48/40/55/35/46/40/35 (Inf —) | 8/16/24/48 | 18 | 79 |
+| Berin Ork Boy | Troop | 40/15/45/45/20/20/30/25/20 (Inf —) | 2/4/6/12 | 14 | 82 |
+| Mekboy | Elite | 40/25/45/45/20/35/30/30/30 (Inf —) | 3/6/9/18 | 16 | 83 |
+| Weirdboy | Elite | 40/15/35/45/20/25/30/45/20 (Inf —) | 2/4/6/12 | 14 | 84 |
+| Bloodthirster | Master | 99/40/75/65/50/48/60/75/25 (Inf 5) | 8/16/24/48 | 195 | 88 |
+| Kinslayer | Elite | 55/12/45/45/42/35/35/39/17 (Inf —) | 5/10/15/30 | 25 | 88 |
+| Goreclaw The Render | Master | 78/59/54/61/65/49/82/60/41 (Inf 8) | 8/16/24/48 | 120 | 89 |
+| Slaughterwing | Master | 79/55/62/60/88/54/58/60/47 (Inf 9) | 14/28/42/84 | 101 | 90 |
+| Furia Castaway | Troop | 38/25/32/31/33/33/38/32/31 (Inf —) | 3/6/9/18 | 9 | 93 |
+| The Vexed | Troop | 22/18/36/34/38/20/32/21/15 (Inf —) | 3/6/9/18 | 12 | 99 |
+| Pit Brute | Troop | 42/22/45/49/32/22/29/18/05 (Inf —) | 4/8/12/24 | 18 | 100 |
+| Mutilator | Elite | 40/35/50/55/38/35/38/36/05 (Inf 1) | 4/8/12/24 | 48 | 101 |
+| Dayside Mutant | Troop | 35/23/31/32/28/25/30/15/15 (Inf —) | 5/10/15/30 | 12 | 104 |
+| Nightside Mutant | Troop | 25/15/45/47/12/15/20/15/15 (Inf —) | 2/4/6/12 | 14 | 105 |
+| Drill Nomad | Troop | 23/21/28/30/30/20/32/29/30 (Inf —) | 3/6/9/18 | 10 | 105 |
+| Xur Warrior | Troop | 35/25/40/35/35/21/30/20/25 (Inf —) | 3/6/9/18 | 10 | 108 |
+| Xurunsh | Elite | 40/12/45/45/25/15/20/15/10 (Inf —) | 4/8/12/24 | 30 | 109 |
+| Xur Sorcerer | Elite | 30/25/30/30/35/30/35/30/35 (Inf —) | 3/6/9/18 | 11 | 109 |
+| Svartling Warrior | Troop | 25/35/20/25/30/25/35/35/30 (Inf —) | 3/6/9/18 | 8 | 110 |
+| Battle Clansman Of Talax | Troop | 35/28/37/38/36/29/32/31/25 (Inf —) | 3/6/9/18 | 13 | 114 |
+| Talax Reaver | Elite | 40/38/37/38/36/29/32/31/21 (Inf —) | 3/6/9/18 | 14 | 115 |
+| Shaman-Smith | Elite | 30/28/32/33/36/39/42/31/25 (Inf —) | 3/6/9/18 | 16 | 115 |
+| Defiler | Master | 38/28/65/65/32/15/34/38/— (Inf —) | 14/28/42/84 | 48 | 117 |
+| Blood Slaughterer | Master | 45/28/64/68/49/29/37/32/— (Inf —) | 14/28/42/84 | 48 | 118 |
+| Brass Scorpion | Master | 49/32/80/80/39/37/37/38/— (Inf —) | 18/36/54/108 | 80 | 118 |
+| Doom Blaster | Master | 26/38/45/64/40/32/40/48/— (Inf —) | 5/10/20/40 | 88 | 119 |
+| Skull Reaper | Master | 52/38/94/97/52/47/38/53/— (Inf 4) | 10/20/30/60 | 160 | 119 |
+| Caleb Jorgstern | Master | 55/45/55/45/48/43/42/56/40 (Inf 4) | 5/10/20/30 | 30 | 141 |
+| Chæmus Vassid | Master | 50/50/42/42/30/35/43/36/35 (Inf 3) | 3/6/9/18 | 35 | 142 |
+| Rahim Scotia | — | 55/55/55/41/50/40/40/52/45 (Inf 4) | 8/16/24/48 | 32 | 142 |
+| The Axe-Bearer | Elite | 58/21/52/47/38/21/29/38/15 (Inf —) | 4/8/12/24 | 37 | 142 |
+| Gun-Thrall | Troop | 30/35/55/55/30/10/35/15/— (Inf —) | 4/8/12/24 | 30 | 143 |
+
+## Black Crusade: Tome of Excess — 34 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Excess (FFG, 40kRP d100).*  
+*Harvest: ok — 34 adversaries from Black Crusade - Tome of Excess.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Alcian Saboteur (Base Profile) | — | 40/40/35/35/40/45/45/45/45 (Inf —) | — | — | 43 |
+| Pryfed Stalker (Mount) | — | 25/25/40/50/25/10/45/25/— (Inf —) | 10/20/30/60 (Flying) | 12 | 47 |
+| Keeper Of Secrets | Master | 81/44/65/66/72/70/63/75/81 (Inf 5) | 17/34/51/102 | 190 | 83 |
+| Council Agent | Elite | 34/38/34/34/42/36/42/31/41 (Inf 1) | — | — | 85 |
+| Heldrake | Master | 48/33/55/62/38/31/47/42/— (Inf —) | 6/12/18/36 | 48 | 88 |
+| Decimator | Master | 38/38/54/60/30/32/42/37/— (Inf —) | 14/24/42/84 | 52 | 89 |
+| Soul Grinder | Master | 36/36/63/50/34/35/43/39/17 (Inf —) | 10/20/30/60 | 54 | 89 |
+| Hemsk Av’Lyd | Master | 54/36/52/48/68/49/53/68/42 (Inf 3) | 11/22/33/66 | 108 | 90 |
+| Subjugator | Master | 44/45/54/48/65/40/51/66/— (Inf —) | — | — | 90 |
+| Concubine-Witch | Elite | 32/40/37/36/33/40/37/45/20 (Inf 0) | — | — | 93 |
+| Shade Mauler | Troop | 50/20/48/42/43/25/35/21/15 (Inf —) | 2/4/6/12 | 10 | 94 |
+| Haemodryad | Troop | 42/15/33/30/21/47/19/61/15 (Inf —) | 3/6/9/18 | 30 | 94 |
+| Beastmaster Hunter | Troop | 46/40/40/38/49/36/42/35/41 (Inf —) | 8/16/24/48 | 14 | 96 |
+| Wych | Troop | 48/42/38/32/51/34/48/30/46 (Inf —) | — | — | 97 |
+| Acceptor Of Mammon | Troop | 38/25/32/31/35/33/38/32/31 (Inf —) | — | — | 101 |
+| Demagogue Of Mammon | Troop | 42/35/39/38/41/36/40/35/34 (Inf —) | — | — | 101 |
+| Evoked Member | Troop | 27/28/34/37/34/34/30/30/40 (Inf —) | — | — | 104 |
+| Flesh Shaper Protégé | Elite | 34/35/34/38/39/35/39/45/40 (Inf —) | — | — | 104 |
+| DeKaul | Master | 46/42/47/38/52/53/51/45/62 (Inf 4) | — | — | 105 |
+| Helwyr Tribesman | Troop | 40/45/35/35/40/35/45/55/25 (Inf —) | 7/14/21/42 | 38 | 108 |
+| Helbrute | Master | 50/40/70/60/40/30/35/50/05 (Inf —) | — | — | 109 |
+| Warp Talon | Elite | 55/35/60/40/40/40/50/45/05 (Inf —) | — | — | 110 |
+| Vaiuri M’atua | Master | 66/51/45/42/60/58/63/69/65 (Inf 4) | 10/20/30/60 | 29 | 113 |
+| Troupe Master | Master | 71/50/42/44/61/59/57/60/67 (Inf —) | 10/20/30/60 | 30 | 114 |
+| Death Jester | Elite | 57/61/45/40/58/42/58/59/30 (Inf —) | 8/16/24/48 | 28 | 115 |
+| Pirate Prince Seneschal | Elite | 41/38/41/41/40/35/30/38/40 (Inf 1) | — | — | 121 |
+| Pirate Prince Pseudanor | Master | 65/62/60/45/51/50/58/53/60 (Inf 8) | 5/10/15/30 | 75 | 142 |
+| Plukus | Elite | 25/25/25/37/26/42/26/20/18 (Inf 3) | 2/4/6/12 | 12 | 142 |
+| Creos | Elite | 12/14/22/52/09/32/30/20/18 (Inf 3) | 1/2/3/4 | 22 | 142 |
+| Sivia | Elite | 18/22/30/30/33/32/34/38/71 (Inf 3) | 9/18/27/54 | 12 | 142 |
+| Tymarch | Elite | 28/31/23/36/28/34/29/60/29 (Inf 2) | 2/4/6/12 | 10 | 143 |
+| Phaetoni | Elite | 42/38/30/28/28/31/28/26/19 (Inf 2) | 2/4/6/12 | 15 | 143 |
+| Somni | Elite | 10/10/12/13/20/38/17/51/49 (Inf 2) | 2/4/6/12 | 8 | 143 |
+| Pirate Scum | Troop | 28/24/28/31/27/22/31/24/22 (Inf —) | 2/4/6/12 | 9 | 143 |
+
+## Black Crusade: Tome of Fate — 37 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Fate (FFG, 40kRP d100).*  
+*Harvest: ok — 37 adversaries from Black Crusade - Tome of Fate.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Thrall Wizard | — | 15/10/20/20/20/30/10/25/10 (Inf —) | 2/4/6/12 | 3 | 43 |
+| Glimmerwing | — | 35/10/30/30/45/25/40/30/05 (Inf —) | 8/16/24/48 (Flyer) | 6 | 44 |
+| Rubric Marine | Elite | 40/50/65/55/30/20/42/50/— (Inf —) | 4/8/12/– | 30 | 44 |
+| Sorcerer-Technocrat Of Q’Sal | Elite | 26/26/31/35/31/45/36/51/34 (Inf 1) | 3/6/9/18 | 15 | 81 |
+| Æther Ray (Personal) | — | 26/45/50/50/55/32/46/45/— (Inf —) | 5/10/15/30 (Flying) | 54 | 82 |
+| Mirrorfiend | — | 39/35/48/54/38/57/50/62/45 (Inf —) | (Ground) 14/28/42/84 (Flying) 10/20/30/60 | 36 | 83 |
+| Auruntaur | Master | 45/55/72/64/51/32/46/45/— (Inf —) | 22/44/66/132 | 243 | 84 |
+| Death-Masque | Elite | 65/35/60/60/30/10/25/35/— (Inf —) | 4/8/12/24 | 60 | 91 |
+| Hollowkynd | Elite | 45/45/40/40/20/40/45/55/— (Inf —) | 3/6/9/18 | 30 | 93 |
+| Aposticator | Elite | 50/35/50/40/40/40/35/50/20 (Inf —) | 6/12/18/30 | 50 | 93 |
+| Korvaskan Mutant | Troop | 38/31/45/38/48/26/37/35/13 (Inf —) | 8/16/24/48 | 14 | 99 |
+| Proteyan Strain Mutant | Elite | 33/32/45/32/41/46/55/56/38 (Inf —) | 6/12/18/36 | 18 | 100 |
+| Flaming Tomb Refugee | Troop | 22/18/26/34/28/20/32/21/20 (Inf —) | 2/4/6/12 | 8 | 102 |
+| Flaming Tomb Pyromancer | Elite | 32/40/37/36/33/40/37/45/20 (Inf 0) | 3/6/9/18 | 15 | 103 |
+| Burning Man | Elite | 48/32/40/46/48/35/37/36/10 (Inf —) | 4/8/12/24 | 18 | 104 |
+| Flamer Of Tzeentch | Elite | 22/38/34/35/34/32/30/34/15 (Inf —) | 4/8/12/24 | 20 | 105 |
+| Disc Of Tzeentch | Elite | 35/02/45/45/50/15/43/40/05 (Inf —) | 6/12/18/36 | 12 | 106 |
+| Phokulozortis | Master | 45/52/48/39/44/58/48/56/50 (Inf 2) | 4/8/12/24 | 20 | 107 |
+| Canoptek Spyder | Elite | 35/25/65/65/25/25/35/45/— (Inf —) | 4/8/12/24 (Hoverer) | 65 | 112 |
+| Canoptek Wraith | Elite | 45/35/55/55/40/20/45/45/— (Inf —) | 6/12/18/36 (Hoverer) | 30 | 113 |
+| Deathmark | Elite | 30/50/45/45/35/40/30/40/15 (Inf —) | 4/8/12/24 | 25 | 114 |
+| Destroyer | Elite | 35/45/55/55/35/40/35/40/10 (Inf —) | 6/12/18/36 (Hoverer) | 35 | 115 |
+| Necron Lord | Master | 55/50/55/55/35/50/35/60/35 (Inf —) | 4/8/12/24 | 60 | 115 |
+| Lychguard | Elite | 50/45/55/55/35/45/35/50/25 (Inf —) | 4/8/12/24 | 35 | 116 |
+| Tomb Blade | Elite | 30/45/45/45/35/25/30/40/15 (Inf —) | 12/24/36/72 (Flyer) | 30 | 117 |
+| Triarch Praetorian | Elite | 50/50/55/55/35/45/40/50/25 (Inf —) | 4/8/12/24 | 40 | 118 |
+| Aetehk The Watcher | Master | 55/55/55/55/40/55/45/65/35 (Inf 5) | 5/10/15/30 | 70 | 118 |
+| Raunek Ka, The Holder Of Keys | Elite | 45/45/45/55/30/65/45/55/25 (Inf 2) | 4/8/12/24 | 55 | 119 |
+| Canoptek Locust | Troop | 25/05/10/20/35/05/20/20/— (Inf —) | 5/10/15/30 (Flyer) | 30 | 119 |
+| Selukus The Stylite | Master | 51/40/35/40/40/55/55/65/45 (Inf 7) | 4/8/12/24 | 15 | 142 |
+| Mutating Tide (Horde) | — | 36/22/42/34/21/18/23/22/13 (Inf —) | 2/4/6/12 | — | 143 |
+| Kharulan The Artifex | Master | 45/40/45/40/38/55/36/64/39 (Inf 7) | 4/8/12/24 | 22 | 143 |
+| Lady Nepythys | Master | 42/52/40/30/55/57/64/70/81 (Inf 8) | 5/10/15/30 | 15 | 143 |
+| Sorcerer-Technocrat Courtier | Troop | 30/32/30/32/36/38/35/45/38 (Inf —) | 3/6/9/18 | 10 | 144 |
+| Sorcerer-Technocrat Bodyguard | Troop | 44/32/43/46/30/25/36/37/25 (Inf —) | 3/6/9/18 | 10 | 144 |
+| Mortal Subjects | Troop | 22/21/23/34/26/29/26/24/24 (Inf —) | 2/4/6/12 | 5 | 144 |
+| Frenzied Mob (Horde) | — | 22/21/23/34/26/29/26/24/24 (Inf —) | 2/4/6/12 | — | 144 |
+
+## Rogue Trader: The Soul Reaver — 31 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: The Soul Reaver (FFG, 40kRP d100).*  
+*Harvest: ok — 31 adversaries from Rogue Trader - The Soul Reaver.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Archon Salaine Morn | — | 68/61/52/38/66/58/58/59/54 | — | — | 120 |
+| Haemonculus Drecarus | — | 53/59/36/49/49/64/58/49/38 | 7/14/21/42 | 18 | 121 |
+| Succubus Anyalra | — | 73/56/46/37/72/44/51/47/49 | — | — | 122 |
+| Kabalite Warrior | — | 41/41/39/34/52/33/45/31/28 | — | — | 123 |
+| Archon Zaergarn Kul | — | 68/61/49/38/66/52/50/59/14 | 5/10/15/30 | 12 | 123 |
+| Kabalite Trueborn | — | 46/46/44/34/57/33/45/36/44 | — | — | 124 |
+| Reaver | — | 51/43/35/33/62/33/48/36/30 | 6/12/18/36 | 10 | 124 |
+| Hekatrix Bloodbride | — | 53/41/51/36/61/33/45/36/36 | — | — | 125 |
+| Wych | — | 48/41/44/36/61/33/45/31/28 | 6/12/18/36 | 12 | 125 |
+| Wych Beastmaster | — | 48/41/46/41/57/48/45/42/46 | — | — | 126 |
+| Hellion | — | 43/41/44/36/59/33/45/29/28 | — | 10 | 126 |
+| Wrack | — | 47/43/46/41/41/42/48/36/12 | — | — | 127 |
+| Scourge | — | 42/48/46/30/55/33/48/36/32 | 4/8/12/24 | 40 | 127 |
+| Grotesque | — | 49/16/47/56/38/15/35/22/08 | — | — | 128 |
+| Cronos Parasite Engine | — | 35/32/49/59/30/18/29/36/02 | 5/10/15/30 | 10 | 128 |
+| Brutalised Tau Fire Warrior | — | 26/34/31/32/32/37/33/34/31 | — | — | 129 |
+| Anguished Eldar | — | 46/43/36/32/51/37/45/47/31 | 3/6/9/18 | 10 | 129 |
+| Magos Domos Agnelian | — | 26/38/29/32/29/58/37/44/18 | — | — | 130 |
+| Tormented Human | — | 38/38/36/37/34/28/31/34/29 | 4/8/12/24 | 15 | 130 |
+| Captain Anja Shen | — | 44/38/34/42/34/34/37/42/36 | — | — | 131 |
+| Brother-Sergeant Ludvos Tarn | — | 58/56/49/53/48/46/44/61/48 | 5/10/15/30 | 16 | 131 |
+| Nashrik Hakh | — | 49/32/51/46/51/28/53/26/28 | — | — | 132 |
+| Neija Tromean | — | 28/28/30/38/36/28/37/48/23 | 6/12/18/36 | 13 | 132 |
+| Chrono-gladiator | — | 48/23/38/32/54/26/31/36/22 | — | — | 133 |
+| Relhadhar Antariel | — | 54/33/41/38/62/35/45/47/31 | 5/10/15/30 | 55 | 133 |
+| Fleshwrought Drake | — | 42/15/65/58/31/18/42/31/01 | — | — | 134 |
+| Ariadne Helspider | — | 39/33/49/38/51/12/45/31/01 | 5/10/15/30 | 38 | 134 |
+| Razorwing | — | 47/01/31/33/52/22/38/23/10 | — | — | 135 |
+| Clawed Fiend | — | 48/05/35/43/47/20/32/23/05 | — | — | 135 |
+| Khymera | — | 45/—/40/36/54/15/40/35/01 | 6/12/18/36 | 12 | 135 |
+| Murderfiend Servitor | — | 55/06/38/39/64/16/41/12/04 | — | — | 136 |
+
+## Rogue Trader: Stars of Inequity — 28 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Stars of Inequity (FFG, 40kRP d100).*  
+*Harvest: ok — 28 adversaries from Rogue Trader - Stars of Inequity.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Apex Predator | — | 58/—/48/45/48/19/49/41/09 | 4/8/12/24 | 15 | 36 |
+| Behemoth | — | 40/—/70/65/28/14/26/37/12 | 4/8/12/24 | 55 | 37 |
+| Ptera-beast | — | 45/—/40/35/35/16/48/35/10 | 3/6/9/18 | 10 | 37 |
+| Shadowed Stalker | — | 53/—/41/37/48/17/43/36/10 | 4/8/12/24 | 12 | 38 |
+| Venomous Terror | — | 38/—/32/29/38/13/28/30/09 | 2/4/6/12 | 6 | 39 |
+| Stranded Ork | — | 36/18/48/46/30/20/33/25/22 | 3/6/9/18 | 12 | 77 |
+| Gretchin Headhunter | — | 18/35/18/19/38/33/38/22/24 | 4/8/12/24 | 8 | 78 |
+| Huntin’ Squig | — | 35/—/33/24/33/10/30/28/— | 3/6/9/18 | 10 | 78 |
+| Death Cult Assassin | — | 66/28/36/40/48/33/42/38/27 | 3/6/9/18 | 20 | 78 |
+| Hired Gunslinger | — | 27/59/30/35/45/30/50/32/29 | 3/6/9/18 | 18 | 79 |
+| Genestealer | — | 65/—/55/60/60/27/56/45/— | 12/24/36/72 | 16 | 80 |
+| Broodlord | — | 70/—/60/65/60/36/56/55/— | 12/24/36/72 | 32 | 80 |
+| Sanger Krin | — | 28/64/32/36/56/45/48/39/28 | 5/10/15/30 | 20 | 81 |
+| Rak’Gol Carver | — | 50/31/43/38/40/27/31/28/06 | — | — | 83 |
+| Prefectus Primus Marlya Sindegrosse | — | 20/20/30/30/30/40/30/40/35 | 3/6/9/18 | 12 | 111 |
+| High Councillor Olayo Jurchen | — | 25/20/38/38/30/30/35/35/40 | 3/6/9/18 | 12 | 111 |
+| Brigadier Barnabus Scheltrum | — | 40/38/35/35/35/35/35/38/35 | 3/6/9/18 | 15 | 112 |
+| Cardinal Karolin Szarkos | — | 30/50/30/42/39/40/41/45/50 | 3/6/9/18 | 16 | 112 |
+| Magos-Commodore Gnothis Trannarch | — | 42/48/47/51/30/62/37/56/35 | 3/6/9/18 | 18 | 128 |
+| Tech-Priest Ulmir Arvein | — | 42/44/38/48/32/60/41/42/25 | 3/6/9/18 | 16 | 129 |
+| Corsair-Captain Jalthas Methere | — | 53/50/38/43/56/47/45/50/57 | 5/10/15/30 | 20 | 132 |
+| Cymian | — | 25/10/35/32/61/21/39/21/18 | 8/16/24/48 | 6 | 133 |
+| Yanveb Drallat | — | 55/38/51/47/42/32/37/37/28 | 4/8/12/24 | 18 | 133 |
+| Kanrak | — | 47/41/58/47/29/34/34/45/19 | 3/6/9/18 | 30 | 133 |
+| Kaptin Skellkap Graffletz | — | 58/25/65/67/35/38/34/45/29 | 4/8/12/24 | 50 | 136 |
+| Skabgob | — | 52/30/53/51/45/33/39/37/22 | 5/10/15/30 | 30 | 137 |
+| Master Shaper Te’Logk | — | 50/40/47/45/52/47/46/49/32 | 5/10/15/30 | 20 | 140 |
+| Stalker Hrrithck | — | 45/40/47/45/52/47/46/49/32 | 5/10/15/30 | 16 | 141 |
+
+## Rogue Trader: Edge of the Abyss — 23 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Edge of the Abyss (FFG, 40kRP d100).*  
+*Harvest: ok — 23 adversaries from Rogue Trader - Edge of the Abyss.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Morgaash | — | 61/35/75/68/36/37/34/41/29 | 5/10/15/30 | 56 Fate Points: 2 | 56 |
+| Baharrudor | — | 51/57/38/35/68/54/50/61/45 | 6/12/18/36 | 20 Fate Points: 3 | 62 |
+| Anturien | — | 63/58/44/32/61/44/47/64/26 | 6/12/18/36 | 17 Fate Points: 3 | 65 |
+| Kor | — | 52/38/40/45/54/30/49/40/28 | 5/10/15/30 | 15 Fate Points: 2 | 68 |
+| Marauder | — | 45/35/41/45/28/28/28/30/07 | 5/10/15/30 | 25 | 74 |
+| Merchant | — | 35/35/32/39/46/60/37/40/46 | 4/8/12/24 | 15 | 79 |
+| Vat-brute | — | 30/30/60/60/20/10/30/40/— | 3/6/9/18 | 18 | 79 |
+| Sorcerer | — | 40/30/36/48/43/56/33/51/13 | 4/8/12/24 | 15 | 87 |
+| Blade-thing | — | 60/—/36/30/60/28/60/40/10 | 6/12/18/36 | 15 | 88 |
+| Walking Nightmare | — | 68/29/55/54/18/65/65/79/13 | 3/6/9/18 | 80 | 88 |
+| Voltrasse | — | 52/18/51/58/44/41/61/51/38 | 4/8/12/24 | 18 | 89 |
+| Winterscale | — | 59/54/60/62/30/47/39/63/55 | 3/6/9/18 | 30 Fate Points: 3 Profi t Factor: 101 | 103 |
+| Chorda | — | 48/42/35/41/51/39/34/55/42 | 5/10/15/30 | 20 Fate Points: 3 | 106 |
+| Saul | — | 40/37/35/42/34/51/49/41/66 | 3/6/9/18 | 20 Fate Points: 2 Profi t Factor: 93 | 109 |
+| Armengarde | — | 60/33/37/50/35/41/31/51/62 | 3/6/9/18 | 22 Fate Points: 3 Profi t Factor: 50 | 112 |
+| Trask | — | 54/44/30/41/43/42/33/50/56 | 4/8/12/24 | 20 Fate Points: 5 | 115 |
+| Leerus | — | 48/34/42/52/30/40/32/38/34 | 3/6/9/18 | 18 | 143 |
+| Oddyle | — | 34/24/33/30/29/41/34/35/20 | 3/6/9/18 | 14 | 143 |
+| Boran | — | 25/32/30/30/32/45/32/32/15 | 3/6/9/18 | 12 | 143 |
+| Zpha | — | 25/20/24/22/30/50/40/44/33 | 3/6/9/18 | 9 | 143 |
+| Monster | — | 48/—/51/60/34/20/32/50/05 | 5/10/15/30 | 40 | 144 |
+| Gelt | — | 38/35/44/46/23/30/40/37/40 | 2/4/6/12 | 15 | 144 |
+| Mercenary | — | 40/40/35/35/30/25/35/30/25 | 3/6/9/18 | 10 | 144 |
+
+## Deathwatch: The Achilus Assault — 13 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: The Achilus Assault (FFG, 40kRP d100).*  
+*Harvest: ok — 13 adversaries from Deathwatch - The Achilus Assault.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| The Mist Reaper | Master | 70/35/70/60/60/25/55/45/— | 6/12/18/36 | 85 | 56 |
+| Erioch-Pattern Fire Wasp | — | 25/25/35/40/15/15/25/20/10 | 4/8/12/24 | 40 | 67 |
+| Stigmartus Infantry | Troops | 35/35/35/40/30/20/30/35/15 | 3/6/9/18 | 15 | 73 |
+| Stigmartus Offi cer-Bishop | Elite | 40/45/37/40/39/35/45/45/40 | 3/6/9/18 | 30 | 73 |
+| Stigmartus Ogryn Brute | Elite | 45/25/60/50/30/20/25/30/15 | 4/8/16/24 | 65 | 74 |
+| The Undying | Troops | 40/45/35/55/30/30/30/40/20 | 3/6/9/18 | 15 | 74 |
+| The Defaced | Elite | 35/35/35/40/30/20/30/35/15 | 3/6/9/18 | 20 | 75 |
+| Dark Apostle | Master | 65/55/58/55/50/50/55/65/60 | 6/12/18/36 | 40 | 80 |
+| Simuloptera Hive | — | 40/45/50/70/50/40/50/50/25 | 5/10/15/30† | 50† | 92 |
+| Magos Benezek | — | 36/44/37/43/39/51/49/51/40 | 3/6/9/18 | 30 | 94 |
+| Mephidast The Plaguereaver | — | 47/50/65/87/32/52/44/71/66 | 5/10/15/30 | 149 | 97 |
+| Water Caste Envoy | — | 20/20/25/30/35/30/35/25/40 | 3/6/9/18 | 15 | 112 |
+| Heavy Gun Drone | — | 20/25/35/40/40/15/25/20/10 | — | 20 | 112 |
+
+## Deathwatch: First Founding — 5 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: First Founding (FFG, 40kRP d100).*  
+*Harvest: ok — 5 adversaries from Deathwatch - First Founding.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| The Headsman Of Cellebos | Master | 65/45/50/50/52/32/45/48/22 | 6/12/18/36 | 40 | 84 |
+| Blight-master Ussax | Master | 45/43/45/60/42/40/38/52/28 | 5/10/15/30 | 48 | 86 |
+| Atum Sum | Master | 48/48/45/45/45/45/47/55/32 | 5/10/15/30 | 36 | 89 |
+| Warsmith Koros | Master | 55/48/53/55/43/62/50/55/45 | 5/10/15/30 | 43 | 95 |
+| Fenrisian Wolf | — | 50/—/50/50/50/20/50/30/— | 10/20/30/60 | 22 | 109 |
+
+## Deathwatch: The Jericho Reach — 26 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: The Jericho Reach (FFG, 40kRP d100).*  
+*Harvest: ok — 26 adversaries from Deathwatch - The Jericho Reach.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Watch Captain Kail Vibius | — | 65/40/62/45/47/50/51/55/60 | 5/10/15/30 | 23 Distinctions: Crux terminatus | 20 |
+| Epistolary Zadkiel | — | 49/56/46/42/34/52/47/67/42 | 4/8/12/24 | 24 | 22 |
+| Watch Captain Andar Scarion | — | 63/51/71/59/52/59/46/50/57 | 6/12/18/36 | 24 | 78 |
+| Brother Vigilant | — | 55/47/82/46/49/54/46/52/50 | 5/10/15/30 | 23 | 79 |
+| Hollow Land Revenant | — | 43/—/58/11/40/05/51/60/— | 2/4/6/12 | 15 | 131 |
+| Watch Captain Marius Avincus | — | 56/52/77/54/47/55/46/50/61 | 5/10/15/30 | 25 | 140 |
+| Harpy | Master | 32/55/50/50/42/15/42/30/— | 4/8/12/24 | 95 | 177 |
+| Harridan | Master | 60/32/68/70/45/35/42/50/— | 1/1/2/4 | 175 | 178 |
+| Hive Guard | Elite | 40/52/62/64/25/25/45/45/— | 6/12/18/36 | 46 | 181 |
+| Tyrannofex | Master | 35/37/65/64/25/28/35/48/— | 6/12/18/24 | 128 | 183 |
+| Biovore | Elite | 35/40/40/45/15/10/40/35/— | 3/6/9/18 | 40 | 187 |
+| Pyrovore | Elite | 40/30/45/45/15/10/35/35/— | 3/6/9/18 | 45 | 188 |
+| Mawloc | Master | 38/—/60/60/40/15/25/45/— | 4/8/16/32 | 160 | 189 |
+| Tervigon | Master | 38/38/60/65/15/40/35/65/— | 4/8/12/24 | 180 | 191 |
+| Mycetic Spore | Elite | 22/24/60/60/10/10/40/30/— | –/–/–/– | 52 adventure seeds Verify and Eliminate: Recent reports have found their way to the Deathwatch of Mycetic Spore sightings deep within the Orpheus Salient’s secure worlds. These reports arrived through secure and trusted Inquisitorial cha… | 193 |
+| Malanthrope | Master | 62/36/62/64/35/38/42/54/— | 4/8/12/24 | 124 | 196 |
+| Hierophant | Master | 66/34/90/84/35/20/35/45/— | 8/16/24/48 | 220 | 201 |
+| Hierodule | Master | 64/23/82/81/35/20/35/45/— | 7/14/21/42 | 180 | 203 |
+| “What Lies Beneath” | Master | 55/35/64/62/40/32/43/52/— | 4/8/16/32 | 160 | 207 |
+| Magos Xenologis Klute | — | 42/45/40/45/31/49/47/51/21 | 3/6/9/18 | 24 | 236 |
+| Adept Bhrawk | — | 30/38/33/36/28/46/43/45/10 | 2/4/6/12 | 24 | 236 |
+| Astropath Xhenek | — | 25/25/22/30/40/43/39/50/40 | 4/8/12/24 | 10 | 236 |
+| Native Warrior | — | 42/42/35/38/38/20/32/40/30 | 3/6/9/18 | 11 | 237 |
+| tech-Priest | — | 32/31/32/37/30/41/33/35/21 | 3/6/9/18 | 12 | 237 |
+| Ripper Swarm | Troops | 35/—/25/30/40/10/30/30/— | 2/4/6/12 | 10 | 237 |
+| Gargoyle | Troops | 30/33/32/30/40/10/40/30/— | 4/8/12/24 | 9 | 238 |
+
+## Dark Heresy: Disciples of the Dark Gods — 59 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Disciples of the Dark Gods (FFG, 40kRP d100).*  
+*Harvest: ok — 59 adversaries from Dark Heresy - Disciples of The Dark Gods.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Shade Priest | — | 30/30/30/30/30/39/35/40/40 | 3/6/9/18 | 11 | 39 |
+| Chantry Guard | — | 30/35/55/45/36/30/35/40/18 | 3/6/9/18 | 15 | 40 |
+| Arco-flagellant (Passive Mode) | — | —/—/30/40/30/10/20/40/— | 3/6/9/18 | 12 | 40 |
+| Arco-flagellant (Active Mode) | — | 40/—/40/40/30/10/20/40/— | 6/12/18/36 | 25 | 40 |
+| Logician Crucible Agent | — | 35/38/35/38/40/38/35/42/30 | 4/8/12/24 | 13 | 51 |
+| Ashen Tear Assassin | — | 45/45/40/45/48/30/40/37/20 | 4/8/12/24 | 15 | 52 |
+| Renegade Tech-priest | — | 30/35/40/45/36/48/35/48/17 | 3/6/9/18 | 18 | 52 |
+| Shroud Master | — | 27/27/30/30/30/45/33/52/37 | 3/6/9/18 | 14 | 60 |
+| Witch-kin Infiltrator | — | 32/22/38/28/32/28/42/25/11 | 3/6/9/18 | 12 | 60 |
+| Twist Hulk | — | 38/10/41/56/20/12/22/25/05 | 2/4/6/12 | 22 | 61 |
+| Psychic Abomination | — | 25/25/30/30/30/42/33/65/39 | 3/6/9/18 | 17 | 61 |
+| The Risen Dead | — | 28/28/55/50/20/20/15/35/10 | 2/4/6/8 | 20 | 66 |
+| Amaranthine Agent | — | 28/28/30/30/30/37/40/35/40 | 3/6/9/18 | 11 | 80 |
+| Amaranthine Captain | — | 38/42/35/35/35/38/35/42/36 | 3/6/9/18 | 17 | 81 |
+| Slaugth Overseer | — | 40/45/47/58/53/65/48/72/30 | 5/10/15/30 | 30 | 81 |
+| Slaugth Vassal Construct | — | 18/30/36/46/30/18/35/40/10 | 3/6/9/18 | 20 | 82 |
+| Beast Slaver | — | 38/38/42/40/45/37/35/30/28 | 4/8/12/24 | 18 | 90 |
+| Ogryn Beast Keeper | — | 32/22/48/52/28/15/20/33/18 | 2/4/6/12 | 30 | 90 |
+| Ripsaw Scuttler | — | 55/—/35/35/58/14/46/38/— | 5/10/15/30 | 13 | 91 |
+| Beast House Murder Gholam | — | 58/—/38/40/26/18/30/15/10 | 2/4/6/12 | 9 | 91 |
+| Cryptos Natural Form | — | 15/15/—/25/30/60/35/50/10 | 3/6/9/18 | 12 | 95 |
+| Cryptos Ministorum Preacher | — | 20/20/30/40/30/60/35/50/35 | 3/6/9/18 | 10 | 96 |
+| Titus Nefandiel Primary Stage | — | 25/25/30/30/30/35/30/35/35 | 6/12/18/36 | 20 | 103 |
+| Titus Nefandiel Secondary Stage | — | 25/25/30/30/30/35/30/35/35 | 9/18/27/54 | 30 | 103 |
+| Titus Nefandiel Tertiary Stage | — | 25/25/30/30/30/35/30/45/20 | 9/18/27/54 | 40 | 104 |
+| Beast Of Solomon | — | 60/—/60/50/50/17/40/50/— | 5/10/15/30 | 36 | 108 |
+| Dybuk Killer | — | 43/25/48/50/35/23/33/51/12 | 3/6/9/18  | 15 | 129 |
+| Rakasya | — | 32/—/65/62/34/12/46/48/— | 5/10/–/–  | 50 | 130 |
+| Lady Solace | — | 39/33/30/42/32/48/51/60/49 | 3/6/9/18  | 25 | 130 |
+| Fiend Of Rapture | — | 36/—/36/40/45/14/45/42/— | 8/16/24/48 | 18 | 137 |
+| Master Zentos Cyran | — | 25/30/30/30/36/46/43/52/49 | 3/6/9/18  | 18 | 144 |
+| Malessence | — | 37/37/40/40/40/37/51/68/37 | 4/8/12/24 | 25 | 145 |
+| Fydae Strain Plague Zombie | — | 20/—/40/30/10/10/15/20/01 | 1/2/3/—  | 10 | 150 |
+| Vile Savant | — | 28/28/35/35/30/40/35/38/30 | 3/6/9/18  | 15 | 151 |
+| Plague Swarm | — | 35/—/05/25/40/10/35/20/— | 4/8/12/24  | 25 | 152 |
+| Revelator | — | 32/36/36/54/48/47/53/52/43 | 4/8/12/24  | 19 | 158 |
+| Warp Spectre | — | 26/40/—/35/30/13/35/60/— | 3/6/9/–  | 13 | 158 |
+| Spawn Of Chaos | — | 35/—/61/63/22/13/22/25/— | 2/4/6/12  | 30 | 159 |
+| Blood Wraith | — | 53/20/36/43/33/44/50/58/15 | 3/6/9/18 | 25 | 163 |
+| Blood Wraith (True Form) | — | 30/—/20/50/20/44/50/58/— | 2/4/6/12  | 16 | 163 |
+| Glavius Wroth | — | 43/43/36/46/36/51/37/59/43 | 3/6/9/18 | 16 | 185 |
+| Antonia Mesmeron | — | 52/42/38/37/37/43/42/53/51 | 3/6/9/18 | 17 | 187 |
+| Elias Shadrack | — | 37/40/36/35/34/35/36/42/30 | 3/6/9/18 | 15 | 223 |
+| Nahun Grist | — | 37/35/35/35/30/37/37/31/36 | 3/6/9/18 | 14 | 223 |
+| Skyship Creman | — | 28/28/35/35/30/26/27/25/30 | 3/6/9/18 | 10 | 223 |
+| Lanus Cisten | — | 23/30/25/30/26/42/30/34/30 | 2/4/8/16 | 11 | 223 |
+| Whent | — | 20/20/33/30/30/28/30/20/33 | 3/6/9/18 | 10 | 224 |
+| Vymer And Quill | — | 45/45/35/40/35/30/38/40/25 | 4/8/12/24 | 15 | 224 |
+| Octavia Nile | — | 28/35/30/30/35/40/35/45/40 | 3/6/9/18 | 13 | 224 |
+| Abbot Tamas Of Shale | — | 35/28/40/40/22/38/33/45/23 | 2/4/8/16 | 23 | 224 |
+| Wrecker | — | 35/28/35/30/33/20/30/30/20 | 3/6/9/18 | 10 | 225 |
+| Hiram Bland | — | 18/24/28/30/30/35/32/36/36 | 3/6/9/18 | 10 | 225 |
+| Locutor Mayweather | — | 28/28/35/35/30/26/27/25/30 | 3/6/9/18 | 11 | 225 |
+| Adept And Advocate | — | 20/22/30/30/30/30/25/25/25 | 3/6/9/18 | 9 | 226 |
+| PDF Trooper | — | 25/30/35/35/30/26/30/30/30 | 3/6/9/18 | 10 | 226 |
+| Rubio | — | 33/28/30/30/34/31/30/37/38 | 3/6/9/18 | 10 | 226 |
+| Flesh Parasite | — | 40/40/40/35/30/30/40/30/15 | 3/6/9/18 | 30 | 226 |
+| Greel | — | 35/20/40/40/30/32/38/50/30 | 3/6/9/18 | 13 | 227 |
+| Children Of The Kingdom | — | 35/—/40/38/50/20/40/20/— | 2/4/6/12 | 12 | 227 |
+
+## Dark Heresy: Daemon Hunter — 7 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Daemon Hunter (FFG, 40kRP d100).*  
+*Harvest: ok — 7 adversaries from Dark Heresy - Daemon Hunter.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Lesser Chaos Spawn | — | 32/—/42/51/12/02/03/09/— | 2/4/6/12 | 19 | 99 |
+| Fiend Of Slaanesh | — | 30/—/40/45/60/10/35/30/— | 8/16/24/48 | 15 | 99 |
+| Nurgling | — | 25/—/10/21/25/15/15/40/— | 1/2/4/8 | 6 | 99 |
+| Beast Of Nurgle | — | 38/—/45/55/25/05/05/30/— | 1/2/4/8 | 30 | 99 |
+| Juggernaut | — | 45/—/55/55/22/15/15/40/15 | 6/12/18/36 | 20 | 101 |
+| Flesh Hound | — | 45/—/45/40/30/15/60/40/09 | 7/14/28/56 | 15 | 101 |
+| Screamers Of Tzeentch | — | 30/—/45/45/50/15/25/40/— | 8/16/24/48 | 15 | 102 |
+
+## Dark Heresy: Ascension — 26 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Ascension (FFG, 40kRP d100).*  
+*Harvest: ok — 26 adversaries from Dark Heresy - Ascension.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| The Burning Princess | — | 25/35/28/32/35/40/37/75/26 | 3/6/9/18 | 30 Mastered Skills: Warp Lore Mastery | 198 |
+| Eversor Assassin | — | 70/70/45/45/58/30/52/50/01 | 5/10/15/30 | 24 Mastered Skills: Athletics Mastery, Driving Mastery, Fieldcraft Mastery, Observation Mastery, Stealth Mastery, Tech Lore Mastery | 199 |
+| Governor Malaki Vess | — | 47/36/33/36/41/46/32/53/60 | 4/8/12/24 | 25 Influence: 52 Mastered Skills: Commerce Mastery, Decadent Mastery, Charismatic Mastery | 200 |
+| Magos Vathek | — | 35/50/40/55/21/58/32/60/17 | 2/4/6/12 | 36 Influence: 45 Mastered Skills: Common Lore Mastery, Cryptological Mastery, Driving Mastery, Forbidden Lore Mastery, Linguistic Mastery, Piloting Mastery, Scholastic Mastery, Tech Lore Mastery, Warp Lore Mastery | 202 |
+| Zashlun | — | 41/45/48/37/49/52/47/61/55 | 4/8/12/24 | 35 Influence: 31 Mastered Skills: Athletic Mastery, Charismatic Mastery, Common Lore Mastery, Investigation Mastery, Observation Mastery, Shadow Craft Mastery, Stealth Mastery. Other Skills: Chem-Use +10, Cyphers (Pale Throng), Demolitio… | 204 |
+| Herald Of Khorne | — | 65/11/59/45/40/37/53/50/18 | 4/8/12/24 | 30 | 205 |
+| Marabas, Lord Of Change | — | 54/72/63/72/54/99/45/81/45 | 5/10/15/30  | 180 Influence: 81 | 205 |
+| Dire Avenger Exarch | — | 60/60/32/33/52/44/42/49/41 | 5/10/15/30  | 20 Mastered Skills: Athletic Mastery | 207 |
+| Slaugth Intendant Recusant | — | 40/50/50/61/51/70/45/77/40 | 5/10/15/30 | 43 Influence: 25 Mastered Skills: Commerce Mastery, Investigation Mastery, Stealth Mastery | 209 |
+| Slaugth Warrior Vassal Construct | — | 44/35/48/53/30/11/46/44/02 | 3/6/9/18 | 25 | 211 |
+| Prelate Llorens Zan | — | 23/30/25/30/29/40/40/37/39 | 2/4/8/16  | 13 | 247 |
+| Deacon Ensor | — | 35/20/33/40/30/32/38/40/22 | 3/6/9/18  | 13 | 247 |
+| Arch-Confessor Eutalus | — | 22/26/30/30/34/43/38/38/41 | 3/6/9/18  | 12 | 247 |
+| Venerable Cal | — | 05/22/30/12/12/49/39/40/40 | 3/6/9/18  | 11 | 248 |
+| Legatine Sister Vespasia | — | 51/48/40/45/38/35/30/48/28 | 3/6/9/18  | 22 | 248 |
+| Adepta Sororitas Honour Guard | — | 38/45/40/45/36/30/35/40/18 | 3/6/9/18  | 15 | 248 |
+| Murderous Cherubim | — | 30/10/16/20/30/18/27/30/10 | 3/6/9/18  | 5 | 248 |
+| Lord-Regent Fafnir Belasco | — | 37/43/33/40/38/60/51/45/37 | 3/6/9/18  | 17 Mastered Skills: Commerce Mastery (Int), Common Lore Mastery, Cryptographic Mastery, Scholastic Mastery | 249 |
+| House Belasco Armsmen | — | 38/42/45/40/35/28/35/35/26 | 3/6/9/18  | 12 | 249 |
+| The Honourable Hector Maken | — | 14/20/30/30/30/28/22/37/31 | 3/6/9/18  | 10 | 249 |
+| Sira Rabbas Jenet | — | 45/45/35/40/41/27/22/40/25 | 4/8/12/24  | 15 | 249 |
+| Whiteclaws | — | 40/10/50/50/38/20/40/30/10 | 3/6/9/18  | 20 | 250 |
+| Lady Cheska Duquesne | — | 50/48/32/37/34/51/48/57/41 | 3/6/9/18;  | 17 Influence: 42 Mastered Skills: Forbidden Lore Mastery, Investigation Mastery | 250 |
+| Commercia Representative | — | 25/30/35/35/30/33/40/35/40 | 3/6/9/18  | 12 | 250 |
+| Rothber Sydom | — | 55/38/40/51/42/38/42/38/50 | 4/8/12/24  | 37 Mastered Skills: Forbidden Lore Mastery, Observation Mastery | 251 |
+| Sadu’sen Daemon | — | 40/40/35/35/30/29/29/40/20 | 3/6/9/–  | 15 | 251 |
+
+## Dark Heresy: Blood of Martyrs — 3 adversaries  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Blood of Martyrs (FFG, 40kRP d100).*  
+*Harvest: ok — 3 adversaries from Dark Heresy - Blood of Martyrs.md.*
+
+| Adversary | Role | WS/BS/S/T/Ag/Int/Per/WP/Fel | Move | Wounds | Page |
+|---|---|---|---|---|---|
+| Arco-Flagellant Passive Mode | — | —/—/30/40/10/10/10/40/— | 1/2/3/6 | 12 | 123 |
+| Arco-Flagellant Active Mode | — | 40/—/40/40/40/10/20/40/— | 8/16/24/48 Wounds: 25 | — | 123 |
+| Penitent Engine | — | 40/40/55/50/35/20/20/40/— | 8/16/24/48 Wounds: 30 | 3 | 125 |

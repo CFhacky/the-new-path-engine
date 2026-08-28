@@ -31,11 +31,12 @@ GOVERNING SOURCES
     I:\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the adversary-dense books.
     A 40kRP adversary is a NAME then a PROFILE of nine characteristics as
     percentages, WS BS S T Ag Int Per WP Fel, then Movement, Wounds, Skills,
-    Talents, Traits, Armour, Weapons, Gear. The books lay the profile out three
-    ways, so three detectors anchor on it:
+    Talents, Traits, Armour, Weapons, Gear. The books lay the profile out five
+    ways, so five detectors anchor on it:
 
-      * VERTICAL (Creatures Anathema, Mark of the Xenos, Rogue Trader Core, the
-        Koronus Bestiary): a bare `WS` label line heads the profile, the labels
+      * VERTICAL (Creatures Anathema, Mark of the Xenos, Rogue Trader Core &
+        supplements, the Koronus Bestiary, the Deathwatch & Dark Heresy
+        supplements): a bare `WS` label line heads the profile, the labels
         run down the page (`WS / BS / S / T / Ag / Int Per WP Fel`), the name
         sits on the line above, and the values run down the page below —
         Unnatural bonuses printed in (parentheses) lead the value run and are
@@ -47,17 +48,28 @@ GOVERNING SOURCES
         and the nine values sit on ONE whitespace-separated row (OCR may append
         `*` footnote marks).
 
-      * INFAMY-ROW (Black Crusade Core): the name sits above the profile, the
-        values are ONE whitespace-separated row of TEN (Black Crusade adds
-        Infamy as a tenth characteristic) with a trailing `- -`, and the labels
-        follow below.
+      * INFAMY-ROW (Black Crusade Core + the Tomes of Blood/Excess/Fate): the
+        name sits above the profile, the values are ONE whitespace-separated row
+        of TEN (Black Crusade adds Infamy as a tenth characteristic) with a
+        trailing `- -`, and the labels follow below.
+
+      * INVERTED-VERTICAL (Only War: Enemies of the Imperium): the vertical
+        profile is printed UPSIDE-DOWN — name on top, the nine VALUES run down
+        next, and only THEN the WS..Fel labels. The OCR drops the parentheses
+        around Unnatural bonuses, leaving them as bare LEADING numbers (dropped,
+        keeping the nine nearest the labels), and a `## [PDF page N]` marker may
+        fall inside a block — so the detector walks THROUGH page markers to
+        stitch a split value run or page-separated traits back onto one creature
+        (the citation records the page the NAME sits on).
+
+      * MERGED-VERTICAL (Dark Heresy: Blood of Martyrs): ordinary top-down
+        vertical, but the OCR merges several values onto one line ("40 – –"), so
+        each value line is tokenised before the nine are read off.
 
     A configured source whose file is missing prints NO COVERAGE. Garbage names
-    (section headers, prose, stat fragments) are filtered out. The Only War line
-    (Only War Core, Enemies of the Imperium) is intentionally NOT harvested: its
-    OCR splits profile values across page breaks and repeats the label header
-    without values, so a clean parse is not possible — see the escape-hatch note
-    in the harvest report. The PDFs stand behind every extraction.
+    (section headers, prose, stat fragments) are filtered out. A value run that
+    cannot be resolved cleanly to nine characteristics is SET ASIDE (reported on
+    SOFT_SKIPS), never guessed. The PDFs stand behind every extraction.
 """
 from __future__ import annotations
 
@@ -108,8 +120,9 @@ STAT_KEYWORD = re.compile(
     r"Total\s*TB|Skills?|Talents?|Traits?|Armou?r|Weapons?|Gear|Special Rules?|"
     r"Mutations?|Malignancies|Disorders?|Bio-?morphs?)\b", re.IGNORECASE)
 
-# Trailing threat/role tag on a name line: (Troops)/(Elite)/(Master)/(Troop).
-ROLE_TAG = re.compile(r"\(\s*(Troops?|Elite|Master)\s*\)\s*$", re.IGNORECASE)
+# Trailing threat/role tag on a name line: (Troops)/(Elite)/(Master)/(Troop)/
+# (Minion). The Only War and Rogue Trader supplements add the (Minion) tier.
+ROLE_TAG = re.compile(r"\(\s*(Troops?|Elite|Master|Minion)\s*\)\s*$", re.IGNORECASE)
 
 # A name that EXACTLY equals a stat label or a standalone section-header word is
 # a fragment, not a creature — rejected. (Whole-string match, case-insensitive.)
@@ -156,7 +169,9 @@ def _clean_name(raw: str) -> Tuple[Optional[str], Optional[str]]:
     """Return (name, role) or (None, None) if the line is not a plausible name.
     Strips a trailing 'Profile' word and a (Troops)/(Elite)/(Master) role tag."""
     s = _deligature(re.sub(r"\s+", " ", raw).strip())
-    s = re.sub(r"\bProfile\s*$", "", s, flags=re.IGNORECASE).strip()
+    # Strip a trailing 'Profile' label. Several later books' OCR splits the "fi"
+    # ligature, printing it as 'Profi le' / 'Profi Le' — catch that variant too.
+    s = re.sub(r"\bProfi\s*le\s*$", "", s, flags=re.IGNORECASE).strip()
     role = None
     mt = ROLE_TAG.search(s)
     if mt:
@@ -470,6 +485,286 @@ def detect_infamy_row(lines: List[str], pages: List[int], book: str) -> List[Adv
     return _finalize(out)
 
 
+# ── detector B: INVERTED / MERGED VERTICAL (Only War; Blood of Martyrs) ──────
+# Only War's *Enemies of the Imperium* prints the vertical profile UPSIDE-DOWN
+# relative to the other vertical books: the name sits on top, the nine
+# characteristic VALUES run down next, and only THEN the WS / BS / … labels.
+# Worse, the OCR drops the parentheses around Unnatural bonuses, leaving them as
+# bare LEADING numbers (a creature with Unnatural Strength + Toughness shows two
+# extra values at the head of the run), and a `## [PDF page N]` marker can fall
+# *inside* a stat block — splitting the value run or pushing the
+# Movement/Wounds/Traits onto the next page. Blood of Martyrs instead uses the
+# ordinary top-down vertical, but its OCR MERGES several values onto one line
+# ("40 – –"). Both layouts defeat the line-local `detect_vertical`, so this
+# tolerant pair (a) tokenises each value line, (b) walks THROUGH page-break
+# markers so a block split across a page is stitched into one creature (the
+# citation still records the page the NAME sits on), and (c) resolves the nine
+# characteristics RAW — an ambiguous run is set aside on SOFT_SKIPS, never
+# guessed or fabricated.
+
+# (book, page, name, raw_values) for every run this detector could not resolve
+# cleanly to nine characteristics; reported, never emitted as a parsed row.
+SOFT_SKIPS: List[Tuple[str, Optional[int], str, List[str]]] = []
+
+
+def _label_run_down(lines: List[str], i: int) -> Tuple[List[str], int]:
+    """Consume the WS..Fel label run below a standalone 'WS' at line i (labels
+    may be combined on one line; blank lines and page markers are skipped).
+    Returns (labels_seen, first_line_after_the_run)."""
+    n = len(lines)
+    labels = ["ws"]
+    j = i + 1
+    while j < n and len(labels) < 9:
+        s = lines[j].strip()
+        if s == "" or PAGE.search(lines[j]):
+            j += 1
+            continue
+        toks = s.replace("\t", " ").split()
+        if toks and all(t.strip(".").lower() in CHAR_LABELS for t in toks):
+            labels.extend(t.strip(".").lower() for t in toks)
+            j += 1
+            continue
+        break
+    return labels, j
+
+
+def _values_line(s: str) -> Optional[List[str]]:
+    """If every whitespace token on a line is a value / Unnatural-bonus paren /
+    dash, return the kept values (parenthesised bonuses dropped) in left-to-right
+    order; else None. Lets a value 'line' actually carry several merged tokens."""
+    toks = s.replace("\t", " ").split()
+    if not toks:
+        return None
+    classed = [_classify(t) for t in toks]
+    if any(c is None for c in classed):
+        return None
+    return [v for kind, v in classed if kind != "paren"]
+
+
+def _nine_from_inverted(vals: List[str]) -> Optional[List[str]]:
+    """Map an inverted value run to nine characteristics. Exactly nine → direct.
+    Ten-to-twelve → the leading (count−9) tokens are the bare Unnatural bonuses
+    (numbers, NEVER dashes — a dash is always a real 'no-score' characteristic)
+    and are dropped, keeping the nine nearest the labels. Otherwise the run is
+    ambiguous → None (RAW: never guess which values to drop)."""
+    if len(vals) == 9:
+        return list(vals)
+    extra = len(vals) - 9
+    if 1 <= extra <= 3 and all(v.isdigit() for v in vals[:extra]):
+        return list(vals[extra:])
+    return None
+
+
+def detect_vertical_inverted(lines: List[str], pages: List[int], book: str) -> List[Adversary40k]:
+    n = len(lines)
+    starts: List[Tuple[int, str, Optional[str], int, List[str]]] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        if ln.strip().lower() != "ws":
+            continue
+        labels, body_start = _label_run_down(lines, i)
+        if labels[:9] != CHAR_KEYS:
+            continue
+        # Walk UP from the WS line, through blank lines and page markers,
+        # gathering the contiguous value run; the first non-value line above it
+        # is the name. Multi-token lines are tokenised and kept in order.
+        vals: List[str] = []
+        k = i - 1
+        dist = 0
+        while k >= 0 and dist < 60:
+            raw = lines[k]
+            s = raw.strip()
+            dist += 1
+            if s == "" or PAGE.search(raw):
+                k -= 1
+                continue
+            got = _values_line(s)
+            if got is None:
+                break
+            vals = got + vals
+            k -= 1
+        if k < 0:
+            continue
+        name, role = _clean_name(lines[k])
+        if name is None or k in used:
+            continue
+        nine = _nine_from_inverted(vals)
+        if nine is None:
+            SOFT_SKIPS.append((book, pages[k], name, vals))
+            continue
+        used.add(k)
+        starts.append((k, name, role, body_start, nine))
+
+    starts.sort()
+    out: List[Adversary40k] = []
+    for idx, (nidx, name, role, body_start, values) in enumerate(starts):
+        e = starts[idx + 1][0] if idx + 1 < len(starts) else min(n, nidx + 90)
+        e = min(e, body_start + 70)
+        a = Adversary40k(name=name, book=book, page=pages[nidx], start=nidx,
+                         end=e, role=role)
+        _apply_profile(a, values)
+        _extract_extras(a, lines[body_start:e])
+        out.append(a)
+    return _finalize(out)
+
+
+def detect_vertical_merged(lines: List[str], pages: List[int], book: str) -> List[Adversary40k]:
+    """Ordinary top-down vertical (name above the WS label run, values below the
+    labels) but tolerant of OCR that merges several values onto one line."""
+    n = len(lines)
+    starts: List[Tuple[int, str, Optional[str], int, List[str]]] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        if ln.strip().lower() != "ws":
+            continue
+        labels, body_start = _label_run_down(lines, i)
+        if labels[:9] != CHAR_KEYS:
+            continue
+        vals: List[str] = []
+        k = body_start
+        dist = 0
+        while k < n and dist < 40:
+            raw = lines[k]
+            s = raw.strip()
+            dist += 1
+            if s == "" or PAGE.search(raw):
+                k += 1
+                continue
+            if STAT_KEYWORD.match(s):
+                break
+            got = _values_line(s)
+            if got is None:
+                break
+            vals += got
+            k += 1
+        if len(vals) < 9:
+            continue
+        got_name = _name_above(lines, i)
+        if got_name is None or got_name[0] in used:
+            continue
+        nidx, name, role = got_name
+        # RAW guard: tokens beyond the nine are acceptable ONLY when they are
+        # spurious trailing dashes (layout padding, e.g. "40 – –" → WP 40, Fel –).
+        # A non-dash extra means the OCR split a two-digit characteristic across a
+        # space (Fel "25" printed "2 5"); reconstructing it would be a guess, so
+        # the block is set aside on SOFT_SKIPS instead of emitting a wrong value.
+        if len(vals) > 9 and not all(v == "—" for v in vals[9:]):
+            SOFT_SKIPS.append((book, pages[nidx], name, vals))
+            continue
+        used.add(nidx)
+        starts.append((nidx, name, role, k, vals[:9]))
+
+    starts.sort()
+    out: List[Adversary40k] = []
+    for idx, (nidx, name, role, body_start, values) in enumerate(starts):
+        e = starts[idx + 1][0] if idx + 1 < len(starts) else min(n, nidx + 80)
+        e = min(e, body_start + 60)
+        a = Adversary40k(name=name, book=book, page=pages[nidx], start=nidx,
+                         end=e, role=role)
+        _apply_profile(a, values)
+        _extract_extras(a, lines[body_start:e])
+        out.append(a)
+    return _finalize(out)
+
+
+# ── detector E: STANDARD VERTICAL, bare-bonus aware (Rogue Trader supplements) ─
+# The Rogue Trader supplements print the ordinary top-down vertical profile, but
+# with two OCR wrinkles that the plain first-nine `detect_vertical` gets wrong:
+#   * a page-number folio leaks in as TRAILING value(s) (e.g. a p.121 creature's
+#     run ends "… 38 121 121") — here the real nine come FIRST (first-nine is
+#     right, and this reproduces `detect_vertical`), and
+#   * a few creatures print Unnatural bonuses BARE and LEADING (Skabgob "10 10 …",
+#     Stalker Hrrithck "8 8 …") — here the real nine come LAST.
+# The two are told apart RAW-safely: a real characteristic in these books is
+# written two-digit (leading zero below ten), so a run that *starts* with one to
+# three tiny bare integers (<=15, and whose tail is not the page folio) is
+# leading bonuses → take the last nine; otherwise the extras are trailing folio
+# furniture → take the first nine. A run that resolves to several bare single
+# digits is OCR garbage and is set aside rather than emitted.
+
+def _nine_std(values: List[str], page: Optional[int]) -> Optional[List[str]]:
+    """Resolve a top-down value run to nine characteristics, or None if the run
+    is OCR garbage that must be set aside (see the block comment above)."""
+    if len(values) < 9:
+        return None
+    if len(values) == 9:
+        nine = list(values)
+    else:
+        lead = len(values) - 9
+        if 1 <= lead <= 3 and all(v.isdigit() and int(v) <= 15 for v in values[:lead]) \
+                and values[-1] != str(page):
+            nine = list(values[-9:])          # bare leading Unnatural bonuses
+        else:
+            nine = list(values[:9])           # trailing page-folio furniture
+    if sum(1 for v in nine if v.isdigit() and len(v) == 1) >= 4:
+        return None                            # scrambled OCR — refuse to guess
+    return nine
+
+
+def detect_vertical_bonus(lines: List[str], pages: List[int], book: str) -> List[Adversary40k]:
+    n = len(lines)
+    starts: List[Tuple[int, str, Optional[str], int, List[str]]] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        if ln.strip().lower() != "ws":
+            continue
+        # skip the label block (identical to detect_vertical)
+        j = i + 1
+        labels_seen = 0
+        while j < n:
+            s = lines[j].strip()
+            if s == "" or PAGE.search(lines[j]):
+                j += 1
+                continue
+            if _is_label_line(s):
+                labels_seen += 1
+                j += 1
+                continue
+            break
+        if labels_seen == 0:
+            continue
+        # collect the contiguous value run, one token per line (as detect_vertical)
+        tokens: List[Tuple[str, str]] = []
+        k = j
+        while k < n:
+            s = lines[k].strip()
+            if s == "" or PAGE.search(lines[k]):
+                k += 1
+                continue
+            if STAT_KEYWORD.match(s):
+                break
+            c = _classify(s)
+            if c is None:
+                break
+            tokens.append(c)
+            k += 1
+        values = _tokens_to_values(tokens)
+        if len(values) < 9:
+            continue
+        got = _name_above(lines, i)
+        if got is None or got[0] in used:
+            continue
+        nidx, name, role = got
+        nine = _nine_std(values, pages[nidx])
+        if nine is None:
+            SOFT_SKIPS.append((book, pages[nidx], name, values))
+            continue
+        used.add(nidx)
+        starts.append((nidx, name, role, k, nine))
+
+    starts.sort()
+    out: List[Adversary40k] = []
+    for idx, (nidx, name, role, body_start, values) in enumerate(starts):
+        e = starts[idx + 1][0] if idx + 1 < len(starts) else min(n, nidx + 80)
+        e = min(e, body_start + 60)
+        a = Adversary40k(name=name, book=book, page=pages[nidx], start=nidx,
+                         end=e, role=role)
+        _apply_profile(a, values)
+        _extract_extras(a, lines[body_start:e])
+        out.append(a)
+    return _finalize(out)
+
+
 def _finalize(items: List[Adversary40k]) -> List[Adversary40k]:
     """Drop running headers (a name recurring 3+ times) and collapse exact
     duplicate names within a book to the first."""
@@ -487,6 +782,9 @@ def _finalize(items: List[Adversary40k]) -> List[Adversary40k]:
 
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Adversary40k]]] = {
     "vertical": detect_vertical,
+    "vertical_inverted": detect_vertical_inverted,
+    "vertical_merged": detect_vertical_merged,
+    "vertical_bonus": detect_vertical_bonus,
     "profile_row": detect_profile_row,
     "infamy_row": detect_infamy_row,
 }
@@ -533,6 +831,62 @@ SOURCES: List[Source] = [
     Source("bc_core", "Black Crusade: Core Rulebook",
            Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Core Rulebook.md"),
            "Black Crusade Core Rulebook, Adversaries (FFG, 40kRP d100)", "infamy_row"),
+
+    # ─────────────────────────────────────────────────────────────────────────
+    # EXTENSION: the remaining adversary-bearing 40kRP books. The existing rows
+    # above are untouched; everything below is additive.
+    # ─────────────────────────────────────────────────────────────────────────
+    # ── INVERTED-VERTICAL book (Only War: values above the labels; Unnatural
+    #    bonuses printed bare & leading; stat blocks stitched across page breaks)
+    Source("ow_enemies", "Only War: Enemies of the Imperium",
+           Path(f"{_W}/Only War/Rulebooks/Only War - Enemies of the Imperium.md"),
+           "Only War: Enemies of the Imperium (FFG, 40kRP d100)", "vertical_inverted"),
+    # ── INFAMY-ROW supplements (Black Crusade Tomes: ten chars incl. Infamy) ──
+    Source("bc_tome_blood", "Black Crusade: Tome of Blood",
+           Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Tome of Blood.md"),
+           "Black Crusade: Tome of Blood (FFG, 40kRP d100)", "infamy_row"),
+    Source("bc_tome_excess", "Black Crusade: Tome of Excess",
+           Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Tome of Excess.md"),
+           "Black Crusade: Tome of Excess (FFG, 40kRP d100)", "infamy_row"),
+    Source("bc_tome_fate", "Black Crusade: Tome of Fate",
+           Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Tome of Fate.md"),
+           "Black Crusade: Tome of Fate (FFG, 40kRP d100)", "infamy_row"),
+    # ── VERTICAL supplements (Rogue Trader): name, WS..Fel labels, then values.
+    #    These use the bare-bonus-aware detector: their OCR leaks page-folios as
+    #    trailing values and prints a few Unnatural bonuses bare & leading. ─────
+    Source("rt_soul_reaver", "Rogue Trader: The Soul Reaver",
+           Path(f"{_W}/Rogue Trader/Rulebooks/Rogue Trader - The Soul Reaver.md"),
+           "Rogue Trader: The Soul Reaver (FFG, 40kRP d100)", "vertical_bonus"),
+    Source("rt_stars_inequity", "Rogue Trader: Stars of Inequity",
+           Path(f"{_W}/Rogue Trader/Rulebooks/Rogue Trader - Stars of Inequity.md"),
+           "Rogue Trader: Stars of Inequity (FFG, 40kRP d100)", "vertical_bonus"),
+    Source("rt_edge_abyss", "Rogue Trader: Edge of the Abyss",
+           Path(f"{_W}/Rogue Trader/Rulebooks/Rogue Trader - Edge of the Abyss.md"),
+           "Rogue Trader: Edge of the Abyss (FFG, 40kRP d100)", "vertical_bonus"),
+    # ── VERTICAL supplements (Deathwatch) ─────────────────────────────────────
+    Source("dw_achilus", "Deathwatch: The Achilus Assault",
+           Path(f"{_W}/Deathwatch/Rulebooks/Deathwatch - The Achilus Assault.md"),
+           "Deathwatch: The Achilus Assault (FFG, 40kRP d100)", "vertical"),
+    Source("dw_first_founding", "Deathwatch: First Founding",
+           Path(f"{_W}/Deathwatch/Rulebooks/Deathwatch - First Founding.md"),
+           "Deathwatch: First Founding (FFG, 40kRP d100)", "vertical"),
+    Source("dw_jericho_reach", "Deathwatch: The Jericho Reach",
+           Path(f"{_W}/Deathwatch/Rulebooks/Deathwatch - The Jericho Reach.md"),
+           "Deathwatch: The Jericho Reach (FFG, 40kRP d100)", "vertical"),
+    # ── VERTICAL supplements (Dark Heresy) ────────────────────────────────────
+    Source("dh_disciples", "Dark Heresy: Disciples of the Dark Gods",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Disciples of The Dark Gods.md"),
+           "Dark Heresy: Disciples of the Dark Gods (FFG, 40kRP d100)", "vertical"),
+    Source("dh_daemon_hunter", "Dark Heresy: Daemon Hunter",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Daemon Hunter.md"),
+           "Dark Heresy: Daemon Hunter (FFG, 40kRP d100)", "vertical"),
+    Source("dh_ascension", "Dark Heresy: Ascension",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Ascension.md"),
+           "Dark Heresy: Ascension (FFG, 40kRP d100)", "vertical"),
+    # ── MERGED-VERTICAL supplement (Dark Heresy: values merged onto one line) ─
+    Source("dh_blood_martyrs", "Dark Heresy: Blood of Martyrs",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Blood of Martyrs.md"),
+           "Dark Heresy: Blood of Martyrs (FFG, 40kRP d100)", "vertical_merged"),
 ]
 
 
@@ -556,6 +910,7 @@ class Corpus:
     def __init__(self, base: Path, sources: List[Source]):
         self.base = base
         self.sources = sources
+        SOFT_SKIPS.clear()   # collect this build's unresolved runs from scratch
         for src in self.sources:
             path = base / src.path
             if not path.exists():
@@ -765,6 +1120,101 @@ Traits: Daemonic (+5), Fear (3), From Beyond.
 Weapons: Hellblade (1d10+7 R; Pen 6).
 """
 
+# INVERTED VERTICAL (Only War): the name tops the block, the nine values run
+# down NEXT, then the WS..Fel labels. The Warboss shows two bare LEADING
+# Unnatural bonuses (11, 11) that must be dropped. The Severan Soldier's
+# Movement/Wounds/Weapons sit past a `## [PDF page N]` marker (with folio /
+# running-header debris) and must still be stitched onto the creature.
+FIXTURE_INVERTED = """## [PDF page 29]
+Severan Dominate Soldier (Troop)
+36
+34
+35
+35
+37
+28
+34
+26
+33
+WS
+BS
+S
+T
+Ag
+Int
+Per
+WP
+Fel
+28
+1
+
+## [PDF page 30]
+
+29
+I: The Traitor
+Movement: 3/6/9/18
+Wounds: 12
+Armour: Flak armour (All 4)
+Skills: Awareness (Per), Dodge (Ag).
+Talents: Nerves of Steel, Takedown.
+Weapons: Autopistol; chainsword.
+Gear: Severan Dominate uniform.
+
+Warboss (Master)
+11
+11
+60
+30
+60
+60
+40
+30
+35
+40
+30
+WS
+BS
+S
+T
+Ag
+Int
+Per
+WP
+Fel
+"""
+
+# INVERTED VERTICAL with the PROFILE ITSELF split across a page break: the value
+# run (9, 8, 56, 55 | 51, 48, 45, 42, 45, 50, 29) is interrupted mid-run by a
+# `## [PDF page N]` marker and must be stitched back into one nine-value profile;
+# the citation records page 50 (where the NAME sits), and the two leading bare
+# Unnatural bonuses (9, 8) are dropped.
+FIXTURE_INVERTED_PAGESPLIT = """## [PDF page 50]
+Chaos Space Marine (Elite)
+9
+8
+56
+55
+## [PDF page 51]
+51
+48
+45
+42
+45
+50
+29
+WS
+BS
+S
+T
+Ag
+Int
+Per
+WP
+Fel
+Movement: 4/8/12/24
+Traits: Unnatural Strength (x2), Unnatural Toughness (x2), Fear (1).
+"""
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -820,6 +1270,54 @@ def selftest(base: Path) -> int:
         if bl.role != "Elite":
             failures.append(f"Bloodletter role {bl.role!r}, wanted 'Elite'")
 
+    # ── fixture: INVERTED VERTICAL (Only War) + page-break stitch ────────────
+    lines = FIXTURE_INVERTED.splitlines()
+    got = detect_vertical_inverted(lines, _pages_for(lines),
+                                   "Only War: Enemies of the Imperium")
+    names = [a.name for a in got]
+    if names != ["Severan Dominate Soldier", "Warboss"]:
+        failures.append(f"inverted fixture names {names}, wanted "
+                        f"['Severan Dominate Soldier', 'Warboss']")
+    else:
+        sol = got[0]
+        sprof = (sol.ws, sol.bs, sol.s, sol.t, sol.ag, sol.int, sol.per, sol.wp, sol.fel)
+        if sprof != ("36", "34", "35", "35", "37", "28", "34", "26", "33"):
+            failures.append(f"Severan Soldier profile {sprof}")
+        if sol.role != "Troop":
+            failures.append(f"Severan Soldier role {sol.role!r}, wanted 'Troop'")
+        if (sol.movement, sol.wounds) != ("3/6/9/18", "12"):
+            failures.append(f"Severan Soldier move/wounds not stitched across the "
+                            f"page break: {(sol.movement, sol.wounds)}")
+        if not sol.weapons or "chainsword" not in sol.weapons:
+            failures.append(f"Severan Soldier weapons not stitched across the page "
+                            f"break: {sol.weapons!r}")
+        wb = got[1]
+        wprof = (wb.ws, wb.bs, wb.s, wb.t, wb.ag, wb.int, wb.per, wb.wp, wb.fel)
+        if wprof != ("60", "30", "60", "60", "40", "30", "35", "40", "30"):
+            failures.append(f"Warboss profile {wprof} (two bare leading Unnatural "
+                            f"bonuses 11,11 must be dropped)")
+        if wb.role != "Master":
+            failures.append(f"Warboss role {wb.role!r}, wanted 'Master'")
+
+    # ── fixture: INVERTED with the PROFILE split across a page break ─────────
+    lines = FIXTURE_INVERTED_PAGESPLIT.splitlines()
+    got = detect_vertical_inverted(lines, _pages_for(lines),
+                                   "Only War: Enemies of the Imperium")
+    if [a.name for a in got] != ["Chaos Space Marine"]:
+        failures.append(f"page-split fixture names {[a.name for a in got]}")
+    elif got:
+        csm = got[0]
+        prof = (csm.ws, csm.bs, csm.s, csm.t, csm.ag, csm.int, csm.per, csm.wp, csm.fel)
+        if prof != ("56", "55", "51", "48", "45", "42", "45", "50", "29"):
+            failures.append(f"Chaos Space Marine stitched profile {prof}")
+        if csm.role != "Elite":
+            failures.append(f"Chaos Space Marine role {csm.role!r}, wanted 'Elite'")
+        if csm.page != 50:
+            failures.append(f"Chaos Space Marine page {csm.page}, wanted 50 "
+                            f"(the page the name starts on)")
+        if not csm.traits or "Unnatural Strength" not in csm.traits:
+            failures.append(f"Chaos Space Marine traits not parsed: {csm.traits!r}")
+
     # ── garbage-name filter ─────────────────────────────────────────────────
     for junk in ["WS", "Movement", "Skills", "Adventure Seeds",
                  "The following creatures are described below and.",
@@ -852,6 +1350,21 @@ def selftest(base: Path) -> int:
                 corpus.find("bloodletter", book="bc_core")
             if not csm:
                 failures.append("no Black Crusade adversary (Chaos Space Marine / Bloodletter) found")
+        # Only War: Enemies of the Imperium — the inverted-vertical book. Its
+        # Warboss's two bare leading Unnatural bonuses (11, 11) must be dropped,
+        # leaving the printed nine (60/30/60/60/40/30/35/40/30).
+        if any(s.key == "ow_enemies" and s.adversaries for s in corpus.sources):
+            hit = corpus.find("Warboss", book="ow_enemies")
+            if not hit:
+                failures.append("'Warboss' not found in live Only War: Enemies of the Imperium")
+            else:
+                wb = hit[0][1]
+                wprof = tuple(getattr(wb, k) for k in CHAR_KEYS)
+                if wprof != ("60", "30", "60", "60", "40", "30", "35", "40", "30"):
+                    failures.append(f"live OW Warboss profile {wprof} "
+                                    f"(leading Unnatural bonuses not dropped cleanly)")
+        else:
+            failures.append("Only War: Enemies of the Imperium yielded no adversaries")
     else:
         print("  [SKIP] 40kRP extractions not found — fixture checks only")
 
@@ -900,6 +1413,11 @@ def main() -> int:
     print(f"\n{total} WH40K Roleplay adversaries across "
           f"{sum(1 for s in corpus.sources if s.adversaries)} book(s); "
           f"{parsed_well} with 6+ characteristics parsed. (system: {SYSTEM})")
+    if SOFT_SKIPS:
+        print(f"\n{len(SOFT_SKIPS)} stat block(s) SET ASIDE (ambiguous value run, "
+              f"left unparsed rather than guessed):")
+        for bk, pg, nm, vals in SOFT_SKIPS:
+            print(f"  [soft] {nm}  (p.{pg}, {len(vals)} values: {' '.join(vals)})  {bk}")
     print(f"wrote {OUT_JSON}")
     print(f"wrote {OUT_MD}")
     return 0
