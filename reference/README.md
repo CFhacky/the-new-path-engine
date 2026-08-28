@@ -21,6 +21,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `maneuver_index.{json,md}` | Tome of Battle maneuver/stance index | 171 | `scripts/maneuver_harvest.py` | Tome of Battle: Book of Nine Swords |
 | `gurps_spell_index.{json,md}` | GURPS Magic spell index (class, cost, casting time, prereqs) | 557 | `scripts/gurps_magic_harvest.py` | GURPS Magic (4e) — the GURPS magic system, separate from the D&D `spell_index` |
 | `gurps_creature_index.{json,md}` | GURPS bestiary (ST/DX/IQ/HT/HP/…) | 139 | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters, Creatures of the Night, Fantasy, Banestorm, Lands Out of Time, DF Allies/Summoners, Big Lizzie — separate from the D&D `creature_index` |
+| `dnd5e_creature_index.{json,md}` | **D&D 5e** monsters (size, type, AC, HP, CR, ability scores) — labeled `system: D&D 5e`, separate from 3.5e | 200 | `scripts/dnd5e_creature_harvest.py` | Blood War Bestiary, Dante’s Guide to Hell, Xanathar’s Enemies and Allies (5e) |
 | `gurps_gear_index.{json,md}` | GURPS Low-Tech weapons (damage, reach, cost, weight, ST) | 153 | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech (4e) — native GURPS gear, separate index |
 | `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
 

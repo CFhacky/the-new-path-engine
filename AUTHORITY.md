@@ -49,6 +49,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `feat_harvest.py` | bundled SRD 3.5 feats + cited supplement extractions (`_md\_feats\`); duplicates feat_lookup.py detection (no import); missing dir prints NO COVERAGE |
 | `spell_harvest.py` | bundled SRD 3.5 spells + cited Spell Compendium and post-2005 splatbook extractions (Complete Mage/Champion, Races of the Dragon, Dragon Magic); school-anchored detection (sibling of power_harvest.py, no import); missing sources print NO COVERAGE |
 | `gurps_magic_harvest.py` | cited GURPS Magic extraction; class-anchored detection (the GURPS magic system, a separate index from D&D spells); missing sources print NO COVERAGE |
+| `dnd5e_creature_harvest.py` | cited D&D 5e bestiary extractions; a SEPARATE, clearly-labeled `system: D&D 5e` index (source material for the translator, never 3.5e RAW); missing sources print NO COVERAGE |
 | `gurps_gear_harvest.py` | cited GURPS Low-Tech weapon table; column-dump parser (native GURPS 4e gear, its own index); missing sources print NO COVERAGE |
 | `gurps_creature_harvest.py` | cited GURPS bestiary extractions (Dungeon Fantasy Monsters, Creatures of the Night, Fantasy); attribute-block detection across three name/stat formats; a separate index from D&D creatures; missing sources print NO COVERAGE |
 | `resume_card.py` | Notion Resume Schema `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`; validates dated mirrors only |
