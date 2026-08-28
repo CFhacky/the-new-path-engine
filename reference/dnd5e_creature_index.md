@@ -236,3 +236,392 @@ SOURCE MATERIAL for the system-translator skill, not campaign RAW. Use
 *Source: The Book of Hordes (5e, DMs Guild).*  
 *Harvest: ok — 0 monsters from The Book of Hordes.md.*
 
+
+## Diabolical Designs (5e, 3pp) — 123 monsters  *(system: D&D 5e)*
+
+*Source: Diabolical Designs (5e, DMs Guild).*  
+*Harvest: ok — 123 monsters from Diabolical Designs.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| Wretchling | Tiny | fiend | chaotic evil | 10 | 5 | 1/8 | 7/11/11/5/6/5 | 151 |
+| Dretch | Small | fiend | chaotic evil | 11 | 18 | 1/4 | 11/11/12/5/8/3 | 152 |
+| Dire Dretch | Small | fiend | chaotic evil | 12 | 22 | 1/2 | 12/11/12/6/9/4 | 153 |
+| Umbrath | Tiny | fiend | chaotic evil | 13 | 7 | 1/4 | 4/15/12/6/10/8 | 154 |
+| Greater Umbrath | Medium | fiend | chaotic evil | 15 | 85 | 6 | 6/18/18/8/12/14 | 155 |
+| Bonefiend | Small | fiend | chaotic evil | 14 | 13 | 1/2 | 8/15/16/5/8/6 | 156 |
+| Gnashling | Small | fiend | chaotic evil | 12 | 13 | 1/2 | 12/14/12/6/6/7 | 157 |
+| Thronuk | Small | fiend | chaotic evil | 13 | 16 | 1/2 | 12/14/14/6/10/7 | 158 |
+| Abyssal Aberration | Small | aberration | chaotic neutral | 11 | 22 | 1 | 12/9/14/6/12/7 | 159 |
+| Lesser Abyssal Vessel | Medium | humanoid | chaotic evil | 13 | 27 | 1 | 14/12/13/10/8/12 | 160 |
+| Abyssal Vessel | Medium | humanoid | chaotic evil | 15 | 67 | 5 | 16/14/16/10/10/14 | 161 |
+| Greater Abyssal Vessel | Medium | humanoid | chaotic evil | 16 | 136 | 10 | 18/14/18/10/12/16 | 161 |
+| Supreme Abyssal Vessel | Medium | humanoid | chaotic evil | 17 | 195 | 15 | 20/16/18/12/14/18 | 162 |
+| Quasit | Tiny | fiend | shapechanger), chaotic evil | 13 | 7 | 1 | 5/17/10/7/10/10 | 163 |
+| Shadow Quasit | Tiny | fiend | shapechanger), chaotic evil | 13 | 10 | 1 | 5/17/10/7/10/10 | 164 |
+| Abyssal Raptor | Medium | monstrosity | chaotic evil | 13 | 37 | 2 | 15/13/16/3/12/6 | 165 |
+| Grimhorn | Medium | fiend | chaotic evil | 13 | 32 | 2 | 16/12/15/8/10/9 | 166 |
+| Skullrummager | Small | fiend | chaotic neutral | 15 | 39 | 2 | 8/16/16/14/12/10 | 167 |
+| Abyssal Champion | Medium | humanoid | chaotic evil | 16 | 39 | 3 | 18/14/14/10/12/12 | 168 |
+| Abyssal Reaver | Medium | humanoid | chaotic evil | 17 | 82 | 5 | 19/14/16/10/12/12 | 169 |
+| Abyssal Dreadknight | Medium | humanoid | chaotic evil | 18 | 157 | 12 | 22/12/22/12/14/16 | 169 |
+| Abyssal Warlord | Medium | humanoid | chaotic evil | 19 | 241 | 17 | 24/12/24/14/16/18 | 170 |
+| Abyssal Hound | Large | fiend | chaotic evil | 14 | 59 | 3 | 19/14/16/6/12/8 | 171 |
+| Abyssal Sorcerer | Medium | fiend | chaotic evil | 12 | 27 | 3 | 10/14/12/16/12/18 | 172 |
+| High Abyssal Sorcerer | Medium | fiend | chaotic evil | 13 | 58 | 7 | 10/17/14/18/14/22 | 173 |
+| Greater Abyssal Sorcerer | Medium | fiend | chaotic evil | 14 | 144 | 14 | 12/19/18/20/16/25 | 173 |
+| Supreme Abyssal Sorcerer | Medium | fiend | chaotic evil | 15 | 209 | 20 | 14/21/20/22/18/27 | 174 |
+| Malakaar, the Netherlord | Medium | fiend | chaotic evil | 17 | 345 | 25 | 18/24/24/26/22/30 | 176 |
+| Brakthar | Medium | fiend | chaotic evil | 16 | 52 | 3 | 14/16/16/10/12/16 | 177 |
+| Greater Brakthar | Medium | fiend | chaotic evil | 17 | 119 | 7 | 16/18/18/12/14/18 | 178 |
+| Abyssal Beast | Large | fiend | chaotic evil | 14 | 59 | 4 | 20/12/16/5/8/6 | 179 |
+| Abyssal Dragon Wyrmling | Medium | dragon | chaotic evil | 17 | 68 | 4 | 19/14/18/12/11/16 | 180 |
+| Young Abyssal Dragon | Large | dragon | chaotic evil | 18 | 189 | 11 | 23/17/21/14/12/19 | 182 |
+| Adult Abyssal Dragon | Huge | dragon | chaotic evil | 19 | 297 | 19 | 27/17/25/16/14/21 | 183 |
+| Ancient Abyssal Dragon | Gargantuan | dragon | chaotic evil | 21 | 546 | 26 | 30/19/28/18/16/24 | 184 |
+| Abyssal Steed | Large | fiend | chaotic evil | 14 | 76 | 4 | 18/14/16/6/10/12 | 187 |
+| Greater Abyssal Steed | Huge | fiend | chaotic evil | 16 | 178 | 12 | 22/16/18/8/12/14 | 188 |
+| Succubus / Incubus | Medium | fiend | neutral evil | 15 | 66 | 4 | 8/17/13/15/12/20 | 189 |
+| Dreamstalker Succubus / Incubus | Medium | fiend | neutral evil | 15 | 82 | 5 | 8/17/13/15/12/20 | 190 |
+| Necrothrax | Medium | fiend | chaotic evil | 14 | 82 | 5 | 18/12/16/10/12/15 | 191 |
+| Obsidian Gargoyle | Medium | construct | unaligned | 16 | 85 | 5 | 18/12/18/5/10/6 | 192 |
+| Zhorvith | Medium | fiend | chaotic evil | 16 | 85 | 5 | 18/20/18/8/12/10 | 193 |
+| Gazorakth | Medium | fiend | chaotic evil | 15 | 85 | 6 | 8/14/18/14/12/19 | 194 |
+| Greater Gazorakth | Large | fiend | chaotic evil | 17 | 172 | 15 | 10/16/22/16/17/21 | 195 |
+| Vrock | Large | fiend | chaotic evil | 15 | 104 | 6 | 17/15/18/8/13/8 | 196 |
+| Blight Vrock | Large | fiend | chaotic evil | 15 | 128 | 7 | 18/16/20/8/14/10 | 197 |
+| Abyssal Chimera | Large | fiend | chaotic evil | 16 | 119 | 7 | 20/14/16/8/12/10 | 198 |
+| Greater Abyssal Chimera | Huge | fiend | chaotic evil | 18 | 225 | 14 | 24/16/22/10/14/12 | 199 |
+| Hezrou | Large | fiend | chaotic evil | 16 | 136 | 8 | 19/17/20/5/12/13 | 200 |
+| Adhesive Hezrou | Large | fiend | chaotic evil | 16 | 136 | 8 | 19/17/20/5/12/13 | 201 |
+| Glabrezu | Large | fiend | chaotic evil | 17 | 157 | 9 | 20/15/21/19/17/16 | 202 |
+| Rampaging Glabrezu | Large | fiend | chaotic evil | 17 | 189 | 10 | 20/15/21/19/17/16 | 203 |
+| Ophrym | Large | fiend | chaotic evil | 17 | 168 | 11 | 18/16/20/14/15/19 | 204 |
+| Nalfeshnee | Large | fiend | chaotic evil | 18 | 184 | 13 | 21/10/22/19/12/15 | 205 |
+| Hulking Nalfeshnee | Huge | fiend | chaotic evil | 18 | 250 | 15 | 23/10/22/19/12/15 | 206 |
+| Shadowspawn | Medium | fiend | chaotic evil | 16 | 161 | 14 | 20/22/20/14/16/18 | 207 |
+| Marilith | Large | fiend | chaotic evil | 18 | 189 | 16 | 18/20/20/18/16/20 | 208 |
+| Venomblade Marilith | Large | fiend | chaotic evil | 19 | 210 | 18 | 19/21/21/18/17/21 | 209 |
+| Balor | Huge | fiend | chaotic evil | 19 | 262 | 19 | 26/15/22/20/16/22 | 210 |
+| Balor Sovereign | Huge | fiend | chaotic evil | 19 | 312 | 21 | 28/16/23/20/18/23 | 211 |
+| The Eternal Wanderer | Large | fey | chaotic evil | 20 | 294 | 22 | 26/18/20/12/14/22 | 213 |
+| Orvelyn, the Blightmother | Large | fiend | chaotic evil | 20 | 350 | 23 | 24/18/24/21/20/27 | 215 |
+| Vaelorax, the Golden Terror | Large | fiend | chaotic evil | 21 | 405 | 24 | 26/18/26/22/20/24 | 217 |
+| Kalaroth, the Destroyer | Large | fiend | chaotic evil | 22 | 540 | 27 | 28/30/26/18/24/20 | 220 |
+| Lemure | Medium | fiend | lawful evil | 7 | 13 | 0 | 10/5/11/1/11/3 | 225 |
+| Infernal Scout | Tiny | fiend | lawful evil | 13 | 4 | 1/8 | 6/13/14/11/10/13 | 226 |
+| Infernal Rat | Tiny | fiend | lawful evil | 12 | 5 | 1/8 | 4/14/10/6/12/6 | 227 |
+| Infernal Minion | Small | fiend | lawful evil | 12 | 9 | 1/4 | 10/14/12/8/11/8 | 228 |
+| Infernal Hound | Medium | fiend | lawful evil | 13 | 16 | 1/2 | 14/14/12/6/12/6 | 229 |
+| Greater Infernal Hound | Large | fiend | lawful evil | 16 | 85 | 5 | 18/14/16/8/14/8 | 230 |
+| Fiendish Brute | Medium | fiend | lawful evil | 15 | 15 | 1 | 18/12/16/6/10/8 | 231 |
+| Imp | Tiny | fiend | shapechanger), lawful evil | 13 | 10 | 1 | 6/17/13/11/12/14 | 232 |
+| Imp Trickster | Tiny | fiend | shapechanger), lawful evil | 13 | 10 | 1 | 5/17/13/11/12/16 | 233 |
+| Lesser Defiant Devil | Medium | fiend | lawful evil | 14 | 39 | 2 | 12/14/14/10/11/13 | 234 |
+| Greater Defiant Devil | Medium | fiend | lawful evil | 16 | 120 | 8 | 20/15/17/13/14/16 | 235 |
+| Gaunt Devil | Medium | fiend | lawful evil | 14 | 45 | 2 | 12/16/16/10/12/15 | 236 |
+| Infernal Chain Warden | Medium | fiend | lawful evil | 14 | 32 | 2 | 16/14/14/10/12/14 | 237 |
+| Infernal Champion | Medium | humanoid | lawful evil | 16 | 33 | 2 | 16/14/12/10/12/14 | 238 |
+| Infernal Crusader | Medium | humanoid | lawful evil | 18 | 95 | 6 | 18/14/20/10/12/16 | 239 |
+| Infernal Dreadknight | Medium | humanoid | lawful evil | 20 | 195 | 13 | 22/17/22/12/14/18 | 239 |
+| Infernal Tyrant | Medium | humanoid | lawful evil | 22 | 285 | 19 | 24/19/24/14/16/20 | 240 |
+| Phantasmal Devil | Medium | fiend | lawful evil | 13 | 32 | 2 | 8/16/14/12/13/16 | 241 |
+| Greater Phantasmal Devil | Medium | fiend | lawful evil | 14 | 97 | 8 | 12/18/16/14/15/18 | 242 |
+| Bearded Devil | Medium | fiend | lawful evil | 13 | 52 | 3 | 16/15/15/9/11/11 | 243 |
+| Anti-Magic Bearded Devil | Medium | fiend | lawful evil | 13 | 52 | 3 | 16/15/15/9/11/11 | 244 |
+| Hellish Sorcerer | Medium | fiend | lawful evil | 12 | 27 | 3 | 10/14/12/16/12/18 | 246 |
+| Grand Hellish Sorcerer | Medium | fiend | lawful evil | 13 | 58 | 7 | 10/17/14/18/14/22 | 246 |
+| Arch Hellish Sorcerer | Medium | fiend | lawful evil | 14 | 136 | 14 | 12/19/18/20/16/25 | 247 |
+| Supreme Hellish Sorcerer | Medium | fiend | lawful evil | 15 | 209 | 20 | 14/21/20/22/18/27 | 247 |
+| Abyssal Blade | Medium | fiend | lawful evil | 15 | 52 | 4 | 18/16/17/12/14/16 | 248 |
+| Green Devil | Medium | fiend | lawful evil | 15 | 60 | 4 | 14/16/16/14/12/18 | 249 |
+| Infernal Dragon Wyrmling | Medium | dragon | lawful evil | 17 | 68 | 4 | 19/14/18/12/11/16 | 250 |
+| Young Infernal Dragon | Large | dragon | lawful evil | 18 | 189 | 11 | 23/16/21/14/13/19 | 252 |
+| Adult Infernal Dragon | Huge | dragon | lawful evil | 19 | 297 | 19 | 26/16/25/16/15/22 | 253 |
+| Ancient Infernal Dragon | Gargantuan | dragon | lawful evil | 21 | 546 | 26 | 30/18/28/20/17/25 | 254 |
+| Infernal Executioner | Medium | fiend | lawful evil | 16 | 45 | 4 | 20/14/16/10/12/14 | 257 |
+| Infernal Steed | Large | fiend | lawful evil | 14 | 84 | 4 | 18/14/20/6/12/10 | 258 |
+| Greater Infernal Steed | Huge | fiend | lawful evil | 16 | 195 | 12 | 22/16/20/12/14/12 | 259 |
+| Barbed Devil | Medium | fiend | lawful evil | 15 | 110 | 5 | 16/17/18/12/14/14 | 260 |
+| Ice Barbed Devil | Medium | fiend | lawful evil | 15 | 110 | 5 | 16/17/18/12/14/14 | 261 |
+| Velkash | Medium | fiend | lawful evil | 17 | 105 | 7 | 14/18/16/14/12/18 | 262 |
+| Elder Velkash | Medium | fiend | lawful evil | 19 | 210 | 16 | 18/20/22/16/16/22 | 263 |
+| Icebound Chain Devil | Medium | fiend | lawful evil | 16 | 85 | 8 | 18/15/18/11/12/14 | 265 |
+| Soulwraith | Large | undead | chaotic evil | 15 | 110 | 8 | 6/20/17/14/13/18 | 266 |
+| Spawn of Cerberus | Huge | monstrosity | chaotic evil | 17 | 147 | 9 | 23/11/18/3/16/8 | 267 |
+| Cerberus | Gargantuan | monstrosity | chaotic evil | 21 | 333 | 21 | 30/12/26/14/20/18 | 270 |
+| Grim Reaper | Medium | undead | neutral | 16 | 95 | 10 | 16/18/20/14/16/18 | 271 |
+| Infernal Judge | Large | fiend | lawful evil | 17 | 152 | 10 | 18/12/18/20/18/22 | 273 |
+| Horned Devil | Large | fiend | lawful evil | 18 | 178 | 11 | 22/17/21/12/16/17 | 274 |
+| Soulreaper Horned Devil | Large | fiend | lawful evil | 18 | 142 | 11 | 21/16/19/12/14/16 | 275 |
+| Infernal Golem | Large | construct | unaligned | 18 | 184 | 11 | 25/10/22/5/12/6 | 276 |
+| Infernal Giant Golem | Huge | construct | unaligned | 21 | 310 | 21 | 30/12/25/5/12/6 | 277 |
+| Erinyes | Medium | fiend | lawful evil | 18 | 153 | 12 | 18/16/18/14/14/18 | 278 |
+| Commander Erinyes | Medium | fiend | lawful evil | 19 | 204 | 15 | 20/18/18/16/16/20 | 279 |
+| Feraxar | Large | fiend | lawful evil | 18 | 184 | 13 | 23/14/22/14/16/18 | 280 |
+| Ice Devil | Large | fiend | lawful evil | 18 | 180 | 14 | 21/14/18/18/15/18 | 281 |
+| Frostpiercer Ice Devil | Large | fiend | lawful evil | 18 | 190 | 15 | 22/15/19/18/15/18 | 282 |
+| Pit Fiend | Large | fiend | lawful evil | 19 | 300 | 20 | 26/14/24/22/18/24 | 283 |
+| Pit Fiend Lord | Large | fiend | lawful evil | 20 | 325 | 22 | 27/16/24/22/20/25 | 284 |
+| Vorgath, the Merciless | Large | fiend | lawful evil | 20 | 378 | 23 | 28/16/27/20/18/22 | 286 |
+| Sarathiel, the Ancient | Large | fiend | lawful evil | 21 | 378 | 24 | 29/23/26/20/27/24 | 289 |
+| Lilithar, the Crimson Queen | Large | fiend | lawful evil | 20 | 405 | 25 | 22/22/26/22/20/27 | 292 |
+| King of Hell | Large | fiend | lawful evil | 22 | 666 | 30 | 30/25/26/25/26/30 | 294 |
+
+## Chains of Asmodeus (5e, 3pp) — 54 monsters  *(system: D&D 5e)*
+
+*Source: Chains of Asmodeus (5e, DMs Guild).*  
+*Harvest: ok — 54 monsters from Chains of Asmodeus.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| Ramius | Medium | humanoid | Neutral Good | 22 | 190 | 14 | 23/10/21/11/14/18 | 25 |
+| Zythan | Medium | humanoid | Lawful Neutral | 12 | 117 | 13 | 10/14/14/20/15/16 | 27 |
+| Sarevok | Medium | humanoid | Neutral Evil | 21 | 190 | 17 | 23/10/21/11/18/14 | 30 |
+| Slayer | Medium | fiend | Host's Alignment | 19 | 136 | 12 | 20/19/18/13/14/14 | 31 |
+| Avatar of Baalzebul | Medium | fiend | Lawful Evil | 14 | 285 | 18 | 21/13/20/17/18/20 | 39 |
+| Rothé | Large | beast | Unaligned | 10 | 15 | 1/4 | —/—/—/—/—/— | 49 |
+| Fire Kraken | Gargantuan | elemental | Chaotic Neutral | 16 | 402 | 21 | 27/11/24/10/20/15 | 121 |
+| Eriflamme | Gargantuan | elemental | Unaligned | 19 | 518 | 28 | —/—/—/—/—/— | 122 |
+| Awful Fisher | Gargantuan | monstrosity | Unaligned | 17 | 348 | 18 | —/—/—/—/—/— | 134 |
+| Ekengarik | Large | fiend | Lawful Evil | 16 | 231 | 16 | 23/16/21/14/17/21 | 142 |
+| Fiendish Formian | Medium | fiend | Lawful Evil | 15 | 45 | 4 | 18/14/17/10/12/11 | 142 |
+| Anacreda | Large | fey | Neutral Evil | 19 | 253 | 17 | 25/16/22/15/16/19 | 147 |
+| Waeloquay | Gargantuan | elemental | Neutral Evil | 14 | 290 | 18 | —/—/—/—/—/— | 176 |
+| Brother Adramalech | Medium | fiend | Lawful Evil | 19 | 212 | 21 | 14/16/18/25/25/25 | 186 |
+| Brother Morax | Large | fiend | Lawful Evil | 21 | 337 | 21 | 24/22/27/14/16/18 | 187 |
+| Abigor | Large | fiend | Lawful Evil | 22 | 337 | 22 | 27/14/25/20/16/16 | 194 |
+| Devorastus | Huge | fiend | Unaligned | 14 | 275 | 20 | —/—/—/—/—/— | 199 |
+| Rimmon | Medium | fiend | Lawful Evil | 17 | 262 | 20 | 18/17/22/27/25/16 | 210 |
+| Zagum | Medium | fiend | Lawful Evil | 19 | 255 | 20 | 17/16/18/22/25/27 | 211 |
+| Buer | Large | fiend | Lawful Evil | 21 | 315 | 21 | 23/22/21/16/18/17 | 212 |
+| Asmodeus | Large | fiend | Lawful Evil | 22 | 725 | 30 | —/—/—/—/—/— | 218 |
+| Baalzebul | Huge | fiend | Lawful Evil | 19 | 540 | 26 | 28/15/25/21/24/26 | 220 |
+| Belial | Medium | fiend | Lawful Evil | 21 | 420 | 25 | 25/17/22/22/22/29 | 222 |
+| Dispater | Large | fiend | Lawful Evil | 21 | 412 | 27 | 28/17/25/25/22/24 | 223 |
+| Fierna | Medium | fiend | Lawful Evil | 20 | 367 | 25 | 17/25/22/22/22/29 | 226 |
+| Glasya | Medium | fiend | Lawful Evil | 21 | 380 | 25 | 22/28/20/21/25/28 | 227 |
+| Levistus | Medium | fiend | Lawful Evil | 23 | 336 | 26 | 19/26/22/25/28/26 | 230 |
+| Mammon | Huge | fiend | Lawful Evil | 18 | 464 | 26 | 28/17/26/22/25/25 | 231 |
+| Mephistopheles | Large | fiend | Lawful Evil | 21 | 460 | 27 | —/—/—/—/—/— | 234 |
+| Bel | Large | fiend | Lawful Evil | 19 | 364 | 25 | 28/14/26/25/19/26 | 235 |
+| Zariel | Large | fiend | Lawful Evil | 21 | 420 | 26 | 27/24/28/26/27/30 | 236 |
+| (Kocrachon) | Medium | fiend | Lawful Evil | 20 | 104 | 10 | 16/19/15/17/12/14 | 237 |
+| Ayperobo Swarm | Medium | swarm | Lawful Evil | 20 | 130 | 12 | —/—/—/—/—/— | 239 |
+| Corruption Devil (Paeliryon) | Large | fiend | Lawful Evil | 16 | 218 | 14 | 21/14/22/19/15/14 | 240 |
+| Displacer Fiend | Large | fiend | Neutral Evil | 16 | 135 | 9 | —/—/—/—/—/— | 241 |
+| Halog | Small | aberration | Unaligned | 14 | 150 | 7 | —/—/—/—/—/— | 243 |
+| Hellcat (Bezekira) | Large | fiend | Neutral Evil | 16 | 136 | 10 | 21/19/17/10/14/10 | 245 |
+| Maelephant Nomad | Large | fiend | Lawful Evil | 16 | 190 | 14 | 22/11/18/14/17/15 | 246 |
+| Miasmorne | Huge | monstrosity | Unaligned | 19 | 230 | 16 | —/—/—/—/—/— | 247 |
+| Oneirovore | Large | fiend | Unaligned | 19 | 237 | 11 | 16/12/25/12/10/10 | 249 |
+| Pain Devil (Excruciarch) | Medium | fiend | Lawful Evil | 16 | 171 | 12 | 18/15/20/11/10/13 | 250 |
+| Shredwing | Medium | fiend | Lawful Evil | 21 | 170 | 12 | 11/19/19/15/16/11 | 251 |
+| Styx Dragon | Gargantuan | dragon | Chaotic Evil | 17 | 296 | 20 | 27/14/26/19/20/19 | 253 |
+| Lesser Tyrant Shadow | Medium | aberration | Lawful Evil | 20 | 114 | 10 | 20/18/20/18/16/18 | 256 |
+| Tyrant Shadow | Huge | aberration | Lawful Evil | 19 | 207 | 17 | 22/16/20/20/16/20 | 256 |
+| Greater Tyrant Shadow | Gargantuan | aberration | Lawful Evil | 18 | 372 | 22 | 25/15/20/24/16/22 | 257 |
+| Vorvolaka | Medium | undead | Neutral Evil | 18 | 190 | 14 | —/—/—/—/—/— | 259 |
+| War Devil | Huge | fiend | Lawful Evil | 11 | 237 | 16 | —/—/—/—/—/— | 261 |
+| Aeshma | Medium | humanoid | Chaotic Neutral | 15 | 45 | 2 | 10/16/14/14/14/16 | 262 |
+| Anagwendol | Medium | celestial | Lawful Good | 17 | 190 | 16 | 20/18/20/18/20/22 | 263 |
+| Barachiel | Medium | celestial | Lawful Good | 18 | 136 | 13 | 18/12/18/11/14/20 | 264 |
+| Jenevere | Large | celestial | Lawful Good | 20 | 216 | 17 | 18/22/26/18/20/24 | 265 |
+| Koh Tam | Medium | humanoid | Lawful Neutral | 17 | 143 | 10 | 16/12/15/19/20/15 | 266 |
+| Tiax | Small | humanoid | Chaotic Neutral | 13 | 110 | 9 | 11/16/14/15/19/18 | 267 |
+
+## Legendary Dragons (5e, 3pp) — 18 monsters  *(system: D&D 5e)*
+
+*Source: Legendary Dragons Complete Hybrid (5e, DMs Guild).*  
+*Harvest: ok — 18 monsters from Legendary Dragons Complete Hybrid.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| The Plague Bringer | Gargantuan | undead | chaotic evil | 21 | 492 | 24 | —/—/—/—/—/— | 135 |
+| Hatchling Dragon Companion | Medium | dragon | same alignment as rider | 15 | 14 | — | 16/12/14/10/11/10 | 154 |
+| War Drake | Large | dragon | unaligned | 18 | 136 | 5 | 19/14/18/6/8/9 | 158 |
+| (Fey Drake) | Medium | dragon | unaligned | 16 | 75 | 4 | 18/12/16/6/8/10 | 159 |
+| Puggon | Small | dragon | same alignment as owner | 11 | 5 | 1/8 | 10/14/12/4/12/12 | 160 |
+| Dragonant | Small | dragon | unaligned | 16 | 8 | 2 | 15/18/12/3/10/9 | 161 |
+| Dragonant Swarm | Large | dragon | unaligned | 18 | 127 | 8 | 18/18/17/6/10/13 | 162 |
+| Kobold Brute | Small | humanoid | lawful evil | 17 | 52 | 5 | 16/16/16/10/8/10 | 166 |
+| Kobold Schemer | Small | humanoid | lawful evil | 12 | 14 | 5 | 7/16/10/16/8/16 | 167 |
+| Kobold Scoundrel | Small | humanoid | lawful evil | 15 | 22 | 5 | 7/16/12/16/8/16 | 168 |
+| Kobold Abomination | Medium | aberration | lawful evil | 14 | 60 | 2 | 16/12/16/5/5/7 | 169 |
+| Lifeless Cult Fanatic | Medium | humanoid | lawful evil | 13 | 33 | 2 | 11/14/12/10/14/13 | 179 |
+| Degenerates | Medium | humanoid | any non-good alignment | 13 | 9 | 1/2 | 18/14/10/10/10/11 | 179 |
+| Purge Cultists | Medium | humanoid | chaotic neutral | 14 | 90 | 4 | 11/15/16/10/14/20 | 181 |
+| Aloysius Skylantern | Medium | humanoid | lawful good | 10 | 4 | 0 | 10/10/10/16/10/10 | 222 |
+| Drake Devonair | Medium | humanoid | neutral good | 15 | 97 | 5 | 13/16/14/10/12/18 | 222 |
+| Gasp Gang Mercenary | Medium | humanoid | any alignment | 17 | 58 | 3 | 16/13/14/8/11/10 | 223 |
+| Cenere, Thrice-Born | Huge | elemental | chaotic evil | 19 | 218 | 16 | 25/10/23/16/19/13 | 246 |
+
+## Baldur's Gate: Descent into Avernus (5e) — 40 monsters  *(system: D&D 5e)*
+
+*Source: Baldur's Gate: Descent into Avernus (5e, WotC).*  
+*Harvest: ok — 40 monsters from Baldurs Gate - Descent into Avernus.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| MORTLOCK VANTHAMPUR | Medium | humanoid | lawful evil | 12 | 90 | 3 | —/—/—/—/—/— | 27 |
+| Pas AMRIK VANTHAMPUR | Medium | humanoid | lawful evel | 17 | 66 | 3 | —/—/—/—/—/— | 31 |
+| THURSTWELL VANTHAMPUR | Medium | humanoid | lawful evil | 9 | 5 | 1/3 | —/—/—/—/—/— | 35 |
+| DUKE THALAMRA VANTHAMPUR | Medium | humanoid | lawful evil | 10 | 78 | 4 | —/—/—/—/—/— | 39 |
+| ‘THAVIUS KREEG | Medium | humanoid | lawful evil | 10 | 40 | 1/2 | —/—/—/—/—/— | 43 |
+| GIDEON LIGHTWARD | Medium | undead | lawful evil | 11 | 136 | 6 | —/—/—/—/—/— | 66 |
+| ULDER RAVENGARD | Medium | humanoid | neutral | 20 | 112 | 5 | —/—/—/—/—/— | 71 |
+| 2 EE ee eee ee | Tiny | fiend | chaotic evil | 13 | 10 | 1/4 | —/—/—/—/—/— | 98 |
+| KRULL | Medium | humanoid | lawful evil | 17 | 117 | 6 | —/—/—/—/—/— | 111 |
+| ARKHAN THE CRUEL | Medium | humanoid | lawful evil | 23 | 221 | 16 | —/—/—/—/—/— | 112 |
+| ‘TOROGAR STEELFIST | Large | monstrosity | lawful evil | 17 | 168 | 11 | —/—/—/—/—/— | 113 |
+| BEL | Large | fiend | lawful evil | 19 | 364 | 25 | —/—/—/—/—/— | 116 |
+| SIBRIEX | Huge | fiend | chaotic evil | 19 | 150 | 18 | —/—/—/—/—/— | 118 |
+| BONE WHELK | Large | monstrosity | unaligned | 12 | 27 | 1/4 | —/—/—/—/—/— | 120 |
+| MAHADI THE RAKSHASA | Medium | fiend | lawful evil | 17 | 195 | 14 | —/—/—/—/—/— | 128 |
+| SMILER THE DEFILER | Medium | fey | chaotic evil | 18 | 165 | 7 | —/—/—/—/—/— | 134 |
+| a  — SEL | Gargantuan | fiend | chaotic evil | 25 | 615 | 30 | —/—/—/—/—/— | 152 |
+| NINE-FINGERS KEENE | Medium | humanoid | neutral | 15 | 84 | 5 | —/—/—/—/—/— | 171 |
+| RILSA RAEL | Medium | humanoid | neutral | 15 | 52 | 3 | —/—/—/—/—/— | 200 |
+| AMNIZU | Medium | fiend | lawful evil | 2 | 202 | 18 | —/—/—/—/—/— | 229 |
+| BAPHOMET | Huge | fiend | chaotic evil | 22 | 275 | 23 | —/—/—/—/—/— | 230 |
+| CROKEK’TOECK | Gargantuan | fiend | chaotic evil | 15 | 297 | 14 | —/—/—/—/—/— | 231 |
+| FisT OF BANE | Medium | humanoid | lawful evil | 18 | 22 | 1/2 | —/—/—/—/—/— | 233 |
+| IRON CONSUL | Medium | humanoid | lawful evil | 16 | 45 | 2 | —/—/—/—/—/— | 233 |
+| - BLAck GAUNTLET OF BANE | Medium | humanoid | lawful evil | 16 | 51 | 6 | —/—/—/—/—/— | 233 |
+| NIGHT BLADE | Medium | humanoid | chaotic evil | 12 | 1 | 1/4 | —/—/—/—/—/— | 234 |
+| NECROMITE OF MYRKUL | Medium | humanoid | neutral evil | 11 | 13 | 1/2 | —/—/—/—/—/— | 235 |
+| ii ae. SS eee Eee | Medium | humanoid | neutral evil | 12 | 32 | — | —/—/—/—/—/— | 235 |
+| MASTER OF SOULS | Medium | humanoid | neutral evil | 12 | 45 | 4 | —/—/—/—/—/— | 235 |
+| FIENDISH FLESH GOLEM | Large | construct | unaligned | 12 | 210 | 8 | —/—/—/—/—/— | 237 |
+| HELLWASP | Large | fiend | lawful evil | 19 | 52 | 5 | —/—/—/—/—/— | 237 |
+| HOLLYPHANT | Small | celestial | lawful good | 18 | 36 | 5 | —/—/—/—/—/— | 238 |
+| MERREGON | Medium | fiend | lawful evil | 16 | 45 | 4 | —/—/—/—/—/— | 239 |
+| NARZUGON | Medium | fiend | lawful evil | 20 | 112 | 13 | —/—/—/—/—/— | 240 |
+| NUPPERIBO | Medium | fiend | lawful evil | 13 | 1 | 1/2 | —/—/—/—/—/— | 240 |
+| REDCAP | Small | fey | chaotic evil | 13 | 45 | 3 | —/—/—/—/—/— | 241 |
+| TRESSYM | Tiny | monstrosity | chaotic neutral | 12 | 5 | 0 | —/—/—/—/—/— | 242 |
+| WHITE ABISHAI | Medium | fiend | lawful evil | 15 | 68 | 6 | —/—/—/—/—/— | 242 |
+| YEENOGHU | Huge | fiend | chaotic evil | 20 | 333 | 24 | —/—/—/—/—/— | 243 |
+| ARCHDUKE ZARIEL OF AVERNUS | Large | fiend | lawful evil | 21 | 580 | 26 | —/—/—/—/—/— | 244 |
+
+## The Book of Many Things (5e) — 13 monsters  *(system: D&D 5e)*
+
+*Source: The Deck of Many Things: The Book of Many Things (5e, WotC).*  
+*Harvest: ok — 13 monsters from The Book of Many Things.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| HrnnopHANT oF THE Couer | Medium | humanoid | Typically Chaotic Evil | 15 | 153 | — | —/—/—/—/—/— | 93 |
+| OoprnwrN | Small | fey | Chaotic Neutral | 13 | 2 | 2 | —/—/—/—/—/— | 112 |
+| Bnusrpna | Medium | humanoid | Warlock), Chaotic Evil | 14 | 90 | 2 | —/—/—/—/—/— | 128 |
+| BnnerH Dnrxrnn | Medium | aberration | Typically Chaotic Evil | 18 | 157 | — | —/—/—/—/—/— | 155 |
+| Gnru CnaurproN oF BroopsHED | Medium | undead | Chaotic Evil | 18 | 280 | 20 | —/—/—/—/—/— | 162 |
+| Gnru Cnanapr | Medium | undead | Lawfut EviloN oF DnsouuoN: | 18 | 4 | 25 | —/—/—/—/—/— | 163 |
+| Gnru CuauproN oF PnsrrreNcn | Medium | undead | Neutral Evil | 14 | — | — | —/—/—/—/—/— | 164 |
+| Hnnaow HouNp | Medium | undead | Typically Chaotic Evil | 15 | — | 3 | —/—/—/—/—/— | 165 |
+| AunNozcr | Gargantuan | fiend | Chaotic Evil | 15 | 370 | 22 | —/—/—/—/—/— | 168 |
+| Hureaz | Large | fiend | Lawful Evil | 17 | — | 14 | —/—/—/—/—/— | 170 |
+| Mar.exxrx | Huge | fiend | Neutral Evil | 17 | 3 | 18 | —/—/—/—/—/— | 174 |
+| HrnnopHANT Mnpusn | Large | monstrosity | Any Alignment | 17 | 237 | 17 | —/—/—/—/—/— | 180 |
+| Rmrr,nn | Small | fey | Typically Chaotic Neutral | 15 | 90 | 5 | —/—/—/—/—/— | 182 |
+
+## Pipyap's Guide to the Nine Hells (5e, 3pp) — 20 monsters  *(system: D&D 5e)*
+
+*Source: Pipyap's Guide to the Nine Hells (5e, DMs Guild).*  
+*Harvest: ok — 20 monsters from Pipyaps Guide to the Nine Hells.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| Amnizu | Medium | fiend | lawful evil | 21 | 202 | 18 | 11/13/16/20/12/18 | 132 |
+| Devourer | Large | fiend | chaotic evil | 16 | 178 | 13 | 20/12/20/13/10/16 | 133 |
+| Enchanter | Medium | humanoid | any alignment | 12 | 40 | 5 | 9/14/11/17/12/11 | 134 |
+| Evoker | Medium | humanoid | any alignment | 12 | 66 | 6 | 9/14/12/17/12/11 | 134 |
+| Fiendish Polar Bear | Large | fiend | lawful evil | 12 | 42 | 2 | 20/10/16/2/13/7 | 135 |
+| Firenewt Warlock of Imix | Medium | humanoid | neutral evil | 10 | 33 | 1 | 13/11/12/9/11/14 | 135 |
+| Hellfire Engine | Huge | construct | lawful evil | 18 | 216 | 16 | 20/16/24/2/10/1 | 136 |
+| Hellfire Sprayers | Medium | construct | lawful evil | 16 | 58 | 5 | 12/18/15/3/10/1 | 136 |
+| Merregon | Medium | fiend | lawful evil | 16 | 45 | 4 | 18/14/17/6/12/8 | 137 |
+| Modified Hellwasp | Large | fiend | lawful evil | 19 | 60 | 5 | 18/15/14/10/10/7 | 137 |
+| Necromancer | Medium | humanoid | any alignment | 12 | 66 | 9 | 9/14/12/17/12/11 | 138 |
+| Nupperibo | Medium | fiend | lawful evil | 13 | 11 | 1/2 | 16/11/13/3/8/1 | 138 |
+| Orthon | Large | fiend | lawful evil | 17 | 105 | 10 | 22/16/21/15/15/16 | 139 |
+| Red Abishi | Medium | fiend | lawful evil | 22 | 255 | 19 | 23/16/19/14/15/19 | 140 |
+| War Priest | Medium | humanoid | any alignment | 18 | 117 | 9 | 16/10/14/11/17/13 | 140 |
+| Sacred Statue | Large | construct | any alignment | 19 | 95 | 0 | 19/8/19/14/19/16 | 141 |
+| Warlock of the Fiend | Medium | humanoid | any alignment | 12 | 78 | 7 | 10/14/15/12/12/18 | 141 |
+| Zakiel, Fallen Angel | Medium | celestial | lawful evil | 17 | 162 | 12 | 17/16/14/19/20/23 | 142 |
+| Lemure | Medium | fiend | lawful evil | 7 | 13 | 0 | 10/5/11/1/11/3 | 153 |
+| Lemure | Medium | fiend | lawful evil | 7 | 13 | 0 | 10/5/11/1/11/3 | 153 |
+
+## Encounters in Avernus (5e, 3pp) — 20 monsters  *(system: D&D 5e)*
+
+*Source: Encounters in Avernus (5e, DMs Guild).*  
+*Harvest: ok — 20 monsters from Encounters in Avernus.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| Black Abishai | Medium | fiend | lawful evil | 15 | 58 | 7 | 14/17/14/13/16/11 | 26 |
+| Blue Abishai | Medium | fiend | lawful evil | 19 | 195 | 17 | 15/14/17/22/23/18 | 26 |
+| Green Abishai | Medium | fiend | lawful evil | 18 | 187 | 15 | 12/17/16/17/12/19 | 27 |
+| Red Abishai | Medium | fiend | lawful evil | 22 | 255 | 19 | 23/16/19/14/15/19 | 27 |
+| White Abishai | Medium | fiend | lawful evil | 15 | 68 | 6 | 16/11/18/11/12/13 | 28 |
+| Archduke Zariel of Avernus | Large | fiend | lawful evil | 21 | 580 | 26 | 27/24/28/26/27/30 | 29 |
+| Barghest | Large | fiend | neutral evil | 17 | 90 | 4 | 19/15/14/13/12/14 | 30 |
+| Crokek’toeck | Large | fiend | chaotic evil | 15 | 297 | 14 | 28/10/24/6/10/13 | 30 |
+| Enchanter | Medium | humanoid | any alignment | 12 | 40 | 5 | —/—/—/—/—/— | 31 |
+| Evoker | Medium | humanoid | any alignment | 12 | 66 | 9 | —/—/—/—/—/— | 31 |
+| Hellwasp | Large | fiend | lawful evil | 19 | 52 | 5 | 18/15/12/10/10/7 | 32 |
+| Hydroloth | Medium | fiend | neutral evil | 15 | 135 | 9 | 12/21/16/19/10/14 | 32 |
+| Merregon | Large | fiend | chaotic evil | 16 | 45 | 4 | 18/14/17/6/12/8 | 33 |
+| Merrenoloth | Medium | fiend | neutral evil | 13 | 40 | 3 | 8/17/10/17/14/11 | 33 |
+| Nupperibo | Medium | fiend | lawful evil | 13 | 11 | 1/2 | 16/11/13/3/8/1 | 34 |
+| Orthon | Large | fiend | lawful evil | 17 | 105 | 10 | 22/16/21/15/15/16 | 34 |
+| Rutterkin | Medium | fiend | chaotic evil | 12 | 37 | 2 | 14/15/17/5/12/6 | 35 |
+| Warlock of the Archfey | Medium | humanoid | any alignment | 11 | 49 | 4 | —/—/—/—/—/— | 35 |
+| Warlock of the Fiend | Medium | humanoid | any alignment | 12 | 78 | 7 | 10/14/15/12/12/18 | 36 |
+| Warlock of the Great Old One | Medium | humanoid | any alignment | 12 | 91 | 6 | —/—/—/—/—/— | 36 |
+
+## Darkhold: Secrets of the Zhentarim (5e, 3pp) — 15 monsters  *(system: D&D 5e)*
+
+*Source: Darkhold: Secrets of the Zhentarim (5e, DMs Guild).*  
+*Harvest: ok — 15 monsters from Darkhold - Secrets of the Zhentarim.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| Ashemmi | Medium | humanoid | chaotic good | 13 | 110 | 12 | —/—/—/—/—/— | 87 |
+| Fzoul Chembryl | Medium | humanoid | lawful evil | 17 | 246 | 22 | —/—/—/—/—/— | 88 |
+| Jotan Silverhammer | Medium | humanoid | neutral | 19 | 90 | 10 | —/—/—/—/—/— | 90 |
+| Manshoon of Darkhold | Medium | humanoid | lawful evil | 18 | 126 | 18 | —/—/—/—/—/— | 92 |
+| Pereghost | Medium | undead | chaotic evil | 20 | 180 | 18 | —/—/—/—/—/— | 93 |
+| Riviar Darkwind | Medium | humanoid | lawful evil | 18 | 255 | 16 | —/—/—/—/—/— | 97 |
+| Sorrow | Medium | humanoid | neutral evil | 12 | 130 | 14 | —/—/—/—/—/— | 99 |
+| Velya the Allsight | Medium | humanoid | lawful evil | 18 | 117 | 13 | —/—/—/—/—/— | 100 |
+| Varalla | Medium | undead | neutral evil | 18 | 285 | 25 | —/—/—/—/—/— | 101 |
+| Alleyblade | Medium | humanoid | any alignment | 16 | 91 | 6 | —/—/—/—/—/— | 102 |
+| Foulwing | Huge | aberration | neutral evil | 17 | 69 | 5 | —/—/—/—/—/— | 104 |
+| Ghost Giant | Huge | undead | chaotic evil | 14 | 207 | 14 | —/—/—/—/—/— | 105 |
+| Lichwood Witch | Medium | humanoid | any alignment | 14 | 93 | 8 | —/—/—/—/—/— | 106 |
+| Shadow Knight | Medium | humanoid | any lawful alignment | 14 | 58 | 3 | —/—/—/—/—/— | 108 |
+| Umberwatch Warden | Medium | humanoid | lawful evil | 16 | 117 | 9 | —/—/—/—/—/— | 109 |
+
+## Larloch's Lexicon of Lichdom (5e, 3pp) — 14 monsters  *(system: D&D 5e)*
+
+*Source: Larloch's Lexicon of Lichdom (5e, DMs Guild).*  
+*Harvest: ok — 14 monsters from Larlochs Lexicon of Lichdom.md.*
+
+| Monster | Size | Type | Alignment | AC | HP | CR | STR/DEX/CON/INT/WIS/CHA | Page |
+|---|---|---|---|---|---|---|---|---|
+| Fledgling Lich | Medium | undead | any evil alignment | 13 | 60 | 6 | 11/14/16/16/12/12 | 21 |
+| Lich Neophyte | Medium | undead | any evil alignment | 15 | 90 | 9 | 11/16/16/18/12/14 | 22 |
+| Lesser Lich | Medium | undead | any evil alignment | 16 | 120 | 13 | 11/16/16/20/14/14 | 23 |
+| Prepared Lich | Medium | undead | any evil alignment | 18 | 135 | 22 | 11/16/16/20/14/16 | 25 |
+| Lich Bard | Medium | undead | any | 19 | 135 | 21 | 11/20/16/14/12/20 | 27 |
+| Lich Cleric | Medium | undead | any | 17 | 135 | 21 | 11/16/16/12/20/16 | 28 |
+| Lich Druid | Medium | undead | any evil alignment | 17 | 135 | 21 | 11/16/16/12/20/12 | 29 |
+| Lich Sorcerer | Medium | undead | any evil alignment | 17 | 135 | 21 | 11/16/16/14/12/20 | 30 |
+| Lich Warlock | Medium | undead | any alignment | 17 | 135 | 21 | 11/16/16/14/12/20 | 31 |
+| Alathene Moonstar | Medium | undead | chaotic good | 18 | 135 | 21 | 11/16/16/20/14/18 | 32 |
+| Calimar Arkhenneld | Medium | undead | neutral evil | 18 | 150 | 22 | 11/18/16/20/14/18 | 33 |
+| Heurodis | Medium | undead | chaotic evil | 20 | 135 | 22 | 11/18/16/20/14/16 | 34 |
+| Synnorha Durothil | Medium | undead | lawful good | 18 | 135 | 21 | 11/18/16/20/18/16 | 35 |
+| Szass Tam | Medium | undead | neutral evil | 19 | 190 | 23 | 11/18/20/22/16/16 | 36 |
