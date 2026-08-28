@@ -2,7 +2,7 @@
  "generated_by": "scripts/feat_harvest.py",
  "srd_json": "I:\\repos\\the-new-path-engine\\.claude\\worktrees\\intelligent-lamport-3a158a\\scripts\\feats_srd35.json",
  "feats_dir": "I:\\Sourcebooks\\_md\\_feats",
- "total_feats": 1253,
+ "total_feats": 1244,
  "books": [
   {
    "book": "SRD 3.5",
@@ -3268,52 +3268,16 @@
      "book": "Complete_Mage",
      "page": 33,
      "start": 3541,
-     "end": 3578,
+     "end": 3661,
      "type": null,
      "prerequisite": null
     },
     {
-     "name": "Replaces: You lose the",
-     "book": "Complete_Mage",
-     "page": 33,
-     "start": 3578,
-     "end": 3671,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Special Requirement: Knowl-",
-     "book": "Complete_Mage",
-     "page": 34,
-     "start": 3671,
-     "end": 3791,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Special Requirement: Knowledge",
-     "book": "Complete_Mage",
-     "page": 35,
-     "start": 3802,
-     "end": 3881,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Replaces: You do",
+     "name": "Knowledge (arcana) 1",
      "book": "Complete_Mage",
      "page": 36,
-     "start": 3881,
-     "end": 3924,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Special Requirement: Know-",
-     "book": "Complete_Mage",
-     "page": 36,
-     "start": 3924,
-     "end": 4044,
+     "start": 3879,
+     "end": 3999,
      "type": null,
      "prerequisite": null
     },
@@ -4866,16 +4830,7 @@
      "book": "Complete_Psionic",
      "page": 144,
      "start": 19164,
-     "end": 19203,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Wild Talent (Novar): Instead of a",
-     "book": "Complete_Psionic",
-     "page": 144,
-     "start": 19203,
-     "end": 19323,
+     "end": 19284,
      "type": null,
      "prerequisite": null
     },
@@ -8145,15 +8100,6 @@
      "prerequisite": "Int 3, undead type."
     },
     {
-     "name": "FEAT: PLANAR TOUCHSTONE",
-     "book": "Magic_of_Incarnum",
-     "page": 207,
-     "start": 25276,
-     "end": 25396,
-     "type": null,
-     "prerequisite": "Portable object of at least 250 gp value native"
-    },
-    {
      "name": "BONUS SOULMELD",
      "book": "Magic_of_Incarnum",
      "page": 213,
@@ -8231,38 +8177,20 @@
      "prerequisite": null
     },
     {
-     "name": "Level: ist",
-     "book": "PHB2",
-     "page": 36,
-     "start": 4351,
-     "end": 4471,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Level: ist",
-     "book": "PHB2",
-     "page": 40,
-     "start": 5022,
-     "end": 5142,
-     "type": null,
-     "prerequisite": null
-    },
-    {
      "name": "ELUSIVE ATTACK",
      "book": "PHB2",
      "page": 45,
      "start": 5853,
-     "end": 5877,
+     "end": 5873,
      "type": null,
      "prerequisite": null
     },
     {
-     "name": "Level: 12th",
+     "name": "COUNTERATTACK",
      "book": "PHB2",
      "page": 46,
-     "start": 5877,
-     "end": 5997,
+     "start": 5873,
+     "end": 5993,
      "type": null,
      "prerequisite": null
     },
@@ -8272,15 +8200,6 @@
      "page": 52,
      "start": 6739,
      "end": 6859,
-     "type": null,
-     "prerequisite": null
-    },
-    {
-     "name": "Level: Sth",
-     "book": "PHB2",
-     "page": 54,
-     "start": 7067,
-     "end": 7187,
      "type": null,
      "prerequisite": null
     },
@@ -9293,15 +9212,15 @@
      "book": "Races_of_the_Dragon",
      "page": 101,
      "start": 11117,
-     "end": 11151,
+     "end": 11145,
      "type": null,
      "prerequisite": "Dragonblood subtype, 1st level only."
     },
     {
-     "name": "Kobold, 1st level",
+     "name": "WROUGHT",
      "book": "Races_of_the_Dragon",
      "page": 101,
-     "start": 11151,
+     "start": 11145,
      "end": 11170,
      "type": null,
      "prerequisite": null
@@ -11330,11 +11249,11 @@
      "prerequisite": "Least Legacy, legacy ability with a"
     },
     {
-     "name": "NEW FEAT: MONKEY GRIP",
+     "name": "Bloodcrier\u2019s Hammer fell out",
      "book": "Weapons_of_Legacy",
      "page": 29,
-     "start": 2834,
-     "end": 2954,
+     "start": 2828,
+     "end": 2948,
      "type": null,
      "prerequisite": "Base attack bonus +1."
     },

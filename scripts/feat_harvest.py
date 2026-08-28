@@ -86,6 +86,13 @@ def plausible_feat_name(s: str) -> bool:
         return False
     if s.endswith((".", ",", ":", ";")) or SKIP_UP.match(s) or TAG.match(s):
         return False
+    # A mid-name colon means a stat/field line was grabbed, not a feat name
+    # ("Level: 12th", "Special Requirement: Knowledge").
+    if ":" in s:
+        return False
+    # An NPC descriptor ("Kobold, 1st level"), not a feat.
+    if re.search(r"\d(?:st|nd|rd|th)\s+level", s, re.IGNORECASE):
+        return False
     words = [w for w in re.split(r"[\s\u2013-]+", s) if w]
     if not words or not words[0][:1].isupper():
         return False

@@ -40,10 +40,10 @@ power points, range, and save — never invented facts; a field left as
 | Biofeedback | Psychometabolism | Psion/wilder 2, psychic | Psion/wilder 3, | Personal | — | 80 |
 | Bite of the Wolf | Psychometabolism | Psychic warrior 1 | 1 | Personal | — | 80 |
 | Body Adjustment | Psychometabolism (Healing) | Psion/wilder 3, psychic | Psion/wilder 5, | Personal | — | 80 |
-| 30dy Equilibrium | Psychometabolism | Psion/wilder 2, psychic | 3 | Personal | — | 81 |
+| Body Equilibrium | Psychometabolism | Psion/wilder 2, psychic | 3 | Personal | — | 81 |
 | Body Purification | Psychometabolism (Healing) | Psion/wilder 3, psychic | Psion/wilder 5, | Personal | — | 81 |
 | Bolt | Metacreativity (Creation) | Psion/wilder 1 | 1 | 0 ft. | None | 81 |
-| 3rain Lock | Telepathy (Compulsion) [Mind-Affecting] | Telepath 2 | 3 | Medium (100 ft. + 10 ft./ | Will negates | 81 |
+| Brain Lock | Telepathy (Compulsion) [Mind-Affecting] | Telepath 2 | 3 | Medium (100 ft. + 10 ft./ | Will negates | 81 |
 | Breath of the Black Dragon | Psychometabolism [Acid] | Psion/wilder 6, psychic | 11 | Close (25 ft. + 5 ft./2 levels) | Reflex half | 81 |
 | Burst | Psychoportation | Nomad 1, psychic warrior 1 | 1 | Personal | — | 81 |
 | Call to Mind | Telepathy [Mind-Affecting] | Psion/wilder 1 | 1 | Personal | — | 82 |
@@ -92,7 +92,7 @@ power points, range, and save — never invented facts; a field left as
 | Detect Teleportation | Clairsentience | Nomad 1 | 7 | Long (400 ft. + 40 ft./level) | None and Will | 92 |
 | Dimension Slide | Psychoportation (Teleportation) | Psychic warrior 3 | § | Close (25 ft. + 5 ft./2 levels) | — | 92 |
 | Dimension Swap | Psychoportation (Teleportation) | Nomad 2, psychic warrior 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Will negates | 93 |
-| imensional Anchor, Psionic | Psychoportation | Nomad 4 | 7 | Medium (100 ft. + 10 ft./ | None | 93 |
+| Dimensional Anchor, Psionic | Psychoportation | Nomad 4 | 7 | Medium (100 ft. + 10 ft./ | None | 93 |
 | Disable | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 1 | 1 | 20 ft. | Will negates | 93 |
 | Disintegrate, Psionic | Psychoportation | Psion/wilder 6 | 11 | Medium (100 ft. + 10 ft./ | Fortitude partial | 93 |
 | Vismissal, rsioni | Psychoportation | Nomad 4 | 7 | Close (25 ft. + 5 ft./2 levels) | Will negates | 94 |
@@ -122,7 +122,7 @@ power points, range, and save — never invented facts; a field left as
 | Empty Mind | Telepathy [Mind-A ffecting] | Psion/wilder 1, psychic | 1 | Personal | — | 99 |
 | Energy Adaptation | Psychometabolism [see text] | Psion/wilder 4, psychic | 7 | Personal | — | 99 |
 | Enerqu Adaptation, Specified | Psychometabolism [see text] | Psion/wilder 2, psychic | 3 | — | — | 100 |
-| yy | Psychokinesis [see text] | Kineticist 4 | 7 | Long (400 ft. + 40 ft./level | Reflex half or | 100 |
+| Energy Ball | Psychokinesis [see text] | Kineticist 4 | 7 | Long (400 ft. + 40 ft./level | Reflex half or | 100 |
 | Energy Bolt | Psychokinesis [see text] | Psion/wilder 3 | 5 | 120 ft. | Reflex half or | 100 |
 | Energy Burst | Psychokinesis [see text] | Psion/wilder 3 | 5 | 40 ft. | Reflex half or | 101 |
 | Energy Cone | Psychokinesis [see text] | Kineticist 3 | § | 60 ft. | Reflex half or | 101 |
@@ -175,7 +175,7 @@ power points, range, and save — never invented facts; a field left as
 | Inflict Pain | Telepathy [Mind-Affecting] | Psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Will partial; see text | 113 |
 | Insanity | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 7 | 13 | Medium (100 ft. + 10 ft./level) | Will negates | 113 |
 | Intellect Fortress | Psychokinesis | Psion/wilder 4 | 7 | 20 ft. | None | 113 |
-| on Body, Psionic | Metacreativity (Creation) | Psion/wilder 8 | 15 | Personal | — | 113 |
+| Iron Body, Psionic | Metacreativity (Creation) | Psion/wilder 8 | 15 | Personal | — | 113 |
 | Keen Edge, Psionic | Metacreativity | Psion/wilder 3, psychic | 5 | Close (25 ft. + 5 ft./2 levels) | Will negates | 113 |
 | Knock, Psionic | Psychoportation | Psion/wilder 2 | 3 | Medium (100 ft. + 10 ft./ | None | 114 |
 | Know Direction and Location | Clairsentience | Psion/wilder 1 | 1 | Personal | — | 114 |
@@ -260,7 +260,7 @@ power points, range, and save — never invented facts; a field left as
 | Skate | Psychoportation | Psion/wilder 1, psychic | 1 | Personal or touch; see text | None | 132 |
 | Solicit Psicrystal | Telepathy | Psion/wilder 3 | 5 | Close (25 ft. + 5 ft./2 levels) | No | 133 |
 | Steadfast Perception | Clairsentience | Psychic warrior 4 | 7 | Personal | — | 133 |
-| stomp | Psychokinesis | Psychic warrior 1 | 1 | 20 ft. | Reflex negates | 133 |
+| Stomp | Psychokinesis | Psychic warrior 1 | 1 | 20 ft. | Reflex negates | 133 |
 | Strength of My Enemy | Psychometabolism | Psychic warrior 2 | 3 | Personal | — | 133 |
 | Suggestion, Psionic | Telepathy (Compulsion) [Mind-Affecting, Language-Dependent] | Telepath 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Will negates | 133 |
 | Suspend Life | Psychometabolism | Psion/wilder 6, psychic | 11 | Personal | — | 134 |
@@ -276,7 +276,7 @@ power points, range, and save — never invented facts; a field left as
 | Teleport, Psionic Greate: | Psychoportation (Teleportation) | Psion/wilder 8 | 15 | — | — | 136 |
 | Teleportation Circle, Psioni: | Psychoportation (Teleportation) | Nomad 9 | 17 | 0 ft. | None | 136 |
 | Teleport Trigge: | Psychoportation (Teleportation Level: Nomad 5 Display: Material | Nomad 5 | 9 | Personal | — | 136 |
-| lemporal Acceleration | Psychoportation | Psion/wilder 6 | 11 | Personal | — | 136 |
+| Temporal Acceleration | Psychoportation | Psion/wilder 6 | 11 | Personal | — | 136 |
 | Thicken Skin | Psychometabolism | Egoist 1, psychic warrior 1 | | | Personal | — | 137 |
 | Thought Shield | Telepathy [Mind-Affecting] | Psion/wilder 2, psychic | 3 | Personal | — | 137 |
 | Time Hop | Psychoportation | Psion/wilder 3 | 5 | Close (25 ft. + 5 ft./2 levels) | Will negates | 137 |
@@ -288,8 +288,8 @@ power points, range, and save — never invented facts; a field left as
 | Touchsight | Psychometabolism | Psion/wilder 3 | 5 | Personal; see text | — | 138 |
 | Tower of Iron Will | Telepathy [Mind-Affecting] | Psion/wilder 5 | 9 | 10 ft. | None (harmless) | 138 |
 | Trace Teleport | Clairsentience | Psion/wilder 4 | 7 | Close (25 ft. + 5 ft./2 levels) | None | 139 |
-| ue Creation | Metacreativity (Creation) | Shaper 9 | 17, XP | — | — | 139 |
-| ue Metabolism | Psychometabolism | Psion/wilder 8 | 15 | Personal | — | 139 |
+| True Creation | Metacreativity (Creation) | Shaper 9 | 17, XP | — | — | 139 |
+| True Metabolism | Psychometabolism | Psion/wilder 8 | 15 | Personal | — | 139 |
 | True Seeing, Psionic | Clairsentience | Psion/wilder 5 | 9 | Personal | — | 139 |
 | Truevenom | Psychometabolism | Psychic warrior 4 | 7 | Personal | None and Fortitude | 139 |
 | Truevenom Weapon | Psychometabolism (Creation) | Psychic warrior 4 | 7 | Touch | — | 139 |

@@ -396,16 +396,12 @@ field left as `—` is one the OCR did not cleanly yield.
 | Undead Mastery | Divine, Epic | Cha 21, ability | 91 |
 | Unholy Strike | Epic | Smite good class | 91 |
 
-## Complete_Mage — 71 feats
+## Complete_Mage — 67 feats
 
 | Feat | Type | Prerequisite | Page |
 |---|---|---|---|
 | Knowledge skill. Since | — | — | 33 |
-| Replaces: You lose the | — | — | 33 |
-| Special Requirement: Knowl- | — | — | 34 |
-| Special Requirement: Knowledge | — | — | 35 |
-| Replaces: You do | — | — | 36 |
-| Special Requirement: Know- | — | — | 36 |
+| Knowledge (arcana) 1 | — | — | 36 |
 | ACIDIC SPLATTER | RESERVE | Ability to cast 2nd-level spells. | 38 |
 | ALACRITOUS COGITATION | — | Must prepare arcane spells. | 38 |
 | AQUATIC BREATH | RESERVE | Ability to cast 3rd-level spells. | 40 |
@@ -472,7 +468,7 @@ field left as `—` is one the OCR did not cleanly yield.
 | WIND-GUIDED ARROWS | RESERVE | Ability to cast 3rd-level spells. | 49 |
 | WINTER'S BLAST | RESERVE | Ability to cast 2nd-level spells. | 49 |
 
-## Complete_Psionic — 114 feats
+## Complete_Psionic — 113 feats
 
 | Feat | Type | Prerequisite | Page |
 |---|---|---|---|
@@ -583,7 +579,6 @@ field left as `—` is one the OCR did not cleanly yield.
 | House Celare have the Wild Talent | — | — | 143 |
 | OPTIONS | — | — | 144 |
 | Incendar have the Wild Talent (Incen- | — | — | 144 |
-| Wild Talent (Novar): Instead of a | — | — | 144 |
 | FAVORED IN GUILD | — | Membership in a guild. | 152 |
 | Automatic Quicken Power | Metapsionic | Quicken Power, Psicraft 30 ranks, ability | 158 |
 | Epic Power Penetration | Psionic | Greater Power Penetration, Power Penetration. | 158 |
@@ -922,7 +917,7 @@ field left as `—` is one the OCR did not cleanly yield.
 | WOUNDING ATTACK | PSIONIC | Base attack bonus +8. | 52 |
 | HIDDEN TALENT | GENERAL | This feat can only be taken at 1st level. | 67 |
 
-## Magic_of_Incarnum — 51 feats
+## Magic_of_Incarnum — 50 feats
 
 | Feat | Type | Prerequisite | Page |
 |---|---|---|---|
@@ -969,7 +964,6 @@ field left as `—` is one the OCR did not cleanly yield.
 | SOULTOUCHED SPELLCASTING | INCARNUM | Con 13. | 41 |
 | SPLIT CHAKRA | — | — | 41 |
 | UNDEAD MELDSHAPER | MONSTROUS | Int 3, undead type. | 41 |
-| FEAT: PLANAR TOUCHSTONE | — | Portable object of at least 250 gp value native | 207 |
 | BONUS SOULMELD | EPIC | Ability to shape fi ve soulmelds. | 213 |
 | EPIC ESSENTIA | EPIC | Ability to shape three soulmelds. | 213 |
 | EXTRA CHAKRA BIND | EPIC | Three chakra binds, ability to bind soul- | 213 |
@@ -978,17 +972,14 @@ field left as `—` is one the OCR did not cleanly yield.
 | RAPID MELDSHAPING | EPIC | Meldshaper level 12th, Knowledge (arcana) | 213 |
 | REBIND SOULMELD | EPIC | Meldshaper level 12th, Double Chakra, | 214 |
 
-## PHB2 — 113 feats
+## PHB2 — 110 feats
 
 | Feat | Type | Prerequisite | Page |
 |---|---|---|---|
 | Scream your last! | — | — | 34 |
-| Level: ist | — | — | 36 |
-| Level: ist | — | — | 40 |
 | ELUSIVE ATTACK | — | — | 45 |
-| Level: 12th | — | — | 46 |
+| COUNTERATTACK | — | — | 46 |
 | DECISIVE STRIKE | — | — | 52 |
-| Level: Sth | — | — | 54 |
 | Bash, Shield Specializarion | — | — | 75 |
 | ARCANE ACCOMPANIMENT | — | Perform 4 ranks, Arcane Flourish, arcane | 75 |
 | ARCANE CONSUMPTION | — | Arcane Toughness, Toughness, arcane | 75 |
@@ -1106,7 +1097,7 @@ field left as `—` is one the OCR did not cleanly yield.
 | DRAGON TAIL | — | Dragonblood subtype, 1st level only. | 99 |
 | OPTIONS | — | Dragonblood subtype, Handle Animal | 100 |
 | DRAGON WINGS | — | Dragonblood subtype, 1st level only. | 101 |
-| Kobold, 1st level | — | — | 101 |
+| WROUGHT | — | — | 101 |
 | EXTRAORDINARY TRAPSMITH | — | Craft (trapmaking) 9 ranks. | 101 |
 | HEAVYWEIGHT WINGS | — | Str 15, Reinforced Wings, wings and a | 101 |
 | DRAGON WINGS | — | — | 101 |
@@ -1354,7 +1345,7 @@ field left as `—` is one the OCR did not cleanly yield.
 | MASTER LEGACY | LEGACY | Channel Legacy, Least Legacy, Use | 15 |
 | QUICKEN LEGACY | LEGACY | Least Legacy, spell-like or command- | 15 |
 | TRANSFER LEGACY | LEGACY | Least Legacy, legacy ability with a | 16 |
-| NEW FEAT: MONKEY GRIP | — | Base attack bonus +1. | 29 |
+| Bloodcrier’s Hammer fell out | — | Base attack bonus +1. | 29 |
 | ZEN ARCHERY | GENERAL | Wis 13, base attack bonus +1. | 145 |
 | Able Sniper | — | Dex 13, Hide 5 ranks. | 153 |
 | Plunging Shot | — | Dex 13, Point Blank Shot. | 153 |

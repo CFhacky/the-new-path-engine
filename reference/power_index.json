@@ -346,7 +346,7 @@
      "save": null
     },
     {
-     "name": "30dy Equilibrium",
+     "name": "Body Equilibrium",
      "book": "Expanded Psionics Handbook",
      "page": 81,
      "start": 12610,
@@ -394,7 +394,7 @@
      "save": "None"
     },
     {
-     "name": "3rain Lock",
+     "name": "Brain Lock",
      "book": "Expanded Psionics Handbook",
      "page": 81,
      "start": 12708,
@@ -1178,7 +1178,7 @@
      "save": "Will negates"
     },
     {
-     "name": "imensional Anchor, Psionic",
+     "name": "Dimensional Anchor, Psionic",
      "book": "Expanded Psionics Handbook",
      "page": 93,
      "start": 15500,
@@ -1658,7 +1658,7 @@
      "save": null
     },
     {
-     "name": "yy",
+     "name": "Energy Ball",
      "book": "Expanded Psionics Handbook",
      "page": 100,
      "start": 17086,
@@ -2506,7 +2506,7 @@
      "save": "None"
     },
     {
-     "name": "on Body, Psionic",
+     "name": "Iron Body, Psionic",
      "book": "Expanded Psionics Handbook",
      "page": 113,
      "start": 20115,
@@ -3866,7 +3866,7 @@
      "save": null
     },
     {
-     "name": "stomp",
+     "name": "Stomp",
      "book": "Expanded Psionics Handbook",
      "page": 133,
      "start": 24673,
@@ -4122,7 +4122,7 @@
      "save": null
     },
     {
-     "name": "lemporal Acceleration",
+     "name": "Temporal Acceleration",
      "book": "Expanded Psionics Handbook",
      "page": 136,
      "start": 25399,
@@ -4314,7 +4314,7 @@
      "save": "None"
     },
     {
-     "name": "ue Creation",
+     "name": "True Creation",
      "book": "Expanded Psionics Handbook",
      "page": 139,
      "start": 25970,
@@ -4330,7 +4330,7 @@
      "save": null
     },
     {
-     "name": "ue Metabolism",
+     "name": "True Metabolism",
      "book": "Expanded Psionics Handbook",
      "page": 139,
      "start": 25986,

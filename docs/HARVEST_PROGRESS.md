@@ -227,25 +227,30 @@ asks for them here.
 
 ## NEEDS CHAD
 
-- **(Logged, non-blocking) Raw-OCR fidelity vs. obvious fixes.** The harvest
-  deliberately keeps obvious OCR misreads verbatim — e.g. a caster level read
-  as `sth` for `5th`, an em-dash rendered as `�`, a name like `Runestatf` for
-  `Runestaff`, and psionic power names like `30dy Equilibrium` for `Body
-  Equilibrium` or a wholly illegible `yy` (a real Kineticist-4 power whose name
-  line the OCR could not resolve — kept, because dropping it would lose a real
-  power, and its page provenance recovers the name). This follows the
-  harvest-RAW discipline (the PDF is the court of
-  appeal; per-entry page provenance lets anyone recover the true value). A
-  future session should **not** "correct" these into the index — that would be
-  inventing content the source did not cleanly yield. If Chad wants a
-  normalization pass instead, that is a separate, explicitly-opted-in feature
-  (e.g. an `errata` sidecar), not a silent edit of the harvest. No action
-  needed unless Chad rules otherwise.
+- **(RESOLVED 2026-08-27) Raw-OCR fidelity vs. hand repair.** Chad ruled: repair
+  the garbled OCR and entries by hand rather than leave raw junk. The
+  harvest-RAW default is now overridden BY THAT INSTRUCTION — but only for
+  VERIFIED corrections: a garble is fixed to the value its own surrounding text
+  (description / class / level / page) proves, never guessed; anything that
+  cannot be resolved from the source is FLAGGED, not invented. The repair method
+  and every fix are recorded in [OCR_REPAIRS.md](OCR_REPAIRS.md): source `.md`
+  name lines are corrected in place (so every future harvest is clean, since
+  `I:\Sourcebooks` is not version-controlled and that log is the re-apply list),
+  and detector-level false positives are fixed in the scripts. First pass fixed
+  9 XPH power names and 8 feat false positives; 5 fragmentary creature names are
+  flagged for PDF verification.
 
 ---
 
 ## LOG
 
+- **2026-08-27** — Hand-repair pass (Chad's direction). Fixed 9 OCR-mangled
+  power names in the XPH source `.md` (verified from each block's own text;
+  e.g. `yy` → Energy Ball, `ue Creation` → True Creation) and rebuilt
+  `power_index`; tightened `feat_harvest`'s name test to drop 8 field/NPC-line
+  false positives (1253 → 1244 feats). All fixes recorded in
+  [OCR_REPAIRS.md](OCR_REPAIRS.md); 5 fragmentary creature names flagged there
+  for PDF verification (not guessed).
 - **2026-08-27** — Added `gurps_magic_harvest.py` (Chad's direction — start the
   GURPS shelf, the biggest untouched high-value body for a D&D/GURPS hybrid):
   harvested **GURPS Magic** into a NEW index, `reference/gurps_spell_index`,
