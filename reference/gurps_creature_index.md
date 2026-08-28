@@ -97,14 +97,13 @@ cleanly yield.
 | The Drones | 10 | 10 | 7 | 10 | — | 7 | 7 | 5.00 | 5 | 0 | — | 13 |
 | Waste-Stalker | 15 | 12 | 3 | 14 | — | 13 | 13 | 6.50 | 7 | 0 | — | 15 |
 
-## GURPS Creatures of the Night 5 — 8 creatures
+## GURPS Creatures of the Night 5 — 7 creatures
 
 *Source: GURPS Creatures of the Night Vol.5 (SJGames, 4e).*  
-*Harvest: ok — 8 creatures from GURPS 4e - Creatures of the Night Vol.5.md.*
+*Harvest: ok — 7 creatures from GURPS 4e - Creatures of the Night Vol.5.md.*
 
 | Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Warrior | 13 | 11 | 7 | 13 | — | 13 | 10 | 6.00 | 6 | 0 | — | 5 |
 | Diver | 11 | 12 | 8 | 14 | — | 13 | 12 | 6.5 | 6 | 0 | — | 5 |
 | Monitor | 10 | 10 | 13 | 13 | — | 13 | 13 | 5.75 | 5 | 0 | — | 5 |
 | Dreadstalk | 15 | 9 | 4 | 12 | — | 10 | 12 | 5.25 | 1 | +1 | — | 7 |
@@ -112,3 +111,131 @@ cleanly yield.
 | Moon Guire | 15 | 9 | 6 | 12 | — | 13 | 11 | 5.25 | 5 | — | — | 11 |
 | Stealth Golem | 21 | 16 | 11 | 14 | — | 13 | 16 | 9.00 | 9 | 0 | 4 | 14 |
 | Watchtower Spirit | 0 | 10 | 16 | 13 | 15 | 18 | 16 | 5.75 | 0 | +2 | — | 19 |
+
+## GURPS Lands Out Of Time — 6 creatures
+
+*Source: GURPS Lands Out of Time (SJGames, 4e), prehistoric bestiary.*  
+*Harvest: ok — 6 creatures from GURPS 4e - Lands Out Of Time.md.*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Sauropods | 72 | 9 | 2 | 11 | — | 9 | 9 | 5.25 | 5 | +7 | 4 | 23 |
+| Ceratopsians | 14 | 13 | 2 | 10 | — | 10 | 10 | 5.75 | 10 | +1 | 4 | 24 |
+| Ankylosaurs | 41 | 10 | 2 | 11 | — | 10 | 10 | 5.25 | 5 | +4 | 9 | 25 |
+| Stegosaurs | 27 | 10 | 2 | 11 | — | 10 | 10 | 5.25 | 5 | +2 | 2 | 25 |
+| Theropods | 36 | 11 | 2 | 11 | — | 10 | 10 | 5.5 | 11 | +5 | 2 | 26 |
+| Pterosaurs | 9 | 12 | 2 | 11 | — | 11 | 12 | 5.75 | 2 | +5 | — | 28 |
+
+## GURPS Banestorm — 19 creatures
+
+*Source: GURPS Banestorm (SJGames, 4e), bestiary.*  
+*Harvest: ok — 19 creatures from GURPS 4e - Banestorm.md.*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bushwolves | 8 | 10 | 3 | 11 | — | 11 | 14 | 5.25 | 6 | +0 | 1 | 221 |
+| Caustiguses | 14 | 14 | 10 | 13 | — | 10 | 12 | 6.75 | 6 | +0 | — | 222 |
+| Giant Spiders | 17 | 15 | 2 | 13 | — | 10 | 13 | 7 | 7 | +0 | — | 222 |
+| Harpies | 12 | 13 | 5 | 13 | — | 10 | 12 | 6.5 | 3 | +0 | 1 | 223 |
+| Hellsharks | 60 | 13 | 2 | 12 | — | 10 | 10 | 6.25 | 10 | +6 | — | 223 |
+| Hippogriffs | 18 | 12 | 3 | 12 | — | 11 | 12 | 6 | 6 | +1 | — | 224 |
+| Hydras | 18 | 12 | 2 | 13 | — | 13 | 12 | 6.25 | 6 | +1 | 3 | 224 |
+| Krakens | 80 | 13 | 2 | 12 | 160 | 11 | 12 | 6.25 | 6 | +9 | — | 225 |
+| Nightstalkers | 25 | 12 | 4 | 13 | — | 12 | 11 | 6.25 | 7 | +2 | — | 225 |
+| Paladins | 15 | 12 | 2 | 11 | — | 10 | 10 | 3 | 3 | +1 | 1 | 225 |
+| Pegasi | 20 | 14 | 6 | 12 | — | 11 | 13 | 6.5 | 7 | +1 | — | 226 |
+| Reeks | 4 | 5 | 2 | 13 | 13 | 8 | 13 | 3.5 | 1 | 0 | — | 226 |
+| Striders | 20 | 15 | 3 | 11 | — | 10 | 12 | 8 | 9 | +1 | — | 226 |
+| Treetippers | 27 | 10 | 3 | 11 | 34 | 10 | 12 | 5.25 | 4 | +1 | 3 | 227 |
+| Unicorns | 20 | 15 | 5 | 14 | — | 13 | 18 | 9 | 9 | +1 | — | 227 |
+| Wyverns | 19 | 13 | 5 | 12 | — | 10 | 12 | 6.25 | 3 | +3 | — | 228 |
+| Hardings | 11 | 11 | 3 | 12 | — | 11 | 12 | 5.75 | 7 | +0 | — | 231 |
+| Milkfish | 26 | 9 | 3 | 11 | — | 10 | 12 | 3 | 3 | +1 | — | 231 |
+| Woolens | 9 | 13 | 3 | 12 | — | 10 | 12 | 6.25 | 8 | +0 | — | 231 |
+
+## GURPS Dungeon Fantasy 5 - Allies — 33 creatures
+
+*Source: GURPS Dungeon Fantasy 5: Allies (SJGames, 4e), animal companions.*  
+*Harvest: ok — 33 creatures from GURPS 4e - Dungeon Fantasy 05 - Allies.md.*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Anaconda | 25 | 14 | 6 | 12 | 25 | 12 | 11 | 6.00 | 6 | — | 3 | 6 |
+| Bear | 27 | 12 | 6 | 12 | 27 | 13 | 12 | 6.00 | 7 | — | 3 | 6 |
+| Boar | 21 | 13 | 6 | 14 | 26 | 15 | 13 | 7.00 | 8 | — | 3 | 6 |
+| Giant Eagle | 13 | 14 | 6 | 12 | 13 | 11 | 14 | 7.00 | 1 | 0 | 1 | 7 |
+| Gorilla | 17 | 13 | 6 | 12 | 17 | 11 | 11 | 6.00 | 7 | — | 2 | 7 |
+| Hound | 13 | 14 | 6 | 14 | 15 | 11 | 14 | 7.00 | 8 | 0 | 1 | 8 |
+| Insect Swarm | 2 | 12 | 6 | 12 | 12 | 10 | 10 | 6.00 | . | 0 | 0 | 9 |
+| Kangaroo | 13 | 12 | 6 | 12 | 17 | 11 | 12 | 6.00 | 11 | 0 | 1 | 9 |
+| Kraken | 21 | 12 | 6 | 12 | 21 | 12 | 10 | 6.00 | — | — | 2 | 10 |
+| Shark | 36 | 13 | 6 | 14 | 36 | 12 | 11 | 7.00 | — | — | 2 | 10 |
+| Stallion | 27 | 12 | 6 | 12 | 27 | 11 | 12 | 6.00 | 8 | — | 1 | 11 |
+| Wolverine | 11 | 12 | 6 | 14 | 11 | 13 | 12 | 6.00 | 6 | -1 | 0 | 11 |
+| Divine Servitor | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 6.00 | 6 | 0 | 0 | 12 |
+| Water | 12 | 13 | 13 | 13 | 12 | 14 | 13 | 6.00 | 6 | 0 | 3 | 19 |
+| Bat | 2 | 12 | 10 | 12 | 7 | 10 | 12 | 6.00 | — | -5 | 0 | 21 |
+| Cat | 4 | 14 | 10 | 12 | 9 | 11 | 12 | 6.00 | 10 | -3 | 0 | 22 |
+| Chimp | 9 | 12 | 10 | 12 | 12 | 10 | 11 | 6.00 | 6 | 0 | 0 | 22 |
+| Dog | 10 | 12 | 10 | 12 | 13 | 11 | 14 | 6.00 | 6 | 0 | 0 | 22 |
+| Hawk | 3 | 14 | 10 | 12 | 8 | 10 | 14 | 7.00 | — | -4 | 0 | 23 |
+| Macaw | 3 | 12 | 10 | 12 | 8 | 12 | 12 | 6.00 | — | -3 | 0 | 23 |
+| Owl | 3 | 12 | 10 | 12 | 8 | 12 | 12 | 6.00 | 1 | -4 | 0 | 23 |
+| Rabbit | 3 | 13 | 10 | 12 | 8 | 10 | 13 | 7.00 | 10 | -4 | 0 | 24 |
+| Rat | 1 | 12 | 10 | 14 | 6 | 12 | 12 | 6.00 | 6 | -7 | 0 | 24 |
+| Giant Spider | 5 | 12 | 10 | 12 | 9 | 10 | 10 | 6.00 | 6 | -1 | 1 | 25 |
+| Viper | 5 | 13 | 10 | 12 | 10 | 11 | 11 | 6.00 | 6 | -2 | 0 | 25 |
+| Hellhound | 11 | 12 | 10 | 12 | 13 | 11 | 11 | 6.00 | 6 | 0 | 1 | 26 |
+| Ice Weasel | 5 | 13 | 10 | 12 | 10 | 12 | 12 | 6.00 | 6 | -4 | 0 | 26 |
+| Imp | 7 | 12 | 10 | 12 | 11 | 10 | 11 | 6.00 | — | 0 | 0 | 26 |
+| Salamander | 5 | 12 | 10 | 12 | 10 | 12 | 11 | 6.00 | 6 | -3 | 0 | 27 |
+| Shoulder Dragon | 5 | 12 | 10 | 12 | 10 | 12 | 13 | 6.00 | — | -4 | 1 | 27 |
+| Sylph | 0 | 12 | 10 | 12 | 10 | 11 | 12 | 6.00 | — | -3 | 0 | 28 |
+| Talus | 13 | 12 | 10 | 12 | 15 | 11 | 10 | 5.00 | 5 | -3 | 5 | 28 |
+| Undine | 5 | 12 | 10 | 12 | 10 | 10 | 11 | 6.00 | 6 | -3 | 0 | 29 |
+
+## GURPS Dungeon Fantasy 9 - Summoners — 17 creatures
+
+*Source: GURPS Dungeon Fantasy 9: Summoners (SJGames, 4e), summoned creatures.*  
+*Harvest: ok — 17 creatures from GURPS 4e - Dungeon Fantasy 09 - Summoners.md.*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Embodied Animal-Spirit | 10 | 11 | 8 | 12 | 10 | 8 | 12 | 6.00 | 6 | 0 | 0 | 21 |
+| Lesser Ghost | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 5.00 | 5 | 0 | 0 | 22 |
+| Major Ghost | 10 | 10 | 10 | 13 | 10 | 16 | 12 | 5.00 | 5 | 0 | 0 | 22 |
+| Household Guardian | 12 | 11 | 12 | 13 | 12 | 14 | 12 | 6.00 | 6 | 0 | — | 23 |
+| Spirit Of Place | 17 | 12 | 14 | 14 | — | 16 | 14 | 6.50 | 6 | — | 4 | 24 |
+| Servitor Skeleton | 10 | 13 | 8 | 11 | 10 | 9 | 8 | 7.00 | 6 | 0 | 3 | 26 |
+| Servitor Zombie | 14 | 10 | 8 | 12 | 19 | 11 | 9 | 5.50 | 5 | 0 | 3 | 26 |
+| Air Elementals | 6 | 9 | 8 | 7 | 8 | 8 | 8 | 4.00 | — | -1 | 0 | 27 |
+| Earth Elementals | 11 | 8 | 6 | 10 | 11 | 6 | 6 | 4.50 | 4 | -1 | 2 | 27 |
+| Fire Elementals | 8 | 9 | 8 | 7 | 10 | 8 | 8 | 4.00 | 4 | -1 | 0 | 28 |
+| Metal Elementals | 10 | 8 | 6 | 10 | 10 | 6 | 6 | 4.50 | 4 | -1 | 4 | 29 |
+| Water Elementals | 7 | 8 | 7 | 9 | 7 | 7 | 7 | 4.25 | — | -1 | 0 | 30 |
+| Wood Elementals | 10 | 9 | 6 | 10 | 10 | 6 | 6 | 4.75 | 4 | -1 | 0 | 31 |
+| Petty Demon | 9 | 10 | 8 | 11 | 9 | 9 | 10 | 5.00 | 5 | -1 | 3 | 32 |
+| Devilkin | 7 | 13 | 10 | 12 | 7 | 10 | 10 | 6.00 | — | -3 | — | 33 |
+| Standard Demon | 17 | 12 | 10 | 14 | 25 | 10 | 10 | 6.50 | — | 0 | — | 34 |
+| Angelic Emissary | 18 | 12 | 12 | 15 | 25 | 15 | 12 | 7.00 | — | 0 | — | 35 |
+
+## GURPS Big Lizzie — 13 creatures
+
+*Source: GURPS Big Lizzie (SJGames, 4e), bestiary.*  
+*Harvest: ok — 13 creatures from GURPS 4e - Big Lizzie.md.*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bat | 13 | 12 | 2 | 11 | 11 | 11 | 12 | 5.75 | 2 | — | 1 | 19 |
+| Big-Neck Whale | 31 | 13 | 2 | 10 | 31 | 10 | 10 | 5.75 | 1 | — | 1 | 19 |
+| Croc | 21 | 13 | 3 | 14 | 21 | 11 | 12 | 6.75 | 8 | — | 4 | 19 |
+| Dragon | 38 | 10 | 1 | 11 | 38 | 10 | 10 | 5.25 | 4 | — | 4 | 20 |
+| Duck Mouth | 30 | 14 | 1 | 12 | 30 | 9 | 11 | 6.50 | 6 | — | 3 | 20 |
+| Great Snake | 19 | 12 | 2 | 11 | 19 | 10 | 19 | 5.75 | 4 | — | 0 | 20 |
+| Gull | 6 | 14 | 2 | 11 | 6 | 11 | 11 | 6.25 | 1 | — | 1 | 20 |
+| Horse | 21 | 9 | 3 | 11 | 21 | 10 | 12 | 5.00 | 6 | — | 0 | 20 |
+| Jawbone | 28 | 11 | 2 | 11 | 28 | 10 | 10 | 5.50 | 11 | — | 2 | 21 |
+| Mammoth | 54 | 12 | 4 | 12 | 54 | 11 | 11 | 6.00 | 8 | — | 2 | 21 |
+| Snarler | 16 | 16 | 3 | 12 | 16 | 11 | 12 | 7.00 | 10 | 0 | 1 | 22 |
+| Toe Ponies | 18 | 10 | 3 | 11 | 18 | 11 | 11 | 5.25 | 7 | — | 0 | 22 |
+| Turtle | 17 | 10 | 3 | 16 | 17 | 12 | 11 | 6.50 | 5 | — | 2 | 22 |

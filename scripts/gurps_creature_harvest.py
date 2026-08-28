@@ -69,7 +69,14 @@ NAME_REJECT = re.compile(
     r"^(THE MONSTERS|CHAPTER|GURPS|STEVE JACKSON|ABOUT THE|CONTENTS|"
     r"INTRODUCTION|INDEX|THE END|APPENDIX|BESTIARY|THE AUTHORS?|"
     r"PLAYTESTERS?|ILLUSTRAT|DEDICAT|GLOSSARY|NEW |WORLDS?|EQUIPMENT|"
-    r"IMAGINARY|ARCANA|SPECIES|TEMPLATES?|CAMPAIGN|SETTING)\b")
+    r"IMAGINARY|ARCANA|SPECIES|TEMPLATES?|CAMPAIGN|SETTING|"
+    # section / NPC-category / location headers that carry a stat block nearby
+    r"CREATURES?$|CHARACTERS?|WARRIORS?$|SPELLCASTERS?|THIEVES|NPCS?|"
+    r"SERVITORS|MONSTRES|MASTERING|TALES|EXPLORING|BENEATH|HERE BE|"
+    r"LANDS OUT|SPIRITS AND|THE LEGION|THE NORTHLAND|THE PRIESTHOOD|"
+    r"KNIGHTS AND|THE TROOPS|THE RAVENS|THE GUARD|MILITIA|BANDITS|"
+    r"DECK |CABIN|MASTERS?|COMBATANTS?|VILLAINS?|ALLIES$|HENCHMEN$|"
+    r"OTHER |THINGS |DRUIDIC|FAMILIARS$|ELEMENTALS$|WISDOM$)\b")
 
 
 @dataclass
@@ -97,6 +104,21 @@ class GurpsCreature:
     def quick_fields(self) -> int:
         return sum(1 for k in ("ST", "DX", "IQ", "HT", "HP")
                    if getattr(self, k) is not None)
+
+
+def _finalize(creatures: List["GurpsCreature"]) -> List["GurpsCreature"]:
+    """Drop running headers (a name that recurs 3+ times is a page/section
+    header, not a creature) and collapse exact duplicate names to the first."""
+    from collections import Counter
+    cnt = Counter(c.name.lower() for c in creatures)
+    out, seen = [], set()
+    for c in creatures:
+        key = c.name.lower()
+        if cnt[key] >= 3 or key in seen:
+            continue
+        seen.add(key)
+        out.append(c)
+    return out
 
 
 def _is_block(lines: List[str], i: int, n: int) -> bool:
@@ -182,7 +204,7 @@ def detect_gurps_creatures(lines: List[str], pages: List[int], book: str) -> Lis
         c = GurpsCreature(name=name, book=book, page=pages[top], start=top, end=e)
         parse_attrs(c, lines[st_idx:e])   # attributes are at/after the ST line
         creatures.append(c)
-    return creatures
+    return _finalize(creatures)
 
 
 # A second GURPS stat-block format (Fantasy, Creatures of the Night): the
@@ -218,7 +240,7 @@ def detect_gurps_inline(lines: List[str], pages: List[int], book: str) -> List[G
                 if getattr(c, attr) is None:
                     setattr(c, attr, val.rstrip("."))   # drop the sentence period
         creatures.append(c)
-    return creatures
+    return _finalize(creatures)
 
 
 # A third format (GURPS Fantasy): inline stats but Title-Case creature names,
@@ -297,7 +319,7 @@ def detect_gurps_titlecase(lines: List[str], pages: List[int], book: str) -> Lis
                 if getattr(c, attr) is None:
                     setattr(c, attr, val.rstrip("."))   # drop the sentence period
         creatures.append(c)
-    return creatures
+    return _finalize(creatures)
 
 
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[GurpsCreature]]] = {
@@ -342,6 +364,21 @@ SOURCES: List[Source] = [
     Source("cotn5", "GURPS Creatures of the Night 5",
            Path(f"{_G}/GURPS 4e - Creatures of the Night Vol.5.md"),
            "GURPS Creatures of the Night Vol.5 (SJGames, 4e)", "gurps_inline"),
+    Source("lands", "GURPS Lands Out Of Time",
+           Path(f"{_G}/GURPS 4e - Lands Out Of Time.md"),
+           "GURPS Lands Out of Time (SJGames, 4e), prehistoric bestiary", "gurps_inline"),
+    Source("banestorm", "GURPS Banestorm",
+           Path(f"{_G}/GURPS 4e - Banestorm.md"),
+           "GURPS Banestorm (SJGames, 4e), bestiary", "gurps_inline"),
+    Source("dfallies", "GURPS Dungeon Fantasy 5 - Allies",
+           Path(f"{_G}/GURPS 4e - Dungeon Fantasy 05 - Allies.md"),
+           "GURPS Dungeon Fantasy 5: Allies (SJGames, 4e), animal companions", "gurps"),
+    Source("dfsummon", "GURPS Dungeon Fantasy 9 - Summoners",
+           Path(f"{_G}/GURPS 4e - Dungeon Fantasy 09 - Summoners.md"),
+           "GURPS Dungeon Fantasy 9: Summoners (SJGames, 4e), summoned creatures", "gurps"),
+    Source("biglizzie", "GURPS Big Lizzie",
+           Path(f"{_G}/GURPS 4e - Big Lizzie.md"),
+           "GURPS Big Lizzie (SJGames, 4e), bestiary", "gurps"),
 ]
 
 
