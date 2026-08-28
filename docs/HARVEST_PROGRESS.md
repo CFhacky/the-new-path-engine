@@ -18,7 +18,7 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-27).** Nine reference index families, ~6,950 entries:
+**At a glance (2026-08-27).** Nine reference index families, ~7,400 entries:
 terms/affixes (143), D&D creatures (1498), magic items (1421), psionic powers
 (409), martial maneuvers (171), feats (1244), D&D spells (1841), GURPS spells
 (557), GURPS creatures (139). Each has a `--selftest` that passes. Run any
