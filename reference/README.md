@@ -19,6 +19,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `magic_item_index.{json,md}` | magic-item index (price, slot, aura, CL) | 1058 | `scripts/item_harvest.py` | Magic Item Compendium + DMG v3.5 specific/wondrous items |
 | `power_index.{json,md}` | psionic-power index (discipline, level, PP) | 409 | `scripts/power_harvest.py` | Expanded Psionics Handbook + Complete Psionic |
 | `maneuver_index.{json,md}` | Tome of Battle maneuver/stance index | 171 | `scripts/maneuver_harvest.py` | Tome of Battle: Book of Nine Swords |
+| `gurps_spell_index.{json,md}` | GURPS Magic spell index (class, cost, casting time, prereqs) | 520 | `scripts/gurps_magic_harvest.py` | GURPS Magic (4e) — the GURPS magic system, separate from the D&D `spell_index` |
 | `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
 
 ## How to use them

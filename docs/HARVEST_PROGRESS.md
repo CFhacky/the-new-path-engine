@@ -18,11 +18,11 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-27).** Seven reference index families, ~6,350 entries:
+**At a glance (2026-08-27).** Eight reference index families, ~6,900 entries:
 terms/affixes (143), creatures (1509), magic items (1058), psionic powers
-(409), martial maneuvers (171), feats (1253), spells (1841). Each has a
-`--selftest` that passes. Run any `scripts/*_harvest.py` with no args to
-rebuild its index.
+(409), martial maneuvers (171), feats (1253), D&D spells (1841), GURPS spells
+(520). Each has a `--selftest` that passes. Run any `scripts/*_harvest.py` with
+no args to rebuild its index.
 
 **This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
 ~1,700 OCR'd `.md` extractions; these indices harvest the mainline 3.5e systems
@@ -44,6 +44,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
+| `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | `_text\GURPS\GURPS 4e\GURPS 4e - Magic.md` | 520 GURPS spells (505 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -86,7 +87,7 @@ feats do too):
 | D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
 | D&D 5e | 35 | none (wrong edition for a 3.5/GURPS game — low priority) |
 | AD&D | 19 | none (older edition — low priority) |
-| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers only (`term_harvest`) — the GURPS side is barely touched |
+| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (520 spells, `gurps_magic_harvest`)**; rest of the shelf still open (Dungeon Fantasy, Thaumatology, creature books, Low-Tech gear) |
 | Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
 | Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
 | Forgotten Realms | 71 | none (setting + some crunch) |
@@ -245,6 +246,16 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Added `gurps_magic_harvest.py` (Chad's direction — start the
+  GURPS shelf, the biggest untouched high-value body for a D&D/GURPS hybrid):
+  harvested **GURPS Magic** into a NEW index, `reference/gurps_spell_index`,
+  520 spells (505 with 3+ fields), the GURPS magic system kept separate from the
+  D&D `spell_index`. Class-anchored detection (Regular/Area/Missile/...) proven
+  by a spell field below + a Title-Case name above; dedupes the per-college
+  listings by name (keeping the richest entry); captures the (VH) Very-Hard
+  difficulty marker as a field and strips it from the name while leaving genuine
+  parentheticals ("Repel (Animal)") intact. GURPS Magic's OCR is clean, so no
+  per-entry hand-repair was needed here (0 garbled names/fields).
 - **2026-08-27** — Added Dragon Magic (2006) to `spell_harvest.py`: +37 clean
   spells (index 1804 → 1841), genuinely new (post-Compendium). Swept the other
   spell-bearing books and found the 2004-2005 ones overlap the Compendium with
