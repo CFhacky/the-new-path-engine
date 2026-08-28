@@ -10,8 +10,12 @@ OCR'd as column-dumps; a field left `—` is one the source does not carry
 (e.g. Rogue Trader/Only War/Black Crusade have no Cost column; Deathwatch
 grades by Req/Renown, not Cost/Availability). Rows marked **(soft)** had
 their AP left as a dash in the source, or were recovered from an
-OCR-scrambled block — verify against the book. Use `--export "NAME"` for
-the translator packet.
+OCR-scrambled block — verify against the book. Coverage is the five core
+rulebooks PLUS the armour-bearing supplements (Inquisitor's/Radical's
+Handbooks, Ascension, Blood of Martyrs, Hostile Acquisitions, First
+Founding, Tome of Blood/Fate); force fields, upgrades and armour whose AP
+the source leaves variable are left to their own indices. Use
+`--export "NAME"` for the translator packet.
 
 ## Dark Heresy — Core Rulebook — 28 armour  *(system: WH40K Roleplay)*
 
@@ -154,3 +158,134 @@ the translator packet.
 | Legion Terminator Armour | Power Armour | All | 14 | 450 kg | — | Near Unique | — | — | 175 | — |
 | Obsidian Armour | Exotic Armour | Arms, Body, Legs | 7 | 4 kg | — | Unique | — | — | 175 | Obsidian Armour negates the Force Quality in any weapons used against its wearer |
 | Xenos Hides | Exotic Armour | Arms, Body | 6 | 9.5 kg | — | Rare | — | — | 175 | — |
+
+## Dark Heresy — The Inquisitor's Handbook — 17 armour  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Inquisitor's Handbook (FFG, WH40K Roleplay), Armoury (world-type armour tables).*  
+*Harvest: ok — 17 armour from Dark Heresy - The Inquisitor's Handbook.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Banded Armour | — | Arms, Body, Legs | 3 | 12kg | 50 | Rare | — | — | 102 | — |
+| Bone | — | Arms, Body, Legs | 2 | 12kg | 20 | Average | — | — | 102 | — |
+| Bracers | — | Arms | 1 | 0.5kg | 10 | Plentiful | — | — | 102 | — |
+| Heavy Plate | — | Head, Arms, Body, Legs | 6 | 28kg | 300 | Scarce | — | — | 102 | — |
+| Scale Armour | — | Arms, Body, Legs | 3 | 15kg | 1000 | Very Rare | — | — | 102 | — |
+| Scrag Furs | — | Body | 2 | 7kg | 5 | Common | — | — | 102 | — |
+| Silkmail | — | Arms, Body, Legs | 3 | 5kg | 150 | Rare | — | — | 102 | — |
+| Hardened Body Glove | Advanced Armour | Arms, Body, Legs | 3 | 5kg | 300 | Rare | — | — | 126 | — |
+| Volcanis Shroud | Advanced Armour | Head, Arms, Body, Legs | 3 (6) | 20kg | 350 | Average | — | — | 126 | — |
+| Magistratum Carapace | Carapace Armour | Head, Arms, Body, Legs | 5 | 16kg | 1,100 | Rare | — | — | 126 | — |
+| Mirker’s Greaves | Primitive Armour | Legs | 4 | 8kg | 50 | Average | — | — | 126 | — |
+| Environmental Body Glove | Advanced Armour | Head, Arms, Body, Legs | 1 | 5kg | 625 | Rare | — | — | 152 | — |
+| Slither Boots | Advanced Armour | Legs | 3 | 6kg | 500 | Rare | — | — | 152 | — |
+| Wind Armour | Advanced Armour | Head, Arms, Body, Legs | 3 | 18kg | 2,200 | Rare | — | — | 152 | — |
+| Windrider Carapace | Carapace Armour | Body | 6 | 6kg | 800 | Scarce | — | — | 182 | — |
+| Flak Greatcoat | Flak Armour | Arms, Body | 4 | 9kg | 150 | Average | — | — | 182 | — |
+| Lidhl Power Armour | Power Armour | Head, Arms, Body, Legs | 6 | 40kg | 8,000 | Very Rare | — | — | 182 | — |
+
+## Dark Heresy — The Radical's Handbook — 6 armour  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Radical's Handbook (FFG, WH40K Roleplay), Armoury, Table 4-6: Armour & Table 6-2: Xenos Armour.*  
+*Harvest: ok — 6 armour from Dark Heresy - The Radical's Handbook.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Cameleoline Combat Armour | — | Head, Body, Arms, Legs | 5 | 17 kg | 1000 | Very Rare | — | — | 155 | — |
+| Mask Bodyglove | — | Body, Arms, Legs | 2 | 6 kg | 650 | Rare | — | — | 155 | — |
+| Blur Field | — | Head, Body, Arms, Legs | 2 | 7 kg | 750 | Rare | — | — | 155 | — |
+| Shock Carapace | — | Body Arms, Legs | 6 | 19 kg | 5000 | — | — | — | 155 | — |
+| Holo-Armour | — | All | 4 | 4 kg | Special | — | — | — | 203 | — |
+| Mecronid Armour | — | All | 7 | 2 kg | 15,000 | Very Rare | — | — | 203 | — |
+
+## Dark Heresy — Ascension — 3 armour  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Ascension (FFG, WH40K Roleplay), Armoury, Table 6-3: Armour.*  
+*Harvest: ok — 3 armour from Dark Heresy - Ascension.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Cadian-pattern “Kasrkin” Storm Trooper Carapace | — | All | 6 | 15 kg | — | Very Rare | — | — | 144 | — |
+| Hyrdraphur-pattern Judge’s Carapace | — | All | 5 | 15.5 kg | — | Very Rare | — | — | 144 | — |
+| Ignatus-pattern Power Armour | — | All | 8 | 65 kg | — | Extremely Rare | — | — | 144 | — |
+
+## Dark Heresy — Blood of Martyrs — 5 armour  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Blood of Martyrs (FFG, WH40K Roleplay), Armoury, Table 5-3: Ecclesiarchal Armour.*  
+*Harvest: ok — 5 armour from Dark Heresy - Blood of Martyrs.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Blessed Sackcloth Tunic | — | Body | 2 | 4 kg | 500 | Rare | — | — | 119 | — |
+| Hospitaller Carapace | — | All | 5 (4 on Head) | 20 kg | 10,000 | Very Rare | — | — | 119 | — |
+| Sanctif ed Carapace | — | All | 6 | 18 kg | 6,000 | Very Rare | — | — | 119 | — |
+| Sanctif ed Chain Coat | — | Arms, Body | 4 | 15 kg | 750 | Rare | — | — | 119 | — |
+| Shield Robes | — | Arms, Legs, Body | 3 | 2 kg | 5,000 | Very Rare | — | — | 119 | — |
+
+## Rogue Trader — Hostile Acquisitions — 5 armour  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Hostile Acquisitions (FFG, WH40K Roleplay), Armoury, Table 2-16: Armour.*  
+*Harvest: ok — 5 armour from Rogue Trader - Hostile Acquisitions.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Augmetic Engine-Plate | — | All | 7 | 20 | — | Rare | — | — | 63 | — |
+| Mesh-Weave Clothing | — | Arms, Body, Legs | 3 | 1 | — | Extremely Rare | — | — | 63 | — |
+| Pressure Carapace | — | All | 6 | 16 | — | Very Rare | — | — | 63 | — |
+| Voidsuit (Footfall) | — | All | 2 | 10 | — | Scarce | — | — | 63 | — |
+| Xenos Chitin Armour | — | Body | 5 | 3 | — | Near-Unique | — | — | 63 | — |
+
+## Deathwatch — First Founding — 3 armour  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: First Founding (FFG, WH40K Roleplay), Armoury, Table 4-3: Armour.*  
+*Harvest: ok — 3 armour from Deathwatch - First Founding.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Great Wolf Pelt | — | Body | 0 | 2kg | — | — | 10 | Respected | 101 | — |
+| Salamanders’ Mantle | — | Body | 0 | 2kg | — | — | 20 | Respected | 101 | — |
+| Mantle of the Fallen Wolf | — | Body | 0 | 2kg | — | — | 20 | Distinguished | 101 | — |
+
+## Deathwatch — Honour the Chapter — 0 armour  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: Honour the Chapter (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 armour from Deathwatch - Honour the Chapter.md.*
+
+
+## Deathwatch — Rites of Battle — 0 armour  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: Rites of Battle (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 armour from Deathwatch - Rites of Battle.md.*
+
+
+## Only War — Hammer of the Emperor — 0 armour  *(system: WH40K Roleplay)*
+
+*Source: Only War: Hammer of the Emperor (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 armour from Only War - Hammer of The Emperor.md.*
+
+
+## Black Crusade — Tome of Blood — 3 armour  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Blood (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 3 armour from Black Crusade - Tome of Blood.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Harness of Rage | — | All | 6 | 22kg | — | Extremely Rare | — | — | 44 | — |
+| Mantle of Hate | — | All | 8 | 150kg | — | Near Unique | — | — | 44 | The Mantle of Hate grants AP10 to the Body |
+| Talax Hide Armour | — | All | 6 | 6kg | — | Rare | — | — | 44 | — |
+
+## Black Crusade — Tome of Excess — 0 armour  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Excess (FFG, WH40K Roleplay), Armoury.*  
+*Harvest: ok — 0 armour from Black Crusade - Tome of Excess.md.*
+
+
+## Black Crusade — Tome of Fate — 1 armour  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Fate (FFG, WH40K Roleplay), Armoury, Table 2-3: Protective Devices.*  
+*Harvest: ok — 1 armour from Black Crusade - Tome of Fate.md.*
+
+| Armour | Category | Locations | AP | Weight | Cost | Avail | Req | Renown | Page | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Magma Suit | — | All | 9 | 90kg | — | Near Unique | — | — | 41 | — |
