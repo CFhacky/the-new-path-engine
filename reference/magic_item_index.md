@@ -1085,3 +1085,374 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Philosopher's Stone | — | — | — | — | 20th | Strong transmutation | 280 |
 | Talisman of the Sphere | — | — | — | — | 16th | Strong transmutation | 281 |
 | Talisman of Zagy | — | — | — | — | 20th | Strong conjuration | 281 |
+
+## Arms and Equipment Guide — 363 items
+
+*Source: Arms and Equipment Guide (3.0), magic items.*  
+*Harvest: ok — 363 items from Arms And Equipment Guide.md.*
+
+| Item | Tag | Price | Lvl | Body Slot / Property | CL | Aura | Page |
+|---|---|---|---|---|---|---|---|
+| Bridle of Burden-Bearing | — | 4,000 gp | — | — | 8th | — | 50 |
+| Captain's Table | — | 72,000 gp | — | — | 12th | — | 50 |
+| Catapult Stone of Becalming | — | 2,500 gp | — | — | 11th | — | 50 |
+| Charts of Certainty | — | 47,520 gp | — | — | 11th | — | 50 |
+| Cloud Keel | — | 200,000 gp | — | — | 17th | — | 50 |
+| Earth Keel | — | 150,000 gp | — | — | 17th | — | 50 |
+| Eldritch Exhaust | — | 2,160 gp | — | — | 3rd | — | 50 |
+| Fharlanghn’s Lines | — | — | — | — | 9th | — | 51 |
+| Nondimensional Trunk | — | 30,000 gp | — | — | 9th | — | 51 |
+| Planar Sails | — | 72,000 gp | — | — | 9th | — | 51 |
+| Self-Propelled Vehicle | — | 132,000 gp | — | — | 11th | — | 51 |
+| Skyrider’s Platform | — | — | — | — | 11th | — | 51 |
+| SRE, Market Price | — | 90,000 gp | — | — | 9th | — | 51 |
+| Speedy Wheels | — | 100 gp | — | — | 3rd | — | 51 |
+| Veil of Obscurity | — | 25,000 gp | — | — | 10th | — | 52 |
+| New Item | — | 30,000 gp | — | — | 7th | — | 75 |
+| Bridle of Ease | — | 500 gp | — | — | 7th | — | 80 |
+| Clever Bridle | — | 3 gp | — | — | 5th | — | 80 |
+| CHAPTER 4 | — | 2,000 gp | — | — | 5th | — | 80 |
+| Horseless Saddle | — | 43,200 gp | — | — | 8th | — | 80 |
+| Horseshoes of Thunder | — | — | — | — | 7th | — | 80 |
+| Shrink Collar | — | 10,000 gp | — | — | 5th | — | 81 |
+| Whip of Obeyance | — | 2,000 gp | — | — | 5th | — | 81 |
+| Carrying Capacity | — | 28,000 gp | — | — | 7th | — | 86 |
+| New Potion | — | 300 gp | — | — | 3rd | — | 91 |
+| Acidic | — | — | — | — | 6th | — | 93 |
+| Aquatic | — | — | — | — | 7th | — | 93 |
+| Arrow Catching | — | — | — | — | 8th | — | 93 |
+| Bane Blind | — | — | — | — | 7th | — | 93 |
+| Buffering | — | — | — | — | 7th | — | 93 |
+| Dancing | — | — | — | — | Sth | — | 94 |
+| Distracting | — | — | — | — | 9th | — | 94 |
+| CHAPTER 5 | — | — | — | — | 7th | — | 94 |
+| Feathered | — | — | — | — | Sth | — | 94 |
+| Sacred | — | — | — | — | 8th | — | 94 |
+| Wrapping | — | — | — | — | 3rd | — | 94 |
+| Armor of Weapon Creation | — | 42,305 gp | — | — | 9th | — | 94 |
+| Bale Eye | — | 38,360 gp | — | — | 7th | — | 95 |
+| Disarmor | — | 10,875 gp | — | — | 6th | — | 95 |
+| Gazebane | — | 74,050 gp | — | — | 13th | — | 95 |
+| Plantbane | — | — | — | — | 7th | — | 95 |
+| Skin Paint | — | 5,000 gp | — | — | 15th | — | 95 |
+| Spider Shield | — | — | — | — | 15th | — | 95 |
+| Stonecunning | — | 32,130 gp | — | — | 11th | — | 95 |
+| Swarm Shield | — | 6,160 gp | — | — | 3rd | — | 95 |
+| Tessellated Armor | — | 11,560 gp | — | — | 8th | — | 96 |
+| CHAPTER 5 | — | 100,000 gp | — | — | 15th | — | 96 |
+| Variable Shield | — | 6,560 gp | — | — | Sth | — | 96 |
+| Acidic Burst | — | — | — | — | 12th | — | 96 |
+| Balanced | — | — | — | — | 9th | — | 97 |
+| Binding | — | — | — | — | 13th | — | 97 |
+| Commanding | — | — | — | — | 7th | — | 97 |
+| Corrosive | — | — | — | — | 10th | — | 97 |
+| Crazed | — | — | — | — | 7th | — | 97 |
+| Disarming | — | — | — | — | 7th | — | 97 |
+| Energy Aura | — | — | — | — | 15th | — | 97 |
+| Eager | — | — | — | — | 9th | — | 97 |
+| Everbright | — | — | — | — | 12th | — | 97 |
+| Fierce | — | — | — | — | 11th | — | 97 |
+| Force | — | — | — | — | 11th | — | 97 |
+| Fortunate | — | — | — | — | 7th | — | 98 |
+| Grasping | — | — | — | — | 9th | — | 98 |
+| Harmony | — | — | — | — | 9th | — | 98 |
+| Heartfinder | — | — | — | — | 9th | — | 98 |
+| Ki Focus | — | — | — | — | 8th | — | 98 |
+| Knockback | — | — | — | — | 11th | — | 98 |
+| Merciful | — | — | — | — | 5th | — | 98 |
+| Precise | — | — | — | — | 5th | — | 98 |
+| Proficient | — | — | — | — | 11th | — | 98 |
+| Quick-Loading | — | — | — | — | 9th | — | 98 |
+| Radiant | — | — | — | — | 9th | — | 98 |
+| Screaming | — | — | — | — | 10th | — | 98 |
+| Seeking | — | — | — | — | Craft | — | 99 |
+| Shadowstrike | — | — | — | — | 15th | — | 99 |
+| Shrinking | — | — | — | — | 5th | — | 99 |
+| Stunning | — | — | — | — | 9th | — | 99 |
+| Sure Striking | — | — | — | — | 6th | — | 99 |
+| Sweeping | — | — | — | — | 5th | — | 99 |
+| Vicious | — | — | — | — | 7th | — | 99 |
+| Acid Fang Dagger | — | 19,102 gp | — | — | 4th | — | 99 |
+| Arrow of Disintegration | — | 3,307 gp | — | — | 11th | — | 99 |
+| Arrow of Eyes | — | 1,047 gp | — | — | 10th | — | 99 |
+| Arrowdeath Flail | — | 33,690 gp | — | — | 13th | — | 100 |
+| Axe of Falls | — | 50,308 gp | — | — | 6th | — | 100 |
+| Axe of Pairs | — | 50,306 gp | — | — | 7th | — | 100 |
+| CHAPTER 5 | — | 19,330 gp | — | — | 9th | — | 100 |
+| Axe of Storms | — | 98,660 gp | — | — | 17th | — | 100 |
+| Axe of the Joyous Dance | — | 107,906 gp | — | — | 9th | — | 100 |
+| Axe of the Winds | — | 65,830 gp | — | — | 11th | — | 100 |
+| Badgerclaw | — | 32,304 gp | — | — | 6th | — | 100 |
+| Balor’s Sword of Flame | — | 115,870 gp | — | — | 12th | — | 101 |
+| Balor’s Sword of Lightning | — | 115,870 gp | — | — | 16th | — | 101 |
+| Balor’s Sword of Smiting | — | 118,670 gp | — | — | 15th | — | 101 |
+| Balor’s Sword of Soul Stealing | — | — | — | — | 17th | — | 101 |
+| Battleaxe of the Bull | — | 32,310 gp | — | — | 10th | — | 101 |
+| Blade of Deception | — | 19,820 gp | — | — | 9th | — | 101 |
+| Blade of the Duelist | — | 16,320 gp | — | — | 9th | — | 101 |
+| Bladed Crossbow | — | 32,350 gp | — | — | 9th | — | 101 |
+| Bolt of Freedom | — | 247 gp | — | — | 7th | — | 102 |
+| CHAPTER 5 | — | 767 gp | — | — | 9th | — | 102 |
+| Bonebreaker Hammer | — | 18,312 gp | — | — | 13th | — | 102 |
+| CHAPTER 5 | — | 8,600 gp | — | — | 15th | — | 103 |
+| Bow of Force | — | 32,700 gp | — | — | 9th | — | 103 |
+| Bow of Mighty Pulling | — | 26,375 gp | — | — | 9th | — | 103 |
+| Bow of Radiance | — | 40,375 gp | — | — | 9th | — | 103 |
+| Bow of the Solars | — | 100,100 gp | — | — | 13th | — | 103 |
+| Bow of Songs | — | 32,3 gp | — | — | 8th | — | 103 |
+| Bow of the Steppes | — | 18,525 gp | — | — | 9th | — | 103 |
+| Bow of Sympathetic Enhancement | — | 32,330 gp | — | — | 10th | — | 104 |
+| Bowstaff | — | 10,975 gp | — | — | 15th | — | 104 |
+| Breaking Blade | — | 18,310 gp | — | — | 7th | — | 104 |
+| Celestial Mace | — | 50,312 gp | — | — | 14th | — | 104 |
+| Chain of Entangling | — | 32,325 gp | — | — | 6th | — | 104 |
+| Changeling Spear | — | 18,301 gp | — | — | 8th | — | 104 |
+| Chargebreaker | — | 18,305 gp | — | — | Sth | — | 104 |
+| Claws of the Leopard | — | 38,305 gp | — | — | 6th | — | 104 |
+| Closing Blade | — | 58,700 gp | — | — | 9th | — | 104 |
+| Crossbow, Deathwand | — | 10,335 gp | — | — | 11th | — | 104 |
+| Crossbow, Dwarven Mauler | — | 18,700 gp | — | — | 7th | — | 105 |
+| Crossbow, Inevitable | — | 18,335 gp | — | — | 15th | — | 105 |
+| Crossbow of Retrieving | — | 13,400 gp | — | — | 7th | — | 105 |
+| Crossbow of Trailing Flame | — | — | — | — | 13th | — | 105 |
+| Cutlass of Surety | — | 18,310 gp | — | — | 6th | — | 105 |
+| Dagger of Defense | — | 58,302 gp | — | — | 12th | — | 105 |
+| Dagger of Entry | — | — | — | — | 9th | — | 105 |
+| Dart of Pinning | — | 18,300 gp | — | — | 9th | — | 105 |
+| Desert’s Heart | — | — | — | — | 8th | — | 105 |
+| Doorbreaker | — | 8,310 gp | — | — | 5th | — | 106 |
+| Dragontooth | — | 40,720 gp | — | — | 8th | — | 106 |
+| Electric Lash | — | 50,301 gp | — | — | 8th | — | 106 |
+| Elven Leaf Arrow | — | 1,167 gp | — | — | 10th | — | 106 |
+| Emerald Caltrops | — | 166 gp | — | — | 4th | — | 107 |
+| Equestrian’s Spear | — | 26,615 gp | — | — | 10th | — | 107 |
+| Erythnul’s Slaughter | — | 72,308 gp | — | — | 11th | — | 107 |
+| Ethereal Bolt | — | 797 gp | — | — | 9th | — | 107 |
+| Everburning Chain | — | 22,725 gp | — | — | 10th | — | 107 |
+| Fey Arrow | — | 297 gp | — | — | 5th | — | 107 |
+| Fellstone | — | 32,308 gp | — | — | 12th | — | 107 |
+| Flail of Shadows | — | 48,155 gp | — | — | 11th | — | 107 |
+| Flameshroud Axe | — | 51,510 gp | — | — | 13th | — | 108 |
+| Foe Reaper | — | 32,318 gp | — | — | 15th | — | 108 |
+| CHAPTER 5 | — | 18,315 gp | — | — | 9th | — | 108 |
+| Frost Shard Dagger | — | 1,052 gp | — | — | 3rd | — | 108 |
+| Ghost Hands | — | — | — | — | 9th | — | 108 |
+| Glaive of Torment | — | 74,308 gp | — | — | 10th | — | 108 |
+| CHAPTER 5 | — | 18,530 gp | — | — | 8th | — | 109 |
+| Gnome’s Toolkit | — | 10,33 gp | — | — | 11th | — | 109 |
+| Grasping Dagger | — | 50,30 gp | — | — | 10th | — | 109 |
+| Gray Snare | — | 74,320 gp | — | — | 10th | — | 109 |
+| Gruumsh's Revenge | — | 50,305 gp | — | — | 13th | — | 110 |
+| Guardian Bow | — | 50,700 gp | — | — | 14th | — | 110 |
+| Guerrilla Spear | — | 32,302 gp | — | — | 7th | — | 110 |
+| Guisarme of Long Falls | — | 18,309 gp | — | — | 11th | — | 110 |
+| Halberd of Vaulting | — | 20,310 gp | — | — | 11th | — | 110 |
+| Halfling’s Exit | — | 247 gp | — | — | 6th | — | 110 |
+| Hammer of the Magesmith | — | 45,912 gp | — | — | 10th | — | 110 |
+| Hammer of Sacrifice | — | 32,312 gp | — | — | 9th | — | 110 |
+| Hand of Heironeous | — | 50,315 gp | — | — | 13th | — | 111 |
+| Havoc Blade | — | 98,320 gp | — | — | 15th | — | 111 |
+| Ice Talon | — | 24,320 gp | — | — | 10th | — | 111 |
+| Incandescent Sword | — | 72,400 gp | — | — | 12th | — | 111 |
+| Ioun Blade | — | 6,302 gp | — | — | Sth | — | 112 |
+| Javelin of Chain Lightning | — | 3,301 gp | — | — | 11th | — | 112 |
+| Javelin of Lightning, Greater | — | 1,501 gp | — | — | 10th | — | 112 |
+| Javelin of Obliteration | — | 9,301 gp | — | — | 15th | — | 112 |
+| Javelin of Precision | — | 50,301 gp | — | — | 9th | — | 112 |
+| CHAPTER 5 | — | 32,302 gp | — | — | 15th | — | 112 |
+| Khopesh of the Loyal Minion | — | 6,320 gp | — | — | 5th | — | 112 |
+| Knight’s Sword | — | 18,335 gp | — | — | 7th | — | 112 |
+| Kukri of Crippling | — | 18,308 gp | — | — | 9th | — | 112 |
+| Lance of Bravery | — | 30,310 gp | — | — | 11th | — | 112 |
+| Lance of Jousting | — | 32,306 gp | — | — | 9th | — | 113 |
+| Lance of Mangling | — | 18,310 gp | — | — | 7th | — | 113 |
+| Lance of the Unending Charge | — | 50,310 gp | — | — | 13th | — | 113 |
+| Larethian Protector | — | 50,375 gp | — | — | 13th | — | 113 |
+| Living Net | — | 18,320 gp | — | — | 11th | — | 113 |
+| Mace of Form | — | 100,312 gp | — | — | 15th | — | 113 |
+| Mace of the Snail | — | 30,992 gp | — | — | 6th | — | 113 |
+| Mace of Unlife | — | 138,312 gp | — | — | 10th | — | 113 |
+| Mace of Voices | — | 37,712 gp | — | — | 13th | — | 113 |
+| Mageblade | — | 50,315 gp | — | — | 17th | — | 114 |
+| Manticore Blade | — | 20,350 gp | — | — | 10th | — | 114 |
+| Maul of Construction | — | 51,824 gp | — | — | 15th | — | 114 |
+| CHAPTER 5 | — | 38,315 gp | — | — | 7th | — | 114 |
+| Moonsilver Shard | — | 50 gp | — | — | 5th | — | 115 |
+| Morningstar of Exhilaration | — | 28,308 gp | — | — | 9th | — | 115 |
+| Nunchaku of Mastery | — | 22,302 gp | — | — | 7th | — | 115 |
+| Packmaster Flail | — | 48,708 gp | — | — | 10th | — | 115 |
+| Piercing Tongue of Kath Kadan | — | 35,610 gp | — | — | 10th | — | 115 |
+| Plague Spreader | — | 104,715 gp | — | — | 15th | — | 115 |
+| Raking Blade | — | 116,700 gp | — | — | 12th | — | 115 |
+| Rankbreaker Glaive | — | 32,308 gp | — | — | 9th | — | 115 |
+| Ranseur of Readiness | — | 50,310 gp | — | — | 8th | — | 115 |
+| Ricochet Sling | — | 32,300 gp | — | — | 11th | — | 116 |
+| Ringsword | — | 22,315 gp | — | — | 9th | — | 116 |
+| Sap of Stunning | — | 32,301 gp | — | — | 6th | — | 116 |
+| Sapling Club | — | 32,540 gp | — | — | 12th | — | 116 |
+| Scimitar of Exertion | — | 18,315 gp | — | — | 8th | — | 117 |
+| Scourge of the Pomarj | — | 68,690 gp | — | — | 10th | — | 117 |
+| Self-Loading Crossbow | — | 12,350 gp | — | — | 10th | — | 117 |
+| Shadow’s Hand | — | 30,301 gp | — | — | 10th | — | 117 |
+| Shield Blade | — | 10,630 gp | — | — | 10th | — | 117 |
+| Siangham of Focus | — | 19,303 gp | — | — | 9th | — | 117 |
+| Sickle of Talons | — | 26,306 gp | — | — | 6th | — | 117 |
+| Skullshaker Hammer | — | 18,312 gp | — | — | 6th | — | 117 |
+| Sling of Misdirection | — | 30,300 gp | — | — | 4th | — | 118 |
+| Soldier's Rest | — | 4,808 gp | — | — | 9th | — | 118 |
+| Songblade | — | 6,400 gp | — | — | 8th | — | 118 |
+| CHAPTER 5 | — | 18,335 gp | — | — | 11th | — | 118 |
+| Spear of Impaling | — | 32,305 gp | — | — | 10th | — | 118 |
+| Spear of the Hunt | — | 28,302 gp | — | — | 7th | — | 118 |
+| Spear of Skirmishing | — | 32,301 gp | — | — | 9th | — | 118 |
+| Spell Shield Falchion | — | 38,708 gp | — | — | 13th | — | 118 |
+| Spider's Nest Bullet | — | 1,057 gp | — | — | 10th | — | 119 |
+| Spinning Blade | — | 50,315 gp | — | — | 9th | — | 119 |
+| Staff of Balance | — | 26,600 gp | — | — | 7th | — | 119 |
+| Staff of Discipline | — | 50,600 gp | — | — | 7th | — | 119 |
+| Staff of Memory | — | — | — | — | 17th | — | 119 |
+| Standard of Ulek | — | 23,830 gp | — | — | 11th | — | 120 |
+| Stirge Bolt | — | 1,007 gp | — | — | 12th | — | 120 |
+| Stone Spear | — | 32,302 gp | — | — | 9th | — | 120 |
+| Summoning Arrow | — | 257 gp | — | — | 5th | — | 120 |
+| Sword of Avoidance | — | 38,315 gp | — | — | 10th | — | 120 |
+| Sword of Countering | — | 33,905 gp | — | — | 13th | — | 120 |
+| Sword of Crypts | — | 42,315 gp | — | — | 9th | — | 120 |
+| Sword of the Diplomat | — | 64,310 gp | — | — | 15th | — | 120 |
+| CHAPTER 5 | — | 88,310 gp | — | — | 10th | — | 120 |
+| Sword of Graceful Strikes | — | 72,310 gp | — | — | 9th | — | 121 |
+| Sword of Judgment | — | 43,115 gp | — | — | 13th | — | 121 |
+| Sword of the Mammoth | — | 18,350 gp | — | — | 11th | — | 121 |
+| Sword of Opportunity | — | 18,315 gp | — | — | 6th | — | 121 |
+| Create | — | 19,115 gp | — | — | 6th | — | 122 |
+| Sword of the Solars | — | 3,920,335 gp | — | — | 18th | — | 122 |
+| Sword of Versatility | — | — | — | — | 9th | — | 122 |
+| Sword of Zeal | — | 72,335 gp | — | — | 9th | — | 122 |
+| Thirsting Blade | — | 72,315 gp | — | — | 12th | — | 122 |
+| Tourney Lance | — | 50,310 gp | — | — | 9th | — | 122 |
+| Trident of the Depths | — | 8,315 gp | — | — | 6th | — | 122 |
+| Truestone Hammer | — | 51,120 gp | — | — | 15th | — | 123 |
+| Twin Blade | — | 29,829 gp | — | — | 9th | — | 123 |
+| Vanishing Blade | — | 47,120 gp | — | — | 10th | — | 123 |
+| Vigilant Halberd | — | 72,310 gp | — | — | 12th | — | 123 |
+| CHAPTER 5 | — | 38,301 gp | — | — | 15th | — | 124 |
+| Warrenguard | — | 40,310 gp | — | — | 8th | — | 124 |
+| Weaponeater | — | 58,300 gp | — | — | 10th | — | 124 |
+| Whirling Axe | — | 18,320 gp | — | — | 11th | — | 124 |
+| Whisperblade | — | 48,520 gp | — | — | 12th | — | 124 |
+| Potion of Animal Senses | — | 380 gp | — | — | Sth | — | 124 |
+| Potion of Watery Breath | — | 300 gp | — | — | 5th | — | 124 |
+| Beetle Elixir | — | 8,300 gp | — | — | 6th | — | 124 |
+| Electric Eel Elixir | — | 2,050 gp | — | — | 3rd | — | 124 |
+| Porcupine Elixir | — | 2,300 gp | — | — | 3rd | — | 124 |
+| Rhino Elixir | — | 17,500 gp | — | — | 9th | — | 125 |
+| Lawful | — | 200,000 gp | — | — | 15th | — | 125 |
+| Filcher’s Friend | — | 500 gp | — | — | 12th | — | 125 |
+| Force Armor | — | 45,000 gp | — | — | 9th | — | 125 |
+| Greater Counterspelling | — | 16,000 gp | — | — | 18th | — | 126 |
+| Hive Mind | — | 180,000 gp | — | — | 17th | — | 126 |
+| Misdirection | — | 11,200 gp | — | — | 12th | — | 126 |
+| Universal Elemental Resistance, Minor | — | 144,000 gp | — | — | 15th | — | 126 |
+| Construct Control | — | 68,850 gp | — | — | 17th | — | 126 |
+| CHAPTER 5 | — | 20,000 gp | — | — | 9th | — | 126 |
+| Blade of Force | — | 125,000 gp | — | — | 13th | — | 127 |
+| Ghost Rod | — | 50,000 gp | — | — | 15th | — | 127 |
+| Mimicry | — | 30,000 gp | — | — | 6th | — | 127 |
+| Paralysis | — | 22,000 gp | — | — | 9th | — | 127 |
+| Tracking | — | 37,800 gp | — | — | 9th | — | 128 |
+| Trees | — | 120,000 gp | — | — | 12th | — | 128 |
+| Warning | — | 58,000 gp | — | — | 9th | — | 128 |
+| Artisan | — | 69,800 gp | — | — | 12th | — | 128 |
+| Assassin’s Staff | — | 24,000 gp | — | — | 7th | — | 128 |
+| CHAPTER 5 | — | — | — | — | 10th | — | 129 |
+| Creation | — | 45,000 gp | — | — | 9th | — | 129 |
+| Destruction | — | 98,500 gp | — | — | 15th | — | 129 |
+| Fallen | — | 24,000 gp | — | — | 7th | — | 129 |
+| Fellowship | — | 80,000 gp | — | — | 11th | — | 129 |
+| Glory | — | 80,000 gp | — | — | 13th | — | 129 |
+| Goblin Lord | — | 26,625 gp | — | — | 12th | — | 129 |
+| Liberation | — | 45,000 gp | — | — | 9th | — | 130 |
+| Madness | — | 110,000 gp | — | — | 17th | — | 130 |
+| Righteousness | — | 34,000 gp | — | — | 7th | — | 130 |
+| Sacred Fire | — | 60,000 gp | — | — | 13th | — | 130 |
+| CHAPTER 5 | — | 42,600 gp | — | — | 12th | — | 130 |
+| Undying Staff | — | 27,375 gp | — | — | 12th | — | 130 |
+| Armband of Reduction | — | 2,000 gp | — | — | Sth | — | 130 |
+| Bag of Endless Caltrops | — | 2,300 gp | — | — | 9th | — | 130 |
+| Banner of Valor | — | 61,000 gp | — | — | 8th | — | 130 |
+| Blindfold of True Darkness | — | 9,000 gp | — | — | 3rd | — | 131 |
+| Bracers of Exit | — | 11,200 gp | — | — | 7th | — | 131 |
+| Boots of the Mountain King | — | 48,810 gp | — | — | 12th | — | 131 |
+| Boots of the Sea | — | 56,500 gp | — | — | Sth | — | 131 |
+| Boots, Steadfast | — | 6,000 gp | — | — | 3rd | — | 131 |
+| Boots of Tracklessness | — | 33,500 gp | — | — | 7th | — | 131 |
+| Boots of Woodland Striding | — | 23,600 gp | — | — | 12th | — | 131 |
+| CHAPTER 5 | — | 34,800 gp | — | — | 9th | — | 132 |
+| Choker of Eloquence | — | 1,500 gp | — | — | 6th | — | 132 |
+| Cinders of the Inferno | — | 7,650 gp | — | — | 17th | — | 132 |
+| Clasp of the Elder | — | 6,000 gp | — | — | 10th | — | 132 |
+| Cloak of Shelter | — | 12,080 gp | — | — | 7th | — | 132 |
+| Coin of Eternal Rest | — | 6,000 gp | — | — | 3rd | — | 132 |
+| Dimensional Chalk Holder | — | 22,950 gp | — | — | 17th | — | 132 |
+| Vermin | — | 29,760 gp | — | — | 11th | — | 132 |
+| Droplets of the Storm | — | 7,650 gp | — | — | 17th | — | 133 |
+| Dust of the Zephyr | — | 7,650 gp | — | — | 17th | — | 133 |
+| Dimensional Prism | — | 17,600 gp | — | — | 7th | — | 133 |
+| Everfull Mug | — | 800 gp | — | — | 1st | — | 133 |
+| Everlasting Feedbag | — | 15,000 gp | — | — | Sth | — | 133 |
+| Eversoaking Sponge | — | 26,400 gp | — | — | 11th | — | 133 |
+| Fan of Furious Flame | — | 18,750 gp | — | — | 5th | — | 133 |
+| Fruit Blossom Spike | — | 5,800 gp | — | — | 7th | — | 133 |
+| Gloves of Brachiation | — | 4,000 gp | — | — | 3rd | — | 133 |
+| Goggles of Day | — | 4,000 gp | — | — | 3rd | — | 134 |
+| Hammersphere | — | — | — | — | 7th | — | 134 |
+| Idol of False Vision | — | 54,500 gp | — | — | 10th | — | 134 |
+| Incense of the Gorgon | — | 6,600 gp | — | — | 11th | — | 134 |
+| CHAPTER 5 | — | 29,975 gp | — | — | 11th | — | 134 |
+| Ioun Stone of Resistance | — | 2,000 gp | — | — | 5th | — | 135 |
+| Lantern of Brightness | — | 66,520 gp | — | — | 13th | — | 135 |
+| Libram of Flesh | — | 178,500 gp | — | — | 17th | — | 135 |
+| Magebane Manacles | — | 132,000 gp | — | — | 11th | — | 135 |
+| Mask of Lies | — | 17,000 gp | — | — | Sth | — | 135 |
+| Mask of the Feather Queen | — | — | — | — | 12th | — | 135 |
+| Medallion of Contact | — | 5,000 gp | — | — | 9th | — | 135 |
+| Medallion of the Lycanthrope | — | 44,200 gp | — | — | 15th | — | 135 |
+| Mirror of Secrets Revealed | — | 95,000 gp | — | — | 11th | — | 135 |
+| Rampaging Boar Necklace | — | 11,840 gp | — | — | 7th | — | 136 |
+| Necklace of the Wild Beast | — | — | — | — | 10th | — | 136 |
+| Oracle Beads | — | 19,192 gp | — | — | 7th | — | 136 |
+| CHAPTER 5 | — | 30,080 gp | — | — | Sth | — | 136 |
+| Phylactery of Change | — | 11,200 gp | — | — | 7th | — | 136 |
+| Pitons, Burrowing | — | 380 gp | — | — | 3rd | — | 136 |
+| Pixie Dust | — | 2,700 gp | — | — | 9th | — | 136 |
+| Portable Bridge | — | 36,000 gp | — | — | 20th | — | 136 |
+| Preserving Jar | — | 3,000 gp | — | — | 3rd | — | 137 |
+| Restricting Band | — | 5,400 gp | — | — | 3rd | — | 137 |
+| Rope of Stone | — | 11,800 gp | — | — | 11th | — | 137 |
+| Saddle of Growth | — | 48,600 gp | — | — | 9th | — | 137 |
+| Saddle of the Pegasus | — | 16,875 gp | — | — | 5th | — | 137 |
+| Saddle of Weather Protection | — | 5,400 gp | — | — | Sth | — | 137 |
+| Saw of Prodigious Cutting | — | 2,000 gp | — | — | 3rd | — | 137 |
+| Seeds of the Treant | — | 15,300 gp | — | — | 17th | — | 137 |
+| Shards of the Fissure | — | 7,650 gp | — | — | 17th | — | 137 |
+| CHAPTER 5 | — | 10,000 gp | — | — | Sth | — | 138 |
+| Steadfast Stone | — | 32,400 gp | — | — | 9th | — | 138 |
+| Stove of Everlasting Flame | — | 2,400 gp | — | — | 3rd | — | 138 |
+| Stylus of the Masterful Hand | — | 3,000 gp | — | — | 3rd | — | 138 |
+| Thurible of Divining | — | 77,000 gp | — | — | 11th | — | 139 |
+| Thurible of Retribution | — | 77,000 gp | — | — | 11th | — | 139 |
+| Thurible of Warding | — | 77,000 gp | — | — | 11th | — | 139 |
+| Triton Shell | — | 3,000 gp | — | — | Sth | — | 139 |
+| Trumpeter’s Gift | — | 12,200 gp | — | — | 7th | — | 139 |
+| Weightless Scabbard | — | 1,600 gp | — | — | 3rd | — | 139 |
+| Yondalla’s Wagon Wheel | — | 92,880 gp | — | — | 9th | — | 139 |
+| CHAPTER 6 | — | 90,150 gp | — | — | 10th | — | 142 |
+| Create | — | 49,575 gp | — | — | 10th | — | 144 |
+| Wave has a special purpose | — | 166,115 gp | — | — | 10th | — | 144 |
+| Whelm bears a minor curse | — | 122,412 gp | — | — | 16th | — | 144 |
+| Armor of Vulnerability | — | — | — | — | 16th | — | 147 |
+| Cloak of Affront | — | 1,300 gp | — | — | 16th | — | 148 |
+| Goggles of Nightblindness | — | 1,000 gp | — | — | 16th | — | 148 |
+| Headband of Hostility | — | — | — | — | 16th | — | 148 |
+| CHAPTER 6 | — | 1,300 gp | — | — | 16th | — | 148 |
+| Necklace of the Vampire | — | — | — | — | 20th | — | 148 |

@@ -16,7 +16,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `creature_index.{json,md}` | monster/NPC stat-block index | 1509 | `scripts/creature_harvest.py` | MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness (the `_md\_bestiary` set) |
 | `spell_index.{json,md}` | spell index (school, level) | 1841 | `scripts/spell_harvest.py` | SRD 3.5 core + Spell Compendium + Complete Mage/Champion + Races of the Dragon + Dragon Magic |
 | `feat_index.{json,md}` | feat index (type, prerequisite) | 1253 | `scripts/feat_harvest.py` | SRD 3.5 core + 18 supplement books |
-| `magic_item_index.{json,md}` | magic-item index (price, slot, aura, CL) | 1058 | `scripts/item_harvest.py` | Magic Item Compendium + DMG v3.5 specific/wondrous items |
+| `magic_item_index.{json,md}` | magic-item index (price, slot, aura, CL) | 1421 | `scripts/item_harvest.py` | Magic Item Compendium + DMG v3.5 items + Arms & Equipment Guide (3.0) |
 | `power_index.{json,md}` | psionic-power index (discipline, level, PP) | 409 | `scripts/power_harvest.py` | Expanded Psionics Handbook + Complete Psionic |
 | `maneuver_index.{json,md}` | Tome of Battle maneuver/stance index | 171 | `scripts/maneuver_harvest.py` | Tome of Battle: Book of Nine Swords |
 | `gurps_spell_index.{json,md}` | GURPS Magic spell index (class, cost, casting time, prereqs) | 557 | `scripts/gurps_magic_harvest.py` | GURPS Magic (4e) — the GURPS magic system, separate from the D&D `spell_index` |

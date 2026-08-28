@@ -43,7 +43,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |
 | `term_harvest.py` | cited DMG/GURPS source extractions; missing anchors print NO COVERAGE |
 | `creature_harvest.py` | cited bestiary extractions; conversions require both 3.5e and GURPS halves |
-| `item_harvest.py` | cited magic-item extractions (Magic Item Compendium; DMG v3.5 specific/wondrous items, the affix sections left to `term_harvest.py`); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
+| `item_harvest.py` | cited magic-item extractions (Magic Item Compendium; DMG v3.5; Arms & Equipment Guide 3.0); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `power_harvest.py` | cited psionics extractions (Expanded Psionics Handbook + Complete Psionic); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `maneuver_harvest.py` | cited martial-adept extractions (Tome of Battle); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `feat_harvest.py` | bundled SRD 3.5 feats + cited supplement extractions (`_md\_feats\`); duplicates feat_lookup.py detection (no import); missing dir prints NO COVERAGE |

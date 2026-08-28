@@ -396,9 +396,71 @@ def detect_dmg(lines: List[str], pages: List[int], book: str) -> List[Item]:
     return items
 
 
+# ---------------------------------------------------------------------------
+# Arms & Equipment Guide (3.0) detector — "Name: description ... TRAILER", the
+# trailer being "Caster Level: Nth; Prerequisites: ...; Market Price: X gp;
+# Weight: W" (3.0 has no aura line). Anchor on the Caster Level trailer; name is
+# the nearest "Name:" colon-line above. The OCR mangles "Market" to "Markel"
+# etc., so the price match is loose.
+# ---------------------------------------------------------------------------
+
+AEG_CL = re.compile(r"^Caster Level\s*:\s*(\w+)", re.IGNORECASE)
+AEG_PRICE = re.compile(r"Ma\w*\s*Price\s*:\s*([0-9][\d,]*)", re.IGNORECASE)
+
+
+def detect_aeg(lines: List[str], pages: List[int], book: str) -> List[Item]:
+    n = len(lines)
+    items: List[Item] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        clm = AEG_CL.match(ln.strip())
+        if not clm:
+            continue
+        # name: nearest "Name:" colon-line above (reuse the DMG grammar)
+        j, steps, name_idx, name = i - 1, 0, None, None
+        while j >= 0 and steps < 40:
+            s = lines[j].strip()
+            if s and not PAGE.search(lines[j]):
+                if AEG_CL.match(s):
+                    break
+                nm = DMG_NAME.match(s)
+                if nm and not DMG_NAME_REJECT.match(s):
+                    name_idx, name = j, nm.group(1).strip()
+                    break
+            j -= 1
+            steps += 1
+        if name_idx is None or name_idx in used:
+            continue
+        used.add(name_idx)
+        # gather the trailer (it wraps) for the price
+        ttext, k, steps = [ln.strip()], i + 1, 0
+        while k < n and steps < 3:
+            s = lines[k].strip()
+            if PAGE.search(lines[k]):
+                k += 1
+                continue
+            if s == "" or (DMG_NAME.match(s) and not DMG_NAME_REJECT.match(s)):
+                break
+            ttext.append(s)
+            if re.search(r"Weigh", s, re.IGNORECASE):
+                break
+            k += 1
+            steps += 1
+        item = Item(name=name, book=book, page=pages[name_idx], start=name_idx,
+                    end=min(n, i + 4))
+        item.caster_level = clm.group(1)
+        pm = AEG_PRICE.search(" ".join(ttext))
+        if pm:
+            item.price = f"{pm.group(1)} gp"
+        items.append(item)
+    items.sort(key=lambda it: it.start)
+    return items
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Item]]] = {
     "mic": detect_mic,
     "dmg": detect_dmg,
+    "aeg": detect_aeg,
 }
 
 
@@ -430,10 +492,13 @@ SOURCES: List[Source] = [
                  "items (weapon/armor special abilities are term_harvest.py's)",
         detector="dmg",
     ),
-    # NEXT TARGETS (documented, not yet detected — never improvised):
-    #   * Arms and Equipment Guide (3.0) — "D&D 3.0/Arms And Equipment Guide.md".
-    #     Add a Source above with a new detector in DETECTORS; see
-    #     docs/HARVEST_PROGRESS.md for the gap log.
+    Source(
+        key="aeg",
+        book="Arms and Equipment Guide",
+        path=Path("D&D 3.0/Arms And Equipment Guide.md"),
+        citation="Arms and Equipment Guide (3.0), magic items",
+        detector="aeg",
+    ),
 ]
 
 
