@@ -100,6 +100,8 @@ class GurpsCreature:
     DR: Optional[str] = None
     Dodge: Optional[str] = None
     Parry: Optional[str] = None
+    ctype: Optional[str] = None       # the type/traits line ("Vermiform, Wild Animal")
+    origin: Optional[str] = None      # the book a compilation credits for this creature
 
     def quick_fields(self) -> int:
         return sum(1 for k in ("ST", "DX", "IQ", "HT", "HP")
@@ -322,10 +324,65 @@ def detect_gurps_titlecase(lines: List[str], pages: List[int], book: str) -> Lis
     return _finalize(creatures)
 
 
+# A fourth format (GURPS 4e Natural Encyclopedia — a 4e-stat bestiary compilation):
+# vertical "ST: N" stats like the DF-Monsters format, but the name is Title-Case
+# with a type/traits line between the name and the ST line, and each entry ends
+# with a "Source: GURPS <book>" credit. Layout per creature:
+#   <Name> / <type-line> / ST: N / HP: N / … / Source: GURPS <book>
+SOURCE_LINE = re.compile(r"^Source:\s*(.+)$", re.IGNORECASE)
+ENC_NAME = re.compile(r"^[A-ZÀ-Þ][A-Za-zÀ-ÿ0-9'’\-. ]{1,34}$")
+ENC_NAME_REJECT = re.compile(
+    r"^(Source|Combat|Physical|Social|Mental|Special|Traits?|Skills?|Notes?|"
+    r"Habitat|Also|Reach|Bite|Claws?|Sting|Tail|See|Only|Roll|This|The|Weapon|"
+    r"Attack|Armou?r|Move|Speed|Dodge|Parry|Table|Range)\b", re.IGNORECASE)
+
+
+def detect_gurps_encyclopedia(lines: List[str], pages: List[int], book: str) -> List[GurpsCreature]:
+    n = len(lines)
+    starts: List[Tuple[int, str, str, int]] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        if not ST_LINE.match(ln.strip()) or not _is_block(lines, i, n):
+            continue
+        above: List[Tuple[int, str]] = []          # the two non-blank lines above ST
+        j = i - 1
+        while j >= 0 and len(above) < 2:
+            s = lines[j].strip()
+            if s == "" or PAGE.search(lines[j]):
+                j -= 1
+                continue
+            above.append((j, s))
+            j -= 1
+        if len(above) < 2:
+            continue
+        (_, tline), (nj, name) = above[0], above[1]
+        if nj in used or not ENC_NAME.match(name) or ENC_NAME_REJECT.match(name):
+            continue
+        used.add(nj)
+        starts.append((nj, name, tline, i))
+
+    starts.sort()
+    creatures: List[GurpsCreature] = []
+    for k, (nj, name, tline, st_idx) in enumerate(starts):
+        e = starts[k + 1][0] if k + 1 < len(starts) else min(n, nj + 80)
+        e = min(e, nj + 80)
+        c = GurpsCreature(name=name.strip(), book=book, page=pages[nj],
+                          start=nj, end=e, ctype=tline)
+        parse_attrs(c, lines[st_idx:e])
+        for raw in lines[st_idx:e]:
+            m = SOURCE_LINE.match(raw.strip())
+            if m:
+                c.origin = re.sub(r"\s+", " ", m.group(1)).strip()
+                break
+        creatures.append(c)
+    return _finalize(creatures)
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[GurpsCreature]]] = {
     "gurps": detect_gurps_creatures,          # vertical "ST: N" (DF Monsters)
     "gurps_inline": detect_gurps_inline,      # inline "ST N; …", ALL-CAPS names (CotN)
     "gurps_titlecase": detect_gurps_titlecase,  # inline stats, Title-Case names (Fantasy)
+    "gurps_encyclopedia": detect_gurps_encyclopedia,  # vertical stats, Title name + type line
 }
 
 
@@ -379,6 +436,13 @@ SOURCES: List[Source] = [
     Source("biglizzie", "GURPS Big Lizzie",
            Path(f"{_G}/GURPS 4e - Big Lizzie.md"),
            "GURPS Big Lizzie (SJGames, 4e), bestiary", "gurps"),
+    # Kept LAST so the specific-book sources above win the cross-source dedup and
+    # this comprehensive compilation contributes only creatures not already indexed.
+    Source("natenc", "GURPS 4e Natural Encyclopedia (compilation)",
+           Path(f"{_G}/GURPS 4e Non official and fan made/"
+                "GURPS 4e -Natural Encyclopedia v1.5.2 (Bestiary).md"),
+           "GURPS Natural Encyclopedia v1.5.2 (fan compilation, 4e stats; each "
+           "creature credits its original GURPS source)", "gurps_encyclopedia"),
 ]
 
 
@@ -411,6 +475,23 @@ class Corpus:
             pages = _pages_for(src.lines)
             src.creatures = DETECTORS[src.detector](src.lines, pages, src.book)
             src.coverage = f"ok — {len(src.creatures)} creatures from {path.name}"
+
+        # Cross-source dedup: a compilation (the Natural Encyclopedia) repeats
+        # creatures already indexed from the specific books above. Keep the
+        # specific book's version; let the compilation contribute only net-new
+        # names. Specific-book sources are listed first, so they seed `seen`.
+        seen: set = set()
+        for src in self.sources:
+            if src.detector == "gurps_encyclopedia":
+                before = len(src.creatures)
+                src.creatures = [c for c in src.creatures if c.name.lower() not in seen]
+                dropped = before - len(src.creatures)
+                seen.update(c.name.lower() for c in src.creatures)
+                if src.coverage.startswith("ok"):
+                    src.coverage = (f"ok — {len(src.creatures)} net-new creatures "
+                                    f"({dropped} already-indexed names deduped)")
+            else:
+                seen.update(c.name.lower() for c in src.creatures)
 
     def all_creatures(self, book: Optional[str] = None):
         for src in self.sources:
@@ -459,13 +540,13 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
         if src.creatures:
-            md.append("| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |")
-            md.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+            md.append("| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |")
+            md.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
             for c in src.creatures:
                 cells = [c.ST, c.DX, c.IQ, c.HT, c.HP, c.Will, c.Per, c.Speed,
                          c.Move, c.SM, c.DR]
                 md.append("| " + c.name + " | " + " | ".join((x or "—") for x in cells)
-                          + f" | {c.page if c.page is not None else '—'} |")
+                          + f" | {c.origin or '—'} | {c.page if c.page is not None else '—'} |")
         md.append("")
 
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
@@ -500,10 +581,12 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
             "name": c.name,
             "source": {"book": c.book, "pdf_page": c.page,
                        "extraction": str(corpus.base / src.path),
-                       "lines": [c.start + 1, c.end], "citation": src.citation},
+                       "lines": [c.start + 1, c.end], "citation": src.citation,
+                       "credits_original": c.origin},
             "parsed": {k: v for k, v in asdict(c).items()
                        if k in ("ST", "DX", "IQ", "HT", "HP", "Will", "Per",
-                                "Speed", "Move", "SM", "DR", "Dodge", "Parry") and v},
+                                "Speed", "Move", "SM", "DR", "Dodge", "Parry",
+                                "ctype") and v},
             "raw_block": re.sub(r"\n{3,}", "\n\n", "\n".join(body)).strip(),
         })
     text = json.dumps(packets if len(packets) > 1 else packets[0], indent=1)

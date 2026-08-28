@@ -12,58 +12,58 @@ cleanly yield.
 *Source: GURPS Dungeon Fantasy Monsters 1 (SJGames, 4e).*  
 *Harvest: ok — 25 creatures from GURPS 4e - Dungeon Fantasy Monsters 1.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Bronze Spider | 14 | 14 | 10 | 12 | 14 | 10 | 12 | 6.50 | 6 | 0 | 0 | 5 |
-| Bugbear | 18 | 14 | 10 | 12 | 18 | 12 | 12 | 7.50 | 7 | 0 | 4 | 6 |
-| Demon From Between The Stars | 20 | 12 | 10 | 12 | 20 | 16 | 10 | 7.00 | 7 | — | 4 | 9 |
-| Demon Of Old | 11 | 12 | 7 | 10 | 11 | 9 | 10 | 5.50 | 5 | 0 | 1 | 10 |
-| Dinoman | 22 | 13 | 10 | 15 | 27 | 10 | 10 | 7.00 | 7 | 0 | 6 | 11 |
-| Draug | 35 | 10 | 5 | 12 | 35 | 12 | 12 | 5.50 | 11 | — | 9 | 12 |
-| Electric Jelly | 5 | 13 | 10 | 11 | 5 | 12 | 12 | 6.00 | 6 | 0 | 0 | 13 |
-| Eye Of Death | 13 | 14 | 10 | 12 | 13 | 16 | 10 | 7.00 | 7 | 0 | 4 | 14 |
-| Flame Lord | 43 | 12 | 6 | 14 | 43 | 12 | 12 | 6.50 | 6 | — | 2 | 15 |
-| Giant Ape | 65 | 12 | 6 | 14 | 65 | 12 | 12 | 6.50 | 6 | — | 2 | 16 |
-| Gladiator Ape | 5 | 11 | 8 | 11 | 3 | 8 | 8 | 6.00 | 6 | -1 | 0 | 17 |
-| Horrid Skull | 42 | 12 | 5 | 12 | 42 | 12 | 12 | 6.00 | 6 | — | 4 | 19 |
-| Ice Wyrm | 20 | 13 | 4 | 11 | 20 | 11 | 12 | 7.00 | 14 | — | 1 | 20 |
-| Karkadann | 0 | 16 | 1 | 10 | 1 | 10 | 10 | 6.50 | 1 | -9 | 0 | 21 |
-| Leaping Leech | 10 | 12 | 16 | 14 | 10 | 18 | 16 | 7.00 | 7 | 0 | 2 | 22 |
-| Lich | 19 | 16 | 4 | 12 | 19 | 11 | 15 | 7.00 | 10 | — | 5 | 23 |
-| Obsidian Jaguar | 12 | 10 | 0 | 13 | 12 | 12 | 9 | 5.00 | 4 | -1 | 5 | 24 |
-| Rock Mite | 25 | 11 | 3 | 12 | 25 | 10 | 10 | 5.00 | 5 | — | 2 | 25 |
-| Slorn | 16 | 10 | 2 | 10 | 16 | 10 | 10 | 5.00 | 5 | — | 0 | 26 |
-| Slugbeast | 17 | 14 | 10 | 14 | 17 | 10 | 10 | 7.00 | 14 | 0 | 6 | 27 |
-| Sphere Of Madness | 13 | 16 | 11 | 12 | 13 | 14 | 11 | 8.00 | 8 | 0 | 2 | 28 |
-| Throttler | 20 | 10 | 10 | 12 | 20 | 10 | 12 | 5.50 | 6 | — | 2 | 30 |
-| Troll | 45 | 8 | 1 | 12 | 45 | 8 | 8 | 5.00 | 1 | — | 0 | 31 |
-| Undead Slime | 17 | 13 | 8 | 13 | 17 | 10 | 10 | 7.50 | 7 | — | 2 | 32 |
-| Void Brute | 12 | 18 | 10 | 12 | 12 | 12 | 18 | 10.00 | 10 | 0 | 0 | 33 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bronze Spider | 14 | 14 | 10 | 12 | 14 | 10 | 12 | 6.50 | 6 | 0 | 0 | — | 5 |
+| Bugbear | 18 | 14 | 10 | 12 | 18 | 12 | 12 | 7.50 | 7 | 0 | 4 | — | 6 |
+| Demon From Between The Stars | 20 | 12 | 10 | 12 | 20 | 16 | 10 | 7.00 | 7 | — | 4 | — | 9 |
+| Demon Of Old | 11 | 12 | 7 | 10 | 11 | 9 | 10 | 5.50 | 5 | 0 | 1 | — | 10 |
+| Dinoman | 22 | 13 | 10 | 15 | 27 | 10 | 10 | 7.00 | 7 | 0 | 6 | — | 11 |
+| Draug | 35 | 10 | 5 | 12 | 35 | 12 | 12 | 5.50 | 11 | — | 9 | — | 12 |
+| Electric Jelly | 5 | 13 | 10 | 11 | 5 | 12 | 12 | 6.00 | 6 | 0 | 0 | — | 13 |
+| Eye Of Death | 13 | 14 | 10 | 12 | 13 | 16 | 10 | 7.00 | 7 | 0 | 4 | — | 14 |
+| Flame Lord | 43 | 12 | 6 | 14 | 43 | 12 | 12 | 6.50 | 6 | — | 2 | — | 15 |
+| Giant Ape | 65 | 12 | 6 | 14 | 65 | 12 | 12 | 6.50 | 6 | — | 2 | — | 16 |
+| Gladiator Ape | 5 | 11 | 8 | 11 | 3 | 8 | 8 | 6.00 | 6 | -1 | 0 | — | 17 |
+| Horrid Skull | 42 | 12 | 5 | 12 | 42 | 12 | 12 | 6.00 | 6 | — | 4 | — | 19 |
+| Ice Wyrm | 20 | 13 | 4 | 11 | 20 | 11 | 12 | 7.00 | 14 | — | 1 | — | 20 |
+| Karkadann | 0 | 16 | 1 | 10 | 1 | 10 | 10 | 6.50 | 1 | -9 | 0 | — | 21 |
+| Leaping Leech | 10 | 12 | 16 | 14 | 10 | 18 | 16 | 7.00 | 7 | 0 | 2 | — | 22 |
+| Lich | 19 | 16 | 4 | 12 | 19 | 11 | 15 | 7.00 | 10 | — | 5 | — | 23 |
+| Obsidian Jaguar | 12 | 10 | 0 | 13 | 12 | 12 | 9 | 5.00 | 4 | -1 | 5 | — | 24 |
+| Rock Mite | 25 | 11 | 3 | 12 | 25 | 10 | 10 | 5.00 | 5 | — | 2 | — | 25 |
+| Slorn | 16 | 10 | 2 | 10 | 16 | 10 | 10 | 5.00 | 5 | — | 0 | — | 26 |
+| Slugbeast | 17 | 14 | 10 | 14 | 17 | 10 | 10 | 7.00 | 14 | 0 | 6 | — | 27 |
+| Sphere Of Madness | 13 | 16 | 11 | 12 | 13 | 14 | 11 | 8.00 | 8 | 0 | 2 | — | 28 |
+| Throttler | 20 | 10 | 10 | 12 | 20 | 10 | 12 | 5.50 | 6 | — | 2 | — | 30 |
+| Troll | 45 | 8 | 1 | 12 | 45 | 8 | 8 | 5.00 | 1 | — | 0 | — | 31 |
+| Undead Slime | 17 | 13 | 8 | 13 | 17 | 10 | 10 | 7.50 | 7 | — | 2 | — | 32 |
+| Void Brute | 12 | 18 | 10 | 12 | 12 | 12 | 18 | 10.00 | 10 | 0 | 0 | — | 33 |
 
 ## GURPS Fantasy — 8 creatures
 
 *Source: GURPS Fantasy (SJGames, 4e), bestiary.*  
 *Harvest: ok — 8 creatures from GURPS 4e - Fantasy.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Herecine | 20 | 12 | 0 | 12 | — | 0 | 12 | 6 | 0 | +1 | — | 49 |
-| Manticore | 19 | 13 | 5 | 12 | — | 11 | 12 | 6.25 | 9 | +1 | 1 | 50 |
-| Mountain Ant | 3 | 10 | 1 | 10 | — | 10 | 12 | 5 | 4 | -2 | — | 50 |
-| Panther | 16 | 11 | 4 | 13 | — | 10 | 12 | 6 | 10 | +1 | — | 51 |
-| Unicorn | 18 | 13 | 4 | 11 | — | 12 | 12 | 6 | 6 | +1 | — | 51 |
-| Amphisbaena | 5 | 13 | 2 | 11 | — | 10 | 10 | 6 | 4 | -2 | — | 213 |
-| Megalogryphon | 50 | 12 | 2 | 16 | — | 10 | 12 | 6 | 7 | +5 | 2 | 214 |
-| Satyr | 7 | 14 | 7 | 10 | — | 12 | 12 | 6 | 9 | -1 | — | 214 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Herecine | 20 | 12 | 0 | 12 | — | 0 | 12 | 6 | 0 | +1 | — | — | 49 |
+| Manticore | 19 | 13 | 5 | 12 | — | 11 | 12 | 6.25 | 9 | +1 | 1 | — | 50 |
+| Mountain Ant | 3 | 10 | 1 | 10 | — | 10 | 12 | 5 | 4 | -2 | — | — | 50 |
+| Panther | 16 | 11 | 4 | 13 | — | 10 | 12 | 6 | 10 | +1 | — | — | 51 |
+| Unicorn | 18 | 13 | 4 | 11 | — | 12 | 12 | 6 | 6 | +1 | — | — | 51 |
+| Amphisbaena | 5 | 13 | 2 | 11 | — | 10 | 10 | 6 | 4 | -2 | — | — | 213 |
+| Megalogryphon | 50 | 12 | 2 | 16 | — | 10 | 12 | 6 | 7 | +5 | 2 | — | 214 |
+| Satyr | 7 | 14 | 7 | 10 | — | 12 | 12 | 6 | 9 | -1 | — | — | 214 |
 
 ## GURPS Creatures of the Night 1 — 1 creatures
 
 *Source: GURPS Creatures of the Night Vol.1 (SJGames, 4e).*  
 *Harvest: ok — 1 creatures from GURPS 4e - Creatures of the Night Vol.1.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Pool Beast | 24 | 16 | 4 | 12 | 48 | 14 | 7 | 7.00 | 7 | +7 | — | 14 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Pool Beast | 24 | 16 | 4 | 12 | 48 | 14 | 7 | 7.00 | 7 | +7 | — | — | 14 |
 
 ## GURPS Creatures of the Night 2 — 0 creatures
 
@@ -76,166 +76,361 @@ cleanly yield.
 *Source: GURPS Creatures of the Night Vol.3 (SJGames, 4e).*  
 *Harvest: ok — 3 creatures from GURPS 4e - Creatures of the Night Vol.3.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Chronochaotic Spider | 15 | 14 | 3 | 13 | — | 13 | 11 | 6.75 | 6 | 0 | — | 3 |
-| Cows From Space | 22 | 9 | 18 | 15 | — | 12 | 18 | 6.00 | 6 | +2 | 1 | 5 |
-| Wollig | 19 | 12 | 4 | 15 | — | 10 | 12 | 6.75 | 1 | +1 | — | 7 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Chronochaotic Spider | 15 | 14 | 3 | 13 | — | 13 | 11 | 6.75 | 6 | 0 | — | — | 3 |
+| Cows From Space | 22 | 9 | 18 | 15 | — | 12 | 18 | 6.00 | 6 | +2 | 1 | — | 5 |
+| Wollig | 19 | 12 | 4 | 15 | — | 10 | 12 | 6.75 | 1 | +1 | — | — | 7 |
 
 ## GURPS Creatures of the Night 4 — 7 creatures
 
 *Source: GURPS Creatures of the Night Vol.4 (SJGames, 4e).*  
 *Harvest: ok — 7 creatures from GURPS 4e - Creatures of the Night Vol.4.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Acidriad | 7 | 13 | 3 | 12 | — | 11 | 11 | 6.25 | 6 | 1 | — | 4 |
-| Clatternorn | 40 | 6 | 6 | 14 | — | 13 | 7 | 5.00 | 5 | +2 | — | 7 |
-| Flutter Devil | 2 | 13 | 3 | 13 | — | 10 | 11 | 6.50 | 6 | 6 | — | 9 |
-| Trantid | 5 | 9 | 2 | 12 | — | 15 | 8 | 5.25 | 5 | 5 | — | 11 |
-| The Voice Of Darkness | 12 | 12 | 10 | 14 | — | 14 | 11 | 6.50 | 7 | 0 | — | 13 |
-| The Drones | 10 | 10 | 7 | 10 | — | 7 | 7 | 5.00 | 5 | 0 | — | 13 |
-| Waste-Stalker | 15 | 12 | 3 | 14 | — | 13 | 13 | 6.50 | 7 | 0 | — | 15 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Acidriad | 7 | 13 | 3 | 12 | — | 11 | 11 | 6.25 | 6 | 1 | — | — | 4 |
+| Clatternorn | 40 | 6 | 6 | 14 | — | 13 | 7 | 5.00 | 5 | +2 | — | — | 7 |
+| Flutter Devil | 2 | 13 | 3 | 13 | — | 10 | 11 | 6.50 | 6 | 6 | — | — | 9 |
+| Trantid | 5 | 9 | 2 | 12 | — | 15 | 8 | 5.25 | 5 | 5 | — | — | 11 |
+| The Voice Of Darkness | 12 | 12 | 10 | 14 | — | 14 | 11 | 6.50 | 7 | 0 | — | — | 13 |
+| The Drones | 10 | 10 | 7 | 10 | — | 7 | 7 | 5.00 | 5 | 0 | — | — | 13 |
+| Waste-Stalker | 15 | 12 | 3 | 14 | — | 13 | 13 | 6.50 | 7 | 0 | — | — | 15 |
 
 ## GURPS Creatures of the Night 5 — 7 creatures
 
 *Source: GURPS Creatures of the Night Vol.5 (SJGames, 4e).*  
 *Harvest: ok — 7 creatures from GURPS 4e - Creatures of the Night Vol.5.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Diver | 11 | 12 | 8 | 14 | — | 13 | 12 | 6.5 | 6 | 0 | — | 5 |
-| Monitor | 10 | 10 | 13 | 13 | — | 13 | 13 | 5.75 | 5 | 0 | — | 5 |
-| Dreadstalk | 15 | 9 | 4 | 12 | — | 10 | 12 | 5.25 | 1 | +1 | — | 7 |
-| Gully Dragon | 25 | 15 | 5 | 14 | — | 13 | 12 | 8.00 | 8 | +3 | — | 9 |
-| Moon Guire | 15 | 9 | 6 | 12 | — | 13 | 11 | 5.25 | 5 | — | — | 11 |
-| Stealth Golem | 21 | 16 | 11 | 14 | — | 13 | 16 | 9.00 | 9 | 0 | 4 | 14 |
-| Watchtower Spirit | 0 | 10 | 16 | 13 | 15 | 18 | 16 | 5.75 | 0 | +2 | — | 19 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Diver | 11 | 12 | 8 | 14 | — | 13 | 12 | 6.5 | 6 | 0 | — | — | 5 |
+| Monitor | 10 | 10 | 13 | 13 | — | 13 | 13 | 5.75 | 5 | 0 | — | — | 5 |
+| Dreadstalk | 15 | 9 | 4 | 12 | — | 10 | 12 | 5.25 | 1 | +1 | — | — | 7 |
+| Gully Dragon | 25 | 15 | 5 | 14 | — | 13 | 12 | 8.00 | 8 | +3 | — | — | 9 |
+| Moon Guire | 15 | 9 | 6 | 12 | — | 13 | 11 | 5.25 | 5 | — | — | — | 11 |
+| Stealth Golem | 21 | 16 | 11 | 14 | — | 13 | 16 | 9.00 | 9 | 0 | 4 | — | 14 |
+| Watchtower Spirit | 0 | 10 | 16 | 13 | 15 | 18 | 16 | 5.75 | 0 | +2 | — | — | 19 |
 
 ## GURPS Lands Out Of Time — 6 creatures
 
 *Source: GURPS Lands Out of Time (SJGames, 4e), prehistoric bestiary.*  
 *Harvest: ok — 6 creatures from GURPS 4e - Lands Out Of Time.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Sauropods | 72 | 9 | 2 | 11 | — | 9 | 9 | 5.25 | 5 | +7 | 4 | 23 |
-| Ceratopsians | 14 | 13 | 2 | 10 | — | 10 | 10 | 5.75 | 10 | +1 | 4 | 24 |
-| Ankylosaurs | 41 | 10 | 2 | 11 | — | 10 | 10 | 5.25 | 5 | +4 | 9 | 25 |
-| Stegosaurs | 27 | 10 | 2 | 11 | — | 10 | 10 | 5.25 | 5 | +2 | 2 | 25 |
-| Theropods | 36 | 11 | 2 | 11 | — | 10 | 10 | 5.5 | 11 | +5 | 2 | 26 |
-| Pterosaurs | 9 | 12 | 2 | 11 | — | 11 | 12 | 5.75 | 2 | +5 | — | 28 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Sauropods | 72 | 9 | 2 | 11 | — | 9 | 9 | 5.25 | 5 | +7 | 4 | — | 23 |
+| Ceratopsians | 14 | 13 | 2 | 10 | — | 10 | 10 | 5.75 | 10 | +1 | 4 | — | 24 |
+| Ankylosaurs | 41 | 10 | 2 | 11 | — | 10 | 10 | 5.25 | 5 | +4 | 9 | — | 25 |
+| Stegosaurs | 27 | 10 | 2 | 11 | — | 10 | 10 | 5.25 | 5 | +2 | 2 | — | 25 |
+| Theropods | 36 | 11 | 2 | 11 | — | 10 | 10 | 5.5 | 11 | +5 | 2 | — | 26 |
+| Pterosaurs | 9 | 12 | 2 | 11 | — | 11 | 12 | 5.75 | 2 | +5 | — | — | 28 |
 
 ## GURPS Banestorm — 19 creatures
 
 *Source: GURPS Banestorm (SJGames, 4e), bestiary.*  
 *Harvest: ok — 19 creatures from GURPS 4e - Banestorm.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Bushwolves | 8 | 10 | 3 | 11 | — | 11 | 14 | 5.25 | 6 | +0 | 1 | 221 |
-| Caustiguses | 14 | 14 | 10 | 13 | — | 10 | 12 | 6.75 | 6 | +0 | — | 222 |
-| Giant Spiders | 17 | 15 | 2 | 13 | — | 10 | 13 | 7 | 7 | +0 | — | 222 |
-| Harpies | 12 | 13 | 5 | 13 | — | 10 | 12 | 6.5 | 3 | +0 | 1 | 223 |
-| Hellsharks | 60 | 13 | 2 | 12 | — | 10 | 10 | 6.25 | 10 | +6 | — | 223 |
-| Hippogriffs | 18 | 12 | 3 | 12 | — | 11 | 12 | 6 | 6 | +1 | — | 224 |
-| Hydras | 18 | 12 | 2 | 13 | — | 13 | 12 | 6.25 | 6 | +1 | 3 | 224 |
-| Krakens | 80 | 13 | 2 | 12 | 160 | 11 | 12 | 6.25 | 6 | +9 | — | 225 |
-| Nightstalkers | 25 | 12 | 4 | 13 | — | 12 | 11 | 6.25 | 7 | +2 | — | 225 |
-| Paladins | 15 | 12 | 2 | 11 | — | 10 | 10 | 3 | 3 | +1 | 1 | 225 |
-| Pegasi | 20 | 14 | 6 | 12 | — | 11 | 13 | 6.5 | 7 | +1 | — | 226 |
-| Reeks | 4 | 5 | 2 | 13 | 13 | 8 | 13 | 3.5 | 1 | 0 | — | 226 |
-| Striders | 20 | 15 | 3 | 11 | — | 10 | 12 | 8 | 9 | +1 | — | 226 |
-| Treetippers | 27 | 10 | 3 | 11 | 34 | 10 | 12 | 5.25 | 4 | +1 | 3 | 227 |
-| Unicorns | 20 | 15 | 5 | 14 | — | 13 | 18 | 9 | 9 | +1 | — | 227 |
-| Wyverns | 19 | 13 | 5 | 12 | — | 10 | 12 | 6.25 | 3 | +3 | — | 228 |
-| Hardings | 11 | 11 | 3 | 12 | — | 11 | 12 | 5.75 | 7 | +0 | — | 231 |
-| Milkfish | 26 | 9 | 3 | 11 | — | 10 | 12 | 3 | 3 | +1 | — | 231 |
-| Woolens | 9 | 13 | 3 | 12 | — | 10 | 12 | 6.25 | 8 | +0 | — | 231 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bushwolves | 8 | 10 | 3 | 11 | — | 11 | 14 | 5.25 | 6 | +0 | 1 | — | 221 |
+| Caustiguses | 14 | 14 | 10 | 13 | — | 10 | 12 | 6.75 | 6 | +0 | — | — | 222 |
+| Giant Spiders | 17 | 15 | 2 | 13 | — | 10 | 13 | 7 | 7 | +0 | — | — | 222 |
+| Harpies | 12 | 13 | 5 | 13 | — | 10 | 12 | 6.5 | 3 | +0 | 1 | — | 223 |
+| Hellsharks | 60 | 13 | 2 | 12 | — | 10 | 10 | 6.25 | 10 | +6 | — | — | 223 |
+| Hippogriffs | 18 | 12 | 3 | 12 | — | 11 | 12 | 6 | 6 | +1 | — | — | 224 |
+| Hydras | 18 | 12 | 2 | 13 | — | 13 | 12 | 6.25 | 6 | +1 | 3 | — | 224 |
+| Krakens | 80 | 13 | 2 | 12 | 160 | 11 | 12 | 6.25 | 6 | +9 | — | — | 225 |
+| Nightstalkers | 25 | 12 | 4 | 13 | — | 12 | 11 | 6.25 | 7 | +2 | — | — | 225 |
+| Paladins | 15 | 12 | 2 | 11 | — | 10 | 10 | 3 | 3 | +1 | 1 | — | 225 |
+| Pegasi | 20 | 14 | 6 | 12 | — | 11 | 13 | 6.5 | 7 | +1 | — | — | 226 |
+| Reeks | 4 | 5 | 2 | 13 | 13 | 8 | 13 | 3.5 | 1 | 0 | — | — | 226 |
+| Striders | 20 | 15 | 3 | 11 | — | 10 | 12 | 8 | 9 | +1 | — | — | 226 |
+| Treetippers | 27 | 10 | 3 | 11 | 34 | 10 | 12 | 5.25 | 4 | +1 | 3 | — | 227 |
+| Unicorns | 20 | 15 | 5 | 14 | — | 13 | 18 | 9 | 9 | +1 | — | — | 227 |
+| Wyverns | 19 | 13 | 5 | 12 | — | 10 | 12 | 6.25 | 3 | +3 | — | — | 228 |
+| Hardings | 11 | 11 | 3 | 12 | — | 11 | 12 | 5.75 | 7 | +0 | — | — | 231 |
+| Milkfish | 26 | 9 | 3 | 11 | — | 10 | 12 | 3 | 3 | +1 | — | — | 231 |
+| Woolens | 9 | 13 | 3 | 12 | — | 10 | 12 | 6.25 | 8 | +0 | — | — | 231 |
 
 ## GURPS Dungeon Fantasy 5 - Allies — 33 creatures
 
 *Source: GURPS Dungeon Fantasy 5: Allies (SJGames, 4e), animal companions.*  
 *Harvest: ok — 33 creatures from GURPS 4e - Dungeon Fantasy 05 - Allies.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Anaconda | 25 | 14 | 6 | 12 | 25 | 12 | 11 | 6.00 | 6 | — | 3 | 6 |
-| Bear | 27 | 12 | 6 | 12 | 27 | 13 | 12 | 6.00 | 7 | — | 3 | 6 |
-| Boar | 21 | 13 | 6 | 14 | 26 | 15 | 13 | 7.00 | 8 | — | 3 | 6 |
-| Giant Eagle | 13 | 14 | 6 | 12 | 13 | 11 | 14 | 7.00 | 1 | 0 | 1 | 7 |
-| Gorilla | 17 | 13 | 6 | 12 | 17 | 11 | 11 | 6.00 | 7 | — | 2 | 7 |
-| Hound | 13 | 14 | 6 | 14 | 15 | 11 | 14 | 7.00 | 8 | 0 | 1 | 8 |
-| Insect Swarm | 2 | 12 | 6 | 12 | 12 | 10 | 10 | 6.00 | . | 0 | 0 | 9 |
-| Kangaroo | 13 | 12 | 6 | 12 | 17 | 11 | 12 | 6.00 | 11 | 0 | 1 | 9 |
-| Kraken | 21 | 12 | 6 | 12 | 21 | 12 | 10 | 6.00 | — | — | 2 | 10 |
-| Shark | 36 | 13 | 6 | 14 | 36 | 12 | 11 | 7.00 | — | — | 2 | 10 |
-| Stallion | 27 | 12 | 6 | 12 | 27 | 11 | 12 | 6.00 | 8 | — | 1 | 11 |
-| Wolverine | 11 | 12 | 6 | 14 | 11 | 13 | 12 | 6.00 | 6 | -1 | 0 | 11 |
-| Divine Servitor | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 6.00 | 6 | 0 | 0 | 12 |
-| Water | 12 | 13 | 13 | 13 | 12 | 14 | 13 | 6.00 | 6 | 0 | 3 | 19 |
-| Bat | 2 | 12 | 10 | 12 | 7 | 10 | 12 | 6.00 | — | -5 | 0 | 21 |
-| Cat | 4 | 14 | 10 | 12 | 9 | 11 | 12 | 6.00 | 10 | -3 | 0 | 22 |
-| Chimp | 9 | 12 | 10 | 12 | 12 | 10 | 11 | 6.00 | 6 | 0 | 0 | 22 |
-| Dog | 10 | 12 | 10 | 12 | 13 | 11 | 14 | 6.00 | 6 | 0 | 0 | 22 |
-| Hawk | 3 | 14 | 10 | 12 | 8 | 10 | 14 | 7.00 | — | -4 | 0 | 23 |
-| Macaw | 3 | 12 | 10 | 12 | 8 | 12 | 12 | 6.00 | — | -3 | 0 | 23 |
-| Owl | 3 | 12 | 10 | 12 | 8 | 12 | 12 | 6.00 | 1 | -4 | 0 | 23 |
-| Rabbit | 3 | 13 | 10 | 12 | 8 | 10 | 13 | 7.00 | 10 | -4 | 0 | 24 |
-| Rat | 1 | 12 | 10 | 14 | 6 | 12 | 12 | 6.00 | 6 | -7 | 0 | 24 |
-| Giant Spider | 5 | 12 | 10 | 12 | 9 | 10 | 10 | 6.00 | 6 | -1 | 1 | 25 |
-| Viper | 5 | 13 | 10 | 12 | 10 | 11 | 11 | 6.00 | 6 | -2 | 0 | 25 |
-| Hellhound | 11 | 12 | 10 | 12 | 13 | 11 | 11 | 6.00 | 6 | 0 | 1 | 26 |
-| Ice Weasel | 5 | 13 | 10 | 12 | 10 | 12 | 12 | 6.00 | 6 | -4 | 0 | 26 |
-| Imp | 7 | 12 | 10 | 12 | 11 | 10 | 11 | 6.00 | — | 0 | 0 | 26 |
-| Salamander | 5 | 12 | 10 | 12 | 10 | 12 | 11 | 6.00 | 6 | -3 | 0 | 27 |
-| Shoulder Dragon | 5 | 12 | 10 | 12 | 10 | 12 | 13 | 6.00 | — | -4 | 1 | 27 |
-| Sylph | 0 | 12 | 10 | 12 | 10 | 11 | 12 | 6.00 | — | -3 | 0 | 28 |
-| Talus | 13 | 12 | 10 | 12 | 15 | 11 | 10 | 5.00 | 5 | -3 | 5 | 28 |
-| Undine | 5 | 12 | 10 | 12 | 10 | 10 | 11 | 6.00 | 6 | -3 | 0 | 29 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Anaconda | 25 | 14 | 6 | 12 | 25 | 12 | 11 | 6.00 | 6 | — | 3 | — | 6 |
+| Bear | 27 | 12 | 6 | 12 | 27 | 13 | 12 | 6.00 | 7 | — | 3 | — | 6 |
+| Boar | 21 | 13 | 6 | 14 | 26 | 15 | 13 | 7.00 | 8 | — | 3 | — | 6 |
+| Giant Eagle | 13 | 14 | 6 | 12 | 13 | 11 | 14 | 7.00 | 1 | 0 | 1 | — | 7 |
+| Gorilla | 17 | 13 | 6 | 12 | 17 | 11 | 11 | 6.00 | 7 | — | 2 | — | 7 |
+| Hound | 13 | 14 | 6 | 14 | 15 | 11 | 14 | 7.00 | 8 | 0 | 1 | — | 8 |
+| Insect Swarm | 2 | 12 | 6 | 12 | 12 | 10 | 10 | 6.00 | . | 0 | 0 | — | 9 |
+| Kangaroo | 13 | 12 | 6 | 12 | 17 | 11 | 12 | 6.00 | 11 | 0 | 1 | — | 9 |
+| Kraken | 21 | 12 | 6 | 12 | 21 | 12 | 10 | 6.00 | — | — | 2 | — | 10 |
+| Shark | 36 | 13 | 6 | 14 | 36 | 12 | 11 | 7.00 | — | — | 2 | — | 10 |
+| Stallion | 27 | 12 | 6 | 12 | 27 | 11 | 12 | 6.00 | 8 | — | 1 | — | 11 |
+| Wolverine | 11 | 12 | 6 | 14 | 11 | 13 | 12 | 6.00 | 6 | -1 | 0 | — | 11 |
+| Divine Servitor | 12 | 12 | 12 | 12 | 12 | 12 | 12 | 6.00 | 6 | 0 | 0 | — | 12 |
+| Water | 12 | 13 | 13 | 13 | 12 | 14 | 13 | 6.00 | 6 | 0 | 3 | — | 19 |
+| Bat | 2 | 12 | 10 | 12 | 7 | 10 | 12 | 6.00 | — | -5 | 0 | — | 21 |
+| Cat | 4 | 14 | 10 | 12 | 9 | 11 | 12 | 6.00 | 10 | -3 | 0 | — | 22 |
+| Chimp | 9 | 12 | 10 | 12 | 12 | 10 | 11 | 6.00 | 6 | 0 | 0 | — | 22 |
+| Dog | 10 | 12 | 10 | 12 | 13 | 11 | 14 | 6.00 | 6 | 0 | 0 | — | 22 |
+| Hawk | 3 | 14 | 10 | 12 | 8 | 10 | 14 | 7.00 | — | -4 | 0 | — | 23 |
+| Macaw | 3 | 12 | 10 | 12 | 8 | 12 | 12 | 6.00 | — | -3 | 0 | — | 23 |
+| Owl | 3 | 12 | 10 | 12 | 8 | 12 | 12 | 6.00 | 1 | -4 | 0 | — | 23 |
+| Rabbit | 3 | 13 | 10 | 12 | 8 | 10 | 13 | 7.00 | 10 | -4 | 0 | — | 24 |
+| Rat | 1 | 12 | 10 | 14 | 6 | 12 | 12 | 6.00 | 6 | -7 | 0 | — | 24 |
+| Giant Spider | 5 | 12 | 10 | 12 | 9 | 10 | 10 | 6.00 | 6 | -1 | 1 | — | 25 |
+| Viper | 5 | 13 | 10 | 12 | 10 | 11 | 11 | 6.00 | 6 | -2 | 0 | — | 25 |
+| Hellhound | 11 | 12 | 10 | 12 | 13 | 11 | 11 | 6.00 | 6 | 0 | 1 | — | 26 |
+| Ice Weasel | 5 | 13 | 10 | 12 | 10 | 12 | 12 | 6.00 | 6 | -4 | 0 | — | 26 |
+| Imp | 7 | 12 | 10 | 12 | 11 | 10 | 11 | 6.00 | — | 0 | 0 | — | 26 |
+| Salamander | 5 | 12 | 10 | 12 | 10 | 12 | 11 | 6.00 | 6 | -3 | 0 | — | 27 |
+| Shoulder Dragon | 5 | 12 | 10 | 12 | 10 | 12 | 13 | 6.00 | — | -4 | 1 | — | 27 |
+| Sylph | 0 | 12 | 10 | 12 | 10 | 11 | 12 | 6.00 | — | -3 | 0 | — | 28 |
+| Talus | 13 | 12 | 10 | 12 | 15 | 11 | 10 | 5.00 | 5 | -3 | 5 | — | 28 |
+| Undine | 5 | 12 | 10 | 12 | 10 | 10 | 11 | 6.00 | 6 | -3 | 0 | — | 29 |
 
 ## GURPS Dungeon Fantasy 9 - Summoners — 17 creatures
 
 *Source: GURPS Dungeon Fantasy 9: Summoners (SJGames, 4e), summoned creatures.*  
 *Harvest: ok — 17 creatures from GURPS 4e - Dungeon Fantasy 09 - Summoners.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Embodied Animal-Spirit | 10 | 11 | 8 | 12 | 10 | 8 | 12 | 6.00 | 6 | 0 | 0 | 21 |
-| Lesser Ghost | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 5.00 | 5 | 0 | 0 | 22 |
-| Major Ghost | 10 | 10 | 10 | 13 | 10 | 16 | 12 | 5.00 | 5 | 0 | 0 | 22 |
-| Household Guardian | 12 | 11 | 12 | 13 | 12 | 14 | 12 | 6.00 | 6 | 0 | — | 23 |
-| Spirit Of Place | 17 | 12 | 14 | 14 | — | 16 | 14 | 6.50 | 6 | — | 4 | 24 |
-| Servitor Skeleton | 10 | 13 | 8 | 11 | 10 | 9 | 8 | 7.00 | 6 | 0 | 3 | 26 |
-| Servitor Zombie | 14 | 10 | 8 | 12 | 19 | 11 | 9 | 5.50 | 5 | 0 | 3 | 26 |
-| Air Elementals | 6 | 9 | 8 | 7 | 8 | 8 | 8 | 4.00 | — | -1 | 0 | 27 |
-| Earth Elementals | 11 | 8 | 6 | 10 | 11 | 6 | 6 | 4.50 | 4 | -1 | 2 | 27 |
-| Fire Elementals | 8 | 9 | 8 | 7 | 10 | 8 | 8 | 4.00 | 4 | -1 | 0 | 28 |
-| Metal Elementals | 10 | 8 | 6 | 10 | 10 | 6 | 6 | 4.50 | 4 | -1 | 4 | 29 |
-| Water Elementals | 7 | 8 | 7 | 9 | 7 | 7 | 7 | 4.25 | — | -1 | 0 | 30 |
-| Wood Elementals | 10 | 9 | 6 | 10 | 10 | 6 | 6 | 4.75 | 4 | -1 | 0 | 31 |
-| Petty Demon | 9 | 10 | 8 | 11 | 9 | 9 | 10 | 5.00 | 5 | -1 | 3 | 32 |
-| Devilkin | 7 | 13 | 10 | 12 | 7 | 10 | 10 | 6.00 | — | -3 | — | 33 |
-| Standard Demon | 17 | 12 | 10 | 14 | 25 | 10 | 10 | 6.50 | — | 0 | — | 34 |
-| Angelic Emissary | 18 | 12 | 12 | 15 | 25 | 15 | 12 | 7.00 | — | 0 | — | 35 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Embodied Animal-Spirit | 10 | 11 | 8 | 12 | 10 | 8 | 12 | 6.00 | 6 | 0 | 0 | — | 21 |
+| Lesser Ghost | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 5.00 | 5 | 0 | 0 | — | 22 |
+| Major Ghost | 10 | 10 | 10 | 13 | 10 | 16 | 12 | 5.00 | 5 | 0 | 0 | — | 22 |
+| Household Guardian | 12 | 11 | 12 | 13 | 12 | 14 | 12 | 6.00 | 6 | 0 | — | — | 23 |
+| Spirit Of Place | 17 | 12 | 14 | 14 | — | 16 | 14 | 6.50 | 6 | — | 4 | — | 24 |
+| Servitor Skeleton | 10 | 13 | 8 | 11 | 10 | 9 | 8 | 7.00 | 6 | 0 | 3 | — | 26 |
+| Servitor Zombie | 14 | 10 | 8 | 12 | 19 | 11 | 9 | 5.50 | 5 | 0 | 3 | — | 26 |
+| Air Elementals | 6 | 9 | 8 | 7 | 8 | 8 | 8 | 4.00 | — | -1 | 0 | — | 27 |
+| Earth Elementals | 11 | 8 | 6 | 10 | 11 | 6 | 6 | 4.50 | 4 | -1 | 2 | — | 27 |
+| Fire Elementals | 8 | 9 | 8 | 7 | 10 | 8 | 8 | 4.00 | 4 | -1 | 0 | — | 28 |
+| Metal Elementals | 10 | 8 | 6 | 10 | 10 | 6 | 6 | 4.50 | 4 | -1 | 4 | — | 29 |
+| Water Elementals | 7 | 8 | 7 | 9 | 7 | 7 | 7 | 4.25 | — | -1 | 0 | — | 30 |
+| Wood Elementals | 10 | 9 | 6 | 10 | 10 | 6 | 6 | 4.75 | 4 | -1 | 0 | — | 31 |
+| Petty Demon | 9 | 10 | 8 | 11 | 9 | 9 | 10 | 5.00 | 5 | -1 | 3 | — | 32 |
+| Devilkin | 7 | 13 | 10 | 12 | 7 | 10 | 10 | 6.00 | — | -3 | — | — | 33 |
+| Standard Demon | 17 | 12 | 10 | 14 | 25 | 10 | 10 | 6.50 | — | 0 | — | — | 34 |
+| Angelic Emissary | 18 | 12 | 12 | 15 | 25 | 15 | 12 | 7.00 | — | 0 | — | — | 35 |
 
 ## GURPS Big Lizzie — 13 creatures
 
 *Source: GURPS Big Lizzie (SJGames, 4e), bestiary.*  
 *Harvest: ok — 13 creatures from GURPS 4e - Big Lizzie.md.*
 
-| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Bat | 13 | 12 | 2 | 11 | 11 | 11 | 12 | 5.75 | 2 | — | 1 | 19 |
-| Big-Neck Whale | 31 | 13 | 2 | 10 | 31 | 10 | 10 | 5.75 | 1 | — | 1 | 19 |
-| Croc | 21 | 13 | 3 | 14 | 21 | 11 | 12 | 6.75 | 8 | — | 4 | 19 |
-| Dragon | 38 | 10 | 1 | 11 | 38 | 10 | 10 | 5.25 | 4 | — | 4 | 20 |
-| Duck Mouth | 30 | 14 | 1 | 12 | 30 | 9 | 11 | 6.50 | 6 | — | 3 | 20 |
-| Great Snake | 19 | 12 | 2 | 11 | 19 | 10 | 19 | 5.75 | 4 | — | 0 | 20 |
-| Gull | 6 | 14 | 2 | 11 | 6 | 11 | 11 | 6.25 | 1 | — | 1 | 20 |
-| Horse | 21 | 9 | 3 | 11 | 21 | 10 | 12 | 5.00 | 6 | — | 0 | 20 |
-| Jawbone | 28 | 11 | 2 | 11 | 28 | 10 | 10 | 5.50 | 11 | — | 2 | 21 |
-| Mammoth | 54 | 12 | 4 | 12 | 54 | 11 | 11 | 6.00 | 8 | — | 2 | 21 |
-| Snarler | 16 | 16 | 3 | 12 | 16 | 11 | 12 | 7.00 | 10 | 0 | 1 | 22 |
-| Toe Ponies | 18 | 10 | 3 | 11 | 18 | 11 | 11 | 5.25 | 7 | — | 0 | 22 |
-| Turtle | 17 | 10 | 3 | 16 | 17 | 12 | 11 | 6.50 | 5 | — | 2 | 22 |
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bat | 13 | 12 | 2 | 11 | 11 | 11 | 12 | 5.75 | 2 | — | 1 | — | 19 |
+| Big-Neck Whale | 31 | 13 | 2 | 10 | 31 | 10 | 10 | 5.75 | 1 | — | 1 | — | 19 |
+| Croc | 21 | 13 | 3 | 14 | 21 | 11 | 12 | 6.75 | 8 | — | 4 | — | 19 |
+| Dragon | 38 | 10 | 1 | 11 | 38 | 10 | 10 | 5.25 | 4 | — | 4 | — | 20 |
+| Duck Mouth | 30 | 14 | 1 | 12 | 30 | 9 | 11 | 6.50 | 6 | — | 3 | — | 20 |
+| Great Snake | 19 | 12 | 2 | 11 | 19 | 10 | 19 | 5.75 | 4 | — | 0 | — | 20 |
+| Gull | 6 | 14 | 2 | 11 | 6 | 11 | 11 | 6.25 | 1 | — | 1 | — | 20 |
+| Horse | 21 | 9 | 3 | 11 | 21 | 10 | 12 | 5.00 | 6 | — | 0 | — | 20 |
+| Jawbone | 28 | 11 | 2 | 11 | 28 | 10 | 10 | 5.50 | 11 | — | 2 | — | 21 |
+| Mammoth | 54 | 12 | 4 | 12 | 54 | 11 | 11 | 6.00 | 8 | — | 2 | — | 21 |
+| Snarler | 16 | 16 | 3 | 12 | 16 | 11 | 12 | 7.00 | 10 | 0 | 1 | — | 22 |
+| Toe Ponies | 18 | 10 | 3 | 11 | 18 | 11 | 11 | 5.25 | 7 | — | 0 | — | 22 |
+| Turtle | 17 | 10 | 3 | 16 | 17 | 12 | 11 | 6.50 | 5 | — | 2 | — | 22 |
+
+## GURPS 4e Natural Encyclopedia (compilation) — 187 creatures
+
+*Source: GURPS Natural Encyclopedia v1.5.2 (fan compilation, 4e stats; each creature credits its original GURPS source).*  
+*Harvest: ok — 187 net-new creatures (6 already-indexed names deduped).*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Origin | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Acóatl | 15 | 13 | 5 | 13 | 15 | 11 | 10 | 6.5 | 8 | 0 | 2 | GURPS Aztecs | 6 |
+| Afanc | 92 | 9 | 3 | 14 | 92 | 10 | 10 | 5.75 | 3 | — | 2 | GURPS Fantasy Bestiary 3e | 6 |
+| Agropelter | 8 | 14 | 5 | 12 | 8 | 11 | 10 | 6.5 | 10 | 0 | — | GURPS Bestiary 3e | 6 |
+| Alligator | 21 | 12 | 3 | 12 | 21 | 10 | 10 | 6 | — | — | 4 | GURPS Bestiary 3e | 6 |
+| Alticamelus | 20 | 9 | 4 | 12 | 20 | 10 | 10 | 5.25 | 6 | — | 0 | GURPS New Sun | 6 |
+| Amarok | 21 | 12 | 5 | 13 | 21 | 10 | 10 | 6.25 | 9 | — | 0 | GURPS Fantasy Bestiary 3e | 6 |
+| Amikiri | 8 | 14 | 5 | 14 | 6 | 10 | 10 | 7 | 6 | -2 | 0 | GURPS Fantasy Bestiary 3e and GURPS Japan | 6 |
+| Antelope | 13 | 14 | 3 | 11 | 13 | 10 | 12 | 6.25 | 7 | 0 | 0 | Author | 8 |
+| Arsinoither | 29 | 9 | 4 | 13 | 29 | 10 | 10 | 5.5 | 14 | -2 | 2 | GURPS New Sun | 8 |
+| Athol | 9 | 13 | 4 | 13 | 9 | 11 | 10 | 6.5 | — | 0 | 0 | GURPS Fantasy Bestiary 3e | 8 |
+| Auízotl | 10 | 14 | 5 | 13 | 5 | 10 | 10 | 6.75 | 10 | 0 | 0 | GURPS Aztecs | 8 |
+| Aurochs | 23 | 9 | 4 | 11 | 23 | 10 | 8 | 5 | 8 | — | 1 | GURPS Bestiary 3e | 8 |
+| Avukett | 5 | 14 | 4 | 11 | 7 | 10 | 10 | 6.25 | 9 | 0 | 0 | GURPS Fantasy II | 9 |
+| Badger | 7 | 13 | 4 | 10 | 9 | 10 | 10 | 5.75 | 6 | -3 | 0 | GURPS Bestiary 3e | 9 |
+| Baluchiter | 47 | 10 | 3 | 13 | 47 | 10 | 10 | 5.75 | 9 | — | 2 | GURPS New Sun | 9 |
+| Barylambda | 24 | 9 | 4 | 13 | 24 | 10 | 10 | 5.5 | 8 | — | 2 | GURPS New Sun | 10 |
+| Beaver | 5 | 12 | 4 | 12 | 5 | 10 | 10 | 6 | 6 | -2 | 0 | GURPS Bestiary 3e | 12 |
+| Bird Snatcher | 6 | 10 | 4 | 12 | 6 | 10 | 10 | 7 | 6 | -3 | 0 | GURPS Space Bestiary 3e | 12 |
+| Bison | 25 | 10 | 4 | 12 | 25 | 10 | 10 | 5.5 | 13 | — | 2 | GURPS Bestiary 3e | 13 |
+| Blimp Ape | 3 | 15 | 5 | 13 | 3 | 10 | 10 | 7 | 12 | -2 | 0 | GURPS Space Bestiary 3e | 13 |
+| Blizzard Maker | 4 | 12 | 5 | 9 | 4 | 10 | 10 | 5.25 | 5 | -4 | 0 | GURPS Space Bestiary 3e | 13 |
+| Bloodbeast | 18 | 14 | 4 | 13 | 18 | 11 | 10 | 6.75 | 8 | 0 | 0 | GURPS Fantasy Besiary 3e | 13 |
+| Body Bag | 1 | 14 | 2 | 10 | 15 | 10 | 10 | 6 | 8 | — | 0 | GURPS Space Bestiary 3e | 13 |
+| Boiler Fish | 9 | 12 | 3 | 12 | 9 | 10 | 10 | 6 | 8 | 0 | 0 | GURPS Space Bestiary 3e | 14 |
+| Boneless | 15 | 14 | 3 | 10 | 15 | 10 | 10 | 6.75 | 7 | 0 | 0 | GURPS Fantasy II | 14 |
+| Calchona | 12 | 12 | 5 | 13 | 12 | 10 | 10 | 6.25 | 9 | — | 0 | GURPS Fantasy Bestiary 3e | 14 |
+| Cape Hunting Dog | 8 | 15 | 4 | 11 | 8 | 10 | 12 | 6.25 | 10 | -2 | 0 | Author | 14 |
+| Carcor | 21 | 10 | 5 | 13 | 21 | 8 | 14 | 6.25 | 6 | — | 5 | Inspired by Gorgon, D&D Monster Manual I | 15 |
+| Caribou | 17 | 14 | 4 | 11 | 17 | 10 | 10 | 6.25 | 6 | — | 0 | GURPS Bestiary 3e | 15 |
+| Carrier | 40 | 4 | 4 | 13 | 40 | 8 | 8 | 4.25 | 4 | 0 | 2 | GURPS Space Bestiary 3e (Christopher) | 15 |
+| Cattle | 23 | 8 | 4 | 11 | 32 | 8 | 9 | 4.75 | 8 | — | 1 | GURPS Bestiary 3e | 15 |
+| Catoblepas | 20 | 10 | 4 | 13 | 20 | 10 | 10 | 5.75 | 9 | — | 0 | GURPS Fantasy Bestiary 3e | 15 |
+| Caucatrix | 6 | 13 | 5 | 10 | 9 | 6 | 9 | 5.75 | 6 | -1 | 0 | Inspired by Cockatrice, D&D Monster Manual | 16 |
+| Cerastes | 9 | 14 | 4 | 13 | 9 | 10 | 10 | 6.75 | 4 | 1 | 0 | GURPS Fantasy Bestiary 3e | 16 |
+| Chaser | 4 | 16 | 4 | 10 | 7 | 10 | 10 | 6.5 | 14 | -2 | — | GURPS Space Bestiary 3e | 16 |
+| Cheetah | 11 | 14 | 4 | 11 | 11 | 11 | 12 | 6.25 | 8 | -1 | 0 | — | 16 |
+| Chimera | 17 | 12 | 4 | 12 | 17 | 10 | 14 | 6 | 6 | — | 2 | Author. | 17 |
+| Clawdaddy | 20 | 11 | 4 | 13 | 20 | 10 | 10 | 6 | 6 | — | 3 | GURPS Space Bestiary 3e | 18 |
+| Cleaner Fish | 5 | 9 | 3 | 6 | 5 | 10 | 10 | 3.75 | 8 | -2 | 1 | GURPS Space Bestiary 3e (Aspirin Fish) | 18 |
+| Cockatrice | 3 | 12 | 3 | 12 | 3 | 10 | 10 | 6 | — | -3 | 0 | GURPS Fantasy Bestiary 3e | 18 |
+| Colloth | 14 | 14 | 3 | 13 | 14 | 10 | 12 | 6.75 | — | — | 0 | GURPS Space Bestiary 3e (along with Tiger Shark, | 18 |
+| Coyote | 7 | 14 | 5 | 10 | 7 | 10 | 11 | 6 | 9 | -1 | 0 | GURPS Bestiary 3e | 18 |
+| Creodont | 14 | 12 | 3 | 12 | 14 | 10 | 10 | 6 | 7 | 0 | 1 | GURPS Bestiary 3e | 19 |
+| Crocodile | 22 | 14 | 3 | 13 | 22 | 10 | 10 | 6.75 | — | — | 4 | GURPS Bestiary 3e | 19 |
+| Crocotta | 12 | 12 | 5 | 12 | 12 | 10 | 12 | 6 | 9 | -2 | 0 | GURPS Fantasy Bestiary 3e | 19 |
+| Curler | 16 | 11 | 5 | 10 | 16 | 10 | 10 | 5.25 | 4 | — | 1 | GURPS Space Bestiary 3e | 20 |
+| Cushna | 13 | 10 | 4 | 10 | 13 | 10 | 12 | 5 | 8 | 0 | 0 | GURPS Fantasy Bestiary 3e | 20 |
+| Dart Fish | 2 | 14 | 3 | 12 | 2 | 10 | 10 | 6.5 | 10 | -5 | 0 | GURPS Space Bestiary 3e | 20 |
+| Delgeth | 21 | 13 | 4 | 13 | 21 | 10 | 10 | 6.5 | 18 | — | 0 | GURPS Fantasy Bestiary 3e | 20 |
+| Dhole | 7 | 13 | 5 | 11 | 7 | 10 | 10 | 6 | 8 | -1 | 0 | GURPS Bestiary 3e | 20 |
+| Diatryma | 17 | 14 | 3 | 12 | 17 | 10 | 10 | 6.5 | 14 | 0 | 0 | GURPS Bestiary 3e | 20 |
+| Didi | 14 | 14 | 5 | 13 | 14 | 11 | 10 | 6.75 | 8 | — | 0 | GURPS Bestiary 3e | 20 |
+| Dingo | 7 | 13 | 5 | 11 | 7 | 10 | 11 | 6 | 6 | -1 | 0 | Author | 21 |
+| Dinohyus | 24 | 12 | 3 | 12 | 24 | 10 | 10 | 6 | 8 | — | 2 | GURPS Bestiary 3e | 21 |
+| Djun | 25 | 15 | 4 | 14 | 25 | 10 | 10 | 7.25 | 5 | 0 | 3 | GURPS Fantasy Bestiary 3e | 21 |
+| Dread Stalker | 13 | 13 | 4 | 12 | 13 | 10 | 12 | 6.25 | 8 | 0 | 0 | GURPS Fantasy Bestiary 3e | 21 |
+| Dredger | 48 | 6 | 3 | 13 | 48 | 10 | 10 | 4.75 | 4 | — | 0 | GURPS Space Bestiary 3e (Winslow’s Dredger) | 22 |
+| Dundubhis | 40 | 9 | 4 | 12 | 40 | 10 | 10 | 5.5 | 6 | — | 1 | GURPS Fantasy Bestiary 3e | 22 |
+| Eagle | 5 | 12 | 4 | 10 | 5 | 10 | 10 | 5.5 | 4 | -2 | 0 | GURPS Bestiary 3e | 22 |
+| Eland | 24 | 14 | 4 | 11 | 24 | 10 | 10 | 6.25 | 16 | — | 0 | GURPS Bestiary 3e | 23 |
+| Elasmotherium | 40 | 9 | 4 | 13 | 40 | 10 | 10 | 5.5 | 10 | — | 3 | GURPS Bestiary 3e | 23 |
+| Elk | 17 | 10 | 4 | 11 | 17 | 10 | 10 | 5.25 | 10 | — | 1 | Author | 23 |
+| Ferret | 2 | 15 | 5 | 10 | 3 | — | 10 | 6.25 | 9 | -4 | 0 | GURPS Bestiary 3e | 23 |
+| Fideal | 11 | 12 | 2 | 14 | 11 | 10 | 10 | 6.5 | 1 | 0 | 0 | GURPS Fantasy Bestiary 3e | 23 |
+| Floe Bird | 7 | 12 | 4 | 10 | 7 | 10 | 10 | 5.5 | 10 | -3 | 0 | GURPS Space Bestiary 3e | 24 |
+| Fox | 5 | 12 | 4 | 10 | 5 | 10 | 12 | 5.5 | 5 | -2 | 0 | Author | 24 |
+| Gila Monster | 3 | 10 | 3 | 11 | 3 | 10 | 10 | 5.25 | 1 | -3 | 2 | GURPS Bestiary 3e | 24 |
+| Glacier Eater | 25 | 9 | 4 | 15 | 15 | 10 | 10 | 6 | 8 | — | 2 | GURPS Space Bestiary 3e | 24 |
+| Glyptodont | 25 | 9 | 3 | 13 | 25 | 10 | 10 | 5.5 | 3 | — | 3 | GURPS Bestiary 3e | 24 |
+| Grapple Bird | 5 | 14 | 4 | 12 | 5 | 10 | 10 | 6.5 | — | -3 | 0 | GURPS Space Bestiary 3e | 24 |
+| Gravel Jaw | 18 | 13 | 3 | 14 | 18 | 10 | 10 | 6.75 | 4 | — | 0 | GURPS Space Bestiary 3e | 25 |
+| Gumberu | 19 | 13 | 4 | 12 | 19 | 10 | 10 | 6.25 | 8 | — | 1 | GURPS Bestiary 3e (Gumberoo) | 25 |
+| Harpooner | 5 | 14 | 4 | 12 | 5 | 10 | 10 | 6.5 | — | -3 | 0 | GURPS Space Bestiary | 25 |
+| Harpy | 11 | 13 | 5 | 13 | 11 | 10 | 12 | 6.5 | — | 0 | 1 | GURPS Fantasy Bestiary 3e | 25 |
+| Hippopotamus | 40 | 8 | 4 | 11 | 40 | 10 | 10 | 4.75 | 4 | — | 3 | GURPS Bestiary 3e | 25 |
+| Howler Worm | 1 | 12 | 2 | 9 | 1 | 10 | 10 | 5.25 | 3 | -5 | 0 | GURPS Space Bestiary 3e (Air Raid Worm) | 26 |
+| Hsing-hsing | 14 | 13 | 6 | 13 | 14 | 10 | 10 | 6.5 | 8 | 0 | 1 | GURPS Fantasy Bestiary 3e | 26 |
+| Hytun | 11 | 12 | 3 | 11 | 11 | 10 | 10 | 5.75 | 7 | 0 | 0 | GURPS Space Bestiary 3e (Hitone) | 26 |
+| Icebreaker | 317 | 12 | 4 | 14 | 317 | 10 | 10 | 6.5 | 16 | — | 4 | GURPS Space Bestiary 3e | 26 |
+| Ice Lurker | 18 | 9 | 3 | 12 | 18 | 10 | 10 | 5.25 | 8 | — | 0 | GURPS Space Bestiary 3e | 26 |
+| Iceman | 13 | 10 | 4 | 16 | 13 | 10 | 10 | 6.5 | 9 | 0 | 0 | GURPS Space Bestiary 3e | 27 |
+| Ice Thrower | 15 | 12 | 5 | 12 | 15 | 10 | 10 | 6 | 12 | 0 | 0 | GURPS Space Bestiary 3e | 27 |
+| Ikonkola | 17 | 15 | 3 | 14 | 17 | 10 | 10 | 7.25 | 10 | — | 0 | GURPS Fantasy Bestiary 3e | 27 |
+| Jaculus | 3 | 14 | 3 | 13 | 3 | 10 | 10 | 6.75 | — | -2 | 0 | GURPS Fantasy Bestiary 3e | 27 |
+| Jackal | 5 | 14 | 5 | 10 | 5 | 10 | 10 | 6 | 9 | -3 | 0 | GURPS Bestiary 3e | 27 |
+| Jaguar | 12 | 14 | 4 | 10 | 12 | 10 | 10 | 6 | 10 | 0 | 0 | GURPS Bestiary 3e | 27 |
+| Kerberos | 16 | 12 | 5 | 14 | 16 | 10 | 10 | 6.5 | 9 | 0 | 3 | GURPS Fantasy Bestiary 3e (Cerberus) | 28 |
+| Komodo Dragon | 14 | 12 | 3 | 12 | 14 | 10 | 10 | 6 | 9 | — | 4 | GURPS Bestiary 3e | 28 |
+| Konoba | 11 | 14 | 4 | 13 | 11 | 10 | 10 | 6.75 | — | — | — | GURPS Fantasy Bestiary 3e | 28 |
+| Lau | 13 | 13 | 5 | 14 | 13 | 10 | 10 | 6.75 | 7 | 0 | — | GURPS Fantasy Bestiary 3e | 28 |
+| Leech | 0 | 1 | 2 | 10 | 1 | 9 | 9 | 2.75 | 3 | -10 | — | GURPS Bestiary 3e | 28 |
+| Leontophontes | 4 | 11 | 4 | 13 | 4 | 10 | 10 | 6 | 9 | -3 | — | GURPS Fantasy Bestiary 3e | 29 |
+| Llama | 11 | 11 | 4 | 10 | 11 | 10 | 10 | 5.25 | 13 | 0 | — | GURPS Bestiary 3e | 29 |
+| Lungstrider | 8 | 10 | 3 | 12 | 8 | 10 | 10 | 5.5 | 5 | — | 1 | Author. | 29 |
+| Lynx | 7 | 14 | 4 | 10 | 7 | 10 | 10 | 6 | 6 | -2 | — | Author | 30 |
+| Marksman Fish | 9 | 16 | 4 | 12 | 9 | 10 | 10 | 7 | — | 0 | — | GURPS Space Bestiary 3e | 30 |
+| Marool | 13 | 14 | 3 | 13 | 13 | 10 | 10 | 6.75 | 6 | 0 | — | GURPS Fantasy Bestiary 3e | 30 |
+| Mastodon | 40 | 10 | 4 | 13 | 40 | 10 | 10 | 5.75 | 8 | — | 4 | GURPS Bestiary 3e and B460 (Elephant) | 31 |
+| Mazamitli | 10 | 15 | 4 | 13 | 10 | 10 | 10 | 7 | 9 | 0 | — | GURPS Aztecs | 31 |
+| Megatherium | 50 | 9 | 3 | 13 | 50 | 10 | 10 | 5.5 | 3 | 0 | 3 | GURPS Bestiary 3e | 31 |
+| Mngwa | 12 | 14 | 5 | 12 | 12 | 10 | 10 | 6.5 | 10 | 0 | 1 | GURPS Bestiary 3e | 31 |
+| Mongoose | 3 | 14 | 4 | 12 | 3 | 10 | 10 | 6.5 | 10 | -4 | — | GURPS Bestiary 3e | 32 |
+| Monitor Lizard | 7 | 13 | 3 | 13 | 7 | 10 | 10 | 6.5 | 7 | 0 | — | GURPS Bestiary 3e | 32 |
+| Moose | 24 | 12 | 4 | 12 | 24 | 10 | 10 | 7 | 12 | — | 2 | GURPS Bestiary 3e | 32 |
+| Mud-Hider | 32 | 13 | 4 | 13 | 32 | 10 | 10 | 6.75 | — | — | 2 | GURPS Space Bestiary 3e | 33 |
+| Mugger Bird | 5 | 13 | 4 | 13 | 5 | 10 | 10 | 6.5 | — | -3 | — | GURPS Space Bestiary 3e | 33 |
+| Noosefish | 8 | 14 | 3 | 12 | 8 | 10 | 10 | 6.5 | — | — | — | GURPS Space Bestiary 3e (Noose Fish) | 33 |
+| Ocelot | 6 | 14 | 4 | 10 | 6 | 10 | 10 | 6 | 10 | -1 | — | GURPS Bestiary 3e | 33 |
+| Orthos | 12 | 12 | 5 | 13 | 12 | 10 | 10 | 6.25 | 8 | 0 | — | GURPS Fantasy Bestiary 3e (Orthus) | 34 |
+| Ostrich | 14 | 13 | 3 | 10 | 14 | 10 | 10 | 5.75 | 15 | — | — | GURPS Bestiary 3e | 34 |
+| Otter | 6 | 14 | 4 | 10 | 6 | 10 | 10 | 6 | 6 | -2 | — | GURPS Bestiary 3e | 34 |
+| Pangolin | 7 | 12 | 3 | 12 | 7 | 10 | 10 | 6 | 3 | -2 | 2 | GURPS Bestiary 3e | 34 |
+| Parandrus | 23 | 9 | 4 | 13 | 23 | 10 | 10 | 5.5 | 8 | — | 1 | GURPS Fantasy Bestiary 3e | 35 |
+| Peccary | 7 | 14 | 5 | 10 | 7 | 10 | 10 | 6 | 8 | 0 | — | GURPS Bestiary 3e | 35 |
+| Peryton | 12 | 14 | 4 | 12 | 12 | 10 | 10 | 6.5 | — | — | — | GURPS Fantasy Bestiary 3e | 35 |
+| Pig | 12 | 11 | 5 | 12 | 12 | 10 | 10 | 5.75 | 7 | -1 | 1 | GURPS Bestiary 3e | 36 |
+| Porcupine | 5 | 10 | 3 | 10 | 5 | 10 | 10 | 5 | 2 | -2 | 1 | GURPS Bestiary 3e | 36 |
+| Puffin | 4 | 10 | 3 | 10 | 4 | 10 | 10 | 5 | 10 | -4 | 1 | GURPS Bestiary 3e | 37 |
+| Qata | 14 | 14 | 4 | 12 | 14 | 10 | 10 | 6.5 | 25 | — | 1 | GURPS Fantasy Bestiary 3e | 37 |
+| Qiqirn | 14 | 12 | 5 | 12 | 14 | 10 | 10 | 6 | 8 | 0 | — | GURPS Fantasy Bestiary 3e | 37 |
+| Quiver Beast | 14 | 13 | 5 | 11 | 14 | 10 | 10 | 6 | 9 | 0 | — | GURPS Fantasy Bestiary 3e | 37 |
+| Raccoon | 6 | 14 | 5 | 10 | 6 | 10 | 10 | 6 | 6 | -2 | — | GURPS Bestiary 3e | 37 |
+| Ravener | 23 | 12 | 5 | 12 | 23 | 11 | 12 | 6 | 10 | 0 | 2 | GURPS Fantasy Bestiary 3e | 38 |
+| Rhinoceros | 29 | 9 | 4 | 13 | 29 | 10 | 10 | 5.5 | 14 | 0 | 4 | GURPS Bestiary 3e | 39 |
+| Santer | 15 | 12 | 5 | 12 | 15 | 10 | 10 | 6 | 11 | 0 | 2 | GURPS Fantasy Bestiary 3e | 39 |
+| Scitalis | 3 | 12 | 3 | 10 | 3 | 10 | 10 | 5.5 | 4 | -3 | — | GURPS Fantasy Bestiary 3e | 40 |
+| Scolopendra | 2 | 11 | 2 | 11 | 2 | 9 | 10 | 5.5 | 2 | -4 | 2 | GURPS Fantasy Bestiary 3e | 40 |
+| Seal | 19 | 12 | 5 | 10 | 19 | 11 | 10 | 5.5 | — | — | 2 | GURPS Bestiary 3e | 40 |
+| Sheep | 11 | 10 | 4 | 10 | 11 | 9 | 10 | 5 | 8 | -1 | — | GURPS Bestiary 3e | 40 |
+| Shemogra | 20 | 13 | 5 | 13 | 20 | 10 | 10 | 6.5 | 7 | — | — | GURPS Space Bestiary 3e | 41 |
+| Shika | 5 | 12 | 3 | 13 | 5 | 10 | 10 | 6.25 | 12 | -3 | — | GURPS Fantasy Bestiary 3e | 41 |
+| Skoffin | 6 | 14 | 5 | 12 | 6 | 11 | 12 | 6.5 | 8 | -3 | — | GURPS Fantasy Bestiary 3e | 41 |
+| Skunk | 3 | 12 | 4 | 10 | 3 | 10 | 10 | 5.5 | 3 | -2 | — | GURPS Bestiary 3e | 41 |
+| Slasher Fish | 3 | 14 | 3 | 10 | 3 | 10 | 10 | 6 | 7 | -5 | — | GURPS Space Bestiary 3e | 42 |
+| Sliver Cat | 13 | 14 | 5 | 10 | 13 | 10 | 10 | 6 | 7 | 0 | — | GURPS Fantasy Bestiary 3e | 42 |
+| Sloth | 9 | 11 | 5 | 10 | 9 | 10 | 10 | 1 | 0.5 | -1 | — | GURPS Bestiary 3e | 42 |
+| Snow Ghost | 9 | 13 | 5 | 11 | 9 | 10 | 10 | 6 | 11 | 1 | — | GURPS Space Bestiary 3e | 43 |
+| Snow Wasset | 13 | 12 | 4 | 10 | 13 | 10 | 10 | 5.5 | 3 | 0 | 1 | GURPS Fantasy Bestiary 3e | 43 |
+| Spoiler | 1 | 14 | 5 | 12 | 1 | 10 | 10 | 6.5 | 7 | -5 | — | GURPS Fantasy Bestiary 3e | 44 |
+| Squeezer Fish | 7 | 6 | 5 | 10 | 7 | 10 | 10 | 4 | — | -2 | — | GURPS Space Bestiary 3e | 45 |
+| Stickler | 5 | 13 | 3 | 10 | 5 | 10 | 10 | 5.75 | — | -3 | — | GURPS Space Bestiary 3e | 45 |
+| Su | 14 | 14 | 4 | 10 | 14 | 10 | 10 | 6 | 10 | 0 | 1 | GURPS Fantasy Bestiary 3e | 45 |
+| Syphon | 7 | 13 | 4 | 12 | 7 | 10 | 10 | 6.25 | 9 | -2 | — | GURPS Space Bestiary 3e (Siphon Beast) | 45 |
+| Swamp Ghost | 11 | 14 | 5 | 10 | 11 | 10 | 12 | 6 | 10 | 0 | 1 | GURPS Bestiary 3e | 45 |
+| Taniwha | 34 | 12 | 3 | 10 | 34 | 10 | 10 | 5.5 | 8 | -2 | 4 | GURPS Fantasy Bestiary 3e | 45 |
+| Tazelwurm | 2 | 13 | 3 | 10 | 2 | 10 | 10 | 5.75 | — | -6 | — | GURPS Bestiary 3e | 46 |
+| Tentack | 17 | 13 | 3 | 10 | 34 | 10 | 10 | 5.75 | 6 | 0 | — | GURPS Space Bestiary 3e | 46 |
+| Tiger | 15 | 13 | 4 | 10 | 15 | 10 | 12 | 5.75 | 10 | — | 1 | B456 and GURPS Bestiary 3e | 46 |
+| Titanotherium | 44 | 10 | 3 | 13 | 44 | 10 | 10 | 5.75 | 9 | — | 4 | GURPS Bestiary 3e | 46 |
+| Ton-Fish | 36 | 14 | 4 | 12 | 36 | 10 | 10 | 6.5 | 25 | — | — | GURPS Space Bestiary 3e (Game Fish) | 47 |
+| Tunguru | 21 | 12 | 4 | 10 | 21 | 10 | 10 | 5.5 | — | -4 | 2 | GURPS Fantasy Bestiary 3e | 47 |
+| Waira | 12 | 12 | 4 | 10 | 12 | 10 | 10 | 5.5 | 7 | 0 | 1 | GURPS Fantasy Bestiary 3e | 48 |
+| Warmer | 11 | 9 | 4 | 10 | 11 | 10 | 10 | 4.75 | 2 | 0 | 1 | GURPS Space Bestiary 3e | 48 |
+| Weasel | 2 | 14 | 5 | 10 | 2 | 10 | 10 | 6 | 9 | -5 | — | GURPS Arabian Nights | 48 |
+| Whale | 31 | 13 | 8 | 13 | 31 | 10 | 10 | 6.5 | — | — | 5 | GURPS Bestiary 3e | 49 |
+| White Lasher | 10 | 12 | 4 | 10 | 10 | 10 | 10 | 5.5 | 7 | 0 | — | GURPS Fantasy Bestiary 3e | 49 |
+| Wing Mouth | 2 | 13 | 4 | 10 | 4 | 10 | 10 | 5.75 | 7 | -6 | 1 | GURPS Space Bestiary 3e | 49 |
+| Zimurgicanth | 7 | 11 | 3 | 10 | 7 | 10 | 10 | 5.25 | 8 | -2 | — | GURPS Space Bestiary 3e | 50 |
+| Ankou | 11 | 10 | 9 | 10 | 11 | 9 | 10 | 5 | 5 | 0 | 0 | Author | 51 |
+| Barghest | 14 | 12 | 4 | 12 | 14 | 10 | 10 | 6 | 6 | 1 | — | Author. | 52 |
+| Dryad | 9 | 12 | 11 | 12 | 9 | 10 | 10 | 6 | 6 | 0 | — | Inspired by Dryad, D&D Monster Manual I. | 52 |
+| Epona | 10 | 11 | 11 | 10 | 10 | 10 | 10 | 5.25 | 5 | 0 | — | Author | 53 |
+| Hell Hound | 12 | 12 | 5 | 12 | 12 | 10 | 10 | 6 | 7 | 0 | 1 | Inspired by Hell Hound, D&D Monster Manual I | 53 |
+| Kelpie | 21 | 13 | 8 | 12 | 21 | 10 | 10 | 6.25 | 12 | -3 | — | GURPS Fantasy Bestiary 3e | 54 |
+| Shriker | 14 | 12 | 4 | 12 | 14 | 10 | 10 | 6 | 6 | — | — | Author. | 55 |
+| Sirrush | 21 | 12 | 3 | 12 | 21 | 10 | 10 | 6 | 8 | -3 | 2 | GURPS Fantasy Bestiary 3e | 55 |
+| Breeder | 11 | 8 | 9 | 10 | 11 | 10 | 10 | 4.5 | 6 | — | 0 | GURPS Creatures of the Night 3e (Corpse-Kisser) | 57 |
+| Calaverite | 8 | 10 | 8 | 12 | 8 | 10 | 10 | 5.5 | 12 | 0 | — | Inspired by Bone Lord, S&S Creature Collection | 57 |
+| Chiller | 15 | 12 | 6 | 10 | 15 | 10 | 10 | 5.5 | — | -1 | — | GURPS Creatures of the Night 3e | 57 |
+| Defiler | 10 | 8 | 8 | 10 | 10 | 10 | 10 | 4.5 | 4 | 0 | — | GURPS Creatures of the Night 3e | 57 |
+| Sapients | 12 | 12 | 10 | 12 | 12 | 10 | 10 | 6 | 6 | 0 | 1 | GURPS Egypt | 60 |
+| Brok | 43 | 10 | 6 | 12 | 43 | 10 | 10 | 5.5 | 4 | 0 | 4 | GURPS Space Bestiary 3e | 60 |
+| Dardik | 9 | 12 | 8 | 10 | 9 | 10 | 10 | 5.5 | 5 | -1 | — | Author | 61 |
+| Holarch | 12 | 12 | 7 | 10 | 12 | 10 | 10 | 5.5 | 5 | — | — | Inspired by Aranea, D&D Monster Manual I | 64 |
+| Kilin | 13 | 16 | 19 | 12 | 13 | 19 | 19 | 7 | 4 | — | 2 | GURPS Fantasy Bestiary 3e | 64 |
+| Martyakhuar | 20 | 12 | 8 | 12 | 20 | 10 | 10 | 6 | 6 | — | 1 | Author | 65 |
+| Opinicus | 16 | 12 | 7 | 10 | 16 | 10 | 10 | 5.5 | 8 | 0 | — | Inspired by Griffon, D&D Monster Manual I | 66 |
+| Senmurv | 10 | 12 | 13 | 12 | 10 | 13 | 13 | 6 | 14 | 0 | — | GURPS Fantasy Bestiary 3e | 68 |
+| Set Beast | 12 | 12 | 10 | 12 | 12 | 10 | 10 | 6 | 6 | 0 | — | GURPS Egypt | 68 |
+| Sphinx | 17 | 13 | 12 | 10 | 17 | 12 | 12 | 5.75 | 0 | 0 | — | GURPS Fantasy Bestiary 3e | 68 |
+| Acid Weed | 107 | 4 | 1 | 10 | 107 | 3 | 3 | — | — | — | — | GURPS Space Bestiary 3e | 71 |
+| Anchor Weed | 117 | 9 | 1 | 10 | 117 | 1 | 1 | — | — | — | — | GURPS Space Bestiary 3e | 71 |
+| Predator Weed | 10 | 6 | 1 | 10 | 60 | 3 | 3 | — | — | — | — | Pyramid 11/2/07 | 71 |
+| Death Eater | 6 | 1 | 1 | 10 | 6 | — | — | 2.75 | 2 | 0 | — | Author | 72 |
+| Flesh Mound | 13 | 9 | 3 | 10 | 13 | 8 | 8 | 4.75 | 2 | 0 | — | Author | 72 |
+| Oozewing | 3 | 12 | 1 | 10 | 3 | 8 | 8 | 5.5 | 5 | -2 | — | Author | 73 |
+| White Cloud | 16 | 10 | 2 | 10 | 16 | 8 | 8 | 5 | 8 | — | 3 | GURPS Space Bestiary 3e | 73 |
