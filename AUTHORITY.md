@@ -60,6 +60,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `soulmeld_harvest.py` | cited Magic of Incarnum soulmeld tables (born-digital text); classify-parser for incarnum soulmelds, de-interleaving the column-split descriptions (native D&D 3.5e, its own index); missing sources print NO COVERAGE |
 | `ad2e_psionics_harvest.py` | cited Complete Psionics Handbook (2e); a SEPARATE `system: AD&D 2e` index (translator source, never 3.5e RAW) — the first AD&D 2e content; missing sources print NO COVERAGE |
 | `ad2e_spells_harvest.py` | cited AD&D 2e spell lists (Menzoberranzan, FOR2/5/7); a SEPARATE `system: AD&D 2e` index (translator source, never 3.5e RAW); missing sources print NO COVERAGE |
+| `ad2e_monster_harvest.py` | AD&D 2e monsters VISION-TRANSCRIBED from the Planescape MC Appendix II PDF images (the OCR scrambles the stat columns); a SEPARATE `system: AD&D 2e` index; still book RAW, cited to the pages |
 | `epic_feat_harvest.py` | D&D 3.5 epic feats VISION-TRANSCRIBED from the Epic Level Handbook PDF page images (Table 1-36, pp.46-49) because the OCR text layer is corrupt; still book RAW, cited to the pages |
 | `gurps_creature_harvest.py` | cited GURPS bestiary extractions (Dungeon Fantasy Monsters, Creatures of the Night, Fantasy); attribute-block detection across three name/stat formats; a separate index from D&D creatures; missing sources print NO COVERAGE |
 | `resume_card.py` | Notion Resume Schema `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`; validates dated mirrors only |
