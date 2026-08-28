@@ -18,10 +18,10 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-28).** Eighteen reference index families, ~10,000 entries.
+**At a glance (2026-08-28).** Eighteen reference index families, ~10,150 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
-(1841), GURPS spells (557), GURPS creatures (326), GURPS gear — weapons + armor
+(1841), GURPS spells (557), GURPS creatures (472), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (31), D&D incarnum soulmelds (88). Separately labeled other editions:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
@@ -54,7 +54,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/gurps_technique_index.{md,json}` | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet (born-digital text layer, characters exact) | 101 combat techniques (difficulty, prerequisite, default, maximum, damage; cinematic/silly flags) | `python scripts/gurps_technique_harvest.py --selftest` |
 | `reference/vestige_index.{md,json}` | `scripts/vestige_harvest.py` | Tome of Magic (born-digital text layer) — pact-magic vestige summary | 31 vestiges (the complete list, vestige level 1–8, binding DC, special-requirement flag) | `python scripts/vestige_harvest.py --selftest` |
 | `reference/soulmeld_index.{md,json}` | `scripts/soulmeld_harvest.py` | Magic of Incarnum (born-digital text layer) — soulmeld summary tables 4-1/4-2/4-3 | 88 soulmelds (classes that shape it, bindable chakras, basic effect; column-split descriptions de-interleaved) | `python scripts/soulmeld_harvest.py --selftest` |
-| `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters 1, Creatures of the Night 1–5, Fantasy, Banestorm, Lands Out of Time, DF Allies, DF Summoners, Big Lizzie (139) + **Natural Encyclopedia v1.5.2** compilation (187 net-new, 4e stats, each crediting its original GURPS source; deduped against the specific books) | 326 GURPS creatures / 12 sources (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
+| `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters 1, Creatures of the Night 1–5, Fantasy, Banestorm, Lands Out of Time, DF Allies, DF Summoners, Big Lizzie (139) + **Natural Encyclopedia v1.5.2** compilation (333 net-new, 4e stats, each crediting its original GURPS source; deduped against the specific books) | 472 GURPS creatures / 12 sources (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,

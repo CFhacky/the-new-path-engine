@@ -330,11 +330,18 @@ def detect_gurps_titlecase(lines: List[str], pages: List[int], book: str) -> Lis
 # with a "Source: GURPS <book>" credit. Layout per creature:
 #   <Name> / <type-line> / ST: N / HP: N / … / Source: GURPS <book>
 SOURCE_LINE = re.compile(r"^Source:\s*(.+)$", re.IGNORECASE)
-ENC_NAME = re.compile(r"^[A-ZÀ-Þ][A-Za-zÀ-ÿ0-9'’\-. ]{1,34}$")
+# The encyclopedia names creatures "Category, Subtype" ("Ant, Giant"; "Baboon,
+# Chacma"; "Basilisk, Greater"), so commas/parens are part of the name.
+ENC_NAME = re.compile(r"^[A-ZÀ-Þ][A-Za-zÀ-ÿ0-9'’\-.,()/ ]{1,44}$")
 ENC_NAME_REJECT = re.compile(
-    r"^(Source|Combat|Physical|Social|Mental|Special|Traits?|Skills?|Notes?|"
-    r"Habitat|Also|Reach|Bite|Claws?|Sting|Tail|See|Only|Roll|This|The|Weapon|"
-    r"Attack|Armou?r|Move|Speed|Dodge|Parry|Table|Range)\b", re.IGNORECASE)
+    r"^(Source|Author|Combat|Physical|Social|Mental|Special|Traits?|Skills?|"
+    r"Notes?|Habitat|Also|Reach|Bite|Claws?|Sting|Tail|See|Only|Roll|This|The|"
+    r"Weapon|Attack|Armou?r|Move|Speed|Dodge|Parry|Table|Range|"
+    # type/traits lines (never a creature name in the 2nd-above slot)
+    r"Wild Animal|Insect|Quadruped|Reptile|Fish|Bird|Mammal|Amphibian|Vermiform|"
+    r"Flying|Aquatic|Hybrid|Winged|Domesticated|Mythical|Constructed|Elemental|"
+    r"Humanoid|Avian|Piscine|Serpentine|Arthropod|Crustacean|Mollusc|Cephalopod|"
+    r"Plant|Fungus|Ooze|Spirit|Undead|Machine)\b", re.IGNORECASE)
 
 
 def detect_gurps_encyclopedia(lines: List[str], pages: List[int], book: str) -> List[GurpsCreature]:
@@ -353,10 +360,18 @@ def detect_gurps_encyclopedia(lines: List[str], pages: List[int], book: str) -> 
                 continue
             above.append((j, s))
             j -= 1
-        if len(above) < 2:
-            continue
-        (_, tline), (nj, name) = above[0], above[1]
-        if nj in used or not ENC_NAME.match(name) or ENC_NAME_REJECT.match(name):
+
+        def _ok(txt: str) -> bool:
+            return bool(ENC_NAME.match(txt)) and not ENC_NAME_REJECT.match(txt)
+
+        # Two layouts: usually Name / type-line / ST (name is the 2nd line above);
+        # some creatures carry no type-line, so Name / ST (name is 1st above).
+        nj = name = tline = None
+        if len(above) >= 2 and _ok(above[1][1]):
+            nj, name, tline = above[1][0], above[1][1], above[0][1]
+        elif len(above) >= 1 and _ok(above[0][1]):
+            nj, name = above[0]
+        if name is None or nj in used:
             continue
         used.add(nj)
         starts.append((nj, name, tline, i))
