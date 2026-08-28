@@ -30,6 +30,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `gurps_technique_index.{json,md}` | GURPS 4e Martial Arts **combat techniques** (difficulty, prerequisite, default, max, damage) | 101 | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet (4e) — born-digital text |
 | `vestige_index.{json,md}` | D&D 3.5 pact-magic **vestiges** (binder subsystem: vestige level, binding DC, special requirement) | 31 | `scripts/vestige_harvest.py` | Tome of Magic (3.5e) — born-digital text |
 | `soulmeld_index.{json,md}` | D&D 3.5 incarnum **soulmelds** (meldshaper subsystem: classes, bindable chakras, basic effect) | 88 | `scripts/soulmeld_harvest.py` | Magic of Incarnum (3.5e) — born-digital text |
+| `ad2e_psionic_index.{json,md}` | **AD&D 2e** psionic powers (discipline, Science/Devotion, power score, PSP costs, range, area) — labeled `system: AD&D 2e` | 150 | `scripts/ad2e_psionics_harvest.py` | Complete Psionics Handbook (2e) — born-digital text |
 | `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
 
 ## How to use them
