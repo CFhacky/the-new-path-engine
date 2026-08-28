@@ -59,6 +59,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `vestige_harvest.py` | cited Tome of Magic vestige summary (born-digital text); column-dump parser for pact-magic vestiges (native D&D 3.5e, its own index); missing sources print NO COVERAGE |
 | `soulmeld_harvest.py` | cited Magic of Incarnum soulmeld tables (born-digital text); classify-parser for incarnum soulmelds, de-interleaving the column-split descriptions (native D&D 3.5e, its own index); missing sources print NO COVERAGE |
 | `ad2e_psionics_harvest.py` | cited Complete Psionics Handbook (2e); a SEPARATE `system: AD&D 2e` index (translator source, never 3.5e RAW) — the first AD&D 2e content; missing sources print NO COVERAGE |
+| `ad2e_spells_harvest.py` | cited AD&D 2e spell lists (Menzoberranzan, FOR2/5/7); a SEPARATE `system: AD&D 2e` index (translator source, never 3.5e RAW); missing sources print NO COVERAGE |
 | `gurps_creature_harvest.py` | cited GURPS bestiary extractions (Dungeon Fantasy Monsters, Creatures of the Night, Fantasy); attribute-block detection across three name/stat formats; a separate index from D&D creatures; missing sources print NO COVERAGE |
 | `resume_card.py` | Notion Resume Schema `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`; validates dated mirrors only |
 | `docs/runtime-control/PLAY_CONTRACT.md` | Notion Play Contract `3c4e8214-84b0-818f-93c0-df1da2e52043` |
