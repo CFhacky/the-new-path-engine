@@ -40,6 +40,22 @@ cleanly yield.
 | Undead Slime | 17 | 13 | 8 | 13 | 17 | 10 | 10 | 7.50 | 7 | — | 2 | 32 |
 | Void Brute | 12 | 18 | 10 | 12 | 12 | 12 | 18 | 10.00 | 10 | 0 | 0 | 33 |
 
+## GURPS Fantasy — 8 creatures
+
+*Source: GURPS Fantasy (SJGames, 4e), bestiary.*  
+*Harvest: ok — 8 creatures from GURPS 4e - Fantasy.md.*
+
+| Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Herecine | 20 | 12 | 0 | 12 | — | 0 | 12 | 6 | 0 | +1 | — | 49 |
+| Manticore | 19 | 13 | 5 | 12 | — | 11 | 12 | 6.25 | 9 | +1 | 1 | 50 |
+| Mountain Ant | 3 | 10 | 1 | 10 | — | 10 | 12 | 5 | 4 | -2 | — | 50 |
+| Panther | 16 | 11 | 4 | 13 | — | 10 | 12 | 6 | 10 | +1 | — | 51 |
+| Unicorn | 18 | 13 | 4 | 11 | — | 12 | 12 | 6 | 6 | +1 | — | 51 |
+| Amphisbaena | 5 | 13 | 2 | 11 | — | 10 | 10 | 6 | 4 | -2 | — | 213 |
+| Megalogryphon | 50 | 12 | 2 | 16 | — | 10 | 12 | 6 | 7 | +5 | 2 | 214 |
+| Satyr | 7 | 14 | 7 | 10 | — | 12 | 12 | 6 | 9 | -1 | — | 214 |
+
 ## GURPS Creatures of the Night 1 — 1 creatures
 
 *Source: GURPS Creatures of the Night Vol.1 (SJGames, 4e).*  
@@ -47,7 +63,7 @@ cleanly yield.
 
 | Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Pool Beast | 24 | 16 | 4 | 12. | 48 | 14 | 7 | 7.00 | 7 | +7 | — | 14 |
+| Pool Beast | 24 | 16 | 4 | 12 | 48 | 14 | 7 | 7.00 | 7 | +7 | — | 14 |
 
 ## GURPS Creatures of the Night 2 — 0 creatures
 
@@ -62,9 +78,9 @@ cleanly yield.
 
 | Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Chronochaotic Spider | 15 | 14 | 3 | 13. | — | 13 | 11 | 6.75 | 6. | 0 | — | 3 |
-| Cows From Space | 22 | 9 | 18 | 15. | — | 12 | 18 | 6.00 | 6. | +2 | 1 | 5 |
-| Wollig | 19 | 12 | 4 | 15. | — | 10 | 12 | 6.75 | 1 | +1 | — | 7 |
+| Chronochaotic Spider | 15 | 14 | 3 | 13 | — | 13 | 11 | 6.75 | 6 | 0 | — | 3 |
+| Cows From Space | 22 | 9 | 18 | 15 | — | 12 | 18 | 6.00 | 6 | +2 | 1 | 5 |
+| Wollig | 19 | 12 | 4 | 15 | — | 10 | 12 | 6.75 | 1 | +1 | — | 7 |
 
 ## GURPS Creatures of the Night 4 — 7 creatures
 
@@ -73,13 +89,13 @@ cleanly yield.
 
 | Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Acidriad | 7 | 13 | 3 | 12. | — | 11 | 11 | 6.25 | 6. | 1 | — | 4 |
-| Clatternorn | 40 | 6 | 6 | 14. | — | 13 | 7 | 5.00 | 5. | +2 | — | 7 |
-| Flutter Devil | 2 | 13 | 3 | 13. | — | 10 | 11 | 6.50 | 6 | 6 | — | 9 |
-| Trantid | 5 | 9 | 2 | 12. | — | 15 | 8 | 5.25 | 5. | 5 | — | 11 |
-| The Voice Of Darkness | 12 | 12 | 10 | 14. | — | 14 | 11 | 6.50 | 7. | 0 | — | 13 |
-| The Drones | 10 | 10 | 7 | 10. | — | 7 | 7 | 5.00 | 5. | 0 | — | 13 |
-| Waste-Stalker | 15 | 12 | 3 | 14. | — | 13 | 13 | 6.50 | 7. | 0 | — | 15 |
+| Acidriad | 7 | 13 | 3 | 12 | — | 11 | 11 | 6.25 | 6 | 1 | — | 4 |
+| Clatternorn | 40 | 6 | 6 | 14 | — | 13 | 7 | 5.00 | 5 | +2 | — | 7 |
+| Flutter Devil | 2 | 13 | 3 | 13 | — | 10 | 11 | 6.50 | 6 | 6 | — | 9 |
+| Trantid | 5 | 9 | 2 | 12 | — | 15 | 8 | 5.25 | 5 | 5 | — | 11 |
+| The Voice Of Darkness | 12 | 12 | 10 | 14 | — | 14 | 11 | 6.50 | 7 | 0 | — | 13 |
+| The Drones | 10 | 10 | 7 | 10 | — | 7 | 7 | 5.00 | 5 | 0 | — | 13 |
+| Waste-Stalker | 15 | 12 | 3 | 14 | — | 13 | 13 | 6.50 | 7 | 0 | — | 15 |
 
 ## GURPS Creatures of the Night 5 — 8 creatures
 
@@ -88,11 +104,11 @@ cleanly yield.
 
 | Creature | ST | DX | IQ | HT | HP | Will | Per | Speed | Move | SM | DR | Page |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Warrior | 13 | 11 | 7 | 13. | — | 13 | 10 | 6.00 | 6 | 0 | — | 5 |
-| Diver | 11 | 12 | 8 | 14. | — | 13 | 12 | 6.5 | 6 | 0 | — | 5 |
-| Monitor | 10 | 10 | 13 | 13. | — | 13 | 13 | 5.75 | 5 | 0 | — | 5 |
-| Dreadstalk | 15 | 9 | 4 | 12. | — | 10 | 12 | 5.25 | 1 | +1 | — | 7 |
-| Gully Dragon | 25 | 15 | 5 | 14. | — | 13 | 12 | 8.00 | 8. | +3 | — | 9 |
-| Moon Guire | 15 | 9 | 6 | 12. | — | 13 | 11 | 5.25 | 5. | — | — | 11 |
-| Stealth Golem | 21 | 16 | 11 | 14. | — | 13 | 16 | 9.00 | 9 | 0 | 4 | 14 |
-| Watchtower Spirit | 0 | 10 | 16 | 13 | 15 | 18 | 16 | 5.75 | 0. | +2 | — | 19 |
+| Warrior | 13 | 11 | 7 | 13 | — | 13 | 10 | 6.00 | 6 | 0 | — | 5 |
+| Diver | 11 | 12 | 8 | 14 | — | 13 | 12 | 6.5 | 6 | 0 | — | 5 |
+| Monitor | 10 | 10 | 13 | 13 | — | 13 | 13 | 5.75 | 5 | 0 | — | 5 |
+| Dreadstalk | 15 | 9 | 4 | 12 | — | 10 | 12 | 5.25 | 1 | +1 | — | 7 |
+| Gully Dragon | 25 | 15 | 5 | 14 | — | 13 | 12 | 8.00 | 8 | +3 | — | 9 |
+| Moon Guire | 15 | 9 | 6 | 12 | — | 13 | 11 | 5.25 | 5 | — | — | 11 |
+| Stealth Golem | 21 | 16 | 11 | 14 | — | 13 | 16 | 9.00 | 9 | 0 | 4 | 14 |
+| Watchtower Spirit | 0 | 10 | 16 | 13 | 15 | 18 | 16 | 5.75 | 0 | +2 | — | 19 |

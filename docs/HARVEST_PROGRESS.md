@@ -21,7 +21,7 @@ extraction and are the court of appeal for any garbled number.
 **At a glance (2026-08-27).** Nine reference index families, ~6,950 entries:
 terms/affixes (143), D&D creatures (1509), magic items (1058), psionic powers
 (409), martial maneuvers (171), feats (1244), D&D spells (1841), GURPS spells
-(520), GURPS creatures (44). Each has a `--selftest` that passes. Run any
+(520), GURPS creatures (52). Each has a `--selftest` that passes. Run any
 `scripts/*_harvest.py` with no args to rebuild its index.
 
 **This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
@@ -45,7 +45,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
 | `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | `_text\GURPS\GURPS 4e\GURPS 4e - Magic.md` | 520 GURPS spells (505 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
-| `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS Dungeon Fantasy Monsters 1 (25) + Creatures of the Night Vol.1–5 (19) | 44 GURPS creatures (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
+| `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS Dungeon Fantasy Monsters 1 (25) + Creatures of the Night Vol.1–5 (19) + Fantasy (8) | 52 GURPS creatures (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
@@ -88,7 +88,7 @@ feats do too):
 | D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
 | D&D 5e | 35 | none (wrong edition for a 3.5/GURPS game — low priority) |
 | AD&D | 19 | none (older edition — low priority) |
-| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (520 spells)** + **GURPS bestiary (44 creatures)**; rest of the shelf still open (Thaumatology/Plant spells, more creature books, Low-Tech gear) |
+| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (520 spells)** + **GURPS bestiary (52 creatures, incl. Fantasy)**; rest of the shelf still open (Thaumatology/Plant spells, more creature books, Low-Tech gear) |
 | Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
 | Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
 | Forgotten Realms | 71 | none (setting + some crunch) |
@@ -245,6 +245,16 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-27** — Un-deferred GURPS Fantasy creatures (Chad: "keep going on
+  the gurps fantasy creatures"). Added a third detector, `gurps_titlecase`:
+  Fantasy uses inline stats but Title-Case names sitting far above long
+  descriptions, so detection requires a FULL `ST;DX;IQ;HT` block (rules out the
+  prose "ST N;" weather/rules lines) and finds the name by the fact that a
+  creature's name ECHOES lowercased in its own description ("the manticore has
+  the face…"), with a frequency guard that rejects a repeated topic word
+  ("Christianity", ~10×) while keeping a real name ("Panther", 4×). +8 clean
+  Fantasy creatures (Manticore, Unicorn, Satyr, Amphisbaena, Megalogryphon, …);
+  GURPS bestiary now 52.
 - **2026-08-27** — Added `gurps_creature_harvest.py` (continuing the GURPS
   shelf): a GURPS bestiary index (`reference/gurps_creature_index`), 44
   creatures with the GURPS attribute block (ST/DX/IQ/HT/HP/…), separate from

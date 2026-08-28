@@ -216,14 +216,94 @@ def detect_gurps_inline(lines: List[str], pages: List[int], book: str) -> List[G
         for raw in lines[si:min(n, si + 6)]:
             for attr, val in INLINE_PAIR.findall(raw):
                 if getattr(c, attr) is None:
-                    setattr(c, attr, val)
+                    setattr(c, attr, val.rstrip("."))   # drop the sentence period
+        creatures.append(c)
+    return creatures
+
+
+# A third format (GURPS Fantasy): inline stats but Title-Case creature names,
+# not ALL-CAPS, with the name sitting far above a long description. The reliable
+# signal is that the creature's name ECHOES lowercased in its own description
+# ("the manticore has the face…"); a full ST;DX;IQ;HT block rules out the prose
+# "ST N;" lines (weather, rules examples), and a frequency guard rejects a
+# repeated TOPIC word ("Christianity") that is not a creature name.
+FULL_INLINE_ST = re.compile(
+    r"^ST\s+[-+]?\d+;\s*DX\s+[-+]?\d+;\s*IQ\s+[-+]?\d+;\s*HT\s+[-+]?\d+", re.IGNORECASE)
+TC_REJECT = re.compile(
+    r"^(The|A|An|This|These|Its|In|On|If|When|Roll|See|GURPS|Chapter|Bestiary|"
+    r"Worlds?|Equipment|Combat|Roma|Imaginary|Species|Traits?|Skills?|New|"
+    r"Weapons?|Armou?r|Table|Notes?|Christianity|Rome|Judaism)\b")
+
+
+def _tc_candidate(s: str) -> bool:
+    if not (3 <= len(s) <= 32) or s.isupper():
+        return False
+    if s.endswith((".", ",", ";", ":", "?", "!", "-", "–")):
+        return False
+    ws = s.split()
+    if not (1 <= len(ws) <= 4) or not all(w[0].isupper() for w in ws if w):
+        return False
+    if TC_REJECT.match(s):
+        return False
+    return sum(c.isalpha() for c in s) >= len(s) * 0.7
+
+
+def _echo_name_above(lines: List[str], st_idx: int) -> Optional[Tuple[int, str]]:
+    from collections import Counter
+    freq: Counter = Counter()
+    j, steps = st_idx - 1, 0
+    while j >= 0 and steps < 40:
+        s = lines[j].strip()
+        if s == "" or PAGE.search(lines[j]):
+            j -= 1
+            continue
+        steps += 1
+        if _tc_candidate(s):
+            first = re.sub(r"[^a-z]", "", s.split()[0].lower())
+            # <=6: a creature name echoes a handful of times in its own
+            # description (Panther: 4); a repeated TOPIC word (Christianity: 10)
+            # echoes far more and is rejected.
+            if first and freq[first] <= 6 and (
+                    first in freq or first.rstrip("s") in freq or first + "s" in freq):
+                return j, re.sub(r"\s+", " ", s).strip()
+        for w in re.findall(r"[a-z]{3,}", s.lower()):
+            freq[w] += 1
+        j -= 1
+    return None
+
+
+def detect_gurps_titlecase(lines: List[str], pages: List[int], book: str) -> List[GurpsCreature]:
+    n = len(lines)
+    starts: List[Tuple[int, str, int]] = []
+    used = set()
+    for i, ln in enumerate(lines):
+        if not FULL_INLINE_ST.match(ln.strip()):
+            continue
+        got = _echo_name_above(lines, i)
+        if got is None or got[0] in used:
+            continue
+        top, name = got
+        used.add(top)
+        starts.append((top, name, i))
+
+    starts.sort()
+    creatures: List[GurpsCreature] = []
+    for k, (top, name, si) in enumerate(starts):
+        e = starts[k + 1][0] if k + 1 < len(starts) else min(n, top + 90)
+        e = min(e, top + 90)
+        c = GurpsCreature(name=name, book=book, page=pages[top], start=top, end=e)
+        for raw in lines[si:min(n, si + 6)]:
+            for attr, val in INLINE_PAIR.findall(raw):
+                if getattr(c, attr) is None:
+                    setattr(c, attr, val.rstrip("."))   # drop the sentence period
         creatures.append(c)
     return creatures
 
 
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[GurpsCreature]]] = {
-    "gurps": detect_gurps_creatures,       # vertical "ST: N" format (DF Monsters)
-    "gurps_inline": detect_gurps_inline,   # inline "ST N; DX N; ..." format
+    "gurps": detect_gurps_creatures,          # vertical "ST: N" (DF Monsters)
+    "gurps_inline": detect_gurps_inline,      # inline "ST N; …", ALL-CAPS names (CotN)
+    "gurps_titlecase": detect_gurps_titlecase,  # inline stats, Title-Case names (Fantasy)
 }
 
 
@@ -244,11 +324,9 @@ SOURCES: List[Source] = [
     Source("dfm1", "GURPS Dungeon Fantasy Monsters 1",
            Path(f"{_G}/GURPS 4e - Dungeon Fantasy Monsters 1.md"),
            "GURPS Dungeon Fantasy Monsters 1 (SJGames, 4e)", "gurps"),
-    # GURPS Fantasy is DEFERRED: its stat blocks are the inline format, but its
-    # creature names are Title Case ("Amphisbaena"), not ALL-CAPS, and its
-    # ALL-CAPS lines are section headers (Worlds, Equipment) — the ALL-CAPS name
-    # detector yields those, not creatures. It needs a Title-Case name detector;
-    # see docs/HARVEST_PROGRESS.md.
+    Source("fantasy", "GURPS Fantasy",
+           Path(f"{_G}/GURPS 4e - Fantasy.md"),
+           "GURPS Fantasy (SJGames, 4e), bestiary", "gurps_titlecase"),
     Source("cotn1", "GURPS Creatures of the Night 1",
            Path(f"{_G}/GURPS 4e - Creatures of the Night Vol.1.md"),
            "GURPS Creatures of the Night Vol.1 (SJGames, 4e)", "gurps_inline"),
@@ -472,6 +550,14 @@ def selftest(base: Path) -> int:
         cotn = next((s for s in corpus.sources if s.key == "cotn5"), None)
         if cotn and (base / cotn.path).exists() and not cotn.creatures:
             failures.append("inline detector yielded 0 from Creatures of the Night 5")
+        # Title-Case detector (GURPS Fantasy): the name echoes in its description.
+        man = corpus.find("manticore", book="fantasy")
+        if (base / next(s.path for s in SOURCES if s.key == "fantasy")).exists():
+            if not man:
+                failures.append("Manticore not found in live GURPS Fantasy "
+                                "(Title-Case echo detector)")
+            elif man[0][1].ST != "19":
+                failures.append(f"live Manticore ST={man[0][1].ST!r}, wanted 19")
     else:
         print(f"  [SKIP] GURPS bestiary extractions not found — fixture checks only")
 
