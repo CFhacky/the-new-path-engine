@@ -1,17 +1,18 @@
 {
  "generated_by": "scripts/gurps_gear_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_gear": 153,
+ "total_gear": 186,
  "sources": [
   {
    "key": "lowtech",
-   "book": "GURPS Low-Tech",
+   "book": "GURPS Low-Tech \u2014 Weapons",
    "citation": "GURPS Low-Tech (SJGames, 4e), Melee Weapon Table",
+   "category": "weapons",
    "coverage": "ok \u2014 153 weapons from GURPS 4e - Low-Tech.md",
    "gear": [
     {
      "name": "Axe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7268,
      "end": 7278,
@@ -21,11 +22,15 @@
      "parry": "0",
      "cost": "$50",
      "weight": "4",
-     "min_st": "11"
+     "min_st": "11",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Hatchet",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7276,
      "end": 7286,
@@ -35,11 +40,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Knobbed Club",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7285,
      "end": 7295,
@@ -49,11 +58,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Round Mace",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7293,
      "end": 7303,
@@ -63,11 +76,15 @@
      "parry": "0",
      "cost": "$35",
      "weight": "5",
-     "min_st": "12"
+     "min_st": "12",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Axe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7302,
      "end": 7312,
@@ -77,11 +94,15 @@
      "parry": "0",
      "cost": "$45",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Round Mace",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7310,
      "end": 7320,
@@ -91,11 +112,15 @@
      "parry": "0",
      "cost": "$25",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Throwing Axe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7319,
      "end": 7329,
@@ -105,11 +130,15 @@
      "parry": "0",
      "cost": "$50",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Throwing Axe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7328,
      "end": 7338,
@@ -119,11 +148,15 @@
      "parry": "0",
      "cost": "$60",
      "weight": "4",
-     "min_st": "11"
+     "min_st": "11",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Khopesh",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7337,
      "end": 7347,
@@ -133,11 +166,15 @@
      "parry": "0",
      "cost": "$450",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Sickle",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7353,
      "end": 7363,
@@ -147,11 +184,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Mace",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7377,
      "end": 7387,
@@ -161,11 +202,15 @@
      "parry": "0",
      "cost": "$50",
      "weight": "5",
-     "min_st": "12"
+     "min_st": "12",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Mace",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7386,
      "end": 7396,
@@ -175,11 +220,15 @@
      "parry": "0",
      "cost": "$35",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Pick",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7395,
      "end": 7405,
@@ -189,11 +238,15 @@
      "parry": "0",
      "cost": "$70",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Brass Knuckles",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7405,
      "end": 7415,
@@ -203,11 +256,15 @@
      "parry": "0",
      "cost": "$10",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Myrmex",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7414,
      "end": 7424,
@@ -217,11 +274,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Cestus",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7423,
      "end": 7433,
@@ -231,11 +292,15 @@
      "parry": "0",
      "cost": "$50",
      "weight": "1",
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Blackjack",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7433,
      "end": 7443,
@@ -245,11 +310,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": "1",
-     "min_st": "7"
+     "min_st": "7",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Combat Fan",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7442,
      "end": 7452,
@@ -259,11 +328,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": "1",
-     "min_st": "7"
+     "min_st": "7",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Qian Kun Ri Yue Dao",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7468,
      "end": 7478,
@@ -273,11 +346,15 @@
      "parry": "0",
      "cost": "$250",
      "weight": "3",
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Bladed Hand",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7496,
      "end": 7506,
@@ -287,11 +364,15 @@
      "parry": "0",
      "cost": "$100",
      "weight": "1",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Tonfa",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7513,
      "end": 7523,
@@ -301,11 +382,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Shuriken",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7522,
      "end": 7532,
@@ -315,11 +400,15 @@
      "parry": "0",
      "cost": "$3",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Light Club",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7547,
      "end": 7557,
@@ -329,11 +418,15 @@
      "parry": "0",
      "cost": "$5",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Broadsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7593,
      "end": 7603,
@@ -343,11 +436,15 @@
      "parry": "0",
      "cost": "$500",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Large Falchion",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7608,
      "end": 7618,
@@ -357,11 +454,15 @@
      "parry": "0",
      "cost": "$625",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Pata",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7623,
      "end": 7633,
@@ -371,11 +472,15 @@
      "parry": "0",
      "cost": "$650",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Shotel",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7639,
      "end": 7649,
@@ -385,11 +490,15 @@
      "parry": "0",
      "cost": "$200",
      "weight": "3",
-     "min_st": "11"
+     "min_st": "11",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Thrusting Broadsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7655,
      "end": 7665,
@@ -399,11 +508,15 @@
      "parry": "0",
      "cost": "$600",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Bastard Sword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 67,
      "start": 7670,
      "end": 7680,
@@ -413,11 +526,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Bokken",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7700,
      "end": 7710,
@@ -427,11 +544,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dao",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7715,
      "end": 7725,
@@ -441,11 +562,15 @@
      "parry": "0",
      "cost": "$700",
      "weight": "5",
-     "min_st": "11"
+     "min_st": "11",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Estoc",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7730,
      "end": 7740,
@@ -455,11 +580,15 @@
      "parry": "0",
      "cost": "$500",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Hook Sword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7746,
      "end": 7756,
@@ -469,11 +598,15 @@
      "parry": "0",
      "cost": "$200",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Jian",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7770,
      "end": 7780,
@@ -483,11 +616,15 @@
      "parry": "0",
      "cost": "$700",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Katana",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7785,
      "end": 7795,
@@ -497,11 +634,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Longsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7800,
      "end": 7810,
@@ -511,11 +652,15 @@
      "parry": "0",
      "cost": "$700",
      "weight": "4",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Thrusting Bastard Sword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7815,
      "end": 7825,
@@ -525,11 +670,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Backsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7830,
      "end": 7840,
@@ -539,11 +688,15 @@
      "parry": "0",
      "cost": "$550",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Cavalry Saber",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7846,
      "end": 7856,
@@ -553,11 +706,15 @@
      "parry": "0",
      "cost": "$500",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Edged Rapier",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7861,
      "end": 7871,
@@ -567,11 +724,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Late Katana",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7876,
      "end": 7886,
@@ -581,11 +742,15 @@
      "parry": "0",
      "cost": "$550",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Bola Perdida",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7892,
      "end": 7902,
@@ -595,11 +760,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Bolas",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7901,
      "end": 7911,
@@ -609,11 +778,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Thonged Club",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7910,
      "end": 7920,
@@ -623,11 +796,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Weighted Scarf",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7919,
      "end": 7929,
@@ -637,11 +814,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Morningstar",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7928,
      "end": 7938,
@@ -651,11 +832,15 @@
      "parry": "0",
      "cost": "$80",
      "weight": "6",
-     "min_st": "12"
+     "min_st": "12",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Nunchaku",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7937,
      "end": 7947,
@@ -665,11 +850,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": "2",
-     "min_st": "7"
+     "min_st": "7",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Jutte",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7975,
      "end": 7985,
@@ -679,11 +868,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": "1",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Sai",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 68,
      "start": 7991,
      "end": 8001,
@@ -693,11 +886,15 @@
      "parry": "0",
      "cost": "$60",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Large Knife",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8032,
      "end": 8042,
@@ -707,11 +904,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Short Baton",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8048,
      "end": 8058,
@@ -721,11 +922,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Knife",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8063,
      "end": 8073,
@@ -735,11 +940,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dagger",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8088,
      "end": 8098,
@@ -749,11 +958,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Katar",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8112,
      "end": 8122,
@@ -763,11 +976,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Kukri",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8128,
      "end": 8138,
@@ -777,11 +994,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Balisong",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8151,
      "end": 8161,
@@ -791,11 +1012,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Deer Antlers",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8167,
      "end": 8177,
@@ -805,11 +1030,15 @@
      "parry": "0",
      "cost": "$75",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Knife-Wheel",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8176,
      "end": 8186,
@@ -819,11 +1048,15 @@
      "parry": "0",
      "cost": "$75",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Slashing Wheel",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8201,
      "end": 8211,
@@ -833,11 +1066,15 @@
      "parry": "0",
      "cost": "$60",
      "weight": "1",
-     "min_st": "5"
+     "min_st": "5",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Main-Gauche",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8219,
      "end": 8229,
@@ -847,11 +1084,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Rope Dart",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8236,
      "end": 8246,
@@ -861,11 +1102,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Kusari",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8262,
      "end": 8272,
@@ -875,11 +1120,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Kusarigama",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8279,
      "end": 8289,
@@ -889,11 +1138,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Kusarijutte",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8304,
      "end": 8314,
@@ -903,11 +1156,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Lance",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8322,
      "end": 8332,
@@ -917,11 +1174,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Rondel Dagger",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8372,
      "end": 8382,
@@ -931,11 +1192,15 @@
      "parry": "0",
      "cost": "$40",
      "weight": "1",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Stiletto",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 69,
      "start": 8406,
      "end": 8416,
@@ -945,11 +1210,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Oar",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8446,
      "end": 8456,
@@ -959,11 +1228,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Glaive",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8454,
      "end": 8464,
@@ -973,11 +1246,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Bill",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8484,
      "end": 8494,
@@ -987,11 +1264,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dueling Bill",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8507,
      "end": 8517,
@@ -1001,11 +1282,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dueling Glaive",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8530,
      "end": 8540,
@@ -1015,11 +1300,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dueling Halberd",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8545,
      "end": 8555,
@@ -1029,11 +1318,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Halberd",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8568,
      "end": 8578,
@@ -1043,11 +1336,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Heavy Horse-Cutter",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8591,
      "end": 8601,
@@ -1057,11 +1354,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Lajatang",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8606,
      "end": 8616,
@@ -1071,11 +1372,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Light Horse-Cutter",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8621,
      "end": 8631,
@@ -1085,11 +1390,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Monk\u2019s Spade",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8636,
      "end": 8646,
@@ -1099,11 +1408,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Poleaxe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8658,
      "end": 8668,
@@ -1113,11 +1426,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Pollaxe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8673,
      "end": 8683,
@@ -1127,11 +1444,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Light Edged Rapier",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8727,
      "end": 8737,
@@ -1141,11 +1462,15 @@
      "parry": "0",
      "cost": "$700",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Light Rapier",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8742,
      "end": 8752,
@@ -1155,11 +1480,15 @@
      "parry": "0",
      "cost": "$400",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Rapier",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8750,
      "end": 8760,
@@ -1169,11 +1498,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Saber",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8759,
      "end": 8769,
@@ -1183,11 +1516,15 @@
      "parry": "0",
      "cost": "$700",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Shield Bash",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 70,
      "start": 8775,
      "end": 8785,
@@ -1197,11 +1534,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Baton",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8822,
      "end": 8832,
@@ -1211,11 +1552,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": "1",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Long Knife",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8867,
      "end": 8877,
@@ -1225,11 +1570,15 @@
      "parry": "0",
      "cost": "$120",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Shortsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8882,
      "end": 8892,
@@ -1239,11 +1588,15 @@
      "parry": "0",
      "cost": "$400",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dusack",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8897,
      "end": 8907,
@@ -1253,11 +1606,15 @@
      "parry": "0",
      "cost": "$30",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Falchion",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8912,
      "end": 8922,
@@ -1267,11 +1624,15 @@
      "parry": "0",
      "cost": "$400",
      "weight": "3",
-     "min_st": "10"
+     "min_st": "10",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Large Katar",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8927,
      "end": 8937,
@@ -1281,11 +1642,15 @@
      "parry": "0",
      "cost": "$400",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Falchion",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8951,
      "end": 8961,
@@ -1295,11 +1660,15 @@
      "parry": "0",
      "cost": "$200",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Cutlass",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8966,
      "end": 8976,
@@ -1309,11 +1678,15 @@
      "parry": "0",
      "cost": "$500",
      "weight": "2",
-     "min_st": "8"
+     "min_st": "8",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Short Staff",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8983,
      "end": 8993,
@@ -1323,11 +1696,15 @@
      "parry": "0",
      "cost": "$20",
      "weight": "1",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dress Smallsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 8998,
      "end": 9008,
@@ -1337,11 +1714,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Smallsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9006,
      "end": 9016,
@@ -1351,11 +1732,15 @@
      "parry": "0",
      "cost": "$400",
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Spear",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9015,
      "end": 9025,
@@ -1365,11 +1750,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Heavy Spear",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9031,
      "end": 9041,
@@ -1379,11 +1768,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Javelin",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9047,
      "end": 9057,
@@ -1393,11 +1786,15 @@
      "parry": "0",
      "cost": "$30",
      "weight": "2",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Short Spear",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9056,
      "end": 9066,
@@ -1407,11 +1804,15 @@
      "parry": "0",
      "cost": "$30",
      "weight": "2",
-     "min_st": "6"
+     "min_st": "6",
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Long Spear",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9072,
      "end": 9082,
@@ -1421,11 +1822,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Pike",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9087,
      "end": 9097,
@@ -1435,11 +1840,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dueling Polearm",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9113,
      "end": 9123,
@@ -1449,11 +1858,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Long Staff",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9145,
      "end": 9155,
@@ -1463,11 +1876,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Quarterstaff",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9160,
      "end": 9170,
@@ -1477,11 +1894,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Sodegarami",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 71,
      "start": 9200,
      "end": 9210,
@@ -1491,11 +1912,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Maul",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9265,
      "end": 9275,
@@ -1505,11 +1930,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Gada",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9291,
      "end": 9301,
@@ -1519,11 +1948,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Great Axe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9306,
      "end": 9316,
@@ -1533,11 +1966,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Scythe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9314,
      "end": 9324,
@@ -1547,11 +1984,15 @@
      "parry": "0",
      "cost": "$15",
      "weight": "5",
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Long Axe",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9338,
      "end": 9348,
@@ -1561,11 +2002,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Tetsubo",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9355,
      "end": 9365,
@@ -1575,11 +2020,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Warhammer",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9370,
      "end": 9380,
@@ -1589,11 +2038,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Flail",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9380,
      "end": 9390,
@@ -1603,11 +2056,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Three-Part Staff",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9389,
      "end": 9399,
@@ -1617,11 +2074,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Naginata",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9452,
      "end": 9462,
@@ -1631,11 +2092,15 @@
      "parry": "0",
      "cost": "$100",
      "weight": "6",
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Greatsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9512,
      "end": 9522,
@@ -1645,11 +2110,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Thrusting Greatsword",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9572,
      "end": 9582,
@@ -1659,11 +2128,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Urumi",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 72,
      "start": 9621,
      "end": 9631,
@@ -1673,11 +2146,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Longbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10245,
      "end": 10255,
@@ -1687,11 +2164,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Regular Bow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10257,
      "end": 10267,
@@ -1701,11 +2182,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Short Bow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10269,
      "end": 10279,
@@ -1715,11 +2200,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Reflex Bow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10281,
      "end": 10291,
@@ -1729,11 +2218,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Straight Composite Bow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10293,
      "end": 10303,
@@ -1743,11 +2236,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Tubular Bow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10305,
      "end": 10315,
@@ -1757,11 +2254,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10343,
      "end": 10353,
@@ -1771,11 +2272,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Gastraphetes",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10355,
      "end": 10365,
@@ -1785,11 +2290,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Repeating Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10367,
      "end": 10377,
@@ -1799,11 +2308,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Composite Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10379,
      "end": 10389,
@@ -1813,11 +2326,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Pistol Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10391,
      "end": 10401,
@@ -1827,11 +2344,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Prodd",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10403,
      "end": 10413,
@@ -1841,11 +2362,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Slurbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10415,
      "end": 10425,
@@ -1855,11 +2380,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Fowling Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10438,
      "end": 10448,
@@ -1869,11 +2398,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Hunting Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10450,
      "end": 10460,
@@ -1883,11 +2416,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Military Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10462,
      "end": 10472,
@@ -1897,11 +2434,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Siege Crossbow",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10474,
      "end": 10484,
@@ -1911,11 +2452,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Heavy Sling",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10536,
      "end": 10546,
@@ -1925,11 +2470,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Sling",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10548,
      "end": 10558,
@@ -1939,11 +2488,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Dart Sling",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10560,
      "end": 10570,
@@ -1953,11 +2506,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Staff Sling",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 78,
      "start": 10572,
      "end": 10582,
@@ -1967,11 +2524,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Stone-Launching Stick",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10638,
      "end": 10648,
@@ -1981,11 +2542,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Large Hungamunga",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10728,
      "end": 10738,
@@ -1995,11 +2560,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Throwing Dart",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10763,
      "end": 10773,
@@ -2009,11 +2578,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Discus",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10775,
      "end": 10785,
@@ -2023,11 +2596,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Chakram",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10786,
      "end": 10796,
@@ -2037,11 +2614,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Harpoon",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10798,
      "end": 10808,
@@ -2051,11 +2632,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Hungamunga",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10855,
      "end": 10865,
@@ -2065,11 +2650,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Large Throwing Knife",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10867,
      "end": 10877,
@@ -2079,11 +2668,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Small Throwing Knife",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10879,
      "end": 10889,
@@ -2093,11 +2686,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Spike Shuriken",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10903,
      "end": 10913,
@@ -2107,11 +2704,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Star Shuriken",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10914,
      "end": 10924,
@@ -2121,11 +2722,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Boomerang",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10971,
      "end": 10981,
@@ -2135,11 +2740,15 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
     },
     {
      "name": "Throwing Stick",
-     "book": "GURPS Low-Tech",
+     "book": "GURPS Low-Tech \u2014 Weapons",
      "page": 79,
      "start": 10982,
      "end": 10992,
@@ -2149,7 +2758,614 @@
      "parry": null,
      "cost": null,
      "weight": null,
-     "min_st": null
+     "min_st": null,
+     "tl": null,
+     "dr": null,
+     "don": null,
+     "notes": null
+    }
+   ]
+  },
+  {
+   "key": "lowtech-armor",
+   "book": "GURPS Low-Tech \u2014 Armor",
+   "citation": "GURPS Low-Tech (SJGames, 4e), Armor Table",
+   "category": "armor",
+   "coverage": "ok \u2014 33 armor pieces from GURPS 4e - Low-Tech.md",
+   "gear": [
+    {
+     "name": "Cane",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15855,
+     "end": 15861,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$35",
+     "weight": "12",
+     "min_st": null,
+     "tl": "0",
+     "dr": "1",
+     "don": "28",
+     "notes": "[1]"
+    },
+    {
+     "name": "Cloth, Padded",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15862,
+     "end": 15868,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$50",
+     "weight": "6",
+     "min_st": null,
+     "tl": "0",
+     "dr": "1*",
+     "don": "15",
+     "notes": null
+    },
+    {
+     "name": "Horn",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15868,
+     "end": 15874,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$250",
+     "weight": "25",
+     "min_st": null,
+     "tl": "0",
+     "dr": "3",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Layered Cloth, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15874,
+     "end": 15880,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$150",
+     "weight": "12",
+     "min_st": null,
+     "tl": "0",
+     "dr": "2*",
+     "don": "20",
+     "notes": null
+    },
+    {
+     "name": "Layered Cloth, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15880,
+     "end": 15886,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$350",
+     "weight": "20",
+     "min_st": null,
+     "tl": "0",
+     "dr": "3",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Layered Cloth, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15886,
+     "end": 15892,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$600",
+     "weight": "28",
+     "min_st": null,
+     "tl": "0",
+     "dr": "4",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Leather, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15892,
+     "end": 15898,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$100",
+     "weight": "12",
+     "min_st": null,
+     "tl": "0",
+     "dr": "2*",
+     "don": "30",
+     "notes": "[2]"
+    },
+    {
+     "name": "Leather, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15899,
+     "end": 15905,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$200",
+     "weight": "20",
+     "min_st": null,
+     "tl": "0",
+     "dr": "3",
+     "don": "30",
+     "notes": "[2]"
+    },
+    {
+     "name": "Straw",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15906,
+     "end": 15912,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$50",
+     "weight": "20",
+     "min_st": null,
+     "tl": "0",
+     "dr": "2",
+     "don": "30",
+     "notes": "[1]"
+    },
+    {
+     "name": "Wood",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15913,
+     "end": 15919,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$100",
+     "weight": "30",
+     "min_st": null,
+     "tl": "0",
+     "dr": "3",
+     "don": "30",
+     "notes": "[3]"
+    },
+    {
+     "name": "Layered Leather, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15920,
+     "end": 15926,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$120",
+     "weight": "15",
+     "min_st": null,
+     "tl": "1",
+     "dr": "2*",
+     "don": "20",
+     "notes": null
+    },
+    {
+     "name": "Layered Leather, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15926,
+     "end": 15932,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$220",
+     "weight": "26",
+     "min_st": null,
+     "tl": "1",
+     "dr": "3",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Layered Leather, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15932,
+     "end": 15938,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$525",
+     "weight": "35",
+     "min_st": null,
+     "tl": "1",
+     "dr": "4",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Scale, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15938,
+     "end": 15944,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$320",
+     "weight": "16",
+     "min_st": null,
+     "tl": "1",
+     "dr": "3",
+     "don": "30",
+     "notes": "[4]"
+    },
+    {
+     "name": "Scale, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15945,
+     "end": 15951,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$550",
+     "weight": "28",
+     "min_st": null,
+     "tl": "1",
+     "dr": "4",
+     "don": "30",
+     "notes": "[4]"
+    },
+    {
+     "name": "Scale, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15952,
+     "end": 15958,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,100",
+     "weight": "40",
+     "min_st": null,
+     "tl": "1",
+     "dr": "5",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Hardened Leather, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15958,
+     "end": 15964,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$125",
+     "weight": "15",
+     "min_st": null,
+     "tl": "2",
+     "dr": "2",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Hardened Leather, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15964,
+     "end": 15970,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$250",
+     "weight": "25",
+     "min_st": null,
+     "tl": "2",
+     "dr": "3",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Jack of Plates",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15970,
+     "end": 15976,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$300",
+     "weight": "18",
+     "min_st": null,
+     "tl": "2",
+     "dr": "3",
+     "don": "30",
+     "notes": "[4]"
+    },
+    {
+     "name": "Mail, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 112,
+     "start": 15977,
+     "end": 15983,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$500",
+     "weight": "12",
+     "min_st": null,
+     "tl": "2",
+     "dr": "3*",
+     "don": "15",
+     "notes": "[5]"
+    },
+    {
+     "name": "Mail, Fine",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 15994,
+     "end": 16000,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$900",
+     "weight": "15",
+     "min_st": null,
+     "tl": "2",
+     "dr": "4*",
+     "don": "15",
+     "notes": "[5]"
+    },
+    {
+     "name": "Mail, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16001,
+     "end": 16007,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,200",
+     "weight": "18",
+     "min_st": null,
+     "tl": "2",
+     "dr": "5*",
+     "don": "15",
+     "notes": "[5]"
+    },
+    {
+     "name": "Segmented Plate, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16008,
+     "end": 16014,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$600",
+     "weight": "16",
+     "min_st": null,
+     "tl": "2",
+     "dr": "3",
+     "don": "45",
+     "notes": null
+    },
+    {
+     "name": "Segmented Plate, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16014,
+     "end": 16020,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$900",
+     "weight": "24",
+     "min_st": null,
+     "tl": "2",
+     "dr": "4",
+     "don": "45",
+     "notes": null
+    },
+    {
+     "name": "Segmented Plate, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16020,
+     "end": 16026,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,200",
+     "weight": "32",
+     "min_st": null,
+     "tl": "2",
+     "dr": "5",
+     "don": "45",
+     "notes": null
+    },
+    {
+     "name": "Mail and Plates",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16026,
+     "end": 16032,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,000",
+     "weight": "20",
+     "min_st": null,
+     "tl": "3",
+     "dr": "5",
+     "don": "20",
+     "notes": "[4]"
+    },
+    {
+     "name": "Mail, Jousting",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16033,
+     "end": 16039,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,500",
+     "weight": "30",
+     "min_st": null,
+     "tl": "3",
+     "dr": "6",
+     "don": "30",
+     "notes": "[6]"
+    },
+    {
+     "name": "Brigandine, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16040,
+     "end": 16046,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$900",
+     "weight": "10",
+     "min_st": null,
+     "tl": "4",
+     "dr": "3",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Brigandine, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16046,
+     "end": 16052,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,800",
+     "weight": "20",
+     "min_st": null,
+     "tl": "4",
+     "dr": "5",
+     "don": "30",
+     "notes": null
+    },
+    {
+     "name": "Paper, Proofed",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16052,
+     "end": 16058,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$2,000",
+     "weight": "45",
+     "min_st": null,
+     "tl": "4",
+     "dr": "6",
+     "don": "20",
+     "notes": "[1]"
+    },
+    {
+     "name": "Plate, Light",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16059,
+     "end": 16065,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$1,000",
+     "weight": "8",
+     "min_st": null,
+     "tl": "4",
+     "dr": "3",
+     "don": "45",
+     "notes": null
+    },
+    {
+     "name": "Plate, Medium",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16065,
+     "end": 16071,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$2,500",
+     "weight": "20",
+     "min_st": null,
+     "tl": "4",
+     "dr": "6",
+     "don": "45",
+     "notes": null
+    },
+    {
+     "name": "Plate, Heavy",
+     "book": "GURPS Low-Tech \u2014 Armor",
+     "page": 113,
+     "start": 16071,
+     "end": 16077,
+     "category": "armor",
+     "damage": null,
+     "reach": null,
+     "parry": null,
+     "cost": "$4,000",
+     "weight": "32",
+     "min_st": null,
+     "tl": "4",
+     "dr": "9",
+     "don": "45",
+     "notes": null
     }
    ]
   }
