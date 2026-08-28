@@ -1,0 +1,325 @@
+{
+ "generated_by": "scripts/vestige_harvest.py",
+ "corpus": "I:\\Sourcebooks\\_text",
+ "total_vestiges": 31,
+ "sources": [
+  {
+   "key": "tome",
+   "book": "Tome of Magic (Pact Magic)",
+   "citation": "Tome of Magic (WotC, 3.5e), Pact Magic \u2014 vestige summary",
+   "coverage": "ok \u2014 31 vestiges from Tome of Magic.md",
+   "vestiges": [
+    {
+     "name": "Amon",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1812,
+     "end": 1816,
+     "vestige_level": 1,
+     "binding_dc": 20,
+     "special_requirement": true
+    },
+    {
+     "name": "Aym",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1816,
+     "end": 1820,
+     "vestige_level": 1,
+     "binding_dc": 15,
+     "special_requirement": false
+    },
+    {
+     "name": "Leraje",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1820,
+     "end": 1824,
+     "vestige_level": 1,
+     "binding_dc": 15,
+     "special_requirement": true
+    },
+    {
+     "name": "Naberius",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1824,
+     "end": 1828,
+     "vestige_level": 1,
+     "binding_dc": 15,
+     "special_requirement": true
+    },
+    {
+     "name": "Dahlver-Nar",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1832,
+     "end": 1836,
+     "vestige_level": 2,
+     "binding_dc": 17,
+     "special_requirement": true
+    },
+    {
+     "name": "Haagenti",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1836,
+     "end": 1840,
+     "vestige_level": 2,
+     "binding_dc": 17,
+     "special_requirement": true
+    },
+    {
+     "name": "Malphas",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1840,
+     "end": 1844,
+     "vestige_level": 2,
+     "binding_dc": 15,
+     "special_requirement": false
+    },
+    {
+     "name": "Ronove",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1828,
+     "end": 1832,
+     "vestige_level": 2,
+     "binding_dc": 15,
+     "special_requirement": true
+    },
+    {
+     "name": "Andromalius",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1848,
+     "end": 1852,
+     "vestige_level": 3,
+     "binding_dc": 20,
+     "special_requirement": true
+    },
+    {
+     "name": "Focalor",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1852,
+     "end": 1856,
+     "vestige_level": 3,
+     "binding_dc": 20,
+     "special_requirement": true
+    },
+    {
+     "name": "Karsus",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1856,
+     "end": 1860,
+     "vestige_level": 3,
+     "binding_dc": 25,
+     "special_requirement": true
+    },
+    {
+     "name": "Savnok",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1844,
+     "end": 1848,
+     "vestige_level": 3,
+     "binding_dc": 20,
+     "special_requirement": true
+    },
+    {
+     "name": "Agares",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1864,
+     "end": 1868,
+     "vestige_level": 4,
+     "binding_dc": 22,
+     "special_requirement": true
+    },
+    {
+     "name": "Andras",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1868,
+     "end": 1872,
+     "vestige_level": 4,
+     "binding_dc": 22,
+     "special_requirement": false
+    },
+    {
+     "name": "Buer",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1872,
+     "end": 1876,
+     "vestige_level": 4,
+     "binding_dc": 20,
+     "special_requirement": true
+    },
+    {
+     "name": "Eurynome",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1876,
+     "end": 1880,
+     "vestige_level": 4,
+     "binding_dc": 21,
+     "special_requirement": true
+    },
+    {
+     "name": "Paimon",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1860,
+     "end": 1864,
+     "vestige_level": 4,
+     "binding_dc": 20,
+     "special_requirement": false
+    },
+    {
+     "name": "Acererak",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1884,
+     "end": 1888,
+     "vestige_level": 5,
+     "binding_dc": 25,
+     "special_requirement": true
+    },
+    {
+     "name": "Balam",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1888,
+     "end": 1892,
+     "vestige_level": 5,
+     "binding_dc": 25,
+     "special_requirement": true
+    },
+    {
+     "name": "Dantalion",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1892,
+     "end": 1896,
+     "vestige_level": 5,
+     "binding_dc": 25,
+     "special_requirement": false
+    },
+    {
+     "name": "Geryon",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1896,
+     "end": 1900,
+     "vestige_level": 5,
+     "binding_dc": 25,
+     "special_requirement": true
+    },
+    {
+     "name": "Tenebrous",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1880,
+     "end": 1884,
+     "vestige_level": 5,
+     "binding_dc": 21,
+     "special_requirement": true
+    },
+    {
+     "name": "Chupoclops",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1904,
+     "end": 1908,
+     "vestige_level": 6,
+     "binding_dc": 25,
+     "special_requirement": true
+    },
+    {
+     "name": "Haures",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1908,
+     "end": 1912,
+     "vestige_level": 6,
+     "binding_dc": 25,
+     "special_requirement": false
+    },
+    {
+     "name": "Ipos",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1912,
+     "end": 1916,
+     "vestige_level": 6,
+     "binding_dc": 26,
+     "special_requirement": true
+    },
+    {
+     "name": "Otiax",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1900,
+     "end": 1904,
+     "vestige_level": 6,
+     "binding_dc": 25,
+     "special_requirement": false
+    },
+    {
+     "name": "Shax",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1916,
+     "end": 1920,
+     "vestige_level": 6,
+     "binding_dc": 26,
+     "special_requirement": true
+    },
+    {
+     "name": "Eligor",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1924,
+     "end": 1928,
+     "vestige_level": 7,
+     "binding_dc": 30,
+     "special_requirement": false
+    },
+    {
+     "name": "Zagan",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1920,
+     "end": 1924,
+     "vestige_level": 7,
+     "binding_dc": 25,
+     "special_requirement": true
+    },
+    {
+     "name": "Halphax",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1932,
+     "end": 1936,
+     "vestige_level": 8,
+     "binding_dc": 32,
+     "special_requirement": true
+    },
+    {
+     "name": "Marchosias",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 19,
+     "start": 1928,
+     "end": 1932,
+     "vestige_level": 8,
+     "binding_dc": 30,
+     "special_requirement": true
+    }
+   ]
+  }
+ ]
+}
