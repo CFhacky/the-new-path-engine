@@ -1,0 +1,240 @@
+{
+ "generated_by": "scripts/wh40krp_forcefield_harvest.py",
+ "system": "WH40K Roleplay",
+ "corpus": "I:\\Sourcebooks\\_text",
+ "total_forcefields": 13,
+ "total_soft": 0,
+ "books_covered": 3,
+ "sources": [
+  {
+   "key": "dh-core",
+   "book": "Dark Heresy \u2014 Core Rulebook",
+   "system": "WH40K Roleplay",
+   "citation": "Dark Heresy Core Rulebook (FFG, WH40K Roleplay) \u2014 no Force Fields table in the core Armoury (it runs Table 5-12 Armour -> 5-13 Clothing); NO COVERAGE",
+   "coverage": "NO COVERAGE \u2014 no Force Fields table located in Dark Heresy - Core Rulebook.pdf.md",
+   "forcefields": [],
+   "soft": []
+  },
+  {
+   "key": "rt-core",
+   "book": "Rogue Trader \u2014 Core Rulebook",
+   "system": "WH40K Roleplay",
+   "citation": "Rogue Trader Core Rulebook, 1.4 errata (FFG, WH40K Roleplay) \u2014 no Force Fields table in the core Armoury (it runs Table 5-12 Armour -> Power Armour -> Gear); NO COVERAGE",
+   "coverage": "NO COVERAGE \u2014 no Force Fields table located in Rogue Trader - Core Rulebook (updated with 1.4 errata).md",
+   "forcefields": [],
+   "soft": []
+  },
+  {
+   "key": "dw-core",
+   "book": "Deathwatch \u2014 Core Rulebook",
+   "system": "WH40K Roleplay",
+   "citation": "Deathwatch Core Rulebook (FFG, WH40K Roleplay), Armoury \u2014 Table 5\u201314: Force Fields; Astartes fields carry a per-field Protection Rating + Overload Roll, acquired by Requisition (req) + Renown",
+   "coverage": "ok \u2014 3 force fields from Deathwatch - Core Rulebook.md",
+   "forcefields": [
+    {
+     "name": "Astartes Combat Shield",
+     "book": "Deathwatch \u2014 Core Rulebook",
+     "page": 167,
+     "line": 17487,
+     "citation": "Deathwatch \u2014 Core Rulebook, [PDF page 167]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "25",
+     "overload": "01\u201310",
+     "weight": "3",
+     "availability": null,
+     "req": "20",
+     "renown": "Distinguished"
+    },
+    {
+     "name": "Astartes Storm Shield",
+     "book": "Deathwatch \u2014 Core Rulebook",
+     "page": 167,
+     "line": 17493,
+     "citation": "Deathwatch \u2014 Core Rulebook, [PDF page 167]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "55",
+     "overload": "01\u201310",
+     "weight": "10",
+     "availability": null,
+     "req": "35",
+     "renown": "Distinguished"
+    },
+    {
+     "name": "Iron Halo",
+     "book": "Deathwatch \u2014 Core Rulebook",
+     "page": 167,
+     "line": 17499,
+     "citation": "Deathwatch \u2014 Core Rulebook, [PDF page 167]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "50",
+     "overload": "01",
+     "weight": "0.5 kg",
+     "availability": null,
+     "req": "40",
+     "renown": "Hero"
+    }
+   ],
+   "soft": []
+  },
+  {
+   "key": "ow-core",
+   "book": "Only War \u2014 Core Rulebook",
+   "system": "WH40K Roleplay",
+   "citation": "Only War Core Rulebook (FFG, WH40K Roleplay), Armoury \u2014 Table 6-19: Force Fields; Protection Rating + Weight, acquired by Availability; overload is craftsmanship-based (Table 6-18), not per field",
+   "coverage": "ok \u2014 5 force fields from Only War - Core Rulebook.md",
+   "forcefields": [
+    {
+     "name": "Refractor Field",
+     "book": "Only War \u2014 Core Rulebook",
+     "page": 197,
+     "line": 22434,
+     "citation": "Only War \u2014 Core Rulebook, [PDF page 197]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "30",
+     "overload": null,
+     "weight": "2",
+     "availability": "Very Rare",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Conversion Field",
+     "book": "Only War \u2014 Core Rulebook",
+     "page": 197,
+     "line": 22438,
+     "citation": "Only War \u2014 Core Rulebook, [PDF page 197]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "50",
+     "overload": null,
+     "weight": "1",
+     "availability": "Extremely Rare",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Displacer Field",
+     "book": "Only War \u2014 Core Rulebook",
+     "page": 197,
+     "line": 22442,
+     "citation": "Only War \u2014 Core Rulebook, [PDF page 197]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "55",
+     "overload": null,
+     "weight": "2",
+     "availability": "Near Unique",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Power Field (Personal)",
+     "book": "Only War \u2014 Core Rulebook",
+     "page": 197,
+     "line": 22446,
+     "citation": "Only War \u2014 Core Rulebook, [PDF page 197]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "80",
+     "overload": null,
+     "weight": "50",
+     "availability": "Near Unique",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Power Field (Vehicle/Emplacement)",
+     "book": "Only War \u2014 Core Rulebook",
+     "page": 197,
+     "line": 22450,
+     "citation": "Only War \u2014 Core Rulebook, [PDF page 197]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "80",
+     "overload": null,
+     "weight": "500",
+     "availability": "Very Rare",
+     "req": null,
+     "renown": null
+    }
+   ],
+   "soft": []
+  },
+  {
+   "key": "bc-core",
+   "book": "Black Crusade \u2014 Core Rulebook",
+   "system": "WH40K Roleplay",
+   "citation": "Black Crusade Core Rulebook (FFG, WH40K Roleplay), Armoury \u2014 Table 5-13: Force Fields; Protection Rating + Weight, acquired by Availability; overload is craftsmanship-based (Table 5-12), not per field",
+   "coverage": "ok \u2014 5 force fields from Black Crusade - Core Rulebook.md",
+   "forcefields": [
+    {
+     "name": "Conversion Field",
+     "book": "Black Crusade \u2014 Core Rulebook",
+     "page": 180,
+     "line": 27267,
+     "citation": "Black Crusade \u2014 Core Rulebook, [PDF page 180]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "50",
+     "overload": null,
+     "weight": "1",
+     "availability": "Extremely Rare",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Displacer Field",
+     "book": "Black Crusade \u2014 Core Rulebook",
+     "page": 180,
+     "line": 27271,
+     "citation": "Black Crusade \u2014 Core Rulebook, [PDF page 180]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "55",
+     "overload": null,
+     "weight": "2",
+     "availability": "Near Unique",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Power Field (Personal)",
+     "book": "Black Crusade \u2014 Core Rulebook",
+     "page": 180,
+     "line": 27275,
+     "citation": "Black Crusade \u2014 Core Rulebook, [PDF page 180]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "80",
+     "overload": null,
+     "weight": "50",
+     "availability": "Near Unique",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Power Field (Vehicle/Emplacement)",
+     "book": "Black Crusade \u2014 Core Rulebook",
+     "page": 180,
+     "line": 27279,
+     "citation": "Black Crusade \u2014 Core Rulebook, [PDF page 180]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "80",
+     "overload": null,
+     "weight": "500",
+     "availability": "Very Rare",
+     "req": null,
+     "renown": null
+    },
+    {
+     "name": "Refractor Field",
+     "book": "Black Crusade \u2014 Core Rulebook",
+     "page": 180,
+     "line": 27283,
+     "citation": "Black Crusade \u2014 Core Rulebook, [PDF page 180]",
+     "system": "WH40K Roleplay",
+     "protection_rating": "30",
+     "overload": null,
+     "weight": "2",
+     "availability": "Very Rare",
+     "req": null,
+     "renown": null
+    }
+   ],
+   "soft": []
+  }
+ ]
+}
