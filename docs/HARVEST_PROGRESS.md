@@ -94,7 +94,7 @@ feats do too):
 | D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
 | D&D 5e | 35 | **517 monsters** across 12 books in `dnd5e_creature_index`, plus **575 magic items** in `dnd5e_item_index` and **102 spells** in `dnd5e_spell_index` — all stamped `system: D&D 5e`. OTHER EDITIONS ARE WELCOME if labeled by edition/system (Chad has translator tools that convert). |
 | AD&D | 19 | none yet — valid target, harvest into a separately-labeled `system: AD&D 2e` index |
-| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (557 spells)** + **GURPS bestiary (139 creatures across 11 books)**; rest of the shelf still open (Thaumatology/Plant spells done, more creature books; Low-Tech WEAPONS done, armor table next) |
+| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (557 spells)** + **GURPS bestiary (139 creatures)** + **Low-Tech gear (186 weapons + armor)** + **Basic Set advantages/disadvantages (467)** + **Basic Set skills (263)**. The native-4e character-building core (traits, skills, gear, spells) is now indexed; rest of the shelf (Powers advantages, Martial Arts techniques, more creature books, higher-TL gear) still open |
 | Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
 | Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
 | Forgotten Realms | 71 | none (setting + some crunch) |
@@ -104,14 +104,23 @@ feats do too):
 Highest-value UNHARVESTED 3.5e content, by directory (all under
 `_text\D&D 3.5e\`), that the existing scripts can absorb by adding sources:
 
-- **`Monsters and Fiends\`** — bestiaries BEYOND the `_md\_bestiary` twelve:
-  **Book of Vile Darkness**, **Book of Exalted Deeds**, **Deities and
-  Demigods**, **Monsters of the Planes**. (Draconomicon, Fiend Folio, FC1/FC2,
-  Libris Mortis, Lords of Madness here are duplicates of the harvested set.)
-  → extend `creature_harvest.py` to a second source directory, deduping by book.
-- **`DM Toolkits\`** — Epic Level Handbook (epic feats/spells/items — creatures
-  already indexed), Elder Evils, Exemplars of Evil (more stat blocks), Manual of
-  the Planes, Planar Handbook, Stronghold Builders Guidebook.
+- **`Monsters and Fiends\`** — DONE. The bestiaries beyond the `_md\_bestiary`
+  twelve (Book of Vile Darkness, Book of Exalted Deeds, Deities and Demigods,
+  Monsters of the Planes) are now in `creature_index` via `creature_harvest.py`'s
+  `EXTRA_BOOKS`. (Draconomicon, Fiend Folio, FC1/FC2, Libris Mortis, Lords of
+  Madness here were duplicates of the harvested set.)
+- **`DM Toolkits\`** — Elder Evils, Exemplars of Evil (more stat blocks), Manual
+  of the Planes, Planar Handbook, Stronghold Builders Guidebook. **Epic Level
+  Handbook epic feats: DO NOT force through `feat_harvest`.** Checked 2026-08-28:
+  `Epic Level Handbook.md` (and `.ocr300.md`) is a rough multi-column scan —
+  feat names sit interleaved with fragments from adjacent columns (e.g.
+  "Devastating Critical" is followed by "7." / "called Power Knowledge." / stray
+  words, not its own block). The name-above feat detector would emit garbage
+  names. It has 142 `Benefit:` lines, but they need a de-columnised OCR pass (or
+  a hand-built epic-feat list) first. Some epic feats already reached
+  `feat_index` cleanly from the Complete-series supplements (Epic Toughness, Epic
+  Prowess, …); the ELH-only ones (Devastating Critical, Overwhelming Critical,
+  Blinding Speed) remain absent by design until the OCR is cleaned.
 - **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
   (soulmelds), **Tome of Magic** (pact/shadow/truename magic), Savage Species
   (monster classes), Incantatrix/variant material in Unearthed Arcana. The
