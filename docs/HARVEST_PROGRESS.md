@@ -21,7 +21,7 @@ extraction and are the court of appeal for any garbled number.
 **At a glance (2026-08-27).** Nine reference index families, ~6,950 entries:
 terms/affixes (143), D&D creatures (1509), magic items (1058), psionic powers
 (409), martial maneuvers (171), feats (1244), D&D spells (1841), GURPS spells
-(520), GURPS creatures (139). Each has a `--selftest` that passes. Run any
+(557), GURPS creatures (139). Each has a `--selftest` that passes. Run any
 `scripts/*_harvest.py` with no args to rebuild its index.
 
 **This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
@@ -44,7 +44,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
-| `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | `_text\GURPS\GURPS 4e\GURPS 4e - Magic.md` | 520 GURPS spells (505 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
+| `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | GURPS Magic (520) + Plant Spells (19) + Thaumatology: Urban Magics (12) + Thaumatology (6) | 557 GURPS spells (541 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
 | `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters 1 (25), Creatures of the Night 1–5 (18), Fantasy (8), Banestorm (19), Lands Out of Time (6), DF Allies (32), DF Summoners (18), Big Lizzie (13) | 139 GURPS creatures / 11 books (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
@@ -88,7 +88,7 @@ feats do too):
 | D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
 | D&D 5e | 35 | none (wrong edition for a 3.5/GURPS game — low priority) |
 | AD&D | 19 | none (older edition — low priority) |
-| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (520 spells)** + **GURPS bestiary (139 creatures across 11 books)**; rest of the shelf still open (Thaumatology/Plant spells, more creature books, Low-Tech gear) |
+| GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (557 spells)** + **GURPS bestiary (139 creatures across 11 books)**; rest of the shelf still open (Thaumatology/Plant spells, more creature books, Low-Tech gear) |
 | Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
 | Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
 | Forgotten Realms | 71 | none (setting + some crunch) |

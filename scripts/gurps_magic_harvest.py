@@ -249,8 +249,18 @@ SOURCES: List[Source] = [
            path=Path("GURPS/GURPS 4e/GURPS 4e - Magic.md"),
            citation="GURPS Magic (SJGames, 4e), spell descriptions",
            detector="gurps_magic"),
-    # NEXT: Magic - Plant Spells, the Thaumatology books, Dungeon Fantasy spell
-    # lists — same grammar; add as Source(detector="gurps_magic").
+    Source(key="plant", book="GURPS Magic: Plant Spells",
+           path=Path("GURPS/GURPS 4e/GURPS 4e - Magic - Plant Spells.md"),
+           citation="GURPS Magic: Plant Spells (SJGames, 4e)",
+           detector="gurps_magic"),
+    Source(key="urbanmagic", book="GURPS Thaumatology: Urban Magics",
+           path=Path("GURPS/GURPS 4e/GURPS 4e - Thaumatology - Urban Magics.md"),
+           citation="GURPS Thaumatology: Urban Magics (SJGames, 4e), ley-line spells",
+           detector="gurps_magic"),
+    Source(key="thaum", book="GURPS Thaumatology",
+           path=Path("GURPS/GURPS 4e/GURPS 4e - Thaumatology.md"),
+           citation="GURPS Thaumatology (SJGames, 4e), spells",
+           detector="gurps_magic"),
 ]
 
 

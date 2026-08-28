@@ -536,3 +536,64 @@ A field left as `—` is one the OCR did not cleanly yield.
 | Lightning Stare | Regular | 1 second. | 1 to 4. Cannot be maintained. | 2 seconds. | — | 200 |
 | Lightning Weapon | Regular | 1 minute. | 4 to cast. 1 to maintain. | 2 seconds. | — | 200 |
 | Lightning Missiles | Regular | 1 minute. | 4 to cast. 2 to maintain. Cost | 3 seconds. | Lightning Weapon. | 200 |
+
+## GURPS Magic: Plant Spells — 19 spells
+
+*Source: GURPS Magic: Plant Spells (SJGames, 4e).*  
+*Harvest: ok — 19 spells from GURPS 4e - Magic - Plant Spells.md.*
+
+| Spell | Class | Duration | Cost | Cast time | Prerequisites | Page |
+|---|---|---|---|---|---|---|
+| Blade of Grass | Regular | 1 minute. | 1 to cast for every 12” of length, or fraction thereof. | — | Shape Plant. | 10 |
+| Buoyant Plant Life | Area | 1 minute. | See above. Half to maintain. | 30 seconds. | Magery 1 and Identify Plant. | 11 |
+| Capturing Vines | Area | 1 minute. | 1 to cast. Half that to maintain. | 4 seconds. | Grasping Branch (p 14). | 12 |
+| Create Paper | Regular | Permanent. | See description. | 4 minutes. | Magery 2 and Heal Plant. | 12 |
+| Druid’s Panacea | Regular (VH) | See above. | 1 to 3 to cast. One attempt per day. | 10 minutes. | Magery 3, Body of Wood, and Plant Emp... | 12 |
+| Forest Defense | Blocking | — | 1 to 3 to cast (each point of energy provides DR 3). | — | Animate Plant. | 13 |
+| Green Telurgy | Regular | 5 minutes. | Equal to SM of the plant to cast; minimum 2. 1 to | 30 seconds. | Plant Speech. | 14 |
+| Harvest | Area | — | 1/4 to cast. Cannot be maintained. | 20 seconds per yard radius. | Magery 1, Apportation, Identify Plant... | 14 |
+| Improved Firewood | Regular | Permanent. | 1 per lb. | 10 seconds per 5 lbs., round up. | Identify Plant. | 15 |
+| Invoke Fence | Regular | Permanent. | 3 for every 10 yards to cast. | 2 minutes. | Magery 2 and Heal Plant. | 15 |
+| Razor Grass | Area | 10 minutes. | 1 to cast. Same cost to maintain. Double energy | 10 seconds. | Magery 1, Essential Wood, and | 16 |
+| Resilient Vegetation | Area | 1 minute. | 1 to cast. Same cost to maintain. By | 1 minute. | Magery 1 and Shape Plant. | 17 |
+| Shuriken Leaf | Regular | 1 minute. Can be cancelled with Remove Curse or | 1 to cast. Raise the damage to 1d+2/1d+1 by spending | 3 seconds. | Magery 1 and Blade of Grass (pp. 10-11). | 19 |
+| Spying Blossom | Regular | 5 minutes. | 3 to cast. 1 to maintain if it is still rooted, or 2 if it has | 10 seconds. | Plant Sense. | 19 |
+| Toxic Plant | Regular | 2 minutes. | 1 to cast for Coughing, Itching, or Sneezing; 3 for | 1 minute. | Magery 1, Plant Growth, and Sickness. | 19 |
+| Trapped Light | Regular | 10 minutes. | 3 to cast. 1 to maintain. | 5 seconds. | Flash and Plant Growth. | 20 |
+| Tree Bark Armor | Regular | 10 minutes. | 4 to cast. 3 to maintain. | 4 seconds. | Magery 1, Essential Wood, and Shape P... | 20 |
+| Undergrowth Ambush | Regular | 15 seconds. | 3 to cast. Half that to maintain. | 6 seconds. | Searching Roots (pp. 18-19). | 21 |
+| Woodfall | Regular | 10 seconds. | 2 to cast per pound; maximum of 10 for a 5-lb. object. | — | Rain of Nuts. | 21 |
+
+## GURPS Thaumatology: Urban Magics — 12 spells
+
+*Source: GURPS Thaumatology: Urban Magics (SJGames, 4e), ley-line spells.*  
+*Harvest: ok — 12 spells from GURPS 4e - Thaumatology - Urban Magics.md.*
+
+| Spell | Class | Duration | Cost | Cast time | Prerequisites | Page |
+|---|---|---|---|---|---|---|
+| Seek Ley Line | Information | — | 3. | 10 seconds. | Magery 1. | 19 |
+| Ley Speech | Information | Duration of message, as spoken by caster. | 1 per minute of message duration. | 10 seconds. | Seek Ley Line and Voices. | 19 |
+| Ley Running | Regular | 10 minutes. | 2 to cast. 1 to maintain. | 1 minute. | Seek Ley Line and Haste. | 19 |
+| Ley Float | Regular | 10 minutes. | 2 to cast. 1 to maintain. | 1 minute. | Seek Ley Line and Apportation. | 20 |
+| Ley Vehicle | Regular | 10 minutes. | 3 to cast. 2 to maintain. | 1 minute. | Ley Float and Ley Running. | 20 |
+| Ley Tap | Regular | — | 1 to cast. None to maintain. | — | Seek Ley Line. | 20 |
+| Ley Buffer | Regular | 1 minute. | 1 to cast. 1 to maintain. | — | Ley Tap and Magery 1. | 20 |
+| Ley Supply | Special | 1 minute. | 1 per point of supplied Intensity. Same to maintain. | — | Ley Tap and either Lend Energy or Minor | 20 |
+| Minor Conduct Power/TL | Special | 1 minute. | None to cast. 1 to maintain. This maintenance cost is | — | Seek Power. | 26 |
+| Minor Draw Power/TL | Special | 1 minute. | None to cast. 1 to maintain. This maintenance cost is | — | Minor Conduct Power and at least 1 spell | 26 |
+| New Spell: Awaken Building/TL | Regular | 1 hour. | 4 to cast. 2 to maintain. Apply the | 10 seconds. | Animation. However, to | 33 |
+| Transfer Water | Special | 1 minute. | 1 to cast. 1 to maintain. Not reduced by skill. | 1 minute. | Magery 1 and Shape Water. | 34 |
+
+## GURPS Thaumatology — 6 spells
+
+*Source: GURPS Thaumatology (SJGames, 4e), spells.*  
+*Harvest: ok — 6 spells from GURPS 4e - Thaumatology.md.*
+
+| Spell | Class | Duration | Cost | Cast time | Prerequisites | Page |
+|---|---|---|---|---|---|---|
+| Seek (Ethical Category) | Information | — | 6. | 10 seconds. | — | 50 |
+| Protection from (Ethical Category) | Regular | 1 minute. | 1 to 5 to cast. Half that to maintain. | — | — | 50 |
+| Repel (Ethical Category) | Regular | 1 minute. | 1 per 3 ST worth of “repulsion.” | 3 seconds. | — | 50 |
+| Raise Cone of Power | Regular | As long as the ceremony continues. | 6 to cast. 6 to maintain. | 1 hour. | Lend Energy and either Pentagram or | 53 |
+| New Spell: Detect Raw Magic | Information | — | 3. | 15 seconds. | Detect Magic. | 229 |
+| New Spell: Process Raw Magic | Regular | — | 1 per 5 points of Raw Magic to be manipulated | — | Detect Raw Magic. | 230 |
