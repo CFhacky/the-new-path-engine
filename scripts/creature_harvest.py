@@ -57,6 +57,16 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 DEFAULT_BESTIARY = Path(r"I:\Sourcebooks\_md\_bestiary")
+# Bestiaries beyond the _md\_bestiary twelve — the genuinely-new creatures in
+# _text\D&D 3.5e\Monsters and Fiends (the archfiends of Book of Vile Darkness,
+# the deities of Deities and Demigods, the planar monsters of Monsters of the
+# Planes). Same stat grammar, rougher OCR and a "[PDF page N]" marker.
+_MNF = Path(r"I:\Sourcebooks\_text\D&D 3.5e\Monsters and Fiends")
+EXTRA_BOOKS: List[Path] = [
+    _MNF / "Book of Vile Darkness.md",
+    _MNF / "Deities and Demigods.md",
+    _MNF / "Monsters of the Planes (3pp).md",
+]
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "creature_index.json"
 OUT_MD = REPO / "reference" / "creature_index.md"
@@ -65,7 +75,21 @@ OUT_MD = REPO / "reference" / "creature_index.md"
 # Detection — duplicated from monster_lookup.py per the no-cross-imports law
 # ---------------------------------------------------------------------------
 
-PAGE = re.compile(r"<!-- page (\d+) -->")
+PAGE = re.compile(r"(?:<!-- page |\[PDF page )(\d+)")
+# A "name" that is really a stat-line fragment or a class/level line the rougher
+# _text OCR let through ("Gorgon 3; Cr 10; Medium-Size Humanoid", "Wizard
+# 20/Cleric 20"). Real creature names never contain these.
+_CLASSES = (r"Wizard|Cleric|Fighter|Rogue|Ranger|Druid|Bard|Barbarian|Monk|"
+            r"Sorcerer|Paladin|Illusionist|Expert|Warrior|Adept|Commoner|Aristocrat")
+NAME_GARBAGE = re.compile(
+    # stat-line fragments
+    r";|\b(Cr|Hd|Hp|Ac|Sr|Init|Speed|Atk|Fort|Ref|Will)\b|\bd\d|"
+    r"\((Chaotic|Lawful|Neutral|Evil|Good)|Medium-Size|Hit Dice|"
+    # class/level lines ("Wizard 20/Cleric 20", "Expert 20")
+    rf"\b\d+/(?:{_CLASSES})\b|^(?:{_CLASSES})\s+\d|"
+    # prose sentences, credits, section headers, OCR junk grabbed as a name
+    r"\.\s+[A-Z]|^(Illus|Creating|Cosmology|Mountain Climbing|Local |All Of|"
+    r"From One|The Corpse|As Long|Now She|Who )|[$]|__|\bBy D\b", re.IGNORECASE)
 BAD_STARTS = ("Hit Dice", "Initiative", "Speed", "Armor Class", "Base Attack",
               "Attack", "Full Attack", "Space/Reach", "Special", "Saves",
               "Abilities", "Skills", "Feats", "Environment", "Organization",
@@ -201,6 +225,7 @@ def index_book(path: Path) -> Tuple[List[str], List[Creature]]:
         creature = Creature(name=name, book=book, page=pages[s], start=s, end=e)
         parse_quick_fields(creature, "\n".join(lines[s:e]))
         creatures.append(creature)
+    creatures = [c for c in creatures if not NAME_GARBAGE.search(c.name)]
     return lines, creatures
 
 
@@ -211,6 +236,10 @@ class Corpus:
         if directory.is_dir():
             for path in sorted(directory.glob("*.md")):
                 self.books[path.stem] = index_book(path)
+        if directory == DEFAULT_BESTIARY:   # real run, not a fixture tmp dir
+            for path in EXTRA_BOOKS:         # the _text Monsters and Fiends books
+                if path.exists():
+                    self.books[path.stem] = index_book(path)
 
     def all_creatures(self, book: Optional[str] = None):
         for name, (lines, creatures) in self.books.items():

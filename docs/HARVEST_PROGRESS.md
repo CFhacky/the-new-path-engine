@@ -19,7 +19,7 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 extraction and are the court of appeal for any garbled number.
 
 **At a glance (2026-08-27).** Nine reference index families, ~6,950 entries:
-terms/affixes (143), D&D creatures (1509), magic items (1421), psionic powers
+terms/affixes (143), D&D creatures (1602), magic items (1421), psionic powers
 (409), martial maneuvers (171), feats (1244), D&D spells (1841), GURPS spells
 (557), GURPS creatures (139). Each has a `--selftest` that passes. Run any
 `scripts/*_harvest.py` with no args to rebuild its index.
@@ -38,7 +38,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | Reference file | Built by | Source(s) | Count | Selftest |
 |---|---|---|---|---|
 | `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (143 entries) | `python scripts/term_harvest.py --selftest` |
-| `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` — MM1–MM5, Draconomicon, Epic Level Handbook, FC1, FC2, Fiend Folio, Libris Mortis, Lords of Madness | 1509 stat blocks / 12 books | `python scripts/creature_harvest.py --selftest` |
+| `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` (12 books) + `_text` Monsters and Fiends: Book of Vile Darkness (24 archfiends), Deities and Demigods (9), Monsters of the Planes (120) | 1602 stat blocks / 15 books (a garbage-name filter also removed ~60 stat-fragment rows from the _md set) | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide 3.0 (363) | 1421 items / 3 sources | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
