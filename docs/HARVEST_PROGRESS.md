@@ -126,7 +126,15 @@ Highest-value UNHARVESTED 3.5e content, by directory (all under
   to `C:\Users\Chad\{Documents,Downloads,Desktop}` and its own renderer is
   disabled here, so: copy the PDF into Downloads, `fitz.open(...).get_pixmap()`
   to PNG in scratchpad, then Read the PNG. This unblocks the other corrupt-OCR
-  targets below.
+  targets below. **Two tiers for fixing corrupt OCR (both built 2026-08-28):**
+  (1) `scripts/reocr.py` re-OCRs a PDF with Tesseract 5.4 (render → binarize →
+  OCR). It reads in visual order, so it FIXES the AD&D Monstrous Compendium's
+  scrambled two-column stat blocks and is clean on PLAIN scans — but it slips on
+  a few characters (`3+3`→`343`, `Very`→`Verv`), so numbers want a spot-check,
+  and it still garbles ORNATE pages (the ELH). (2) VISION (render + read by eye)
+  — the reliable method for ornate/decorative pages and for anything mechanical
+  where a character slip can't be tolerated. Rule of thumb: plain layout →
+  `reocr.py`; ornate → vision.
 - **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
   (the soulmeld summary tables are DONE in `soulmeld_index`; the soulmeld/essentia-scaling detail text remains prose), **Tome of Magic** shadow-magic mysteries + truename utterances
   (the pact-magic VESTIGES are DONE in `vestige_index`; mysteries and utterances
