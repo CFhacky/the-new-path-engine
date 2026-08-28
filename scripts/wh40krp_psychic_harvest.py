@@ -49,6 +49,43 @@ GOVERNING SOURCES
         Value; discipline from the "The <X> Discipline" headers. Opposed is read
         off the Focus Power Test text.
 
+    SUPPLEMENTS (added ADDITIVELY — the five core sources above are untouched and
+    their 79/32/43/37/51 counts stay byte-identical; a --selftest hard-lock guards
+    this). Six splatbooks carry new psychic powers and are appended as extra
+    sources, each reusing whichever core detector fits or, where a book defeats all
+    three, one of two new detectors:
+
+      * modern reuse — Black Crusade: Tome of Fate (Title-Case "X Powers" heads)
+        and Deathwatch: First Founding (Chapter Librarian powers; the two NPC
+        bestiary powers are excluded, and the modern Range+Sustained gate drops
+        the Squad-Mode abilities that share the "Action:" shape).
+      * Rogue Trader reuse — Into the Storm, and the Navis Primer's Astropath /
+        Renegade / Ork technique blocks. Both interleave a "Focus Power Time:"
+        line the RT core never has, so the RT detector takes an optional
+        extra-fields list (default off for the core) to reach Range/Sustained.
+      * NEW detector "tiered" — Navis Primer NAVIGATOR powers: an ALL-CAPS name,
+        prose, then Novice/Adept/Master tiers with NO inline stat block. Only the
+        name, discipline ("Navigator") and a one-line effect are cleanly present;
+        the fielded slots stay empty (never invented).
+      * NEW detector "dh-inline" — Dark Heresy: Ascension and Disciples of the
+        Dark Gods, which state the DH fields INLINE ("Threshold: 16" etc.) rather
+        than in the core's alternating label/value form. Ascension powers are
+        "Rank N: <name>" (the Rank prefix is stripped, the "Cost:" line becomes the
+        value) and are tagged discipline "Ascended" (the book groups them by
+        power-tree, not classic discipline).
+
+    Navis Primer technique disciplines are assigned by the book's own pagination:
+    its Voidfrost/Soul Ward heads survive OCR but the Renegade and Ork section
+    titles are shattered decorative font, so a page->discipline map (verified
+    against the Value-line/page layout) is used instead of the broken headers.
+
+    KNOWN-SKIPPED supplements (verified to hold NO new psychic-power stat blocks,
+    so nothing is fabricated): Only War: Hammer of the Emperor and Black Crusade:
+    Tome of Blood (only incidental Focus-Power-Test references), and Black Crusade:
+    Tome of Excess (its "Random Psychic Powers" is a d100 table pointing at core
+    powers). Shattered-OCR books (Rites of Battle, Honour the Chapter, The Lathe
+    Worlds) are likewise out.
+
     A configured source whose file is missing prints NO COVERAGE. Nothing is
     invented; every row cites its book and PDF page. --selftest runs fixture + live
     checks; --export NAME emits a translation packet; --search TEXT greps names.
@@ -85,6 +122,7 @@ SUSTAINED = re.compile(r"^Sustained\s*:\s*(.+)$", re.IGNORECASE)
 SUBTYPE = re.compile(r"^Subtype\s*:\s*(.+)$", re.IGNORECASE)
 FOCUS_POWER = re.compile(r"^Focus\s+Power\s*:\s*(.+)$", re.IGNORECASE)
 FOCUS_POWER_TEST = re.compile(r"^Focus\s+Power\s+Test\s*:\s*(.+)$", re.IGNORECASE)
+FOCUS_POWER_TIME = re.compile(r"^Focus\s+Power\s+Time\s*:\s*(.+)$", re.IGNORECASE)
 VALUE = re.compile(r"^Value\s*:\s*(.+)$", re.IGNORECASE)
 PREREQ = re.compile(r"^Prerequisites?\s*:\s*(.+)$", re.IGNORECASE)
 DESCRIPTION = re.compile(r"^Description\s*:\s*(.*)$", re.IGNORECASE)
@@ -95,6 +133,14 @@ MODERN_LEADFIELD = re.compile(
 # the value on an "Action:" line must be a real action for the block to be a power
 ACTION_VALUE = re.compile(
     r"^(Free|Half|Full|Reaction|Extended|Various|Varies|None)\b", re.IGNORECASE)
+
+# extra field rows for the Rogue Trader detector when run on the SUPPLEMENTS
+# (Into the Storm, Navis Primer) — see make_rt_detector. Never passed on the core.
+RT_SUPPLEMENT_FIELDS = [
+    (FOCUS_POWER_TIME, "action"),      # "Focus Power Time: Half Action"
+    (FOCUS_POWER, "focus_power"),      # plain "Focus Power: Willpower" (Ork blocks)
+    (SUSTAINED, "sustained"),          # "Sustained: Yes"
+]
 
 # ---- Dark Heresy alternating labels ----------------------------------------
 DH_THRESHOLD = re.compile(r"^Threshold\s*:\s*$", re.IGNORECASE)
@@ -296,7 +342,13 @@ def _name_above_modern(lines: List[str], action_idx: int) -> Optional[int]:
     return None
 
 
-def make_modern_detector(disc_matchers, reject_bulleted=False):
+def make_modern_detector(disc_matchers, reject_bulleted=False, exclude_name_rx=None):
+    # ``exclude_name_rx`` (additive; default None -> core behaviour unchanged): a
+    # compiled regex tested against the RAW name line; a match drops the block.
+    # Used by Deathwatch — First Founding to skip the two NPC-statblock psychic
+    # powers whose name line reads "psyChiC poWer: <name>" (they belong to the
+    # bestiary, not the Chapter psychic-power sections, and would otherwise adopt
+    # the wrong Chapter discipline).
     def detect(lines: List[str], pages: List[int], book: str) -> List[Power]:
         n = len(lines)
         markers = _markers(lines, disc_matchers, reject_bulleted)
@@ -308,6 +360,8 @@ def make_modern_detector(disc_matchers, reject_bulleted=False):
                 continue
             nidx = _name_above_modern(lines, i)
             if nidx is None or nidx in used:
+                continue
+            if exclude_name_rx is not None and exclude_name_rx.search(lines[nidx].strip()):
                 continue
             used.add(nidx)
             starts.append((nidx, i))
@@ -359,7 +413,21 @@ def make_modern_detector(disc_matchers, reject_bulleted=False):
 # ---------------------------------------------------------------------------
 # Rogue Trader detector: inline Value / Prerequisites / Focus Power Test / Range
 # ---------------------------------------------------------------------------
-def make_rt_detector(disc_matchers):
+def make_rt_detector(disc_matchers, extra_fields=None):
+    # ``extra_fields`` (additive; default None -> core behaviour unchanged): extra
+    # (pattern, attr) rows folded into the field scan. The Rogue Trader CORE
+    # technique block is Value / Prerequisites / Focus Power Test / Range with
+    # nothing in between, so the core detector stops cleanly at Range. The
+    # SUPPLEMENTS (Into the Storm, Navis Primer) interleave a "Focus Power Time:"
+    # line (and sometimes a plain "Focus Power:" and a "Sustained:" line) between
+    # Focus Power Test and Range; without recognising those the scan would break
+    # early and never reach Range/Sustained. Core passes no extra fields, so its
+    # 32 rows stay byte-identical.
+    field_rows = [(VALUE, "value"), (PREREQ, "prerequisites"),
+                  (FOCUS_POWER_TEST, "focus_power"), (RANGE, "range")]
+    if extra_fields:
+        field_rows = field_rows + list(extra_fields)
+
     def detect(lines: List[str], pages: List[int], book: str) -> List[Power]:
         n = len(lines)
         markers = _markers(lines, disc_matchers, reject_bulleted=False)
@@ -406,8 +474,7 @@ def make_rt_detector(disc_matchers):
                 if s == "" or PAGE.search(lines[r]):
                     continue
                 matched = False
-                for rx, attr in ((VALUE, "value"), (PREREQ, "prerequisites"),
-                                 (FOCUS_POWER_TEST, "focus_power"), (RANGE, "range")):
+                for rx, attr in field_rows:
                     g = rx.match(s)
                     if g and getattr(p, attr) is None:
                         setattr(p, attr, re.sub(r"\s+", " ", g.group(1)).strip())
@@ -501,6 +568,250 @@ def make_dh_detector(disc_matchers):
 
 
 # ---------------------------------------------------------------------------
+# SUPPLEMENT detector A — Navigator "tiered" powers (Rogue Trader — Navis Primer)
+# ---------------------------------------------------------------------------
+# Navigator powers defeat all three core detectors: they carry NO inline field
+# block at all. A power is an ALL-CAPS name line, a paragraph of prose, then
+# Novice: / Adept: / Master: tiers that embed the mechanics inside prose. The
+# Novice+Adept+Master triple is unique to Navigator powers in the Navis Primer,
+# so anchoring on it needs no line bounds. Per the mission we capture only what
+# is cleanly present — name, discipline ("Navigator"), page, one-line effect —
+# and leave the fielded slots (threshold/action/range/sustained/value) empty.
+TIER_LABEL = re.compile(r"^(Novice|Adept|Master)\s*:", re.IGNORECASE)
+NOVICE = re.compile(r"^Novice\s*:", re.IGNORECASE)
+
+
+def _allcaps_name(s: str) -> bool:
+    """True for an ALL-CAPS power-name line (a Navigator power heading).
+
+    Tolerates a trailing parenthetical tag ("THE WARP UNBOUND (NAVIGATOR POWER)")
+    by stripping it before the test. Rejects any lowercase letter, field labels
+    (a ':'), running heads, and page numerals.
+    """
+    s = re.sub(r"\s*\([^)]*\)\s*$", "", s.strip())
+    if not (3 <= len(s) <= 34) or ":" in s:
+        return False
+    if any(c.islower() for c in s):
+        return False
+    if sum(c.isalpha() for c in s) < 3:
+        return False
+    return re.match(r"^[A-Z][A-Z '’./-]*[A-Z]$", s) is not None
+
+
+def _strip_tag(s: str) -> str:
+    return re.sub(r"\s*\([^)]*\)\s*$", "", s.strip())
+
+
+def make_tiered_detector(discipline: str):
+    def detect(lines: List[str], pages: List[int], book: str) -> List[Power]:
+        n = len(lines)
+        starts: List[Tuple[int, int]] = []       # (name_idx, novice_idx)
+        used = set()
+        for i, ln in enumerate(lines):
+            if not NOVICE.match(ln.strip()):
+                continue
+            # confirm this is a real tiered power: an Adept: AND a Master: follow
+            # within a modest window (rejects a lone "Novice:" used in prose)
+            saw_adept = saw_master = False
+            for r in range(i + 1, min(n, i + 45)):
+                s = lines[r].strip()
+                if _allcaps_name(s):
+                    break
+                m = TIER_LABEL.match(s)
+                if m:
+                    lab = m.group(1).lower()
+                    saw_adept = saw_adept or lab == "adept"
+                    saw_master = saw_master or lab == "master"
+            if not (saw_adept and saw_master):
+                continue
+            # walk UP past the prose paragraph to the ALL-CAPS name line
+            j, hops, nidx = i - 1, 0, None
+            while j >= 0 and hops < 30:
+                s = lines[j].strip()
+                if s == "" or PAGE.search(lines[j]):
+                    j -= 1
+                    continue
+                if _allcaps_name(s):
+                    nidx = j
+                    break
+                hops += 1
+                j -= 1
+            if nidx is None or nidx in used:
+                continue
+            used.add(nidx)
+            starts.append((nidx, i))
+        starts.sort()
+
+        out: List[Power] = []
+        for k, (nidx, novidx) in enumerate(starts):
+            # bound the block at the next power's name, capped (like the other
+            # detectors) so an isolated power — e.g. "The Warp Unbound", printed
+            # 1400 lines before the main Navigator section — stays a tidy block.
+            end = starts[k + 1][0] if k + 1 < len(starts) else n
+            end = min(end, nidx + 45)
+            out.append(Power(name=_norm_name(_strip_tag(lines[nidx].strip())),
+                             book=book, page=pages[nidx], start=nidx, end=end,
+                             discipline=discipline,
+                             effect=_first_sentence(lines[nidx + 1:novidx])))
+        best: Dict[str, Power] = {}
+        for p in out:
+            best.setdefault(p.name.lower(), p)
+        return sorted(best.values(), key=lambda x: x.start)
+
+    return detect
+
+
+# ---------------------------------------------------------------------------
+# SUPPLEMENT detector B — Dark Heresy INLINE labels (Ascension, Disciples of the
+# Dark Gods). Distinct from the Dark Heresy CORE alternating format: here the
+# value sits ON the label line — "Threshold: 16" / "Focus Time: Half Action" /
+# "Sustained: No" / "Range: 30 metres" — so the core DH detector (which anchors
+# on a bare "Threshold:" line) never fires. Ascension names read "Rank N: Foo"
+# (the Rank prefix is stripped); Disciples names are plain. OCR sometimes drops
+# the "-ed" from "Sustained:", so we accept "Sustain:" too.
+# ---------------------------------------------------------------------------
+DHI_THRESHOLD = re.compile(r"^Threshold\s*:\s*\d{1,3}\b", re.IGNORECASE)
+DHI_FIELDS: List[Tuple[re.Pattern, str]] = [
+    (re.compile(r"^Threshold\s*:\s*(.+)$", re.IGNORECASE), "threshold"),
+    (re.compile(r"^Focus\s+Time\s*:\s*(.+)$", re.IGNORECASE), "action"),
+    (re.compile(r"^Sustain(?:ed)?\s*:\s*(.+)$", re.IGNORECASE), "sustained"),
+    (re.compile(r"^Range\s*:\s*(.+)$", re.IGNORECASE), "range"),
+    (re.compile(r"^Overbleed\s*:\s*(.+)$", re.IGNORECASE), None),  # consume, don't store
+]
+RANK_PREFIX = re.compile(r"^Rank\s+\d+\s*:\s*(.+)$", re.IGNORECASE)
+# a trailing parenthetical tag on a Disciples name ("(Major Arcana)", "(Unique
+# Psy Power)") — strip it once the (possibly OCR-wrapped) name is reassembled.
+NAME_TAG = re.compile(r"\s*\([^)]*\)\s*$")
+# Ascension Rank 2/3 blocks slot an XP-cost line between name and Threshold
+COST = re.compile(r"^(?:XP\s+)?Cost\s*:\s*(.+)$", re.IGNORECASE)
+
+
+def make_dh_inline_detector(disc_matchers=None, discipline_const: Optional[str] = None):
+    disc_matchers = disc_matchers or []
+
+    def detect(lines: List[str], pages: List[int], book: str) -> List[Power]:
+        n = len(lines)
+        markers = _markers(lines, disc_matchers, reject_bulleted=False)
+        starts: List[Tuple[int, int, str, Optional[str]]] = []
+        used = set()
+        for i, ln in enumerate(lines):
+            if not DHI_THRESHOLD.match(ln.strip()):
+                continue
+            # walk up from Threshold; the name is the first real line above, but
+            # Ascension slips a "Cost: N xp" line in between (Rank 2/3 powers) —
+            # skip it and keep the xp cost as the value. Then strip a "Rank N:"
+            # prefix and any trailing "(Major/Minor Arcana)" tag from the name.
+            j = i - 1
+            while j >= 0 and (lines[j].strip() == "" or PAGE.search(lines[j])):
+                j -= 1
+            cost = None
+            if j >= 0:
+                cm = COST.match(lines[j].strip())
+                if cm:
+                    cost = re.sub(r"\s+", " ", cm.group(1)).strip()
+                    j -= 1
+                    while j >= 0 and (lines[j].strip() == "" or PAGE.search(lines[j])):
+                        j -= 1
+            if j < 0 or j in used:
+                continue
+            raw = lines[j].strip()
+            # repair an OCR-wrapped parenthetical name: a line that closes a paren
+            # it never opened ("Psy Power)") is the tail of a name wrapped from the
+            # line above ("Holocaust of Torment (Unique") — glue them back.
+            if ")" in raw and "(" not in raw and j - 1 >= 0:
+                raw = (lines[j - 1].strip() + " " + raw).strip()
+            rm = RANK_PREFIX.match(raw)
+            nm = NAME_TAG.sub("", (rm.group(1) if rm else raw)).strip()
+            if not _plausible_name(nm):
+                continue
+            used.add(j)
+            starts.append((j, i, nm, cost))
+        starts.sort()
+
+        out: List[Power] = []
+        for k, (nidx, tidx, nm, cost) in enumerate(starts):
+            end = starts[k + 1][0] if k + 1 < len(starts) else min(n, nidx + 45)
+            end = min(end, nidx + 45)
+            disc = discipline_const or _discipline_at(markers, nidx)
+            p = Power(name=_norm_name(nm), book=book, page=pages[nidx],
+                      start=nidx, end=end, discipline=disc, value=cost)
+            last = tidx - 1
+            for r in range(tidx, min(n, tidx + 14)):
+                s = lines[r].strip()
+                if s == "" or PAGE.search(lines[r]):
+                    continue
+                matched = False
+                for rx, attr in DHI_FIELDS:
+                    g = rx.match(s)
+                    if g:
+                        if attr is not None and getattr(p, attr) is None:
+                            setattr(p, attr, re.sub(r"\s+", " ", g.group(1)).strip())
+                        last = r
+                        matched = True
+                        break
+                if not matched and r > tidx:
+                    break  # prose has begun
+            p.effect = _first_sentence(lines[last + 1:end])
+            if p.threshold and p.range:
+                out.append(p)
+
+        best: Dict[str, Power] = {}
+        for p in out:
+            best.setdefault(p.name.lower(), p)
+        return sorted(best.values(), key=lambda x: x.start)
+
+    return detect
+
+
+# ---------------------------------------------------------------------------
+# SUPPLEMENT detector C — composite for Rogue Trader — The Navis Primer.
+# The Navis Primer packs two shapes into its "Mental Arsenal" chapter:
+#   * Astropath (Voidfrost / Soul Ward), Renegade-Psyker and Ork "Waaagh!"
+#     TECHNIQUES in the ordinary Rogue Trader inline shape (Value / Prereq /
+#     Focus Power Test / Range) — reuse the RT detector; and
+#   * NAVIGATOR powers in the tiered Novice/Adept/Master shape — the tiered
+#     detector above.
+# Only the Voidfrost and Soul Ward discipline headers survive as clean text; the
+# Renegade and Ork section titles are OCR-shattered decorative font (and the Ork
+# one is just the chapter running-head, non-unique). Because every technique is
+# reliably page-stamped and the book lays its sections out one per page-run, we
+# assign the technique discipline by the book's own pagination (verified against
+# the Value-line/page map) rather than trust the broken headers.
+# ---------------------------------------------------------------------------
+def _navis_discipline_by_page(page: Optional[int]) -> Optional[str]:
+    if page is None:
+        return None
+    if page <= 96:
+        return "Voidfrost"
+    if page <= 100:
+        return "Soul Ward"
+    if page <= 105:
+        return "Renegade Psyker"
+    return "Ork Waaagh!"
+
+
+def make_navis_detector():
+    # no header markers (discipline set by page); extra fields so the interleaved
+    # "Focus Power Time:" / "Focus Power:" / "Sustained:" lines are captured and
+    # do not truncate the scan before Range.
+    rt = make_rt_detector([], extra_fields=RT_SUPPLEMENT_FIELDS)
+    nav = make_tiered_detector("Navigator")
+
+    def detect(lines: List[str], pages: List[int], book: str) -> List[Power]:
+        techs = rt(lines, pages, book)
+        for p in techs:
+            p.discipline = _navis_discipline_by_page(p.page)
+        navs = nav(lines, pages, book)
+        merged = techs + navs
+        best: Dict[str, Power] = {}
+        for p in sorted(merged, key=lambda x: x.start):
+            best.setdefault(p.name.lower(), p)
+        return sorted(best.values(), key=lambda x: x.start)
+
+    return detect
+
+
+# ---------------------------------------------------------------------------
 # per-book discipline vocabularies
 # ---------------------------------------------------------------------------
 def _const(c):
@@ -537,6 +848,47 @@ OW_DISC = [
 BC_DISC = [
     (re.compile(r"^(UNALIGNED|NURGLE|SLAANESH|TZEENTCH|EXALTED)\s+POWERS\s*$"), _grp_title),
     (re.compile(r"^(TELEPATHY|TELEKINESIS|DIVINATION)\s*$"), _grp_title),
+]
+
+# ---- SUPPLEMENT discipline vocabularies (additive; never used on a core src) --
+# Black Crusade — Tome of Fate. Same modern block shape as the BC core, but its
+# discipline headers are Title Case ("Nurgle Powers") not ALL CAPS, so it needs
+# its own case-insensitive "X Powers" vocabulary.
+TOF_DISC = [
+    (re.compile(r"(?i)^(Unaligned|Nurgle|Slaanesh|Tzeentch|Exalted|Biomancy|"
+                r"Pyromancy|Telepathy|Telekinesis|Divination)\s+Powers\s*$"), _grp_title),
+]
+# Deathwatch — First Founding. Chapter-specific Librarian powers; the section
+# heads are OCR-split ("Iron hanDs PsyChIC" / "Powers"), but every section opens
+# with a clean single-line "…to the Librarians of the <Chapter> Chapter." — use
+# that as the discipline (= Chapter) marker.
+FF_DISC = [
+    # "to the Librarians of the Iron Hands Chapter." — but White Scars reads
+    # "to the Librarians—known as Stormseers—of the White Scars" with "Chapter"
+    # wrapped onto the next line, so tolerate an interjection after "Librarians"
+    # and an end-of-line stop. Anchored on "^to the Librarians" so the bestiary
+    # sentence "The Stormseers are the Librarians of the White Scars" cannot match.
+    (re.compile(r"(?i)^to the Librarians\b.*?\bof the "
+                r"([A-Z][A-Za-z' ]+?)(?:\s+Chapter\b|\s*$)"), _grp_norm),
+]
+# Rogue Trader — Into the Storm. Rogue Trader inline technique blocks under
+# "TELEPATHY DISCIPLINE" / "DIVINATION DISCIPLINE" / "TELEKINESIS DISCIPLINE"
+# heads (note: no leading "The", unlike the RT core), so a distinct vocabulary.
+ITS_DISC = [
+    (re.compile(r"(?i)^(?:the\s+)?([a-z]+)\s+discipline\s*$"), _grp_norm),
+    # the fourth section's "THE THEOSOPHAMY DISCIPLINE" head is OCR-split across
+    # two lines, so anchor on its clean single-line "THEOSOPHAMY MASTERY" head
+    # instead (else its six powers wrongly inherit the Telekinesis label).
+    (re.compile(r"(?i)^(Theosophamy)\s+Mastery\s*$"), _grp_norm),
+]
+# Dark Heresy — Disciples of the Dark Gods. Inline-Threshold powers grouped under
+# "New <School> Powers" heads plus the Tarot-flavoured "The Major/Minor Arcana".
+DIS_DISC = [
+    (re.compile(r"(?i)^New\s+Minor\s+Powers?\s*$"), _const("Minor Powers")),
+    (re.compile(r"(?i)^New\s+(Biomancy|Pyromancy|Telekinetics?|Telekinetic|"
+                r"Telepathy|Divination)\s+Powers?\s*$"), _grp_norm),
+    (re.compile(r"(?i)^The\s+(Major|Minor)\s+Arcana\s*$"),
+     lambda m: m.group(1).title() + " Arcana"),
 ]
 
 
@@ -578,6 +930,37 @@ SOURCES: List[Source] = [
            Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Core Rulebook.md"),
            "Black Crusade Core Rulebook (Fantasy Flight Games)",
            lambda: make_modern_detector(BC_DISC)),
+
+    # --- SUPPLEMENTS (additive; appended so the five core entries above stay
+    #     byte-identical). Each reuses whichever core detector matches its
+    #     layout, except the two books whose powers defeat all three cores
+    #     (Navigator tiered powers; Ascension/Disciples inline-Threshold powers).
+    Source("navis_primer", "Rogue Trader — The Navis Primer (WH40K Roleplay)",
+           Path(f"{_W}/Rogue Trader/Rulebooks/Rogue Trader - The Navis Primer.md"),
+           "Rogue Trader: The Navis Primer (Fantasy Flight Games)",
+           make_navis_detector),
+    Source("into_the_storm", "Rogue Trader — Into the Storm (WH40K Roleplay)",
+           Path(f"{_W}/Rogue Trader/Rulebooks/"
+                "Rogue Trader - Into The Storm  - The Explorer's Handbook.md"),
+           "Rogue Trader: Into the Storm — The Explorer's Handbook (Fantasy Flight Games)",
+           lambda: make_rt_detector(ITS_DISC, extra_fields=RT_SUPPLEMENT_FIELDS)),
+    Source("dh_ascension", "Dark Heresy — Ascension (WH40K Roleplay)",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Ascension.md"),
+           "Dark Heresy: Ascension (Fantasy Flight Games)",
+           lambda: make_dh_inline_detector(discipline_const="Ascended")),
+    Source("dh_disciples", "Dark Heresy — Disciples of the Dark Gods (WH40K Roleplay)",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Disciples of The Dark Gods.md"),
+           "Dark Heresy: Disciples of the Dark Gods (Fantasy Flight Games)",
+           lambda: make_dh_inline_detector(DIS_DISC)),
+    Source("tome_of_fate", "Black Crusade — Tome of Fate (WH40K Roleplay)",
+           Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Tome of Fate.md"),
+           "Black Crusade: Tome of Fate (Fantasy Flight Games)",
+           lambda: make_modern_detector(TOF_DISC)),
+    Source("first_founding", "Deathwatch — First Founding (WH40K Roleplay)",
+           Path(f"{_W}/Deathwatch/Rulebooks/Deathwatch - First Founding.md"),
+           "Deathwatch: First Founding (Fantasy Flight Games)",
+           lambda: make_modern_detector(
+               FF_DISC, exclude_name_rx=re.compile(r"(?i)^psychic\s+power\s*:"))),
 ]
 
 
@@ -813,6 +1196,42 @@ Range: 30m x Psy Rating
 The psyker projects an aura of raw terror into the minds of his foes.
 """
 
+# -- SUPPLEMENT fixtures ----------------------------------------------------
+# Dark Heresy inline-Threshold block (Ascension / Disciples). Rank 2 slots a
+# "Cost:" line between the name and Threshold — it becomes the value.
+FIXTURE_DHI = """## [PDF page 129]
+Stormwroth
+The psyker focuses on summoning warp lightning to smite his enemies.
+Rank 1: Lightning Arc
+Threshold: 16
+Focus Time: Half Action
+Sustained: No
+Range: 30 metres
+The psyker channels the warp into electric energy that crackles from his fingertips.
+Rank 2: Lightning Field
+Cost: 1000 xp
+Threshold: 21
+Focus Time: Full Action
+Sustained: Yes
+Range: Self
+The psyker surrounds himself in a cracking, sparking nimbus of electricity.
+"""
+
+# Rogue Trader — Navis Primer Navigator power: ALL-CAPS name, prose, then the
+# Novice/Adept/Master tiers (no inline stat block at all).
+FIXTURE_TIERED = """## [PDF page 89]
+AETHER DOLDRUMS
+A skilled Navigator can use this power to mark a point of calm in even the most tumultuous Warp storm.
+Novice: On a successful Difficult (–10) Willpower Test, the Navigator causes an area to fall into a Warp lull.
+Adept: As per Novice, but Psykers do not add any bonus from their Psy Rating.
+Master: As per Adept, but the calm lasts for four Rounds.
+BALEFUL WATCHER
+The power sometimes called “Baleful Watcher” is a technique taught to Navigators to penetrate Warpstorms.
+Novice: As a Half Action, the Navigator applies his supernatural levels of perception to one foe.
+Adept: As Novice, but he also learns of any invisible defences protecting his foe.
+Master: As Adept, but he also learns which Psychic Techniques his target knows.
+"""
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -880,10 +1299,45 @@ def selftest(base: Path) -> int:
         if pr[1].opposed != "Yes":
             failures.append(f"Terrify opposed {pr[1].opposed!r} (from Opposed Willpower)")
 
+    # -- SUPPLEMENT fixture: Dark Heresy inline-Threshold (Ascension) --------
+    deti = make_dh_inline_detector(discipline_const="Ascended")
+    li = FIXTURE_DHI.splitlines()
+    pi = deti(li, _pages_for(li), "Dark Heresy — Ascension (WH40K Roleplay)")
+    if [p.name for p in pi] != ["Lightning Arc", "Lightning Field"]:
+        failures.append(f"DHI fixture names {[p.name for p in pi]}, wanted Lightning Arc/Field")
+    else:
+        lf = pi[1]
+        if (lf.threshold, lf.action, lf.sustained, lf.range, lf.value, lf.discipline) != \
+                ("21", "Full Action", "Yes", "Self", "1000 xp", "Ascended"):
+            failures.append(f"Lightning Field parsed "
+                            f"{(lf.threshold, lf.action, lf.sustained, lf.range, lf.value, lf.discipline)}")
+        if lf.system != SYSTEM:
+            failures.append("supplement power must carry system 'WH40K Roleplay'")
+        if not (lf.effect and lf.effect.startswith("The psyker surrounds")):
+            failures.append(f"Lightning Field effect {lf.effect!r}")
+        if pi[0].value is not None:
+            failures.append(f"Lightning Arc (Rank 1) should have no Cost, got {pi[0].value!r}")
+
+    # -- SUPPLEMENT fixture: Navigator tiered power (Navis Primer) -----------
+    dett = make_tiered_detector("Navigator")
+    lt = FIXTURE_TIERED.splitlines()
+    pt = dett(lt, _pages_for(lt), "Rogue Trader — The Navis Primer (WH40K Roleplay)")
+    if [p.name for p in pt] != ["Aether Doldrums", "Baleful Watcher"]:
+        failures.append(f"tiered fixture names {[p.name for p in pt]}, wanted Aether Doldrums/Baleful Watcher")
+    else:
+        ad = pt[0]
+        if ad.discipline != "Navigator":
+            failures.append(f"Aether Doldrums discipline {ad.discipline!r} (want Navigator)")
+        if not (ad.effect and ad.effect.startswith("A skilled Navigator")):
+            failures.append(f"Aether Doldrums effect {ad.effect!r}")
+        if any((ad.threshold, ad.action, ad.range, ad.sustained)):
+            failures.append("Navigator power should leave the inline stat slots empty")
+
     # -- live corpus checks -------------------------------------------------
     if base.is_dir() and any((base / s.path).exists() for s in SOURCES):
         corpus = Corpus(base, _fresh_sources())
         by_book = {s.key: s.powers for s in corpus.sources}
+        allnames = {p.name.lower() for v in by_book.values() for p in v}
         total = sum(len(v) for v in by_book.values())
         if total < 220:
             failures.append(f"only {total} WH40KRP powers indexed; expected > 220")
@@ -892,8 +1346,28 @@ def selftest(base: Path) -> int:
             got = len(by_book.get(key, []))
             if got < floor:
                 failures.append(f"{key}: {got} powers, expected >= {floor}")
-        # known powers present
-        allnames = {p.name.lower() for v in by_book.values() for p in v}
+        # HARD LOCK — the five CORE books must stay EXACTLY these counts. The
+        # supplement extension is additive; if a core count drifts, a shared
+        # detector was retuned and the 242-row core baseline is no longer
+        # byte-identical. This assertion fails loudly if that ever happens.
+        for key, exact in (("dark_heresy", 79), ("rogue_trader", 32),
+                           ("deathwatch", 43), ("only_war", 37), ("black_crusade", 51)):
+            got = len(by_book.get(key, []))
+            if got != exact:
+                failures.append(f"CORE COUNT CHANGED: {key}={got}, must be EXACTLY {exact} "
+                                f"(core preservation broken)")
+        # supplement floors + a couple of known supplement powers present
+        for key, floor in (("navis_primer", 45), ("into_the_storm", 15),
+                           ("dh_ascension", 22), ("dh_disciples", 20),
+                           ("tome_of_fate", 45), ("first_founding", 12)):
+            got = len(by_book.get(key, []))
+            if got < floor:
+                failures.append(f"{key}: {got} powers, expected >= {floor}")
+        for want in ("aether doldrums", "lightning field", "blade of baleful might",
+                     "deus ex ferrum"):
+            if want not in allnames:
+                failures.append(f"expected a supplement power named '{want}'")
+        # known CORE powers present
         for want in ("call creatures", "smite", "doombolt"):
             if want not in allnames:
                 failures.append(f"expected a power named '{want}' somewhere")

@@ -297,3 +297,235 @@ mechanical fields are exact and cited to book + PDF page.
 | Precognitive Dodge | Divination | Reaction | No | Self | No | 200xp | 228 | The psyker’s awareness of the warp grants him the means to elude his opponents’ attacks… |
 | Glimpse | Divination | Half Action | No | Self | No | 100xp | 228 | The psyker reaches into the warp to grasp a single moment from the possible futures arra… |
 | Precognitive Strike | Divination | Free Action | No | Self | No | 300xp | 229 | To discern one’s own future is sometimes deemed easier than discerning the futures of ot… |
+
+## Rogue Trader — The Navis Primer (WH40K Roleplay) — 50 powers  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: The Navis Primer (Fantasy Flight Games).*  
+*Harvest: ok — 50 powers from Rogue Trader - The Navis Primer.md.*  
+*Disciplines: Navigator, Ork Waaagh!, Renegade Psyker, Soul Ward, Voidfrost.*
+
+| Power | Discipline | Action | Opposed | Range | Sustained | Value | Page | Effect |
+|---|---|---|---|---|---|---|---|---|
+| The Warp Unbound | Navigator | — | — | — | — | — | 78 | By gazing directly into the mind of a psyker, the Navigator is able to pierce the barrie… |
+| Aether Doldrums | Navigator | — | — | — | — | — | 89 | A skilled Navigator can use this power to mark a point of calm in even the most tumultuo… |
+| Baleful Watcher | Navigator | — | — | — | — | — | 89 | The power sometimes called “Baleful Watcher” or “Piercing Gaze” is a technique taught to… |
+| Ebb and Flow | Navigator | — | — | — | — | — | 89 | Time can ﬂow in a strange manner when travelling through the Immaterium, and over the ye… |
+| Evil Eye | Navigator | — | — | — | — | — | 90 | On many worlds, three-eyed mutants who can peer into your soul are thought of as bogey-m… |
+| Eye of Oblivion | Navigator | — | — | — | — | — | 90 | The Navigator snaps open his Warp eye and traces the vital lines that bind a creature’s… |
+| Inward View | Navigator | — | — | — | — | — | 90 | There are many myths about the “third eye” into the soul, their origins supposedly harki… |
+| Pass Unscathed | Navigator | — | — | — | — | — | 91 | Being so closely linked with the Warp, it is no surprise that Navigators have developed… |
+| Seek the Path | Navigator | — | — | — | — | — | 91 | The Navigator uses his pineal eye to peer through the Immaterium around him, piercing th… |
+| Vision of Hell | Navigator | — | — | — | — | — | 91 | While many Navigators simply focus on wreaking as much destruction as possible by reveal… |
+| Warp Vigil | Navigator | — | — | — | — | — | 91 | Navigators must be ever watchful for danger when guiding a vessel through the Warp, and… |
+| Embrace of Emptiness | Voidfrost | Half Action | No | 1m x Psy Rating | No | 100 xp | 94 | Within the depths of the void, it is not uncommon for a vessel to suffer a catastrophe t… |
+| Quest for Warmth | Voidfrost | Half Action | No | 2 VU x Psy Rating | No | 200 xp | 94 | Many psykers who embrace the Voidfrost Discipline do so as part of an effort to ﬁnd othe… |
+| The Void’s Touch | Voidfrost | Half Action | No | 5m x Psy Rating | No | 200 xp | 95 | As a psyker’s relationship to the dark chill of the void grows stronger, he often gains… |
+| Breathstealing Barrage | Voidfrost | Full Action | No | 10m x Psy Rating | No | 300 xp | 95 | The void is tranquil, but that desolate quiet can kill. |
+| Black Sleep | Voidfrost | Full Action | Yes | 10m x Psy Rating | No | 300 xp | 96 | The embrace of the void can offer comfort to an isolated psyker, but those who master it… |
+| Void Substantiation | Voidfrost | Half Action | No | 1m x Psy Rating | Yes | 400 xp | 96 | Through discipline, practice, and self-afﬁrmation a psyker can come to embody the chill… |
+| Freeze the Soul | Voidfrost | Full Action | No | 10m x Psy Rating | No | 400 xp | 96 | There are few prodigies of the Voidfrost Discipline, but legends circulate of those who… |
+| Know Thy Place | Soul Ward | Full Action | Yes | 10m x Psy Rating | No | 100 xp | 97 | Through the majesty of the God-Emperor, the psyker comes to understand his place in the… |
+| Heresy’s Price | Soul Ward | Full Action | Yes | 5m x Psy Rating | Yes | 100 xp | 98 | Those who oppose the God-Emperor cannot hope to stand before His majesty. |
+| Bastion of the Imperium | Soul Ward | Half Action | No | Touch | Yes | 200 xp | 98 | A psyker who has begun to master the discipline of Soul Warding may pass the protection… |
+| Chorus of the Righteous | Soul Ward | Half Action | No | 2m x Psy Rating | Yes | 200 xp | 98 | Drawing upon his connection to the God-Emperor through his Soul Binding, the psyker may… |
+| Strength of Truth | Soul Ward | Half Action | No | 2m x Psy Rating | Yes | 300 xp | 98 | Those who choose to master the skills of the Soul Ward invariably have an incredible deg… |
+| Enduring Faith | Soul Ward | Full Action | No | Touch | No | 300 xp | 99 | It is said that the God-Emperor lends his strength to those who display the faith requir… |
+| Reward of the Renegade | Soul Ward | Reaction | Yes | 5m x Psy Rating | No | 300 xp | 99 | Those who would dare to act against the Imperium do so with the knowledge that they are… |
+| Glory of the Just | Soul Ward | Full Action | No | 2m x Psy Rating | Yes | 400 xp | 99 | As an Astropath’s mastery of the Soul Ward school grows, so to do the methods by which h… |
+| Call of Faith | Soul Ward | Half Action | No | 2m x Psy Rating | Yes | 400 xp | 99 | Those who have faith in the God-Emperor are often capable of performing actions of super… |
+| Mental Force | Renegade Psyker | Half Action | No | 1m x Psy Rating | No | 100 xp | 101 | One of the most common ways that a person can ﬁrst exhibit psychic abilities is with a p… |
+| Defraud | Renegade Psyker | Half Action | Yes | Touch | No | 100 xp | 101 | Some untrained psykers ﬁrst exercise their blasphemous powers when they desperately need… |
+| Mind’s Shadow | Renegade Psyker | Half Action | No | Self | Yes | 100 xp | 102 | Isolation is second nature to some people. |
+| Alter Memories | Renegade Psyker | Full Action | Yes | Touch | No | 200 xp | 102 | As novice psykers come to grips with their newfound talents, they often begin to dabble… |
+| Ætheric Appendage | Renegade Psyker | Half Action | No | Self | Yes | 200 xp | 102 | With sufﬁcient practice and control, any psyker can learn to manifest his Warp-spawned p… |
+| Desperate Transmogriﬁcation | Renegade Psyker | Full Action | No | Touch | No | 200 xp | 103 | Sometimes, desperation drives renegade psykers to attempt to heal themselves or comrades… |
+| Incite Rage | Renegade Psyker | Half Action | Yes | 5m x Psy Rating | No | 300 xp | 103 | As the psyker is increasingly exposed to the Warp, he may begin to embrace its savage as… |
+| Shifting Lines of Fate | Renegade Psyker | Reaction | No | Self | No | 300 xp | 103 | Those who learn to live in concert with the Warp often choose to accept its ﬁckle nature. |
+| Warp Lens | Renegade Psyker | Full Action | No | 1km x Psy Rating | Yes | 300 xp | 103 | Even those who have come to master the ways of the Warp often maintain unreasonable expe… |
+| Common Thoughts | Renegade Psyker | Half Action | No | 5m x Psy Rating | Yes | 400 xp | 103 | Many untrained psykers ascribe to a belief that the Warp holds boundless information and… |
+| Shielded by the Warp | Renegade Psyker | Half Action | No | Self | Yes | 400 xp | 104 | Those who become servants of the Warp may often look to the Warp to protect them. |
+| Spiteshards | Renegade Psyker | Full Action | No | 10m x Psy Rating | No | 400 xp | 104 | With practice, a psyker may learn to coalesce his spite into something physical by trans… |
+| Warp Spasm | Renegade Psyker | Full Action | No | Self | Yes | 400 xp | 104 | With enough experience, many psykers learn to channel the Warp directly into their bodie… |
+| Frazzle | Ork Waaagh! | Half Action | No | 10m x Psy Rating | No | 100 xp | 106 | With a thunderous roar, the Weirdboy unleashes a blast of energy that courses through hi… |
+| Up An’ at ‘em! | Ork Waaagh! | Half Action | No | 1m x Psy Rating | Yes | 100 xp | 106 | The Weirdboy leads by insane example, psychically (and psychotically) inspiring his comr… |
+| Warpath | Ork Waaagh! | Full Action | No | 1m x Psy Rating | Yes | 200 xp | 107 | Crackling green energy surges out from the Weirdboy, striking the nearby Orks and stokin… |
+| Dis Iz Takin’ Too Long! | Ork Waaagh! | Full Action | No | Special | No | 200 xp | 107 | The Weirdboy calls upon the Waaagh!, channelling his impatience to accelerate whatever m… |
+| Smash Da Gitz | Ork Waaagh! | Half Action | No | 5m x Psy Rating | Yes | 200 xp | 107 | The Weirdboy energises his weapon (or just his ﬁst) with a voracious green charge that s… |
+| We’z Gotta Be Lucky | Ork Waaagh! | Full Action | No | 5m x Psy Rating | Yes | 300 xp | 107 | The Weirdboy appeals to the primal force of the Waaagh! |
+| Zzap | Ork Waaagh! | Half Action | No | 5m x Psy Rating | No | 300 xp | 107 | The Weirdboy unleashes a burst of ravening green electricity that surges forward, turnin… |
+| Deff Wave | Ork Waaagh! | Full Action | No | 5m x Psy Rating | No | 400 xp | 108 | The Ork philosophy of warfare typically ascribes to a simple maxim: more is better and y… |
+| Krump ‘em All | Ork Waaagh! | Full Action | No | 2m x Psy Rating | No | 400 xp | 108 | The Weirdboy unleashes the fury of the Waaagh! |
+| I’z Gunna Squig Ya! | Ork Waaagh! | Full Action | Yes | 1m x Psy Rating | No | 500 xp | 108 | Of all the many powers available to a Weirdboy, this is undoubtedly one of the strangest. |
+
+## Rogue Trader — Into the Storm (WH40K Roleplay) — 17 powers  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Into the Storm — The Explorer's Handbook (Fantasy Flight Games).*  
+*Harvest: ok — 17 powers from Rogue Trader - Into The Storm  - The Explorer's Handbook.md.*  
+*Disciplines: Divination, Telekinesis, Telepathy, Theosophamy.*
+
+| Power | Discipline | Action | Opposed | Range | Sustained | Value | Page | Effect |
+|---|---|---|---|---|---|---|---|---|
+| Beacon | Telepathy | Full Action | No | special | Yes | 200xp | 194 | With this power the psyker is able to create a small psychic beacon within the Empyrean… |
+| Chaos Mind | Telepathy | Half Action | Yes | 1m x Psy Rating | No | 300xp | 194 | The psyker is able to form a bridge between his mind and the mind of the target. |
+| Mental Alacrity | Telepathy | Half Action | No | Self or 1m x Psy Rating | Yes | 200xp | 195 | Within the Scholastica Psykana and the Adeptus Astra Telepathica, there are many exercis… |
+| Mind Ward | Telepathy | Half Action | No | Self | Yes | 100xp | 195 | There are many ways to gain entry into the mind of another person. |
+| Auto-séance | Divination | Two Full Actions | No | special | Yes | 200xp | 195 | Astropaths are far more than mere telepaths. |
+| Detect Taint | Divination | Half Action | No | 1m x Psy Rating | No | 100xp | 196 | Psykers, by their very nature, are attuned to the warp. |
+| The Action Again | Divination | Free Action | No | Self | No | 300xp | 196 | With this power, a psyker is able to snatch a glimpse of the future and see brieﬂy the o… |
+| Death Grip | Telekinesis | Half Action | Yes | 1m x Psy Rating | No | 200xp | 196 | Using the power of his mind, the psyker is able to create a telekinetic grip on a living… |
+| Levitation | Telekinesis | Half Action | No | Self | Yes | 400xp | 196 | The psyker is able to call upon his telekinetic abilities to be able to lift himself int… |
+| Psycho-kinetic Mist | Telekinesis | Half Action | No | 1m x Psy Rating Radius | No | 200xp | 197 | By calling on the powers of the warp, the psyker is able to conjure up a psycho-kinetic… |
+| Psycho-kinetic Shield | Telekinesis | Full Action | No | Personal/ 2m | Yes | 300xp | 197 | The psyker is able to mentally shape a psycho-kinetic mist into a barrier capable of wit… |
+| Banishment | Theosophamy | Full Action | Yes | 5m x Psy Rating | No | 500xp | 199 | By tapping into the ability to sense tenuous connections between the warp and warp–entit… |
+| Rebuke the Mutant | Theosophamy | Half Action | No | 10m x Psy Rating (max. 50m) | Yes | 200xp | 199 | The foul mutant cannot bear to stand against he who has stood before the God–Emperor. |
+| Sanctuary | Theosophamy | Half/Full Action | No | self/special | Yes | 300xp | 199 | By tapping into the various breaches and cracks that exist in the real world, the psyker… |
+| Seal the Breach | Theosophamy | Half Action | Yes | 5m x Psy Rating radius | No | 300xp | 200 | Seal the Breach allows the psyker to sever the connection between the mortal universe an… |
+| Soul of Adamantium | Theosophamy | Half Action | No | Self | Yes | 200xp | 200 | The psyker’s mind is a powerful weapon, and the psyker with faith in the God-Emperor is… |
+| Warp Weapon | Theosophamy | Full Action | No | Special | Yes | 300xp | 200 | Psykers who possess undying faith in the God-Emperor are able to perform amazing feats t… |
+
+## Dark Heresy — Ascension (WH40K Roleplay) — 24 powers  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Ascension (Fantasy Flight Games).*  
+*Harvest: ok — 24 powers from Dark Heresy - Ascension.md.*  
+*Disciplines: Ascended.*
+
+| Power | Discipline | Action | Opposed | Range | Sustained | Value | Page | Effect |
+|---|---|---|---|---|---|---|---|---|
+| Lightning Arc | Ascended | Half Action | — | 30 metres | No | — | 129 | The psyker channels the warp into electric energy that crackles from his fingertips, bur… |
+| Lightning Field | Ascended | Full Action | — | Self | Yes | 1000 xp | 129 | The psyker surrounds himself in a cracking, sparking nimbus of electricity, daring his e… |
+| Lightning Storm | Ascended | Full Action | — | 20 metres | No | 1000 xp | 129 | With charged air and the stench of ozone, the psyker reaches into the warp and lets fort… |
+| Malleus Hammerhand | Ascended | Half Action | — | Self | Yes | — | 130 | The psyker’s hands glow with otherworldly power as they are infused with a terrible stre… |
+| Enrage | Ascended | Free Action | — | 10 metres | No | 1,000 | 130 | The psyker reaches into the minds of his opponents, momentarily crushing their psyche wi… |
+| Bloodboil | Ascended | Full Action | — | 4 metres | No | 2000 | 130 | The psyker’s frenzy for destruction burns hot in his soul. |
+| My Will, Known | Ascended | Full Action | — | 10 metres | Yes | — | 130 | The psyker’s awareness radiates out like a blanket, suffusing the very atmosphere around… |
+| My Will, Obeyed | Ascended | Half Action | — | 20 metres | Yes | 600 | 131 | The psyker projects his consciousness into another, fighting through the target as if we… |
+| My Will, Manifest | Ascended | 2 Full Actions | — | Self | Yes | 1200 | 131 | The psyker’s psyche leaves its fleshy prison, roaming free as an invisible being of ethe… |
+| Flameshroud | Ascended | Half Action | — | Self | Yes | — | 131 | Should the pyrokinetic wish to survive his self-generated holocausts, he must learn to e… |
+| Conflagration | Ascended | Full Action | — | 20 metres | No | 1,000 | 132 | The air around the psyker is choked with ash and cinders, swirling in an unseen wind. |
+| Inferno | Ascended | Full Action | — | 20 metres | Yes | 1,500 | 132 | Some of the most powerful pyrokinetics can wipe out whole hab-blocks or villages by summ… |
+| Banishment | Ascended | Full Action | — | 5 metres | No | — | 132 | The psyker focuses his mental powers on the bonds that tie the Daemon to the immaterium,… |
+| Sanctuary | Ascended | Half Action | — | Self | Yes | 500 | 132 | The glory of the God-emperor is channelled through the psyker, causing all who would str… |
+| Word of the Emperor | Ascended | Full Action | — | 30 metres | No | 1,000 | 133 | The psyker’s belief in the power of the Emperor is so strong, it overpowers the minds an… |
+| His Will Be Done | Ascended | Full Action | — | 12 metres | No | — | 133 | The psyker’s mind reaches out to the minds of his friends and allies. |
+| Hammer of Witches | Ascended | Half Action | — | 24 metres | No | 1,000 xp | 133 | The psyker reaches to the strings that connect a psyker to his source of power, the warp. |
+| Purgatus | Ascended | Full Action | — | 36 metres | No | 1,000 xp | 133 | The psyker’s sinister gaze pins a heretic in his sights, his potent will flaying the unf… |
+| Lift | Ascended | Half Action | — | 30 metres | Yes/No | — | 134 | The most basic of the psychokinetic powers is the ability to move objects with one’s min… |
+| Barrier | Ascended | Full Action | — | Self | Yes | 500 xp | 134 | The psyker’s mind is so agile he is able to swat aside projectiles with a thought, causi… |
+| Tempest | Ascended | Full Action | — | 100 metres | Yes | 1000 XP | 134 | The most powerful psychokinetics can agitate the very air around them, creating swirling… |
+| Precognition | Ascended | Free Action | — | Self | No | — | 135 | One aspect of temporal manipulation that most often manifests in psykers is the ability… |
+| Stasis Shell | Ascended | Free Action | — | 20 metres | No | 1,000 XP | 135 | The psyker creates a spherical area in which time seems to completely stop, leaving what… |
+| Warp Time | Ascended | Free Action | — | 15 metres | No | 1,500 XP | 135 | The most powerful psychic adepts of the temporal arts are able to speed and slow the pas… |
+
+## Dark Heresy — Disciples of the Dark Gods (WH40K Roleplay) — 23 powers  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Disciples of the Dark Gods (Fantasy Flight Games).*  
+*Harvest: ok — 23 powers from Dark Heresy - Disciples of The Dark Gods.md.*  
+*Disciplines: Biomancy, Major Arcana, Minor Arcana, Minor Powers, Pyromancy, Telekinetics, Telepathy.*
+
+| Power | Discipline | Action | Opposed | Range | Sustained | Value | Page | Effect |
+|---|---|---|---|---|---|---|---|---|
+| Endure Flames | Minor Powers | Half Action | — | You | Yes | — | 28 | You can endure the most severe flames, allowing you to walk unscathed through fire. |
+| Open Wounds | Minor Powers | Half Action | — | 10m | No | — | 28 | You can cause a previously injured victim’s wounds to burst open and gush with blood, ra… |
+| Space Slip | Minor Powers | Half Action | — | You | No | — | 28 | You push yourself through the edge of the warp, slipping out of reality for a brief inst… |
+| Suggestion | Minor Powers | Half Action | — | 6m | No | — | 29 | You introduce a single telepathic suggestion into a target’s psyche, making him more ope… |
+| Time Fade | Minor Powers | Full Action | — | You | No | — | 29 | You remove yourself briefly from the normal flow of space and time, flickering briefly o… |
+| Agony | Biomancy | Full Action | — | 10m | Yes | — | 30 | Reaching out with your power, you lash out at your enemies with acute and all-consuming… |
+| Drain Vigour | Biomancy | Half Action | — | 20m | Yes | — | 30 | You drain the vigour and energy of a living creature, sapping its vitality and strength,… |
+| Flesh Like Iron | Biomancy | Half Action | — | You | Yes | — | 30 | You draw on the power of the warp to make your flesh as hard as metal. |
+| Molten Man | Pyromancy | Full Action | — | You | Yes | — | 30 | You become a thing of pure heat and flame, a raging inferno with a humanoid form. |
+| Psychokinetic Storm | Telekinetics | Half Action | — | 10 Metre Radius from the Psyker. | Yes | — | 30 | This power manifests an uncontrolled storm of unleashed psychokinetic potential around t… |
+| Seed Mind | Telepathy | Extended Action | — | Touch | No | — | 31 | This power allows you to subvert the minds of others by planting a seed of influence wit… |
+| Soul Killer | Telepathy | Full Action | — | 5 Metres x Willpower Bonus | No | — | 31 | This baleful power slays the psyker’s enemies with an invisible splinter of annihilating… |
+| Zone of Compulsion | Telepathy | Half Action | — | (5 + Willpower Bonus) radius in Metres | No | — | 31 | You send out a wave of telepathic force that carries a single command. |
+| Mask of Flesh | Minor Arcana | Full Action | — | You | Special | — | 118 | You call upon the powers of the warp to alter your ﬂ esh and change your physical identi… |
+| Death’s Messenger | Minor Arcana | Half Action | — | Self | No | — | 119 | You tangle the skeins of destiny to deadly effect, causing others to fall before your as… |
+| Whispers of the Warp | Minor Arcana | Half Action | — | Earshot | Yes | — | 119 | The echoing whispers of the warp amplify your persuasive abilities to preternatural leve… |
+| Daemon Wrack | Major Arcana | Full Action | — | 50 metres | No | — | 119 | By weaving a pattern of warp energies, the sorcerer may attempt to repel or ensnare and… |
+| Hellish Blast | Major Arcana | Half Action | — | 5m × Willpower Bonus | No | — | 120 | Use this power to hurl a burst of raw destructive energy channelled from the warp at you… |
+| Holocaust of Torment | Major Arcana | Full Action | — | 10 metre radius extending from the Maiden | Yes | — | 128 | of Pain The agony and despair felt moment-by-moment by the victim of a Maiden of Pain (s… |
+| Black Channelling | Major Arcana | Full Action | — | 20 metre radius | Yes | — | 131 | The sorcerer draws on the twisting power of the warp to embolden and sustain daemonic cr… |
+| Storm of Malignancy | Major Arcana | Full Action | — | 50 metre radius | Yes | — | 131 | Drawing on psychically echoed waves of malice, paranoia, and hatred from the warp, the s… |
+| Revelation of Truth | Major Arcana | Half Action | — | 20 metre radius | Yes | — | 157 | The sorcerer bends reality around himself, warping time and filling the air with a tumul… |
+| Time Distortion | Major Arcana | Full Action | — | Self | Yes | — | 157 | The sorcerer sets himself fractionally out of phase with the flow of reality and time ar… |
+
+## Black Crusade — Tome of Fate (WH40K Roleplay) — 50 powers  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Fate (Fantasy Flight Games).*  
+*Harvest: ok — 50 powers from Black Crusade - Tome of Fate.md.*  
+*Disciplines: Biomancy, Exalted, Nurgle, Pyromancy, Slaanesh, Tzeentch, Unaligned.*
+
+| Power | Discipline | Action | Opposed | Range | Sustained | Value | Page | Effect |
+|---|---|---|---|---|---|---|---|---|
+| Blade of Baleful Might | Unaligned | Full Action | No | Self | Free Action | 300xp | 45 | The sorcerer’s force weapon exhibits terrifying qualities of destruction and menace. |
+| Butcher’s Offering | Unaligned | Free Action (Special) | No | Self | No | 100xp | 46 | As the sorcerer cuts through his enemies with unnatural vigour, he takes a moment to mak… |
+| Echoes of Malice | Unaligned | Half Action | No | 5 metres x Psy Rating radius | No | 400xp | 46 | The warp is a repository of unfettered emotion, dense with energy ever engaged in a turb… |
+| Harrier Imps | Unaligned | Half Action | No | 25 metres x Psy Rating | Free Action | 100xp | 46 | Harrier Imps are a swarm of minor daemons that press up against the barrier between real… |
+| Hex of Decrepitude | Unaligned | Half Action | No | 10 metres x Psy Rating | No | 400xp | 47 | In the warp, time flows according to its own unlogic. |
+| Phantom Parry | Unaligned | Reaction | Yes | 5 metres x Psy Rating | No | 400xp | 47 | As an enemy sorcerer draws on the warp to fuel a psychic power, the psyker may respond b… |
+| Umbral Halo | Unaligned | Half Action | No | 5 metres x Psy Rating radius | Half Action | 200xp | 47 | The psyker summons a black halo around his head, wrought from his own corrupt soul. |
+| Warp Vortex | Unaligned | Half Action | No | 25 metres x Psy Rating | Half Action | 200xp | 47 | A vortex of energy emerges to collect all matter within its core; men fall towards it as… |
+| Acidium Vitae | Nurgle | Half Action | No | Self | No | 300xp | 48 | The psyker’s very blood and breath course with poison and disease, punishing his enemies… |
+| Brain Fever | Nurgle | Half Action | No | 5 metres x Psy Rating | No | 100xp | 48 | A rapidly progressing fever takes the target of this power, rendering him unable to thin… |
+| Corpse Burst | Nurgle | Half Action | No | 30 metres | No | 300xp | 48 | Of the more resourceful of Nurgle’s followers are those sorcerers who have mastered the… |
+| Dirge of Decay | Nurgle | Half Action | No | 5 metres x Psy Rating | Half Action | 400xp | 48 | As the devotee of Nurgle intones the Dirge of Decay, wounded combatants howl in a chorus… |
+| Tendrils of Corrosion | Nurgle | Half Action | No | 20 metres | No | 300xp | 49 | Though decomposition and disease of the body are more recognisably the work of the Lord… |
+| Vile Contagion | Nurgle | Half Action | No | Special | Free Action (Special) | 400xp | 49 | Nurgle’s Rot spreads across the battlefield adding disease to bloodshed as far as the ey… |
+| Ward of Worms | Nurgle | Half Action | No | Self | No | 500xp | 50 | Putrid, olive green worms continually squirm from the mouth, nose, and ears of the sorce… |
+| Cedron’s Twin | Slaanesh | Full Action | No | Self | Free | 250xp | 50 | The power of the warp to shape the desires of the psychically attuned have few limits. |
+| Celeritous Sense | Slaanesh | Half Action | No | Self | Free Action | 400xp | 51 | The sorcerer hones his senses, directing the flows of light and sound such that he can t… |
+| Pangs of Misery | Slaanesh | Half Action | No | 10 metres x Psy Rating | Half Action | 300xp | 51 | The Heretic reaches deeply through the target’s mind and burrows into his pain centres. |
+| Serpent’s Ward | Slaanesh | Half Action | No | Self | No | 500xp | 51 | This beguiling ward gifts the psyker with an alluring gaze, causing enemies to forget th… |
+| The Six Blades of Prosepheron | Slaanesh | Half Action | No | Self | No | 400xp | 52 | To suffer defeat at the hands of the Six Blades of Prosepheron at least makes for a quic… |
+| Unnatural Obsession | Slaanesh | Half Action | No | 5 metres x Psy Rating | Half Action | 300xp | 52 | The subject of this power loses all sense of reality and becomes obsessively and irratio… |
+| Æther Worm | Tzeentch | Half Action | No | 20 metres x Psy Rating | No | 400xp | 53 | The Master of Plots dines off of the webs of mistrust and errors in faith engendered by… |
+| Befuddling Curse | Tzeentch | Half Action | No | 10 metres x Psy Rating | No | 250xp | 53 | A multihued bolt of light leaps from the sorcerer and strikes the target with no apparen… |
+| Blessing of Magnus | Tzeentch | Half Action | No | Self | Free Action | 400xp | 53 | The Thousand Sons have survived many a difficult trial in the past ten thousand years th… |
+| Fate Loom | Tzeentch | Half Action | No | Self | No | 500xp | 54 | Sorcerers use this power as a last ditch effort by forcing fate’s hand to accomplish goa… |
+| Incendiary of Tzeentch | Tzeentch | Half Action | No | Touch | No | 300xp | 54 | These sorcerous shells race towards their enemies in blue-white fire, exploding on impac… |
+| Labyrinthine Conundrum | Tzeentch | Half Action | No | 20 metres x Psy Rating | No | 300xp | 54 | The power infects the target’s mind, weighing down his thoughts and possibly disabling h… |
+| Mask of Deceit | Tzeentch | Full Action | No | Self | No | 300xp | 55 | The Great Conspirator constructed every worthwhile tool in the machinations of politics,… |
+| Storm of Change | Tzeentch | Full Action | No | 25 metres x Psy Rating | No | 500xp | 55 | The psyker summons an army of aerial fire to descend on his enemies. |
+| Warp-flame Ward | Tzeentch | Half Action | No | Self | No | 500xp | 55 | The psyker calls on the Changer of Ways to wrap his form in arcane energies. |
+| Aegis of Euphedros | Exalted | Full Action | No | Self | No | 1000xp | 56 | Few have witnessed the Aegis of Euphedros and survived, but those who have recount it am… |
+| Unbalanced Mind | Exalted | Reaction | Yes | 10 metres x Psy Rating | No | 500xp | 57 | Nothing vexes the sorcerer more than having his mind come undone whilst channelling his… |
+| Wither Hex | Exalted | Half Action | No | 5 metres x Psy Rating | Half Action | 800xp | 57 | On the world of Q’sal, decrepitude and infirmity plague the dreams of those who have nev… |
+| Blood Boil | Biomancy | Half Action | Yes | 10 metres x Psy Rating | Half Action | 300xp | 58 | The psyker attunes himself to the circulation of blood in his victim, slowly but surely… |
+| Cellular Control | Biomancy | Full Action | No | Self | Free Action | 300xp | 58 | There is no telling how often its own limits cause the body to fail in the face of the h… |
+| Chitin Shell | Biomancy | Half Action | No | Self | Free Action | 200xp | 58 | Scavenging from his own body’s nutrients, bone, and muscle, the psyker constructs organi… |
+| Flesh Mould | Biomancy | Full Action | No | Self | Free Action | 400xp | 59 | For those who can master this power, will and body become one. |
+| Last Breath | Biomancy | Half Action | No | 20 metres x Psy Rating | No | 300xp | 59 | Suffocation invokes a degree of terror above and beyond many of the other violations one… |
+| Neural Storm | Biomancy | Half Action | No | 5 metres x Psy Rating | No | 250xp | 59 | Drawing on and enhancing the natural electrical currents of the psyker’s nervous system,… |
+| Regeneration | Biomancy | Full Action | No | Self | Full Action or Half Action, see below | 400xp | 59 | Of the many feats of biomancy, Regeneration perhaps ranks second in power to the act of… |
+| Sharpened Senses | Biomancy | Half Action | No | Self | No | 300xp | 60 | The gift of the Sharpened Senses grants the psyker senses more fitting a beast than a hu… |
+| Toxic Siphon | Biomancy | Half Action | No | Touch | No | 200xp | 60 | When poison or other toxins enter the body and a dose of de-tox is not available, Toxic… |
+| Unnatural Healing | Biomancy | Half Action | No | Touch | No | 300xp | 60 | The body’s capacity to heal itself, closing wounds and regenerating tissue, sometimes fa… |
+| Manifest Flame | Pyromancy | Half Action | No | Self | Free Action | 100xp | 61 | The most basic of the pyromancer’s talents, this is nevertheless one of the most difficu… |
+| Fire Bolt | Pyromancy | Free Action | No | 15 metres x Psy Rating | No | 100xp | 61 | A simple trick, the psyker flicks a bolt of fire he has manifested or finds conveniently… |
+| Fire Barrage | Pyromancy | Free Action | No | 15 metres x Psy Rating | No | 250xp | 61 | A more complicated and nuanced version of the simple fire bolt, the psyker catches up mu… |
+| Fire Storm | Pyromancy | Free Action | No | 15 metres x Psy Rating | No | 500xp | 62 | The psyker summons an intense conflagration from a single source and hurls it through th… |
+| Incinerate | Pyromancy | Full Action | No | 2 metres x Psy Rating | Full Action | 750xp | 62 | Truly one of the most difficult tricks of the pyromantic sorcerer is the ability to call… |
+| Molten Man | Pyromancy | Half Action | No | Self | No | 700xp | 63 | To have transcended the physical form and become an avatar of pure energy is no simple f… |
+| One with the Flame | Pyromancy | Full Action | No | 5 metres x Psy Rating | Half Action | 400xp | 63 | The Sok’caleth of Q’Sal are particularly infamous for their ability to control the flame… |
+
+## Deathwatch — First Founding (WH40K Roleplay) — 14 powers  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: First Founding (Fantasy Flight Games).*  
+*Harvest: ok — 14 powers from Deathwatch - First Founding.md.*  
+*Disciplines: Iron Hands, Raven Guard, Salamanders, White Scars.*
+
+| Power | Discipline | Action | Opposed | Range | Sustained | Value | Page | Effect |
+|---|---|---|---|---|---|---|---|---|
+| Deus Ex Ferrum | Iron Hands | Full | No | 1 metre radius x PR | Yes | — | 14 | The Iron Hands Librarian focuses his mind and links his iron will to the strength of his… |
+| Betrayal of Flesh | Iron Hands | Half | No | 10 metres x PR | No | — | 14 | Harnessing his hatred for weakness, the Iron Hands Librarian sunders the flesh of his en… |
+| Punish the Weak | Iron Hands | Full | No | 1 metre radius x PR | Yes | — | 14 | After fighting alongside his Iron Hands Battle- Brothers for countless battles, the Libr… |
+| Corax’s Ingenuity | Raven Guard | Full | No | 5 metres radius x PR | No | — | 20 | The Librarian plunges his mind into the Warp, harnessing its power. |
+| Curse of the Raven | Raven Guard | Half | Yes | 10 metres x PR | Yes | — | 20 | The Librarian curses an opponent, condemning him to death at the hands of the Emperor’s… |
+| The Unkindness of Deliverance | Raven Guard | Full | Yes | 10 metres x PR | No | — | 20 | The Librarian manifests his psychic power as an unkindness of ravens. |
+| Fury of the Salamander | Salamanders | Half | No | 2d10 metres x PR | No | — | 26 | The Librarian conjures the flame and fury of his home world and the terrible lizards tha… |
+| Heat of the Furnace | Salamanders | Half | No | Self | Yes | — | 27 | The searing heat of the forge runs through the veins of the Salamanders, and the Librari… |
+| Nocturne’s Fire | Salamanders | Full | No | 5 metres x PR | Yes (but see text) | — | 27 | The volcanic fury of Nocturne is a deep and powerful force, and terrifying when fully un… |
+| Vulkan’s Anvil | Salamanders | Full | No | Self | Yes | — | 27 | The Librarian draws upon the unyielding endurance that the Salamanders are legendary for… |
+| Heart of the Khan | White Scars | Full | No | 1 metre x PR | Yes | — | 34 | The Stormseer reaches deep into the legacy of Jaghatai Khan, and brings forth the legend… |
+| Spirits of the Steppes | White Scars | Full | No | 50 metres x PR | Yes | — | 34 | The Stormseer calls upon the spirits of the land, air, and the souls of long-dead warrio… |
+| Stormlance | White Scars | Half | No | Self or 10 metres x PR | No | — | 35 | The Stormseer calls upon the lightning that embodies his Chapter’s way of war, and bring… |
+| The Howling Wind | White Scars | Free | No | 5 metres x PR | No | — | 35 | The Stormseer gathers the powerful winds of the Chogorian steppes, driving them forwards… |
