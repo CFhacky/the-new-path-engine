@@ -99,3 +99,21 @@ translator skill. Priest spells carry a `sphere`; wizard spells a school.
 | Spell | Lvl | Kind | School / Sphere | Range | Duration | Casting | Save | Page |
 |---|---|---|---|---|---|---|---|---|
 | Berserk Fury | 4 | priest | Combat | 5 yards /level | One round/level | Special | Special | 52 |
+
+## Ravenloft Campaign Setting (2e) — 10 spells  *(system: AD&D 2e)*
+
+*Source: Ravenloft Campaign Setting (TSR, AD&D 2e), Strahd's spells.*  
+*Harvest: ok — 10 spells from Ravenloft Campaign Setting (2e).md.*
+
+| Spell | Lvl | Kind | School / Sphere | Range | Duration | Casting | Save | Page |
+|---|---|---|---|---|---|---|---|---|
+| Aura of Discomfort | 2 | priest | Travelers | Touch | 1 hour/level | 2 | None | 100 |
+| Zone of Deception | 2 | priest | Wards | 30 yards | 1 round/level | 2 | Negates | 101 |
+| Corpse Whisper | 3 | priest | Necromantic | 60 feet | Special, up to 1 day | 3 | None | 101 |
+| Eyes of the Undead | 3 | priest | Necromantic | 40 feet | 2 hours/level | 3 | Negates | 101 |
+| Feign Undead | 4 | priest | Necromantic | 0 | 1 turn + 1 round/level | 4 | None | 102 |
+| Cloud of Putrefication | 5 | priest | Elemental Air, Water | 30 yards | 1 round/level | 5 | None | 102 |
+| Living Ward | 5 | priest | Wards | Special | 1 turn/level | 2 turns | None | 103 |
+| Divine Curse | 6 | priest | All | Special | Special | 1 round | None | 104 |
+| Ancient Curse | 7 | priest | All | Special | Special | 1 round | None | 104 |
+| Tomb Ward | 7 | priest | Wards | Touch | Permanent | 1 day | None | 105 |

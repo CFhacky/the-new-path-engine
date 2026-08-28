@@ -64,6 +64,9 @@ LEVEL_HDR = re.compile(r"^(First|Second|Third|Fourth|Fifth|Sixth|Seventh|Eighth|
 LEVEL_HDR2 = re.compile(r"^([1-9])(?:st|nd|rd|th)[-\s]Level\b", re.IGNORECASE)
 # a name line carries the school in parentheses
 NAME_SCHOOL = re.compile(r"^(.{2,44}?)\s*\(([A-Za-z/,'’ \-]+)\)?\s*$")
+# a short note that can sit between the name and the field block
+NOTE_LINE = re.compile(r"^(Reversible|Reversed|Reversable)\s*$", re.IGNORECASE)
+LEVEL_FIELD = re.compile(r"^Level\s*:\s*([1-9])\b", re.IGNORECASE)
 
 
 @dataclass
@@ -114,7 +117,7 @@ def _name_above(lines: List[str], i: int) -> Optional[Tuple[int, str, str]]:
     j = i - 1
     while j >= 0:
         s = lines[j].strip()
-        if s == "" or PAGE.search(lines[j]):
+        if s == "" or PAGE.search(lines[j]) or NOTE_LINE.match(s):
             j -= 1
             continue
         block, top = s, j
@@ -187,6 +190,13 @@ def detect_ad2e_spells(lines: List[str], pages: List[int], book: str) -> List[Ad
         e = starts[k + 1][0] if k + 1 < len(starts) else min(n, top + 70)
         e = min(e, top + 70)
         level, kind = level_ctx(top)
+        # an explicit per-spell "Level: N" field in the block is authoritative over
+        # a group-header level (which can be stale from far up a large book).
+        for j in range(fi, min(n, fi + 18)):
+            lm = LEVEL_FIELD.match(lines[j].strip())
+            if lm:
+                level = int(lm.group(1))
+                break
         sp = Ad2eSpell(name=name, book=book, page=pages[top], start=top, end=e,
                        school=school, level=level, kind=kind)
         if sp.sphere is None and school and re.match(r"^Sphere", lines[fi].strip(), re.IGNORECASE):
@@ -260,6 +270,9 @@ SOURCES: List[Source] = [
     Source("giantcraft", "FOR7 Giantcraft (2e)",
            Path(f"{_A}/FOR7 - Giantcraft.md"),
            "FOR7: Giantcraft (TSR, AD&D 2e), new spells", "ad2e"),
+    Source("ravenloft", "Ravenloft Campaign Setting (2e)",
+           Path(f"{_A}/Ravenloft Campaign Setting (2e).md"),
+           "Ravenloft Campaign Setting (TSR, AD&D 2e), Strahd's spells", "ad2e"),
 ]
 
 

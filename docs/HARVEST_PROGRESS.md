@@ -18,12 +18,12 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-28).** Twenty reference index families, ~10,360 entries.
+**At a glance (2026-08-28).** Twenty reference index families, ~10,370 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (31), D&D incarnum soulmelds (88). Separately labeled other editions:
-D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (62). Each has a
+D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
 
@@ -96,7 +96,7 @@ feats do too):
 | D&D 3.5e | 121 | ~12 books (Core DMG/PHB spells, MIC, XPH, ToB, Spell Compendium, +feat supplements from `_md\_feats`) |
 | D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
 | D&D 5e | 35 | **517 monsters** across 12 books in `dnd5e_creature_index`, plus **575 magic items** in `dnd5e_item_index` and **102 spells** in `dnd5e_spell_index` — all stamped `system: D&D 5e`. OTHER EDITIONS ARE WELCOME if labeled by edition/system (Chad has translator tools that convert). |
-| AD&D | 19 | **AD&D 2e psionic powers (150)** in `ad2e_psionic_index` + **AD&D 2e spells (62)** in `ad2e_spell_index` (Menzoberranzan + FOR2/5/7, born-digital, labeled `system: AD&D 2e`). The 2e Monstrous Compendium bestiaries are two-column OCR with SCRAMBLED value order (the value cells do not line up with their labels) — not cleanly parseable without per-monster repair; left for a de-columnised pass. |
+| AD&D | 19 | **AD&D 2e psionic powers (150)** in `ad2e_psionic_index` + **AD&D 2e spells (72)** in `ad2e_spell_index` (Menzoberranzan + FOR2/5/7 + Ravenloft, born-digital, labeled `system: AD&D 2e`). The 2e Monstrous Compendium bestiaries are two-column OCR with SCRAMBLED value order (the value cells do not line up with their labels) — not cleanly parseable without per-monster repair; left for a de-columnised pass. |
 | GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (557 spells)** + **GURPS bestiary (139 creatures)** + **Low-Tech gear (186 weapons + armor)** + **Basic Set advantages/disadvantages (467)** + **Basic Set skills (263)**. The native-4e character-building core (traits, skills, gear, spells) is now indexed; rest of the shelf (Powers advantages, Martial Arts techniques, more creature books, higher-TL gear) still open |
 | Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
 | Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
