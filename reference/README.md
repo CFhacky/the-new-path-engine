@@ -31,6 +31,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `vestige_index.{json,md}` | D&D 3.5 pact-magic **vestiges** (binder subsystem: vestige level, binding DC, special requirement) | 31 | `scripts/vestige_harvest.py` | Tome of Magic (3.5e) — born-digital text |
 | `soulmeld_index.{json,md}` | D&D 3.5 incarnum **soulmelds** (meldshaper subsystem: classes, bindable chakras, basic effect) | 88 | `scripts/soulmeld_harvest.py` | Magic of Incarnum (3.5e) — born-digital text |
 | `ad2e_psionic_index.{json,md}` | **AD&D 2e** psionic powers (discipline, Science/Devotion, power score, PSP costs, range, area) — labeled `system: AD&D 2e` | 150 | `scripts/ad2e_psionics_harvest.py` | Complete Psionics Handbook (2e) — born-digital text |
+| `epic_feat_index.{json,md}` | D&D 3.5 **epic feats** (type, prerequisites) — vision-transcribed from the ELH PDF (OCR text layer corrupt) | 153 | `scripts/epic_feat_harvest.py` | Epic Level Handbook (3.5e), Table 1-36, pp.46-49 |
 | `ad2e_spell_index.{json,md}` | **AD&D 2e** spells (school/sphere, level, wizard/priest, range, duration, casting time, area, save) — labeled `system: AD&D 2e` | 72 | `scripts/ad2e_spells_harvest.py` | Menzoberranzan + FOR2/FOR5/FOR7 + Ravenloft (2e) — born-digital text |
 | `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
 

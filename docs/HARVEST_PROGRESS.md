@@ -18,10 +18,10 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-28).** Twenty reference index families, ~10,370 entries.
+**At a glance (2026-08-28).** Twenty reference index families, ~10,520 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
-(1841), GURPS spells (557), GURPS creatures (472), GURPS gear — weapons + armor
+(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (153), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (31), D&D incarnum soulmelds (88). Separately labeled other editions:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
@@ -114,16 +114,19 @@ Highest-value UNHARVESTED 3.5e content, by directory (all under
   Madness here were duplicates of the harvested set.)
 - **`DM Toolkits\`** — Elder Evils, Exemplars of Evil (more stat blocks), Manual
   of the Planes, Planar Handbook, Stronghold Builders Guidebook. **Epic Level
-  Handbook epic feats: DO NOT force through `feat_harvest`.** Checked 2026-08-28:
-  `Epic Level Handbook.md` (and `.ocr300.md`) is a rough multi-column scan —
-  feat names sit interleaved with fragments from adjacent columns (e.g.
-  "Devastating Critical" is followed by "7." / "called Power Knowledge." / stray
-  words, not its own block). The name-above feat detector would emit garbage
-  names. It has 142 `Benefit:` lines, but they need a de-columnised OCR pass (or
-  a hand-built epic-feat list) first. Some epic feats already reached
-  `feat_index` cleanly from the Complete-series supplements (Epic Toughness, Epic
-  Prowess, …); the ELH-only ones (Devastating Critical, Overwhelming Critical,
-  Blinding Speed) remain absent by design until the OCR is cleaned.
+  Handbook epic feats: DONE** in `epic_feat_index` (153 feats, Table 1-36). The
+  `.md`/`.ocr300.md` text layers are corrupt OCR (dropped leading characters,
+  Cyrillic bleed — even feat NAMES are mangled: "Deastaing Critical"), so parsing
+  them was hopeless. **The fix — and the general technique for any corrupt-OCR
+  source — is to render the PDF page images and read them by vision:** the real
+  ELH PDF (`I:\Sourcebooks\...\Epic Level Handbook.pdf`, 11.9 MB, 334 pp, NOT a
+  stub — the earlier "197 KB stub" note was an `ls` misread) has a corrupt text
+  layer but perfectly legible page images. Rendered via PyMuPDF
+  (`fitz`, available) at ~2.6× and read directly. The PDF Tools MCP is sandboxed
+  to `C:\Users\Chad\{Documents,Downloads,Desktop}` and its own renderer is
+  disabled here, so: copy the PDF into Downloads, `fitz.open(...).get_pixmap()`
+  to PNG in scratchpad, then Read the PNG. This unblocks the other corrupt-OCR
+  targets below.
 - **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
   (the soulmeld summary tables are DONE in `soulmeld_index`; the soulmeld/essentia-scaling detail text remains prose), **Tome of Magic** shadow-magic mysteries + truename utterances
   (the pact-magic VESTIGES are DONE in `vestige_index`; mysteries and utterances
