@@ -124,8 +124,11 @@ Highest-value UNHARVESTED 3.5e content, by directory (all under
   Prowess, …); the ELH-only ones (Devastating Critical, Overwhelming Critical,
   Blinding Speed) remain absent by design until the OCR is cleaned.
 - **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
-  (soulmelds), **Tome of Magic** (pact/shadow/truename magic), Savage Species
-  (monster classes), Incantatrix/variant material in Unearthed Arcana. The
+  (soulmelds), **Tome of Magic** shadow-magic mysteries + truename utterances
+  (the pact-magic VESTIGES are DONE in `vestige_index`; mysteries and utterances
+  are prose-embedded spell-like blocks, not summary tables, so they need a
+  body-block detector), Savage Species (monster classes), Incantatrix/variant
+  material in Unearthed Arcana. The
   Complete-series and Races-of books' feats are already in `feat_index`; their
   pre-2005 spells are already in the Spell Compendium.
 - **`Magic and Items\`** — Tome of Feats (3pp, more feats).
