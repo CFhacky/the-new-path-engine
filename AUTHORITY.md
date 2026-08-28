@@ -54,6 +54,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `dnd5e_creature_harvest.py` | cited D&D 5e bestiary extractions; a SEPARATE, clearly-labeled `system: D&D 5e` index (source material for the translator, never 3.5e RAW); missing sources print NO COVERAGE |
 | `gurps_gear_harvest.py` | cited GURPS Low-Tech weapon table; column-dump parser (native GURPS 4e gear, its own index); missing sources print NO COVERAGE |
 | `gurps_trait_harvest.py` | cited GURPS Basic Set Trait Lists appendix; column-dump parser for advantages/disadvantages (native GURPS 4e, its own index); missing sources print NO COVERAGE |
+| `gurps_skill_harvest.py` | cited GURPS Basic Set skill list; column-dump parser for skills (attribute/difficulty/defaults; native GURPS 4e, its own index); missing sources print NO COVERAGE |
 | `gurps_creature_harvest.py` | cited GURPS bestiary extractions (Dungeon Fantasy Monsters, Creatures of the Night, Fantasy); attribute-block detection across three name/stat formats; a separate index from D&D creatures; missing sources print NO COVERAGE |
 | `resume_card.py` | Notion Resume Schema `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`; validates dated mirrors only |
 | `docs/runtime-control/PLAY_CONTRACT.md` | Notion Play Contract `3c4e8214-84b0-818f-93c0-df1da2e52043` |
