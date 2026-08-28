@@ -626,6 +626,172 @@ def detect_prose_title(lines: List[str], pages: List[int], book: str,
 
 
 # --------------------------------------------------------------------------- #
+#  detector 5 — SUPPLEMENTS: prose talent entries (added later, ADDITIVE).     #
+#  The 40K RP splatbooks print new talents in the SAME prose anatomy as the    #
+#  cores — a NAME, then a "Tier:"/"Prerequisite(s):" header block, then        #
+#  benefit prose — but flag the NAME three different ways. One reader keyed to  #
+#  that anatomy harvests them all WITHOUT touching the five core detectors.     #
+#  `mode` selects the name marker + the required header anchor:                #
+#    "suffix"        — "<Name> (Talent)"        (Inquisitor's HB, Radical's HB, #
+#                       Disciples, RT Into the Storm & Hostile Acquisitions)   #
+#    "prefix"        — "[New] Talent: <Name>"   (Blood of Martyrs, Daemon       #
+#                       Hunter, DW First Founding)                             #
+#    "heading_tier"  — bare <Name> above a "Tier:" line (OW Hammer of the       #
+#                       Emperor, BC Tome of Excess)                            #
+#    "heading_prereq"— bare <Name> above a "Prerequisites:" line, REGION-bound  #
+#                       (DH Ascension, ch. IV Ascended Talents)                #
+#  OCR-scrambled caps in a name ("cHAIN WEAPON EXPERt") are normalised to      #
+#  Title Case; a field that cannot be read is left BLANK — never guessed.      #
+#  Every row still carries book RAW: name, page, tier/prereq/apt/benefit RAW.  #
+# --------------------------------------------------------------------------- #
+_SUPP_SUFFIX = re.compile(r"^(.*\S)\s*\(\s*talents?\s*\)\s*$", re.IGNORECASE)
+# SINGULAR "Talent:" only — plural "Talents:" is a statblock talent LIST, never a
+# talent-definition heading, so it must not open an entry.
+_SUPP_PREFIX = re.compile(r"^(?:new\s+)?talent:\s*(.+?)\s*$", re.IGNORECASE)
+_SUPP_TIER = re.compile(r"^Tier:\s*(\d)")
+_SUPP_PREREQ_ANCHOR = re.compile(r"^Prerequisites?\s*:", re.IGNORECASE)
+_SUPP_ANY_ANCHOR = re.compile(r"^(?:Tier|Prerequisites?)\s*:", re.IGNORECASE)
+_H_PREREQ = re.compile(r"^Prerequisites?\s*:\s*(.*)$", re.IGNORECASE)
+_H_APT = re.compile(r"^Aptitudes?\s*:\s*(.*)$", re.IGNORECASE)
+_H_SKIP = re.compile(r"^(Alignment|Category|Restrictions?|Required Career|"
+                     r"Rank Requirement|Requires?|Cost|Replaces)\s*:", re.IGNORECASE)
+_H_GROUP = re.compile(r"^(Talent Groups?|Specialis[ae]tions?)\b", re.IGNORECASE)
+_H_BENLEAD = re.compile(r"^(?:Effects?|Benefit)\s*:", re.IGNORECASE)
+
+
+def _supp_next(lines: List[str], i: int, end: int) -> int:
+    """Index of the next content line (skips blanks / page marks / page nos.)."""
+    j = i + 1
+    while j < end and (lines[j].strip() == "" or PAGE.search(lines[j])
+                       or re.match(r"^\d{1,3}$", lines[j].strip())):
+        j += 1
+    return j
+
+
+def _supp_norm_name(raw: str, force_tc: bool) -> str:
+    """Collapse whitespace, drop a †, and Title-Case an ALL-CAPS or OCR-scrambled
+    heading (leaving an already-clean Title-Case name untouched)."""
+    raw = re.sub(r"\s+", " ", raw).strip().rstrip("†").strip()
+    if force_tc or _is_caps(raw):
+        return _titlecase(raw)
+    return raw
+
+
+def _supp_name_at(lines: List[str], i: int, end: int, mode: str):
+    """(name, name_line, body_start) if a talent entry opens at line i, else None."""
+    s = lines[i].strip()
+    if s == "" or PAGE.search(lines[i]) or re.match(r"^\d{1,3}$", s):
+        return None
+    if mode == "suffix":
+        m = _SUPP_SUFFIX.match(s)
+        if not m or len(s) > 52:
+            return None
+        nni = _supp_next(lines, i, end)
+        if nni >= end:
+            return None
+        nxt = lines[nni].strip()
+        # a real "<Name> (Talent)" entry is followed by its header block or its
+        # benefit prose; a bare page number below it is an INDEX line — reject.
+        if not (_SUPP_ANY_ANCHOR.match(nxt) or _benefit_starts(nxt)):
+            return None
+        return (_supp_norm_name(m.group(1), True), i, nni)
+    if mode == "prefix":
+        m = _SUPP_PREFIX.match(s)
+        if not m:
+            return None
+        raw = m.group(1)
+        if not re.search(r"[A-Za-z]", raw) or len(raw) > 46:
+            return None
+        return (_supp_norm_name(raw, True), i, _supp_next(lines, i, end))
+    # heading modes: a bare Title-Case / ALL-CAPS name over a Tier:/Prereq: anchor
+    if ROMAN.match(s) or RESERVED.match(s) or JUNK.match(s):
+        return None
+    if not (_title_heading(s) or _is_caps(s)):
+        return None
+    nni = _supp_next(lines, i, end)
+    if nni >= end:
+        return None
+    nxt = lines[nni].strip()
+    if mode == "heading_tier" and not _SUPP_TIER.match(nxt):
+        return None
+    if mode == "heading_prereq" and not _SUPP_PREREQ_ANCHOR.match(nxt):
+        return None
+    return (_supp_norm_name(s, _is_caps(s)), i, nni)
+
+
+def _supp_walk_header(lines: List[str], p: int, end: int):
+    """Consume the Tier:/Prerequisite(s):/Aptitudes: header block (and wrapped
+    Talent-Group / Replaces lists) from p; return (tier, prereq, apt, group, p)
+    with p left at the first benefit line."""
+    tier = prereq = apt = None
+    group = False
+    last = None
+    steps = 0
+    while p < end and steps < 30:
+        if lines[p].strip() == "" or PAGE.search(lines[p]) \
+                or re.match(r"^\d{1,3}$", lines[p].strip()):
+            p += 1
+            continue
+        s = lines[p].strip()
+        mt = _SUPP_TIER.match(s)
+        mp = _H_PREREQ.match(s)
+        ma = _H_APT.match(s)
+        if mt:
+            tier = int(mt.group(1)); last = "hdr"; p += 1; steps += 1; continue
+        if mp:
+            prereq = mp.group(1).strip(); last = "prereq"; p += 1; steps += 1; continue
+        if ma:
+            apt = ma.group(1).strip(); last = "apt"; p += 1; steps += 1; continue
+        if _H_GROUP.match(s):
+            group = True; last = "list"; p += 1; steps += 1; continue
+        if _H_SKIP.match(s):                 # Alignment/Replaces/Restrictions… — drop
+            last = "list"; p += 1; steps += 1; continue
+        if _H_BENLEAD.match(s):              # "Effect:"/"Benefit:" — benefit begins
+            break
+        # wrapped continuation of the last header field (a short fragment that does
+        # not open the benefit sentence)
+        if last == "prereq" and prereq and len(s) < 40 \
+                and not _benefit_starts(s) and not SENT_OPEN.match(s):
+            prereq += " " + s; p += 1; steps += 1; continue
+        if last == "apt" and apt and len(s) < 40 and not _benefit_starts(s):
+            apt += " " + s; p += 1; steps += 1; continue
+        if last == "list" and not _benefit_starts(s) and steps < 22:
+            p += 1; steps += 1; continue
+        break
+    return tier, prereq, apt, group, p
+
+
+def detect_supp_prose(lines: List[str], pages: List[int], book: str, mode: str,
+                      start_re: Optional[str] = None,
+                      end_re: Optional[str] = None) -> List[Talent]:
+    n = len(lines)
+    start = _find(lines, start_re) or 0
+    end = _find(lines, end_re, start + 1) or n
+    out: List[Talent] = []
+    i = start
+    while i < end:
+        hit = _supp_name_at(lines, i, end, mode)
+        if hit:
+            name, name_line, body = hit
+            tier, prereq, apt, group, p = _supp_walk_header(lines, body, end)
+            benefit = _first_sentence(lines, p, end)
+            if benefit:
+                benefit = re.sub(r"^(?:Effects?|Benefit)\s*:\s*", "",
+                                 benefit).strip() or None
+            # a real talent yields at least one RAW field; else it is unparseable
+            if _plausible_name(name) and (benefit or prereq or tier):
+                out.append(Talent(
+                    name=name, book=book, page=pages[name_line],
+                    start=name_line, end=min(end, p + 8), tier=tier,
+                    prerequisites=_clean_prereq(prereq),
+                    aptitudes=(re.sub(r"\s+", " ", apt).strip() if apt else None),
+                    benefit=benefit, group=group))
+        i += 1
+    _tighten_ends(out, end, 45)
+    return _dedup(out)
+
+
+# --------------------------------------------------------------------------- #
 #  shared helpers                                                             #
 # --------------------------------------------------------------------------- #
 def _find(lines: List[str], pattern: Optional[str], frm: int = 0) -> Optional[int]:
@@ -683,6 +849,7 @@ class Source:
     detector: str
     start_re: Optional[str] = None
     end_re: Optional[str] = None
+    mode: Optional[str] = None          # supp_prose only: suffix/prefix/heading_*
     coverage: str = "pending"
     lines: List[str] = field(default_factory=list)
     talents: List[Talent] = field(default_factory=list)
@@ -713,6 +880,58 @@ SOURCES: List[Source] = [
            Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Core Rulebook.md"),
            "Black Crusade Core Rulebook (FFG, WH40K Roleplay), Talent "
            "Descriptions", "prose_tier"),
+
+    # ----- SUPPLEMENTS (added later; detector=supp_prose, cores untouched) --- #
+    # Each splatbook's new talents are read from whichever prose marker it uses;
+    # a reprint of a core talent is a real occurrence here and keeps this book's
+    # citation (the core copy is a separate, untouched row).
+    Source("dh-asc", "Dark Heresy: Ascension",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Ascension.md"),
+           "Dark Heresy: Ascension (FFG, WH40K Roleplay), Ch. IV: Ascended "
+           "Skills and Talents", "supp_prose",
+           start_re=r"Paragon Talents may be gained",
+           end_re=r"^V: Ascended Psychic", mode="heading_prereq"),
+    Source("dh-inq", "Dark Heresy: The Inquisitor's Handbook",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - The Inquisitor's Handbook.md"),
+           "Dark Heresy: The Inquisitor's Handbook (FFG, WH40K Roleplay), new "
+           "Talents", "supp_prose", mode="suffix"),
+    Source("dh-rad", "Dark Heresy: The Radical's Handbook",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - The Radical's Handbook.md"),
+           "Dark Heresy: The Radical's Handbook (FFG, WH40K Roleplay), new "
+           "Talents", "supp_prose", mode="suffix"),
+    Source("dh-blood", "Dark Heresy: Blood of Martyrs",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Blood of Martyrs.md"),
+           "Dark Heresy: Blood of Martyrs (FFG, WH40K Roleplay), new Talents",
+           "supp_prose", mode="prefix"),
+    Source("dh-daemon", "Dark Heresy: Daemon Hunter",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Daemon Hunter.md"),
+           "Dark Heresy: Daemon Hunter (FFG, WH40K Roleplay), new Talents",
+           "supp_prose", mode="prefix"),
+    Source("dh-disc", "Dark Heresy: Disciples of the Dark Gods",
+           Path(f"{_W}/Dark Heresy/Rulebooks/Dark Heresy - Disciples of The Dark Gods.md"),
+           "Dark Heresy: Disciples of the Dark Gods (FFG, WH40K Roleplay), new "
+           "Talents", "supp_prose", mode="suffix"),
+    Source("rt-storm", "Rogue Trader: Into the Storm",
+           Path(f"{_W}/Rogue Trader/Rulebooks/"
+                "Rogue Trader - Into The Storm  - The Explorer's Handbook.md"),
+           "Rogue Trader: Into the Storm — The Explorer's Handbook (FFG, WH40K "
+           "Roleplay), new Talents", "supp_prose", mode="suffix"),
+    Source("rt-hostile", "Rogue Trader: Hostile Acquisitions",
+           Path(f"{_W}/Rogue Trader/Rulebooks/Rogue Trader - Hostile Acquisitions.md"),
+           "Rogue Trader: Hostile Acquisitions (FFG, WH40K Roleplay), new "
+           "Talents", "supp_prose", mode="suffix"),
+    Source("dw-found", "Deathwatch: First Founding",
+           Path(f"{_W}/Deathwatch/Rulebooks/Deathwatch - First Founding.md"),
+           "Deathwatch: First Founding (FFG, WH40K Roleplay), new Chapter "
+           "Talents", "supp_prose", mode="prefix"),
+    Source("ow-hammer", "Only War: Hammer of the Emperor",
+           Path(f"{_W}/Only War/Rulebooks/Only War - Hammer of The Emperor.md"),
+           "Only War: Hammer of the Emperor (FFG, WH40K Roleplay), Ch. III: "
+           "New Talents", "supp_prose", mode="heading_tier"),
+    Source("bc-excess", "Black Crusade: Tome of Excess",
+           Path(f"{_W}/Black Crusade/Rulebooks/Black Crusade - Tome of Excess.md"),
+           "Black Crusade: Tome of Excess (FFG, WH40K Roleplay), new Talents",
+           "supp_prose", mode="heading_tier"),
 ]
 
 
@@ -727,13 +946,16 @@ def _run_detector(src: Source) -> List[Talent]:
     if src.detector == "prose_title":
         return detect_prose_title(src.lines, _pages_for(src.lines), src.book,
                                   src.start_re, src.end_re)
+    if src.detector == "supp_prose":
+        return detect_supp_prose(src.lines, _pages_for(src.lines), src.book,
+                                 src.mode, src.start_re, src.end_re)
     raise ValueError(src.detector)
 
 
 def _fresh_sources() -> List[Source]:
     return [Source(*(getattr(s, k) for k in
                      ("key", "book", "path", "citation", "detector",
-                      "start_re", "end_re"))) for s in SOURCES]
+                      "start_re", "end_re", "mode"))) for s in SOURCES]
 
 
 class Corpus:
@@ -889,6 +1111,36 @@ FIX_TITLE = ("the full explanation of each Talent below.\n"
              "Use the weapon group without penalty.\n"
              "V: Armoury\n")
 
+# --- SUPPLEMENT fixtures: the four supp_prose modes -------------------------- #
+FIX_SUPP_SUFFIX = ("Purge the Unclean (Talent)\nPrerequisites: Pure Faith\n"
+                   "You can focus your faith to cast out a daemon. Extra text.\n"
+                   "ApostAte MeChAnIC (tAlent)\nPrerequisites: Tech-Use +10\n"
+                   "The Explorer modifies himself with arcane technology.\n"
+                   "Abhor the Witch (Talent) \n113\n")   # index ref → must REJECT
+
+FIX_SUPP_PREFIX = ("tALENt: cHAIN WEAPON EXPERt\n"
+                   "Prerequisite: Melee Weapon Training (Chain)\n"
+                   "The character deftly turns the blade aside. More text.\n"
+                   "neW talent: GuerIlla traInInG\n"
+                   "Left with few men, the chapter mastered stealth and ambush.\n"
+                   "Talents: Swift Attack\n")   # plural statblock line → must REJECT
+
+FIX_SUPP_TIER = ("Ace Operator\nTier: 2\nPrerequisite: Operate (Any) +10\n"
+                 "Aptitudes: Agility, Tech\n"
+                 "The character maintains masterful control of his vehicle. Extra.\n"
+                 "Addictrix\nTier: 3\nPrerequisite: Fellowship 50, Charm +10\n"
+                 "Alignment: Slaanesh\n"
+                 "The Heretic is a master of seduction and manipulation.\n")
+
+FIX_SUPP_PREREQ = ("Paragon Talents may be gained by characters in two ways:\n"
+                   "Berserker\nPrerequisites: Weapon Skill 50, Strength 40\n"
+                   "Replaces: \nBattle \nRage, \nBerserk \nCharge\n"
+                   "The character fights with an unrestrained fury against all.\n"
+                   "Peer\nPrerequisites: Fellowship 30\n"
+                   "Talent Groups: Academics, Adeptus Arbites, Administratum\n"
+                   "You know how to deal with a particular social group. More.\n"
+                   "V: Ascended Psychic Powers\n")
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -947,6 +1199,56 @@ def selftest(base: Path) -> int:
     if "basic weapon training" in ntt and not ntt["basic weapon training"].group:
         failures.append("[title] Basic Weapon Training group flag missing")
 
+    # ---- SUPPLEMENT fixtures (detector 5, supp_prose) ----
+    su = names(detect_supp_prose(FIX_SUPP_SUFFIX.splitlines(),
+                                 _pages_for(FIX_SUPP_SUFFIX.splitlines()), "X", "suffix"))
+    for probe in ("purge the unclean", "apostate mechanic"):
+        if probe not in su:
+            failures.append(f"[supp/suffix] missing {probe!r} (got {sorted(su)})")
+    if "purge the unclean" in su and su["purge the unclean"].prerequisites != "Pure Faith":
+        failures.append("[supp/suffix] Purge the Unclean prereq mis-parsed")
+    if "apostate mechanic" not in su:      # OCR-scrambled name must normalise
+        failures.append("[supp/suffix] scrambled name 'ApostAte MeChAnIC' not normalised")
+    if "abhor the witch" in su:            # a bare-page-number index line must NOT parse
+        failures.append("[supp/suffix] index reference wrongly harvested as a talent")
+
+    sp = names(detect_supp_prose(FIX_SUPP_PREFIX.splitlines(),
+                                 _pages_for(FIX_SUPP_PREFIX.splitlines()), "X", "prefix"))
+    for probe in ("chain weapon expert", "guerilla training"):
+        if probe not in sp:
+            failures.append(f"[supp/prefix] missing {probe!r} (got {sorted(sp)})")
+    if "chain weapon expert" in sp and \
+            "Chain" not in (sp["chain weapon expert"].prerequisites or ""):
+        failures.append("[supp/prefix] Chain Weapon Expert prereq mis-parsed")
+    if "guerilla training" in sp and not sp["guerilla training"].benefit:
+        failures.append("[supp/prefix] no-prereq talent lost its benefit")
+    if "swift attack" in sp:               # plural "Talents:" statblock must NOT parse
+        failures.append("[supp/prefix] plural 'Talents:' statblock wrongly harvested")
+
+    stt = names(detect_supp_prose(FIX_SUPP_TIER.splitlines(),
+                                  _pages_for(FIX_SUPP_TIER.splitlines()), "X", "heading_tier"))
+    for probe in ("ace operator", "addictrix"):
+        if probe not in stt:
+            failures.append(f"[supp/tier] missing {probe!r} (got {sorted(stt)})")
+    if "ace operator" in stt:
+        a = stt["ace operator"]
+        if a.tier != 2 or a.prerequisites != "Operate (Any) +10" or a.aptitudes != "Agility, Tech":
+            failures.append(f"[supp/tier] Ace Operator parse = {(a.tier, a.prerequisites, a.aptitudes)}")
+    if "addictrix" in stt and stt["addictrix"].tier != 3:
+        failures.append("[supp/tier] Addictrix tier mis-parsed")
+
+    sq = names(detect_supp_prose(FIX_SUPP_PREREQ.splitlines(),
+                                 _pages_for(FIX_SUPP_PREREQ.splitlines()), "X",
+                                 "heading_prereq", r"Paragon Talents may be gained",
+                                 r"^V: Ascended Psychic"))
+    for probe in ("berserker", "peer"):
+        if probe not in sq:
+            failures.append(f"[supp/prereq] missing {probe!r} (got {sorted(sq)})")
+    if "berserker" in sq and "Weapon Skill 50" not in (sq["berserker"].prerequisites or ""):
+        failures.append("[supp/prereq] Berserker prereq mis-parsed")
+    if "peer" in sq and not sq["peer"].group:
+        failures.append("[supp/prereq] Peer (Talent Groups) group flag missing")
+
     # ---- live corpus checks ----
     if base.is_dir() and any((base / s.path).exists() for s in SOURCES):
         corpus = Corpus(base, _fresh_sources())
@@ -957,6 +1259,25 @@ def selftest(base: Path) -> int:
         for key, floor in (("dh", 80), ("rt", 90), ("dw", 90), ("ow", 90), ("bc", 90)):
             if per.get(key, 0) < floor:
                 failures.append(f"{key}: {per.get(key,0)} talents < floor {floor}")
+        # HARD CONSTRAINT: the five CORE books must stay byte-exact — the whole
+        # point of the additive supplement pass is that it never disturbs them.
+        core_expect = {"dh": 124, "rt": 144, "dw": 145, "ow": 112, "bc": 132}
+        core_total = 0
+        for key, exp_n in core_expect.items():
+            got = per.get(key)
+            if got is None:
+                continue
+            core_total += got
+            if got != exp_n:
+                failures.append(f"CORE PRESERVATION: {key} = {got} talents; "
+                                f"must be exactly {exp_n}")
+        if core_total and core_total != 657:
+            failures.append(f"CORE PRESERVATION: cores total {core_total}, must be 657")
+        supp_total = sum(len(s.talents) for s in corpus.sources
+                         if s.key not in core_expect)
+        if core_total == 657 and supp_total < 120:
+            failures.append(f"only {supp_total} supplement talents harvested; "
+                            f"expected the splatbooks to add well over 120")
         allnames = {t.name.lower() for _, t in corpus.all_talents()}
         for probe in ("quick draw", "rapid reload", "sprint", "nerves of steel",
                       "air of authority", "berserk charge", "swift attack"):
@@ -970,6 +1291,14 @@ def selftest(base: Path) -> int:
         # tier captured for BC/OW
         if not any(t.tier for _, t in corpus.all_talents(book="bc")):
             failures.append("live: no tiers captured for Black Crusade")
+        # a specific SUPPLEMENT talent, harvested live, parses correctly
+        ace = [t for _, t in corpus.all_talents()
+               if t.name.lower() == "ace operator"]
+        if not ace:
+            failures.append("live: supplement talent 'Ace Operator' (OW Hammer) not found")
+        elif ace[0].tier != 2 or not ace[0].aptitudes:
+            failures.append(f"live: Ace Operator parsed {(ace[0].tier, ace[0].aptitudes)!r}, "
+                            "wanted tier 2 with aptitudes")
     else:
         print("  [SKIP] 40K RP extractions not found — fixture checks only")
 

@@ -706,3 +706,274 @@ the full text is at the cited page. Use `--export "NAME"` for the packet.
 | Weapon Training † | 1 | — | — | The character can employ some of the most devastating weapons of the battleﬁ eld. | 135 |
 | Whirlwind of Death | 2 | Weapon Skill 40, Weapon Training (any melee) | — | When facing massed opponents in combat the character becomes a whirlwind of death, moving, hacking, gutting, and beheading with ceaseless fury. | 135 |
 | Wisdom of the Ancients | 2 | Intelligence 40 | — | The character has survived many wars, seen much and been favoured with the experience of countless ancient warriors during his life. | 135 |
+
+## Dark Heresy: Ascension — 40 talents  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Ascension (FFG, WH40K Roleplay), Ch. IV: Ascended Skills and Talents.*  
+*Harvest: ok — 40 talents from Dark Heresy - Ascension.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Berserker | — | Weapon Skill 50, Strength 40 | — | The character fights with an unrestrained fury that only the death of all those who stand against him can sate. | 106 |
+| Blade Dancer | — | Agility 40, Acrobatics skill, Weapon Skill 40, Melee Weapon Training (any) | — | The character fights with a deadly, athletic grace; flipping over opponents, deflecting blows, repositioning and killing with swift, precise cuts. | 107 |
+| Call of Iron | — | Mechanicus Implants | — | The character may lift or move any unsecured metal objects weighing up to 2 kilograms per point of Willpower Bonus within a 40m range. | 107 |
+| Conditioned Intellect | — | Intelligence 40 | — | By spending ten minutes studying or analysing a problem, the character gains a +10 bonus to his next Intelligence Test. | 107 |
+| Death Blow | — | Weapon Skill 50, Strength 40 | — | The character can kill with a single, immensely powerful blow to the enemy’s most vulnerable points. | 107 |
+| Electro Illumination | — | Mechanicus Implants | — | The Tech-Priest has mastered the electricity that flows through his biological and mechanical components, allowing him to use it as a deadly weapon or to feed the hungry circuits of machines. | 107 |
+| Exemplar of Metal | — | Mechanicus Implants | — | This Talent completely exchanges its benefits for those of the Talents it replaces (including the Characteristic increases from Machinator Array and the Armour increases from The Flesh Is Weak). | 108 |
+| Gravitic Levitation | — | Mechanicus Implants (Potentia Coil) | — | The character has mastered the secrets of anti-Gravitic field generation. | 108 |
+| Gunfighter Saint | — | Ballistic Skill 40, Agility 40, Pistol Weapon Training (any) | — | The character is a gunfighter of terrifying skill; in his hands, pistols seem to have a will of their own, a will that wants only to bring death to the living. | 108 |
+| Heroic Leadership | — | Fellowship 30, Willpower 30, Command | — | The character’s presence, deeds, and words inspire those around him to face the darkness without fear and perform deeds equal to the greatest heroes of the Imperium. | 108 |
+| Heightened Reactions | — | Agility 40, Perception 40 | — | The character is constantly attuned to danger and reacts faster than sight when under pressure. | 108 |
+| Indomitable Fortitude | — | Toughness 40, Willpower 40 | — | The character’s unbending will, combined with a constitution like tempered steel, allows him to disregard injuries that would cripple others. | 109 |
+| Machine Spirit Empathy | — | — | — | Intelligence 30, Fellowship 30, Mechanicus Implants | 109 |
+| Mental Aegis | — | Willpower 50 | — | Mental Fortress, Resistance (Psychics), Strong Minded | 109 |
+| Peerless Marksman | — | Ballistic Skill 40, | — | The character’s marksmanship is so developed that he can kill a distant target with a single shot. | 109 |
+| Purity of the Machine | — | Mechanicus Implants | — | The character has been freed of the weakness of his remaining flesh’s desires and physical vulnerability. | 110 |
+| Storm of Blows | — | Weapon Skill 35, Agility 40 | — | The character becomes a storm of violence and death in battle, raining blows on his enemies with remorseless fury. | 110 |
+| Soul of Stone | — | Willpower 40 | — | The character’s soul is as cold and unfeeling as stone. | 110 |
+| Transcendent Hate | — | Fellowship 30 | — | The character’s hate for his enemies is so profound that it has transcended single groups and is projected onto any who stand against him. | 110 |
+| Unarmed Ascendant Mastery | — | Weapons Skill 45, Agility 45 | — | The character has mastered techniques of unarmed combat to such a level that he is as lethal unarmed as armed; able to strike with hammer-like force, knock out opponents with a well-placed blow, or take an enemy’s weapon from his hands at will. | 110 |
+| Unassailable Grace | — | Agility 50, Dodge | — | The character reacts to attacks so quickly and fluidly that he seems to dance through blade swings and gunfire, knocking bullets from the air and pivoting aside from danger. | 111 |
+| Voice of the Omnissiah | — | Mechanicus Implants | — | The character has total control over the emissions from his vox unit implants enabling him to produce blurts of disturbing binary code, imitate others voices, or turn his own synthesised voice into a fearful distorted rasp. | 111 |
+| Good Reputation † | — | Fellowship 30 | — | Government, Hivers, Imperial Guard, Imperial Navy, Inquisition, Middle Class, Military, Navigators, Nobility, Officio Assassinorum, PDF, Pilgrims, Planet (specific), Recidivist Organisation (specific), Rogue Trader, Underworld, Void Born, Workers You know how to deal with a particular social group or | 113 |
+| Peer † | — | Fellowship 30 | — | The savants, archivists and sages who lurk in libraries and data vaults across the Imperium Death Worlders Those born and raised on worlds whose environments are hostile to life and on which human settlement is a miracle Feral Worlders | 113 |
+| Ascended Psychic Power | — | Psy Rating 1+ | — | The Throne Agent may select one Ascended Psychic Power. | 121 |
+| Combat Formation | — | Intelligence 40 | — | The Throne Agent has directed his comrades to be prepared for danger, planning out their actions for many contingencies if attacked. | 122 |
+| Combat Sense | — | Perception 40 | — | The Throne Agent has the ability to consciously recognise the proddings of his subconscious as it reacts to his preternaturally sharp senses, giving him an edge that mere speed cannot match. | 122 |
+| Enhanced Bionic Frame | — | Machinator Array | — | The Throne Agent’s already impressive bionic body structure is steadied by a gyro-array guided by a targeting system linked to the machine-spirit. | 122 |
+| Favoured by Fate | — | — | — | The Throne Agent is particularly blessed by the Emperor’s Grace, or perhaps simply destined for greatness. | 122 |
+| Guardian | — | Agility 40 | — | Years of serving as a bodyguard allows the Throne Agent to put himself in the line of fire, or to take a murderous attack that was intended for another. | 122 |
+| Infused Knowledge | — | Intelligence 40 | — | The Throne Agent has been infused with a great wealth of lore and knowledge, either through punishing noetic techniques or by arcane methods kept secret by the guardians of technology and knowledge. | 122 |
+| Machinator Array | — | Mechanicus Implants | — | The Throne Agent has returned to the crèches of the Mechanicus so they can bring him closer to the most holy of forms, adding an extensive machinator array to his existing augmetics. | 122 |
+| Mnemonic Purging | — | Intelligence 45, Willpower 45 | — | The character has been conditioned and trained so that he is able to deliberately remove his memories. | 122 |
+| Perfect Shot | — | Vindicare Assassin, BS 60 | — | Vindicare Assassins are renowned for their matchless skill as a sniper—slaying one target leads naturally to centring the next in the cross-hairs. | 123 |
+| Polyglot | — | Intelligence 40, Fel 30 | — | The Throne Agent has an innate ability to derive meaning from unknown languages and make himself understood using this intuitive grasp. | 123 |
+| Rite of Protection | — | Willpower 40 | — | The character is able to deliberately induce a state of consciousness where he can function, but remembers nothing of what has passed after a certain time. | 123 |
+| Target Selection | — | BS 50 | — | The character’s dread gaze marks out his chosen victim, and not even the riotous confusion of close combat interferes. | 123 |
+| The Emperor Protects | — | Pure Faith | — | The power of the Emperor flows through the Explorer, protecting the faithful and emboldening them to heroism in the face of terrible things. | 123 |
+| Unarmed Master | — | Weapon Skill 45, Agility 40, Unarmed Warrior | — | The Throne Agent has developed unequalled mastery of unarmed combat techniques. | 123 |
+| Unarmed Warrior | — | Weapons Skill 35, Agility 35 | — | Due to extensive training in unarmed combat, the Throne Agent’s unarmed combat attacks do 1d10–3 (+SB) I Damage instead of 1d5–3. | 123 |
+
+## Dark Heresy: The Inquisitor's Handbook — 6 talents  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Inquisitor's Handbook (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 6 talents from Dark Heresy - The Inquisitor's Handbook.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Purge the Unclean | — | Pure Faith | — | You can focus your faith through words, gestures and force of will, such that a Daemon may be cowed or cast out by the power of the Emperor. | 52 |
+| Divine Ministration | — | Pure Faith | — | You are a vessel for the Emperor’s mercy and beneficence, your skill and faith in His divinity can heal where no mere skill can. | 52 |
+| Wrath of the Righteous | — | Pure Faith | — | You are a killing angel and you visit the Emperor’s righteous fury on those who deny His dominion over the stars or those who profane that which is sacred. | 52 |
+| Blessed Radiance | — | Purge the Unclean, Divine Ministration or Wrath of the Righteous | — | Your holiness shines out, allowing all to see the truth of their own souls. | 52 |
+| Beast Hunter | — | — | — | Many feral worlders were beast hunters long before they saw Imperial service. | 64 |
+| The Reaping | — | — | — | The deadly fighting arts of the Moritat teach a special manoeuvre only made possible by their near preternatural skill with a blade, allowing one great devastating cut with which several opponents can be despatched in a great effusion of sacred blood. | 76 |
+
+## Dark Heresy: The Radical's Handbook — 11 talents  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: The Radical's Handbook (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 11 talents from Dark Heresy - The Radical's Handbook.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Daemonic Essence | — | — | — | The daemon is bound to your flesh and being. | 69 |
+| Monster Beneath the Skin | — | Daemonic Essence | — | While the daemon within you reigns, the monster that is lurking beneath your skin and behind your eyes is visible to all: your body warps, phases and changes as you are flooded with raw daemonic power. | 70 |
+| Power of the Warp | — | Daemonic Essence | — | The power of the warp flows through you when the daemon within is unleashed, allowing you to violate reality with powerful sorceries and psychic power. | 70 |
+| Ruin Incarnate | — | Daemonic Essence and 91 Corruption points | — | Note: This Talent is automatically gained when a character with the Daemon Vessel Elite Advance package reaches 91 Corruption Points. | 70 |
+| Sorcerer | — | Intelligence 35+, Willpower 35+, Forbidden Lore (Demonology or Warp) +10 | — | The Acolyte may use the powers of sorcery to channel the warp through a combination of esoteric lore, skill and focused will. | 169 |
+| Master Sorcerer | — | Intelligence 40+, Willpower 50+, Sorcerer, | — | Forbidden Lore (Demonology or Warp) +20. | 170 |
+| Minor Arcana | — | Sorcerer | — | The sorcerer has acquired an additional Minor Arcana Power over the amount usually allowed; this must be learned or researched as normal. | 170 |
+| Major Arcana | — | Willpower 45+, Sorcerer | — | The sorcerer has acquired an additional Major Arcana Power over the amount usually allowed; this must be learned or researched as normal. | 170 |
+| Sublime Arts | — | Perception 40+, Intelligence 45+, Sorcerer | — | The sorcerer may use his powers without the usual need for obvious vocalisations, gestures, and the like, simply enacting the patterns needed mentally by sheer dint of concentration and unyielding mental strength. | 170 |
+| Fuelled by Flesh | — | Sorcerer | — | In manifesting their powers, many sorcerers practice some form of self-mutilation in order to further augment and empower their incantations with their own suffering and bodily sacrifice. | 170 |
+| Touched by the Fates | — | Limited to Non-Player Characters with | — | free will; may not be applied to daemons and other non-living creatures. | 231 |
+
+## Dark Heresy: Blood of Martyrs — 9 talents  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Blood of Martyrs (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 9 talents from Dark Heresy - Blood of Martyrs.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Chain Weapon Expert | — | Melee Weapon Training (Chain) | — | The character knows that fear is for the enemy, fear and wrath. | 66 |
+| Flame Weapon Expert | — | Basic Weapon Training (Flame) | — | When wielding a Flame Weapon, the character knows exactly when to release the trigger to avoid jamming the weapon or when to push its functions in the glorious name of the God-Emperor. | 66 |
+| Drill Instruction | — | — | — | The character may bellow commands to all those in earshot. | 70 |
+| Litany of Battle | — | — | — | The Battle Sister knows hundreds of litanies and always recites exactly the most appropriate verse in battle, bolstering her allies with the wisdom of saints. | 83 |
+| Tests of Faith | — | — | — | The Battle Sister’s faith has been tested in the ﬁ res of combat and she has emerged with her faith tempered and sharpened. | 84 |
+| Miraculous Survival | — | — | — | The Sister of Battle is not merely protected by her faith in the Emperor, it is clear to all that He has plans for her and she will not die until He ordains it. | 85 |
+| Hit and Run | — | — | — | Seraphim are masters of battleﬁ eld mobility and ﬁ nd that rapid response is one of their greatest assets. | 88 |
+| Holy Hatred | — | — | — | Celestians know that those who do not serve the Emperor with the entirety of their existence are merely heretics, mutants, or worse waiting to happen. | 90 |
+| Pure Faith | — | — | — | Among the teeming billions of the faithful, a rare handful of individuals are truly touched by the God- Emperor’s divine hand. | 102 |
+
+## Dark Heresy: Daemon Hunter — 11 talents  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Daemon Hunter (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 11 talents from Dark Heresy - Daemon Hunter.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Malleus Conditioning | — | — | — | Many Inquisitors of the Ordo Malleus expend considerable effort to make sure that their agents are well protected against the Daemons of the Warp. | 44 |
+| Intellectualization | — | — | — | The character is adept at rationalizing words and text and stripping them of their power over him. | 50 |
+| Speed Reading | — | — | — | Through years of practice the character has developed the ability read text at an astonishing rate. | 50 |
+| Aura of Faith | — | — | — | Daemonic entities reel from the Acolyte, their daemonic powers cleansed in his presence. | 50 |
+| Rite of Banishment | — | — | — | This rite is closely guarded, written only in the most sacred texts and taught only to experienced Banishers. | 50 |
+| Cult Briefing | — | — | — | The character has undergone indoctrination so that he may blend into a Chaos cult. | 52 |
+| Sicarius Tutoring | — | — | — | Each Acolyte receives different training from their Ordo Sicarius contacts before returning to the service of the Ordo Malleus. | 56 |
+| Blessed Flame | — | — | — | Specialized training in holy litanies of maintenance combined with blessed promethium allows the Acolyte to bring his ﬂ amers to bear against daemons with potent effect. | 58 |
+| Flames of Faith | — | — | — | The Acolyte’s faith in both the God-Emperor of Mankind and his trusted weapon causes Psyﬂ ame ammunition to burn even brighter. | 58 |
+| Mechadendrite Use (techsorcist) | — | — | — | The Techsorcist has chosen to alter one of his mechadendrites to assist in his duties. | 60 |
+| Emperor's Tarot | — | — | — | Once per Game Session, the Psyker may read the portents of the Emperor's Tarot. | 62 |
+
+## Dark Heresy: Disciples of the Dark Gods — 7 talents  *(system: WH40K Roleplay)*
+
+*Source: Dark Heresy: Disciples of the Dark Gods (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 7 talents from Dark Heresy - Disciples of The Dark Gods.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Sorcerer | — | Intelligence 35, Willpower 35, Forbidden Lore | — | (Warp or Daemonology) +10 or Scholastic Lore (Occult) +10. | 118 |
+| Master Sorcerer | — | Intelligence 40, Willpower 50, Sorcerer | — | Your mastery of the dark arts is great, and you have learned to avoid the pitfalls that beset lesser practitioners of the craft, channeling far more raw power than most. | 118 |
+| Minor Arcana | — | Sorcerer | — | You have acquired an additional Minor Arcana power over the amount usually allowed. | 118 |
+| Major Arcana | — | Willpower 45, Sorcerer | — | You have acquired an additional Major Arcana power over the amount usually allowed. | 118 |
+| Sublime Arts | — | Perception 40, Intelligence 45, Sorcerer | — | You may utilise your sorcery without the usual needs for obvious vocalisations, gestures, and the like, simply enacting the patterns needed mentally by sheer dint of concentration and unyielding mental strength. | 118 |
+| Consumed by Spite | — | — | — | The soul and mind of a Pilgrim of Hayte has been so damaged and consumed by bitterness and malice that there is room for little else. | 127 |
+| Touched by the Fates | — | Non Player Characters only, they must have free will, and may not be applied to Daemons and other non-living creatures | — | The NPC has a number of Fate Points equal to half his Willpower Bonus (rounding up). | 189 |
+
+## Rogue Trader: Into the Storm — 5 talents  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Into the Storm — The Explorer's Handbook (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 5 talents from Rogue Trader - Into The Storm  - The Explorer's Handbook.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Physical Perfection | — | Augmenticist Alternate Career | — | Similar to the Explorator Talent The Flesh is Weak (see the ROGUE TRADER CORE RULEBOOK page 107), the Augmenticist’s body has been modiﬁed to the point where it is almost totally mechanical. | 75 |
+| Best of the Best | — | Pilot (Flyers and Space Craft) +20, Pilot (Personal) +10 | — | The Flight Marshall is simply the ﬁnest pilot in the sky, the void, or even ﬁve meters off the ground on a dare. | 81 |
+| Ded Sneaky | — | Ork, Concealment +10, Silent Move +10 | — | The prospect of an Ork bursting from a concealed position and attacking is an unsettling one to say the least, and the few who survive the experience never forget the sight of a hulking green-skinned monster appearing nearby with a gigantic blade in hand. | 93 |
+| Worky Gubbinz | — | Ork, Tech-Use +10, Willpower 30+ | — | The Ork has an innate and instinctive skill with machinery, allowing him to perform feats of engineering that defy logic, cobbling together random lumps of wrecked technology and scrap metal into something bizarre and startlingly effective. | 96 |
+| Survival Master | — | Toughness (40) | — | The Torchbearer’s ability to thrive in the most inhospitable and desolate areas allows him to continue his holy mission where others would fall. | 99 |
+
+## Rogue Trader: Hostile Acquisitions — 12 talents  *(system: WH40K Roleplay)*
+
+*Source: Rogue Trader: Hostile Acquisitions (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 12 talents from Rogue Trader - Hostile Acquisitions.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Apostate Mechanic | — | Tech-Use +10 | — | The Explorer modifies himself with arcane technology and now wields techno-arcane powers normally the preserve of the Priesthood of Mars. | 34 |
+| Subversive Programming | — | Mechanicus Implants | — | The Explorer has devised a binary argot that confuses and subverts the programming of servitors and other machine- creatures, allowing him to direct their actions. | 34 |
+| Luminen Desecration | — | Mechanicus Implants | — | The Explorer’s implants generate a violent techsorcism pulse, allowing him to disable technology in his presence. | 34 |
+| Vile Intrusion | — | Electrograft Use, Mechanicus Implants | — | The Explorer is skilled at gaining access to the knowledge of the most sophisticated machine spirits, assailing them with scrap-code and malicious spirits of his own creation, until they break under the strain. | 34 |
+| Operative Conditioning | — | — | — | The Explorer gains the benefits of the Chem-geld and Orthoproxy talents (mental conditioning replacing the surgery these would normally require). | 40 |
+| Killer’s Eye | — | Perception 35 and either Sure Strike or Deadeye Shot | — | The Explorer can find the weaknesses of his prey with only a few moments of observation. | 42 |
+| Take Them Alive | — | Perception 35 and either Sure Strike or Deadeye Shot | — | The Explorer is well versed in laying his enemies low without killing them, able to incapacitate his targets and limit the damage he inflicts to them. | 42 |
+| Cold Soul | — | Insanity (20+ Points) | — | The Explorer has become disconnected from normal human emotions or feelings as his sense of humanity drains away. | 44 |
+| Combat Flair | — | Blademaster, Charm (+10), WS 40 | — | The Explorer’s skills in melee are without parallel, but more importantly he fights with a stylish jaunty confidence guaranteed to impress even his foes. | 46 |
+| Reputation (seceded Worlds) | — | — | — | These talents apply specifically to the world or worlds that the Explorer has led from the rule of the Imperium; Secessionist leaders are often loved by their people. | 48 |
+| Grand Oratory | — | Charm +10, Command +10, Master Orator | — | The Explorer’s words inspire loyalty and dissent in equal measure, and can influence hundreds of individuals at once. | 48 |
+| Touched by the Fates | — | Non-player Characters only, must have | — | free will, may not be applied to Daemons or other non- living creatures. | 126 |
+
+## Deathwatch: First Founding — 10 talents  *(system: WH40K Roleplay)*
+
+*Source: Deathwatch: First Founding (FFG, WH40K Roleplay), new Chapter Talents.*  
+*Harvest: ok — 10 talents from Deathwatch - First Founding.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Guerilla Training | — | — | — | Left with an incredibly low number of men after the massacre at Istvaan V, the Raven Guard had to become masters of rapid deployment, stealth, and guerilla tactics. | 19 |
+| Artificer | — | — | — | The people of Nocturne and the Salamanders alike hold great respect for artisans and other skilled craftsmen, and every Battle-Brother of the Salamanders is trained to some degree in the skills of the smith. | 25 |
+| Born in the Saddle | — | — | — | The White Scars are legendarily skilled at fighting whilst mounted upon bikes, their metal steeds serving more as an extension to the rider’s body than as a distinct object. | 33 |
+| Mental Fortitude | — | — | — | The Ravenwing are required to possess absolute strength of character, unclouded by doubt or disloyalty and untroubled by spiritual turmoil or corruption. | 50 |
+| Deathwing Assault | — | — | — | The Deathwing favour rapid teleport attacks, appearing literally from nowhere (often collaborating with Ravenwing squadrons to ensure precision) to deliver overwhelming force against an unprepared enemy. | 51 |
+| Patient Hunter | — | — | — | The Battle-Brother understands well that stealth is not merely a matter of silence and shadow, but of timing and awareness, and he can elude the gaze of his enemies simply by understanding what they can see and hear, and always being where they aren’t looking. | 61 |
+| Sudden Attack | — | — | — | The Battle-Brother is well-versed in the arts of surprise and disruption, and can stall large numbers of enemies with careful planning and cunning. | 61 |
+| Mentor | — | — | — | The Wolf Priest has seen much and learned much, and now passes that hard-won insight to his Battle-Brothers. | 64 |
+| Tyrannic War Stratagem † | — | — | — | The Battle-Brother’s hard-won experience against the Tyranids has resulted in him mastering, or in some cases even devising, a variety of unusual strategies intended to combat the unique menace of the Great Devourer. | 71 |
+| Honour or Death | — | — | — | The Battle-Brother is a champion of the Ultramarines and of the Adeptus Astartes as a whole, and stands defiant against the mightiest of foes. | 73 |
+
+## Only War: Hammer of the Emperor — 51 talents  *(system: WH40K Roleplay)*
+
+*Source: Only War: Hammer of the Emperor (FFG, WH40K Roleplay), Ch. III: New Talents.*  
+*Harvest: ok — 51 talents from Only War - Hammer of The Emperor.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Ace Operator | 2 | Operate (Any) +10 | Agility, Tech | The character is known for maintaining masterful control of his vehicle through seemingly reckless manoeuvres, often astounding others with his daring and skill. | 97 |
+| Ambush | 1 | Stealth | Agility, Fieldcraft | The Tactica Imperialis teaches that a battle is easily won if the enemy does not know he is fighting. | 97 |
+| Abiding Resilience | 3 | Toughness 40 | Toughness, Defence | Whether driven by hatred for his enemies, loyalty to his allies, or sheer pride, the character refuses to die until a job is finished. | 97 |
+| Creative Killer | 2 | Street Fighting | Intelligence, Offence | This character sees everything as a potential weapon, and can kill while wielding with almost anything he can get his hands on. | 98 |
+| Cybernetic Boost | 2 | One or more Cybernetic Limbs, Tech-Use | Intelligence, Tech | Cybernetics are an important part of life for many members of the Imperial Guard, for soldiers often need to replace lost or crippled limbs and organs of vulnerable flesh and blood with assuredly superior appendages and devices of metal and oil. | 98 |
+| Cybernetic Calibrations | 3 | Two or more Cybernetics, Tech-Use +10, Cybernetic Boost | Intelligence, Tech | This character, either through initiation into the mysteries of the Omnissiah or tinkering that would certainly attract negative attention from such individuals, has fine-tuned his cybernetic implants to a point of optimization. | 98 |
+| Bombardier | 3 | Ballistic Skill 40, Tech-Use, Weapon Training (Launcher) | Offence, Tech | Due to many years of training, and an obsession that squad mates might find unnerving, the character is an expert with explosive weapons and has an uncanny control over where projectiles land. | 98 |
+| Calculated Barrage | 1 | Intelligence 35 | Ballistic Skill, Knowledge | This character is exceptionally good at conceptualizing the battlefield and picking just the right place to drop vast amounts of explosives to maximum effect—not just on the enemies bodies, but also on their morale. | 98 |
+| Chain Weapon Expertise | 2 | Weapon Skill 40 Weapon Training (Chain) | Weapon Skill, Offence | From the chainswords wielded by officers and other leadership figures to the eviscerators favoured by the priests of the Adeptus Ministorum, chain weapons are a common sight amongst the armouries of the Imperial Guard. | 98 |
+| Cleanse and Purify | 2 | Willpower 35, Weapon Training (Flame) | Offence, Willpower | The character is a firm believer in the purifying power of fire—that the heretic, xenos, and witch must be incinerated lest their corruption spread. | 98 |
+| Duelist | 1 | Weapon Skill 35, Sure Strike | Finesse, Weapon Skill | Thanks to extensive practice in ritualised duels, years of fighting in impromptu rings, or other specific training, this character is particularly skilled at engaging single opponents on his own. | 99 |
+| Excellent Cook | 1 | Trade (Cook) +10 | Fieldcraft, General | Though the clerks of the Departmento Munitorum seemingly refuse to recognise the fact, a good meal can provide a great boost to morale for weary troops. | 99 |
+| Feat of Strength | 3 | Strength 45, Bulging Biceps | Offence, Strength | The character’s prodigious strength has seen them through numerous encounters. | 99 |
+| Death Serves the Righteous | 3 | Ballistic Skill 50, Deadeye Shot, Sharpshooter | Ballistic Skill, Offence | The character is a consummate killer, with focus such that time seems to slow down when he holds a target in his sights and the battlefield fades away except for his target. | 99 |
+| Drop Trooper | 1 | Operate (Aeronautica) | Agility, Tech | The character is a veteran of many low altitude combat drops, accomplishing the death-defying feat almost by rote. | 99 |
+| Guardian | 2 | Agility 40 | Agility, Defence | Some guardsmen develop an almost fanatical sense of loyalty to their officers or squad mates, and are even willing to trade their own lives to protect others. | 100 |
+| Heroic Inspiration | 1 | Fellowship 35, Command | Leadership, Social | This character is exceptionally skilled at knowing just what to say to bring out the best in his squad mates and keep them on task in the worst of situations, though whether this is through wise words, fiery rhetoric, or mild provocation depends on the individual and the situation. | 100 |
+| Final Judgement | 3 | Fellowship 45, Air of Authority, Deadeye Shot | Ballistic Skill, Leadership | Discipline within the Imperial Guard is harsh and, often, terminal. | 100 |
+| Melta Weapon Expertise | 2 | Ballistic Skill 40, Weapon Training (Melta) | Ballistic Skill, Offence | Meltaguns are extremely powerful and dangerous weapons, but also frequently require the firer to draw dangerously close to his target to use the weapon at full effectiveness. | 101 |
+| Melta Weapon Mastery | 3 | Ballistic Skill 50, Melta Weapon Expertise | Ballistic Skill, Offence | When engaging vehicles or war engines of flesh and blood, Imperial Guardsmen look to special weapons such as the meltagun to bring down these behemoths that their lasguns cannot fell. | 101 |
+| Mental Maze | 3 | Intelligence 35, Strong Minded | Defence, Intelligence | Through a harsh mental regimen, this character has developed a system of mental defence against mental intrusion that puts not only his strength of will but also his cunning to work, trapping his foe in a disorienting cage of memory and thought. | 101 |
+| Methodical Care | 2 | Intelligence 40, Swift Suture | Intelligence, Knowledge | This character does his utmost to make sure that his comrades do not die on the operating table. | 101 |
+| Lasgun Volley | 1 | Ballistic Skill 30, Weapon Training (Las) | Ballistic Skill, General | The character has trained extensively with his trusty lasgun, including endless drills with his fellow soldiers, ensuring that their shots are perfectly timed to inflict maximum damage upon the enemy. | 101 |
+| Las Weapon Expertise | 2 | Ballistic Skill 35, Lasgun Volley | Ballistic Skill, General | Though all Guardsmen are expected to be proficient with their main weapon and for most this is the noble lasgun, some troopers exceed these baseline expectations and become incredible shots with their lasguns, turning them into the instruments of death that the Emperor most assuredly intended them to be. | 101 |
+| Las Weapon Mastery | 3 | Ballistic Skill 45, Las Weapon Expertise | Ballistic Skill, General | The character’s time spent training with las weapons is perhaps only exceeded by his time spent using them to kill the enemies of the God-Emperor in the fields of war. | 101 |
+| Lock On | 3 | Perception 40, Vigilant | Offence, Perception | This character is known for a steely, unflinching gaze and an uncanny ability to hold a target in his sights even as he calmly sidesteps attacks, casually sliding the minimum distance required to evade a fatal blow without blinking. | 101 |
+| Overkill | 3 | Perception 45, Bulging Biceps | Perception, Offence | The character has spent enough time fighting the enemies of the Imperium to know that some creatures do not die when all sense says that they should expire, and that it is better to be safe than sorry when dealing with the unknown. | 102 |
+| Persuasive Charm | 2 | Fellowship 35, Charm | Fellowship, Social | Those individuals tasked with distributing supplies amongst the regiments of the Imperial Guard are notoriously taciturn when faced with requests for additional equipment, harried as they are by countless requests from countless soldiers, many of which are simply not within their power to fulfil. | 102 |
+| Plasma Weapon Expertise | 2 | Ballistic Skill 40, Weapon Training (Plasma) | Ballistic Skill, Tech | Plasma guns are incredibly lethal weapons, but are also somewhat notorious for getting their wielders killed. | 102 |
+| Modify Payload | 1 | Tech-Use | Intelligence, Tech | In many squads, there is one soldier who is always tinkering with the sacred munitions handed down by the Departmento Munitorum, tweaking their specifications so that they are as lethal to the enemies of the Emperor as possible. | 102 |
+| Righteous Blow | 3 | Ballistic Skill 45 or Weapon Skill 45 or Willpower 45 | Offence, Willpower | The character is an instrument of divine wrath, bringing the Emperor’s judgment to the enemies of Mankind. | 103 |
+| Plasma Weapon Mastery | 3 | Ballistic Skill 50, Plasma Weapon Expertise | Ballistic Skill, Tech | This character has not only learned to minimise the risk to himself with a plasma gun, but has become exceptionally adept at directing its lethal fury while firing it on its optimal setting. | 103 |
+| Pugilist | 1 | Strength 30 | Offense, Strength | When facing down the terrible foes of the Imperium, most soldiers prefer to be standing behind the largest guns available. | 103 |
+| Push the Limit | 1 | Operate (Any One), Technical Knock | Agility, Tech | This character has devised a method for operating the controls of a vehicles that falls somewhat outside the standards of operation meticulously set forth in the doctrinal manuals of the Departmento Munitorum, to say nothing of the august tech-rites of the Enginseers responsible for maintaining the | 103 |
+| Ranged Weapon Expert † | 3 | Ballistic Skill 50, Weapon Training (Chosen Group) | Finesse, Ballistic Skill | Though capable with a variety of ranged weapons, the character has honed his training to become particularly lethal with a certain, specific kind of arm. | 103 |
+| Solid Projectile Weapon Expertise | 2 | — | — | Ballistic Skill 35, Weapon Training | 104 |
+| Solid Projectile Weapon Mastery | 3 | Ballistic Skill 45, Solid Projectile Weapon Expertise | Ballistic Skill, Finesse | Some troopers hone their skills with solid projectile weapons despite their apparently primitive construction, becoming as well-versed in their use as their most adept lasgun-wielding counterparts are with their own firearms. | 104 |
+| Stealth Sniper | 2 | Stealth +10 | Ballistic Skill, Fieldcraft | This character knows the value of staying hidden even after battle has been joined, and has learned to time his shots so that he is extremely difficult to pinpoint, even after opening fire into a group of foes. | 104 |
+| Rite of Static Overload | 2 | One or more Cybernetic limbs, Tech-Use +10 | Intelligence, Tech | Cybernetic limbs and mechadendrites are typically designed to be insulated against any loss of control over the energies within, thus protecting their users from the risks associated with powerful electric currents running through the body. | 104 |
+| Sacred Flame | 3 | Willpower 40, Cleanse and Purify | Offence, Willpower | Fire is a strong metaphor for piety to the God-Emperor of Mankind; it sears away all impurities, leaving only that which was ordained to survive. | 104 |
+| Skilled Rider | 2 | Survival +10 | Agility, Fieldcraft | The character is an accomplished rider, as home in the saddle as on his own two feet. | 104 |
+| Tireless | 2 | Toughness 40, Willpower 35 | Defence, Willpower | Through brute force of will or extreme physical resilience, this character is capable of carrying on through extreme adversity and exhaustion without losing significant efficiency. | 105 |
+| Trademark Item | 3 | Fellowship 40, Command +10 | Fellowship, Social | The character possesses a certain item for which he is well known, such as a decorative cap, a pipe, or even a particular weapon. | 105 |
+| Stirring Rhetoric | 3 | Fellowship 45, Heroic Inspiration | Fellowship, Social | This character can make a direct and personal appeal to the squad to strive on, not merely ordering them to fight but calling upon the shared bonds of camaraderie that soldiers share and truly inspiring them. | 105 |
+| Swift Suture | 1 | Medicae | Finesse, Intelligence | This character knows the deleterious effects of letting blood seep from an injury too long, even a small one, and deftly sews shut any open gashes in and around working to wrap burns, treat toxins, or set bones. | 105 |
+| Tank Hunter | 2 | Ballistic Skill 40 | Ballistic Skill, Finesse | The character has faced enemy war machines on numerous occasions, whether the corrupted battle tanks of rebels and traitors or the strange grav vehicles of the xenos. | 105 |
+| Vigilant | 1 | Perception 35 | Offence, Perception | This character has a keen eye, and can hold details in his vision without losing sight of the whole picture, even in tense situations. | 106 |
+| Wrestler | 1 | Strength 30, Athletics | Strength, General | The character is a practiced grappler, adept at wrestling his foes to the ground and keeping them there. | 106 |
+| Unstoppable Charge | 2 | Weapon Skill 40, Survival +10 | Fieldcraft, Weapon Skill | Experienced Rough Riders are true masters of mounted warfare, often able to end a battle with a single, decisive charge. | 106 |
+| Versatile Shooter | 3 | Sharpshooter, Target Selection | Ballistic Skill, Finesse | This character has honed his ability with single-shot weapons to the point that he can fire almost any precision weapon nearly as accurately as a rifle. | 106 |
+| Veteran Comrade | 3 | Character Speciality that includes a Comrade | General, Leadership | This character’s Comrade is particularly experienced or otherwise talented, and fights at a level above the average soldier in the regiment. | 106 |
+
+## Black Crusade: Tome of Excess — 21 talents  *(system: WH40K Roleplay)*
+
+*Source: Black Crusade: Tome of Excess (FFG, WH40K Roleplay), new Talents.*  
+*Harvest: ok — 21 talents from Black Crusade - Tome of Excess.md.*
+
+| Talent | Tier | Prerequisites | Aptitudes | Benefit | Page |
+|---|---|---|---|---|---|
+| Addictrix | 3 | Fellowship 50, Charm +10 | — | The Heretic is a master of seduction and manipulation, and has ways of securing power over those who succumb to his wiles. | 53 |
+| Beloved Leader | 1 | Charm, Fellowship 40 | — | Whether due to brainwashing, charisma, hypno-doctrination, or even a blessing from Slaanesh himself, this Heretic’s Minions are devoutly loyal. | 53 |
+| Horde Minion of Chaos | 3 | Fellowship 45, Infamy 50 | — | Through various means, the character has acquired a veritable Horde of servants. | 53 |
+| Lord of Chaos | 3 | Fellowship 40, Infamy 60, Air of Authority | — | Through dint of his fearsome reputation, prophesied destiny, or even a daemonic pact, the character can attract—and keep—a considerably larger retinue than his peers. | 53 |
+| Minion Improvement | 2 | Superior Minion of Chaos | — | The Heretic’s Superior Minion gains 500 xp to spend on Advancements, as detailed on page 50. | 53 |
+| Superior Minion of Chaos | 3 | Fellowship 55, Infamy 60 | — | Through various means, the character has acquired a Superior Minion. | 53 |
+| Tyrant | 2 | Any Minion of Chaos Talent, Fellowship 35 | — | The Heretic ensures Loyalty through a fearful reputation and the actions to back it up. | 53 |
+| Air of Authority | 1 | Fellowship 30 | — | The character was born to command; bystanders and opponents cannot help but take note of what he is saying. | 64 |
+| Cold Hearted | 1 | — | — | The character is devoid of sentiment and is seldom swayed by the emotions of others. | 65 |
+| Dark Oratory | 2 | Fellowship 40 | — | The character is a natural rabble-rouser with a talent for enthralling and swaying crowds to his cause. | 65 |
+| Demagogue | 3 | Air of Authority | — | The character can influence large audiences. | 65 |
+| Disturbing Voice | 1 | — | — | The character’s voice has a particularly baleful quality. | 65 |
+| Eloquent | 2 | Fellowship 30, Charm and/or Inquiry | — | The character has a flair for words and language, able to sway and bamboozle an opponent in a riot of syntax. | 65 |
+| Implied Threat | 2 | Fellowship 35 | — | The character is adroit at loading seemingly innocuous phrases with threats, dark promises, or insults. | 65 |
+| Inspire Wrath | 2 | Air of Authority | — | The character can inspire hatred in others. | 65 |
+| Mimic | 1 | — | — | The character is a gifted impersonator. | 66 |
+| Nerves of Steel | 2 | — | — | The character remains calm and impervious to intimidating behaviour. | 66 |
+| Peer | 1 | Fellowship 30 | — | The character has specialist knowledge when it comes to a certain group or organisation. | 66 |
+| Pity the Weak | 1 | Strength 35, Willpower 35 | — | The character despises those weaker than him. | 66 |
+| Polygot | 1 | Intelligence 40, Fellowship 30 | — | The character has an innate ability with unknown languages. | 66 |
+| Unremarkable | 1 | — | — | The character’s face does not stick in people’s memories, and few would consider conversation, let alone verbal sparring, with such a bland countenance. | 66 |
