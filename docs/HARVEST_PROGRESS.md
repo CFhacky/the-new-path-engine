@@ -21,7 +21,7 @@ extraction and are the court of appeal for any garbled number.
 **At a glance (2026-08-27).** Nine reference index families, ~7,400 entries:
 terms/affixes (143), D&D creatures (1498), magic items (1421), psionic powers
 (409), martial maneuvers (171), feats (1244), D&D spells (1841), GURPS spells
-(557), GURPS creatures (139), GURPS weapons (153); plus D&D 5e monsters (517, separately labeled). Each has a `--selftest` that passes. Run any
+(557), GURPS creatures (139), GURPS weapons (153); plus D&D 5e monsters (517) and 5e magic items (575), separately labeled. Each has a `--selftest` that passes. Run any
 `scripts/*_harvest.py` with no args to rebuild its index.
 
 **This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
@@ -87,7 +87,7 @@ feats do too):
 |---|---|---|
 | D&D 3.5e | 121 | ~12 books (Core DMG/PHB spells, MIC, XPH, ToB, Spell Compendium, +feat supplements from `_md\_feats`) |
 | D&D 3.0 | 16 | none (mostly superseded; A&EG queued) |
-| D&D 5e | 35 | **517 monsters** across 12 books in `dnd5e_creature_index`, stamped `system: D&D 5e` — OTHER EDITIONS ARE WELCOME if labeled by edition/system (Chad has translator tools that convert). More 5e monster/item/spell books remain. |
+| D&D 5e | 35 | **517 monsters** across 12 books in `dnd5e_creature_index`, plus **575 magic items** in `dnd5e_item_index` — both stamped `system: D&D 5e`. OTHER EDITIONS ARE WELCOME if labeled by edition/system (Chad has translator tools that convert). 5e spells remain. |
 | AD&D | 19 | none yet — valid target, harvest into a separately-labeled `system: AD&D 2e` index |
 | GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (557 spells)** + **GURPS bestiary (139 creatures across 11 books)**; rest of the shelf still open (Thaumatology/Plant spells done, more creature books; Low-Tech WEAPONS done, armor table next) |
 | Warhammer | 489 | none here (the `corpus-mass-translator` skill owns Warhammer conversion) |
