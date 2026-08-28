@@ -18,11 +18,11 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-28).** Fifteen reference index families, ~9,600 entries.
+**At a glance (2026-08-28).** Sixteen reference index families, ~9,700 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (139), GURPS gear — weapons + armor
-(186), GURPS advantages/disadvantages (467), GURPS skills (263). Separately labeled other editions:
+(186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101). Separately labeled other editions:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102). Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
@@ -51,6 +51,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/gurps_gear_index.{md,json}` | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech Melee Weapon Table + Armor Table | 186 gear (153 weapons + 33 torso-armor pieces, TL0–TL4, DR up to 9; armor rows carry full TL/DR/cost/weight/don) | `python scripts/gurps_gear_harvest.py --selftest` |
 | `reference/gurps_trait_index.{md,json}` | `scripts/gurps_trait_harvest.py` | GURPS Basic Set: Characters — Trait Lists appendix | 467 traits (276 advantages + 191 disadvantages, all with type / exotic-super / point cost / book page) | `python scripts/gurps_trait_harvest.py --selftest` |
 | `reference/gurps_skill_index.{md,json}` | `scripts/gurps_skill_harvest.py` | GURPS Basic Set: Characters — Skills in the Trait Lists appendix | 263 skills (attribute, Easy/Average/Hard/Very Hard difficulty, defaults, book page; clustered on B303–B306) | `python scripts/gurps_skill_harvest.py --selftest` |
+| `reference/gurps_technique_index.{md,json}` | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet (born-digital text layer, characters exact) | 101 combat techniques (difficulty, prerequisite, default, maximum, damage; cinematic/silly flags) | `python scripts/gurps_technique_harvest.py --selftest` |
 | `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters 1 (25), Creatures of the Night 1–5 (18), Fantasy (8), Banestorm (19), Lands Out of Time (6), DF Allies (32), DF Summoners (18), Big Lizzie (13) | 139 GURPS creatures / 11 books (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
