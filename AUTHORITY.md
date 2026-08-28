@@ -11,6 +11,8 @@ This repository is the MECHANICS and RUNTIME-CONTROL layer of The New Path campa
 5. **Resolver scripts** — deterministic arithmetic and source-checked rules.
 6. **Dated GitHub mirrors, transcripts, uploads, and archives** — evidence only.
 
+**Below all of the above — the Path Engine Codex** (`codex/`) is a read-only *presentation* of the reference indices: a single searchable page that re-displays the layer-5 mechanics with their `system` labels, book+page citations, and (where available) the book-verbatim full stat block / description. It is the least-authoritative artifact in the repo — it creates nothing. Its built output embeds source text, so it is **git-ignored and rebuilt on demand** (`python codex/build_codex.py`). See [codex/README.md](codex/README.md).
+
 ## What each layer owns
 
 | Layer | Owns | Never owns |

@@ -15,3 +15,7 @@ venv/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Path Engine Codex build output — embeds book-verbatim text, so NOT committed
+# (same law as the raw OCR: rebuild on demand with codex/build_codex.py)
+codex/build/

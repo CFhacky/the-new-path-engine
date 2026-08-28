@@ -1,0 +1,316 @@
+<title>Path Engine Codex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#eff1ed; --surface:#ffffff; --surface-2:#f7f8f5; --ink:#1a1c1b; --muted:#5c615d;
+  --faint:#888d89; --accent:#8f5c1c; --accent-2:#7a4e17; --border:#e2e5df; --border-strong:#d2d6cf;
+  --chip:#eceee9; --shadow:0 1px 2px rgba(26,28,27,.06),0 4px 14px rgba(26,28,27,.05);
+  --hl:rgba(143,92,28,.16);
+}
+:root:not([data-theme="light"]){ }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#121418; --surface:#1a1d22; --surface-2:#20242a; --ink:#e9eae6; --muted:#9aa0a0;
+    --faint:#6b7173; --accent:#d99f4f; --accent-2:#e7b675; --border:#2a2e35; --border-strong:#363b43;
+    --chip:#232830; --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.28);
+    --hl:rgba(217,159,79,.22);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121418; --surface:#1a1d22; --surface-2:#20242a; --ink:#e9eae6; --muted:#9aa0a0;
+  --faint:#6b7173; --accent:#d99f4f; --accent-2:#e7b675; --border:#2a2e35; --border-strong:#363b43;
+  --chip:#232830; --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.28);
+  --hl:rgba(217,159,79,.22);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:15px; line-height:1.5; -webkit-text-size-adjust:100%;
+}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+header{
+  position:sticky; top:0; z-index:20; background:var(--surface);
+  border-bottom:1px solid var(--border); box-shadow:var(--shadow);
+}
+.bar{max-width:900px; margin:0 auto; padding:10px 14px 12px}
+.brand{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap}
+.brand h1{
+  font-size:18px; font-weight:700; letter-spacing:-.01em; margin:0; text-wrap:balance;
+}
+.brand .sub{font-size:11.5px; color:var(--faint); font-family:"IBM Plex Mono",monospace; letter-spacing:.02em}
+.searchwrap{position:relative; margin-top:10px}
+.searchwrap svg{position:absolute; left:12px; top:50%; transform:translateY(-50%); width:17px; height:17px; color:var(--faint); pointer-events:none}
+#q{
+  width:100%; padding:12px 40px 12px 36px; font-size:16px; color:var(--ink);
+  background:var(--surface-2); border:1.5px solid var(--border-strong); border-radius:10px;
+  font-family:inherit; outline:none;
+}
+#q:focus{border-color:var(--accent); box-shadow:0 0 0 3px var(--hl)}
+#q::placeholder{color:var(--faint)}
+.clearbtn{
+  position:absolute; right:8px; top:50%; transform:translateY(-50%); border:0; background:transparent;
+  color:var(--faint); cursor:pointer; font-size:18px; line-height:1; padding:6px; border-radius:6px; display:none;
+}
+.clearbtn:hover{color:var(--ink); background:var(--chip)}
+.filters{display:flex; gap:7px; margin-top:10px; flex-wrap:wrap; align-items:center}
+.chip{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:500; letter-spacing:.02em;
+  padding:5px 9px; border-radius:999px; border:1px solid var(--border-strong); background:var(--surface);
+  color:var(--muted); cursor:pointer; white-space:nowrap; transition:none;
+}
+.chip[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .chip[aria-pressed="true"],
+:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#17140c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#17140c}}
+select#fam{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink); background:var(--surface);
+  border:1px solid var(--border-strong); border-radius:8px; padding:6px 8px; max-width:100%;
+}
+.count{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--faint); margin-left:auto; white-space:nowrap}
+main{max-width:900px; margin:0 auto; padding:14px}
+.welcome{padding:30px 6px 20px; text-align:center; color:var(--muted)}
+.welcome .big{font-size:34px; font-weight:700; color:var(--ink); font-family:"IBM Plex Mono",monospace; letter-spacing:-.02em}
+.welcome p{margin:8px auto 0; max-width:46ch; font-size:14px}
+.welcome .sysrow{display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:18px}
+.welcome .hint{max-width:54ch; margin:22px auto 0; font-size:12.5px; color:var(--faint); line-height:1.6}
+.welcome .hint b{color:var(--muted); font-weight:600}
+.results{display:flex; flex-direction:column; gap:10px}
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:11px; padding:12px 13px;
+  box-shadow:var(--shadow);
+}
+.card .top{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap}
+.card .name{font-size:16px; font-weight:600; letter-spacing:-.005em; margin:0}
+.badge{
+  font-family:"IBM Plex Mono",monospace; font-size:10px; font-weight:600; letter-spacing:.03em; text-transform:uppercase;
+  padding:2px 7px; border-radius:999px; border:1px solid currentColor; white-space:nowrap; opacity:.95;
+}
+.fam{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--faint); letter-spacing:.02em; white-space:nowrap}
+.fields{margin-top:9px; display:grid; grid-template-columns:1fr; gap:3px 14px}
+@media(min-width:520px){.fields{grid-template-columns:1fr 1fr}}
+.field{display:flex; gap:7px; font-size:13px; line-height:1.4; align-items:baseline}
+.field .k{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.03em; min-width:0; flex:0 0 auto; padding-top:1px}
+.field .v{color:var(--ink); word-break:break-word}
+.cite{
+  margin-top:10px; padding-top:8px; border-top:1px dashed var(--border-strong);
+  font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); display:flex; gap:8px; flex-wrap:wrap;
+}
+.cite b{font-weight:500; color:var(--muted)}
+mark{background:var(--hl); color:inherit; border-radius:2px; padding:0 1px}
+details.full{margin-top:10px; border-top:1px dashed var(--border-strong); padding-top:9px}
+.hasfull{font-family:"IBM Plex Mono",monospace; font-size:9.5px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-2); border:1px solid var(--accent-2); border-radius:999px; padding:2px 7px; opacity:.85; white-space:nowrap}
+details.full>summary{display:inline-block; cursor:pointer; font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; color:var(--accent-2); letter-spacing:.04em; text-transform:uppercase; list-style:none; outline:none; padding:5px 11px; border:1px solid var(--border-strong); border-radius:8px; background:var(--surface-2)}
+details.full>summary:hover{border-color:var(--accent); color:var(--accent)}
+details.full[open]>summary{border-color:var(--accent)}
+details.full>summary::-webkit-details-marker{display:none}
+details.full>summary::before{content:"\25B8  "}
+details.full[open]>summary::before{content:"\25BE  "}
+details.full>summary:focus-visible{text-decoration:underline}
+details.full pre{margin:9px 0 0; white-space:pre-wrap; word-break:break-word; font-family:"IBM Plex Mono",monospace; font-size:12px; line-height:1.55; color:var(--ink); background:var(--surface-2); border:1px solid var(--border); border-radius:8px; padding:11px 12px; max-height:440px; overflow:auto}
+.more{text-align:center; color:var(--faint); font-family:"IBM Plex Mono",monospace; font-size:12px; padding:16px 0 4px}
+.empty{text-align:center; color:var(--muted); padding:40px 10px}
+footer{max-width:900px; margin:0 auto; padding:8px 14px 30px; color:var(--faint); font-family:"IBM Plex Mono",monospace; font-size:11px; text-align:center}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header>
+  <div class="bar">
+    <div class="brand">
+      <h1>Path Engine Codex</h1>
+      <span class="sub" id="tagline">offline reference</span>
+    </div>
+    <div class="searchwrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <input id="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Search weapons, spells, creatures, stats…" aria-label="Search the codex">
+      <button class="clearbtn" id="clear" aria-label="Clear search">×</button>
+    </div>
+    <div class="filters">
+      <div id="syschips" role="group" aria-label="Filter by system" style="display:contents"></div>
+    </div>
+    <div class="filters">
+      <select id="fam" aria-label="Filter by index"></select>
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="welcome" class="welcome"></div>
+  <div id="results" class="results"></div>
+  <div id="more" class="more" hidden></div>
+</main>
+<footer>THE NEW PATH ENGINE · reference layer · book-RAW, page-cited · works offline</footer>
+
+<script id="engine-data" type="text/plain">__ENGINE_DATA_B64__</script>
+<script>
+(function(){
+"use strict";
+var CAP=250;
+var DATA=[];
+function fail(e){ var w=document.getElementById('welcome'); if(w) w.innerHTML='<p style="padding:34px 12px;color:var(--muted)">Could not load the codex data: '+((e&&e.message)||e)+'</p>'; }
+function boot(){
+  var el=document.getElementById('engine-data'); var b64=((el&&el.textContent)||'').replace(/\s+/g,'');
+  var w=document.getElementById('welcome'); if(w) w.innerHTML='<div class="big">Path Engine Codex</div><p>loading the library…</p>';
+  try{
+    var bin=Uint8Array.from(atob(b64),function(c){return c.charCodeAt(0);});
+    if(typeof DecompressionStream==='undefined'){ fail(new Error('please open in an up-to-date browser — this page needs DecompressionStream')); return; }
+    new Response(new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'))).text()
+      .then(function(txt){ DATA=JSON.parse(txt); start(); }).catch(fail);
+  }catch(e){ fail(e); }
+}
+function start(){
+
+var SYSHUE={
+ 'D&D 3.5e':'#8a8138','D&D 5e':'#b05a49','AD&D 2e':'#a07a3c','GURPS 4e':'#3f8393','GURPS 3e':'#5f8f6a',
+ 'WFRP':'#a05f77','WH40K Roleplay':'#4f74a8','WH40K':'#7d7fa6','WHFB':'#9a7a48'
+};
+function sysHue(s){return SYSHUE[s]||'#7d8683';}
+
+var FAMTOK={dnd5e:'D&D 5e',ad2e:'AD&D 2e',gurps3e:'GURPS 3e',gurps:'GURPS',wh40krp:'40K RP',wh40k:'40K',whfb:'WHFB',wfrp:'WFRP',epic:'Epic'};
+function famLabel(fam){
+  return fam.split('_').map(function(t){
+    if(FAMTOK[t])return FAMTOK[t];
+    return t.charAt(0).toUpperCase()+t.slice(1);
+  }).join(' ');
+}
+function keyLabel(k){return k.replace(/_/g,' ');}
+
+// build search index + family list
+var famCounts={}, sysCounts={};
+for(var i=0;i<DATA.length;i++){
+  var r=DATA[i];
+  var s=r.name+' '+r.fam+' '+r.sys+' '+(r.book||'');
+  var f=r.f||{}; for(var k in f){ s+=' '+f[k]; }
+  r._s=s.toLowerCase();
+  r._fl=famLabel(r.fam);
+  famCounts[r.fam]=(famCounts[r.fam]||0)+1;
+  sysCounts[r.sys]=(sysCounts[r.sys]||0)+1;
+}
+
+// ---- filters UI ----
+var activeSys=null, activeFam='all', query='';
+var syschips=document.getElementById('syschips');
+var SYSLABEL={'WH40K':'WH40K · wargame','WHFB':'WHFB · wargame','WH40K Roleplay':'WH40K · RP','WFRP':'WFRP · RP'};
+var sysList=Object.keys(sysCounts).sort();
+sysList.forEach(function(sys){
+  var b=document.createElement('button');
+  b.className='chip'; b.type='button'; b.setAttribute('aria-pressed','false'); b.setAttribute('data-sys',sys);
+  b.textContent=SYSLABEL[sys]||sys;
+  b.addEventListener('click',function(){
+    activeSys=(activeSys===sys)?null:sys;
+    [].forEach.call(syschips.children,function(c){c.setAttribute('aria-pressed', c.getAttribute('data-sys')===activeSys?'true':'false');});
+    render();
+  });
+  syschips.appendChild(b);
+});
+
+var famSel=document.getElementById('fam');
+var optAll=document.createElement('option'); optAll.value='all'; optAll.textContent='All indexes ('+DATA.length+')'; famSel.appendChild(optAll);
+Object.keys(famCounts).sort(function(a,b){return famLabel(a).localeCompare(famLabel(b));}).forEach(function(fam){
+  var o=document.createElement('option'); o.value=fam; o.textContent=famLabel(fam)+' ('+famCounts[fam]+')'; famSel.appendChild(o);
+});
+famSel.addEventListener('change',function(){activeFam=famSel.value; render();});
+
+var qEl=document.getElementById('q'), clearEl=document.getElementById('clear');
+var t=null;
+qEl.addEventListener('input',function(){
+  clearEl.style.display=qEl.value?'block':'none';
+  if(t)clearTimeout(t);
+  t=setTimeout(function(){query=qEl.value.trim().toLowerCase(); render();},110);
+});
+clearEl.addEventListener('click',function(){qEl.value='';query='';clearEl.style.display='none';qEl.focus();render();});
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function hl(s,toks){
+  s=esc(s);
+  if(!toks.length)return s;
+  try{
+    var re=new RegExp('('+toks.map(function(t){return t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}).join('|')+')','ig');
+    s=s.replace(re,'<mark>$1</mark>');
+  }catch(e){}
+  return s;
+}
+
+var resEl=document.getElementById('results'), moreEl=document.getElementById('more'),
+    countEl=document.getElementById('count'), welEl=document.getElementById('welcome');
+
+function welcome(){
+  var chips=sysList.map(function(s){return '<span class="badge" style="color:'+sysHue(s)+'">'+esc(SYSLABEL[s]||s)+' '+sysCounts[s]+'</span>';}).join(' ');
+  welEl.innerHTML='<div class="big">'+DATA.length.toLocaleString()+'</div>'+
+    '<p>mechanical entries across '+Object.keys(famCounts).length+' indexes and '+sysList.length+' game systems — book-RAW and page-cited. Start typing, or tap a system.</p>'+
+    '<div class="sysrow">'+chips+'</div>'+
+    '<p class="hint">Cards marked <span class="hasfull">full entry</span> expand to the complete book-verbatim stat block or description. The <b>· RP</b> / roleplay tabs carry that depth; the <b>· wargame</b> tabs are tabletop profile lines only (their special rules live elsewhere in the army book).</p>';
+  welEl.style.display='block'; resEl.innerHTML=''; moreEl.hidden=true; countEl.textContent='';
+}
+
+function cardHTML(r,toks,openFull){
+  var f=r.f||{}, rows='';
+  for(var k in f){
+    rows+='<div class="field"><span class="k">'+esc(keyLabel(k))+'</span><span class="v">'+hl(f[k],toks)+'</span></div>';
+  }
+  var full='';
+  if(r.full){
+    full='<details class="full"'+(openFull?' open':'')+'><summary>Full entry · book verbatim</summary><pre>'+hl(r.full,toks)+'</pre></details>';
+  }
+  var cite='';
+  if(r.book||r.page){
+    cite='<div class="cite">'+(r.book?'<span><b>'+esc(r.book)+'</b></span>':'')+(r.page?'<span>'+esc(r.page)+'</span>':'')+'</div>';
+  }
+  return '<article class="card"><div class="top">'+
+    '<h2 class="name">'+hl(r.name,toks)+'</h2>'+
+    '<span class="badge" style="color:'+sysHue(r.sys)+'">'+esc(r.sys)+'</span>'+
+    '<span class="fam">'+esc(r._fl)+'</span>'+
+    (r.full?'<span class="hasfull">full entry</span>':'')+'</div>'+
+    (rows?'<div class="fields">'+rows+'</div>':'')+full+cite+'</article>';
+}
+
+function render(){
+  var noFilter=!query && !activeSys && activeFam==='all';
+  if(noFilter){ welcome(); return; }
+  welEl.style.display='none';
+  var toks=query?query.split(/\s+/).filter(Boolean):[];
+  var matches=[];
+  for(var i=0;i<DATA.length;i++){
+    var r=DATA[i];
+    if(activeSys && r.sys!==activeSys)continue;
+    if(activeFam!=='all' && r.fam!==activeFam)continue;
+    if(toks.length){
+      var ok=true; for(var j=0;j<toks.length;j++){ if(r._s.indexOf(toks[j])<0){ok=false;break;} }
+      if(!ok)continue;
+    }
+    matches.push(r);
+  }
+  var n=matches.length;
+  if(toks.length){
+    var sc=function(r){
+      var nl=r.name.toLowerCase();
+      if(nl===query)return 0;
+      if(nl.indexOf(query)===0)return 1;
+      for(var j=0;j<toks.length;j++){ if(nl.indexOf(toks[j])<0)return 3; }
+      return 2;
+    };
+    matches.sort(function(a,b){
+      var d=sc(a)-sc(b); if(d)return d;
+      if(a.name.length!==b.name.length)return a.name.length-b.name.length;
+      return a.name<b.name?-1:(a.name>b.name?1:0);
+    });
+  }
+  countEl.textContent=n.toLocaleString()+(n===1?' result':' results');
+  if(n===0){ resEl.innerHTML='<div class="empty">No matches. Try fewer or different words.</div>'; moreEl.hidden=true; return; }
+  var openFull=n<=25;
+  var out=[]; for(var m=0;m<matches.length && m<CAP;m++) out.push(cardHTML(matches[m],toks,openFull));
+  resEl.innerHTML=out.join('');
+  if(n>CAP){ moreEl.hidden=false; moreEl.textContent='showing top '+CAP+' of '+n.toLocaleString()+' — refine to narrow'; }
+  else moreEl.hidden=true;
+  window.scrollTo(0,0);
+}
+
+welcome();
+}
+boot();
+})();
+</script>
