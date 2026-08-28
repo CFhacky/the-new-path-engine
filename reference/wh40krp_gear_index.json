@@ -2,8 +2,8 @@
  "generated_by": "scripts/wh40krp_gear_harvest.py",
  "system": "WH40K Roleplay",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_gear": 367,
- "total_soft": 0,
+ "total_gear": 587,
+ "total_soft": 40,
  "sources": [
   {
    "key": "dh-core",
@@ -4091,6 +4091,2991 @@
     }
    ],
    "soft": []
+  },
+  {
+   "key": "dh-inquisitor",
+   "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+   "system": "WH40K Roleplay",
+   "citation": "Dark Heresy: The Inquisitor's Handbook (FFG, WH40K Roleplay), Extended Armoury \u2014 gear/tools/drugs/implant tables (Feral & Feudal, Hive, Forge World, Frontier, Void, War Zone, Holy Ordos); Cost/Wt columns vary in order; excludes War Zone Protective armour and the bionic-install table",
+   "coverage": "ok \u2014 91 gear items from Dark Heresy - The Inquisitor's Handbook.md",
+   "gear": [
+    {
+     "name": "Braid Cloak",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11165,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": "80",
+     "availability": "Uncommon"
+    },
+    {
+     "name": "Caltrop",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11169,
+     "system": "WH40K Roleplay",
+     "weight": "0.1kg",
+     "cost": "6",
+     "availability": "Rare"
+    },
+    {
+     "name": "Capsican Trap",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11173,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "20",
+     "availability": "Uncommon"
+    },
+    {
+     "name": "Feral Healer\u2019s Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11177,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": "50",
+     "availability": "Average"
+    },
+    {
+     "name": "Feudal Healer\u2019s Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11181,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "100",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Glo-slug of Dusk",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11185,
+     "system": "WH40K Roleplay",
+     "weight": "0.1kg",
+     "cost": "8",
+     "availability": "Rare"
+    },
+    {
+     "name": "Hunting Musk",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11189,
+     "system": "WH40K Roleplay",
+     "weight": "0.2kg",
+     "cost": "20",
+     "availability": "Rare"
+    },
+    {
+     "name": "Kill Stick",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11193,
+     "system": "WH40K Roleplay",
+     "weight": "0.3kg",
+     "cost": "1",
+     "availability": "Common"
+    },
+    {
+     "name": "Powder Bomb",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11197,
+     "system": "WH40K Roleplay",
+     "weight": "1.5kg",
+     "cost": "17",
+     "availability": "Uncommon"
+    },
+    {
+     "name": "Skeleton Key",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11201,
+     "system": "WH40K Roleplay",
+     "weight": "0.1kg",
+     "cost": "24",
+     "availability": "Rare"
+    },
+    {
+     "name": "Skem Net",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11205,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "85",
+     "availability": "Rare"
+    },
+    {
+     "name": "Sleep Dust",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11209,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": "100",
+     "availability": "Rare"
+    },
+    {
+     "name": "Smoke Flare",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11213,
+     "system": "WH40K Roleplay",
+     "weight": "0.4kg",
+     "cost": "12",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Soul Mask",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11217,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "200",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Sour Mud",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11221,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "45",
+     "availability": "Uncommon"
+    },
+    {
+     "name": "Spark Rocks (2)",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11225,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "2",
+     "availability": "Common"
+    },
+    {
+     "name": "Spine Pick",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11229,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "25",
+     "availability": "Uncommon"
+    },
+    {
+     "name": "Stink Bomb",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11233,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "6",
+     "availability": "Common"
+    },
+    {
+     "name": "Syckle Oil",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 105,
+     "line": 11237,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": "12",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Axe-Rake",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13884,
+     "system": "WH40K Roleplay",
+     "weight": "4kg",
+     "cost": "20",
+     "availability": "Abundant"
+    },
+    {
+     "name": "Cognomen",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13888,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "Varies",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Forgery Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13892,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "400",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Heretic\u2019s Wake Deck",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13904,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "10",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Holo Wafer",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13908,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "5",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Mantle Shrine",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13912,
+     "system": "WH40K Roleplay",
+     "weight": "1-kg",
+     "cost": "30",
+     "availability": "Abundant"
+    },
+    {
+     "name": "Ocular Catechizer",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13916,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "250",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Penthrift Dreadfuls",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13920,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "1",
+     "availability": "Average"
+    },
+    {
+     "name": "Vox-Phonograph",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13933,
+     "system": "WH40K Roleplay",
+     "weight": "20kg",
+     "cost": "200",
+     "availability": "Average"
+    },
+    {
+     "name": "Ward Accessor",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13950,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Average"
+    },
+    {
+     "name": "Gorsk White Gyn",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14310,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "5",
+     "availability": "Common"
+    },
+    {
+     "name": "Sorrowful Vintage",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14315,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "250",
+     "availability": "Rare"
+    },
+    {
+     "name": "Golden Tokay",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14319,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "1,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Kataline Malmsey",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14323,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "10,000+",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Night Dust",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14331,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Panimmune",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14335,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "40",
+     "availability": "Average"
+    },
+    {
+     "name": "Somna",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14347,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "500",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Verita",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14351,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "500",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Hermetic Infusion",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 141,
+     "line": 15281,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Common"
+    },
+    {
+     "name": "Mining Helot Augmetics",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 141,
+     "line": 15287,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "2,000",
+     "availability": "Scarce"
+    },
+    {
+     "name": "The Rite of Setesh",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 141,
+     "line": 15290,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "100,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Vehicle Interface Circuits",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 141,
+     "line": 15293,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "2,000",
+     "availability": "Rare"
+    },
+    {
+     "name": "Grey Device",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16028,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "500",
+     "availability": "Rare"
+    },
+    {
+     "name": "Holo-Projector",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16032,
+     "system": "WH40K Roleplay",
+     "weight": "40kg",
+     "cost": "3,000",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Hyper-Density Penetrators",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16036,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "100ea",
+     "availability": "Rare"
+    },
+    {
+     "name": "Isotropic Fuel Rods",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16040,
+     "system": "WH40K Roleplay",
+     "weight": "10kg",
+     "cost": "5,000",
+     "availability": "Average"
+    },
+    {
+     "name": "Lathe Blade",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16044,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "2,500+",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "The Tears of the Dragon",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16066,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "6,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Calixis Survival Kit",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16596,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "120",
+     "availability": "Average"
+    },
+    {
+     "name": "Camp Warders",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16600,
+     "system": "WH40K Roleplay",
+     "weight": "4kg",
+     "cost": "310",
+     "availability": "Rare"
+    },
+    {
+     "name": "Redole Re-breather",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16604,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "250",
+     "availability": "Rare"
+    },
+    {
+     "name": "Poi-Savant",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16608,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "300",
+     "availability": "Rare"
+    },
+    {
+     "name": "Shade-Servitor",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16612,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "400",
+     "availability": "Rare"
+    },
+    {
+     "name": "Sky Eye",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16616,
+     "system": "WH40K Roleplay",
+     "weight": "4kg",
+     "cost": "1,500",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Thermal Gloves",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16619,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "220",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Dryas (per dose)",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 156,
+     "line": 16706,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "200",
+     "availability": "Rare"
+    },
+    {
+     "name": "Polygum",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 156,
+     "line": 16710,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "75",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Ration Grubs",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 156,
+     "line": 16714,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "15",
+     "availability": "Average"
+    },
+    {
+     "name": "Emergency Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17828,
+     "system": "WH40K Roleplay",
+     "weight": "6kg",
+     "cost": "300",
+     "availability": "Common"
+    },
+    {
+     "name": "Jump Pack",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17832,
+     "system": "WH40K Roleplay",
+     "weight": "25kg",
+     "cost": "2,000",
+     "availability": "Rare"
+    },
+    {
+     "name": "Magboots",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17836,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": "65",
+     "availability": "Average"
+    },
+    {
+     "name": "Melta Gel",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17840,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "200",
+     "availability": "Rare"
+    },
+    {
+     "name": "Navis Prima",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17844,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "Priceless",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Ploin Juice",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17848,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": "25",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Selenite Void Suit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17852,
+     "system": "WH40K Roleplay",
+     "weight": "20kg",
+     "cost": "600",
+     "availability": "Average"
+    },
+    {
+     "name": "The 9-70 Entrenching Tool",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19494,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": "15",
+     "availability": "Average"
+    },
+    {
+     "name": "Backpack or Field Sack",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19498,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": "5",
+     "availability": "Common"
+    },
+    {
+     "name": "Bedroll",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19502,
+     "system": "WH40K Roleplay",
+     "weight": "4kg",
+     "cost": "8",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Compass/Orienting Device",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19506,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Dog Tags",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19510,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "1",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Hostile Weather Gear",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19514,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": "10",
+     "availability": "Common"
+    },
+    {
+     "name": "The Imperial Infantryman\u2019s Uplifting Primer",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19518,
+     "system": "WH40K Roleplay",
+     "weight": "0.3kg",
+     "cost": "5",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Infantry Lamp Pack",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19522,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "10",
+     "availability": "Average"
+    },
+    {
+     "name": "Mess Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19526,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": "5",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Personal Grooming Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19530,
+     "system": "WH40K Roleplay",
+     "weight": "0.1kg",
+     "cost": "2",
+     "availability": "Common"
+    },
+    {
+     "name": "Sandbags",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19534,
+     "system": "WH40K Roleplay",
+     "weight": "5kg",
+     "cost": "4",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Tent",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19538,
+     "system": "WH40K Roleplay",
+     "weight": "9kg",
+     "cost": "40",
+     "availability": "Average"
+    },
+    {
+     "name": "Tool Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19542,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": "15",
+     "availability": "Common"
+    },
+    {
+     "name": "Uniform",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19546,
+     "system": "WH40K Roleplay",
+     "weight": "3kg",
+     "cost": "10",
+     "availability": "Common"
+    },
+    {
+     "name": "Whistle",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19558,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "5",
+     "availability": "Plentiful"
+    },
+    {
+     "name": "Cast Spray",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19766,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "55",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Counterseptic Drugs",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19770,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Common"
+    },
+    {
+     "name": "Ghostfire Extract",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19774,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "300",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Halo",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19778,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "100",
+     "availability": "Common"
+    },
+    {
+     "name": "Kick",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19782,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "75",
+     "availability": "Average"
+    },
+    {
+     "name": "Rainbow",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19786,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "75",
+     "availability": "Rare"
+    },
+    {
+     "name": "Synth-Skin",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19790,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "50",
+     "availability": "Average"
+    },
+    {
+     "name": "Toxin Wands",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 185,
+     "line": 19794,
+     "system": "WH40K Roleplay",
+     "weight": "0.2kg",
+     "cost": "100",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Null Box",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20384,
+     "system": "WH40K Roleplay",
+     "weight": "20kg",
+     "cost": "25,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Amulet",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20389,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": "7,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Implant",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20393,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "12,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Psy-Tracker",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20397,
+     "system": "WH40K Roleplay",
+     "weight": "1.5kg",
+     "cost": "1,000",
+     "availability": "Rare"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Gloom Eyes",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 128,
+     "line": 13896,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "300"
+     }
+    },
+    {
+     "name": "Slam",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 132,
+     "line": 14339,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "100"
+     }
+    },
+    {
+     "name": "Good",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 141,
+     "line": 15285,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "17,000"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 142,
+     "line": 15373,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "30"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 142,
+     "line": 15379,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "40"
+     }
+    },
+    {
+     "name": "S",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 142,
+     "line": 15382,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "10"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 144,
+     "line": 15581,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "35"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 144,
+     "line": 15587,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "35"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 145,
+     "line": 15669,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "35"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Cybernetics",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 146,
+     "line": 15756,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "15"
+     }
+    },
+    {
+     "name": "Opus Machina",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16048,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "1,500",
+      "weight": "0.5kg"
+     }
+    },
+    {
+     "name": "Greater",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16055,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "12,000",
+      "weight": "0.5kg"
+     }
+    },
+    {
+     "name": "Tempest Bolt Shells",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 149,
+     "line": 16062,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "250ea",
+      "availability": "Very Rare"
+     }
+    },
+    {
+     "name": "Extra Armour",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 155,
+     "line": 16592,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "80",
+      "weight": "+8kg",
+      "availability": "Rare"
+     }
+    },
+    {
+     "name": "Blazer Shotgun Shells",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17820,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "4",
+      "availability": "Common"
+     }
+    },
+    {
+     "name": "Boarding Armour",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17824,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "1,225",
+      "weight": "17kg",
+      "availability": "Rare"
+     }
+    },
+    {
+     "name": "Void Rounds",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 166,
+     "line": 17860,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "8",
+      "availability": "Scarce"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 168,
+     "line": 17995,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "24"
+     }
+    },
+    {
+     "name": "Weapon/Gear Storage",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19550,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "5",
+      "weight": "1kg",
+      "availability": "Common"
+     }
+    },
+    {
+     "name": "Weapon Maintenance Kit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 183,
+     "line": 19554,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "20",
+      "weight": "1kg",
+      "availability": "Average"
+     }
+    },
+    {
+     "name": "Blessed Ammunition",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20380,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "50ea",
+      "availability": "Very Rare"
+     }
+    },
+    {
+     "name": "Psycannon Bolts",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20401,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "250ea",
+      "availability": "Very Rare"
+     }
+    },
+    {
+     "name": "Sanctified Weapon",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 192,
+     "line": 20405,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "+500",
+      "availability": "Very Rare"
+     }
+    },
+    {
+     "name": "Fel",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Inquisitor's Handbook",
+     "page": 193,
+     "line": 20488,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "10"
+     }
+    }
+   ]
+  },
+  {
+   "key": "dh-radicals",
+   "book": "Dark Heresy \u2014 The Radical's Handbook",
+   "system": "WH40K Roleplay",
+   "citation": "Dark Heresy: The Radical's Handbook (FFG, WH40K Roleplay), Armoury \u2014 Gear, Drugs, Dark Tech Gear & Tools, Xenos Tools",
+   "coverage": "ok \u2014 18 gear items from Dark Heresy - The Radical's Handbook.md",
+   "gear": [
+    {
+     "name": "Privacy Field",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12778,
+     "system": "WH40K Roleplay",
+     "weight": "10 kg",
+     "cost": "1250",
+     "availability": "Rare"
+    },
+    {
+     "name": "Line Ascender",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12782,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": "100",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Spider Pads",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12786,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": "150",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Gil Filter",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12790,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": "100",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Holo Visor",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12794,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": "250",
+     "availability": "Rare"
+    },
+    {
+     "name": "Intrusion Spirit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12802,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": "500",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Tracking Device",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12806,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": "200",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Serum",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 161,
+     "line": 12983,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "100",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Lho",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 161,
+     "line": 12986,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "5",
+     "availability": "Scarce"
+    },
+    {
+     "name": "Phetamote",
+     "category": "Drugs & Consumables",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 161,
+     "line": 12989,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "300",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Immateria Ward",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 194,
+     "line": 15832,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": "17,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Bioforging",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 194,
+     "line": 15836,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "20,000+",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Cogitator",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 194,
+     "line": 15846,
+     "system": "WH40K Roleplay",
+     "weight": "1.5 kg",
+     "cost": "9,000",
+     "availability": "Rare"
+    },
+    {
+     "name": "Prognosticaon",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 194,
+     "line": 15855,
+     "system": "WH40K Roleplay",
+     "weight": "3 kg",
+     "cost": "5,000",
+     "availability": "Rare"
+    },
+    {
+     "name": "Ammicus Tole",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 194,
+     "line": 15861,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": "8,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Umbrae",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 194,
+     "line": 15866,
+     "system": "WH40K Roleplay",
+     "weight": "10 kg",
+     "cost": "60,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Ork Pulsa-Mine",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 204,
+     "line": 16692,
+     "system": "WH40K Roleplay",
+     "weight": "20 kg",
+     "cost": "2,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Transgenic Grafting",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 204,
+     "line": 16700,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "20,000",
+     "availability": "Very Rare"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Vox Tracker",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 159,
+     "line": 12798,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "6 kg",
+      "cost": "450"
+     }
+    },
+    {
+     "name": "Int Per WP Fel (4)",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 196,
+     "line": 15989,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "25"
+     }
+    },
+    {
+     "name": "Int Per WP Fel",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 197,
+     "line": 16120,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "55"
+     }
+    },
+    {
+     "name": "Q\u2019Orl Mind Grub",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 204,
+     "line": 16696,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "1 kg"
+     }
+    },
+    {
+     "name": "Int Per WP Fel",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 207,
+     "line": 16822,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "15"
+     }
+    },
+    {
+     "name": "Influences",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 212,
+     "line": 17275,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "1"
+     }
+    },
+    {
+     "name": "Index",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 238,
+     "line": 18929,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "237"
+     }
+    },
+    {
+     "name": "Hettesh Kane\b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd 233",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 238,
+     "line": 19006,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "Histories of Infamy: Radical Background Packages\b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd  35"
+     }
+    },
+    {
+     "name": "Index",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 239,
+     "line": 19046,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "cost": "238"
+     }
+    },
+    {
+     "name": "Untouchable\b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd 38",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 The Radical's Handbook",
+     "page": 239,
+     "line": 19135,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "Using Background Packages\b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd  35"
+     }
+    }
+   ]
+  },
+  {
+   "key": "dh-ascension",
+   "book": "Dark Heresy \u2014 Ascension",
+   "system": "WH40K Roleplay",
+   "citation": "Dark Heresy: Ascension (FFG, WH40K Roleplay), Armoury \u2014 Gear (acquired by Availability)",
+   "coverage": "ok \u2014 8 gear items from Dark Heresy - Ascension.md",
+   "gear": [
+    {
+     "name": "Badge of Office",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16347,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Backpack Ammo / Power Pack",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16350,
+     "system": "WH40K Roleplay",
+     "weight": "15 kg",
+     "cost": null,
+     "availability": "Common"
+    },
+    {
+     "name": "Cerebral Plug",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16352,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Common"
+    },
+    {
+     "name": "Grav-chute",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16355,
+     "system": "WH40K Roleplay",
+     "weight": "20 kg",
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Sentinel Array",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16358,
+     "system": "WH40K Roleplay",
+     "weight": "12 kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Spoor Targeter",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16361,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Vindicare Spy Mask",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16364,
+     "system": "WH40K Roleplay",
+     "weight": "2 kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Vindicare Stealth Suit",
+     "category": "General Equipment",
+     "book": "Dark Heresy \u2014 Ascension",
+     "page": 146,
+     "line": 16367,
+     "system": "WH40K Roleplay",
+     "weight": "5 kg",
+     "cost": null,
+     "availability": "Near Unique"
+    }
+   ],
+   "soft": []
+  },
+  {
+   "key": "dh-blood",
+   "book": "Dark Heresy \u2014 Blood of Martyrs",
+   "system": "WH40K Roleplay",
+   "citation": "Dark Heresy: Blood of Martyrs (FFG, WH40K Roleplay), Armoury \u2014 Ecclesiarchal Tools (Name|Cost|Wt; 'Issued Only' availability)",
+   "coverage": "ok \u2014 17 gear items from Dark Heresy - Blood of Martyrs.md",
+   "gear": [
+    {
+     "name": "Chaplet Ecclesiasticus",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12944,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": "1,000",
+     "availability": "Issued Only"
+    },
+    {
+     "name": "Cilice",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12948,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "Var",
+     "availability": "Rare"
+    },
+    {
+     "name": "Dialogous Staff",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12952,
+     "system": "WH40K Roleplay",
+     "weight": "4 kg",
+     "cost": null,
+     "availability": "Issued Only"
+    },
+    {
+     "name": "Eikon",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12956,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "Var",
+     "availability": "Common"
+    },
+    {
+     "name": "Hospitaller Medicae Tools",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12960,
+     "system": "WH40K Roleplay",
+     "weight": "10 kg",
+     "cost": null,
+     "availability": "Issued Only"
+    },
+    {
+     "name": "Liber Heresius",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12964,
+     "system": "WH40K Roleplay",
+     "weight": "10 kg",
+     "cost": null,
+     "availability": "Issued Only"
+    },
+    {
+     "name": "Litanies of Faith",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12968,
+     "system": "WH40K Roleplay",
+     "weight": "10 kg",
+     "cost": "500",
+     "availability": "Uncommon"
+    },
+    {
+     "name": "Pilgrim\u2019s Travel Staff",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12972,
+     "system": "WH40K Roleplay",
+     "weight": "3 kg",
+     "cost": "15",
+     "availability": "Common"
+    },
+    {
+     "name": "Psyocculum",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12976,
+     "system": "WH40K Roleplay",
+     "weight": "2 kg",
+     "cost": "3,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Reliquary",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12980,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": "Var",
+     "availability": "Common"
+    },
+    {
+     "name": "Questing Pilgrim Badge",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12984,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "Var",
+     "availability": "Common"
+    },
+    {
+     "name": "Sarissa",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12988,
+     "system": "WH40K Roleplay",
+     "weight": "+2 kg",
+     "cost": "50",
+     "availability": "Rare"
+    },
+    {
+     "name": "Seraphim Jump Pack",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12992,
+     "system": "WH40K Roleplay",
+     "weight": "15 kg",
+     "cost": "5,000",
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Ring of Suffrage",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 12996,
+     "system": "WH40K Roleplay",
+     "weight": "0 kg",
+     "cost": "10",
+     "availability": "Rare"
+    },
+    {
+     "name": "Rule of Sororitas",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 13000,
+     "system": "WH40K Roleplay",
+     "weight": "5 kg",
+     "cost": "100",
+     "availability": "Rare"
+    },
+    {
+     "name": "Simulacrum Imperialis",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 13008,
+     "system": "WH40K Roleplay",
+     "weight": "10 kg",
+     "cost": null,
+     "availability": "Issued Only"
+    },
+    {
+     "name": "Witch Cage",
+     "category": "Tools",
+     "book": "Dark Heresy \u2014 Blood of Martyrs",
+     "page": 121,
+     "line": 13012,
+     "system": "WH40K Roleplay",
+     "weight": "15 kg",
+     "cost": "4,000",
+     "availability": "Very Rare"
+    }
+   ],
+   "soft": []
+  },
+  {
+   "key": "rt-hostile",
+   "book": "Rogue Trader \u2014 Hostile Acquisitions",
+   "system": "WH40K Roleplay",
+   "citation": "Rogue Trader: Hostile Acquisitions (FFG, WH40K Roleplay), Armoury \u2014 Gear & Tools, Drugs/Poisons/Consumables, Cybernetics & Implants (acquired by Availability)",
+   "coverage": "ok \u2014 24 gear items from Rogue Trader - Hostile Acquisitions.md",
+   "gear": [
+    {
+     "name": "Aetherscrye Goggles",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12079,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Beast Cage (Average)",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12082,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Common"
+    },
+    {
+     "name": "Beast Cage (Hulking)",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12085,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Beast Cage (Enormous)",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12088,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Beast Cage (Massive)",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12091,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Eldar Grav-platform",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12094,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Unique"
+    },
+    {
+     "name": "Elseways Charts",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12097,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Occlusive Vault",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12100,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Prognosticator",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12103,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Voidbait (Augur)",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12106,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Voidbait (Warp)",
+     "category": "Tools",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 66,
+     "line": 12109,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Barrage",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12470,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Burnscour Rain",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12473,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Geist",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12476,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Glimmer",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12479,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Haze",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12482,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Silver Anathema",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12485,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Spinebark Sap",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12488,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Tox-Mister",
+     "category": "Drugs & Consumables",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 68,
+     "line": 12491,
+     "system": "WH40K Roleplay",
+     "weight": "0.1",
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "\u00c6theric Wave-spars",
+     "category": "Cybernetics",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 69,
+     "line": 12632,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Thief \u2019s Light",
+     "category": "Cybernetics",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 69,
+     "line": 12634,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Servo-limb",
+     "category": "Cybernetics",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 69,
+     "line": 12636,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Interkeratic Implants",
+     "category": "Cybernetics",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 69,
+     "line": 12640,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Twitch-mask",
+     "category": "Cybernetics",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 69,
+     "line": 12642,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Weapon Bracing",
+     "category": "Cybernetics",
+     "book": "Rogue Trader \u2014 Hostile Acquisitions",
+     "page": 69,
+     "line": 12638,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "availability": "Rare"
+     }
+    }
+   ]
+  },
+  {
+   "key": "dw-founding",
+   "book": "Deathwatch \u2014 First Founding",
+   "system": "WH40K Roleplay",
+   "citation": "Deathwatch: First Founding (FFG, WH40K Roleplay), Armoury \u2014 Wargear (Requisition stored in cost, Renown in availability)",
+   "coverage": "ok \u2014 19 gear items from Deathwatch - First Founding.md",
+   "gear": [
+    {
+     "name": "Artifcer Bionics",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11705,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "40",
+     "availability": "Famed"
+    },
+    {
+     "name": "Astartes Omni-Tool",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11708,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": null
+    },
+    {
+     "name": "Blood Chalice",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11711,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Famed"
+    },
+    {
+     "name": "Blood of Heroes",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11714,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "15",
+     "availability": null
+    },
+    {
+     "name": "Death Mask",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11717,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "20",
+     "availability": "Respected"
+    },
+    {
+     "name": "Digital Housing",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11720,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "35",
+     "availability": "Famed"
+    },
+    {
+     "name": "Exsanguinator",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11723,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "15",
+     "availability": null
+    },
+    {
+     "name": "First Company Relic",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11726,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Distinguished"
+    },
+    {
+     "name": "The Glorious Standard",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11729,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "40",
+     "availability": "Hero"
+    },
+    {
+     "name": "The Heart of Iron",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11731,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "30",
+     "availability": "Famed"
+    },
+    {
+     "name": "Pain Glove",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11734,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "15",
+     "availability": "Respected"
+    },
+    {
+     "name": "Promethean\u2019s Blessing",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11737,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "10",
+     "availability": null
+    },
+    {
+     "name": "Recoil Baffing",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11739,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "10",
+     "availability": null
+    },
+    {
+     "name": "The Magnir Runes",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11742,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Distinguished"
+    },
+    {
+     "name": "Standard of Fortitude",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11745,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "40",
+     "availability": "Famed"
+    },
+    {
+     "name": "Suppression Stabiliser",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11748,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "10",
+     "availability": null
+    },
+    {
+     "name": "Totem of Subetai",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11751,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "15",
+     "availability": null
+    },
+    {
+     "name": "Winged Jump Pack",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11757,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "25",
+     "availability": "Distinguished"
+    },
+    {
+     "name": "Wings of the Raven",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11760,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": "35",
+     "availability": "Famed"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Weapon Charm",
+     "category": "Wargear",
+     "book": "Deathwatch \u2014 First Founding",
+     "page": 102,
+     "line": 11754,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "cost": "20",
+      "availability": "Distinguished"
+     }
+    }
+   ]
+  },
+  {
+   "key": "ow-hammer",
+   "book": "Only War \u2014 Hammer of the Emperor",
+   "system": "WH40K Roleplay",
+   "citation": "Only War: Hammer of the Emperor (FFG, WH40K Roleplay), Armoury \u2014 Clothing & Worn Gear, Tools, Cybernetics; excludes the equipment-pattern craftsmanship tables",
+   "coverage": "ok \u2014 9 gear items from Only War - Hammer of The Emperor.md",
+   "gear": [
+    {
+     "name": "Bolt Casing",
+     "category": "Clothing & Worn Gear",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 125,
+     "line": 10910,
+     "system": "WH40K Roleplay",
+     "weight": "0.1 kg",
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Explosive Collar",
+     "category": "Clothing & Worn Gear",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 125,
+     "line": 10913,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Psychic Hood",
+     "category": "Clothing & Worn Gear",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 125,
+     "line": 10916,
+     "system": "WH40K Roleplay",
+     "weight": "2 kg",
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Vid-Relay",
+     "category": "Clothing & Worn Gear",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 125,
+     "line": 10919,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": null,
+     "availability": "Average"
+    },
+    {
+     "name": "Drop Canister",
+     "category": "Tools",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 126,
+     "line": 11004,
+     "system": "WH40K Roleplay",
+     "weight": "25 kg",
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Narthecium",
+     "category": "Tools",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 126,
+     "line": 11007,
+     "system": "WH40K Roleplay",
+     "weight": "3 kg",
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Snare Mines",
+     "category": "Tools",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 126,
+     "line": 11010,
+     "system": "WH40K Roleplay",
+     "weight": "1 kg",
+     "cost": null,
+     "availability": "Average"
+    },
+    {
+     "name": "Ocular Sight",
+     "category": "Cybernetics",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 127,
+     "line": 11124,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Servo-Arm",
+     "category": "Cybernetics",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 127,
+     "line": 11126,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Inbuilt Blade",
+     "category": "Cybernetics",
+     "book": "Only War \u2014 Hammer of the Emperor",
+     "page": 127,
+     "line": 11120,
+     "reason": "rejected (weapon/armour/ammo/variant bleed)",
+     "partial": {
+      "availability": "Scarce"
+     }
+    }
+   ]
+  },
+  {
+   "key": "bc-blood",
+   "book": "Black Crusade \u2014 Tome of Blood",
+   "system": "WH40K Roleplay",
+   "citation": "Black Crusade: Tome of Blood (FFG, WH40K Roleplay), Armoury \u2014 Wargear & Equipment (Khornate wargear)",
+   "coverage": "ok \u2014 8 gear items from Black Crusade - Tome of Blood.md",
+   "gear": [
+    {
+     "name": "Bloodskull Pendant",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4411,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Collar of Khorne",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4414,
+     "system": "WH40K Roleplay",
+     "weight": "1kg",
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Horn of Chaos",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4417,
+     "system": "WH40K Roleplay",
+     "weight": "4kg",
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Icon of Endless War",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4420,
+     "system": "WH40K Roleplay",
+     "weight": "8kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Skull Mask of Ang\u2019grath",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4423,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Skull Totem",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4426,
+     "system": "WH40K Roleplay",
+     "weight": "5kg",
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Talisman of Burning Blood",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4429,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Venic Noose",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 46,
+     "line": 4432,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": null,
+     "availability": "Rare"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Brass Harbinger (Elite)",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Blood",
+     "page": 47,
+     "line": 4522,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "6"
+     }
+    }
+   ]
+  },
+  {
+   "key": "bc-excess",
+   "book": "Black Crusade \u2014 Tome of Excess",
+   "system": "WH40K Roleplay",
+   "citation": "Black Crusade: Tome of Excess (FFG, WH40K Roleplay), Armoury \u2014 Wargear & Equipment, Drugs & Consumables (Slaaneshi wargear)",
+   "coverage": "ok \u2014 18 gear items from Black Crusade - Tome of Excess.md",
+   "gear": [
+    {
+     "name": "Beguiling Gem",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3825,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Blasphemous Texts",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3828,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Icon of Silence",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3831,
+     "system": "WH40K Roleplay",
+     "weight": "6kg",
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Nightmare Choir",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3834,
+     "system": "WH40K Roleplay",
+     "weight": "12kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Pendant of Slaanesh",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3837,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Rapturous Standard",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3840,
+     "system": "WH40K Roleplay",
+     "weight": "4kg",
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Ritual Kit",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3843,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": null,
+     "availability": "Scarce"
+    },
+    {
+     "name": "Shrieking Soul",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 41,
+     "line": 3846,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Barkweed Juice",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3948,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Barrage",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3951,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Cursewine",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3954,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Final Kiss",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3957,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Glimmerdust",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3960,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Manic",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3963,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Average"
+    },
+    {
+     "name": "Satrophine",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3966,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Spook",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3969,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Sweetmeats",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3972,
+     "system": "WH40K Roleplay",
+     "weight": "0.5 kg",
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Sweep",
+     "category": "Drugs & Consumables",
+     "book": "Black Crusade \u2014 Tome of Excess",
+     "page": 42,
+     "line": 3975,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Average"
+    }
+   ],
+   "soft": []
+  },
+  {
+   "key": "bc-fate",
+   "book": "Black Crusade \u2014 Tome of Fate",
+   "system": "WH40K Roleplay",
+   "citation": "Black Crusade: Tome of Fate (FFG, WH40K Roleplay), Armoury \u2014 Wargear & Equipment (Tzeentchian wargear)",
+   "coverage": "ok \u2014 8 gear items from Black Crusade - Tome of Fate.md",
+   "gear": [
+    {
+     "name": "Castirian Soul Cage",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3643,
+     "system": "WH40K Roleplay",
+     "weight": "55kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Crown of Prospero",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3646,
+     "system": "WH40K Roleplay",
+     "weight": "2kg",
+     "cost": null,
+     "availability": "Near Unique"
+    },
+    {
+     "name": "Glimmerstone",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3649,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Golden Eye of Tzeentch",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3652,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    },
+    {
+     "name": "Q\u2019Sal Crystal Spire",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3655,
+     "system": "WH40K Roleplay",
+     "weight": "18kg",
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Talisman of Tzeentch",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3658,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Very Rare"
+    },
+    {
+     "name": "Tarnor Mimic-Mask",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3661,
+     "system": "WH40K Roleplay",
+     "weight": "0.5kg",
+     "cost": null,
+     "availability": "Rare"
+    },
+    {
+     "name": "Vortex Pendant",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 42,
+     "line": 3664,
+     "system": "WH40K Roleplay",
+     "weight": null,
+     "cost": null,
+     "availability": "Extremely Rare"
+    }
+   ],
+   "soft": [
+    {
+     "name": "Glimmerwing",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 44,
+     "line": 3791,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "8"
+     }
+    },
+    {
+     "name": "Rubric Marine (Elite)",
+     "category": "Wargear",
+     "book": "Black Crusade \u2014 Tome of Fate",
+     "page": 44,
+     "line": 3844,
+     "reason": "no availability cell parsed (OCR)",
+     "partial": {
+      "weight": "10"
+     }
+    }
+   ]
   }
  ]
 }
