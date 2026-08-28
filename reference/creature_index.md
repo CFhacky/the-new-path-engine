@@ -7,13 +7,10 @@ extractions. The raw text stays on `I:\Sourcebooks` — use
 emit the translator-ready packet for any row, then hand that packet
 to the system-translator skill for the paired 3.5e + GURPS build.
 
-## Draconomicon — 86 stat blocks
+## Draconomicon — 38 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
-| An Old Brass Dragon’S Animated Breath Has The Following | Large | Construct | — | — | — | — | 78 |
-| An Old Red Dragon’S Animated Breath Has The Following | Huge | Construct | — | — | — | — | 78 |
-| A Colossal+ Dragon Has A Space Of 30 Feet, Like Any Other | Colossal | Dragon | — | — | — | — | 101 |
 | Abyssal Drake | Huge | Outsider | 10d8+50 | 95 | 21 | 9 | 146 |
 | Ancient Blue Dracolich | Gargantuan | Undead | 33d12 | 214 | 40 | 23 | 148 |
 | Draconic Fire Giant | Large | Giant | 15d8+90 | 157 | 24 | 11 | 150 |
@@ -23,7 +20,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Earth Drake | Large | Dragon | 12d12+48 | 129 | 21 | 11 | 154 |
 | Fire Drake | Large | Dragon | 14d12+28 | 122 | 20 | 10 | 155 |
 | Ice Drake | Large | Dragon | — | — | — | — | 155 |
-| Water) | — | — | 8d12+32 | 86 | 19 | 7 | 155 |
 | Magma Drake | Large | Dragon | 16d12+64 | 172 | 23 | 13 | 156 |
 | Ooze Drake | Large | Dragon | 12d12+60 | 141 | 21 | 12 | 157 |
 | Smoke Drake | Large | Dragon | 12d12+36 | 117 | 19 | 9 | 158 |
@@ -45,60 +41,16 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Tundra Landwyrm | Huge | Dragon | 24d12+144 | 300 | 26 | 14 | 175 |
 | Underdark Landwyrm | Large | Dragon | 12d12+48 | 126 | 22 | 8 | 176 |
 | Skeletal Mature Adult Black Dragon | Huge | Undead | 22d12+22 | 165 | 12 | 7 | 193 |
-| Not Recalculate The Creature’S Base Attack Bonus, Saves, Or | — | — | — | — | — | — | 194 |
 | Squamous Spewer | Large | Aberration | 8d8+24 | 60 | 22 | 7 | 194 |
 | Storm Drake | Gargantuan | Dragon | 30d12+210 | 405 | 31 | 17 | 195 |
 | Dragon | Huge | Undead | 25d12+100 | 262 | 37 | 20 | 196 |
 | Zombie Young Adult White Dragon | Large | Undead | 15d12+33 | 130 | 15 | 5 | 199 |
-| Water, Brooding While He Consumes Fish, Crocodiles, And | Medium | Dragon | — | — | — | — | 203 |
 | Dragons | Large | Dragon | — | — | — | — | 203 |
 | Escapes Through Water-Filled Passages The City Authorities | Huge | Dragon | — | — | — | — | 206 |
-| The Loose-Knit Cult Called The Disciples Of Ashardalon (See | Gargantuan | Dragon | — | — | — | — | 208 |
-| Notism Spell Other Creatures Tend To Find Her Either | Large | Dragon | — | — | — | — | 211 |
-| Among His Favorite Spells, But He Casts Every Spell In A | Huge | Dragon | — | — | — | — | 213 |
 | Her Scholarly Pretension, However, Nothing Survives For | Huge | Dragon | — | — | — | — | 214 |
-| With The Concept Of His Own Inevitable Demise, After Having | Gargantuan | Dragon | — | — | — | — | 214 |
-| Only Lilanab And The Clerics Know Their Overlord Is The | Gargantuan | Dragon | — | — | — | — | 216 |
-| Ing Lava Around And Observing Its Effects On Various Other | Large | Dragon | — | — | — | — | 218 |
-| Relentless, Deadly, And Absolutely Silent, For His Hatred Of | Huge | Dragon | — | — | — | — | 228 |
-| Better) To Entertain Him Further By Playing One Of His Many | Huge | Dragon | — | — | — | — | 229 |
-| Pervert Magic To The Service Of Evil—Particularly Necro- | Gargantuan | Dragon | — | — | — | — | 232 |
-| But Shouting Some Humorous Song About The Encounter As | Small | Dragon | — | — | — | — | 234 |
-| Town From A Neighboring Tribe Of Goblins Who Still Occasion- | Medium | Dragon | — | — | — | — | 235 |
-| Patience For That Affectation In An Extended Conversation | Large | Dragon | — | — | — | — | 236 |
-| Has Removed Great Evil From The World And Helped Many | Huge | Dragon | — | — | — | — | 238 |
-| Tutalephion Some Difficulty, And He Is Growing Tired Of The | Gargantuan | Dragon | — | — | — | — | 239 |
-| He Kneels On The Floor While Talking, And Offers No Better | Large | Dragon | — | — | — | — | 241 |
-| In Isolated Wilderness Regions, Away From The Intrigue And | Huge | Dragon | — | — | — | — | 243 |
-| Handed Swat With Her Tail For Nonlethal Damage, Accompa- | Colossal | Dragon | — | — | — | — | 247 |
-| Of Books In Particular, Is Great Enough To Deserve Such A | Colossal | Dragon | — | — | — | — | 248 |
-| That The Worgs’ Goblin Allies Might Raid His Hoard While He | Medium | Dragon | — | — | — | — | 250 |
-| Magic Items That Might Give Her An Advantage, And She Does | Medium | Dragon | — | — | — | — | 250 |
-| Perfectly, Serving As A Daily Reminder Of Just How Terrible | Large | Dragon | — | — | — | — | 251 |
-| Bored And He Decides To Eat The Creatures With Whom He | Huge | Dragon | — | — | — | — | 252 |
-| Inevitable Demise, And So On And On—Often Enough, This | Gargantuan | Dragon | — | — | — | — | 253 |
-| Mous Satisfaction From Using Her Foes’ Minds Against Them | Gargantuan | Dragon | — | — | — | — | 253 |
-| Not Flee A Battle, However, Since He Accepts The Fate He | Gargantuan | Dragon | — | — | — | — | 255 |
-| Cave For The First Week Or Two (Until Search Attempts Are | Huge | Dragon | — | — | — | — | 257 |
-| Fleeing The Scene, Perhaps To Return Weeks Or Months Later | Huge | Dragon | — | — | — | — | 257 |
-| Opponents While Using His Quickened Breath Weapon To Deal | Huge | Dragon | — | — | — | — | 259 |
-| Opponents To Bleed Off Their Resources While Drawing Them | Gargantuan | Dragon | — | — | — | — | 261 |
-| Other’S Existence, And In Fact, Some Have Even Come In Con- | Gargantuan | Dragon | — | — | — | — | 261 |
-| Hoard Exceeds That Held In The Vaults Of Many Small King- | Colossal | Dragon | — | — | — | — | 262 |
-| She Often Presses The Person To Keep Her Draconic Origin A | Medium | Dragon | — | — | — | — | 263 |
-| Lived Creatures Are In, However, And Can Be Left Behind When | Large | Dragon | — | — | — | — | 264 |
-| Finds Herself Speaking On Behalf Of Older Or More Powerful | Huge | Dragon | — | — | — | — | 266 |
-| Sistent Enough, He Or She Can Find Aesthyrondalaurai, But | Huge | Dragon | — | — | — | — | 268 |
-| Uses His Powerful Breath Weapon When He Can, Countering | Huge | Dragon | — | — | — | — | 268 |
 | Compunctions About Revealing Her Draconic Nature And | Gargantuan | Dragon | — | — | — | — | 269 |
-| Never Takes Humanoid Form Anymore, Preferring To Battle | Gargantuan | Dragon | — | — | — | — | 269 |
-| Prefers Victims To Opponents And A Quick Meal To A Chal- | Medium | Dragon | — | — | — | — | 272 |
-| Backed By Such Powerful “Allies,” Has Defeated Opponents Of | Large | Dragon | — | — | — | — | 272 |
-| His Magic, Preferring To Avoid Direct Physical Confronta- | Huge | Dragon | — | — | — | — | 274 |
-| Rumors Of Artifacts In The Hands Of Those Unable To Defend | Huge | Dragon | — | — | — | — | 275 |
-| About Happenings Beyond Her Realm, And Laximyrkcion Has | Gargantuan | Dragon | — | — | — | — | 277 |
 
-## Epic_Level_Handbook — 46 stat blocks
+## Epic_Level_Handbook — 42 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -106,7 +58,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Naxim | — | — | 38d10 | 380 | — | 3 | 158 |
 | Hichimec | Large | Outsider | — | — | — | 21 | 160 |
 | Weapons | Huge | Outsider | — | — | — | — | 162 |
-| Lawful) | — | — | 40d8+360 | 680 | — | 26 | 164 |
 | Phane | Large | Outsider | — | — | — | 25 | 166 |
 | Weapons | Colossal | Outsider | — | — | — | — | 167 |
 | Brachyurus | Large | Magical Beast | — | — | — | — | 170 |
@@ -134,13 +85,10 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | To Defer The Use | Large | Outsider | — | — | — | — | 204 |
 | (See The Section On Level | Colossal | Plant | 35d84315 | 472 | — | 21 | 205 |
 | Aberration (Incorporeal) | — | — | 32d8+192 | 336 | — | — | 206 |
-| Feat, Even Though It Has No Strength S | — | — | — | — | — | 23 | 208 |
 | As The Base Creature | Huge | Magical Beast | — | — | — | — | 210 |
 | Shadow Of The Void | Large | Undead | — | — | — | — | 214 |
-| Cold) | — | — | — | — | — | — | 214 |
 | Fire, An | Large | Magical Beast | 40d10+680 | 900 | — | — | 216 |
 | Sirrush | Large | Magical Beast | — | — | — | — | 216 |
-| Has Just Been Summoned Cannot Use Its Own Summon | Large | Outsider | — | — | — | 24 | 217 |
 | Lal | Gargantuan | Magical Beast | — | — | — | 24 | 220 |
 | Needs To Survive | Colossal | Outsider | 70d8+700 | 1015 | — | 30 | 221 |
 | + Spell Level | — | — | 57d10 | 313 | — | 32 | 223 |
@@ -149,33 +97,23 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | That Walks Сомвлт | Colossal | Vermin | — | — | — | 26 | 228 |
 | Is Career As | — | — | — | — | — | — | 308 |
 
-## FC1 — 21 stat blocks
+## FC1 — 11 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
 | Armanite | — | — | — | — | — | — | 28 |
-| Tanar’Ri) | — | — | — | — | — | — | 29 |
 | Broodswarm | — | — | — | — | — | — | 31 |
 | Bulezau | — | — | — | — | — | — | 33 |
 | Chasme | — | — | — | — | — | — | 34 |
-| Incorporeal, Loumara) | — | — | — | — | — | — | 36 |
 | Ekolid | — | — | — | — | — | — | 38 |
 | Goristro | — | — | — | — | — | — | 40 |
-| Incorporeal, Loumara) | — | — | — | — | — | — | 41 |
-| Tanar’Ri) | — | — | — | — | — | — | 43 |
 | Mane | — | — | — | — | — | — | 45 |
 | Molydeus | — | — | — | — | — | — | 46 |
-| Tanar’Ri) | — | — | — | — | — | — | 48 |
-| Tanar’Ri) | — | — | — | — | — | — | 49 |
-| Tanar’Ri) | — | — | — | — | — | — | 51 |
 | Sibriex | — | — | — | — | — | — | 52 |
-| Shapechanger) | — | — | — | — | — | — | 54 |
-| Obyrith) | — | — | — | — | — | — | 59 |
 | Demogorgon, Prince Of Demons | — | — | — | — | — | — | 61 |
 | Kostchtchie, Prince Of Wrath | — | — | — | — | — | — | 68 |
-| Obyrith) | — | — | — | — | — | — | 74 |
 
-## FC2 — 43 stat blocks
+## FC2 — 28 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -188,26 +126,15 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Ne Medium Humanoid (Hellbred) | — | — | — | — | — | — | 92 |
 | Cg Medium Outsider (Native) | — | — | — | — | — | — | 95 |
 | Lg Medium Humanoid | — | — | — | — | — | — | 98 |
-| Lawful) | — | — | — | — | — | — | 109 |
-| Lawful) | — | — | — | — | — | — | 109 |
-| Lawful) | — | — | — | — | — | — | 109 |
-| Lawful) | — | — | — | — | — | — | 110 |
 | White Abishai | — | — | — | — | — | — | 110 |
 | Amnizu | — | — | — | — | — | — | 112 |
-| Lawful) | — | — | — | — | — | — | 114 |
-| Lawful, Swarm) | — | — | — | — | — | — | 115 |
-| Lawful) | — | — | — | — | — | — | 117 |
 | Kalabon | — | — | — | — | — | — | 120 |
-| Lawful) | — | — | — | — | — | — | 122 |
 | Malebranche | — | — | — | — | — | — | 124 |
 | Narzugon | — | — | — | — | — | — | 125 |
 | Nupperibo | — | — | — | — | — | — | 127 |
 | Orthon | — | — | — | — | — | — | 128 |
 | Paeliryon | — | — | — | — | — | — | 130 |
-| Lawful) | — | — | — | — | — | — | 132 |
 | Pleasure Devil | — | — | — | — | — | — | 134 |
-| Extraplanar, Lawful) | — | — | — | — | — | — | 136 |
-| Lawful) | — | — | — | — | — | — | 137 |
 | Xerfilstyx | — | — | — | — | — | — | 138 |
 | Le Large Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 142 |
 | Le Medium Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 143 |
@@ -216,14 +143,10 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Le Medium Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 147 |
 | Le Medium Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 148 |
 | Le Large Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 150 |
-| Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 151 |
 | Le Large Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 153 |
 | Le Large Outsider (Baatezu, Evil, Extraplanar, Lawful) | — | — | — | — | — | — | 155 |
-| Earth, Air, Fire, Cold) | — | — | — | — | — | — | 161 |
-| Baatezu) | — | — | — | — | — | — | 164 |
-| Baatezu) | — | — | — | — | — | — | 174 |
 
-## Fiend_Folio — 173 stat blocks
+## Fiend_Folio — 159 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -232,7 +155,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Ahuizotl | Large | Aberration | 7d8+14 | 45 | — | 6 | 14 |
 | Droplet | — | — | 3d8+9 | 22 | — | 3 | 15 |
 | Sphere | Huge | Outsider | 13d8+91 | 149 | — | 15 | 16 |
-| Creatures) | — | — | 2d10+12 | 22 | — | 1 | 16 |
 | Flotsam Ooze | — | — | 2d10+12 | 23 | — | — | 17 |
 | Reekmurk | Huge | Ooze | 5d10+25 | 72 | — | 6 | 18 |
 | Bacchae | — | — | 2d8+4 | 13 | — | 2 | 18 |
@@ -241,12 +163,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Blood Hawk | Small | Magical Beast | 1d10 | 5 | — | 1/2 | 22 |
 | Bloodthorn | Large | Plant | 3d8+12 | 25 | — | 3 | 23 |
 | Bonespear | Large | Vermin | 15d8+60 | 127 | — | 12 | 24 |
-| Lawful, Shapechanger) | — | — | — | — | — | 5 | 26 |
-| Lawful, Shapechanger) | — | — | — | — | — | 5 | 26 |
-| Shapechanger) | — | — | — | — | — | 11 | 27 |
-| Shapechanger) | — | — | — | — | — | 11 | 28 |
-| Shapechanger) | — | — | — | — | — | 9 | 28 |
-| Shapechanger) | — | — | — | — | — | 9 | 29 |
 | Caryatid Column | — | — | 6d10+20 | 53 | — | 6 | 30 |
 | Century Worm | Gargantuan | Vermin | 40d8+240 | 420 | — | 19 | 31 |
 | Chronotyryn | Large | Magical Beast | 17d10+85 | 178 | — | 19 | 33 |
@@ -260,7 +176,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Farastu | — | — | 11d8+22 | 71 | — | 11 | 42 |
 | Kelubar | — | — | 13d8+39 | 97 | — | 13 | 44 |
 | Shator | Large | Outsider | 15d8+60 | 127 | — | 16 | 45 |
-| Evil, Extraplanar) | — | — | 11d8+33 | 82 | — | 14 | 46 |
 | Blood Fiend | Large | Undead | 12d12 | 78 | — | 14 | 47 |
 | Klurichir (Tanar’Ri) | Huge | Outsider | 20d8+120 | 210 | — | 25 | 48 |
 | Maurezhi (Tanar’Ri) | — | — | 5d8+5 | 27 | — | 9 | 50 |
@@ -285,7 +200,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Lesser Flame Snake | — | — | 8d10+16 | 60 | — | 7 | 74 |
 | Greater Flame Snake | Huge | Magical Beast | 17d10+85 | 178 | — | 16 | 75 |
 | Armadon | Large | Outsider | 8d8+32 | 68 | — | 8 | 77 |
-| Lawful) | — | — | 9d8+18 | 58 | — | 11 | 77 |
 | Winged Warrior | — | — | 6d8+12 | 39 | — | 6 | 78 |
 | Fossergrim | — | — | 5d6+15 | 32 | — | 5 | 79 |
 | Gathra | Large | Magical Beast | 9d10+72 | 121 | — | 10 | 80 |
@@ -316,7 +230,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Keeper | — | — | 4d8+8 | 26 | — | 7 | 111 |
 | Kelp Angler | Large | Plant | 11d8+33 | 82 | — | 9 | 112 |
 | Kelpie | Large | Fey | 10d6+30 | 65 | — | 10 | 114 |
-| Reptilian) | — | — | 3d8+6 | 19 | — | 3 | 115 |
 | Kuldurath | Large | Magical Beast | 9d10+36 | 85 | — | 8 | 116 |
 | Living Holocaust | Small | Elemental | 15d8+45 | 112 | — | 13 | 117 |
 | Lucent Worm | Gargantuan | Magical Beast | 22d10+154 | 275 | — | 17 | 118 |
@@ -364,13 +277,10 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Abyssal Ant Swarm | — | — | 20d8+60 | 150 | — | 16 | 166 |
 | Plague Ant Swarm | — | — | 10d8+20 | 65 | — | 5 | 167 |
 | Cranium Rat Swarm, Lesser Pack | — | — | 6d10+12 | 45 | — | 2 | 167 |
-| Of Diminutive Creatures) | — | — | 12d10+24 | 90 | — | 5 | 168 |
 | Cranium Rat Swarm, Greater Pack | — | — | 24d10+48 | 180 | — | 11 | 169 |
-| Creatures) | — | — | 14d8+28 | 91 | — | 8 | 170 |
 | Locust Swarm, Rapture | — | — | 10d8+20 | 65 | — | 6 | 170 |
 | Scarab Beetle Swarm | — | — | 15d8+60 | 127 | — | 10 | 171 |
 | Viper Swarm | — | — | 5d8+5 | 27 | — | 3 | 172 |
-| Creatures) | — | — | 4d8+4 | 22 | — | 2 | 172 |
 | Swordwraith | — | — | 5d12 | 32 | — | 7 | 173 |
 | Terlen | — | — | 4d10+8 | 30 | — | 2 | 174 |
 | Terror Bird | Large | Animal | 7d10+14 | 52 | — | — | 175 |
@@ -397,11 +307,10 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Psionic Sinew | Tiny | Aberration | 2d8+2 | 11 | — | 1/8 | 218 |
 | Fiendish Familiar | Diminutive | Outsider | — | — | — | 1/8 | 219 |
 | Gutworm | Tiny | Outsider | — | — | — | — | 220 |
-| Symbiont) | — | — | 1d8+1 | 5 | — | 1/8 | 220 |
 | Soul Tick | Fine | Outsider | — | — | — | 1/8 | 220 |
 | Ghostly Visage | Tiny | Undead | 1d12 | 6 | — | 2 | 221 |
 
-## Libris_Mortis — 95 stat blocks
+## Libris_Mortis — 82 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -429,20 +338,15 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Forsaken Shell | Medium | Undead | 14d12+14 | 105 | 17 | 6 | 101 |
 | Ghost Brute Hound | Medium | Undead | 2d12 | 13 | — | 3 | 102 |
 | Ghost Brute Hound | Medium | Undead | — | — | — | — | 103 |
-| Animal) | — | — | 2d12 | 13 | 16 | 3 | 103 |
 | Gravetouched Ghoul 6Th-Level Human Monk | Medium | Undead | 6d12 | 39 | 23 | 7 | 105 |
-| A Gravetouched Ghoul Speaks All The Languages It Spoke In | — | — | — | — | — | — | 105 |
 | Grave Dirt Golem | Large | Construct | 11d10+30 | 90 | 20 | 9 | 106 |
 | Half-Vampire 1St-Level Gnoll Barbarian | Medium | Humanoid | — | — | 16 | 3 | 107 |
 | Hooded Pupil Ettin | Large | Giant | 10d8+20 | 65 | 20 | 7 | 109 |
 | Hulking Corpse | Large | Undead | 20d12+20 | 150 | 21 | 9 | 110 |
 | Mummiﬁ Ed Ogre | Large | Undead | 4d12+4 | 30 | 21 | 5 | 111 |
-| A Mummiﬁ Ed Creature Speaks All The Languages It Spoke In | — | — | — | — | — | — | 112 |
 | Murk | Medium | Undead | 3d12 | 19 | 13 | 3 | 113 |
 | Monsters | Large | Undead | — | — | — | — | 114 |
-| Planar) | — | — | 8d12 | 52 | 20 | 6 | 114 |
 | Necropolitan, 5Th-Level Human Wizard | Medium | Undead | 5d12 | 32 | 17 | 5 | 115 |
-| A Necropolitan Speaks Any Languages It Knew In Life, And It | — | — | — | — | — | — | 116 |
 | Plague Blight | Medium | Undead | 6d12+6 | 45 | 23 | 6 | 116 |
 | Quell | Medium | Undead | 5d12 | 32 | 15 | 3 | 117 |
 | Raiment | Small | Undead | 3d8 | 13 | 14 | 1 | 118 |
@@ -454,14 +358,11 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Slaymate | Small | Undead | 4d12 | 26 | 16 | 2 | 123 |
 | Spectral Lyrist | Medium | Undead | 6d12 | 39 | 20 | 4 | 124 |
 | Swarm-Shifter 13Th-Level Mummy King Druid | Medium | Undead | — | — | 27 | 16 | 125 |
-| (As Determined By The Particular Swarm Form, Each Described | Diminutive | Undead | — | — | — | — | 126 |
 | Tomb Mote | Tiny | Undead | 3d12 | 13 | 18 | 2 | 129 |
 | Umbral Displacer Beast | Large | Undead | 6d12 | 39 | 10 | 6 | 129 |
-| Retains Any Subtypes Except Alignment Subtypes (Such As | — | — | — | — | — | — | 130 |
 | Visage | Medium | Undead | 12d12+12 | 90 | 22 | 9 | 131 |
 | Voidwraith | Medium | Undead | 6d12 | 39 | 22 | 6 | 132 |
 | Wheep | Medium | Undead | 9d12 | 58 | 29 | 11 | 133 |
-| Unused Part Of The Castle’S Dungeon, With Its Magical Power | Small | Undead | — | — | — | — | 154 |
 | Dire Rat Skeleton | Small | Undead | 1d12 | 6 | 16 | 1/3 | 159 |
 | Halfling Warrior Skeleton | Small | Undead | 1d12 | 6 | 15 | 1/3 | 159 |
 | Kobold Warrior Skeleton | Small | Undead | 1d12 | 6 | 14 | 1/3 | 159 |
@@ -480,8 +381,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Nine-Headed Hydra Skeleton | Huge | Undead | 9d12 | 58 | 13 | 4 | 161 |
 | Tyrannosaurus Skeleton | Huge | Undead | 18d12 | 117 | 13 | 8 | 161 |
 | Roc Skeleton | Gargantuan | Undead | 18d12 | 117 | 15 | 8 | 161 |
-| The Pcs Might Encounter Satoris As Part Of A Gang Of Yuan-Ti | Medium | Undead | — | — | — | — | 168 |
-| To Fi Ght Their Way Past Vampire Spawn Created From Shamila’S | Small | Undead | — | — | — | — | 168 |
 | Dire Rat Zombie | Small | Undead | 2d12+3 | 16 | 15 | 1/2 | 171 |
 | Gnome Warrior Zombie | Small | Undead | 2d12+3 | 16 | 11 | 1/2 | 171 |
 | Goblin Warrior Zombie | Small | Undead | 2d12+3 | 16 | 12 | 1/2 | 171 |
@@ -497,11 +396,8 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Behir Zombie | Huge | Undead | 18d12+3 | 120 | 23 | 6 | 173 |
 | Five-Headed Hydra Zombie | Huge | Undead | 10d12+3 | 68 | 18 | 4 | 173 |
 | Megaraptor Zombie | Huge | Undead | 16d12+3 | 107 | 19 | 5 | 173 |
-| Of Damage, Not 1D8 As Indicated In The Ability’S | Huge | Vermin | — | — | — | — | 193 |
-| In Addition, Add The Following Statistics After The | — | — | 17d12+34 | 144 | — | 6 | 193 |
-| Change The Challenge Rating Section As Follows (And | — | — | 4d12 | 26 | — | — | 193 |
 
-## Lords_of_Madness — 38 stat blocks
+## Lords_of_Madness — 36 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -530,7 +426,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Kigrid | Medium | Aberration | — | — | 19 | 5 | 156 |
 | Saltor | Small | Aberration | 5d8+5 | 27 | 16 | 3 | 157 |
 | Sorcerer | Medium | Undead | — | — | — | — | 158 |
-| Aberration) | — | — | 20d12 | 130 | 29 | 18 | 158 |
 | Mind Flayer, Ulitharid | Large | Aberration | 12d8+36 | 90 | 20 | 12 | 159 |
 | Mind Flayer, Vampire | Medium | Undead | 8d12 | 52 | 23 | 9 | 161 |
 | Pseudonatural Hippogriff | Large | Outsider | 3d10+9 | 25 | 15 | 2 | 162 |
@@ -542,9 +437,8 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Silthilar | Fine | Aberration | 9d8+27 | 67 | 23 | 7 | 169 |
 | Urophion | Large | Aberration | — | — | 24 | — | 171 |
 | Zeugalak | Huge | Aberration | 16d8+128 | 200 | 25 | 12 | 172 |
-| Aberrations, Although She Might Recruit Any Pc Abolisher Who | Medium | Humanoid | — | — | — | — | 218 |
 
-## MM1 — 380 stat blocks
+## MM1 — 371 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -566,7 +460,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Assassin Vine | Large | Plant | 4d8+12 | 30 | 15 | 3 | 21 |
 | Athach | Huge | Aberration | 14d8+70 | 133 | 20 | 8 | 22 |
 | Azer | Medium | Outsider | 2d8+2 | 11 | 23 | 2 | 22 |
-| Extraplanar, Lawful, Shapechanger) | — | — | 6d8+6 | 33 | 18 | 4 | 24 |
 | Abyssal Greater Basilisk | Medium | Magical Beast | 6d10+12 | 45 | 16 | 5 | 25 |
 | Behir | Huge | Magical Beast | 9d10+45 | 94 | 20 | 8 | 26 |
 | Gauth | Medium | Aberration | 6d8+18 | 45 | 19 | 6 | 27 |
@@ -591,7 +484,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Babau | Medium | Outsider | 7d8+35 | 66 | 19 | 6 | 41 |
 | Balor | Large | Outsider | 20d8+200 | 290 | 35 | 20 | 41 |
 | Bebilith | Huge | Outsider | — | — | — | — | 43 |
-| Extraplanar, Evil) | — | — | 12d8+96 | 150 | 22 | 10 | 43 |
 | Dretch | Small | Outsider | 2d8+4 | 13 | 16 | 2 | 43 |
 | Glabrezu | Huge | Outsider | 12d8+120 | 174 | 27 | 13 | 44 |
 | Hezrou | Large | Outsider | 10d8+93 | 138 | 23 | 11 | 45 |
@@ -601,7 +493,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Retriever | Huge | Construct | 10d10+40 | 95 | 21 | 11 | 47 |
 | Succubus | Medium | Outsider | 6d8+6 | 33 | 20 | 7 | 48 |
 | Vrock | Large | Outsider | — | — | — | — | 49 |
-| Extraplanar, Evil, Tanar’Ri) | — | — | 10d8+70 | 115 | 22 | 9 | 49 |
 | Derro | Small | Monstrous Humanoid | 3d8+3 | 16 | 19 | 3 | 50 |
 | Destrachan | Large | Aberration | 8d8+24 | 60 | 18 | 8 | 50 |
 | Barbed Devil (Hamatula) | Medium | Outsider | 12d8+72 | 126 | 29 | 11 | 52 |
@@ -644,7 +535,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Duergar, 1St-Level Warrior | Medium | Humanoid | 1d8+2 | 6 | 16 | 1/2 | 92 |
 | Eagle, Giant | Large | Magical Beast | 4d10+4 | 26 | 15 | 3 | 94 |
 | Bralani | Medium | Outsider | — | — | — | — | 94 |
-| Good) | — | — | 6d8+18 | 45 | 20 | 6 | 94 |
 | Ghaele | Medium | Outsider | 10d8+20 | 65 | 25 | 13 | 95 |
 | Air Elemental, Large | Small | Elemental | 2d8 | 9 | 17 | 1 | 97 |
 | Air Elemental, Elder | Huge | Elemental | 16d8+64 | 136 | 21 | 7 | 97 |
@@ -666,7 +556,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Gargoyle | Medium | Monstrous Humanoid | 4d8+19 | 37 | 16 | 4 | 114 |
 | Djinni | Large | Outsider | 7d8+14 | 45 | 16 | 5 | 115 |
 | Efreeti | Large | Outsider | — | — | — | — | 116 |
-| Planar, Fire) | — | — | 10d8+20 | 65 | 18 | 8 | 116 |
 | Janni | Medium | Outsider | 6d8+6 | 33 | 18 | 4 | 117 |
 | Ghost 5Th-Level Human Fighter | Medium | Undead | 5d12 | 32 | 12 | 7 | 118 |
 | Ghast | Medium | Undead | 2d12 | 13 | 14 | 1 | 120 |
@@ -721,9 +610,7 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Lamia | Large | Magical Beast | 9d10+9 | 58 | 18 | — | 166 |
 | Lich, 11Th-Level Human Wizard | Medium | Undead | 11d12+3 | 74 | 23 | — | 167 |
 | Golden Protector (Celestial Half-Dragon Lammasu) | Large | Magical Beast | 7d10+21 | 59 | 20 | 8 | 167 |
-| But Use Different Templates.) | — | — | — | — | — | — | 168 |
 | Lillend | Large | Outsider | — | — | — | — | 169 |
-| Good) | — | — | 7d8+14 | 45 | 17 | 7 | 169 |
 | Lizardfolk | Medium | Humanoid | 2d8+2 | 11 | 15 | 1 | 170 |
 | Locathah | Medium | Humanoid | 2d8 | 9 | 14 | 1/2 | 170 |
 | (Human, Shapechanger) | Medium | Humanoid | — | — | 15 | 5 | 172 |
@@ -803,7 +690,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Red Slaad | Large | Outsider | 7d8+21 | 52 | 19 | 7 | 229 |
 | Blue Slaad | Large | Outsider | 8d8+32 | 68 | 20 | 8 | 230 |
 | Green Slaad | Large | Outsider | — | — | — | — | 231 |
-| Extraplanar) | Large | Humanoid | 9d8+36 | 76 | 23 | 9 | 231 |
 | Gray Slaad | Medium | Outsider | 10d8+50 | 95 | 24 | 10 | 232 |
 | Death Slaad | Medium | Outsider | 15d8+75 | 142 | 28 | 13 | 232 |
 | Spectre | Medium | Undead | 7d12 | 45 | 15 | 7 | 233 |
@@ -825,7 +711,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Tarrasque | Colossal | Magical Beast | 48d10+594 | 858 | 35 | 20 | 241 |
 | Tendriculos | Huge | Plant | 9d8+54 | 94 | 16 | 6 | 242 |
 | Thoqqua | Medium | Elemental | — | — | — | — | 243 |
-| Fire) | — | — | 3d8+3 | 16 | 18 | 2 | 243 |
 | Titan | Huge | Outsider | 20d8+280 | 370 | 38 | 21 | 243 |
 | Treant | Huge | Plant | 7d8+35 | 66 | 20 | — | 245 |
 | (Extraplanar, Water) | — | — | 3d8+6 | 19 | 22 | 3 | 245 |
@@ -929,7 +814,7 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Monstrous Spider, Colossal | Gargantuan | Vermin | 16d8+32 | 104 | 19 | 8 | 290 |
 | Notes | Large | Aberration | 6d8+9 | 36 | 17 | — | 293 |
 
-## MM2 — 171 stat blocks
+## MM2 — 161 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -937,14 +822,12 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Humanoid | — | — | 1d8 | 4 | — | 2 | 22 |
 | No Dá Rat | Small | Magical Beast | 1d10 | 5 | — | 1 | 24 |
 | Jasperi | Large | Magical Beast | 4d10+8 | 30 | — | 4 | 25 |
-| Struct Can Attack With Only One Arm At A Time, And Although | Large | Aberration | 10d8+30 | 75 | — | 10 | 28 |
 | Banshee | — | — | 26d12 | 169 | — | 17 | 30 |
 | —— .Bladelhing | — | — | 1d8 | 4 | — | 1 | 31 |
 | B —-—  — — Jbloqd'Ape | Large | Magical Beast | — | — | — | 6 | 32 |
 | Humanoid | — | — | 4d8 | 18 | — | 3 | 33 |
 | Its Perpetually Oily Skin, A Boggle Gains | Tiny | Construct | 2d10 | 11 | — | 1 | 34 |
 | Bone Naga | Large | Undead | 15d12 | 97 | — | 11 | 35 |
-| Foot Range) | Gargantuan | Ooze | 20d10+210 | 320 | — | 21 | 36 |
 | O Raal | Large | Monstrous Humanoid | 10d8+50 | 95 | — | 9 | 37 |
 | Breathdrinker | — | — | 8d8+24 | 60 | — | 7 | 39 |
 | Bronze Serpent | Huge | Construct | 16d10 | 88 | — | 10 | 40 |
@@ -968,14 +851,12 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Abyssal Ravager | Large | Outsider | — | — | — | 5 | 57 |
 | Jarilith (Tanar'Ri) | Large | Outsider | 10d8+80 | 125 | — | 13 | 60 |
 | Desmodu | Large | Monstrous Humanoid | 12d8+48 | 102 | — | 9 | 62 |
-| Making A Touch Attack Or Provoking An Attack Of Opportu- | — | — | — | — | — | — | 65 |
 | Guard Bat | Large | Animal | — | — | — | — | 66 |
 | War Bat | Huge | Animal | — | — | — | — | 66 |
 | Advespa (Baatezu) | Large | Outsider | — | — | — | — | 67 |
 | Malebranche (Baatezu) | Huge | Outsider | — | — | — | — | 67 |
 | Ankylosaurus | — | — | — | — | — | 3 | 70 |
 | Tunity At A —4 Pen- | — | — | — | — | — | — | 72 |
-| Bite Attack, It Deals Normal Damage And Attempts To Start A | Large | Animal | — | — | — | — | 74 |
 | Dire Elk | Huge | Animal | — | — | — | — | 75 |
 | Dire Elephant | Gargantuan | Animal | — | — | — | — | 75 |
 | Dire Snake | Huge | Animal | 4d8+8 | 26 | — | 3 | 76 |
@@ -993,7 +874,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Éhendwurm | Gargantuan | Magical Beast | 24d10+216 | 348 | — | 28 | 99 |
 | Great Fihyr | Small | Aberration | 4d8 | 18 | — | 3 | 100 |
 | Olg | Large | Giant | 13d8+78 | 136 | — | 12 | 101 |
-| Tst-Level Firbolg Druid Has An Ecl Of 19 And | Small | Elemental | 6d8-6 | 21 | — | 3 | 102 |
 | -Pleshjelley | Gargantuan | Ooze | — | — | — | 19 | 104 |
 | Flesh Jelly Is Immune To Mind-Affecting | Huge | Giant | 15d8+90 | 157 | — | 11 | 104 |
 | Pt Forest Sloth | — | — | 14d10+70 | 147 | — | 11 | 106 |
@@ -1025,7 +905,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Kopru | — | — | 8d8 | 36 | — | 6 | 134 |
 | El Eechwalker | — | — | 13d8+39 | 97 | — | 10 | 135 |
 | Legendary Ape | Small | Animal | 12d8+36 | 90 | — | 6 | 137 |
-| A Legendary Tiger Prefers To Attack From Ambush, Pouncing | — | — | — | — | — | — | 137 |
 | Legendary Horse | Large | Animal | — | — | — | — | 138 |
 | Legendary Bear | Large | Animal | — | — | — | — | 138 |
 | Legendary Tiger | Large | Animal | — | — | — | — | 138 |
@@ -1064,7 +943,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Compat | — | — | — | — | — | 12 | 177 |
 | Reason Stealer | — | — | 5d10+15 | 42 | — | 5 | 178 |
 | Red Sundew | Huge | Plant | 15d8+75 | 142 | — | 13 | 179 |
-| With Vegetation, Even Objects Or Creatures That Are Not In | Large | Construct | 9d10 | 49 | — | 9 | 179 |
 | Rukarazyll | Large | Outsider | 12d8+48 | 102 | — | 14 | 181 |
 | Runic_ Guardian | Large | Construct | 17d10 | 93 | — | 10 | 182 |
 | Costs 2,000 Gp To Establish | Huge | Magical Beast | 13d10+65 | 136 | — | 12 | 183 |
@@ -1072,7 +950,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | , Can Use Its | — | — | — | — | — | 5 | 185 |
 | — — Spelegaunt | Large | Magical Beast | 16d10+48 | 136 | — | 12 | 188 |
 | Of The Land | Huge | Fey | — | — | — | 23 | 189 |
-| Water Gains A «1 Bonus On Its Attack And Damage Rolls If Its | — | — | 3d8+12 | 25 | — | 2 | 191 |
 | Sylph | Small | Outsider | 3d8-3 | 10 | — | 5 | 192 |
 | Earth, Fire, Or Water Elemental | Gargantuan | Elemental | 24d8+216 | 324 | — | 16 | 193 |
 | — — Ihri-Kreen | — | — | 2d8 | 9 | — | 1 | 195 |
@@ -1085,7 +962,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Yagnoloth | Large | Outsider | — | — | — | — | 203 |
 | And Special Abilities Are Modified | — | — | — | — | — | — | 205 |
 | Construct | — | — | — | — | — | 4 | 205 |
-| The Chimeric Template.) | — | — | — | — | — | 9 | 206 |
 | Chimeric Ankheg | Large | Magical Beast | 9d10+45 | 94 | — | 9 | 207 |
 | Blackguard | — | — | 10d12 | 65 | — | 13 | 208 |
 | Following Exceptions | — | — | — | — | — | — | 210 |
@@ -1103,9 +979,8 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | —Scorpionfolk | Large | Monstrous Humanoid | 12d8+12 | 66 | — | 7 | 221 |
 | Dragonflesh Half-Golem | — | — | 1d10 | 5 | — | — | 236 |
 | Brass Half-Golem | — | — | 1d10 | 5 | — | 5 | 237 |
-| A Half-Golem’S Abilities Are Primarily Those Of The | — | — | — | — | — | — | 238 |
 
-## MM3 — 182 stat blocks
+## MM3 — 169 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -1115,7 +990,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Armand Warden, 4Th-Level Monk | Small | Monstrous Humanoid | — | — | — | — | 12 |
 | Astral Stalker | Medium | Outsider | 12d8+72 | 126 | 30 | 12 | 13 |
 | Battlebriar | Huge | Plant | 25d8+200 | 312 | 30 | 15 | 15 |
-| Lesser Battlebriar) | Large | Plant | 12d8+72 | 126 | 19 | 7 | 16 |
 | Bearhound | Large | Magical Beast | 10d10+50 | 105 | 22 | 7 | 17 |
 | Bonedrinker | Medium | Undead | 11d12+22 | 93 | 17 | 6 | 19 |
 | Sser Bonedrinker | Small | Undead | 7d12+14 | 59 | 16 | 4 | 20 |
@@ -1132,7 +1006,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Deathshricker | Medium | Undead | — | — | — | — | 34 |
 | Advanced Deathshrieker | Medium | Undead | — | — | — | — | 34 |
 | Demon, Arrow | Medium | Outsider | — | — | — | — | 35 |
-| Tanar’Ri) | — | — | 10d8+90 | 135 | 19 | 7 | 35 |
 | Demon, Sorrowsworn | Large | Outsider | 18d8+216 | 297 | 28 | 17 | 37 |
 | Dinosaur, Battletitan | Huge | Animal | 36d8+324 | 486 | 35 | 16 | 39 |
 | —— Dinosaur, Fleshraker | Medium | Animal | 4d8+8 | 26 | 20 | 2 | 41 |
@@ -1183,16 +1056,13 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Knell Beetle | Large | Vermin | 12d8+72 | 126 | 24 | 10 | 89 |
 | Edium Vermin | — | — | 6d8+24 | 51 | — | — | 90 |
 | Lhosk | Large | Monstrous Humanoid | 8d8+32 | 68 | 15 | 4 | 91 |
-| A Living Spell Composed Of More Than One Spell Uses The | — | — | — | — | — | — | 92 |
 | Chilling Fog | Large | Ooze | 9d10+18 | 67 | 15 | 9 | 93 |
 | Glitterfire | Medium | Ooze | 5d10+5 | 32 | 14 | 6 | 93 |
 | Ving Blasphemy | Huge | Ooze | 13d10+39 | 110 | 17 | — | 94 |
 | Sickening Sleep | Medium | Ooze | 1d10 | 5 | 10 | 2 | 95 |
 | Ardifolk, Black | Large | Monstrous Humanoid | 4d8+8 | 26 | 16 | — | 96 |
-| Ranger Class Does Not Count When Determining Whether It | — | — | — | — | — | — | 97 |
 | 1St-Level Ranger | Small | Humanoid | — | — | — | — | 98 |
 | 4Th-Level Ranger | Small | Humanoid | — | — | — | — | 98 |
-| Aymor +2, +1 Greatsword, +2 Full Plate Armor, Wand Of Cure | — | — | — | — | — | — | 99 |
 | Lumi | Medium | Outsider | — | — | — | — | 100 |
 | 2Nd-Level Fighter/6Th-Level Cleric | Medium | Outsider | — | — | — | — | 100 |
 | Lurking Strangler | Tiny | Aberration | 2d8+2 | 11 | 16 | 2 | 101 |
@@ -1200,7 +1070,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Mindshredder Larva | Small | Aberration | 2d8+4 | 13 | 14 | 1 | 103 |
 | Indshredder Warrior | Large | Aberration | 7d8+21 | 52 | 19 | — | 104 |
 | Mindshredder Zenthal | Medium | Aberration | 13d8+26 | 84 | 25 | 8 | 105 |
-| That Is Not Controlled Magically Attacks Its Own Rider Or | — | — | — | — | — | — | 107 |
 | Mivilorn | Huge | Magical Beast | — | — | — | — | 108 |
 | Elite Demon War Mount | Huge | Magical Beast | — | — | — | — | 108 |
 | Necronaut | Gargantuan | Undead | — | — | 25 | 14 | 109 |
@@ -1210,17 +1079,12 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Nycter | Small | Monstrous Humanoid | — | — | 16 | — | 114 |
 | Nycter Defender Of The Cave, 5Th-Level Druid | Small | Monstrous Humanoid | — | — | — | — | 114 |
 | Odopi | Huge | Aberration | 20d8+140 | 230 | 28 | 14 | 115 |
-| An Odopi Has A +8 Racial Bonus On Climb Checks And Can | Gargantuan | Aberration | 30d8+270 | 405 | 30 | — | 116 |
-| It Skill Points Equal To 11 X (2 + Int Modifier, Minimum | Large | Giant | — | — | 20 | 5 | 117 |
 | Omnimental | Gargantuan | Elemental | — | — | — | — | 119 |
-| Water) | — | — | 32d8+288 | 432 | 32 | 15 | 119 |
-| Omnimental Binding, But Attempts To Duplicate Their Research | Large | Aberration | 9d8+54 | 94 | — | 8 | 119 |
 | Petal | Tiny | Fey | 1d6+2 | 5 | 17 | 1 | 121 |
 | Phoelarch | Medium | Monstrous Humanoid | — | — | 18 | 6 | 122 |
 | Phoera | Medium | Magical Beast | 3d10+3 | 19 | 16 | 3 | 123 |
 | Plague Brush | Colossal | Plant | 31d8+248 | 387 | 21 | 17 | 125 |
 | Plague Spewer | Huge | Undead | 16d12 | 104 | 23 | — | 126 |
-| Its Natural Arcane Spellcasting Ability By Raking Levels | — | — | — | — | — | — | 127 |
 | Protean Scourge | Medium | Monstrous Humanoid | — | — | — | — | 128 |
 | Protean Scourge Arcanist, 4Th-Level Sorcerer | Medium | Monstrous Humanoid | — | — | — | — | 128 |
 | Quaraphon | Large | Aberration | 9d8+54 | 94 | 16 | — | 130 |
@@ -1249,7 +1113,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Siege Crab | Gargantuan | Vermin | 20d8+100 | 190 | 37 | 14 | 158 |
 | Greater Siege Crab | Colossal | Vermin | — | — | — | — | 158 |
 | Skindancer | Large | Monstrous Humanoid | 15d8+135 | 202 | 25 | 11 | 159 |
-| Champion Or Concerted Assault Has Succeeded In Disposing | Huge | Construct | 29d10+40 | 199 | 36 | 15 | 159 |
 | Evi | Large | Construct | 15d10+30 | 112 | 29 | 12 | 161 |
 | Gray Dwarves (Duergar) Build Their Own Slaughterstone | Medium | Ooze | 6d10+30 | 63 | 5 | 5 | 161 |
 | Spellwarped Ettin | Large | Aberration | 10d8+40 | 85 | 21 | 7 | 163 |
@@ -1289,10 +1152,9 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Anycaloth Commander Normally Attacks Using Its Power | — | — | — | — | — | — | 203 |
 | Nycaloth | Large | Outsider | — | — | — | — | 204 |
 | Nycaloth Commander | Huge | Outsider | — | — | — | — | 204 |
-| Feat To Take A —3 Penalty On Its Attack Rolls And Gain +3 On | Medium | Outsider | 18d8+90 | 171 | 21 | 13 | 204 |
 | Pathically With Any Creature | Medium | Magical Beast | 9d10+45 | 94 | 17 | 6 | 205 |
 
-## MM4 — 114 stat blocks
+## MM4 — 109 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -1319,7 +1181,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Deathdrinker | — | — | — | — | — | — | 41 |
 | Kastighur | — | — | — | — | — | — | 43 |
 | Nashrou | — | — | — | — | — | — | 45 |
-| Incorporeal) | — | — | — | — | — | — | 47 |
 | Demonhive Attendant | — | — | — | — | — | — | 49 |
 | Demonet Swarm | — | — | — | — | — | — | 49 |
 | Demonhive Queen | — | — | — | — | — | — | 51 |
@@ -1340,7 +1201,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Howler Wasp Queen | — | — | — | — | — | — | 75 |
 | Inferno Spider | — | — | — | — | — | — | 77 |
 | Joystealer | — | — | — | — | — | — | 79 |
-| Lawful) | — | — | — | — | — | — | 81 |
 | Lg Medium Outsider (Archon, Extraplanar, Good, Lawful) | — | — | — | — | — | — | 82 |
 | Ne Medium Humanoid (Reptilian) | — | — | — | — | — | — | 84 |
 | Ne Medium Humanoid (Reptilian) | — | — | — | — | — | — | 84 |
@@ -1382,16 +1242,13 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Greenspawn Razorfiend | — | — | — | — | — | — | 147 |
 | Greenspawn Sneak | — | — | — | — | — | — | 149 |
 | Le Small Monstrous Humanoid (Dragonblood) | — | — | — | — | — | — | 149 |
-| Fire) | — | — | — | — | — | — | 153 |
 | Redspawn Firebelcher | — | — | — | — | — | — | 155 |
 | Whitespawn Hordeling | — | — | — | — | — | — | 157 |
-| Dragonblood) | — | — | — | — | — | — | 159 |
 | Ce Medium Monstrous Humanoid (Cold, Dragonblood) | — | — | — | — | — | — | 159 |
 | Whitespawn Iceskidder | — | — | — | — | — | — | 163 |
 | Tomb Spider | — | — | — | — | — | — | 165 |
 | Tomb Spider Broodswarm | — | — | — | — | — | — | 165 |
 | Web Mummy, Human Commoner | — | — | — | — | — | — | 166 |
-| Creature Does Not Gain The Augmented Subtype But Retains | — | — | — | — | — | — | 166 |
 | Varag | — | — | — | — | — | — | 169 |
 | Le Medium Humanoid (Goblinoid) | — | — | — | — | — | — | 169 |
 | Verdant Prince | — | — | — | — | — | — | 173 |
@@ -1411,7 +1268,7 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Zern Arcanovore | — | — | — | — | — | — | 198 |
 | Zern Blade Thrall | — | — | — | — | — | — | 199 |
 
-## MM5 — 100 stat blocks
+## MM5 — 97 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -1421,14 +1278,11 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Burrow Root | — | — | — | — | — | — | 15 |
 | Deadborn Vulture | — | — | — | — | — | — | 19 |
 | Deadborn Vulture Zombie | — | — | — | — | — | — | 19 |
-| Tanar’Ri) | — | — | — | — | — | — | 21 |
 | Carnage Demon | — | — | — | — | — | — | 23 |
-| Obyrith) | — | — | — | — | — | — | 25 |
 | Gadacro | — | — | — | — | — | — | 27 |
 | Solamith | — | — | — | — | — | — | 29 |
 | Demonthorn Mandrake | — | — | — | — | — | — | 31 |
 | Gulthir | — | — | — | — | — | — | 33 |
-| Lawful) | — | — | — | — | — | — | 35 |
 | Stitched Devil | — | — | — | — | — | — | 37 |
 | Cn Gargantuan Dragon | — | — | — | — | — | — | 41 |
 | Lg Large Dragon (Cold) | — | — | — | — | — | — | 43 |
@@ -1516,7 +1370,7 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Master Of The Hunt | — | — | — | — | — | — | 203 |
 | Hound Of The Hunt | — | — | — | — | — | — | 203 |
 
-## Book of Vile Darkness — 24 stat blocks
+## Book of Vile Darkness — 23 stat blocks
 
 | Creature | Size | Type | HD | hp | AC | CR | Page |
 |---|---|---|---|---|---|---|---|
@@ -1525,7 +1379,6 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Juiblex, The Faceless Lord | Large | Outsider | 26d8+468 | 585 | — | 20 | 134 |
 | Orcus, Demon Prince Of The Undead | Large | Outsider | 37d8+592 | 758 | — | 28 | 136 |
 | Yeenoghu, Demon Prince Of Gnolls | Large | Outsider | — | — | — | 22 | 140 |
-| Power Attack, Skill Focus (Jump), Track, Weapon Focus (Hal- | Large | Undead | — | — | — | — | 142 |
 | Bel, Lord Of The First | Large | Outsider | 26d8+286 | 403 | — | 20 | 143 |
 | Dispater, Lord Of The Second | — | — | 34d8+442 | 595 | — | 26 | 145 |
 | Mammon, Lord Of The Third | Huge | Outsider | 34d8+408 | 561 | — | 25 | 148 |
@@ -1683,3 +1536,51 @@ to the system-translator skill for the paired 3.5e + GURPS build.
 | Lava Zombie | Medium | Undead | — | — | — | — | 225 |
 | Zoog | Small | Aberration | — | — | — | — | 226 |
 | Zrintor Walker | Huge | Plant | — | — | — | — | 228 |
+
+## Book of Exalted Deeds — 43 stat blocks
+
+| Creature | Size | Type | HD | hp | AC | CR | Page |
+|---|---|---|---|---|---|---|---|
+| Coure Eladrin | — | — | — | — | — | — | 41 |
+| Barachiel, The Messenger | Large | Outsider | 33d8+264 | 412 | 42 | 22 | 125 |
+| Jomiel, The Mercy-Bringer | Large | Outsider | 30d8+300 | 435 | 42 | 24 | 127 |
+| Erathaol, The Seer | Large | Outsider | 28d8+280 | 406 | 45 | 25 | 128 |
+| Pistis Sophia, The Ascetic | Large | Outsider | 29d8+319 | 449 | 48 | 26 | 130 |
+| Raziel, The Crusader | Large | Outsider | 36d8+432 | 594 | 54 | 28 | 132 |
+| Sealtiel, The Defender | Large | Outsider | 38d8+532 | 703 | 52 | 29 | 134 |
+| Zaphkiel, The Watcher | Large | Outsider | 35d8+350 | 507 | 60 | 32 | 136 |
+| Talisid, The Celestial Lion | Large | Outsider | 40d8+360 | 540 | 54 | 30 | 138 |
+| Sathia, The Sky Duchess | Large | Outsider | 34d8+306 | 459 | 47 | 26 | 141 |
+| The Horned Duke | Medium | Outsider | — | — | — | — | 142 |
+| Vhara, Duchess Of The Fields | Huge | Outsider | 32d8+352 | 496 | 43 | 24 | 144 |
+| Harash, The Stalker | Large | Outsider | 33d8+297 | 445 | 41 | 22 | 145 |
+| Harrai, The Great Bear | Huge | Outsider | 31d8+279 | 418 | 50 | 28 | 148 |
+| Morwel, Queen Of Stars | Medium | Outsider | 39d8+351 | 526 | 50 | 31 | 150 |
+| Faerinaal, The Queen’S Consort | Medium | Outsider | 32d8+256 | 400 | 45 | 29 | 153 |
+| The Whirling Fury | Medium | Outsider | — | — | — | — | 155 |
+| Owl Archon | Large | Outsider | 10d8+40 | 85 | 24 | 11 | 159 |
+| Sword Archon | Large | Outsider | 11d8+22 | 71 | 26 | 11 | 160 |
+| Throne Archon | Large | Outsider | 14d8+42 | 105 | 40 | 15 | 162 |
+| See | Medium | Outsider | 8d8+16 | 52 | 26 | 8 | 164 |
+| Bariaur | Large | Outsider | — | — | — | — | 166 |
+| Bariaur Defender Of Ysgard (Ranger 6) | Large | Outsider | — | — | — | — | 166 |
+| Pt Warden | — | — | 9d12 | 58 | 21 | 8 | 167 |
+| Coure | Tiny | Outsider | — | — | — | — | 168 |
+| Firre | Medium | Outsider | — | — | — | — | 169 |
+| Shiradi | Large | Outsider | — | — | — | — | 170 |
+| Tulani | Medium | Outsider | 18d8+108 | 189 | 36 | 18 | 171 |
+| Equinal | Large | Outsider | — | — | — | — | 173 |
+| Ursinal | Large | Outsider | 10d8+30 | 75 | 24 | 10 | 174 |
+| Winged Elephant Form | Small | Outsider | — | — | — | — | 176 |
+| Winged Mastodon Form | Large | Outsider | — | — | — | — | 176 |
+| Leskylor | Large | Magical Beast | — | — | — | — | 178 |
+| Three-Headed Leskylor | Large | Magical Beast | — | — | — | 7 | 178 |
+| —Lcummoon Dog | Medium | Outsider | 9d8+9 | 49 | 20 | 12 | 179 |
+| Rhek | Medium | Monstrous Humanoid | — | — | — | — | 182 |
+| Rhek Chaosgrinder (Monk 8) | Medium | Monstrous Humanoid | — | — | — | — | 182 |
+| —_ Sacred Watcher | — | — | 5d12 | 32 | 12 | 7 | 182 |
+| Sanctified Young Red Dragon | Large | Dragon | 10d12+30 | 95 | 18 | 6 | 186 |
+| Apocalypse Frog Swarm | Diminutive | Magical Beast | 5d10 | 27 | 16 | 4 | 188 |
+| Bronze Locust Swarm | Fine | Construct | 15d10 | 82 | 27 | 17 | 188 |
+| Deathraven Swarm | Tiny | Magical Beast | 18d10 | 99 | 15 | 20 | 189 |
+| Sunfly Swarm | Diminutive | Outsider | 9d8 | 40 | 20 | 10 | 190 |

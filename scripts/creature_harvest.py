@@ -66,6 +66,7 @@ EXTRA_BOOKS: List[Path] = [
     _MNF / "Book of Vile Darkness.md",
     _MNF / "Deities and Demigods.md",
     _MNF / "Monsters of the Planes (3pp).md",
+    _MNF / "Book of Exalted Deeds.md",
 ]
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "creature_index.json"
@@ -90,6 +91,18 @@ NAME_GARBAGE = re.compile(
     # prose sentences, credits, section headers, OCR junk grabbed as a name
     r"\.\s+[A-Z]|^(Illus|Creating|Cosmology|Mountain Climbing|Local |All Of|"
     r"From One|The Corpse|As Long|Now She|Who )|[$]|__|\bBy D\b", re.IGNORECASE)
+
+
+def _garbage_name(name: str) -> bool:
+    """A detected 'name' that is really a stat fragment, class line, prose
+    sentence, or OCR junk — not a creature name."""
+    if NAME_GARBAGE.search(name):
+        return True
+    if len(name.split()) > 7:                 # a prose sentence, not a name
+        return True
+    if name.count(")") > name.count("("):     # a dangling ")" from a type line
+        return True
+    return False
 BAD_STARTS = ("Hit Dice", "Initiative", "Speed", "Armor Class", "Base Attack",
               "Attack", "Full Attack", "Space/Reach", "Special", "Saves",
               "Abilities", "Skills", "Feats", "Environment", "Organization",
@@ -225,7 +238,7 @@ def index_book(path: Path) -> Tuple[List[str], List[Creature]]:
         creature = Creature(name=name, book=book, page=pages[s], start=s, end=e)
         parse_quick_fields(creature, "\n".join(lines[s:e]))
         creatures.append(creature)
-    creatures = [c for c in creatures if not NAME_GARBAGE.search(c.name)]
+    creatures = [c for c in creatures if not _garbage_name(c.name)]
     return lines, creatures
 
 
