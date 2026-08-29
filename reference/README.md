@@ -1,10 +1,10 @@
-# reference/ — the harvested mechanical indices (MANIFEST)
+# reference/ — harvested mechanical indices
 
-**Read this file first.** It tells a future reader (human or AI) what every file
-in this folder is, where it came from, and how to query it — without opening any
-of them. These are GENERATED indices of the *codified mechanical* knowledge of
-the sourcebooks (D&D 3.5e and GURPS 4e), extracted RAW with per-entry book+page
-provenance. They are **book RAW, never canon and never invented** — Notion is
+**Read this file first.** It is the human family catalog. The canonical
+machine registry is [families.json](families.json), which locks each family's
+files, accepted-entry path, systems, and expected count. These are GENERATED
+indices of *codified mechanical* sourcebook knowledge across nine explicit
+system labels, extracted RAW with per-entry book and citation provenance. They are **book RAW, never canon and never invented** — Notion is
 canon; this is the least-authoritative mechanics layer (see [../AUTHORITY.md](../AUTHORITY.md)).
 
 Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
@@ -72,7 +72,10 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
   `python scripts/spell_harvest.py --export "Fireball"`.
 - **Full text in play:** the `*_lookup.py` scripts (`spell_lookup`, `feat_lookup`,
   `monster_lookup`) print one entry's full text, ready to paste.
-- **Verify integrity:** every script has `--selftest`.
+- **Verify one family:** every harvester has `--selftest`.
+- **Verify the repository:** run `python scripts\reference_audit.py` without
+  sourcebooks, or `python scripts\reference_audit.py --live --build-codex --report`
+  on the sourcebook machine.
 
 ## IMPORTANT — this is a high-value SLICE, not the whole corpus
 

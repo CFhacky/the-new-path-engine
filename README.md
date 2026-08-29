@@ -1,8 +1,10 @@
 # the-new-path-engine
 
-Mechanical resolution and runtime-control layer for **The New Path** campaign (D&D 3.5e / GURPS 4e hybrid).
+Mechanical resolution, sourcebook-reference extraction, and runtime-control layer for **The New Path** campaign (D&D 3.5e / GURPS 4e hybrid).
 
-This repository holds resolver scripts, tests, stable runtime-control documents, and explicitly dated Notion mirror snapshots. It does **not** hold live campaign canon or mutable session state.
+This repository holds resolvers, self-contained harvesters, generated mechanical
+indices, tests, stable runtime-control documents, and explicitly dated Notion
+mirror snapshots. It does **not** hold live campaign canon or mutable session state.
 
 ---
 
@@ -46,6 +48,19 @@ The stable control package is under [`docs/runtime-control/`](docs/runtime-contr
 
 Current lane resumes live under the Notion **Campaign Resume Router — Current Lanes**. GitHub stores only dated snapshots under `mirrors/notion/YYYY-MM-DD/`, each marked `NON-AUTHORITATIVE MIRROR` and validated by `scripts/resume_card.py`.
 
+## REFERENCE HARVEST
+
+The reference layer extracts book-RAW mechanics from the external
+`I:\Sourcebooks` corpus. It is not campaign canon. Start with
+[reference/README.md](reference/README.md) for the family catalog and
+[docs/HARVEST_PROGRESS.md](docs/HARVEST_PROGRESS.md) for current status, gaps,
+history, and the prioritized roadmap.
+
+`reference/families.json` is the canonical registry of all family files,
+accepted-entry paths, systems, and locked counts. The downstream
+[Codex](codex/README.md) builds one private offline browser; its source-text
+output under `codex/build/` is intentionally not committed.
+
 ## ENFORCEMENT
 
 - The **surface-campaign-master-gm** skill mandates the appropriate resolvers for combat, checks, and NPC beats.
@@ -65,19 +80,34 @@ If an in-world fact appears outside `mirrors/notion/` or a narrowly documented t
 ## STRUCTURE
 
 ```text
-scripts/                     resolver and validator family
-tests/                       regression tests and fixtures
-reference/                   generated mechanical reference indexes
+scripts/                     resolvers, harvesters, and repository audit
+tests/                       source-independent regression tests
+reference/                   family registry + generated mechanical indexes
+codex/                       offline reference-browser builder and template
+docs/harvest/                status, gaps, roadmap, history, OCR repair log
 docs/runtime-control/        stable live-play and resume governance
 mirrors/notion/YYYY-MM-DD/   immutable, non-authoritative recovery exports
 ```
 
-## RUNTIME-CONTROL VALIDATION
+## VALIDATION
+
+Runtime control:
 
 ```bash
 python scripts/resume_card.py --selftest
-python -m unittest -v tests.test_resume_card
 python scripts/resume_card.py --check mirrors/notion/2026-08-22/Campaign_Resumes_All_Lanes.md
+```
+
+Reference layer on the sourcebook machine:
+
+```powershell
+python scripts\reference_audit.py --live --build-codex --report
+```
+
+Source-independent tests:
+
+```bash
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
 The repository is the editable source for engine code and versioned control documents. Notion is the operational source for live campaign state.

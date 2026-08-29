@@ -8,7 +8,7 @@ This repository is the MECHANICS and RUNTIME-CONTROL layer of The New Path campa
 2. **Notion** — campaign canon, current lane state, current resume cards, registers, session prose, and the Canon Change Log. Fetch live before asserting state.
 3. **Skill and protocol files** — procedure: when engines fire, session lifecycle, prose law, and arc routing.
 4. **Stable runtime-control documents in this repository** — the live-play contract, resume schema, validation rules, and mirror policy, each paired to a Notion operational page.
-5. **Resolver scripts** — deterministic arithmetic and source-checked rules.
+5. **Resolver scripts and reference indices** — deterministic arithmetic and source-checked, book-RAW mechanics.
 6. **Dated GitHub mirrors, transcripts, uploads, and archives** — evidence only.
 
 **Below all of the above — the Path Engine Codex** (`codex/`) is a read-only *presentation* of the reference indices: a single searchable page that re-displays the layer-5 mechanics with their `system` labels, book+page citations, and (where available) the book-verbatim full stat block / description. It is the least-authoritative artifact in the repo — it creates nothing. Its built output embeds source text, so it is **git-ignored and rebuilt on demand** (`python codex/build_codex.py`). See [codex/README.md](codex/README.md).
@@ -21,6 +21,7 @@ This repository is the MECHANICS and RUNTIME-CONTROL layer of The New Path campa
 | Skills / protocols | procedure, routing, prose law | campaign facts or dice results |
 | Runtime-control docs | stable operating contract, resume schema, mirror law | current lane facts |
 | Scripts | dice, stacking law, condition RAW, validation, stat lookups | canon, invented facts, cross-session truth |
+| Reference indices | cited, book-RAW mechanical entries | campaign canon, inferred values, sourcebook prose archives |
 | Dated mirrors | recovery, audit, historical diff | live authority or script input |
 
 The only cross-session files scripts may own are explicitly ratified operational mirrors such as `*.character.json`; Notion remains canon for the character. Session-local registries are disposable.
@@ -44,7 +45,8 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules |
 | `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |
 | `term_harvest.py` | cited DMG/GURPS modifier extractions; conditions remain in their authoritative lookup scripts, item/wargear bodies remain in dedicated system-labeled indexes, and the image-only PHB glossary is recorded as NO COVERAGE; missing anchors print NO COVERAGE |
-| `codex/build_codex.py` | presentation only over all 41 committed reference families; inherits source-level book/citation/system metadata, excludes `soft` diagnostics, validates every source-text slice, and never creates mechanics or canon |
+| `reference_audit.py` | repository-integrity gate over `reference/families.json`; checks explicit accepted-entry paths, counts, provenance, labels, citation exceptions, U+FFFD, live selftests, and the Codex build; never creates mechanics |
+| `codex/build_codex.py` | presentation only over the explicit accepted-entry paths in `reference/families.json`; inherits source-level book/citation/system metadata, validates every source-text slice, and never creates mechanics or canon |
 | `creature_harvest.py` | cited bestiary extractions (`_md\_bestiary` + `_text` Monsters and Fiends); a garbage-name filter drops stat-fragment/prose rows; conversions require both 3.5e and GURPS halves |
 | `item_harvest.py` | cited magic-item extractions (Magic Item Compendium; DMG v3.5; Arms & Equipment Guide 3.0); A&EG rejects CHAPTER running headers and locks all 362 accepted rows; missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `power_harvest.py` | cited psionics extractions (Expanded Psionics Handbook + Complete Psionic); Complete Psionic running CHAPTER/POWERS headers terminate wrapped-name recovery and are fixture/live tested; missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |

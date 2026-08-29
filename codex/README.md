@@ -3,8 +3,8 @@
 A downstream **presentation layer** for THE NEW PATH ENGINE reference layer:
 `build_codex.py` folds all 41 committed reference families registered in
 `reference/families.json` into ONE self-contained, searchable HTML page and —
-where it safely can — splices in each
-entry's **full book-verbatim stat block / description**, so the page is usable at the
+where it safely can — splices in each entry's **full book-verbatim stat block /
+description**, so the page is usable at the
 table or on a phone without opening the sourcebook.
 
 ## Where it sits in the authority order

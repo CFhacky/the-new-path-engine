@@ -2,8 +2,8 @@
 
 **Why this file exists.** Chad directed (2026-08-27) that garbled OCR and garbled
 index entries be repaired by hand, not left as raw junk. This is a deliberate
-exception to the harvest-RAW default in [HARVEST_PROGRESS.md](HARVEST_PROGRESS.md)
-(the "NEEDS CHAD" note), now authorized. **Every repair here is verified against
+exception to the harvest-RAW default recorded in [HISTORY.md](HISTORY.md)
+(the former "NEEDS CHAD" note), now authorized. **Every repair here is verified against
 the source's own surviving text — the creature/spell description, class, level,
 and page — never guessed.** Where a garbled entry cannot be resolved from the
 source with certainty, it is FLAGGED below, not invented.
