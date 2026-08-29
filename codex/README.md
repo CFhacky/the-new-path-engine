@@ -109,9 +109,12 @@ creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
 soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,
-WHFB wargame profiles 74%, and 40K RP adversaries/talents/psychic ~99–100%. Known low families (need harvester-level
-work to lift): the 40K RP weapon/gear tables (which already display their
-mechanical fields).
+WHFB wargame profiles 74%, and 40K RP adversaries/talents/psychic ~99–100%.
+The 40K RP weapon/gear/armour rows already display their complete harvested
+mechanical fields; full prose is not a cheap lift. Across 1,389 rows, the OCR
+contains only 850 unique exact description headings (35/145 armour), so the
+remaining attachments require source-specific reconstruction and are left
+empty rather than guessed.
 
 ## The page
 

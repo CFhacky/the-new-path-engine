@@ -1,5 +1,8 @@
 {
  "generated_by": "scripts/term_harvest.py",
+ "no_coverage": [
+  "NO COVERAGE: Player's Handbook v3.5 glossary (image-only multi-flow pages; available OCR drops real headings, promotes wrapped formulas to false headings, and corrupts mechanical glyphs; the condition subset remains in scripts/conditions.py)"
+ ],
  "sections": [
   {
    "key": "dnd_weapon_abilities",

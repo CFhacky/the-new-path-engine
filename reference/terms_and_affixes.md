@@ -201,3 +201,7 @@ what GURPS calls enhancements and limitations.
 | Short-Range | -10%/level | Your ranged ability is subject to more severe range penalties than usual. | 114 |
 | Specific | Variable | Specific restricts an ability that lets you interact with a material to a sub- set of what it normally affects. | 114 |
 | Terminal Condition | Variable | Only allowed on abilities that affect others for at least a minute. | 114 |
+
+## Known no coverage
+
+- NO COVERAGE: Player's Handbook v3.5 glossary (image-only multi-flow pages; available OCR drops real headings, promotes wrapped formulas to false headings, and corrupts mechanical glyphs; the condition subset remains in scripts/conditions.py)

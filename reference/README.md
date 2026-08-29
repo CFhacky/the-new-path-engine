@@ -59,7 +59,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `gurps3e_creature_index.{json,md}` | **GURPS 3e** bestiary (ST/DX/IQ/HT + Move/Dodge/PD/DR) — labeled `system: GURPS 3e`, separate from 4e | 853 | `scripts/gurps3e_creature_harvest.py` | GURPS 3e Bestiary / Fantasy Bestiary / Space Bestiary / Dinosaurs |
 | `ad2e_monster_index.{json,md}` | **AD&D 2e** monsters (full stat block: AC/HD/THAC0/No.App/align/size/XP) — labeled `system: AD&D 2e`, vision-transcribed | 96 | `scripts/ad2e_monster_harvest.py` | Planescape MC Appendix II + III (2e) — PDF page images |
 | `ad2e_spell_index.{json,md}` | **AD&D 2e** spells (school/sphere, level, wizard/priest, range, duration, casting time, area, save) — labeled `system: AD&D 2e` | 72 | `scripts/ad2e_spells_harvest.py` | Menzoberranzan + FOR2/FOR5/FOR7 + Ravenloft (2e) — born-digital text |
-| `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers) | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations |
+| `terms_and_affixes.{json,md}` | modifier vocabulary (D&D affixes, GURPS ±% modifiers); generated output records known no-coverage | 143 | `scripts/term_harvest.py` | DMG weapon/armor special abilities; GURPS Basic Set + Powers enhancements/limitations; image-only PHB glossary excluded explicitly |
 
 ## How to use them
 

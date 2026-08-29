@@ -182,58 +182,27 @@ Do not add them as-is — they degrade the clean index. The `_text` bestiaries
 also use varied stat-block grammars (inline `CR X; Size Type; HD Y`, deity
 blocks, prose-embedded NPCs), so a `_text` creature detector is its own task.
 
-## NEXT — queued harvest targets (in priority order)
+## NEXT — no concrete target queued
 
-All source OCR listed below was verified present on `I:\Sourcebooks` on
-2026-08-27. Each is a *new detector/section*, not new OCR.
+The dated 2026-08-27 queue is closed:
 
-1. **Arms & Equipment Guide (3.0) items** → `item_harvest.py` `aeg` detector.
-   Source: `_text\D&D 3.0\Arms And Equipment Guide.md` (present, 22,767 lines).
-2. **`term_harvest.py` extensions** (named in that script's own docstring as
-   intended next Sections; their extractions exist in the corpus):
-   Warhammer wargear, the PHB glossary, and the GURPS magic-item books. Each
-   is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
-3. **More supplemental spells** → add sources to `spell_harvest.py`. The clean
-   post-2005 books are DONE (Complete Mage, Complete Champion, Races of the
-   Dragon, Dragon Magic, Complete Scoundrel — validated clean, clustered,
-   genuinely new). **Do not
-   bulk-add the rest without a dedupe pass:** a 2026-08-27 sweep found the
-   2004-2005 books (Complete Arcane/Divine/Adventurer, Races of Stone/Destiny/
-   Wild, Sandstorm/Stormwrack/Frostburn, Heroes of Horror, Magic of Incarnum)
-   PRE-date or coincide with the 2005 Spell Compendium, so most of their spells
-   are already indexed — harvesting them injects OCR-variant duplicates
-   ("Bsorption" for "Absorption"). Tome of Magic is truename/pact/shadow
-   subsystem content (school+level-shaped but not standard spells). To add any
-   of these, first dedupe against the existing index by normalised name. What
-   remains cleanly harvestable:
-   - **Complete Scoundrel is DONE:** a source-listed 28-name roster plus
-     title-case school anchors yields 28/28 cited rows with complete spans.
-   - **Player's Handbook II remains `NO COVERAGE`:** both the `_text` scan and
-     cleaner `_md\_feats\PHB2.md` extraction interleave its three-column pages.
-     Re-OCR by explicit columns improves reading order but still corrupts
-     mechanical characters and pairs descriptions with the wrong names; no
-     rows were guessed or repaired from memory.
-   - Other post-2005 books (Complete Arcane is PRE-2005 and already in the
-     Compendium; check publication date before adding — pre-2005 = skip).
-   - When adding any book: run it, confirm 0 header-polluted names and that the
-     hits cluster in the spell chapter (not scattered), then keep it.
-     `HEADER_REJECT` now catches the generic SPELLS / INVOCATIONS / DESCRIPTIONS
-     / CHAPTER running-header words, so most books need no per-book header work.
+1. **Arms & Equipment Guide items — DONE.** The native item index contains all
+   363 accepted A&EG rows; its detector and live count are selftested.
+2. **Former term extensions — resolved by correct ownership.** GURPS Magic
+   Items 1–3 already supply 783 rows in the separately labeled
+   `gurps3e_item_index`. Warhammer wargear already lives in the labeled WFRP
+   and WH40K Roleplay weapon/gear/armour indexes. Copying either into native
+   terms would violate system separation. The image-only PHB glossary is
+   explicit `NO COVERAGE` below; its condition subset remains in
+   `scripts/conditions.py`.
+3. **Supplemental spells — resolved.** Complete Scoundrel contributes all 28
+   source-listed spells with complete spans. Player's Handbook II is explicit
+   `NO COVERAGE` below. Pre-2005 spell books remain deliberate dedupe skips
+   because their material is already folded into the Spell Compendium; Tome of
+   Magic's mysteries/utterances are separate subsystems, not standard spells.
 
-- **`item_harvest.py`**: append a `Source(...)` to `SOURCES` with a new
-  `detector` key, write `detect_<key>(lines, pages, book)` returning
-  `List[Item]`, register it in `DETECTORS`, add a fixture + assertions to
-  `selftest`, rerun `--selftest`, then rebuild. A configured source whose file
-  is missing prints `NO COVERAGE` automatically.
-- **`term_harvest.py`**: append a `Section(...)` to `SECTIONS` (choose
-  `parser="colon_defs"` or `"gurps_modifiers"`, or add a parser). Missing
-  anchors print `NO COVERAGE`.
-- **new harvest script**: mirror `creature_harvest.py` / `item_harvest.py`
-  exactly — stateless, real provenance per entry (book + PDF page), on-demand
-  `--export` packet rather than copying raw text into the repo, `--selftest`
-  with an embedded fixture AND live checks, `NO COVERAGE` for missing sources.
-  Then **add a row to the AUTHORITY.md governing-sources table** — a script
-  without that row is not ratified.
+Future expansion should be selected deliberately from **CORPUS SCOPE**, then
+entered here as a concrete book/family target before work begins.
 
 ---
 
@@ -241,26 +210,27 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
 
 - `NO COVERAGE: Player's Handbook II spells (both available text layers
   interleave the source's three-column pages; explicit-column re-OCR still
-  corrupts mechanical characters and mispairs headings/fields).` Complete
-  Scoundrel's distinct title-case format is covered; PHB II is not guessed.
+  corrupts mechanical characters and mispairs headings/fields).`
+- `NO COVERAGE: Player's Handbook v3.5 glossary (the original PDF is
+  image-only; available multi-flow OCR drops real headings, promotes wrapped
+  formulas to false headings, and corrupts mechanical glyphs).` Its condition
+  subset is already authoritative in `scripts/conditions.py`.
+- `NO COVERAGE: table-first DMG rod/staff entries (the charge/spell table
+  precedes any prose name anchor).` Examples such as Rod of Absorption need a
+  dedicated table-aware pass; nothing is inferred from neighboring rows.
+- `NO COVERAGE: cheap full-text attachment for the 1,389 WH40K Roleplay
+  weapon/gear/armour rows.` Only 850 unique exact OCR description headings are
+  available across those sources, including only 35/145 armour names. Current
+  Codex attachment is 72/657 weapons, 0/587 gear, and 5/145 armour; the complete
+  mechanical rows remain intact and system-labeled.
+- Wargame rule gaps remain explicit per harvester: 18/136 WH40K profiles and
+  74/291 WHFB profiles have no unambiguous book-verbatim rule attachment.
+  Scanned/image-only books and the broken-CMap WHFB source remain source-level
+  `NO COVERAGE`; no rule is inferred.
 
-Every source currently configured in a harvest script resolves on this machine.
-If a future session configures a source whose extraction is absent, the harvest
-prints `NO COVERAGE — extraction missing: <path>` and this section should record
-the book and the missing extraction so the OCR pipeline can be pointed at it.
-
-Partial-coverage gap (detector limitation, not missing OCR): in the DMG item
-harvest, rod and staff entries whose block opens with a charge/spell table
-before any prose (e.g. Rod of Absorption) are not caught by the trailer+name
-detector and are absent from `magic_item_index`. Closing this needs a
-table-aware pass over the DMG `RODS`/`STAFFS`/`WANDS` sections; low priority
-since the MIC already supplies a large clean item set.
-
-Known genuinely-un-OCR'd shelves (different grammars; not yet worth a detector
-until OCR'd and prioritized): Warhammer 40k RPG bestiaries and WFRP profiles
-(WS/BS/S/T/W/I/A/Ld percentile blocks), AD&D 2e monstrous compendia. These are
-the `corpus-mass-translator` skill's territory, not this layer's, unless Chad
-asks for them here.
+Every configured source path currently resolves on this machine unless its
+harvester explicitly reports a scan/CMap limitation. A future missing source
+must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 
 ---
 
@@ -282,6 +252,19 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Closed the dated NEXT queue and corrected its stale
+  ownership notes. Arms & Equipment Guide was already complete at 363 native
+  item rows; GURPS Magic Items 1–3 were already complete at 783 separately
+  labeled GURPS 3e rows; and Warhammer wargear was already complete in the
+  labeled WFRP/WH40K Roleplay weapon, gear, and armour families. All seven
+  relevant harvester selftests pass and every non-native row retains its exact
+  system label. The image-only PHB glossary is now machine-recorded as
+  `NO COVERAGE` by `term_harvest.py`; its OCR invents headings from wrapped
+  formulas, drops real headings, and corrupts mechanics, while conditions stay
+  in their authoritative lookup. The 40K Roleplay full-text cheapness gate is
+  also closed: 1,389 mechanical rows but only 850 unique exact OCR description
+  headings (35/145 armour), so no speculative attachment was made.
 
 - **2026-08-29** — Added all **28** source-listed Complete Scoundrel spells
   through a title-case roster detector that joins wrapped headings,

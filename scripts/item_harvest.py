@@ -2,10 +2,9 @@
 """item_harvest.py — collate magic item stat blocks for translation.
 
 THE PROCESS (Chad, 2026-08-07, companion to term_harvest.py and
-creature_harvest.py): term_harvest.py named the Magic Item Compendium as an
-intended next target — "Magic Item Compendium and the GURPS 3e magic item
-books are the intended next targets; their extractions already exist in the
-corpus." This script IS that harvest, for the item side.
+creature_harvest.py): this is the native D&D item collation. GURPS 3e magic
+items use `gurps3e_item_harvest.py` and remain edition-labeled rather than being
+mixed into this index.
 
 It walks the magic-item text extractions and produces the COLLATION:
 
@@ -52,14 +51,13 @@ GOVERNING SOURCES
     "GREATER"), so the harvest joins upward from the priced line. The PDFs on
     I:\\Sourcebooks stand behind every extraction when the OCR is ambiguous.
 
-    Block DETECTION is intentionally MIC-specific. Other item shelves — the
-    DMG's own magic items (rings, rods, staffs, wondrous items), the Arms &
-    Equipment Guide, and the GURPS magic-item books — use different grammars,
-    so each is added as its own Source with its own detector, exactly as
-    term_harvest.py adds Sections and creature_harvest.py notes for non-3.5
-    shelves. A configured Source whose file cannot be read prints NO COVERAGE
-    and is never improvised. DMG magic items are the intended next Source; see
-    docs/HARVEST_PROGRESS.md for the gap log.
+    Block DETECTION is source-specific. This harvester now covers the Magic
+    Item Compendium, the DMG's own magic items, and the Arms & Equipment Guide,
+    each through its own detector. GURPS magic items remain in the separately
+    labeled GURPS 3e index rather than being mixed into native D&D items. A
+    configured Source whose file cannot be read prints NO COVERAGE and is never
+    improvised. The only recorded DMG limitation is the table-first rod/staff
+    pattern documented in docs/HARVEST_PROGRESS.md.
 """
 from __future__ import annotations
 

@@ -43,7 +43,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `session_open.py` | Notion Arik Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` and cited state pages |
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules |
 | `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |
-| `term_harvest.py` | cited DMG/GURPS source extractions; missing anchors print NO COVERAGE |
+| `term_harvest.py` | cited DMG/GURPS modifier extractions; conditions remain in their authoritative lookup scripts, item/wargear bodies remain in dedicated system-labeled indexes, and the image-only PHB glossary is recorded as NO COVERAGE; missing anchors print NO COVERAGE |
 | `creature_harvest.py` | cited bestiary extractions (`_md\_bestiary` + `_text` Monsters and Fiends); a garbage-name filter drops stat-fragment/prose rows; conversions require both 3.5e and GURPS halves |
 | `item_harvest.py` | cited magic-item extractions (Magic Item Compendium; DMG v3.5; Arms & Equipment Guide 3.0); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `power_harvest.py` | cited psionics extractions (Expanded Psionics Handbook + Complete Psionic); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |

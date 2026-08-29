@@ -30,10 +30,13 @@ GOVERNING SOURCES
     at them rather than copying them.
 
 Extend by adding a Section to SECTIONS. The GURPS Powers enhancement and
-limitation sets are now folded in; the Magic Item Compendium went to its own
-harvest (scripts/item_harvest.py) because items want a full field index, not
-just a modifier gloss. Warhammer wargear and the PHB glossary are the intended
-next targets; their extractions already exist in the corpus.
+limitation sets are folded in. Item and wargear bodies stay in their dedicated,
+system-labeled indexes: D&D items in item_harvest.py, GURPS 3e magic items in
+gurps3e_item_harvest.py, and Warhammer equipment in the WFRP/WH40K Roleplay
+weapon, gear, and armour harvesters. The PHB glossary is explicit NO COVERAGE:
+the original is image-only and its multi-flow OCR drops real headings, promotes
+wrapped formulas to false headings, and corrupts mechanical glyphs. Its
+condition subset remains authoritative in scripts/conditions.py.
 
 Run:      python term_harvest.py            (writes both reference files)
           python term_harvest.py --selftest (parsers against embedded fixtures)
@@ -139,6 +142,13 @@ SECTIONS: list[Section] = [
         end_anchor=r"^SPECIAL EFFECTS$|^SPECIAL CASES$",
         parser="gurps_modifiers",
     ),
+]
+
+KNOWN_NO_COVERAGE = [
+    ("NO COVERAGE: Player's Handbook v3.5 glossary (image-only multi-flow "
+     "pages; available OCR drops real headings, promotes wrapped formulas "
+     "to false headings, and corrupts mechanical glyphs; the condition "
+     "subset remains in scripts/conditions.py)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -334,11 +344,17 @@ def write_outputs(sections: list[Section]) -> None:
                     md.append(f"| {e.name} | {gloss} | {page} |")
         md.append("")
 
+    if KNOWN_NO_COVERAGE:
+        md.extend(["## Known no coverage", ""])
+        md.extend(f"- {gap}" for gap in KNOWN_NO_COVERAGE)
+        md.append("")
+
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
     OUT_JSON.write_text(
         json.dumps(
             {
                 "generated_by": "scripts/term_harvest.py",
+                "no_coverage": KNOWN_NO_COVERAGE,
                 "sections": [
                     {
                         "key": s.key,
@@ -415,6 +431,10 @@ def selftest() -> int:
     if got != want:
         failures.append(f"gurps_modifiers harvested {got}, wanted {want} (Radius table must not match)")
 
+    if not KNOWN_NO_COVERAGE or not all(
+            gap.startswith("NO COVERAGE: ") for gap in KNOWN_NO_COVERAGE):
+        failures.append("known gaps must use the exact NO COVERAGE: prefix")
+
     for failure in failures:
         print(f"SELFTEST FAIL: {failure}")
     print("selftest: " + ("PASS" if not failures else f"{len(failures)} failure(s)"))
@@ -432,6 +452,8 @@ def main() -> int:
     for s in sections:
         status = f"{len(s.entries):4d} entries" if s.entries else "   0 entries"
         print(f"{s.key:24s} {status}  [{s.coverage}]")
+    for gap in KNOWN_NO_COVERAGE:
+        print(gap)
     if not any(s.entries for s in sections):
         print("Nothing harvested at all — refusing to write empty reference files.")
         return 1
