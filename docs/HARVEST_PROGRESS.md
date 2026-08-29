@@ -21,7 +21,7 @@ extraction and are the court of appeal for any garbled number.
 **At a glance (2026-08-29).** Forty-one reference index families, ~18,115 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
-(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64), GURPS gear — weapons + armor
+(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
@@ -281,6 +281,23 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Recovered the D&D 3.5e epic-monster description layer.
+  The harvester now generates a deterministic 4× two-column OCR source from
+  rendered Epic Level Handbook pp.158-230, preserves every body line raw,
+  restores only the **50** book-verified shared-section headings, and records
+  exact spans for all **64** roster rows. Printed families such as behemoths,
+  colossi, devastation vermin, primal elementals, golems, legendary animals,
+  sirrushes, and slaadi deliberately share the book's common description block.
+  A same-height Hunefer/Lavawight boundary is split by stable OCR row order so
+  neither the final Hunefer line nor the Lavawight title is lost or crossed.
+  All 64 prior rows are byte-identical across their original mechanical and
+  provenance fields (0 missing, 0 added, 0 changed, 0 reordered).
+  Epic-monster coverage rose **0/64 → 64/64 (100%)**; total full-text coverage
+  rose **11,847/17,951 → 11,911/17,951 (66%)**. The live selftest locks the
+  64-row roster, 50 shared blocks and their multiplicities, exact source-leading
+  spans, complete soft-free recovery, and the tied-row boundary; two complete
+  source generations produced the same SHA-256, which the JSON index records.
 
 - **2026-08-29** — Recovered the D&D 3.5e epic-spell description layer. The
   harvester now generates a deterministic two-column OCR source from rendered

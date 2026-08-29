@@ -1,9 +1,15 @@
 {
  "generated_by": "scripts/epic_monster_harvest.py",
+ "corpus": "I:\\Sourcebooks\\_text",
+ "source_path": "D&D 3.5e\\DM Toolkits\\Epic Level Handbook.epic-monsters.ocr-columns.md",
+ "source_sha256": "ef23d96a12ac837d3ecfeab70fb052e6b1f372fec54bb6a05c0abbbc8f3d2f65",
  "book": "Epic Level Handbook",
  "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
  "pages": "157-230",
- "note": "Vision-transcribed from the ELH PDF page images (the OCR text layer is corrupt). Book RAW, read off the page. Abomination blocks use MAXIMUM hit points per HD (a stated Abomination Trait). Faded/clipped glyphs are cross-checked against the block's own arithmetic or flagged in-line, never invented. Roster = the complete p.156 Monsters-by-CR table (64 monsters); each stat block's own Challenge Rating line is authoritative.",
+ "description_pages": "158-230",
+ "description_blocks": 50,
+ "full_description_entries": 64,
+ "note": "Vision-transcribed from the ELH PDF page images (the OCR text layer is corrupt). Book RAW, read off the page. Abomination blocks use MAXIMUM hit points per HD (a stated Abomination Trait). Faded/clipped glyphs are cross-checked against the block's own arithmetic or flagged in-line, never invented. Roster = the complete p.156 Monsters-by-CR table (64 monsters); each stat block's own Challenge Rating line is authoritative. Full printed stat blocks and descriptions are attached by exact line span into a reproducible two-column OCR extraction; shared book sections back their printed variant rows.",
  "total_monsters": 64,
  "monsters": [
   {
@@ -18,7 +24,12 @@
    "special_qualities": "SR 25, spell-like abilities, telepathy",
    "abilities": "Str 15, Dex 15, Con 16, Int 20, Wis 17, Cha 11",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 204
+   "page": 204,
+   "description_key": "Mercane",
+   "description_pages": "204-205",
+   "start": 5004,
+   "end": 5094,
+   "soft": null
   },
   {
    "name": "Hoary Steed",
@@ -32,7 +43,12 @@
    "special_qualities": "Cold resistance 25, air walk, astral projection and etherealness, magic circle against good, misty breath, SR 20, DR 10/+3, immunities",
    "abilities": "Str 22, Dex 18, Con 17, Int 6, Wis 13, Cha 14",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 197
+   "page": 197,
+   "description_key": "Hoary Hunter",
+   "description_pages": "197-198",
+   "start": 4235,
+   "end": 4414,
+   "soft": null
   },
   {
    "name": "Legendary Bear",
@@ -46,7 +62,12 @@
    "special_qualities": "Scent",
    "abilities": "Str 36, Dex 14, Con 24, Int 2, Wis 16, Cha 12",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 202
+   "page": 202,
+   "description_key": "Legendary Animal",
+   "description_pages": "201-202",
+   "start": 4658,
+   "end": 4733,
+   "soft": null
   },
   {
    "name": "Legendary Tiger",
@@ -60,7 +81,12 @@
    "special_qualities": "Scent",
    "abilities": "Str 32, Dex 18, Con 24, Int 2, Wis 14, Cha 10",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 202
+   "page": 202,
+   "description_key": "Legendary Animal",
+   "description_pages": "201-202",
+   "start": 4658,
+   "end": 4733,
+   "soft": null
   },
   {
    "name": "Behemoth Eagle",
@@ -74,7 +100,12 @@
    "special_qualities": "Evasion, SR 30, DR 20/+6",
    "abilities": "Str 25, Dex 34, Con 23, Int 17, Wis 19, Cha 16",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 169
+   "page": 169,
+   "description_key": "Behemoth",
+   "description_pages": "169",
+   "start": 1249,
+   "end": 1340,
+   "soft": null
   },
   {
    "name": "Behemoth Gorilla",
@@ -88,7 +119,12 @@
    "special_qualities": "Scent, SR 30, DR 20/+6",
    "abilities": "Str 31, Dex 26, Con 35, Int 6, Wis 15, Cha 12",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 169
+   "page": 169,
+   "description_key": "Behemoth",
+   "description_pages": "169",
+   "start": 1249,
+   "end": 1340,
+   "soft": null
   },
   {
    "name": "Chichimec",
@@ -102,7 +138,12 @@
    "special_qualities": "Abomination traits, fast healing, SR 33, DR 20/+6, electricity immunity",
    "abilities": "Str 34, Dex 25, Con 24, Int 12, Wis 14, Cha [clipped/illegible]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 160
+   "page": 160,
+   "description_key": "Chichimec",
+   "description_pages": "160-161",
+   "start": 266,
+   "end": 360,
+   "soft": null
   },
   {
    "name": "Mithral Golem",
@@ -116,7 +157,12 @@
    "special_qualities": "Construct traits, magic immunity, DR 50/+5, alacrity",
    "abilities": "Str 39, Dex 19, Con --, Int --, Wis 11, Cha 1",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 194
+   "page": 194,
+   "description_key": "Golem",
+   "description_pages": "193-195",
+   "start": 3842,
+   "end": 3996,
+   "soft": null
   },
   {
    "name": "Mu Spore",
@@ -130,7 +176,12 @@
    "special_qualities": "Acid resistance 20, blindsight 210 ft., DR 25/+5, fast healing 10, plant traits, sticky",
    "abilities": "Str 36, Dex 5, Con 29, Int 18, Wis 28, Cha 28",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 205
+   "page": 205,
+   "description_key": "Mu Spore",
+   "description_pages": "205-206",
+   "start": 5096,
+   "end": 5188,
+   "soft": null
   },
   {
    "name": "Pseudonatural Troll",
@@ -144,7 +195,12 @@
    "special_qualities": "DR 25/+6, SR 30, acid and electricity resistance 20, regeneration 5, scent, spell-like abilities, darkvision 90 ft.",
    "abilities": "Str 45, Dex 24, Con 33, Int 6, Wis 10, Cha 6",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 211
+   "page": 211,
+   "description_key": "Pseudonatural Troll",
+   "description_pages": "211-213",
+   "start": 5689,
+   "end": 5885,
+   "soft": null
   },
   {
    "name": "White Slaad",
@@ -158,7 +214,12 @@
    "special_qualities": "Fast healing 15, DR 35/+5, resistances, alternate form",
    "abilities": "Str 36, Dex 26, Con 37, Int 26, Wis 27, Cha 27",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 218
+   "page": 218,
+   "description_key": "Slaad",
+   "description_pages": "217-220",
+   "start": 6343,
+   "end": 6586,
+   "soft": null
   },
   {
    "name": "Anaxim",
@@ -172,7 +233,12 @@
    "special_qualities": "Abomination traits, construct traits, fast healing 15, SR 34, DR 30/+6",
    "abilities": "Str 35, Dex 25, Con --, Int 20, Wis 20, Cha [clipped/illegible]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 158
+   "page": 158,
+   "description_key": "Anaxim",
+   "description_pages": "158-159",
+   "start": 7,
+   "end": 125,
+   "soft": null
   },
   {
    "name": "Ha-naga",
@@ -186,7 +252,12 @@
    "special_qualities": "Flight, SR 30, DR 15/+7 (DR value partly clipped)",
    "abilities": "Str 27, Dex ~38 (+14 per Init/AC), Con ~32 (+11 per HD), Int ~35, Wis ~23, Cha ~36 [left-column ability line margin-clipped; Dex/Con cross-checked]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 195
+   "page": 195,
+   "description_key": "Ha-naga",
+   "description_pages": "195",
+   "start": 3998,
+   "end": 4096,
+   "soft": null
   },
   {
    "name": "Thorciasid",
@@ -200,7 +271,12 @@
    "special_qualities": "DR 20/+6, darkvision 240 ft., SR 34, fire resistance 30",
    "abilities": "Str 22, Dex 38, Con 34, Int 25, Wis 29, Cha [clipped]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 220
+   "page": 220,
+   "description_key": "Thorciasid",
+   "description_pages": "220-221",
+   "start": 6662,
+   "end": 6785,
+   "soft": null
   },
   {
    "name": "Brachyurus",
@@ -214,7 +290,12 @@
    "special_qualities": "Blindsight 240 ft., DR 15/+5, fast healing 10, low-light vision, SR 32, scent, acid/cold/electricity/fire/sonic resistance 20",
    "abilities": "Str 30, Dex 38, Con 47, Int 18, Wis 32, Cha 19",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 170
+   "page": 170,
+   "description_key": "Brachyurus",
+   "description_pages": "170",
+   "start": 1342,
+   "end": 1426,
+   "soft": null
   },
   {
    "name": "Lavawight",
@@ -228,7 +309,12 @@
    "special_qualities": "Undead traits, fire subtype, heat aura, SR 34, DR 20/+6, fiery hardness",
    "abilities": "Str 42, Dex 27, Con --, Int 10, Wis 22, Cha 28",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 200
+   "page": 200,
+   "description_key": "Lavawight",
+   "description_pages": "200",
+   "start": 4551,
+   "end": 4656,
+   "soft": null
   },
   {
    "name": "Paragon Mind Flayer",
@@ -242,7 +328,12 @@
    "special_qualities": "SR 35, telepathy, fire and cold resistance 10, DR 20/+6, fast healing 23",
    "abilities": "Str 27, Dex 29, Con 27, Int 34, Wis 32, Cha [clipped]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 208
+   "page": 208,
+   "description_key": "Paragon Mind Flayer",
+   "description_pages": "208-210",
+   "start": 5411,
+   "end": 5605,
+   "soft": null
   },
   {
    "name": "Ruin Swarm",
@@ -256,7 +347,12 @@
    "special_qualities": "Swarm, ooze traits, blindsight 200 ft., fast healing 15",
    "abilities": "Str 42, Dex 42, Con 30, Int --, Wis 23, Cha 32",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 213
+   "page": 213,
+   "description_key": "Ruin Swarm",
+   "description_pages": "213-214",
+   "start": 5887,
+   "end": 5978,
+   "soft": null
   },
   {
    "name": "Winterwight",
@@ -270,7 +366,12 @@
    "special_qualities": "Undead traits, cold subtype, cold aura, SR 34, DR 20/+6, icy hardness",
    "abilities": "Str 42, Con --, Cha 28; Dex/Int/Wis clipped at the left binding margin (approx Dex 26, Int 20, Wis 20 -- uncertain)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 227
+   "page": 227,
+   "description_key": "Winterwight",
+   "description_pages": "227-228",
+   "start": 7340,
+   "end": 7459,
+   "soft": null
   },
   {
    "name": "Sirrush",
@@ -284,7 +385,12 @@
    "special_qualities": "Blindsight 300 ft., DR 30/+5, darkvision 60 ft., fast healing 20, low-light vision, SR 39, scent, acid/cold/electricity/fire/sonic resistance 10",
    "abilities": "Str 42, Dex 40, Con 44, Int 15, Wis 18, Cha 28",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 216
+   "page": 216,
+   "description_key": "Sirrush",
+   "description_pages": "216-217",
+   "start": 6186,
+   "end": 6341,
+   "soft": null
   },
   {
    "name": "Stone Colossus",
@@ -298,7 +404,12 @@
    "special_qualities": "Construct traits, magic immunity, antimagic field, DR 30/+6",
    "abilities": "Str 70, Dex 5, Con --, Int 7, Wis 10, Cha 5",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 171
+   "page": 171,
+   "description_key": "Colossus",
+   "description_pages": "170-174",
+   "start": 1428,
+   "end": 1725,
+   "soft": null
   },
   {
    "name": "Tayellah",
@@ -312,7 +423,12 @@
    "special_qualities": "SR 34, DR 15/+6",
    "abilities": "Str 32, Dex 48, Con 34, Int 14, Wis 32, Cha 19",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 220
+   "page": 220,
+   "description_key": "Tayellah",
+   "description_pages": "220",
+   "start": 6588,
+   "end": 6660,
+   "soft": null
   },
   {
    "name": "Vermiurge",
@@ -326,7 +442,12 @@
    "special_qualities": "DR 30/+5, darkvision 60 ft., fast healing 10, immune to all mind-affecting effects, low-light vision, SR 34, scent",
    "abilities": "Str 34, Dex 25, Con 36, Int 18, Wis 40, Cha 44",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 226
+   "page": 226,
+   "description_key": "Vermiurge",
+   "description_pages": "226-227",
+   "start": 7247,
+   "end": 7338,
+   "soft": null
   },
   {
    "name": "Adamantine Golem",
@@ -340,7 +461,12 @@
    "special_qualities": "Construct traits, magic immunity, DR 50/+7",
    "abilities": "Str 51, Dex 9, Con --, Int --, Wis 11, Cha 1",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 194
+   "page": 194,
+   "description_key": "Golem",
+   "description_pages": "193-195",
+   "start": 3842,
+   "end": 3996,
+   "soft": null
   },
   {
    "name": "Black Slaad",
@@ -354,7 +480,12 @@
    "special_qualities": "Fast healing 30, DR 45/+7, resistances, alternate form, darkvision 320 ft.",
    "abilities": "Str 42, Dex 22, Con 38, Int 29, Wis 30, Cha [clipped]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 218
+   "page": 218,
+   "description_key": "Slaad",
+   "description_pages": "217-220",
+   "start": 6343,
+   "end": 6586,
+   "soft": null
   },
   {
    "name": "Elder Treant",
@@ -368,7 +499,12 @@
    "special_qualities": "Plant traits, half damage, SR 29, DR 5/-- (DR requirement clipped)",
    "abilities": "Str 40, Dex 8, Con 42, Int 19, Wis 33, Cha 35",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 223
+   "page": 223,
+   "description_key": "Elder Treant",
+   "description_pages": "223",
+   "start": 6919,
+   "end": 6992,
+   "soft": null
   },
   {
    "name": "Gloom",
@@ -382,7 +518,12 @@
    "special_qualities": "Blindsight 60 ft., opportunist, evasion, spell-like abilities, SR 35, DR 25/+6",
    "abilities": "Str 32, Dex 46, Con 29, Int 26, Wis 25, Cha [clipped]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 192
+   "page": 192,
+   "description_key": "Gloom",
+   "description_pages": "192-193",
+   "start": 3748,
+   "end": 3840,
+   "soft": null
   },
   {
    "name": "Hoary Hunter",
@@ -396,7 +537,12 @@
    "special_qualities": "Cold resistance 50, SR 36, DR 20/+6",
    "abilities": "Str 38, Dex 33, Con 36, Int 31, Wis 23, Cha 26",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 197
+   "page": 197,
+   "description_key": "Hoary Hunter",
+   "description_pages": "197-198",
+   "start": 4235,
+   "end": 4414,
+   "soft": null
   },
   {
    "name": "Hunefer",
@@ -410,7 +556,12 @@
    "special_qualities": "Blindsight 300 ft., resistant to blows, DR 20/+5, fast healing 30, SR 37, undead traits, fire vulnerability",
    "abilities": "Str 47, Dex 35, Con --, Int 18, Wis 38, Cha 36",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 198
+   "page": 198,
+   "description_key": "Hunefer",
+   "description_pages": "198-200",
+   "start": 4416,
+   "end": 4549,
+   "soft": null
   },
   {
    "name": "Phane",
@@ -424,7 +575,12 @@
    "special_qualities": "Abomination traits, null time field, time regression, fast healing 15, regeneration 15, SR 37, DR 30/+6, sonic immunity",
    "abilities": "Str --, Dex 25, Con 29, Int 24, Wis 16, Cha [clipped/illegible]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 166
+   "page": 166,
+   "description_key": "Phane",
+   "description_pages": "166-167",
+   "start": 924,
+   "end": 1099,
+   "soft": null
   },
   {
    "name": "Infernal",
@@ -438,7 +594,12 @@
    "special_qualities": "Abomination traits, fast healing 5, regeneration 15, SR 38, DR 35/+7",
    "abilities": "Str 43, Dex 25, Con 28, Int 22, Wis 26, Cha 29",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 164
+   "page": 164,
+   "description_key": "Infernal",
+   "description_pages": "164-165",
+   "start": 651,
+   "end": 801,
+   "soft": null
   },
   {
    "name": "Neh-thalggu (Brain Collector)",
@@ -452,7 +613,12 @@
    "special_qualities": "Dimensional travel, DR 25/+[unclear], incorporeal traits, amorphous physiology, manifest maw, SR 30, darkvision 60 ft.",
    "abilities": "Str --, Dex 19, Con 22, Int 20, Wis 20, Cha [clipped]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 206
+   "page": 206,
+   "description_key": "Neh-thalggu",
+   "description_pages": "206-208",
+   "start": 5190,
+   "end": 5409,
+   "soft": null
   },
   {
    "name": "Shadow of the Void",
@@ -466,7 +632,12 @@
    "special_qualities": "Undead traits, incorporeal traits, turn resistance +6, cold subtype, cold aura, SR 36, DR 20/+6",
    "abilities": "Str --, Dex 29, Con --, Int 21, Wis 25, Cha 33",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 214
+   "page": 214,
+   "description_key": "Shadow of the Void",
+   "description_pages": "214-215",
+   "start": 5980,
+   "end": 6094,
+   "soft": null
   },
   {
    "name": "Shape of Fire",
@@ -480,7 +651,12 @@
    "special_qualities": "Undead traits, incorporeal traits, turn resistance +6, fire subtype, heat aura, SR 36, DR 20/+6",
    "abilities": "Str --, Dex 29, Con --, Int 21, Wis 25, Cha 31",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 215
+   "page": 215,
+   "description_key": "Shape of Fire",
+   "description_pages": "215",
+   "start": 6096,
+   "end": 6184,
+   "soft": null
   },
   {
    "name": "Worm That Walks",
@@ -494,7 +670,12 @@
    "special_qualities": "Blindsight 300 ft., SR 36, discorporate, ooze traits",
    "abilities": "Str 10, Dex 14 (18 with gloves), Con 13 (15 with ioun stone), Int 20 (26 with headband), Wis 12, Cha 8",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 228
+   "page": 228,
+   "description_key": "Worm That Walks",
+   "description_pages": "228-230",
+   "start": 7461,
+   "end": 7781,
+   "soft": null
   },
   {
    "name": "Flesh Colossus",
@@ -508,7 +689,12 @@
    "special_qualities": "Construct traits, magic immunity, DR 20/+7, negative energy affinity",
    "abilities": "Str 35, Dex 6, Con --, Int 1 (or as controlling spirit), Wis 11 (or as controlling spirit), Cha 3 (or as controlling spirit)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 171
+   "page": 171,
+   "description_key": "Colossus",
+   "description_pages": "170-174",
+   "start": 1428,
+   "end": 1725,
+   "soft": null
   },
   {
    "name": "Gibbering Orb",
@@ -522,7 +708,12 @@
    "special_qualities": "All-around vision, flight, amorphous, SR 37, DR 25/+6",
    "abilities": "Str 32, Dex 35, Con 27, Int 40, Wis 24, Cha 22",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 191
+   "page": 191,
+   "description_key": "Gibbering Orb",
+   "description_pages": "191-192",
+   "start": 3600,
+   "end": 3746,
+   "soft": null
   },
   {
    "name": "Uvuudaum",
@@ -536,7 +727,12 @@
    "special_qualities": "Blindsight 500 ft., DR 25/+6, electricity resistance 30, fast healing 20, regeneration",
    "abilities": "Str 39, Dex 38, Con 44, Int 42, Wis 38, Cha 46",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 224
+   "page": 224,
+   "description_key": "Uvuudaum",
+   "description_pages": "224-226",
+   "start": 7114,
+   "end": 7245,
+   "soft": null
   },
   {
    "name": "LeShay",
@@ -550,7 +746,12 @@
    "special_qualities": "Superior two-weapon fighting, DR 30/+7, elf traits, immune to poison and disease, low-light vision, SR 42, fast healing 10",
    "abilities": "Str 21, Dex 45, Con 37, Int 33, Wis 23, Cha 47",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 202
+   "page": 202,
+   "description_key": "LeShay",
+   "description_pages": "202-203",
+   "start": 4735,
+   "end": 4884,
+   "soft": null
   },
   {
    "name": "Prismasaurus",
@@ -564,7 +765,12 @@
    "special_qualities": "Immunities, prismatic blur, SR 38, DR 20/+6",
    "abilities": "Str 32, Dex 25, Con 29, Int 4, Wis 19, Cha 10",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 210
+   "page": 210,
+   "description_key": "Prismasaurus",
+   "description_pages": "210-211",
+   "start": 5607,
+   "end": 5687,
+   "soft": null
   },
   {
    "name": "Three-Headed Sirrush",
@@ -578,7 +784,12 @@
    "special_qualities": "Blindsight 350 ft., DR 35/+6, darkvision 60 ft., fast healing 25, low-light vision, SR 42, scent, acid/cold/electricity/fire/sonic resistance 15",
    "abilities": "Str 47, Dex 45, Con 48; Int/Wis/Cha in the top-right margin were clipped (approx Int 20, Wis 23, Cha 13 -- uncertain)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 216
+   "page": 216,
+   "description_key": "Sirrush",
+   "description_pages": "216-217",
+   "start": 6186,
+   "end": 6341,
+   "soft": null
   },
   {
    "name": "Demilich",
@@ -592,7 +803,12 @@
    "special_qualities": "Magic immunity, phylactery transference, turn resistance +20, DR 30/--, undead traits, acid/fire/sonic resistance 20, immune to cold/electricity/polymorph/mind-affecting",
    "abilities": "Str 10, Dex 16 (with gloves), Con --, Int 39 (with headband), Wis 24, Cha 20",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 174
+   "page": 174,
+   "description_key": "Demilich",
+   "description_pages": "174-177",
+   "start": 1727,
+   "end": 2071,
+   "soft": null
   },
   {
    "name": "Hagunemnon (Protean)",
@@ -606,7 +822,12 @@
    "special_qualities": "Alter shape, DR 25/+6, darkvision 120 ft., immunities, regeneration 50, SR 34",
    "abilities": "Str 53, Dex 37, Con 39, Int 20, Wis 23, Cha 34",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 196
+   "page": 196,
+   "description_key": "Hagunemnon",
+   "description_pages": "196-197",
+   "start": 4098,
+   "end": 4233,
+   "soft": null
   },
   {
    "name": "Atropal",
@@ -620,7 +841,12 @@
    "special_qualities": "Abomination traits, undead traits, rebuke/command undead, regeneration 20, SR 42, DR 40/+6, negative energy aura",
    "abilities": "Str 43, Dex 15, Con --, Int 26, Wis 22, Cha 42",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 159
+   "page": 159,
+   "description_key": "Atropal",
+   "description_pages": "159-160",
+   "start": 127,
+   "end": 264,
+   "soft": null
   },
   {
    "name": "Elder Titan",
@@ -634,7 +860,12 @@
    "special_qualities": "DR 45/+7, SR 40",
    "abilities": "Str 45, Dex 10, Con 31, Int 33, Wis 37, Cha 26",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 221
+   "page": 221,
+   "description_key": "Elder Titan",
+   "description_pages": "221-222",
+   "start": 6787,
+   "end": 6917,
+   "soft": null
   },
   {
    "name": "Genius Loci",
@@ -648,7 +879,12 @@
    "special_qualities": "Blindsight 200 ft., fast healing 50, ooze traits",
    "abilities": "Str 50, Dex 6, Con 50, Int --, Wis 24, Cha 26",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 190
+   "page": 190,
+   "description_key": "Genius Loci",
+   "description_pages": "190-191",
+   "start": 3452,
+   "end": 3598,
+   "soft": null
   },
   {
    "name": "Dream Larva",
@@ -662,7 +898,12 @@
    "special_qualities": "Abomination traits, sonic immunity, regeneration 15, fast healing 15, SR 44, DR 40/+8",
    "abilities": "Str 42, Dex 17, Con 29, Int 16, Wis 34, Cha [clipped, ~30]",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 161
+   "page": 161,
+   "description_key": "Dream Larva",
+   "description_pages": "161-162",
+   "start": 362,
+   "end": 518,
+   "soft": null
   },
   {
    "name": "Force Dragon (adult)",
@@ -676,7 +917,12 @@
    "special_qualities": "Immunities, DR 30/+6, SR 39, blindsight, keen senses, deflecting force, blur (20% miss chance), immune to force effects",
    "abilities": "Str 51, Dex 10, Con 37, Int 38, Wis 39, Cha 38",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 183
+   "page": 183,
+   "description_key": "Force Dragon",
+   "description_pages": "182-184",
+   "start": 2565,
+   "end": 2849,
+   "soft": null
   },
   {
    "name": "Umbral Blot (Blackball)",
@@ -690,7 +936,12 @@
    "special_qualities": "Blindsight 200 ft., construct traits, fast healing 10, planar travel, SR 44, acid/cold/electricity/fire/sonic resistance 30",
    "abilities": "Str 10, Dex 30, Con --, Int 20, Wis 30, Cha 30",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 223
+   "page": 223,
+   "description_key": "Umbral Blot",
+   "description_pages": "223-224",
+   "start": 6994,
+   "end": 7112,
+   "soft": null
   },
   {
    "name": "Iron Colossus",
@@ -704,7 +955,12 @@
    "special_qualities": "Construct traits, magic immunity, antimagic field, rustproof, DR 30/+7",
    "abilities": "Str 60, Dex 7, Con --, Int 9, Wis 12, Cha 7",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 171
+   "page": 171,
+   "description_key": "Colossus",
+   "description_pages": "170-174",
+   "start": 1428,
+   "end": 1725,
+   "soft": null
   },
   {
    "name": "Living Vault",
@@ -718,7 +974,12 @@
    "special_qualities": "Recognition, safekeeping, construct traits, magic immunity, DR 30/+7",
    "abilities": "Str 80, Dex 7, Con --, Int 9, Wis 12, Cha 7",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 203
+   "page": 203,
+   "description_key": "Living Vault",
+   "description_pages": "203-204",
+   "start": 4886,
+   "end": 5002,
+   "soft": null
   },
   {
    "name": "Phaethon",
@@ -732,7 +993,12 @@
    "special_qualities": "Abomination traits, fire immunity, oozelike immunities, regeneration 25, fast healing 25, DR 40/+8",
    "abilities": "Str 58, Dex 25, Con 36, Int 8, Wis 18, Cha 39",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 165
+   "page": 165,
+   "description_key": "Phaethon",
+   "description_pages": "165-166",
+   "start": 803,
+   "end": 922,
+   "soft": null
   },
   {
    "name": "Primal Air Elemental",
@@ -746,7 +1012,12 @@
    "special_qualities": "Elemental traits, DR 35/+8, SR 42, air subtype",
    "abilities": "Str 32, Dex 43, Con 28, Int 8, Wis 13, Cha 13",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 187
+   "page": 187,
+   "description_key": "Elemental, Primal",
+   "description_pages": "186-189",
+   "start": 3093,
+   "end": 3450,
+   "soft": null
   },
   {
    "name": "Primal Earth Elemental",
@@ -760,7 +1031,12 @@
    "special_qualities": "Elemental traits, DR 35/+8 (plus 9/--), SR 42, earth subtype",
    "abilities": "Str 43, Dex 8, Con 31, Int 8, Wis 13, Cha 13",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 187
+   "page": 187,
+   "description_key": "Elemental, Primal",
+   "description_pages": "186-189",
+   "start": 3093,
+   "end": 3450,
+   "soft": null
   },
   {
    "name": "Primal Fire Elemental",
@@ -774,7 +1050,12 @@
    "special_qualities": "Elemental traits, DR 35/+8, SR 42, fire subtype",
    "abilities": "Str 32, Dex 39, Con 28, Int 8, Wis 13, Cha 13",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 187
+   "page": 187,
+   "description_key": "Elemental, Primal",
+   "description_pages": "186-189",
+   "start": 3093,
+   "end": 3450,
+   "soft": null
   },
   {
    "name": "Primal Water Elemental",
@@ -788,7 +1069,12 @@
    "special_qualities": "Elemental traits, DR 35/+8 (plus 9/--), SR 42, water subtype",
    "abilities": "Str 42, Dex 38, Con 31, Int 8, Wis 13, Cha 13",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 187
+   "page": 187,
+   "description_key": "Elemental, Primal",
+   "description_pages": "186-189",
+   "start": 3093,
+   "end": 3450,
+   "soft": null
   },
   {
    "name": "Xixecal",
@@ -802,7 +1088,12 @@
    "special_qualities": "Abomination traits, cold subtype, dire winter, fast healing 30, regeneration 30, SR 48, DR 45/+9",
    "abilities": "Str 66, Dex 13, Con ~40 (tens digit 4 clear; units faint), Int 12, Wis 6, Cha 34",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 167
+   "page": 167,
+   "description_key": "Xixecal",
+   "description_pages": "167-169",
+   "start": 1101,
+   "end": 1247,
+   "soft": null
   },
   {
    "name": "Advanced Red Great Wyrm (sample advanced dragon)",
@@ -816,7 +1107,12 @@
    "special_qualities": "Immunities (sleep, paralysis), DR 35/+6, SR 46, blindsight, keen senses (darkvision 7,600 ft.), fire subtype",
    "abilities": "Str 59, Dex 16 (with gloves), Con 45, Int 32, Wis 33, Cha 32",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 180
+   "page": 180,
+   "description_key": "Advanced Dragons",
+   "description_pages": "179-182",
+   "start": 2267,
+   "end": 2563,
+   "soft": null
   },
   {
    "name": "Devastation Centipede",
@@ -830,7 +1126,12 @@
    "special_qualities": "Darkvision 300 ft., SR 50, DR 40/+9",
    "abilities": "Str 33, Dex 37, Con 29, Int --, Wis 10, Cha 2",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 178
+   "page": 178,
+   "description_key": "Devastation Vermin",
+   "description_pages": "177-179",
+   "start": 2073,
+   "end": 2265,
+   "soft": null
   },
   {
    "name": "Devastation Spider",
@@ -844,7 +1145,12 @@
    "special_qualities": "Darkvision 300 ft., SR 50, DR 35/+8",
    "abilities": "Str 37, Dex 39, Con 30, Int --, Wis 10, Cha 2",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 178
+   "page": 178,
+   "description_key": "Devastation Vermin",
+   "description_pages": "177-179",
+   "start": 2073,
+   "end": 2265,
+   "soft": null
   },
   {
    "name": "Devastation Scorpion",
@@ -858,7 +1164,12 @@
    "special_qualities": "Darkvision 300 ft., SR 50, DR 45/+8",
    "abilities": "Str 38, Dex 35, Con 32, Int --, Wis 10, Cha 2",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 178
+   "page": 178,
+   "description_key": "Devastation Vermin",
+   "description_pages": "177-179",
+   "start": 2073,
+   "end": 2265,
+   "soft": null
   },
   {
    "name": "Prismatic Dragon (old)",
@@ -872,7 +1183,12 @@
    "special_qualities": "Deflecting force, immune to light and blindness, damage reduction (scales by age)",
    "abilities": "Str 57, Dex 10, Con 49, Int 48, Wis [obscured, ~49], Cha 48 (from Prismatic-Dragon-by-Age abilities table, old row)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 185
+   "page": 185,
+   "description_key": "Prismatic Dragon",
+   "description_pages": "184-186",
+   "start": 2851,
+   "end": 3091,
+   "soft": null
   },
   {
    "name": "Devastation Beetle",
@@ -886,7 +1202,12 @@
    "special_qualities": "Darkvision 300 ft., SR 60, DR 50/+10",
    "abilities": "Str 42, Dex 31, Con 46, Int --, Wis 10, Cha 9",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 178
+   "page": 178,
+   "description_key": "Devastation Vermin",
+   "description_pages": "177-179",
+   "start": 2073,
+   "end": 2265,
+   "soft": null
   },
   {
    "name": "Hecatoncheires",
@@ -900,7 +1221,12 @@
    "special_qualities": "Abomination traits, electricity immunity, regeneration 40, fast healing 50, SR 70, DR [tens-digit margin-clipped]/+12",
    "abilities": "Str 50, Dex 15, Con 32, Int 10, Wis 8, Cha 24",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 6 'Monsters' (PDF pp.157-230). Vision-transcribed from the PDF page images because the OCR text layer is corrupt; each monster is cited to the PDF page of its stat block. Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating, alignment, one-line special attacks/qualities, ability scores).",
-   "page": 163
+   "page": 163,
+   "description_key": "Hecatoncheires",
+   "description_pages": "162-163",
+   "start": 520,
+   "end": 649,
+   "soft": null
   }
  ]
 }

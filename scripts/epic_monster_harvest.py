@@ -11,13 +11,14 @@ needed, and read by eye). This is still book RAW — read directly off the page,
 never invented — and every entry is cited to the exact PDF page of its stat
 block.
 
-SCOPE. This captures the KEY mechanical fields of each epic monster's 3.5 stat
-block, NOT the whole block: name, size_type (the Size + Type line), hit_dice,
-armor_class, challenge_rating, alignment, a one-line special_attacks and
-special_qualities summary as printed, and the Str/Dex/Con/Int/Wis/Cha abilities
-line. Skills/feats/skproses/advancement are deliberately skipped.
+SCOPE. The structured mechanics preserve the original KEY fields for every epic
+monster: name, size_type (the Size + Type line), hit_dice, armor_class,
+challenge_rating, alignment, one-line special_attacks and special_qualities,
+and the Str/Dex/Con/Int/Wis/Cha abilities line. Each row now also carries the
+true line span of its complete printed stat block and description in a
+reproducible two-column OCR source. Shared variant sections share one book block.
 
-    reference/epic_monster_index.json — every monster: the key stat fields + page
+    reference/epic_monster_index.json — mechanics + exact full-description spans
     reference/epic_monster_index.md   — the same, for human eyes
 
 ROSTER = 64 monsters, the complete "Monsters by Challenge Rating" table (ELH
@@ -51,12 +52,14 @@ PROVENANCE
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
+from collections import Counter, defaultdict
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import List
+from typing import Dict, List, Optional, Sequence, Tuple
 
 if sys.platform == "win32":
     try:
@@ -67,6 +70,12 @@ if sys.platform == "win32":
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "epic_monster_index.json"
 OUT_MD = REPO / "reference" / "epic_monster_index.md"
+CORPUS = Path(r"I:\Sourcebooks\_text")
+SOURCE_REL = (Path("D&D 3.5e") / "DM Toolkits" /
+              "Epic Level Handbook.epic-monsters.ocr-columns.md")
+SOURCE = CORPUS / SOURCE_REL
+PDF_SOURCE = Path(r"I:\Sourcebooks\D&D 3.5e\DM Toolkits\Epic Level Handbook.pdf")
+TESSERACT = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
 BOOK = "Epic Level Handbook"
 PAGES = "157-230"
 CITATION = (
@@ -162,6 +171,381 @@ _MONSTERS = [
 COLS = ["name", "size_type", "hit_dice", "armor_class", "challenge_rating",
         "alignment", "special_attacks", "special_qualities", "abilities", "page"]
 
+# ---------------------------------------------------------------------------
+# FULL-DESCRIPTION SOURCE — rendered PDF pages, raw two-column OCR.
+# ---------------------------------------------------------------------------
+SOURCE_PAGE_RE = re.compile(r"^## \[PDF pages? (\d+)(?:-(\d+))?\]$")
+SOURCE_HEADING_RE = re.compile(r"^(.+?) \[EPIC MONSTER DESCRIPTION\]$")
+
+_DESCRIPTION_KEY_OVERRIDES = {
+    "Advanced Red Great Wyrm (sample advanced dragon)": "Advanced Dragons",
+    "Force Dragon (adult)": "Force Dragon",
+    "Prismatic Dragon (old)": "Prismatic Dragon",
+    "Hagunemnon (Protean)": "Hagunemnon",
+    "Neh-thalggu (Brain Collector)": "Neh-thalggu",
+    "Umbral Blot (Blackball)": "Umbral Blot",
+    "Behemoth Eagle": "Behemoth",
+    "Behemoth Gorilla": "Behemoth",
+    "Stone Colossus": "Colossus",
+    "Flesh Colossus": "Colossus",
+    "Iron Colossus": "Colossus",
+    "Devastation Beetle": "Devastation Vermin",
+    "Devastation Centipede": "Devastation Vermin",
+    "Devastation Scorpion": "Devastation Vermin",
+    "Devastation Spider": "Devastation Vermin",
+    "Primal Air Elemental": "Elemental, Primal",
+    "Primal Earth Elemental": "Elemental, Primal",
+    "Primal Fire Elemental": "Elemental, Primal",
+    "Primal Water Elemental": "Elemental, Primal",
+    "Mithral Golem": "Golem",
+    "Adamantine Golem": "Golem",
+    "Hoary Hunter": "Hoary Hunter",
+    "Hoary Steed": "Hoary Hunter",
+    "Legendary Bear": "Legendary Animal",
+    "Legendary Tiger": "Legendary Animal",
+    "Sirrush": "Sirrush",
+    "Three-Headed Sirrush": "Sirrush",
+    "White Slaad": "Slaad",
+    "Black Slaad": "Slaad",
+}
+
+
+def _description_key(name: str) -> str:
+    return _DESCRIPTION_KEY_OVERRIDES.get(
+        name, re.sub(r"\s*\([^)]*\)\s*$", "", name).strip()
+    )
+
+
+def _all_description_keys() -> List[str]:
+    return sorted({_description_key(row[0]) for row in _MONSTERS})
+
+
+# Canonical section key -> (book page, visual column, y). The coordinates were
+# checked against rendered pages. Shared book sections deliberately back more
+# than one stat row where the book prints the variants together.
+DESCRIPTION_ANCHORS: Dict[str, Tuple[int, int, float]] = {
+    "Anaxim": (158, 0, 874.0),
+    "Atropal": (159, 1, 60.0),
+    "Chichimec": (160, 1, 380.0),
+    "Dream Larva": (161, 1, 55.0),
+    "Hecatoncheires": (162, 1, 715.0),
+    "Infernal": (164, 0, 55.0),
+    "Phaethon": (165, 0, 655.0),
+    "Phane": (166, 0, 724.0),
+    "Xixecal": (167, 1, 740.0),
+    "Behemoth": (169, 0, 350.0),
+    "Brachyurus": (170, 0, 70.0),
+    "Colossus": (170, 1, 710.0),
+    "Demilich": (174, 0, 575.0),
+    "Devastation Vermin": (177, 0, 575.0),
+    "Advanced Dragons": (179, 0, 630.0),
+    "Force Dragon": (182, 0, 261.0),
+    "Prismatic Dragon": (184, 1, 218.0),
+    "Elemental, Primal": (186, 1, 335.0),
+    "Genius Loci": (190, 0, 65.0),
+    "Gibbering Orb": (191, 0, 600.0),
+    "Gloom": (192, 1, 533.0),
+    "Golem": (193, 1, 245.0),
+    "Ha-naga": (195, 0, 290.0),
+    "Hagunemnon": (196, 0, 65.0),
+    "Hoary Hunter": (197, 0, 400.0),
+    "Hunefer": (198, 1, 748.0),
+    "Lavawight": (200, 0, 121.0),
+    "Legendary Animal": (201, 0, 60.0),
+    "LeShay": (202, 0, 440.0),
+    "Living Vault": (203, 1, 600.0),
+    "Mercane": (204, 1, 639.0),
+    "Mu Spore": (205, 1, 315.0),
+    "Neh-thalggu": (206, 1, 405.0),
+    "Paragon Mind Flayer": (208, 1, 242.0),
+    "Prismasaurus": (210, 0, 550.0),
+    "Pseudonatural Troll": (211, 0, 255.0),
+    "Ruin Swarm": (213, 0, 170.0),
+    "Shadow of the Void": (214, 0, 120.0),
+    "Shape of Fire": (215, 0, 420.0),
+    "Sirrush": (216, 0, 160.0),
+    "Slaad": (217, 1, 170.0),
+    "Tayellah": (220, 0, 65.0),
+    "Thorciasid": (220, 1, 500.0),
+    "Elder Titan": (221, 1, 690.0),
+    "Elder Treant": (223, 0, 65.0),
+    "Umbral Blot": (223, 1, 345.0),
+    "Uvuudaum": (224, 1, 710.0),
+    "Vermiurge": (226, 0, 110.0),
+    "Winterwight": (227, 0, 135.0),
+    "Worm That Walks": (228, 0, 275.0),
+}
+
+# Tesseract places the final Hunefer line and the Lavawight title at the same
+# vertical coordinate. The stable OCR line order is therefore the only exact
+# boundary: rank is zero-based among rows at that y-coordinate.
+DESCRIPTION_LINE_SPLITS: Dict[str, Tuple[int, int, float, int]] = {
+    "Lavawight": (200, 0, 121.0, 1),
+}
+
+
+def _source_hash() -> Optional[str]:
+    return hashlib.sha256(SOURCE.read_bytes()).hexdigest() if SOURCE.is_file() else None
+
+
+def _ocr_lanes(doc) -> List[dict]:
+    try:
+        import fitz
+        import pytesseract
+        from PIL import Image, ImageFilter, ImageOps
+        from io import BytesIO
+    except Exception as exc:
+        raise RuntimeError(f"OCR dependencies unavailable: {exc}") from exc
+
+    if not TESSERACT.is_file():
+        raise RuntimeError(f"Tesseract not found at {TESSERACT}")
+    pytesseract.pytesseract.tesseract_cmd = str(TESSERACT)
+
+    lanes: List[dict] = []
+    for book_page in range(158, 231):
+        page = doc[book_page - 1]
+        columns = ((8, 350), (350, 692)) if book_page % 2 == 0 \
+            else ((8, 285), (285, 692))
+        for column, (x0, x1) in enumerate(columns):
+            clip = page.rect & fitz.Rect(x0, 55, x1, 945)
+            pix = page.get_pixmap(
+                matrix=fitz.Matrix(4, 4), clip=clip, alpha=False
+            )
+            image = Image.open(BytesIO(pix.tobytes("png"))).convert("L")
+            image = ImageOps.autocontrast(image, cutoff=1)
+            image = image.filter(
+                ImageFilter.UnsharpMask(radius=1, percent=130, threshold=2)
+            )
+            data = pytesseract.image_to_data(
+                image, config="--oem 3 --psm 6",
+                output_type=pytesseract.Output.DICT,
+            )
+            groups: Dict[Tuple[int, int, int], List[int]] = defaultdict(list)
+            for index, token in enumerate(data["text"]):
+                if token.strip():
+                    key = (data["block_num"][index], data["par_num"][index],
+                           data["line_num"][index])
+                    groups[key].append(index)
+            lines: List[dict] = []
+            for indexes in groups.values():
+                indexes.sort(key=lambda index: data["left"][index])
+                text = " ".join(data["text"][index]
+                                for index in indexes).strip()
+                lines.append({
+                    "top": 55 + min(data["top"][index]
+                                    for index in indexes) / 4,
+                    "text": text,
+                })
+            lines.sort(key=lambda row: row["top"])
+            lanes.append({"page": book_page, "column": column, "lines": lines})
+        print(f"OCR source extraction: page {book_page}/230", flush=True)
+    return lanes
+
+
+def _meaningful_ocr(lines: Sequence[dict], low: float, high: float) -> List[str]:
+    out: List[str] = []
+    for row in lines:
+        if low <= row["top"] < high:
+            text = row["text"].strip()
+            if sum(char.isalnum() for char in text) >= 2:
+                out.append(text)
+    return out
+
+
+def _line_split_index(
+    name: str,
+    page: int,
+    column: int,
+    lines: Sequence[dict],
+) -> Optional[int]:
+    spec = DESCRIPTION_LINE_SPLITS.get(name)
+    if spec is None:
+        return None
+    split_page, split_column, split_y, rank = spec
+    if (page, column) != (split_page, split_column):
+        raise RuntimeError(f"line split for {name} is on the wrong OCR lane")
+    matches = [
+        index for index, row in enumerate(lines)
+        if abs(row["top"] - split_y) < 0.1
+    ]
+    if rank >= len(matches):
+        raise RuntimeError(
+            f"line split for {name} expected rank {rank} at y={split_y}, "
+            f"found {len(matches)} row(s)"
+        )
+    return matches[rank]
+
+
+def _description_body(
+    name: str,
+    next_name: Optional[str],
+    lane_map: Dict[Tuple[int, int], List[dict]],
+    lane_keys: Sequence[Tuple[int, int]],
+) -> Tuple[List[str], List[int]]:
+    page, column, y = DESCRIPTION_ANCHORS[name]
+    if next_name is None:
+        end_page, end_column, end_y = 230, 1, float("inf")
+    else:
+        end_page, end_column, end_y = DESCRIPTION_ANCHORS[next_name]
+
+    lane_index = {key: index for index, key in enumerate(lane_keys)}
+    start_lane = lane_index[(page, column)]
+    end_lane = lane_index[(end_page, end_column)]
+    if end_lane < start_lane:
+        raise RuntimeError(f"description end precedes start for {name}")
+
+    body: List[str] = []
+    pages = set()
+    for index in range(start_lane, end_lane + 1):
+        lane_page, lane_column = lane_keys[index]
+        lane_lines = lane_map[(lane_page, lane_column)]
+        first = 0
+        last = len(lane_lines)
+        low = y - 5 if index == start_lane else float("-inf")
+        high = end_y - 8 if index == end_lane else float("inf")
+
+        if index == start_lane:
+            split = _line_split_index(
+                name, lane_page, lane_column, lane_lines
+            )
+            if split is not None:
+                first = split
+                low = float("-inf")
+        if index == end_lane and next_name is not None:
+            split = _line_split_index(
+                next_name, lane_page, lane_column, lane_lines
+            )
+            if split is not None:
+                last = split
+                high = float("inf")
+
+        selected = _meaningful_ocr(lane_lines[first:last], low, high)
+        if selected:
+            body.extend(selected)
+            pages.add(lane_page)
+    return body, sorted(pages)
+
+
+def extract_description_source() -> int:
+    if not PDF_SOURCE.is_file():
+        print(f"NO COVERAGE: {BOOK} epic monster descriptions "
+              f"(missing PDF: {PDF_SOURCE})")
+        return 1
+    try:
+        import fitz
+    except Exception as exc:
+        print(f"NO COVERAGE: {BOOK} epic monster descriptions "
+              f"(PyMuPDF unavailable: {exc})")
+        return 1
+
+    names = _all_description_keys()
+    missing = set(names) - set(DESCRIPTION_ANCHORS)
+    extra = set(DESCRIPTION_ANCHORS) - set(names)
+    if missing or extra:
+        raise RuntimeError(
+            f"description anchor mismatch: missing={sorted(missing)}, "
+            f"extra={sorted(extra)}"
+        )
+    try:
+        doc = fitz.open(PDF_SOURCE)
+        lanes = _ocr_lanes(doc)
+    except Exception as exc:
+        print(f"NO COVERAGE: {BOOK} epic monster descriptions ({exc})")
+        return 1
+
+    lane_map = {(lane["page"], lane["column"]): lane["lines"]
+                for lane in lanes}
+    lane_keys = sorted(lane_map)
+    ordered = sorted(names, key=lambda key: DESCRIPTION_ANCHORS[key])
+    chunks = [
+        "# EPIC MONSTER DESCRIPTION EXTRACTION",
+        "",
+        "Derived from Epic Level Handbook PDF page images, pp. 158-230.",
+        "Two-column OCR is preserved raw. Monster section headings alone are",
+        "restored from the book-verified index and rendered-page audit.",
+        "",
+    ]
+    for index, name in enumerate(ordered):
+        next_name = ordered[index + 1] if index + 1 < len(ordered) else None
+        body, pages = _description_body(name, next_name, lane_map, lane_keys)
+        if not body:
+            raise RuntimeError(f"empty OCR description block for {name}")
+        page_label = str(pages[0]) if len(pages) == 1 \
+            else f"{pages[0]}-{pages[-1]}"
+        chunks.extend([
+            f"## [PDF pages {page_label}]",
+            f"{name.upper()} [EPIC MONSTER DESCRIPTION]",
+            *body,
+            "",
+        ])
+
+    SOURCE.parent.mkdir(parents=True, exist_ok=True)
+    SOURCE.write_text("\n".join(chunks).rstrip() + "\n", encoding="utf-8")
+    print(f"wrote {SOURCE}")
+    print(f"{len(ordered)}/{len(ordered)} epic-monster description blocks recovered")
+    return 0
+
+
+def _name_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", text.casefold())
+
+
+@dataclass(frozen=True)
+class DescriptionSpan:
+    page: int
+    pages: str
+    start: int
+    end: int
+
+
+def detect_description_spans(lines: Sequence[str]) -> Dict[str, DescriptionSpan]:
+    canonical = {_name_key(name): name for name in _all_description_keys()}
+    headings: List[Tuple[str, int, int, str]] = []
+    marker_index = -1
+    marker_pages = ""
+    for index, line in enumerate(lines):
+        page_match = SOURCE_PAGE_RE.match(line.strip())
+        if page_match:
+            marker_index = index
+            first = int(page_match.group(1))
+            marker_pages = (str(first) if page_match.group(2) is None
+                            else f"{first}-{int(page_match.group(2))}")
+            continue
+        heading_match = SOURCE_HEADING_RE.match(line.strip())
+        if not heading_match:
+            continue
+        if marker_index < 0:
+            raise ValueError(
+                f"description heading before page marker at line {index + 1}"
+            )
+        key = _name_key(heading_match.group(1))
+        if key not in canonical:
+            raise ValueError(
+                f"unknown epic-monster heading at line {index + 1}: {line!r}"
+            )
+        headings.append((canonical[key], marker_index, index, marker_pages))
+
+    spans: Dict[str, DescriptionSpan] = {}
+    for position, (name, _, start, pages) in enumerate(headings):
+        end = headings[position + 1][1] if position + 1 < len(headings) \
+            else len(lines)
+        while end > start and not lines[end - 1].strip():
+            end -= 1
+        if name in spans:
+            raise ValueError(f"duplicate epic-monster description heading: {name}")
+        spans[name] = DescriptionSpan(
+            page=int(pages.split("-", 1)[0]),
+            pages=pages,
+            start=start,
+            end=end,
+        )
+    return spans
+
+
+def _source_lines() -> List[str]:
+    return SOURCE.read_text(encoding="utf-8").splitlines() \
+        if SOURCE.is_file() else []
+
 
 @dataclass
 class EpicMonster:
@@ -177,6 +561,11 @@ class EpicMonster:
     abilities: str
     citation: str
     page: int
+    description_key: str = ""
+    description_pages: str = ""
+    start: int = 0
+    end: int = 0
+    soft: Optional[str] = None
 
 
 def cr_int(cr: str) -> int:
@@ -185,7 +574,13 @@ def cr_int(cr: str) -> int:
     return int(m.group(1)) if m else -1
 
 
-def build() -> List[EpicMonster]:
+def build(lines: Optional[Sequence[str]] = None) -> List[EpicMonster]:
+    source_lines = list(lines) if lines is not None else _source_lines()
+    spans = detect_description_spans(source_lines) if source_lines else {}
+    if lines is None and not source_lines:
+        print(f"NO COVERAGE: {BOOK} epic monster descriptions "
+              "(derived OCR source is missing)")
+
     out: List[EpicMonster] = []
     seen = set()
     for row in _MONSTERS:
@@ -194,8 +589,22 @@ def build() -> List[EpicMonster]:
         if key in seen:
             continue
         seen.add(key)
+        description_key = _description_key(d["name"])
+        span = spans.get(description_key)
         d["book"] = BOOK
         d["citation"] = CITATION
+        d["description_key"] = description_key
+        if span:
+            d["description_pages"] = span.pages
+            d["start"] = span.start
+            d["end"] = span.end
+            d["soft"] = None
+        else:
+            d["description_pages"] = ""
+            d["start"] = 0
+            d["end"] = 0
+            d["soft"] = ("NO COVERAGE: full description "
+                         "(derived description extraction is missing)")
         out.append(EpicMonster(**d))
     out.sort(key=lambda m: (cr_int(m.challenge_rating), m.name))
     return out
@@ -213,8 +622,9 @@ def write_index() -> int:
         "6, 'Monsters'). **Vision-transcribed from the PDF page images** because the",
         "book's OCR text layer is corrupt — this is still book RAW, read directly",
         "off the page, and every entry is cited to the PDF page of its stat block.",
-        "Key mechanical fields only (Size/Type, Hit Dice, AC, Challenge Rating,",
-        "alignment, one-line special attacks/qualities, ability scores).",
+        "Key mechanical fields remain the vision-verified transcription; every row",
+        "also carries an exact span into reproducible two-column OCR of the full",
+        "printed stat block and description.",
         "",
         "Abomination stat blocks carry MAXIMUM hit points per Hit Die (a stated",
         "Abomination Trait). Faded or art-clipped glyphs are cross-checked against",
@@ -225,13 +635,13 @@ def write_index() -> int:
         f"CR {cr_int(monsters[0].challenge_rating)} to "
         f"{cr_int(monsters[-1].challenge_rating)}.*",
         "",
-        "| Monster | CR | Size / Type | Hit Dice | AC | Alignment | Special Attacks | Special Qualities | Abilities | Page |",
-        "|---|---|---|---|---|---|---|---|---|---|",
+        "| Monster | CR | Size / Type | Hit Dice | AC | Alignment | Special Attacks | Special Qualities | Abilities | Page | Description Pages |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for m in monsters:
         cells = [m.name, m.challenge_rating, m.size_type, m.hit_dice, m.armor_class,
                  m.alignment, m.special_attacks, m.special_qualities, m.abilities,
-                 str(m.page)]
+                 str(m.page), m.description_pages]
         cells = [c.replace("|", r"\|") for c in cells]
         md.append("| " + " | ".join(cells) + " |")
     md.append("")
@@ -239,21 +649,60 @@ def write_index() -> int:
 
     OUT_JSON.write_text(
         json.dumps({"generated_by": "scripts/epic_monster_harvest.py",
+                    "corpus": str(CORPUS),
+                    "source_path": str(SOURCE_REL),
+                    "source_sha256": _source_hash(),
                     "book": BOOK, "citation": CITATION, "pages": PAGES,
-                    "note": NOTE,
+                    "description_pages": "158-230",
+                    "description_blocks": len(_all_description_keys()),
+                    "full_description_entries": sum(
+                        m.start < m.end for m in monsters),
+                    "note": (NOTE + " Full printed stat blocks and descriptions "
+                             "are attached by exact line span into a reproducible "
+                             "two-column OCR extraction; shared book sections back "
+                             "their printed variant rows."),
                     "total_monsters": len(monsters),
                     "monsters": [asdict(m) for m in monsters]}, indent=1),
         encoding="utf-8")
     return len(monsters)
 
 
+def export_packet(query: str, out_path: Optional[Path]) -> int:
+    q = query.casefold().strip()
+    hits = [monster for monster in build() if q in monster.name.casefold()]
+    if not hits:
+        print(f"NO COVERAGE: epic monster export ({query!r} not found)")
+        return 1
+    lines = _source_lines()
+    packet = {
+        "generated_by": "scripts/epic_monster_harvest.py --export",
+        "query": query,
+        "source": str(SOURCE),
+        "source_sha256": _source_hash(),
+        "entries": [],
+    }
+    for monster in hits:
+        row = asdict(monster)
+        row["full"] = "\n".join(lines[monster.start:monster.end]).strip() \
+            if monster.start < monster.end else ""
+        packet["entries"].append(row)
+    text = json.dumps(packet, indent=2)
+    if out_path:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(text + "\n", encoding="utf-8")
+        print(f"wrote {out_path}")
+    else:
+        print(text)
+    return 0
+
+
 def selftest() -> int:
     failures: List[str] = []
     monsters = build()
 
-    # count clears a sane floor (the p.156 roster is 64)
-    if len(monsters) < 60:
-        failures.append(f"only {len(monsters)} monsters; the p.156 roster is 64")
+    # Lock the complete p.156 roster count.
+    if len(monsters) != 64:
+        failures.append(f"monster count {len(monsters)}, expected exactly 64")
 
     by_name = {m.name: m for m in monsters}
 
@@ -303,6 +752,85 @@ def selftest() -> int:
     if min(crs) != 5 or max(crs) != 57:
         failures.append(f"CR range {min(crs)}..{max(crs)}, expected 5..57")
 
+    fixture = [
+        "## [PDF page 158]",
+        "ANAXIM [EPIC MONSTER DESCRIPTION]",
+        "raw anaxim body",
+        "",
+        "## [PDF pages 169-170]",
+        "BEHEMOTH [EPIC MONSTER DESCRIPTION]",
+        "raw behemoth body",
+    ]
+    fixture_spans = detect_description_spans(fixture)
+    anaxim = fixture_spans.get("Anaxim")
+    behemoth = fixture_spans.get("Behemoth")
+    if not anaxim or (anaxim.pages, anaxim.start, anaxim.end) != ("158", 1, 3):
+        failures.append(f"span fixture Anaxim mismatch: {anaxim}")
+    if not behemoth or (behemoth.pages, behemoth.start,
+                       behemoth.end) != ("169-170", 5, 7):
+        failures.append(f"span fixture Behemoth mismatch: {behemoth}")
+
+    if set(_all_description_keys()) != set(DESCRIPTION_ANCHORS):
+        failures.append("description keys and verified anchors differ")
+    if len(_all_description_keys()) != 50:
+        failures.append(
+            f"description block count {len(_all_description_keys())}, expected 50"
+        )
+
+    key_counts = Counter(m.description_key for m in monsters)
+    expected_shared = {
+        "Behemoth": 2,
+        "Colossus": 3,
+        "Devastation Vermin": 4,
+        "Elemental, Primal": 4,
+        "Golem": 2,
+        "Hoary Hunter": 2,
+        "Legendary Animal": 2,
+        "Sirrush": 2,
+        "Slaad": 2,
+    }
+    for key, count in expected_shared.items():
+        if key_counts.get(key) != count:
+            failures.append(
+                f"description key {key!r} backs {key_counts.get(key, 0)} rows, "
+                f"expected {count}"
+            )
+
+    source_lines = _source_lines()
+    recovered = [m for m in monsters if m.start < m.end]
+    if len(recovered) != 64:
+        failures.append(f"full description rows {len(recovered)}, expected 64")
+    if len({(m.start, m.end) for m in recovered}) != 50:
+        failures.append("description spans are not exactly 50 shared blocks")
+    if source_lines and not _source_hash():
+        failures.append("derived source exists but has no SHA-256")
+    if source_lines:
+        hunefer = by_name["Hunefer"]
+        lavawight = by_name["Lavawight"]
+        hunefer_lines = source_lines[hunefer.start:hunefer.end]
+        lavawight_lines = source_lines[lavawight.start:lavawight.end]
+        if not any("doubles" in line.casefold()
+                   for line in hunefer_lines[-5:]):
+            failures.append("Hunefer/Lavawight split dropped Hunefer's last line")
+        if any("lavawi" in _name_key(line)
+               for line in hunefer_lines[-5:]):
+            failures.append("Hunefer span bleeds into the Lavawight title")
+        if not any("lavawi" in _name_key(line)
+                   for line in lavawight_lines[1:4]):
+            failures.append("Lavawight span omits its raw OCR title")
+    for m in monsters:
+        if m.soft is not None:
+            failures.append(f"'{m.name}' unexpectedly soft: {m.soft}")
+        if not m.description_pages:
+            failures.append(f"'{m.name}' has no description_pages")
+        if m.start < m.end:
+            if m.end > len(source_lines):
+                failures.append(f"'{m.name}' span ends past source length")
+            elif _name_key(m.description_key) not in _name_key(source_lines[m.start]):
+                failures.append(
+                    f"'{m.name}' span does not lead with {m.description_key!r}"
+                )
+
     for f in failures:
         print(f"SELFTEST FAIL: {f}")
     print("selftest: " + ("PASS" if not failures else f"{len(failures)} failure(s)"))
@@ -312,11 +840,20 @@ def selftest() -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--search", metavar="TEXT")
+    ap.add_argument("--export", metavar="NAME",
+                    help="emit a translator-ready packet")
+    ap.add_argument("--out", type=Path, help="write the export packet here")
+    ap.add_argument("--extract-source", action="store_true",
+                    help="rebuild the external two-column OCR description source")
     ap.add_argument("--selftest", action="store_true")
     args = ap.parse_args()
 
+    if args.extract_source:
+        return extract_description_source()
     if args.selftest:
         return selftest()
+    if args.export:
+        return export_packet(args.export, args.out)
 
     if args.search:
         q = args.search.lower()

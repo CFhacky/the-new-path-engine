@@ -91,6 +91,20 @@ unrelated inset examples and the following epic-psionics section. The JSON
 index records the generated file's SHA-256; no OCR mechanic was guessed or
 rewritten.
 
+## 2026-08-29 — Epic Level Handbook epic monsters (derived OCR source)
+
+File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-monsters.ocr-columns.md`
+
+This is reproducible source generation, not hand-repaired body text.
+`epic_monster_harvest.py --extract-source` renders ELH pp.158-230 at 4× and
+OCRs both visual columns independently. All **50 shared description bodies**
+remain raw Tesseract output; only their headings are restored from the existing
+book-verified 64-row transcription. Printed variants share the book's single
+common block. One Hunefer/Lavawight boundary whose two OCR rows have the same
+vertical coordinate is split by their stable OCR row order, preserving both
+raw lines without rewriting either. Two complete generations produced the same
+SHA-256, which the JSON index records; no OCR mechanic was guessed or repaired.
+
 ---
 
 ## FLAGGED — not yet resolved (need PDF page verification; NOT guessed)
