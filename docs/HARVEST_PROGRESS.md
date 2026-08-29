@@ -282,6 +282,18 @@ asks for them here.
 
 ## LOG
 
+- **2026-08-29** — Closed the D&D 3.5e spell full-text gap. The 1,841 committed
+  spell rows and their `[start,end]` spans were already byte-identical and valid
+  against the harvesters’ `_text` files; the codex’s global fuzzy filename cache
+  had instead bound Complete Mage/Champion, Races of the Dragon, and Dragon Magic
+  to same-named `_md\_feats` scans before it reached the spell family.
+  `spell_harvest.py` now emits each source’s exact relative `source_path`, and the
+  codex honors that provenance before any fuzzy fallback. The live selftest locks
+  all six source counts and validates every non-SRD span against its own source.
+  Codex spell coverage rose **1,730/1,841 → 1,841/1,841 (100%)**; total full-text
+  coverage rose **11,036/17,911 → 11,147/17,911 (62%)**, with all prior spell
+  mechanics byte-identical.
+
 - **2026-08-27** — Un-deferred GURPS Fantasy creatures (Chad: "keep going on
   the gurps fantasy creatures"). Added a third detector, `gurps_titlecase`:
   Fantasy uses inline stats but Title-Case names sitting far above long

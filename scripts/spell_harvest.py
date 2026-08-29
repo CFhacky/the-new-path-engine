@@ -10,8 +10,8 @@ items, feats, powers, maneuvers, and now spells each have both a lookup and an
 index).
 
     reference/spell_index.json  — every spell: name, school, subschool /
-                                  descriptor, level list, book, PDF page,
-                                  parsed where clean
+                                  descriptor, level list, book, PDF page, plus
+                                  the exact relative extraction path per source
     reference/spell_index.md    — the same index for human eyes, by book
 
 The bundled SRD core spells (spells_srd35.json) carry their own text; the Spell
@@ -379,11 +379,13 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "",
     ]
     for src in corpus.sources:
+        source_path = src.path.as_posix() if src.path is not None else None
         total += len(src.spells)
         parsed_well += sum(1 for sp in src.spells if sp.quick_fields() >= 2)
         sources_out.append({
             "key": src.key,
             "book": src.book,
+            "source_path": source_path,
             "citation": src.citation,
             "coverage": src.coverage,
             "spells": [{k: v for k, v in asdict(sp).items() if k != "srd_text"}
@@ -393,6 +395,8 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         md.append("")
         md.append(f"*Source: {src.citation}.*  ")
         md.append(f"*Harvest: {src.coverage}.*")
+        if source_path is not None:
+            md.append(f"*Extraction: `{source_path}` under `{corpus.base}`.*")
         md.append("")
         if src.spells:
             md.append("| Spell | School | Subschool / Descriptor | Level | Page |")
@@ -536,24 +540,53 @@ def selftest(base: Path) -> int:
     if not srd:
         print(f"  [SKIP] SRD spell JSON not found: {SRD_JSON}")
     else:
-        if len(srd) < 500:
-            failures.append(f"only {len(srd)} SRD spells loaded; expected >= 500")
+        if len(srd) != 605:
+            failures.append(f"{len(srd)} SRD spells loaded; expected exactly 605")
         fb = next((s for s in srd if s.name.lower() == "fireball"), None)
         if fb is None or fb.school != "Evocation" or fb.level != "Sor/Wiz 3":
             failures.append(f"Fireball SRD parse school={getattr(fb,'school',None)!r} "
                             f"level={getattr(fb,'level',None)!r}, wanted Evocation / Sor/Wiz 3")
 
-    comp_path = base / SOURCES[1].path
-    if comp_path.exists():
+    expected_live_counts = {
+        "compendium": 982,
+        "cmage": 130,
+        "cchampion": 52,
+        "rotd": 35,
+        "dmagic": 37,
+    }
+    live_sources = [s for s in SOURCES if s.path is not None]
+    relative_paths = [s.path.as_posix() for s in live_sources]
+    if len(relative_paths) != len(set(relative_paths)):
+        failures.append("live spell sources do not have unique extraction paths")
+
+    if any((base / s.path).exists() for s in live_sources):
         corpus = Corpus(base, _fresh_sources())
-        comp = next(s for s in corpus.sources if s.key == "compendium")
-        if len(comp.spells) < 900:
-            failures.append(f"only {len(comp.spells)} Compendium spells; expected > 900")
+        for src in corpus.sources:
+            if src.key not in expected_live_counts:
+                continue
+            live_path = base / src.path
+            if not live_path.exists():
+                print(f"  [SKIP] extraction not found: {live_path}")
+                continue
+            wanted = expected_live_counts[src.key]
+            if len(src.spells) != wanted:
+                failures.append(f"{src.book} yielded {len(src.spells)} spells; expected {wanted}")
+            bad_spans = []
+            for sp in src.spells:
+                seg = "\n".join(src.lines[sp.start:sp.end]).strip()
+                nm = re.sub(r"[^a-z0-9]+", " ", sp.name.lower()).strip()
+                head = re.sub(r"[^a-z0-9]+", " ", seg[:300].lower()).strip()
+                tokens = [t for t in nm.split() if len(t) >= 4] or nm.split()
+                if not seg or not tokens or not all(t in head for t in tokens[:2]):
+                    bad_spans.append(sp.name)
+            if bad_spans:
+                failures.append(f"{src.book} has {len(bad_spans)} source spans that do not "
+                                f"lead with their spell name: {bad_spans[:5]}")
         orb = corpus.find("orb of acid", book="compendium")
         if not orb:
             failures.append("Orb of Acid not found in live Compendium")
     else:
-        print(f"  [SKIP] Compendium extraction not found: {comp_path} — fixture + SRD only")
+        print("  [SKIP] live spell extractions not found — fixture + SRD only")
 
     for failure in failures:
         print(f"SELFTEST FAIL: {failure}")

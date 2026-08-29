@@ -48,7 +48,7 @@ works offline.
 
 | Input | Role |
 |---|---|
-| `reference/*_index.json` | the committed index families (each row carries a `[start,end]` LINE span into its source) |
+| `reference/*_index.json` | the committed index families (rows carry `[start,end]` spans; harvesters may also emit an exact relative source path) |
 | `scripts/spells_srd35.json` | clean SRD 3.5 spell text (Open Game Content) — the 605 SRD core spells |
 | `I:\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
 | `codex/codex_template.html` | the page shell (search UI + the `__ENGINE_DATA_B64__` slot) |
@@ -56,11 +56,11 @@ works offline.
 ## How the full text is sourced (book RAW, validated)
 
 - **SRD spells** — pulled by name from `spells_srd35.json` (clean OGC text, not OCR).
-- **Spell Compendium** — sliced from the *Premium* scan (the scan the spell harvest
-  indexed; the "alt scan" has different offsets and must not be used).
-- **Everything else** — sliced from its source file by the row's `[start:end]` line
-  span, then **validated**: the entry's name must lead the slice, or the block is
-  dropped. A misaligned slice is never attached.
+- **Harvested spells** — sliced from the exact `source_path` recorded for each source
+  by `spell_harvest.py`; the *Premium* Compendium path remains a legacy fallback.
+- **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
+- **Every slice** is validated: the entry name must lead it, or the block is dropped.
+  A misaligned or wrong-file slice is never attached.
 
 Families that legitimately carry **no** full block: the two **wargame** indices
 (a unit's profile line *is* the whole entry; its special rules live elsewhere in the
@@ -69,12 +69,12 @@ army book) and a few families whose harvesters recorded only a marker offset
 
 ## Coverage (as of this build)
 
-**11,036 of 17,911 entries** carry the full verbatim block. Strong: D&D 3.5e
-creatures 99% / spells 93% / feats 86%, GURPS 3e & 4e creatures and spells 94–100%,
+**11,147 of 17,911 entries** carry the full verbatim block. Strong: D&D 3.5e
+creatures 99% / spells 100% / feats 86%, GURPS 3e & 4e creatures and spells 94–100%,
 AD&D 100%, WFRP creatures 100%, 40K RP adversaries/talents/psychic ~99–100%. Known
-low families (need harvester-level work to lift): Complete Champion / Dragon Magic
-spells, several GURPS gear/skill/trait indices, epic-tier, and the 40K RP
-weapon/gear tables (which already display their mechanical fields).
+low families (need harvester-level work to lift): GURPS gear/skill/trait/technique,
+maneuvers, soulmelds, vestiges, epic-tier, and the 40K RP weapon/gear tables (which
+already display their mechanical fields).
 
 ## The page
 

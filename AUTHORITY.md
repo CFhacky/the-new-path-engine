@@ -49,7 +49,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `power_harvest.py` | cited psionics extractions (Expanded Psionics Handbook + Complete Psionic); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `maneuver_harvest.py` | cited martial-adept extractions (Tome of Battle); missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `feat_harvest.py` | bundled SRD 3.5 feats + cited supplement extractions (`_md\_feats\`); duplicates feat_lookup.py detection (no import); missing dir prints NO COVERAGE |
-| `spell_harvest.py` | bundled SRD 3.5 spells + cited Spell Compendium and post-2005 splatbook extractions (Complete Mage/Champion, Races of the Dragon, Dragon Magic); school-anchored detection (sibling of power_harvest.py, no import); missing sources print NO COVERAGE |
+| `spell_harvest.py` | bundled SRD 3.5 spells + cited Spell Compendium and post-2005 splatbook extractions (Complete Mage/Champion, Races of the Dragon, Dragon Magic); school-anchored detection (sibling of power_harvest.py, no import); emits each source’s exact relative extraction path for downstream span slicing; missing sources print NO COVERAGE |
 | `gurps_magic_harvest.py` | cited GURPS Magic extraction; class-anchored detection (the GURPS magic system, a separate index from D&D spells); missing sources print NO COVERAGE |
 | `dnd5e_spell_harvest.py` | cited D&D 5e spell extractions; a SEPARATE `system: D&D 5e` index (translator source, never 3.5e RAW); missing sources print NO COVERAGE |
 | `dnd5e_item_harvest.py` | cited D&D 5e magic-item extractions; a SEPARATE `system: D&D 5e` index (translator source, never 3.5e RAW); missing sources print NO COVERAGE |

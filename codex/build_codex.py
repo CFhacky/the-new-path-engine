@@ -28,7 +28,8 @@ publish `codex/build/engine_reference.html` as a private Artifact.
 INPUTS
 ------
 - reference/*_index.json      the 40+ committed index families (name/fields/citation
-                              + a [start,end] LINE span into each entry's source)
+                              + a [start,end] LINE span and, where emitted, the exact
+                              relative extraction path for each source)
 - scripts/spells_srd35.json   clean SRD 3.5 spell text (Open Game Content, bundled)
 - I:\\Sourcebooks\\_md, _text   the OCR sources, sliced by each row's line span
 - codex/codex_template.html   the page shell (contains the __ENGINE_DATA_B64__ slot)
@@ -41,12 +42,12 @@ OUTPUT (git-ignored)
 FULL-TEXT SOURCING — book RAW, never invented
 ---------------------------------------------
 - SRD spells        pulled by name from spells_srd35.json (clean OGC text).
-- Spell Compendium  sliced from the Premium scan (the scan the harvest indexed).
-- everything else   sliced from its source file by the row's [start:end] LINE span,
-                    then VALIDATED: the entry name must lead the slice or the block
-                    is dropped (a mismatched slice is NEVER attached). Wargame
-                    profile lines and marker-offset families legitimately carry no
-                    full block — that is honest emptiness, not a failure.
+- harvested spells  sliced from the exact source_path emitted by spell_harvest.py;
+                    the Premium Compendium path remains as a legacy fallback.
+- legacy rows        fuzzy-match a source filename, then slice by [start:end].
+- every slice is VALIDATED: the entry name must lead it or the block is dropped
+  (a mismatched slice is NEVER attached). Wargame profile lines and marker-offset
+  families legitimately carry no full block — that is honest emptiness, not a failure.
 
 The page itself is gzip-compressed and base64-embedded; the browser inflates it on
 load with DecompressionStream. This keeps the full-text page under the 16 MB
@@ -80,8 +81,8 @@ SOURCE_ROOTS = [
     r"I:\Sourcebooks\_md",
     r"I:\Sourcebooks\_text",
 ]
-# Spell Compendium: the scan the spell harvest actually indexed (offsets align here,
-# not against the "alt scan").
+# Legacy fallback for spell indices created before spell_harvest.py emitted each
+# source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
 CAP = 4200  # max characters of verbatim text kept per entry
@@ -128,17 +129,41 @@ def _fam_sys(fam: str) -> str:
     return "GURPS 4e" if fam.startswith("gurps_") and "3e" not in fam else "D&D 3.5e"
 
 
-def _index_rows(obj, out):
-    """Every dict with a name and a citation/system is a row, wherever it is nested."""
+def _index_rows(obj, out, context=None):
+    """Collect rows while retaining an index source's exact extraction path."""
+    context = context or {}
     if isinstance(obj, dict):
+        updates = {}
+        if isinstance(obj.get("corpus"), str) and obj["corpus"].strip():
+            updates["corpus"] = obj["corpus"]
+        if isinstance(obj.get("source_path"), str) and obj["source_path"].strip():
+            updates["source_path"] = obj["source_path"]
+        child_context = {**context, **updates} if updates else context
         if (isinstance(obj.get("name"), str) and obj["name"].strip()
                 and any(k in obj for k in ("book", "citation", "page", "system"))):
-            out.append(obj)
+            row = dict(obj)
+            if "corpus" in child_context:
+                row["_corpus"] = child_context["corpus"]
+            if "source_path" in child_context:
+                row["_source_path"] = child_context["source_path"]
+            out.append(row)
         for v in obj.values():
-            _index_rows(v, out)
+            _index_rows(v, out, child_context)
     elif isinstance(obj, list):
         for v in obj:
-            _index_rows(v, out)
+            _index_rows(v, out, context)
+
+
+def _exact_source_file(row):
+    """Resolve source metadata emitted by a harvester; return None for legacy rows."""
+    source_path = row.get("_source_path")
+    if not source_path:
+        return None
+    path = Path(source_path)
+    if path.is_absolute():
+        return str(path)
+    corpus = row.get("_corpus")
+    return str(Path(corpus) / path) if corpus else None
 
 
 def build(report=False):
@@ -174,11 +199,11 @@ def build(report=False):
         srd = json.loads(SRD_JSON.read_text(encoding="utf-8"))
         srd_text = {k.lower(): (v.get("text") or "") for k, v in srd.items()}
 
-    def slice_full(book, start, end, name):
+    def slice_full(book, start, end, name, source_file=None):
         if end - start < 2:
             return ""
-        fp = find_file(book)
-        if not fp:
+        fp = source_file or find_file(book)
+        if not fp or not Path(fp).exists():
             return ""
         try:
             seg = "\n".join(lines(fp)[start:end]).strip()
@@ -194,17 +219,12 @@ def build(report=False):
         if (r.get("start", 0) == 0 and r.get("end", 0) == 0) or "srd" in book.lower():
             t = srd_text.get(name.lower().strip())
             return re.sub(r"\n{3,}", "\n\n", t.strip())[:CAP] if t else ""
-        # Spell Compendium aligns against the Premium scan, not whatever fuzzy-matches.
-        if "spell compendium" in book.lower():
+        # Prefer the exact relative source path emitted by spell_harvest.py. The
+        # legacy Compendium fallback preserves compatibility with older indices.
+        fp = _exact_source_file(r)
+        if not fp and "spell compendium" in book.lower():
             fp = SPELL_COMPENDIUM_PREMIUM
-            if not Path(fp).exists():
-                return ""
-            try:
-                seg = "\n".join(lines(fp)[r["start"]:r["end"]]).strip()
-            except Exception:
-                return ""
-            return re.sub(r"\n{3,}", "\n\n", seg)[:CAP] if seg and _validate(seg, name) else ""
-        return slice_full(book, r.get("start", 0), r.get("end", 0), name)
+        return slice_full(book, r.get("start", 0), r.get("end", 0), name, fp)
 
     rows_out = []
     cov = collections.Counter()
@@ -219,14 +239,16 @@ def build(report=False):
             if fam == "spell":
                 full = spell_full(r)
             elif "start" in r and "end" in r:
-                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"])
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r))
             else:
                 full = ""
             if full:
                 cov[fam] += 1
             extra = {}
             for k, v in r.items():
-                if k in ("name", "system", "book", "page", "citation", "start", "end"):
+                if k in ("name", "system", "book", "page", "citation", "start", "end",
+                         "_corpus", "_source_path"):
                     continue
                 if isinstance(v, (str, int, float)) and str(v).strip() and str(v) != "None":
                     extra[k] = v

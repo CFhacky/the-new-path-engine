@@ -627,6 +627,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 *Source: Spell Compendium (WotC, 2005), spell descriptions.*  
 *Harvest: ok — 982 spells from Spell Compendium (Premium).md.*
+*Extraction: `D&D 3.5e/Magic and Items/Spell Compendium (Premium).md` under `I:\Sourcebooks\_text`.*
 
 | Spell | School | Subschool / Descriptor | Level | Page |
 |---|---|---|---|---|
@@ -1617,6 +1618,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 *Source: Complete Mage (WotC, 2006), spell descriptions.*  
 *Harvest: ok — 130 spells from Complete Mage.md.*
+*Extraction: `D&D 3.5e/Player Options/Complete Mage.md` under `I:\Sourcebooks\_text`.*
 
 | Spell | School | Subschool / Descriptor | Level | Page |
 |---|---|---|---|---|
@@ -1755,6 +1757,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 *Source: Complete Champion (WotC, 2007), spell descriptions.*  
 *Harvest: ok — 52 spells from Complete Champion.md.*
+*Extraction: `D&D 3.5e/Player Options/Complete Champion.md` under `I:\Sourcebooks\_text`.*
 
 | Spell | School | Subschool / Descriptor | Level | Page |
 |---|---|---|---|---|
@@ -1815,6 +1818,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 *Source: Races of the Dragon (WotC, 2006), spell descriptions.*  
 *Harvest: ok — 35 spells from Races of the Dragon.md.*
+*Extraction: `D&D 3.5e/Player Options/Races of the Dragon.md` under `I:\Sourcebooks\_text`.*
 
 | Spell | School | Subschool / Descriptor | Level | Page |
 |---|---|---|---|---|
@@ -1858,6 +1862,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 *Source: Dragon Magic (WotC, 2006), spell descriptions.*  
 *Harvest: ok — 37 spells from Dragon Magic.md.*
+*Extraction: `D&D 3.5e/Player Options/Dragon Magic.md` under `I:\Sourcebooks\_text`.*
 
 | Spell | School | Subschool / Descriptor | Level | Page |
 |---|---|---|---|---|
