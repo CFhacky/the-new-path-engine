@@ -54,7 +54,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `dnd5e_spell_harvest.py` | cited D&D 5e spell extractions; a SEPARATE `system: D&D 5e` index (translator source, never 3.5e RAW); missing sources print NO COVERAGE |
 | `dnd5e_item_harvest.py` | cited D&D 5e magic-item extractions; a SEPARATE `system: D&D 5e` index (translator source, never 3.5e RAW); missing sources print NO COVERAGE |
 | `dnd5e_creature_harvest.py` | cited D&D 5e bestiary extractions; a SEPARATE, clearly-labeled `system: D&D 5e` index (source material for the translator, never 3.5e RAW); missing sources print NO COVERAGE |
-| `gurps_gear_harvest.py` | cited GURPS Low-Tech weapon table; column-dump parser (native GURPS 4e gear, its own index); missing sources print NO COVERAGE |
+| `gurps_gear_harvest.py` | cited GURPS Low-Tech weapon + armor tables; column-dump parser with exact, non-overlapping source-row spans (native GURPS 4e gear, its own index); missing sources print NO COVERAGE |
 | `gurps_trait_harvest.py` | cited GURPS Basic Set Trait Lists appendix; column-dump parser for advantages/disadvantages (native GURPS 4e, its own index); missing sources print NO COVERAGE |
 | `gurps_skill_harvest.py` | cited GURPS Basic Set skill list; column-dump parser for skills (attribute/difficulty/defaults; native GURPS 4e, its own index); missing sources print NO COVERAGE |
 | `gurps_technique_harvest.py` | cited GURPS Martial Arts Technique Cheat-Sheet (born-digital text, not OCR); column-dump parser for combat techniques (native GURPS 4e, its own index); missing sources print NO COVERAGE |

@@ -89,12 +89,12 @@ the army book). That is honest emptiness, not a bug.
 
 ## Coverage (as of this build)
 
-**11,911 of 17,951 entries** carry the full verbatim block. Strong: D&D 3.5e
+**12,097 of 17,951 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
-soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 3e & 4e
-creatures and spells 94–100%, AD&D 100%, WFRP creatures 100%, 40K RP
-adversaries/talents/psychic ~99–100%. Known low families (need harvester-level
-work to lift): GURPS gear/skill/trait/technique and the 40K RP weapon/gear tables
+soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear 100%
+and GURPS 3e & 4e creatures/spells 94–100%, AD&D 100%, WFRP creatures 100%,
+40K RP adversaries/talents/psychic ~99–100%. Known low families (need
+harvester-level work to lift): GURPS skill/trait/technique and the 40K RP weapon/gear tables
 (which already display their mechanical fields).
 
 ## The page

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""gurps_gear_harvest.py — collate the GURPS Low-Tech weapon table.
+"""gurps_gear_harvest.py — collate the GURPS Low-Tech gear tables.
 
 THE PROCESS (Chad, 2026-08-28, continuing the GURPS shelf): gear — weapons and
 armor — is codified GURPS mechanics the reference layer still lacked. GURPS
@@ -11,6 +11,10 @@ detector and their own index.
                                        cost, weight, min ST) AND every torso-armor
                                        (name, TL, DR, cost, weight, don), book+page
     reference/gurps_gear_index.md    — the same, for human eyes
+
+Every row records its exact complete table-row span and the exact relative
+source path so the offline codex can display the book-verbatim mechanical block
+without bleeding into the next item or repeated page furniture.
 
 Both the WEAPON table and the ARMOR table are parsed — each was OCR'd as a
 vertical column-dump and gets its own detector.
@@ -64,6 +68,11 @@ NAMEISH = re.compile(r"^[A-Z][A-Za-z][A-Za-z '\u2019\-/]{1,30}$")
 # stray OCR letter tolerated), or a reach/parry code.
 STATVAL = re.compile(r"^(\$[\d,]+|[-\u2013\u2014]|\d{1,3}[A-Za-z\u00bd]{0,2}|C|F|\u00bd|\d[,/]\d)$")
 NOTE = re.compile(r"^\[\d")
+# Skill-section headings delimit adjacent rows in the vertical table dump.
+# Some wrap (for example SHORTSWORD), so the first line alone is enough.
+WEAPON_SKILL_HEADER = re.compile(
+    r"^[A-Z][A-Z /-]+ \(.*(?:DX-\d|No default|Continued|Cloak-\d)"
+)
 
 # Armor-table cells (a column-dump: TL / Name / DR / Cost / Weight / Don / Notes)
 ARMOR_COST = re.compile(r"^\$[\d,]+$")
@@ -118,6 +127,25 @@ def _name_above(lines: List[str], i: int) -> Optional[int]:
     return j
 
 
+def _weapon_span_end(lines: List[str], start: int, limit: int) -> int:
+    """Bound one complete table row without admitting the next row or section."""
+    end = min(limit, len(lines))
+    for j in range(start + 1, end):
+        s = lines[j].strip()
+        page_furniture = (j + 1 < len(lines)
+                          and ((s == "WEAPONS"
+                                and re.fullmatch(r"\d{1,3}", lines[j + 1].strip()))
+                               or (re.fullmatch(r"\d{1,3}", s)
+                                   and lines[j + 1].strip() == "WEAPONS")))
+        if (PAGE.search(lines[j]) or s == "Notes"
+                or WEAPON_SKILL_HEADER.match(s) or page_furniture):
+            end = j
+            break
+    while end > start + 1 and not lines[end - 1].strip():
+        end -= 1
+    return end
+
+
 def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[GurpsGear]:
     n = len(lines)
     gear: List[GurpsGear] = []
@@ -144,10 +172,17 @@ def detect_weapons(lines: List[str], pages: List[int], book: str) -> List[GurpsG
                 break
         vals += [None] * (5 - len(vals))
         g = GurpsGear(name=lines[a].strip(), book=book, page=pages[a], start=a,
-                      end=min(n, i + 9), category="weapon", damage=ln.strip())
+                      end=0, category="weapon", damage=ln.strip())
         g.reach, g.parry, g.cost, g.weight, g.min_st = (
             _clean(v) if v else None for v in vals)
         gear.append(g)
+
+    # Bound every raw candidate before name deduplication. The next candidate's
+    # preceding TL cell is the ordinary row boundary; page furniture, Notes,
+    # and skill headings close the last row of a table section sooner.
+    for k, g in enumerate(gear):
+        limit = gear[k + 1].start - 1 if k + 1 < len(gear) else n
+        g.end = _weapon_span_end(lines, g.start, limit)
 
     # A weapon is listed under each of its attack modes; keep one row per name —
     # the richest (most stats), then the first.
@@ -179,9 +214,11 @@ def detect_armor(lines: List[str], pages: List[int], book: str) -> List[GurpsGea
         if not (ARMOR_TL.match(tl) and ARMOR_NAME.match(nm) and ARMOR_DR.match(dr)
                 and ARMOR_NUM.match(wt) and ARMOR_NUM.match(don)):
             continue
-        notes = toks[k + 3][1] if k + 3 < len(toks) and NOTE.match(toks[k + 3][1]) else None
+        has_notes = k + 3 < len(toks) and NOTE.match(toks[k + 3][1])
+        notes = toks[k + 3][1] if has_notes else None
+        end = toks[k + 3][0] + 1 if has_notes else i_don + 1
         gear.append(GurpsGear(name=nm, book=book, page=pages[i_nm], start=i_tl,
-                              end=i_don + 1, category="armor", tl=tl, dr=dr,
+                              end=end, category="armor", tl=tl, dr=dr,
                               cost=cost, weight=wt, don=don, notes=notes))
 
     best: Dict[str, GurpsGear] = {}
@@ -229,6 +266,16 @@ def _pages_for(lines: List[str]) -> List[int]:
             page = int(m.group(1))
         pages.append(page)
     return pages
+
+
+def _span_leads(lines: List[str], g: GurpsGear) -> bool:
+    """Mirror the codex name-leading guard for a harvested source slice."""
+    seg = "\n".join(lines[g.start:g.end]).strip()
+    norm = lambda s: re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+    name = norm(g.name)
+    head = norm(seg[:300])
+    tokens = [t for t in name.split() if len(t) >= 4] or name.split()
+    return bool(tokens) and all(t in head for t in tokens[:2])
 
 
 def _fresh_sources() -> List[Source]:
@@ -282,13 +329,15 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "rerun the harvest.** GURPS Low-Tech weapons AND armor (native GURPS 4e).",
         "The raw text stays on `I:\\Sourcebooks` — use `--export \"NAME\"` for the",
         "packet. The stat tables were OCR'd as column-dumps; a field left `—` is",
-        "one the OCR did not cleanly yield.",
+        "one the OCR did not cleanly yield. Every entry carries its exact complete",
+        "source-row span for book-verbatim display in the offline codex.",
         "",
     ]
     for src in corpus.sources:
         total += len(src.gear)
         parsed_well += sum(1 for g in src.gear if g.quick_fields() >= 3)
         sources_out.append({"key": src.key, "book": src.book, "citation": src.citation,
+                            "source_path": str(src.path),
                             "category": src.detector, "coverage": src.coverage,
                             "gear": [asdict(g) for g in src.gear]})
         noun = "armor pieces" if src.detector == "armor" else "weapons"
@@ -459,10 +508,46 @@ def selftest(base: Path) -> int:
         corpus = Corpus(base, _fresh_sources())
         wpns = sum(len(s.gear) for s in corpus.sources if s.detector == "weapons")
         arm = sum(len(s.gear) for s in corpus.sources if s.detector == "armor")
-        if wpns < 120:
-            failures.append(f"only {wpns} weapons indexed; expected > 120")
-        if arm < 20:
-            failures.append(f"only {arm} armor pieces indexed; expected > 20")
+        if wpns != 153:
+            failures.append(f"{wpns} weapons indexed; expected exactly 153")
+        if arm != 33:
+            failures.append(f"{arm} armor pieces indexed; expected exactly 33")
+
+        for src in corpus.sources:
+            bad_spans = [g.name for g in src.gear
+                         if g.end - g.start < 2 or not _span_leads(src.lines, g)]
+            if bad_spans:
+                failures.append(f"{src.key}: invalid source spans: {bad_spans[:8]}")
+
+        weapon_src = next(s for s in corpus.sources if s.detector == "weapons")
+        raw_starts = set()
+        for i, ln in enumerate(weapon_src.lines):
+            if DAMAGE.match(ln.strip()):
+                a = _name_above(weapon_src.lines, i)
+                if a is not None:
+                    raw_starts.add(a)
+        bleed = [g.name for g in weapon_src.gear
+                 if any(g.start < a < g.end for a in raw_starts)]
+        if bleed:
+            failures.append(f"weapon spans admit another table row: {bleed[:8]}")
+        furniture = []
+        for g in weapon_src.gear:
+            block = weapon_src.lines[g.start:g.end]
+            if (any(PAGE.search(ln) or WEAPON_SKILL_HEADER.match(ln.strip())
+                    for ln in block)
+                    or any(ln.strip() == "WEAPONS" for ln in block[1:])):
+                furniture.append(g.name)
+        if furniture:
+            failures.append(f"weapon spans admit page/section furniture: {furniture[:8]}")
+
+        axe = corpus.find("axe", book="lowtech")
+        if not axe:
+            failures.append("Axe not found in live Low-Tech")
+        else:
+            src, row = axe[0]
+            block = "\n".join(src.lines[row.start:row.end])
+            if "Hatchet" in block:
+                failures.append("Axe source span bleeds into the Hatchet row")
         kat = corpus.find("katana", book="lowtech")
         if not kat:
             failures.append("Katana not found in live Low-Tech")

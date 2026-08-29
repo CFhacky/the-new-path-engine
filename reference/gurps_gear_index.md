@@ -4,7 +4,8 @@
 rerun the harvest.** GURPS Low-Tech weapons AND armor (native GURPS 4e).
 The raw text stays on `I:\Sourcebooks` — use `--export "NAME"` for the
 packet. The stat tables were OCR'd as column-dumps; a field left `—` is
-one the OCR did not cleanly yield.
+one the OCR did not cleanly yield. Every entry carries its exact complete
+source-row span for book-verbatim display in the offline codex.
 
 ## GURPS Low-Tech — Weapons — 153 weapons
 
