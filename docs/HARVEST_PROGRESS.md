@@ -20,7 +20,7 @@ extraction and are the court of appeal for any garbled number.
 
 **At a glance (2026-08-29).** Forty-one reference index families, 17,952 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
-(1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
+(1420), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
 (1869), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
 (186; all exact full-row spans), GURPS advantages/disadvantages (469; all exact full-description/inline-definition spans), GURPS skills (263; all exact full-description spans), GURPS techniques (112; all exact full-description spans), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136; 118 with cited book-verbatim SPECIAL RULES from born-digital codexes) + WHFB wargame unit profiles (291; 217 with cited book-verbatim SPECIAL RULES from born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
@@ -42,7 +42,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 |---|---|---|---|---|
 | `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (143 entries) | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` (12 books) + `_text` Monsters and Fiends: Book of Vile Darkness (24 archfiends), Deities and Demigods (9), Monsters of the Planes (120), Book of Exalted Deeds (43 celestial paragons) | 1498 stat blocks / 16 books (a garbage-name filter — stat fragments, class/level lines, prose sentences, dangling parens — removed ~206 non-creature rows the original 1509 had let through) | `python scripts/creature_harvest.py --selftest` |
-| `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide 3.0 (363) | 1421 items / 3 sources | `python scripts/item_harvest.py --selftest` |
+| `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide 3.0 (362) | 1420 items / 3 sources | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle (alt scan).md` — book lists pp.48–51 + descriptions pp.52–94 | 208 maneuvers/stances (all with 3+ quick fields and exact-source full-description spans) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
@@ -186,8 +186,9 @@ blocks, prose-embedded NPCs), so a `_text` creature detector is its own task.
 
 The dated 2026-08-27 queue is closed:
 
-1. **Arms & Equipment Guide items — DONE.** The native item index contains all
-   363 accepted A&EG rows; its detector and live count are selftested.
+1. **Arms & Equipment Guide items — DONE.** The native item index contains
+   362 accepted A&EG rows; its detector rejects running CHAPTER headers and its
+   exact live count is selftested.
 2. **Former term extensions — resolved by correct ownership.** GURPS Magic
    Items 1–3 already supply 783 rows in the separately labeled
    `gurps3e_item_index`. Warhammer wargear already lives in the labeled WFRP
@@ -253,9 +254,18 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 
 ## LOG
 
+- **2026-08-29** — Corrected Arms & Equipment Guide running-header pollution.
+  Twenty-one source-verified item names that had been swallowed by CHAPTER
+  furniture are restored, including the printed wrapped heading **Headband of
+  Simplemindedness**; one wholly false CHAPTER 6 row attached to Blackrazor's
+  footer is dropped. MIC's 842 rows, DMG's 216 rows, and 341 unaffected A&EG
+  rows are byte-identical. The family is now **1,420** rows (A&EG 362), and the
+  live selftest locks the three source counts plus representative repairs.
+
 - **2026-08-29** — Closed the dated NEXT queue and corrected its stale
-  ownership notes. Arms & Equipment Guide was already complete at 363 native
-  item rows; GURPS Magic Items 1–3 were already complete at 783 separately
+  ownership notes. Arms & Equipment Guide was then believed complete at 363
+  native item rows; the later header-pollution audit above corrected that to
+  362. GURPS Magic Items 1–3 were already complete at 783 separately
   labeled GURPS 3e rows; and Warhammer wargear was already complete in the
   labeled WFRP/WH40K Roleplay weapon, gear, and armour families. All seven
   relevant harvester selftests pass and every non-native row retains its exact

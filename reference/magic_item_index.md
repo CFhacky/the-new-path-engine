@@ -1086,10 +1086,10 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Talisman of the Sphere | — | — | — | — | 16th | Strong transmutation | 281 |
 | Talisman of Zagy | — | — | — | — | 20th | Strong conjuration | 281 |
 
-## Arms and Equipment Guide — 363 items
+## Arms and Equipment Guide — 362 items
 
 *Source: Arms and Equipment Guide (3.0), magic items.*  
-*Harvest: ok — 363 items from Arms And Equipment Guide.md.*
+*Harvest: ok — 362 items from Arms And Equipment Guide.md.*
 
 | Item | Tag | Price | Lvl | Body Slot / Property | CL | Aura | Page |
 |---|---|---|---|---|---|---|---|
@@ -1111,7 +1111,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | New Item | — | 30,000 gp | — | — | 7th | — | 75 |
 | Bridle of Ease | — | 500 gp | — | — | 7th | — | 80 |
 | Clever Bridle | — | 3 gp | — | — | 5th | — | 80 |
-| CHAPTER 4 | — | 2,000 gp | — | — | 5th | — | 80 |
+| Equestrian’s Saddle | — | 2,000 gp | — | — | 5th | — | 80 |
 | Horseless Saddle | — | 43,200 gp | — | — | 8th | — | 80 |
 | Horseshoes of Thunder | — | — | — | — | 7th | — | 80 |
 | Shrink Collar | — | 10,000 gp | — | — | 5th | — | 81 |
@@ -1125,7 +1125,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Buffering | — | — | — | — | 7th | — | 93 |
 | Dancing | — | — | — | — | Sth | — | 94 |
 | Distracting | — | — | — | — | 9th | — | 94 |
-| CHAPTER 5 | — | — | — | — | 7th | — | 94 |
+| Fearsome | — | — | — | — | 7th | — | 94 |
 | Feathered | — | — | — | — | Sth | — | 94 |
 | Sacred | — | — | — | — | 8th | — | 94 |
 | Wrapping | — | — | — | — | 3rd | — | 94 |
@@ -1139,7 +1139,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Stonecunning | — | 32,130 gp | — | — | 11th | — | 95 |
 | Swarm Shield | — | 6,160 gp | — | — | 3rd | — | 95 |
 | Tessellated Armor | — | 11,560 gp | — | — | 8th | — | 96 |
-| CHAPTER 5 | — | 100,000 gp | — | — | 15th | — | 96 |
+| Vampire Hunter | — | 100,000 gp | — | — | 15th | — | 96 |
 | Variable Shield | — | 6,560 gp | — | — | Sth | — | 96 |
 | Acidic Burst | — | — | — | — | 12th | — | 96 |
 | Balanced | — | — | — | — | 9th | — | 97 |
@@ -1178,7 +1178,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Arrowdeath Flail | — | 33,690 gp | — | — | 13th | — | 100 |
 | Axe of Falls | — | 50,308 gp | — | — | 6th | — | 100 |
 | Axe of Pairs | — | 50,306 gp | — | — | 7th | — | 100 |
-| CHAPTER 5 | — | 19,330 gp | — | — | 9th | — | 100 |
+| Axe of Shards | — | 19,330 gp | — | — | 9th | — | 100 |
 | Axe of Storms | — | 98,660 gp | — | — | 17th | — | 100 |
 | Axe of the Joyous Dance | — | 107,906 gp | — | — | 9th | — | 100 |
 | Axe of the Winds | — | 65,830 gp | — | — | 11th | — | 100 |
@@ -1192,9 +1192,9 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Blade of the Duelist | — | 16,320 gp | — | — | 9th | — | 101 |
 | Bladed Crossbow | — | 32,350 gp | — | — | 9th | — | 101 |
 | Bolt of Freedom | — | 247 gp | — | — | 7th | — | 102 |
-| CHAPTER 5 | — | 767 gp | — | — | 9th | — | 102 |
+| Bolt of Voices | — | 767 gp | — | — | 9th | — | 102 |
 | Bonebreaker Hammer | — | 18,312 gp | — | — | 13th | — | 102 |
-| CHAPTER 5 | — | 8,600 gp | — | — | 15th | — | 103 |
+| Bow of Arcane Might | — | 8,600 gp | — | — | 15th | — | 102 |
 | Bow of Force | — | 32,700 gp | — | — | 9th | — | 103 |
 | Bow of Mighty Pulling | — | 26,375 gp | — | — | 9th | — | 103 |
 | Bow of Radiance | — | 40,375 gp | — | — | 9th | — | 103 |
@@ -1234,11 +1234,11 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Flail of Shadows | — | 48,155 gp | — | — | 11th | — | 107 |
 | Flameshroud Axe | — | 51,510 gp | — | — | 13th | — | 108 |
 | Foe Reaper | — | 32,318 gp | — | — | 15th | — | 108 |
-| CHAPTER 5 | — | 18,315 gp | — | — | 9th | — | 108 |
+| Foretelling Blade | — | 18,315 gp | — | — | 9th | — | 108 |
 | Frost Shard Dagger | — | 1,052 gp | — | — | 3rd | — | 108 |
 | Ghost Hands | — | — | — | — | 9th | — | 108 |
 | Glaive of Torment | — | 74,308 gp | — | — | 10th | — | 108 |
-| CHAPTER 5 | — | 18,530 gp | — | — | 8th | — | 109 |
+| Gnome Steam Bow | — | 18,530 gp | — | — | 8th | — | 108 |
 | Gnome’s Toolkit | — | 10,33 gp | — | — | 11th | — | 109 |
 | Grasping Dagger | — | 50,30 gp | — | — | 10th | — | 109 |
 | Gray Snare | — | 74,320 gp | — | — | 10th | — | 109 |
@@ -1259,7 +1259,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Javelin of Lightning, Greater | — | 1,501 gp | — | — | 10th | — | 112 |
 | Javelin of Obliteration | — | 9,301 gp | — | — | 15th | — | 112 |
 | Javelin of Precision | — | 50,301 gp | — | — | 9th | — | 112 |
-| CHAPTER 5 | — | 32,302 gp | — | — | 15th | — | 112 |
+| Kama of Pure Aim | — | 32,302 gp | — | — | 15th | — | 112 |
 | Khopesh of the Loyal Minion | — | 6,320 gp | — | — | 5th | — | 112 |
 | Knight’s Sword | — | 18,335 gp | — | — | 7th | — | 112 |
 | Kukri of Crippling | — | 18,308 gp | — | — | 9th | — | 112 |
@@ -1276,7 +1276,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Mageblade | — | 50,315 gp | — | — | 17th | — | 114 |
 | Manticore Blade | — | 20,350 gp | — | — | 10th | — | 114 |
 | Maul of Construction | — | 51,824 gp | — | — | 15th | — | 114 |
-| CHAPTER 5 | — | 38,315 gp | — | — | 7th | — | 114 |
+| Mirror Blade | — | 38,315 gp | — | — | 7th | — | 114 |
 | Moonsilver Shard | — | 50 gp | — | — | 5th | — | 115 |
 | Morningstar of Exhilaration | — | 28,308 gp | — | — | 9th | — | 115 |
 | Nunchaku of Mastery | — | 22,302 gp | — | — | 7th | — | 115 |
@@ -1301,7 +1301,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Sling of Misdirection | — | 30,300 gp | — | — | 4th | — | 118 |
 | Soldier's Rest | — | 4,808 gp | — | — | 9th | — | 118 |
 | Songblade | — | 6,400 gp | — | — | 8th | — | 118 |
-| CHAPTER 5 | — | 18,335 gp | — | — | 11th | — | 118 |
+| Sorcerer's Hand | — | 18,335 gp | — | — | 11th | — | 118 |
 | Spear of Impaling | — | 32,305 gp | — | — | 10th | — | 118 |
 | Spear of the Hunt | — | 28,302 gp | — | — | 7th | — | 118 |
 | Spear of Skirmishing | — | 32,301 gp | — | — | 9th | — | 118 |
@@ -1319,7 +1319,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Sword of Countering | — | 33,905 gp | — | — | 13th | — | 120 |
 | Sword of Crypts | — | 42,315 gp | — | — | 9th | — | 120 |
 | Sword of the Diplomat | — | 64,310 gp | — | — | 15th | — | 120 |
-| CHAPTER 5 | — | 88,310 gp | — | — | 10th | — | 120 |
+| Sword of Escape | — | 88,310 gp | — | — | 10th | — | 120 |
 | Sword of Graceful Strikes | — | 72,310 gp | — | — | 9th | — | 121 |
 | Sword of Judgment | — | 43,115 gp | — | — | 13th | — | 121 |
 | Sword of the Mammoth | — | 18,350 gp | — | — | 11th | — | 121 |
@@ -1335,7 +1335,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Twin Blade | — | 29,829 gp | — | — | 9th | — | 123 |
 | Vanishing Blade | — | 47,120 gp | — | — | 10th | — | 123 |
 | Vigilant Halberd | — | 72,310 gp | — | — | 12th | — | 123 |
-| CHAPTER 5 | — | 38,301 gp | — | — | 15th | — | 124 |
+| Viper Whip | — | 38,301 gp | — | — | 15th | — | 123 |
 | Warrenguard | — | 40,310 gp | — | — | 8th | — | 124 |
 | Weaponeater | — | 58,300 gp | — | — | 10th | — | 124 |
 | Whirling Axe | — | 18,320 gp | — | — | 11th | — | 124 |
@@ -1354,7 +1354,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Misdirection | — | 11,200 gp | — | — | 12th | — | 126 |
 | Universal Elemental Resistance, Minor | — | 144,000 gp | — | — | 15th | — | 126 |
 | Construct Control | — | 68,850 gp | — | — | 17th | — | 126 |
-| CHAPTER 5 | — | 20,000 gp | — | — | 9th | — | 126 |
+| Embassy | — | 20,000 gp | — | — | 9th | — | 126 |
 | Blade of Force | — | 125,000 gp | — | — | 13th | — | 127 |
 | Ghost Rod | — | 50,000 gp | — | — | 15th | — | 127 |
 | Mimicry | — | 30,000 gp | — | — | 6th | — | 127 |
@@ -1364,7 +1364,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Warning | — | 58,000 gp | — | — | 9th | — | 128 |
 | Artisan | — | 69,800 gp | — | — | 12th | — | 128 |
 | Assassin’s Staff | — | 24,000 gp | — | — | 7th | — | 128 |
-| CHAPTER 5 | — | — | — | — | 10th | — | 129 |
+| Cacophony | — | — | — | — | 10th | — | 128 |
 | Creation | — | 45,000 gp | — | — | 9th | — | 129 |
 | Destruction | — | 98,500 gp | — | — | 15th | — | 129 |
 | Fallen | — | 24,000 gp | — | — | 7th | — | 129 |
@@ -1375,7 +1375,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Madness | — | 110,000 gp | — | — | 17th | — | 130 |
 | Righteousness | — | 34,000 gp | — | — | 7th | — | 130 |
 | Sacred Fire | — | 60,000 gp | — | — | 13th | — | 130 |
-| CHAPTER 5 | — | 42,600 gp | — | — | 12th | — | 130 |
+| Spider | — | 42,600 gp | — | — | 12th | — | 130 |
 | Undying Staff | — | 27,375 gp | — | — | 12th | — | 130 |
 | Armband of Reduction | — | 2,000 gp | — | — | Sth | — | 130 |
 | Bag of Endless Caltrops | — | 2,300 gp | — | — | 9th | — | 130 |
@@ -1387,7 +1387,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Boots, Steadfast | — | 6,000 gp | — | — | 3rd | — | 131 |
 | Boots of Tracklessness | — | 33,500 gp | — | — | 7th | — | 131 |
 | Boots of Woodland Striding | — | 23,600 gp | — | — | 12th | — | 131 |
-| CHAPTER 5 | — | 34,800 gp | — | — | 9th | — | 132 |
+| Candle of Icy Death | — | 34,800 gp | — | — | 9th | — | 131 |
 | Choker of Eloquence | — | 1,500 gp | — | — | 6th | — | 132 |
 | Cinders of the Inferno | — | 7,650 gp | — | — | 17th | — | 132 |
 | Clasp of the Elder | — | 6,000 gp | — | — | 10th | — | 132 |
@@ -1408,7 +1408,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Hammersphere | — | — | — | — | 7th | — | 134 |
 | Idol of False Vision | — | 54,500 gp | — | — | 10th | — | 134 |
 | Incense of the Gorgon | — | 6,600 gp | — | — | 11th | — | 134 |
-| CHAPTER 5 | — | 29,975 gp | — | — | 11th | — | 134 |
+| Construct | — | 29,975 gp | — | — | 11th | — | 134 |
 | Ioun Stone of Resistance | — | 2,000 gp | — | — | 5th | — | 135 |
 | Lantern of Brightness | — | 66,520 gp | — | — | 13th | — | 135 |
 | Libram of Flesh | — | 178,500 gp | — | — | 17th | — | 135 |
@@ -1421,7 +1421,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Rampaging Boar Necklace | — | 11,840 gp | — | — | 7th | — | 136 |
 | Necklace of the Wild Beast | — | — | — | — | 10th | — | 136 |
 | Oracle Beads | — | 19,192 gp | — | — | 7th | — | 136 |
-| CHAPTER 5 | — | 30,080 gp | — | — | Sth | — | 136 |
+| Pelt of Animal Senses | — | 30,080 gp | — | — | Sth | — | 136 |
 | Phylactery of Change | — | 11,200 gp | — | — | 7th | — | 136 |
 | Pitons, Burrowing | — | 380 gp | — | — | 3rd | — | 136 |
 | Pixie Dust | — | 2,700 gp | — | — | 9th | — | 136 |
@@ -1435,7 +1435,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Saw of Prodigious Cutting | — | 2,000 gp | — | — | 3rd | — | 137 |
 | Seeds of the Treant | — | 15,300 gp | — | — | 17th | — | 137 |
 | Shards of the Fissure | — | 7,650 gp | — | — | 17th | — | 137 |
-| CHAPTER 5 | — | 10,000 gp | — | — | Sth | — | 138 |
+| Sparring Dummy of the Master | — | 10,000 gp | — | — | Sth | — | 138 |
 | Steadfast Stone | — | 32,400 gp | — | — | 9th | — | 138 |
 | Stove of Everlasting Flame | — | 2,400 gp | — | — | 3rd | — | 138 |
 | Stylus of the Masterful Hand | — | 3,000 gp | — | — | 3rd | — | 138 |
@@ -1446,7 +1446,6 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Trumpeter’s Gift | — | 12,200 gp | — | — | 7th | — | 139 |
 | Weightless Scabbard | — | 1,600 gp | — | — | 3rd | — | 139 |
 | Yondalla’s Wagon Wheel | — | 92,880 gp | — | — | 9th | — | 139 |
-| CHAPTER 6 | — | 90,150 gp | — | — | 10th | — | 142 |
 | Create | — | 49,575 gp | — | — | 10th | — | 144 |
 | Wave has a special purpose | — | 166,115 gp | — | — | 10th | — | 144 |
 | Whelm bears a minor curse | — | 122,412 gp | — | — | 16th | — | 144 |
@@ -1454,5 +1453,5 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Cloak of Affront | — | 1,300 gp | — | — | 16th | — | 148 |
 | Goggles of Nightblindness | — | 1,000 gp | — | — | 16th | — | 148 |
 | Headband of Hostility | — | — | — | — | 16th | — | 148 |
-| CHAPTER 6 | — | 1,300 gp | — | — | 16th | — | 148 |
+| Headband of Simplemindedness | — | 1,300 gp | — | — | 16th | — | 148 |
 | Necklace of the Vampire | — | — | — | — | 20th | — | 148 |

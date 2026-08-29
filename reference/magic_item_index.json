@@ -1,7 +1,7 @@
 {
  "generated_by": "scripts/item_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_items": 1421,
+ "total_items": 1420,
  "sources": [
   {
    "key": "mic",
@@ -18009,7 +18009,7 @@
    "key": "aeg",
    "book": "Arms and Equipment Guide",
    "citation": "Arms and Equipment Guide (3.0), magic items",
-   "coverage": "ok \u2014 363 items from Arms And Equipment Guide.md",
+   "coverage": "ok \u2014 362 items from Arms And Equipment Guide.md",
    "items": [
     {
      "name": "Bridle of Burden-Bearing",
@@ -18318,10 +18318,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 4",
+     "name": "Equestrian\u2019s Saddle",
      "book": "Arms and Equipment Guide",
      "page": 80,
-     "start": 10696,
+     "start": 10693,
      "end": 10705,
      "tag": null,
      "price": "2,000 gp",
@@ -18556,10 +18556,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Fearsome",
      "book": "Arms and Equipment Guide",
      "page": 94,
-     "start": 12902,
+     "start": 12897,
      "end": 12912,
      "tag": null,
      "price": null,
@@ -18794,10 +18794,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Vampire Hunter",
      "book": "Arms and Equipment Guide",
      "page": 96,
-     "start": 13191,
+     "start": 13173,
      "end": 13212,
      "tag": null,
      "price": "100,000 gp",
@@ -19457,10 +19457,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Axe of Shards",
      "book": "Arms and Equipment Guide",
      "page": 100,
-     "start": 13758,
+     "start": 13752,
      "end": 13772,
      "tag": null,
      "price": "19,330 gp",
@@ -19695,10 +19695,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Bolt of Voices",
      "book": "Arms and Equipment Guide",
      "page": 102,
-     "start": 14057,
+     "start": 13994,
      "end": 14066,
      "tag": null,
      "price": "767 gp",
@@ -19729,10 +19729,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Bow of Arcane Might",
      "book": "Arms and Equipment Guide",
-     "page": 103,
-     "start": 14094,
+     "page": 102,
+     "start": 14077,
      "end": 14105,
      "tag": null,
      "price": "8,600 gp",
@@ -20409,10 +20409,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Foretelling Blade",
      "book": "Arms and Equipment Guide",
      "page": 108,
-     "start": 14822,
+     "start": 14805,
      "end": 14828,
      "tag": null,
      "price": "18,315 gp",
@@ -20477,10 +20477,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Gnome Steam Bow",
      "book": "Arms and Equipment Guide",
-     "page": 109,
-     "start": 14895,
+     "page": 108,
+     "start": 14889,
      "end": 14920,
      "tag": null,
      "price": "18,530 gp",
@@ -20834,10 +20834,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Kama of Pure Aim",
      "book": "Arms and Equipment Guide",
      "page": 112,
-     "start": 15254,
+     "start": 15247,
      "end": 15270,
      "tag": null,
      "price": "32,302 gp",
@@ -21123,10 +21123,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Mirror Blade",
      "book": "Arms and Equipment Guide",
      "page": 114,
-     "start": 15548,
+     "start": 15533,
      "end": 15563,
      "tag": null,
      "price": "38,315 gp",
@@ -21548,10 +21548,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Sorcerer's Hand",
      "book": "Arms and Equipment Guide",
      "page": 118,
-     "start": 15995,
+     "start": 15991,
      "end": 16010,
      "tag": null,
      "price": "18,335 gp",
@@ -21854,10 +21854,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Sword of Escape",
      "book": "Arms and Equipment Guide",
      "page": 120,
-     "start": 16286,
+     "start": 16272,
      "end": 16297,
      "tag": null,
      "price": "88,310 gp",
@@ -22126,10 +22126,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Viper Whip",
      "book": "Arms and Equipment Guide",
-     "page": 124,
-     "start": 16603,
+     "page": 123,
+     "start": 16578,
      "end": 16613,
      "tag": null,
      "price": "38,301 gp",
@@ -22449,10 +22449,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Embassy",
      "book": "Arms and Equipment Guide",
      "page": 126,
-     "start": 17030,
+     "start": 17007,
      "end": 17054,
      "tag": null,
      "price": "20,000 gp",
@@ -22619,10 +22619,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Cacophony",
      "book": "Arms and Equipment Guide",
-     "page": 129,
-     "start": 17377,
+     "page": 128,
+     "start": 17312,
      "end": 17383,
      "tag": null,
      "price": null,
@@ -22806,10 +22806,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Spider",
      "book": "Arms and Equipment Guide",
      "page": 130,
-     "start": 17556,
+     "start": 17548,
      "end": 17566,
      "tag": null,
      "price": "42,600 gp",
@@ -23010,10 +23010,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Candle of Icy Death",
      "book": "Arms and Equipment Guide",
-     "page": 132,
-     "start": 17835,
+     "page": 131,
+     "start": 17819,
      "end": 17850,
      "tag": null,
      "price": "34,800 gp",
@@ -23367,10 +23367,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Construct",
      "book": "Arms and Equipment Guide",
      "page": 134,
-     "start": 18254,
+     "start": 18243,
      "end": 18266,
      "tag": null,
      "price": "29,975 gp",
@@ -23588,10 +23588,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Pelt of Animal Senses",
      "book": "Arms and Equipment Guide",
      "page": 136,
-     "start": 18503,
+     "start": 18494,
      "end": 18509,
      "tag": null,
      "price": "30,080 gp",
@@ -23826,10 +23826,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 5",
+     "name": "Sparring Dummy of the Master",
      "book": "Arms and Equipment Guide",
      "page": 138,
-     "start": 18822,
+     "start": 18780,
      "end": 18828,
      "tag": null,
      "price": "10,000 gp",
@@ -24013,23 +24013,6 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 6",
-     "book": "Arms and Equipment Guide",
-     "page": 142,
-     "start": 19439,
-     "end": 19454,
-     "tag": null,
-     "price": "90,150 gp",
-     "item_level": null,
-     "body_slot": null,
-     "property": null,
-     "caster_level": "10th",
-     "aura": null,
-     "aura_school": null,
-     "aura_dc": null,
-     "activation": null
-    },
-    {
      "name": "Create",
      "book": "Arms and Equipment Guide",
      "page": 144,
@@ -24149,10 +24132,10 @@
      "activation": null
     },
     {
-     "name": "CHAPTER 6",
+     "name": "Headband of Simplemindedness",
      "book": "Arms and Equipment Guide",
      "page": 148,
-     "start": 20369,
+     "start": 20361,
      "end": 20384,
      "tag": null,
      "price": "1,300 gp",

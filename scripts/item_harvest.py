@@ -317,7 +317,7 @@ DMG_TRAILER = re.compile(
 DMG_NAME = re.compile(r"^([A-Z][A-Za-z0-9'’\-()/,. ]{2,46}?):\s+(\S.*)$")
 DMG_NAME_REJECT = re.compile(
     r"^(Note|Price|Weight|CL|Prerequisites?|Cost|Aura|Special|Lore|DC|Caster Level|"
-    r"Market Price|Construction|Strong|Moderate|Faint|Overwhelming|Table|Activation|"
+    r"Market Price|Construction|Strong|Moderate|Faint|Overwhelming|Table|Chapter|Activation|"
     r"Description|Benefit|Normal|Duration|Range|Target|Saving Throw|Example|XP Cost)\b",
     re.IGNORECASE)
 DMG_PRICE = re.compile(r"Price\s+([0-9][\d,]*)", re.IGNORECASE)
@@ -404,6 +404,48 @@ def detect_dmg(lines: List[str], pages: List[int], book: str) -> List[Item]:
 
 AEG_CL = re.compile(r"^Caster Level\s*:\s*(\w+)", re.IGNORECASE)
 AEG_PRICE = re.compile(r"Ma\w*\s*Price\s*:\s*([0-9][\d,]*)", re.IGNORECASE)
+AEG_WRAPPED_SUFFIX = re.compile(r"^([a-z][A-Za-z'’\-]{2,32}):(?:\s+.*)?$")
+AEG_WRAPPED_PREFIX = re.compile(r"^[A-Z][A-Za-z0-9'’ /,()]{2,42}-$")
+
+
+def _aeg_name_above(lines: List[str], cl_idx: int) -> Optional[Tuple[int, str]]:
+    """Find the owning A&EG item title, skipping page furniture.
+
+    The normal search is capped at 40 lines. When an intervening CHAPTER header
+    proves that the item crossed a page, it may extend to 120 lines, but always
+    stops at the previous Caster Level footer. A wrapped title such as
+    ``Headband of Sim-`` / ``plemindedness:`` is joined only when both printed
+    fragments are present immediately above the body.
+    """
+    j, steps, saw_chapter = cl_idx - 1, 0, False
+    while j >= 0 and steps < 120:
+        s = lines[j].strip()
+        if s and not PAGE.search(lines[j]):
+            if AEG_CL.match(s):
+                break
+            normal = DMG_NAME.match(s)
+            if normal:
+                if not DMG_NAME_REJECT.match(s):
+                    return j, normal.group(1).strip()
+                if re.match(r"^CHAPTER\b", s, re.IGNORECASE):
+                    saw_chapter = True
+            suffix = AEG_WRAPPED_SUFFIX.match(s)
+            if suffix:
+                k = j - 1
+                while k >= 0 and j - k <= 3 \
+                        and (not lines[k].strip() or PAGE.search(lines[k])):
+                    k -= 1
+                if k >= 0:
+                    prefix = lines[k].strip()
+                    if (AEG_WRAPPED_PREFIX.match(prefix)
+                            and not DMG_NAME_REJECT.match(prefix)):
+                        name = prefix[:-1] + suffix.group(1)
+                        return k, re.sub(r"\s+", " ", name).strip()
+        j -= 1
+        steps += 1
+        if steps >= 40 and not saw_chapter:
+            break
+    return None
 
 
 def detect_aeg(lines: List[str], pages: List[int], book: str) -> List[Item]:
@@ -414,20 +456,11 @@ def detect_aeg(lines: List[str], pages: List[int], book: str) -> List[Item]:
         clm = AEG_CL.match(ln.strip())
         if not clm:
             continue
-        # name: nearest "Name:" colon-line above (reuse the DMG grammar)
-        j, steps, name_idx, name = i - 1, 0, None, None
-        while j >= 0 and steps < 40:
-            s = lines[j].strip()
-            if s and not PAGE.search(lines[j]):
-                if AEG_CL.match(s):
-                    break
-                nm = DMG_NAME.match(s)
-                if nm and not DMG_NAME_REJECT.match(s):
-                    name_idx, name = j, nm.group(1).strip()
-                    break
-            j -= 1
-            steps += 1
-        if name_idx is None or name_idx in used:
+        found = _aeg_name_above(lines, i)
+        if found is None:
+            continue
+        name_idx, name = found
+        if name_idx in used:
             continue
         used.add(name_idx)
         # gather the trailer (it wraps) for the price
@@ -729,6 +762,18 @@ Boots of Speed: As a free action, the wearer can act as though hasted for 10 rou
 Moderate transmutation; CL 10th; Craft Wondrous Item, haste; Price 12,000 gp; Weight 1 lb.
 """
 
+AEG_FIXTURE = """## [PDF page 80]
+Equestrian's Saddle: Anyone seated in this military saddle feels more comfortable
+CHAPTER 4: HIRELINGS AND CREATURES
+and competent at equestrianism. The saddle grants a bonus on Ride checks.
+Caster Level: 5th; Prerequisites: Craft Wondrous Item;
+Market Price: 2,000 gp; Weight: 30 lb.
+
+Horseless Saddle: When the command word is spoken, this riding saddle leaps.
+Caster Level: 8th; Prerequisites: Craft Wondrous Item, phantom steed;
+Market Price: 43,200 gp; Weight: 25 lb.
+"""
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -799,11 +844,28 @@ def selftest(base: Path) -> int:
                 failures.append(f"Boots of Speed {(bs.aura, bs.caster_level, bs.price)}, "
                                 f"wanted Moderate / 10th / 12,000 gp")
 
+    # A&EG detector: a running CHAPTER header inside an item body must be
+    # skipped while searching backward for the real source-printed name.
+    aeg_lines = AEG_FIXTURE.splitlines()
+    aeg_items = detect_aeg(aeg_lines, _pages_for(aeg_lines),
+                           "Arms and Equipment Guide")
+    aeg_names = [it.name for it in aeg_items]
+    if aeg_names != ["Equestrian's Saddle", "Horseless Saddle"]:
+        failures.append(
+            f"A&EG fixture detected {aeg_names}, wanted Equestrian's/Horseless "
+            "Saddle (CHAPTER running header must never become an item)")
+    elif (aeg_items[0].page, aeg_items[0].caster_level, aeg_items[0].price) != (
+            80, "5th", "2,000 gp"):
+        failures.append(
+            "A&EG fixture failed page/CL/price recovery: "
+            f"{(aeg_items[0].page, aeg_items[0].caster_level, aeg_items[0].price)}")
+
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
-        total = sum(len(s.items) for s in corpus.sources)
-        if total < 700:
-            failures.append(f"only {total} MIC items indexed; expected > 700")
+        counts = {s.key: len(s.items) for s in corpus.sources}
+        expected_counts = {"mic": 842, "dmg": 216, "aeg": 362}
+        if counts != expected_counts:
+            failures.append(f"live source counts {counts}, wanted {expected_counts}")
         belt = corpus.find("belt of battle", book="mic")
         if not belt:
             failures.append("Belt of Battle not found in live MIC")
@@ -833,6 +895,15 @@ def selftest(base: Path) -> int:
             if corpus.find("ghost touch", book="dmg"):
                 failures.append("Ghost Touch (a weapon special ability) leaked into "
                                 "the DMG item harvest — the affix mask failed")
+        aeg_src = next((s for s in corpus.sources if s.key == "aeg"), None)
+        if aeg_src and (base / aeg_src.path).exists():
+            headers = [it.name for it in aeg_src.items
+                       if re.match(r"^(?:CHAPTER|TABLE)\b", it.name, re.IGNORECASE)]
+            if headers:
+                failures.append(f"A&EG running headers leaked as items: {headers[:5]}")
+            for name in ("Equestrian’s Saddle", "Vampire Hunter", "Axe of Shards"):
+                if not corpus.find(name, book="aeg"):
+                    failures.append(f"live A&EG item not recovered: {name}")
     else:
         print(f"  [SKIP] MIC extraction not found under {base} — fixture checks only")
 
