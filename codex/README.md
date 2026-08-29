@@ -1,7 +1,8 @@
 # The Path Engine Codex — offline reference browser
 
 A downstream **presentation layer** for THE NEW PATH ENGINE reference layer:
-`build_codex.py` folds the 40+ committed `reference/*_index.json` families into ONE
+`build_codex.py` folds all 41 committed reference families — the 40
+`reference/*_index.json` files plus `reference/terms_and_affixes.json` — into ONE
 self-contained, searchable HTML page and — where it safely can — splices in each
 entry's **full book-verbatim stat block / description**, so the page is usable at the
 table or on a phone without opening the sourcebook.
@@ -37,7 +38,7 @@ python codex/build_codex.py --report   # build + per-family full-text coverage
 
 Produces (git-ignored):
 
-- `codex/build/engine_reference.html` — the self-contained page (gzip-embedded, ~8 MB)
+- `codex/build/engine_reference.html` — the self-contained page (gzip-embedded, ~9 MB)
 - `codex/build/engine_data.json` — the consolidated dataset (for debugging)
 
 Then publish `engine_reference.html` as a private claude.ai Artifact and open it from
@@ -48,7 +49,7 @@ works offline.
 
 | Input | Role |
 |---|---|
-| `reference/*_index.json` | the committed index families (rows carry `[start,end]` spans; harvesters may also emit an exact relative source path) |
+| `reference/*_index.json` + `reference/terms_and_affixes.json` | all 41 committed index families (rows carry `[start,end]` spans where available; harvesters may also emit an exact relative source path) |
 | `scripts/spells_srd35.json` | clean SRD 3.5 spell text (Open Game Content) — the 605 SRD core spells |
 | `I:\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
 | `codex/codex_template.html` | the page shell (search UI + the `__ENGINE_DATA_B64__` slot) |
@@ -99,12 +100,20 @@ works offline.
   `description_key` where the index label differs—must lead it, or the block is
   dropped. A misaligned or wrong-file slice is never attached.
 
+Source-level book, citation, and system metadata are inherited by child rows;
+legacy `dnd35`/`gurps4e` labels are normalized for display. Rejected `soft`
+diagnostics are never emitted as cards. The 143 terms/affixes rows are included
+with their harvested mechanical glosses, but correctly count as zero full-text
+attachments because they do not carry complete description spans. The 110
+bundled SRD feats cite their page-less SRD 3.5 source and deliberately leave the
+page blank instead of inventing a Player's Handbook page.
+
 Empty WH40K and WHFB rule attachments are named explicitly under each
 harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,282 of 17,952 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,282 of 18,094 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
 soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,

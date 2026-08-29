@@ -21,7 +21,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 |---|---|---|---|---|
 | `creature_index.{json,md}` | monster/NPC stat-block index | 1498 | `scripts/creature_harvest.py` | the `_md\_bestiary` twelve (MM1–5, Draconomicon, ELH, FC1/2, Fiend Folio, Libris Mortis, Lords of Madness) + Book of Vile Darkness, Deities and Demigods, Monsters of the Planes, Book of Exalted Deeds |
 | `spell_index.{json,md}` | spell index (school, level; exact extraction path per source) | 1869 | `scripts/spell_harvest.py` | SRD 3.5 core + Spell Compendium + Complete Mage/Champion + Races of the Dragon + Dragon Magic + Complete Scoundrel |
-| `feat_index.{json,md}` | feat index (type, prerequisite) | 1253 | `scripts/feat_harvest.py` | SRD 3.5 core + 18 supplement books |
+| `feat_index.{json,md}` | feat index (type, prerequisite) | 1244 accepted | `scripts/feat_harvest.py` | SRD 3.5 core + 18 supplement books; 9 rejected OCR diagnostics remain under `soft`, outside the index rows |
 | `magic_item_index.{json,md}` | magic-item index (price, slot, aura, CL) | 1420 | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide (3.0; 362 accepted after running-header rejection) |
 | `power_index.{json,md}` | psionic-power index (discipline, level, PP) | 409 | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128; running headers rejected from names) |
 | `maneuver_index.{json,md}` | Tome of Battle **maneuvers and stances** (discipline, type, level, prerequisite, initiation, range, exact-source full-description spans) | 208 | `scripts/maneuver_harvest.py` | Tome of Battle: Book of Nine Swords, lists pp.48–51 + descriptions pp.52–94 — born-digital alternate extraction |
@@ -65,11 +65,11 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 
 - **Browse / triage:** read the `.md` (human table) or load the `.json` (each has
   `generated_by`, and per-source `book`/`citation`/`coverage`, then the entries).
-- **Search / export one entry for conversion:** every harvest script takes
-  `--search TEXT` and `--export "NAME"`. `--export` emits a translator-ready
-  packet (raw block + provenance + parsed fields) for the `system-translator`
-  skill's paired 3.5e+GURPS build. Example: `python scripts/spell_harvest.py
-  --export "Fireball"`.
+- **Search / export one entry for conversion:** entry-family harvesters that
+  expose retrieval modes take `--search TEXT` and `--export "NAME"`.
+  `--export` emits a translator-ready packet (raw block + provenance + parsed
+  fields) for the `system-translator` skill's paired 3.5e+GURPS build. Example:
+  `python scripts/spell_harvest.py --export "Fireball"`.
 - **Full text in play:** the `*_lookup.py` scripts (`spell_lookup`, `feat_lookup`,
   `monster_lookup`) print one entry's full text, ready to paste.
 - **Verify integrity:** every script has `--selftest`.
@@ -79,8 +79,8 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 `I:\Sourcebooks` holds ~1,700 OCR'd `.md` extractions. These indices cover the
 mainline 3.5e systems plus the GURPS modifier set — a fraction of what is on the
 drive. Large bodies of harvestable mechanics are **not yet indexed** (more
-bestiaries, Epic/Incarnum/Tome-of-Magic subsystems, the GURPS shelf, Dragon
-Magazine, Forgotten Realms). The generating scripts are built to be extended by
+bestiaries, the remaining Tome of Magic subsystems, higher-TL GURPS gear,
+Dragon Magazine, Forgotten Realms). The generating scripts are built to be extended by
 adding sources; the queue, the corpus inventory, and the exact next targets are
-in [../docs/HARVEST_PROGRESS.md](../docs/HARVEST_PROGRESS.md). Do not read
-"7 indices exist" as "the corpus is done."
+in [../docs/HARVEST_PROGRESS.md](../docs/HARVEST_PROGRESS.md). Do not mistake
+this indexed slice for the whole corpus.

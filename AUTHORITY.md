@@ -44,6 +44,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules |
 | `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |
 | `term_harvest.py` | cited DMG/GURPS modifier extractions; conditions remain in their authoritative lookup scripts, item/wargear bodies remain in dedicated system-labeled indexes, and the image-only PHB glossary is recorded as NO COVERAGE; missing anchors print NO COVERAGE |
+| `codex/build_codex.py` | presentation only over all 41 committed reference families; inherits source-level book/citation/system metadata, excludes `soft` diagnostics, validates every source-text slice, and never creates mechanics or canon |
 | `creature_harvest.py` | cited bestiary extractions (`_md\_bestiary` + `_text` Monsters and Fiends); a garbage-name filter drops stat-fragment/prose rows; conversions require both 3.5e and GURPS halves |
 | `item_harvest.py` | cited magic-item extractions (Magic Item Compendium; DMG v3.5; Arms & Equipment Guide 3.0); A&EG rejects CHAPTER running headers and locks all 362 accepted rows; missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |
 | `power_harvest.py` | cited psionics extractions (Expanded Psionics Handbook + Complete Psionic); Complete Psionic running CHAPTER/POWERS headers terminate wrapped-name recovery and are fixture/live tested; missing sources print NO COVERAGE; conversions require both 3.5e and GURPS halves |

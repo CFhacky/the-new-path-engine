@@ -18,9 +18,9 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-29).** Forty-one reference index families, 17,952 entries.
+**At a glance (2026-08-29).** Forty-one reference index families, 18,094 accepted entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
-(1420), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
+(1420), psionic powers (409), martial maneuvers (208), feats (1244 accepted), D&D spells
 (1869), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
 (186; all exact full-row spans), GURPS advantages/disadvantages (469; all exact full-description/inline-definition spans), GURPS skills (263; all exact full-description spans), GURPS techniques (112; all exact full-description spans), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136; 118 with cited book-verbatim SPECIAL RULES from born-digital codexes) + WHFB wargame unit profiles (291; 217 with cited book-verbatim SPECIAL RULES from born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
@@ -29,8 +29,8 @@ its index.
 
 **This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
 ~1,700 OCR'd `.md` extractions; these indices harvest the mainline 3.5e systems
-plus the GURPS modifier set — on the order of 15–20 books. Substantial
-harvestable mechanics remain unindexed; see **CORPUS SCOPE** below for the
+plus labeled material from dozens of sourcebooks. Substantial harvestable
+mechanics remain unindexed; see **CORPUS SCOPE** below for the
 inventory and what is worth harvesting next. Do not read "the core is done" as
 "the corpus is done."
 
@@ -45,7 +45,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide 3.0 (362) | 1420 items / 3 sources | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128; running CHAPTER/POWERS headers rejected from names) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle (alt scan).md` — book lists pp.48–51 + descriptions pp.52–94 | 208 maneuvers/stances (all with 3+ quick fields and exact-source full-description spans) | `python scripts/maneuver_harvest.py --selftest` |
-| `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
+| `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1244 accepted feats / 19 books; 9 rejected OCR diagnostics remain under `soft` and are excluded from presentation | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37, Complete Scoundrel 28) | 1869 spells / 7 sources (all with school + level and exact-source full-text coverage) | `python scripts/spell_harvest.py --selftest` |
 | `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | GURPS Magic (520) + Plant Spells (19) + Thaumatology: Urban Magics (12) + Thaumatology (6) | 557 GURPS spells (541 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
 | `reference/gurps_gear_index.{md,json}` | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech Melee Weapon Table + Armor Table | 186 gear (153 weapons + 33 torso-armor pieces, TL0–TL4, DR up to 9; all carry exact non-overlapping full-row spans) | `python scripts/gurps_gear_harvest.py --selftest` |
@@ -60,11 +60,11 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 both were OCR'd and `creature_index` already indexes them (MM3 = 185 blocks,
 Draconomicon = 96). The earlier note in the work queue is stale.
 
-**Caveat on the feat count.** `feat_harvest.py` (like `feat_lookup.py`, whose
-detector it duplicates) anchors on a `Benefit:` line, so the 1253 total
-includes a minority of non-feat blocks that also carry a `Benefit:` line —
-some class features and alternative class features. This is inherited and
-honest; a translator triaging the index should expect a few such rows.
+**Caveat on the feat count.** The family has **1,244 accepted rows**. Nine
+rejected OCR/name fragments are retained only under source-level `soft`
+diagnostics for audit and are not entries or Codex cards. The inherited
+`Benefit:` anchor can still admit a small number of source blocks such as class
+features; those accepted rows remain visible rather than silently reclassified.
 
 ### Related lookup scripts (retrieval — the play-time siblings of the indices)
 
@@ -209,6 +209,9 @@ entered here as a concrete book/family target before work begins.
 
 ## NO COVERAGE — active gaps
 
+- `NO COVERAGE: printed-book page numbers for 110 bundled SRD 3.5 feats
+  (the bundled Open Game Content source is page-less; rows cite SRD 3.5 and no
+  Player's Handbook page is inferred).`
 - `NO COVERAGE: Player's Handbook II spells (both available text layers
   interleave the source's three-column pages; explicit-column re-OCR still
   corrupts mechanical characters and mispairs headings/fields).`
@@ -235,7 +238,7 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 
 ---
 
-## NEEDS CHAD
+## RESOLVED POLICY
 
 - **(RESOLVED 2026-08-27) Raw-OCR fidelity vs. hand repair.** Chad ruled: repair
   the garbled OCR and entries by hand rather than leave raw junk. The
@@ -253,6 +256,17 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Completed the cross-index integrity audit. All **41/41**
+  harvester selftests pass. The Codex now walks all 41 committed families,
+  including the legacy-named 143-row terms/affixes file; inherits source-level
+  book, citation, and system metadata; and excludes rejected `soft`
+  diagnostics. The rebuilt payload has **18,094 accepted entries**, **13,282**
+  full-text attachments, all nine exact display-system labels, zero missing
+  book labels, zero polluted CHAPTER/POWERS names, and zero parsed U+FFFD.
+  The 9.11 MB offline HTML passes its placeholder/size smoke test. Its only 110
+  page-empty cards are bundled SRD 3.5 feats: the page-less SRD source is cited
+  and no Player's Handbook page is invented.
 
 - **2026-08-29** — Corrected two Complete Psionic names polluted by running
   page furniture: **Energy Missile** and **See Invisibility, Psionic**. The

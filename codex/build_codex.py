@@ -7,8 +7,8 @@ WHAT THIS IS (and where it sits in the authority order)
 -------------------------------------------------------
 This is a PRESENTATION tool — the least-authoritative thing in the repo. It
 creates no knowledge. It consolidates the already-built, already-committed
-reference indices (`reference/*_index.json`) into ONE searchable, self-contained
-HTML page, and — where it safely can — splices in each entry's FULL book-verbatim
+reference indices (`reference/*_index.json` plus the legacy-named
+`reference/terms_and_affixes.json`) into ONE searchable, self-contained HTML page, and — where it safely can — splices in each entry's FULL book-verbatim
 stat block / description so the page is usable WITHOUT opening the sourcebook.
 
 Authority order is unchanged and this view is at the bottom of it:
@@ -27,9 +27,10 @@ publish `codex/build/engine_reference.html` as a private Artifact.
 
 INPUTS
 ------
-- reference/*_index.json      the 40+ committed index families (name/fields/citation
-                              + a [start,end] LINE span and, where emitted, the exact
-                              relative extraction path for each source)
+- reference/*_index.json      40 committed family files (name/fields/citation +
+                              [start,end] spans and exact paths where emitted)
+- reference/terms_and_affixes.json
+                              the legacy-named 41st committed family
 - scripts/spells_srd35.json   clean SRD 3.5 spell text (Open Game Content, bundled)
 - I:\\Sourcebooks\\_md, _text   the OCR sources, sliced by each row's line span
 - codex/codex_template.html   the page shell (contains the __ENGINE_DATA_B64__ slot)
@@ -69,7 +70,7 @@ FULL-TEXT SOURCING — book RAW, never invented
 
 The page itself is gzip-compressed and base64-embedded; the browser inflates it on
 load with DecompressionStream. This keeps the full-text page under the 16 MB
-Artifact ceiling (~8 MB) instead of ~22 MB raw.
+Artifact ceiling (~9 MB) instead of ~22 MB raw.
 
 Usage:
     python codex/build_codex.py            # build the page
@@ -298,19 +299,34 @@ def _fam_sys(fam: str) -> str:
     return "GURPS 4e" if fam.startswith("gurps_") and "3e" not in fam else "D&D 3.5e"
 
 
+SYSTEM_ALIASES = {"dnd35": "D&D 3.5e", "gurps4e": "GURPS 4e"}
+
+
+def _display_book(value: str) -> str:
+    """Turn either a book label or a relative extraction path into a label."""
+    leaf = re.split(r"[\\/]", value)[-1]
+    return re.sub(r"\.[^.]+$", "", leaf).strip()
+
+
 def _index_rows(obj, out, context=None):
-    """Collect rows while retaining an index source's exact extraction path."""
+    """Collect rows while inheriting source provenance and exact paths."""
     context = context or {}
     if isinstance(obj, dict):
         updates = {}
-        if isinstance(obj.get("corpus"), str) and obj["corpus"].strip():
-            updates["corpus"] = obj["corpus"]
-        if isinstance(obj.get("source_path"), str) and obj["source_path"].strip():
-            updates["source_path"] = obj["source_path"]
+        for key in ("corpus", "source_path", "book", "citation", "system"):
+            if isinstance(obj.get(key), str) and obj[key].strip():
+                updates[key] = obj[key]
         child_context = {**context, **updates} if updates else context
         if (isinstance(obj.get("name"), str) and obj["name"].strip()
                 and any(k in obj for k in ("book", "citation", "page", "system"))):
             row = dict(obj)
+            if not row.get("book") and child_context.get("book"):
+                row["book"] = _display_book(child_context["book"])
+            if not row.get("citation") and child_context.get("citation"):
+                row["citation"] = child_context["citation"]
+            if not row.get("system") and child_context.get("system"):
+                system = child_context["system"]
+                row["system"] = SYSTEM_ALIASES.get(system, system)
             if "corpus" in child_context:
                 row["_corpus"] = child_context["corpus"]
             if "source_path" in child_context:
@@ -326,17 +342,41 @@ def _index_rows(obj, out, context=None):
             _index_rows(v, out, context)
 
 
+def _index_files():
+    """Every committed family, including the legacy-named terms manifest."""
+    files = list(REF.glob("*_index.json"))
+    terms = REF / "terms_and_affixes.json"
+    if terms.exists():
+        files.append(terms)
+    return sorted(set(files))
+
+
+def _family_name(path: Path) -> str:
+    stem = path.stem
+    return stem[:-6] if stem.endswith("_index") else stem
+
+
 def selftest():
     fixture = {
         "source_path": "fixture.md",
-        "entries": [{"name": "Real Entry", "book": "Fixture Book"}],
-        "soft": [{"name": "Rejected Fragment", "book": "Fixture Book"}],
+        "book": "folder/Fixture Book.md",
+        "citation": "Fixture Book p.1",
+        "system": "dnd35",
+        "entries": [{"name": "Real Entry", "page": 1}],
+        "soft": [{"name": "Rejected Fragment", "page": 1}],
     }
     rows = []
     _index_rows(fixture, rows)
     assert [row["name"] for row in rows] == ["Real Entry"]
     assert rows[0]["_source_path"] == "fixture.md"
+    assert rows[0]["book"] == "Fixture Book"
+    assert rows[0]["citation"] == "Fixture Book p.1"
+    assert rows[0]["system"] == "D&D 3.5e"
+    assert _family_name(Path("spell_index.json")) == "spell"
+    assert _family_name(Path("terms_and_affixes.json")) == "terms_and_affixes"
     print("selftest: diagnostic soft rows excluded")
+    print("selftest: source provenance inherited")
+    print("selftest: all 41 family filename shapes supported")
     print("selftest: PASS")
 
 
@@ -448,10 +488,10 @@ def build(report=False):
     cov = collections.Counter()
     tot = collections.Counter()
 
-    for f in sorted(glob.glob(str(REF / "*_index.json"))):
-        fam = os.path.basename(f).replace("_index.json", "")
+    for f in _index_files():
+        fam = _family_name(f)
         rows = []
-        _index_rows(json.loads(Path(f).read_text(encoding="utf-8")), rows)
+        _index_rows(json.loads(f.read_text(encoding="utf-8")), rows)
         for r in rows:
             tot[fam] += 1
             if isinstance(r.get("special_rules"), str) and r["special_rules"].strip():
