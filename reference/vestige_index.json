@@ -1,20 +1,21 @@
 {
  "generated_by": "scripts/vestige_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_vestiges": 31,
+ "total_vestiges": 32,
  "sources": [
   {
    "key": "tome",
    "book": "Tome of Magic (Pact Magic)",
-   "citation": "Tome of Magic (WotC, 3.5e), Pact Magic \u2014 vestige summary",
-   "coverage": "ok \u2014 31 vestiges from Tome of Magic.md",
+   "citation": "Tome of Magic (WotC, 3.5e), Pact Magic \u2014 vestige summary, tablets, and descriptions pp. 20\u201350",
+   "coverage": "ok \u2014 32 vestiges from Tome of Magic.md",
+   "source_path": "D&D 3.5e\\Player Options\\Tome of Magic.md",
    "vestiges": [
     {
      "name": "Amon",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1812,
-     "end": 1816,
+     "page": 22,
+     "start": 2285,
+     "end": 2357,
      "vestige_level": 1,
      "binding_dc": 20,
      "special_requirement": true
@@ -22,9 +23,9 @@
     {
      "name": "Aym",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1816,
-     "end": 1820,
+     "page": 25,
+     "start": 2592,
+     "end": 2693,
      "vestige_level": 1,
      "binding_dc": 15,
      "special_requirement": false
@@ -32,9 +33,9 @@
     {
      "name": "Leraje",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1820,
-     "end": 1824,
+     "page": 39,
+     "start": 4361,
+     "end": 4472,
      "vestige_level": 1,
      "binding_dc": 15,
      "special_requirement": true
@@ -42,9 +43,19 @@
     {
      "name": "Naberius",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1824,
-     "end": 1828,
+     "page": 42,
+     "start": 4749,
+     "end": 4854,
+     "vestige_level": 1,
+     "binding_dc": 15,
+     "special_requirement": true
+    },
+    {
+     "name": "Ronove",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 45,
+     "start": 5168,
+     "end": 5296,
      "vestige_level": 1,
      "binding_dc": 15,
      "special_requirement": true
@@ -52,9 +63,9 @@
     {
      "name": "Dahlver-Nar",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1832,
-     "end": 1836,
+     "page": 28,
+     "start": 3003,
+     "end": 3127,
      "vestige_level": 2,
      "binding_dc": 17,
      "special_requirement": true
@@ -62,9 +73,9 @@
     {
      "name": "Haagenti",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1836,
-     "end": 1840,
+     "page": 34,
+     "start": 3686,
+     "end": 3837,
      "vestige_level": 2,
      "binding_dc": 17,
      "special_requirement": true
@@ -72,29 +83,29 @@
     {
      "name": "Malphas",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1840,
-     "end": 1844,
+     "page": 40,
+     "start": 4472,
+     "end": 4602,
      "vestige_level": 2,
      "binding_dc": 15,
      "special_requirement": false
     },
     {
-     "name": "Ronove",
+     "name": "Savnok",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1828,
-     "end": 1832,
+     "page": 46,
+     "start": 5296,
+     "end": 5495,
      "vestige_level": 2,
-     "binding_dc": 15,
+     "binding_dc": 20,
      "special_requirement": true
     },
     {
      "name": "Andromalius",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1848,
-     "end": 1852,
+     "page": 24,
+     "start": 2475,
+     "end": 2592,
      "vestige_level": 3,
      "binding_dc": 20,
      "special_requirement": true
@@ -102,9 +113,9 @@
     {
      "name": "Focalor",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1852,
-     "end": 1856,
+     "page": 32,
+     "start": 3488,
+     "end": 3572,
      "vestige_level": 3,
      "binding_dc": 20,
      "special_requirement": true
@@ -112,29 +123,29 @@
     {
      "name": "Karsus",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1856,
-     "end": 1860,
+     "page": 38,
+     "start": 4245,
+     "end": 4361,
      "vestige_level": 3,
      "binding_dc": 25,
      "special_requirement": true
     },
     {
-     "name": "Savnok",
+     "name": "Paimon",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1844,
-     "end": 1848,
+     "page": 44,
+     "start": 5043,
+     "end": 5168,
      "vestige_level": 3,
      "binding_dc": 20,
-     "special_requirement": true
+     "special_requirement": false
     },
     {
      "name": "Agares",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1864,
-     "end": 1868,
+     "page": 21,
+     "start": 2168,
+     "end": 2285,
      "vestige_level": 4,
      "binding_dc": 22,
      "special_requirement": true
@@ -142,9 +153,9 @@
     {
      "name": "Andras",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1868,
-     "end": 1872,
+     "page": 23,
+     "start": 2357,
+     "end": 2475,
      "vestige_level": 4,
      "binding_dc": 22,
      "special_requirement": false
@@ -152,9 +163,9 @@
     {
      "name": "Buer",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1872,
-     "end": 1876,
+     "page": 27,
+     "start": 2787,
+     "end": 2872,
      "vestige_level": 4,
      "binding_dc": 20,
      "special_requirement": true
@@ -162,29 +173,29 @@
     {
      "name": "Eurynome",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1876,
-     "end": 1880,
+     "page": 31,
+     "start": 3384,
+     "end": 3488,
      "vestige_level": 4,
      "binding_dc": 21,
      "special_requirement": true
     },
     {
-     "name": "Paimon",
+     "name": "Tenebrous",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1860,
-     "end": 1864,
+     "page": 49,
+     "start": 5607,
+     "end": 5701,
      "vestige_level": 4,
-     "binding_dc": 20,
-     "special_requirement": false
+     "binding_dc": 21,
+     "special_requirement": true
     },
     {
      "name": "Acererak",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1884,
-     "end": 1888,
+     "page": 20,
+     "start": 2015,
+     "end": 2168,
      "vestige_level": 5,
      "binding_dc": 25,
      "special_requirement": true
@@ -192,9 +203,9 @@
     {
      "name": "Balam",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1888,
-     "end": 1892,
+     "page": 26,
+     "start": 2693,
+     "end": 2787,
      "vestige_level": 5,
      "binding_dc": 25,
      "special_requirement": true
@@ -202,9 +213,9 @@
     {
      "name": "Dantalion",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1892,
-     "end": 1896,
+     "page": 29,
+     "start": 3127,
+     "end": 3248,
      "vestige_level": 5,
      "binding_dc": 25,
      "special_requirement": false
@@ -212,29 +223,29 @@
     {
      "name": "Geryon",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1896,
-     "end": 1900,
+     "page": 33,
+     "start": 3572,
+     "end": 3686,
      "vestige_level": 5,
      "binding_dc": 25,
      "special_requirement": true
     },
     {
-     "name": "Tenebrous",
+     "name": "Otiax",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1880,
-     "end": 1884,
+     "page": 44,
+     "start": 4957,
+     "end": 5043,
      "vestige_level": 5,
-     "binding_dc": 21,
-     "special_requirement": true
+     "binding_dc": 25,
+     "special_requirement": false
     },
     {
      "name": "Chupoclops",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1904,
-     "end": 1908,
+     "page": 27,
+     "start": 2872,
+     "end": 3003,
      "vestige_level": 6,
      "binding_dc": 25,
      "special_requirement": true
@@ -242,9 +253,9 @@
     {
      "name": "Haures",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1908,
-     "end": 1912,
+     "page": 36,
+     "start": 3976,
+     "end": 4105,
      "vestige_level": 6,
      "binding_dc": 25,
      "special_requirement": false
@@ -252,71 +263,71 @@
     {
      "name": "Ipos",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1912,
-     "end": 1916,
+     "page": 37,
+     "start": 4105,
+     "end": 4245,
      "vestige_level": 6,
      "binding_dc": 26,
      "special_requirement": true
     },
     {
-     "name": "Otiax",
-     "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1900,
-     "end": 1904,
-     "vestige_level": 6,
-     "binding_dc": 25,
-     "special_requirement": false
-    },
-    {
      "name": "Shax",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1916,
-     "end": 1920,
+     "page": 48,
+     "start": 5495,
+     "end": 5607,
      "vestige_level": 6,
      "binding_dc": 26,
+     "special_requirement": true
+    },
+    {
+     "name": "Zagan",
+     "book": "Tome of Magic (Pact Magic)",
+     "page": 49,
+     "start": 5701,
+     "end": 5848,
+     "vestige_level": 6,
+     "binding_dc": 25,
      "special_requirement": true
     },
     {
      "name": "Eligor",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1924,
-     "end": 1928,
+     "page": 30,
+     "start": 3248,
+     "end": 3384,
      "vestige_level": 7,
      "binding_dc": 30,
      "special_requirement": false
     },
     {
-     "name": "Zagan",
+     "name": "Marchosias",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1920,
-     "end": 1924,
+     "page": 41,
+     "start": 4602,
+     "end": 4749,
      "vestige_level": 7,
-     "binding_dc": 25,
+     "binding_dc": 30,
      "special_requirement": true
     },
     {
      "name": "Halphax",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1932,
-     "end": 1936,
+     "page": 35,
+     "start": 3837,
+     "end": 3976,
      "vestige_level": 8,
      "binding_dc": 32,
      "special_requirement": true
     },
     {
-     "name": "Marchosias",
+     "name": "Orthos",
      "book": "Tome of Magic (Pact Magic)",
-     "page": 19,
-     "start": 1928,
-     "end": 1932,
+     "page": 43,
+     "start": 4854,
+     "end": 4957,
      "vestige_level": 8,
-     "binding_dc": 30,
+     "binding_dc": 35,
      "special_requirement": true
     }
    ]

@@ -46,6 +46,8 @@ FULL-TEXT SOURCING — book RAW, never invented
                     the Premium Compendium path remains as a legacy fallback.
 - soulmelds          sliced from exact-source full-description spans; PDF table
                     columns interleaved into four blocks are removed first.
+- vestiges           sliced from exact-source heading spans; floated stat tablets
+                    are removed, and the complete descriptions bypass the 4.2k cap.
 - legacy rows        fuzzy-match a source filename, then slice by [start:end].
 - every slice is VALIDATED: the entry name must lead it or the block is dropped
   (a mismatched slice is NEVER attached). Wargame profile lines and marker-offset
@@ -87,7 +89,7 @@ SOURCE_ROOTS = [
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
-CAP = 4200  # max characters of verbatim text kept per entry
+CAP = 4200  # default verbatim-text limit; validated vestige spans bypass it
 
 _STOP = set("gurps wfrp the of a an core rulebook compilation edition pdf md txt "
             "scan updated with errata hq premium".split())
@@ -141,6 +143,35 @@ def _strip_soulmeld_summary_tables(seg: str) -> str:
             resume = next((j for j in range(i + 1, len(src))
                            if "[pdf page " in src[j].casefold()), None)
             if resume is not None:
+                i = resume
+                continue
+        out.append(src[i])
+        i += 1
+    return "\n".join(out).strip()
+
+
+def _strip_vestige_tablets(seg: str) -> str:
+    """Remove floated Tome of Magic stat tablets and their illustration captions."""
+    src = seg.splitlines()
+    out = []
+    i = 0
+    while i < len(src):
+        text = src[i].strip()
+        caption = text.casefold().startswith(("manifestation of ", "seal of "))
+        probe = i
+        if caption:
+            probe = next((j for j in range(i + 1, min(len(src), i + 7))
+                          if src[j].strip()), i)
+        repeated_name = (probe + 1 < len(src) and src[probe].strip()
+                         and src[probe].strip() == src[probe + 1].strip()
+                         and src[probe].strip().isupper())
+        if repeated_name:
+            resume = next((j for j in range(probe + 2, min(len(src), probe + 45))
+                           if "[pdf page " in src[j].casefold()), None)
+            has_fields = (resume is not None
+                          and any("vestige level:" in src[j].casefold()
+                                  for j in range(probe + 2, resume)))
+            if has_fields:
                 i = resume
                 continue
         out.append(src[i])
@@ -223,7 +254,7 @@ def build(report=False):
         srd = json.loads(SRD_JSON.read_text(encoding="utf-8"))
         srd_text = {k.lower(): (v.get("text") or "") for k, v in srd.items()}
 
-    def slice_full(book, start, end, name, source_file=None, transform=None):
+    def slice_full(book, start, end, name, source_file=None, transform=None, limit=CAP):
         if end - start < 2:
             return ""
         fp = source_file or find_file(book)
@@ -236,7 +267,8 @@ def build(report=False):
         except Exception:
             return ""
         if seg and _validate(seg, name):
-            return re.sub(r"\n{3,}", "\n\n", seg)[:CAP]
+            cleaned = re.sub(r"\n{3,}", "\n\n", seg)
+            return cleaned if limit is None else cleaned[:limit]
         return ""
 
     def spell_full(r):
@@ -267,6 +299,9 @@ def build(report=False):
             elif fam == "soulmeld" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), _strip_soulmeld_summary_tables)
+            elif fam == "vestige" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), _strip_vestige_tablets, None)
             elif "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r))

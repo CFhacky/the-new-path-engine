@@ -61,23 +61,26 @@ works offline.
 - **Soulmelds** — sliced from the exact Magic of Incarnum source and their true
   description spans; summary-table columns interleaved by the PDF text layer are
   removed before the name-leading validation.
+- **Vestiges** — sliced from the exact Tome of Magic source and their true
+  description spans; floated duplicate stat tablets are removed, and complete
+  descriptions bypass the normal 4,200-character cap.
 - **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
 - **Every slice** is validated: the entry name must lead it, or the block is dropped.
   A misaligned or wrong-file slice is never attached.
 
 Families that legitimately carry **no** full block: the two **wargame** indices
 (a unit's profile line *is* the whole entry; its special rules live elsewhere in the
-army book) and a few families whose harvesters recorded only a marker offset
-(vestiges and epic-tier). That is honest emptiness, not a bug.
+army book) and the epic-tier families, whose harvesters recorded only a marker
+offset. That is honest emptiness, not a bug.
 
 ## Coverage (as of this build)
 
-**11,236 of 17,912 entries** carry the full verbatim block. Strong: D&D 3.5e
-creatures 99% / spells and soulmelds 100% / feats 86%, GURPS 3e & 4e creatures and
-spells 94–100%, AD&D 100%, WFRP creatures 100%, 40K RP adversaries/talents/psychic
-~99–100%. Known low families (need harvester-level work to lift): GURPS
-gear/skill/trait/technique, maneuvers, vestiges, epic-tier, and the 40K RP
-weapon/gear tables (which already display their mechanical fields).
+**11,268 of 17,913 entries** carry the full verbatim block. Strong: D&D 3.5e
+creatures 99% / spells, soulmelds, and vestiges 100% / feats 86%, GURPS 3e & 4e
+creatures and spells 94–100%, AD&D 100%, WFRP creatures 100%, 40K RP
+adversaries/talents/psychic ~99–100%. Known low families (need harvester-level
+work to lift): GURPS gear/skill/trait/technique, maneuvers, epic-tier, and the
+40K RP weapon/gear tables (which already display their mechanical fields).
 
 ## The page
 

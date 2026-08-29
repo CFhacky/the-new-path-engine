@@ -10,17 +10,18 @@ extracted from a BORN-DIGITAL PDF text layer (characters exact, not OCR — the
 book is Cyrillic-free and clean), so this index is character-clean.
 
     reference/vestige_index.json — every vestige: name, vestige level (1-8),
-                                   binding DC, special-requirement flag, PDF page
+                                   binding DC, special-requirement flag, PDF page,
+                                   and true full-description [start,end] span
     reference/vestige_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
     I:\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Tome of Magic.md — the
-    vestige summary table (a column-dump: Vestige name, Binding DC, Special
-    Requirement Yes/No, Vestige Level ordinal). The anchor is a Yes/No cell
-    immediately followed by a level ordinal (1st-8th), with the DC number and the
-    vestige name on the two lines above. Native D&D 3.5e; the shadow-magic
-    mysteries and truename utterances in the same book are prose-embedded, not
-    tabulated, and are left for a body-block detector (see HARVEST_PROGRESS).
+    vestige summary table plus the explicit per-entry tablets and ALL-CAPS
+    ``NAME, EPITHET`` description headings. The summary supplies an initial row;
+    the tablets are the court of appeal for level/DC/requirement and recover the
+    final Orthos row lost at the summary page break. Heading-to-heading spans cover
+    the full descriptions on PDF pages 20–50. Native D&D 3.5e; shadow mysteries
+    and truename utterances remain separate future detectors.
 """
 from __future__ import annotations
 
@@ -68,6 +69,120 @@ class Vestige:
                                self.special_requirement is not None) if v)
 
 
+def _norm_name(s: str) -> str:
+    s = s.translate(str.maketrans({"\ufb00": "ff", "\ufb01": "fi", "\ufb02": "fl"}))
+    return re.sub(r"[^a-z0-9]+", " ", s.casefold()).strip()
+
+
+def _pair_values(values: List[object]) -> List[object]:
+    """Collapse the PDF text layer's exact duplicate rendering of tablet fields."""
+    if len(values) % 2 == 0 and all(values[i] == values[i + 1]
+                                     for i in range(0, len(values), 2)):
+        return values[::2]
+    out: List[object] = []
+    for value in values:
+        if not out or out[-1] != value:
+            out.append(value)
+    return out
+
+
+def _tablet_fields(lines: List[str]) -> Dict[str, Tuple[str, int, int, bool]]:
+    """Read the explicit per-entry Vestige Level / DC / Requirement tablets."""
+    section_end = next(
+        (i for i in range(len(lines) - 1)
+         if lines[i].strip() == "PACT MAGIC"
+         and lines[i + 1].strip() == "PRESTIGE CLASSES"),
+        len(lines),
+    )
+    markers = [i for i in range(section_end) if PAGE.search(lines[i])]
+    tablets: Dict[str, Tuple[str, int, int, bool]] = {}
+    previous = 0
+    tablet_name = re.compile(r"^[A-Z][A-Z’'\-]{2,24}$")
+    for end in markers:
+        region = lines[previous:end]
+        names: List[str] = []
+        seen = set()
+        for i in range(len(region) - 1):
+            name = region[i].strip()
+            if (name == region[i + 1].strip() and name.isupper()
+                    and tablet_name.match(name) and name not in seen):
+                names.append(name.title())
+                seen.add(name)
+        levels = _pair_values([
+            int(m.group(1)) for line in region
+            if (m := re.match(r"Vestige Level:\s*([1-8])", line.strip(), re.IGNORECASE))
+        ])
+        dcs = _pair_values([
+            int(m.group(1)) for line in region
+            if (m := re.match(r"Binding DC:\s*(\d+)", line.strip(), re.IGNORECASE))
+        ])
+        requirements = _pair_values([
+            m.group(1).casefold() == "yes" for line in region
+            if (m := re.match(r"Requirement:\s*(Yes|No)", line.strip(), re.IGNORECASE))
+        ])
+        if names and len(names) == len(levels) == len(dcs) == len(requirements):
+            for name, level, dc, requirement in zip(names, levels, dcs, requirements):
+                tablets[_norm_name(name)] = (name, int(level), int(dc), bool(requirement))
+        previous = end + 1
+    return tablets
+
+
+def _strip_vestige_tablets(seg: str) -> str:
+    """Remove floated stat tablets (and their captions) from description text."""
+    src = seg.splitlines()
+    out: List[str] = []
+    i = 0
+    while i < len(src):
+        text = src[i].strip()
+        caption = text.casefold().startswith(("manifestation of ", "seal of "))
+        probe = i
+        if caption:
+            probe = next((j for j in range(i + 1, min(len(src), i + 7))
+                          if src[j].strip()), i)
+        repeated_name = (probe + 1 < len(src) and src[probe].strip()
+                         and src[probe].strip() == src[probe + 1].strip()
+                         and src[probe].strip().isupper())
+        if repeated_name:
+            resume = next((j for j in range(probe + 2, min(len(src), probe + 45))
+                           if PAGE.search(src[j])), None)
+            has_fields = (resume is not None
+                          and any("vestige level:" in src[j].casefold()
+                                  for j in range(probe + 2, resume)))
+            if has_fields:
+                i = resume
+                continue
+        out.append(src[i])
+        i += 1
+    return "\n".join(out).strip()
+
+
+def _description_spans(lines: List[str], pages: List[int],
+                       names: List[str]) -> Dict[str, Tuple[int, int, int]]:
+    """Bind each vestige to its unique ALL-CAPS ``NAME, EPITHET`` heading."""
+    headers: List[Tuple[int, str]] = []
+    for name in names:
+        prefix = name.upper() + ","
+        hits = [i for i, line in enumerate(lines)
+                if line.strip().isupper() and line.strip().upper().startswith(prefix)]
+        if len(hits) == 1:
+            headers.append((hits[0], name))
+    headers.sort()
+    if not headers:
+        return {}
+
+    section_end = next(
+        (i for i in range(headers[-1][0] + 1, len(lines) - 1)
+         if lines[i].strip() == "PACT MAGIC"
+         and lines[i + 1].strip() == "PRESTIGE CLASSES"),
+        len(lines),
+    )
+    spans: Dict[str, Tuple[int, int, int]] = {}
+    for n, (start, name) in enumerate(headers):
+        end = headers[n + 1][0] if n + 1 < len(headers) else section_end
+        spans[_norm_name(name)] = (start, end, pages[start])
+    return spans
+
+
 def detect_vestiges(lines: List[str], pages: List[int], book: str) -> List[Vestige]:
     toks = [(i, lines[i].strip()) for i in range(len(lines))
             if lines[i].strip() and not PAGE.search(lines[i])]
@@ -86,9 +201,29 @@ def detect_vestiges(lines: List[str], pages: List[int], book: str) -> List[Vesti
 
     best: Dict[str, Vestige] = {}
     for v in out:
-        cur = best.get(v.name.lower())
+        key = _norm_name(v.name)
+        cur = best.get(key)
         if cur is None or v.quick_fields() > cur.quick_fields():
-            best[v.name.lower()] = v
+            best[key] = v
+
+    # The explicit per-entry tablets are the court of appeal for the summary
+    # column dump. They also recover Orthos, whose final summary row loses its
+    # level cell at the page break.
+    tablets = _tablet_fields(lines)
+    for key, (name, level, dc, requirement) in tablets.items():
+        v = best.get(key)
+        if v is None:
+            v = Vestige(name=name, book=book, page=None, start=0, end=0)
+            best[key] = v
+        v.vestige_level = level
+        v.binding_dc = dc
+        v.special_requirement = requirement
+
+    details = _description_spans(lines, pages, [v.name for v in best.values()])
+    for key, v in best.items():
+        detail = details.get(key)
+        if detail:
+            v.start, v.end, v.page = detail
     return sorted(best.values(), key=lambda v: (v.vestige_level or 0, v.name))
 
 
@@ -112,7 +247,7 @@ class Source:
 SOURCES: List[Source] = [
     Source("tome", "Tome of Magic (Pact Magic)",
            Path("D&D 3.5e/Player Options/Tome of Magic.md"),
-           "Tome of Magic (WotC, 3.5e), Pact Magic — vestige summary", "vestiges"),
+           "Tome of Magic (WotC, 3.5e), Pact Magic — vestige summary, tablets, and descriptions pp. 20–50", "vestiges"),
 ]
 
 
@@ -177,19 +312,20 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "harvest.** D&D 3.5 pact-magic vestiges (the binder's summonable powers),",
         "from Tome of Magic. `binding_dc` is the DC of the binding check to make",
         "the pact; a vestige with a special requirement needs some extra condition",
-        "met at summoning (detailed at its PDF page). Native D&D 3.5e; the full",
-        "granted-ability text is the export packet's `raw_block`.",
+        "met at summoning (detailed at its PDF page). Native D&D 3.5e; every row",
+        "is bound to its complete book-verbatim description and granted powers.",
         "",
     ]
     for src in corpus.sources:
         total += len(src.vestiges)
         parsed_well += sum(1 for v in src.vestiges if v.quick_fields() >= 3)
         sources_out.append({"key": src.key, "book": src.book, "citation": src.citation,
-                            "coverage": src.coverage,
+                            "coverage": src.coverage, "source_path": str(src.path),
                             "vestiges": [asdict(v) for v in src.vestiges]})
         md.append(f"## {src.book} — {len(src.vestiges)} vestiges")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Source: {src.citation}.*")
+        md.append(f"*Extraction: `{corpus.base / src.path}`.*")
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
         if src.vestiges:
@@ -223,17 +359,15 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
         return 1
     packets = []
     for src, v in hits:
-        # widen to the vestige's description: from its summary row to the next few
-        # hundred lines is too much; the summary row is the anchor, so hand the
-        # translator the summary plus a pointer to the PDF page for the abilities.
-        body = [ln for ln in src.lines[v.start:v.end] if not PAGE.search(ln)]
+        cleaned = _strip_vestige_tablets("\n".join(src.lines[v.start:v.end]))
+        body = [ln for ln in cleaned.splitlines() if not PAGE.search(ln)]
         packets.append({
             "packet": "vestige-for-translation",
             "instructions": ("A D&D 3.5 pact-magic vestige (binder subsystem). The "
                              "3.5e half is here; the system-translator skill builds "
-                             "the GURPS treatment. The granted abilities are in the "
-                             "vestige's full entry at the cited PDF page — this row "
-                             "is the summary (level, binding DC, special requirement)."),
+                             "the GURPS treatment. This packet includes the parsed "
+                             "level/DC/requirement and the complete book-verbatim "
+                             "description with all granted powers."),
             "name": v.name,
             "source": {"book": v.book, "pdf_page": v.page,
                        "extraction": str(corpus.base / src.path),
@@ -299,12 +433,60 @@ def selftest(base: Path) -> int:
 
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
-        ves = corpus.sources[0].vestiges
-        if len(ves) < 20:
-            failures.append(f"only {len(ves)} vestiges indexed; expected > 20")
+        src = corpus.sources[0]
+        ves = src.vestiges
+        pages = _pages_for(src.lines)
+        tablets = _tablet_fields(src.lines)
+        details = _description_spans(src.lines, pages, [v.name for v in ves])
+        if len(ves) != 32:
+            failures.append(f"{len(ves)} vestiges indexed; expected exactly 32")
+        if len(tablets) != 32:
+            failures.append(f"{len(tablets)} explicit vestige tablets; expected exactly 32")
+        if len(details) != 32:
+            failures.append(f"{len(details)} full description headings; expected exactly 32")
         levels = {v.vestige_level for v in ves}
-        if not levels.issuperset({1, 2, 3, 4, 5}):
+        if levels != set(range(1, 9)):
             failures.append(f"vestige levels {sorted(levels)} — expected the full 1..8 spread")
+        tablet_mismatches = []
+        for v in ves:
+            tablet = tablets.get(_norm_name(v.name))
+            values = (v.vestige_level, v.binding_dc, v.special_requirement)
+            if not tablet or values != tablet[1:]:
+                tablet_mismatches.append((v.name, values, tablet))
+        if tablet_mismatches:
+            failures.append(f"rows disagree with explicit tablets: {tablet_mismatches[:5]}")
+        bad_spans = []
+        missing_abilities = []
+        tablet_artifacts = []
+        for v in ves:
+            head = " ".join(src.lines[v.start:min(v.end, v.start + 3)])
+            raw_body = "\n".join(src.lines[v.start:v.end])
+            body = _strip_vestige_tablets(raw_body)
+            if v.end - v.start < 20 or _norm_name(v.name) not in _norm_name(head):
+                bad_spans.append((v.name, v.start, v.end))
+            if not re.search(r"Granted (?:Abilities|Powers):", body):
+                missing_abilities.append(v.name)
+            if "Vestige Level:" in body:
+                tablet_artifacts.append(v.name)
+        if bad_spans:
+            failures.append(f"invalid full description spans: {bad_spans[:5]}")
+        if missing_abilities:
+            failures.append(f"description spans without Granted Abilities/Powers: {missing_abilities}")
+        if tablet_artifacts:
+            failures.append(f"cleaned descriptions retain floated tablets: {tablet_artifacts}")
+        if not ves or min(v.page or 0 for v in ves) != 20 or max(v.page or 0 for v in ves) != 49:
+            failures.append("live description headings did not span verified PDF pages 20–49")
+        orthos = next((v for v in ves if v.name == "Orthos"), None)
+        if (not orthos or orthos.page != 43
+                or (orthos.vestige_level, orthos.binding_dc,
+                    orthos.special_requirement) != (8, 35, True)):
+            failures.append(f"live Orthos mismatch: {orthos}")
+        corrected_levels = {"Marchosias": 7, "Otiax": 5, "Paimon": 3,
+                            "Ronove": 1, "Savnok": 2, "Tenebrous": 4, "Zagan": 6}
+        by_name = {v.name: v for v in ves}
+        for name, level in corrected_levels.items():
+            if name not in by_name or by_name[name].vestige_level != level:
+                failures.append(f"{name} level mismatch: {by_name.get(name)}")
     else:
         print("  [SKIP] Tome of Magic extraction not found — fixture checks only")
 

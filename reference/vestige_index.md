@@ -4,44 +4,46 @@
 harvest.** D&D 3.5 pact-magic vestiges (the binder's summonable powers),
 from Tome of Magic. `binding_dc` is the DC of the binding check to make
 the pact; a vestige with a special requirement needs some extra condition
-met at summoning (detailed at its PDF page). Native D&D 3.5e; the full
-granted-ability text is the export packet's `raw_block`.
+met at summoning (detailed at its PDF page). Native D&D 3.5e; every row
+is bound to its complete book-verbatim description and granted powers.
 
-## Tome of Magic (Pact Magic) — 31 vestiges
+## Tome of Magic (Pact Magic) — 32 vestiges
 
-*Source: Tome of Magic (WotC, 3.5e), Pact Magic — vestige summary.*  
-*Harvest: ok — 31 vestiges from Tome of Magic.md.*
+*Source: Tome of Magic (WotC, 3.5e), Pact Magic — vestige summary, tablets, and descriptions pp. 20–50.*
+*Extraction: `I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md`.*
+*Harvest: ok — 32 vestiges from Tome of Magic.md.*
 
 | Vestige | Level | Binding DC | Special Req. | PDF p. |
 |---|---|---|---|---|
-| Amon | 1 | 20 | yes | 19 |
-| Aym | 1 | 15 | no | 19 |
-| Leraje | 1 | 15 | yes | 19 |
-| Naberius | 1 | 15 | yes | 19 |
-| Dahlver-Nar | 2 | 17 | yes | 19 |
-| Haagenti | 2 | 17 | yes | 19 |
-| Malphas | 2 | 15 | no | 19 |
-| Ronove | 2 | 15 | yes | 19 |
-| Andromalius | 3 | 20 | yes | 19 |
-| Focalor | 3 | 20 | yes | 19 |
-| Karsus | 3 | 25 | yes | 19 |
-| Savnok | 3 | 20 | yes | 19 |
-| Agares | 4 | 22 | yes | 19 |
-| Andras | 4 | 22 | no | 19 |
-| Buer | 4 | 20 | yes | 19 |
-| Eurynome | 4 | 21 | yes | 19 |
-| Paimon | 4 | 20 | no | 19 |
-| Acererak | 5 | 25 | yes | 19 |
-| Balam | 5 | 25 | yes | 19 |
-| Dantalion | 5 | 25 | no | 19 |
-| Geryon | 5 | 25 | yes | 19 |
-| Tenebrous | 5 | 21 | yes | 19 |
-| Chupoclops | 6 | 25 | yes | 19 |
-| Haures | 6 | 25 | no | 19 |
-| Ipos | 6 | 26 | yes | 19 |
-| Otiax | 6 | 25 | no | 19 |
-| Shax | 6 | 26 | yes | 19 |
-| Eligor | 7 | 30 | no | 19 |
-| Zagan | 7 | 25 | yes | 19 |
-| Halphax | 8 | 32 | yes | 19 |
-| Marchosias | 8 | 30 | yes | 19 |
+| Amon | 1 | 20 | yes | 22 |
+| Aym | 1 | 15 | no | 25 |
+| Leraje | 1 | 15 | yes | 39 |
+| Naberius | 1 | 15 | yes | 42 |
+| Ronove | 1 | 15 | yes | 45 |
+| Dahlver-Nar | 2 | 17 | yes | 28 |
+| Haagenti | 2 | 17 | yes | 34 |
+| Malphas | 2 | 15 | no | 40 |
+| Savnok | 2 | 20 | yes | 46 |
+| Andromalius | 3 | 20 | yes | 24 |
+| Focalor | 3 | 20 | yes | 32 |
+| Karsus | 3 | 25 | yes | 38 |
+| Paimon | 3 | 20 | no | 44 |
+| Agares | 4 | 22 | yes | 21 |
+| Andras | 4 | 22 | no | 23 |
+| Buer | 4 | 20 | yes | 27 |
+| Eurynome | 4 | 21 | yes | 31 |
+| Tenebrous | 4 | 21 | yes | 49 |
+| Acererak | 5 | 25 | yes | 20 |
+| Balam | 5 | 25 | yes | 26 |
+| Dantalion | 5 | 25 | no | 29 |
+| Geryon | 5 | 25 | yes | 33 |
+| Otiax | 5 | 25 | no | 44 |
+| Chupoclops | 6 | 25 | yes | 27 |
+| Haures | 6 | 25 | no | 36 |
+| Ipos | 6 | 26 | yes | 37 |
+| Shax | 6 | 26 | yes | 48 |
+| Zagan | 6 | 25 | yes | 49 |
+| Eligor | 7 | 30 | no | 30 |
+| Marchosias | 7 | 30 | yes | 41 |
+| Halphax | 8 | 32 | yes | 35 |
+| Orthos | 8 | 35 | yes | 43 |
