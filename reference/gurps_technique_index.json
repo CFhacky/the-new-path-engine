@@ -1,20 +1,24 @@
 {
  "generated_by": "scripts/gurps_technique_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_techniques": 101,
+ "total_techniques": 112,
  "sources": [
   {
    "key": "macheat",
    "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
    "citation": "GURPS Martial Arts Technique Cheat-Sheet (SJGames, 4e; summarizes GURPS Martial Arts by Dell'Orto & Punch)",
-   "coverage": "ok \u2014 101 techniques from GURPS 4e - Martial Arts - Techniques Cheat Sheet.md",
+   "source_path": "GURPS\\GURPS 4e\\GURPS 4e - Martial Arts.md",
+   "table_source_path": "GURPS\\GURPS 4e\\GURPS 4e - Martial Arts - Techniques Cheat Sheet.md",
+   "coverage": "ok \u2014 112 techniques from GURPS 4e - Martial Arts - Techniques Cheat Sheet.md; full descriptions from GURPS 4e - Martial Arts.md",
    "techniques": [
     {
      "name": "Acrobatic Stand",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 133,
-     "end": 140,
+     "table_start": 133,
+     "table_end": 140,
+     "start": 7206,
+     "end": 7221,
      "difficulty": "Average",
      "prerequisite": "Acrobatics",
      "default": "Acrobatics-6",
@@ -22,14 +26,23 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA65"
+     "book_page": "MA65",
+     "description_key": "Acrobatic Stand",
+     "description_spans": [
+      [
+       7206,
+       7221
+      ]
+     ]
     },
     {
      "name": "Aggressive Parry",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 140,
-     "end": 148,
+     "table_start": 140,
+     "table_end": 148,
+     "start": 7221,
+     "end": 7251,
      "difficulty": "Hard",
      "prerequisite": "Any SS",
      "default": "Parry-1",
@@ -37,14 +50,23 @@
      "damage": "Worse of thr-4 or thr-2 at -1/d cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA65"
+     "book_page": "MA65",
+     "description_key": "Aggressive Parry",
+     "description_spans": [
+      [
+       7221,
+       7251
+      ]
+     ]
     },
     {
      "name": "Arm or Wrist Lock",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 148,
-     "end": 155,
+     "table_start": 148,
+     "table_end": 155,
+     "start": 7251,
+     "end": 7426,
      "difficulty": "Average",
      "prerequisite": "Judo, Wrestling, or app. MWS",
      "default": "PS",
@@ -52,14 +74,23 @@
      "damage": "QC",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA65"
+     "book_page": "MA65",
+     "description_key": "Arm or Wrist Lock",
+     "description_spans": [
+      [
+       7251,
+       7426
+      ]
+     ]
     },
     {
      "name": "Armed Grapple",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 155,
-     "end": 162,
+     "table_start": 155,
+     "table_end": 162,
+     "start": 7426,
+     "end": 7452,
      "difficulty": "Hard",
      "prerequisite": "Cloak or app. MWS",
      "default": "PS-2",
@@ -67,14 +98,23 @@
      "damage": "Grapple",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA67"
+     "book_page": "MA67",
+     "description_key": "Armed Grapple",
+     "description_spans": [
+      [
+       7426,
+       7452
+      ]
+     ]
     },
     {
      "name": "Attack from Above",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 162,
-     "end": 169,
+     "table_start": 162,
+     "table_end": 169,
+     "start": 7452,
+     "end": 7461,
      "difficulty": "Average",
      "prerequisite": "Any MWS or UCS",
      "default": "PS-2",
@@ -82,14 +122,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA67"
+     "book_page": "MA67",
+     "description_key": "Attack from Above",
+     "description_spans": [
+      [
+       7452,
+       7461
+      ]
+     ]
     },
     {
      "name": "Axe Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 169,
-     "end": 177,
+     "table_start": 169,
+     "table_end": 177,
+     "start": 7461,
+     "end": 7493,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-4",
@@ -97,14 +146,23 @@
      "damage": "Better of thr+1 or thr at +1/2d cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA67"
+     "book_page": "MA67",
+     "description_key": "Axe Kick",
+     "description_spans": [
+      [
+       7461,
+       7493
+      ]
+     ]
     },
     {
      "name": "Back Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 177,
-     "end": 184,
+     "table_start": 177,
+     "table_end": 184,
+     "start": 7493,
+     "end": 7518,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-4",
@@ -112,14 +170,23 @@
      "damage": "Kick",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA67"
+     "book_page": "MA67",
+     "description_key": "Back Kick or Back Strike",
+     "description_spans": [
+      [
+       7493,
+       7518
+      ]
+     ]
     },
     {
      "name": "Back Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 184,
-     "end": 193,
+     "table_start": 184,
+     "table_end": 193,
+     "start": 7493,
+     "end": 7518,
      "difficulty": "Hard",
      "prerequisite": "Any MWS",
      "default": "PS-2",
@@ -127,14 +194,23 @@
      "damage": "Per attack at worse of -2 or -1/d with swung",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA67"
+     "book_page": "MA67",
+     "description_key": "Back Kick or Back Strike",
+     "description_spans": [
+      [
+       7493,
+       7518
+      ]
+     ]
     },
     {
      "name": "Backbreaker",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 193,
-     "end": 201,
+     "table_start": 193,
+     "table_end": 201,
+     "start": 9192,
+     "end": 9219,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "ST-3 or Wrestling-3",
@@ -142,14 +218,23 @@
      "damage": "sw cr",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA82"
+     "book_page": "MA82",
+     "description_key": "Backbreaker",
+     "description_spans": [
+      [
+       9192,
+       9219
+      ]
+     ]
     },
     {
      "name": "Bind Weapon",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 201,
-     "end": 208,
+     "table_start": 201,
+     "table_end": 208,
+     "start": 7518,
+     "end": 7568,
      "difficulty": "Hard",
      "prerequisite": "Jitte/Sai or any fencing",
      "default": "PS-3",
@@ -157,14 +242,23 @@
      "damage": "Bind",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA67"
+     "book_page": "MA67",
+     "description_key": "Bind Weapon",
+     "description_spans": [
+      [
+       7518,
+       7568
+      ]
+     ]
     },
     {
      "name": "Binding",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 208,
-     "end": 215,
+     "table_start": 208,
+     "table_end": 215,
+     "start": 9219,
+     "end": 9246,
      "difficulty": "Hard",
      "prerequisite": "Judo or Knot-Tying",
      "default": "PS",
@@ -172,14 +266,23 @@
      "damage": "Tie Up",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA82"
+     "book_page": "MA82",
+     "description_key": "Binding",
+     "description_spans": [
+      [
+       9219,
+       9246
+      ]
+     ]
     },
     {
      "name": "Breakfall",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 215,
-     "end": 223,
+     "table_start": 215,
+     "table_end": 223,
+     "start": null,
+     "end": null,
      "difficulty": "Average",
      "prerequisite": "Acrobatics, Judo, or Wrestling",
      "default": "PS",
@@ -187,14 +290,27 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA68"
+     "book_page": "MA68",
+     "description_key": "Breakfall",
+     "description_spans": [
+      [
+       7568,
+       7575
+      ],
+      [
+       7653,
+       7664
+      ]
+     ]
     },
     {
      "name": "Cavalry Training",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 223,
-     "end": 230,
+     "table_start": 223,
+     "table_end": 230,
+     "start": 7664,
+     "end": 7679,
      "difficulty": "Hard",
      "prerequisite": "Riding and any MWS",
      "default": "PS-2",
@@ -202,14 +318,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA69"
+     "book_page": "MA69",
+     "description_key": "Cavalry Training",
+     "description_spans": [
+      [
+       7664,
+       7679
+      ]
+     ]
     },
     {
      "name": "Choke Hold",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 230,
-     "end": 239,
+     "table_start": 230,
+     "table_end": 239,
+     "start": 7679,
+     "end": 7725,
      "difficulty": "Hard",
      "prerequisite": "Judo, Wrestling, or app. WS",
      "default": "Judo-2, Wrestling-3, or app. WS-3",
@@ -217,14 +342,23 @@
      "damage": "QC",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA69"
+     "book_page": "MA69",
+     "description_key": "Choke Hold",
+     "description_spans": [
+      [
+       7679,
+       7725
+      ]
+     ]
     },
     {
      "name": "Close Combat",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 239,
-     "end": 246,
+     "table_start": 239,
+     "table_end": 246,
+     "start": 7725,
+     "end": 7749,
      "difficulty": "Hard",
      "prerequisite": "Any MWS",
      "default": "PS-4, -8, or -12",
@@ -232,14 +366,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA69"
+     "book_page": "MA69",
+     "description_key": "Close Combat",
+     "description_spans": [
+      [
+       7725,
+       7749
+      ]
+     ]
     },
     {
-     "name": "Ranged",
+     "name": "Close Combat \u2013 Ranged",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 247,
-     "end": 254,
+     "table_start": 246,
+     "table_end": 254,
+     "start": 7725,
+     "end": 7749,
      "difficulty": "Hard",
      "prerequisite": "Any RCS",
      "default": "PS-Bulk",
@@ -247,14 +390,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA69"
+     "book_page": "MA69",
+     "description_key": "Close Combat",
+     "description_spans": [
+      [
+       7725,
+       7749
+      ]
+     ]
     },
     {
      "name": "Combat Riding",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 254,
-     "end": 261,
+     "table_start": 254,
+     "table_end": 261,
+     "start": 7749,
+     "end": 7771,
      "difficulty": "Hard",
      "prerequisite": "Riding",
      "default": "Riding",
@@ -262,14 +414,135 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA69"
+     "book_page": "MA69",
+     "description_key": "Combat Riding",
+     "description_spans": [
+      [
+       7749,
+       7771
+      ]
+     ]
+    },
+    {
+     "name": "Combination \u2013 2 Attacks",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 3,
+     "table_start": 261,
+     "table_end": 269,
+     "start": null,
+     "end": null,
+     "difficulty": "Hard (combination, +2)",
+     "prerequisite": "Any 2 TAs, even defaults",
+     "default": "TAs-6",
+     "maximum": "TAs",
+     "damage": "Per attacks",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA80",
+     "description_key": "Optional Rule: Combinations",
+     "description_spans": [
+      [
+       8999,
+       9000
+      ],
+      [
+       8910,
+       8999
+      ]
+     ]
+    },
+    {
+     "name": "Combination \u2013 3 Attacks",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 3,
+     "table_start": 269,
+     "table_end": 277,
+     "start": null,
+     "end": null,
+     "difficulty": "Hard (combination, +3)",
+     "prerequisite": "Any 3 TAs, even defaults",
+     "default": "TAs-12",
+     "maximum": "TAs",
+     "damage": "Per attacks",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA80",
+     "description_key": "Optional Rule: Combinations",
+     "description_spans": [
+      [
+       8999,
+       9000
+      ],
+      [
+       8910,
+       8999
+      ]
+     ]
+    },
+    {
+     "name": "Combination, 2H \u2013 2 Attacks",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 3,
+     "table_start": 277,
+     "table_end": 285,
+     "start": null,
+     "end": null,
+     "difficulty": "Hard (combination, +2)",
+     "prerequisite": "Any 2 TAs, even defaults",
+     "default": "TAs-4",
+     "maximum": "TAs",
+     "damage": "Per attacks",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA80",
+     "description_key": "Optional Rule: Combinations",
+     "description_spans": [
+      [
+       8999,
+       9000
+      ],
+      [
+       8910,
+       8999
+      ]
+     ]
+    },
+    {
+     "name": "Combination, 2H \u2013 3 Attacks",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 3,
+     "table_start": 285,
+     "table_end": 293,
+     "start": null,
+     "end": null,
+     "difficulty": "Hard (combination, +3)",
+     "prerequisite": "Any 3 TAs, even defaults",
+     "default": "TAs-9",
+     "maximum": "TAs",
+     "damage": "Per attacks",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA80",
+     "description_key": "Optional Rule: Combinations",
+     "description_spans": [
+      [
+       8999,
+       9000
+      ],
+      [
+       8910,
+       8999
+      ]
+     ]
     },
     {
      "name": "Counterattack",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 293,
-     "end": 300,
+     "table_start": 293,
+     "table_end": 300,
+     "start": 7771,
+     "end": 7790,
      "difficulty": "Hard",
      "prerequisite": "Any MWS or UCS",
      "default": "PS-5",
@@ -277,14 +550,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA70"
+     "book_page": "MA70",
+     "description_key": "Counterattack",
+     "description_spans": [
+      [
+       7771,
+       7790
+      ]
+     ]
     },
     {
      "name": "Crack",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 300,
-     "end": 307,
+     "table_start": 300,
+     "table_end": 307,
+     "start": 7790,
+     "end": 7800,
      "difficulty": "Average",
      "prerequisite": "Whip",
      "default": "Whip-4",
@@ -292,14 +574,23 @@
      "damage": "Per attack+2",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA70"
+     "book_page": "MA70",
+     "description_key": "Crack",
+     "description_spans": [
+      [
+       7790,
+       7800
+      ]
+     ]
     },
     {
      "name": "Disarming",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 307,
-     "end": 314,
+     "table_start": 307,
+     "table_end": 314,
+     "start": 7800,
+     "end": 7814,
      "difficulty": "Hard",
      "prerequisite": "Any MWS or UCS",
      "default": "PS",
@@ -307,14 +598,23 @@
      "damage": "Disarm",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA70"
+     "book_page": "MA70",
+     "description_key": "Disarming",
+     "description_spans": [
+      [
+       7800,
+       7814
+      ]
+     ]
     },
     {
      "name": "Double Eye-Poke",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 314,
-     "end": 321,
+     "table_start": 314,
+     "table_end": 321,
+     "start": 9805,
+     "end": 9816,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-5",
@@ -322,14 +622,23 @@
      "damage": "Blind",
      "cinematic": false,
      "silly": true,
-     "book_page": "MA88"
+     "book_page": "MA88",
+     "description_key": "Double Eye-Poke",
+     "description_spans": [
+      [
+       9805,
+       9816
+      ]
+     ]
     },
     {
      "name": "Drop Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 321,
-     "end": 331,
+     "table_start": 321,
+     "table_end": 331,
+     "start": 7814,
+     "end": 7834,
      "difficulty": "Hard",
      "prerequisite": "Brawling, Sumo Wrestling, or Wrestling",
      "default": "Brawling-1, Sumo",
@@ -337,14 +646,23 @@
      "damage": "PS Slam+2",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA70"
+     "book_page": "MA70",
+     "description_key": "Drop Kick",
+     "description_spans": [
+      [
+       7814,
+       7834
+      ]
+     ]
     },
     {
-     "name": "Attack",
+     "name": "Dual-Weapon Attack",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 332,
-     "end": 339,
+     "table_start": 331,
+     "table_end": 339,
+     "start": 9246,
+     "end": 9271,
      "difficulty": "Hard",
      "prerequisite": "Any UCS or 1H CS",
      "default": "PS-4",
@@ -352,14 +670,23 @@
      "damage": "Per attack",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA83"
+     "book_page": "MA83",
+     "description_key": "Dual-Weapon Attack",
+     "description_spans": [
+      [
+       9246,
+       9271
+      ]
+     ]
     },
     {
-     "name": "Attack (Bow)",
+     "name": "Dual-Weapon Attack (Bow)",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 340,
-     "end": 347,
+     "table_start": 339,
+     "table_end": 347,
+     "start": 9246,
+     "end": 9271,
      "difficulty": "Hard",
      "prerequisite": "Bow",
      "default": "Bow-4",
@@ -367,14 +694,23 @@
      "damage": "Per attack",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA83"
+     "book_page": "MA83",
+     "description_key": "Dual-Weapon Attack",
+     "description_spans": [
+      [
+       9246,
+       9271
+      ]
+     ]
     },
     {
-     "name": "Defense",
+     "name": "Dual-Weapon Defense",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 348,
-     "end": 355,
+     "table_start": 347,
+     "table_end": 355,
+     "start": 9271,
+     "end": 9287,
      "difficulty": "Hard",
      "prerequisite": "Any MWS or UCS",
      "default": "Block-1 or Parry-1",
@@ -382,14 +718,23 @@
      "damage": "N/A",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA83"
+     "book_page": "MA83",
+     "description_key": "Dual-Weapon Defense",
+     "description_spans": [
+      [
+       9271,
+       9287
+      ]
+     ]
     },
     {
      "name": "Ear Clap",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 355,
-     "end": 363,
+     "table_start": 355,
+     "table_end": 363,
+     "start": 7834,
+     "end": 7863,
      "difficulty": "Average",
      "prerequisite": "Any SS",
      "default": "PS-3",
@@ -397,14 +742,23 @@
      "damage": "thr-3 cr\u2021, Deaf, Stun",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA70"
+     "book_page": "MA70",
+     "description_key": "Ear Clap",
+     "description_spans": [
+      [
+       7834,
+       7863
+      ]
+     ]
     },
     {
      "name": "Elbow Drop",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 363,
-     "end": 373,
+     "table_start": 363,
+     "table_end": 373,
+     "start": 7863,
+     "end": 7898,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Wrestling",
      "default": "Brawling-4 or Wrestling-5",
@@ -412,14 +766,23 @@
      "damage": "Better of thr+2 or thr at +1/d cr\u2021, Knockdown",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA70"
+     "book_page": "MA70",
+     "description_key": "Elbow Drop",
+     "description_spans": [
+      [
+       7863,
+       7898
+      ]
+     ]
     },
     {
      "name": "Elbow Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 373,
-     "end": 380,
+     "table_start": 373,
+     "table_end": 380,
+     "start": 7898,
+     "end": 7914,
      "difficulty": "Average",
      "prerequisite": "Brawling or Karate",
      "default": "PS-2",
@@ -427,14 +790,23 @@
      "damage": "thr-1 cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA71"
+     "book_page": "MA71",
+     "description_key": "Elbow Strike",
+     "description_spans": [
+      [
+       7898,
+       7914
+      ]
+     ]
     },
     {
      "name": "Entangle",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 380,
-     "end": 387,
+     "table_start": 380,
+     "table_end": 387,
+     "start": 7914,
+     "end": 7948,
      "difficulty": "Hard",
      "prerequisite": "Kusari or Whip",
      "default": "PS-4",
@@ -442,14 +814,23 @@
      "damage": "Entangle",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA71"
+     "book_page": "MA71",
+     "description_key": "Entangle",
+     "description_spans": [
+      [
+       7914,
+       7948
+      ]
+     ]
     },
     {
      "name": "Evade",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 3,
-     "start": 387,
-     "end": 394,
+     "table_start": 387,
+     "table_end": 394,
+     "start": 7948,
+     "end": 7959,
      "difficulty": "Average",
      "prerequisite": "Acrobatics or Judo",
      "default": "PS",
@@ -457,14 +838,23 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA71"
+     "book_page": "MA71",
+     "description_key": "Evade",
+     "description_spans": [
+      [
+       7948,
+       7959
+      ]
+     ]
     },
     {
-     "name": "Strike",
+     "name": "Exotic Hand Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 407,
-     "end": 414,
+     "table_start": 406,
+     "table_end": 414,
+     "start": 7959,
+     "end": 7972,
      "difficulty": "Average",
      "prerequisite": "Karate",
      "default": "Karate-1",
@@ -472,14 +862,23 @@
      "damage": "thr cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA71"
+     "book_page": "MA71",
+     "description_key": "Exotic Hand Strike",
+     "description_spans": [
+      [
+       7959,
+       7972
+      ]
+     ]
     },
     {
      "name": "Eye-Gouging",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 414,
-     "end": 421,
+     "table_start": 414,
+     "table_end": 421,
+     "start": 7972,
+     "end": 8010,
      "difficulty": "Hard",
      "prerequisite": "Brawling, Judo, or Wrestling",
      "default": "PS-5",
@@ -487,14 +886,23 @@
      "damage": "thr-4 cr, Blind",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA71"
+     "book_page": "MA71",
+     "description_key": "Eye-Gouging",
+     "description_spans": [
+      [
+       7972,
+       8010
+      ]
+     ]
     },
     {
      "name": "Eye-Pluck",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 421,
-     "end": 428,
+     "table_start": 421,
+     "table_end": 428,
+     "start": 8010,
+     "end": 8029,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-10",
@@ -502,14 +910,23 @@
      "damage": "thr-3 cr\u2021, Cripple",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA72"
+     "book_page": "MA72",
+     "description_key": "Eye-Pluck",
+     "description_spans": [
+      [
+       8010,
+       8029
+      ]
+     ]
     },
     {
      "name": "Eye-Poke",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 428,
-     "end": 435,
+     "table_start": 428,
+     "table_end": 435,
+     "start": 8029,
+     "end": 8048,
      "difficulty": "Hard",
      "prerequisite": "Any SS",
      "default": "PS-9",
@@ -517,14 +934,47 @@
      "damage": "thr-3 cr",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA72"
+     "book_page": "MA72",
+     "description_key": "Eye-Poke",
+     "description_spans": [
+      [
+       8029,
+       8048
+      ]
+     ]
+    },
+    {
+     "name": "Eye-Poke Defense",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 4,
+     "table_start": 435,
+     "table_end": 443,
+     "start": 9816,
+     "end": 9826,
+     "difficulty": "Hard",
+     "prerequisite": "Any UCS",
+     "default": "Parry",
+     "maximum": "Parry+5",
+     "damage": "N/A",
+     "cinematic": false,
+     "silly": true,
+     "book_page": "MA88",
+     "description_key": "Eye-Poke Defense",
+     "description_spans": [
+      [
+       9816,
+       9826
+      ]
+     ]
     },
     {
      "name": "Eye-Rake",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 443,
-     "end": 450,
+     "table_start": 443,
+     "table_end": 450,
+     "start": 8048,
+     "end": 8065,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-5",
@@ -532,14 +982,23 @@
      "damage": "Blind",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA72"
+     "book_page": "MA72",
+     "description_key": "Eye-Rake",
+     "description_spans": [
+      [
+       8048,
+       8065
+      ]
+     ]
     },
     {
      "name": "Feint",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 450,
-     "end": 457,
+     "table_start": 450,
+     "table_end": 457,
+     "start": 8080,
+     "end": 8115,
      "difficulty": "Hard",
      "prerequisite": "Any UCS, MWS, or special",
      "default": "PS",
@@ -547,14 +1006,23 @@
      "damage": "Feint",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA73"
+     "book_page": "MA73",
+     "description_key": "Feint",
+     "description_spans": [
+      [
+       8080,
+       8115
+      ]
+     ]
     },
     {
-     "name": "Seated",
+     "name": "Fighting While Seated",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 458,
-     "end": 465,
+     "table_start": 457,
+     "table_end": 465,
+     "start": 9287,
+     "end": 9309,
      "difficulty": "Hard",
      "prerequisite": "Any CS",
      "default": "PS-2",
@@ -562,14 +1030,23 @@
      "damage": "Per attack",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA83"
+     "book_page": "MA83",
+     "description_key": "Fighting While Seated",
+     "description_spans": [
+      [
+       9287,
+       9309
+      ]
+     ]
     },
     {
      "name": "Finger Lock",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 465,
-     "end": 472,
+     "table_start": 465,
+     "table_end": 472,
+     "start": 8115,
+     "end": 8124,
      "difficulty": "Hard",
      "prerequisite": "Arm Lock",
      "default": "Arm Lock-3",
@@ -577,14 +1054,23 @@
      "damage": "QC",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA73"
+     "book_page": "MA73",
+     "description_key": "Finger Lock",
+     "description_spans": [
+      [
+       8115,
+       8124
+      ]
+     ]
     },
     {
-     "name": "Wedgie",
+     "name": "Flying Atomic Wedgie",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 473,
-     "end": 480,
+     "table_start": 472,
+     "table_end": 480,
+     "start": 9826,
+     "end": 9838,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Wrestling",
      "default": "PS-8",
@@ -592,14 +1078,23 @@
      "damage": "Pain",
      "cinematic": false,
      "silly": true,
-     "book_page": "MA88"
+     "book_page": "MA88",
+     "description_key": "Flying Atomic Wedgie",
+     "description_spans": [
+      [
+       9826,
+       9838
+      ]
+     ]
     },
     {
-     "name": "Kick",
+     "name": "Flying Jump Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 481,
-     "end": 489,
+     "table_start": 480,
+     "table_end": 489,
+     "start": 9309,
+     "end": 9349,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-7",
@@ -607,14 +1102,23 @@
      "damage": "Kick at better of +2 or +1/d",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA83"
+     "book_page": "MA83",
+     "description_key": "Flying Jump Kick or Flying Lunge",
+     "description_spans": [
+      [
+       9309,
+       9349
+      ]
+     ]
     },
     {
      "name": "Flying Lunge",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 489,
-     "end": 498,
+     "table_start": 489,
+     "table_end": 498,
+     "start": 9309,
+     "end": 9349,
      "difficulty": "Hard",
      "prerequisite": "Any thrusting MWS",
      "default": "PS-4",
@@ -622,14 +1126,23 @@
      "damage": "Per attack at better of +2 or +1/d",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA83"
+     "book_page": "MA83",
+     "description_key": "Flying Jump Kick or Flying Lunge",
+     "description_spans": [
+      [
+       9309,
+       9349
+      ]
+     ]
     },
     {
      "name": "Grand Disarm",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 498,
-     "end": 507,
+     "table_start": 498,
+     "table_end": 507,
+     "start": 9349,
+     "end": 9390,
      "difficulty": "Hard",
      "prerequisite": "Any MWS or UCS",
      "default": "Fencing-9, MWS-11, or UCS-11",
@@ -637,14 +1150,23 @@
      "damage": "Disarm(s)",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA84"
+     "book_page": "MA84",
+     "description_key": "Grand Disarm",
+     "description_spans": [
+      [
+       9349,
+       9390
+      ]
+     ]
     },
     {
      "name": "Ground Fighting",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 507,
-     "end": 514,
+     "table_start": 507,
+     "table_end": 514,
+     "start": 8124,
+     "end": 8140,
      "difficulty": "Hard",
      "prerequisite": "Any CS",
      "default": "PS-4",
@@ -652,14 +1174,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA73"
+     "book_page": "MA73",
+     "description_key": "Ground Fighting",
+     "description_spans": [
+      [
+       8124,
+       8140
+      ]
+     ]
     },
     {
      "name": "Halitosis Attack",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 514,
-     "end": 521,
+     "table_start": 514,
+     "table_end": 521,
+     "start": 9838,
+     "end": 9854,
      "difficulty": "Average",
      "prerequisite": "OPH (Foul Breath)",
      "default": "HT-5",
@@ -667,14 +1198,23 @@
      "damage": "Stun",
      "cinematic": false,
      "silly": true,
-     "book_page": "MA88"
+     "book_page": "MA88",
+     "description_key": "Halitosis Attack",
+     "description_spans": [
+      [
+       9838,
+       9854
+      ]
+     ]
     },
     {
      "name": "Hammer Fist",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 521,
-     "end": 528,
+     "table_start": 521,
+     "table_end": 528,
+     "start": 8140,
+     "end": 8161,
      "difficulty": "Average",
      "prerequisite": "Brawling or Karate",
      "default": "PS-1",
@@ -682,14 +1222,23 @@
      "damage": "thr-2 cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA73"
+     "book_page": "MA73",
+     "description_key": "Hammer Fist",
+     "description_spans": [
+      [
+       8140,
+       8161
+      ]
+     ]
     },
     {
      "name": "Hand Catch",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 528,
-     "end": 535,
+     "table_start": 528,
+     "table_end": 535,
+     "start": 9390,
+     "end": 9436,
      "difficulty": "Hard",
      "prerequisite": "Any GS",
      "default": "Parry-3",
@@ -697,14 +1246,47 @@
      "damage": "Grab or Grapple",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA84"
+     "book_page": "MA84",
+     "description_key": "Hand Catch",
+     "description_spans": [
+      [
+       9390,
+       9436
+      ]
+     ]
     },
     {
-     "name": "Parry",
+     "name": "Hand Catch (PMW)",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 544,
-     "end": 551,
+     "table_start": 535,
+     "table_end": 543,
+     "start": 9390,
+     "end": 9436,
+     "difficulty": "Hard",
+     "prerequisite": "Parry Missile Weapons",
+     "default": "Parry-3",
+     "maximum": "Parry",
+     "damage": "Grab",
+     "cinematic": true,
+     "silly": false,
+     "book_page": "MA84",
+     "description_key": "Hand Catch",
+     "description_spans": [
+      [
+       9390,
+       9436
+      ]
+     ]
+    },
+    {
+     "name": "Hand-Clap Parry",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 4,
+     "table_start": 543,
+     "table_end": 551,
+     "start": 9436,
+     "end": 9477,
      "difficulty": "Hard",
      "prerequisite": "Judo or Karate",
      "default": "Parry-5",
@@ -712,14 +1294,23 @@
      "damage": "Grab, Disarm",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA84"
+     "book_page": "MA84",
+     "description_key": "Hand-Clap Parry",
+     "description_spans": [
+      [
+       9436,
+       9477
+      ]
+     ]
     },
     {
      "name": "Handcuffing",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 551,
-     "end": 561,
+     "table_start": 551,
+     "table_end": 561,
+     "start": 8161,
+     "end": 8184,
      "difficulty": "Average",
      "prerequisite": "None",
      "default": "Binding, DX-2, Judo-1, or Wrestling-2",
@@ -727,14 +1318,23 @@
      "damage": "Cuff",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA73"
+     "book_page": "MA73",
+     "description_key": "Handcuffing",
+     "description_spans": [
+      [
+       8161,
+       8184
+      ]
+     ]
     },
     {
-     "name": "Riding",
+     "name": "Hands-Free Riding",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 562,
-     "end": 569,
+     "table_start": 561,
+     "table_end": 569,
+     "start": 8184,
+     "end": 8201,
      "difficulty": "Hard",
      "prerequisite": "Riding",
      "default": "Riding-3",
@@ -742,14 +1342,23 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA73"
+     "book_page": "MA73",
+     "description_key": "Hands-Free Riding",
+     "description_spans": [
+      [
+       8184,
+       8201
+      ]
+     ]
     },
     {
      "name": "Head Butt",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 569,
-     "end": 576,
+     "table_start": 569,
+     "table_end": 576,
+     "start": 8201,
+     "end": 8224,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-1",
@@ -757,14 +1366,23 @@
      "damage": "thr-1 cr",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA74"
+     "book_page": "MA74",
+     "description_key": "Head Butt",
+     "description_spans": [
+      [
+       8201,
+       8224
+      ]
+     ]
     },
     {
      "name": "Head Lock",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 576,
-     "end": 583,
+     "table_start": 576,
+     "table_end": 583,
+     "start": 8224,
+     "end": 8247,
      "difficulty": "Hard",
      "prerequisite": "Judo or Wrestling",
      "default": "PS-3",
@@ -772,14 +1390,23 @@
      "damage": "QC",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA74"
+     "book_page": "MA74",
+     "description_key": "Head Lock",
+     "description_spans": [
+      [
+       8224,
+       8247
+      ]
+     ]
     },
     {
      "name": "Hook",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 583,
-     "end": 590,
+     "table_start": 583,
+     "table_end": 590,
+     "start": 8247,
+     "end": 8303,
      "difficulty": "Hard",
      "prerequisite": "Any app. MWS",
      "default": "PS-5",
@@ -787,14 +1414,23 @@
      "damage": "Hook",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA74"
+     "book_page": "MA74",
+     "description_key": "Hook",
+     "description_spans": [
+      [
+       8247,
+       8303
+      ]
+     ]
     },
     {
      "name": "Horse Archery",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 590,
-     "end": 597,
+     "table_start": 590,
+     "table_end": 597,
+     "start": 8303,
+     "end": 8309,
      "difficulty": "Hard",
      "prerequisite": "Bow and Riding",
      "default": "Bow-4",
@@ -802,14 +1438,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA74"
+     "book_page": "MA74",
+     "description_key": "Horse Archery",
+     "description_spans": [
+      [
+       8303,
+       8309
+      ]
+     ]
     },
     {
      "name": "Initial Carving",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 597,
-     "end": 604,
+     "table_start": 597,
+     "table_end": 604,
+     "start": 9477,
+     "end": 9516,
      "difficulty": "Hard",
      "prerequisite": "Any fencing",
      "default": "PS-4",
@@ -817,14 +1462,23 @@
      "damage": "Per attack",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA85"
+     "book_page": "MA85",
+     "description_key": "Initial Carving",
+     "description_spans": [
+      [
+       9477,
+       9516
+      ]
+     ]
     },
     {
      "name": "Jam",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 604,
-     "end": 612,
+     "table_start": 604,
+     "table_end": 612,
+     "start": 8309,
+     "end": 8341,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "Parry-1",
@@ -832,14 +1486,23 @@
      "damage": "Worse of thr-3 or thr-1 at -1/d cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA74"
+     "book_page": "MA74",
+     "description_key": "Jam",
+     "description_spans": [
+      [
+       8309,
+       8341
+      ]
+     ]
     },
     {
      "name": "Judo Throw",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 612,
-     "end": 621,
+     "table_start": 612,
+     "table_end": 621,
+     "start": 8341,
+     "end": 8379,
      "difficulty": "Hard",
      "prerequisite": "Judo",
      "default": "Judo",
@@ -847,14 +1510,23 @@
      "damage": "thr-1 cr, Knockdown, Stun",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA75"
+     "book_page": "MA75",
+     "description_key": "Judo Throw",
+     "description_spans": [
+      [
+       8341,
+       8379
+      ]
+     ]
     },
     {
      "name": "Jump Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 621,
-     "end": 629,
+     "table_start": 621,
+     "table_end": 629,
+     "start": 8379,
+     "end": 8409,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-4",
@@ -862,14 +1534,23 @@
      "damage": "Better of thr+1 or thr at +1/2d cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA75"
+     "book_page": "MA75",
+     "description_key": "Jump Kick",
+     "description_spans": [
+      [
+       8379,
+       8409
+      ]
+     ]
     },
     {
      "name": "Kicking",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 629,
-     "end": 636,
+     "table_start": 629,
+     "table_end": 636,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-2",
@@ -877,14 +1558,27 @@
      "damage": "thr cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA75"
+     "book_page": "MA75",
+     "description_key": "Kicking",
+     "description_spans": [
+      [
+       8409,
+       8424
+      ],
+      [
+       8431,
+       8437
+      ]
+     ]
     },
     {
      "name": "Knee Drop",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 636,
-     "end": 645,
+     "table_start": 636,
+     "table_end": 645,
+     "start": 8437,
+     "end": 8466,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Wrestling",
      "default": "Brawling-3 or Wrestling-4",
@@ -892,14 +1586,23 @@
      "damage": "Better of thr+2 or thr at +1/d cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA76"
+     "book_page": "MA76",
+     "description_key": "Knee Drop",
+     "description_spans": [
+      [
+       8437,
+       8466
+      ]
+     ]
     },
     {
      "name": "Knee Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 645,
-     "end": 652,
+     "table_start": 645,
+     "table_end": 652,
+     "start": 8466,
+     "end": 8480,
      "difficulty": "Average",
      "prerequisite": "Brawling or Karate",
      "default": "PS-1",
@@ -907,14 +1610,23 @@
      "damage": "thr cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA76"
+     "book_page": "MA76",
+     "description_key": "Knee Strike",
+     "description_spans": [
+      [
+       8466,
+       8480
+      ]
+     ]
     },
     {
      "name": "Leg Grapple",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 652,
-     "end": 661,
+     "table_start": 652,
+     "table_end": 661,
+     "start": 8480,
+     "end": 8505,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "DX, Wrestling, or Judo",
@@ -922,14 +1634,23 @@
      "damage": "Grapple",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA76"
+     "book_page": "MA76",
+     "description_key": "Leg Grapple",
+     "description_spans": [
+      [
+       8480,
+       8505
+      ]
+     ]
     },
     {
      "name": "Leg Lock",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 4,
-     "start": 661,
-     "end": 668,
+     "table_start": 661,
+     "table_end": 668,
+     "start": null,
+     "end": null,
      "difficulty": "Average",
      "prerequisite": "Judo or Wrestling",
      "default": "PS",
@@ -937,14 +1658,27 @@
      "damage": "QC",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA76"
+     "book_page": "MA76",
+     "description_key": "Leg Lock",
+     "description_spans": [
+      [
+       8505,
+       8512
+      ],
+      [
+       8545,
+       8583
+      ]
+     ]
     },
     {
      "name": "Leg Throw",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 681,
-     "end": 690,
+     "table_start": 681,
+     "table_end": 690,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Judo",
      "default": "Judo-2",
@@ -952,14 +1686,27 @@
      "damage": "thr-1 cr (ST+2), Knockdown, Stun",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Using Your Legs",
+     "description_spans": [
+      [
+       8881,
+       8882
+      ],
+      [
+       8852,
+       8881
+      ]
+     ]
     },
     {
      "name": "Lethal Eye-Poke",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 690,
-     "end": 697,
+     "table_start": 690,
+     "table_end": 697,
+     "start": 8065,
+     "end": 8076,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-11",
@@ -967,14 +1714,23 @@
      "damage": "thr-2 pi\u2021",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA72"
+     "book_page": "MA72",
+     "description_key": "Lethal Eye-Poke",
+     "description_spans": [
+      [
+       8065,
+       8076
+      ]
+     ]
     },
     {
      "name": "Lethal Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 697,
-     "end": 704,
+     "table_start": 697,
+     "table_end": 704,
+     "start": 9516,
+     "end": 9534,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-4",
@@ -982,14 +1738,23 @@
      "damage": "thr-1 pi\u2021",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA85"
+     "book_page": "MA85",
+     "description_key": "Lethal Kick",
+     "description_spans": [
+      [
+       9516,
+       9534
+      ]
+     ]
     },
     {
      "name": "Lethal Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 704,
-     "end": 711,
+     "table_start": 704,
+     "table_end": 711,
+     "start": 9534,
+     "end": 9543,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-2",
@@ -997,14 +1762,23 @@
      "damage": "thr-2 pi\u2021",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA85"
+     "book_page": "MA85",
+     "description_key": "Lethal Strike",
+     "description_spans": [
+      [
+       9534,
+       9543
+      ]
+     ]
     },
     {
      "name": "Low Fighting",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 711,
-     "end": 718,
+     "table_start": 711,
+     "table_end": 718,
+     "start": 8583,
+     "end": 8597,
      "difficulty": "Hard",
      "prerequisite": "Any CS",
      "default": "PS-2",
@@ -1012,14 +1786,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA77"
+     "book_page": "MA77",
+     "description_key": "Low Fighting",
+     "description_spans": [
+      [
+       8583,
+       8597
+      ]
+     ]
     },
     {
      "name": "Low-Line Defense",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 718,
-     "end": 726,
+     "table_start": 718,
+     "table_end": 726,
+     "start": 8597,
+     "end": 8608,
      "difficulty": "Hard",
      "prerequisite": "Boxing or Sumo",
      "default": "Wrestling",
@@ -1027,14 +1810,23 @@
      "damage": "Parry N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA77"
+     "book_page": "MA77",
+     "description_key": "Low-Line Defense",
+     "description_spans": [
+      [
+       8597,
+       8608
+      ]
+     ]
     },
     {
-     "name": "Lock",
+     "name": "Lower-Body Arm Lock",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 727,
-     "end": 734,
+     "table_start": 726,
+     "table_end": 734,
+     "start": null,
+     "end": null,
      "difficulty": "Average",
      "prerequisite": "Judo or Wrestling",
      "default": "PS-2",
@@ -1042,14 +1834,83 @@
      "damage": "QC (ST+2)",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Using Your Legs",
+     "description_spans": [
+      [
+       8881,
+       8882
+      ],
+      [
+       8852,
+       8881
+      ]
+     ]
+    },
+    {
+     "name": "Lower-Body Head Lock",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 5,
+     "table_start": 742,
+     "table_end": 750,
+     "start": null,
+     "end": null,
+     "difficulty": "Hard",
+     "prerequisite": "Judo or Wrestling",
+     "default": "PS-5",
+     "maximum": "PS",
+     "damage": "QC (ST+2)",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA79",
+     "description_key": "Using Your Legs",
+     "description_spans": [
+      [
+       8881,
+       8882
+      ],
+      [
+       8852,
+       8881
+      ]
+     ]
+    },
+    {
+     "name": "Lower-Body Leg Lock",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 5,
+     "table_start": 750,
+     "table_end": 758,
+     "start": null,
+     "end": null,
+     "difficulty": "Average",
+     "prerequisite": "Judo or Wrestling",
+     "default": "PS-2",
+     "maximum": "PS+4",
+     "damage": "QC (ST+2)",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA79",
+     "description_key": "Using Your Legs",
+     "description_spans": [
+      [
+       8881,
+       8882
+      ],
+      [
+       8852,
+       8881
+      ]
+     ]
     },
     {
      "name": "Mounted Shooting",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 758,
-     "end": 766,
+     "table_start": 758,
+     "table_end": 766,
+     "start": 8608,
+     "end": 8635,
      "difficulty": "Hard",
      "prerequisite": "Riding or any vehicle and",
      "default": "any RCS",
@@ -1057,14 +1918,23 @@
      "damage": "RCS Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA77"
+     "book_page": "MA77",
+     "description_key": "Mounted Shooting",
+     "description_spans": [
+      [
+       8608,
+       8635
+      ]
+     ]
     },
     {
      "name": "Neck Snap",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 766,
-     "end": 773,
+     "table_start": 766,
+     "table_end": 773,
+     "start": 8635,
+     "end": 8663,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "ST-4",
@@ -1072,14 +1942,23 @@
      "damage": "sw cr",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA77"
+     "book_page": "MA77",
+     "description_key": "Neck Snap",
+     "description_spans": [
+      [
+       8635,
+       8663
+      ]
+     ]
     },
     {
      "name": "Noogie",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 773,
-     "end": 780,
+     "table_start": 773,
+     "table_end": 780,
+     "start": 9854,
+     "end": 9871,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-5",
@@ -1087,14 +1966,23 @@
      "damage": "Pain",
      "cinematic": false,
      "silly": true,
-     "book_page": "MA88"
+     "book_page": "MA88",
+     "description_key": "Noogie",
+     "description_spans": [
+      [
+       9854,
+       9871
+      ]
+     ]
     },
     {
      "name": "Nose Slap",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 780,
-     "end": 787,
+     "table_start": 780,
+     "table_end": 787,
+     "start": 9871,
+     "end": 9883,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Wrestling",
      "default": "PS-5",
@@ -1102,14 +1990,23 @@
      "damage": "Stun, Disarm",
      "cinematic": false,
      "silly": true,
-     "book_page": "MA88"
+     "book_page": "MA88",
+     "description_key": "Nose Slap",
+     "description_spans": [
+      [
+       9871,
+       9883
+      ]
+     ]
     },
     {
      "name": "Piledriver",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 787,
-     "end": 796,
+     "table_start": 787,
+     "table_end": 796,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Wrestling",
      "default": "ST-5 or Wrestling-5",
@@ -1117,14 +2014,31 @@
      "damage": "Better of thr+4 or thr+2 at +2/d cr\u2021, Pin",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA85"
+     "book_page": "MA85",
+     "description_key": "Piledriver",
+     "description_spans": [
+      [
+       9543,
+       9555
+      ],
+      [
+       9567,
+       9597
+      ],
+      [
+       9684,
+       9701
+      ]
+     ]
     },
     {
      "name": "Pole-Vault Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 796,
-     "end": 804,
+     "table_start": 796,
+     "table_end": 804,
+     "start": 9701,
+     "end": 9728,
      "difficulty": "Hard",
      "prerequisite": "Jumping and Karate",
      "default": "Karate-4",
@@ -1132,14 +2046,47 @@
      "damage": "Better of thr+3 or thr+1 at +1/d cr\u2021",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA87"
+     "book_page": "MA87",
+     "description_key": "Pole-Vault Kick",
+     "description_spans": [
+      [
+       9701,
+       9728
+      ]
+     ]
+    },
+    {
+     "name": "Pressure-Point Strike",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 5,
+     "table_start": 804,
+     "table_end": 813,
+     "start": 9728,
+     "end": 9737,
+     "difficulty": "Hard",
+     "prerequisite": "Pressure Points/Secrets",
+     "default": "and app. CS",
+     "maximum": "CS-2",
+     "damage": "CS Per attack",
+     "cinematic": true,
+     "silly": false,
+     "book_page": "MA87",
+     "description_key": "Pressure-Point Strike",
+     "description_spans": [
+      [
+       9728,
+       9737
+      ]
+     ]
     },
     {
      "name": "Push Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 813,
-     "end": 820,
+     "table_start": 813,
+     "table_end": 820,
+     "start": 8663,
+     "end": 8682,
      "difficulty": "Hard",
      "prerequisite": "Karate or Brawling",
      "default": "PS-3",
@@ -1147,14 +2094,23 @@
      "damage": "Knockback",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA78"
+     "book_page": "MA78",
+     "description_key": "Push Kick",
+     "description_spans": [
+      [
+       8663,
+       8682
+      ]
+     ]
     },
     {
      "name": "Quick Mount",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 820,
-     "end": 828,
+     "table_start": 820,
+     "table_end": 828,
+     "start": 8682,
+     "end": 8695,
      "difficulty": "Average",
      "prerequisite": "Acrobatics, Jumping, or Riding/vehicle",
      "default": "PS-3",
@@ -1162,14 +2118,23 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA78"
+     "book_page": "MA78",
+     "description_key": "Quick Mount",
+     "description_spans": [
+      [
+       8682,
+       8695
+      ]
+     ]
     },
     {
      "name": "Retain Weapon",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 828,
-     "end": 835,
+     "table_start": 828,
+     "table_end": 835,
+     "start": 8695,
+     "end": 8712,
      "difficulty": "Hard",
      "prerequisite": "Any MWS",
      "default": "PS",
@@ -1177,14 +2142,47 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA78"
+     "book_page": "MA78",
+     "description_key": "Retain Weapon",
+     "description_spans": [
+      [
+       8695,
+       8712
+      ]
+     ]
+    },
+    {
+     "name": "Retain Weapon \u2013 Ranged",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 5,
+     "table_start": 835,
+     "table_end": 843,
+     "start": 8695,
+     "end": 8712,
+     "difficulty": "Hard",
+     "prerequisite": "Any RCS",
+     "default": "DX",
+     "maximum": "DX+5",
+     "damage": "N/A",
+     "cinematic": false,
+     "silly": false,
+     "book_page": "MA78",
+     "description_key": "Retain Weapon",
+     "description_spans": [
+      [
+       8695,
+       8712
+      ]
+     ]
     },
     {
      "name": "Return Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 843,
-     "end": 850,
+     "table_start": 843,
+     "table_end": 850,
+     "start": 8712,
+     "end": 8733,
      "difficulty": "Hard",
      "prerequisite": "Flail or Kusari",
      "default": "PS-5",
@@ -1192,14 +2190,23 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA78"
+     "book_page": "MA78",
+     "description_key": "Return Strike",
+     "description_spans": [
+      [
+       8712,
+       8733
+      ]
+     ]
     },
     {
      "name": "Reverse Grip",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 850,
-     "end": 857,
+     "table_start": 850,
+     "table_end": 857,
+     "start": 8733,
+     "end": 8756,
      "difficulty": "Average",
      "prerequisite": "Any MWS",
      "default": "PS-6, -4, or -0",
@@ -1207,14 +2214,23 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA78"
+     "book_page": "MA78",
+     "description_key": "Reverse Grip",
+     "description_spans": [
+      [
+       8733,
+       8756
+      ]
+     ]
     },
     {
      "name": "Roll with Blow",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 857,
-     "end": 864,
+     "table_start": 857,
+     "table_end": 864,
+     "start": 9737,
+     "end": 9761,
      "difficulty": "Hard",
      "prerequisite": "Acrobatics or any UCS",
      "default": "PS-2",
@@ -1222,14 +2238,23 @@
      "damage": "N/A",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA87"
+     "book_page": "MA87",
+     "description_key": "Roll with Blow",
+     "description_spans": [
+      [
+       9737,
+       9761
+      ]
+     ]
     },
     {
      "name": "Sacrifice Throw",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 864,
-     "end": 871,
+     "table_start": 864,
+     "table_end": 871,
+     "start": 8756,
+     "end": 8793,
      "difficulty": "Hard",
      "prerequisite": "Judo",
      "default": "Judo",
@@ -1237,14 +2262,23 @@
      "damage": "Knockdown",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA78"
+     "book_page": "MA78",
+     "description_key": "Sacrifice Throw",
+     "description_spans": [
+      [
+       8756,
+       8793
+      ]
+     ]
     },
     {
      "name": "Scissors Hold",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 871,
-     "end": 878,
+     "table_start": 871,
+     "table_end": 878,
+     "start": 8793,
+     "end": 8813,
      "difficulty": "Hard",
      "prerequisite": "Wrestling",
      "default": "Wrestling-2",
@@ -1252,14 +2286,23 @@
      "damage": "Grapple",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Scissors Hold",
+     "description_spans": [
+      [
+       8793,
+       8813
+      ]
+     ]
     },
     {
      "name": "Snap Weapon",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 878,
-     "end": 887,
+     "table_start": 878,
+     "table_end": 887,
+     "start": 9761,
+     "end": 9774,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "ST-4 or ST-based",
@@ -1267,14 +2310,23 @@
      "damage": "ST+3 or ST-based Jitte/Sai+3 QC",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA87"
+     "book_page": "MA87",
+     "description_key": "Snap Weapon",
+     "description_spans": [
+      [
+       9761,
+       9774
+      ]
+     ]
     },
     {
      "name": "Spinning Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 887,
-     "end": 894,
+     "table_start": 887,
+     "table_end": 894,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-3",
@@ -1282,14 +2334,27 @@
      "damage": "Kick, Feint",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Spinning (Attack)",
+     "description_spans": [
+      [
+       8813,
+       8852
+      ],
+      [
+       8885,
+       8902
+      ]
+     ]
     },
     {
      "name": "Spinning Punch",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 894,
-     "end": 901,
+     "table_start": 894,
+     "table_end": 901,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Karate",
      "default": "Karate-2",
@@ -1297,14 +2362,27 @@
      "damage": "Punch, Feint",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Spinning (Attack)",
+     "description_spans": [
+      [
+       8813,
+       8852
+      ],
+      [
+       8885,
+       8902
+      ]
+     ]
     },
     {
      "name": "Spinning Strike",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 901,
-     "end": 908,
+     "table_start": 901,
+     "table_end": 908,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Any MWS",
      "default": "PS-2",
@@ -1312,14 +2390,27 @@
      "damage": "Per attack, Feint",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Spinning (Attack)",
+     "description_spans": [
+      [
+       8813,
+       8852
+      ],
+      [
+       8885,
+       8902
+      ]
+     ]
     },
     {
      "name": "Springing Attack",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 908,
-     "end": 916,
+     "table_start": 908,
+     "table_end": 916,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Any MWS or UCS",
      "default": "PS-2",
@@ -1327,14 +2418,27 @@
      "damage": "Per attack at better of +2 or +1/d",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA87"
+     "book_page": "MA87",
+     "description_key": "Springing Attack",
+     "description_spans": [
+      [
+       9774,
+       9798
+      ],
+      [
+       9899,
+       9902
+      ]
+     ]
     },
     {
      "name": "Stamp Kick",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 916,
-     "end": 923,
+     "table_start": 916,
+     "table_end": 923,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-3",
@@ -1342,14 +2446,27 @@
      "damage": "thr+1 cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA80"
+     "book_page": "MA80",
+     "description_key": "Stamp Kick",
+     "description_spans": [
+      [
+       8902,
+       8910
+      ],
+      [
+       9003,
+       9012
+      ]
+     ]
     },
     {
      "name": "Staying Seated",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 923,
-     "end": 930,
+     "table_start": 923,
+     "table_end": 930,
+     "start": 9012,
+     "end": 9022,
      "difficulty": "Average",
      "prerequisite": "Riding",
      "default": "Riding",
@@ -1357,14 +2474,23 @@
      "damage": "N/A",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA81"
+     "book_page": "MA81",
+     "description_key": "Staying Seated",
+     "description_spans": [
+      [
+       9012,
+       9022
+      ]
+     ]
     },
     {
      "name": "Sweep",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 930,
-     "end": 937,
+     "table_start": 930,
+     "table_end": 937,
+     "start": 9022,
+     "end": 9050,
      "difficulty": "Hard",
      "prerequisite": "App. MWS or UCS",
      "default": "PS-3",
@@ -1372,14 +2498,23 @@
      "damage": "Knockdown",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA81"
+     "book_page": "MA81",
+     "description_key": "Sweep",
+     "description_spans": [
+      [
+       9022,
+       9050
+      ]
+     ]
     },
     {
-     "name": "or Throw",
+     "name": "TA \u2013 Grab, Strike, or Throw",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 938,
-     "end": 945,
+     "table_start": 937,
+     "table_end": 945,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Any MWS or UCS",
      "default": "PS-HL",
@@ -1387,14 +2522,27 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA68"
+     "book_page": "MA68",
+     "description_key": "Optional Rule: Targeted Attacks",
+     "description_spans": [
+      [
+       7649,
+       7650
+      ],
+      [
+       7575,
+       7649
+      ]
+     ]
     },
     {
      "name": "TA \u2013 Grapple",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 5,
-     "start": 945,
-     "end": 952,
+     "table_start": 945,
+     "table_end": 952,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Any GS",
      "default": "PS-HL",
@@ -1402,14 +2550,27 @@
      "damage": "Per attack",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA68"
+     "book_page": "MA68",
+     "description_key": "Optional Rule: Targeted Attacks",
+     "description_spans": [
+      [
+       7649,
+       7650
+      ],
+      [
+       7575,
+       7649
+      ]
+     ]
     },
     {
      "name": "Timed Defense",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 965,
-     "end": 972,
+     "table_start": 965,
+     "table_end": 972,
+     "start": 9902,
+     "end": 9911,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "AD-2",
@@ -1417,14 +2578,23 @@
      "damage": "N/A",
      "cinematic": true,
      "silly": false,
-     "book_page": "MA89"
+     "book_page": "MA89",
+     "description_key": "Timed Defense",
+     "description_spans": [
+      [
+       9902,
+       9911
+      ]
+     ]
     },
     {
      "name": "Triangle Choke",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 972,
-     "end": 979,
+     "table_start": 972,
+     "table_end": 979,
+     "start": null,
+     "end": null,
      "difficulty": "Hard",
      "prerequisite": "Judo or Wrestling",
      "default": "Judo-4 or Wrestling-5",
@@ -1432,14 +2602,27 @@
      "damage": "QC (ST+2)",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA79"
+     "book_page": "MA79",
+     "description_key": "Using Your Legs",
+     "description_spans": [
+      [
+       8881,
+       8882
+      ],
+      [
+       8852,
+       8881
+      ]
+     ]
     },
     {
      "name": "Trip",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 979,
-     "end": 986,
+     "table_start": 979,
+     "table_end": 986,
+     "start": 9050,
+     "end": 9078,
      "difficulty": "Hard",
      "prerequisite": "Any GS",
      "default": "Parry-1",
@@ -1447,14 +2630,23 @@
      "damage": "Knockdown",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA81"
+     "book_page": "MA81",
+     "description_key": "Trip",
+     "description_spans": [
+      [
+       9050,
+       9078
+      ]
+     ]
     },
     {
-     "name": "Punch",
+     "name": "Two-Handed Punch",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 987,
-     "end": 995,
+     "table_start": 986,
+     "table_end": 995,
+     "start": 9078,
+     "end": 9096,
      "difficulty": "Average",
      "prerequisite": "Brawling",
      "default": "Brawling-2",
@@ -1462,14 +2654,23 @@
      "damage": "Better of thr+1 or thr at +1d cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA81"
+     "book_page": "MA81",
+     "description_key": "Two-Handed Punch",
+     "description_spans": [
+      [
+       9078,
+       9096
+      ]
+     ]
     },
     {
      "name": "Uppercut",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 995,
-     "end": 1002,
+     "table_start": 995,
+     "table_end": 1002,
+     "start": 9096,
+     "end": 9118,
      "difficulty": "Average",
      "prerequisite": "Any SS",
      "default": "PS-1",
@@ -1477,14 +2678,23 @@
      "damage": "thr cr\u2021",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA81"
+     "book_page": "MA81",
+     "description_key": "Uppercut",
+     "description_spans": [
+      [
+       9096,
+       9118
+      ]
+     ]
     },
     {
      "name": "Wet Willy",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 1002,
-     "end": 1009,
+     "table_start": 1002,
+     "table_end": 1009,
+     "start": 9883,
+     "end": 9895,
      "difficulty": "Hard",
      "prerequisite": "Brawling or Karate",
      "default": "PS-6",
@@ -1492,14 +2702,47 @@
      "damage": "Squeamish",
      "cinematic": false,
      "silly": true,
-     "book_page": "MA88"
+     "book_page": "MA88",
+     "description_key": "Wet Willy",
+     "description_spans": [
+      [
+       9883,
+       9895
+      ]
+     ]
+    },
+    {
+     "name": "Whirlwind Attack",
+     "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
+     "page": 6,
+     "table_start": 1009,
+     "table_end": 1018,
+     "start": 9911,
+     "end": 9943,
+     "difficulty": "Hard",
+     "prerequisite": "Boxing, Karate, or any",
+     "default": "MWS",
+     "maximum": "PS-5",
+     "damage": "PS Per attack(s)",
+     "cinematic": true,
+     "silly": false,
+     "book_page": "MA89",
+     "description_key": "Whirlwind Attack",
+     "description_spans": [
+      [
+       9911,
+       9943
+      ]
+     ]
     },
     {
      "name": "Wrench (Limb)",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 1018,
-     "end": 1025,
+     "table_start": 1018,
+     "table_end": 1025,
+     "start": 9118,
+     "end": 9140,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "ST-4",
@@ -1507,14 +2750,23 @@
      "damage": "sw cr",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA82"
+     "book_page": "MA82",
+     "description_key": "Wrench (Limb)",
+     "description_spans": [
+      [
+       9118,
+       9140
+      ]
+     ]
     },
     {
      "name": "Wrench Spine",
      "book": "GURPS Martial Arts (Technique Cheat-Sheet)",
      "page": 6,
-     "start": 1025,
-     "end": 1033,
+     "table_start": 1025,
+     "table_end": 1033,
+     "start": 9140,
+     "end": 9179,
      "difficulty": "Hard",
      "prerequisite": "None",
      "default": "ST-4 or Wrestling-4",
@@ -1522,7 +2774,14 @@
      "damage": "sw cr",
      "cinematic": false,
      "silly": false,
-     "book_page": "MA82"
+     "book_page": "MA82",
+     "description_key": "Wrench Spine",
+     "description_spans": [
+      [
+       9140,
+       9179
+      ]
+     ]
     }
    ]
   }

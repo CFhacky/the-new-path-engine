@@ -55,6 +55,8 @@ FULL-TEXT SOURCING — book RAW, never invented
 - GURPS traits        sliced from exact Basic Set description/inline-definition
                     spans; shared entries retain their common block, running page
                     furniture is removed, and complete descriptions bypass the cap.
+- GURPS techniques    sliced from exact Martial Arts ordered description fragments;
+                    unrelated sidebars/quotes and running furniture are excluded.
 - epic items         sliced from 103 canonical blocks in the reproducible ELH
                     two-column OCR source; variants deliberately share spans.
 - epic monsters      sliced from 50 canonical blocks in the reproducible ELH
@@ -257,6 +259,40 @@ def _strip_gurps_trait_furniture(seg: str) -> str:
     return "\n".join(out).strip()
 
 
+def _strip_gurps_technique_furniture(seg: str) -> str:
+    """Remove only Martial Arts running furniture and floated art captions."""
+    src = seg.splitlines()
+    art_captions = {"Sodegarami", "Jian", "Hook Swords", "Shuriken", "Tonfas"}
+
+    def neighbor(index: int, step: int) -> str:
+        for _ in range(3):
+            index += step
+            if not (0 <= index < len(src)):
+                return ""
+            text = src[index].strip()
+            if text:
+                return text
+        return ""
+
+    out = []
+    for i, line in enumerate(src):
+        text = line.strip()
+        if re.fullmatch(r"## \[PDF page \d+\]", text, re.IGNORECASE):
+            continue
+        if text in art_captions:
+            continue
+        before, after = neighbor(i, -1), neighbor(i, 1)
+        paired_footer = (
+            (text == "TECHNIQUES" and (before.isdigit() or after.isdigit()))
+            or (text.isdigit()
+                and (before == "TECHNIQUES" or after == "TECHNIQUES"))
+        )
+        if paired_footer:
+            continue
+        out.append(line)
+    return "\n".join(out).strip()
+
+
 def _fam_sys(fam: str) -> str:
     """System label for the native families that carry no `system` field."""
     return "GURPS 4e" if fam.startswith("gurps_") and "3e" not in fam else "D&D 3.5e"
@@ -349,6 +385,34 @@ def build(report=False):
             return cleaned if limit is None else cleaned[:limit]
         return ""
 
+    def slice_full_spans(book, spans, name, source_file=None,
+                         transform=None, limit=CAP):
+        if not isinstance(spans, list) or not spans:
+            return ""
+        fp = source_file or find_file(book)
+        if not fp or not Path(fp).exists():
+            return ""
+        try:
+            fragments = []
+            source_lines = lines(fp)
+            for pair in spans:
+                if (not isinstance(pair, list) or len(pair) != 2
+                        or not all(isinstance(value, int) for value in pair)):
+                    return ""
+                start, end = pair
+                if not (0 <= start < end <= len(source_lines)):
+                    return ""
+                fragments.append("\n".join(source_lines[start:end]).strip())
+            seg = "\n\n".join(fragments).strip()
+            if transform:
+                seg = transform(seg)
+        except Exception:
+            return ""
+        if seg and _validate(seg, name):
+            cleaned = re.sub(r"\n{3,}", "\n\n", seg)
+            return cleaned if limit is None else cleaned[:limit]
+        return ""
+
     def spell_full(r):
         book, name = r.get("book", ""), r["name"]
         # SRD core spells carry clean bundled text (start==end==0, no line span).
@@ -391,6 +455,11 @@ def build(report=False):
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
                                   _exact_source_file(r), limit=None)
+            elif fam == "gurps_technique" and r.get("description_spans"):
+                full = slice_full_spans(
+                    r.get("book", ""), r["description_spans"],
+                    r.get("description_key") or r["name"],
+                    _exact_source_file(r), _strip_gurps_technique_furniture, None)
             elif fam == "gurps_trait" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
@@ -409,7 +478,8 @@ def build(report=False):
             extra = {}
             for k, v in r.items():
                 if k in ("name", "system", "book", "page", "citation", "start", "end",
-                         "_corpus", "_source_path"):
+                         "description_key", "description_spans",
+                         "table_start", "table_end", "_corpus", "_source_path"):
                     continue
                 if isinstance(v, (str, int, float)) and str(v).strip() and str(v) != "None":
                     extra[k] = v

@@ -4,14 +4,15 @@
 rerun the harvest.** GURPS 4e Martial Arts combat techniques (native GURPS
 4e) — the trained maneuvers bought up from a skill default. Source is the
 official Technique Cheat-Sheet, a BORN-DIGITAL text layer (characters
-exact, not OCR). `default`/`maximum` are relative to the prerequisite
-skill; `*` = cinematic, `†` = silly; `book_page` (MAxx) points into GURPS
-Martial Arts. A field left `—` is one the source did not carry.
+exact, not OCR); exact `description_spans` point into the full Martial Arts
+extraction. `default`/`maximum` are relative to the prerequisite skill;
+`*` = cinematic, `†` = silly; `book_page` (MAxx) cites GURPS Martial Arts.
+A field left `—` is one the source did not carry.
 
-## GURPS Martial Arts (Technique Cheat-Sheet) — 101 techniques
+## GURPS Martial Arts (Technique Cheat-Sheet) — 112 techniques
 
 *Source: GURPS Martial Arts Technique Cheat-Sheet (SJGames, 4e; summarizes GURPS Martial Arts by Dell'Orto & Punch).*  
-*Harvest: ok — 101 techniques from GURPS 4e - Martial Arts - Techniques Cheat Sheet.md.*
+*Harvest: ok — 112 techniques from GURPS 4e - Martial Arts - Techniques Cheat Sheet.md; full descriptions from GURPS 4e - Martial Arts.md.*
 
 | Technique | Diff | Prerequisite | Default | Max | Damage | Cin | Book p. |
 |---|---|---|---|---|---|---|---|
@@ -30,40 +31,46 @@ Martial Arts. A field left `—` is one the source did not carry.
 | Cavalry Training | Hard | Riding and any MWS | PS-2 | PS | Per attack | — | MA69 |
 | Choke Hold | Hard | Judo, Wrestling, or app. WS | Judo-2, Wrestling-3, or app. WS-3 | PS | QC | — | MA69 |
 | Close Combat | Hard | Any MWS | PS-4, -8, or -12 | PS-2, -4, or -6 | Per attack | — | MA69 |
-| Ranged | Hard | Any RCS | PS-Bulk | PS | Per attack | — | MA69 |
+| Close Combat – Ranged | Hard | Any RCS | PS-Bulk | PS | Per attack | — | MA69 |
 | Combat Riding | Hard | Riding | Riding | Riding+4 | N/A | — | MA69 |
+| Combination – 2 Attacks | Hard (combination, +2) | Any 2 TAs, even defaults | TAs-6 | TAs | Per attacks | — | MA80 |
+| Combination – 3 Attacks | Hard (combination, +3) | Any 3 TAs, even defaults | TAs-12 | TAs | Per attacks | — | MA80 |
+| Combination, 2H – 2 Attacks | Hard (combination, +2) | Any 2 TAs, even defaults | TAs-4 | TAs | Per attacks | — | MA80 |
+| Combination, 2H – 3 Attacks | Hard (combination, +3) | Any 3 TAs, even defaults | TAs-9 | TAs | Per attacks | — | MA80 |
 | Counterattack | Hard | Any MWS or UCS | PS-5 | PS | Per attack | — | MA70 |
 | Crack | Average | Whip | Whip-4 | Whip | Per attack+2 | — | MA70 |
 | Disarming | Hard | Any MWS or UCS | PS | PS+5 | Disarm | — | MA70 |
 | Double Eye-Poke | Hard | Brawling or Karate | PS-5 | PS | Blind | — | MA88 |
 | Drop Kick | Hard | Brawling, Sumo Wrestling, or Wrestling | Brawling-1, Sumo | Wrestling-1, or Wrestling-2 | PS Slam+2 | — | MA70 |
-| Attack | Hard | Any UCS or 1H CS | PS-4 | PS | Per attack | ✓ | MA83 |
-| Attack (Bow) | Hard | Bow | Bow-4 | PS | Per attack | ✓ | MA83 |
-| Defense | Hard | Any MWS or UCS | Block-1 or Parry-1 | Block or Parry | N/A | ✓ | MA83 |
+| Dual-Weapon Attack | Hard | Any UCS or 1H CS | PS-4 | PS | Per attack | ✓ | MA83 |
+| Dual-Weapon Attack (Bow) | Hard | Bow | Bow-4 | PS | Per attack | ✓ | MA83 |
+| Dual-Weapon Defense | Hard | Any MWS or UCS | Block-1 or Parry-1 | Block or Parry | N/A | ✓ | MA83 |
 | Ear Clap | Average | Any SS | PS-3 | PS-1 | thr-3 cr‡, Deaf, Stun | — | MA70 |
 | Elbow Drop | Hard | Brawling or Wrestling | Brawling-4 or Wrestling-5 | PS | Better of thr+2 or thr at +1/d cr‡, Knockdown | — | MA70 |
 | Elbow Strike | Average | Brawling or Karate | PS-2 | PS | thr-1 cr‡ | — | MA71 |
 | Entangle | Hard | Kusari or Whip | PS-4 | PS | Entangle | — | MA71 |
 | Evade | Average | Acrobatics or Judo | PS | PS+5 | N/A | — | MA71 |
-| Strike | Average | Karate | Karate-1 | Karate | thr cr‡ | — | MA71 |
+| Exotic Hand Strike | Average | Karate | Karate-1 | Karate | thr cr‡ | — | MA71 |
 | Eye-Gouging | Hard | Brawling, Judo, or Wrestling | PS-5 | PS | thr-4 cr, Blind | — | MA71 |
 | Eye-Pluck | Hard | Brawling or Karate | PS-10 | PS-4 | thr-3 cr‡, Cripple | ✓ | MA72 |
 | Eye-Poke | Hard | Any SS | PS-9 | PS-4 | thr-3 cr | — | MA72 |
+| Eye-Poke Defense | Hard | Any UCS | Parry | Parry+5 | N/A | — | MA88 |
 | Eye-Rake | Hard | Brawling or Karate | PS-5 | PS | Blind | — | MA72 |
 | Feint | Hard | Any UCS, MWS, or special | PS | PS+4 | Feint | — | MA73 |
-| Seated | Hard | Any CS | PS-2 | PS | Per attack | ✓ | MA83 |
+| Fighting While Seated | Hard | Any CS | PS-2 | PS | Per attack | ✓ | MA83 |
 | Finger Lock | Hard | Arm Lock | Arm Lock-3 | Arm Lock | QC | — | MA73 |
-| Wedgie | Hard | Brawling or Wrestling | PS-8 | PS | Pain | — | MA88 |
-| Kick | Hard | Karate | Karate-7 | Karate | Kick at better of +2 or +1/d | ✓ | MA83 |
+| Flying Atomic Wedgie | Hard | Brawling or Wrestling | PS-8 | PS | Pain | — | MA88 |
+| Flying Jump Kick | Hard | Karate | Karate-7 | Karate | Kick at better of +2 or +1/d | ✓ | MA83 |
 | Flying Lunge | Hard | Any thrusting MWS | PS-4 | PS | Per attack at better of +2 or +1/d | ✓ | MA83 |
 | Grand Disarm | Hard | Any MWS or UCS | Fencing-9, MWS-11, or UCS-11 | PS | Disarm(s) | ✓ | MA84 |
 | Ground Fighting | Hard | Any CS | PS-4 | PS | Per attack | — | MA73 |
 | Halitosis Attack | Average | OPH (Foul Breath) | HT-5 | HT+5 | Stun | — | MA88 |
 | Hammer Fist | Average | Brawling or Karate | PS-1 | PS | thr-2 cr‡ | — | MA73 |
 | Hand Catch | Hard | Any GS | Parry-3 | Parry | Grab or Grapple | ✓ | MA84 |
-| Parry | Hard | Judo or Karate | Parry-5 | Parry | Grab, Disarm | ✓ | MA84 |
+| Hand Catch (PMW) | Hard | Parry Missile Weapons | Parry-3 | Parry | Grab | ✓ | MA84 |
+| Hand-Clap Parry | Hard | Judo or Karate | Parry-5 | Parry | Grab, Disarm | ✓ | MA84 |
 | Handcuffing | Average | None | Binding, DX-2, Judo-1, or Wrestling-2 | Binding, DX, Judo, or Wrestling | Cuff | — | MA73 |
-| Riding | Hard | Riding | Riding-3 | Riding | N/A | — | MA73 |
+| Hands-Free Riding | Hard | Riding | Riding-3 | Riding | N/A | — | MA73 |
 | Head Butt | Hard | Brawling or Karate | PS-1 | PS | thr-1 cr | — | MA74 |
 | Head Lock | Hard | Judo or Wrestling | PS-3 | PS | QC | — | MA74 |
 | Hook | Hard | Any app. MWS | PS-5 | PS | Hook | — | MA74 |
@@ -83,16 +90,20 @@ Martial Arts. A field left `—` is one the source did not carry.
 | Lethal Strike | Hard | Karate | Karate-2 | Karate | thr-2 pi‡ | ✓ | MA85 |
 | Low Fighting | Hard | Any CS | PS-2 | PS | Per attack | — | MA77 |
 | Low-Line Defense | Hard | Boxing or Sumo | Wrestling | Parry-2 | Parry N/A | — | MA77 |
-| Lock | Average | Judo or Wrestling | PS-2 | PS+4 | QC (ST+2) | — | MA79 |
+| Lower-Body Arm Lock | Average | Judo or Wrestling | PS-2 | PS+4 | QC (ST+2) | — | MA79 |
+| Lower-Body Head Lock | Hard | Judo or Wrestling | PS-5 | PS | QC (ST+2) | — | MA79 |
+| Lower-Body Leg Lock | Average | Judo or Wrestling | PS-2 | PS+4 | QC (ST+2) | — | MA79 |
 | Mounted Shooting | Hard | Riding or any vehicle and | any RCS | RCS-4 | RCS Per attack | — | MA77 |
 | Neck Snap | Hard | None | ST-4 | ST+3 | sw cr | — | MA77 |
 | Noogie | Hard | Brawling or Karate | PS-5 | PS | Pain | — | MA88 |
 | Nose Slap | Hard | Brawling or Wrestling | PS-5 | PS | Stun, Disarm | — | MA88 |
 | Piledriver | Hard | Wrestling | ST-5 or Wrestling-5 | ST or Wrestling | Better of thr+4 or thr+2 at +2/d cr‡, Pin | ✓ | MA85 |
 | Pole-Vault Kick | Hard | Jumping and Karate | Karate-4 | Karate | Better of thr+3 or thr+1 at +1/d cr‡ | ✓ | MA87 |
+| Pressure-Point Strike | Hard | Pressure Points/Secrets | and app. CS | CS-2 | CS Per attack | ✓ | MA87 |
 | Push Kick | Hard | Karate or Brawling | PS-3 | PS | Knockback | — | MA78 |
 | Quick Mount | Average | Acrobatics, Jumping, or Riding/vehicle | PS-3 | PS | N/A | — | MA78 |
 | Retain Weapon | Hard | Any MWS | PS | PS+5 | N/A | — | MA78 |
+| Retain Weapon – Ranged | Hard | Any RCS | DX | DX+5 | N/A | — | MA78 |
 | Return Strike | Hard | Flail or Kusari | PS-5 | PS | Per attack | — | MA78 |
 | Reverse Grip | Average | Any MWS | PS-6, -4, or -0 | PS | N/A | — | MA78 |
 | Roll with Blow | Hard | Acrobatics or any UCS | PS-2 | PS | N/A | ✓ | MA87 |
@@ -106,13 +117,14 @@ Martial Arts. A field left `—` is one the source did not carry.
 | Stamp Kick | Hard | Brawling or Karate | PS-3 | PS | thr+1 cr‡ | — | MA80 |
 | Staying Seated | Average | Riding | Riding | Riding+4 | N/A | — | MA81 |
 | Sweep | Hard | App. MWS or UCS | PS-3 | PS | Knockdown | — | MA81 |
-| or Throw | Hard | Any MWS or UCS | PS-HL | PS-HL/2 | Per attack | — | MA68 |
+| TA – Grab, Strike, or Throw | Hard | Any MWS or UCS | PS-HL | PS-HL/2 | Per attack | — | MA68 |
 | TA – Grapple | Hard | Any GS | PS-HL | PS | Per attack | — | MA68 |
 | Timed Defense | Hard | None | AD-2 | AD | N/A | ✓ | MA89 |
 | Triangle Choke | Hard | Judo or Wrestling | Judo-4 or Wrestling-5 | PS | QC (ST+2) | — | MA79 |
 | Trip | Hard | Any GS | Parry-1 | Parry | Knockdown | — | MA81 |
-| Punch | Average | Brawling | Brawling-2 | Brawling | Better of thr+1 or thr at +1d cr‡ | — | MA81 |
+| Two-Handed Punch | Average | Brawling | Brawling-2 | Brawling | Better of thr+1 or thr at +1d cr‡ | — | MA81 |
 | Uppercut | Average | Any SS | PS-1 | PS | thr cr‡ | — | MA81 |
 | Wet Willy | Hard | Brawling or Karate | PS-6 | PS | Squeamish | — | MA88 |
+| Whirlwind Attack | Hard | Boxing, Karate, or any | MWS | PS-5 | PS Per attack(s) | ✓ | MA89 |
 | Wrench (Limb) | Hard | None | ST-4 | ST+3 | sw cr | — | MA82 |
 | Wrench Spine | Hard | None | ST-4 or Wrestling-4 | ST+3 or Wrestling+3 | sw cr | — | MA82 |

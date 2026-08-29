@@ -148,6 +148,22 @@ vertical coordinate is split by their stable OCR row order, preserving both
 raw lines without rewriting either. Two complete generations produced the same
 SHA-256, which the JSON index records; no OCR mechanic was guessed or repaired.
 
+## 2026-08-29 — GURPS Martial Arts cheat-sheet wrapped names (parser repair)
+
+File: `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Martial Arts - Techniques Cheat Sheet.md`
+
+No source text was edited. The born-digital table dumps several technique names
+over two or three lines, but the old detector treated only the line immediately
+before the difficulty cell as the name. It therefore emitted 13 fragments:
+`Attack`, `Attack (Bow)`, `Defense`, `Kick`, `Lock`, `Parry`, `Punch`,
+`Ranged`, `Riding`, `Seated`, `Strike`, `Wedgie`, and `or Throw`.
+The detector now reconstructs the complete name from every non-furniture line
+between the preceding row's Page cell and the current Difficulty cell. This is
+a structural parse of the exact text layer, not a guessed spelling or value.
+It yields all 113 printed rows / 112 unique techniques and collapses only the
+book's repeated Lower-Body Arm Lock row. The selftest locks every restored name
+and forbids all 13 fragments.
+
 ---
 
 ## FLAGGED — not yet resolved (need PDF page verification; NOT guessed)
