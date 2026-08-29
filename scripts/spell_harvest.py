@@ -102,6 +102,7 @@ class Spell:
     subschool: Optional[str] = None     # "(Creation) [Acid]" etc.
     level: Optional[str] = None         # the class-and-level list
     srd_text: Optional[str] = None      # bundled text for SRD spells; None otherwise
+    description_key: Optional[str] = None  # raw OCR heading when canonical name is repaired
 
     def quick_fields(self) -> int:
         return sum(1 for v in (self.school, self.level) if v)
@@ -167,6 +168,40 @@ def _level_below(lines: List[str], school_idx: int, n: int, window: int = 5) -> 
     return None
 
 
+def _level_below_joined(lines: List[str], school_idx: int, n: int,
+                        window: int = 7) -> Optional[str]:
+    """Read a born-digital Level field whose class list wraps to the next line."""
+    j, seen = school_idx + 1, 0
+    while j < n and seen < window:
+        text = lines[j].strip()
+        if not text or PAGE.search(lines[j]):
+            j += 1
+            continue
+        seen += 1
+        match = LEVEL.match(text)
+        if not match:
+            j += 1
+            continue
+        parts = [match.group(1).strip()]
+        k = j + 1
+        while parts and not re.search(r"\d\s*$", parts[-1]) and k < n and k - j <= 3:
+            continuation = lines[k].strip()
+            if not continuation or PAGE.search(lines[k]):
+                k += 1
+                continue
+            if re.match(r"^(?:Components|Casting Time|Range|Targets?|Area|Effect|"
+                        r"Duration|Saving Throw|Spell Resistance)\s*:",
+                        continuation, re.IGNORECASE):
+                break
+            parts.append(continuation)
+            k += 1
+        value = re.sub(r"\s+", " ", " ".join(parts)).strip()
+        value = re.sub(r"/\s+", "/", value)
+        value = re.sub(r"(?<=[A-Za-z])[-­]\s+(?=[a-z])", "", value)
+        return value
+    return None
+
+
 def detect_compendium(lines: List[str], pages: List[int], book: str) -> List[Spell]:
     n = len(lines)
     starts: List[Tuple[int, int, str, str, Optional[str]]] = []
@@ -202,6 +237,120 @@ def detect_compendium(lines: List[str], pages: List[int], book: str) -> List[Spe
                       level=_level_below(lines, school_idx, n))
         spells.append(spell)
     return spells
+
+
+# ---------------------------------------------------------------------------
+# Title-case roster detector — post-Compendium books
+# ---------------------------------------------------------------------------
+
+COMPLETE_SCOUNDREL_ROSTER = [
+    "Animate Instrument", "Aquatic Escape", "Armor Lock",
+    "Assassin’s Darkness", "Blockade", "Catapult", "Create Fetch",
+    "Disobedience", "Enlarge Weapon", "Evacuation Rune", "Fatal Flame",
+    "Grasping Wall", "Harmonic Void", "Healer’s Vision", "Lucky Streak",
+    "Mage Burr", "Manifestation of the Deity", "Mimicry",
+    "Opportune Dodge", "Scry Location", "Siphon", "Smoke Stairs",
+    "Spell Theft", "Spore Field", "Spymaster’s Coin", "Wall of Vermin",
+    "Wand Modulation", "Winged Watcher",
+]
+
+TITLECASE_ROSTERS = {
+    "Complete Scoundrel": COMPLETE_SCOUNDREL_ROSTER,
+}
+
+
+def _norm_title(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", value.lower())
+
+
+def _title_start(lines: List[str], school_idx: int, canonical: str) -> Tuple[int, str]:
+    """Find the one-to-three title lines immediately above a school anchor."""
+    positions: List[int] = []
+    j = school_idx - 1
+    while j >= 0 and school_idx - j <= 10 and len(positions) < 3:
+        text = lines[j].strip()
+        if not text or PAGE.search(lines[j]):
+            if positions:
+                break
+            j -= 1
+            continue
+        if (HEADER_REJECT.search(text)
+                or re.match(r"^(?:Level|Components|Casting Time|Range|Targets?|"
+                            r"Area|Effect|Duration|Saving Throw|Spell Resistance)\s*:",
+                            text, re.IGNORECASE)
+                or len(text) > 65 or text.endswith((".", "!", "?"))):
+            break
+        positions.append(j)
+        j -= 1
+
+    positions.reverse()
+    if not positions:
+        return school_idx, canonical
+
+    best = None
+    wanted = _norm_title(canonical)
+    for offset in range(len(positions)):
+        start = positions[offset]
+        raw = " ".join(lines[k].strip() for k in positions[offset:]
+                       if lines[k].strip())
+        score = (2 * len(set(wanted) & set(_norm_title(raw)))
+                 / max(len(set(wanted)) + len(set(_norm_title(raw))), 1))
+        exact_bonus = 1 if wanted == _norm_title(raw) else 0
+        candidate = (exact_bonus, score, -len(raw), start, raw)
+        if best is None or candidate > best:
+            best = candidate
+    return best[3], best[4]
+
+
+def _detect_roster_titlecase(lines: List[str], pages: List[int], book: str,
+                             roster: List[str]) -> List[Spell]:
+    anchors: List[Tuple[int, str, Optional[str]]] = []
+    for i, line in enumerate(lines):
+        match = SCHOOL_ANCHOR.match(line.strip())
+        if not match or not _has_level_below(lines, i, len(lines)):
+            continue
+        sub = match.group(2).strip()
+        k = i + 1
+        while k < len(lines) and (not lines[k].strip() or PAGE.search(lines[k])):
+            k += 1
+        if k < len(lines) and (BRACKET_DESC.match(lines[k].strip())
+                               or sub.count("[") > sub.count("]")):
+            sub = (sub + " " + lines[k].strip()).strip()
+        anchors.append((i, match.group(1), sub or None))
+
+    if len(anchors) != len(roster):
+        return []
+
+    starts: List[Tuple[int, int, str, str, Optional[str], Optional[str]]] = []
+    for canonical, (school_idx, school, sub) in zip(roster, anchors):
+        top, raw_title = _title_start(lines, school_idx, canonical)
+        description_key = None
+        if _norm_title(raw_title) != _norm_title(canonical):
+            description_key = raw_title
+        starts.append((top, school_idx, canonical, school, sub, description_key))
+
+    spells: List[Spell] = []
+    for idx, (top, school_idx, name, school, sub, description_key) in enumerate(starts):
+        if idx + 1 < len(starts):
+            end = starts[idx + 1][0]
+        else:
+            end = min(len(lines), top + 240)
+            for line_idx in range(school_idx + 1, end):
+                if PAGE.search(lines[line_idx]):
+                    end = line_idx
+                    break
+        spells.append(Spell(
+            name=name, book=book, page=pages[top], start=top, end=end,
+            school=school, subschool=sub,
+            level=_level_below_joined(lines, school_idx, len(lines)),
+            description_key=description_key,
+        ))
+    return spells
+
+
+def detect_roster_titlecase(lines: List[str], pages: List[int], book: str) -> List[Spell]:
+    roster = TITLECASE_ROSTERS.get(book)
+    return _detect_roster_titlecase(lines, pages, book, roster) if roster else []
 
 
 # ---------------------------------------------------------------------------
@@ -243,6 +392,7 @@ def load_srd(path: Path) -> List[Spell]:
 
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Spell]]] = {
     "compendium": detect_compendium,
+    "roster_titlecase": detect_roster_titlecase,
 }
 
 
@@ -268,10 +418,13 @@ SOURCES: List[Source] = [
            detector="compendium"),
     # Post-2005 splatbooks: their spells POSTDATE the Spell Compendium and so
     # are genuinely new (Complete Mage overlaps the Compendium by 1 of 130).
-    # Same school-anchored grammar; validated clean and clustered in each book's
-    # spell chapter. Pre-2005 books are deliberately NOT added — their spells
-    # were folded into the Compendium already. Books whose spell blocks use a
-    # different format (PHB2, Complete Scoundrel yield 0 here) are left out.
+    # The first four use the Compendium grammar; Complete Scoundrel uses its
+    # source-listed 28-name roster plus title-case school anchors. All are
+    # validated clean and clustered in their spell chapters. Pre-2005 books
+    # are deliberately NOT added — their spells
+    # were folded into the Compendium already. Player's Handbook II remains
+    # NO COVERAGE: both available extractions interleave its three-column spell
+    # pages, causing missing and wrongly paired headings/fields.
     Source(key="cmage", book="Complete Mage",
            path=Path("D&D 3.5e/Player Options/Complete Mage.md"),
            citation="Complete Mage (WotC, 2006), spell descriptions",
@@ -288,6 +441,10 @@ SOURCES: List[Source] = [
            path=Path("D&D 3.5e/Player Options/Dragon Magic.md"),
            citation="Dragon Magic (WotC, 2006), spell descriptions",
            detector="compendium"),
+    Source(key="cscoundrel", book="Complete Scoundrel",
+           path=Path("D&D 3.5e/Player Options/Complete Scoundrel.md"),
+           citation="Complete Scoundrel (WotC, 2007), Chapter 4: New Spells",
+           detector="roster_titlecase"),
     # NOT added — deliberately (see docs/HARVEST_PROGRESS.md): the 2004-2005
     # books (Complete Arcane/Divine/Adventurer, Races of Stone/Destiny/Wild,
     # Sandstorm, Stormwrack, Frostburn, Heroes of Horror, Magic of Incarnum)
@@ -388,12 +545,15 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
             "source_path": source_path,
             "citation": src.citation,
             "coverage": src.coverage,
-            "spells": [{k: v for k, v in asdict(sp).items() if k != "srd_text"}
-                       for sp in src.spells],
+            "spells": [
+                {k: v for k, v in asdict(sp).items()
+                 if k != "srd_text" and not (k == "description_key" and v is None)}
+                for sp in src.spells
+            ],
         })
         md.append(f"## {src.book} — {len(src.spells)} spells")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Source: {src.citation}.*")
         md.append(f"*Harvest: {src.coverage}.*")
         if source_path is not None:
             md.append(f"*Extraction: `{source_path}` under `{corpus.base}`.*")
@@ -474,6 +634,27 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
 # Selftest
 # ---------------------------------------------------------------------------
 
+TITLECASE_FIXTURE = """## [PDF page 94]
+CHAPTER 4
+New Spells
+Animate
+Instrument
+Transmutation
+Level: Bard 2
+Components: V, S
+A floating instrument continues your performance.
+
+## [PDF page 95]
+Manifestation
+of the Deity
+Illusion (Pattern) [Fear,
+Mind-Affecting]
+Level: Cleric
+2
+Components: V, S
+Your holy symbol becomes an awful visage.
+"""
+
 FIXTURE = """## [PDF page 8]
 ABSORB WEAPON
 
@@ -536,6 +717,19 @@ def selftest(base: Path) -> int:
                                 f"level={acid.level!r}, wanted Conjuration / (Creation) "
                                 f"[Acid] / Sorcerer/wizard 3")
 
+        title_lines = TITLECASE_FIXTURE.splitlines()
+        title_spells = _detect_roster_titlecase(
+            title_lines, _pages_for(title_lines), "Fixture",
+            ["Animate Instrument", "Manifestation of the Deity"])
+        if [sp.name for sp in title_spells] != [
+                "Animate Instrument", "Manifestation of the Deity"]:
+            failures.append(f"title-case fixture detected {[sp.name for sp in title_spells]}")
+        elif (title_spells[1].subschool != "(Pattern) [Fear, Mind-Affecting]"
+              or title_spells[1].level != "Cleric 2"):
+            failures.append(
+                "title-case fixture failed wrapped descriptor/level reconstruction: "
+                f"{title_spells[1].subschool!r} / {title_spells[1].level!r}")
+
     srd = load_srd(SRD_JSON)
     if not srd:
         print(f"  [SKIP] SRD spell JSON not found: {SRD_JSON}")
@@ -553,6 +747,7 @@ def selftest(base: Path) -> int:
         "cchampion": 52,
         "rotd": 35,
         "dmagic": 37,
+        "cscoundrel": 28,
     }
     live_sources = [s for s in SOURCES if s.path is not None]
     relative_paths = [s.path.as_posix() for s in live_sources]

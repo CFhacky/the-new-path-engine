@@ -12,7 +12,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 ## SRD 3.5 — 605 spells
 
-*Source: SRD 3.5 core spells (Open Game Content), bundled.*  
+*Source: SRD 3.5 core spells (Open Game Content), bundled.*
 *Harvest: ok — 605 SRD spells.*
 
 | Spell | School | Subschool / Descriptor | Level | Page |
@@ -625,7 +625,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 ## Spell Compendium — 982 spells
 
-*Source: Spell Compendium (WotC, 2005), spell descriptions.*  
+*Source: Spell Compendium (WotC, 2005), spell descriptions.*
 *Harvest: ok — 982 spells from Spell Compendium (Premium).md.*
 *Extraction: `D&D 3.5e/Magic and Items/Spell Compendium (Premium).md` under `I:\Sourcebooks\_text`.*
 
@@ -1616,7 +1616,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 ## Complete Mage — 130 spells
 
-*Source: Complete Mage (WotC, 2006), spell descriptions.*  
+*Source: Complete Mage (WotC, 2006), spell descriptions.*
 *Harvest: ok — 130 spells from Complete Mage.md.*
 *Extraction: `D&D 3.5e/Player Options/Complete Mage.md` under `I:\Sourcebooks\_text`.*
 
@@ -1755,7 +1755,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 ## Complete Champion — 52 spells
 
-*Source: Complete Champion (WotC, 2007), spell descriptions.*  
+*Source: Complete Champion (WotC, 2007), spell descriptions.*
 *Harvest: ok — 52 spells from Complete Champion.md.*
 *Extraction: `D&D 3.5e/Player Options/Complete Champion.md` under `I:\Sourcebooks\_text`.*
 
@@ -1816,7 +1816,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 ## Races of the Dragon — 35 spells
 
-*Source: Races of the Dragon (WotC, 2006), spell descriptions.*  
+*Source: Races of the Dragon (WotC, 2006), spell descriptions.*
 *Harvest: ok — 35 spells from Races of the Dragon.md.*
 *Extraction: `D&D 3.5e/Player Options/Races of the Dragon.md` under `I:\Sourcebooks\_text`.*
 
@@ -1860,7 +1860,7 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 
 ## Dragon Magic — 37 spells
 
-*Source: Dragon Magic (WotC, 2006), spell descriptions.*  
+*Source: Dragon Magic (WotC, 2006), spell descriptions.*
 *Harvest: ok — 37 spells from Dragon Magic.md.*
 *Extraction: `D&D 3.5e/Player Options/Dragon Magic.md` under `I:\Sourcebooks\_text`.*
 
@@ -1903,3 +1903,40 @@ page. A field left as `—` is one the OCR did not cleanly yield.
 | Vision Of The Omniscient Eye | Divination | /Evocation [Light] | Bard 3, cleric 3, druid 3, | 75 |
 | Wingblast | Evocation | [Air]/Transmutation | Druid 3, shugenja 3 (air), | 75 |
 | Wreath Of Flames | Evocation | [Fire] | Druid 3, sorcerer/wizard 3, wu | 76 |
+
+## Complete Scoundrel — 28 spells
+
+*Source: Complete Scoundrel (WotC, 2007), Chapter 4: New Spells.*
+*Harvest: ok — 28 spells from Complete Scoundrel.md.*
+*Extraction: `D&D 3.5e/Player Options/Complete Scoundrel.md` under `I:\Sourcebooks\_text`.*
+
+| Spell | School | Subschool / Descriptor | Level | Page |
+|---|---|---|---|---|
+| Animate Instrument | Transmutation | — | Bard 2 | 94 |
+| Aquatic Escape | Transmutation | (Polymorph) | Druid 1 | 95 |
+| Armor Lock | Transmutation | — | Bard 1, hexblade 1, sorcerer/wizard 1 | 95 |
+| Assassin’s Darkness | Evocation | (Darkness) | Assassin 4 | 95 |
+| Blockade | Conjuration | (Creation) | Druid 1, ranger 1, sorcerer/wizard 1 | 95 |
+| Catapult | Transmutation | — | Bard 2, sorcerer/wizard 2 | 95 |
+| Create Fetch | Conjuration | (Creation) | Assassin 3, bard 3, sorcerer/wizard 4 | 96 |
+| Disobedience | Abjuration | — | Bard 3, sorcerer/wizard 3 | 97 |
+| Enlarge Weapon | Transmutation | — | Sorcerer/wizard 2 | 97 |
+| Evacuation Rune | Conjuration | (Teleportation) | Bard 5, sorcerer/wizard 5 | 98 |
+| Fatal Flame | Evocation | (Fire) | Sorcerer/wizard 2 | 99 |
+| Grasping Wall | Conjuration | (Creation) | Sorcerer/wizard 3 | 99 |
+| Harmonic Void | Abjuration | — | Bard 5 | 99 |
+| Healer’s Vision | Divination | — | Assassin 1, cleric 1 | 100 |
+| Lucky Streak | Transmutation | — | Bard 1, sorcerer/wizard 2 | 100 |
+| Mage Burr | Transmutation | — | Bard 1, hexblade 1, sorcerer/wizard 1 | 100 |
+| Manifestation of the Deity | Illusion | (Pattern) [Fear, Mind-Affecting] | Cleric 2 | 101 |
+| Mimicry | Transmutation | — | Assassin 1, bard 1 | 101 |
+| Opportune Dodge | Abjuration | — | Bard 2 | 101 |
+| Scry Location | Divination | (Scrying) | Bard 5, cleric 7, druid 7, sorcerer/w... | 102 |
+| Siphon | Transmutation | — | Sorcerer/wizard 3 | 102 |
+| Smoke Stairs | Transmutation | [Air] | Assassin 2, druid 2 | 103 |
+| Spell Theft | Abjuration | — | Bard 4, hexblade 4, sorcerer/wizard 5 | 104 |
+| Spore Field | Transmutation | — | Druid 1, ranger 2 | 104 |
+| Spymaster’s Coin | Divination | (Scrying) | Bard 2, sorcerer/wizard 2 | 104 |
+| Wall of Vermin | Conjuration | (Creation) | Druid 3 | 104 |
+| Wand Modulation | Transmutation | — | Sorcerer/wizard 3 | 105 |
+| Winged Watcher | Transmutation | (Polymorph) | Druid 1 | 106 |

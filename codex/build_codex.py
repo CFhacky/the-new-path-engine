@@ -431,7 +431,8 @@ def build(report=False):
         return ""
 
     def spell_full(r):
-        book, name = r.get("book", ""), r["name"]
+        book = r.get("book", "")
+        name = r.get("description_key") or r["name"]
         # SRD core spells carry clean bundled text (start==end==0, no line span).
         if (r.get("start", 0) == 0 and r.get("end", 0) == 0) or "srd" in book.lower():
             t = srd_text.get(name.lower().strip())

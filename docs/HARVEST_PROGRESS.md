@@ -18,10 +18,10 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-29).** Forty-one reference index families, 17,924 entries.
+**At a glance (2026-08-29).** Forty-one reference index families, 17,952 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
-(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
+(1869), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
 (186; all exact full-row spans), GURPS advantages/disadvantages (469; all exact full-description/inline-definition spans), GURPS skills (263; all exact full-description spans), GURPS techniques (112; all exact full-description spans), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136; 118 with cited book-verbatim SPECIAL RULES from born-digital codexes) + WHFB wargame unit profiles (291; 217 with cited book-verbatim SPECIAL RULES from born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
@@ -46,7 +46,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle (alt scan).md` — book lists pp.48–51 + descriptions pp.52–94 | 208 maneuvers/stances (all with 3+ quick fields and exact-source full-description spans) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
-| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
+| `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37, Complete Scoundrel 28) | 1869 spells / 7 sources (all with school + level and exact-source full-text coverage) | `python scripts/spell_harvest.py --selftest` |
 | `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | GURPS Magic (520) + Plant Spells (19) + Thaumatology: Urban Magics (12) + Thaumatology (6) | 557 GURPS spells (541 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
 | `reference/gurps_gear_index.{md,json}` | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech Melee Weapon Table + Armor Table | 186 gear (153 weapons + 33 torso-armor pieces, TL0–TL4, DR up to 9; all carry exact non-overlapping full-row spans) | `python scripts/gurps_gear_harvest.py --selftest` |
 | `reference/gurps_trait_index.{md,json}` | `scripts/gurps_trait_harvest.py` | GURPS Basic Set: Characters — Trait Lists roster + descriptions | 469 traits (266 advantages + 203 disadvantages, all with type / exotic-super / point cost / book page and exact full-description/inline-definition spans on B18–B165) | `python scripts/gurps_trait_harvest.py --selftest` |
@@ -195,7 +195,8 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    is a new `Section` with a `start_anchor` / `end_anchor` / `parser`.
 3. **More supplemental spells** → add sources to `spell_harvest.py`. The clean
    post-2005 books are DONE (Complete Mage, Complete Champion, Races of the
-   Dragon, Dragon Magic — validated clean, clustered, genuinely new). **Do not
+   Dragon, Dragon Magic, Complete Scoundrel — validated clean, clustered,
+   genuinely new). **Do not
    bulk-add the rest without a dedupe pass:** a 2026-08-27 sweep found the
    2004-2005 books (Complete Arcane/Divine/Adventurer, Races of Stone/Destiny/
    Wild, Sandstorm/Stormwrack/Frostburn, Heroes of Horror, Magic of Incarnum)
@@ -205,9 +206,13 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
    subsystem content (school+level-shaped but not standard spells). To add any
    of these, first dedupe against the existing index by normalised name. What
    remains cleanly harvestable:
-   - **PHB2** and **Complete Scoundrel** yield 0 with `detect_compendium` — a
-     different spell-block format (no ALL-CAPS name / school / `Level:` triple).
-     Would need a format-specific detector.
+   - **Complete Scoundrel is DONE:** a source-listed 28-name roster plus
+     title-case school anchors yields 28/28 cited rows with complete spans.
+   - **Player's Handbook II remains `NO COVERAGE`:** both the `_text` scan and
+     cleaner `_md\_feats\PHB2.md` extraction interleave its three-column pages.
+     Re-OCR by explicit columns improves reading order but still corrupts
+     mechanical characters and pairs descriptions with the wrong names; no
+     rows were guessed or repaired from memory.
    - Other post-2005 books (Complete Arcane is PRE-2005 and already in the
      Compendium; check publication date before adding — pre-2005 = skip).
    - When adding any book: run it, confirm 0 header-polluted names and that the
@@ -234,12 +239,15 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
 
 ## NO COVERAGE — active gaps
 
-None active. Every source currently configured in a harvest script resolves on
-this machine. The items in **NEXT** above are *unbuilt detectors for OCR that
-exists*, not missing OCR. If a future session configures a source whose
-extraction is absent, the harvest prints `NO COVERAGE — extraction missing:
-<path>` and this section should record the book and the missing extraction so
-the OCR pipeline can be pointed at it.
+- `NO COVERAGE: Player's Handbook II spells (both available text layers
+  interleave the source's three-column pages; explicit-column re-OCR still
+  corrupts mechanical characters and mispairs headings/fields).` Complete
+  Scoundrel's distinct title-case format is covered; PHB II is not guessed.
+
+Every source currently configured in a harvest script resolves on this machine.
+If a future session configures a source whose extraction is absent, the harvest
+prints `NO COVERAGE — extraction missing: <path>` and this section should record
+the book and the missing extraction so the OCR pipeline can be pointed at it.
 
 Partial-coverage gap (detector limitation, not missing OCR): in the DMG item
 harvest, rod and staff entries whose block opens with a charge/spell table
@@ -274,6 +282,17 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Added all **28** source-listed Complete Scoundrel spells
+  through a title-case roster detector that joins wrapped headings,
+  descriptors, and level fields and records each complete source span. The
+  prior 1,841 spell rows are byte-identical (0 changed/missing), the new names
+  have 0 normalised overlap, and all 1,869 rows retain school, level, page, and
+  source provenance. Codex spell coverage is **1,869/1,869 (100%)** and total
+  coverage is **13,282/17,952 (73%)**. Player's Handbook II was separately
+  tested against both available text layers and explicit three-column re-OCR;
+  missing/mispaired headings and corrupt mechanical characters make it
+  `NO COVERAGE`, so no PHB II row was guessed.
 
 - **2026-08-29** — Fixed the Codex row walker so harvester `soft` diagnostic
   arrays are not presented as real entries. The bug affected only

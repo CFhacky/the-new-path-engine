@@ -1,7 +1,7 @@
 {
  "generated_by": "scripts/spell_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_spells": 1841,
+ "total_spells": 1869,
  "sources": [
   {
    "key": "srd",
@@ -18464,6 +18464,295 @@
      "school": "Evocation",
      "subschool": "[Fire]",
      "level": "Druid 3, sorcerer/wizard 3, wu"
+    }
+   ]
+  },
+  {
+   "key": "cscoundrel",
+   "book": "Complete Scoundrel",
+   "source_path": "D&D 3.5e/Player Options/Complete Scoundrel.md",
+   "citation": "Complete Scoundrel (WotC, 2007), Chapter 4: New Spells",
+   "coverage": "ok \u2014 28 spells from Complete Scoundrel.md",
+   "spells": [
+    {
+     "name": "Animate Instrument",
+     "book": "Complete Scoundrel",
+     "page": 94,
+     "start": 10787,
+     "end": 10845,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Bard 2"
+    },
+    {
+     "name": "Aquatic Escape",
+     "book": "Complete Scoundrel",
+     "page": 95,
+     "start": 10845,
+     "end": 10876,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Druid 1"
+    },
+    {
+     "name": "Armor Lock",
+     "book": "Complete Scoundrel",
+     "page": 95,
+     "start": 10876,
+     "end": 10908,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Bard 1, hexblade 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Assassin\u2019s Darkness",
+     "book": "Complete Scoundrel",
+     "page": 95,
+     "start": 10908,
+     "end": 10946,
+     "school": "Evocation",
+     "subschool": "(Darkness)",
+     "level": "Assassin 4"
+    },
+    {
+     "name": "Blockade",
+     "book": "Complete Scoundrel",
+     "page": 95,
+     "start": 10946,
+     "end": 10976,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Druid 1, ranger 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Catapult",
+     "book": "Complete Scoundrel",
+     "page": 95,
+     "start": 10976,
+     "end": 11037,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Bard 2, sorcerer/wizard 2"
+    },
+    {
+     "name": "Create Fetch",
+     "book": "Complete Scoundrel",
+     "page": 96,
+     "start": 11037,
+     "end": 11184,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Assassin 3, bard 3, sorcerer/wizard 4"
+    },
+    {
+     "name": "Disobedience",
+     "book": "Complete Scoundrel",
+     "page": 97,
+     "start": 11184,
+     "end": 11233,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 3, sorcerer/wizard 3"
+    },
+    {
+     "name": "Enlarge Weapon",
+     "book": "Complete Scoundrel",
+     "page": 97,
+     "start": 11233,
+     "end": 11281,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Evacuation Rune",
+     "book": "Complete Scoundrel",
+     "page": 98,
+     "start": 11281,
+     "end": 11354,
+     "school": "Conjuration",
+     "subschool": "(Teleportation)",
+     "level": "Bard 5, sorcerer/wizard 5"
+    },
+    {
+     "name": "Fatal Flame",
+     "book": "Complete Scoundrel",
+     "page": 99,
+     "start": 11354,
+     "end": 11391,
+     "school": "Evocation",
+     "subschool": "(Fire)",
+     "level": "Sorcerer/wizard 2"
+    },
+    {
+     "name": "Grasping Wall",
+     "book": "Complete Scoundrel",
+     "page": 99,
+     "start": 11391,
+     "end": 11434,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Harmonic Void",
+     "book": "Complete Scoundrel",
+     "page": 99,
+     "start": 11434,
+     "end": 11476,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 5"
+    },
+    {
+     "name": "Healer\u2019s Vision",
+     "book": "Complete Scoundrel",
+     "page": 100,
+     "start": 11476,
+     "end": 11520,
+     "school": "Divination",
+     "subschool": null,
+     "level": "Assassin 1, cleric 1"
+    },
+    {
+     "name": "Lucky Streak",
+     "book": "Complete Scoundrel",
+     "page": 100,
+     "start": 11520,
+     "end": 11540,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Bard 1, sorcerer/wizard 2"
+    },
+    {
+     "name": "Mage Burr",
+     "book": "Complete Scoundrel",
+     "page": 100,
+     "start": 11540,
+     "end": 11591,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Bard 1, hexblade 1, sorcerer/wizard 1"
+    },
+    {
+     "name": "Manifestation of the Deity",
+     "book": "Complete Scoundrel",
+     "page": 101,
+     "start": 11591,
+     "end": 11626,
+     "school": "Illusion",
+     "subschool": "(Pattern) [Fear, Mind-Affecting]",
+     "level": "Cleric 2"
+    },
+    {
+     "name": "Mimicry",
+     "book": "Complete Scoundrel",
+     "page": 101,
+     "start": 11626,
+     "end": 11659,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Assassin 1, bard 1"
+    },
+    {
+     "name": "Opportune Dodge",
+     "book": "Complete Scoundrel",
+     "page": 101,
+     "start": 11659,
+     "end": 11704,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 2"
+    },
+    {
+     "name": "Scry Location",
+     "book": "Complete Scoundrel",
+     "page": 102,
+     "start": 11704,
+     "end": 11822,
+     "school": "Divination",
+     "subschool": "(Scrying)",
+     "level": "Bard 5, cleric 7, druid 7, sorcerer/wizard 6"
+    },
+    {
+     "name": "Siphon",
+     "book": "Complete Scoundrel",
+     "page": 102,
+     "start": 11822,
+     "end": 11924,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Smoke Stairs",
+     "book": "Complete Scoundrel",
+     "page": 103,
+     "start": 11924,
+     "end": 12003,
+     "school": "Transmutation",
+     "subschool": "[Air]",
+     "level": "Assassin 2, druid 2"
+    },
+    {
+     "name": "Spell Theft",
+     "book": "Complete Scoundrel",
+     "page": 104,
+     "start": 12003,
+     "end": 12044,
+     "school": "Abjuration",
+     "subschool": null,
+     "level": "Bard 4, hexblade 4, sorcerer/wizard 5"
+    },
+    {
+     "name": "Spore Field",
+     "book": "Complete Scoundrel",
+     "page": 104,
+     "start": 12044,
+     "end": 12085,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Druid 1, ranger 2"
+    },
+    {
+     "name": "Spymaster\u2019s Coin",
+     "book": "Complete Scoundrel",
+     "page": 104,
+     "start": 12085,
+     "end": 12127,
+     "school": "Divination",
+     "subschool": "(Scrying)",
+     "level": "Bard 2, sorcerer/wizard 2"
+    },
+    {
+     "name": "Wall of Vermin",
+     "book": "Complete Scoundrel",
+     "page": 104,
+     "start": 12127,
+     "end": 12183,
+     "school": "Conjuration",
+     "subschool": "(Creation)",
+     "level": "Druid 3"
+    },
+    {
+     "name": "Wand Modulation",
+     "book": "Complete Scoundrel",
+     "page": 105,
+     "start": 12183,
+     "end": 12242,
+     "school": "Transmutation",
+     "subschool": null,
+     "level": "Sorcerer/wizard 3"
+    },
+    {
+     "name": "Winged Watcher",
+     "book": "Complete Scoundrel",
+     "page": 106,
+     "start": 12242,
+     "end": 12268,
+     "school": "Transmutation",
+     "subschool": "(Polymorph)",
+     "level": "Druid 1"
     }
    ]
   }
