@@ -64,8 +64,8 @@ FULL-TEXT SOURCING — book RAW, never invented
 - legacy rows        fuzzy-match a source filename, then slice by [start:end].
 - every slice is VALIDATED: the entry name (or a family-specific canonical
   description key) must lead it or the block is dropped.
-  Wargame profile lines legitimately carry no full block — that is honest
-  emptiness, not a failure.
+- wargame profiles  use the harvester-attached book-verbatim SPECIAL RULES block;
+  profiles whose book prints no recoverable unit rule section remain honestly empty.
 
 The page itself is gzip-compressed and base64-embedded; the browser inflates it on
 load with DecompressionStream. This keeps the full-text page under the 16 MB
@@ -436,7 +436,9 @@ def build(report=False):
         _index_rows(json.loads(Path(f).read_text(encoding="utf-8")), rows)
         for r in rows:
             tot[fam] += 1
-            if fam == "spell":
+            if isinstance(r.get("special_rules"), str) and r["special_rules"].strip():
+                full = r["special_rules"].strip()
+            elif fam == "spell":
                 full = spell_full(r)
             elif fam == "soulmeld" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
@@ -478,7 +480,7 @@ def build(report=False):
             extra = {}
             for k, v in r.items():
                 if k in ("name", "system", "book", "page", "citation", "start", "end",
-                         "description_key", "description_spans",
+                         "description_key", "description_spans", "special_rules",
                          "table_start", "table_end", "_corpus", "_source_path"):
                     continue
                 if isinstance(v, (str, int, float)) and str(v).strip() and str(v) != "None":

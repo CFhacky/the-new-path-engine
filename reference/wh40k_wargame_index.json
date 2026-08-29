@@ -3,12 +3,14 @@
   "note": "Warhammer 40,000 tabletop WARGAME unit profiles (datasheet characteristic lines). Distinct from the WH40K Roleplay line. Extracted from born-digital codex PDF text layers only; scanned codexes are listed under no_coverage.",
   "methodology_notes": [
     "Profiles reconstructed geometrically from the PDF text layer (PyMuPDF words mode): a header row of characteristic labels fixes each column's x-centre, and every value row maps its stat tokens to the nearest column. No number is ever guessed or corrected -- unreadable cells are left empty.",
+    "Unit-local SPECIAL RULES sections are attached verbatim from the same born-digital PDF, with their own PDF-page citations. Multi-profile datasheets share one rules block; summary-only vehicles are matched to their named unit page. Ambiguous or absent sections remain empty.",
     "3rd-5th ed infantry schema: WS BS S T W I A Ld Sv (some tables prefix a Points column). Values keep any parenthetical modifiers verbatim, e.g. T4(5) on bikes, S6(10) / A2(3) on Dreadnoughts.",
     "Vehicles use Armour Values: tanks are BS + Front/Side/Rear; walkers are WS BS S (Front Side Rear) I A. The header token 'Armour' is merged into its Front/Side/Rear column, and a walker's abbreviated F/S/R triple is relabelled Front/Side/Rear so it never collides with S (Strength).",
     "Codex Imperialis 1993 (2nd ed) is a special case: its profile tables' characteristic labels are NOT in the PDF text layer (they are part of the table graphic) and the surrounding text is OCR-mangled. Its rows are therefore captured POSITIONALLY -- name + raw ordered values under c1..cN keys -- and EVERY such row is flagged 'soft'. The 2nd-ed M/WS/BS/.../Int/Cl/WP labels are intentionally NOT fabricated onto these values.",
     "Summary/reference tables duplicate per-datasheet profiles; exact (name, profile) duplicates are merged within each book (space/case insensitive), keeping the datasheet citation."
   ],
   "total_profiles": 136,
+  "profiles_with_special_rules": 118,
   "digital_books": [
     "Blood Angels - 2007 - 5th Edition",
     "Codex Imperialis - 1993 - 2nd Edition",
@@ -63,11 +65,37 @@
     "Witch Hunters - 2003 - 4th Edition"
   ],
   "page_gaps": [],
+  "special_rules_no_coverage": [
+    "Blood Angels - 2007 - 5th Edition / Dreadnought (no unambiguous explicit SPECIAL RULES section)",
+    "Blood Angels - 2007 - 5th Edition / Space Marine (no unambiguous explicit SPECIAL RULES section)",
+    "Blood Angels - 2007 - 5th Edition / Land Speeder (no unambiguous explicit SPECIAL RULES section)",
+    "Blood Angels - 2007 - 5th Edition / Razorback (no unambiguous explicit SPECIAL RULES section)",
+    "Blood Angels - 2007 - 5th Edition / Vindicator (no unambiguous explicit SPECIAL RULES section)",
+    "Blood Angels - 2007 - 5th Edition / Whirlwind (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / Ork (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / N0b (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / Warboss (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / Dark Reaper (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / Harlequ~n (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / Beastman (no unambiguous explicit SPECIAL RULES section)",
+    "Codex Imperialis - 1993 - 2nd Edition / Hound (no unambiguous explicit SPECIAL RULES section)",
+    "Space Marines - 2008 - 5th Edition / Space Marine Sgt (no unambiguous explicit SPECIAL RULES section)",
+    "Space Marines - 2008 - 5th Edition / Predator (no unambiguous explicit SPECIAL RULES section)",
+    "Space Marines - 2008 - 5th Edition / Razorback (no unambiguous explicit SPECIAL RULES section)",
+    "Space Marines - 2008 - 5th Edition / Vindicator (no unambiguous explicit SPECIAL RULES section)",
+    "Space Marines - 2008 - 5th Edition / Whirlwind (no unambiguous explicit SPECIAL RULES section)"
+  ],
   "per_book_counts": {
     "Blood Angels - 2007 - 5th Edition": 41,
     "Codex Imperialis - 1993 - 2nd Edition": 23,
     "Harlequins": 18,
     "Space Marines - 2008 - 5th Edition": 54
+  },
+  "per_book_rule_counts": {
+    "Blood Angels - 2007 - 5th Edition": 35,
+    "Codex Imperialis - 1993 - 2nd Edition": 16,
+    "Harlequins": 18,
+    "Space Marines - 2008 - 5th Edition": 49
   },
   "soft_count": 23,
   "rows": [
@@ -88,7 +116,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 7]",
-      "unit_context": "COMMANDER DANTE"
+      "unit_context": "COMMANDER DANTE",
+      "special_rules": "Fearless, Independent Character,\nRites of Battle.\nInspiring. Dante is renowned for personally\nleading formations of Blood Angels Assault\nMarines in unstoppable assaults. His\npresence inspires these troops to acts of\nvalor that are extraordinary even for Space\nMarines. As such, if Dante is included in a\nBlood Angels army, then any friendly unit\nof Blood Angels within 12\" of him counts\nits opponents as a preferred enemy.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 7]"
+      ]
     },
     {
       "name": "Brother-Captain Tycho",
@@ -107,7 +139,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 7]",
-      "unit_context": "BROTHER-CAPTAIN TYCHO"
+      "unit_context": "BROTHER-CAPTAIN TYCHO",
+      "special_rules": "Independent Character, Rites of Battle,\nPreferred Enemy: Orks.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 7]"
+      ]
     },
     {
       "name": "Mephiston",
@@ -126,7 +162,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 8]",
-      "unit_context": "CHIEF LIBRARIAN MEPHISTON"
+      "unit_context": "CHIEF LIBRARIAN MEPHISTON",
+      "special_rules": "Fearless, Independent Character,\nFeel No Pain.\nLord of Death. When Mephiston overcame\nthe Red Thirst, he released his full psychic\npotential. As such, Mephiston has all three\nBlood Angels Psychic Powers (see below)\nand can use each one of them and his\nForce Weapon once each player turn,\nrather than being limited as are other\nLibrarians. He may not use the same power\nmore than once per turn.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 8]"
+      ]
     },
     {
       "name": "Brother Corbulo",
@@ -145,7 +185,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 9]",
-      "unit_context": "CORBULO, SANGUINARY HIGH PRIEST"
+      "unit_context": "CORBULO, SANGUINARY HIGH PRIEST",
+      "special_rules": "Independent Character.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 9]"
+      ]
     },
     {
       "name": "Chaplain Lemartes",
@@ -164,7 +208,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 9]",
-      "unit_context": "CHAPLAIN LEMARTES"
+      "unit_context": "CHAPLAIN LEMARTES",
+      "special_rules": "Independent Character\nHonor of the Chapter. Like all Chaplains,\nLemartes embodies the honor of the\nChapter. He and any Blood Angels squad\nhe has joined are Fearless.\nLitanies of Hate. On a player turn in which\nhe charges, Lemartes and all members of\nany Blood Angels squad he has joined may\nreroll failed rolls to hit.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 9]"
+      ]
     },
     {
       "name": "Death Company",
@@ -183,7 +231,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 10]",
-      "unit_context": "THE DEATH COMPANY"
+      "unit_context": "THE DEATH COMPANY",
+      "special_rules": "Fearless, Feel No Pain, Furious Charge.\nBlack Rage. Death Company warriors are\nso blood-crazed that they will do almost\nanything to get to grips with the enemy and\noften tear them limb from limb when the\nDeath Company charges home. All close\ncombat attacks made by members of the\nDeath Company count as being Rending.\nSometimes, upon the eve of battle, Blood Angels succumb to\nthe Black Rage. When this happens, they become frenzied\nand fearless to the point of madness.\nSay what you like, I will not\nfight alongside these madmen.\nThe past proves nothing,\nexcept that the Blood Angels\nare cursed and but a single step\nfrom damnation.\nBrother Captain Yuron of the\nAdeptus Astartes\nPatriarchs of Ulixis\nIn addition, unless there is a Blood Angels\nChaplain (or Brother Corbulo) within 6\" of\nthe unit at the start of the Movement Phase,\nthen the Death Company must move as far\nas it can toward the closest enemy unit.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 10]"
+      ]
     },
     {
       "name": "Honor Guard",
@@ -202,7 +254,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 11]",
-      "unit_context": "BLOOD ANGELS HONOR GUARD"
+      "unit_context": "BLOOD ANGELS HONOR GUARD",
+      "special_rules": "And They Shall Know No Fear.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 11]"
+      ]
     },
     {
       "name": "Veteran",
@@ -221,7 +277,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 11]",
-      "unit_context": "VETERAN ASSAULT SQUAD"
+      "unit_context": "VETERAN ASSAULT SQUAD",
+      "special_rules": "And They Shall Know No Fear,\nCombat Squads.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 11]"
+      ]
     },
     {
       "name": "Furioso Dreadnought",
@@ -239,7 +299,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 13]",
-      "unit_context": "FURIOSO DREADNOUGHT"
+      "unit_context": "FURIOSO DREADNOUGHT",
+      "special_rules": "Death Company Dreadnought. Sometimes,\na badly wounded Blood Angels Space\nMarine will be overcome by the Black\nRage. When this happens, their bodies are\ntransferred into specially adapted Furioso\nDreadnoughts, so they can fight alongside\ntheir battle brothers in the Death Company.\nUnless there is a Chaplain or\nSanguinary High Priest within 6\" of the\nDreadnought at the start of the Movement\nPhase, then it must move as far as it can\ntoward the closest enemy unit in the\nMovement Phase. In addition, a Death\nCompany Dreadnought receives an extra\nD3 Attacks in close combat.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 13]"
+      ]
     },
     {
       "name": "Dante",
@@ -258,7 +322,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 16]",
-      "unit_context": "DANTE, LORD OF THE BLOOD ANGELS POINTS"
+      "unit_context": "DANTE, LORD OF THE BLOOD ANGELS POINTS",
+      "special_rules": "• Fearless\n• Independent Character\n• Rites of Battle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 16]"
+      ]
     },
     {
       "name": "Lemartes",
@@ -277,7 +345,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 16]",
-      "unit_context": "LEMARTES, GUARDIAN OF THE LOST POINTS"
+      "unit_context": "LEMARTES, GUARDIAN OF THE LOST POINTS",
+      "special_rules": "• Independent Character\n• Honor of the Chapter\n• Litanies of Hate",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 16]"
+      ]
     },
     {
       "name": "Corbulo",
@@ -296,7 +368,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 16]",
-      "unit_context": "BROTHER CORBULO POINTS"
+      "unit_context": "BROTHER CORBULO POINTS",
+      "special_rules": "• And They Shall Know No Fear\n• Independent Character",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 16]"
+      ]
     },
     {
       "name": "Cpt. Tycho",
@@ -315,7 +391,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 17]",
-      "unit_context": "TYCHO, CAPTAIN OF THE 3RD COMPANY POINTS"
+      "unit_context": "TYCHO, CAPTAIN OF THE 3RD COMPANY POINTS",
+      "special_rules": "• And They Shall Know No Fear\n• Preferred Enemy: Orks\n• Independent Character\n• Rites of Battle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 17]"
+      ]
     },
     {
       "name": "Chaplain",
@@ -334,7 +414,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 17]",
-      "unit_context": "CHAPLAIN POINTS"
+      "unit_context": "CHAPLAIN POINTS",
+      "special_rules": "• Honor of the\nChapter\n• Independent\nCharacter\n• Litanies of Hate",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 17]"
+      ]
     },
     {
       "name": "Librarian",
@@ -353,7 +437,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 17]",
-      "unit_context": "LIBRARIAN POINTS"
+      "unit_context": "LIBRARIAN POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Independent\nCharacter",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 17]"
+      ]
     },
     {
       "name": "Captain",
@@ -372,7 +460,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 18]",
-      "unit_context": "COMPANY CAPTAIN POINTS"
+      "unit_context": "COMPANY CAPTAIN POINTS",
+      "special_rules": "• And They Shall Know No Fear\n• Independent Character\n• Rites of Battle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 18]"
+      ]
     },
     {
       "name": "Company",
@@ -391,7 +483,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 19]",
-      "unit_context": "DEATH COMPANY NO POINTS"
+      "unit_context": "DEATH COMPANY NO POINTS",
+      "special_rules": "• Fearless\n• Feel No Pain\n• Furious Charge\n• Black Rage",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 19]"
+      ]
     },
     {
       "name": "Terminator",
@@ -410,7 +506,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 19]",
-      "unit_context": "TERMINATOR SQUAD POINTS"
+      "unit_context": "TERMINATOR SQUAD POINTS",
+      "special_rules": "• And They Shall Know No Fear\n• Deep Strike",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 19]"
+      ]
     },
     {
       "name": "Furioso",
@@ -428,7 +528,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
-      "unit_context": "FURIOSO DREADNOUGHT POINTS"
+      "unit_context": "FURIOSO DREADNOUGHT POINTS",
+      "special_rules": "Death Company Dreadnought. Sometimes,\na badly wounded Blood Angels Space\nMarine will be overcome by the Black\nRage. When this happens, their bodies are\ntransferred into specially adapted Furioso\nDreadnoughts, so they can fight alongside\ntheir battle brothers in the Death Company.\nUnless there is a Chaplain or\nSanguinary High Priest within 6\" of the\nDreadnought at the start of the Movement\nPhase, then it must move as far as it can\ntoward the closest enemy unit in the\nMovement Phase. In addition, a Death\nCompany Dreadnought receives an extra\nD3 Attacks in close combat.",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 13]"
+      ]
     },
     {
       "name": "Dreadnought",
@@ -465,7 +569,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
-      "unit_context": "TECHMARINES POINTS"
+      "unit_context": "TECHMARINES POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Blessing of the\nOmnissiah",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 20]"
+      ]
     },
     {
       "name": "Servitor",
@@ -484,7 +592,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 20]",
-      "unit_context": "TECHMARINES POINTS"
+      "unit_context": "TECHMARINES POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Blessing of the\nOmnissiah",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 20]"
+      ]
     },
     {
       "name": "Veteran Sgt",
@@ -503,7 +615,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 21]",
-      "unit_context": "SCOUT SQUAD POINTS"
+      "unit_context": "SCOUT SQUAD POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Infiltrate\n• Move Through\nCover\n• Combat Squads",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 21]"
+      ]
     },
     {
       "name": "Scout",
@@ -522,7 +638,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 21]",
-      "unit_context": "SCOUT SQUAD POINTS"
+      "unit_context": "SCOUT SQUAD POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Infiltrate\n• Move Through\nCover\n• Combat Squads",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 21]"
+      ]
     },
     {
       "name": "Veteran Sgt",
@@ -541,7 +661,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 22]",
-      "unit_context": "ASSAULT SQUAD POINTS"
+      "unit_context": "ASSAULT SQUAD POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Combat Squads\n• Deep Strike",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 22]"
+      ]
     },
     {
       "name": "Space Marine",
@@ -579,7 +703,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 23]",
-      "unit_context": "BIKE SQUADRON POINTS"
+      "unit_context": "BIKE SQUADRON POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 23]"
+      ]
     },
     {
       "name": "Biker",
@@ -598,7 +726,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 23]",
-      "unit_context": "BIKE SQUADRON POINTS"
+      "unit_context": "BIKE SQUADRON POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 23]"
+      ]
     },
     {
       "name": "Attack Bike",
@@ -617,7 +749,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 23]",
-      "unit_context": "ATTACK BIKE SQUADRON POINTS"
+      "unit_context": "ATTACK BIKE SQUADRON POINTS",
+      "special_rules": "• And They Shall\nKnow No Fear",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 23]"
+      ]
     },
     {
       "name": "Company Captain",
@@ -636,7 +772,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
-      "unit_context": "TROOP TYPES RANGED WEAPONS"
+      "unit_context": "TROOP TYPES RANGED WEAPONS",
+      "special_rules": "• And They Shall Know No Fear\n• Independent Character\n• Rites of Battle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 18]"
+      ]
     },
     {
       "name": "Servitor",
@@ -655,7 +795,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
-      "unit_context": "TROOP TYPES RANGED WEAPONS"
+      "unit_context": "TROOP TYPES RANGED WEAPONS",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Blessing of the\nOmnissiah",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 20]"
+      ]
     },
     {
       "name": "Tycho",
@@ -674,7 +818,11 @@
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
       "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
-      "unit_context": "TROOP TYPES RANGED WEAPONS"
+      "unit_context": "TROOP TYPES RANGED WEAPONS",
+      "special_rules": "• And They Shall Know No Fear\n• Preferred Enemy: Orks\n• Independent Character\n• Rites of Battle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 17]"
+      ]
     },
     {
       "name": "Drop Pod",
@@ -687,7 +835,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
-      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "special_rules": "• Inertial Guidance\nSystem\n• Immobile\nType\nBS\nF\nS\nR\nDrop Pod\nOpen-topped 2\n12 12 12",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 26]"
+      ]
     },
     {
       "name": "Land Raider",
@@ -700,7 +852,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
-      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "special_rules": "• Power of the\nMachine Spirit\n• Assault Vehicle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 24]"
+      ]
     },
     {
       "name": "Land Raider Crusader",
@@ -713,7 +869,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
-      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "special_rules": "• Power of the\nMachine Spirit\n• Assault Vehicle",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 24]"
+      ]
     },
     {
       "name": "Land Speeder",
@@ -739,7 +899,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
-      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "special_rules": "Over-Charged Engine: The Baal Predator is fitted with an\nover-charged engine (see p. 4).",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 12]"
+      ]
     },
     {
       "name": "Razorback",
@@ -765,7 +929,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Blood Angels - 2007 - 5th Edition",
-      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]"
+      "citation": "Blood Angels - 2007 - 5th Edition [PDF page 27]",
+      "special_rules": "• Repair\n• Over-charged\nEngines\nType\nBS\nF\nS\nR\nRhino\nTank\n4\n11 11 10",
+      "rules_citations": [
+        "Blood Angels - 2007 - 5th Edition [PDF page 26]"
+      ]
     },
     {
       "name": "Vindicator",
@@ -810,7 +978,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Break. Confessors never break and automat~cally pass an)\nLeadership-based tests they are required to take. other than a\ntest to restrain,frrtr;\\. which they takc as normal. They cannot\nbc broken under any circumstances.\n5\nFrenzy. ('onfessors are affected by the psycholopj rilles\ndescribed forfre11:j. in the Warhammer 10.000 Rulebouk.\n7\nLeaders. A Confeswr i s a character and may therefore lead a\nunit il' you wish. I f a Confessor is leading a unit i t\nauto~natically becomes ~ubject to the rules for fret?:?\nbut\nim~nune to all other psychology (other than liarred i f it already\nhates its foe). .I unit led by a Confessor is therefore immune to\nJ'efir, terror. etc. A unit led by n Confessor cannot be broken.\nand will automatically pass any Leadership test it is required\nto takc other than a test to res~rainfreti;\\. which is taken as\nnormal.\n3\n4\n\n4\n4\n5\n6\n4\n5\n2\n6\n2\n9\n\n5\n1\n3\n5\n\n7\n1\n9\n3 10 0",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]"
+      ]
     },
     {
       "name": "Hero",
@@ -829,7 +1001,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Break. Confessors never break and automat~cally pass an)\nLeadership-based tests they are required to take. other than a\ntest to restrain,frrtr;\\. which they takc as normal. They cannot\nbc broken under any circumstances.\n5\nFrenzy. ('onfessors are affected by the psycholopj rilles\ndescribed forfre11:j. in the Warhammer 10.000 Rulebouk.\n7\nLeaders. A Confeswr i s a character and may therefore lead a\nunit il' you wish. I f a Confessor is leading a unit i t\nauto~natically becomes ~ubject to the rules for fret?:?\nbut\nim~nune to all other psychology (other than liarred i f it already\nhates its foe). .I unit led by a Confessor is therefore immune to\nJ'efir, terror. etc. A unit led by n Confessor cannot be broken.\nand will automatically pass any Leadership test it is required\nto takc other than a test to res~rainfreti;\\. which is taken as\nnormal.\n3\n4\n\n4\n4\n5\n6\n4\n5\n2\n6\n2\n9\n\n5\n1\n3\n5\n\n7\n1\n9\n3 10 0",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]"
+      ]
     },
     {
       "name": "MightyHero",
@@ -849,7 +1025,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Break. Confessors never break and automat~cally pass an)\nLeadership-based tests they are required to take. other than a\ntest to restrain,frrtr;\\. which they takc as normal. They cannot\nbc broken under any circumstances.\n5\nFrenzy. ('onfessors are affected by the psycholopj rilles\ndescribed forfre11:j. in the Warhammer 10.000 Rulebouk.\n7\nLeaders. A Confeswr i s a character and may therefore lead a\nunit il' you wish. I f a Confessor is leading a unit i t\nauto~natically becomes ~ubject to the rules for fret?:?\nbut\nim~nune to all other psychology (other than liarred i f it already\nhates its foe). .I unit led by a Confessor is therefore immune to\nJ'efir, terror. etc. A unit led by n Confessor cannot be broken.\nand will automatically pass any Leadership test it is required\nto takc other than a test to res~rainfreti;\\. which is taken as\nnormal.\n3\n4\n\n4\n4\n5\n6\n4\n5\n2\n6\n2\n9\n\n5\n1\n3\n5\n\n7\n1\n9\n3 10 0",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 42]"
+      ]
     },
     {
       "name": "Hero",
@@ -868,7 +1048,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 46]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "knowledge of machine lore is unsurpassed b) any other\nA Tech-Priest Engineer may attempt to repair a single\nhumans 4 n Eng~neer's techno-empathy allows h i m to\ndamaged htt location on a vehtcle, a dreadnought or a\nInterface h15 mind directly with a computer. to track down\ndestroyed support weapon. i f he can reach i t during his next\nmalfunctions. access a database, or reconstruct a program\nmovement phase. He can do nothing else during the turn - he\nalmost instantly. Tech-Priest Engineers serve i n all the armed\ncannot shoot or ftght hand-to-hand combat whilst he i j\nforces of the Imperium except for the Space Marines. and can\nattempting a repair. At the end o f the turn roll a D6.\nbe found In the Imperial Guard, on board spacecraft, and\n4\n\nI\nwherever their expertise is required.\nD6\nResult\nI\n5-6\nRepnir. The Engineer succeeds i n putting good all\n6\ndamage sustained in the prevlous tut-11.\n3-4\nPo.s.~ible R e p ~ ~ i r .\nThe damagt: 1s extensive but the\nsituation is not hopeless. The damage is not repaired\nthis turn. but you may carry on working for a further\nturn if you wish. At the end o f this further turn the\ndamage w ~ l l\nbe repaired on a roll of 4+, whilst a score\nI\n. .\no f 3 or less indicates that the damage is beyond repair.\n6\nAn Engineer may do nothing else whlle attempting ;I\nrepair.\n1-2\nHopeless. The Enetneer con do nothing but s ~ e a k a\n4\nI Engineer\n4\n5\n5\n4\n4\n2\n5\n2\n8\n\n4\n4\n4\n4\n3\n3\n1\n4\n1\n8\n\nu\nlitany for the machine's departing spirit.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 46]"
+      ]
     },
     {
       "name": "MlghtyHero",
@@ -887,7 +1071,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 46]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "knowledge of machine lore is unsurpassed b) any other\nA Tech-Priest Engineer may attempt to repair a single\nhumans 4 n Eng~neer's techno-empathy allows h i m to\ndamaged htt location on a vehtcle, a dreadnought or a\nInterface h15 mind directly with a computer. to track down\ndestroyed support weapon. i f he can reach i t during his next\nmalfunctions. access a database, or reconstruct a program\nmovement phase. He can do nothing else during the turn - he\nalmost instantly. Tech-Priest Engineers serve i n all the armed\ncannot shoot or ftght hand-to-hand combat whilst he i j\nforces of the Imperium except for the Space Marines. and can\nattempting a repair. At the end o f the turn roll a D6.\nbe found In the Imperial Guard, on board spacecraft, and\n4\n\nI\nwherever their expertise is required.\nD6\nResult\nI\n5-6\nRepnir. The Engineer succeeds i n putting good all\n6\ndamage sustained in the prevlous tut-11.\n3-4\nPo.s.~ible R e p ~ ~ i r .\nThe damagt: 1s extensive but the\nsituation is not hopeless. The damage is not repaired\nthis turn. but you may carry on working for a further\nturn if you wish. At the end o f this further turn the\ndamage w ~ l l\nbe repaired on a roll of 4+, whilst a score\nI\n. .\no f 3 or less indicates that the damage is beyond repair.\n6\nAn Engineer may do nothing else whlle attempting ;I\nrepair.\n1-2\nHopeless. The Enetneer con do nothing but s ~ e a k a\n4\nI Engineer\n4\n5\n5\n4\n4\n2\n5\n2\n8\n\n4\n4\n4\n4\n3\n3\n1\n4\n1\n8\n\nu\nlitany for the machine's departing spirit.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 46]"
+      ]
     },
     {
       "name": "Electro Priests",
@@ -906,7 +1094,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 47]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "I\n~calots. Thcir skins arc cngravcd with a meiallic electoo\ncrrcuit. a metal-based tattoo that spirals round their bodies like\na magnetic coil. This complcx circuit interface< with their\nm~nds\nand enables them to build up a huge current of electrical\nenergy In battle they work themselves into a frenzy o f\ndestruction as the raw power iourses through their bodies.\nElectoo. The Electro Priest fights in hand-to-hand combat\nusing the chargc o f his own body, directing lightning bolts\nupon his foe. This gibes thc Electro Priest his high Strength. In\naddition the high intensity electric field acts like armour.\ngiving the Electro Pr~est an armour saving throw of 4. 5 or 6.\nSparks fly from their eyes, flashes of power &c from hand to\nFrenzy. l'he t l e c ~ r o\nPriect is a techno-zealot. a fanatic\nhand as crackling electricity engulfs them and turns the\ndevoted to the service of the Cult Mechanicus. As he goes to\nPlectro Priests into living bolts of lightning.\nha~lle he chants Cult litanies. b u ~ l d ~ n g\nup 111s electric energy.\nand d r ~ v ~ n n\nhimself into a frenzv o f destruction. Electro I\nL\nPriests are subject to the rules for jie11;v given i n the\nWarhammer 40.000 Rulebook.\nI\nServitors are the lowest form o f bio-mechanical life\ntask-\nfor lifting. others have computer terminals sprouting from\n;rdapled slaves whose mechanical components are designed so\ntheir bodies where they interface with more cornplex\nthey can perform a single laborious function. There are untold\nmachines. M a n y Servilors are adapted from artificially\nmillions of these mindless cyborgs on Mars, many working in\ncultured drone bodies: other< are mind-wrped humans who\nhostile environments where an unmodified human body\nhave committed some terrible crime. Servitors accompany\nwould quickly perish. Because they are qpecifically adapled\nsenior Tcch-Priests as servan~s and guardian<. or use t h e ~ r\nthe) vary tremendously: some have mechanical legs or arms\nlimited skills to operate dangerous machinery or weaponry.\nElectro Priests\nServitor\n4\n3\n1\n4\n3\n4\n1\n1\n4\n1\n1\n7\n /",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 47]"
+      ]
     },
     {
       "name": "Servitor",
@@ -928,7 +1120,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 47]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "dispersed and they collapse trom physical cxhaust~on. I h e\nmodels are removed from play and take no further part In the\nbattle.\n4\nImmune to Psycholog). A Scr\\iitor's mind is csscntially\nblank and only the mvst rudimentary instincts remain. They\ncannot bc affcctcd by fear or /error and arc immunc to all\npsychological effects.\nBattle. I n battle Servitors can either form crews for large\nweapons, or they can fight in units led by an individual Tech-\nPries1 character.\n4\nIf utilised as weapon crews Servitors will fight to defend their\nweapon if attacked. and i f their weapon is destroyed they w ~ l l\nmove towards another. thus forming a reserve of crewmen\naround survrving weapons. Alternatively. i f their weapon is\ndestroyed. crewmen may join n unit of Servitors under thc\ncommand of a Tech-Pr~est\n11 led by a Tech-Pr~est. Servitors act as a normal unit in all\nrespects. but i f their lcadcr is slain thcy will do nothing other\nthan fight in hand-to-hand combat. They will not rnovc.\nexcept to follow up in hand-to-hand combat. untll ,lo~netl by\nanother senlor individual of the Adeptu\\ Mechan~cus.\n3\nSave. A Servitor's mechanised body i s part~ally a]-mourcil\ngiving i t a saving throw of 5 or morc on a D6.\n8\n3\n1\n3\n1\n9\nBreak. I f Electro Priests are broken their electrical energy is",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 47]"
+      ]
     },
     {
       "name": "Ork",
@@ -989,7 +1185,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 56]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "other troops can shoot weapons. Bio-plasma has the following\nprofile.\nPsychology. The Cnrnifex IS immune to all psychological\n\nLeadership. The Hive Tyrant is immune to all psychological\nfactors. It cannot be affected by J'ef~r, terror, or any of thc\npsychological factors described in the Warhammer 40.000\nRulebook. In addition, the Hive Tyrant cannot be broken and\ndoes not have to take a Break test. It will automatically pass\nany Leadership-based test it is required to make. The Hive\nTyrant's Leadership value is therefore ncvcr used. but I \\\nincluded for comparative purposes.\nCarapace. The Hive Tyrant has a thick chitinous carapace\nwhich can absorb considerable damage. This gives i t an\narmour saving throw of 4, 5 or 6 on a D6.\nHive Mind. The Hive Tyrant acts as a psychic nodal point of\nthe hive mind. No other Tyranid units within 18\" uf a Hive\nTyrant need take any I.,eadership-based test\n- they will\nautomatically pass. This means that units cannot be broken or\nafkcted by psychology. If an already broken unit is within 18\"\nof a Hive Tyrant in the rally phase it will automatically rally.\nTerror. The Hive Tyrant is a massive and terrifying creature.\n11 causes terror as described in the Psychology section of the\nWarhamr~ler 40,000 Rulebook. Remembcr that creiltures\nI\n~ n ~ v e ~ y r a n t\n1 6 1\n9\n6\n7\n6\n5\n8\n5\n10\nwhich cause rerror automatically causefear- as well.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 98]"
+      ]
     },
     {
       "name": "Warboss",
@@ -1025,7 +1225,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 57]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Runtherdz may act as Champions For units of Snotlinfh alltl\nGretchin. No other Orks may lead Snotling\\ ;rnd Grctchil~\nbecause they consider it to be a waste of time",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 57]"
+      ]
     },
     {
       "name": "Madboy",
@@ -1044,7 +1248,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 61]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Xladmoh. Madboyz always fight as a single Mob on their\n()\\in. they cannot he lecl by any other Ork or benefit from the\nLeadership bonuses of other Orks.\n>lad! Madboyz al-e extremely unpredictable. Their minds\n\\\\\\ ir-l with strange idea6 ur sudden nlornen[ary entl~uslasms.\nillid they tend to act as a single body. I f one Maclboy decides\nhc has 1061 his boot the whole Mob 1s likely to become\ni~lhe<sed\nwith the idea of finding it! Such is the way with\n1:1dboyz.\nTo reprejent this the 01-k player rolls a Dh at the start of the\ngame and consults thc chart opposite. This establishes a basic\nrnadne\\r for the Madmob. The Mob is subject to the\n~~\\yctiology\nrule indicated from then on.\n.\\I thc stal-I of his subsequent turns the Ork player roll a D6: on\n;I score of 1-5 nothing happens and thc Mob continues to\npursue whatever niadness has been established. b u ~\non the roll\n01' ;I 6 the Mob change.: to anothrr random.ly rleter~nined\n~liadness. Koll a further D6 and con\\ult the chart again.\nShould the .Madmob be broken then a new madness is\nest;~blished as soon a\\ i t rallies - roll ;I Dh and consult the\nchart as before.\nI\n3\nHATRED! The Mob 61111.5 a1 of the enemy as\n4\n3\n3\n3\n4\n1\n2\n1\n7\n\nWarhammer 40.000 Rulebook. The Madboy7\nare immune to all othel- psychology.\n. .\n- -\n4\nFRENZY! The Mob ~j frenzied and i s affected\nby the rules descr~bed for ,fl.eil:~ in thc\nPsychology hectinli of the Wnrliammcr 40.000\nRulebook. rhe) arc imune to all other\npsycholog).\n5\nI M M U N E T O PSYCHOLOGY! The Madmob\ni s completely unaffected b) an!.\nof the\npsychology rules nncl will automuticall!, pas an)\nBreak test or other Leadership-bused test i t is\nrequired to make.\n6\nCRAZY! Thc Madboyz are really crazed thls\n~irne. convinced that they are huper-strong.\nin~ulnerablc. or ultra-fast The unit hrcomcs\nimmune to psycIiologylBreak tests exactly as\ndefined for 5 above. In addition. add +I to one\ncharac~erialic (roll a D6): I=M. 2=WS. 3=BS.\n4=S. 5=T. 6=A. This bonus lasts ~ b h ~ l e\nthe\nMadboyz are crazy and 1s deleted when they\nchangc their madness",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 61]"
+      ]
     },
     {
       "name": "Dire Avenger",
@@ -1064,7 +1272,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 67]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "other troops can shoot weapons. Bio-plasma has the following\nprofile.\nPsychology. The Cnrnifex IS immune to all psychological\n\nLeadership. The Hive Tyrant is immune to all psychological\nfactors. It cannot be affected by J'ef~r, terror, or any of thc\npsychological factors described in the Warhammer 40.000\nRulebook. In addition, the Hive Tyrant cannot be broken and\ndoes not have to take a Break test. It will automatically pass\nany Leadership-based test it is required to make. The Hive\nTyrant's Leadership value is therefore ncvcr used. but I \\\nincluded for comparative purposes.\nCarapace. The Hive Tyrant has a thick chitinous carapace\nwhich can absorb considerable damage. This gives i t an\narmour saving throw of 4, 5 or 6 on a D6.\nHive Mind. The Hive Tyrant acts as a psychic nodal point of\nthe hive mind. No other Tyranid units within 18\" uf a Hive\nTyrant need take any I.,eadership-based test\n- they will\nautomatically pass. This means that units cannot be broken or\nafkcted by psychology. If an already broken unit is within 18\"\nof a Hive Tyrant in the rally phase it will automatically rally.\nTerror. The Hive Tyrant is a massive and terrifying creature.\n11 causes terror as described in the Psychology section of the\nWarhamr~ler 40,000 Rulebook. Remembcr that creiltures\nI\n~ n ~ v e ~ y r a n t\n1 6 1\n9\n6\n7\n6\n5\n8\n5\n10\nwhich cause rerror automatically causefear- as well.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 98]"
+      ]
     },
     {
       "name": "SwoopingHwk",
@@ -1083,7 +1295,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 67]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "other troops can shoot weapons. Bio-plasma has the following\nprofile.\nPsychology. The Cnrnifex IS immune to all psychological\n\nLeadership. The Hive Tyrant is immune to all psychological\nfactors. It cannot be affected by J'ef~r, terror, or any of thc\npsychological factors described in the Warhammer 40.000\nRulebook. In addition, the Hive Tyrant cannot be broken and\ndoes not have to take a Break test. It will automatically pass\nany Leadership-based test it is required to make. The Hive\nTyrant's Leadership value is therefore ncvcr used. but I \\\nincluded for comparative purposes.\nCarapace. The Hive Tyrant has a thick chitinous carapace\nwhich can absorb considerable damage. This gives i t an\narmour saving throw of 4, 5 or 6 on a D6.\nHive Mind. The Hive Tyrant acts as a psychic nodal point of\nthe hive mind. No other Tyranid units within 18\" uf a Hive\nTyrant need take any I.,eadership-based test\n- they will\nautomatically pass. This means that units cannot be broken or\nafkcted by psychology. If an already broken unit is within 18\"\nof a Hive Tyrant in the rally phase it will automatically rally.\nTerror. The Hive Tyrant is a massive and terrifying creature.\n11 causes terror as described in the Psychology section of the\nWarhamr~ler 40,000 Rulebook. Remembcr that creiltures\nI\n~ n ~ v e ~ y r a n t\n1 6 1\n9\n6\n7\n6\n5\n8\n5\n10\nwhich cause rerror automatically causefear- as well.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 98]"
+      ]
     },
     {
       "name": "Dark Reaper",
@@ -1122,7 +1338,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 69]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Infiltration. Eldar Scouts may use the Infiltration rule 11\ndescribed in the Warhammer 40.000 Rulebook.\nDispersed Formation. Eldar Scouts may u\\ed di\\pcr\\'il\nformation as described in the Squads secliorl 01.\n1 1 1 ~\nWarhammcr 40.000 Rulebook.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 69]"
+      ]
     },
     {
       "name": "Harlequ~n",
@@ -1162,7 +1382,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 77]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Ancestor\nLord\nHate. The Squats have fought many long and bitter wars\nagainst the Orks and bei~r an endurirlg e~lri~ity\naglrinsl the\nwhole greenskinned race. Squats liore Orks and Gretchin as\ndescribed in the Psychology sectlon of tlie Wal-hammer\n40.000 Rulebook.\n3\n8\n6\n5\n6\n4\n5\n4\n1\n0\n\nStrategy Rating. The wisdom of the ancestors is legendary\nand any General of sound sense w~ll consult with h ~ s\nanceqtors\nheforc a battle. An army which includes a Squat Ancestor\nLord may add +D3 to 11s Strategy Rating. See the Warhammer\n40,000 Rulebook for details of how this affccts the set-up and\nturn sequence.",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 77]"
+      ]
     },
     {
       "name": "Beastman",
@@ -1218,7 +1442,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 94]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Psychology. Genestealers are immune to all psychology.\nThey callnot be affected by ,fe~rt.. tiJrror, or any o f the\npsychological factors described in the Warhammer 40.000\nRulebook.\nChitinous Armour. Genestealers have thick chitinous hides\nwhich can absorb considerable damage. This gives the\nGenestealer an armour saving throw of 5 or 6 on a D6.\nFear. Genestealers are frightening creatures that cause fefrnr as\ndescribed in the Psychology section o f the Warhammcr\n40.000 Rulebook.\nWhrn a Genestealer implanth its seed into a human. or any\nother creature. the resultant germ cell incubates within its host\nuntil i t i\\ ready to emerge. The hybrid child does not consume\nits parent. but as it develops it absorbs part of its host's brain.\nThe parent beconles a mere $lave of the infant i t has spawned.\nand will go to any lengths to protect and nurture the monstrous\nthing. In th~s way the Gene\\tealers infcct human society with\ntheir monstrous brood. The Hybrids flock together and\ninterbreed. producing more Hybrids and Genestealers. As the\nbrood grows largcr it generates a psychic \\ignal that the\ndistant ryranid hive fleet can follow, a scent which draws\nthem on to rich feeding grounds.\nllybrids look like a cross between Genestealers and their\nparent human.;, with between two and four arms, and\ncombining attributes of both races to a varying cegree. Some\nHybrid.; arc near11 entirely human in appearance. tentling only\nto baldness and heavy bone structure. Others are almost pure\nGel1esteale1.s. Whilst Genestealers lack any kind 01\" creative\nintelligence. Hybrids combine human intelligence with alien\ncunninf. and are able to use weapons and interact secretly\nwith humans.\nHybrid",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 94]"
+      ]
     },
     {
       "name": "Termagant",
@@ -1237,7 +1465,11 @@
       "system": "WH40K",
       "book": "Codex Imperialis - 1993 - 2nd Edition",
       "citation": "Codex Imperialis - 1993 - 2nd Edition [PDF page 96]",
-      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled"
+      "soft": "2nd-ed profile: characteristic labels are not in the PDF text layer (imaged); values captured positionally as c1..cN, unlabeled; text layer is OCR-mangled",
+      "special_rules": "Carapace. The Tyranid Warrior has a thick ch~tinous\ncarapace which can absorb considerable damage. This gives\nthe Tyranid Warrior an armour saving throw of 5 or 6 on a D6.\nLeadership. The Tyranid Warrior is imrnulle to all\npsychological factors. I t cannot be affected by fenr, terror, or\nany of the psychological factors described in the Warhammer\n40,000 Rulebook. In addition, i t cannot be broken and docs\nnot have to take a Break test. I t will automatically pass any\nLeadership-based test i t is required to make. The Tyranid\nWarrior's Leadership value is therefore never used, but is\nincluded for comparative purposes.\nHivc Mind. The Tyrnnid Warrior acts as a psychic nodal potnt\nof the hive mind. N o other Tyranid units within 12\" o f a\nTyranid Warrior necd takc any Lcadcrship-based test - they\nwill automatically pass. This means that units cannot be\nbroken or affected by psychology. [Fan already broken unit i s\nwithin 12\" o f a Tyranid Warrior in the rally phase i t will\nautomatically rally.\nFear. Tyranids are large, horrifying creatures who cause ferlr-\nas described in the Psychology section of the Warhammer\n40.000 Rulebook.\nThe Tcrmagani i s agile. fast, cunning ant1 deadly dcsplte i15\nThis strange weapon creature spits a grub-like nodule which\nm a l l size. I t is commonly called a Hunter-Slayer by the\nhurls itself upon its target, manic jaws whirling and biting like\ntroop? of thc Imperial Guard. I t s powerful hody swoops low 10\nan a~lilnated apple corel-. I t s entire life energy is expended in a\nthe ground for speed, and enables ii to follow tile narrow\nbrief few seconds of destruction.\narterial passaees of the hive fleer ships. Like Tvranid Warriors\nI\nand ~ellestealers i t has six limbs and a chitinous outer shell\nwhich glistens with sticky secretion. The Termagant is armed\nwith a symbiote. a weaDoll which is a Dart of the creature\nitself. ~;lman warriors c'all this unholy tkng the Fleshborer.\n94\nTermagant",
+      "rules_citations": [
+        "Codex Imperialis - 1993 - 2nd Edition [PDF page 96]"
+      ]
     },
     {
       "name": "Great Harlequin",
@@ -1257,7 +1489,12 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 4]",
-      "unit_context": "GREAT HARLEQUIN"
+      "unit_context": "GREAT HARLEQUIN",
+      "special_rules": "Independent Character: The Great Harlequin is an Independent\nCharacter and follows the independent character special rules in the\nWarhammer 40,000 rulebook.\n\nUnless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 4]",
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Shadowseer",
@@ -1277,7 +1514,12 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 4]",
-      "unit_context": "SHADOWSEER"
+      "unit_context": "SHADOWSEER",
+      "special_rules": "Independent Character: The Shadowseer is an Independent Character\nand follows the independent character special rules in the Warhammer\n40,000 rulebook.\n\nUnless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 4]",
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Solitaire",
@@ -1297,7 +1539,12 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 5]",
-      "unit_context": "SOLITAIRE"
+      "unit_context": "SOLITAIRE",
+      "special_rules": "Individual: A Solitaire is an independent character and follows all the\nspecial rules for indepedent characters given in the Warhammer 40,000\nrulebook. In addition, a Solitaire can never join any other unit.\nSpiritless: It is postulated by Imperial scholars that a Solitaire has no soul\nto speak of, and this may be true. They show no evidence of emotions and\npsychic powers which attack the mind have no effect on them whatsoever.\nA Solitaire does not have to take any Leadership tests of any kind (morale\nchecks, pinning, etc.). In addition, any attack which relies upon the\nSolitaire’s Leadership value (for example a neuro-disruptor or the Farseer\npsychic power Mind War) have no effect and automatically fail.\nBlitz Attack: When a Solitaire moves at full speed they are a blur of light,\nfaster than any other living creature. A Solitaire can assault 12\" instead of\nthe normal 6\". Rather than gaining +1 Attack for charging into an assault,\na Solitaire gains +1 Attack for each inch of unused charge distance up to\na maximum of +6 Attacks. For example, if a Solitaire charges into an\nenemy 8\" away then they gain +4 Attacks.\n\nUnless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 5]",
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Death Jester",
@@ -1316,7 +1563,12 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 5]"
+      "citation": "Harlequins [PDF page 5]",
+      "special_rules": "Independent Character: Each Death Jester is an independent character\nand follows all the special rules for independent characters given in the\nWarhammer 40,000\nrulebook. Note that\nall\nDeath\nJesters\nfrom\nthe\nsame\nchoice on the Force\nOrganisation chart\nmust be deployed at\nthe\nsame\ntime,\nhowever they may\nbe\ndeployed\nseparately on the\nbattleﬁeld.\n\nUnless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 5]",
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Harlequin",
@@ -1336,7 +1588,11 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 6]",
-      "unit_context": "HARLEQUIN TROUPE"
+      "unit_context": "HARLEQUIN TROUPE",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Troupe leader",
@@ -1356,7 +1612,11 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 6]",
-      "unit_context": "HARLEQUIN TROUPE"
+      "unit_context": "HARLEQUIN TROUPE",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Harlequin Jetbike",
@@ -1376,7 +1636,12 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 6]",
-      "unit_context": "FAST ATTACK"
+      "unit_context": "FAST ATTACK",
+      "special_rules": "Mounted on jetbikes: The following Harlequin special rules do not apply\nto a Harlequins jetbike squads: ﬂip belt, ﬂeet of foot.\nHoloﬁelds: Harlequin jetbikes carry a holoﬁeld generator powerful\nenough to shield the entire jetbike. A Harlequin jetbiker can therefore use\ntheir holoﬁeld save or their 3+ armour save against a hit, but not both.\n\nUnless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 6]",
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Troupe leader",
@@ -1396,7 +1661,12 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 6]",
-      "unit_context": "FAST ATTACK"
+      "unit_context": "FAST ATTACK",
+      "special_rules": "Mounted on jetbikes: The following Harlequin special rules do not apply\nto a Harlequins jetbike squads: ﬂip belt, ﬂeet of foot.\nHoloﬁelds: Harlequin jetbikes carry a holoﬁeld generator powerful\nenough to shield the entire jetbike. A Harlequin jetbiker can therefore use\ntheir holoﬁeld save or their 3+ armour save against a hit, but not both.\n\nUnless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 6]",
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Venom",
@@ -1411,7 +1681,11 @@
       "system": "WH40K",
       "book": "Harlequins",
       "citation": "Harlequins [PDF page 7]",
-      "unit_context": "HEAVY SUPPORT"
+      "unit_context": "HEAVY SUPPORT",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Gt Harlequin",
@@ -1429,7 +1703,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Shadowseer",
@@ -1447,7 +1725,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Solitaire",
@@ -1465,7 +1747,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Death Jester",
@@ -1483,7 +1769,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Harlequin",
@@ -1501,7 +1791,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Troupe Ld",
@@ -1519,7 +1813,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Harl. Jetbike",
@@ -1537,7 +1835,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Harl. Jetbike Ld",
@@ -1555,7 +1857,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Venom",
@@ -1568,7 +1874,11 @@
       "edition": "unknown",
       "system": "WH40K",
       "book": "Harlequins",
-      "citation": "Harlequins [PDF page 9]"
+      "citation": "Harlequins [PDF page 9]",
+      "special_rules": "Unless otherwise noted in the army list, all\nHarlequin units and characters beneﬁt from the\nfollowing special rules.\nHolo suit\nRather than physical armour designed to absorb\nshots and blows, Harlequins rely on a\nsophisticated holo-suit to misdirect the enemy. In\ngame terms this means that Harlequins have no\narmour save as such, but always count as if they\nwere in cover with a 4+ save. They get no\nadditional beneﬁt if they really are in cover and\nweapons which normally ignore cover will ignore\ntheir special save. This also applies in close\ncombat and so they always gain the beneﬁts of a\ndefended obstacle unless assaulted by an enemy\nwith grenades which negate cover. As it is a cover\nsave the Harlequins receive no normal armour\nsave in close combat. A holo-suit save cannot be\nused against an attack that uses a template or\nblast markers (such as a battle cannon or ﬂamer)\nnor can it be used to save a model if it is being\ntransported in a vehicle that is destroyed.\nModels ﬁghting a Harlequin in close combat can\nbecome confused and disorientated by the ever-\nshifting colours and patterns of a holo-suit. Any\nmodel ﬁghting a Harlequin in an assault halves\ntheir Weapon Skill (rounding up).\nFlip Belts\nFlip belts are compact anti-grav devices which\ngenerate a short range negative-gravity field\nwhich, when combined with the Harlequins\nalready prodigous acrobatic abilities, allows the\nHarlequins to make all manner of gravity-defying\nleaps and bounds. Harlequins can ignore difﬁcult\nterrain – treat difﬁcult terrain as open ground for\nthe purposes of movement. When advancing after\nwinning an assault, or Harlequins can move 3D6\ninches instead of 2D6 inches (note that they fall\nback 2D6 inches as normal). In addition, a\nHarlequin model may use their full number of\nAttacks and any specialist close combat weapons\nthey have when within 2\" of an enemy in an\nassault – this is instead of the 1 Attack with no\nspecial rules that other models have in this\nsituation. Remember though that models which\nassault the enemy must try to get into base\ncontact if possible.\nMask of Fear\nA Harlequin’s mask incorpates a holographic\ngenerator that projects images of monstrous faces\nand demonic visages, intensiﬁed by a short-range\npsychic ﬁeld which increases their opponent’s\nsensitivity to fear and despair. Any enemy unit\nﬁghting in an assault against a Harlequin reduces\ntheir Leadership by -1.\nFleet of Foot\nInstead of shooting in the shooting phase, a\nHarlequin unit may run instead. The unit moves\nD6\", which is not modiﬁed by difﬁcult terrain.\nDispersed Formation\nHarlequins ﬁght almost as individuals, and rely\nless upon the coherency of their unit to defeat the\nenemy. A Harlequin model must stay within 4\" of\nanother model in the unit, rather 2\" as is normally\nthe case. See page 43 of the Warhammer 40,000\nbook for details of unit coherency.",
+      "rules_citations": [
+        "Harlequins [PDF page 3]"
+      ]
     },
     {
       "name": "Chapter Master",
@@ -1586,7 +1896,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 54]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 54]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nOrbital Bombardment: A Chapter Master has the authority\nto call down a bombardment from a Strike Cruiser. This\nability can be used once per game in his Shooting phase,\nproviding that the Chapter Master did not move in the\npreceding Movement phase (though he may later assault if\nthe controlling player wishes). Calling down an orbital\nbombardment otherwise counts as firing a ranged weapon\nand uses the following profile:\nNote that if an arrow is rolled on the scatter dice an orbital\nbombardment will always scatter the full 2D6\" - the Chapte-\nMaster's Ballistic Skill makes no difference.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 54]"
+      ]
     },
     {
       "name": "Chapter Champion",
@@ -1604,7 +1918,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 55]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 55]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.\nHonour or Death: The Chapter Champion must be ready to\nchallenge any enemy leader to single combat, and all his\ntraining is bent to this goal. In an Assault, the Chapter\nChampion must direct all of his attacks against an enemy\nindependent character if in base contact with one. He always\nre-rolls any failed rolls to hit and to wound that are directed\nagainst an enemy independent character.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 55]"
+      ]
     },
     {
       "name": "Honour Guard",
@@ -1622,7 +1940,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 55]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 55]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.\nHonour or Death: The Chapter Champion must be ready to\nchallenge any enemy leader to single combat, and all his\ntraining is bent to this goal. In an Assault, the Chapter\nChampion must direct all of his attacks against an enemy\nindependent character if in base contact with one. He always\nre-rolls any failed rolls to hit and to wound that are directed\nagainst an enemy independent character.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 55]"
+      ]
     },
     {
       "name": "Captain",
@@ -1640,7 +1962,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 56]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 56]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 56]"
+      ]
     },
     {
       "name": "Company Champion",
@@ -1659,7 +1985,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 57]",
-      "unit_context": "C O M M A N D S Q U A D"
+      "unit_context": "C O M M A N D S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 57]"
+      ]
     },
     {
       "name": "Veteran",
@@ -1678,7 +2008,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 57]",
-      "unit_context": "C O M M A N D S Q U A D"
+      "unit_context": "C O M M A N D S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 57]"
+      ]
     },
     {
       "name": "Apothecary",
@@ -1697,7 +2031,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 57]",
-      "unit_context": "C O M M A N D S Q U A D"
+      "unit_context": "C O M M A N D S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 57]"
+      ]
     },
     {
       "name": "Librarian",
@@ -1715,7 +2053,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 58]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 58]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nPsyker: Librarians are Psykers, as described in the\nWarhammer 40,000 rulebook.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 58]"
+      ]
     },
     {
       "name": "Chaplain",
@@ -1733,7 +2075,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 60]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 60]",
+      "special_rules": "Combat Tactics, Independent Character.\nHonour of the Chapter: A Chaplain utterly embodies the\nhonour of the Chapter. He, and all members of a squad he\nhas joined, are fearless, as described in the Warhammer\n40,000 rulebook.\nLiturgies of Battle: On a player turn in which he assaults, a\nChaplain and all members of any squad he has joined can\nre-roll failed rolls to hit.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 60]"
+      ]
     },
     {
       "name": "Space Marine Sergeant",
@@ -1751,7 +2097,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 61]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 61]",
+      "special_rules": "And They Shall Know No Fear, Combat Squads\nCombat Tactics.\nOf the Tactical Space Marine, bedrock of his Chapter and\nparagon to his brothers, I shall tell thee.\nHe shall be steeped in the lore of battle and schooled in\nill manner of weapon and strategy. With combat blade,\nboltgun and grenade he shall assail the foe.\nBut these are mere tools: a Tactical Space Marine's true\nweapons are his courage, his wits and his dedication to his\nbrothers.\nHe will bring his foe to battle in a manner and time of\nhis choosing, never himself caught unready or\nill-prepared for the task at hand. In defence he shall be\nstalwart as the mountain, a bulwark stood firm against the\nenemies of Man. In attack he shall strike with the wrath\nof the Immortal Emperor, felling the foe without mercy,\nremorse or fear.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros\nThis formidable anti-infantry firepower is complemented by a\nheavy weapon, such as a missile launcher, lascannon or\nheavy bolter, and a special issue weapon, such as a flamer or\nmeltagun. As these armaments are chosen to match the\nrequirements of each deployment, and weaponry duties are\nrotated between all members of the squad save the\nsergeant, so all Tactical Space Marines must be trained and\ncapable with every weapon their squad can be called upon\nto field.\nOf all Space Marine combat units it is the Tactical squad that\nmakes the greatest use of the Chapter's transport pool, often\nperforming surgical strikes or seizing strategic points with\nthe aid of fast-moving Razorbacks or Rhinos. Some Chapters\n- most notably the Angels of Fury, the Raven Guard and the\nLegion of Night - have even forged their combat doctrines\naround such tactics.\nEach Tactical squad is led by a grizzled Sergeant who has\nsurvived and thrived through several decades, or even\ncenturies, of hard and brutal campaigning. It is essential that\na Tactical squad be led by a canny and daring individual\ncapable of reading the battle for opportunity, and it is quite\ncommon for Tactical squad Sergeants to be seconded from\nthe elite 1\nst Company. So is it ensured that the mainstay of\nthe Chapter's battle forces are led by the most experienced\nof its warriors.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 61]"
+      ]
     },
     {
       "name": "Space Marine",
@@ -1769,7 +2119,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 61]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 61]",
+      "special_rules": "And They Shall Know No Fear, Combat Squads\nCombat Tactics.\nOf the Tactical Space Marine, bedrock of his Chapter and\nparagon to his brothers, I shall tell thee.\nHe shall be steeped in the lore of battle and schooled in\nill manner of weapon and strategy. With combat blade,\nboltgun and grenade he shall assail the foe.\nBut these are mere tools: a Tactical Space Marine's true\nweapons are his courage, his wits and his dedication to his\nbrothers.\nHe will bring his foe to battle in a manner and time of\nhis choosing, never himself caught unready or\nill-prepared for the task at hand. In defence he shall be\nstalwart as the mountain, a bulwark stood firm against the\nenemies of Man. In attack he shall strike with the wrath\nof the Immortal Emperor, felling the foe without mercy,\nremorse or fear.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros\nThis formidable anti-infantry firepower is complemented by a\nheavy weapon, such as a missile launcher, lascannon or\nheavy bolter, and a special issue weapon, such as a flamer or\nmeltagun. As these armaments are chosen to match the\nrequirements of each deployment, and weaponry duties are\nrotated between all members of the squad save the\nsergeant, so all Tactical Space Marines must be trained and\ncapable with every weapon their squad can be called upon\nto field.\nOf all Space Marine combat units it is the Tactical squad that\nmakes the greatest use of the Chapter's transport pool, often\nperforming surgical strikes or seizing strategic points with\nthe aid of fast-moving Razorbacks or Rhinos. Some Chapters\n- most notably the Angels of Fury, the Raven Guard and the\nLegion of Night - have even forged their combat doctrines\naround such tactics.\nEach Tactical squad is led by a grizzled Sergeant who has\nsurvived and thrived through several decades, or even\ncenturies, of hard and brutal campaigning. It is essential that\na Tactical squad be led by a canny and daring individual\ncapable of reading the battle for opportunity, and it is quite\ncommon for Tactical squad Sergeants to be seconded from\nthe elite 1\nst Company. So is it ensured that the mainstay of\nthe Chapter's battle forces are led by the most experienced\nof its warriors.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 61]"
+      ]
     },
     {
       "name": "Terminator Sergeant",
@@ -1788,7 +2142,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 66]",
-      "unit_context": "TERMINATOR S Q U A D"
+      "unit_context": "TERMINATOR S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Squads,\nCombat Tactics.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 66]"
+      ]
     },
     {
       "name": "Terminator",
@@ -1807,7 +2165,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 66]",
-      "unit_context": "TERMINATOR S Q U A D"
+      "unit_context": "TERMINATOR S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Squads,\nCombat Tactics.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 66]"
+      ]
     },
     {
       "name": "Venerable Dreadnought",
@@ -1825,7 +2187,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 67]",
-      "unit_context": "DREADNOUGHT"
+      "unit_context": "DREADNOUGHT",
+      "special_rules": "Venerable: If a Venerable Dreadnought suffers a glancing or\npenetrating hit, you can ask your opponent to re-roll the\nresult rolled on the Vehicle Damage chart. You must accept\nthe result of the second roll, even if it is worse than the first.\nMove Through Cover (Ironclad Dreadnought only).",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 67]"
+      ]
     },
     {
       "name": "Dreadnought",
@@ -1843,7 +2209,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 67]",
-      "unit_context": "DREADNOUGHT"
+      "unit_context": "DREADNOUGHT",
+      "special_rules": "Venerable: If a Venerable Dreadnought suffers a glancing or\npenetrating hit, you can ask your opponent to re-roll the\nresult rolled on the Vehicle Damage chart. You must accept\nthe result of the second roll, even if it is worse than the first.\nMove Through Cover (Ironclad Dreadnought only).",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 67]"
+      ]
     },
     {
       "name": "Ironclad Dreadnought",
@@ -1861,7 +2231,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 67]",
-      "unit_context": "DREADNOUGHT"
+      "unit_context": "DREADNOUGHT",
+      "special_rules": "Venerable: If a Venerable Dreadnought suffers a glancing or\npenetrating hit, you can ask your opponent to re-roll the\nresult rolled on the Vehicle Damage chart. You must accept\nthe result of the second roll, even if it is worse than the first.\nMove Through Cover (Ironclad Dreadnought only).",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 67]"
+      ]
     },
     {
       "name": "Scout Sergeant",
@@ -1879,7 +2253,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 68]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 68]",
+      "special_rules": "And They Shall Know No Fear, Combat Squads,\nCombat Tactics, Infiltrate, Move Through Cover, Scouts.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 68]"
+      ]
     },
     {
       "name": "Scout",
@@ -1897,7 +2275,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 68]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 68]",
+      "special_rules": "And They Shall Know No Fear, Combat Squads,\nCombat Tactics, Infiltrate, Move Through Cover, Scouts.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 68]"
+      ]
     },
     {
       "name": "Scout Biker Sergeant",
@@ -1916,7 +2298,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 69]",
-      "unit_context": "S C O U T BIKE S Q U A D"
+      "unit_context": "S C O U T BIKE S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Squads,\nCombat Tactics, Infiltrate, Scouts.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 69]"
+      ]
     },
     {
       "name": "Scout Biker",
@@ -1935,7 +2321,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 69]",
-      "unit_context": "S C O U T BIKE S Q U A D"
+      "unit_context": "S C O U T BIKE S Q U A D",
+      "special_rules": "And They Shall Know No Fear, Combat Squads,\nCombat Tactics, Infiltrate, Scouts.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 69]"
+      ]
     },
     {
       "name": "Biker Sergeant",
@@ -1953,7 +2343,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.\nCombat Squads: A Bike squad chosen at full strength (for a\ntotal of eight bikes and one Attack Bike) can split into two\ncombat squads as described on page 51. Note that if this is\ndone the Attack Bike counts as two models, giving one\ncombat squad of five bikes, and one of three bikes and an\nAttack Bike.\nUse your Bike squads as a blade, striking the enemy and\nturning aside his counter-blows in equal measure. But in\nall things beware that speed is nothing without direction,\njust as even the mightiest weapon is worthless without\ncareful aim.\nA biker's stance should always be resolute and dauntless,\nbut never immobile or rigid. Speed is his advantage, and\nsurprise his deadliest weapon. In fluidity he will find\nsuccess, and in success shall he find renown.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 70]"
+      ]
     },
     {
       "name": "Space Marine Biker",
@@ -1971,7 +2365,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.\nCombat Squads: A Bike squad chosen at full strength (for a\ntotal of eight bikes and one Attack Bike) can split into two\ncombat squads as described on page 51. Note that if this is\ndone the Attack Bike counts as two models, giving one\ncombat squad of five bikes, and one of three bikes and an\nAttack Bike.\nUse your Bike squads as a blade, striking the enemy and\nturning aside his counter-blows in equal measure. But in\nall things beware that speed is nothing without direction,\njust as even the mightiest weapon is worthless without\ncareful aim.\nA biker's stance should always be resolute and dauntless,\nbut never immobile or rigid. Speed is his advantage, and\nsurprise his deadliest weapon. In fluidity he will find\nsuccess, and in success shall he find renown.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 70]"
+      ]
     },
     {
       "name": "Attack Bike",
@@ -1989,7 +2387,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 70]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics.\nCombat Squads: A Bike squad chosen at full strength (for a\ntotal of eight bikes and one Attack Bike) can split into two\ncombat squads as described on page 51. Note that if this is\ndone the Attack Bike counts as two models, giving one\ncombat squad of five bikes, and one of three bikes and an\nAttack Bike.\nUse your Bike squads as a blade, striking the enemy and\nturning aside his counter-blows in equal measure. But in\nall things beware that speed is nothing without direction,\njust as even the mightiest weapon is worthless without\ncareful aim.\nA biker's stance should always be resolute and dauntless,\nbut never immobile or rigid. Speed is his advantage, and\nsurprise his deadliest weapon. In fluidity he will find\nsuccess, and in success shall he find renown.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 70]"
+      ]
     },
     {
       "name": "Master of the Forge",
@@ -2007,7 +2409,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 72]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 72]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nBlessing of the Omnissiah, Bolster Defences:\nSee opposite page.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 72]"
+      ]
     },
     {
       "name": "Techmarine",
@@ -2025,7 +2431,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 73]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 73]",
+      "special_rules": "Independent Character, Combat Tactics,\nAnd They Shall Know No Fear.\nBlessing of the Omnissiah: If a Techmarine is in base\ncontact with a damaged vehicle during the Shooting phase,\nhe can attempt to repair it instead of firing. Roll a D6 and\nadd the the following modifiers:\nEach Servitor with a servo-arm in the unit\n+1\nThe Techmarine has a servo-harness\n+1\nIf the result is 5 or more, then either a Weapon Destroyed\nresult or Immobilised result (owning player's choice) will be\nrepaired. If a Weapon Destroyed result is repaired, that\nweapon can be fired in the following Shooting phase. The\nTechmarine cannot repair if gone to ground or falling back.\n\"Thus do we invoke the Machine God.\nThus do we make whole that which was sundered.\"\nFrom the Hymn of Reforging\nBolster Defences: Techmarines can mcreav\neffectiveness of cover, reinforcing crumbling wats and W-\nwelding badly-damaged spars. Each Techmarine can boster a\nsingle ruin before the game begins. When you deploy,\nnominate one ruin in your deployment area for your\nTechmarine to bolster. The ruin's cover save is increased by\none for the duration of the game. For example, a normal\nruin (4+ save) so reinforced would offer a 3+ cover save.\nA ruin can only be bolstered once.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 73]"
+      ]
     },
     {
       "name": "Servitor",
@@ -2043,7 +2453,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 74]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 74]",
+      "special_rules": "Mindlock: The altered and fragmented brain of a Servitor\nfunctions poorly unless constantly supervised.\nA unit of Servitors must test for mindlock at the start of each\nfriendly turn. Roll a D6 for each unit of Servitors. If the result\nis a 4, 5 or 6 the test is passed and the unit can function\nnormally for the remainder of the turn. If the result is a 1, 2\nor 3, the Servitors have succumbed to mindlock - the unit\n(and any characters) may not move, shoot or assault that\nturn (though they will fight normally in close combat if\nalready engaged). If a Techmarine or Master of the Forge is\npart of the Servitor unit at the start of the turn, the mindlock\ntest is passed automatically.\nAs a commander your tools and devices shall be myriad,\nyet the wise man knows that battles are won by flesh, not\nthe machine. Flesh can learn, whilst the machine must be\nforever instructed. Flesh knows loyalty to its brothers and\nveneration of its Emperor, whilst the machine knows not\nthese things.\nWhenever the day is darkest and victory in doubt, look\nnot to the machine for aid, but to your Battle-Brothers.\nThe machine can only bring you victory if you tell it how\nsuch a thing can be done. Your brothers will walk through\nfire, they will stride through the most terrible carnage at a\nsingle word from your lips, and they will bring you\nvictory simply because you ask it of them.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 74]"
+      ]
     },
     {
       "name": "Marneus Calqar",
@@ -2061,7 +2475,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 86]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 86]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nEternal Warrior, Independent Character.\nOrbital Bombardment: See page 52.\nTitanic Might: Calgar can re-roll all failed attempts to\nwound with shooting and close combat attacks.\nGod of War: Marneus Calgar can choose whether to pass\nor fail any Morale check he is called upon to make. Whilst\nCalgar is on the table, all units with the Combat Tactics\nspecial rule can also choose whether to pass or fail any\nMorale check they are called upon to take.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 86]"
+      ]
     },
     {
       "name": "Cato Sicarius",
@@ -2079,7 +2497,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 87]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 87]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nSurprise Attack! An army that includes Sicarius can\nre-roll the dice when attempting to seize the initiative.\nRites of Battle: If Sicarius is on the table, all other Space\nMarine units can use his Leadership for any Morale or\nPinning tests.\nBattle-forged Heroes: Sicarius is accompanied by the\nfinest warriors that the 2\nn d Company has to offer. One\nTactical squad in an army that includes Sicarius can have\none of the following special rules at no additional cost:\nCounter-attack, Infiltrate, Scout or Tank Hunters.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 87]"
+      ]
     },
     {
       "name": "Varro Tigurius",
@@ -2097,7 +2519,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 88]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 88]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nMaster Psyker: Tigurius knows all the Psychic powers\navailable to Space Marine Librarians (see page 57).\nGift of Prescience: If your army contains Tigurius, you can\nchoose to re-roll any reserve rolls - even successful ones.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 88]"
+      ]
     },
     {
       "name": "Ortan Cassius",
@@ -2116,7 +2542,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 89]",
-      "unit_context": "ULTRAMARINES CHAPLAIN, MASTER OF SANCTITY"
+      "unit_context": "ULTRAMARINES CHAPLAIN, MASTER OF SANCTITY",
+      "special_rules": "Combat Tactics, Feel No Pain, Independent Character.\nHonour of the Chapter, Liturgies of Battle:\nSee page 58 for details.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 89]"
+      ]
     },
     {
       "name": "Sergeant Telion",
@@ -2134,7 +2564,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 90]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 90]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics, Stealth,\nAcute Senses, Infiltrate, Move Through Cover, Scout.\nEye of Vengeance: Wounds caused by Telion's Shooting\nattacks are allocated by his controlling player, rather than the\nopposing player.\nVoice of Experience: Telion can forgo making a Shooting\nattack of his own to guide a Battle-Brother's shot. If Telion\ndoes not make a shooting attack, one friendly model in his\nsquad can use his Ballistic Skill of 6. You must declare you\nare using this ability before either Telion or the beneficiary\nfire any shots.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 90]"
+      ]
     },
     {
       "name": "Antaro Chronus",
@@ -2152,7 +2586,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 91]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 91]",
+      "special_rules": "Tank Commander: Chronus is always bought as an upgrade\nand starts the game as commander of a Space Marine tank\n(see the army list). Use the tank commander model of\nChronus to represent this.\nChronus' tank ignores any Crew Shaken or Crew Stunned\nresults and can use his Ballistic Skill of 5.\nIf the tank suffers a Wrecked or Explodes! result, roll a D6.\nOn a 1 or 2, Chronus is slain. If the result is 3 or more,\nChronus leaps clear at the last second - when the damage\nhas been resolved, place him within 2\" of the vehicle's\nposition. If Chronus' vehicle has been destroyed he has the\nabove profile and following special rules for the remainder of\nthe game: And They Shall Know No Fear, Combat Tactics,\nIndependent Character. He may not take command of a\ndifferent tank.\n\"The roar of engines, the recoil of cannons.\nThat is where the true joy of battle lies.\"\nBrother-Sergeant Chronus\nThe Spear of Macragge",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 91]"
+      ]
     },
     {
       "name": "Pedro Kantor",
@@ -2170,7 +2608,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 92]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 92]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nOrbital Bombardment, Independent Character.\nChapter Tactics: If you include Pedro Kantor then all units in\nyour army exchange the Combat Tactics special rule for the\nStubborn universal special rule and your Sternguard Veterar\nsquads gain the Hold The Line! special rule detailed below.\nIf more than one character in your army has the Chapter\nTactics special rule, you must choose which version will appi>\nHold the Line! If your army includes Pedro Kantor, your\nSternguard Veteran squads are scoring units.\nInspiring Presence: All friendly units within 12\" of Pedro\nKantor receive +1 Attack whilst he lives. This bonus does not\napply to Kantor, and does not stack with the similar bonus\nfrom a Chapter Banner.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 92]"
+      ]
     },
     {
       "name": "Darnath Lysander",
@@ -2189,7 +2631,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 93]",
-      "unit_context": "CAPTAIN OF THE IMPERIAL FISTS st COMPANY"
+      "unit_context": "CAPTAIN OF THE IMPERIAL FISTS st COMPANY",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character, Eternal Warrior,\nBolster Defences (see page 71 for details).\nBolter Drill: Lysander has never lost the skills that made him\nthe most efficient squad sergeant the Imperial Fists have ever\nknown. Any models in a squad Lysander has joined can re-\nroll failed 'to hit' rolls when shooting with heavy bolters,\nstorm bolters, bolters, and bolt pistols.\nChapter Tactics: If you include Lysander then all units in\nyour army exchange the combat tactics special rule for the\nstubborn universal special rule. If more than one character in\nyour army has the Chapter tactics special rule, you must\nchoose which version will apply.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 93]"
+      ]
     },
     {
       "name": "Kayvaan Shrike",
@@ -2207,7 +2653,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 94]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 94]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nSee, But Remain Unseen: Shrike (and models in his squad\nbenefit from the infiltrate special rule (see the Warhammer\n40,000 rulebook).\nChapter Tactics: If you include Kayvaan Shrike then all units\nin your army exchange the Combat Tactics special rule for\nthe Fleet universal special rule. If more than one character in\nyour army has the Chapter Tactics special rule, you must\nchoose which version will apply.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 94]"
+      ]
     },
     {
       "name": "Vulkan He'stan",
@@ -2226,7 +2676,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 95]",
-      "unit_context": "FORGEFATHER OF THE SALAMANDERS"
+      "unit_context": "FORGEFATHER OF THE SALAMANDERS",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nChapter Tactics: If you include He'stan then all units in your\narmy lose the Combat Tactics special rule. Instead, all\nthunder hammers in your army will count as master-crafted,\nand all flamers, heavy flamer, meltaguns and multimeltas\ncount as twin-linked. If more than one character in your\narmy has the Chapter Tactics special rule, you must choose\nwhich version will apply.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 95]"
+      ]
     },
     {
       "name": "Kor'sarro Khan",
@@ -2244,7 +2698,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 96]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 96]",
+      "special_rules": "And They Shall Know No Fear, Combat Tactics,\nIndependent Character.\nMaster of the Hunt: Kor'sarro Khan, and models in his unit,\nbenefit from the hit and run and furious charge special rules\n(see the Warhammer 40,000 rulebook).\nChapter Tactics: If you include Kor'sarro Khan then all units\nin your army exchange the Combat Tactics special rule for\nthe ability to outflank. If you choose to do this, all dedicated\ntransports also gain the ability to outflank - see the\nReserves mission special rule. If more than one character in\nyour army has the Chapter Tactics special rule, you must\nchoose which will apply.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 96]"
+      ]
     },
     {
       "name": "Damned Sergeant",
@@ -2262,7 +2720,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 97]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 97]",
+      "special_rules": "Fearless, Slow and Purposeful.\nUnyielding Spectres: The Legion of the Damned are\nimpervious to even the deadliest weaponry. Their saving\nthrow is invulnerable.\nAid Unlooked For: The Legion of the Damned always start\nthe game in reserve and always arrive by Deep Strike, even\nin missions that do not normally use these rules. Note that\nthe Legion of the Damned are renowned to arrive wherever\nthey are most needed, so you can re-roll the deep strike\nscatter dice if you wish.\n\"Never before or since have I seen fighting such as\nI witnessed when that host fell upon the Orks.\nSeizing the moment, 1 regrouped my Company and\nled them once more into the fray, yet there was\nlittle work for us, for the greenskins lacked\nstomach for the fight. Soon we secured the great\nbastion once more and without further loss. O f\nthe\ndark brotherhood there was no sign.\"\nVarro Tigurius\nUltramarines Chief Librarian",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 97]"
+      ]
     },
     {
       "name": "Damned Legionnaire",
@@ -2280,7 +2742,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 97]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 97]",
+      "special_rules": "Fearless, Slow and Purposeful.\nUnyielding Spectres: The Legion of the Damned are\nimpervious to even the deadliest weaponry. Their saving\nthrow is invulnerable.\nAid Unlooked For: The Legion of the Damned always start\nthe game in reserve and always arrive by Deep Strike, even\nin missions that do not normally use these rules. Note that\nthe Legion of the Damned are renowned to arrive wherever\nthey are most needed, so you can re-roll the deep strike\nscatter dice if you wish.\n\"Never before or since have I seen fighting such as\nI witnessed when that host fell upon the Orks.\nSeizing the moment, 1 regrouped my Company and\nled them once more into the fray, yet there was\nlittle work for us, for the greenskins lacked\nstomach for the fight. Soon we secured the great\nbastion once more and without further loss. O f\nthe\ndark brotherhood there was no sign.\"\nVarro Tigurius\nUltramarines Chief Librarian",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 97]"
+      ]
     },
     {
       "name": "Marneus Calgar",
@@ -2298,7 +2764,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 131]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 131]",
+      "special_rules": "• And They Shall\nKnow No Fear\n• Combat Tactics\n• Independent Character\n• Titanic Might\n• God of War\n• Orbital Bombardment\n• Eternal Warrior",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 131]"
+      ]
     },
     {
       "name": "Chronus",
@@ -2317,7 +2787,11 @@
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
       "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
-      "unit_context": "TROOP TYPES WEAPON TYPES"
+      "unit_context": "TROOP TYPES WEAPON TYPES",
+      "special_rules": "Tank Commander: Chronus is always bought as an upgrade\nand starts the game as commander of a Space Marine tank\n(see the army list). Use the tank commander model of\nChronus to represent this.\nChronus' tank ignores any Crew Shaken or Crew Stunned\nresults and can use his Ballistic Skill of 5.\nIf the tank suffers a Wrecked or Explodes! result, roll a D6.\nOn a 1 or 2, Chronus is slain. If the result is 3 or more,\nChronus leaps clear at the last second - when the damage\nhas been resolved, place him within 2\" of the vehicle's\nposition. If Chronus' vehicle has been destroyed he has the\nabove profile and following special rules for the remainder of\nthe game: And They Shall Know No Fear, Combat Tactics,\nIndependent Character. He may not take command of a\ndifferent tank.\n\"The roar of engines, the recoil of cannons.\nThat is where the true joy of battle lies.\"\nBrother-Sergeant Chronus\nThe Spear of Macragge",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 91]"
+      ]
     },
     {
       "name": "Space Marine Sgt",
@@ -2349,7 +2823,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Drop Pod Assault: Drop Pods always enter play using the\ndeep strike rules from the Mission Special Rules section of\nthe Warhammer 40,000 rulebook. At the beginning of your\nfirst turn, you must choose half of your Drop Pods (rounding\nup) to make a 'Drop Pod Assault'. Units making a Drop Pod\nAssault arrive on the player's first turn. The arrival of the\nremaining Drop Pods is rolled for as normal. A unit that\nDeep Strikes via Drop Pod may not assault in the turn\nit arrives.\nInertial Guidance System: Should a Drop Pod scatter on\ntop of impassable terrain or another model (friend or foe!)\nthen reduce the scatter distance by the minimum required in\norder to avoid the obstacle.\nImmobile: A Drop Pod cannot move once it has entered the\nbattle, and counts in all respects as a vehicle that has\nsuffered an Immobilised damage result (which cannot be\nrepaired in any way).",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 71]"
+      ]
     },
     {
       "name": "Land Raider",
@@ -2362,7 +2840,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Power of the Machine Spirit: The interface between a\nLand Raider's machine spirit and its fire control mechanisms\nallow the crew to target with incredible accuracy.\nA Land Raider can fire one more weapon than would\nnormally be permitted. In addition, this weapon can be fired\nat a different target unit to any other weapons, subject to\nthe normal rules for Shooting.\nTherefore, a Land Raider that has moved at combat speed\ncan fire two weapons, and a Land Raider that has either\nmoved at cruising speed, or has suffered a 'Crew Stunned'\nor 'Crew Shaken' result can fire a single weapon.\nAssault Vehicle: Models disembarking from any access\npoint on a Land Raider can launch an assault on the turn\nthey do so.\nA Land Raider is a blessed artefact to the Techmarines that\noversee its repair and maintenance. This is not least because\na Land Raider's machine spirit is so much stronger than that\nof lesser tanks, a fact taken to mean that a substantial\nportion of the Omnissiah's essence resides within the Land\nRaider's impenetrable adamantium hull. Accordingly, should\neven a Land Raider's sponson be lost in battle, the rest of the\nChapter will fight like men possessed for its retrieval, often\ncalling in further reinforcements to ensure that the\ncomponent is not lost. So it is that lives of men can be stilled\nin order to preserve the spirit of a machine, but the Space\nMarines honour such a sacrifice and go willingly into a battle\nof this kind.\nRegardless of its value in matters of faith, the Land Raider's\nmachine spirit is a weighty asset. The machine spirit allows\nthe tank to function with a smaller number of crew than\ncomparable vehicles, and is capable of taking control of\nengines, weaponry or other systems as the situation permits.\nIndeed, the Crimson Fists tell that the uncrewed Land Raider\nRynn's Might, narrowly surviving the missile that levelled\ntheir Fortress Monastery, immediately thereafter fought a\nsolo war against a rampaging Ork warband, killing the\nWarboss and many of his followers in a night of slaughter.\nRynn's Might did not survive the encounter, but its example\nserves as a reminder that a Land Raider is not a machine to\nbe taken lightly, whether it be served by crew or no.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 83]"
+      ]
     },
     {
       "name": "Land Raider Crusader",
@@ -2375,7 +2857,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Power of the Machine Spirit, Assault Vehicle:\nSee page 81.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 84]"
+      ]
     },
     {
       "name": "Land Raider Redeemer",
@@ -2388,7 +2874,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Power of the Machine Spirit, Assault Vehicle:\nSee page 81.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 85]"
+      ]
     },
     {
       "name": "Land Speeder",
@@ -2401,7 +2891,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Deep Strike.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 76]"
+      ]
     },
     {
       "name": "Land Speeder Storm",
@@ -2414,7 +2908,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Deep Strike, Scouts.",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 77]"
+      ]
     },
     {
       "name": "Predator",
@@ -2453,7 +2951,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Repair: Rhinos are exceptionally resilient vehicles and can\noften be repaired by their crew in the heat of battle. If a\nRhino is immobilised for any reason, then in subsequent\nturns the crew can attempt a temporary repair instead of the\nvehicle shooting. Roll a D6 in the Shooting phase, and on a\n6 the vehicle is no longer Immobilised.\nAs\nyou are a knight in service of the Emperor, so is\nthe\nRhino your steed. Honour it, respect it, see that\nits needs are met, and it shall serve you well through\nall the battles you must face.\nFrom the teachings of Roboute Guilliman\nas laid down in the Apocrypha of Skaros",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 78]"
+      ]
     },
     {
       "name": "Vindicator",
@@ -2496,7 +2998,11 @@
       "edition": "5th",
       "system": "WH40K",
       "book": "Space Marines - 2008 - 5th Edition",
-      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]"
+      "citation": "Space Marines - 2008 - 5th Edition [PDF page 146]",
+      "special_rules": "Venerable: If a Venerable Dreadnought suffers a glancing or\npenetrating hit, you can ask your opponent to re-roll the\nresult rolled on the Vehicle Damage chart. You must accept\nthe result of the second roll, even if it is worse than the first.\nMove Through Cover (Ironclad Dreadnought only).",
+      "rules_citations": [
+        "Space Marines - 2008 - 5th Edition [PDF page 67]"
+      ]
     }
   ]
 }
