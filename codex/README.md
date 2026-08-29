@@ -67,6 +67,9 @@ works offline.
 - **Maneuvers** — sliced from the exact clean Tome of Battle alternate extraction
   and canonical heading-to-heading spans; complete descriptions bypass the normal
   4,200-character cap.
+- **GURPS skills** — all 263 rows slice exact Basic Set Skills-chapter spans;
+  grouped definitions and wrapped headings are bounded separately, running page
+  furniture is removed, and complete descriptions bypass the normal cap.
 - **Epic feats** — 149 exact heading-to-heading spans into the harvester's
   reproducible, raw two-column OCR extraction of ELH pp.50-69. Five descriptions
   dependent on unreadable p.60 remain explicit `NO COVERAGE`.
@@ -79,9 +82,9 @@ works offline.
   the harvester's reproducible raw two-column OCR extraction of ELH pp.158-230;
   printed variants deliberately share the book's common block.
 - **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
-- **Every slice** is validated: the entry name—or the canonical common
-  `description_key` for an epic-item or epic-monster shared section—must lead
-  it, or the block is dropped. A misaligned or wrong-file slice is never attached.
+- **Every slice** is validated: the entry name—or its source-verified canonical
+  `description_key` where the index label differs—must lead it, or the block is
+  dropped. A misaligned or wrong-file slice is never attached.
 
 Families that legitimately carry **no** full block: the two **wargame** indices
 (a unit's profile line *is* the whole entry; its special rules live elsewhere in
@@ -89,13 +92,13 @@ the army book). That is honest emptiness, not a bug.
 
 ## Coverage (as of this build)
 
-**12,097 of 17,951 entries** carry the full verbatim block. Strong: D&D 3.5e
+**12,346 of 17,951 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
-soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear 100%
-and GURPS 3e & 4e creatures/spells 94–100%, AD&D 100%, WFRP creatures 100%,
-40K RP adversaries/talents/psychic ~99–100%. Known low families (need
-harvester-level work to lift): GURPS skill/trait/technique and the 40K RP weapon/gear tables
-(which already display their mechanical fields).
+soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear and
+skills 100%, GURPS 3e & 4e creatures/spells 94–100%, AD&D 100%, WFRP
+creatures 100%, 40K RP adversaries/talents/psychic ~99–100%. Known low
+families (need harvester-level work to lift): GURPS trait/technique and the 40K
+RP weapon/gear tables (which already display their mechanical fields).
 
 ## The page
 

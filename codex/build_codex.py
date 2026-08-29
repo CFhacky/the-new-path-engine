@@ -50,13 +50,15 @@ FULL-TEXT SOURCING — book RAW, never invented
                     are removed, and the complete descriptions bypass the 4.2k cap.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
+- GURPS skills        sliced from exact Basic Set description spans; running page
+                    furniture is removed and complete descriptions bypass the cap.
 - epic items         sliced from 103 canonical blocks in the reproducible ELH
                     two-column OCR source; variants deliberately share spans.
 - epic monsters      sliced from 50 canonical blocks in the reproducible ELH
                     two-column OCR source; printed variants share spans.
 - legacy rows        fuzzy-match a source filename, then slice by [start:end].
-- every slice is VALIDATED: the entry name (or an epic-item/monster shared
-  section's canonical description key) must lead it or the block is dropped.
+- every slice is VALIDATED: the entry name (or a family-specific canonical
+  description key) must lead it or the block is dropped.
   Wargame profile lines legitimately carry no full block — that is honest
   emptiness, not a failure.
 
@@ -96,7 +98,7 @@ SOURCE_ROOTS = [
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
-CAP = 4200  # exact vestige/maneuver/epic item/monster spans bypass it
+CAP = 4200  # exact vestige/maneuver/GURPS skill/epic spans bypass it
 
 _STOP = set("gurps wfrp the of a an core rulebook compilation edition pdf md txt "
             "scan updated with errata hq premium".split())
@@ -183,6 +185,34 @@ def _strip_vestige_tablets(seg: str) -> str:
                 continue
         out.append(src[i])
         i += 1
+    return "\n".join(out).strip()
+
+
+def _strip_gurps_skill_furniture(seg: str) -> str:
+    """Remove only running page markers from exact Basic Set skill spans."""
+    src = seg.splitlines()
+
+    def neighbor(index: int, step: int) -> str:
+        for _ in range(3):
+            index += step
+            if not (0 <= index < len(src)):
+                return ""
+            text = src[index].strip()
+            if text:
+                return text
+        return ""
+
+    out = []
+    for i, line in enumerate(src):
+        text = line.strip()
+        if re.fullmatch(r"## \[PDF page \d+\]", text, re.IGNORECASE):
+            continue
+        before, after = neighbor(i, -1), neighbor(i, 1)
+        paired_footer = ((text == "SKILLS" and (before.isdigit() or after.isdigit()))
+                         or (text.isdigit() and (before == "SKILLS" or after == "SKILLS")))
+        if paired_footer:
+            continue
+        out.append(line)
     return "\n".join(out).strip()
 
 
@@ -320,6 +350,10 @@ def build(report=False):
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
                                   _exact_source_file(r), limit=None)
+            elif fam == "gurps_skill" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"],
+                                  r.get("description_key") or r["name"],
+                                  _exact_source_file(r), _strip_gurps_skill_furniture, None)
             elif "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r))

@@ -5,12 +5,13 @@ rerun the harvest.** GURPS 4e skills (native GURPS 4e), from the Basic
 Set Trait Lists appendix. `attribute` is the controlling attribute and
 `difficulty` its Easy/Average/Hard/Very Hard rating; `defaults` lists the
 skills/attributes it defaults from; `book_page` (Bxx) points to the full
-description. A field left `—` is one the OCR did not cleanly yield.
+description, and every row carries its exact source span there. A field
+left `—` is one the OCR did not cleanly yield.
 
 ## GURPS Basic Set: Characters — 263 skills
 
 *Source: GURPS Basic Set: Characters (SJGames, 4e), Skills in the Trait Lists appendix.*  
-*Harvest: ok — 263 skills from GURPS 4e - Basic Set - Characters.md.*
+*Harvest: ok — 263 skills from GURPS 4e - Basic Set - Characters.md; 263 exact description spans.*
 
 | Skill | Attr | Difficulty | TL | Defaults | Book p. | PDF p. |
 |---|---|---|---|---|---|---|
@@ -61,7 +62,7 @@ description. A field left `—` is one the OCR did not cleanly yield.
 | Chemistry/TL | IQ | Hard | ✓ | IQ-6, Alchemy-3 | B183 | 304 |
 | Climbing | DX | Average | — | DX-5 | B183 | 304 |
 | Cloak | DX | Average | — | DX-5, Net-4, Shield (any)-4 184 Combat Art or Sport DX Varies Special Computer Hacking/TL IQ VH None 184 | B184 | 304 |
-| Computer | IQ | Easy | — | IQ-4 Operation/TL | B184 | 304 |
+| Computer Operation/TL | IQ | Easy | ✓ | IQ-4 | B184 | 304 |
 | Connoisseur | IQ | Average | — | IQ-5* | B185 | 304 |
 | Cooking | IQ | Average | — | IQ-5, Housekeeping-5 | B185 | 304 |
 | Counterfeiting/TL | IQ | Hard | ✓ | IQ-6, Forgery-2 | B185 | 304 |
@@ -81,7 +82,7 @@ description. A field left `—` is one the OCR did not cleanly yield.
 | Dropping | DX | Average | — | DX-3, Throwing-4 | B189 | 304 |
 | Economics | IQ | Hard | — | IQ-6, Finance-3, Market Analysis-5, Merchant-6 | B189 | 304 |
 | Electrician/TL | IQ | Average | ✓ | IQ-5, Engineer (Electrical)-3 | B189 | 304 |
-| Electronics | IQ | Average | — | IQ-5, Electronics Operation/TL† Repair (same)-5, Engineer (Electronics)-5 Electronics Repair/TL†IQ A IQ-5, Electronics 190 Operation (same)-3, Engineer (Electronics)-3 | B189 | 304 |
+| Electronics Operation/TL | IQ | Average | ✓ | IQ-5, Electronics Repair (same)-5, Engineer (Electronics)-5 | B189 | 304 |
 | Engineer/TL | IQ | Hard | ✓ | Special | B190 | 304 |
 | Enthrallment | Will | Hard | — | None Environment Suit/TL DX A DX-5* 192 | B191 | 304 |
 | Erotic Art | DX | Average | — | DX-5, Acrobatics-5 | B192 | 304 |
@@ -120,7 +121,7 @@ description. A field left `—` is one the OCR did not cleanly yield.
 | Group Performance | IQ | Average | — | IQ-5* | B198 | 304 |
 | Gunner/TL | DX | Easy | ✓ | DX-4 | B198 | 304 |
 | Guns/TL | DX | Easy | ✓ | DX-4 | B198 | 304 |
-| Hazardous | IQ | Average | — | IQ-5 Materials/TL† | B199 | 304 |
+| Hazardous Materials/TL | IQ | Average | ✓ | IQ-5 | B199 | 304 |
 | Heraldry | IQ | Average | — | IQ-5, Savoir-Faire (High Society)-3 | B199 | 304 |
 | Herb Lore/TL | IQ | Very Hard | ✓ | None | B199 | 304 |
 | Hidden Lore | IQ | Average | — | None | B199 | 304 |
@@ -131,7 +132,7 @@ description. A field left `—` is one the OCR did not cleanly yield.
 | Hypnotism | IQ | Hard | — | None | B201 | 304 |
 | Immovable Stance | DX | Hard | — | None | B201 | 304 |
 | Innate Attack | DX | Easy | — | DX-4 | B201 | 304 |
-| Intelligence | IQ | Hard | — | IQ-6, Strategy (any)-6 Analysis/TL | B201 | 304 |
+| Intelligence Analysis/TL | IQ | Hard | ✓ | IQ-6, Strategy (any)-6 | B201 | 304 |
 | Interrogation | IQ | Average | — | IQ-5, Intimidation-3, Psychology-4 | B202 | 304 |
 | Intimidation | Will | Average | — | Will-5, Acting-3 | B202 | 304 |
 | Invisibility Art | IQ | Very Hard | — | None | B202 | 304 |

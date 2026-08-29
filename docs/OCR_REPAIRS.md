@@ -48,6 +48,27 @@ full re-scan of the 409 power names shows no remaining garble.
 Knowledge") or an NPC descriptor ("Kobold, 1st level"). This removed 8
 non-feat rows from `feat_index` (1253 → 1244) with no loss of real feats.
 
+## 2026-08-29 — GURPS Basic Set skill roster (detector fixes, no source edit)
+
+File: `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`
+
+Four Trait Lists rows put the second half of the skill name *after* the Page
+cell. The old detector therefore indexed a truncated name, lost the `/TL` flag,
+and admitted that trailing name fragment (plus, for Electronics, the following
+row) into `defaults`. The same book's description heading and Defaults line
+verify every correction:
+
+| Old row | Verified row | Verified defaults | Book page |
+|---|---|---|---|
+| `Computer` | `Computer Operation/TL` | `IQ-4` | B184 |
+| `Electronics` | `Electronics Operation/TL` | `IQ-5, Electronics Repair (same)-5, Engineer (Electronics)-5` | B189 |
+| `Hazardous` | `Hazardous Materials/TL` | `IQ-5` | B199 |
+| `Intelligence` | `Intelligence Analysis/TL` | `IQ-6, Strategy (any)-6` | B201 |
+
+`gurps_skill_harvest.py` now applies those four exact detector-level repairs;
+the extraction file remains untouched. All four rows are correctly marked as
+tech-level skills.
+
 ## 2026-08-29 — Epic Level Handbook epic feats (derived OCR source)
 
 File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-feats.ocr-columns.md`

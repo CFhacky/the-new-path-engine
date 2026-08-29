@@ -22,7 +22,7 @@ extraction and are the court of appeal for any garbled number.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
-(186; all exact full-row spans), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
+(186; all exact full-row spans), GURPS advantages/disadvantages (467), GURPS skills (263; all exact full-description spans), GURPS techniques (101), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
@@ -50,7 +50,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | GURPS Magic (520) + Plant Spells (19) + Thaumatology: Urban Magics (12) + Thaumatology (6) | 557 GURPS spells (541 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
 | `reference/gurps_gear_index.{md,json}` | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech Melee Weapon Table + Armor Table | 186 gear (153 weapons + 33 torso-armor pieces, TL0–TL4, DR up to 9; all carry exact non-overlapping full-row spans) | `python scripts/gurps_gear_harvest.py --selftest` |
 | `reference/gurps_trait_index.{md,json}` | `scripts/gurps_trait_harvest.py` | GURPS Basic Set: Characters — Trait Lists appendix | 467 traits (276 advantages + 191 disadvantages, all with type / exotic-super / point cost / book page) | `python scripts/gurps_trait_harvest.py --selftest` |
-| `reference/gurps_skill_index.{md,json}` | `scripts/gurps_skill_harvest.py` | GURPS Basic Set: Characters — Skills in the Trait Lists appendix | 263 skills (attribute, Easy/Average/Hard/Very Hard difficulty, defaults, book page; clustered on B303–B306) | `python scripts/gurps_skill_harvest.py --selftest` |
+| `reference/gurps_skill_index.{md,json}` | `scripts/gurps_skill_harvest.py` | GURPS Basic Set: Characters — Trait Lists roster + Skills chapter | 263 skills (attribute, Easy/Average/Hard/Very Hard difficulty, defaults, book page; all with exact, non-overlapping full-description or printed cross-reference spans on B174–B228) | `python scripts/gurps_skill_harvest.py --selftest` |
 | `reference/gurps_technique_index.{md,json}` | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet (born-digital text layer, characters exact) | 101 combat techniques (difficulty, prerequisite, default, maximum, damage; cinematic/silly flags) | `python scripts/gurps_technique_harvest.py --selftest` |
 | `reference/vestige_index.{md,json}` | `scripts/vestige_harvest.py` | Tome of Magic (born-digital text layer) — pact-magic summary, explicit stat tablets, and descriptions, pp.20–50 | 32 vestiges (vestige level 1–8, binding DC, special-requirement flag, exact-source full-description spans) | `python scripts/vestige_harvest.py --selftest` |
 | `reference/soulmeld_index.{md,json}` | `scripts/soulmeld_harvest.py` | Magic of Incarnum (born-digital text layer) — soulmeld tables + descriptions, pp.54–94 | 89 soulmelds (classes, bindable chakras, basic effect, exact-source full-description spans; interleaved summary columns removed in codex display) | `python scripts/soulmeld_harvest.py --selftest` |
@@ -214,13 +214,6 @@ All source OCR listed below was verified present on `I:\Sourcebooks` on
      hits cluster in the spell chapter (not scattered), then keep it.
      `HEADER_REJECT` now catches the generic SPELLS / INVOCATIONS / DESCRIPTIONS
      / CHAPTER running-header words, so most books need no per-book header work.
-4. **GURPS Skills** → a new detector in `gurps_trait_harvest.py` (or its own
-   `gurps_skill_harvest.py`). The Basic Set Trait Lists appendix continues past
-   the advantages/disadvantages into a SKILLS list (`GURPS 4e - Basic Set -
-   Characters.md`, the "Skill" column-header blocks from line ~49040 on). Its
-   columns differ — Skill / difficulty (e.g. DX/E, IQ/H) / defaults / page —
-   so it needs its own row signature, not the trait one. This is the last big
-   native-GURPS-4e mechanics gap after traits and gear.
 
 - **`item_harvest.py`**: append a `Source(...)` to `SOURCES` with a new
   `detector` key, write `detect_<key>(lines, pages, book)` returning
@@ -281,6 +274,27 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Closed the native GURPS 4e skill full-text gap. The Basic
+  Set harvester still reads all **263** roster rows from the Trait Lists
+  appendix, but now binds each row to its exact, non-overlapping Skills-chapter
+  description span on B174–B228 and emits the exact relative `source_path`.
+  Grouped definitions under Acrobatics, Crewman, Environment Suit,
+  Enthrallment, and Melee Weapon are bounded independently. Four appendix rows
+  whose names wrapped after the Page cell are source-verified and repaired to
+  Computer Operation/TL, Electronics Operation/TL, Hazardous Materials/TL, and
+  Intelligence Analysis/TL, including their clean defaults and lost TL flags;
+  Brain Hacking's printed cross-reference uses the book's no-`/TL`
+  `description_key`. All 259 unaffected rows retain their names and mechanics,
+  and all 263 retain their citation, page, position, and order. The Codex removes
+  only running page furniture and keeps the three descriptions longer than its
+  normal 4,200-character cap. GURPS-skill coverage rose **14/263 → 263/263
+  (100%)**; total full-text coverage rose **12,097/17,951 → 12,346/17,951
+  (68%)**. The live selftest locks the 263-row roster, the four verified row
+  repairs and Brain Hacking alias, unique source-leading spans, non-overlap, the
+  nested Axe/Mace and cross-page Knife boundaries, and the Zen
+  Archery/Techniques cutover. Independent JSON/Codex audits and a rendered
+  offline-page check passed.
 
 - **2026-08-29** — Closed the native GURPS 4e gear full-text gap. The
   Low-Tech harvester now emits its exact relative `source_path` and bounds all
