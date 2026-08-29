@@ -18,7 +18,7 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-29).** Forty-one reference index families, ~18,126 entries.
+**At a glance (2026-08-29).** Forty-one reference index families, 17,924 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
@@ -274,6 +274,14 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Fixed the Codex row walker so harvester `soft` diagnostic
+  arrays are not presented as real entries. The bug affected only
+  `wh40krp_gear_index`: 40 rejected OCR fragments nested under source
+  diagnostics inflated that family from its real **587** rows to 627. The
+  corrected build is **17,924** entries with the same **13,254** full-text
+  blocks; every other family count is unchanged. An embedded Codex selftest
+  locks the diagnostic-row exclusion.
 
 - **2026-08-29** — Attached WHFB wargame SPECIAL RULES to the existing
   **291** official 8th-ed unit-profile rows. The additive path recognises both

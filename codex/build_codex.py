@@ -316,11 +316,28 @@ def _index_rows(obj, out, context=None):
             if "source_path" in child_context:
                 row["_source_path"] = child_context["source_path"]
             out.append(row)
-        for v in obj.values():
-            _index_rows(v, out, child_context)
+        for key, value in obj.items():
+            # Harvester `soft` arrays are rejected diagnostics, never index rows.
+            if key == "soft":
+                continue
+            _index_rows(value, out, child_context)
     elif isinstance(obj, list):
         for v in obj:
             _index_rows(v, out, context)
+
+
+def selftest():
+    fixture = {
+        "source_path": "fixture.md",
+        "entries": [{"name": "Real Entry", "book": "Fixture Book"}],
+        "soft": [{"name": "Rejected Fragment", "book": "Fixture Book"}],
+    }
+    rows = []
+    _index_rows(fixture, rows)
+    assert [row["name"] for row in rows] == ["Real Entry"]
+    assert rows[0]["_source_path"] == "fixture.md"
+    print("selftest: diagnostic soft rows excluded")
+    print("selftest: PASS")
 
 
 def _exact_source_file(row):
@@ -528,7 +545,12 @@ def build(report=False):
 def main():
     ap = argparse.ArgumentParser(description="Build the Path Engine Codex offline browser.")
     ap.add_argument("--report", action="store_true", help="print per-family full-text coverage")
-    build(**vars(ap.parse_args()))
+    ap.add_argument("--selftest", action="store_true", help="run embedded regression checks")
+    args = ap.parse_args()
+    if args.selftest:
+        selftest()
+        return
+    build(report=args.report)
 
 
 if __name__ == "__main__":
