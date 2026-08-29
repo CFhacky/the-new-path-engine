@@ -77,6 +77,20 @@ common block. Verified lane cutovers skip nine intervening generation tables
 that the physical layout places above a continuation column. The JSON index
 records the generated file's SHA-256; no OCR mechanic was guessed or rewritten.
 
+## 2026-08-29 — Epic Level Handbook epic spells (derived OCR source)
+
+File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-spells.ocr-columns.md`
+
+This is reproducible source generation, not hand-repaired body text.
+`epic_spell_harvest.py --extract-source` renders ELH pp.74-88 and 92-102 at 4×
+and OCRs both visual columns independently. All **70 description bodies** (46
+sample spells plus 24 seeds) remain raw Tesseract output; only their headings
+are restored from the existing book-verified transcription. Verified lane
+cutovers retain mechanically related “another use” boxes while excluding
+unrelated inset examples and the following epic-psionics section. The JSON
+index records the generated file's SHA-256; no OCR mechanic was guessed or
+rewritten.
+
 ---
 
 ## FLAGGED — not yet resolved (need PDF page verification; NOT guessed)

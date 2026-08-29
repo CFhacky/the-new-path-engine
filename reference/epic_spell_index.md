@@ -9,87 +9,89 @@ blocks, Table 2-1, with a base Spellcraft DC) and **sample spells** (each
 with school, the development Spellcraft DC, and the one-line effect as
 printed in the 'Epic Spells by Spellcraft DC' summary). Where the summary
 list's DC disagrees with a full-entry header, the full-entry value is used
-and the summary's number is noted.
+and the summary's number is noted. All rows carry exact spans into a
+reproducible raw two-column OCR extraction of the printed descriptions;
+mechanical values remain the vision-verified transcription above.
 
 *70 entries — 24 seeds, 46 sample spells.*
 
 ## Epic seeds (Table 2-1, ELH p.88)
 
-| Seed | Base Spellcraft DC | Note |
-|---|---|---|
-| Afflict | 14 |  |
-| Animate | 25 |  |
-| Animate Dead | 23 |  |
-| Armor | 14 |  |
-| Banish | 27 |  |
-| Compel | 19 |  |
-| Conceal | 17 |  |
-| Conjure | 21 |  |
-| Contact | 23 |  |
-| Delude | 14 |  |
-| Destroy | 29 |  |
-| Dispel | 19 |  |
-| Energy | 19 |  |
-| Foresee | 17 |  |
-| Fortify | 17 |  |
-| Heal | 25 | heal/life: 24+ ranks Know(religion) |
-| Life | 27 | heal/life: 24+ ranks Know(religion) |
-| Reflect | 27 |  |
-| Reveal | 19 |  |
-| Slay | 25 |  |
-| Summon | 14 |  |
-| Transform | 21 |  |
-| Transport | 27 |  |
-| Ward | 14 |  |
+| Seed | Base Spellcraft DC | Description Pages | Note |
+|---|---|---|---|
+| Afflict | 14 | 92 |  |
+| Animate | 25 | 92-93 |  |
+| Animate Dead | 23 | 93 |  |
+| Armor | 14 | 93-94 |  |
+| Banish | 27 | 94 |  |
+| Compel | 19 | 94 |  |
+| Conceal | 17 | 94 |  |
+| Conjure | 21 | 94-95 |  |
+| Contact | 23 | 95 |  |
+| Delude | 14 | 95 |  |
+| Destroy | 29 | 95-96 |  |
+| Dispel | 19 | 96 |  |
+| Energy | 19 | 96-97 |  |
+| Foresee | 17 | 97 |  |
+| Fortify | 17 | 97-98 |  |
+| Heal | 25 | 98 | heal/life: 24+ ranks Know(religion) |
+| Life | 27 | 98 | heal/life: 24+ ranks Know(religion) |
+| Reflect | 27 | 98-99 |  |
+| Reveal | 19 | 99 |  |
+| Slay | 25 | 99-100 |  |
+| Summon | 14 | 100 |  |
+| Transform | 21 | 100-101 |  |
+| Transport | 27 | 101 |  |
+| Ward | 14 | 101-102 |  |
 
 ## Sample epic spells (ELH pp.73-88)
 
-| Epic Spell | Spellcraft DC | School | Effect | Page |
-|---|---|---|---|---|
-| Peripety | 27 | Abjuration | Ranged attacks against you are reflected back on your attacker | 84 |
-| Ruin | 27 | Transmutation | Object or target takes 20d6 damage | 85 |
-| Dreamscape | 29 | Transmutation [Teleportation] | You physically travel the region of dreams | 77 |
-| Mummy Dust | 35 | Necromancy [Evil] | Create two Large 18 HD mummies | 83 |
-| Dragon Knight | 38 | Conjuration (Summoning) [Fire] | An adult red dragon appears and attacks your enemies | 77 |
-| Origin of Species: Achaierai | 38 | Conjuration (Creation, Healing) | Create a true-breeding creature *(see note)* | 84 |
-| Eclipse | 42 | Conjuration (Creation) | A solar eclipse follows you | 78 |
-| Let Go of Me | 43 | Transmutation | Grappler takes 20d6 damage, you take 10d6 | 81 |
-| Greater Spell Resistance | 45 | Transmutation | Subject gains SR 35 for 20 hours | 80 |
-| Spell Worm | 45 | Enchantment (Compulsion) [Mind-Affecting] | Subject abandons all her spells | 86 |
-| Epic Mage Armor | 46 | Conjuration (Creation) [Force] | Subject gains +20 AC bonus | 79 |
-| Raise Island | 48 | Conjuration (Creation) | You create a small island in the sea *(see note)* | 85 |
-| Animus Blast | 50 | Evocation [Cold] | Victims of your 10d6 coldball animate as skeletons and serve you | 74 |
-| Dragon Strike | 50 | Conjuration (Summoning) [Fire] | Ten adult red dragons appear and attack your enemies | 77 |
-| Lord of Nightmares | 50 | Conjuration (Summoning) | You are possessed by a dream larva for 20 rounds and take 12d6 damage | 82 |
-| Rain of Fire | 50 | Evocation [Fire] | You create a 2-mile-radius fire storm dealing 1 point of fire damage per round | 85 |
-| Contingent Resurrection | 52 | Conjuration (Healing) | Subject automatically resurrected if slain | 74 |
-| Epic Repulsion | 52 | Abjuration | One creature or object is warded against one type of creature | 79 |
-| Mass Frog | 55 | Transmutation | All in 40-ft.-radius are transformed into frogs | 82 |
-| Soul Scry | 55 | Divination | You experience everything the target experiences | 86 |
-| Crown of Vermin | 56 | Conjuration (Summoning) | You have an aura of one thousand venomous vermin | 75 |
-| Verdigris | 58 | Transmutation | 100-ft-area overrun by tsunami of plant growth dealing 10d6 damage | 88 |
-| Greater Ruin | 59 | Transmutation | Object or target takes 35d6 damage | 80 |
-| Superb Dispelling | 59 | Abjuration | As greater dispelling, but +40 on check | 87 |
-| Create Living Vault | 60 | Conjuration (Creation) | You fashion a living vault attuned to you | 75 |
-| Nailed to the Sky | 62 | Transmutation [Teleportation] | Affix foe to the heavens | 83 |
-| Safe Time | 64 | Transmutation [Teleportation] | You contingently duck damage in a static time stream for 1 round | 85 |
-| Epic Spell Reflection | 68 | Abjuration | Creature or object permanently warded against spells *(see note)* | 80 |
-| Epic Counterspell | 69 | Abjuration | Cancel another's epic spell | 79 |
-| Time Duplicate | 71 | Transmutation [Teleportation] | You and your future self exist together for 1 round | 87 |
-| Soul Dominion | 72 | Divination, Enchantment (Compulsion) [Mind-Affecting] | You achieve remote control of the target | 86 |
-| Summon Behemoth | 72 | Conjuration (Summoning) | A behemoth appears and attacks your enemies | 86 |
-| Animus Blizzard | 78 | Evocation [Cold] | Victims of your 20d6 coldball animate as wights and serve you | 74 |
-| Eidolon | 79 | Conjuration (Creation) | Creates duplicate that shares your soul | 78 |
-| Enslave | 80 | Enchantment (Compulsion) [Mind-Affecting] | Subject is a permanent thrall | 79 |
-| Demise Unseen | 82 | Necromancy [Death, Evil], Illusion [Figment] | Animated ghoul of slain victim fools its companions that all is well | 76 |
-| Momento Mori | 86 | Necromancy [Death] | A thought that kills | 83 |
-| Hellball | 90 | Evocation [Acid, Fire, Electricity, Sonic] | You deal 10d6 each of acid, fire, electricity, and sonic damage, you take 10d6 | 80 |
-| Damnation | 97 | Enchantment (Compulsion) [Teleportation, Mind-Affecting] | Send your foe to hell | 76 |
-| Kinetic Control | 103 | Abjuration | You store and redirect damage | 81 |
-| Pestilence | 104 | Conjuration, Necromancy | Inflict slimy doom on all creatures and plants in a half-mile-diameter area *(see note)* | 84 |
-| Living Lightning | 140 | Evocation [Electricity] | Spell can cast itself, dealing 10d6 electricity damage to foe | 82 |
-| Eternal Freedom | 150 | Abjuration | Permanent immunity to many hold, stun, stasis and other spells and effects | 80 |
-| Verdigris Tsunami | 170 | Transmutation | 1,000-ft.-radius area overrun by permanent tsunami of plant growth dealing 40d6 damage | 88 |
-| Dire Winter | 319 | Evocation [Cold] | 1,000-ft. radius emanation deals 2d6 cold damage for 20 hours | 76 |
-| Vengeful Gaze of God | 419 | Transmutation | Target takes 305d6 damage; you take 200d6 | 87 |
+| Epic Spell | Spellcraft DC | School | Effect | Table/Entry Page | Description Pages |
+|---|---|---|---|---|---|
+| Peripety | 27 | Abjuration | Ranged attacks against you are reflected back on your attacker | 84 | 84 |
+| Ruin | 27 | Transmutation | Object or target takes 20d6 damage | 85 | 85 |
+| Dreamscape | 29 | Transmutation [Teleportation] | You physically travel the region of dreams | 77 | 77-78 |
+| Mummy Dust | 35 | Necromancy [Evil] | Create two Large 18 HD mummies | 83 | 83 |
+| Dragon Knight | 38 | Conjuration (Summoning) [Fire] | An adult red dragon appears and attacks your enemies | 77 | 77 |
+| Origin of Species: Achaierai | 38 | Conjuration (Creation, Healing) | Create a true-breeding creature *(see note)* | 84 | 84 |
+| Eclipse | 42 | Conjuration (Creation) | A solar eclipse follows you | 78 | 78 |
+| Let Go of Me | 43 | Transmutation | Grappler takes 20d6 damage, you take 10d6 | 81 | 81 |
+| Greater Spell Resistance | 45 | Transmutation | Subject gains SR 35 for 20 hours | 80 | 80 |
+| Spell Worm | 45 | Enchantment (Compulsion) [Mind-Affecting] | Subject abandons all her spells | 86 | 86 |
+| Epic Mage Armor | 46 | Conjuration (Creation) [Force] | Subject gains +20 AC bonus | 79 | 79 |
+| Raise Island | 48 | Conjuration (Creation) | You create a small island in the sea *(see note)* | 85 | 85 |
+| Animus Blast | 50 | Evocation [Cold] | Victims of your 10d6 coldball animate as skeletons and serve you | 74 | 74 |
+| Dragon Strike | 50 | Conjuration (Summoning) [Fire] | Ten adult red dragons appear and attack your enemies | 77 | 77 |
+| Lord of Nightmares | 50 | Conjuration (Summoning) | You are possessed by a dream larva for 20 rounds and take 12d6 damage | 82 | 82 |
+| Rain of Fire | 50 | Evocation [Fire] | You create a 2-mile-radius fire storm dealing 1 point of fire damage per round | 85 | 85 |
+| Contingent Resurrection | 52 | Conjuration (Healing) | Subject automatically resurrected if slain | 74 | 74-75 |
+| Epic Repulsion | 52 | Abjuration | One creature or object is warded against one type of creature | 79 | 79-80 |
+| Mass Frog | 55 | Transmutation | All in 40-ft.-radius are transformed into frogs | 82 | 82-83 |
+| Soul Scry | 55 | Divination | You experience everything the target experiences | 86 | 86 |
+| Crown of Vermin | 56 | Conjuration (Summoning) | You have an aura of one thousand venomous vermin | 75 | 75-76 |
+| Verdigris | 58 | Transmutation | 100-ft-area overrun by tsunami of plant growth dealing 10d6 damage | 88 | 88 |
+| Greater Ruin | 59 | Transmutation | Object or target takes 35d6 damage | 80 | 80 |
+| Superb Dispelling | 59 | Abjuration | As greater dispelling, but +40 on check | 87 | 87 |
+| Create Living Vault | 60 | Conjuration (Creation) | You fashion a living vault attuned to you | 75 | 75 |
+| Nailed to the Sky | 62 | Transmutation [Teleportation] | Affix foe to the heavens | 83 | 83-84 |
+| Safe Time | 64 | Transmutation [Teleportation] | You contingently duck damage in a static time stream for 1 round | 85 | 85-86 |
+| Epic Spell Reflection | 68 | Abjuration | Creature or object permanently warded against spells *(see note)* | 80 | 80 |
+| Epic Counterspell | 69 | Abjuration | Cancel another's epic spell | 79 | 79 |
+| Time Duplicate | 71 | Transmutation [Teleportation] | You and your future self exist together for 1 round | 87 | 87 |
+| Soul Dominion | 72 | Divination, Enchantment (Compulsion) [Mind-Affecting] | You achieve remote control of the target | 86 | 86 |
+| Summon Behemoth | 72 | Conjuration (Summoning) | A behemoth appears and attacks your enemies | 86 | 86-87 |
+| Animus Blizzard | 78 | Evocation [Cold] | Victims of your 20d6 coldball animate as wights and serve you | 74 | 74 |
+| Eidolon | 79 | Conjuration (Creation) | Creates duplicate that shares your soul | 78 | 78-79 |
+| Enslave | 80 | Enchantment (Compulsion) [Mind-Affecting] | Subject is a permanent thrall | 79 | 79 |
+| Demise Unseen | 82 | Necromancy [Death, Evil], Illusion [Figment] | Animated ghoul of slain victim fools its companions that all is well | 76 | 76 |
+| Momento Mori | 86 | Necromancy [Death] | A thought that kills | 83 | 83 |
+| Hellball | 90 | Evocation [Acid, Fire, Electricity, Sonic] | You deal 10d6 each of acid, fire, electricity, and sonic damage, you take 10d6 | 80 | 80-81 |
+| Damnation | 97 | Enchantment (Compulsion) [Teleportation, Mind-Affecting] | Send your foe to hell | 76 | 76 |
+| Kinetic Control | 103 | Abjuration | You store and redirect damage | 81 | 81 |
+| Pestilence | 104 | Conjuration, Necromancy | Inflict slimy doom on all creatures and plants in a half-mile-diameter area *(see note)* | 84 | 84-85 |
+| Living Lightning | 140 | Evocation [Electricity] | Spell can cast itself, dealing 10d6 electricity damage to foe | 82 | 82 |
+| Eternal Freedom | 150 | Abjuration | Permanent immunity to many hold, stun, stasis and other spells and effects | 80 | 80 |
+| Verdigris Tsunami | 170 | Transmutation | 1,000-ft.-radius area overrun by permanent tsunami of plant growth dealing 40d6 damage | 88 | 88 |
+| Dire Winter | 319 | Evocation [Cold] | 1,000-ft. radius emanation deals 2d6 cold damage for 20 hours | 76 | 76-77 |
+| Vengeful Gaze of God | 419 | Transmutation | Target takes 305d6 damage; you take 200d6 | 87 | 87 |
 

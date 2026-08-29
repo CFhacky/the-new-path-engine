@@ -1,9 +1,15 @@
 {
  "generated_by": "scripts/epic_spell_harvest.py",
+ "corpus": "I:\\Sourcebooks\\_text",
+ "source_path": "D&D 3.5e\\DM Toolkits\\Epic Level Handbook.epic-spells.ocr-columns.md",
+ "source_sha256": "97d770a9f1959fd802fe659972718e4cbb444530bdd1798fab202224a9b362ea",
  "book": "Epic Level Handbook",
  "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
  "pages": "73-88",
- "note": "Vision-transcribed from the ELH PDF page images; the OCR text layer is corrupt. Book RAW, read off the page. Seed base DCs from Table 2-1 (p.88); sample spells' school + Spellcraft DC from the full descriptions (pp.74-88); one-line effects from the 'Epic Spells by Spellcraft DC' summary (pp.73-74).",
+ "description_pages": "74-102",
+ "description_blocks": 70,
+ "full_description_entries": 70,
+ "note": "Vision-transcribed mechanics plus exact line spans into a reproducible two-column OCR extraction of all printed epic spell and seed descriptions. The PDF text layer is corrupt; values remain book RAW and vision-verified. Seed base DCs are from Table 2-1 (p.88); sample spell mechanics are from the full entries (pp.74-88) and summary (pp.73-74).",
  "total_entries": 70,
  "by_kind": {
   "seed": 24,
@@ -19,7 +25,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "92",
+   "start": 1586,
+   "end": 1622,
+   "soft": null
   },
   {
    "name": "Animate",
@@ -30,7 +40,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "92-93",
+   "start": 1624,
+   "end": 1654,
+   "soft": null
   },
   {
    "name": "Animate Dead",
@@ -41,7 +55,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "93",
+   "start": 1656,
+   "end": 1725,
+   "soft": null
   },
   {
    "name": "Armor",
@@ -52,7 +70,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "93-94",
+   "start": 1727,
+   "end": 1767,
+   "soft": null
   },
   {
    "name": "Banish",
@@ -63,7 +85,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "94",
+   "start": 1769,
+   "end": 1790,
+   "soft": null
   },
   {
    "name": "Compel",
@@ -74,7 +100,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "94",
+   "start": 1792,
+   "end": 1829,
+   "soft": null
   },
   {
    "name": "Conceal",
@@ -85,7 +115,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "94",
+   "start": 1831,
+   "end": 1865,
+   "soft": null
   },
   {
    "name": "Conjure",
@@ -96,7 +130,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "94-95",
+   "start": 1867,
+   "end": 1893,
+   "soft": null
   },
   {
    "name": "Contact",
@@ -107,7 +145,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "95",
+   "start": 1895,
+   "end": 1930,
+   "soft": null
   },
   {
    "name": "Delude",
@@ -118,7 +160,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "95",
+   "start": 1932,
+   "end": 1966,
+   "soft": null
   },
   {
    "name": "Destroy",
@@ -129,7 +175,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "95-96",
+   "start": 1968,
+   "end": 2000,
+   "soft": null
   },
   {
    "name": "Dispel",
@@ -140,7 +190,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "96",
+   "start": 2002,
+   "end": 2054,
+   "soft": null
   },
   {
    "name": "Energy",
@@ -151,7 +205,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "96-97",
+   "start": 2056,
+   "end": 2124,
+   "soft": null
   },
   {
    "name": "Foresee",
@@ -162,7 +220,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "97",
+   "start": 2126,
+   "end": 2161,
+   "soft": null
   },
   {
    "name": "Fortify",
@@ -173,7 +235,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "97-98",
+   "start": 2163,
+   "end": 2219,
+   "soft": null
   },
   {
    "name": "Heal",
@@ -184,7 +250,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": "Spellcasters without at least 24 ranks in Knowledge (religion) may not use the heal or life spell seeds (Table 2-1 footnote)."
+   "note": "Spellcasters without at least 24 ranks in Knowledge (religion) may not use the heal or life spell seeds (Table 2-1 footnote).",
+   "description_pages": "98",
+   "start": 2221,
+   "end": 2270,
+   "soft": null
   },
   {
    "name": "Life",
@@ -195,7 +265,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": "Spellcasters without at least 24 ranks in Knowledge (religion) may not use the heal or life spell seeds (Table 2-1 footnote)."
+   "note": "Spellcasters without at least 24 ranks in Knowledge (religion) may not use the heal or life spell seeds (Table 2-1 footnote).",
+   "description_pages": "98",
+   "start": 2272,
+   "end": 2316,
+   "soft": null
   },
   {
    "name": "Reflect",
@@ -206,7 +280,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "98-99",
+   "start": 2318,
+   "end": 2365,
+   "soft": null
   },
   {
    "name": "Reveal",
@@ -217,7 +295,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "99",
+   "start": 2367,
+   "end": 2422,
+   "soft": null
   },
   {
    "name": "Slay",
@@ -228,7 +310,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "99-100",
+   "start": 2424,
+   "end": 2460,
+   "soft": null
   },
   {
    "name": "Summon",
@@ -239,7 +325,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "100",
+   "start": 2462,
+   "end": 2510,
+   "soft": null
   },
   {
    "name": "Transform",
@@ -250,7 +340,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "100-101",
+   "start": 2512,
+   "end": 2580,
+   "soft": null
   },
   {
    "name": "Transport",
@@ -261,7 +355,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "101",
+   "start": 2582,
+   "end": 2643,
+   "soft": null
   },
   {
    "name": "Ward",
@@ -272,7 +370,11 @@
    "effect": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "101-102",
+   "start": 2645,
+   "end": 2717,
+   "soft": null
   },
   {
    "name": "Peripety",
@@ -283,7 +385,11 @@
    "effect": "Ranged attacks against you are reflected back on your attacker",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 84,
-   "note": null
+   "note": null,
+   "description_pages": "84",
+   "start": 1098,
+   "end": 1116,
+   "soft": null
   },
   {
    "name": "Ruin",
@@ -294,7 +400,11 @@
    "effect": "Object or target takes 20d6 damage",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 85,
-   "note": null
+   "note": null,
+   "description_pages": "85",
+   "start": 1235,
+   "end": 1256,
+   "soft": null
   },
   {
    "name": "Dreamscape",
@@ -305,7 +415,11 @@
    "effect": "You physically travel the region of dreams",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 77,
-   "note": null
+   "note": null,
+   "description_pages": "77-78",
+   "start": 373,
+   "end": 421,
+   "soft": null
   },
   {
    "name": "Mummy Dust",
@@ -316,7 +430,11 @@
    "effect": "Create two Large 18 HD mummies",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 83,
-   "note": null
+   "note": null,
+   "description_pages": "83",
+   "start": 965,
+   "end": 1028,
+   "soft": null
   },
   {
    "name": "Dragon Knight",
@@ -327,7 +445,11 @@
    "effect": "An adult red dragon appears and attacks your enemies",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 77,
-   "note": null
+   "note": null,
+   "description_pages": "77",
+   "start": 318,
+   "end": 344,
+   "soft": null
   },
   {
    "name": "Origin of Species: Achaierai",
@@ -338,7 +460,11 @@
    "effect": "Create a true-breeding creature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 84,
-   "note": "The 'Epic Spells by Spellcraft DC' summary list (p.73) prints DC 40; the full entry (p.84) prints DC 38 (used here)."
+   "note": "The 'Epic Spells by Spellcraft DC' summary list (p.73) prints DC 40; the full entry (p.84) prints DC 38 (used here).",
+   "description_pages": "84",
+   "start": 1067,
+   "end": 1096,
+   "soft": null
   },
   {
    "name": "Eclipse",
@@ -349,7 +475,11 @@
    "effect": "A solar eclipse follows you",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 78,
-   "note": null
+   "note": null,
+   "description_pages": "78",
+   "start": 423,
+   "end": 451,
+   "soft": null
   },
   {
    "name": "Let Go of Me",
@@ -360,7 +490,11 @@
    "effect": "Grappler takes 20d6 damage, you take 10d6",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 81,
-   "note": null
+   "note": null,
+   "description_pages": "81",
+   "start": 790,
+   "end": 811,
+   "soft": null
   },
   {
    "name": "Greater Spell Resistance",
@@ -371,7 +505,11 @@
    "effect": "Subject gains SR 35 for 20 hours",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 80,
-   "note": null
+   "note": null,
+   "description_pages": "80",
+   "start": 674,
+   "end": 695,
+   "soft": null
   },
   {
    "name": "Spell Worm",
@@ -382,7 +520,11 @@
    "effect": "Subject abandons all her spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 86,
-   "note": null
+   "note": null,
+   "description_pages": "86",
+   "start": 1365,
+   "end": 1396,
+   "soft": null
   },
   {
    "name": "Epic Mage Armor",
@@ -393,7 +535,11 @@
    "effect": "Subject gains +20 AC bonus",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 79,
-   "note": null
+   "note": null,
+   "description_pages": "79",
+   "start": 573,
+   "end": 592,
+   "soft": null
   },
   {
    "name": "Raise Island",
@@ -404,7 +550,11 @@
    "effect": "You create a small island in the sea",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 85,
-   "note": "The summary list (p.73) prints DC 50; the full-entry (p.85) header (faded) reads DC 48 (used here)."
+   "note": "The summary list (p.73) prints DC 50; the full-entry (p.85) header (faded) reads DC 48 (used here).",
+   "description_pages": "85",
+   "start": 1201,
+   "end": 1233,
+   "soft": null
   },
   {
    "name": "Animus Blast",
@@ -415,7 +565,11 @@
    "effect": "Victims of your 10d6 coldball animate as skeletons and serve you",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 74,
-   "note": null
+   "note": null,
+   "description_pages": "74",
+   "start": 7,
+   "end": 30,
+   "soft": null
   },
   {
    "name": "Dragon Strike",
@@ -426,7 +580,11 @@
    "effect": "Ten adult red dragons appear and attack your enemies",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 77,
-   "note": null
+   "note": null,
+   "description_pages": "77",
+   "start": 346,
+   "end": 371,
+   "soft": null
   },
   {
    "name": "Lord of Nightmares",
@@ -437,7 +595,11 @@
    "effect": "You are possessed by a dream larva for 20 rounds and take 12d6 damage",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 82,
-   "note": null
+   "note": null,
+   "description_pages": "82",
+   "start": 861,
+   "end": 907,
+   "soft": null
   },
   {
    "name": "Rain of Fire",
@@ -448,7 +610,11 @@
    "effect": "You create a 2-mile-radius fire storm dealing 1 point of fire damage per round",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 85,
-   "note": null
+   "note": null,
+   "description_pages": "85",
+   "start": 1175,
+   "end": 1199,
+   "soft": null
   },
   {
    "name": "Contingent Resurrection",
@@ -459,7 +625,11 @@
    "effect": "Subject automatically resurrected if slain",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 74,
-   "note": null
+   "note": null,
+   "description_pages": "74-75",
+   "start": 57,
+   "end": 89,
+   "soft": null
   },
   {
    "name": "Epic Repulsion",
@@ -470,7 +640,11 @@
    "effect": "One creature or object is warded against one type of creature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 79,
-   "note": null
+   "note": null,
+   "description_pages": "79-80",
+   "start": 594,
+   "end": 617,
+   "soft": null
   },
   {
    "name": "Mass Frog",
@@ -481,7 +655,11 @@
    "effect": "All in 40-ft.-radius are transformed into frogs",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 82,
-   "note": null
+   "note": null,
+   "description_pages": "82-83",
+   "start": 909,
+   "end": 938,
+   "soft": null
   },
   {
    "name": "Soul Scry",
@@ -492,7 +670,11 @@
    "effect": "You experience everything the target experiences",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 86,
-   "note": null
+   "note": null,
+   "description_pages": "86",
+   "start": 1329,
+   "end": 1363,
+   "soft": null
   },
   {
    "name": "Crown of Vermin",
@@ -503,7 +685,11 @@
    "effect": "You have an aura of one thousand venomous vermin",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 75,
-   "note": null
+   "note": null,
+   "description_pages": "75-76",
+   "start": 134,
+   "end": 215,
+   "soft": null
   },
   {
    "name": "Verdigris",
@@ -514,7 +700,11 @@
    "effect": "100-ft-area overrun by tsunami of plant growth dealing 10d6 damage",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "88",
+   "start": 1526,
+   "end": 1555,
+   "soft": null
   },
   {
    "name": "Greater Ruin",
@@ -525,7 +715,11 @@
    "effect": "Object or target takes 35d6 damage",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 80,
-   "note": null
+   "note": null,
+   "description_pages": "80",
+   "start": 697,
+   "end": 715,
+   "soft": null
   },
   {
    "name": "Superb Dispelling",
@@ -536,7 +730,11 @@
    "effect": "As greater dispelling, but +40 on check",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 87,
-   "note": null
+   "note": null,
+   "description_pages": "87",
+   "start": 1422,
+   "end": 1440,
+   "soft": null
   },
   {
    "name": "Create Living Vault",
@@ -547,7 +745,11 @@
    "effect": "You fashion a living vault attuned to you",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 75,
-   "note": null
+   "note": null,
+   "description_pages": "75",
+   "start": 91,
+   "end": 132,
+   "soft": null
   },
   {
    "name": "Nailed to the Sky",
@@ -558,7 +760,11 @@
    "effect": "Affix foe to the heavens",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 83,
-   "note": null
+   "note": null,
+   "description_pages": "83-84",
+   "start": 1030,
+   "end": 1065,
+   "soft": null
   },
   {
    "name": "Safe Time",
@@ -569,7 +775,11 @@
    "effect": "You contingently duck damage in a static time stream for 1 round",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 85,
-   "note": null
+   "note": null,
+   "description_pages": "85-86",
+   "start": 1258,
+   "end": 1292,
+   "soft": null
   },
   {
    "name": "Epic Spell Reflection",
@@ -580,7 +790,11 @@
    "effect": "Creature or object permanently warded against spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 80,
-   "note": "The summary list (p.73) prints DC 70; the full entry (p.80) prints DC 68 (used here)."
+   "note": "The summary list (p.73) prints DC 70; the full entry (p.80) prints DC 68 (used here).",
+   "description_pages": "80",
+   "start": 619,
+   "end": 641,
+   "soft": null
   },
   {
    "name": "Epic Counterspell",
@@ -591,7 +805,11 @@
    "effect": "Cancel another's epic spell",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 79,
-   "note": null
+   "note": null,
+   "description_pages": "79",
+   "start": 549,
+   "end": 571,
+   "soft": null
   },
   {
    "name": "Time Duplicate",
@@ -602,7 +820,11 @@
    "effect": "You and your future self exist together for 1 round",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 87,
-   "note": null
+   "note": null,
+   "description_pages": "87",
+   "start": 1442,
+   "end": 1494,
+   "soft": null
   },
   {
    "name": "Soul Dominion",
@@ -613,7 +835,11 @@
    "effect": "You achieve remote control of the target",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 86,
-   "note": null
+   "note": null,
+   "description_pages": "86",
+   "start": 1294,
+   "end": 1327,
+   "soft": null
   },
   {
    "name": "Summon Behemoth",
@@ -624,7 +850,11 @@
    "effect": "A behemoth appears and attacks your enemies",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 86,
-   "note": null
+   "note": null,
+   "description_pages": "86-87",
+   "start": 1398,
+   "end": 1420,
+   "soft": null
   },
   {
    "name": "Animus Blizzard",
@@ -635,7 +865,11 @@
    "effect": "Victims of your 20d6 coldball animate as wights and serve you",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 74,
-   "note": null
+   "note": null,
+   "description_pages": "74",
+   "start": 32,
+   "end": 55,
+   "soft": null
   },
   {
    "name": "Eidolon",
@@ -646,7 +880,11 @@
    "effect": "Creates duplicate that shares your soul",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 78,
-   "note": null
+   "note": null,
+   "description_pages": "78-79",
+   "start": 453,
+   "end": 510,
+   "soft": null
   },
   {
    "name": "Enslave",
@@ -657,7 +895,11 @@
    "effect": "Subject is a permanent thrall",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 79,
-   "note": null
+   "note": null,
+   "description_pages": "79",
+   "start": 512,
+   "end": 547,
+   "soft": null
   },
   {
    "name": "Demise Unseen",
@@ -668,7 +910,11 @@
    "effect": "Animated ghoul of slain victim fools its companions that all is well",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 76,
-   "note": null
+   "note": null,
+   "description_pages": "76",
+   "start": 253,
+   "end": 286,
+   "soft": null
   },
   {
    "name": "Momento Mori",
@@ -679,7 +925,11 @@
    "effect": "A thought that kills",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 83,
-   "note": null
+   "note": null,
+   "description_pages": "83",
+   "start": 940,
+   "end": 963,
+   "soft": null
   },
   {
    "name": "Hellball",
@@ -690,7 +940,11 @@
    "effect": "You deal 10d6 each of acid, fire, electricity, and sonic damage, you take 10d6",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 80,
-   "note": null
+   "note": null,
+   "description_pages": "80-81",
+   "start": 717,
+   "end": 750,
+   "soft": null
   },
   {
    "name": "Damnation",
@@ -701,7 +955,11 @@
    "effect": "Send your foe to hell",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 76,
-   "note": null
+   "note": null,
+   "description_pages": "76",
+   "start": 217,
+   "end": 251,
+   "soft": null
   },
   {
    "name": "Kinetic Control",
@@ -712,7 +970,11 @@
    "effect": "You store and redirect damage",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 81,
-   "note": null
+   "note": null,
+   "description_pages": "81",
+   "start": 752,
+   "end": 788,
+   "soft": null
   },
   {
    "name": "Pestilence",
@@ -723,7 +985,11 @@
    "effect": "Inflict slimy doom on all creatures and plants in a half-mile-diameter area",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 84,
-   "note": "The summary list (p.74) prints DC 102; the full entry (p.84) prints DC 104 (used here)."
+   "note": "The summary list (p.74) prints DC 102; the full entry (p.84) prints DC 104 (used here).",
+   "description_pages": "84-85",
+   "start": 1118,
+   "end": 1173,
+   "soft": null
   },
   {
    "name": "Living Lightning",
@@ -734,7 +1000,11 @@
    "effect": "Spell can cast itself, dealing 10d6 electricity damage to foe",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 82,
-   "note": null
+   "note": null,
+   "description_pages": "82",
+   "start": 813,
+   "end": 859,
+   "soft": null
   },
   {
    "name": "Eternal Freedom",
@@ -745,7 +1015,11 @@
    "effect": "Permanent immunity to many hold, stun, stasis and other spells and effects",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 80,
-   "note": null
+   "note": null,
+   "description_pages": "80",
+   "start": 643,
+   "end": 672,
+   "soft": null
   },
   {
    "name": "Verdigris Tsunami",
@@ -756,7 +1030,11 @@
    "effect": "1,000-ft.-radius area overrun by permanent tsunami of plant growth dealing 40d6 damage",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 88,
-   "note": null
+   "note": null,
+   "description_pages": "88",
+   "start": 1557,
+   "end": 1584,
+   "soft": null
   },
   {
    "name": "Dire Winter",
@@ -767,7 +1045,11 @@
    "effect": "1,000-ft. radius emanation deals 2d6 cold damage for 20 hours",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 76,
-   "note": null
+   "note": null,
+   "description_pages": "76-77",
+   "start": 288,
+   "end": 316,
+   "soft": null
   },
   {
    "name": "Vengeful Gaze of God",
@@ -778,7 +1060,11 @@
    "effect": "Target takes 305d6 damage; you take 200d6",
    "citation": "Epic Level Handbook (WotC, 3.5e), Chapter 2 'Epic Spells' \u2014 Table 2-1 'Epic Seeds' (base Spellcraft DCs, p.88) and the sample epic spells (full descriptions with school + Spellcraft DC, pp.74-88; 'Epic Spells by Spellcraft DC' summary + one-line effects, pp.73-74). Vision-transcribed from the PDF page images because the OCR text layer is corrupt.",
    "page": 87,
-   "note": null
+   "note": null,
+   "description_pages": "87",
+   "start": 1496,
+   "end": 1524,
+   "soft": null
   }
  ]
 }

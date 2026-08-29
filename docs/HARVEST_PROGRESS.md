@@ -21,7 +21,7 @@ extraction and are the court of appeal for any garbled number.
 **At a glance (2026-08-29).** Forty-one reference index families, ~18,115 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
-(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64), GURPS gear — weapons + armor
+(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
@@ -281,6 +281,21 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Recovered the D&D 3.5e epic-spell description layer. The
+  harvester now generates a deterministic two-column OCR source from rendered
+  Epic Level Handbook pp.74-102, keeps every body line raw, restores only the
+  **70** book-verified headings, and records one exact heading span for each of
+  the 24 seeds and 46 sample spells. Verified custom lane routes retain the
+  Contact/Energy/Ward “another use” mechanics while excluding unrelated inset
+  boxes and the following epic-psionics section. All 70 prior rows are
+  byte-identical across their original name/kind/book/DC/school/effect/citation/
+  page/note fields (0 missing, 0 added, 0 changed). Epic-spell coverage rose
+  **0/70 → 70/70 (100%)**; total full-text coverage rose **11,777/17,951 →
+  11,847/17,951 (65%)**. The live selftest locks the 24/46/70 family counts,
+  the exact anchor set, 70 unique source-leading spans, complete soft-free
+  recovery, and exclusion boundaries; the index records the external source
+  SHA-256.
 
 - **2026-08-29** — Recovered the D&D 3.5e epic-item description layer. The
   harvester now generates a deterministic two-column OCR source from rendered
