@@ -70,6 +70,9 @@ works offline.
 - **GURPS skills** — all 263 rows slice exact Basic Set Skills-chapter spans;
   grouped definitions and wrapped headings are bounded separately, running page
   furniture is removed, and complete descriptions bypass the normal cap.
+- **GURPS traits** — all 469 rows slice exact Basic Set description or inline-
+  definition spans on B18–B165; four printed pairs share their common block,
+  running page furniture is removed, and complete descriptions bypass the cap.
 - **Epic feats** — 149 exact heading-to-heading spans into the harvester's
   reproducible, raw two-column OCR extraction of ELH pp.50-69. Five descriptions
   dependent on unreadable p.60 remain explicit `NO COVERAGE`.
@@ -92,13 +95,14 @@ the army book). That is honest emptiness, not a bug.
 
 ## Coverage (as of this build)
 
-**12,346 of 17,951 entries** carry the full verbatim block. Strong: D&D 3.5e
+**12,808 of 17,953 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
-soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear and
-skills 100%, GURPS 3e & 4e creatures/spells 94–100%, AD&D 100%, WFRP
-creatures 100%, 40K RP adversaries/talents/psychic ~99–100%. Known low
-families (need harvester-level work to lift): GURPS trait/technique and the 40K
-RP weapon/gear tables (which already display their mechanical fields).
+soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
+skills, and traits 100%, GURPS 3e & 4e creatures/spells 94–100%, AD&D
+spells/psionics 100%, WFRP creatures 100%, 40K RP adversaries/talents/psychic
+~99–100%. Known low families (need harvester-level work to lift): GURPS
+techniques and the 40K RP weapon/gear tables (which already display their
+mechanical fields).
 
 ## The page
 

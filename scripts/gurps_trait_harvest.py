@@ -13,11 +13,13 @@ detector and its own index.
     reference/gurps_trait_index.json — every advantage/disadvantage: name,
                                        category, mental/physical/social, exotic/
                                        supernatural, point cost, book page (Bxx),
-                                       PDF page
+                                       PDF page, exact description [start, end]
     reference/gurps_trait_index.md   — the same, for human eyes
 
-Skills are a DIFFERENT appendix with a different column shape (Skill / difficulty
-/ default) and are left for a dedicated detector — see docs/HARVEST_PROGRESS.md.
+A second pass binds the locked appendix roster to the actual descriptions on
+B18-B165. It handles conventional headings, wrapped headings, grouped inline
+definitions, four shared pairs, and the printed Xenophilia page drift. The
+roster detector also distinguishes section titles from repeated column labels.
 
 GOVERNING SOURCE
     I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md
@@ -26,12 +28,15 @@ GOVERNING SOURCE
     dash for mundane), Cost, Page. The anchor is the M/P/Soc line immediately
     followed by the X/Sup line — a signature that does not occur in prose.
     Advantage vs. disadvantage is set by the most recent ADVANTAGES /
-    DISADVANTAGES section header. This is native GURPS 4e data; the PDF stands
-    behind every extraction.
+    DISADVANTAGES section header. The description pass resolves each printed
+    B-page to its source heading/inline definition and stops at the next trait or
+    chapter cutover. This is native GURPS 4e data; the PDF stands behind every
+    extraction.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -75,6 +80,26 @@ NOT_NAME = re.compile(
     r"Disadvantage|Perk|Quirk|Skill|Cost|Page|M/P/Soc.*|X/Sup|Name)\s*$")
 
 MPS = {"M": "mental", "P": "physical", "Soc": "social"}
+
+# The appendix page normally points to a description whose PDF page is B+2.
+# Xenophilia is the one printed exception: its heading begins on B162 although
+# the appendix cites B163, where the entry continues.
+DESCRIPTION_PAGE_OFFSETS = {"Xenophilia": -1}
+DESCRIPTION_ALIASES = {
+    # The source prints one shared heading for these two roster rows.
+    "Sexless": "Neutered or Sexless",
+}
+# These are chapter/section cutovers, not subheads inside a trait description.
+# They prevent the preceding entry from absorbing unrelated general rules.
+DESCRIPTION_BOUNDARIES = {
+    "SIZE MODIFIER", "OTHER PHYSICAL", "AGE AND BEAUTY",
+    "SOCIAL BACKGROUND", "CULTURE", "LANGUAGE", "PRIVILEGE",
+    "PERKS", "MODIFIERS", "NEW ADVANTAGES", "QUIRKS", "MENTAL QUIRKS",
+    "NEW DISADVANTAGES",
+}
+ROSTER_FIELDS = ("name", "book", "page", "category", "kind", "nature",
+                 "cost", "book_page")
+ROSTER_SHA256 = "bc4569f967f7fd26f5ae72812ba80599aebb206eae98a98f77f6a96d0bd1bf4a"
 
 
 def _decode_type(s: str) -> str:
@@ -125,7 +150,9 @@ def detect_traits(lines: List[str], pages: List[int], book: str) -> List[GurpsTr
         if up.startswith("DISADVANTAGE"):
             category = "disadvantage"
             continue
-        if up == "ADVANTAGES" or up == "ADVANTAGE":
+        # Only the plural all-caps section title changes state. Singular
+        # "Advantage" is the repeated first-column label on both list sections.
+        if up == "ADVANTAGES":
             category = "advantage"
             continue
         # No SKILL break: the Name/M-P-Soc/X-Sup/Cost/Page signature does not occur
@@ -156,6 +183,119 @@ def detect_traits(lines: List[str], pages: List[int], book: str) -> List[GurpsTr
         if cur is None or tr.quick_fields() > cur.quick_fields():
             best[key] = tr
     return sorted(best.values(), key=lambda t: t.start)
+
+
+def _desc_norm(s: str) -> str:
+    """Normalize layout punctuation while preserving the printed words."""
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", s.casefold())).strip()
+
+
+def _description_cost_line(s: str) -> bool:
+    """Recognize the line immediately below a conventional trait heading."""
+    text = _desc_norm(s)
+    return bool(
+        (re.match(r"^\d", text) and "point" in text)
+        or text in {"variable", "varies", "special"}
+        or text.startswith("see ")
+    )
+
+
+def _description_candidates(lines: List[str], pages: List[int],
+                            trait: GurpsTrait):
+    """Find source-leading heading/definition candidates on the cited book page."""
+    if not trait.book_page or not trait.book_page[1:].isdigit():
+        return []
+    target = DESCRIPTION_ALIASES.get(trait.name, trait.name)
+    want = _desc_norm(target)
+    pdf_page = (int(trait.book_page[1:]) + 2
+                + DESCRIPTION_PAGE_OFFSETS.get(trait.name, 0))
+    positions = [i for i, page in enumerate(pages) if page == pdf_page]
+    if not positions:
+        return []
+
+    out = set()
+    for i in range(positions[0], positions[-1] + 1):
+        raw = lines[i].strip()
+        if not raw:
+            continue
+        raw_norm = _desc_norm(raw)
+        prefix = raw_norm == want or raw_norm.startswith(want + " ")
+        if prefix:
+            out.add((i, 1, False, True, target))
+        for width in (1, 2, 3):
+            got = _desc_norm(" ".join(lines[i:i + width]))
+            exact = (got == want
+                     or bool(re.fullmatch(
+                         re.escape(want) + r"(?: [1-5]){1,3}", got)))
+            if exact:
+                out.add((i, width, True, False, target))
+    return list(out)
+
+
+def _description_score(candidate, lines: List[str]):
+    """Prefer printed heading shapes over later mentions in body prose."""
+    i, width, exact, _prefix, target = candidate
+    raw = lines[i].strip()
+    folded = raw.casefold()
+    direct = folded.startswith(target.casefold())
+    following = lines[i + width].strip() if i + width < len(lines) else ""
+    score = 0
+    if _description_cost_line(following) and (exact or direct):
+        score += 1000
+    if direct and folded.startswith(target.casefold() + ":"):
+        score += 900
+    if raw.isupper() and _desc_norm(raw) == _desc_norm(target):
+        score += 800
+    if exact:
+        score += 700
+    if direct and "(" in raw[len(target):len(target) + 20]:
+        score += 650
+    if direct:
+        score += 400
+    return score, -i, -width
+
+
+def _description_cutovers(lines: List[str]) -> List[int]:
+    out = []
+    for i, line in enumerate(lines):
+        text = line.strip()
+        if text in DESCRIPTION_BOUNDARIES:
+            out.append(i)
+        if text == "PHYSICAL" and i + 1 < len(lines) \
+                and lines[i + 1].strip() == "QUIRKS":
+            out.append(i)
+    return out
+
+
+def attach_description_spans(lines: List[str], pages: List[int],
+                             traits: List[GurpsTrait]) -> int:
+    """Replace appendix-row markers with exact source description spans."""
+    mapped = []
+    for trait in traits:
+        choices = _description_candidates(lines, pages, trait)
+        if not choices:
+            continue
+        choice = max(choices, key=lambda c: _description_score(c, lines))
+        mapped.append((trait, choice[0]))
+
+    starts = sorted({start for _trait, start in mapped})
+    boundaries = sorted(set(starts + _description_cutovers(lines) + [len(lines)]))
+    attached = 0
+    for trait, start in mapped:
+        end = min(boundary for boundary in boundaries if boundary > start)
+        if end - start < 2:
+            continue
+        trait.start, trait.end = start, end
+        attached += 1
+    return attached
+
+
+def _roster_digest(traits: List[GurpsTrait]) -> str:
+    payload = json.dumps(
+        [[getattr(trait, field_name) for field_name in ROSTER_FIELDS]
+         for trait in traits],
+        ensure_ascii=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[GurpsTrait]]] = {
@@ -211,7 +351,9 @@ class Corpus:
             src.lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
             pages = _pages_for(src.lines)
             src.traits = DETECTORS[src.detector](src.lines, pages, src.book)
-            src.coverage = f"ok — {len(src.traits)} traits from {path.name}"
+            mapped = attach_description_spans(src.lines, pages, src.traits)
+            src.coverage = (f"ok — {len(src.traits)} traits from {path.name}; "
+                            f"{mapped} exact description spans")
 
     def all_traits(self, book: Optional[str] = None):
         for src in self.sources:
@@ -243,9 +385,9 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "**Generated by `scripts/gurps_trait_harvest.py`. Do not hand-edit;",
         "rerun the harvest.** GURPS 4e advantages and disadvantages (native GURPS",
         "4e), from the Basic Set Trait Lists appendix. `cost` is the point cost as",
-        "printed; `book_page` (Bxx) points to the full description; a field left",
-        "`—` is one the OCR did not cleanly yield. Use `--export \"NAME\"` for a",
-        "translator packet.",
+        "printed; `book_page` (Bxx) points to the full description, and every row",
+        "carries its exact source span there. A field left `—` is one the OCR did",
+        "not cleanly yield. Use `--export \"NAME\"` for a translator packet.",
         "",
     ]
     for src in corpus.sources:
@@ -254,7 +396,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         total += len(src.traits)
         parsed_well += sum(1 for t in src.traits if t.quick_fields() >= 3)
         sources_out.append({"key": src.key, "book": src.book, "citation": src.citation,
-                            "coverage": src.coverage,
+                            "source_path": str(src.path), "coverage": src.coverage,
                             "advantages": len(adv), "disadvantages": len(dis),
                             "traits": [asdict(t) for t in src.traits]})
         md.append(f"## {src.book} — {len(adv)} advantages, {len(dis)} disadvantages")
@@ -302,8 +444,8 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
             "instructions": ("A native GURPS 4e advantage/disadvantage. The GURPS "
                              "half is here (point-buy trait); the system-translator "
                              "skill builds the D&D 3.5e treatment (feat / template / "
-                             "flaw / racial trait, as fits). The full rules text is at "
-                             "the cited book page; this table row gives the summary."),
+                             "flaw / racial trait, as fits). The complete source "
+                             "description follows verbatim with its cited book page."),
             "name": tr.name, "category": tr.category,
             "source": {"book": tr.book, "pdf_page": tr.page, "book_page": tr.book_page,
                        "extraction": str(corpus.base / src.path),
@@ -342,6 +484,11 @@ P
 –
 2/level
 35
+Wealth
+Soc
+–
+Variable
+25
 DISADVANTAGES
 Advantage
 M/P/Soc X/Sup
@@ -357,6 +504,57 @@ M
 –
 -10
 125
+Wealth
+Soc
+–
+Variable
+25
+Unnatural Features
+P
+–
+Variable
+22
+"""
+
+DESCRIPTION_FIXTURE = """## [PDF page 32]
+Police Rank: Position in a police force.
+Police body.
+Religious Rank: Position in a religious hierarchy.
+Religious body.
+PRIVILEGE
+Unrelated privilege rules.
+## [PDF page 36]
+360° Vision 3 1
+25 points
+Vision body.
+Absolute Direction 2/3
+5 points
+Direction body.
+## [PDF page 37]
+Acute Senses 3
+2 points/level
+Acute Hearing gives you a bonus to notice sounds.
+Hearing body.
+Acute Taste and Smell gives you a bonus.
+Taste body.
+Affliction 3 1
+10 points/level
+Affliction body.
+## [PDF page 164]
+Xenophilia 2
+-10 points*
+Xenophilia body.
+162
+DISADVANTAGES
+QUIRKS
+Unrelated quirk rules.
+## [PDF page 167]
+Neutered or Sexless
+Shared body.
+DISADVANTAGES
+165
+NEW DISADVANTAGES
+Unrelated design rules.
 """
 
 
@@ -366,7 +564,8 @@ def selftest(base: Path) -> int:
     lines = FIXTURE.splitlines()
     traits = detect_traits(lines, _pages_for(lines), "GURPS Basic Set: Characters")
     names = [t.name for t in traits]
-    want = ["360° Vision", "Absolute Direction", "Acute Hearing", "Bad Sight", "Bloodlust"]
+    want = ["360° Vision", "Absolute Direction", "Acute Hearing", "Wealth",
+            "Bad Sight", "Bloodlust", "Wealth", "Unnatural Features"]
     if names != want:
         failures.append(f"fixture detected {names}, wanted {want} "
                         f"(column headers must not be read as names)")
@@ -375,32 +574,161 @@ def selftest(base: Path) -> int:
         got = (v.category, v.kind, v.nature, v.cost, v.book_page)
         if got != ("advantage", "physical", "exotic", "25", "B34"):
             failures.append(f"360° Vision row {got}")
-        ah = traits[2]
-        if ah.cost != "2/level":
-            failures.append(f"Acute Hearing cost {ah.cost!r}, wanted '2/level'")
-        bs = traits[3]
-        if bs.category != "disadvantage" or bs.cost != "-25":
-            failures.append(f"Bad Sight {(bs.category, bs.cost)}, wanted disadvantage / -25")
+        if traits[2].cost != "2/level":
+            failures.append(f"Acute Hearing cost {traits[2].cost!r}, wanted '2/level'")
+        if traits[4].category != "disadvantage" or traits[4].cost != "-25":
+            failures.append("Bad Sight fixture did not retain disadvantage / -25")
+        if [traits[3].category, traits[6].category] != [
+                "advantage", "disadvantage"]:
+            failures.append("dual-category Wealth fixture was not preserved")
+        if traits[7].category != "disadvantage" or traits[7].cost != "Variable":
+            failures.append("singular column header reset the disadvantage section")
+
+    desc_lines = DESCRIPTION_FIXTURE.splitlines()
+    desc_traits = [
+        GurpsTrait("Police Rank", "fixture", None, 0, 1, "advantage", book_page="B30"),
+        GurpsTrait("Religious Rank", "fixture", None, 0, 1, "advantage", book_page="B30"),
+        GurpsTrait("360° Vision", "fixture", None, 0, 1, "advantage", book_page="B34"),
+        GurpsTrait("Absolute Direction", "fixture", None, 0, 1, "advantage", book_page="B34"),
+        GurpsTrait("Acute Hearing", "fixture", None, 0, 1, "advantage", book_page="B35"),
+        GurpsTrait("Acute Taste and Smell", "fixture", None, 0, 1,
+                   "advantage", book_page="B35"),
+        GurpsTrait("Affliction", "fixture", None, 0, 1, "advantage", book_page="B35"),
+        GurpsTrait("Xenophilia", "fixture", None, 0, 1,
+                   "disadvantage", book_page="B163"),
+        GurpsTrait("Sexless", "fixture", None, 0, 1,
+                   "disadvantage", book_page="B165"),
+    ]
+    mapped = attach_description_spans(
+        desc_lines, _pages_for(desc_lines), desc_traits)
+    if mapped != len(desc_traits):
+        failures.append(f"description fixture mapped {mapped}/{len(desc_traits)} spans")
+    else:
+        by_name = {trait.name: trait for trait in desc_traits}
+
+        def fixture_block(name: str) -> List[str]:
+            trait = by_name[name]
+            return desc_lines[trait.start:trait.end]
+
+        if fixture_block("Police Rank") != [
+                "Police Rank: Position in a police force.", "Police body."]:
+            failures.append(f"Police Rank fixture leaked: {fixture_block('Police Rank')!r}")
+        if "Absolute Direction 2/3" in fixture_block("360° Vision"):
+            failures.append("360° Vision fixture crossed into Absolute Direction")
+        if fixture_block("Acute Hearing") != [
+                "Acute Hearing gives you a bonus to notice sounds.", "Hearing body."]:
+            failures.append(f"Acute Hearing fixture leaked: {fixture_block('Acute Hearing')!r}")
+        if "QUIRKS" in fixture_block("Xenophilia"):
+            failures.append("Xenophilia fixture crossed its chapter cutover")
+        sexless = fixture_block("Sexless")
+        if not sexless or sexless[0] != "Neutered or Sexless" \
+                or "NEW DISADVANTAGES" in sexless:
+            failures.append(f"Sexless shared fixture span {sexless!r}")
 
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
-        traits = corpus.sources[0].traits
-        adv = sum(1 for t in traits if t.category == "advantage")
-        dis = sum(1 for t in traits if t.category == "disadvantage")
-        if adv < 150:
-            failures.append(f"only {adv} advantages indexed; expected > 150")
-        if dis < 100:
-            failures.append(f"only {dis} disadvantages indexed; expected > 100")
-        cr = corpus.find("combat reflexes", book="basicset")
-        if not cr:
-            failures.append("Combat Reflexes not found in live Basic Set")
-        elif cr[0][1].cost != "15":
-            failures.append(f"Combat Reflexes cost {cr[0][1].cost!r}, wanted '15'")
+        source = corpus.sources[0]
+        traits = source.traits
+        adv = sum(1 for trait in traits if trait.category == "advantage")
+        dis = sum(1 for trait in traits if trait.category == "disadvantage")
+        if (len(traits), adv, dis) != (469, 266, 203):
+            failures.append(
+                f"live roster {(len(traits), adv, dis)}, wanted (469, 266, 203)")
+        digest = _roster_digest(traits)
+        if digest != ROSTER_SHA256:
+            failures.append(
+                f"legacy roster/mechanics digest {digest}, wanted {ROSTER_SHA256}")
+
+        invalid = [trait.name for trait in traits
+                   if not (0 <= trait.start < trait.end <= len(source.lines)
+                           and trait.end - trait.start >= 2)]
+        if invalid:
+            failures.append(f"{len(invalid)} invalid description spans: {invalid[:8]}")
+
+        groups: Dict[Tuple[int, int], List[str]] = {}
+        for trait in traits:
+            label = f"{trait.name}|{trait.category}"
+            groups.setdefault((trait.start, trait.end), []).append(label)
+        shared = {tuple(sorted(labels)) for labels in groups.values() if len(labels) > 1}
+        expected_shared = {
+            ("Neutered|disadvantage", "Sexless|disadvantage"),
+            ("Reputation|advantage", "Reputation|disadvantage"),
+            ("Status|advantage", "Status|disadvantage"),
+            ("Wealth|advantage", "Wealth|disadvantage"),
+        }
+        if shared != expected_shared or len(groups) != 465:
+            failures.append(
+                f"shared spans {shared!r}; expected {expected_shared!r} and 465 unique")
+
+        intervals = sorted(groups)
+        overlaps = [(left, right) for left, right in zip(intervals, intervals[1:])
+                    if left[1] > right[0]]
+        if overlaps:
+            failures.append(f"distinct description spans overlap: {overlaps[:5]}")
+
+        bad_leads = []
+        for trait in traits:
+            head = _desc_norm(" ".join(
+                source.lines[trait.start:min(trait.end, trait.start + 3)]))
+            tokens = [word for word in _desc_norm(trait.name).split()
+                      if len(word) >= 4] or _desc_norm(trait.name).split()
+            if not tokens or not all(word in head for word in tokens[:2]):
+                bad_leads.append(trait.name)
+        if bad_leads:
+            failures.append(f"description heading validation failed: {bad_leads[:8]}")
+
+        def live_trait(name: str, category: Optional[str] = None) -> Optional[GurpsTrait]:
+            return next((trait for trait in traits
+                         if trait.name == name
+                         and (category is None or trait.category == category)), None)
+
+        def live_block(name: str, category: Optional[str] = None) -> str:
+            trait = live_trait(name, category)
+            return ("\n".join(source.lines[trait.start:trait.end])
+                    if trait is not None else "")
+
+        for name, forbidden in (
+                ("Very Fat", "SIZE MODIFIER"),
+                ("Appearance", "OTHER PHYSICAL"),
+                ("Unnatural Features", "SOCIAL BACKGROUND"),
+                ("High TL", "CULTURE"),
+                ("Cultural Familiarity", "LANGUAGE"),
+                ("Religious Rank", "PRIVILEGE"),
+                ("Gigantism", "AGE AND BEAUTY"),
+                ("Zeroed", "PERKS"),
+                ("Shtick", "MODIFIERS"),
+                ("Xenophilia", "QUIRKS"),
+                ("Neutered", "NEW DISADVANTAGES")):
+            block = live_block(name)
+            if not block or forbidden in block:
+                failures.append(f"{name} is missing or crossed into {forbidden}")
+
+        if "Acute Taste and Smell" in live_block("Acute Hearing"):
+            failures.append("Acute Hearing absorbed the next Acute Senses definition")
+        if "Religious Rank:" in live_block("Police Rank"):
+            failures.append("Police Rank absorbed the next Rank definition")
+        xenophilia = live_trait("Xenophilia")
+        page_map = _pages_for(source.lines)
+        if xenophilia is None or page_map[xenophilia.start] != 164:
+            failures.append("Xenophilia did not bind to its source-verified B162 heading")
+        unnatural = live_trait("Unnatural Features", "disadvantage")
+        if unnatural is None or unnatural.cost != "Variable":
+            failures.append("Unnatural Features did not retain its printed disadvantage row")
+        for dual_name in ("Reputation", "Wealth"):
+            categories = {trait.category for trait in traits if trait.name == dual_name}
+            if categories != {"advantage", "disadvantage"}:
+                failures.append(f"{dual_name} dual-category rows {categories!r}")
+        allies = live_block("Allies")
+        if len(allies) < 10000 or "Special Limitations" not in allies:
+            failures.append("Allies full description was truncated")
+        cr = live_trait("Combat Reflexes")
+        if cr is None or cr.cost != "15":
+            failures.append("Combat Reflexes missing or cost drifted from 15")
     else:
         print("  [SKIP] Basic Set extraction not found — fixture checks only")
 
-    for f in failures:
-        print(f"SELFTEST FAIL: {f}")
+    for failure in failures:
+        print(f"SELFTEST FAIL: {failure}")
     print("selftest: " + ("PASS" if not failures else f"{len(failures)} failure(s)"))
     return 0 if not failures else 1
 

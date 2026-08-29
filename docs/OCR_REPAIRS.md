@@ -48,6 +48,28 @@ full re-scan of the 409 power names shows no remaining garble.
 Knowledge") or an NPC descriptor ("Kobold, 1st level"). This removed 8
 non-feat rows from `feat_index` (1253 → 1244) with no loss of real feats.
 
+## 2026-08-29 — GURPS Basic Set trait roster (detector fix, no source edit)
+
+Files:
+
+- `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`
+- `I:\Sourcebooks\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.pdf`
+
+The Trait Lists repeat the singular word `Advantage` as a *column heading* on
+both the ADVANTAGES and DISADVANTAGES pages. The old detector treated every
+such column label as a section change. Negative costs later forced most affected
+rows back to `disadvantage`, masking the defect; the twelve printed
+`Variable` rows on PDF p.302 exposed it.
+
+The detector now changes state only on the plural section titles. The original
+PDF's word coordinates and the extraction's all-caps `DISADVANTAGES` title
+verify the result. Ten existing rows are corrected from advantage to
+disadvantage: Neurological Disorder, No Legs, Pacifism, Secret Identity, Sleepy,
+Supernatural Features, Susceptible, Unnatural Features, Vulnerability, and
+Weakness. The negative-side Reputation and Wealth rows are also restored; their
+positive-side rows remain. Every affected cost stays the book's printed
+`Variable` — no value was inferred from prose.
+
 ## 2026-08-29 — GURPS Basic Set skill roster (detector fixes, no source edit)
 
 File: `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`

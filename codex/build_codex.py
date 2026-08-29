@@ -52,6 +52,9 @@ FULL-TEXT SOURCING — book RAW, never invented
                     descriptions bypass the 4.2k cap.
 - GURPS skills        sliced from exact Basic Set description spans; running page
                     furniture is removed and complete descriptions bypass the cap.
+- GURPS traits        sliced from exact Basic Set description/inline-definition
+                    spans; shared entries retain their common block, running page
+                    furniture is removed, and complete descriptions bypass the cap.
 - epic items         sliced from 103 canonical blocks in the reproducible ELH
                     two-column OCR source; variants deliberately share spans.
 - epic monsters      sliced from 50 canonical blocks in the reproducible ELH
@@ -98,7 +101,7 @@ SOURCE_ROOTS = [
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
-CAP = 4200  # exact vestige/maneuver/GURPS skill/epic spans bypass it
+CAP = 4200  # exact vestige/maneuver/GURPS skill/trait/epic spans bypass it
 
 _STOP = set("gurps wfrp the of a an core rulebook compilation edition pdf md txt "
             "scan updated with errata hq premium".split())
@@ -210,6 +213,44 @@ def _strip_gurps_skill_furniture(seg: str) -> str:
         before, after = neighbor(i, -1), neighbor(i, 1)
         paired_footer = ((text == "SKILLS" and (before.isdigit() or after.isdigit()))
                          or (text.isdigit() and (before == "SKILLS" or after == "SKILLS")))
+        if paired_footer:
+            continue
+        out.append(line)
+    return "\n".join(out).strip()
+
+
+def _strip_gurps_trait_furniture(seg: str) -> str:
+    """Remove only running page furniture from exact Basic Set trait spans."""
+    src = seg.splitlines()
+    running_headers = {
+        "ADVANTAGES", "DISADVANTAGES",
+        "CREATING A CHARACTER", "CHARACTER CREATION",
+    }
+    list_headers = {"ADVANTAGE LIST", "DISADVANTAGE LIST"}
+
+    def neighbor(index: int, step: int) -> str:
+        for _ in range(3):
+            index += step
+            if not (0 <= index < len(src)):
+                return ""
+            text = src[index].strip()
+            if text:
+                return text
+        return ""
+
+    out = []
+    for i, line in enumerate(src):
+        text = line.strip()
+        if re.fullmatch(r"## \[PDF page \d+\]", text, re.IGNORECASE):
+            continue
+        if text in list_headers:
+            continue
+        before, after = neighbor(i, -1), neighbor(i, 1)
+        paired_footer = (
+            (text in running_headers and (before.isdigit() or after.isdigit()))
+            or (text.isdigit()
+                and (before in running_headers or after in running_headers))
+        )
         if paired_footer:
             continue
         out.append(line)
@@ -350,6 +391,10 @@ def build(report=False):
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
                                   _exact_source_file(r), limit=None)
+            elif fam == "gurps_trait" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"],
+                                  r.get("description_key") or r["name"],
+                                  _exact_source_file(r), _strip_gurps_trait_furniture, None)
             elif fam == "gurps_skill" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
