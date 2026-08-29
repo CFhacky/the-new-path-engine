@@ -28,14 +28,15 @@ WORKFLOW
         -> JSON packet -> feed to the system-translator skill
     python maneuver_harvest.py --selftest
 
-GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Tome of Battle - Book of
-    Nine Swords.md — the OCR text extraction, maneuver entries in the ToB
-    grammar:
+GOVERNING SOURCE
+    I:\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Tome of Battle
+    (alt scan).md — the clean born-digital text extraction. The book's own
+    maneuver-and-stance lists on PDF pages 48–51 are the court of appeal for
+    canonical names, levels, disciplines, and types. The detailed entries on
+    pages 52–94 follow the ToB grammar:
 
         FIRE RIPOSTE                             (name, ALL-CAPS, own line)
-        Desert Wind (Counter) [Fire]             (discipline (Type) [Descriptor];
-                                                  9 disciplines, 4 types)
+        Desert Wind (Counter) [Fire]             (discipline (Type) [Descriptor])
         Level: Swordsage 2
         Prerequisite: One Desert Wind maneuver
         Initiation Action: 1 immediate action
@@ -44,21 +45,24 @@ GOVERNING SOURCES
         Duration: Instantaneous
         [description]
 
-    The anchor is a discipline line (one of the nine ToB disciplines) whose
-    block carries an "Initiation Action:" field close below — the field unique
-    to maneuvers and stances, which chapter headers and class-table rows lack.
-    Long ALL-CAPS names that wrap across the OCR column break are joined
-    upward. The PDFs on I:\\Sourcebooks stand behind every extraction when the
-    OCR is ambiguous.
+    Detail detection anchors on the Level/Class field, walks upward through a
+    possibly wrapped discipline/type line to the ALL-CAPS heading, and records
+    the true heading-to-heading span. This also keeps the five book entries whose
+    signature intentionally has no Boost/Counter/Stance/Strike token. Summary
+    names are reconciled within their printed discipline and level, repairing
+    three layout-reordered headings without guessing. The former noisy-scan
+    detector remains embedded and fixture-tested as a legacy path.
 
-    Block DETECTION is intentionally ToB-specific; the detector is a deliberate
-    sibling of power_harvest.py's, duplicated rather than imported per the repo
-    law (no cross-imports). A configured Source whose file is missing prints NO
-    COVERAGE and is never improvised. See docs/HARVEST_PROGRESS.md.
+    Detection is intentionally ToB-specific and self-contained. A configured
+    Source whose file is missing prints NO COVERAGE and is never improvised.
+    The PDFs on I:\\Sourcebooks stand behind every extraction. See
+    docs/HARVEST_PROGRESS.md.
 """
 from __future__ import annotations
 
 import argparse
+import difflib
+import itertools
 import json
 import re
 import sys
@@ -196,18 +200,71 @@ class Maneuver:
                                self.initiation_action, self.range) if v)
 
 
+def _join_wrapped_value(left: str, right: str) -> str:
+    if left.endswith("-"):
+        return left[:-1] + right
+    return f"{left} {right}".strip()
+
+
+def _field_value(body_lines: List[str], index: int, value: str, attr: str) -> str:
+    """Join only source-proven signature continuations, never descriptive prose."""
+    j = index + 1
+    joins = 0
+    while j < len(body_lines) and joins < 3:
+        while j < len(body_lines) and not body_lines[j].strip():
+            j += 1
+        if j >= len(body_lines):
+            break
+        following = body_lines[j].strip()
+        if PAGE.search(body_lines[j]) or FIELD_LABEL.match(following):
+            break
+        needs_more = (
+            value.endswith("-")
+            or (attr == "level" and value.endswith(","))
+            or (attr == "prerequisite"
+                and not re.search(r"\b(?:maneuvers?|stances?)\b", value,
+                                  re.IGNORECASE))
+            or (attr == "initiation_action"
+                and not re.search(r"\bactions?\b", value, re.IGNORECASE))
+            or (attr in ("duration", "save")
+                and (value.endswith(";")
+                     or value.casefold().endswith(" see")))
+        )
+        if not needs_more:
+            break
+        value = _join_wrapped_value(value, following)
+        joins += 1
+        j += 1
+    return _clean_book_text(re.sub(r"\s+", " ", value)).strip()
+
+
 def parse_quick_fields(m: Maneuver, body_lines: List[str]) -> None:
-    for raw in body_lines:
+    for index, raw in enumerate(body_lines):
         line = raw.strip()
         if not line:
             continue
+        if m.initiation_action is None and line.casefold() == "initiation":
+            j = index + 1
+            while j < len(body_lines) and not body_lines[j].strip():
+                j += 1
+            if j < len(body_lines):
+                split_label = re.match(
+                    r"^Action\s*[:;]\s*(.+)$",
+                    body_lines[j].strip(), re.IGNORECASE)
+                if split_label:
+                    m.initiation_action = _field_value(
+                        body_lines, j, split_label.group(1).strip(),
+                        "initiation_action")
+                    continue
         for attr, rx in (("level", LEVEL), ("prerequisite", PREREQ),
                          ("initiation_action", INIT), ("range", RANGE),
                          ("duration", DURATION), ("save", SAVE)):
             if getattr(m, attr) is None:
-                mm = rx.match(line)
-                if mm:
-                    setattr(m, attr, mm.group(1).strip())
+                match = rx.match(line)
+                if match:
+                    value = _field_value(body_lines, index,
+                                         match.group(1).strip(), attr)
+                    setattr(m, attr, value)
                     break
 
 
@@ -326,8 +383,252 @@ def detect_tob(lines: List[str], pages: List[int], book: str) -> List[Maneuver]:
     return maneuvers
 
 
+_LIGATURES = str.maketrans({
+    "\ufb00": "ff", "\ufb01": "fi", "\ufb02": "fl",
+    "\ufb03": "ffi", "\ufb04": "ffl",
+})
+SUMMARY_DISCIPLINES = {
+    "Desert": "Desert Wind",
+    "Devo": "Devoted Spirit",
+    "Diam": "Diamond Mind",
+    "Iron": "Iron Heart",
+    "Set": "Setting Sun",
+    "Shadow": "Shadow Hand",
+    "Stone": "Stone Dragon",
+    "Tiger": "Tiger Claw",
+    "White": "White Raven",
+}
+SUMMARY_LEVEL = re.compile(r"^([1-9])(?:ST|ND|RD|TH) LEVEL$", re.IGNORECASE)
+DETAIL_NAME_LINE = re.compile(r"^[A-Z][A-Z0-9 '\u2019,\-]{2,54}$")
+
+
+def _clean_book_text(text: str) -> str:
+    """Expand PDF ligatures, including a spurious intra-word space after one."""
+    for ligature, plain in (("\ufb00", "ff"), ("\ufb01", "fi"), ("\ufb02", "fl"),
+                            ("\ufb03", "ffi"), ("\ufb04", "ffl")):
+        text = re.sub(ligature + r"\s+(?=[A-Za-z])", plain, text)
+    return text.translate(_LIGATURES)
+
+
+def _name_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", _clean_book_text(text).casefold()).strip()
+
+
+def _summary_entries(
+        lines: List[str]) -> List[Tuple[str, int, str, Optional[str]]]:
+    """Parse the book's canonical maneuver/stance lists on PDF pages 48-51."""
+    starts = [i for i, line in enumerate(lines) if line.strip() == "STANCE LISTS"]
+    if not starts:
+        return []
+    start = starts[0]
+    end = next((i for i in range(start + 1, len(lines))
+                if lines[i].strip() == "## [PDF page 52]"), len(lines))
+    level: Optional[int] = None
+    discipline: Optional[str] = None
+    entries: List[Tuple[str, int, str, Optional[str]]] = []
+    for raw in lines[start + 1:end]:
+        text = _clean_book_text(raw.strip())
+        lm = SUMMARY_LEVEL.match(text)
+        if lm:
+            level = int(lm.group(1))
+            discipline = None
+            continue
+        if text in SUMMARY_DISCIPLINES:
+            discipline = SUMMARY_DISCIPLINES[text]
+            continue
+        # The PDF puts the Shadow Hand column label on the same line as the
+        # first Shadow entry at each level. Other discipline labels stand alone.
+        if discipline == "Setting Sun" and text.startswith("Shadow "):
+            discipline = "Shadow Hand"
+            text = text[len("Shadow "):].lstrip()
+        if ":" not in text or level is None or discipline is None:
+            continue
+        name = re.sub(r"\s+", " ", text.split(":", 1)[0]).strip()
+        if (len(name) > 70
+                or not re.fullmatch(r"[A-Z][A-Za-z0-9\u2019'\- ]+", name)):
+            continue
+        tm = re.search(r":\s*(Boost|Counter|Stance|Strike)\b",
+                       text, re.IGNORECASE)
+        mtype = tm.group(1).title() if tm else None
+        entries.append((name, level, discipline, mtype))
+    return entries
+
+
+def _clean_detail_caps(text: str) -> Optional[str]:
+    cleaned = EDGE_TAIL.sub("", EDGE_LEAD.sub("", text))
+    if (DETAIL_NAME_LINE.match(cleaned) and _letter_majority(cleaned)
+            and not FIELD_LABEL.match(cleaned) and not DISC_ANCHOR.match(cleaned)):
+        return cleaned
+    return None
+
+
+def _find_detail_name(lines: List[str], discipline_idx: int) -> Optional[Tuple[int, str]]:
+    """Find a possibly wrapped ALL-CAPS heading above a detail signature."""
+    frags: List[str] = []
+    top = discipline_idx
+    j, gap = discipline_idx - 1, 0
+    while j >= 0 and len(frags) < 5:
+        raw = lines[j]
+        text = raw.strip()
+        if text == "" or PAGE.search(raw):
+            gap += 1
+            if gap > 2:
+                break
+            j -= 1
+            continue
+        cleaned = _clean_detail_caps(text)
+        if cleaned:
+            frags.append(cleaned)
+            top, gap = j, 0
+            j -= 1
+            continue
+        break
+    if frags:
+        frags.reverse()
+        return top, re.sub(r"\s+", " ", " ".join(frags)).strip().title()
+
+    j, seen = discipline_idx - 1, 0
+    while j >= 0 and seen < 3:
+        raw = lines[j]
+        text = raw.strip()
+        if text == "" or PAGE.search(raw):
+            j -= 1
+            continue
+        seen += 1
+        match = TRAIL_CAPS.search(text)
+        if match:
+            return j, re.sub(r"\s+", " ", match.group(1)).strip().title()
+        j -= 1
+    return None
+
+
+def _level_number(text: Optional[str]) -> Optional[int]:
+    values = {int(value) for value in re.findall(r"\b([1-9])\b", text or "")}
+    return next(iter(values)) if len(values) == 1 else None
+
+
+def _apply_summary_names(
+        maneuvers: List[Maneuver],
+        summary: List[Tuple[str, int, str, Optional[str]]]) -> None:
+    """Reconcile detail headings to canonical names within discipline + level."""
+    summary_groups: Dict[Tuple[str, int],
+                         List[Tuple[str, int, str, Optional[str]]]] = {}
+    detail_groups: Dict[Tuple[str, int], List[Maneuver]] = {}
+    for entry in summary:
+        summary_groups.setdefault((entry[2], entry[1]), []).append(entry)
+    for maneuver in maneuvers:
+        level = _level_number(maneuver.level)
+        if maneuver.discipline and level is not None:
+            detail_groups.setdefault((maneuver.discipline, level), []).append(maneuver)
+
+    def apply(maneuver: Maneuver,
+              entry: Tuple[str, int, str, Optional[str]]) -> None:
+        maneuver.name = entry[0]
+        if maneuver.type is None and entry[3]:
+            maneuver.type = entry[3]
+
+    for group, entries in summary_groups.items():
+        details = detail_groups.get(group, [])
+        if len(details) != len(entries):
+            continue
+        by_summary = {_name_key(entry[0]): entry for entry in entries}
+        by_detail = {_name_key(maneuver.name): maneuver for maneuver in details}
+        exact = set(by_summary) & set(by_detail)
+        for key in exact:
+            apply(by_detail[key], by_summary[key])
+
+        remaining_entries = [by_summary[key]
+                             for key in sorted(set(by_summary) - exact)]
+        remaining_details = [by_detail[key]
+                             for key in sorted(set(by_detail) - exact)]
+        if len(remaining_entries) != len(remaining_details):
+            continue
+        if not remaining_entries:
+            continue
+        best = max(
+            itertools.permutations(remaining_entries),
+            key=lambda permutation: sum(
+                difflib.SequenceMatcher(
+                    None, _name_key(maneuver.name), _name_key(entry[0])
+                ).ratio()
+                for maneuver, entry in zip(remaining_details, permutation)
+            ),
+        )
+        for maneuver, entry in zip(remaining_details, best):
+            ratio = difflib.SequenceMatcher(
+                None, _name_key(maneuver.name), _name_key(entry[0])
+            ).ratio()
+            if ratio >= 0.55:
+                apply(maneuver, entry)
+
+
+def detect_tob_born_digital(
+        lines: List[str], pages: List[int], book: str) -> List[Maneuver]:
+    """Parse all detailed entries, then bind their canonical summary-list names."""
+    detail_start = next((i for i, line in enumerate(lines)
+                         if line.strip() == "## [PDF page 52]"), 0)
+    detail_end = next((i for i in range(detail_start + 1, len(lines))
+                       if lines[i].strip() == "## [PDF page 95]"), len(lines))
+    starts: List[Tuple[int, str, str, Optional[str], Optional[str]]] = []
+    used = set()
+    for level_idx in range(detail_start, detail_end):
+        if not LEVELISH.match(lines[level_idx].strip()):
+            continue
+        discipline_idx: Optional[int] = None
+        discipline: Optional[str] = None
+        j, seen = level_idx - 1, 0
+        while j >= detail_start and seen < 5:
+            text = lines[j].strip()
+            if not text or PAGE.search(lines[j]):
+                j -= 1
+                continue
+            seen += 1
+            recovered = _recover_discipline(text)
+            if recovered and len(text) < 100:
+                discipline_idx, discipline = j, recovered
+                break
+            j -= 1
+        if discipline_idx is None or discipline is None:
+            continue
+        got = _find_detail_name(lines, discipline_idx)
+        if got is None or got[0] in used:
+            continue
+        top, name = got
+        used.add(top)
+        signature = " ".join(
+            line.strip() for line in lines[discipline_idx:level_idx]
+            if line.strip() and not PAGE.search(line)
+        )
+        tm = TYPE_LINE.match(signature)
+        mtype = tm.group(2).title() if tm else None
+        dm = DESC_RE.search(signature)
+        descriptor = f"[{dm.group(1).strip()}]" if dm else None
+        starts.append((top, name, discipline, mtype, descriptor))
+
+    starts.sort()
+    maneuvers: List[Maneuver] = []
+    for position, (top, name, discipline, mtype, descriptor) in enumerate(starts):
+        end = starts[position + 1][0] if position + 1 < len(starts) else detail_end
+        maneuver = Maneuver(
+            name=name,
+            book=book,
+            page=pages[top],
+            start=top,
+            end=end,
+            discipline=discipline,
+            type=mtype,
+            descriptor=descriptor,
+        )
+        parse_quick_fields(maneuver, lines[top + 1:end])
+        maneuvers.append(maneuver)
+
+    _apply_summary_names(maneuvers, _summary_entries(lines))
+    return maneuvers
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Maneuver]]] = {
     "tob": detect_tob,
+    "tob_born_digital": detect_tob_born_digital,
 }
 
 
@@ -347,9 +648,10 @@ SOURCES: List[Source] = [
     Source(
         key="tob",
         book="Tome of Battle",
-        path=Path("D&D 3.5e/Player Options/Tome of Battle - Book of Nine Swords.md"),
-        citation="Tome of Battle: The Book of Nine Swords (WotC, 2006), maneuvers and stances",
-        detector="tob",
+        path=Path("D&D 3.5e/Player Options/Tome of Battle (alt scan).md"),
+        citation=("Tome of Battle: The Book of Nine Swords (WotC, 2006), "
+                  "maneuver/stance lists pp. 48–51 and full descriptions pp. 52–94"),
+        detector="tob_born_digital",
     ),
 ]
 
@@ -424,15 +726,15 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "",
         "**Generated by `scripts/maneuver_harvest.py`. Do not hand-edit; rerun",
         "the harvest.** One row per Tome of Battle maneuver or stance found in",
-        "the extraction. The raw text stays on `I:\\Sourcebooks` — use",
-        "`python scripts/maneuver_harvest.py --export \"NAME\"` to emit the",
-        "translator-ready packet for any row, then hand that packet to the",
-        "system-translator skill for the paired 3.5e + GURPS build.",
+        "the extraction. Every row records its true full-description span;",
+        "the raw text stays on `I:\\Sourcebooks`. Use",
+        "`python scripts/maneuver_harvest.py --export \"NAME\"` to emit a",
+        "translator-ready packet for the paired 3.5e + GURPS build.",
         "",
         "Every entry names its book and the PDF page the extraction recorded.",
         "This index holds the MECHANICAL vocabulary only — discipline, type,",
         "level, initiation action, range — never invented facts; a field left",
-        "as `—` is one the OCR did not cleanly yield, recoverable from the PDF.",
+        "as `—` is not separately stated in that entry's printed signature.",
         "",
     ]
     for src in corpus.sources:
@@ -443,11 +745,13 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
             "book": src.book,
             "citation": src.citation,
             "coverage": src.coverage,
+            "source_path": str(src.path),
             "maneuvers": [asdict(m) for m in src.maneuvers],
         })
         md.append(f"## {src.book} — {len(src.maneuvers)} maneuvers and stances")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Source: {src.citation}.*")
+        md.append(f"*Extraction: `{corpus.base / src.path}`.*")
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
         if src.maneuvers:
@@ -498,8 +802,8 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
                 "Feed this packet to the system-translator skill. Both a 3.5e "
                 "AND a GURPS treatment are required in the output — a conversion "
                 "missing either system is incomplete (that skill's own rule). "
-                "The raw_block is OCR text; check oddities against the source "
-                "PDF on I:\\Sourcebooks before trusting a number."
+                "The raw_block is clean born-digital book text; the source "
+                "PDF on I:\\Sourcebooks remains the final court of appeal."
             ),
             "name": m.name,
             "source": {
@@ -586,6 +890,56 @@ You attack with unbelievable speed, striking two enemies.
 """
 
 
+BORN_FIXTURE = """MANEUVER AND
+STANCE LISTS
+1ST LEVEL
+Desert
+Blistering Flourish: Strike—Dazzle nearby creatures.
+3RD LEVEL
+Iron
+Iron Heart Surge: Remove one debilitating effect.
+2ND LEVEL
+Set
+Mighty Throw: Strike—Throw a foe.
+Shadow Shadow Jaunt: Teleport through shadows.
+8TH LEVEL
+Devo
+Greater Divine Surge: Strike—Channel a devastating attack.
+## [PDF page 52]
+BLISTERING FLOURISH
+Desert Wind (Strike) [Fire]
+Level: Swordsage 1
+Initiation Action: 1 standard action
+Range: 30 ft.
+Duration: Instantaneous
+A wave of flame dazzles your foes.
+IRON HEART SURGE
+Iron Heart
+Level: Warblade 3
+Initiation Action: 1 standard action
+Range: Personal
+Duration: See text
+You break free of a debilitating state.
+SHADOW JAUNT
+Shadow Hand [Teleportation]
+Level: Swordsage 2
+Initiation Action: 1 standard action
+Range: 50 ft.
+Target: You
+You disappear and reappear in shadow.
+DIVINE SURGE, GREATER
+Devoted Spirit (Strike)
+Level: Crusader 8
+Prerequisite: Two Devoted Spirit maneuvers
+Initiation Action: 1 full-round action
+Range: Melee attack
+Duration: 1 round; see text
+A torrent of divine energy courses through you.
+## [PDF page 95]
+The next chapter begins here.
+"""
+
+
 def selftest(base: Path) -> int:
     failures: List[str] = []
 
@@ -629,21 +983,126 @@ def selftest(base: Path) -> int:
                                 f"wanted Iron Heart / Strike / 1 standard action "
                                 f"(keyword recovery + semicolon-tolerant label)")
 
+    born_lines = BORN_FIXTURE.splitlines()
+    born = detect_tob_born_digital(
+        born_lines, _pages_for(born_lines), "Tome of Battle fixture")
+    born_names = [m.name for m in born]
+    expected_born = [
+        "Blistering Flourish", "Iron Heart Surge",
+        "Shadow Jaunt", "Greater Divine Surge",
+    ]
+    if born_names != expected_born:
+        failures.append(f"born-digital fixture detected {born_names}, "
+                        f"wanted {expected_born}")
+    else:
+        by_name = {m.name: m for m in born}
+        if (by_name["Greater Divine Surge"].type,
+                by_name["Greater Divine Surge"].level,
+                by_name["Greater Divine Surge"].initiation_action) != (
+                    "Strike", "Crusader 8", "1 full-round action"):
+            failures.append("born fixture did not reconcile comma-reordered "
+                            "Greater Divine Surge or parse its fields")
+        if (by_name["Shadow Jaunt"].type is not None
+                or by_name["Shadow Jaunt"].descriptor != "[Teleportation]"):
+            failures.append("born fixture Shadow Jaunt must retain its printed "
+                            "type-less [Teleportation] signature")
+        if any(born[i].end != born[i + 1].start
+               for i in range(len(born) - 1)):
+            failures.append("born fixture spans are not heading-to-heading")
+        if (not born or born[-1].end >= len(born_lines)
+                or born_lines[born[-1].end].strip() != "## [PDF page 95]"):
+            failures.append("born fixture final span did not end at the next chapter")
+
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
-        total = sum(len(s.maneuvers) for s in corpus.sources)
-        if total < 150:
-            failures.append(f"only {total} ToB maneuvers indexed; expected > 150")
-        fr = corpus.find("fire riposte", book="tob")
-        if not fr:
-            failures.append("Fire Riposte not found in live ToB")
-        else:
-            m = fr[0][1]
-            if m.discipline != "Desert Wind" or m.type != "Counter":
-                failures.append(f"live Fire Riposte discipline={m.discipline!r} "
-                                f"type={m.type!r}, wanted Desert Wind / Counter")
+        src = corpus.sources[0]
+        maneuvers = src.maneuvers
+        summary = _summary_entries(src.lines)
+        if len(maneuvers) != 208:
+            failures.append(f"{len(maneuvers)} ToB detail entries; expected exactly 208")
+        if len(summary) != 208:
+            failures.append(f"{len(summary)} ToB summary entries; expected exactly 208")
+        names = {_name_key(m.name) for m in maneuvers}
+        summary_names = {_name_key(entry[0]) for entry in summary}
+        if len(names) != 208 or names != summary_names:
+            failures.append("live detail names do not reconcile one-to-one with "
+                            "the 208 canonical summary-list names")
+        discipline_counts = {
+            discipline: sum(m.discipline == discipline for m in maneuvers)
+            for discipline in DISC_CANON.values()
+        }
+        expected_disciplines = {
+            "Desert Wind": 27, "Devoted Spirit": 26, "Diamond Mind": 22,
+            "Iron Heart": 21, "Setting Sun": 20, "Shadow Hand": 25,
+            "Stone Dragon": 24, "Tiger Claw": 23, "White Raven": 20,
+        }
+        if discipline_counts != expected_disciplines:
+            failures.append(f"discipline counts {discipline_counts}, "
+                            f"wanted {expected_disciplines}")
+        type_counts = {
+            mtype: sum(m.type == mtype for m in maneuvers)
+            for mtype in ("Boost", "Counter", "Stance", "Strike", None)
+        }
+        expected_types = {
+            "Boost": 22, "Counter": 22, "Stance": 46, "Strike": 113, None: 5,
+        }
+        if type_counts != expected_types:
+            failures.append(f"type counts {type_counts}, wanted {expected_types}")
+        if sum(m.quick_fields() >= 3 for m in maneuvers) != 208:
+            failures.append("not all 208 live entries carry at least 3 quick fields")
+        if (not maneuvers or min(m.page for m in maneuvers) != 52
+                or max(m.page for m in maneuvers) != 94):
+            failures.append("live detail headings did not span PDF pages 52–94")
+        bad_spans = []
+        for position, maneuver in enumerate(maneuvers):
+            head = _name_key("\n".join(
+                src.lines[maneuver.start:min(maneuver.end, maneuver.start + 5)]))
+            tokens = [token for token in _name_key(maneuver.name).split()
+                      if len(token) >= 4] or _name_key(maneuver.name).split()
+            expected_end = (maneuvers[position + 1].start
+                            if position + 1 < len(maneuvers)
+                            else maneuver.end)
+            if (maneuver.end - maneuver.start < 12
+                    or not all(token in head for token in tokens[:2])
+                    or (position + 1 < len(maneuvers)
+                        and maneuver.end != expected_end)
+                    or not maneuver.initiation_action):
+                bad_spans.append((maneuver.name, maneuver.start, maneuver.end))
+        if bad_spans:
+            failures.append(f"invalid live full-description spans: {bad_spans[:5]}")
+        if (maneuvers and (maneuvers[-1].end >= len(src.lines)
+                           or src.lines[maneuvers[-1].end].strip()
+                           != "## [PDF page 95]")):
+            failures.append("live final maneuver span did not stop before chapter 5")
+        if any("\ufffd" in line for line in src.lines):
+            failures.append("born-digital Tome of Battle source contains U+FFFD")
+        by_name = {m.name: m for m in maneuvers}
+        expected_recoveries = {
+            "Greater Divine Surge": (58, "Devoted Spirit", "Strike", "Crusader 8"),
+            "Iron Heart Surge": (68, "Iron Heart", None, "Warblade 3"),
+            "Shadow Jaunt": (79, "Shadow Hand", None, "Swordsage 2"),
+            "Shadow Stride": (80, "Shadow Hand", None, "Swordsage 5"),
+            "Shadow Blink": (78, "Shadow Hand", None, "Swordsage 7"),
+            "Order Forged from Chaos": (
+                92, "White Raven", None, "Crusader 6, warblade 6"),
+        }
+        for name, expected in expected_recoveries.items():
+            maneuver = by_name.get(name)
+            got = ((maneuver.page, maneuver.discipline, maneuver.type,
+                    maneuver.level) if maneuver else None)
+            if got != expected:
+                failures.append(f"live {name} fields {got}, wanted {expected}")
+        death = by_name.get("Death in the Dark")
+        if (not death or death.type != "Strike"
+                or death.initiation_action != "1 standard action"):
+            failures.append(f"live Death in the Dark signature mismatch: {death}")
+        greater = by_name.get("Greater Insightful Strike")
+        absolute = by_name.get("Absolute Steel Stance")
+        if not greater or not absolute:
+            failures.append("summary reconciliation lost a canonical reordered name")
     else:
-        print(f"  [SKIP] ToB extraction not found under {base} — fixture checks only")
+        print(f"  [SKIP] ToB alternate extraction not found under {base} — "
+              "fixture checks only")
 
     for failure in failures:
         print(f"SELFTEST FAIL: {failure}")

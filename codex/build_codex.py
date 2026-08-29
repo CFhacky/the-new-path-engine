@@ -48,6 +48,8 @@ FULL-TEXT SOURCING — book RAW, never invented
                     columns interleaved into four blocks are removed first.
 - vestiges           sliced from exact-source heading spans; floated stat tablets
                     are removed, and the complete descriptions bypass the 4.2k cap.
+- maneuvers          sliced from canonical exact-source description spans; complete
+                    descriptions bypass the 4.2k cap.
 - legacy rows        fuzzy-match a source filename, then slice by [start:end].
 - every slice is VALIDATED: the entry name must lead it or the block is dropped
   (a mismatched slice is NEVER attached). Wargame profile lines and marker-offset
@@ -89,7 +91,7 @@ SOURCE_ROOTS = [
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
-CAP = 4200  # default verbatim-text limit; validated vestige spans bypass it
+CAP = 4200  # default limit; validated vestige/maneuver spans bypass it
 
 _STOP = set("gurps wfrp the of a an core rulebook compilation edition pdf md txt "
             "scan updated with errata hq premium".split())
@@ -302,6 +304,9 @@ def build(report=False):
             elif fam == "vestige" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), _strip_vestige_tablets, None)
+            elif fam == "maneuver" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), limit=None)
             elif "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r))

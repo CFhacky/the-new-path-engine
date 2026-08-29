@@ -64,6 +64,9 @@ works offline.
 - **Vestiges** — sliced from the exact Tome of Magic source and their true
   description spans; floated duplicate stat tablets are removed, and complete
   descriptions bypass the normal 4,200-character cap.
+- **Maneuvers** — sliced from the exact clean Tome of Battle alternate extraction
+  and canonical heading-to-heading spans; complete descriptions bypass the normal
+  4,200-character cap.
 - **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
 - **Every slice** is validated: the entry name must lead it, or the block is dropped.
   A misaligned or wrong-file slice is never attached.
@@ -75,12 +78,12 @@ offset. That is honest emptiness, not a bug.
 
 ## Coverage (as of this build)
 
-**11,268 of 17,913 entries** carry the full verbatim block. Strong: D&D 3.5e
-creatures 99% / spells, soulmelds, and vestiges 100% / feats 86%, GURPS 3e & 4e
-creatures and spells 94–100%, AD&D 100%, WFRP creatures 100%, 40K RP
-adversaries/talents/psychic ~99–100%. Known low families (need harvester-level
-work to lift): GURPS gear/skill/trait/technique, maneuvers, epic-tier, and the
-40K RP weapon/gear tables (which already display their mechanical fields).
+**11,475 of 17,950 entries** carry the full verbatim block. Strong: D&D 3.5e
+creatures 99% / spells, maneuvers, soulmelds, and vestiges 100% / feats 86%,
+GURPS 3e & 4e creatures and spells 94–100%, AD&D 100%, WFRP creatures 100%,
+40K RP adversaries/talents/psychic ~99–100%. Known low families (need
+harvester-level work to lift): GURPS gear/skill/trait/technique, epic-tier, and
+the 40K RP weapon/gear tables (which already display their mechanical fields).
 
 ## The page
 

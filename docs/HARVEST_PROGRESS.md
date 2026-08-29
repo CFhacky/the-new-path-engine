@@ -18,9 +18,9 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-29).** Forty-one reference index families, ~18,077 entries.
+**At a glance (2026-08-29).** Forty-one reference index families, ~18,114 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
-(1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
+(1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (153), D&D epic spells (70), D&D prestige classes (145), D&D epic magic items (153), D&D epic monsters (64), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
@@ -44,7 +44,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` (12 books) + `_text` Monsters and Fiends: Book of Vile Darkness (24 archfiends), Deities and Demigods (9), Monsters of the Planes (120), Book of Exalted Deeds (43 celestial paragons) | 1498 stat blocks / 16 books (a garbage-name filter — stat fragments, class/level lines, prose sentences, dangling parens — removed ~206 non-creature rows the original 1509 had let through) | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide 3.0 (363) | 1421 items / 3 sources | `python scripts/item_harvest.py --selftest` |
 | `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
-| `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle - Book of Nine Swords.md` | 171 maneuvers/stances (170 with 3+ quick fields) | `python scripts/maneuver_harvest.py --selftest` |
+| `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle (alt scan).md` — book lists pp.48–51 + descriptions pp.52–94 | 208 maneuvers/stances (all with 3+ quick fields and exact-source full-description spans) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37) | 1841 spells / 6 books (all with school + level) | `python scripts/spell_harvest.py --selftest` |
 | `reference/gurps_spell_index.{md,json}` | `scripts/gurps_magic_harvest.py` | GURPS Magic (520) + Plant Spells (19) + Thaumatology: Urban Magics (12) + Thaumatology (6) | 557 GURPS spells (541 with 3+ quick fields) | `python scripts/gurps_magic_harvest.py --selftest` |
@@ -160,11 +160,12 @@ Two OCR pipelines exist on the drive: the `_md` pipeline (`_md\_bestiary`,
 column-aware) is ROUGHER — both are near-full books, not curated subsets. Which
 matters depends on the detector:
 
-- **Robust anchor detectors handle rough `_text` fine.** The spell (school
-  line + Level below), power (discipline + psionics field), maneuver (`(Type)`
-  token + Level), and item (trailer / `Name:` colon) detectors all produced
-  clean output from raw `_text` books — that is why MIC, DMG, XPH, ToB, the
-  Spell Compendium, the splatbook spells, AND Complete Psionic all worked.
+- **Robust anchor detectors usually handle rough `_text` well.** The spell
+  (school line + Level below), power (discipline + psionics field), and item
+  (trailer / `Name:` colon) detectors produced clean output from their raw
+  `_text` books. Tome of Battle is the caution: its old `(Type)` + Level
+  detector produced a useful 171-row slice, but the clean alternate extraction
+  and Level/Class anchor prove the complete list is 208.
 - **Fragile name-above detectors produce GARBAGE on rough `_text`.** The feat
   (`Benefit:` anchor, name gathered above) and creature (stat line + name
   above) detectors, run against `_text` books, grabbed prose fragments as names
@@ -284,6 +285,25 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Completed and fully spanned the D&D 3.5e martial-maneuver
+  family. The book’s own lists on pp.48–51 and its detailed blocks on pp.52–94
+  independently reconcile to **208** unique maneuvers/stances; the former noisy
+  scan’s `(Type)`-anchored detector found only 171. The clean alternate
+  extraction now uses a Level/Class anchor, retaining five legitimate entries
+  whose printed signatures have no Boost/Counter/Stance/Strike token and the
+  comma-ordered **DIVINE SURGE, GREATER** heading. Summary-list reconciliation
+  supplies canonical book names; all 171 prior rows map one-to-one after 16
+  source-verified name repairs, and the other **37** rows are genuine additions.
+  Wrapped signature values are joined only across source-proven continuations,
+  replacing OCR truncation/cross-column leakage with the clean book text.
+  Every row now emits the exact alternate `source_path` and a validated
+  heading-to-heading full-description span; complete long entries bypass the
+  codex’s normal cap. Maneuver coverage rose **1/171 → 208/208 (100%)**; total
+  full-text coverage rose **11,268/17,913 → 11,475/17,950 (63%)**. The live
+  selftest locks the 208 summary/detail names, discipline and type totals, all
+  core fields, pp.52–94 span boundaries, canonical repairs, and recovered
+  type-less entries.
 
 - **2026-08-29** — Closed the D&D 3.5e vestige full-text gap. Replaced the
   summary-table marker offsets with all **32** validated ALL-CAPS description
