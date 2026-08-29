@@ -352,7 +352,7 @@ power points, range, and save — never invented facts; a field left as
 | Energy Flash | Psychokinesis [see text] | Psion/wilder 4 | 7 | Touch | Fortitude half | 88 |
 | Energy Lance | Psychokinesis [see text] | Psion/wilder 3 | 5 | Close (25 ft. + 5 ft./2 levels) | Fortitude half (object); | 88 |
 | Energy Manipulation | Psychokinesis | Energy 5 | 9 | Close (25 ft. + 5 ft/2 levels) | None | 88 |
-| Chapter 4 Powers, Mantles And Items Energy Missile | Psychokinesis [see text] | Kineticist 2 | 3 | Medium (100 ft. + 10 ft./level) | Reflex half | 89 |
+| Energy Missile | Psychokinesis [see text] | Kineticist 2 | 3 | Medium (100 ft. + 10 ft./level) | Reflex half | 89 |
 | Energy Nullification Field | Psychokinesis | Kineticist 5, psion/wilder 6 | 9 | 10 ft. | None | 89 |
 | Energy Stun | Psychokinesis [see text) Level: Psion/wilder 2 Display: Auditory | Psion/wilder 2 | 3 | Close (25 ft. + 5 ft./2 levels) | Reflex half | 89 |
 | Ethereal Abduction | Psychoportation | Psion/wilder 6 | 11 | Close (25 ft. + 5 ft./2 levels) | Will negates | 89 |
@@ -403,7 +403,7 @@ power points, range, and save — never invented facts; a field left as
 | Psychotic Break | Telepathy (Compulsion) [Mind-Affecting] | Pain and Suffering 5, psion/ | 9 | Medium (100 ft. +10 ft/level) | Will negates | 98 |
 | Rage Of The Remorhaz | Psychometabolism | Psychic warrior 6 | 11 | Personal | — | 98 |
 | Realized Potential | Clairsentience | Psion/wilder 3 | 5 | Touch | Will negates (harmless) | 98 |
-| Powers, Mantles And Items See Invisibility, Psionic | Clairsentience | Lurk 2 | 3 | Personal | — | 99 |
+| See Invisibility, Psionic | Clairsentience | Lurk 2 | 3 | Personal | — | 99 |
 | Sensory Gloom | Psychometabolism | Lurk 1 | 1 | Close (25 ft. + 5 ft./2 levels) | Fortitude negates | 99 |
 | Serenity | Telepathy (Compulsion) [Mind-Affecting] | Psion/wilder 2, Repose 2 | 3 | Medium (100 ft. + 10 ft./level) | Will negates | 99 |
 | Shadow Eft | Psychoportation [Evil] | Psion/wilder 4 | 7 | Close (25 ft. + 5 ft./2 levels) | None | 99 |

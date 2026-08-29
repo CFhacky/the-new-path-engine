@@ -43,7 +43,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/terms_and_affixes.{md,json}` | `scripts/term_harvest.py` | DMG v3.5 weapon (pp.223–226) + armor/shield (pp.218–219) special abilities; GURPS 4e Basic Set enhancements (B102) + limitations (B110); GURPS 4e **Powers** new enhancements (p.107) + limitations (p.110) | 6 sections (143 entries) | `python scripts/term_harvest.py --selftest` |
 | `reference/creature_index.{md,json}` | `scripts/creature_harvest.py` | `_md\_bestiary\*.md` (12 books) + `_text` Monsters and Fiends: Book of Vile Darkness (24 archfiends), Deities and Demigods (9), Monsters of the Planes (120), Book of Exalted Deeds (43 celestial paragons) | 1498 stat blocks / 16 books (a garbage-name filter — stat fragments, class/level lines, prose sentences, dangling parens — removed ~206 non-creature rows the original 1509 had let through) | `python scripts/creature_harvest.py --selftest` |
 | `reference/magic_item_index.{md,json}` | `scripts/item_harvest.py` | Magic Item Compendium (842) + DMG v3.5 items (216) + Arms & Equipment Guide 3.0 (362) | 1420 items / 3 sources | `python scripts/item_harvest.py --selftest` |
-| `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
+| `reference/power_index.{md,json}` | `scripts/power_harvest.py` | Expanded Psionics Handbook (281) + Complete Psionic (128; running CHAPTER/POWERS headers rejected from names) | 409 powers / 2 books (408 with 3+ quick fields) | `python scripts/power_harvest.py --selftest` |
 | `reference/maneuver_index.{md,json}` | `scripts/maneuver_harvest.py` | `_text\D&D 3.5e\Player Options\Tome of Battle (alt scan).md` — book lists pp.48–51 + descriptions pp.52–94 | 208 maneuvers/stances (all with 3+ quick fields and exact-source full-description spans) | `python scripts/maneuver_harvest.py --selftest` |
 | `reference/feat_index.{md,json}` | `scripts/feat_harvest.py` | bundled `feats_srd35.json` + `_md\_feats\*.md` (18 supplements) | 1253 feats / 19 books (742 typed, 962 with prerequisite) | `python scripts/feat_harvest.py --selftest` |
 | `reference/spell_index.{md,json}` | `scripts/spell_harvest.py` | bundled `spells_srd35.json` (605) + Spell Compendium (982) + post-2005 splatbooks (Complete Mage 130, Complete Champion 52, Races of the Dragon 35, Dragon Magic 37, Complete Scoundrel 28) | 1869 spells / 7 sources (all with school + level and exact-source full-text coverage) | `python scripts/spell_harvest.py --selftest` |
@@ -253,6 +253,14 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Corrected two Complete Psionic names polluted by running
+  page furniture: **Energy Missile** and **See Invisibility, Psionic**. The
+  header terminates wrapped ALL-CAPS name recovery while retaining the prior
+  span boundary. All 281 Expanded Psionics Handbook rows and the other 126
+  Complete Psionic rows are byte-identical; the family remains **409** rows.
+  Fixture and live selftests lock both repairs and reject future CHAPTER or
+  POWERS, MANTLES leakage.
 
 - **2026-08-29** — Corrected Arms & Equipment Guide running-header pollution.
   Twenty-one source-verified item names that had been swallowed by CHAPTER

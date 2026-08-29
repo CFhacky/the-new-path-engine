@@ -52,11 +52,10 @@ GOVERNING SOURCES
     ...") carry none of those fields and are correctly rejected. The PDFs on
     I:\\Sourcebooks stand behind every extraction when the OCR is ambiguous.
 
-    Other psionics shelves — Complete Psionic, the SRD psionic powers — use
-    the same grammar and are the intended next Sources; each is added as a
-    Source with a detector, exactly as item_harvest.py does. A configured
-    Source whose file is missing prints NO COVERAGE and is never improvised.
-    See docs/HARVEST_PROGRESS.md for the gap log.
+    Complete Psionic uses the same grammar and is configured as the second
+    source. Any future source gets its own Source/detector entry exactly as
+    item_harvest.py does. A configured source whose file is missing prints
+    NO COVERAGE and is never improvised.
 """
 from __future__ import annotations
 
@@ -113,6 +112,10 @@ RANGE = re.compile(r"^Range\s*:\s*(.+)$", re.IGNORECASE)
 PP = re.compile(r"^Power Points\s*:\s*(.+)$", re.IGNORECASE)
 PR = re.compile(r"^Power Resistance\s*:\s*(.+)$", re.IGNORECASE)
 SAVE = re.compile(r"^Saving Throw\s*:\s*(.+)$", re.IGNORECASE)
+RUNNING_HEADER = re.compile(
+    r"^(?:CHAPTER\s+\d+|POWERS?(?:,\s+MANTLES)?|AND\s+ITEMS)$",
+    re.IGNORECASE,
+)
 
 
 def _plausible_name(s: str) -> bool:
@@ -232,6 +235,29 @@ def _find_name(lines: List[str], disc_idx: int) -> Optional[Tuple[int, str]]:
                     break
                 j -= 1
                 continue
+            # A running chapter header can sit directly above the first power
+            # on a page. It terminates the name; it is never a wrapped fragment.
+            if RUNNING_HEADER.match(s):
+                # Keep the furniture inside the new power's span so the prior
+                # power remains byte-identical and does not absorb this page
+                # header. Validation still requires the real name immediately
+                # afterward.
+                top = j
+                h = j - 1
+                # Preserve the prior detector's four-fragment span boundary:
+                # headers consume the remaining fragment slots, but never enter
+                # the recovered name.
+                remaining = 4 - len(frags)
+                while remaining > 1 and h >= 0:
+                    header = lines[h].strip()
+                    if not header or PAGE.search(lines[h]):
+                        break
+                    if not RUNNING_HEADER.match(header):
+                        break
+                    top = h
+                    remaining -= 1
+                    h -= 1
+                break
             # A wrapped ALL-CAPS fragment may legitimately end in a comma
             # ("ANALYZE DWEOMER," / "PSIONIC"), which _plausible_name forbids;
             # use a looser continuation test here.
@@ -326,9 +352,6 @@ SOURCES: List[Source] = [
         citation="Complete Psionic (WotC, 2006), power descriptions",
         detector="xph",
     ),
-    # NEXT TARGETS (documented, not yet detected — never improvised):
-    #   * SRD psionic powers — Open Game Content; could bundle as JSON like the
-    #     spell/feat SRD sets. See docs/HARVEST_PROGRESS.md.
 ]
 
 
@@ -577,6 +600,9 @@ Power Points: 7
 
 You can control the actions of a humanoid creature.
 
+CHAPTER 4
+POWERS, MANTLES
+AND ITEMS
 ANALYZE DWEOMER,
 PSIONIC
 
@@ -610,8 +636,8 @@ def selftest(base: Path) -> int:
                                    citation="fixture", detector="xph")])
         powers = [p for _, p in corpus.all_powers()]
         names = [p.name for p in powers]
-        # The three named powers are detected; the bare "Clairsentience" intro
-        # header (no Display/PP/Manifesting Time below it) is rejected. Dominate
+        # The four named powers are detected; the bare "Clairsentience" intro
+        # and the CHAPTER/POWERS/AND ITEMS running header are rejected. Dominate
         # exercises a descriptor that WRAPS across the column break.
         want_names = ["Bite of the Wolf", "Apopsi", "Dominate, Psionic",
                       "Analyze Dweomer, Psionic"]
@@ -642,9 +668,10 @@ def selftest(base: Path) -> int:
 
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
-        total = sum(len(s.powers) for s in corpus.sources)
-        if total < 200:
-            failures.append(f"only {total} XPH powers indexed; expected > 200")
+        counts = {s.key: len(s.powers) for s in corpus.sources}
+        expected_counts = {"xph": 281, "cpsi": 128}
+        if counts != expected_counts:
+            failures.append(f"live source counts {counts}, wanted {expected_counts}")
         bite = corpus.find("bite of the wolf", book="xph")
         if not bite:
             failures.append("Bite of the Wolf not found in live XPH")
@@ -653,6 +680,20 @@ def selftest(base: Path) -> int:
             if b.discipline != "Psychometabolism":
                 failures.append(f"live Bite of the Wolf discipline={b.discipline!r}, "
                                 f"wanted Psychometabolism")
+        for name, page in (("Energy Missile", 89),
+                           ("See Invisibility, Psionic", 99)):
+            found = corpus.find(name, book="cpsi")
+            if not found:
+                failures.append(f"Complete Psionic {name} not recovered")
+            elif found[0][1].page != page:
+                failures.append(
+                    f"Complete Psionic {name} page={found[0][1].page}, "
+                    f"wanted {page}")
+        polluted = [p.name for s in corpus.sources for p in s.powers
+                    if re.match(r"^(?:CHAPTER\b|POWERS?,\s+MANTLES\b)",
+                                p.name, re.IGNORECASE)]
+        if polluted:
+            failures.append(f"running headers leaked into power names: {polluted[:5]}")
     else:
         print(f"  [SKIP] XPH extraction not found under {base} — fixture checks only")
 
