@@ -1,0 +1,513 @@
+{
+  "schema_version": 1,
+  "description": "Canonical registry for every committed mechanical reference family. Paths and counts are verified by scripts/reference_audit.py.",
+  "families": [
+    {
+      "id": "ad2e_monster",
+      "systems": [
+        "AD&D 2e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/ad2e_monster_harvest.py",
+      "json": "reference/ad2e_monster_index.json",
+      "markdown": "reference/ad2e_monster_index.md",
+      "entry_path": "monsters",
+      "expected_count": 96
+    },
+    {
+      "id": "ad2e_psionic",
+      "systems": [
+        "AD&D 2e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/ad2e_psionics_harvest.py",
+      "json": "reference/ad2e_psionic_index.json",
+      "markdown": "reference/ad2e_psionic_index.md",
+      "entry_path": "sources[].powers",
+      "expected_count": 150
+    },
+    {
+      "id": "ad2e_spell",
+      "systems": [
+        "AD&D 2e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/ad2e_spells_harvest.py",
+      "json": "reference/ad2e_spell_index.json",
+      "markdown": "reference/ad2e_spell_index.md",
+      "entry_path": "sources[].spells",
+      "expected_count": 72
+    },
+    {
+      "id": "creature",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/creature_harvest.py",
+      "json": "reference/creature_index.json",
+      "markdown": "reference/creature_index.md",
+      "entry_path": "books[].creatures",
+      "expected_count": 1498
+    },
+    {
+      "id": "dnd5e_creature",
+      "systems": [
+        "D&D 5e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/dnd5e_creature_harvest.py",
+      "json": "reference/dnd5e_creature_index.json",
+      "markdown": "reference/dnd5e_creature_index.md",
+      "entry_path": "sources[].monsters",
+      "expected_count": 517
+    },
+    {
+      "id": "dnd5e_item",
+      "systems": [
+        "D&D 5e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/dnd5e_item_harvest.py",
+      "json": "reference/dnd5e_item_index.json",
+      "markdown": "reference/dnd5e_item_index.md",
+      "entry_path": "sources[].items",
+      "expected_count": 575
+    },
+    {
+      "id": "dnd5e_spell",
+      "systems": [
+        "D&D 5e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/dnd5e_spell_harvest.py",
+      "json": "reference/dnd5e_spell_index.json",
+      "markdown": "reference/dnd5e_spell_index.md",
+      "entry_path": "sources[].spells",
+      "expected_count": 102
+    },
+    {
+      "id": "epic_feat",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/epic_feat_harvest.py",
+      "json": "reference/epic_feat_index.json",
+      "markdown": "reference/epic_feat_index.md",
+      "entry_path": "epic_feats",
+      "expected_count": 154
+    },
+    {
+      "id": "epic_item",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/epic_item_harvest.py",
+      "json": "reference/epic_item_index.json",
+      "markdown": "reference/epic_item_index.md",
+      "entry_path": "entries",
+      "expected_count": 153
+    },
+    {
+      "id": "epic_monster",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/epic_monster_harvest.py",
+      "json": "reference/epic_monster_index.json",
+      "markdown": "reference/epic_monster_index.md",
+      "entry_path": "monsters",
+      "expected_count": 64
+    },
+    {
+      "id": "epic_spell",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/epic_spell_harvest.py",
+      "json": "reference/epic_spell_index.json",
+      "markdown": "reference/epic_spell_index.md",
+      "entry_path": "entries",
+      "expected_count": 70
+    },
+    {
+      "id": "feat",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/feat_harvest.py",
+      "json": "reference/feat_index.json",
+      "markdown": "reference/feat_index.md",
+      "entry_path": "books[].feats",
+      "expected_count": 1244,
+      "page_exceptions": [
+        {
+          "book": "SRD 3.5",
+          "expected_count": 110,
+          "reason": "The bundled Open Game Content source is page-less; no Player's Handbook page is inferred."
+        }
+      ]
+    },
+    {
+      "id": "gurps3e_creature",
+      "systems": [
+        "GURPS 3e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/gurps3e_creature_harvest.py",
+      "json": "reference/gurps3e_creature_index.json",
+      "markdown": "reference/gurps3e_creature_index.md",
+      "entry_path": "sources[].creatures",
+      "expected_count": 853
+    },
+    {
+      "id": "gurps3e_item",
+      "systems": [
+        "GURPS 3e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/gurps3e_item_harvest.py",
+      "json": "reference/gurps3e_item_index.json",
+      "markdown": "reference/gurps3e_item_index.md",
+      "entry_path": "sources[].items",
+      "expected_count": 783
+    },
+    {
+      "id": "gurps3e_spell",
+      "systems": [
+        "GURPS 3e"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/gurps3e_spell_harvest.py",
+      "json": "reference/gurps3e_spell_index.json",
+      "markdown": "reference/gurps3e_spell_index.md",
+      "entry_path": "sources[].spells",
+      "expected_count": 766
+    },
+    {
+      "id": "gurps_creature",
+      "systems": [
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/gurps_creature_harvest.py",
+      "json": "reference/gurps_creature_index.json",
+      "markdown": "reference/gurps_creature_index.md",
+      "entry_path": "sources[].creatures",
+      "expected_count": 472
+    },
+    {
+      "id": "gurps_gear",
+      "systems": [
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/gurps_gear_harvest.py",
+      "json": "reference/gurps_gear_index.json",
+      "markdown": "reference/gurps_gear_index.md",
+      "entry_path": "sources[].gear",
+      "expected_count": 186
+    },
+    {
+      "id": "gurps_skill",
+      "systems": [
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/gurps_skill_harvest.py",
+      "json": "reference/gurps_skill_index.json",
+      "markdown": "reference/gurps_skill_index.md",
+      "entry_path": "sources[].skills",
+      "expected_count": 263
+    },
+    {
+      "id": "gurps_spell",
+      "systems": [
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/gurps_magic_harvest.py",
+      "json": "reference/gurps_spell_index.json",
+      "markdown": "reference/gurps_spell_index.md",
+      "entry_path": "sources[].spells",
+      "expected_count": 557
+    },
+    {
+      "id": "gurps_technique",
+      "systems": [
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/gurps_technique_harvest.py",
+      "json": "reference/gurps_technique_index.json",
+      "markdown": "reference/gurps_technique_index.md",
+      "entry_path": "sources[].techniques",
+      "expected_count": 112
+    },
+    {
+      "id": "gurps_trait",
+      "systems": [
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/gurps_trait_harvest.py",
+      "json": "reference/gurps_trait_index.json",
+      "markdown": "reference/gurps_trait_index.md",
+      "entry_path": "sources[].traits",
+      "expected_count": 469
+    },
+    {
+      "id": "magic_item",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/item_harvest.py",
+      "json": "reference/magic_item_index.json",
+      "markdown": "reference/magic_item_index.md",
+      "entry_path": "sources[].items",
+      "expected_count": 1420
+    },
+    {
+      "id": "maneuver",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/maneuver_harvest.py",
+      "json": "reference/maneuver_index.json",
+      "markdown": "reference/maneuver_index.md",
+      "entry_path": "sources[].maneuvers",
+      "expected_count": 208
+    },
+    {
+      "id": "power",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/power_harvest.py",
+      "json": "reference/power_index.json",
+      "markdown": "reference/power_index.md",
+      "entry_path": "sources[].powers",
+      "expected_count": 409
+    },
+    {
+      "id": "prestige_class",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/prestige_class_harvest.py",
+      "json": "reference/prestige_class_index.json",
+      "markdown": "reference/prestige_class_index.md",
+      "entry_path": "prestige_classes",
+      "expected_count": 145
+    },
+    {
+      "id": "soulmeld",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/soulmeld_harvest.py",
+      "json": "reference/soulmeld_index.json",
+      "markdown": "reference/soulmeld_index.md",
+      "entry_path": "sources[].soulmelds",
+      "expected_count": 89
+    },
+    {
+      "id": "spell",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/spell_harvest.py",
+      "json": "reference/spell_index.json",
+      "markdown": "reference/spell_index.md",
+      "entry_path": "sources[].spells",
+      "expected_count": 1869,
+      "page_exceptions": [
+        {
+          "book": "SRD 3.5",
+          "expected_count": 605,
+          "reason": "The bundled Open Game Content source is page-less; no Player's Handbook page is inferred."
+        }
+      ]
+    },
+    {
+      "id": "terms_and_affixes",
+      "systems": [
+        "D&D 3.5e",
+        "GURPS 4e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/term_harvest.py",
+      "json": "reference/terms_and_affixes_index.json",
+      "markdown": "reference/terms_and_affixes_index.md",
+      "entry_path": "sections[].entries",
+      "expected_count": 143
+    },
+    {
+      "id": "vestige",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/vestige_harvest.py",
+      "json": "reference/vestige_index.json",
+      "markdown": "reference/vestige_index.md",
+      "entry_path": "sources[].vestiges",
+      "expected_count": 32
+    },
+    {
+      "id": "wfrp_creature",
+      "systems": [
+        "WFRP"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wfrp_creature_harvest.py",
+      "json": "reference/wfrp_creature_index.json",
+      "markdown": "reference/wfrp_creature_index.md",
+      "entry_path": "sources[].creatures",
+      "expected_count": 265
+    },
+    {
+      "id": "wfrp_gear",
+      "systems": [
+        "WFRP"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wfrp_gear_harvest.py",
+      "json": "reference/wfrp_gear_index.json",
+      "markdown": "reference/wfrp_gear_index.md",
+      "entry_path": "sources[].rows",
+      "expected_count": 107
+    },
+    {
+      "id": "wfrp_mutation",
+      "systems": [
+        "WFRP"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wfrp_mutation_harvest.py",
+      "json": "reference/wfrp_mutation_index.json",
+      "markdown": "reference/wfrp_mutation_index.md",
+      "entry_path": "rows",
+      "expected_count": 505
+    },
+    {
+      "id": "wh40k_wargame",
+      "systems": [
+        "WH40K"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40k_wargame_harvest.py",
+      "json": "reference/wh40k_wargame_index.json",
+      "markdown": "reference/wh40k_wargame_index.md",
+      "entry_path": "rows",
+      "expected_count": 136
+    },
+    {
+      "id": "wh40krp_adversary",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_adversary_harvest.py",
+      "json": "reference/wh40krp_adversary_index.json",
+      "markdown": "reference/wh40krp_adversary_index.md",
+      "entry_path": "sources[].adversaries",
+      "expected_count": 657
+    },
+    {
+      "id": "wh40krp_armour",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_armour_harvest.py",
+      "json": "reference/wh40krp_armour_index.json",
+      "markdown": "reference/wh40krp_armour_index.md",
+      "entry_path": "sources[].armour",
+      "expected_count": 145
+    },
+    {
+      "id": "wh40krp_forcefield",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_forcefield_harvest.py",
+      "json": "reference/wh40krp_forcefield_index.json",
+      "markdown": "reference/wh40krp_forcefield_index.md",
+      "entry_path": "sources[].forcefields",
+      "expected_count": 13
+    },
+    {
+      "id": "wh40krp_gear",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_gear_harvest.py",
+      "json": "reference/wh40krp_gear_index.json",
+      "markdown": "reference/wh40krp_gear_index.md",
+      "entry_path": "sources[].gear",
+      "expected_count": 587
+    },
+    {
+      "id": "wh40krp_psychic",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_psychic_harvest.py",
+      "json": "reference/wh40krp_psychic_index.json",
+      "markdown": "reference/wh40krp_psychic_index.md",
+      "entry_path": "sources[].powers",
+      "expected_count": 420
+    },
+    {
+      "id": "wh40krp_talent",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_talent_harvest.py",
+      "json": "reference/wh40krp_talent_index.json",
+      "markdown": "reference/wh40krp_talent_index.md",
+      "entry_path": "sources[].talents",
+      "expected_count": 840
+    },
+    {
+      "id": "wh40krp_weapon",
+      "systems": [
+        "WH40K Roleplay"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/wh40krp_weapon_harvest.py",
+      "json": "reference/wh40krp_weapon_index.json",
+      "markdown": "reference/wh40krp_weapon_index.md",
+      "entry_path": "sources[].weapons",
+      "expected_count": 657
+    },
+    {
+      "id": "whfb_wargame",
+      "systems": [
+        "WHFB"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/whfb_wargame_harvest.py",
+      "json": "reference/whfb_wargame_index.json",
+      "markdown": "reference/whfb_wargame_index.md",
+      "entry_path": "rows",
+      "expected_count": 291
+    }
+  ]
+}

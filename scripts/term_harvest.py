@@ -9,9 +9,8 @@ This script IS that process. It walks the text-layer extractions the OCR
 pipeline already produced under I:\\Sourcebooks\\_text, harvests the named
 modifier vocabulary of each configured section, and writes:
 
-    reference/terms_and_affixes.md    — the human reference, grouped by system
-    reference/terms_and_affixes.json  — the same data, machine-readable, for
-                                        the Everguild mod loader to feed on
+    reference/terms_and_affixes_index.md    — the human reference by system
+    reference/terms_and_affixes_index.json  — the same machine-readable data
 
 Every entry carries provenance: the book, the section, and the PDF page where
 the extraction recorded one. Where a configured section's anchors cannot be
@@ -52,8 +51,8 @@ from pathlib import Path
 
 CORPUS = Path(r"I:\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
-OUT_MD = REPO / "reference" / "terms_and_affixes.md"
-OUT_JSON = REPO / "reference" / "terms_and_affixes.json"
+OUT_MD = REPO / "reference" / "terms_and_affixes_index.md"
+OUT_JSON = REPO / "reference" / "terms_and_affixes_index.json"
 
 PAGE_MARKER = re.compile(r"^## \[PDF page (\d+)\]")
 

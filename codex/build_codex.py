@@ -7,9 +7,9 @@ WHAT THIS IS (and where it sits in the authority order)
 -------------------------------------------------------
 This is a PRESENTATION tool — the least-authoritative thing in the repo. It
 creates no knowledge. It consolidates the already-built, already-committed
-reference indices (`reference/*_index.json` plus the legacy-named
-`reference/terms_and_affixes.json`) into ONE searchable, self-contained HTML page, and — where it safely can — splices in each entry's FULL book-verbatim
-stat block / description so the page is usable WITHOUT opening the sourcebook.
+reference indices registered in `reference/families.json` into ONE
+searchable, self-contained HTML page, and — where it safely can — splices in
+each entry's FULL book-verbatim stat block / description so the page is usable WITHOUT opening the sourcebook.
 
 Authority order is unchanged and this view is at the bottom of it:
     Notion (canon) > native 3.5e / GURPS resolver modules > reference layer >
@@ -27,10 +27,10 @@ publish `codex/build/engine_reference.html` as a private Artifact.
 
 INPUTS
 ------
-- reference/*_index.json      40 committed family files (name/fields/citation +
+- reference/families.json    canonical registry of 41 family files and their
+                              explicit accepted-entry paths
+- reference/*_index.json      committed family files (name/fields/citation +
                               [start,end] spans and exact paths where emitted)
-- reference/terms_and_affixes.json
-                              the legacy-named 41st committed family
 - scripts/spells_srd35.json   clean SRD 3.5 spell text (Open Game Content, bundled)
 - I:\\Sourcebooks\\_md, _text   the OCR sources, sliced by each row's line span
 - codex/codex_template.html   the page shell (contains the __ENGINE_DATA_B64__ slot)
@@ -90,6 +90,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 REF = REPO / "reference"
+MANIFEST = REF / "families.json"
 SRD_JSON = REPO / "scripts" / "spells_srd35.json"
 TEMPLATE = REPO / "codex" / "codex_template.html"
 BUILD = REPO / "codex" / "build"
@@ -305,55 +306,80 @@ SYSTEM_ALIASES = {"dnd35": "D&D 3.5e", "gurps4e": "GURPS 4e"}
 def _display_book(value: str) -> str:
     """Turn either a book label or a relative extraction path into a label."""
     leaf = re.split(r"[\\/]", value)[-1]
-    return re.sub(r"\.[^.]+$", "", leaf).strip()
+    return re.sub(r"\.(?:md|txt|pdf)$", "", leaf, flags=re.IGNORECASE).strip()
 
 
-def _index_rows(obj, out, context=None):
-    """Collect rows while inheriting source provenance and exact paths."""
-    context = context or {}
-    if isinstance(obj, dict):
-        updates = {}
-        for key in ("corpus", "source_path", "book", "citation", "system"):
-            if isinstance(obj.get(key), str) and obj[key].strip():
-                updates[key] = obj[key]
-        child_context = {**context, **updates} if updates else context
-        if (isinstance(obj.get("name"), str) and obj["name"].strip()
-                and any(k in obj for k in ("book", "citation", "page", "system"))):
-            row = dict(obj)
-            if not row.get("book") and child_context.get("book"):
-                row["book"] = _display_book(child_context["book"])
-            if not row.get("citation") and child_context.get("citation"):
-                row["citation"] = child_context["citation"]
-            if not row.get("system") and child_context.get("system"):
-                system = child_context["system"]
-                row["system"] = SYSTEM_ALIASES.get(system, system)
-            if "corpus" in child_context:
-                row["_corpus"] = child_context["corpus"]
-            if "source_path" in child_context:
-                row["_source_path"] = child_context["source_path"]
-            out.append(row)
-        for key, value in obj.items():
-            # Harvester `soft` arrays are rejected diagnostics, never index rows.
-            if key == "soft":
-                continue
-            _index_rows(value, out, child_context)
-    elif isinstance(obj, list):
-        for v in obj:
-            _index_rows(v, out, context)
+CONTEXT_KEYS = ("corpus", "source_path", "book", "citation", "system")
 
 
-def _index_files():
-    """Every committed family, including the legacy-named terms manifest."""
-    files = list(REF.glob("*_index.json"))
-    terms = REF / "terms_and_affixes.json"
-    if terms.exists():
-        files.append(terms)
-    return sorted(set(files))
+def _context(node, inherited):
+    """Inherit source metadata along one manifest-selected path."""
+    out = dict(inherited)
+    if isinstance(node, dict):
+        for key in CONTEXT_KEYS:
+            value = node.get(key)
+            if isinstance(value, str) and value.strip():
+                out[key] = value.strip()
+    return out
 
 
-def _family_name(path: Path) -> str:
-    stem = path.stem
-    return stem[:-6] if stem.endswith("_index") else stem
+def _materialize_row(node, context):
+    row = dict(node)
+    if not row.get("book") and context.get("book"):
+        row["book"] = _display_book(context["book"])
+    if not row.get("citation") and context.get("citation"):
+        row["citation"] = context["citation"]
+    if not row.get("system") and context.get("system"):
+        row["system"] = SYSTEM_ALIASES.get(context["system"], context["system"])
+    if context.get("corpus"):
+        row["_corpus"] = context["corpus"]
+    if context.get("source_path"):
+        row["_source_path"] = context["source_path"]
+    return row
+
+
+def _rows_at_path(obj, path):
+    """Select accepted rows from one explicit dotted manifest path."""
+    tokens = path.split(".") if path else []
+    rows = []
+
+    def walk(node, index, inherited):
+        context = _context(node, inherited)
+        if index == len(tokens):
+            if not isinstance(node, dict) or not str(node.get("name", "")).strip():
+                raise ValueError(f"{path}: selected value is not a named object")
+            rows.append(_materialize_row(node, context))
+            return
+        if not isinstance(node, dict):
+            raise ValueError(f"{path}: cannot read {tokens[index]!r} from non-object")
+
+        token = tokens[index]
+        many = token.endswith("[]")
+        key = token[:-2] if many else token
+        if key not in node:
+            raise ValueError(f"{path}: missing key {key!r}")
+        child = node[key]
+        if many:
+            if not isinstance(child, list):
+                raise ValueError(f"{path}: {key!r} is not a list")
+            for value in child:
+                walk(value, index + 1, context)
+        elif isinstance(child, list):
+            for value in child:
+                walk(value, index + 1, context)
+        else:
+            walk(child, index + 1, context)
+
+    walk(obj, 0, {})
+    return rows
+
+
+def _family_specs():
+    """Load the canonical family registry."""
+    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    if data.get("schema_version") != 1 or not isinstance(data.get("families"), list):
+        raise ValueError("reference/families.json must be a schema_version 1 registry")
+    return data["families"]
 
 
 def selftest():
@@ -365,18 +391,22 @@ def selftest():
         "entries": [{"name": "Real Entry", "page": 1}],
         "soft": [{"name": "Rejected Fragment", "page": 1}],
     }
-    rows = []
-    _index_rows(fixture, rows)
+    rows = _rows_at_path(fixture, "entries")
     assert [row["name"] for row in rows] == ["Real Entry"]
     assert rows[0]["_source_path"] == "fixture.md"
     assert rows[0]["book"] == "Fixture Book"
     assert rows[0]["citation"] == "Fixture Book p.1"
     assert rows[0]["system"] == "D&D 3.5e"
-    assert _family_name(Path("spell_index.json")) == "spell"
-    assert _family_name(Path("terms_and_affixes.json")) == "terms_and_affixes"
-    print("selftest: diagnostic soft rows excluded")
-    print("selftest: source provenance inherited")
-    print("selftest: all 41 family filename shapes supported")
+    assert _display_book("SRD 3.5") == "SRD 3.5"
+    specs = _family_specs()
+    assert len(specs) == 41
+    assert sum(spec["expected_count"] for spec in specs) == 18_094
+    assert any(spec["id"] == "terms_and_affixes"
+               and spec["json"].endswith("terms_and_affixes_index.json")
+               for spec in specs)
+    print("selftest: manifest path excludes diagnostic siblings")
+    print("selftest: source provenance and system aliases inherited")
+    print("selftest: 41-family registry totals 18,094 rows")
     print("selftest: PASS")
 
 
@@ -488,10 +518,15 @@ def build(report=False):
     cov = collections.Counter()
     tot = collections.Counter()
 
-    for f in _index_files():
-        fam = _family_name(f)
-        rows = []
-        _index_rows(json.loads(f.read_text(encoding="utf-8")), rows)
+    for spec in _family_specs():
+        fam = spec["id"]
+        f = REPO / spec["json"]
+        obj = json.loads(f.read_text(encoding="utf-8"))
+        rows = _rows_at_path(obj, spec["entry_path"])
+        if len(rows) != spec["expected_count"]:
+            raise ValueError(
+                f"{fam}: registry expects {spec['expected_count']} rows, found {len(rows)}"
+            )
         for r in rows:
             tot[fam] += 1
             if isinstance(r.get("special_rules"), str) and r["special_rules"].strip():

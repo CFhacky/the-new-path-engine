@@ -1,9 +1,9 @@
 # The Path Engine Codex — offline reference browser
 
 A downstream **presentation layer** for THE NEW PATH ENGINE reference layer:
-`build_codex.py` folds all 41 committed reference families — the 40
-`reference/*_index.json` files plus `reference/terms_and_affixes.json` — into ONE
-self-contained, searchable HTML page and — where it safely can — splices in each
+`build_codex.py` folds all 41 committed reference families registered in
+`reference/families.json` into ONE self-contained, searchable HTML page and —
+where it safely can — splices in each
 entry's **full book-verbatim stat block / description**, so the page is usable at the
 table or on a phone without opening the sourcebook.
 
@@ -49,7 +49,8 @@ works offline.
 
 | Input | Role |
 |---|---|
-| `reference/*_index.json` + `reference/terms_and_affixes.json` | all 41 committed index families (rows carry `[start,end]` spans where available; harvesters may also emit an exact relative source path) |
+| `reference/families.json` | canonical registry of all 41 families, their files, explicit accepted-entry paths, systems, and locked counts |
+| `reference/*_index.json` | committed family data (rows carry `[start,end]` spans where available; harvesters may also emit an exact relative source path) |
 | `scripts/spells_srd35.json` | clean SRD 3.5 spell text (Open Game Content) — the 605 SRD core spells |
 | `I:\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
 | `codex/codex_template.html` | the page shell (search UI + the `__ENGINE_DATA_B64__` slot) |
