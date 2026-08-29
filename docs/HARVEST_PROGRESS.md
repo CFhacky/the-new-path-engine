@@ -18,10 +18,10 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-29).** Forty-one reference index families, ~18,114 entries.
+**At a glance (2026-08-29).** Forty-one reference index families, ~18,115 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
-(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (153), D&D epic spells (70), D&D prestige classes (145), D&D epic magic items (153), D&D epic monsters (64), GURPS gear — weapons + armor
+(1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70), D&D prestige classes (145), D&D epic magic items (153), D&D epic monsters (64), GURPS gear — weapons + armor
 (186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
@@ -114,27 +114,23 @@ Highest-value UNHARVESTED 3.5e content, by directory (all under
   Madness here were duplicates of the harvested set.)
 - **`DM Toolkits\`** — Elder Evils, Exemplars of Evil (more stat blocks), Manual
   of the Planes, Planar Handbook, Stronghold Builders Guidebook. **Epic Level
-  Handbook epic feats: DONE** in `epic_feat_index` (153 feats, Table 1-36). The
-  `.md`/`.ocr300.md` text layers are corrupt OCR (dropped leading characters,
-  Cyrillic bleed — even feat NAMES are mangled: "Deastaing Critical"), so parsing
-  them was hopeless. **The fix — and the general technique for any corrupt-OCR
-  source — is to render the PDF page images and read them by vision:** the real
-  ELH PDF (`I:\Sourcebooks\...\Epic Level Handbook.pdf`, 11.9 MB, 334 pp, NOT a
-  stub — the earlier "197 KB stub" note was an `ls` misread) has a corrupt text
-  layer but perfectly legible page images. Rendered via PyMuPDF
-  (`fitz`, available) at ~2.6× and read directly. The PDF Tools MCP is sandboxed
-  to `C:\Users\Chad\{Documents,Downloads,Desktop}` and its own renderer is
-  disabled here, so: copy the PDF into Downloads, `fitz.open(...).get_pixmap()`
-  to PNG in scratchpad, then Read the PNG. This unblocks the other corrupt-OCR
-  targets below. **Two tiers for fixing corrupt OCR (both built 2026-08-28):**
-  (1) `scripts/reocr.py` re-OCRs a PDF with Tesseract 5.4 (render → binarize →
-  OCR). It reads in visual order, so it FIXES the AD&D Monstrous Compendium's
-  scrambled two-column stat blocks and is clean on PLAIN scans — but it slips on
-  a few characters (`3+3`→`343`, `Very`→`Verv`), so numbers want a spot-check,
-  and it still garbles ORNATE pages (the ELH). (2) VISION (render + read by eye)
-  — the reliable method for ornate/decorative pages and for anything mechanical
-  where a character slip can't be tolerated. Rule of thumb: plain layout →
-  `reocr.py`; ornate → vision.
+  Handbook epic feats: DONE** in `epic_feat_index`: all 153 Table 1-36 rows plus
+  description-only **Dire Charge** (154 total), with **149 exact full-description
+  spans**. The `.md`/`.ocr300.md` text layers corrupt names and interleave the
+  ornate two-column pages, so table mechanics remain vision-transcribed from
+  pp.46-49. The harvester's reproducible `--extract-source` path renders
+  description pages 50-69 through PyMuPDF at 4×, OCRs each column separately
+  with Tesseract, preserves the body OCR raw, and restores only canonical
+  book-verified headings. Five descriptions that cross or occupy the genuinely
+  blurred p.60 image remain empty and explicit `NO COVERAGE`; they are never
+  inferred from neighboring text. The real ELH PDF
+  (`I:\Sourcebooks\...\Epic Level Handbook.pdf`, 11.9 MB, 334 pp) is the court
+  of appeal and PyMuPDF reads it directly from `I:\`.
+  **Two tiers for corrupt OCR:** (1) `scripts/reocr.py` handles plain scans and
+  fixes visual order, but individual characters still need mechanical
+  spot-checks; (2) rendered-page vision is required for ornate pages and exact
+  table values. The epic-feat description extraction uses raw OCR only for
+  prose bodies, never to overwrite verified summary mechanics.
 - **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
   (all 89 soulmeld summary rows and full description spans are DONE in
   `soulmeld_index`; essentia/bind details remain book-verbatim prose rather than
@@ -285,6 +281,24 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Recovered the D&D 3.5e epic-feat description layer. The
+  harvester now generates a deterministic two-column OCR source from rendered
+  Epic Level Handbook pp.50-69, restores only book-verified canonical headings,
+  and records exact heading-to-heading spans. It also adds **Dire Charge**, whose
+  full p.53 entry is present in the book although Table 1-36 omits it, raising
+  the family **153 → 154**. All 153 prior rows are byte-identical across their
+  original name/book/type/prerequisite/citation/page fields. **149** entries now
+  carry complete bounded source blocks. Five descriptions dependent on the
+  genuinely blurred p.60 image — Improved Spell Capacity, Improved Spell
+  Resistance, Improved Stunning Fist, Improved Whirlwind Attack, and Incite
+  Rage — remain empty with explicit `NO COVERAGE`, never reconstructed.
+  Epic-feat coverage rose **0/153 → 149/154 (97%)**; total full-text coverage
+  rose **11,475/17,950 → 11,624/17,951 (64%)**. The live selftest locks the
+  154-name/type set, exact five-gap set, page/span boundaries, the page-64
+  floated Planar Turning alternative, Dire Charge mechanics/citation, and
+  absence of U+FFFD in parsed fields; the independent audit also verifies the
+  recorded source hash.
 
 - **2026-08-29** — Completed and fully spanned the D&D 3.5e martial-maneuver
   family. The book’s own lists on pp.48–51 and its detailed blocks on pp.52–94

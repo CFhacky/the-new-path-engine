@@ -48,6 +48,22 @@ full re-scan of the 409 power names shows no remaining garble.
 Knowledge") or an NPC descriptor ("Kobold, 1st level"). This removed 8
 non-feat rows from `feat_index` (1253 → 1244) with no loss of real feats.
 
+## 2026-08-29 — Epic Level Handbook epic feats (derived OCR source)
+
+File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-feats.ocr-columns.md`
+
+This is reproducible source generation, not a hand-repair of body text.
+`epic_feat_harvest.py --extract-source` renders ELH pp.50-69 at 4× and OCRs
+each visual column separately. The **149 body blocks remain raw Tesseract
+output**. Only their headings are restored from the book-verified Table 1-36
+names plus Dire Charge on p.53, so future harvests have stable, name-leading
+span anchors. The generated file's SHA-256 is recorded in the JSON index.
+
+Five descriptions dependent on the truly blurred p.60 page image are not
+written to the derived source: Improved Spell Capacity, Improved Spell
+Resistance, Improved Stunning Fist, Improved Whirlwind Attack, and Incite Rage.
+They remain explicit `NO COVERAGE`; no OCR body value was guessed or repaired.
+
 ---
 
 ## FLAGGED — not yet resolved (need PDF page verification; NOT guessed)

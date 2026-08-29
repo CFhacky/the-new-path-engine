@@ -1,16 +1,21 @@
 {
  "generated_by": "scripts/epic_feat_harvest.py",
+ "corpus": "I:\\Sourcebooks\\_text",
+ "source_path": "D&D 3.5e\\DM Toolkits\\Epic Level Handbook.epic-feats.ocr-columns.md",
+ "source_sha256": "929ef2bad643765c38f2d3ce3465799da21c5c3cf97911965b9d8297c6bcf5e1",
  "book": "Epic Level Handbook",
  "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
  "pages": "46-49",
- "note": "Vision-transcribed from the ELH PDF page images; the OCR text layer is corrupt. Book RAW, read off the page.",
- "total_epic_feats": 153,
+ "note": "Table 1-36 mechanics are vision-transcribed from the ELH PDF page images because its text layer is corrupt. Dire Charge is separately cited to its p.53 description because the table omits it. Full spans slice a raw, two-column OCR extraction of rendered pages 50-69; only canonical headings were restored. Five descriptions dependent on unreadable p.60 remain explicit NO COVERAGE rows.",
+ "total_epic_feats": 154,
+ "full_description_spans": 149,
+ "no_coverage": 5,
  "by_type": {
-  "general": 130,
-  "wild": 11,
+  "divine": 3,
+  "general": 131,
   "item-creation": 6,
   "metamagic": 3,
-  "divine": 3
+  "wild": 11
  },
  "epic_feats": [
   {
@@ -19,7 +24,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 50,
+   "description_pages": "50",
+   "start": 7,
+   "end": 23,
+   "soft": null
   },
   {
    "name": "Armor Skin",
@@ -27,7 +37,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 50,
+   "description_pages": "50",
+   "start": 25,
+   "end": 35,
+   "soft": null
   },
   {
    "name": "Augmented Alchemy",
@@ -35,7 +50,12 @@
    "type": "general",
    "prerequisites": "Int 21, Alchemy 24 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 50,
+   "description_pages": "50",
+   "start": 37,
+   "end": 55,
+   "soft": null
   },
   {
    "name": "Automatic Quicken Spell",
@@ -43,7 +63,12 @@
    "type": "general",
    "prerequisites": "Quicken Spell, Spellcraft 30 ranks, ability to cast 9th-level arcane or divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 50,
+   "description_pages": "50-51",
+   "start": 57,
+   "end": 78,
+   "soft": null
   },
   {
    "name": "Automatic Silent Spell",
@@ -51,7 +76,12 @@
    "type": "general",
    "prerequisites": "Silent Spell, Spellcraft 24 ranks, ability to cast 9th-level arcane or divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 80,
+   "end": 99,
+   "soft": null
   },
   {
    "name": "Automatic Still Spell",
@@ -59,7 +89,12 @@
    "type": "general",
    "prerequisites": "Still Spell, Spellcraft 27 ranks, ability to cast 9th-level arcane or divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 101,
+   "end": 119,
+   "soft": null
   },
   {
    "name": "Bane of Enemies",
@@ -67,7 +102,12 @@
    "type": "general",
    "prerequisites": "Wilderness Lore 24 ranks, five or more favored enemies (as the ranger class feature)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 121,
+   "end": 131,
+   "soft": null
   },
   {
    "name": "Death of Enemies",
@@ -75,7 +115,12 @@
    "type": "general",
    "prerequisites": "Bane of Enemies, Wilderness Lore 30 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52-53",
+   "start": 301,
+   "end": 313,
+   "soft": null
   },
   {
    "name": "Beast Companion",
@@ -83,7 +128,12 @@
    "type": "wild",
    "prerequisites": "Beast Wild Shape, Master Wild Shape, Knowledge (nature) 24 ranks, wild shape 6/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 133,
+   "end": 145,
+   "soft": null
   },
   {
    "name": "Beast Wild Shape",
@@ -91,7 +141,12 @@
    "type": "wild",
    "prerequisites": "Knowledge (nature) 24 ranks, wild shape 6/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 147,
+   "end": 154,
+   "soft": null
   },
   {
    "name": "Dragon Wild Shape",
@@ -99,7 +154,12 @@
    "type": "wild",
    "prerequisites": "Wis 30, Beast Wild Shape, Knowledge (nature) 30 ranks, wild shape 6/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 380,
+   "end": 390,
+   "soft": null
   },
   {
    "name": "Magical Beast Wild Shape",
@@ -107,7 +167,12 @@
    "type": "wild",
    "prerequisites": "Wis 25, Beast Wild Shape, Knowledge (nature) 27 ranks, wild shape 6/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1275,
+   "end": 1284,
+   "soft": null
   },
   {
    "name": "Plant Wild Shape",
@@ -115,7 +180,12 @@
    "type": "wild",
    "prerequisites": "Beast Wild Shape, Knowledge (nature) 24 ranks, wild shape 6/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 65,
+   "description_pages": "65",
+   "start": 1575,
+   "end": 1583,
+   "soft": null
   },
   {
    "name": "Vermin Wild Shape",
@@ -123,7 +193,12 @@
    "type": "wild",
    "prerequisites": "Beast Wild Shape, Knowledge (nature) 24 ranks, wild shape 6/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1996,
+   "end": 2003,
+   "soft": null
   },
   {
    "name": "Blinding Speed",
@@ -131,7 +206,12 @@
    "type": "general",
    "prerequisites": "Dex 25",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 156,
+   "end": 165,
+   "soft": null
   },
   {
    "name": "Bonus Domain",
@@ -139,7 +219,12 @@
    "type": "general",
    "prerequisites": "Wis 21, ability to cast 9th-level divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 167,
+   "end": 175,
+   "soft": null
   },
   {
    "name": "Bulwark of Defense",
@@ -147,7 +232,12 @@
    "type": "general",
    "prerequisites": "Con 25, defensive stance 3/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51",
+   "start": 177,
+   "end": 182,
+   "soft": null
   },
   {
    "name": "Chaotic Rage",
@@ -155,7 +245,12 @@
    "type": "general",
    "prerequisites": "Rage 5/day, chaotic alignment",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 51,
+   "description_pages": "51-52",
+   "start": 184,
+   "end": 192,
+   "soft": null
   },
   {
    "name": "Combat Archery",
@@ -163,7 +258,12 @@
    "type": "general",
    "prerequisites": "Dodge, Mobility, Point Blank Shot",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 204,
+   "end": 212,
+   "soft": null
   },
   {
    "name": "Craft Epic Magic Arms and Armor",
@@ -171,7 +271,12 @@
    "type": "item-creation",
    "prerequisites": "Craft Magic Arms and Armor, Knowledge (arcana) 28 ranks, Spellcraft 28 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 214,
+   "end": 227,
+   "soft": null
   },
   {
    "name": "Craft Epic Rod",
@@ -179,7 +284,12 @@
    "type": "item-creation",
    "prerequisites": "Craft Rod, Knowledge (arcana) 32 ranks, Spellcraft 32 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 229,
+   "end": 240,
+   "soft": null
   },
   {
    "name": "Craft Epic Staff",
@@ -187,7 +297,12 @@
    "type": "item-creation",
    "prerequisites": "Craft Staff, Knowledge (arcana) 35 ranks, Spellcraft 35 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 242,
+   "end": 253,
+   "soft": null
   },
   {
    "name": "Craft Epic Wondrous Item",
@@ -195,7 +310,12 @@
    "type": "item-creation",
    "prerequisites": "Craft Wondrous Item, Knowledge (arcana) 26 ranks, Spellcraft 26 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 255,
+   "end": 267,
+   "soft": null
   },
   {
    "name": "Damage Reduction",
@@ -203,7 +323,12 @@
    "type": "general",
    "prerequisites": "Con 21",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 269,
+   "end": 280,
+   "soft": null
   },
   {
    "name": "Deafening Song",
@@ -211,7 +336,12 @@
    "type": "general",
    "prerequisites": "Perform 24 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 282,
+   "end": 299,
+   "soft": null
   },
   {
    "name": "Hindering Song",
@@ -219,7 +349,12 @@
    "type": "general",
    "prerequisites": "Deafening Song, Perform 21 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 804,
+   "end": 821,
+   "soft": null
   },
   {
    "name": "Dexterous Fortitude",
@@ -227,7 +362,12 @@
    "type": "general",
    "prerequisites": "Dex 25, slippery mind class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 333,
+   "end": 340,
+   "soft": null
   },
   {
    "name": "Dexterous Will",
@@ -235,7 +375,12 @@
    "type": "general",
    "prerequisites": "Dex 25, slippery mind class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 342,
+   "end": 349,
+   "soft": null
   },
   {
    "name": "Diminutive Wild Shape",
@@ -243,7 +388,25 @@
    "type": "wild",
    "prerequisites": "Ability to wild shape into a Huge animal",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 351,
+   "end": 358,
+   "soft": null
+  },
+  {
+   "name": "Dire Charge",
+   "book": "Epic Level Handbook",
+   "type": "general",
+   "prerequisites": "Improved Initiative",
+   "citation": "Epic Level Handbook (WotC, 3.5e), Dire Charge description p.53 (description-only feat omitted from Table 1-36)",
+   "pages": "53",
+   "page": 53,
+   "description_pages": "53",
+   "start": 360,
+   "end": 369,
+   "soft": null
   },
   {
    "name": "Fine Wild Shape",
@@ -251,7 +414,12 @@
    "type": "wild",
    "prerequisites": "Ability to wild shape into a Diminutive creature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 699,
+   "end": 707,
+   "soft": null
   },
   {
    "name": "Distant Shot",
@@ -259,7 +427,12 @@
    "type": "general",
    "prerequisites": "Dex 25, Far Shot, Point Blank Shot, Spot 20 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 371,
+   "end": 378,
+   "soft": null
   },
   {
    "name": "Efficient Item Creation",
@@ -267,7 +440,12 @@
    "type": "general",
    "prerequisites": "Item creation feat to be selected, Knowledge (arcana) 24 ranks, Spellcraft 24 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 392,
+   "end": 405,
+   "soft": null
   },
   {
    "name": "Energy Resistance",
@@ -275,7 +453,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 407,
+   "end": 417,
+   "soft": null
   },
   {
    "name": "Enhance Spell",
@@ -283,7 +466,12 @@
    "type": "metamagic",
    "prerequisites": "Maximize Spell",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53-54",
+   "start": 419,
+   "end": 447,
+   "soft": null
   },
   {
    "name": "Epic Dodge",
@@ -291,7 +479,12 @@
    "type": "general",
    "prerequisites": "Dex 25, Dodge, Tumble 30 ranks, improved evasion, defensive roll class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 449,
+   "end": 457,
+   "soft": null
   },
   {
    "name": "Epic Endurance",
@@ -299,7 +492,12 @@
    "type": "general",
    "prerequisites": "Con 25, Endurance",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 459,
+   "end": 466,
+   "soft": null
   },
   {
    "name": "Epic Fortitude",
@@ -307,7 +505,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 468,
+   "end": 472,
+   "soft": null
   },
   {
    "name": "Epic Inspiration",
@@ -315,7 +518,12 @@
    "type": "general",
    "prerequisites": "Cha 25, Perform 30 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 474,
+   "end": 491,
+   "soft": null
   },
   {
    "name": "Epic Leadership",
@@ -323,7 +531,12 @@
    "type": "general",
    "prerequisites": "Cha 25, Leadership, Leadership score 25",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 493,
+   "end": 502,
+   "soft": null
   },
   {
    "name": "Legendary Commander",
@@ -331,7 +544,12 @@
    "type": "general",
    "prerequisites": "Cha 25, Epic Leadership, Leadership, Diplomacy 30 ranks, must rule own kingdom and have a stronghold",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1202,
+   "end": 1212,
+   "soft": null
   },
   {
    "name": "Epic Prowess",
@@ -339,7 +557,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 504,
+   "end": 509,
+   "soft": null
   },
   {
    "name": "Epic Reflexes",
@@ -347,7 +570,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 511,
+   "end": 514,
+   "soft": null
   },
   {
    "name": "Epic Reputation",
@@ -355,7 +583,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 516,
+   "end": 521,
+   "soft": null
   },
   {
    "name": "Epic Skill Focus",
@@ -363,7 +596,12 @@
    "type": "general",
    "prerequisites": "20 ranks in the skill selected",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 523,
+   "end": 532,
+   "soft": null
   },
   {
    "name": "Epic Speed",
@@ -371,7 +609,12 @@
    "type": "general",
    "prerequisites": "Dex 21, Run",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 534,
+   "end": 542,
+   "soft": null
   },
   {
    "name": "Epic Spell Focus",
@@ -379,7 +622,12 @@
    "type": "general",
    "prerequisites": "Greater Spell Focus and Spell Focus in the school selected, ability to cast at least one 9th-level spell of the school",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54",
+   "start": 544,
+   "end": 559,
+   "soft": null
   },
   {
    "name": "Epic Spell Penetration",
@@ -387,7 +635,12 @@
    "type": "general",
    "prerequisites": "Greater Spell Penetration, Spell Penetration",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 54,
+   "description_pages": "54-55",
+   "start": 561,
+   "end": 575,
+   "soft": null
   },
   {
    "name": "Epic Spellcasting",
@@ -395,7 +648,12 @@
    "type": "general",
    "prerequisites": "Spellcraft 24 ranks, Knowledge (arcana) 24 ranks and ability to cast 9th-level arcane spells (OR the Knowledge religion/nature divine variants)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 55,
+   "description_pages": "55",
+   "start": 577,
+   "end": 604,
+   "soft": null
   },
   {
    "name": "Epic Toughness",
@@ -403,7 +661,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 55,
+   "description_pages": "55",
+   "start": 606,
+   "end": 610,
+   "soft": null
   },
   {
    "name": "Epic Weapon Focus",
@@ -411,7 +674,12 @@
    "type": "general",
    "prerequisites": "Weapon Focus in the weapon to be chosen",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 55,
+   "description_pages": "55",
+   "start": 612,
+   "end": 621,
+   "soft": null
   },
   {
    "name": "Epic Weapon Specialization",
@@ -419,7 +687,12 @@
    "type": "general",
    "prerequisites": "Epic Weapon Focus, Weapon Focus, Weapon Specialization (all in the weapon to be chosen)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 55,
+   "description_pages": "55",
+   "start": 623,
+   "end": 634,
+   "soft": null
   },
   {
    "name": "Epic Will",
@@ -427,7 +700,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 55,
+   "description_pages": "55",
+   "start": 636,
+   "end": 639,
+   "soft": null
   },
   {
    "name": "Exceptional Deflection",
@@ -435,7 +713,12 @@
    "type": "general",
    "prerequisites": "Dex 21, Wis 19, Deflect Arrows, Improved Unarmed Strike",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 55,
+   "description_pages": "55-56",
+   "start": 641,
+   "end": 649,
+   "soft": null
   },
   {
    "name": "Extended Life Span",
@@ -443,7 +726,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 651,
+   "end": 667,
+   "soft": null
   },
   {
    "name": "Familiar Spell",
@@ -451,7 +739,12 @@
    "type": "general",
    "prerequisites": "Int 25 (if your spellcasting is controlled by Intelligence) OR Cha 25 (if controlled by Charisma)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 669,
+   "end": 686,
+   "soft": null
   },
   {
    "name": "Fast Healing",
@@ -459,7 +752,12 @@
    "type": "general",
    "prerequisites": "Con 25",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 688,
+   "end": 697,
+   "soft": null
   },
   {
    "name": "Forge Epic Ring",
@@ -467,7 +765,12 @@
    "type": "item-creation",
    "prerequisites": "Forge Ring, Knowledge (arcana) 35 ranks, Spellcraft 35 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 709,
+   "end": 721,
+   "soft": null
   },
   {
    "name": "Gargantuan Wild Shape",
@@ -475,7 +778,12 @@
    "type": "wild",
    "prerequisites": "Ability to wild shape into a Huge animal",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 723,
+   "end": 730,
+   "soft": null
   },
   {
    "name": "Colossal Wild Shape",
@@ -483,7 +791,12 @@
    "type": "wild",
    "prerequisites": "Ability to wild shape into a Gargantuan creature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 52,
+   "description_pages": "52",
+   "start": 194,
+   "end": 202,
+   "soft": null
   },
   {
    "name": "Great Charisma",
@@ -491,7 +804,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 732,
+   "end": 738,
+   "soft": null
   },
   {
    "name": "Great Constitution",
@@ -499,7 +817,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 740,
+   "end": 745,
+   "soft": null
   },
   {
    "name": "Great Dexterity",
@@ -507,7 +830,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 747,
+   "end": 752,
+   "soft": null
   },
   {
    "name": "Great Intelligence",
@@ -515,7 +843,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 754,
+   "end": 759,
+   "soft": null
   },
   {
    "name": "Great Smiting",
@@ -523,7 +856,12 @@
    "type": "general",
    "prerequisites": "Cha 25, smite ability (from class feature or domain granted power)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 56,
+   "description_pages": "56",
+   "start": 761,
+   "end": 772,
+   "soft": null
   },
   {
    "name": "Great Strength",
@@ -531,7 +869,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 774,
+   "end": 780,
+   "soft": null
   },
   {
    "name": "Great Wisdom",
@@ -539,7 +882,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 782,
+   "end": 787,
+   "soft": null
   },
   {
    "name": "Group Inspiration",
@@ -547,7 +895,12 @@
    "type": "general",
    "prerequisites": "Perform 30 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 789,
+   "end": 802,
+   "soft": null
   },
   {
    "name": "Holy Strike",
@@ -555,7 +908,12 @@
    "type": "general",
    "prerequisites": "Smite evil class feature, any good alignment",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 823,
+   "end": 833,
+   "soft": null
   },
   {
    "name": "Ignore Material Components",
@@ -563,7 +921,12 @@
    "type": "general",
    "prerequisites": "Eschew Materials, Spellcraft 25 ranks, ability to cast 9th-level arcane or divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 835,
+   "end": 845,
+   "soft": null
   },
   {
    "name": "Improved Alignment-Based Casting",
@@ -571,7 +934,12 @@
    "type": "general",
    "prerequisites": "Access to domain of Chaos, Evil, Good, or Law, alignment must match domain chosen, ability to cast 9th-level divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 847,
+   "end": 861,
+   "soft": null
   },
   {
    "name": "Improved Arrow of Death",
@@ -579,7 +947,12 @@
    "type": "general",
    "prerequisites": "Dex 19, Wis 19, Point Blank Shot, Precise Shot, arrow of death class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 863,
+   "end": 868,
+   "soft": null
   },
   {
    "name": "Improved Aura of Courage",
@@ -587,7 +960,12 @@
    "type": "general",
    "prerequisites": "Cha 25, aura of courage class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 870,
+   "end": 875,
+   "soft": null
   },
   {
    "name": "Improved Aura of Despair",
@@ -595,7 +973,12 @@
    "type": "general",
    "prerequisites": "Cha 25, aura of despair class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 877,
+   "end": 882,
+   "soft": null
   },
   {
    "name": "Improved Combat Casting",
@@ -603,7 +986,12 @@
    "type": "general",
    "prerequisites": "Combat Casting, Concentration 25 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 884,
+   "end": 890,
+   "soft": null
   },
   {
    "name": "Improved Combat Reflexes",
@@ -611,7 +999,12 @@
    "type": "general",
    "prerequisites": "Dex 21, Combat Reflexes",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 57,
+   "description_pages": "57",
+   "start": 892,
+   "end": 900,
+   "soft": null
   },
   {
    "name": "Improved Darkvision",
@@ -619,7 +1012,12 @@
    "type": "general",
    "prerequisites": "Darkvision",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 902,
+   "end": 911,
+   "soft": null
   },
   {
    "name": "Improved Death Attack",
@@ -627,7 +1025,12 @@
    "type": "general",
    "prerequisites": "Death attack class feature, sneak attack +5d6",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 913,
+   "end": 919,
+   "soft": null
   },
   {
    "name": "Improved Elemental Wild Shape",
@@ -635,7 +1038,12 @@
    "type": "wild",
    "prerequisites": "Wis 25, ability to wild shape into an elemental",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 921,
+   "end": 937,
+   "soft": null
   },
   {
    "name": "Improved Favored Enemy",
@@ -643,7 +1051,12 @@
    "type": "general",
    "prerequisites": "Five or more favored enemies",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 939,
+   "end": 946,
+   "soft": null
   },
   {
    "name": "Improved Heighten Spell",
@@ -651,7 +1064,12 @@
    "type": "metamagic",
    "prerequisites": "Heighten Spell, Spellcraft 20 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 948,
+   "end": 955,
+   "soft": null
   },
   {
    "name": "Improved Ki Strike",
@@ -659,7 +1077,12 @@
    "type": "general",
    "prerequisites": "Wis 21, Ki strike +3",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 957,
+   "end": 964,
+   "soft": null
   },
   {
    "name": "Improved Low-Light Vision",
@@ -667,7 +1090,12 @@
    "type": "general",
    "prerequisites": "Low-light vision",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 966,
+   "end": 975,
+   "soft": null
   },
   {
    "name": "Improved Manifestation",
@@ -675,7 +1103,12 @@
    "type": "general",
    "prerequisites": "Ability to manifest powers of the normal maximum level in at least one psionic class",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58",
+   "start": 977,
+   "end": 1008,
+   "soft": null
   },
   {
    "name": "Improved Metamagic",
@@ -683,7 +1116,12 @@
    "type": "general",
    "prerequisites": "Four metamagic feats, Spellcraft 30 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 59,
+   "description_pages": "59",
+   "start": 1032,
+   "end": 1079,
+   "soft": null
   },
   {
    "name": "Improved Manyshot",
@@ -691,7 +1129,12 @@
    "type": "general",
    "prerequisites": "Dex 19, base attack bonus +21, Manyshot, Point Blank Shot, Rapid Shot",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 58,
+   "description_pages": "58-59",
+   "start": 1010,
+   "end": 1030,
+   "soft": null
   },
   {
    "name": "Improved Sneak Attack",
@@ -699,7 +1142,12 @@
    "type": "general",
    "prerequisites": "Sneak attack +8d6",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 59,
+   "description_pages": "59",
+   "start": 1081,
+   "end": 1087,
+   "soft": null
   },
   {
    "name": "Improved Spell Capacity",
@@ -707,7 +1155,12 @@
    "type": "general",
    "prerequisites": "Ability to cast spells of the normal maximum spell level in at least one spellcasting class",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 59,
+   "description_pages": "59-60",
+   "start": 0,
+   "end": 0,
+   "soft": "NO COVERAGE: full description (Epic Level Handbook p.60 page image is blurred and its text layer is unusable; the full description cannot be recovered without fabrication)"
   },
   {
    "name": "Improved Spell Resistance",
@@ -715,7 +1168,12 @@
    "type": "general",
    "prerequisites": "Must have spell resistance from a feat, class feature, or other permanent effect",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 60,
+   "description_pages": "60",
+   "start": 0,
+   "end": 0,
+   "soft": "NO COVERAGE: full description (Epic Level Handbook p.60 page image is blurred and its text layer is unusable; the full description cannot be recovered without fabrication)"
   },
   {
    "name": "Improved Stunning Fist",
@@ -723,7 +1181,12 @@
    "type": "general",
    "prerequisites": "Dex 19, Wis 19, Improved Unarmed Strike, Stunning Fist",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 60,
+   "description_pages": "60",
+   "start": 0,
+   "end": 0,
+   "soft": "NO COVERAGE: full description (Epic Level Handbook p.60 page image is blurred and its text layer is unusable; the full description cannot be recovered without fabrication)"
   },
   {
    "name": "Improved Whirlwind Attack",
@@ -731,7 +1194,12 @@
    "type": "general",
    "prerequisites": "Int 13, Dex 23, Dodge, Expertise, Mobility, Spring Attack, Whirlwind Attack",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 60,
+   "description_pages": "60",
+   "start": 0,
+   "end": 0,
+   "soft": "NO COVERAGE: full description (Epic Level Handbook p.60 page image is blurred and its text layer is unusable; the full description cannot be recovered without fabrication)"
   },
   {
    "name": "Incite Rage",
@@ -739,7 +1207,12 @@
    "type": "general",
    "prerequisites": "Cha 25, greater rage class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 60,
+   "description_pages": "60-61",
+   "start": 0,
+   "end": 0,
+   "soft": "NO COVERAGE: full description (Epic Level Handbook p.60 page image is blurred and its text layer is unusable; the full description cannot be recovered without fabrication)"
   },
   {
    "name": "Infinite Deflection",
@@ -747,7 +1220,12 @@
    "type": "general",
    "prerequisites": "Dex 25, Combat Reflexes, Deflect Arrows, Improved Unarmed Strike",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1089,
+   "end": 1097,
+   "soft": null
   },
   {
    "name": "Inspire Excellence",
@@ -755,7 +1233,12 @@
    "type": "general",
    "prerequisites": "Perform 30 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1099,
+   "end": 1125,
+   "soft": null
   },
   {
    "name": "Instant Reload",
@@ -763,7 +1246,12 @@
    "type": "general",
    "prerequisites": "Quick Draw, Rapid Reload, Weapon Focus (crossbow type to be selected)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1127,
+   "end": 1142,
+   "soft": null
   },
   {
    "name": "Intensify Spell",
@@ -771,7 +1259,12 @@
    "type": "metamagic",
    "prerequisites": "Empower Spell, Maximize Spell, Spellcraft 30 ranks, ability to cast 9th-level arcane or divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1144,
+   "end": 1164,
+   "soft": null
   },
   {
    "name": "Keen Strike",
@@ -779,7 +1272,12 @@
    "type": "general",
    "prerequisites": "Str 23, Wis 23, Improved Critical (unarmed strike), ki strike +3",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1166,
+   "end": 1178,
+   "soft": null
   },
   {
    "name": "Vorpal Strike",
@@ -787,7 +1285,12 @@
    "type": "general",
    "prerequisites": "Str 25, Wis 25, Improved Critical (unarmed strike), Improved Unarmed Strike, Keen Strike, Stunning Fist, ki strike +5",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 2005,
+   "end": 2016,
+   "soft": null
   },
   {
    "name": "Lasting Inspiration",
@@ -795,7 +1298,12 @@
    "type": "general",
    "prerequisites": "Perform 25 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1180,
+   "end": 1188,
+   "soft": null
   },
   {
    "name": "Legendary Climber",
@@ -803,7 +1311,12 @@
    "type": "general",
    "prerequisites": "Dex 21, Balance 12 ranks, Climb 24 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 61,
+   "description_pages": "61",
+   "start": 1190,
+   "end": 1200,
+   "soft": null
   },
   {
    "name": "Legendary Leaper",
@@ -811,7 +1324,12 @@
    "type": "general",
    "prerequisites": "Jump 24 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1214,
+   "end": 1219,
+   "soft": null
   },
   {
    "name": "Legendary Rider",
@@ -819,7 +1337,12 @@
    "type": "general",
    "prerequisites": "Ride 24 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1221,
+   "end": 1238,
+   "soft": null
   },
   {
    "name": "Legendary Tracker",
@@ -827,7 +1350,12 @@
    "type": "general",
    "prerequisites": "Wis 25, Track, Knowledge (nature) 30 ranks, Wilderness Lore 30 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1240,
+   "end": 1254,
+   "soft": null
   },
   {
    "name": "Legendary Wrestler",
@@ -835,7 +1363,12 @@
    "type": "general",
    "prerequisites": "Str 21, Dex 21, Improved Unarmed Strike, Escape Artist 15 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1256,
+   "end": 1263,
+   "soft": null
   },
   {
    "name": "Lingering Damage",
@@ -843,7 +1376,12 @@
    "type": "general",
    "prerequisites": "Sneak attack +8d6, crippling strike class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1265,
+   "end": 1273,
+   "soft": null
   },
   {
    "name": "Master Staff",
@@ -851,7 +1389,12 @@
    "type": "general",
    "prerequisites": "Craft Staff, Spellcraft 15 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1286,
+   "end": 1310,
+   "soft": null
   },
   {
    "name": "Master Wand",
@@ -859,7 +1402,12 @@
    "type": "general",
    "prerequisites": "Craft Wand, Spellcraft 15 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 62,
+   "description_pages": "62",
+   "start": 1312,
+   "end": 1327,
+   "soft": null
   },
   {
    "name": "Mighty Rage",
@@ -867,7 +1415,12 @@
    "type": "general",
    "prerequisites": "Str 21, Con 21, greater rage class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1329,
+   "end": 1336,
+   "soft": null
   },
   {
    "name": "Mobile Defense",
@@ -875,7 +1428,12 @@
    "type": "general",
    "prerequisites": "Dex 15, Dodge, Mobility, Spring Attack, defensive stance 5/day class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1338,
+   "end": 1347,
+   "soft": null
   },
   {
    "name": "Multispell",
@@ -883,7 +1441,12 @@
    "type": "general",
    "prerequisites": "Quicken Spell, ability to cast 9th-level arcane or divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1349,
+   "end": 1358,
+   "soft": null
   },
   {
    "name": "Multiweapon Rend",
@@ -891,7 +1454,12 @@
    "type": "general",
    "prerequisites": "Dex 15, base attack bonus +9, three or more hands, Multidexterity, Multiweapon Fighting",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1360,
+   "end": 1379,
+   "soft": null
   },
   {
    "name": "Music of the Gods",
@@ -899,7 +1467,12 @@
    "type": "general",
    "prerequisites": "Cha 25, Perform 30 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1381,
+   "end": 1391,
+   "soft": null
   },
   {
    "name": "Negative Energy Burst",
@@ -907,7 +1480,12 @@
    "type": "divine",
    "prerequisites": "Cha 25, ability to rebuke or command undead, ability to cast inflict critical wounds, an evil alignment",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1393,
+   "end": 1409,
+   "soft": null
   },
   {
    "name": "Overwhelming Critical",
@@ -915,7 +1493,12 @@
    "type": "general",
    "prerequisites": "Str 23, Cleave, Great Cleave, Improved Critical (weapon to be chosen), Power Attack, Weapon Focus (weapon to be chosen)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1411,
+   "end": 1427,
+   "soft": null
   },
   {
    "name": "Devastating Critical",
@@ -923,7 +1506,12 @@
    "type": "general",
    "prerequisites": "Str 25, Cleave, Great Cleave, Improved Critical (weapon to be chosen), Overwhelming Critical (weapon to be chosen), Power Attack, Weapon Focus (weapon to be chosen)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 53,
+   "description_pages": "53",
+   "start": 315,
+   "end": 331,
+   "soft": null
   },
   {
    "name": "Penetrate Damage Reduction",
@@ -931,7 +1519,12 @@
    "type": "general",
    "prerequisites": null,
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1429,
+   "end": 1440,
+   "soft": null
   },
   {
    "name": "Perfect Health",
@@ -939,7 +1532,12 @@
    "type": "general",
    "prerequisites": "Con 25, Great Fortitude",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63",
+   "start": 1442,
+   "end": 1447,
+   "soft": null
   },
   {
    "name": "Perfect Multiweapon Fighting",
@@ -947,7 +1545,12 @@
    "type": "general",
    "prerequisites": "Dex 25, three or more hands, Greater Multiweapon Fighting, Multidexterity, Multiweapon Fighting",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 63,
+   "description_pages": "63-64",
+   "start": 1449,
+   "end": 1477,
+   "soft": null
   },
   {
    "name": "Perfect Two-Weapon Fighting",
@@ -955,7 +1558,12 @@
    "type": "general",
    "prerequisites": "Dex 25, Ambidexterity, Greater Two-Weapon Fighting, Improved Two-Weapon Fighting, Two-Weapon Fighting",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 64,
+   "description_pages": "64",
+   "start": 1479,
+   "end": 1504,
+   "soft": null
   },
   {
    "name": "Permanent Emanation",
@@ -963,7 +1571,12 @@
    "type": "general",
    "prerequisites": "Spellcraft 25 ranks, ability to cast the spell to be made permanent",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 64,
+   "description_pages": "64",
+   "start": 1506,
+   "end": 1518,
+   "soft": null
   },
   {
    "name": "Planar Turning",
@@ -971,7 +1584,12 @@
    "type": "general",
    "prerequisites": "Wis 25, Cha 25, ability to turn or rebuke undead",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 64,
+   "description_pages": "64-65",
+   "start": 1520,
+   "end": 1573,
+   "soft": null
   },
   {
    "name": "Polyglot",
@@ -979,7 +1597,12 @@
    "type": "general",
    "prerequisites": "Int 25, Speak Language (five languages)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 65,
+   "description_pages": "65",
+   "start": 1585,
+   "end": 1591,
+   "soft": null
   },
   {
    "name": "Positive Energy Aura",
@@ -987,7 +1610,12 @@
    "type": "general",
    "prerequisites": "Cha 25, ability to turn undead, ability to cast dispel evil",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 65,
+   "description_pages": "65",
+   "start": 1593,
+   "end": 1625,
+   "soft": null
   },
   {
    "name": "Ranged Inspiration",
@@ -995,7 +1623,12 @@
    "type": "general",
    "prerequisites": "Perform 25 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 65,
+   "description_pages": "65",
+   "start": 1627,
+   "end": 1642,
+   "soft": null
   },
   {
    "name": "Rapid Inspiration",
@@ -1003,7 +1636,12 @@
    "type": "general",
    "prerequisites": "Perform 30 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1644,
+   "end": 1652,
+   "soft": null
   },
   {
    "name": "Reactive Countersong",
@@ -1011,7 +1649,12 @@
    "type": "general",
    "prerequisites": "Combat Reflexes, Perform 30 ranks, bardic music class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1654,
+   "end": 1670,
+   "soft": null
   },
   {
    "name": "Reflect Arrows",
@@ -1019,7 +1662,12 @@
    "type": "general",
    "prerequisites": "Dex 25, Deflect Arrows, Improved Unarmed Strike",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1672,
+   "end": 1679,
+   "soft": null
   },
   {
    "name": "Righteous Strike",
@@ -1027,7 +1675,12 @@
    "type": "general",
    "prerequisites": "Wis 19, Improved Unarmed Strike, Stunning Fist, any lawful alignment",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1681,
+   "end": 1691,
+   "soft": null
   },
   {
    "name": "Ruinous Rage",
@@ -1035,7 +1688,12 @@
    "type": "general",
    "prerequisites": "Str 25, Power Attack, Sunder, rage 5/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1693,
+   "end": 1703,
+   "soft": null
   },
   {
    "name": "Scribe Epic Scroll",
@@ -1043,7 +1701,12 @@
    "type": "item-creation",
    "prerequisites": "Scribe Scroll, Knowledge (arcana) 24 ranks, Spellcraft 24 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1705,
+   "end": 1720,
+   "soft": null
   },
   {
    "name": "Self-Concealment",
@@ -1051,7 +1714,12 @@
    "type": "general",
    "prerequisites": "Dex 30, Hide 30 ranks, Tumble 30 ranks, improved evasion",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1722,
+   "end": 1734,
+   "soft": null
   },
   {
    "name": "Shattering Strike",
@@ -1059,7 +1727,12 @@
    "type": "general",
    "prerequisites": "Epic Weapon Focus (unarmed strike), Weapon Focus (unarmed strike), Concentration 25 ranks, ki strike +3",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1736,
+   "end": 1750,
+   "soft": null
   },
   {
    "name": "Sneak Attack of Opportunity",
@@ -1067,7 +1740,12 @@
    "type": "general",
    "prerequisites": "Sneak attack +8d6, opportunist class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1752,
+   "end": 1759,
+   "soft": null
   },
   {
    "name": "Spectral Strike",
@@ -1075,7 +1753,12 @@
    "type": "general",
    "prerequisites": "Wis 19, ability to turn or rebuke undead",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 66,
+   "description_pages": "66",
+   "start": 1761,
+   "end": 1769,
+   "soft": null
   },
   {
    "name": "Spell Knowledge",
@@ -1083,7 +1766,12 @@
    "type": "general",
    "prerequisites": "Ability to cast the maximum spell level of an arcane spellcasting class",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1771,
+   "end": 1781,
+   "soft": null
   },
   {
    "name": "Spell Opportunity",
@@ -1091,7 +1779,12 @@
    "type": "general",
    "prerequisites": "Combat Casting, Combat Reflexes, Quicken Spell, Spellcraft 25 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1783,
+   "end": 1800,
+   "soft": null
   },
   {
    "name": "Spell Stowaway",
@@ -1099,7 +1792,12 @@
    "type": "general",
    "prerequisites": "Spellcraft 24 ranks, caster level 12th",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1802,
+   "end": 1820,
+   "soft": null
   },
   {
    "name": "Spellcasting Harrier",
@@ -1107,7 +1805,12 @@
    "type": "general",
    "prerequisites": "Combat Reflexes",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1822,
+   "end": 1829,
+   "soft": null
   },
   {
    "name": "Spontaneous Domain Access",
@@ -1115,7 +1818,12 @@
    "type": "general",
    "prerequisites": "Wis 25, Spellcraft 30 ranks, ability to cast 9th-level divine spells",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1831,
+   "end": 1849,
+   "soft": null
   },
   {
    "name": "Spontaneous Spell",
@@ -1123,7 +1831,12 @@
    "type": "general",
    "prerequisites": "Spellcraft 25 ranks, ability to cast the maximum normal spell level of at least one spellcasting class",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1851,
+   "end": 1866,
+   "soft": null
   },
   {
    "name": "Storm of Throws",
@@ -1131,7 +1844,12 @@
    "type": "general",
    "prerequisites": "Dex 23, Point Blank Shot, Quick Draw, Rapid Shot",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1868,
+   "end": 1876,
+   "soft": null
   },
   {
    "name": "Superior Initiative",
@@ -1139,7 +1857,12 @@
    "type": "general",
    "prerequisites": "Improved Initiative",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67",
+   "start": 1878,
+   "end": 1884,
+   "soft": null
   },
   {
    "name": "Swarm of Arrows",
@@ -1147,7 +1870,12 @@
    "type": "general",
    "prerequisites": "Dex 23, Point Blank Shot, Rapid Shot, Weapon Focus (type of bow used)",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 67,
+   "description_pages": "67-68",
+   "start": 1886,
+   "end": 1892,
+   "soft": null
   },
   {
    "name": "Tenacious Magic",
@@ -1155,7 +1883,12 @@
    "type": "general",
    "prerequisites": "Spellcraft 15 ranks, ability to cast the spell to be made tenacious",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1894,
+   "end": 1909,
+   "soft": null
   },
   {
    "name": "Terrifying Rage",
@@ -1163,7 +1896,12 @@
    "type": "general",
    "prerequisites": "Intimidate 25 ranks, rage 5/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1911,
+   "end": 1919,
+   "soft": null
   },
   {
    "name": "Thundering Rage",
@@ -1171,7 +1909,12 @@
    "type": "general",
    "prerequisites": "Str 25, rage 5/day",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1921,
+   "end": 1931,
+   "soft": null
   },
   {
    "name": "Trap Sense",
@@ -1179,7 +1922,12 @@
    "type": "general",
    "prerequisites": "Search 25 ranks, Spot 25 ranks, ability to find traps as a rogue",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1933,
+   "end": 1941,
+   "soft": null
   },
   {
    "name": "Two-Weapon Rend",
@@ -1187,7 +1935,12 @@
    "type": "general",
    "prerequisites": "Dex 15, base attack bonus +9, Ambidexterity, Improved Two-Weapon Fighting, Two-Weapon Fighting",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1943,
+   "end": 1961,
+   "soft": null
   },
   {
    "name": "Uncanny Accuracy",
@@ -1195,7 +1948,12 @@
    "type": "general",
    "prerequisites": "Dex 21, Point Blank Shot, Precise Shot, Spot 20 ranks",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1963,
+   "end": 1975,
+   "soft": null
   },
   {
    "name": "Undead Mastery",
@@ -1203,7 +1961,12 @@
    "type": "divine",
    "prerequisites": "Cha 21, ability to rebuke or command undead",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1977,
+   "end": 1983,
+   "soft": null
   },
   {
    "name": "Zone of Animation",
@@ -1211,7 +1974,12 @@
    "type": "divine",
    "prerequisites": "Cha 25, Undead Mastery, ability to rebuke or command undead",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 69,
+   "description_pages": "69",
+   "start": 2032,
+   "end": 2051,
+   "soft": null
   },
   {
    "name": "Unholy Strike",
@@ -1219,7 +1987,12 @@
    "type": "general",
    "prerequisites": "Smite good class feature, any evil alignment",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 68,
+   "description_pages": "68",
+   "start": 1985,
+   "end": 1994,
+   "soft": null
   },
   {
    "name": "Widen Aura of Courage",
@@ -1227,7 +2000,12 @@
    "type": "general",
    "prerequisites": "Cha 25, aura of courage class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 69,
+   "description_pages": "69",
+   "start": 2018,
+   "end": 2023,
+   "soft": null
   },
   {
    "name": "Widen Aura of Despair",
@@ -1235,7 +2013,12 @@
    "type": "general",
    "prerequisites": "Cha 25, aura of despair class feature",
    "citation": "Epic Level Handbook (WotC, 3.5e), Table 1-36 'Epic Feats', pp.46-49 (vision-transcribed from the PDF page images; the OCR text layer is corrupt)",
-   "pages": "46-49"
+   "pages": "46-49",
+   "page": 69,
+   "description_pages": "69",
+   "start": 2025,
+   "end": 2030,
+   "soft": null
   }
  ]
 }
