@@ -3,8 +3,9 @@
 """
 whfb_wargame_harvest.py  --  THE NEW PATH ENGINE reference-layer harvester.
 
-Extracts UNIT PROFILES (characteristic lines) from the BORN-DIGITAL Warhammer
-Fantasy Battle *tabletop wargame* army books and writes:
+Extracts UNIT PROFILES (characteristic lines) and their explicit SPECIAL RULES
+sections from the BORN-DIGITAL Warhammer Fantasy Battle *tabletop wargame* army
+books and writes:
     reference/whfb_wargame_index.json
     reference/whfb_wargame_index.md
 
@@ -20,6 +21,9 @@ A datasheet usually prints several profile lines (unit + champion + mount/monste
 8th-ed books also print a Troop Type (Infantry/Cavalry/Monster/Chariot/...) either
 as a "TROOP TYPE:" line beneath the profile block (bestiary entries) or as a
 trailing text column after Ld (army-list summary). Both are captured when present.
+The unit's book-raw SPECIAL RULES block is attached by same-column geometry,
+explicit subject heading, or the summary table's printed Page reference plus an
+exact name occurrence; ambiguous links remain named NO COVERAGE gaps.
 
 Technique (geometric grid reconstruction, PyMuPDF "words" mode) -- mirrors the
 sibling wh40k_wargame_harvest.py:
@@ -771,6 +775,403 @@ def resolve_garbled(rows_out, soft_out):
     return kept
 
 
+# Structural labels that end a unit's special-rules area.  Named rule
+# paragraphs are retained only when their heading ends in a colon; this keeps
+# adjacent lore/quotation boxes out of the mechanical reference layer.
+_RULE_STOP_PREFIXES = (
+    "ARMY SPECIAL RULES", "TROOP TYPE", "MAGIC", "EQUIPMENT", "OPTIONS",
+    "UNIT SIZE", "PROFILE", "MOUNTS", "MAGIC ITEMS", "WEAPONS", "ARMOUR",
+    "UPGRADE", "UPGRADES", "POINTS",
+)
+_RULE_STOP_KEYS = tuple(
+    re.sub(r"[^A-Z0-9]+", "", prefix) for prefix in _RULE_STOP_PREFIXES)
+_RULE_TITLE_RE = re.compile(
+    r"^[A-Z][A-Za-z0-9'’+() /-]{1,80}:\s+\S")
+_SPECIAL_RULES_RE = re.compile(
+    r"S\s*P\s*E\s*C\s*I\s*A\s*L\s+R\s*U\s*L\s*E\s*S"
+    r"(?:\s*\(([^)]+)\))?\s*:",
+    re.I)
+
+
+def _clean_rule_block(text):
+    """Collapse PDF display line-wraps without rewriting any book wording."""
+    return " ".join(line.strip() for line in text.splitlines() if line.strip())
+
+
+def _label_x(rtoks, label):
+    """Find a whole-word or glyphwise display label and return its x-centre."""
+    wanted = label.lower()
+    for i in range(len(rtoks)):
+        joined = ""
+        x0 = rtoks[i][1]
+        for j in range(i, min(len(rtoks), i + len(label) + 1)):
+            joined += re.sub(r"[^A-Za-z]", "", rtoks[j][3]).lower()
+            if joined == wanted:
+                return 0.5 * (x0 + rtoks[j][2])
+            if not wanted.startswith(joined):
+                break
+    return None
+
+
+def page_reference_hint(rows, header, value_toks, page_count, page_width):
+    """Read an army-list summary's printed Page column, when present."""
+    mid = page_width / 2.0
+    hc = sum(c["xc"] for c in header["cols"]) / float(len(header["cols"]))
+    right = hc >= mid
+    header_toks = None
+    for ry, rtoks in rows:
+        if abs(ry - header["y"]) <= 2.0:
+            header_toks = [
+                t for t in rtoks
+                if ((0.5 * (t[1] + t[2]) >= mid) == right)
+            ]
+            break
+    if not header_toks:
+        return None
+    page_x = _label_x(header_toks, "Page")
+    if page_x is None or page_x <= header["cols"][-1]["xc"]:
+        return None
+
+    candidates = []
+    for _yc, x0, x1, txt in value_toks:
+        raw = txt.strip()
+        xc = 0.5 * (x0 + x1)
+        if raw.isdigit() and 1 <= int(raw) <= page_count:
+            candidates.append((abs(xc - page_x), int(raw)))
+    candidates.sort()
+    if candidates and candidates[0][0] <= 14.0:
+        return candidates[0][1]
+    return None
+
+
+def _label_xs(rtoks, label):
+    """Return every x-centre for a whole-word or glyphwise display label."""
+    wanted = label.lower()
+    out = []
+    for i in range(len(rtoks)):
+        joined = ""
+        x0 = rtoks[i][1]
+        for j in range(i, min(len(rtoks), i + len(label) + 1)):
+            joined += re.sub(r"[^A-Za-z]", "", rtoks[j][3]).lower()
+            if joined == wanted:
+                out.append(0.5 * (x0 + rtoks[j][2]))
+                break
+            if not wanted.startswith(joined):
+                break
+    return out
+
+
+def summary_reference_map(doc):
+    """Read exact unit -> bestiary-page links from army-list summary tables."""
+    found = {}
+    for pi in range(doc.page_count):
+        rows = cluster_rows(doc[pi].get_text("words"))
+        headers = []
+        for ri, (ry, rtoks) in enumerate(rows):
+            page_xs = _label_xs(rtoks, "Page")
+            for page_x in page_xs:
+                previous = [x for x in page_xs if x < page_x]
+                lower = max(previous) + 12.0 if previous else 0.0
+                m_xs = [
+                    0.5 * (t[1] + t[2]) for t in rtoks
+                    if lower < 0.5 * (t[1] + t[2]) < page_x
+                    and re.sub(r"[^A-Za-z]", "", t[3]).lower() == "m"
+                ]
+                if m_xs:
+                    headers.append((ri, ry, page_x, lower, max(m_xs)))
+
+        for ri, hy, page_x, lower, m_x in headers:
+            next_y = min([
+                h[1] for h in headers
+                if h[1] > hy + 2.0 and abs(h[2] - page_x) < 20.0
+            ] + [1e9])
+            med = max(8.0, min(24.0, (page_x - m_x) / 10.0))
+            for ry, rtoks in rows[ri + 1:]:
+                if ry >= next_y - 1.0 or ry - hy > 180.0:
+                    break
+                segment = [
+                    t for t in rtoks
+                    if lower < 0.5 * (t[1] + t[2]) < page_x + 12.0
+                ]
+                values = []
+                for t in segment:
+                    raw = t[3].strip()
+                    xc = 0.5 * (t[1] + t[2])
+                    if (raw.isdigit() and 1 <= int(raw) <= doc.page_count
+                            and abs(xc - page_x) <= 14.0):
+                        values.append((abs(xc - page_x), int(raw)))
+                if not values:
+                    continue
+                name = parse_name(segment, m_x, med)
+                if name and has_alpha(name):
+                    found.setdefault(_norm_name(name), set()).add(
+                        min(values)[1])
+    return found
+
+
+def extract_special_rules(page, header, headers):
+    """Return the explicit SPECIAL RULES block for one geometric profile grid.
+
+    WHFB bestiary pages place the characteristic grid and its rules in the same
+    half-page column.  Matching by both column and vertical order prevents a
+    neighbouring unit's rules from being attached on two-unit pages.
+    """
+    mid = page.rect.width / 2.0
+    hcentre = sum(c["xc"] for c in header["cols"]) / float(len(header["cols"]))
+    right = hcentre >= mid
+    clip = fitz.Rect(mid if right else 0.0, 0.0,
+                     page.rect.width if right else mid, page.rect.height)
+
+    later_headers = []
+    for other in headers:
+        if other["y"] <= header["y"] + 2.0:
+            continue
+        oc = sum(c["xc"] for c in other["cols"]) / float(len(other["cols"]))
+        if (oc >= mid) == right:
+            later_headers.append(other["y"])
+    stop_y = min(later_headers + [page.rect.height + 1.0])
+
+    blocks = []
+    for b in page.get_text("blocks", clip=clip, sort=True):
+        txt = _clean_rule_block(b[4])
+        if txt:
+            blocks.append((float(b[1]), float(b[3]), txt))
+
+    candidates = []
+    for bi, (y0, y1, txt) in enumerate(blocks):
+        if y0 < header["y"] - 5.0 or y0 >= stop_y:
+            continue
+        m = _SPECIAL_RULES_RE.search(txt)
+        if m:
+            candidates.append((y0, bi, m.start()))
+    if not candidates:
+        return None
+
+    _y0, start_i, marker = min(candidates, key=lambda x: x[0])
+    first = blocks[start_i][2][marker:].strip()
+    if not first:
+        return None
+    pieces = [first]
+
+    # Unique unit rules follow as titled paragraphs (for example,
+    # "The Hunger: ...").  A PDF block normally holds the whole paragraph.
+    # Unheaded prose, quotations, and decorative lore boxes are deliberately
+    # excluded rather than guessed into a mechanical rule span.
+    for y0, _y1, txt in blocks[start_i + 1:]:
+        if y0 >= stop_y:
+            break
+        if _SPECIAL_RULES_RE.search(txt):
+            break
+        if not _RULE_TITLE_RE.match(txt):
+            continue
+        upper = txt.upper()
+        compact = re.sub(r"[^A-Z0-9]+", "", upper)
+        if any(compact.startswith(prefix) for prefix in _RULE_STOP_KEYS):
+            break
+        if upper.startswith("AND TO TELL OF "):
+            continue
+        pieces.append(txt)
+
+    joined = "\n\n".join(pieces)
+    marker_match = _SPECIAL_RULES_RE.search(joined)
+    if marker_match is None:
+        return None
+    if not joined[marker_match.end():].strip() and len(pieces) == 1:
+        return None
+    return joined
+
+
+def page_rule_catalog(page):
+    """Return (profile-name set, rule text) pairs for one bestiary page."""
+    rows = cluster_rows(page.get_text("words"))
+    headers = find_headers(rows)
+    catalog = []
+    hys = [h["y"] for h in headers]
+    for hi, h in enumerate(headers):
+        rules = extract_special_rules(page, h, headers)
+        if not rules:
+            continue
+        next_hy = hys[hi + 1] if hi + 1 < len(hys) else 1e9
+        names = set()
+        got = 0
+        misses = 0
+        for ry, rtoks in rows:
+            if ry <= h["y"] + 1.0:
+                continue
+            if ry >= next_hy - 1.0 or ry - h["y"] > 320.0:
+                break
+            parsed = parse_value_row(rtoks, h["cols"])
+            if parsed is None:
+                if got:
+                    misses += 1
+                    if misses >= 3:
+                        break
+                continue
+            misses = 0
+            got += 1
+            names.add(_norm_name(parsed[0]))
+        catalog.append((names, rules))
+    return catalog
+
+
+def page_unanchored_catalog(page):
+    """Collect (printed subject, rule text) without assuming a parsed grid."""
+    found = []
+    mid = page.rect.width / 2.0
+    for right in (False, True):
+        clip = fitz.Rect(mid if right else 0.0, 0.0,
+                         page.rect.width if right else mid, page.rect.height)
+        starts = []
+        for b in page.get_text("blocks", clip=clip, sort=True):
+            txt = _clean_rule_block(b[4])
+            match = _SPECIAL_RULES_RE.search(txt)
+            if match:
+                starts.append((float(b[1]), (match.group(1) or "").strip()))
+        fake_headers = [
+            {"y": y - 1.0,
+             "cols": [{"xc": (0.75 if right else 0.25) * page.rect.width}]}
+            for y, _subject in starts
+        ]
+        for (start, subject), fake in zip(starts, fake_headers):
+            txt = extract_special_rules(page, fake, fake_headers)
+            if txt:
+                found.append((subject, txt))
+    unique = {}
+    for subject, txt in found:
+        unique.setdefault((subject, txt), None)
+    return list(unique.keys())
+
+
+def page_unanchored_rules(page):
+    return sorted(set(txt for _subject, txt in page_unanchored_catalog(page)))
+
+
+def _lookup_norm(text):
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def _subject_matches(subject, name):
+    """Match an exact subject or one member of an explicit and/or list."""
+    name_key = _lookup_norm(name)
+    if not name_key:
+        return False
+    parts = re.split(r"\s+(?:and|or)\s+|[,/&]", subject, flags=re.I)
+    return any(_lookup_norm(part) == name_key for part in parts)
+
+
+def _page_mentions(page, name):
+    return _lookup_norm(name) in _lookup_norm(page.get_text("text"))
+
+
+def attach_rule_backfills(doc, rows, cite_book):
+    """Use exact duplicate names and printed army-list page references safely."""
+    exact = {}
+    for row in rows:
+        if row.get("special_rules"):
+            key = _norm_name(row["name"])
+            exact.setdefault(key, []).append(
+                (row["special_rules"], list(row.get("rules_citations", []))))
+
+    catalog_cache = {}
+    loose_cache = {}
+    summary_refs = summary_reference_map(doc)
+
+    def loose_catalog(page_no):
+        if page_no not in loose_cache:
+            loose_cache[page_no] = page_unanchored_catalog(doc[page_no - 1])
+        return loose_cache[page_no]
+
+    for row in rows:
+        if row.get("special_rules"):
+            continue
+        key = _norm_name(row["name"])
+        options = exact.get(key, [])
+        unique = {}
+        for txt, cites in options:
+            unique.setdefault(txt, cites)
+        if len(unique) == 1:
+            txt, cites = next(iter(unique.items()))
+            row["special_rules"] = txt
+            row["rules_citations"] = cites
+            continue
+
+        # Subject-qualified headings such as "SPECIAL RULES (Hound of
+        # Orion):" are authoritative even when the profile grid is elsewhere
+        # on the page.  An unqualified section is used only when it is the
+        # page's sole section and the profile itself is cited to that page.
+        mpage = re.search(r"\[PDF page (\d+)\]", row["citation"])
+        direct_page = int(mpage.group(1)) if mpage else None
+        if direct_page and 1 <= direct_page <= doc.page_count:
+            direct_catalog = loose_catalog(direct_page)
+            subject_texts = {
+                txt for subject, txt in direct_catalog
+                if _subject_matches(subject, row["name"])
+            }
+            if len(subject_texts) == 1:
+                row["special_rules"] = next(iter(subject_texts))
+                row["rules_citations"] = [row["citation"]]
+                continue
+            if (not any(subject for subject, _txt in direct_catalog)
+                    and len({txt for _subject, txt in direct_catalog}) == 1):
+                row["special_rules"] = direct_catalog[0][1]
+                row["rules_citations"] = [row["citation"]]
+                continue
+
+        hint = row.get("_rules_page_hint")
+        printed_pages = summary_refs.get(key, set())
+        if len(printed_pages) == 1:
+            hint = next(iter(printed_pages))
+        if not hint or not (1 <= hint <= doc.page_count):
+            continue
+        hinted_page = doc[hint - 1]
+        if not _page_mentions(hinted_page, row["name"]):
+            continue
+        if hint not in catalog_cache:
+            catalog_cache[hint] = page_rule_catalog(hinted_page)
+        catalog = catalog_cache[hint]
+        texts = {txt for names, txt in catalog if key in names}
+        subject_texts = {
+            txt for subject, txt in loose_catalog(hint)
+            if _subject_matches(subject, row["name"])
+        }
+        texts.update(subject_texts)
+        if not texts:
+            unqualified = {
+                txt for subject, txt in loose_catalog(hint) if not subject}
+            if len(unqualified) == 1:
+                texts = unqualified
+        if len(texts) == 1:
+            row["special_rules"] = next(iter(texts))
+            row["rules_citations"] = [
+                "%s [PDF page %d]" % (cite_book, hint)]
+
+    # Final safe fallback: a subject printed inside the heading itself is an
+    # explicit book-level name link, independent of profile-table geometry.
+    subject_index = []
+    for page_no in range(1, doc.page_count + 1):
+        for subject, txt in loose_catalog(page_no):
+            if subject:
+                subject_index.append((subject, txt, page_no))
+    for row in rows:
+        if row.get("special_rules"):
+            continue
+        matches = [
+            (txt, page_no) for subject, txt, page_no in subject_index
+            if _subject_matches(subject, row["name"])
+        ]
+        texts = {txt for txt, _page_no in matches}
+        if len(texts) == 1:
+            txt = next(iter(texts))
+            page_no = next(pno for candidate, pno in matches
+                           if candidate == txt)
+            row["special_rules"] = txt
+            row["rules_citations"] = [
+                "%s [PDF page %d]" % (cite_book, page_no)]
+
+    for row in rows:
+        row.pop("_rules_page_hint", None)
+
+
 def harvest_book(doc, army, edition, official, cite_book):
     """Harvest a born-digital WHFB army book with readable header rows."""
     rows_out = []
@@ -829,9 +1230,15 @@ def harvest_book(doc, army, edition, official, cite_book):
                     continue
                 misses = 0
                 got += 1
-                block_rows.append((page_no, parsed))
+                hint = page_reference_hint(
+                    rows, h, rtoks, doc.page_count, doc[i].rect.width)
+                block_rows.append((page_no, parsed, hint))
 
-            for (pno, parsed) in block_rows:
+            rule_text = extract_special_rules(doc[i], h, headers)
+            rule_match = _SPECIAL_RULES_RE.search(rule_text or "")
+            rule_subject = ((rule_match.group(1) or "").strip()
+                            if rule_match else "")
+            for (pno, parsed, hint) in block_rows:
                 name, profile, troop_inline, soft = parsed
                 troop = troop_inline or block_troop
                 row = {
@@ -846,8 +1253,14 @@ def harvest_book(doc, army, edition, official, cite_book):
                 }
                 if troop:
                     row["troop_type"] = troop
+                if hint and hint != pno:
+                    row["_rules_page_hint"] = hint
                 if ctx and ctx.lower() != name.lower():
                     row["unit_context"] = ctx
+                if (rule_text and
+                        (not rule_subject or _subject_matches(rule_subject, name))):
+                    row["special_rules"] = rule_text
+                    row["rules_citations"] = [row["citation"]]
                 if soft:
                     row["soft"] = soft
                     soft_out.append({"citation": row["citation"], "name": name,
@@ -855,6 +1268,7 @@ def harvest_book(doc, army, edition, official, cite_book):
                 rows_out.append(row)
 
     rows_out = resolve_garbled(rows_out, soft_out)
+    attach_rule_backfills(doc, rows_out, cite_book)
     return rows_out, soft_out, coverage_gaps
 
 
@@ -916,6 +1330,15 @@ def _norm_name(n):
     return re.sub(r"\s+", "", n.lower())
 
 
+def _prefer_rule_text(target, source):
+    """Keep the longer cited book-raw rule span when duplicate profiles merge."""
+    incoming = source.get("special_rules", "")
+    current = target.get("special_rules", "")
+    if incoming and len(incoming) > len(current):
+        target["special_rules"] = incoming
+        target["rules_citations"] = list(source.get("rules_citations", []))
+
+
 def dedupe_within_book(rows):
     """
     Collapse duplicate rows within a book (the army-list summary repeats the
@@ -934,6 +1357,7 @@ def dedupe_within_book(rows):
             idx = seen[key]
             if "troop_type" not in out[idx] and "troop_type" in r:
                 out[idx]["troop_type"] = r["troop_type"]
+            _prefer_rule_text(out[idx], r)
             continue
         seen[key] = len(out)
         out.append(r)
@@ -960,6 +1384,7 @@ def dedupe_within_book(rows):
                         out[b]["troop_type"] = out[a]["troop_type"]
                     if "unit_context" not in out[b] and "unit_context" in out[a]:
                         out[b]["unit_context"] = out[a]["unit_context"]
+                    _prefer_rule_text(out[b], out[a])
                     drop.add(a)
                     break
     if drop:
@@ -1005,6 +1430,8 @@ def harvest_all(verbose=True):
         "rows": [],
         "soft": [],
         "per_book": {},
+        "per_book_rules": {},
+        "rule_gaps": [],
         "digital_official": [],
         "digital_unofficial": [],   # (stem, reason)
         "skipped_rulebook": [],
@@ -1080,6 +1507,14 @@ def harvest_all(verbose=True):
         result["rows"].extend(rows)
         result["soft"].extend(soft)
         result["per_book"][stem] = len(rows)
+        result["per_book_rules"][stem] = sum(
+            bool(r.get("special_rules")) for r in rows)
+        for row in rows:
+            if row.get("special_rules"):
+                continue
+            result["rule_gaps"].append(
+                "%s / %s (no unambiguous explicit SPECIAL RULES section)"
+                % (stem, row["name"]))
         result["digital_official"].append(stem)
         for (pno, why) in gaps:
             note = "%s [PDF page %d]: %s" % (stem, pno, why)
@@ -1124,10 +1559,11 @@ def write_outputs(result):
     payload = {
         "system": SYSTEM,
         "note": ("Warhammer Fantasy Battle tabletop WARGAME unit profiles "
-                 "(characteristic lines: M WS BS S T W I A Ld). Distinct from the "
-                 "Warhammer Fantasy Roleplay (WFRP) line. Extracted from born-digital "
-                 "army-book PDF text layers only; scanned books are listed under "
-                 "no_coverage_scanned."),
+                 "(characteristic lines: M WS BS S T W I A Ld) plus each profile's "
+                 "explicit book-raw SPECIAL RULES section when unambiguously linked. "
+                 "Distinct from the Warhammer Fantasy Roleplay (WFRP) line. Extracted "
+                 "from born-digital army-book PDF text layers only; scanned books are "
+                 "listed under no_coverage_scanned."),
         "methodology_notes": [
             "Profiles reconstructed geometrically from the PDF text layer (PyMuPDF "
             "words mode): a header row of characteristic labels (M WS BS S T W I A Ld) "
@@ -1149,6 +1585,12 @@ def write_outputs(result):
             "Movement values keep verbatim any '*' (variable) or random-movement die "
             "(e.g. 2D6); '-' marks a characteristic a model does not have. Leadership can "
             "reach 10. Parenthetical values are kept as printed.",
+            "SPECIAL RULES text is copied verbatim from the unit's PDF section. The "
+            "attachment uses same-column profile geometry, explicit subject-qualified "
+            "headings, or the army-list summary's printed Page column plus an exact "
+            "name occurrence on the cited bestiary page. Display-spaced headings such "
+            "as 'S P E C I A L R U L E S' are recognised. Ambiguous links remain named "
+            "NO COVERAGE gaps; no rule text is inferred.",
             "Only the OFFICIAL Games Workshop army books are harvested. Born-digital files "
             "whose filenames mark them fan-made/unofficial ('9th', 'PDF Room', 'pdf-free', "
             "version tags) are classified DIGITAL-UNOFFICIAL and skipped so a fan stat is "
@@ -1162,6 +1604,7 @@ def write_outputs(result):
             "insensitive), preferring the row that also carries a troop_type.",
         ],
         "total_profiles": len(result["rows"]),
+        "profiles_with_special_rules": sum(result["per_book_rules"].values()),
         "digital_official_books": result["digital_official"],
         "digital_unofficial_skipped": [
             {"book": s, "marker": mk} for s, mk in result["digital_unofficial"]],
@@ -1173,7 +1616,9 @@ def write_outputs(result):
             {"book": s, "junk_alpha_fraction": jf} for s, jf in result["mangled"]],
         "no_coverage_scanned": result["no_coverage"],
         "page_gaps": result["page_gaps"],
+        "special_rules_no_coverage": result["rule_gaps"],
         "per_book_counts": result["per_book"],
+        "per_book_rule_counts": result["per_book_rules"],
         "soft_count": len(result["soft"]),
         "rows": result["rows"],
     }
@@ -1185,6 +1630,9 @@ def write_outputs(result):
     lines.append("")
     lines.append("**System:** WHFB (tabletop wargame -- NOT the WFRP roleplay line)  ")
     lines.append("**Total profiles:** %d  " % len(result["rows"]))
+    lines.append("**Profiles with special rules:** %d"
+                 % sum(result["per_book_rules"].values()))
+    lines.append("**Named special-rules gaps:** %d" % len(result["rule_gaps"]))
     lines.append("**Soft / uncertain rows:** %d  " % len(result["soft"]))
     lines.append("")
     lines.append("Profiles (M WS BS S T W I A Ld) extracted geometrically from the PDF "
@@ -1199,12 +1647,14 @@ def write_outputs(result):
     lines.append("")
     lines.append("## Digital OFFICIAL books harvested")
     lines.append("")
-    lines.append("| Book | Army | Edition | Profiles |")
-    lines.append("| --- | --- | --- | --- |")
+    lines.append("| Book | Army | Edition | Profiles | Rules |")
+    lines.append("| --- | --- | --- | --- | --- |")
     for s in result["digital_official"]:
         ed = infer_edition(s)
         ar = infer_army(s)
-        lines.append("| %s | %s | %s | %d |" % (s, ar, ed, result["per_book"].get(s, 0)))
+        lines.append("| %s | %s | %s | %d | %d |"
+                     % (s, ar, ed, result["per_book"].get(s, 0),
+                        result["per_book_rules"].get(s, 0)))
     lines.append("")
     if result["digital_unofficial"]:
         lines.append("## Digital UNOFFICIAL / fan-made (skipped -- not harvested)")
@@ -1239,6 +1689,15 @@ def write_outputs(result):
         for s in result["skipped_faq"]:
             lines.append("- %s" % s)
         lines.append("")
+    if result["rule_gaps"]:
+        lines.append("## NO COVERAGE (special-rules attachment)")
+        lines.append("")
+        lines.append("These profiles remain mechanically indexed, but no unambiguous "
+                     "explicit unit SPECIAL RULES section could be linked:")
+        lines.append("")
+        for gap in result["rule_gaps"]:
+            lines.append("- %s" % gap)
+        lines.append("")
     lines.append("## NO COVERAGE (scanned, image-only)")
     lines.append("")
     for s in result["no_coverage"]:
@@ -1257,16 +1716,18 @@ def write_outputs(result):
     for cb in sorted(by_book.keys()):
         lines.append("## %s" % cb)
         lines.append("")
-        lines.append("| Unit | Profile | Troop Type | Context | Edition | Citation | Soft |")
-        lines.append("| --- | --- | --- | --- | --- | --- | --- |")
+        lines.append("| Unit | Profile | Troop Type | Context | Edition | Citation | Rules | Soft |")
+        lines.append("| --- | --- | --- | --- | --- | --- | --- | --- |")
         for r in by_book[cb]:
             soft = "yes" if "soft" in r else ""
+            rules = "yes" if r.get("special_rules") else ""
             nm = r["name"].replace("|", "\\|")
             pr = profile_str(r["profile"]).replace("|", "\\|")
             tt = r.get("troop_type", "").replace("|", "\\|")
             ctx = r.get("unit_context", "").replace("|", "\\|")
-            lines.append("| %s | %s | %s | %s | %s | %s | %s |" %
-                         (nm, pr, tt, ctx, r["edition"], r["citation"], soft))
+            lines.append("| %s | %s | %s | %s | %s | %s | %s | %s |" %
+                         (nm, pr, tt, ctx, r["edition"], r["citation"],
+                          rules, soft))
         lines.append("")
 
     with open(OUT_MD, "w", encoding="utf-8") as fh:
@@ -1336,7 +1797,20 @@ def selftest():
         assert not is_value(bad), "is_value accepted %r" % bad
     print("selftest: value-token grammar OK")
 
-    # (a3) live Lizardmen p37 fixture (guarded)
+    # (a3) normal, display-spaced, and subject-qualified rules headings
+    normal = _SPECIAL_RULES_RE.search("SPECIAL RULES: Fly.")
+    spaced = _SPECIAL_RULES_RE.search(
+        "S P E C I A L R U L E S : Daemonic.")
+    subject = _SPECIAL_RULES_RE.search(
+        "SPECIAL RULES (Hound of Orion): Forest Spirit.")
+    assert normal and not normal.group(1)
+    assert spaced and not spaced.group(1)
+    assert subject and subject.group(1) == "Hound of Orion"
+    assert _subject_matches(subject.group(1), "Hound of Orion")
+    assert not _subject_matches(subject.group(1), "Orion")
+    print("selftest: SPECIAL RULES heading grammar OK")
+
+    # (a4) live Lizardmen p37 fixture (guarded)
     liz = os.path.join(SRC_DIRS[0], "8 ed", "Armybook_8ed - Lizardmen.pdf")
     if os.path.isfile(liz):
         doc = fitz.open(liz)
@@ -1366,7 +1840,27 @@ def selftest():
     res = harvest_all(verbose=False)
     rows = res["rows"]
     total = len(rows)
-    assert 250 <= total <= 600, "total profiles %d outside expected band" % total
+    assert total == 291, "expected 291 profiles, got %d" % total
+    expected_profiles = {
+        "Armybook_8ed - Daemons of Chaos - 2012": 54,
+        "Armybook_8ed - Dwarfs - 2014": 40,
+        "Armybook_8ed - Lizardmen": 49,
+        "Armybook_8ed - Vampire Counts": 52,
+        "Armybook_8ed - Warriors of Chaos 2012": 49,
+        "Armybook_8ed - Wood Elves": 47,
+    }
+    expected_rules = {
+        "Armybook_8ed - Daemons of Chaos - 2012": 38,
+        "Armybook_8ed - Dwarfs - 2014": 34,
+        "Armybook_8ed - Lizardmen": 28,
+        "Armybook_8ed - Vampire Counts": 44,
+        "Armybook_8ed - Warriors of Chaos 2012": 32,
+        "Armybook_8ed - Wood Elves": 41,
+    }
+    assert res["per_book"] == expected_profiles, res["per_book"]
+    assert res["per_book_rules"] == expected_rules, res["per_book_rules"]
+    assert sum(expected_rules.values()) == 217
+    assert len(res["rule_gaps"]) == 74, len(res["rule_gaps"])
     for r in rows:
         assert r["system"] == "WHFB", "row not labelled WHFB: %r" % r
         assert r["name"] and has_alpha(r["name"]), "empty/invalid name: %r" % r
@@ -1376,12 +1870,39 @@ def selftest():
         low = r["name"].lower()
         assert low not in LABELS, "header token leaked as name: %r" % r
         assert not re.match(r"^(ws|bs|ld|troop\s*type)\b", low), "header/field leak: %r" % r
+        if r.get("special_rules"):
+            assert r.get("rules_citations"), "rules missing citation: %r" % r
+            assert all("[PDF page" in c for c in r["rules_citations"]), r
+            markers = list(_SPECIAL_RULES_RE.finditer(r["special_rules"]))
+            assert len(markers) == 1, "nested/missing rules heading: %r" % r
+            subject = (markers[0].group(1) or "").strip()
+            if subject:
+                assert _subject_matches(subject, r["name"]), (
+                    "subject mismatch: %r" % r)
+            assert "And to tell of the Juggernaut:" not in r["special_rules"], r
+            assert not re.search(
+                r"(?mi)^\s*(?:OPTIONS|EQUIPMENT|MAGIC ITEMS|UPGRADES?)\s*:",
+                r["special_rules"]), "rule span leaked a new section: %r" % r
         # profile keys must be within the recognised schema (+ dup suffixes)
         for k in r["profile"]:
             base = k.split("#")[0]
             assert base in WHFB_STATS or base in ("Points",), "odd profile key %r" % k
-    assert len(res["digital_official"]) >= 6, \
-        "expected >=6 official digital books, got %d" % len(res["digital_official"])
+    keyed = {(r["book"], r["name"]): r for r in rows}
+    assert "Daemon of Khorne" in keyed[
+        ("Armybook_8ed - Daemons of Chaos - 2012",
+         "Bloodthirster")]["special_rules"]
+    assert "The Hunger:" in keyed[
+        ("Armybook_8ed - Vampire Counts", "Vampires")]["special_rules"]
+    assert "Ancestral Grudge" in keyed[
+        ("Armybook_8ed - Dwarfs - 2014", "Lord")]["special_rules"]
+    assert "SPECIA L RULES (Hound of Orion):" in keyed[
+        ("Armybook_8ed - Wood Elves", "Hound of Orion")]["special_rules"]
+    assert "Impetuous:" in keyed[
+        ("Armybook_8ed - Wood Elves", "Ceithin-Har")]["special_rules"]
+    assert "Hunter’s Mount:" in keyed[
+        ("Armybook_8ed - Wood Elves", "Gwindalor")]["special_rules"]
+    assert len(res["digital_official"]) == 6, \
+        "expected 6 official digital books, got %d" % len(res["digital_official"])
     assert len(res["mangled"]) >= 1, "expected the 1994 Chaos book to be gated as mangled"
     assert len(res["digital_unofficial"]) >= 6, "expected fan books to be flagged"
     assert len(res["no_coverage"]) >= 30, "expected many scanned books"
@@ -1413,7 +1934,9 @@ def main(argv):
     res = harvest_all(verbose=True)
     write_outputs(res)
     print("")
-    print("Wrote %s (%d profiles)" % (OUT_JSON, len(res["rows"])))
+    print("Wrote %s (%d profiles; %d with special rules; %d named gaps)"
+          % (OUT_JSON, len(res["rows"]),
+             sum(res["per_book_rules"].values()), len(res["rule_gaps"])))
     print("Wrote %s" % OUT_MD)
     print("Digital-official: %d | Digital-unofficial: %d | Mangled: %d | "
           "Rulebooks: %d | FAQ/errata: %d | No-profiles: %d | "

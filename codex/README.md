@@ -90,23 +90,26 @@ works offline.
 - **WH40K wargame profiles** — 118 of 136 rows use the book-verbatim SPECIAL
   RULES section attached by the geometric PDF harvester, with a separate rules
   page citation; 18 absent/ambiguous sections remain explicit `NO COVERAGE`.
+- **WHFB wargame profiles** — 217 of 291 rows use the book-verbatim SPECIAL
+  RULES section attached by same-column geometry, an explicit subject heading,
+  or a printed summary Page link validated against the exact unit name; 74
+  ambiguous sections remain explicit `NO COVERAGE`.
 - **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
 - **Every slice** is validated: the entry name—or its source-verified canonical
   `description_key` where the index label differs—must lead it, or the block is
   dropped. A misaligned or wrong-file slice is never attached.
 
-The **WHFB wargame** index still carries profile lines only; its army-book
-special-rule attachment is the next queued unit. Empty WH40K rows are named
-explicitly under the harvester's `special_rules_no_coverage` list.
+Empty WH40K and WHFB rule attachments are named explicitly under each
+harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,037 of 17,964 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,254 of 17,964 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
 soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,
-and 40K RP adversaries/talents/psychic ~99–100%. Known low families (need harvester-level
+WHFB wargame profiles 74%, and 40K RP adversaries/talents/psychic ~99–100%. Known low families (need harvester-level
 work to lift): the 40K RP weapon/gear tables (which already display their
 mechanical fields).
 

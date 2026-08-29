@@ -1,15 +1,17 @@
 {
   "system": "WHFB",
-  "note": "Warhammer Fantasy Battle tabletop WARGAME unit profiles (characteristic lines: M WS BS S T W I A Ld). Distinct from the Warhammer Fantasy Roleplay (WFRP) line. Extracted from born-digital army-book PDF text layers only; scanned books are listed under no_coverage_scanned.",
+  "note": "Warhammer Fantasy Battle tabletop WARGAME unit profiles (characteristic lines: M WS BS S T W I A Ld) plus each profile's explicit book-raw SPECIAL RULES section when unambiguously linked. Distinct from the Warhammer Fantasy Roleplay (WFRP) line. Extracted from born-digital army-book PDF text layers only; scanned books are listed under no_coverage_scanned.",
   "methodology_notes": [
     "Profiles reconstructed geometrically from the PDF text layer (PyMuPDF words mode): a header row of characteristic labels (M WS BS S T W I A Ld) fixes each column's x-centre, and every value row maps its stat tokens to the nearest column. The header is read live -- never hard-coded -- so a table that omits or reorders a column still parses. No number is ever guessed or corrected; unreadable cells are left empty.",
     "These books lay text out glyph-by-glyph (there are no space characters in the content stream), so each unit name is rebuilt from the contiguous glyph cluster immediately left of the first stat column, inserting a space where the horizontal gap widens to a word break. Decorative drop-cap / bullet glyphs are trimmed. The clean ALL-CAPS datasheet heading above the table is captured separately as unit_context.",
     "A datasheet prints several profile lines -- the unit, its champion/command upgrade, and any mount or monster -- each emitted as its own row sharing the unit_context heading. Troop Type (Infantry/Cavalry/Monster/Chariot/War Beast/...) is captured from the 'TROOP TYPE:' line beneath a bestiary block or from the trailing text column after Ld in the army-list summary.",
     "Movement values keep verbatim any '*' (variable) or random-movement die (e.g. 2D6); '-' marks a characteristic a model does not have. Leadership can reach 10. Parenthetical values are kept as printed.",
+    "SPECIAL RULES text is copied verbatim from the unit's PDF section. The attachment uses same-column profile geometry, explicit subject-qualified headings, or the army-list summary's printed Page column plus an exact name occurrence on the cited bestiary page. Display-spaced headings such as 'S P E C I A L R U L E S' are recognised. Ambiguous links remain named NO COVERAGE gaps; no rule text is inferred.",
     "Only the OFFICIAL Games Workshop army books are harvested. Born-digital files whose filenames mark them fan-made/unofficial ('9th', 'PDF Room', 'pdf-free', version tags) are classified DIGITAL-UNOFFICIAL and skipped so a fan stat is never passed as an official one. The 1994 4th-ed Chaos book is born-digital by character count but its font/CMap is broken -- the characteristic DIGITS extract as garbage (a '4' becomes '-j'/'~') -- so a token-corruption gate (alpha-junk fraction > 1.5%) routes it to NO COVERAGE rather than fabricating numbers (Inviolable Rule 1). Core rulebooks are skipped by policy.",
     "Summary/army-list tables duplicate the per-datasheet bestiary profiles; exact (name, profile) duplicates are merged within each book (space/case insensitive), preferring the row that also carries a troop_type."
   ],
   "total_profiles": 291,
+  "profiles_with_special_rules": 217,
   "digital_official_books": [
     "Armybook_8ed - Daemons of Chaos - 2012",
     "Armybook_8ed - Dwarfs - 2014",
@@ -171,6 +173,82 @@
     "Armybook_8ed - Wood Elves [PDF page 55]: value rows present but no header row parsed",
     "Armybook_8ed - Wood Elves [PDF page 102]: value rows present but no header row parsed"
   ],
+  "special_rules_no_coverage": [
+    "Armybook_8ed - Daemons of Chaos - 2012 / Soul Grinder (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Daemon Prince (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Herald of Khorne (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Herald of Slaanesh (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Herald of Tzeentch (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / The Masque (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Bloodreaper (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Beast of Nurgle (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Bloodhunter (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Juggernaut (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Chaos Fury (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Fiend of Slaanesh (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Flamer (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Pyrocaster (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Nurglings (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Daemons of Chaos - 2012 / Daemonette Crew (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Dwarfs - 2014 / Daemon Slayer (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Dwarfs - 2014 / Shieldbearers (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Dwarfs - 2014 / Anvil Guards (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Dwarfs - 2014 / Thorgrim (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Dwarfs - 2014 / Dragon Slayer (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Dwarfs - 2014 / Dwarf Warrior (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Grymloq (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Lord Kroak (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Saurus Oldblood (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Slann Mage-Priest (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Tehenhauin (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Chakax (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Gor-Rok (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Oxyotl (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Saurus Scar-Veteran (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Tetto'eko (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Tiktaq'to (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Patrol Leader (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Bastiladon (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Chameleon Skink (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Stalker (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Jungle Swarm (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Ripperdacyd Brave (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Temple Guard (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Revered Guardian (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Razordon (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Lizardmen / Skink Oracle Rider (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Strigoi Ghoul King (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Vlad von Carstein (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Cairn Wraith (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Isabella von Carstein (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Krell (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Mannfred the Acolyte (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Spirit Horde (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Vampire Counts / Skeleton Warrior (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Scyla Anfingrimm (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chaos Troll (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chimera (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chaos Sorcerer (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Festus the Leechlord (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Scyla Anfingrimm (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Throgg (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Wulfrik the Wanderer (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chaos Chariot (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chaos Charioteer (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chaos Marauder (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Marauder Chieftain (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Chaos Giant (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Mutalith Vortex Beast (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Skullcrusher (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Skullhunter (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Warriors of Chaos 2012 / Slaughterbrute (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Wood Elves / Handmaiden of the Thorn (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Wood Elves / Durthu (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Wood Elves / Spellweaver (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Wood Elves / Drycha (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Wood Elves / Arahan (no unambiguous explicit SPECIAL RULES section)",
+    "Armybook_8ed - Wood Elves / Forest Dragon (no unambiguous explicit SPECIAL RULES section)"
+  ],
   "per_book_counts": {
     "Armybook_8ed - Daemons of Chaos - 2012": 54,
     "Armybook_8ed - Dwarfs - 2014": 40,
@@ -178,6 +256,14 @@
     "Armybook_8ed - Vampire Counts": 52,
     "Armybook_8ed - Warriors of Chaos 2012": 49,
     "Armybook_8ed - Wood Elves": 47
+  },
+  "per_book_rule_counts": {
+    "Armybook_8ed - Daemons of Chaos - 2012": 38,
+    "Armybook_8ed - Dwarfs - 2014": 34,
+    "Armybook_8ed - Lizardmen": 28,
+    "Armybook_8ed - Vampire Counts": 44,
+    "Armybook_8ed - Warriors of Chaos 2012": 32,
+    "Armybook_8ed - Wood Elves": 41
   },
   "soft_count": 1,
   "rows": [
@@ -200,7 +286,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 28]",
-      "troop_type": "Monster(Character)"
+      "troop_type": "Monster(Character)",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Fly, Large Target, Magic Resistance (2), Terror.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 28]"
+      ]
     },
     {
       "name": "Juggernaut of Khorne",
@@ -222,7 +312,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 30]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "BLOODCRUSHERS OF KHORNE"
+      "unit_context": "BLOODCRUSHERS OF KHORNE",
+      "special_rules": "SPECIAL RULES: Brass Behemoth (see above), Daemon of Khorne, Daemonic.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 30]"
+      ]
     },
     {
       "name": "Skull Cannon",
@@ -241,7 +335,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 32]",
-      "troop_type": "Chariot(ArmourSave3+)"
+      "troop_type": "Chariot(ArmourSave3+)",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Daemon Engine (see page 33), Gorefeast (see page 33).\n\nImplacable Advance: This model can move (not march) and still shoot any one of its weapons.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 32]"
+      ]
     },
     {
       "name": "Bloodletter Crew",
@@ -262,7 +360,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 32]",
-      "troop_type": "Chariot(ArmourSave3+)"
+      "troop_type": "Chariot(ArmourSave3+)",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Daemon Engine (see page 33), Gorefeast (see page 33).\n\nImplacable Advance: This model can move (not march) and still shoot any one of its weapons.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 32]"
+      ]
     },
     {
       "name": "Skulltaker",
@@ -283,7 +385,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 34]",
-      "troop_type": "Infantry(SpecialCharacter)"
+      "troop_type": "Infantry(SpecialCharacter)",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Hatred, Lesser Locus of Abjuration (see page 29), Scaly Skin (6 + ).\n\nDAEM ONIC GIFTS: Cloak of Skulls: Forgedfrom the claimed crania of favoured victims and heavy with dark enchantment, the Cloak of Skulls offers formidable protection against the enemy’s blows and spells.\n\nThe Slayer Sword: Craftedfrom a single shard of Khorne’s boundless wrath, this blade blazes with unholy energy and has an uncanny ability to find the foes weakest spot.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 34]"
+      ]
     },
     {
       "name": "Karanak",
@@ -303,7 +409,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
-      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 35]"
+      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 35]",
+      "special_rules": "SPECIAL RULES: Ambushers, Daemon of Khorne, Daemonic, G reater Locus of Fury (see page 29), Hatred, Scaly Skin (6 + ).\n\nPrey of the Blood God: At the start of the game, before deployment, nominate one character in the enemy army — this is the quarry of Khorne that Karanak has come to claim. Karanak re-rolls failed To H it and To Wound rolls against the chosen character.\n\nDAEM ONIC GIFTS: Brass Collar of Bloody Vengeance: Karanak’s Collar of Khorne is thicker and heavier than those of his-pack. Enchantments of spite are layered over those of abjuration, making the hound almost immune to callow sorcery.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 35]"
+      ]
     },
     {
       "name": "Skarbrand",
@@ -324,7 +434,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 36]",
-      "troop_type": "Monster(SpecialCharacter)"
+      "troop_type": "Monster(SpecialCharacter)",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Frenzy, H atred, Large Target, Magic Resistance (2), Terror.\n\nBellow of Endless Fury: This is a Strength 5 Breath Weapon as described in the Warhammer rulebook.\n\nRage Embodied: Skarbrand can never lose his Frenzy. In addition, while Skarbrand is alive, all units on the table (friendly and enemy) are subject to the rules for Hatred.\n\nDAEM ONIC GIFTS: Slaughter and Carnage: Each of these daemonic axes contains a Bloodthirster’s savage spirit, lending fury to Skarbrand’s strikes.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 36]"
+      ]
     },
     {
       "name": "Pink Horror",
@@ -345,7 +459,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 38]",
-      "troop_type": "Infantry(Character)"
+      "troop_type": "Infantry(Character)",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic.\n\nBlue H orrors: When a model with this special rule is slain in close combat (not removed as a result of Daemonic Instability), place two counters next to its unit. After all attacks have been made, but before the combat result is calculated, choose one enemy unit in base contact with the unit and roll a number of D 6 equal to the number of counters (even if the Pink Horror unit was wiped out). For each roll of a 4+ the nominated unit suffers a Strength 2 hit (distributed as for shooting). Any unsaved Wounds count towards combat results. The counters are then removed.\n\nG reater Locus of Change: At the start of the turn, I roll a D 6. This model, and all models in his unit, have a ' Strength value equal to the result until you roll again.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 38]"
+      ]
     },
     {
       "name": "Iridescent Horror",
@@ -366,7 +484,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 38]",
-      "troop_type": "Infantry(Character)"
+      "troop_type": "Infantry(Character)",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic.\n\nBlue H orrors: When a model with this special rule is slain in close combat (not removed as a result of Daemonic Instability), place two counters next to its unit. After all attacks have been made, but before the combat result is calculated, choose one enemy unit in base contact with the unit and roll a number of D 6 equal to the number of counters (even if the Pink Horror unit was wiped out). For each roll of a 4+ the nominated unit suffers a Strength 2 hit (distributed as for shooting). Any unsaved Wounds count towards combat results. The counters are then removed.\n\nG reater Locus of Change: At the start of the turn, I roll a D 6. This model, and all models in his unit, have a ' Strength value equal to the result until you roll again.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 38]"
+      ]
     },
     {
       "name": "Screamer",
@@ -388,7 +510,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 39]",
       "troop_type": "WarBeast",
-      "unit_context": "SCREAMERS 6 DISCS OF TZEENTCH"
+      "unit_context": "SCREAMERS 6 DISCS OF TZEENTCH",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic, Fly, Warpflame (Exalted Flamer only).\n\nExalted Fire of Tzeentch: During the Shooting phase, the Flamer can shoot either Pink Fire or Blue Fire. This can be done even if the Burning Chariot moved in the preceding Movement phase. R nk Fire uses the rules for fire throwers, Blue Fire uses the rules for grapeshot.\n\nWarpflame: At the end of each phase, any unit that suffered one or more unsaved Wounds from an attack with this special rule (or from an attack made by a model with this special rule) during that phase must take a Toughness test. If the test is failed, the unit immediately suffers D3 Wounds with no armour saves allowed. If the test is passed, all models in that unit gain the Regeneration (6+ ) special rule for the rest of the game. Any models in the unit that already have the Regeneration special rule instead gain +1 to all Regeneration saving throws for the rest of the game. Chaos is fickle!",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 40]"
+      ]
     },
     {
       "name": "Disc of Tzeenteh",
@@ -410,7 +536,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 39]",
       "troop_type": "WarBeast",
-      "unit_context": "SCREAMERS 6 DISCS OF TZEENTCH"
+      "unit_context": "SCREAMERS 6 DISCS OF TZEENTCH",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeenteh, Daemonic, Fly.\n\nLamprey’s Bite (Screamers only): Close combat attacks a Screamer makes against a model with the Large Target special rule have the Multiple Wounds (D3) special rule.\n\nSlashing Attack (Screamers only): If a unit of Screamers moves over one or more unengaged enemy units in the Remaining Moves sub-phase, choose one of those units — it suffers D3 Strength 4 attacks per Screamer. These attacks hit on a 4+ and are treated as shooting attacks.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 39]"
+      ]
     },
     {
       "name": "The Blue Scribes",
@@ -430,7 +560,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
-      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 41]"
+      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 41]",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic, Fly.\n\nSpell Syphon: Whenever an enemy successfully casts a spell (including bound spells, etc.) place a counter next to the Blue Scribes. At the start of your next Magic phase, the Blue Scribes can make a channelling attempt for each counter. Once the Blue Scribes have attempted to channel, remove all counters from them.\n\nDAEM ONIC GIFTS: Scrolls of Sorcery: These cracked and jumbled scrolls contain details of every spell ever written — thougji finding the correct one at the opportune moment can be something of a challenge.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 41]"
+      ]
     },
     {
       "name": "Disc of Tzeentch",
@@ -452,6 +586,10 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 41]",
       "unit_context": "THE BLUE SCRIBES",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic, Fly.\n\nSpell Syphon: Whenever an enemy successfully casts a spell (including bound spells, etc.) place a counter next to the Blue Scribes. At the start of your next Magic phase, the Blue Scribes can make a channelling attempt for each counter. Once the Blue Scribes have attempted to channel, remove all counters from them.\n\nDAEM ONIC GIFTS: Scrolls of Sorcery: These cracked and jumbled scrolls contain details of every spell ever written — thougji finding the correct one at the opportune moment can be something of a challenge.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 41]"
+      ],
       "troop_type": "WB Mo=Monster,Ch Chariot,Sw=Swarms, Un Unique"
     },
     {
@@ -473,7 +611,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 42]",
-      "troop_type": "Infantry(SpecialCharacter)"
+      "troop_type": "Infantry(SpecialCharacter)",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic, Lesser Locus of Transmogrification (see page 38).\n\nFormless H orror: At the start of each Close Combat phase, choose an enemy model in base contact with the Changeling. The Changeling may increase any or all of his Weapon Skill, Strength, Toughness, Initiative and Attacks characteristics to match those of the chosen enemy model until the end of that phase. If the chosen model has more than one value for a characteristic (as is the case with a mounted model), the Changeling may always choose the higher value. The Changeling cannot match the characteristics of an enemy that is fighting in a challenge, unless the Changeling is fighting in the same challenge.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 42]"
+      ]
     },
     {
       "name": "Kairos Fateweaver",
@@ -495,7 +637,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 43]",
       "troop_type": "Monster(SpecialCharacter)",
-      "unit_context": "VKAIROS'A I D H C FATEWEAVERС А Т Ї"
+      "unit_context": "VKAIROS'A I D H C FATEWEAVERС А Т Ї",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic, Fly, Large Target, Terror.\n\nOracle of Eternity: Kairos Fateweaver has a 4 + ward save.\n\nDAEM ONIC GIFTS: Staff of Tomorrow: Kairos lives apart from the flow of time. Thus he does not easily succumb to ill-fortune, for fate can always be altered if one has the proper knowledge.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 43]"
+      ]
     },
     {
       "name": "Great Unclean One",
@@ -516,7 +662,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 44]",
-      "troop_type": "Monster(Character)"
+      "troop_type": "Monster(Character)",
+      "special_rules": "SPECIAL RULES: Daemon of Nurgle, Daemonic, Large Target, Poisoned Attacks, Terror.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 44]"
+      ]
     },
     {
       "name": "Plaguebearer",
@@ -538,7 +688,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 45]",
       "troop_type": "Infantry",
-      "unit_context": "A /~*T"
+      "unit_context": "A /~*T",
+      "special_rules": "SPECIAL RULES: Daemon of Nurgle, Daemonic.\n\nDAEMONIC GIFTS: Plaguesword: These corroded blades weep a loathsome and necrotic slime whose touch brings disease and death.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 45]"
+      ]
     },
     {
       "name": "Plagueridden",
@@ -560,7 +714,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 45]",
       "troop_type": "Infantry",
-      "unit_context": "A /~*T"
+      "unit_context": "A /~*T",
+      "special_rules": "SPECIAL RULES: Daemon of Nurgle, Daemonic.\n\nDAEMONIC GIFTS: Plaguesword: These corroded blades weep a loathsome and necrotic slime whose touch brings disease and death.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 45]"
+      ]
     },
     {
       "name": "Plaguebringer",
@@ -582,7 +740,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 46]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "PLAGUE DRONES OF NURGLE"
+      "unit_context": "PLAGUE DRONES OF NURGLE",
+      "special_rules": "SPECIAL RULES: Daemon of Nurgle, Daemonic, Hover.\n\nDAEM ONIC GIFTS: Plaguesword (Riders only, see page 45).",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 46]"
+      ]
     },
     {
       "name": "Rot Fly",
@@ -604,7 +766,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 46]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "PLAGUE DRONES OF NURGLE"
+      "unit_context": "PLAGUE DRONES OF NURGLE",
+      "special_rules": "SPECIAL RULES: Daemon of Nurgle, Daemonic, Hover.\n\nDAEM ONIC GIFTS: Plaguesword (Riders only, see page 45).",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 46]"
+      ]
     },
     {
       "name": "Keeper of Secrets",
@@ -624,7 +790,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
-      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 50]"
+      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 50]",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 50]"
+      ]
     },
     {
       "name": "Daemonette",
@@ -646,7 +816,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 51]",
       "troop_type": "T R O O P TYPE Infantry(Character)",
-      "unit_context": "DAEMONETTES OF SLAANESH"
+      "unit_context": "DAEMONETTES OF SLAANESH",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c .",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 51]"
+      ]
     },
     {
       "name": "Alluress",
@@ -667,7 +841,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 51]",
-      "unit_context": "DAEMONETTES OF SLAANESH"
+      "unit_context": "DAEMONETTES OF SLAANESH",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c .",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 51]"
+      ]
     },
     {
       "name": "Seeker",
@@ -687,7 +865,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
-      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]"
+      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]"
+      ]
     },
     {
       "name": "Heartseeker",
@@ -707,7 +889,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
-      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]"
+      "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]"
+      ]
     },
     {
       "name": "Steed of Slaanesh",
@@ -728,6 +914,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]"
+      ],
       "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page"
     },
     {
@@ -791,7 +981,11 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
       "troop_type": "Mo ExaltedChariot Ch",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 50]"
+      ]
     },
     {
       "name": "Ku'gath Plaguefather",
@@ -812,7 +1006,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f N u r g l e , D a e m o n i c ,\n\nN u r g l i n g I n f e s t a t i o n : At the start of each of your turns, one Nurgling base within 6\" of Ku’gath automatically regains a single Wound lost earlier in the battle. If there are no wounded Nurgling bases within 6\", then nothing happens.\n\nN e c r o t i c M i s s i l e s : Plague-ridden Nurglings constantly burst rom Ku’gath’s body like foetid hatchlings.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 49]"
+      ]
     },
     {
       "name": "Lord of Change",
@@ -833,7 +1031,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "SPECIAL RULES: Daemon of Tzeentch, Daemonic, Fly, Large Target, Terror.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 37]"
+      ]
     },
     {
       "name": "Epidemius",
@@ -854,7 +1056,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "S P E C I A L R U L E S : Daem on of Nurgle, Daem onic, Lesser Locus of V irulence (see page 45).\n\nThe Tally of Pestilence: Whilst Epidemius is alive, keep a count of all unsaved Wounds caused by Daemons of Nurgle (friend or foe) and by spells from the Lore of Nurgle.\n\nD A E M O N I C G I F T S : Plaguesword (see page 45).",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 48]"
+      ]
     },
     {
       "name": "Herald of Khorne",
@@ -897,6 +1103,10 @@
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
       "unit_context": "Y\\Y \"V",
+      "special_rules": "SPECIAL RULES: Daemon of Nurgle, Daemonic.\n\nDAEMONIC GIFTS: Plaguesword (see above).",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 45]"
+      ],
       "troop_type": "Infantry(Character)"
     },
     {
@@ -981,7 +1191,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic.\n\nDaemon Engine: Unlike other chariots, a Daemon Engine is not pulled by beasts, but is instead propelled by a combination of machinery and dark enchantment - treat the profile as a combination of chassis and beast.\n\nGorefeast: If this chariot’s Impact Hits cause unsaved Wounds, immediately roll a D 6 for each Wound caused. For each score of 4 + , the chariot regains a single Wound lost earlier in the game.\n\nTotem of Endless Bloodletting: Any Daemon of Khorne whose unit is within 6\" of a Herald on a Blood Throne of Khorne benefits from the Herald’s locus, exacdy as if it were in the same unit.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 33]"
+      ]
     },
     {
       "name": "Palanquin of Nurgle",
@@ -1002,7 +1216,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "S P E C I A L R U L E S : Daem on of Nurgle, Daem onic, Lesser Locus of V irulence (see page 45).\n\nThe Tally of Pestilence: Whilst Epidemius is alive, keep a count of all unsaved Wounds caused by Daemons of Nurgle (friend or foe) and by spells from the Lore of Nurgle.\n\nD A E M O N I C G I F T S : Plaguesword (see page 45).",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 48]"
+      ]
     },
     {
       "name": "Bloodletter",
@@ -1023,7 +1241,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "Y\\Y \"V"
+      "unit_context": "Y\\Y \"V",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Magic Resistance (1), Scaly Skin (6 + ).\n\nDAEM ONIC GIFTS: Hellblade: Said to have been forgedfrom shards of Khorne’s own black heart, Hellblades cleave the immortal soul.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 29]"
+      ]
     },
     {
       "name": "Bloodreaper",
@@ -1085,7 +1307,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page"
+      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page",
+      "special_rules": "SPECIAL RULES: Brass Behemoth (see above), Daemon of Khorne, Daemonic.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 30]"
+      ]
     },
     {
       "name": "Bloodhunter",
@@ -1232,7 +1458,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page"
+      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page",
+      "special_rules": "SPECIAL RULES: Daemon of Khorne, Daemonic, Scaly Skin (6 + ).\n\nDAEM ONIC GIFTS: Collar of Khorne: This baleful adornment hangs heavy with the Blood God’s loathing of sorcery.",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 31]"
+      ]
     },
     {
       "name": "Nurglings",
@@ -1274,7 +1504,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page"
+      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 52]"
+      ]
     },
     {
       "name": "Seeker Chariot",
@@ -1295,7 +1529,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Daemons of Chaos - 2012",
       "citation": "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 96]",
-      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page"
+      "unit_context": "COREUNITS M WS BS s T W I A Ld Type Page",
+      "special_rules": "S P E C I A L R U L E S : D a e m o n o f S l a a n e s h , D a e m o n i c ,",
+      "rules_citations": [
+        "Armybook_8ed - Daemons of Chaos - 2012 [PDF page 53]"
+      ]
     },
     {
       "name": "Daemonette Crew",
@@ -1338,7 +1576,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 37]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "LORDS 6 THANES"
+      "unit_context": "LORDS 6 THANES",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 37]"
+      ]
     },
     {
       "name": "Thane",
@@ -1360,7 +1602,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 37]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "LORDS 6 THANES"
+      "unit_context": "LORDS 6 THANES",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 37]"
+      ]
     },
     {
       "name": "Master Engineer",
@@ -1382,7 +1628,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 38]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "MASTER ENGINEERS K"
+      "unit_context": "MASTER ENGINEERS K",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 38]"
+      ]
     },
     {
       "name": "Runelord",
@@ -1403,7 +1653,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 39]",
-      "troop_type": "Infantry(Character)"
+      "troop_type": "Infantry(Character)",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Armour Piercing, Magic Resistance (1) (Runesmith only),\n\nForgefire: All friendly infantry models in a unit joined by a Runesmith or Runelord gain the Armour Piercing special rule. Should the Runesmith or Runelord leave the unit or be slain, the unit loses the special rule immediately.\n\nRune Lore: A model with this special rule can attempt to channel dispel dice just as a Wizard does.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 39]"
+      ]
     },
     {
       "name": "Runesmith",
@@ -1424,7 +1678,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 39]",
-      "troop_type": "Infantry(Character)"
+      "troop_type": "Infantry(Character)",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Armour Piercing, Magic Resistance (1) (Runesmith only),\n\nForgefire: All friendly infantry models in a unit joined by a Runesmith or Runelord gain the Armour Piercing special rule. Should the Runesmith or Runelord leave the unit or be slain, the unit loses the special rule immediately.\n\nRune Lore: A model with this special rule can attempt to channel dispel dice just as a Wizard does.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 39]"
+      ]
     },
     {
       "name": "Quarreller",
@@ -1446,7 +1704,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 42]",
       "troop_type": "Infantry",
-      "unit_context": "QUARRELLERS 6 THUNDERERS ®"
+      "unit_context": "QUARRELLERS 6 THUNDERERS ®",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 42]"
+      ]
     },
     {
       "name": "Thunderer",
@@ -1468,7 +1730,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 42]",
       "troop_type": "Infantry",
-      "unit_context": "QUARRELLERS 6 THUNDERERS ®"
+      "unit_context": "QUARRELLERS 6 THUNDERERS ®",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 42]"
+      ]
     },
     {
       "name": "Veteran",
@@ -1490,7 +1756,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 42]",
       "troop_type": "Infantry",
-      "unit_context": "QUARRELLERS 6 THUNDERERS ®"
+      "unit_context": "QUARRELLERS 6 THUNDERERS ®",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 42]"
+      ]
     },
     {
       "name": "Longbeard",
@@ -1512,7 +1782,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 43]",
       "troop_type": "Infantry",
-      "unit_context": "LONGBEARDS 1S»"
+      "unit_context": "LONGBEARDS 1S»",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Immune to Psychology, Relentless, Resolute, Shieldwall.\n\nOld Grumblers: Provided units with this special rule are not fleeing, any friendly Dwarf units within 6\" of a unit of Longbeards can re-roll failed Panic tests.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 43]"
+      ]
     },
     {
       "name": "Old Guard",
@@ -1534,7 +1808,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 43]",
       "troop_type": "Infantry",
-      "unit_context": "LONGBEARDS 1S»"
+      "unit_context": "LONGBEARDS 1S»",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Immune to Psychology, Relentless, Resolute, Shieldwall.\n\nOld Grumblers: Provided units with this special rule are not fleeing, any friendly Dwarf units within 6\" of a unit of Longbeards can re-roll failed Panic tests.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 43]"
+      ]
     },
     {
       "name": "Hammerer",
@@ -1555,7 +1833,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 44]",
       "troop_type": "Infantry",
-      "unit_context": "HAMMERERS E"
+      "unit_context": "HAMMERERS E",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall, Stubborn.\n\nKingsguard: If the Dwarf General is in a unit of Hammerers, any member of that unit can accept a challenge. This special rule lasts as long as the General is in the unit.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 44]"
+      ]
     },
     {
       "name": "Keeper of the Gate",
@@ -1576,7 +1858,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 44]",
       "troop_type": "Infantry",
-      "unit_context": "HAMMERERS E"
+      "unit_context": "HAMMERERS E",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Shieldwall, Stubborn.\n\nKingsguard: If the Dwarf General is in a unit of Hammerers, any member of that unit can accept a challenge. This special rule lasts as long as the General is in the unit.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 44]"
+      ]
     },
     {
       "name": "Ironbreaker",
@@ -1598,7 +1884,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 45]",
       "troop_type": "Infantry",
-      "unit_context": "m IRONBREAKERS #"
+      "unit_context": "m IRONBREAKERS #",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.\n\nShieldwall of Gromril: Models with this special rule always receive a +1 bonus to any Parry save they are eligible to take, not just in turns in which they are charged.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 45]"
+      ]
     },
     {
       "name": "Ironbeard",
@@ -1620,7 +1910,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 45]",
       "troop_type": "Infantry",
-      "unit_context": "m IRONBREAKERS #"
+      "unit_context": "m IRONBREAKERS #",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.\n\nShieldwall of Gromril: Models with this special rule always receive a +1 bonus to any Parry save they are eligible to take, not just in turns in which they are charged.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 45]"
+      ]
     },
     {
       "name": "Irondrake",
@@ -1642,7 +1936,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 46]",
       "troop_type": "Infantry",
-      "unit_context": "IRONDRAKES"
+      "unit_context": "IRONDRAKES",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 46]"
+      ]
     },
     {
       "name": "Ironwarden",
@@ -1664,7 +1962,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 46]",
       "troop_type": "Infantry",
-      "unit_context": "IRONDRAKES"
+      "unit_context": "IRONDRAKES",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 46]"
+      ]
     },
     {
       "name": "Slayer",
@@ -1686,7 +1988,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 47]",
       "troop_type": "Infantry",
-      "unit_context": "SLAYERS S"
+      "unit_context": "SLAYERS S",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Unbreakable.\n\nDeathblow: If a model with this special rule is reduced to 0 Wounds by close combat Attacks or Stomps (but not Impact Hits), he can immediately make a single Deathblow attack before he is removed as a casualty. A Deathblow attack can be resolved against any enemy model in base contact and, its unusual sequencing aside, is resolved exactly like a normal close combat attack (and therefore uses any special rules that would normally apply to the model’s close combat attacks). If a model with the Deathblow special rule is slain in a challenge, his Deathblow attack must be directed at the opposing model in the challenge. Once the Deathblow has been resolved, remove the model as a casualty and resolve the rest of the combat (including any more Deathblows).\n\nSlayer: Slayers ignore penalties to Strength and always cause a Wound on a To Wound roll of 4 + , unless they would need a lower result. Use the Slayer’s Strength characteristic (after bonuses from special rules such as Resolute, or those granted by runic weapons, great weapons, etc.) to determine the armour save modifier for any successful Wounds.\n\nSlayer Axes: Slayers turn up to battle with a variety of axes. At the start of each combat, a Slayer unit must choose to fight with either a great axe (great weapon) or a pair of axes (additional hand weapon). If a Slayer has a runic weapon, he loses the benefit of this special rule.\n\nSlayer Cult: Only models with the Slayer special rule are allowed to join units of Slayers. Furthermore, Slayer characters can never be the army’s General or join any unit other than Slayers.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 47]"
+      ]
     },
     {
       "name": "Giant Slayer",
@@ -1708,7 +2014,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 47]",
       "troop_type": "Infantry",
-      "unit_context": "SLAYERS S"
+      "unit_context": "SLAYERS S",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Unbreakable.\n\nDeathblow: If a model with this special rule is reduced to 0 Wounds by close combat Attacks or Stomps (but not Impact Hits), he can immediately make a single Deathblow attack before he is removed as a casualty. A Deathblow attack can be resolved against any enemy model in base contact and, its unusual sequencing aside, is resolved exactly like a normal close combat attack (and therefore uses any special rules that would normally apply to the model’s close combat attacks). If a model with the Deathblow special rule is slain in a challenge, his Deathblow attack must be directed at the opposing model in the challenge. Once the Deathblow has been resolved, remove the model as a casualty and resolve the rest of the combat (including any more Deathblows).\n\nSlayer: Slayers ignore penalties to Strength and always cause a Wound on a To Wound roll of 4 + , unless they would need a lower result. Use the Slayer’s Strength characteristic (after bonuses from special rules such as Resolute, or those granted by runic weapons, great weapons, etc.) to determine the armour save modifier for any successful Wounds.\n\nSlayer Axes: Slayers turn up to battle with a variety of axes. At the start of each combat, a Slayer unit must choose to fight with either a great axe (great weapon) or a pair of axes (additional hand weapon). If a Slayer has a runic weapon, he loses the benefit of this special rule.\n\nSlayer Cult: Only models with the Slayer special rule are allowed to join units of Slayers. Furthermore, Slayer characters can never be the army’s General or join any unit other than Slayers.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 47]"
+      ]
     },
     {
       "name": "Miner",
@@ -1730,7 +2040,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 49]",
       "troop_type": "Infantry",
-      "unit_context": "MINERS W"
+      "unit_context": "MINERS W",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.\n\nUnderground Advance: A unit with this special rule can deploy using the Ambushers special rule. Additionally, in the turn in which the unit arrives as Ambushers, they are counted as being in soft cover.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 49]"
+      ]
     },
     {
       "name": "Prospector",
@@ -1752,7 +2066,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 49]",
       "troop_type": "Infantry",
-      "unit_context": "MINERS W"
+      "unit_context": "MINERS W",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.\n\nUnderground Advance: A unit with this special rule can deploy using the Ambushers special rule. Additionally, in the turn in which the unit arrives as Ambushers, they are counted as being in soft cover.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 49]"
+      ]
     },
     {
       "name": "Ranger",
@@ -1774,7 +2092,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 50]",
       "troop_type": "Infantry",
-      "unit_context": "RANGERS"
+      "unit_context": "RANGERS",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Scouts.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 50]"
+      ]
     },
     {
       "name": "Ol'Deadeye",
@@ -1796,7 +2118,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 50]",
       "troop_type": "Infantry",
-      "unit_context": "RANGERS"
+      "unit_context": "RANGERS",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Scouts.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 50]"
+      ]
     },
     {
       "name": "Grudge Thrower",
@@ -1815,7 +2141,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 51]",
       "troop_type": "WarMachine (Cannon)",
-      "unit_context": "IT DWARF ARTILLERY If"
+      "unit_context": "IT DWARF ARTILLERY If",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Stubborn.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 51]"
+      ]
     },
     {
       "name": "Dwarf Crew",
@@ -1837,7 +2167,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 52]",
       "troop_type": "WarMachine",
-      "unit_context": "ORGAN GUN FLAME CANNON"
+      "unit_context": "ORGAN GUN FLAME CANNON",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Stubborn.\n\nSheet of Fire: Flame Cannons shoot using the fire thrower",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 52]"
+      ]
     },
     {
       "name": "Bolt Thrower",
@@ -1855,7 +2189,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 52]",
       "troop_type": "WarMachine (BoltThrower)",
-      "unit_context": "ORGAN GUN FLAME CANNON"
+      "unit_context": "ORGAN GUN FLAME CANNON",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Stubborn.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 52]"
+      ]
     },
     {
       "name": "Gyrocopter",
@@ -1877,7 +2215,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 53]",
       "troop_type": "Unique",
-      "unit_context": "GYROCOPTERS W"
+      "unit_context": "GYROCOPTERS W",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Fly, Relentless.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 53]"
+      ]
     },
     {
       "name": "Thronebearers",
@@ -1898,7 +2240,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 55]",
-      "unit_context": "THORGRIM GRUDGEBEARER 6r"
+      "unit_context": "THORGRIM GRUDGEBEARER 6r",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute.\n\nHigh King: Thorgrim must be the army General. Furthermore, if he is slain, all friendly models from Warhammer: Dwarfs immediately gain the Frenzy special rule.\n\nThe Throne of Power: The Throne of Power is treated in all regards as Shieldbearers (see page 33), with these additions to represent its status and additional bearers: the Throne adds + 4 to Thorgrim’s Wounds (included in his profile) and adds +2 to his armour save. The Throne also grants him a 4 + ward save and increases the range of his Inspiring Presence rule to 18\". If Thorgrim joins a unit, he does not benefit from the “Look Out Sir!” rule.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 55]"
+      ]
     },
     {
       "name": "Ungrim Ironfist",
@@ -1920,7 +2266,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 56]",
       "troop_type": "Infantry(SpecialCharacter)",
-      "unit_context": "UNGRIM IRONFIST ♦"
+      "unit_context": "UNGRIM IRONFIST ♦",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Daemon Slayer (see page 45), Deathblow (see page 44), Dragon Slayer (see page 45), Relentless, Resolute, Slayer (see page 44), Unbreakable.\n\nSlayer King: The only units Ungrim Ironfist can join are units of Slayers. However, unlike other Slayer characters, he can be chosen as the army General, in which case his Inspiring Presence rule works as normal. Additionally, if Ungrim is chosen as the General, a single Slayer unit may take a runic standard worth up to 100 points.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 56]"
+      ]
     },
     {
       "name": "Belegar Ironhammer",
@@ -1942,7 +2292,11 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 58]",
       "troop_type": "Infantry(SpecialCharacter)",
-      "unit_context": "BELEGAR IRONHAMMER 0"
+      "unit_context": "BELEGAR IRONHAMMER 0",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Stubborn.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 58]"
+      ]
     },
     {
       "name": "Grimm Burloksson",
@@ -1963,7 +2317,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 59]",
-      "troop_type": "Infantry(SpecialCharacter)"
+      "troop_type": "Infantry(SpecialCharacter)",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Entrenchm ent (see page 35), Relentless, Resolute, “Stand Back Sir!” (see page 35).\n\nMaster of Accuracy: As long as he is not fleeing, at the start of each friendly Shooting phase, roll a D6. On a 2 + , Grimm can bestow one of the following rules on a single friendly unit within 3\" for the duration of that Shooting phase. He can never benefit from the effects of these rules but may still fire his own weapon. On a 1, Grimm cannot bestow any of these rules, although he may still fire his own weapon.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 59]"
+      ]
     },
     {
       "name": "Josef Bugman",
@@ -1984,7 +2342,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 60]",
-      "troop_type": "Infantry(SpecialCharacter)"
+      "troop_type": "Infantry(SpecialCharacter)",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Relentless, Resolute, Scouts.\n\nBugman’s Rangers: Any army that includes Bugman can upgrade a single unit of Rangers to be Bugman’s Rangers. If this is done, Bugman must join the unit and cannot leave it. Bugman’s Rangers have WS5, BS4 and S4 and cost an additional +3 points per model.\n\nLiquid Fortification: As long as Bugman is alive, roll 2D6 at the start of each friendly turn and consult the following chart to see what effects his draughts have upon himself and any unit he has currently joined:",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 60]"
+      ]
     },
     {
       "name": "Daemon Slayer",
@@ -2104,6 +2466,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Stubborn.\n\nSheet of Fire: Flame Cannons shoot using the fire thrower",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 52]"
+      ],
       "troop_type": "WarMachine (FireThrower)",
       "unit_context": "ORGAN GUN FLAME CANNON"
     },
@@ -2126,6 +2492,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Armoured Copter (see opposite), Fly, Relentless.\n\nBombing Run: During the Remaining Moves sub-phase, models with this special rule may drop a bomb unless they are fleeing or have declared a charge that turn. To make a Bombing Run, select one unengaged enemy unit that the Gyrobomber moved over in that turn and place the large 5\" template anywhere over the target unit (but note that it cannot cover friendly models) and roll for scatter and damage as for a stone thrower from the Warhammer rulebook. If a misfire is rolled, use the Bomb Misfire chart below. Grudgebuster bombs have the following profile:",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 54]"
+      ],
       "troop_type": "Unique",
       "unit_context": "m GYROBOMBERS"
     },
@@ -2148,6 +2518,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Ancestral Grudge, Stubborn.",
+      "rules_citations": [
+        "Armybook_8ed - Dwarfs - 2014 [PDF page 52]"
+      ],
       "troop_type": "WarMachine",
       "unit_context": "ORGAN GUN FLAME CANNON"
     },
@@ -2192,7 +2566,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 36]",
       "troop_type": "Infantry",
-      "unit_context": "SAURUS WARRIORS"
+      "unit_context": "SAURUS WARRIORS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Predatory Fighter, Scaly Skin (5 + ).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 36]"
+      ]
     },
     {
       "name": "Spawn Leader",
@@ -2214,7 +2592,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 36]",
       "troop_type": "Infantry",
-      "unit_context": "SAURUS WARRIORS"
+      "unit_context": "SAURUS WARRIORS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Predatory Fighter, Scaly Skin (5 + ).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 36]"
+      ]
     },
     {
       "name": "Cold One Rider",
@@ -2236,7 +2618,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 37]",
       "troop_type": "Cavalry",
-      "unit_context": "COLD ONE RIDERS"
+      "unit_context": "COLD ONE RIDERS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Fear, Predatory Fighter (Riders only), Scaly Skin (5 + ), Stupidity.\n\nThick-skinned: A rider atop a mount with this special rule receives an armour save bonus of + 2 , rather than the usual",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 37]"
+      ]
     },
     {
       "name": "Pack Leader",
@@ -2258,7 +2644,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 37]",
       "troop_type": "Cavalry",
-      "unit_context": "COLD ONE RIDERS"
+      "unit_context": "COLD ONE RIDERS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Fear, Predatory Fighter (Riders only), Scaly Skin (5 + ), Stupidity.\n\nThick-skinned: A rider atop a mount with this special rule receives an armour save bonus of + 2 , rather than the usual",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 37]"
+      ]
     },
     {
       "name": "Cold One",
@@ -2280,7 +2670,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 37]",
       "troop_type": "Cavalry",
-      "unit_context": "COLD ONE RIDERS"
+      "unit_context": "COLD ONE RIDERS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Fear, Predatory Fighter (Riders only), Scaly Skin (5 + ), Stupidity.\n\nThick-skinned: A rider atop a mount with this special rule receives an armour save bonus of + 2 , rather than the usual",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 37]"
+      ]
     },
     {
       "name": "Skink Priest",
@@ -2302,7 +2696,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 39]",
       "troop_type": "Infantry (Character)",
-      "unit_context": "SKINK LEADERS"
+      "unit_context": "SKINK LEADERS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Scaly Skin (6 + ).\n\nArcane Vassal (Skink Priest only): A Slann M age-Priest",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 39]"
+      ]
     },
     {
       "name": "Skink Chief",
@@ -2324,7 +2722,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 39]",
       "troop_type": "Infantry (Character)",
-      "unit_context": "SKINK LEADERS"
+      "unit_context": "SKINK LEADERS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Scaly Skin (6 + ).\n\nArcane Vassal (Skink Priest only): A Slann M age-Priest",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 39]"
+      ]
     },
     {
       "name": "Troglodon",
@@ -2346,7 +2748,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 40]",
       "troop_type": "Monster",
-      "unit_context": "UPGRADES"
+      "unit_context": "UPGRADES",
+      "special_rules": "SPECIAL RULES: Arcane Vassal (Skink Oracle Rider only, see page 36), Aquatic, Cold-blooded, Large Target, Poisoned Attacks (Troglodon only), Predatory Fighter (Troglodon only), Scaly Skin (4 + ), Terror.\n\nBeast Rider: A Troglodon and its Skink Oracle Rider have their own characteristics, but are treated as a single model. If the Troglodon is removed as a casualty, then the Skink Oracle Rider is removed along with it. W hen moving, the model always uses the M ovement characteristic of the Troglodon. The Troglodon and Skink Oracle Rider use their own Weapon Skill, Strength, Initiative and Attacks characteristics when they attack. Each can attack any opponent that the model is in base contact with. All hits upon the model are resolved using the Troglodon’s Toughness,",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 40]"
+      ]
     },
     {
       "name": "Skink",
@@ -2367,7 +2773,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 41]",
-      "unit_context": "SKINKS"
+      "unit_context": "SKINKS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Scaly Skin (6 + ), Skirmishers (Skink Skirmishers and Patrol Leader only).\n\nSpawn-kin: Skink Cohorts may include a number of Kroxigor as upgrades to form a mixed unit. W hen a mixed unit deploys or reforms, these Kroxigor must be placed in the unit’s second rank, displacing Skink models as necessary to the back rank. W hen deploying or reforming a mixed unit, the width of the unit’s front rank cannot be less than that of its second rank. I f no more Kroxigor can fit in the unit’s second rank, place the remaining Kroxigor in subsequent ranks. If the unit’s front rank is ever reduced so that its width is less than the width of the second rank, a Kroxigor must immediately move to the front rank (displacing rank and file models if necessary).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 41]"
+      ]
     },
     {
       "name": "Skink Brave",
@@ -2388,7 +2798,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 41]",
-      "unit_context": "SKINKS"
+      "unit_context": "SKINKS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Scaly Skin (6 + ), Skirmishers (Skink Skirmishers and Patrol Leader only).\n\nSpawn-kin: Skink Cohorts may include a number of Kroxigor as upgrades to form a mixed unit. W hen a mixed unit deploys or reforms, these Kroxigor must be placed in the unit’s second rank, displacing Skink models as necessary to the back rank. W hen deploying or reforming a mixed unit, the width of the unit’s front rank cannot be less than that of its second rank. I f no more Kroxigor can fit in the unit’s second rank, place the remaining Kroxigor in subsequent ranks. If the unit’s front rank is ever reduced so that its width is less than the width of the second rank, a Kroxigor must immediately move to the front rank (displacing rank and file models if necessary).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 41]"
+      ]
     },
     {
       "name": "Skink Skirmisher",
@@ -2409,7 +2823,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 41]",
-      "unit_context": "SKINKS"
+      "unit_context": "SKINKS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Scaly Skin (6 + ), Skirmishers (Skink Skirmishers and Patrol Leader only).\n\nSpawn-kin: Skink Cohorts may include a number of Kroxigor as upgrades to form a mixed unit. W hen a mixed unit deploys or reforms, these Kroxigor must be placed in the unit’s second rank, displacing Skink models as necessary to the back rank. W hen deploying or reforming a mixed unit, the width of the unit’s front rank cannot be less than that of its second rank. I f no more Kroxigor can fit in the unit’s second rank, place the remaining Kroxigor in subsequent ranks. If the unit’s front rank is ever reduced so that its width is less than the width of the second rank, a Kroxigor must immediately move to the front rank (displacing rank and file models if necessary).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 41]"
+      ]
     },
     {
       "name": "Kroxigor",
@@ -2430,7 +2848,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 43]",
-      "troop_type": "Monstrous Infantry"
+      "troop_type": "Monstrous Infantry",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Fear, Predatory Fighter, Scaly Skin (4 + ).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 43]"
+      ]
     },
     {
       "name": "Kroxigor Ancient",
@@ -2452,7 +2874,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 43]",
       "troop_type": "Monstrous Infantry",
-      "unit_context": "KROXIGOR"
+      "unit_context": "KROXIGOR",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Fear, Predatory Fighter, Scaly Skin (4 + ).",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 43]"
+      ]
     },
     {
       "name": "Sky Leader",
@@ -2474,7 +2900,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 45]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "TERRADON RIDERS"
+      "unit_context": "TERRADON RIDERS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Fear, Flying Cavalry, Forest Strider, Scaly Skin (6 + ).\n\nDrop Rocks: Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 45]"
+      ]
     },
     {
       "name": "Terradon",
@@ -2496,7 +2926,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 45]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "TERRADON RIDERS"
+      "unit_context": "TERRADON RIDERS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Fear, Flying Cavalry, Forest Strider, Scaly Skin (6 + ).\n\nDrop Rocks: Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 45]"
+      ]
     },
     {
       "name": "Ripperdactyl Rider",
@@ -2518,7 +2952,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 46]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "RIPPERDACTYL RIDERS"
+      "unit_context": "RIPPERDACTYL RIDERS",
+      "special_rules": "SPECIAL RULES: Armour Piercing (Ripperdactyl only), Cold-blooded, Fear, Flying Cavalry, Frenzy (Ripperdactyl only), Killing Blow (Ripperdactyl only), Scaly Skin (6 + ).\n\nToad Rage: Before the game starts, but after Scouts have been deployed, a Lustrian blot toad marker can be placed for each unit of Ripperdactyl Riders in your army. A single blot toad marker can be placed on any enemy unit on the tabletop, this marker remains throughout the batde.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 46]"
+      ]
     },
     {
       "name": "Ripperdacytl Brave",
@@ -2540,7 +2978,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 46]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "RIPPERDACTYL RIDERS"
+      "unit_context": "RIPPERDACTYL RIDERS",
+      "special_rules": "SPECIAL RULES: Armour Piercing (Ripperdactyl only), Cold-blooded, Fear, Flying Cavalry, Frenzy (Ripperdactyl only), Killing Blow (Ripperdactyl only), Scaly Skin (6 + ).\n\nToad Rage: Before the game starts, but after Scouts have been deployed, a Lustrian blot toad marker can be placed for each unit of Ripperdactyl Riders in your army. A single blot toad marker can be placed on any enemy unit on the tabletop, this marker remains throughout the batde.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 46]"
+      ]
     },
     {
       "name": "Ripperdactyl",
@@ -2562,7 +3004,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 46]",
       "troop_type": "Monstrous Cavalry",
-      "unit_context": "RIPPERDACTYL RIDERS"
+      "unit_context": "RIPPERDACTYL RIDERS",
+      "special_rules": "SPECIAL RULES: Armour Piercing (Ripperdactyl only), Cold-blooded, Fear, Flying Cavalry, Frenzy (Ripperdactyl only), Killing Blow (Ripperdactyl only), Scaly Skin (6 + ).\n\nToad Rage: Before the game starts, but after Scouts have been deployed, a Lustrian blot toad marker can be placed for each unit of Ripperdactyl Riders in your army. A single blot toad marker can be placed on any enemy unit on the tabletop, this marker remains throughout the batde.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 46]"
+      ]
     },
     {
       "name": "Stegadon",
@@ -2583,7 +3029,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 48]",
-      "troop_type": "Monster"
+      "troop_type": "Monster",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Immune to Psychology, Impact Hits (D 6+ 1), Large Target, Scaly Skin (4 + ) (Stegadon only), Scaly Skin (3+ ) (Ancient Stegadon only), Stubborn, Terror.\n\nHowdah Crew: A monster with this rule is ridden by a number of Skink Crew. The monster and its howdah crew have their own characteristics, but are treated as a single model. The model always uses the M ovement characteristic of the monster. The monster and the Skink Crew use their own Weapon Skill, Strength, Initiative, and Attacks characteristics when they attack. Each can attack any opponent that the model is in base contact with. The crew use their own Ballistic Skill when making shooting attacks. All hits upon the model are resolved using the monster’s Toughness, Wounds, and save. In combat, enemy models compare their Weapon Skill to the monster’s Weapon Skill when rolling To H it. Apart from these exceptions, a model with this special rule is treated as a monster in all respects, as described in the Warhammer rulebook.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 48]"
+      ]
     },
     {
       "name": "Ancient Stegadon",
@@ -2604,7 +3054,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 48]",
-      "troop_type": "Monster"
+      "troop_type": "Monster",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Immune to Psychology, Impact Hits (D 6+ 1), Large Target, Scaly Skin (4 + ) (Stegadon only), Scaly Skin (3+ ) (Ancient Stegadon only), Stubborn, Terror.\n\nHowdah Crew: A monster with this rule is ridden by a number of Skink Crew. The monster and its howdah crew have their own characteristics, but are treated as a single model. The model always uses the M ovement characteristic of the monster. The monster and the Skink Crew use their own Weapon Skill, Strength, Initiative, and Attacks characteristics when they attack. Each can attack any opponent that the model is in base contact with. The crew use their own Ballistic Skill when making shooting attacks. All hits upon the model are resolved using the monster’s Toughness, Wounds, and save. In combat, enemy models compare their Weapon Skill to the monster’s Weapon Skill when rolling To H it. Apart from these exceptions, a model with this special rule is treated as a monster in all respects, as described in the Warhammer rulebook.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 48]"
+      ]
     },
     {
       "name": "Skink Crew",
@@ -2625,7 +3079,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 48]",
-      "troop_type": "Monster"
+      "troop_type": "Monster",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Immune to Psychology, Impact Hits (D 6+ 1), Large Target, Scaly Skin (4 + ) (Stegadon only), Scaly Skin (3+ ) (Ancient Stegadon only), Stubborn, Terror.\n\nHowdah Crew: A monster with this rule is ridden by a number of Skink Crew. The monster and its howdah crew have their own characteristics, but are treated as a single model. The model always uses the M ovement characteristic of the monster. The monster and the Skink Crew use their own Weapon Skill, Strength, Initiative, and Attacks characteristics when they attack. Each can attack any opponent that the model is in base contact with. The crew use their own Ballistic Skill when making shooting attacks. All hits upon the model are resolved using the monster’s Toughness, Wounds, and save. In combat, enemy models compare their Weapon Skill to the monster’s Weapon Skill when rolling To H it. Apart from these exceptions, a model with this special rule is treated as a monster in all respects, as described in the Warhammer rulebook.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 48]"
+      ]
     },
     {
       "name": "Salamander",
@@ -2647,7 +3105,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 49]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "SALAMANDER HUNTING PACKS"
+      "unit_context": "SALAMANDER HUNTING PACKS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Fear, Scaly Skin (5 + ), Skirmishers.\n\nHunting Pack: A unit with this special rule consists o f a number of monstrous beasts and infantry handlers. Although they are monstrous beasts and not monsters, they follow all the rules for M onsters and Handlers, as described in the Warhammer rulebook. If the unit needs to take a M onster Reaction test, the result applies to all remaining monstrous beasts. Characters may not join a unit with this special rule.\n\nSpout Flames: Spout Flames is a shooting attack; all Salamanders in the pack must shoot towards the same target. Spout Flames is fired using the same rules as a fire thrower, but with the profile and differences given below:",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 49]"
+      ]
     },
     {
       "name": "Skink Handler",
@@ -2669,7 +3131,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 49]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "SALAMANDER HUNTING PACKS"
+      "unit_context": "SALAMANDER HUNTING PACKS",
+      "special_rules": "SPECIAL RULES: Aquatic, Cold-blooded, Fear, Scaly Skin (5 + ), Skirmishers.\n\nHunting Pack: A unit with this special rule consists o f a number of monstrous beasts and infantry handlers. Although they are monstrous beasts and not monsters, they follow all the rules for M onsters and Handlers, as described in the Warhammer rulebook. If the unit needs to take a M onster Reaction test, the result applies to all remaining monstrous beasts. Characters may not join a unit with this special rule.\n\nSpout Flames: Spout Flames is a shooting attack; all Salamanders in the pack must shoot towards the same target. Spout Flames is fired using the same rules as a fire thrower, but with the profile and differences given below:",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 49]"
+      ]
     },
     {
       "name": "Carnosaur",
@@ -2691,7 +3157,11 @@
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 53]",
       "troop_type": "Monster",
-      "unit_context": "CARNOSAURS"
+      "unit_context": "CARNOSAURS",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Large Target, Multiple Wounds (D 3), Scaly Skin ( 4 + ) , Terror.\n\nBlood Frenzy: Once the Carnosaur (not his rider) has inflicted an unsaved W ound, it immediately becomes subject to Frenzy. Furthermore, the Carnosaur never loses its Frenzy.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 53]"
+      ]
     },
     {
       "name": "Kroq-Gar",
@@ -2712,7 +3182,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 54]",
-      "troop_type": "Infantry (Special Character)"
+      "troop_type": "Infantry (Special Character)",
+      "special_rules": "SPECIAL RULES (Kroq-Gar): Cold-blooded, Predatory Fighter, Scaly Skin (4 + ).\n\nSacred Spawning o f Xhotl: W hilst Kroq-Gar is alive, he and his mount have a 5 + ward save.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 54]"
+      ]
     },
     {
       "name": "Grymloq",
@@ -2775,7 +3249,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 99]",
-      "troop_type": "Key: In=Infantry,WB= WarBeast"
+      "troop_type": "Key: In=Infantry,WB= WarBeast",
+      "special_rules": "SPECIAL RULES (Lord M azdam undi): Cold-blooded, Shield of the Old Ones (see page 31), Stubborn, Telepathic Confabulation (see page 31).\n\nMage-lord of Hexoatl: L ord M azdam undi has the Loremaster special rule for whichever Lore of M agic he chooses to select spells from.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 56]"
+      ]
     },
     {
       "name": "Zlaaq",
@@ -2795,7 +3273,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 99]",
-      "troop_type": "Key: In=Infantry,WB= WarBeast"
+      "troop_type": "Key: In=Infantry,WB= WarBeast",
+      "special_rules": "SPECIAL RULES (Zlaaq): Cold-blooded, Immune to Psychology, Impact Hits (D6 + 1), Large Target, Scaly Skin (3 + ), Stubborn, Terror.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 56]"
+      ]
     },
     {
       "name": "Saurus Oldblood",
@@ -3160,6 +3642,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Lizardmen",
       "citation": "Armybook_8ed - Lizardmen [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Cold-blooded, Fear, Flying Cavalry, Forest Strider, Scaly Skin (6 + ).\n\nDrop Rocks: Once per game, during the Remaining Moves sub-phase, models with this special rule may drop rocks unless they are fleeing or have declared a charge that turn. All models in a unit must drop rocks at the same time.",
+      "rules_citations": [
+        "Armybook_8ed - Lizardmen [PDF page 45]"
+      ],
       "troop_type": "Monstrous Cavalry",
       "unit_context": "TERRADON RIDERS"
     },
@@ -3223,7 +3709,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 30]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "VAMPIRES"
+      "unit_context": "VAMPIRES",
+      "special_rules": "SPECIAL RULES: Undead, Vampiric.\n\nThe Hunger: Whenever a character with this special rule kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 6, the character recovers a single Wound lost earlier in the battle.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 30]"
+      ]
     },
     {
       "name": "Vampire",
@@ -3245,7 +3735,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 30]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "VAMPIRES"
+      "unit_context": "VAMPIRES",
+      "special_rules": "SPECIAL RULES: Undead, Vampiric.\n\nThe Hunger: Whenever a character with this special rule kills one or more enemy models in close combat, roll a D6 at the end of the Close Combat phase. On the roll of a 6, the character recovers a single Wound lost earlier in the battle.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 30]"
+      ]
     },
     {
       "name": "Master Necromancer",
@@ -3267,7 +3761,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 31]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "NECROMANCERS"
+      "unit_context": "NECROMANCERS",
+      "special_rules": "SPECIAL RULES: Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 31]"
+      ]
     },
     {
       "name": "Necromancer",
@@ -3289,7 +3787,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 31]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "NECROMANCERS"
+      "unit_context": "NECROMANCERS",
+      "special_rules": "SPECIAL RULES: Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 31]"
+      ]
     },
     {
       "name": "Wight King",
@@ -3311,7 +3813,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 32]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "WIGHT KINGS"
+      "unit_context": "WIGHT KINGS",
+      "special_rules": "SPECIAL RULES: Killing Blow, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 32]"
+      ]
     },
     {
       "name": "Tomb Banshee",
@@ -3333,7 +3839,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 34]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "TOMB BANSHEES"
+      "unit_context": "TOMB BANSHEES",
+      "special_rules": "SPECIAL RULES: Ethereal, Terror, Undead.\n\nGhostly Howl: A Ghostly Howl is a special attack that can be used against a single enemy unit in the Shooting",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 34]"
+      ]
     },
     {
       "name": "Crypt Ghoul",
@@ -3355,6 +3865,10 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 36]",
       "unit_context": "CRYPT GHOULS",
+      "special_rules": "SPECIAL RULES: Poisoned Attacks, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 36]"
+      ],
       "troop_type": "Key: ln=lnfontry,WB=WarBeast,Ca= Cavalry"
     },
     {
@@ -3376,6 +3890,10 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 36]",
       "unit_context": "CRYPT GHOULS",
+      "special_rules": "SPECIAL RULES: Poisoned Attacks, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 36]"
+      ],
       "troop_type": "Key: ln=lnfontry,WB=WarBeast,Ca= Cavalry"
     },
     {
@@ -3398,7 +3916,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 38]",
       "troop_type": "Infantry",
-      "unit_context": "SKELETON WARRIORS"
+      "unit_context": "SKELETON WARRIORS",
+      "special_rules": "SPECIAL RULES: Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 38]"
+      ]
     },
     {
       "name": "Skeleton Champion",
@@ -3419,7 +3941,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 38]",
       "troop_type": "Infantry",
-      "unit_context": "SKELETON WARRIORS"
+      "unit_context": "SKELETON WARRIORS",
+      "special_rules": "SPECIAL RULES: Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 38]"
+      ]
     },
     {
       "name": "Dire Wolf",
@@ -3441,7 +3967,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 39]",
       "troop_type": "WarBeasts",
-      "unit_context": "DIRE WOLVES"
+      "unit_context": "DIRE WOLVES",
+      "special_rules": "SPECIAL RULES: Undead, Vanguard.\n\nSlavering Charge: In a turn that they successfully charge, Dire and Doom Wolves add + 1 to their Strength.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 39]"
+      ]
     },
     {
       "name": "Doom Wolf",
@@ -3462,7 +3992,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 39]",
       "troop_type": "WarBeasts",
-      "unit_context": "DIRE WOLVES"
+      "unit_context": "DIRE WOLVES",
+      "special_rules": "SPECIAL RULES: Undead, Vanguard.\n\nSlavering Charge: In a turn that they successfully charge, Dire and Doom Wolves add + 1 to their Strength.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 39]"
+      ]
     },
     {
       "name": "Bat Swarm",
@@ -3484,7 +4018,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 40]",
       "troop_type": "Swarm",
-      "unit_context": "BAT SWARMS"
+      "unit_context": "BAT SWARMS",
+      "special_rules": "SPECIAL RULES: Hover, Undead.\n\nCloud of Horror: An enemy unit in base contact with one or more Bat Swarms has the Always Strikes Last special rule.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 40]"
+      ]
     },
     {
       "name": "Bat Swarms",
@@ -3506,7 +4044,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 40]",
       "troop_type": "WarBeasts",
-      "unit_context": "BAT SWARMS"
+      "unit_context": "BAT SWARMS",
+      "special_rules": "SPECIAL RULES: Fly, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 40]"
+      ]
     },
     {
       "name": "Grave Guard",
@@ -3526,7 +4068,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 41]",
-      "troop_type": "Infantry"
+      "troop_type": "Infantry",
+      "special_rules": "SPECIAL RULES: KiUing Blow, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 41]"
+      ]
     },
     {
       "name": "Seneschal",
@@ -3547,7 +4093,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 41]",
       "troop_type": "Infantry",
-      "unit_context": "GRAVE GUARD"
+      "unit_context": "GRAVE GUARD",
+      "special_rules": "SPECIAL RULES: KiUing Blow, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 41]"
+      ]
     },
     {
       "name": "Black Knight",
@@ -3569,7 +4119,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 42]",
       "troop_type": "Cavalry",
-      "unit_context": "BLACK KNIGHTS"
+      "unit_context": "BLACK KNIGHTS",
+      "special_rules": "SPECIAL RULES: Killing Blow (Riders only), Spectral Steeds (see page 5 1), Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 42]"
+      ]
     },
     {
       "name": "Hell Knight",
@@ -3590,7 +4144,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 42]",
       "troop_type": "Cavalry",
-      "unit_context": "BLACK KNIGHTS"
+      "unit_context": "BLACK KNIGHTS",
+      "special_rules": "SPECIAL RULES: Killing Blow (Riders only), Spectral Steeds (see page 5 1), Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 42]"
+      ]
     },
     {
       "name": "Spirit Host",
@@ -3611,7 +4169,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 44]",
       "troop_type": "Swarm",
-      "unit_context": "SPIRIT HOSTS"
+      "unit_context": "SPIRIT HOSTS",
+      "special_rules": "SPECIAL RULES: Ethereal, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 44]"
+      ]
     },
     {
       "name": "Crypt Horror",
@@ -3633,7 +4195,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 45]",
       "troop_type": "MonstrousInfantry",
-      "unit_context": "CRYPT HORRORS"
+      "unit_context": "CRYPT HORRORS",
+      "special_rules": "SPECIAL RULES: Poisoned Attacks, Regeneration (5+ ), Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 45]"
+      ]
     },
     {
       "name": "Crypt Haunter",
@@ -3655,7 +4221,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 45]",
       "troop_type": "MonstrousInfantry",
-      "unit_context": "CRYPT HORRORS"
+      "unit_context": "CRYPT HORRORS",
+      "special_rules": "SPECIAL RULES: Poisoned Attacks, Regeneration (5+ ), Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 45]"
+      ]
     },
     {
       "name": "Vargheist",
@@ -3677,7 +4247,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 46]",
       "troop_type": "Monstrous Infantry",
-      "unit_context": "VARGHEISTS"
+      "unit_context": "VARGHEISTS",
+      "special_rules": "SPECIAL RULES: Fly, Frenzy, Undead, Vampiric.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 46]"
+      ]
     },
     {
       "name": "Vargoyle",
@@ -3699,7 +4273,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 46]",
       "troop_type": "Monstrous Infantry",
-      "unit_context": "VARGHEISTS"
+      "unit_context": "VARGHEISTS",
+      "special_rules": "SPECIAL RULES: Fly, Frenzy, Undead, Vampiric.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 46]"
+      ]
     },
     {
       "name": "Varghulf",
@@ -3721,7 +4299,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 47]",
       "troop_type": "Monster",
-      "unit_context": "VARGHULFS"
+      "unit_context": "VARGHULFS",
+      "special_rules": "SPECIAL RULES: Hatred, Regeneration, Terror, Undead, Vampiric.\n\nBestial Fury: For the purposes of calculating combat result bonuses, a Varghulf counts as having no flanks or rear.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 47]"
+      ]
     },
     {
       "name": "Blood Knights",
@@ -3743,7 +4325,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 48]",
       "troop_type": "Cavalry",
-      "unit_context": "BLOOD KNIGHTS"
+      "unit_context": "BLOOD KNIGHTS",
+      "special_rules": "SPECIAL RULES: Frenzy, Undead, Vampiric.\n\nMartial Honour: Unless a combat includes a friendly character with an equal or higher Leadership, a Kastellan must always issue and accept challenges. If the unit has no Kastellan, then a Blood Knight may be nominated to answer a challenge, just like a unit champion (though as he is not actually a character, he may not issue challenges).",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 48]"
+      ]
     },
     {
       "name": "Kastellan",
@@ -3765,7 +4351,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 48]",
       "troop_type": "Cavalry",
-      "unit_context": "BLOOD KNIGHTS"
+      "unit_context": "BLOOD KNIGHTS",
+      "special_rules": "SPECIAL RULES: Frenzy, Undead, Vampiric.\n\nMartial Honour: Unless a combat includes a friendly character with an equal or higher Leadership, a Kastellan must always issue and accept challenges. If the unit has no Kastellan, then a Blood Knight may be nominated to answer a challenge, just like a unit champion (though as he is not actually a character, he may not issue challenges).",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 48]"
+      ]
     },
     {
       "name": "Nightmare",
@@ -3787,7 +4377,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 48]",
       "troop_type": "Cavalry",
-      "unit_context": "BLOOD KNIGHTS"
+      "unit_context": "BLOOD KNIGHTS",
+      "special_rules": "SPECIAL RULES: Frenzy, Undead, Vampiric.\n\nMartial Honour: Unless a combat includes a friendly character with an equal or higher Leadership, a Kastellan must always issue and accept challenges. If the unit has no Kastellan, then a Blood Knight may be nominated to answer a challenge, just like a unit champion (though as he is not actually a character, he may not issue challenges).",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 48]"
+      ]
     },
     {
       "name": "Hexwraith",
@@ -3809,7 +4403,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 50]",
       "troop_type": "Cavalry",
-      "unit_context": "HEXWRAITHS"
+      "unit_context": "HEXWRAITHS",
+      "special_rules": "SPECIAL RULES:\n\nSoul Reapers: Attacks made by Hexwraiths and Hellwraiths in close combat are magical, have the Flaming Attacks special rule, and allow no armour saves.\n\nSoulstriders: Hexwraiths and Hellwraiths can move through unengaged units (whether friendly or enemy) during the Remaining Moves sub-phase, but cannot end their movement within 1\" of another unit.\n\nSpectral Hunters: If a unit ofHexwraiths moves through one or more unengaged enemy units in the Remaining Moves sub-phase, nominate one of those units. That unit immediately suffers a Strength 5 hit per Hexwraith (or Hellwraith) that has passed through it, distributed as shooting attacks.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 50]"
+      ]
     },
     {
       "name": "Hellwraith",
@@ -3830,7 +4428,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 50]",
       "troop_type": "Cavalry",
-      "unit_context": "HEXWRAITHS"
+      "unit_context": "HEXWRAITHS",
+      "special_rules": "SPECIAL RULES:\n\nSoul Reapers: Attacks made by Hexwraiths and Hellwraiths in close combat are magical, have the Flaming Attacks special rule, and allow no armour saves.\n\nSoulstriders: Hexwraiths and Hellwraiths can move through unengaged units (whether friendly or enemy) during the Remaining Moves sub-phase, but cannot end their movement within 1\" of another unit.\n\nSpectral Hunters: If a unit ofHexwraiths moves through one or more unengaged enemy units in the Remaining Moves sub-phase, nominate one of those units. That unit immediately suffers a Strength 5 hit per Hexwraith (or Hellwraith) that has passed through it, distributed as shooting attacks.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 50]"
+      ]
     },
     {
       "name": "Terrorgheist",
@@ -3852,7 +4454,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 51]",
       "troop_type": "Monster",
-      "unit_context": "TERRORGHEISTS"
+      "unit_context": "TERRORGHEISTS",
+      "special_rules": "SPECIAL RULES: Fly, Large Target, Regeneration (6+ }, Terror, Undead.\n\nDeath Shriek: A Death Shriek is a special attack that can be used against a single unit in the Shooting phase, even if the Terrorgheist has marched, charged, or is engaged in close combat. This attack has a range of 8\" and needs line of sight to its target. If the Terrorgheist is engaged in combat, its Death Shriek may target a unit in base contact.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 51]"
+      ]
     },
     {
       "name": "Hellsteed",
@@ -3874,7 +4480,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 53]",
       "troop_type": "WarBeast",
-      "unit_context": "NIGHTMARES"
+      "unit_context": "NIGHTMARES",
+      "special_rules": "SPECIAL RULES: Fly, Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 53]"
+      ]
     },
     {
       "name": "Skeletal Steed",
@@ -3896,7 +4506,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 54]",
       "troop_type": "WarBeast",
-      "unit_context": "SKELETAL STEEDS"
+      "unit_context": "SKELETAL STEEDS",
+      "special_rules": "SPECIAL RULES:\n\nSoul Reapers: Attacks made by Hexwraiths and Hellwraiths in close combat are magical, have the Flaming Attacks special rule, and allow no armour saves.\n\nSoulstriders: Hexwraiths and Hellwraiths can move through unengaged units (whether friendly or enemy) during the Remaining Moves sub-phase, but cannot end their movement within 1\" of another unit.\n\nSpectral Hunters: If a unit ofHexwraiths moves through one or more unengaged enemy units in the Remaining Moves sub-phase, nominate one of those units. That unit immediately suffers a Strength 5 hit per Hexwraith (or Hellwraith) that has passed through it, distributed as shooting attacks.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 50]"
+      ]
     },
     {
       "name": "Coven Throne",
@@ -3913,7 +4527,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 55]",
       "troop_type": "Chariot(ArmourSave 5+)",
-      "unit_context": "COVEN THRONES"
+      "unit_context": "COVEN THRONES",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Pallid Handmaidens only), Large Target, *Random Attacks\n\nBattle of Wills: Immediately before the first model in an enemy unit rolls To Hit against the Coven Throne or a character upon it (either in close combat or shooting), the opponent must roll a D6 and add it to his unit's Leadership (attacks that do not roll To Hit are exempt from this effect). Next, roll a D6 and add it to the Coven Throne's Leadership. To find the result of the Battle of Wills, subtract the enemy's total from the Coven Throne's total, and apply the result to the table below - the results last until the end of the turn.\n\nScrying Pool: Bound Spell (Level 3). If cast successfully, the Coven Throne and all of its constituent parts, including its crew and any character using it as a mount, re-rolls failed To Hit or To Wound rolls (owning player's choice) for the remainder of the turn.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 55]"
+      ]
     },
     {
       "name": "Spirit Horde",
@@ -3931,7 +4549,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 55]",
       "troop_type": "Chariot(ArmourSave 5+)",
-      "unit_context": "COVEN THRONES"
+      "unit_context": "COVEN THRONES",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Pallid Handmaidens only), Large Target, *Random Attacks\n\nBattle of Wills: Immediately before the first model in an enemy unit rolls To Hit against the Coven Throne or a character upon it (either in close combat or shooting), the opponent must roll a D6 and add it to his unit's Leadership (attacks that do not roll To Hit are exempt from this effect). Next, roll a D6 and add it to the Coven Throne's Leadership. To find the result of the Battle of Wills, subtract the enemy's total from the Coven Throne's total, and apply the result to the table below - the results last until the end of the turn.\n\nScrying Pool: Bound Spell (Level 3). If cast successfully, the Coven Throne and all of its constituent parts, including its crew and any character using it as a mount, re-rolls failed To Hit or To Wound rolls (owning player's choice) for the remainder of the turn.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 55]"
+      ]
     },
     {
       "name": "Corpsemaster",
@@ -3949,7 +4571,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 56]",
       "troop_type": "Chariot(ArmourSave5+)",
-      "unit_context": "MORTIS ENGINES"
+      "unit_context": "MORTIS ENGINES",
+      "special_rules": "SPECIAL RULES: *Random Attacks (2D6) (Restless Dead only), Regeneration, Undead.\n\nVigour Mortis: If an augment spell from the Lore of the Vampires targets a Corpse Cart, and is successfully cast, then all friendly Undead units within 6\" of the Corpse Cart (including the Corpse Cart itself) have the Always Strikes First special rule until the start of your next Magic phase. Zombies affected by Vigour Mortis lose their Always Strikes Last special rule, and gain Always Strikes First instead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 43]"
+      ]
     },
     {
       "name": "Banshee Swarm",
@@ -3966,7 +4592,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 56]",
       "troop_type": "Chariot(ArmourSave5+)",
-      "unit_context": "MORTIS ENGINES"
+      "unit_context": "MORTIS ENGINES",
+      "special_rules": "SPECIAL RULES: Large Target, *Random Attacks (2D6) (Spirit Horde only), Regeneration, Spectral Steeds (see page 5 1 ), Terror, Undead.\n\nBanshee Swarm: The Mortis Engine can make a Ghostly Howl attack (see page 3 1).",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 56]"
+      ]
     },
     {
       "name": "Konrad von Carstein",
@@ -3987,7 +4617,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 60]",
-      "troop_type": "Infantry(SpecialCharacter,Vampire)"
+      "troop_type": "Infantry(SpecialCharacter,Vampire)",
+      "special_rules": "SPECIAL RULES: Hatred, The Hunger (see page 27), Undead, Vampiric.\n\nOne Bat Short of a Belfry: At the start of each of Konrad's turns, you must determine the state of the mad Vampire's fragile mind. Roll a D6. On a roll of a 1 , 2 or 3, Konrad is subject to the rules for Stupidity until the start of his next turn. On a roll of a 4, 5 or 6, Konrad is subject to Frenzy until the start of his next turn. Note that Konrad may become subject to Frenzy even if he has previously been beaten in a round of combat.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 60]"
+      ]
     },
     {
       "name": "Heinrich Kemmler",
@@ -4009,7 +4643,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 61]",
       "troop_type": "Infantry",
-      "unit_context": "HEINRICH KEMMLER"
+      "unit_context": "HEINRICH KEMMLER",
+      "special_rules": "SPECIAL RULES: Loremaster (Lore of the Vampires}, Master of the Dead (see page 28), Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 61]"
+      ]
     },
     {
       "name": "Abyssal Terror",
@@ -4031,7 +4669,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 92]",
       "troop_type": "Monster Fly,LargeTarget,Terror, Undead",
-      "unit_context": "CHARACTER MOUNTS"
+      "unit_context": "CHARACTER MOUNTS",
+      "special_rules": "Special Rules: Spectral Steeds, Undead",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 92]"
+      ]
     },
     {
       "name": "Terrorgheist",
@@ -4053,7 +4695,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 92]",
       "troop_type": "Monster DeathShriek, Fly,LargeTarget",
-      "unit_context": "CHARACTER MOUNTS"
+      "unit_context": "CHARACTER MOUNTS",
+      "special_rules": "SPECIAL RULES: Fly, Large Target, Regeneration (6+ }, Terror, Undead.\n\nDeath Shriek: A Death Shriek is a special attack that can be used against a single unit in the Shooting phase, even if the Terrorgheist has marched, charged, or is engaged in close combat. This attack has a range of 8\" and needs line of sight to its target. If the Terrorgheist is engaged in combat, its Death Shriek may target a unit in base contact.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 51]"
+      ]
     },
     {
       "name": "Zombie Dragon",
@@ -4075,7 +4721,11 @@
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 92]",
       "troop_type": "Monster Fly,LargeTarget,PestilentialBreath",
-      "unit_context": "CHARACTER MOUNTS"
+      "unit_context": "CHARACTER MOUNTS",
+      "special_rules": "Special Rules: Spectral Steeds, Undead",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 92]"
+      ]
     },
     {
       "name": "Heinrich Kemmler",
@@ -4093,7 +4743,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Vampire Counts",
-      "citation": "Armybook_8ed - Vampire Counts [PDF page 99]"
+      "citation": "Armybook_8ed - Vampire Counts [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Loremaster (Lore of the Vampires}, Master of the Dead (see page 28), Undead.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 61]"
+      ]
     },
     {
       "name": "Strigoi Ghoul King",
@@ -4221,6 +4875,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Vampire Counts",
       "citation": "Armybook_8ed - Vampire Counts [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Pallid Handmaidens only), Large Target, *Random Attacks\n\nBattle of Wills: Immediately before the first model in an enemy unit rolls To Hit against the Coven Throne or a character upon it (either in close combat or shooting), the opponent must roll a D6 and add it to his unit's Leadership (attacks that do not roll To Hit are exempt from this effect). Next, roll a D6 and add it to the Coven Throne's Leadership. To find the result of the Battle of Wills, subtract the enemy's total from the Coven Throne's total, and apply the result to the table below - the results last until the end of the turn.\n\nScrying Pool: Bound Spell (Level 3). If cast successfully, the Coven Throne and all of its constituent parts, including its crew and any character using it as a mount, re-rolls failed To Hit or To Wound rolls (owning player's choice) for the remainder of the turn.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 55]"
+      ],
       "troop_type": "Chariot(ArmourSave 5+)",
       "unit_context": "COVEN THRONES"
     },
@@ -4255,7 +4913,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Vampire Counts",
-      "citation": "Armybook_8ed - Vampire Counts [PDF page 99]"
+      "citation": "Armybook_8ed - Vampire Counts [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Fly, Large Target, Regeneration (6+ }, Terror, Undead.\n\nDeath Shriek: A Death Shriek is a special attack that can be used against a single unit in the Shooting phase, even if the Terrorgheist has marched, charged, or is engaged in close combat. This attack has a range of 8\" and needs line of sight to its target. If the Terrorgheist is engaged in combat, its Death Shriek may target a unit in base contact.",
+      "rules_citations": [
+        "Armybook_8ed - Vampire Counts [PDF page 51]"
+      ]
     },
     {
       "name": "Skeleton Warrior",
@@ -4295,7 +4957,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 27]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "CHAOS LORDS"
+      "unit_context": "CHAOS LORDS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 27]"
+      ]
     },
     {
       "name": "Palanquin of Nurgle",
@@ -4317,7 +4983,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 30]",
       "troop_type": "MonstrousBeast",
-      "unit_context": "DISCS OFTZEENTCH"
+      "unit_context": "DISCS OFTZEENTCH",
+      "special_rules": "SPECIAL RULES: Daemonic Attacks, Fear.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 30]"
+      ]
     },
     {
       "name": "Chaos Warrior",
@@ -4339,7 +5009,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]",
       "troop_type": "Infantry",
-      "unit_context": "CHAOS WARRIORS"
+      "unit_context": "CHAOS WARRIORS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Aspiring Champion only).",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]"
+      ]
     },
     {
       "name": "Aspiring Champion",
@@ -4361,7 +5035,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]",
       "troop_type": "Infantry",
-      "unit_context": "CHAOS WARRIORS"
+      "unit_context": "CHAOS WARRIORS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Aspiring Champion only).",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]"
+      ]
     },
     {
       "name": "Chosen",
@@ -4383,7 +5061,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]",
       "troop_type": "Infantry",
-      "unit_context": "CHAOS WARRIORS"
+      "unit_context": "CHAOS WARRIORS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Chosen Champion only).\n\nThe Rewards of Chaos: Immediately before rolling off to see who gets the first turn, each unit of Chosen must roll 3D6, discard a single dice of your choosing, and consult the Eye of the Gods table (see page 25). If a unit of Chosen does not deploy at the beginning of the game, but deploys later, such as arriving as Reinforcements, roll as soon as they are placed on the battlefield. If the result rolled is Damned by Chaos, or Dark Apotheosis, that result is immediately applied to the unit’s Chosen Champion (if the unit does not contain a Chosen Champion, the result is instead treated as a ‘The Eye Opens’ result), otherwise the result is applied to every model in the unit. Note that the result does not apply to any characters that have joined the Chosen unit.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]"
+      ]
     },
     {
       "name": "Chosen Champion",
@@ -4405,7 +5087,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]",
       "troop_type": "Infantry",
-      "unit_context": "CHAOS WARRIORS"
+      "unit_context": "CHAOS WARRIORS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Chosen Champion only).\n\nThe Rewards of Chaos: Immediately before rolling off to see who gets the first turn, each unit of Chosen must roll 3D6, discard a single dice of your choosing, and consult the Eye of the Gods table (see page 25). If a unit of Chosen does not deploy at the beginning of the game, but deploys later, such as arriving as Reinforcements, roll as soon as they are placed on the battlefield. If the result rolled is Damned by Chaos, or Dark Apotheosis, that result is immediately applied to the unit’s Chosen Champion (if the unit does not contain a Chosen Champion, the result is instead treated as a ‘The Eye Opens’ result), otherwise the result is applied to every model in the unit. Note that the result does not apply to any characters that have joined the Chosen unit.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 32]"
+      ]
     },
     {
       "name": "Marauder Horseman",
@@ -4427,7 +5113,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 33]",
       "troop_type": "Cavalry",
-      "unit_context": "CHAOS MARAUDERS"
+      "unit_context": "CHAOS MARAUDERS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Marauder Horsemaster only), Fast Cavalry.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 33]"
+      ]
     },
     {
       "name": "Marauder Horsemaster",
@@ -4449,7 +5139,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 33]",
       "troop_type": "Cavalry",
-      "unit_context": "CHAOS MARAUDERS"
+      "unit_context": "CHAOS MARAUDERS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Marauder Horsemaster only), Fast Cavalry.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 33]"
+      ]
     },
     {
       "name": "Warhorse",
@@ -4471,7 +5165,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 33]",
       "troop_type": "Cavalry",
-      "unit_context": "CHAOS MARAUDERS"
+      "unit_context": "CHAOS MARAUDERS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Marauder Horsemaster only), Fast Cavalry.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 33]"
+      ]
     },
     {
       "name": "Steed of Slaanesh",
@@ -4493,7 +5191,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 34]",
       "troop_type": "WarBeast",
-      "unit_context": "HELLSTRIDERS OF SLAANESH"
+      "unit_context": "HELLSTRIDERS OF SLAANESH",
+      "special_rules": "SPECIAL RULES: Armour Piercing, Daemonic Attacks, Fast Cavalry, Fear, Poisoned Attacks.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 34]"
+      ]
     },
     {
       "name": "Chaos Knight",
@@ -4515,7 +5217,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]",
       "troop_type": "Cavalry",
-      "unit_context": "CHAOS KNIGHTS"
+      "unit_context": "CHAOS KNIGHTS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Doom Knight only), Fear.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]"
+      ]
     },
     {
       "name": "Doom Knight",
@@ -4537,7 +5243,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]",
       "troop_type": "Cavalry",
-      "unit_context": "CHAOS KNIGHTS"
+      "unit_context": "CHAOS KNIGHTS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Doom Knight only), Fear.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]"
+      ]
     },
     {
       "name": "Chaos Steed",
@@ -4559,7 +5269,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]",
       "troop_type": "Cavalry",
-      "unit_context": "CHAOS KNIGHTS"
+      "unit_context": "CHAOS KNIGHTS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Doom Knight only), Fear.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]"
+      ]
     },
     {
       "name": "Juggernaut of Khorne",
@@ -4581,7 +5295,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 36]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "SKULLCRUSHERS OF KHORNE"
+      "unit_context": "SKULLCRUSHERS OF KHORNE",
+      "special_rules": "SPECIAL RULES: Daemonic Attacks, Fear.\n\nBrass Behemoth: A Juggernaut improves its rider’s armour saving throw by +2, rather than the usual +1 for monstrous cavalry mounts.\n\nMurderous Charge: On a turn in which a Juggernaut of",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 36]"
+      ]
     },
     {
       "name": "Forsaken",
@@ -4602,7 +5320,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 39]",
-      "troop_type": "Infantry"
+      "troop_type": "Infantry",
+      "special_rules": "SPECIAL RULES: Frenzy, Immune to Psychology, Random Attacks (D3).\n\nFreakish Mutations: If a unit of Forsaken are in base contact with one or more enemy units at the start of a Close Combat phase, roll a D6 on the table below. The effect lasts until the end of the Close Combat phase.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 39]"
+      ]
     },
     {
       "name": "Chaos Spawn",
@@ -4621,7 +5343,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 40]",
-      "troop_type": "Monstrous Beast"
+      "troop_type": "Monstrous Beast",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+ 1), Random Movement (2D 6), Unbreakable.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 40]"
+      ]
     },
     {
       "name": "Chaos Warhound",
@@ -4643,7 +5369,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 40]",
       "troop_type": "WarBeast",
-      "unit_context": "WARHOUNDS"
+      "unit_context": "WARHOUNDS",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+ 1), Random Movement (2D 6), Unbreakable.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 40]"
+      ]
     },
     {
       "name": "Chaos Ogre",
@@ -4665,7 +5395,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 41]",
       "troop_type": "Monstrous Infantry",
-      "unit_context": "CHAOS OGRES"
+      "unit_context": "CHAOS OGRES",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Ogre M utant only), Fear.\n\nOgre Charge: Chaos Ogres have the Impact H its (1) special rule. This is increased to Impact H its (D3) if, when calculating the charge range (or a pursuit into a new enemy), the two highest dice score a total of 10 or more (you may want to mark Chaos Ogre units that rolled a 10 or more for their charge roll with a suitable counter, so you don’t forget in the Close Combat phase). A unit of Chaos Ogres adds its current Rank Bonus to the Strength of any Impact H its they inflict.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 41]"
+      ]
     },
     {
       "name": "Ogre Mutant",
@@ -4687,7 +5421,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 41]",
       "troop_type": "Monstrous Infantry",
-      "unit_context": "CHAOS OGRES"
+      "unit_context": "CHAOS OGRES",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Ogre M utant only), Fear.\n\nOgre Charge: Chaos Ogres have the Impact H its (1) special rule. This is increased to Impact H its (D3) if, when calculating the charge range (or a pursuit into a new enemy), the two highest dice score a total of 10 or more (you may want to mark Chaos Ogre units that rolled a 10 or more for their charge roll with a suitable counter, so you don’t forget in the Close Combat phase). A unit of Chaos Ogres adds its current Rank Bonus to the Strength of any Impact H its they inflict.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 41]"
+      ]
     },
     {
       "name": "Dragon Ogre",
@@ -4709,7 +5447,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 42]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "DRAGON OGRES"
+      "unit_context": "DRAGON OGRES",
+      "special_rules": "SPECIAL RULES: Fear, Scaly Skin (5 + ), Storm Rage (see below).",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 42]"
+      ]
     },
     {
       "name": "Dragon Ogre Shartak",
@@ -4731,7 +5473,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 42]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "DRAGON OGRES"
+      "unit_context": "DRAGON OGRES",
+      "special_rules": "SPECIAL RULES: Fear, Scaly Skin (5 + ), Storm Rage (see below).",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 42]"
+      ]
     },
     {
       "name": "Dragon Ogre Shaggoth",
@@ -4753,7 +5499,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 42]",
       "troop_type": "Monster",
-      "unit_context": "DRAGON OGRE"
+      "unit_context": "DRAGON OGRE",
+      "special_rules": "SPECIAL RULES: Immune to Psychology, Large Target, Scaly Skin (5 + ), Terror.\n\nStorm Rage: Models with this special rule have a 2 + ward save against all lightning-based attacks. This includes hits caused by spells (such as Chain Lightnings Urannons Thunderbolt, Warp Lightnings Storm of Shemtek etc.), weapons (such as Skaven Warp Lightning Cannons) and other special abilities and attacks (such as a Skaven DoomwheePs Zzzap!, or Kholek Suneater’s L ord of the Storm attack). If a model with this special rule is ever hit by a lightning-based attack or effect, they immediately gain the Frenzy special rule.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 42]"
+      ]
     },
     {
       "name": "Hellcannon",
@@ -4773,7 +5523,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
-      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 43]"
+      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 43]",
+      "special_rules": "SPECIAL RULES: Daemonic Attacks (Hellcannon only), Large Target, Monster and Handlers, Terror, Unbreakable.\n\nCaged Fury: At the start of your turn, if the Hellcannon is not in combat, take a Leadership test. If the test is passed, the Hellcannon acts as normal. If the test is failed, pivot the Hellcannon to face the closest enemy unit. It is then subject to the Random M ovement (3D6) special rule until the beginning of the next turn, except it can only move forwards.\n\nDaemonic Construction: A Hellcannon has a natural armour save of 4 + and a ward save of 5 + .\n\nDoomfire: Doomfire is fired following the rules for a stone thrower with the following profile:",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 43]"
+      ]
     },
     {
       "name": "Chaos Dwarf Handlers",
@@ -4793,7 +5547,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
-      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 43]"
+      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 43]",
+      "special_rules": "SPECIAL RULES: Daemonic Attacks (Hellcannon only), Large Target, Monster and Handlers, Terror, Unbreakable.\n\nCaged Fury: At the start of your turn, if the Hellcannon is not in combat, take a Leadership test. If the test is passed, the Hellcannon acts as normal. If the test is failed, pivot the Hellcannon to face the closest enemy unit. It is then subject to the Random M ovement (3D6) special rule until the beginning of the next turn, except it can only move forwards.\n\nDaemonic Construction: A Hellcannon has a natural armour save of 4 + and a ward save of 5 + .\n\nDoomfire: Doomfire is fired following the rules for a stone thrower with the following profile:",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 43]"
+      ]
     },
     {
       "name": "Chaos Shrinemaster",
@@ -4814,7 +5572,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]",
       "troop_type": "Chariot (Armour Save 4+)",
-      "unit_context": "CHAOS WARSHRINES"
+      "unit_context": "CHAOS WARSHRINES",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+2) (Chaos Shrine Bearers only).\n\nFavour of the Ruinous Powers: If a friendly model is within 12\" of one or more Chaos Warshrines when he rolls on the Eye of the Gods table, he rolls an additional D 6 and discards a single dice of his choosing.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]"
+      ]
     },
     {
       "name": "Chaos Shrine Bearers",
@@ -4834,7 +5596,11 @@
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]",
       "troop_type": "Chariot (Armour Save 4+)",
-      "unit_context": "CHAOS WARSHRINES"
+      "unit_context": "CHAOS WARSHRINES",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+2) (Chaos Shrine Bearers only).\n\nFavour of the Ruinous Powers: If a friendly model is within 12\" of one or more Chaos Warshrines when he rolls on the Eye of the Gods table, he rolls an additional D 6 and discards a single dice of his choosing.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]"
+      ]
     },
     {
       "name": "Vilitch the Curseling",
@@ -4854,7 +5620,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
-      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 52]"
+      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 52]",
+      "special_rules": "SPECIAL RULES: Eye o f the Gods, Loremaster (Lore o f T zeentch), Mark o f Tzeentch.\n\nVessel of Chaos: Vilitch enjoys the patronage of the Great Sorcerer himself and as part ofTzeentchIf fickle plans, he has gifted the Twisted Twin with a dark crucible - a powerful artefact",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 52]"
+      ]
     },
     {
       "name": "Scyla Anfingrimm",
@@ -4914,6 +5684,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+2) (Chaos Shrine Bearers only).\n\nFavour of the Ruinous Powers: If a friendly model is within 12\" of one or more Chaos Warshrines when he rolls on the Eye of the Gods table, he rolls an additional D 6 and discards a single dice of his choosing.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]"
+      ],
       "troop_type": "Chariot (Armour Save 4+)",
       "unit_context": "CHAOS WARSHRINES"
     },
@@ -4935,7 +5709,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
-      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]"
+      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+2) (Chaos Shrine Bearers only).\n\nFavour of the Ruinous Powers: If a friendly model is within 12\" of one or more Chaos Warshrines when he rolls on the Eye of the Gods table, he rolls an additional D 6 and discards a single dice of his choosing.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]"
+      ]
     },
     {
       "name": "Chaos Shrine Bearers",
@@ -4954,7 +5732,11 @@
       "official": true,
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
-      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]"
+      "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+2) (Chaos Shrine Bearers only).\n\nFavour of the Ruinous Powers: If a friendly model is within 12\" of one or more Chaos Warshrines when he rolls on the Eye of the Gods table, he rolls an additional D 6 and discards a single dice of his choosing.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 44]"
+      ]
     },
     {
       "name": "Chimera",
@@ -5139,7 +5921,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]",
-      "unit_context": "CORE MOUNTS"
+      "unit_context": "CORE MOUNTS",
+      "special_rules": "SPECIAL RULES: Eye of the Gods (Doom Knight only), Fear.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 35]"
+      ]
     },
     {
       "name": "Chaos Marauder",
@@ -5221,7 +6007,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Warriors of Chaos 2012",
       "citation": "Armybook_8ed - Warriors of Chaos 2012 [PDF page 97]",
-      "unit_context": "TEMPLATE"
+      "unit_context": "TEMPLATE",
+      "special_rules": "SPECIAL RULES: Fear, Random Attacks (D 6+ 1), Random Movement (2D 6), Unbreakable.",
+      "rules_citations": [
+        "Armybook_8ed - Warriors of Chaos 2012 [PDF page 40]"
+      ]
     },
     {
       "name": "Mutalith Vortex Beast",
@@ -5325,7 +6115,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 42]",
-      "unit_context": "ISHA,THEMOTHER"
+      "unit_context": "ISHA,THEMOTHER",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Blessings of the Ancients, Forest Stalker.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 42]"
+      ]
     },
     {
       "name": "Eternal Guard",
@@ -5346,7 +6140,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 43]",
-      "troop_type": "Infantry"
+      "troop_type": "Infantry",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Stubborn.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 43]"
+      ]
     },
     {
       "name": "Eternal Warden",
@@ -5368,7 +6166,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 43]",
       "troop_type": "Infantry",
-      "unit_context": "ETERNAL GUARD"
+      "unit_context": "ETERNAL GUARD",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Stubborn.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 43]"
+      ]
     },
     {
       "name": "Deepwood Scout",
@@ -5390,7 +6192,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 44]",
       "troop_type": "Infantry",
-      "unit_context": "GLADE GUARD"
+      "unit_context": "GLADE GUARD",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Scouts, Skirmishers.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 44]"
+      ]
     },
     {
       "name": "Master Scout",
@@ -5412,7 +6218,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 44]",
       "troop_type": "Infantry",
-      "unit_context": "GLADE GUARD"
+      "unit_context": "GLADE GUARD",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Scouts, Skirmishers.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 44]"
+      ]
     },
     {
       "name": "Glade Guard",
@@ -5433,7 +6243,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 44]",
-      "troop_type": "Infantry"
+      "troop_type": "Infantry",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 44]"
+      ]
     },
     {
       "name": "Lord's Bowman",
@@ -5455,7 +6269,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 44]",
       "troop_type": "Infantry",
-      "unit_context": "GLADE GUARD"
+      "unit_context": "GLADE GUARD",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 44]"
+      ]
     },
     {
       "name": "Glade Rider",
@@ -5474,7 +6292,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 45]",
       "troop_type": "Cavalry",
-      "unit_context": "KNIGHTS OF ATHEL LOREN"
+      "unit_context": "KNIGHTS OF ATHEL LOREN",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Ambushers, Fast Cavalry, Forest Stalker.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 45]"
+      ]
     },
     {
       "name": "Glade Knight",
@@ -5493,7 +6315,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 45]",
       "troop_type": "Cavalry",
-      "unit_context": "KNIGHTS OF ATHEL LOREN"
+      "unit_context": "KNIGHTS OF ATHEL LOREN",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Ambushers, Fast Cavalry, Forest Stalker.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 45]"
+      ]
     },
     {
       "name": "Unicorn",
@@ -5515,7 +6341,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 45]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "KNIGHTS OF ATHEL LOREN"
+      "unit_context": "KNIGHTS OF ATHEL LOREN",
+      "special_rules": "SPECIAL RULES: Fear, Forest Spirit, Magic Resistance (2).\n\nImpale: A Unicorn’s close combat attacks have a +2 Strength bonus on a turn in which it charges.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 45]"
+      ]
     },
     {
       "name": "Wind Rider",
@@ -5537,7 +6367,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 46]",
       "troop_type": "MonstrousCavalry",
-      "unit_context": "WARHAWKRIDERS"
+      "unit_context": "WARHAWKRIDERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Armour Piercing (Warhawks only), Flying Cavalry,\n\nPredator’s Descent (Warhawks only): On a turn in which a Warhawk charges, it has the Killing Blow special rule.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 46]"
+      ]
     },
     {
       "name": "Warhawk",
@@ -5559,7 +6393,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 46]",
       "troop_type": "MonstrousCavalry",
-      "unit_context": "WARHAWKRIDERS"
+      "unit_context": "WARHAWKRIDERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Armour Piercing (Warhawks only), Flying Cavalry,\n\nPredator’s Descent (Warhawks only): On a turn in which a Warhawk charges, it has the Killing Blow special rule.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 46]"
+      ]
     },
     {
       "name": "Great Eagle",
@@ -5581,7 +6419,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 46]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "WARHAWKRIDERS"
+      "unit_context": "WARHAWKRIDERS",
+      "special_rules": "SPECIAL RULES: Fly.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 46]"
+      ]
     },
     {
       "name": "Wildwood Ranger",
@@ -5603,7 +6445,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 47]",
       "troop_type": "Infantry",
-      "unit_context": "WILDWOOD RANGERS"
+      "unit_context": "WILDWOOD RANGERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Immune to Psychology.\n\nGuardians of the Wildwood: If a model with this special rule is in base contact with at least one enemy model with either the Fear or Terror special rule, it has + 1 Attack.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 47]"
+      ]
     },
     {
       "name": "Wildwood Warden",
@@ -5625,7 +6471,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 47]",
       "troop_type": "Infantry",
-      "unit_context": "WILDWOOD RANGERS"
+      "unit_context": "WILDWOOD RANGERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Immune to Psychology.\n\nGuardians of the Wildwood: If a model with this special rule is in base contact with at least one enemy model with either the Fear or Terror special rule, it has + 1 Attack.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 47]"
+      ]
     },
     {
       "name": "Shadowdancer",
@@ -5647,7 +6497,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 48]",
       "troop_type": "Infantry(Character)",
-      "unit_context": "WARDANCERS"
+      "unit_context": "WARDANCERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Blessings of the Ancients, Forest Stalker, Immune to Psychology, Shadow Dances of Loec (see left), Talismanic Tattoos (see left).",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 48]"
+      ]
     },
     {
       "name": "Wardancer",
@@ -5669,7 +6523,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 48]",
       "troop_type": "Infantry",
-      "unit_context": "WS BS S T W I A Ld"
+      "unit_context": "WS BS S T W I A Ld",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Immune to Psychology, Skirmishers.\n\nTalismanic Tattoos: A model with this special rule has a 6 + ward save.\n\nShadow Dances of Loec: At the start of each round of close combat in which they are fighting, models with this special rule (the dancers) choose one of the following dances, the effect of which lasts until the end of that turn or until a new dance is chosen. This is done before Impact Hits are resolved. All dancers in the same unit must choose the same dance. Dancers cannot choose the same dance in two consecutive rounds of combat.\n\nWhirling Death: The dancers have the Armour Piercing and Killing Blow special rules.\n\nStorm of Blades: The dancers have +1 Attack.\n\nThe Shadows Coil: The dancers have a 3 + ward save.\n\nWoven Mist: Enemy units in base contact with the unit receive no combat result bonus for extra ranks.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 48]"
+      ]
     },
     {
       "name": "Bladesinger",
@@ -5691,7 +6549,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 48]",
       "troop_type": "Infantry",
-      "unit_context": "WS BS S T W I A Ld"
+      "unit_context": "WS BS S T W I A Ld",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Immune to Psychology, Skirmishers.\n\nTalismanic Tattoos: A model with this special rule has a 6 + ward save.\n\nShadow Dances of Loec: At the start of each round of close combat in which they are fighting, models with this special rule (the dancers) choose one of the following dances, the effect of which lasts until the end of that turn or until a new dance is chosen. This is done before Impact Hits are resolved. All dancers in the same unit must choose the same dance. Dancers cannot choose the same dance in two consecutive rounds of combat.\n\nWhirling Death: The dancers have the Armour Piercing and Killing Blow special rules.\n\nStorm of Blades: The dancers have +1 Attack.\n\nThe Shadows Coil: The dancers have a 3 + ward save.\n\nWoven Mist: Enemy units in base contact with the unit receive no combat result bonus for extra ranks.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 48]"
+      ]
     },
     {
       "name": "Sister of the Thorn",
@@ -5713,7 +6575,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 49]",
       "troop_type": "Cavalry",
-      "unit_context": "SISTERS OF THE THORN"
+      "unit_context": "SISTERS OF THE THORN",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Fast Cavalry, Forest Stalker, Poisoned Attacks (Riders only).\n\nDaughters of Eternity: A model with this special rule has a 4+ ward save.\n\nDeepwood Coven: A unit of Sisters of the Thorn is considered to be a Level 2 Wizard that knows the spells Shield of Thorns (Lore of Life) and Curse of Anraheir (Lore of Beasts). This doesn’t prevent other friendly Wizards from knowing the same spells. The unit receives an additional +1 to cast for each rank of 5 or more models it has, after the first, to a maximum of +3. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister or Handmaiden of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 49]"
+      ]
     },
     {
       "name": "Steed of Isha",
@@ -5735,7 +6601,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 49]",
       "troop_type": "Cavalry",
-      "unit_context": "SISTERS OF THE THORN"
+      "unit_context": "SISTERS OF THE THORN",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Fast Cavalry, Forest Stalker, Poisoned Attacks (Riders only).\n\nDaughters of Eternity: A model with this special rule has a 4+ ward save.\n\nDeepwood Coven: A unit of Sisters of the Thorn is considered to be a Level 2 Wizard that knows the spells Shield of Thorns (Lore of Life) and Curse of Anraheir (Lore of Beasts). This doesn’t prevent other friendly Wizards from knowing the same spells. The unit receives an additional +1 to cast for each rank of 5 or more models it has, after the first, to a maximum of +3. Each time the unit casts a spell (or is targeted by a special rule that affects a Wizard), you must nominate one Sister or Handmaiden of the Thorn as the caster (or target) for the purposes of line of sight, range, etc. In the event of a Sisters of the Thorn unit rolling a miscast, do not roll on the Miscast table. Instead, the unit suffers D3 Wounds with no saves of any kind allowed.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 49]"
+      ]
     },
     {
       "name": "Great Stag",
@@ -5757,7 +6627,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 50]",
       "troop_type": "Monstrous Beast",
-      "unit_context": "WILD RIDERS"
+      "unit_context": "WILD RIDERS",
+      "special_rules": "SPECIAL RULES: Fear, Forest Spirit, Impact Hits (D3).",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 50]"
+      ]
     },
     {
       "name": "Wild Rider",
@@ -5778,7 +6652,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 50]",
-      "unit_context": "WILD RIDERS"
+      "unit_context": "WILD RIDERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Devastating Charge (Riders only), Fast Cavalry, Fear, Forest Stalker, Frenzy.\n\nTalismanic Tattoos: A model with this special rule has a 6 + ward save.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 50]"
+      ]
     },
     {
       "name": "Wild Hunter",
@@ -5799,7 +6677,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 50]",
-      "unit_context": "WILD RIDERS"
+      "unit_context": "WILD RIDERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Devastating Charge (Riders only), Fast Cavalry, Fear, Forest Stalker, Frenzy.\n\nTalismanic Tattoos: A model with this special rule has a 6 + ward save.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 50]"
+      ]
     },
     {
       "name": "Steed of Kurnous",
@@ -5820,7 +6702,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 50]",
-      "unit_context": "WILD RIDERS"
+      "unit_context": "WILD RIDERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Devastating Charge (Riders only), Fast Cavalry, Fear, Forest Stalker, Frenzy.\n\nTalismanic Tattoos: A model with this special rule has a 6 + ward save.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 50]"
+      ]
     },
     {
       "name": "Waywatcher",
@@ -5842,7 +6728,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 51]",
       "troop_type": "Infantry",
-      "unit_context": "WAYWATCHERS"
+      "unit_context": "WAYWATCHERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Scouts, Skirmishers.\n\nHawk-eyed Archer: Before a model with this special rule makes a shooting attack, decide whether it will make a fast shot or an aimed shot. If the former is chosen, the model’s",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 51]"
+      ]
     },
     {
       "name": "Waywatcher Sentinel",
@@ -5864,7 +6754,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 51]",
       "troop_type": "Infantry",
-      "unit_context": "WAYWATCHERS"
+      "unit_context": "WAYWATCHERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Scouts, Skirmishers.\n\nHawk-eyed Archer: Before a model with this special rule makes a shooting attack, decide whether it will make a fast shot or an aimed shot. If the former is chosen, the model’s",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 51]"
+      ]
     },
     {
       "name": "Waystalker",
@@ -5886,7 +6780,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 51]",
       "troop_type": "Infantry (Character)",
-      "unit_context": "WAYWATCHERS"
+      "unit_context": "WAYWATCHERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Hawk-eyed Archer (see above), Scouts, Sniper.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 51]"
+      ]
     },
     {
       "name": "Branchwraith",
@@ -5908,7 +6806,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 52]",
       "troop_type": "Infantry (Character)",
-      "unit_context": "DRYADS"
+      "unit_context": "DRYADS",
+      "special_rules": "SPECIAL RULES: Blessings of the Ancients, Fear, Forest Spirit, Hatred.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 52]"
+      ]
     },
     {
       "name": "Dryad",
@@ -5930,7 +6832,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 52]",
       "troop_type": "Infantry",
-      "unit_context": "DRYADS"
+      "unit_context": "DRYADS",
+      "special_rules": "SPECIAL RULES: Fear, Forest Spirit, Hatred.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 52]"
+      ]
     },
     {
       "name": "Branch Nymph",
@@ -5952,7 +6858,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 52]",
       "troop_type": "Infantry",
-      "unit_context": "DRYADS"
+      "unit_context": "DRYADS",
+      "special_rules": "SPECIAL RULES: Fear, Forest Spirit, Hatred.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 52]"
+      ]
     },
     {
       "name": "Treeman",
@@ -5974,7 +6884,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 54]",
       "troop_type": "Monster",
-      "unit_context": "TREEMANANCIENTS"
+      "unit_context": "TREEMANANCIENTS",
+      "special_rules": "SPECIAL RULES: Flammable, Forest Spirit, Large Target, Scaly Skin (3 + ), Stubborn, Terror.\n\nTree Whack: A model with this special rule can choose to make a single Tree Whack in place of making his normal close combat attacks. If a model is making a Tree Whack, it must be declared before rolling To Hit.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 54]"
+      ]
     },
     {
       "name": "Treeman Ancient",
@@ -5996,7 +6910,11 @@
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 54]",
       "troop_type": "Monster(Character)",
-      "unit_context": "TREEMANANCIENTS"
+      "unit_context": "TREEMANANCIENTS",
+      "special_rules": "SPECIAL RULES: Blessings of the Ancients, Flammable, Forest Spirit, Large Target, Scaly Skin (3 + ), Stubborn, Terror, Tree Whack (see left).",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 54]"
+      ]
     },
     {
       "name": "Orion",
@@ -6017,7 +6935,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 58]",
-      "troop_type": "Monster (Special Character)"
+      "troop_type": "Monster (Special Character)",
+      "special_rules": "SPECIA L RULES (Orion): Always Strikes First, Forest Stalker, Frenzy, Terror, Unbreakable.\n\nOrion’s Equerries: If Orion is accompanied by Hounds of Orion, they must be deployed as a unit (even though as a monster, Orion is not normally permitted to join units). Orion cannot leave this unit, and cannot join other units.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 58]"
+      ]
     },
     {
       "name": "Hound of Orion",
@@ -6038,7 +6960,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 58]",
-      "troop_type": "Monster (Special Character)"
+      "troop_type": "Monster (Special Character)",
+      "special_rules": "SPECIA L RULES (Hound of Orion): Forest Spirit, Frenzy, Unbreakable.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 58]"
+      ]
     },
     {
       "name": "Araloth",
@@ -6059,7 +6985,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 59]",
-      "troop_type": "Infantry (SpecialCharacter)"
+      "troop_type": "Infantry (SpecialCharacter)",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker, Stubborn.\n\nBoldest of the Bold: Whilst Araloth is a lone character, he has the Unbreakable special rule (this replaces Stubborn).\n\nFavour of the Goddess: Araloth has a 4+ ward save.\n\nSkaryn the Eye Thief: At the start of each of your turns, nominate a single enemy model within 18\" of Araloth. That model takes a Strength 4 hit. If the Wound is unsaved, and the To Wound roll was a 6, the model suffers a - J penalty to Weapon Skill and Initiative (to a minimum of 1) for the rest of the game. A model can only suffer this penalty once.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 59]"
+      ]
     },
     {
       "name": "Naestra",
@@ -6080,7 +7010,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 62]",
-      "troop_type": "Infantry (SpecialCharacter)"
+      "troop_type": "Infantry (SpecialCharacter)",
+      "special_rules": "SPECIAL RULES (Naestra and Arahan): Always Strikes First, Forest Stalker.\n\nConjoined Destiny: If either Arahan or Naestra is slain, do not remove the model from play unless the other sister is killed in the same phase. If at least one sister has at least one Wound remaining at the end of a phase, both are restored to their starting number of Wounds - otherwise, remove both models as casualties. If either Naestra or Arahan issues or accepts a challenge, the other can attack (and be attacked) as part of the challenge. Should their mount be slain, the sisters automatically form a unit. They can join other units, but if one of the twins joins a unit, so must the other. If one twin cannot join the unit, neither can the other.\n\nSisters of Twilight: Naestra’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Destruction. Arahan’s close combat attacks receive a +1 bonus To Wound against models from the Forces of Order.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 62]"
+      ]
     },
     {
       "name": "Ceithin-Har",
@@ -6101,7 +7035,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 62]",
-      "troop_type": "Infantry (SpecialCharacter)"
+      "troop_type": "Infantry (SpecialCharacter)",
+      "special_rules": "SPECIAL RULES (Ceithin-Har): Fly, Forest Spirit, Large Target, Scaly Skin (3 + ), Terror.\n\nImpetuous: If Ceithin-Har can declare a Charge during the Charge sub-phase, he must do so unless he passes a Leadership test (which can be taken on Naestra or Arahan’s Leadership, if they are still alive).\n\nSoporific Breath: Ceithin-Har has a Strength 2 Breath Weapon. Armour saves taken against Wounds caused by Soporific Breath suffer a -3 penalty. All models in a unit that suffers one or more hits from Soporific Breath gain the Stupidity special rule for the remainder of the game.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 62]"
+      ]
     },
     {
       "name": "Gwindalor",
@@ -6122,7 +7060,11 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 62]",
-      "troop_type": "Infantry (SpecialCharacter)"
+      "troop_type": "Infantry (SpecialCharacter)",
+      "special_rules": "SPECIAL RULES (Gwindalor): Fly.\n\nHunter’s Mount: When mounted on Gwindalor, Naestra and Arahan re-roll all failed To H it rolls when making shooting attacks.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 62]"
+      ]
     },
     {
       "name": "Handmaiden of the Thorn",
@@ -6184,6 +7126,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker.\n\nThe Arrow of Kurnous: Once both sides have deployed, but before the first turn begins, check to see if the enemy General is within 36\" and within line of sight of at least one of your models with this special rule. If he is, he immediately suffers a single Strength 3 hit against which no armour saves can be taken. Otherwise, nothing happens.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 41]"
+      ],
       "troop_type": "Infantry (Character)",
       "unit_context": "HIGHBORN OF ATHEL LOREN"
     },
@@ -6246,6 +7192,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Forest Stalker.\n\nThe Arrow of Kurnous: Once both sides have deployed, but before the first turn begins, check to see if the enemy General is within 36\" and within line of sight of at least one of your models with this special rule. If he is, he immediately suffers a single Strength 3 hit against which no armour saves can be taken. Otherwise, nothing happens.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 41]"
+      ],
       "troop_type": "Infantry (Character)",
       "unit_context": "HIGHBORN OF ATHEL LOREN"
     },
@@ -6288,6 +7238,10 @@
       "system": "WHFB",
       "book": "Armybook_8ed - Wood Elves",
       "citation": "Armybook_8ed - Wood Elves [PDF page 99]",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Ambushers, Fast Cavalry, Forest Stalker.",
+      "rules_citations": [
+        "Armybook_8ed - Wood Elves [PDF page 45]"
+      ],
       "troop_type": "Cavalry",
       "unit_context": "KNIGHTS OF ATHEL LOREN"
     },

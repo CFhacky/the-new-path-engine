@@ -23,7 +23,7 @@ Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (208), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (154), D&D epic spells (70; all exact full-description spans), D&D prestige classes (145), D&D epic magic items (153; all exact full-description spans), D&D epic monsters (64; all exact full-description spans), GURPS gear — weapons + armor
 (186; all exact full-row spans), GURPS advantages/disadvantages (469; all exact full-description/inline-definition spans), GURPS skills (263; all exact full-description spans), GURPS techniques (112; all exact full-description spans), D&D pact-magic vestiges (32), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
-D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136; 118 with cited book-verbatim SPECIAL RULES from born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
+D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136; 118 with cited book-verbatim SPECIAL RULES from born-digital codexes) + WHFB wargame unit profiles (291; 217 with cited book-verbatim SPECIAL RULES from born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
 
@@ -98,7 +98,7 @@ feats do too):
 | D&D 5e | 35 | **517 monsters** across 12 books in `dnd5e_creature_index`, plus **575 magic items** in `dnd5e_item_index` and **102 spells** in `dnd5e_spell_index` — all stamped `system: D&D 5e`. OTHER EDITIONS ARE WELCOME if labeled by edition/system (Chad has translator tools that convert). |
 | AD&D | 19 | **AD&D 2e psionic powers (150)** in `ad2e_psionic_index` + **AD&D 2e spells (72)** in `ad2e_spell_index` (Menzoberranzan + FOR2/5/7 + Ravenloft, born-digital, labeled `system: AD&D 2e`). The 2e Monstrous Compendium bestiaries have two-column OCR with scrambled value order — SOLVED by rendering the PDF pages and reading them by vision: **MC Appendix II (25 monsters) is DONE** in `ad2e_monster_index`. MC Appendix III (~30 more) can be added the same way. |
 | GURPS (3e+4e) | 478 | Basic Set + Powers modifiers (`term_harvest`) + **GURPS Magic (557 spells)** + **GURPS bestiary (139 creatures)** + **Low-Tech gear (186 weapons + armor)** + **Basic Set advantages/disadvantages (469)** + **Basic Set skills (263)** + **Martial Arts techniques (112)**. The native-4e character-building/combat-technique core (traits, skills, gear, spells, techniques) is now indexed; rest of the shelf (Powers advantages, more creature books, higher-TL gear) still open |
-| Warhammer | 489 | **IN PROGRESS (per Chad, 2026-08-28)** — harvesting the MECHANICS into labeled `system:` indices (distinct from the translator skill, which owns conversion INTO canon). 40K Roleplay adversaries (291) done; weapons/talents/psychic-powers agents running; WFRP + the 40K/WHFB wargames queued. Fiction files skipped. |
+| Warhammer | 489 | **DONE for the current mechanically harvestable sources.** Labeled indices cover 40K Roleplay adversaries (657), weapons (657), armour (145), force fields (13), gear (587), psychic powers (420), and talents (840); WFRP creatures (265), gear (107), and mutations/gifts (505); WH40K wargame profiles (136; 118 with rules); and WHFB wargame profiles (291; 217 with rules). Scanned/image-only books, one broken-CMap 4th-ed book, and ambiguous rule links remain explicit NO COVERAGE; fiction is skipped. |
 | Dragon Magazine | 446 | none (mixed crunch/articles — needs a crunch-only detector) |
 | Forgotten Realms | 71 | none (setting + some crunch) |
 | Other RPG systems | 8 | none |
@@ -274,6 +274,25 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Attached WHFB wargame SPECIAL RULES to the existing
+  **291** official 8th-ed unit-profile rows. The additive path recognises both
+  normal and display-spaced headings, pairs same-column profile grids
+  geometrically, honours explicit subjects such as `SPECIAL RULES (Hound of
+  Orion)`, and uses an army-list summary's printed Page value only when the
+  named profile also occurs on that exact bestiary page. It preserves the
+  complete named-rule paragraphs while stopping at the next subject or
+  structural section. **217/291** profiles now carry book-verbatim rules and
+  their own PDF-page citations: Daemons 38/54, Dwarfs 34/40, Lizardmen 28/49,
+  Vampire Counts 44/52, Warriors of Chaos 32/49, and Wood Elves 41/47. The
+  other **74** profiles remain mechanically indexed and are individually
+  listed as `NO COVERAGE`; nothing was inferred. A canonical old/new
+  projection proves all 291 pre-existing profile/mechanics/provenance rows
+  unchanged. Codex WHFB coverage rose **0/291 → 217/291 (74%)** and total
+  full-text coverage rose **13,037/17,964 → 13,254/17,964 (73%)**. The
+  selftest locks all six profile and rule counts, the exact 74-gap complement,
+  spaced/subject heading grammar, representative named rules, citations, and
+  section-leak exclusions.
 
 - **2026-08-29** — Closed the native GURPS 4e technique full-text gap and
   repaired the cheat-sheet's wrapped-name parsing. The four-page table now
