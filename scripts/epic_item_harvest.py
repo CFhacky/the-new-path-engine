@@ -36,8 +36,13 @@ Two bodies of mechanics are captured, exactly as printed:
       description prints across their bonus tiers.
 
     reference/epic_item_index.json — every ability + item: name, kind,
-                                     slot_or_type, market_price, effect, page
+                                     slot_or_type, market_price, effect, page,
+                                     and an exact full-description source span
     reference/epic_item_index.md   — the same, for human eyes
+
+Description bodies are recovered from rendered ELH pp.126-146 with reproducible
+4× two-column OCR. Bodies remain raw OCR; only the 103 book-verified headings
+are restored. Variant rows share the single common description the book prints.
 
 TRANSCRIPTION NOTES (book RAW; where the image was not clean it is noted here,
 never guessed):
@@ -59,11 +64,14 @@ PROVENANCE
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import re
 import sys
+from collections import Counter, defaultdict
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import List, Optional
+from typing import Dict, List, Optional, Sequence, Tuple
 
 if sys.platform == "win32":
     try:
@@ -74,6 +82,11 @@ if sys.platform == "win32":
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "epic_item_index.json"
 OUT_MD = REPO / "reference" / "epic_item_index.md"
+CORPUS = Path(r"I:\Sourcebooks\_text")
+SOURCE_REL = Path(r"D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-items.ocr-columns.md")
+SOURCE = CORPUS / SOURCE_REL
+PDF_SOURCE = Path(r"I:\Sourcebooks\D&D 3.5e\DM Toolkits\Epic Level Handbook.pdf")
+TESSERACT = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
 BOOK = "Epic Level Handbook"
 CITATION = (
     "Epic Level Handbook (WotC, 3.5e), Chapter 4 'Epic Magic Items', pp.124-147 "
@@ -292,6 +305,387 @@ _SPECIFIC_TABLES = [
     _WONDROUS,
 ]
 
+SOURCE_PAGE_RE = re.compile(r"^## \[PDF pages? (\d+)(?:-(\d+))?\]$")
+SOURCE_HEADING_RE = re.compile(r"^(.+?) \[EPIC ITEM DESCRIPTION\]$")
+
+# Canonical description heading -> (book page, column, y). These anchors were
+# verified against the rendered PDF. Variant table rows deliberately share the
+# one description block the book prints for their common ability or item.
+DESCRIPTION_ANCHORS: Dict[str, Tuple[int, int, float]] = {
+    "Acid warding": (126, 0, 753.0),
+    "Cold warding": (126, 0, 871.0),
+    "Exceptional arrow deflection": (126, 1, 886.0),
+    "Fire warding": (127, 0, 644.0),
+    "Great invulnerability": (127, 0, 821.0),
+    "Great reflection": (127, 1, 486.0),
+    "Great spell resistance": (127, 1, 664.0),
+    "Infinite arrow deflection": (127, 1, 826.0),
+    "Lightning warding": (128, 0, 220.0),
+    "Negating": (128, 0, 418.0),
+    "Sonic warding": (128, 0, 679.0),
+    "Antimagic armor": (128, 1, 149.0),
+    "Armor of the abyssal horde": (128, 1, 296.0),
+    "Armor of the celestial battalion": (128, 1, 709.0),
+    "Bulwark of the great dragon": (129, 0, 74.0),
+    "Dragonskin armor": (129, 0, 488.0),
+    "Shapeshifter's armor": (129, 0, 871.0),
+    "Warlord's breastplate": (129, 1, 136.0),
+    "Acidic blast": (129, 1, 843.0),
+    "Chaotic power": (130, 0, 667.0),
+    "Distant shot": (130, 1, 682.0),
+    "Dread": (130, 1, 759.0),
+    "Everdancing": (131, 0, 489.0),
+    "Fiery blast": (131, 0, 678.0),
+    "Holy power": (131, 0, 857.0),
+    "Icy blast": (132, 0, 627.0),
+    "Lawful power": (132, 0, 816.0),
+    "Lightning blast": (132, 1, 624.0),
+    "Mighty disruption": (132, 1, 814.0),
+    "Sonic blast": (133, 0, 427.0),
+    "Triple-throw": (133, 0, 694.0),
+    "Unerring accuracy": (133, 1, 269.0),
+    "Unholy power": (133, 1, 357.0),
+    "Backstabber": (133, 1, 861.0),
+    "Chaosbringer": (134, 0, 93.0),
+    "Elven greatbow": (134, 0, 267.0),
+    "Everwhirling chain": (134, 0, 445.0),
+    "Finaldeath": (134, 0, 633.0),
+    "Grimsoul": (134, 0, 800.0),
+    "Holy devastator": (134, 1, 194.0),
+    "Mace of ruin": (134, 1, 415.0),
+    "Quarterstaff of alacrity": (134, 1, 549.0),
+    "Souldrinker": (134, 1, 727.0),
+    "Stormbrand": (135, 0, 92.0),
+    "Unholy despoiler": (135, 0, 264.0),
+    "Adamant law": (135, 0, 561.0),
+    "Chaotic fury": (135, 1, 460.0),
+    "Elemental immunity": (135, 1, 622.0),
+    "Epic protection": (136, 0, 93.0),
+    "Epic wizardry": (136, 0, 224.0),
+    "Ineffable evil": (136, 0, 592.0),
+    "Ironskin": (136, 0, 755.0),
+    "Rapid healing": (136, 1, 106.0),
+    "Sequestering": (136, 1, 211.0),
+    "Universal elemental immunity": (136, 1, 314.0),
+    "Universal elemental resistance, major": (136, 1, 535.0),
+    "Virtuous good": (136, 1, 668.0),
+    "Weaponbreaking": (137, 0, 111.0),
+    "Besiegement": (137, 0, 727.0),
+    "Epic absorption": (137, 1, 212.0),
+    "Epic cancellation": (137, 1, 390.0),
+    "Epic might": (137, 1, 627.0),
+    "Epic negation": (138, 0, 741.0),
+    "Epic rulership": (138, 1, 125.0),
+    "Epic spellcaster": (138, 1, 390.0),
+    "Epic splendor": (138, 1, 476.0),
+    "Excellent magic": (138, 1, 778.0),
+    "Fortification": (139, 0, 113.0),
+    "Invulnerability": (139, 0, 592.0),
+    "Nightmares": (139, 0, 799.0),
+    "Paradise": (139, 1, 154.0),
+    "The path": (139, 1, 327.0),
+    "Restless death": (139, 1, 864.0),
+    "Rod of the wyrm": (140, 0, 267.0),
+    "Staff of the cosmos": (142, 0, 902.0),
+    "Staff of domination": (142, 1, 478.0),
+    "Staff of fiery power": (142, 1, 712.0),
+    "Staff of the hierophant": (143, 0, 403.0),
+    "Staff of mighty force": (143, 0, 653.0),
+    "Staff of nature's fury": (143, 0, 805.0),
+    "Staff of necromancy": (143, 1, 195.0),
+    "Staff of planar might": (143, 1, 506.0),
+    "Staff of prism": (143, 1, 864.0),
+    "Staff of rapid barrage": (144, 0, 192.0),
+    "Staff of spheres": (144, 0, 414.0),
+    "Staff of walls": (144, 0, 592.0),
+    "Staff of winter": (144, 0, 784.0),
+    "Amulet of epic natural armor": (144, 1, 252.0),
+    "Belt of epic strength": (144, 1, 428.0),
+    "Boots of swiftness": (144, 1, 578.0),
+    "Bracers of epic armor": (144, 1, 800.0),
+    "Bracers of epic health": (145, 0, 107.0),
+    "Bracers of relentless might": (145, 0, 211.0),
+    "Cabinet of feasting": (145, 0, 356.0),
+    "Cloak of epic charisma": (145, 0, 504.0),
+    "Cloak of epic resistance": (145, 0, 786.0),
+    "Gate key": (145, 1, 697.0),
+    "Gloves of epic dexterity": (146, 0, 161.0),
+    "Headband of epic intellect": (146, 0, 336.0),
+    "Horseshoes of the peerless steed": (146, 0, 558.0),
+    "Mantle of epic spell resistance": (146, 0, 797.0),
+    "Mantle of great stealth": (146, 0, 886.0),
+    "Periapt of epic wisdom": (146, 1, 180.0),
+}
+
+# Stop before unrelated generation tables or boxed non-index material.
+DESCRIPTION_ENDS: Dict[str, Tuple[int, int, float]] = {
+    "Sonic warding": (128, 0, 795.0),
+    "Warlord's breastplate": (129, 1, 345.0),
+    "Unholy power": (133, 1, 755.0),
+    "Unholy despoiler": (135, 0, 450.0),
+    "Adamant law": (135, 0, 720.0),
+    "Elemental immunity": (135, 1, 705.0),
+    "Ironskin": (136, 0, 815.0),
+    "Weaponbreaking": (137, 0, 215.0),
+    "Rod of the wyrm": (140, 0, 760.0),
+}
+
+
+def _description_key(name: str) -> str:
+    name = re.sub(r"\s*\([^)]*\)\s*$", "", name)
+    return re.sub(r"\s*\+\d+\s*$", "", name).strip()
+
+
+def _all_description_keys() -> List[str]:
+    names = [row[0] for _, _, rows in _ABILITY_TABLES for row in rows]
+    names.extend(row[0] for table in _SPECIFIC_TABLES for row in table)
+    return sorted({_description_key(name) for name in names})
+
+
+def _source_hash() -> Optional[str]:
+    if not SOURCE.is_file():
+        return None
+    return hashlib.sha256(SOURCE.read_bytes()).hexdigest()
+
+
+def _ocr_lanes(doc) -> List[dict]:
+    try:
+        import fitz
+        import pytesseract
+        from PIL import Image, ImageFilter, ImageOps
+        from io import BytesIO
+    except Exception as exc:
+        raise RuntimeError(f"OCR dependencies unavailable: {exc}") from exc
+
+    if not TESSERACT.is_file():
+        raise RuntimeError(f"Tesseract not found at {TESSERACT}")
+    pytesseract.pytesseract.tesseract_cmd = str(TESSERACT)
+
+    lanes: List[dict] = []
+    for book_page in range(126, 147):
+        page = doc[book_page - 1]
+        for column, (x0, x1) in enumerate(((8, 350), (350, 692))):
+            clip = fitz.Rect(x0, 55, x1, 945)
+            pix = page.get_pixmap(matrix=fitz.Matrix(4, 4), clip=clip, alpha=False)
+            image = Image.open(BytesIO(pix.tobytes("png"))).convert("L")
+            image = ImageOps.autocontrast(image, cutoff=1)
+            image = image.filter(
+                ImageFilter.UnsharpMask(radius=1, percent=130, threshold=2)
+            )
+            data = pytesseract.image_to_data(
+                image, config="--oem 3 --psm 6",
+                output_type=pytesseract.Output.DICT,
+            )
+            groups: Dict[Tuple[int, int, int], List[int]] = defaultdict(list)
+            for index, token in enumerate(data["text"]):
+                if token.strip():
+                    key = (data["block_num"][index], data["par_num"][index],
+                           data["line_num"][index])
+                    groups[key].append(index)
+            lines: List[dict] = []
+            for indexes in groups.values():
+                indexes.sort(key=lambda index: data["left"][index])
+                text = " ".join(data["text"][index] for index in indexes).strip()
+                lines.append({
+                    "top": 55 + min(data["top"][index] for index in indexes) / 4,
+                    "text": text,
+                })
+            lines.sort(key=lambda row: row["top"])
+            lanes.append({"page": book_page, "column": column, "lines": lines})
+        print(f"OCR source extraction: page {book_page}/146", flush=True)
+    return lanes
+
+
+def _meaningful_ocr(lines: Sequence[dict], low: float, high: float) -> List[str]:
+    out: List[str] = []
+    for row in lines:
+        if low <= row["top"] < high:
+            text = row["text"].strip()
+            if sum(char.isalnum() for char in text) >= 2:
+                out.append(text)
+    return out
+
+
+def _description_body(
+    name: str,
+    next_name: Optional[str],
+    lane_map: Dict[Tuple[int, int], List[dict]],
+    lane_keys: Sequence[Tuple[int, int]],
+) -> Tuple[List[str], List[int]]:
+    take = lambda page, column, low, high: _meaningful_ocr(
+        lane_map[(page, column)], low, high
+    )
+    # Several descriptions flow around a table at the top of the next visual
+    # column. Select the actual continuation lane rather than ingesting that
+    # unrelated table between the two prose fragments.
+    flow_around_tables = {
+        "Cold warding": (
+            (126, 0, 866.0, float("inf")), (126, 1, 780.0, 878.0)),
+        "Exceptional arrow deflection": (
+            (126, 1, 881.0, float("inf")), (127, 0, 390.0, 636.0)),
+        "Great invulnerability": (
+            (127, 0, 816.0, float("inf")), (127, 1, 420.0, 478.0)),
+        "Acidic blast": (
+            (129, 1, 838.0, float("inf")), (130, 0, 570.0, 659.0)),
+        "Chaotic power": (
+            (130, 0, 662.0, float("inf")), (130, 1, 575.0, 674.0)),
+        "Holy power": (
+            (131, 0, 852.0, float("inf")), (131, 1, 790.0, float("inf"))),
+        "Lawful power": (
+            (132, 0, 811.0, float("inf")), (132, 1, 380.0, 616.0)),
+        "Mighty disruption": (
+            (132, 1, 809.0, float("inf")),),
+        "Staff of the cosmos": (
+            (142, 0, 897.0, float("inf")), (142, 1, 275.0, 470.0)),
+    }
+    if name in flow_around_tables:
+        body: List[str] = []
+        pages = set()
+        for page, column, low, high in flow_around_tables[name]:
+            selected = take(page, column, low, high)
+            if selected:
+                body.extend(selected)
+                pages.add(page)
+        return body, sorted(pages)
+
+    if name == "Cloak of epic resistance":
+        body = take(145, 0, DESCRIPTION_ANCHORS[name][2] - 5, float("inf"))
+        body += take(145, 1, 615.0, DESCRIPTION_ANCHORS["Gate key"][2] - 8)
+        return body, [145]
+
+    page, column, y = DESCRIPTION_ANCHORS[name]
+    if name in DESCRIPTION_ENDS:
+        end_page, end_column, end_y = DESCRIPTION_ENDS[name]
+    elif next_name is not None:
+        end_page, end_column, end_y = DESCRIPTION_ANCHORS[next_name]
+    else:
+        end_page, end_column, end_y = 146, 1, 350.0
+
+    lane_index = {key: index for index, key in enumerate(lane_keys)}
+    start_lane = lane_index[(page, column)]
+    end_lane = lane_index[(end_page, end_column)]
+    if end_lane < start_lane:
+        raise RuntimeError(f"description end precedes start for {name}")
+
+    body: List[str] = []
+    pages = set()
+    for index in range(start_lane, end_lane + 1):
+        lane_page, lane_column = lane_keys[index]
+        low = y - 5 if index == start_lane else float("-inf")
+        high = end_y - 8 if index == end_lane else float("inf")
+        selected = _meaningful_ocr(lane_map[(lane_page, lane_column)], low, high)
+        if selected:
+            body.extend(selected)
+            pages.add(lane_page)
+    return body, sorted(pages)
+
+
+def extract_description_source() -> int:
+    if not PDF_SOURCE.is_file():
+        print(f"NO COVERAGE: {BOOK} item descriptions (missing PDF: {PDF_SOURCE})")
+        return 1
+    try:
+        import fitz
+    except Exception as exc:
+        print(f"NO COVERAGE: {BOOK} item descriptions (PyMuPDF unavailable: {exc})")
+        return 1
+
+    keys = _all_description_keys()
+    missing = set(keys) - set(DESCRIPTION_ANCHORS)
+    extra = set(DESCRIPTION_ANCHORS) - set(keys)
+    if missing or extra:
+        raise RuntimeError(f"description anchor mismatch: missing={sorted(missing)}, "
+                           f"extra={sorted(extra)}")
+    try:
+        doc = fitz.open(PDF_SOURCE)
+        lanes = _ocr_lanes(doc)
+    except Exception as exc:
+        print(f"NO COVERAGE: {BOOK} item descriptions ({exc})")
+        return 1
+
+    lane_map = {(lane["page"], lane["column"]): lane["lines"] for lane in lanes}
+    lane_keys = sorted(lane_map)
+    ordered = sorted(keys, key=lambda key: DESCRIPTION_ANCHORS[key])
+    chunks = [
+        "# EPIC ITEM DESCRIPTION EXTRACTION",
+        "",
+        "Derived from Epic Level Handbook PDF page images, pp. 126-146.",
+        "Two-column OCR is preserved raw. Item and ability headings alone are",
+        "restored from the book-verified index transcription.",
+        "",
+    ]
+    for index, name in enumerate(ordered):
+        next_name = ordered[index + 1] if index + 1 < len(ordered) else None
+        body, pages = _description_body(name, next_name, lane_map, lane_keys)
+        if not body:
+            raise RuntimeError(f"empty OCR description block for {name}")
+        page_label = str(pages[0]) if len(pages) == 1 else f"{pages[0]}-{pages[-1]}"
+        chunks.extend([
+            f"## [PDF pages {page_label}]",
+            f"{name.upper()} [EPIC ITEM DESCRIPTION]",
+            *body,
+            "",
+        ])
+
+    SOURCE.parent.mkdir(parents=True, exist_ok=True)
+    SOURCE.write_text("\n".join(chunks).rstrip() + "\n", encoding="utf-8")
+    print(f"wrote {SOURCE}")
+    print(f"{len(ordered)}/{len(ordered)} epic-item description blocks recovered")
+    return 0
+
+
+def _name_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", text.casefold())
+
+
+def detect_description_spans(lines: Sequence[str]) -> Dict[str, DescriptionSpan]:
+    canonical = {_name_key(name): name for name in _all_description_keys()}
+    headings: List[Tuple[str, int, int, str]] = []
+    marker_index = -1
+    marker_pages = ""
+    for index, line in enumerate(lines):
+        page_match = SOURCE_PAGE_RE.match(line.strip())
+        if page_match:
+            marker_index = index
+            first = int(page_match.group(1))
+            marker_pages = (str(first) if page_match.group(2) is None
+                            else f"{first}-{int(page_match.group(2))}")
+            continue
+        heading_match = SOURCE_HEADING_RE.match(line.strip())
+        if not heading_match:
+            continue
+        if marker_index < 0:
+            raise ValueError(f"description heading before page marker at line {index + 1}")
+        key = _name_key(heading_match.group(1))
+        if key not in canonical:
+            raise ValueError(f"unknown epic-item heading at line {index + 1}: {line!r}")
+        headings.append((canonical[key], marker_index, index, marker_pages))
+
+    spans: Dict[str, DescriptionSpan] = {}
+    for position, (name, _, start, pages) in enumerate(headings):
+        end = headings[position + 1][1] if position + 1 < len(headings) else len(lines)
+        while end > start and not lines[end - 1].strip():
+            end -= 1
+        if name in spans:
+            raise ValueError(f"duplicate epic-item description heading: {name}")
+        spans[name] = DescriptionSpan(page=int(pages.split("-", 1)[0]), pages=pages,
+                                      start=start, end=end)
+    return spans
+
+
+def _source_lines() -> List[str]:
+    if not SOURCE.is_file():
+        return []
+    return SOURCE.read_text(encoding="utf-8").splitlines()
+
+
+@dataclass(frozen=True)
+class DescriptionSpan:
+    page: int
+    pages: str
+    start: int
+    end: int
+
 
 @dataclass
 class EpicItem:
@@ -303,11 +697,26 @@ class EpicItem:
     effect: Optional[str]
     citation: str
     page: int
+    description_key: str
+    description_pages: str
+    start: int
+    end: int
+    soft: Optional[str]
 
 
-def build() -> List[EpicItem]:
+def build(lines: Optional[Sequence[str]] = None) -> List[EpicItem]:
+    source_lines = list(lines) if lines is not None else _source_lines()
+    spans = detect_description_spans(source_lines) if source_lines else {}
     out: List[EpicItem] = []
     seen = set()
+
+    def span_fields(name: str) -> Tuple[str, str, int, int, Optional[str]]:
+        description_key = _description_key(name)
+        span = spans.get(description_key)
+        if span:
+            return description_key, span.pages, span.start, span.end, None
+        return (description_key, "", 0, 0,
+                "NO COVERAGE: full description (derived description extraction is missing)")
 
     # (A) special abilities — the same ability name recurs across the four
     # tables, so the (slot, name) pair is the identity.
@@ -317,9 +726,13 @@ def build() -> List[EpicItem]:
             if key in seen:
                 continue
             seen.add(key)
+            description_key, description_pages, start, end, soft = span_fields(name)
             out.append(EpicItem(name=name, kind="special-ability", slot_or_type=slot,
                                 book=BOOK, market_price=mod, effect=effect,
-                                citation=CITATION, page=page))
+                                citation=CITATION, page=page,
+                                description_key=description_key,
+                                description_pages=description_pages,
+                                start=start, end=end, soft=soft))
 
     # (B) specific items.
     # armor/weapons carry (name, slot, price, effect, page); rings/rods/staffs/
@@ -329,9 +742,13 @@ def build() -> List[EpicItem]:
         if key in seen:
             return
         seen.add(key)
+        description_key, description_pages, start, end, soft = span_fields(name)
         out.append(EpicItem(name=name, kind="specific-item", slot_or_type=slot,
                             book=BOOK, market_price=price, effect=effect,
-                            citation=CITATION, page=page))
+                            citation=CITATION, page=page,
+                            description_key=description_key,
+                            description_pages=description_pages,
+                            start=start, end=end, soft=soft))
 
     for name, slot, price, effect, page in _SPECIFIC_ARMOR:
         add_specific(name, slot, price, effect, page)
@@ -357,7 +774,13 @@ def _counts(items: List[EpicItem]):
 
 
 def write_index() -> int:
+    if not SOURCE.is_file():
+        raise FileNotFoundError(
+            f"derived description extraction is missing: {SOURCE}; "
+            "run --extract-source first"
+        )
     items = build()
+    recovered = sum(item.start < item.end for item in items)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     by_kind, by_slot = _counts(items)
     abilities = [e for e in items if e.kind == "special-ability"]
@@ -378,34 +801,43 @@ def write_index() -> int:
         "the book prints across their bonus tiers.",
         "",
         f"*{len(items)} entries — {by_kind.get('special-ability', 0)} special "
-        f"abilities, {by_kind.get('specific-item', 0)} specific items.*",
+        f"abilities, {by_kind.get('specific-item', 0)} specific items; "
+        f"{recovered} full description spans.*",
         "",
         "## Epic item special abilities (Tables 4-6, 4-7, 4-15, 4-16)",
         "",
-        "| Special Ability | Applies to | Market Price Modifier | Effect | Page |",
-        "|---|---|---|---|---|",
+        "| Special Ability | Applies to | Market Price Modifier | Effect | Table Page | Description Pages |",
+        "|---|---|---|---|---|---|",
     ]
     for e in abilities:
-        md.append(f"| {e.name} | {e.slot_or_type} | {e.market_price} | {e.effect} | {e.page} |")
+        md.append(f"| {e.name} | {e.slot_or_type} | {e.market_price} | {e.effect} | {e.page} | {e.description_pages} |")
     md += [
         "",
         "## Specific epic magic items (Tables 4-8, 4-17, 4-18, 4-19, 4-24, 4-25)",
         "",
-        "| Item | Type | Market Price | Effect | Page |",
-        "|---|---|---|---|---|",
+        "| Item | Type | Market Price | Effect | Item Page | Description Pages |",
+        "|---|---|---|---|---|---|",
     ]
     slot_order = {"weapon": 0, "armor": 1, "shield": 2, "ring": 3, "rod": 4,
                   "staff": 5, "wondrous": 6}
     for e in sorted(specifics, key=lambda e: (slot_order.get(e.slot_or_type, 9), e.name)):
-        md.append(f"| {e.name} | {e.slot_or_type} | {e.market_price} | {e.effect} | {e.page} |")
+        md.append(f"| {e.name} | {e.slot_or_type} | {e.market_price} | {e.effect} | {e.page} | {e.description_pages} |")
     md.append("")
     OUT_MD.write_text("\n".join(md) + "\n", encoding="utf-8")
 
     OUT_JSON.write_text(
         json.dumps({"generated_by": "scripts/epic_item_harvest.py",
                     "book": BOOK, "citation": CITATION, "pages": PAGES,
+                    "corpus": str(CORPUS),
+                    "source_path": str(SOURCE_REL),
+                    "source_sha256": _source_hash(),
+                    "description_blocks": len(detect_description_spans(_source_lines())),
+                    "full_description_entries": recovered,
                     "note": ("Vision-transcribed from the ELH PDF page images; the "
                              "OCR text layer is corrupt. Book RAW, read off the page. "
+                             "All rows carry exact spans into a reproducible raw "
+                             "two-column OCR extraction of 103 description blocks; "
+                             "variants share the book's common block. "
                              "(A) weapon/armor/shield special-ability tables 4-6, 4-7, "
                              "4-15, 4-16; (B) specific-item tables 4-8, 4-17, 4-18, "
                              "4-19, 4-24, 4-25, cross-checked against the item "
@@ -421,6 +853,35 @@ def write_index() -> int:
     return len(items)
 
 
+def export_packet(query: str, out_path: Optional[Path]) -> int:
+    q = query.casefold().strip()
+    hits = [item for item in build() if q in item.name.casefold()]
+    if not hits:
+        print(f"NO COVERAGE: epic item export ({query!r} not found)")
+        return 1
+    lines = _source_lines()
+    packet = {
+        "generated_by": "scripts/epic_item_harvest.py --export",
+        "query": query,
+        "source": str(SOURCE),
+        "source_sha256": _source_hash(),
+        "entries": [],
+    }
+    for item in hits:
+        row = asdict(item)
+        row["full_description"] = ("\n".join(lines[item.start:item.end]).strip()
+                                   if item.start < item.end else "")
+        packet["entries"].append(row)
+    text = json.dumps(packet, ensure_ascii=False, indent=2)
+    if out_path:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(text + "\n", encoding="utf-8")
+        print(f"wrote {out_path}")
+    else:
+        print(text)
+    return 0
+
+
 def selftest() -> int:
     failures: List[str] = []
     items = build()
@@ -433,12 +894,12 @@ def selftest() -> int:
         failures.append("no special-ability entries")
     if not specifics:
         failures.append("no specific-item entries")
-    if len(abilities) < 50:
-        failures.append(f"only {len(abilities)} special abilities; the 4 tables give 55")
-    if len(specifics) < 80:
-        failures.append(f"only {len(specifics)} specific items; expected ~98")
-    if len(items) < 140:
-        failures.append(f"only {len(items)} total entries; expected ~153")
+    if len(abilities) != 55:
+        failures.append(f"{len(abilities)} special abilities; expected exactly 55")
+    if len(specifics) != 98:
+        failures.append(f"{len(specifics)} specific items; expected exactly 98")
+    if len(items) != 153:
+        failures.append(f"{len(items)} total entries; expected exactly 153")
 
     # every slot/table represented
     slots = {e.slot_or_type for e in items}
@@ -505,6 +966,63 @@ def selftest() -> int:
     if len(names) != len(items):
         failures.append("duplicate (kind, slot, name) entries")
 
+    # Embedded span fixture: page markers belong to the following canonical
+    # heading, and each block ends immediately before the next marker.
+    fixture = [
+        "## [PDF page 126]",
+        "ACID WARDING [EPIC ITEM DESCRIPTION]",
+        "raw acid body",
+        "",
+        "## [PDF pages 126-127]",
+        "COLD WARDING [EPIC ITEM DESCRIPTION]",
+        "raw cold body",
+    ]
+    fixture_spans = detect_description_spans(fixture)
+    acid = fixture_spans.get("Acid warding")
+    cold = fixture_spans.get("Cold warding")
+    if not acid or (acid.pages, acid.start, acid.end) != ("126", 1, 3):
+        failures.append(f"span fixture acid mismatch: {acid}")
+    if not cold or (cold.pages, cold.start, cold.end) != ("126-127", 5, 7):
+        failures.append(f"span fixture cold mismatch: {cold}")
+
+    if set(_all_description_keys()) != set(DESCRIPTION_ANCHORS):
+        failures.append("description keys and verified anchors differ")
+    source_lines = _source_lines()
+    recovered = [e for e in items if e.start < e.end]
+    if len(recovered) != 153:
+        failures.append(f"full description spans: {len(recovered)}, expected 153")
+    if len({(e.start, e.end) for e in recovered}) != 103:
+        failures.append("description span groups are not exactly 103")
+    for e in items:
+        if e.soft is not None:
+            failures.append(f"'{e.name}' unexpectedly soft: {e.soft}")
+        if not e.description_pages:
+            failures.append(f"'{e.name}' has no description_pages")
+        if e.start < e.end:
+            if e.end > len(source_lines):
+                failures.append(f"'{e.name}' span ends past source length")
+            elif _name_key(e.description_key) not in _name_key(source_lines[e.start]):
+                failures.append(f"'{e.name}' span does not lead with description_key")
+
+    live_spans = detect_description_spans(source_lines) if source_lines else {}
+    routed = ("Cold warding", "Exceptional arrow deflection",
+              "Great invulnerability", "Acidic blast", "Chaotic power",
+              "Holy power", "Lawful power", "Mighty disruption",
+              "Staff of the cosmos")
+    for key in routed:
+        span = live_spans.get(key)
+        if span:
+            segment = "\n".join(source_lines[span.start:span.end])
+            if re.search(r"\b(?:table|tame|taste)\s+4[-—]", segment, re.I):
+                failures.append(f"'{key}' span swallowed a generation table")
+
+    for key, expected_rows in (("Great invulnerability", 8),
+                               ("Great spell resistance", 8),
+                               ("Rod of the wyrm", 10)):
+        group = [e for e in items if e.description_key == key]
+        if len(group) != expected_rows or len({(e.start, e.end) for e in group}) != 1:
+            failures.append(f"shared description span drift for {key}")
+
     for f in failures:
         print(f"SELFTEST FAIL: {f}")
     print("selftest: " + ("PASS" if not failures else f"{len(failures)} failure(s)"))
@@ -514,11 +1032,19 @@ def selftest() -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--search", metavar="TEXT")
+    ap.add_argument("--export", metavar="NAME", help="emit a translator-ready packet")
+    ap.add_argument("--out", type=Path, help="write the export packet here")
+    ap.add_argument("--extract-source", action="store_true",
+                    help="rebuild the external two-column OCR description source")
     ap.add_argument("--selftest", action="store_true")
     args = ap.parse_args()
 
+    if args.extract_source:
+        return extract_description_source()
     if args.selftest:
         return selftest()
+    if args.export:
+        return export_packet(args.export, args.out)
 
     if args.search:
         q = args.search.lower()

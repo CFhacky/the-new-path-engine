@@ -64,6 +64,19 @@ written to the derived source: Improved Spell Capacity, Improved Spell
 Resistance, Improved Stunning Fist, Improved Whirlwind Attack, and Incite Rage.
 They remain explicit `NO COVERAGE`; no OCR body value was guessed or repaired.
 
+## 2026-08-29 — Epic Level Handbook epic items (derived OCR source)
+
+File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-items.ocr-columns.md`
+
+This is reproducible source generation, not hand-repaired body text.
+`epic_item_harvest.py --extract-source` renders ELH pp.126-146 at 4× and OCRs
+both visual columns independently. All **103 description bodies remain raw
+Tesseract output**; only their headings are restored from the existing
+book-verified 153-row transcription. Variant rows share the book's single
+common block. Verified lane cutovers skip nine intervening generation tables
+that the physical layout places above a continuation column. The JSON index
+records the generated file's SHA-256; no OCR mechanic was guessed or rewritten.
+
 ---
 
 ## FLAGGED — not yet resolved (need PDF page verification; NOT guessed)

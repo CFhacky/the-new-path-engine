@@ -50,9 +50,11 @@ FULL-TEXT SOURCING — book RAW, never invented
                     are removed, and the complete descriptions bypass the 4.2k cap.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
+- epic items         sliced from 103 canonical blocks in the reproducible ELH
+                    two-column OCR source; variants deliberately share spans.
 - legacy rows        fuzzy-match a source filename, then slice by [start:end].
-- every slice is VALIDATED: the entry name must lead it or the block is dropped
-  (a mismatched slice is NEVER attached). Wargame profile lines and marker-offset
+- every slice is VALIDATED: the entry name (or an epic-item variant's canonical
+  description key) must lead it or the block is dropped. Wargame profile lines and marker-offset
   families legitimately carry no full block — that is honest emptiness, not a failure.
 
 The page itself is gzip-compressed and base64-embedded; the browser inflates it on
@@ -306,6 +308,10 @@ def build(report=False):
                                   _exact_source_file(r), _strip_vestige_tablets, None)
             elif fam == "maneuver" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), limit=None)
+            elif fam == "epic_item" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"],
+                                  r.get("description_key") or r["name"],
                                   _exact_source_file(r), limit=None)
             elif "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
