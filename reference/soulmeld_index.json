@@ -1,20 +1,21 @@
 {
  "generated_by": "scripts/soulmeld_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_soulmelds": 88,
+ "total_soulmelds": 89,
  "sources": [
   {
    "key": "incarnum",
    "book": "Magic of Incarnum",
-   "citation": "Magic of Incarnum (WotC, 3.5e), soulmeld summary tables 4-1/4-2/4-3",
-   "coverage": "ok \u2014 88 soulmelds from Magic of Incarnum.md",
+   "citation": "Magic of Incarnum (WotC, 3.5e), soulmeld tables and descriptions pp. 54\u201394",
+   "coverage": "ok \u2014 89 soulmelds from Magic of Incarnum.md",
+   "source_path": "D&D 3.5e\\Player Options\\Magic of Incarnum.md",
    "soulmelds": [
     {
      "name": "Acrobat Boots",
      "book": "Magic of Incarnum",
      "page": 54,
-     "start": 6904,
-     "end": 6905,
+     "start": 6857,
+     "end": 6881,
      "basic_effect": "+2 bonus on Balance, Escape Artist, Jump, and Tumble checks",
      "classes": [
       "Incarnate"
@@ -26,9 +27,9 @@
     {
      "name": "Adamant Pauldrons",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7040,
-     "end": 7041,
+     "page": 54,
+     "start": 6881,
+     "end": 7019,
      "basic_effect": "25% protection against critical hits and sneak attacks",
      "classes": [
       "Incarnate"
@@ -40,9 +41,9 @@
     {
      "name": "Airstep Sandals",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6907,
-     "end": 6908,
+     "page": 55,
+     "start": 7019,
+     "end": 7138,
      "basic_effect": "Fly up to 10 feet as a move action",
      "classes": [
       "Incarnate"
@@ -54,9 +55,9 @@
     {
      "name": "Ankheg Breastplate",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7501,
-     "end": 7502,
+     "page": 56,
+     "start": 7138,
+     "end": 7324,
      "basic_effect": "+2 armor bonus to AC",
      "classes": [
       "Totemist"
@@ -68,9 +69,9 @@
     {
      "name": "Apparition Ribbon",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7058,
-     "end": 7059,
+     "page": 57,
+     "start": 7324,
+     "end": 7365,
      "basic_effect": "Reroll miss chance against incorporeal foes",
      "classes": [
       "Incarnate"
@@ -82,9 +83,9 @@
     {
      "name": "Arcane Focus",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7061,
-     "end": 7062,
+     "page": 57,
+     "start": 7365,
+     "end": 7568,
      "basic_effect": "+1 bonus on spell damage",
      "classes": [
       "Incarnate",
@@ -97,9 +98,9 @@
     {
      "name": "Armguards of Disruption",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6934,
-     "end": 6935,
+     "page": 59,
+     "start": 7568,
+     "end": 7597,
      "basic_effect": "1d6 points of damage to undead with melee touch attack",
      "classes": [
       "Incarnate",
@@ -112,9 +113,9 @@
     {
      "name": "Basilisk Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7463,
-     "end": 7464,
+     "page": 59,
+     "start": 7597,
+     "end": 7638,
      "basic_effect": "Low-light vision",
      "classes": [
       "Totemist"
@@ -126,9 +127,9 @@
     {
      "name": "Beast Tamer Circlet",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7398,
-     "end": 7399,
+     "page": 60,
+     "start": 7638,
+     "end": 7676,
      "basic_effect": "+2 bonus on Handle Animal and wild empathy checks",
      "classes": [
       "Totemist"
@@ -140,9 +141,9 @@
     {
      "name": "Behir Gorget",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7504,
-     "end": 7505,
+     "page": 60,
+     "start": 7676,
+     "end": 7724,
      "basic_effect": "+4 bonus to resist bull rush or trip",
      "classes": [
       "Totemist"
@@ -154,9 +155,9 @@
     {
      "name": "Blink Shirt",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7531,
-     "end": 7532,
+     "page": 60,
+     "start": 7724,
+     "end": 7772,
      "basic_effect": "Teleport 10 feet",
      "classes": [
       "Totemist"
@@ -168,9 +169,9 @@
     {
      "name": "Bloodtalons",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7430,
-     "end": 7431,
+     "page": 61,
+     "start": 7772,
+     "end": 7825,
      "basic_effect": "Continue fighting when disabled or dying",
      "classes": [
       "Totemist"
@@ -182,9 +183,9 @@
     {
      "name": "Bloodwar Gauntlets",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6916,
-     "end": 6917,
+     "page": 61,
+     "start": 7825,
+     "end": 7880,
      "basic_effect": "+1 bonus on melee attacks",
      "classes": [
       "Incarnate"
@@ -197,9 +198,9 @@
     {
      "name": "Bluesteel Bracers",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6940,
-     "end": 6941,
+     "page": 62,
+     "start": 7880,
+     "end": 7919,
      "basic_effect": "+2 bonus on initiative checks",
      "classes": [
       "Incarnate",
@@ -212,9 +213,9 @@
     {
      "name": "Brass Mane",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7507,
-     "end": 7508,
+     "page": 62,
+     "start": 7919,
+     "end": 7984,
      "basic_effect": "+4 bonus on Intimidate checks",
      "classes": [
       "Totemist"
@@ -226,9 +227,9 @@
     {
      "name": "Cerulean Sandals",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6910,
-     "end": 6911,
+     "page": 63,
+     "start": 7984,
+     "end": 8013,
      "basic_effect": "Walk on water",
      "classes": [
       "Incarnate",
@@ -241,9 +242,9 @@
     {
      "name": "Crystal Helm",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6889,
-     "end": 6890,
+     "page": 63,
+     "start": 8013,
+     "end": 8045,
      "basic_effect": "+2 resistance bonus on Will saves against charm and compulsion",
      "classes": [
       "Incarnate",
@@ -256,9 +257,9 @@
     {
      "name": "Diadem of Purelight",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6892,
-     "end": 6893,
+     "page": 63,
+     "start": 8045,
+     "end": 8081,
      "basic_effect": "Create a constant source of light",
      "classes": [
       "Incarnate",
@@ -271,9 +272,9 @@
     {
      "name": "Disenchanter Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7466,
-     "end": 7467,
+     "page": 63,
+     "start": 8081,
+     "end": 8148,
      "basic_effect": "Detect magic within 10 feet",
      "classes": [
       "Totemist"
@@ -285,9 +286,9 @@
     {
      "name": "Displacer Mantle",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7480,
-     "end": 7481,
+     "page": 64,
+     "start": 8148,
+     "end": 8185,
      "basic_effect": "+4 bonus on Hide checks",
      "classes": [
       "Totemist"
@@ -299,9 +300,9 @@
     {
      "name": "Dissolving Spittle",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7064,
-     "end": 7065,
+     "page": 64,
+     "start": 8185,
+     "end": 8222,
      "basic_effect": "1d6 acid damage with ranged touch attack",
      "classes": [
       "Incarnate"
@@ -313,9 +314,9 @@
     {
      "name": "Dread Carapace",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7412,
-     "end": 7413,
+     "page": 65,
+     "start": 8222,
+     "end": 8291,
      "basic_effect": "+2 bonus on damage with bite attack, \u20131 penalty on attack rolls",
      "classes": [
       "Totemist"
@@ -329,9 +330,9 @@
     {
      "name": "Enigma Helm",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6895,
-     "end": 6896,
+     "page": 66,
+     "start": 8291,
+     "end": 8321,
      "basic_effect": "Protection from divinations",
      "classes": [
       "Incarnate",
@@ -344,9 +345,9 @@
     {
      "name": "Fearsome Mask",
      "book": "Magic of Incarnum",
-     "page": 56,
-     "start": 7210,
-     "end": 7211,
+     "page": 66,
+     "start": 8321,
+     "end": 8351,
      "basic_effect": "+2 bonus on Intimidate checks",
      "classes": [
       "Soulborn"
@@ -358,9 +359,9 @@
     {
      "name": "Fellmist Robe",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7106,
-     "end": 7107,
+     "page": 66,
+     "start": 8351,
+     "end": 8401,
      "basic_effect": "Concealment from nonadjacent attackers",
      "classes": [
       "Incarnate"
@@ -372,9 +373,9 @@
     {
      "name": "Flame Cincture",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7079,
-     "end": 7080,
+     "page": 67,
+     "start": 8401,
+     "end": 8433,
      "basic_effect": "Resistance to fire 10",
      "classes": [
       "Incarnate",
@@ -387,9 +388,9 @@
     {
      "name": "Frost Helm",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7401,
-     "end": 7402,
+     "page": 67,
+     "start": 8433,
+     "end": 8501,
      "basic_effect": "Exist comfortably between \u201350 and 90\u00b0 Fahrenheit",
      "classes": [
       "Totemist"
@@ -401,9 +402,9 @@
     {
      "name": "Girallon Arms",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7448,
-     "end": 7449,
+     "page": 68,
+     "start": 8501,
+     "end": 8547,
      "basic_effect": "+2 bonus on Climb and grapple checks",
      "classes": [
       "Totemist"
@@ -415,9 +416,9 @@
     {
      "name": "Gloves of the Poisoned Soul",
      "book": "Magic of Incarnum",
-     "page": 56,
-     "start": 7177,
-     "end": 7178,
+     "page": 68,
+     "start": 8547,
+     "end": 8575,
      "basic_effect": "Touch poisons target",
      "classes": [
       "Soulborn"
@@ -429,9 +430,9 @@
     {
      "name": "Gorgon Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7510,
-     "end": 7511,
+     "page": 68,
+     "start": 8575,
+     "end": 8635,
      "basic_effect": "+1 bonus on Fort saves and +2 to resist bull rush, trip, overrun, or trample",
      "classes": [
       "Totemist"
@@ -443,9 +444,9 @@
     {
      "name": "Great Raptor Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7469,
-     "end": 7470,
+     "page": 69,
+     "start": 8635,
+     "end": 8676,
      "basic_effect": "+2 bonus on Spot checks",
      "classes": [
       "Totemist"
@@ -455,11 +456,25 @@
      ]
     },
     {
+     "name": "Heart of Fire",
+     "book": "Magic of Incarnum",
+     "page": 70,
+     "start": 8676,
+     "end": 8724,
+     "basic_effect": "+1 bonus on attack and damage against cold creatures",
+     "classes": [
+      "Totemist"
+     ],
+     "chakras": [
+      "Waist"
+     ]
+    },
+    {
      "name": "Hunter\u2019s Circlet",
      "book": "Magic of Incarnum",
-     "page": 56,
-     "start": 7156,
-     "end": 7157,
+     "page": 70,
+     "start": 8724,
+     "end": 8764,
      "basic_effect": "+2 bonus on Heal and Survival checks",
      "classes": [
       "Soulborn",
@@ -472,9 +487,9 @@
     {
      "name": "Illusion Veil",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6961,
-     "end": 6962,
+     "page": 71,
+     "start": 8764,
+     "end": 8799,
      "basic_effect": "+1 bonus on illusion spell DCs",
      "classes": [
       "Incarnate",
@@ -487,9 +502,9 @@
     {
      "name": "Impulse Boots",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6913,
-     "end": 6914,
+     "page": 71,
+     "start": 8799,
+     "end": 8822,
      "basic_effect": "Uncanny dodge (retain Dex bonus to AC when flat-footed)",
      "classes": [
       "Incarnate",
@@ -502,9 +517,9 @@
     {
      "name": "Incarnate Avatar",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7109,
-     "end": 7110,
+     "page": 71,
+     "start": 8822,
+     "end": 8893,
      "basic_effect": "Take on appearance and aspects of outsider",
      "classes": [
       "Incarnate"
@@ -516,9 +531,9 @@
     {
      "name": "Incarnate Weapon",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6943,
-     "end": 6944,
+     "page": 72,
+     "start": 8893,
+     "end": 8962,
      "basic_effect": "Create an aligned weapon",
      "classes": [
       "Incarnate"
@@ -530,9 +545,9 @@
     {
      "name": "Keeneye Lenses",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6964,
-     "end": 6965,
+     "page": 73,
+     "start": 8962,
+     "end": 8997,
      "basic_effect": "+4 bonus on Spot checks",
      "classes": [
       "Incarnate"
@@ -545,9 +560,9 @@
     {
      "name": "Kraken Mantle",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7451,
-     "end": 7452,
+     "page": 73,
+     "start": 8997,
+     "end": 9037,
      "basic_effect": "+8 on Swim checks",
      "classes": [
       "Totemist"
@@ -559,9 +574,9 @@
     {
      "name": "Krenshar Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7472,
-     "end": 7473,
+     "page": 73,
+     "start": 9037,
+     "end": 9078,
      "basic_effect": "+4 bonus on Jump and Move Silently checks",
      "classes": [
       "Totemist"
@@ -573,9 +588,9 @@
     {
      "name": "Kruthik Claws",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7433,
-     "end": 7434,
+     "page": 74,
+     "start": 9078,
+     "end": 9120,
      "basic_effect": "+4 bonus on Hide and Move Silently checks",
      "classes": [
       "Totemist"
@@ -588,23 +603,23 @@
     {
      "name": "Lamia Belt",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7519,
-     "end": 7520,
+     "page": 74,
+     "start": 9120,
+     "end": 9164,
      "basic_effect": "+4 bonus on Bluff and Hide checks",
      "classes": [
       "Totemist"
      ],
      "chakras": [
-      "Heart"
+      "Waist"
      ]
     },
     {
      "name": "Lammasu Mantle",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6946,
-     "end": 6947,
+     "page": 75,
+     "start": 9164,
+     "end": 9210,
      "basic_effect": "+2 deflection bonus to AC against evil creatures",
      "classes": [
       "Incarnate",
@@ -618,9 +633,9 @@
     {
      "name": "Landshark Boots",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7415,
-     "end": 7416,
+     "page": 75,
+     "start": 9210,
+     "end": 9272,
      "basic_effect": "+4 bonus on Jump checks",
      "classes": [
       "Totemist"
@@ -632,9 +647,9 @@
     {
      "name": "Lifebond Vestments",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6949,
-     "end": 6950,
+     "page": 76,
+     "start": 9272,
+     "end": 9309,
      "basic_effect": "Heal another by taking damage",
      "classes": [
       "Incarnate"
@@ -647,9 +662,9 @@
     {
      "name": "Lightning Gauntlets",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6919,
-     "end": 6920,
+     "page": 76,
+     "start": 9309,
+     "end": 9347,
      "basic_effect": "1d6 electricity damage with melee touch attack",
      "classes": [
       "Incarnate"
@@ -661,9 +676,9 @@
     {
      "name": "Lucky Dice",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6922,
-     "end": 6923,
+     "page": 77,
+     "start": 9347,
+     "end": 9376,
      "basic_effect": "+1 luck bonus on chosen rolls",
      "classes": [
       "Incarnate",
@@ -676,9 +691,9 @@
     {
      "name": "Mage\u2019s Spectacles",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6967,
-     "end": 6968,
+     "page": 77,
+     "start": 9376,
+     "end": 9401,
      "basic_effect": "+4 bonus on Decipher Script, Spellcraft, and Use Magic Device checks",
      "classes": [
       "Incarnate"
@@ -690,23 +705,23 @@
     {
      "name": "Manticore Belt",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7522,
-     "end": 7523,
+     "page": 77,
+     "start": 9401,
+     "end": 9442,
      "basic_effect": "+2 bonus on Jump and Spot checks",
      "classes": [
       "Totemist"
      ],
      "chakras": [
-      "Heart"
+      "Waist"
      ]
     },
     {
      "name": "Mantle of Flame",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7046,
-     "end": 7047,
+     "page": 78,
+     "start": 9442,
+     "end": 9484,
      "basic_effect": "Creatures attacking you take 1d6 fire damage",
      "classes": [
       "Incarnate"
@@ -718,9 +733,9 @@
     {
      "name": "Mauling Gauntlets",
      "book": "Magic of Incarnum",
-     "page": 56,
-     "start": 7183,
-     "end": 7184,
+     "page": 78,
+     "start": 9484,
+     "end": 9532,
      "basic_effect": "+2 bonus on Strength checks",
      "classes": [
       "Soulborn"
@@ -733,9 +748,9 @@
     {
      "name": "Necrocarnum Circlet",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6898,
-     "end": 6899,
+     "page": 78,
+     "start": 9532,
+     "end": 9607,
      "basic_effect": "Detect undead within 30 feet",
      "classes": [
       "Incarnate",
@@ -748,9 +763,9 @@
     {
      "name": "Necrocarnum Mantle",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7067,
-     "end": 7068,
+     "page": 79,
+     "start": 9607,
+     "end": 9648,
      "basic_effect": "Immunity to disease",
      "classes": [
       "Incarnate",
@@ -763,9 +778,9 @@
     {
      "name": "Necrocarnum Shroud",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7082,
-     "end": 7083,
+     "page": 79,
+     "start": 9648,
+     "end": 9705,
      "basic_effect": "+1 bonus on attack and damage rolls when adjacent creature takes damage",
      "classes": [
       "Incarnate",
@@ -779,9 +794,9 @@
     {
      "name": "Necrocarnum Touch",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6952,
-     "end": 6953,
+     "page": 80,
+     "start": 9705,
+     "end": 9742,
      "basic_effect": "+4 bonus on Sleight of Hand checks and on Bluff checks to feint in combat",
      "classes": [
       "Incarnate",
@@ -794,9 +809,9 @@
     {
      "name": "Necrocarnum Vestments",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7085,
-     "end": 7086,
+     "page": 80,
+     "start": 9742,
+     "end": 9790,
      "basic_effect": "Resistance to cold 5",
      "classes": [
       "Incarnate",
@@ -810,9 +825,9 @@
     {
      "name": "Necrocarnum Weapon",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6925,
-     "end": 6926,
+     "page": 81,
+     "start": 9790,
+     "end": 9831,
      "basic_effect": "Chosen weapon bypasses DR as if evil-aligned",
      "classes": [
       "Incarnate",
@@ -825,9 +840,9 @@
     {
      "name": "Pauldrons of Health",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7049,
-     "end": 7050,
+     "page": 81,
+     "start": 9831,
+     "end": 9856,
      "basic_effect": "Immunity to disease and to being sickened or nauseated",
      "classes": [
       "Incarnate",
@@ -840,9 +855,9 @@
     {
      "name": "Pegasus Cloak",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7489,
-     "end": 7490,
+     "page": 81,
+     "start": 9856,
+     "end": 9901,
      "basic_effect": "Constant feather fall and +2 bonus on Jump checks",
      "classes": [
       "Totemist"
@@ -854,9 +869,9 @@
     {
      "name": "Phase Cloak",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7492,
-     "end": 7493,
+     "page": 82,
+     "start": 9901,
+     "end": 9959,
      "basic_effect": "+4 bonus on Climb checks, can always take 10 on Climb",
      "classes": [
       "Totemist"
@@ -868,23 +883,23 @@
     {
      "name": "Phoenix Belt",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7525,
-     "end": 7526,
+     "page": 82,
+     "start": 9959,
+     "end": 10021,
      "basic_effect": "Exist comfortably between 40 and 140\u00ba Fahrenheit",
      "classes": [
       "Totemist"
      ],
      "chakras": [
-      "Heart"
+      "Waist"
      ]
     },
     {
      "name": "Planar Chasuble",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6970,
-     "end": 6971,
+     "page": 83,
+     "start": 10021,
+     "end": 10065,
      "basic_effect": "Gain alignment subtype, resistance to energy based on alignment",
      "classes": [
       "Incarnate"
@@ -897,9 +912,9 @@
     {
      "name": "Planar Ward",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7070,
-     "end": 7071,
+     "page": 83,
+     "start": 10065,
+     "end": 10109,
      "basic_effect": "Protection from mental control",
      "classes": [
       "Incarnate"
@@ -911,9 +926,9 @@
     {
      "name": "Rageclaws",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7436,
-     "end": 7437,
+     "page": 83,
+     "start": 10109,
+     "end": 10182,
      "basic_effect": "Continue fighting when disabled or dying",
      "classes": [
       "Totemist"
@@ -925,9 +940,9 @@
     {
      "name": "Riding Bracers",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6955,
-     "end": 6956,
+     "page": 84,
+     "start": 10182,
+     "end": 10216,
      "basic_effect": "+4 bonus on Handle Animal and Ride checks",
      "classes": [
       "Incarnate",
@@ -941,9 +956,9 @@
     {
      "name": "Sailor\u2019s Bracers",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6958,
-     "end": 6959,
+     "page": 84,
+     "start": 10216,
+     "end": 10248,
      "basic_effect": "+4 bonus on Swim, Profession (sailor), and Use Rope checks",
      "classes": [
       "Incarnate",
@@ -956,9 +971,9 @@
     {
      "name": "Shadow Mantle",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7495,
-     "end": 7496,
+     "page": 85,
+     "start": 10248,
+     "end": 10294,
      "basic_effect": "+4 bonus on Listen checks",
      "classes": [
       "Totemist"
@@ -970,9 +985,9 @@
     {
      "name": "Shedu Crown",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7407,
-     "end": 7408,
+     "page": 85,
+     "start": 10294,
+     "end": 10364,
      "basic_effect": "Immune to bull rush",
      "classes": [
       "Totemist"
@@ -985,9 +1000,9 @@
     {
      "name": "Sighting Gloves",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6928,
-     "end": 6929,
+     "page": 86,
+     "start": 10364,
+     "end": 10391,
      "basic_effect": "+1 bonus on ranged damage rolls",
      "classes": [
       "Incarnate",
@@ -1000,9 +1015,9 @@
     {
      "name": "Silvertongue Mask",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6973,
-     "end": 6974,
+     "page": 86,
+     "start": 10391,
+     "end": 10428,
      "basic_effect": "+2 bonus on Bluff and Diplomacy checks",
      "classes": [
       "Incarnate",
@@ -1016,9 +1031,9 @@
     {
      "name": "Soulspark Familiar",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6901,
-     "end": 6902,
+     "page": 86,
+     "start": 10428,
+     "end": 10496,
      "basic_effect": "Create soulspark creature",
      "classes": [
       "Incarnate",
@@ -1033,9 +1048,9 @@
     {
      "name": "Soulspeaker Circlet",
      "book": "Magic of Incarnum",
-     "page": 56,
-     "start": 7165,
-     "end": 7166,
+     "page": 87,
+     "start": 10496,
+     "end": 10542,
      "basic_effect": "Understand a spoken language",
      "classes": [
       "Soulborn"
@@ -1048,9 +1063,9 @@
     {
      "name": "Spellward Shirt",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7100,
-     "end": 7101,
+     "page": 88,
+     "start": 10542,
+     "end": 10586,
      "basic_effect": "Spell resistance 5",
      "classes": [
       "Incarnate",
@@ -1063,9 +1078,9 @@
     {
      "name": "Sphinx Claws",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7439,
-     "end": 7440,
+     "page": 88,
+     "start": 10586,
+     "end": 10662,
      "basic_effect": "+1 bonus on Strength checks and Strength-based skill checks",
      "classes": [
       "Totemist"
@@ -1077,9 +1092,9 @@
     {
      "name": "Strongheart Vest",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7088,
-     "end": 7089,
+     "page": 89,
+     "start": 10662,
+     "end": 10702,
      "basic_effect": "Reduce ability damage by 1 point",
      "classes": [
       "Incarnate",
@@ -1093,9 +1108,9 @@
     {
      "name": "Theft Gloves",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6931,
-     "end": 6932,
+     "page": 89,
+     "start": 10702,
+     "end": 10727,
      "basic_effect": "+2 bonus on Disable Device, Open Lock, and Sleight of Hand checks",
      "classes": [
       "Incarnate"
@@ -1107,9 +1122,9 @@
     {
      "name": "Therapeutic Mantle",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7052,
-     "end": 7053,
+     "page": 89,
+     "start": 10727,
+     "end": 10757,
      "basic_effect": "Enhances the effect of healing spells",
      "classes": [
       "Incarnate",
@@ -1122,9 +1137,9 @@
     {
      "name": "Threefold Mask of the Chimera",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7410,
-     "end": 7411,
+     "page": 89,
+     "start": 10757,
+     "end": 10836,
      "basic_effect": "Can\u2019t be flanked",
      "classes": [
       "Totemist"
@@ -1137,9 +1152,9 @@
     {
      "name": "Thunderstep Boots",
      "book": "Magic of Incarnum",
-     "page": 56,
-     "start": 7174,
-     "end": 7175,
+     "page": 90,
+     "start": 10836,
+     "end": 10860,
      "basic_effect": "Deal 1d4 sonic damage as part of charge attack",
      "classes": [
       "Soulborn"
@@ -1151,9 +1166,9 @@
     {
      "name": "Totem Avatar",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7418,
-     "end": 7419,
+     "page": 90,
+     "start": 10860,
+     "end": 10935,
      "basic_effect": "Bonus hit points equal to meldshaper level",
      "classes": [
       "Totemist"
@@ -1168,9 +1183,9 @@
     {
      "name": "Truthseeker Goggles",
      "book": "Magic of Incarnum",
-     "page": 54,
-     "start": 6979,
-     "end": 6980,
+     "page": 91,
+     "start": 10935,
+     "end": 10955,
      "basic_effect": "+2 bonus on Gather Information, Search, and Sense Motive checks",
      "classes": [
       "Incarnate",
@@ -1183,9 +1198,9 @@
     {
      "name": "Unicorn Horn",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7475,
-     "end": 7476,
+     "page": 91,
+     "start": 10955,
+     "end": 10998,
      "basic_effect": "+2 bonus on wild empathy and Move Silently checks",
      "classes": [
       "Totemist"
@@ -1197,9 +1212,9 @@
     {
      "name": "Urskan Greaves",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7421,
-     "end": 7422,
+     "page": 92,
+     "start": 10998,
+     "end": 11039,
      "basic_effect": "Move through ice and snow at normal speed, +5 bonus on Balance checks",
      "classes": [
       "Totemist"
@@ -1211,9 +1226,9 @@
     {
      "name": "Vitality Belt",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7091,
-     "end": 7092,
+     "page": 92,
+     "start": 11039,
+     "end": 11068,
      "basic_effect": "+4 bonus on Constitution checks and Constitution-based skill checks",
      "classes": [
       "Incarnate"
@@ -1225,9 +1240,9 @@
     {
      "name": "Wind Cloak",
      "book": "Magic of Incarnum",
-     "page": 55,
-     "start": 7055,
-     "end": 7056,
+     "page": 92,
+     "start": 11068,
+     "end": 11111,
      "basic_effect": "Damage reduction 2/magic against ranged attacks",
      "classes": [
       "Incarnate",
@@ -1240,9 +1255,9 @@
     {
      "name": "Winter Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7513,
-     "end": 7514,
+     "page": 93,
+     "start": 11111,
+     "end": 11157,
      "basic_effect": "Touch fatigues opponents",
      "classes": [
       "Totemist"
@@ -1254,9 +1269,9 @@
     {
      "name": "Worg Pelt",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7427,
-     "end": 7428,
+     "page": 93,
+     "start": 11157,
+     "end": 11215,
      "basic_effect": "+2 bonus on Hide and Move Silently checks",
      "classes": [
       "Totemist"
@@ -1269,23 +1284,23 @@
     {
      "name": "Wormtail Belt",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7528,
-     "end": 7529,
+     "page": 94,
+     "start": 11215,
+     "end": 11265,
      "basic_effect": "+2 bonus to natural armor",
      "classes": [
       "Totemist"
      ],
      "chakras": [
-      "Heart"
+      "Waist"
      ]
     },
     {
      "name": "Yrthak Mask",
      "book": "Magic of Incarnum",
-     "page": 58,
-     "start": 7478,
-     "end": 7479,
+     "page": 94,
+     "start": 11265,
+     "end": 11315,
      "basic_effect": "+4 bonus on Listen checks",
      "classes": [
       "Totemist"

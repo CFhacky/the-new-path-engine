@@ -11,7 +11,8 @@ basic effect. Those tables were extracted from a BORN-DIGITAL PDF text layer
 
     reference/soulmeld_index.json — every soulmeld: name, basic effect, the
                                     classes that can shape it, the chakras it can
-                                    bind to, PDF page
+                                    bind to, PDF page, and its true full-description
+                                    [start,end] line span
     reference/soulmeld_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
@@ -19,8 +20,9 @@ GOVERNING SOURCE
     three soulmeld summary tables (Table 4-1 Incarnate, 4-2 Soulborn, 4-3
     Totemist), each a Chakra / Soulmeld / Basic Effect column-dump grouped under
     chakra headers. A soulmeld shared by several classes / bindable to several
-    chakras is merged into one entry that records the union. Native D&D 3.5e; the
-    full essentia-scaling text is in each soulmeld's own description (PDF page).
+    chakras is merged into one entry that records the union. The ALL-CAPS heading
+    and Descriptors/Classes/Chakra fields bind every row to its full description
+    on PDF pages 54–94. Native D&D 3.5e.
 """
 from __future__ import annotations
 
@@ -94,7 +96,9 @@ def _split_same_line(s: str) -> Tuple[str, Optional[str]]:
     Can't be flanked'). Split at the first word that starts an effect."""
     words = s.split()
     for i in range(2, len(words)):        # keep at least two words in the name
-        if EFFECT_START.match(words[i]):
+        # "Heart of Fire" is a name, not "Heart of" + an effect beginning Fire.
+        if EFFECT_START.match(words[i]) and words[i - 1].lower() not in {
+                "of", "the", "and", "or"}:
             return " ".join(words[:i]).strip(), " ".join(words[i:]).strip()
     return s, None
 
@@ -106,6 +110,72 @@ def _is_real_table_header(lines: List[str], i: int) -> bool:
         return False
     return any(lines[j].strip().lower().startswith("chakra")
                for j in range(i + 1, min(len(lines), i + 5)))
+
+
+def _norm_name(s: str) -> str:
+    s = s.translate(str.maketrans({"\ufb00": "ff", "\ufb01": "fi", "\ufb02": "fl"}))
+    return re.sub(r"[^a-z0-9]+", " ", s.casefold()).strip()
+
+
+def _title_name(s: str) -> str:
+    titled = s.title()
+    return re.sub(r"\b(Of|The|And|Or|To)\b", lambda m: m.group(0).lower(), titled)
+
+
+def _caps_fragment(s: str) -> bool:
+    s = s.strip()
+    if (not s or PAGE.search(s) or s.isdigit()
+            or s in {"CHAPTER 4", "SOULMELDS"} or len(s) > 52):
+        return False
+    letters = "".join(ch for ch in s if ch.isalpha())
+    return bool(letters) and letters == letters.upper()
+
+
+def _description_spans(lines: List[str], pages: List[int]) -> Dict[str, Tuple[str, int, int, int]]:
+    """Find the book's ALL-CAPS soulmeld headings and their full description spans."""
+    headers: List[Tuple[int, int, str, int]] = []
+    for i, line in enumerate(lines):
+        if not re.match(r"^\s*Descriptors\s*:", line, re.IGNORECASE):
+            continue
+        nearby: List[str] = []
+        for j in range(i + 1, min(len(lines), i + 180)):
+            if re.match(r"^\s*Descriptors\s*:", lines[j], re.IGNORECASE):
+                break
+            nearby.append(lines[j].strip())
+        if (not any(re.match(r"^Classes\s*:", s, re.IGNORECASE) for s in nearby)
+                or not any(re.match(r"^Chakra\s*:", s, re.IGNORECASE) for s in nearby)):
+            continue
+        fragments: List[Tuple[int, str]] = []
+        for j in range(i - 1, max(-1, i - 9), -1):
+            s = lines[j].strip()
+            if not s or PAGE.search(s) or s.isdigit() or s in {"CHAPTER 4", "SOULMELDS"}:
+                continue
+            if not _caps_fragment(s):
+                break
+            fragments.append((j, s))
+            if len(fragments) == 3:
+                break
+        if not fragments:
+            continue
+        fragments.reverse()
+        raw_name = " ".join(s for _, s in fragments)
+        if len(raw_name) > 72:
+            continue
+        headers.append((fragments[0][0], i, _title_name(raw_name), pages[i]))
+
+    spans: Dict[str, Tuple[str, int, int, int]] = {}
+    for n, (start, anchor, name, page) in enumerate(headers):
+        if n + 1 < len(headers):
+            end = headers[n + 1][0]
+        else:
+            end = len(lines)
+            for j in range(anchor + 1, len(lines)):
+                m = PAGE.search(lines[j])
+                if m and int(m.group(1)) > page:
+                    end = j
+                    break
+        spans[_norm_name(name)] = (name, start, end, page)
+    return spans
 
 
 def detect_soulmelds(lines: List[str], pages: List[int], book: str) -> List[Soulmeld]:
@@ -166,10 +236,13 @@ def detect_soulmelds(lines: List[str], pages: List[int], book: str) -> List[Soul
         # so a leading "Totem" is part of a name ("Totem Avatar"), not a chakra —
         # excluding it avoids splitting that soulmeld and cascading a spurious
         # Totem chakra onto later rows.
-        if first in CHAKRAS and first != "Totem":
+        rest = s[len(s.split()[0]):].strip()
+        if (first in CHAKRAS and first != "Totem"
+                and (not rest or _name_ok(rest))):
+            # A chakra header may share a line with a name ("Shoulders Adamant
+            # Pauldrons"), but "Heart of Fire" is itself a soulmeld name.
             flush(True)
             cur_chakra = first
-            rest = s[len(s.split()[0]):].strip()
             if not rest:
                 continue
             s = rest                                # chakra header shared a line with a name
@@ -184,7 +257,11 @@ def detect_soulmelds(lines: List[str], pages: List[int], book: str) -> List[Soul
             pend_effect.append(s)                   # effect (or wrapped continuation)
     flush()
 
+    details = _description_spans(lines, pages)
     for sm in merged.values():
+        detail = details.get(_norm_name(sm.name))
+        if detail:
+            _, sm.start, sm.end, sm.page = detail
         sm.classes.sort(key=lambda c: ("Incarnate", "Soulborn", "Totemist").index(c)
                         if c in ("Incarnate", "Soulborn", "Totemist") else 9)
         sm.chakras.sort(key=lambda c: CHAKRAS.index(c) if c in CHAKRAS else 99)
@@ -211,7 +288,7 @@ class Source:
 SOURCES: List[Source] = [
     Source("incarnum", "Magic of Incarnum",
            Path("D&D 3.5e/Player Options/Magic of Incarnum.md"),
-           "Magic of Incarnum (WotC, 3.5e), soulmeld summary tables 4-1/4-2/4-3",
+           "Magic of Incarnum (WotC, 3.5e), soulmeld tables and descriptions pp. 54–94",
            "soulmelds"),
 ]
 
@@ -285,11 +362,12 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         total += len(src.soulmelds)
         parsed_well += sum(1 for s in src.soulmelds if s.quick_fields() >= 3)
         sources_out.append({"key": src.key, "book": src.book, "citation": src.citation,
-                            "coverage": src.coverage,
+                            "coverage": src.coverage, "source_path": str(src.path),
                             "soulmelds": [asdict(s) for s in src.soulmelds]})
         md.append(f"## {src.book} — {len(src.soulmelds)} soulmelds")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Source: {src.citation}.*")
+        md.append(f"*Extraction: `{corpus.base / src.path}`.*")
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
         if src.soulmelds:
@@ -369,6 +447,9 @@ Threefold Mask of the Chimera Can’t be flanked
 Feet
 Airstep Sandals
 Fly up to 10 feet as a move action
+Waist
+Heart of Fire
++1 bonus on attack and damage against cold creatures
 """
 
 
@@ -393,15 +474,47 @@ def selftest(base: Path) -> int:
         failures.append(f"Threefold Mask not split from its effect; names={sorted(by)}")
     elif tm.basic_effect and "flanked" not in tm.basic_effect:
         failures.append(f"Threefold Mask effect {tm.basic_effect!r}")
+    hof = by.get("Heart of Fire")
+    if (not hof or hof.classes != ["Totemist"] or hof.chakras != ["Waist"]
+            or hof.basic_effect != "+1 bonus on attack and damage against cold creatures"):
+        failures.append(f"Heart of Fire name/chakra split failed: {hof}")
 
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
-        melds = corpus.sources[0].soulmelds
-        if len(melds) < 45:
-            failures.append(f"only {len(melds)} soulmelds indexed; expected > 45")
+        src = corpus.sources[0]
+        melds = src.soulmelds
+        pages = _pages_for(src.lines)
+        details = _description_spans(src.lines, pages)
+        if len(melds) != 89:
+            failures.append(f"{len(melds)} soulmelds indexed; expected exactly 89")
+        if len(details) != 89:
+            failures.append(f"{len(details)} full description headings; expected exactly 89")
         classes = {c for m in melds for c in m.classes}
         if classes != {"Incarnate", "Soulborn", "Totemist"}:
             failures.append(f"classes seen {classes}, wanted all three")
+        missing_spans = [m.name for m in melds if _norm_name(m.name) not in details]
+        if missing_spans:
+            failures.append(f"soulmelds without description spans: {missing_spans}")
+        bad_spans = []
+        for m in melds:
+            head = " ".join(src.lines[m.start:min(m.end, m.start + 8)])
+            if m.end - m.start < 8 or _norm_name(m.name) not in _norm_name(head):
+                bad_spans.append((m.name, m.start, m.end))
+        if bad_spans:
+            failures.append(f"invalid full description spans: {bad_spans[:5]}")
+        if not melds or min(m.page or 0 for m in melds) != 54 or max(m.page or 0 for m in melds) != 94:
+            failures.append("live description pages did not span the verified PDF pages 54–94")
+        hearts = corpus.find("heart of fire", book="incarnum")
+        heart = hearts[0][1] if hearts else None
+        if (not heart or heart.page != 70 or heart.classes != ["Totemist"]
+                or heart.chakras != ["Waist"]
+                or heart.basic_effect != "+1 bonus on attack and damage against cold creatures"):
+            failures.append(f"live Heart of Fire mismatch: {heart}")
+        for waist_name in ("Lamia Belt", "Manticore Belt", "Phoenix Belt", "Wormtail Belt"):
+            hits = corpus.find(waist_name, book="incarnum")
+            waist = hits[0][1] if hits else None
+            if not waist or waist.chakras != ["Waist"]:
+                failures.append(f"{waist_name} chakra mismatch: {waist}")
         iw = corpus.find("incarnate weapon", book="incarnum")
         if not iw:
             failures.append("Incarnate Weapon not found in live index")

@@ -18,11 +18,11 @@ from here; do not add any in-world fact or prose to the repo (that is a defect).
 `_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
-**At a glance (2026-08-28).** Forty-one reference index families, ~18,075 entries.
+**At a glance (2026-08-29).** Forty-one reference index families, ~18,076 entries.
 Native 3.5e + GURPS 4e: terms/affixes (143), D&D creatures (1498), magic items
 (1421), psionic powers (409), martial maneuvers (171), feats (1253), D&D spells
 (1841), GURPS spells (557), GURPS creatures (472), D&D epic feats (153), D&D epic spells (70), D&D prestige classes (145), D&D epic magic items (153), D&D epic monsters (64), GURPS gear — weapons + armor
-(186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (31), D&D incarnum soulmelds (88). Separately labeled other editions/systems:
+(186), GURPS advantages/disadvantages (467), GURPS skills (263), GURPS techniques (101), D&D pact-magic vestiges (31), D&D incarnum soulmelds (89). Separately labeled other editions/systems:
 D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic powers (150), AD&D 2e spells (72), AD&D 2e monsters (96), GURPS 3e creatures (853), GURPS 3e spells (766), GURPS 3e items (783); WH40K Roleplay adversaries (657, cores+bestiaries+14 supplements) + weapons (657, cores+11 supplements) + armour (145, cores+8 supplements) + force fields (13) + gear (587, cores+10 supplements) + psychic powers (420, cores+6 supplements) + talents (840, cores+11 supplements); WFRP 2e creatures (265) + arms & armour (107) + Chaos mutations & gifts (505); WH40K wargame unit profiles (136, born-digital codexes) + WHFB wargame unit profiles (291, born-digital official 8th-ed army books). Scanned codexes/army books + a broken-CMap 4th-ed book remain vision-pending. Each has a
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
@@ -53,7 +53,7 @@ inventory and what is worth harvesting next. Do not read "the core is done" as
 | `reference/gurps_skill_index.{md,json}` | `scripts/gurps_skill_harvest.py` | GURPS Basic Set: Characters — Skills in the Trait Lists appendix | 263 skills (attribute, Easy/Average/Hard/Very Hard difficulty, defaults, book page; clustered on B303–B306) | `python scripts/gurps_skill_harvest.py --selftest` |
 | `reference/gurps_technique_index.{md,json}` | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet (born-digital text layer, characters exact) | 101 combat techniques (difficulty, prerequisite, default, maximum, damage; cinematic/silly flags) | `python scripts/gurps_technique_harvest.py --selftest` |
 | `reference/vestige_index.{md,json}` | `scripts/vestige_harvest.py` | Tome of Magic (born-digital text layer) — pact-magic vestige summary | 31 vestiges (the complete list, vestige level 1–8, binding DC, special-requirement flag) | `python scripts/vestige_harvest.py --selftest` |
-| `reference/soulmeld_index.{md,json}` | `scripts/soulmeld_harvest.py` | Magic of Incarnum (born-digital text layer) — soulmeld summary tables 4-1/4-2/4-3 | 88 soulmelds (classes that shape it, bindable chakras, basic effect; column-split descriptions de-interleaved) | `python scripts/soulmeld_harvest.py --selftest` |
+| `reference/soulmeld_index.{md,json}` | `scripts/soulmeld_harvest.py` | Magic of Incarnum (born-digital text layer) — soulmeld tables + descriptions, pp.54–94 | 89 soulmelds (classes, bindable chakras, basic effect, exact-source full-description spans; interleaved summary columns removed in codex display) | `python scripts/soulmeld_harvest.py --selftest` |
 | `reference/gurps_creature_index.{md,json}` | `scripts/gurps_creature_harvest.py` | GURPS DF Monsters 1, Creatures of the Night 1–5, Fantasy, Banestorm, Lands Out of Time, DF Allies, DF Summoners, Big Lizzie (139) + **Natural Encyclopedia v1.5.2** compilation (333 net-new, 4e stats, each crediting its original GURPS source; deduped against the specific books) | 472 GURPS creatures / 12 sources (all with 3+ attributes) | `python scripts/gurps_creature_harvest.py --selftest` |
 
 **Note on the "MM3 / Draconomicon absent" queue item.** That gap is CLOSED —
@@ -136,7 +136,9 @@ Highest-value UNHARVESTED 3.5e content, by directory (all under
   where a character slip can't be tolerated. Rule of thumb: plain layout →
   `reocr.py`; ornate → vision.
 - **`Player Options\`** — subsystems not yet indexed: **Magic of Incarnum**
-  (the soulmeld summary tables are DONE in `soulmeld_index`; the soulmeld/essentia-scaling detail text remains prose), **Tome of Magic** shadow-magic mysteries + truename utterances
+  (all 89 soulmeld summary rows and full description spans are DONE in
+  `soulmeld_index`; essentia/bind details remain book-verbatim prose rather than
+  separately parsed fields), **Tome of Magic** shadow-magic mysteries + truename utterances
   (the pact-magic VESTIGES are DONE in `vestige_index`; mysteries and utterances
   are prose-embedded spell-like blocks, not summary tables, so they need a
   body-block detector), Savage Species (monster classes), Incantatrix/variant
@@ -281,6 +283,20 @@ asks for them here.
 ---
 
 ## LOG
+
+- **2026-08-29** — Closed the D&D 3.5e soulmeld full-text gap. Replaced the
+  summary-table marker offsets with all **89** validated ALL-CAPS description
+  spans (PDF pp.54–94) and emitted the exact Magic of Incarnum `source_path`.
+  The table parser now preserves the verified **Heart of Fire** row (p.70),
+  raising the index 88 → 89. Its former misclassification had also assigned the
+  following Lamia, Manticore, Phoenix, and Wormtail Belts to Heart; the book’s
+  Waist header verifies all four corrections to Waist. Every other non-location
+  field in the original 88 rows is unchanged. The codex removes only the
+  summary-table columns interleaved into four description spans, then applies
+  its normal name-leading validation. Soulmeld coverage rose **0/88 → 89/89
+  (100%)**; total full-text coverage rose **11,147/17,911 → 11,236/17,912
+  (62%)**. The live selftest locks the 89 rows/headings, page range, span leads,
+  Heart of Fire values, and the four corrected Waist chakras.
 
 - **2026-08-29** — Closed the D&D 3.5e spell full-text gap. The 1,841 committed
   spell rows and their `[start,end]` spans were already byte-identical and valid

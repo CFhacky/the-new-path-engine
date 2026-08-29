@@ -7,98 +7,100 @@ the soulmeld; `chakras` are the body slots it can bind to for greater
 effect. `basic_effect` is the unbound effect; the essentia-scaling and
 chakra-bind effects are in the full description (PDF page). Native 3.5e.
 
-## Magic of Incarnum — 88 soulmelds
+## Magic of Incarnum — 89 soulmelds
 
-*Source: Magic of Incarnum (WotC, 3.5e), soulmeld summary tables 4-1/4-2/4-3.*  
-*Harvest: ok — 88 soulmelds from Magic of Incarnum.md.*
+*Source: Magic of Incarnum (WotC, 3.5e), soulmeld tables and descriptions pp. 54–94.*
+*Extraction: `I:\Sourcebooks\_text\D&D 3.5e\Player Options\Magic of Incarnum.md`.*
+*Harvest: ok — 89 soulmelds from Magic of Incarnum.md.*
 
 | Soulmeld | Classes | Chakras | Basic Effect | PDF p. |
 |---|---|---|---|---|
 | Acrobat Boots | Incarnate | Feet | +2 bonus on Balance, Escape Artist, Jump, and Tumble checks | 54 |
-| Adamant Pauldrons | Incarnate | Shoulders | 25% protection against critical hits and sneak attacks | 55 |
-| Airstep Sandals | Incarnate | Feet | Fly up to 10 feet as a move action | 54 |
-| Ankheg Breastplate | Totemist | Throat | +2 armor bonus to AC | 58 |
-| Apparition Ribbon | Incarnate | Throat | Reroll miss chance against incorporeal foes | 55 |
-| Arcane Focus | Incarnate, Soulborn | Throat | +1 bonus on spell damage | 55 |
-| Armguards of Disruption | Incarnate, Soulborn | Arms | 1d6 points of damage to undead with melee touch attack | 54 |
-| Basilisk Mask | Totemist | Brow | Low-light vision | 58 |
-| Beast Tamer Circlet | Totemist | Crown | +2 bonus on Handle Animal and wild empathy checks | 58 |
-| Behir Gorget | Totemist | Throat | +4 bonus to resist bull rush or trip | 58 |
-| Blink Shirt | Totemist | Heart | Teleport 10 feet | 58 |
-| Bloodtalons | Totemist | Hands | Continue fighting when disabled or dying | 58 |
-| Bloodwar Gauntlets | Incarnate | Hands, Arms | +1 bonus on melee attacks | 54 |
-| Bluesteel Bracers | Incarnate, Soulborn | Arms | +2 bonus on initiative checks | 54 |
-| Brass Mane | Totemist | Throat | +4 bonus on Intimidate checks | 58 |
-| Cerulean Sandals | Incarnate, Soulborn | Feet | Walk on water | 54 |
-| Crystal Helm | Incarnate, Soulborn | Crown | +2 resistance bonus on Will saves against charm and compulsion | 54 |
-| Diadem of Purelight | Incarnate, Soulborn | Crown | Create a constant source of light | 54 |
-| Disenchanter Mask | Totemist | Brow | Detect magic within 10 feet | 58 |
-| Displacer Mantle | Totemist | Shoulders | +4 bonus on Hide checks | 58 |
-| Dissolving Spittle | Incarnate | Throat | 1d6 acid damage with ranged touch attack | 55 |
-| Dread Carapace | Totemist | Feet, Arms, Heart | +2 bonus on damage with bite attack, –1 penalty on attack rolls | 58 |
-| Enigma Helm | Incarnate, Soulborn | Crown | Protection from divinations | 54 |
-| Fearsome Mask | Soulborn | Brow | +2 bonus on Intimidate checks | 56 |
-| Fellmist Robe | Incarnate | Soul | Concealment from nonadjacent attackers | 55 |
-| Flame Cincture | Incarnate, Soulborn | Waist | Resistance to fire 10 | 55 |
-| Frost Helm | Totemist | Crown | Exist comfortably between –50 and 90° Fahrenheit | 58 |
-| Girallon Arms | Totemist | Arms | +2 bonus on Climb and grapple checks | 58 |
-| Gloves of the Poisoned Soul | Soulborn | Hands | Touch poisons target | 56 |
-| Gorgon Mask | Totemist | Throat | +1 bonus on Fort saves and +2 to resist bull rush, trip, overrun, or trample | 58 |
-| Great Raptor Mask | Totemist | Brow | +2 bonus on Spot checks | 58 |
-| Hunter’s Circlet | Soulborn, Totemist | Crown | +2 bonus on Heal and Survival checks | 56 |
-| Illusion Veil | Incarnate, Soulborn | Brow | +1 bonus on illusion spell DCs | 54 |
-| Impulse Boots | Incarnate, Soulborn | Feet | Uncanny dodge (retain Dex bonus to AC when flat-footed) | 54 |
-| Incarnate Avatar | Incarnate | Soul | Take on appearance and aspects of outsider | 55 |
-| Incarnate Weapon | Incarnate | Arms | Create an aligned weapon | 54 |
-| Keeneye Lenses | Incarnate | Brow, Soul | +4 bonus on Spot checks | 54 |
-| Kraken Mantle | Totemist | Arms | +8 on Swim checks | 58 |
-| Krenshar Mask | Totemist | Brow | +4 bonus on Jump and Move Silently checks | 58 |
-| Kruthik Claws | Totemist | Hands, Shoulders | +4 bonus on Hide and Move Silently checks | 58 |
-| Lamia Belt | Totemist | Heart | +4 bonus on Bluff and Hide checks | 58 |
-| Lammasu Mantle | Incarnate, Totemist | Arms, Shoulders | +2 deflection bonus to AC against evil creatures | 54 |
-| Landshark Boots | Totemist | Feet | +4 bonus on Jump checks | 58 |
-| Lifebond Vestments | Incarnate | Arms, Heart | Heal another by taking damage | 54 |
-| Lightning Gauntlets | Incarnate | Hands | 1d6 electricity damage with melee touch attack | 54 |
-| Lucky Dice | Incarnate, Soulborn | Hands | +1 luck bonus on chosen rolls | 54 |
-| Mage’s Spectacles | Incarnate | Brow | +4 bonus on Decipher Script, Spellcraft, and Use Magic Device checks | 54 |
-| Manticore Belt | Totemist | Heart | +2 bonus on Jump and Spot checks | 58 |
-| Mantle of Flame | Incarnate | Shoulders | Creatures attacking you take 1d6 fire damage | 55 |
-| Mauling Gauntlets | Soulborn | Hands, Arms | +2 bonus on Strength checks | 56 |
-| Necrocarnum Circlet | Incarnate, Soulborn | Crown | Detect undead within 30 feet | 54 |
-| Necrocarnum Mantle | Incarnate, Soulborn | Throat | Immunity to disease | 55 |
-| Necrocarnum Shroud | Incarnate, Soulborn | Waist, Soul | +1 bonus on attack and damage rolls when adjacent creature takes damage | 55 |
-| Necrocarnum Touch | Incarnate, Soulborn | Arms | +4 bonus on Sleight of Hand checks and on Bluff checks to feint in combat | 54 |
-| Necrocarnum Vestments | Incarnate, Soulborn | Waist, Heart | Resistance to cold 5 | 55 |
-| Necrocarnum Weapon | Incarnate, Soulborn | Hands | Chosen weapon bypasses DR as if evil-aligned | 54 |
-| Pauldrons of Health | Incarnate, Soulborn | Shoulders | Immunity to disease and to being sickened or nauseated | 55 |
-| Pegasus Cloak | Totemist | Shoulders | Constant feather fall and +2 bonus on Jump checks | 58 |
-| Phase Cloak | Totemist | Shoulders | +4 bonus on Climb checks, can always take 10 on Climb | 58 |
-| Phoenix Belt | Totemist | Heart | Exist comfortably between 40 and 140º Fahrenheit | 58 |
-| Planar Chasuble | Incarnate | Brow, Soul | Gain alignment subtype, resistance to energy based on alignment | 54 |
-| Planar Ward | Incarnate | Throat | Protection from mental control | 55 |
-| Rageclaws | Totemist | Hands | Continue fighting when disabled or dying | 58 |
-| Riding Bracers | Incarnate, Soulborn, Totemist | Arms | +4 bonus on Handle Animal and Ride checks | 54 |
-| Sailor’s Bracers | Incarnate, Soulborn | Arms | +4 bonus on Swim, Profession (sailor), and Use Rope checks | 54 |
-| Shadow Mantle | Totemist | Shoulders | +4 bonus on Listen checks | 58 |
-| Shedu Crown | Totemist | Crown, Heart | Immune to bull rush | 58 |
-| Sighting Gloves | Incarnate, Soulborn | Hands | +1 bonus on ranged damage rolls | 54 |
-| Silvertongue Mask | Incarnate, Soulborn | Brow, Throat | +2 bonus on Bluff and Diplomacy checks | 54 |
-| Soulspark Familiar | Incarnate, Soulborn | Crown, Brow, Throat | Create soulspark creature | 54 |
-| Soulspeaker Circlet | Soulborn | Crown, Throat | Understand a spoken language | 56 |
-| Spellward Shirt | Incarnate, Soulborn | Heart | Spell resistance 5 | 55 |
-| Sphinx Claws | Totemist | Hands | +1 bonus on Strength checks and Strength-based skill checks | 58 |
-| Strongheart Vest | Incarnate, Soulborn | Waist, Heart | Reduce ability damage by 1 point | 55 |
-| Theft Gloves | Incarnate | Hands | +2 bonus on Disable Device, Open Lock, and Sleight of Hand checks | 54 |
-| Therapeutic Mantle | Incarnate, Soulborn | Shoulders | Enhances the effect of healing spells | 55 |
-| Threefold Mask of the Chimera | Totemist | Crown, Soul | Can’t be flanked | 58 |
-| Thunderstep Boots | Soulborn | Feet | Deal 1d4 sonic damage as part of charge attack | 56 |
-| Totem Avatar | Totemist | Feet, Arms, Shoulders, Heart | Bonus hit points equal to meldshaper level | 58 |
-| Truthseeker Goggles | Incarnate, Soulborn | Brow | +2 bonus on Gather Information, Search, and Sense Motive checks | 54 |
-| Unicorn Horn | Totemist | Brow | +2 bonus on wild empathy and Move Silently checks | 58 |
-| Urskan Greaves | Totemist | Feet | Move through ice and snow at normal speed, +5 bonus on Balance checks | 58 |
-| Vitality Belt | Incarnate | Waist | +4 bonus on Constitution checks and Constitution-based skill checks | 55 |
-| Wind Cloak | Incarnate, Soulborn | Shoulders | Damage reduction 2/magic against ranged attacks | 55 |
-| Winter Mask | Totemist | Throat | Touch fatigues opponents | 58 |
-| Worg Pelt | Totemist | Feet, Hands | +2 bonus on Hide and Move Silently checks | 58 |
-| Wormtail Belt | Totemist | Heart | +2 bonus to natural armor | 58 |
-| Yrthak Mask | Totemist | Brow | +4 bonus on Listen checks | 58 |
+| Adamant Pauldrons | Incarnate | Shoulders | 25% protection against critical hits and sneak attacks | 54 |
+| Airstep Sandals | Incarnate | Feet | Fly up to 10 feet as a move action | 55 |
+| Ankheg Breastplate | Totemist | Throat | +2 armor bonus to AC | 56 |
+| Apparition Ribbon | Incarnate | Throat | Reroll miss chance against incorporeal foes | 57 |
+| Arcane Focus | Incarnate, Soulborn | Throat | +1 bonus on spell damage | 57 |
+| Armguards of Disruption | Incarnate, Soulborn | Arms | 1d6 points of damage to undead with melee touch attack | 59 |
+| Basilisk Mask | Totemist | Brow | Low-light vision | 59 |
+| Beast Tamer Circlet | Totemist | Crown | +2 bonus on Handle Animal and wild empathy checks | 60 |
+| Behir Gorget | Totemist | Throat | +4 bonus to resist bull rush or trip | 60 |
+| Blink Shirt | Totemist | Heart | Teleport 10 feet | 60 |
+| Bloodtalons | Totemist | Hands | Continue fighting when disabled or dying | 61 |
+| Bloodwar Gauntlets | Incarnate | Hands, Arms | +1 bonus on melee attacks | 61 |
+| Bluesteel Bracers | Incarnate, Soulborn | Arms | +2 bonus on initiative checks | 62 |
+| Brass Mane | Totemist | Throat | +4 bonus on Intimidate checks | 62 |
+| Cerulean Sandals | Incarnate, Soulborn | Feet | Walk on water | 63 |
+| Crystal Helm | Incarnate, Soulborn | Crown | +2 resistance bonus on Will saves against charm and compulsion | 63 |
+| Diadem of Purelight | Incarnate, Soulborn | Crown | Create a constant source of light | 63 |
+| Disenchanter Mask | Totemist | Brow | Detect magic within 10 feet | 63 |
+| Displacer Mantle | Totemist | Shoulders | +4 bonus on Hide checks | 64 |
+| Dissolving Spittle | Incarnate | Throat | 1d6 acid damage with ranged touch attack | 64 |
+| Dread Carapace | Totemist | Feet, Arms, Heart | +2 bonus on damage with bite attack, –1 penalty on attack rolls | 65 |
+| Enigma Helm | Incarnate, Soulborn | Crown | Protection from divinations | 66 |
+| Fearsome Mask | Soulborn | Brow | +2 bonus on Intimidate checks | 66 |
+| Fellmist Robe | Incarnate | Soul | Concealment from nonadjacent attackers | 66 |
+| Flame Cincture | Incarnate, Soulborn | Waist | Resistance to fire 10 | 67 |
+| Frost Helm | Totemist | Crown | Exist comfortably between –50 and 90° Fahrenheit | 67 |
+| Girallon Arms | Totemist | Arms | +2 bonus on Climb and grapple checks | 68 |
+| Gloves of the Poisoned Soul | Soulborn | Hands | Touch poisons target | 68 |
+| Gorgon Mask | Totemist | Throat | +1 bonus on Fort saves and +2 to resist bull rush, trip, overrun, or trample | 68 |
+| Great Raptor Mask | Totemist | Brow | +2 bonus on Spot checks | 69 |
+| Heart of Fire | Totemist | Waist | +1 bonus on attack and damage against cold creatures | 70 |
+| Hunter’s Circlet | Soulborn, Totemist | Crown | +2 bonus on Heal and Survival checks | 70 |
+| Illusion Veil | Incarnate, Soulborn | Brow | +1 bonus on illusion spell DCs | 71 |
+| Impulse Boots | Incarnate, Soulborn | Feet | Uncanny dodge (retain Dex bonus to AC when flat-footed) | 71 |
+| Incarnate Avatar | Incarnate | Soul | Take on appearance and aspects of outsider | 71 |
+| Incarnate Weapon | Incarnate | Arms | Create an aligned weapon | 72 |
+| Keeneye Lenses | Incarnate | Brow, Soul | +4 bonus on Spot checks | 73 |
+| Kraken Mantle | Totemist | Arms | +8 on Swim checks | 73 |
+| Krenshar Mask | Totemist | Brow | +4 bonus on Jump and Move Silently checks | 73 |
+| Kruthik Claws | Totemist | Hands, Shoulders | +4 bonus on Hide and Move Silently checks | 74 |
+| Lamia Belt | Totemist | Waist | +4 bonus on Bluff and Hide checks | 74 |
+| Lammasu Mantle | Incarnate, Totemist | Arms, Shoulders | +2 deflection bonus to AC against evil creatures | 75 |
+| Landshark Boots | Totemist | Feet | +4 bonus on Jump checks | 75 |
+| Lifebond Vestments | Incarnate | Arms, Heart | Heal another by taking damage | 76 |
+| Lightning Gauntlets | Incarnate | Hands | 1d6 electricity damage with melee touch attack | 76 |
+| Lucky Dice | Incarnate, Soulborn | Hands | +1 luck bonus on chosen rolls | 77 |
+| Mage’s Spectacles | Incarnate | Brow | +4 bonus on Decipher Script, Spellcraft, and Use Magic Device checks | 77 |
+| Manticore Belt | Totemist | Waist | +2 bonus on Jump and Spot checks | 77 |
+| Mantle of Flame | Incarnate | Shoulders | Creatures attacking you take 1d6 fire damage | 78 |
+| Mauling Gauntlets | Soulborn | Hands, Arms | +2 bonus on Strength checks | 78 |
+| Necrocarnum Circlet | Incarnate, Soulborn | Crown | Detect undead within 30 feet | 78 |
+| Necrocarnum Mantle | Incarnate, Soulborn | Throat | Immunity to disease | 79 |
+| Necrocarnum Shroud | Incarnate, Soulborn | Waist, Soul | +1 bonus on attack and damage rolls when adjacent creature takes damage | 79 |
+| Necrocarnum Touch | Incarnate, Soulborn | Arms | +4 bonus on Sleight of Hand checks and on Bluff checks to feint in combat | 80 |
+| Necrocarnum Vestments | Incarnate, Soulborn | Waist, Heart | Resistance to cold 5 | 80 |
+| Necrocarnum Weapon | Incarnate, Soulborn | Hands | Chosen weapon bypasses DR as if evil-aligned | 81 |
+| Pauldrons of Health | Incarnate, Soulborn | Shoulders | Immunity to disease and to being sickened or nauseated | 81 |
+| Pegasus Cloak | Totemist | Shoulders | Constant feather fall and +2 bonus on Jump checks | 81 |
+| Phase Cloak | Totemist | Shoulders | +4 bonus on Climb checks, can always take 10 on Climb | 82 |
+| Phoenix Belt | Totemist | Waist | Exist comfortably between 40 and 140º Fahrenheit | 82 |
+| Planar Chasuble | Incarnate | Brow, Soul | Gain alignment subtype, resistance to energy based on alignment | 83 |
+| Planar Ward | Incarnate | Throat | Protection from mental control | 83 |
+| Rageclaws | Totemist | Hands | Continue fighting when disabled or dying | 83 |
+| Riding Bracers | Incarnate, Soulborn, Totemist | Arms | +4 bonus on Handle Animal and Ride checks | 84 |
+| Sailor’s Bracers | Incarnate, Soulborn | Arms | +4 bonus on Swim, Profession (sailor), and Use Rope checks | 84 |
+| Shadow Mantle | Totemist | Shoulders | +4 bonus on Listen checks | 85 |
+| Shedu Crown | Totemist | Crown, Heart | Immune to bull rush | 85 |
+| Sighting Gloves | Incarnate, Soulborn | Hands | +1 bonus on ranged damage rolls | 86 |
+| Silvertongue Mask | Incarnate, Soulborn | Brow, Throat | +2 bonus on Bluff and Diplomacy checks | 86 |
+| Soulspark Familiar | Incarnate, Soulborn | Crown, Brow, Throat | Create soulspark creature | 86 |
+| Soulspeaker Circlet | Soulborn | Crown, Throat | Understand a spoken language | 87 |
+| Spellward Shirt | Incarnate, Soulborn | Heart | Spell resistance 5 | 88 |
+| Sphinx Claws | Totemist | Hands | +1 bonus on Strength checks and Strength-based skill checks | 88 |
+| Strongheart Vest | Incarnate, Soulborn | Waist, Heart | Reduce ability damage by 1 point | 89 |
+| Theft Gloves | Incarnate | Hands | +2 bonus on Disable Device, Open Lock, and Sleight of Hand checks | 89 |
+| Therapeutic Mantle | Incarnate, Soulborn | Shoulders | Enhances the effect of healing spells | 89 |
+| Threefold Mask of the Chimera | Totemist | Crown, Soul | Can’t be flanked | 89 |
+| Thunderstep Boots | Soulborn | Feet | Deal 1d4 sonic damage as part of charge attack | 90 |
+| Totem Avatar | Totemist | Feet, Arms, Shoulders, Heart | Bonus hit points equal to meldshaper level | 90 |
+| Truthseeker Goggles | Incarnate, Soulborn | Brow | +2 bonus on Gather Information, Search, and Sense Motive checks | 91 |
+| Unicorn Horn | Totemist | Brow | +2 bonus on wild empathy and Move Silently checks | 91 |
+| Urskan Greaves | Totemist | Feet | Move through ice and snow at normal speed, +5 bonus on Balance checks | 92 |
+| Vitality Belt | Incarnate | Waist | +4 bonus on Constitution checks and Constitution-based skill checks | 92 |
+| Wind Cloak | Incarnate, Soulborn | Shoulders | Damage reduction 2/magic against ranged attacks | 92 |
+| Winter Mask | Totemist | Throat | Touch fatigues opponents | 93 |
+| Worg Pelt | Totemist | Feet, Hands | +2 bonus on Hide and Move Silently checks | 93 |
+| Wormtail Belt | Totemist | Waist | +2 bonus to natural armor | 94 |
+| Yrthak Mask | Totemist | Brow | +4 bonus on Listen checks | 94 |

@@ -44,6 +44,8 @@ FULL-TEXT SOURCING — book RAW, never invented
 - SRD spells        pulled by name from spells_srd35.json (clean OGC text).
 - harvested spells  sliced from the exact source_path emitted by spell_harvest.py;
                     the Premium Compendium path remains as a legacy fallback.
+- soulmelds          sliced from exact-source full-description spans; PDF table
+                    columns interleaved into four blocks are removed first.
 - legacy rows        fuzzy-match a source filename, then slice by [start:end].
 - every slice is VALIDATED: the entry name must lead it or the block is dropped
   (a mismatched slice is NEVER attached). Wargame profile lines and marker-offset
@@ -124,6 +126,28 @@ def _validate(seg: str, name: str) -> bool:
     return bool(tk) and all(t in head for t in tk[:2])
 
 
+def _strip_soulmeld_summary_tables(seg: str) -> str:
+    """Remove summary-table columns interleaved into four born-digital descriptions."""
+    src = seg.splitlines()
+    out = []
+    i = 0
+    while i < len(src):
+        s = src[i].strip()
+        triplet = (s.casefold().rstrip("*† ") == "chakra"
+                   and i + 2 < len(src)
+                   and src[i + 1].strip().casefold().rstrip("*† ") == "soulmeld"
+                   and src[i + 2].strip().casefold().startswith("basic effect"))
+        if s.casefold().startswith("table 4") or triplet:
+            resume = next((j for j in range(i + 1, len(src))
+                           if "[pdf page " in src[j].casefold()), None)
+            if resume is not None:
+                i = resume
+                continue
+        out.append(src[i])
+        i += 1
+    return "\n".join(out).strip()
+
+
 def _fam_sys(fam: str) -> str:
     """System label for the native families that carry no `system` field."""
     return "GURPS 4e" if fam.startswith("gurps_") and "3e" not in fam else "D&D 3.5e"
@@ -199,7 +223,7 @@ def build(report=False):
         srd = json.loads(SRD_JSON.read_text(encoding="utf-8"))
         srd_text = {k.lower(): (v.get("text") or "") for k, v in srd.items()}
 
-    def slice_full(book, start, end, name, source_file=None):
+    def slice_full(book, start, end, name, source_file=None, transform=None):
         if end - start < 2:
             return ""
         fp = source_file or find_file(book)
@@ -207,6 +231,8 @@ def build(report=False):
             return ""
         try:
             seg = "\n".join(lines(fp)[start:end]).strip()
+            if transform:
+                seg = transform(seg)
         except Exception:
             return ""
         if seg and _validate(seg, name):
@@ -238,6 +264,9 @@ def build(report=False):
             tot[fam] += 1
             if fam == "spell":
                 full = spell_full(r)
+            elif fam == "soulmeld" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), _strip_soulmeld_summary_tables)
             elif "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r))
