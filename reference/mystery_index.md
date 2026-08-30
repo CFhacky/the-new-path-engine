@@ -10,6 +10,7 @@ that field; shared chapter defaults are not silently copied into rows.
 *System: D&D 3.5e. Source: Tome of Magic (WotC, 3.5e), Shadow Magic mystery descriptions, PDF pp. 142-154.*
 *Extraction: I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md.*
 *Harvest: ok — 69 fundamentals/mysteries from Tome of Magic.md.*
+*Caption cleanup: 5 exact floating illustration blocks excluded; entry prose retained.*
 *Printed-field coverage: level_school 69/69; casting_time 0/69; range 61/69; target_area_effect 62/69; duration 63/69; saving_throw 50/69; spell_resistance 50/69.*
 *NO COVERAGE values are fields omitted by the individual printed block; shared chapter defaults and referenced-spell fields are not imputed.*
 

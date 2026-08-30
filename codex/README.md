@@ -67,8 +67,9 @@ works offline.
   description spans; floated duplicate stat tablets are removed, and complete
   descriptions bypass the normal 4,200-character cap.
 - **Shadow mysteries** — all 69 fundamentals and path mysteries slice their exact
-  Tome of Magic heading-to-heading spans on PDF pp.142–154; complete descriptions
-  bypass the normal cap.
+  Tome of Magic heading-to-heading spans on PDF pp.142–154; five exact,
+  source-verified floating illustration blocks are removed while entry prose is
+  retained, and complete descriptions bypass the normal cap.
 - **Maneuvers** — sliced from the exact clean Tome of Battle alternate extraction
   and canonical heading-to-heading spans; complete descriptions bypass the normal
   4,200-character cap.
