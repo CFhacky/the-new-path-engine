@@ -25,9 +25,6 @@ by `scripts/reference_audit.py`.
   available multi-flow OCR drops real headings, promotes wrapped formulas to
   false headings, and corrupts mechanical glyphs. Its condition subset already
   belongs to `scripts/conditions.py`.
-- `NO COVERAGE: table-first DMG rod/staff entries.` Their charge and spell
-  tables precede any prose name anchor. A dedicated table-aware detector is
-  required; Rod of Absorption is the representative failure.
 - Five Epic Level Handbook feat descriptions dependent on the genuinely blurred
   p.60 image remain empty. Their verified summary mechanics are retained, and
   the harvester locks the exact five-row gap set.
@@ -57,10 +54,11 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | WH40K Roleplay armour | 5 / 145 |
 | WH40K Roleplay weapons | 72 / 657 |
 | D&D 3.5e powers | 125 / 409 |
+| D&D 3.5e magic items | 848 / 1,454 |
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,287 / 18,099 full-text blocks. Improve these
+The whole Codex is currently 13,287 / 18,133 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 

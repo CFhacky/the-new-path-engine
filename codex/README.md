@@ -72,9 +72,8 @@ works offline.
 - **GURPS skills** — all 263 rows slice exact Basic Set Skills-chapter spans;
   grouped definitions and wrapped headings are bounded separately, running page
   furniture is removed, and complete descriptions bypass the normal cap.
-- **GURPS traits** — all 474 rows slice exact source descriptions: 469 Basic
-  Set description/inline-definition spans on B18–B165 plus five non-Basic New
-  Advantages from Powers P90–P98; four Basic Set pairs share their common block,
+- **GURPS traits** — all 469 rows slice exact Basic Set description or inline-
+  definition spans on B18–B165; four printed pairs share their common block,
   running page furniture is removed, and complete descriptions bypass the cap.
 - **GURPS techniques** — all 112 rows slice 96 exact Martial Arts definition
   groups; multi-column descriptions retain ordered fragments while unrelated
@@ -115,7 +114,7 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,287 of 18,099 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,287 of 18,133 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
 soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
