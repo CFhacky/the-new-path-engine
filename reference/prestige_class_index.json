@@ -2,7 +2,8 @@
  "generated_by": "scripts/prestige_class_harvest.py",
  "book": "Dragon Magazine Prestige Class Compendium (Issues 274-353)",
  "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
- "note": "Vision-transcribed from the compendium PDF page images (image-only / corrupt-OCR source). Book RAW, read off the page. `page` is the PDF page.",
+ "ocr_source_policy": "manifest_issue_ocr",
+ "note": "Canonical mechanics and `page` use the compiled PDF as visual authority; `issue_source_key` routes full-text recovery to per-issue OCR.",
  "total_prestige_classes": 145,
  "full_text_prestige_classes": 16,
  "by_hit_die": {
@@ -21,7 +22,10 @@
    "hit_die": "d8",
    "requirements": "Race: Gnome. Patron Deity: Garl Glittergold. Base Will Save: +5. Skills: Craft (alchemy) 3 ranks, Knowledge (arcana) 10 ranks. Feats: Brew Potion, Scribe Scroll. Spells: Able to cast 3rd-level or higher divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 12
+   "page": 12,
+   "issue": 328,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #328.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Itinerant Warder of Yondalla",
@@ -29,7 +33,10 @@
    "hit_die": "d6",
    "requirements": "Race: Halfling. Patron Deity: Yondalla. Base Will Save: +5. Skills: Diplomacy 10 ranks, Tumble 4 ranks. Feats: Dodge, Mobility. Spells: Able to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 14
+   "page": 14,
+   "issue": 328,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #328.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Justice Hammer of Moradin",
@@ -37,7 +44,10 @@
    "hit_die": "d10",
    "requirements": "Race: Dwarf. Patron Deity: Moradin. Base Attack Bonus: +5. Skills: Concentration 5 ranks, Knowledge (local) 3 ranks. Feats: Iron Will, Power Attack. Spells: Able to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 16
+   "page": 16,
+   "issue": 328,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #328.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Mystic Keeper of Corellon Larethian",
@@ -45,7 +55,10 @@
    "hit_die": "d8",
    "requirements": "Race: Elf or half-elf. Patron Deity: Corellon Larethian. Base Attack Bonus: +5. Skills: Concentration 10 ranks, Perform (dance) 2 ranks. Feats: Still Spell, Weapon Finesse. Spells: Able to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 18
+   "page": 18,
+   "issue": 328,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #328.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Ancestral Avenger",
@@ -53,7 +66,10 @@
    "hit_die": "d8",
    "requirements": "Race: Elf or half-elf. Base Attack: +5. Wilderness Lore: 3 ranks. Feats: Alertness, Iron Will, Tracking.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 19
+   "page": 19,
+   "issue": 279,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #279.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Gnome Giant-Killer",
@@ -61,7 +77,10 @@
    "hit_die": "d10",
    "requirements": "Race: Gnome. Base Attack Bonus: +5. Escape Artist: 3 ranks. Tumble: 3 ranks. Feats: Dodge, Mobility, Spring Attack. Special: Speak Language (Giant).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 22
+   "page": 22,
+   "issue": 291,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #291.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Lightbearer",
@@ -69,7 +88,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any good. Race: Gnome or halfling. Knowledge (religion): 8 ranks. Knowledge (local): 4 ranks. Diplomacy: 4 ranks. Feats: Alertness.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 24
+   "page": 24,
+   "issue": 285,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #285.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Stonelord",
@@ -77,7 +99,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack: +5 or better. Craft (stoneworking): 6 ranks. Spellcraft: 3 ranks. Race: Dwarf. Feats: Endurance. Language: Terran. Special: Must undergo an arduous ritual (immersion in sacred loam, fasting deep underground, and ingesting 1,000 gp worth of powdered gemstones).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 25
+   "page": 25,
+   "issue": 278,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #278.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Bloodsister",
@@ -86,6 +111,9 @@
    "requirements": "Race: Drow. Sex: Female. Alignment: Any evil. Base Attack Bonus: +6 or better. Feats: Ambidexterity, Exotic Weapon Proficiency (hand crossbow), Two-Weapon Fighting.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 29,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_a.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -105,6 +133,9 @@
    "requirements": "Race: Drow. Alignment: Any evil. Move Silently: 7 ranks. Feats: Point Blank Shot. Special: Must be able to cast arcane spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 31,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_a.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -123,6 +154,9 @@
    "requirements": "Base Attack Bonus: +7. Feats: Blind-Fight, Power Attack. Special: Must speak Undercommon; must have lost a loved one to the drow within the last 5 years.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 36,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_a.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -141,6 +175,9 @@
    "requirements": "Move Silently: 10 ranks. Hide: 10 ranks. Feats: Alertness, Blind-Fight. Special: Must speak Undercommon.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 37,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_a.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -158,7 +195,10 @@
    "hit_die": "d4",
    "requirements": "Feats: Blind-Fight, Silent Spell, Spell Penetration. Spells: Able to cast any 4th-level Conjuration spell. Special: Must speak Undercommon.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 38
+   "page": 38,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shining Blade of Heironeous",
@@ -166,7 +206,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Lawful Good. Patron Deity: Heironeous. Base Attack Bonus: +7. Base Will Save: +3. Skills: Knowledge (religion) 7 ranks. Spellcasting: Ability to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 41
+   "page": 41,
+   "issue": 283,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #283.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Radiant Servant of Pelor",
@@ -174,7 +217,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Neutral Good. Patron Deity: Pelor. Base Will Save: +5. Skills: Knowledge (religion) 9 ranks, Heal 5 ranks, Knowledge (undead) 3 ranks. Feats: Extra Turning. Spellcasting: Ability to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 43
+   "page": 43,
+   "issue": 283,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #283.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Fleet Runner of Ehlonna",
@@ -182,7 +228,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Neutral Good. Patron Deity: Ehlonna. Base Will Save: +3. Skills: Knowledge (nature) 11 ranks, Knowledge (religion) 3 ranks, Wilderness Lore 5 ranks. Feats: Dodge, Mobility, Run. Spellcasting: Ability to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 44
+   "page": 44,
+   "issue": 283,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #283.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Mighty Contender of Kord",
@@ -190,7 +239,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Chaotic Good. Patron Deity: Kord. Base Fortitude Save: +6. Skills: Knowledge (religion) 9 ranks. Feats: Endurance, Power Attack. Spellcasting: Ability to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 47
+   "page": 47,
+   "issue": 283,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #283.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Arvoreen's Keeper",
@@ -198,7 +250,10 @@
    "hit_die": "d8",
    "requirements": "Race: Halfling. Religion: Arvoreen. Alignment: Lawful good, neutral good, or lawful neutral. Base Attack Bonus: +4. Skills: Craft (trapmaking) 4 ranks, Listen 4 ranks, Sense Motive 4 ranks, Spot 4 ranks, Survival 4 ranks. Feats: Alertness, Martial Weapon Proficiency (short sword), Simple Weapon Proficiency (sling) or Martial Weapon Proficiency (shortbow), Track. Spells: Must be able to cast divine spells. Special: Must be judged worthy by a cleric of Arvoreen.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 50
+   "page": 50,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Arvoreen's Warder",
@@ -206,7 +261,10 @@
    "hit_die": "d8",
    "requirements": "Race: Halfling. Religion: Arvoreen. Alignment: Lawful good, neutral good, or lawful neutral. Base Attack Bonus: +4. Skills: Craft (trapmaking) 4 ranks, Listen 4 ranks, Sense Motive 4 ranks, Spot 4 ranks, Survival 4 ranks. Feats: Alertness, Martial Weapon Proficiency (short sword), Simple Weapon Proficiency (sling) or Martial Weapon Proficiency (shortbow), Track. Special: Must be judged worthy by a cleric of Arvoreen.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 51
+   "page": 51,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Battleguard of Tempus",
@@ -214,7 +272,10 @@
    "hit_die": "d10",
    "requirements": "Patron: Tempus. Alignment: Any nonlawful. Base Attack Bonus: +4. Skills: Craft (armorsmithing) 5 ranks, Craft (weaponsmithing) 5 ranks, Handle Animal 3 ranks, Ride 3 ranks. Feats: Combat Casting, Leadership, Weapon Focus (any). Spells: Ability to cast 2nd-level divine spells; clerics must have access to the War domain. Special: Must have fought in at least five battles and been on the winning side of at least three battles involving fifty or more combatants.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 53
+   "page": 53,
+   "issue": 317,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #317.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Blessed of Gruumsh",
@@ -222,7 +283,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Any non-good. Race: Orc or half-orc. Base Attack Bonus: +6. Knowledge (religion): 3 ranks. Feats: Weapon Proficiency (orc double-axe), Power Attack, Cleave. Special: In a ritual dedicated to Gruumsh, the character must remove one of his own eyes.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 55
+   "page": 55,
+   "issue": 282,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #282.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Dancer of Sharess",
@@ -230,7 +294,10 @@
    "hit_die": "d6",
    "requirements": "Patron Deity: Sharess. Alignment: Chaotic good. Base Attack Bonus: +3. Perform: 4 ranks (including Perform [dancing]). Knowledge (religion): 9 ranks. Spellcasting: Able to cast 3rd-level divine spells; clerics must select the Charm domain.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 58
+   "page": 58,
+   "issue": 290,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #290.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Deathstalker of Bhaal",
@@ -238,7 +305,10 @@
    "hit_die": "d8",
    "requirements": "Patron Deity: Bhaal. Alignment: Lawful evil. Skills: Hide 5 ranks, Move Silently 5 ranks, Survival 2 ranks. Feats: Quick Draw. Spells: Ability to cast 3rd-level divine spells; clerics must have access to the Death or Destruction domain. Special: Must have murdered at least sixteen sentient creatures using sixteen different weapons or methods.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 60
+   "page": 60,
+   "issue": 322,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #322.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Dreadmaster",
@@ -246,7 +316,10 @@
    "hit_die": "d8",
    "requirements": "Patron Deity: Bane. Alignment: Lawful evil. Base Attack Bonus: +4. Intimidate: 5 ranks. Sense Motive: 4 ranks. Feats: Leadership, Skill Focus (Intimidate), Spell Focus (Enchantment). Spellcasting: Ability to cast 3rd-level divine spells; clerics must have access to the Hatred or Tyranny domain. Cohort: A cohort of at least 6th level.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 62
+   "page": 62,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Green Hunter",
@@ -254,7 +327,10 @@
    "hit_die": "d8",
    "requirements": "Patron Deity: Thard Harr. Alignment: Any good. Base Attack Bonus: +4. Knowledge (nature): 5 ranks. Wilderness Lore: 5 ranks. Feats: Track. Spells: Ability to cast divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 65
+   "page": 65,
+   "issue": 294,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #294.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Nightcloak",
@@ -262,7 +338,10 @@
    "hit_die": "d8",
    "requirements": "Patron Deity: Shar. Alignment: Neutral evil. Base Attack Bonus: +4. Bluff: 2 ranks. Move Silently: 2 ranks. Perform: 4 ranks. Feats: Iron Will, Shadow Weave Magic, Spell Focus (Enchantment, Illusion, or Necromancy), and Pernicious Magic or Tenacious Magic. Spellcasting: Ability to cast 2nd-level divine spells; clerics must have access to the Darkness domain.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 66
+   "page": 66,
+   "issue": 286,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #286.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Silverstar",
@@ -270,7 +349,10 @@
    "hit_die": "d8",
    "requirements": "Patron Deity: Selune. Alignment: Chaotic Good. Base Attack Bonus: +4. Intuit Direction: 2 ranks. Sense Motive: 2 ranks. Feats: Blind-Fight, Dodge, Mobility, Spring Attack. Spellcasting: Ability to cast 2nd-level divine spells; clerics must have access to the Moon domain.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 68
+   "page": 68,
+   "issue": 285,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #285.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Harmonium Peacekeeper",
@@ -278,7 +360,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Any lawful. Base Attack Bonus: +6. Knowledge (religion): 5 ranks. Ride: 5 ranks. Feats: Mounted Combat.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 72
+   "page": 72,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Anarchomancer",
@@ -286,7 +371,10 @@
    "hit_die": "d4",
    "requirements": "Alignment: Any chaotic. Disguise: 6 ranks. Bluff: 6 ranks. Feats: Greater Spell Focus (illusion) or Greater Spell Focus (enchantment). Spellcasting: Ability to cast at least one arcane illusion spell of 1st-5th level, and ability to cast polymorph.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 74
+   "page": 74,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Athar",
@@ -294,7 +382,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack: +7. Base Will Save: +3. Knowledge (religion): 10 ranks. Spellcasting: Ability to cast divine spells. Special: Must abandon the worship of gods and refuse to acknowledge them as worthy of praise (clerics become ex-clerics).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 76
+   "page": 76,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Cipher",
@@ -302,7 +393,10 @@
    "hit_die": "d8",
    "requirements": "Balance: 5 ranks. Jump: 10 ranks. Knowledge (religion): 10 ranks. Feats: Improved Initiative, Power Attack, Sunder.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 77
+   "page": 77,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Sensate",
@@ -310,7 +404,10 @@
    "hit_die": "d6",
    "requirements": "Intuit Direction: 5 ranks. Spot: 7 ranks. Listen: 7 ranks. Feats: Alertness, Skill Focus (Knowledge [any]).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 79
+   "page": 79,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Sinker",
@@ -318,7 +415,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +5. Disable Device: 5 ranks. Knowledge (architecture & engineering): 3 ranks. Feats: Great Fortitude, Power Attack, Sunder.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 80
+   "page": 80,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Taker",
@@ -326,7 +426,10 @@
    "hit_die": "d6",
    "requirements": "Base Attack Bonus: +4. Bluff: 5 ranks. Diplomacy: 5 ranks. Intimidate: 5 ranks. Feats: Skill Focus (Bluff, Diplomacy, or Intimidate).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 82
+   "page": 82,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Xaositect",
@@ -334,7 +437,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any chaotic. Base Attack Bonus: +4. Base Fort Save: +2. Base Reflex Save: +2. Base Will Save: +2.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 83
+   "page": 83,
+   "issue": 287,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #287.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Battlepriest of Cormyr",
@@ -342,7 +448,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any nonevil and nonchaotic. Base Attack Bonus: +5. Concentration: 5 ranks. Diplomacy: 5 ranks. Heal: 3 ranks. Feats: Combat Casting, Leadership. Spells: Ability to cast divine spells and access to the Nobility, Protection, Strength, or War domain.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 87
+   "page": 87,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Council Mage of Cormyr",
@@ -350,7 +459,10 @@
    "hit_die": "d4",
    "requirements": "Alignment: Any nonevil and nonchaotic. Gather Information: 2 ranks. Knowledge (arcana): 6 ranks. Scry: 6 ranks. Spellcraft: 12 ranks. Feats: Skill Focus (Spellcraft), any metamagic feat, any item creation feat. Spellcasting: Ability to cast 5th-level arcane spells, knowledge of spells from at least five schools. Special: Membership on Cormyr's Council of Mages and a blood vow to never harm Cormyr or her Crown.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 88
+   "page": 88,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Noble Adventurer of Cormyr",
@@ -359,6 +471,9 @@
    "requirements": "Base Attack Bonus: +4. Diplomacy: 4 ranks. Knowledge (nobility and royalty): 4 ranks. Ride: 4 ranks. Special: Must be literate and possess equipment and treasure worth more than the starting equipment for a PC of their level.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 89,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_b.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -377,6 +492,9 @@
    "requirements": "Patron: Bright Nydra (Selune). Alignment: Chaotic good. Base Fortitude Save: +5. Base Will Save: +5. Handle Animal: 3 ranks. Knowledge (nature): 5 ranks. Wilderness Lore: 3 ranks. Spellcasting: Ability to cast 2nd-level divine spells and access to the Good, Protection, Travel, or Chaos domain.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 91,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_b.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -396,6 +514,9 @@
    "requirements": "Alignment: Any nonevil and nonchaotic. Base Attack Bonus: +5. Hide: 3 ranks. Innuendo: 1 rank. Intuit Direction: 1 rank. Move Silently: 3 ranks. Ride: 5 ranks. Spot: 3 ranks. Wilderness Lore: 5 ranks. Feats: Alertness, Track. Special: Membership in the Purple Dragons; must be literate.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 93,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_b.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -414,6 +535,9 @@
    "requirements": "Race: Gnome. Intimidate: 10 ranks. Knowledge (history): 5 ranks. Feats: Armor Proficiency (heavy), Diehard, Endurance, Power Attack, Toughness, Weapon Focus (any melee weapon). Special: Must sever all ties with family and forsake all personal wealth and possessions (except armor, melee weapons, and combat-augmenting magic items).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 95,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_b.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -432,6 +556,9 @@
    "requirements": "Alignment: Chaotic evil, chaotic neutral, or neutral evil. Craft (leatherworking): 1 rank. Knowledge (nature): 5 ranks. Swim: 8 ranks. Feats: Exotic Weapon Proficiency (sharktooth gauntlet), Skill Focus (Swim). Special: Must slay a shark of at least Large size in single combat and craft a war-helmet and sharktooth gauntlets from its body.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 96,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_b.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -451,6 +578,9 @@
    "requirements": "Alignment: Any good. Base Attack: +5. Handle Animal: 4 ranks. Hide: 2 ranks. Move Silently: 2 ranks. Ride: 8 ranks. Feats: Mounted Combat, Track, Trample, Two-Weapon Fighting.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 99,
+   "issue": 317,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #317.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_b.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -468,7 +598,10 @@
    "hit_die": "d8",
    "requirements": "Race: Hobgoblin. Feats: Leadership, Weapon Focus (longsword). Special: Ability to cast 3rd-level divine spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 102
+   "page": 102,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Knight of the Chase",
@@ -476,7 +609,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Chaotic good. Base Attack Bonus: +6. Handle Animal: 4 ranks. Ride: 4 ranks. Feats: Weapon Focus (longsword). Special: Must be an ardent worshiper of Trithereon who has performed some great undertaking in his name.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 105
+   "page": 105,
+   "issue": 297,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #297.pdf",
+   "issue_ocr_available": false
   },
   {
    "name": "Mask of Johydee",
@@ -484,7 +620,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Neutral good. Base Attack Bonus: +5. Disguise: 6 ranks. Gather Information: 6 ranks. Spot: 4 ranks. Feats: Alertness, Skill Focus (Bluff, Diplomacy, or Gather Information). Special: Must be an ardent worshiper of Johydee and speak Old Oeridian.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 110
+   "page": 110,
+   "issue": 302,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #302.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Barber",
@@ -492,7 +631,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +3. Skills: Bluff 5 ranks, Diplomacy 5 ranks, Disguise 5 ranks, Gather Information 8 ranks, Heal 2 ranks, Profession (barber) 2 ranks. Feat: Investigator or Negotiator.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 112
+   "page": 112,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Corsair",
@@ -500,7 +642,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +4. Skills: Balance 4 ranks, Climb 4 ranks, Intimidate 6 ranks, Use Rope 4 ranks. Feats: Two-Weapon Fighting, Weapon Finesse, Weapon Focus (scimitar).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 113
+   "page": 113,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Holy Slayer",
@@ -508,7 +653,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any lawful. Base Attack Bonus: +4. Skills: Disguise 2 ranks, Hide 2 ranks, Intimidate 8 ranks, Knowledge (religion) 2 ranks, Move Silently 2 ranks. Feat: Weapon Focus (the slayer brotherhood's chosen one-handed weapon).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 115
+   "page": 115,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Mamluk",
@@ -516,7 +664,10 @@
    "hit_die": "d12",
    "requirements": "Alignment: Any lawful. Base Attack Bonus: +5. Base Fortitude Saving Throw: +4. Skills: Knowledge (history) 4 ranks, Survival 4 ranks. Feats: Great Fortitude, Toughness.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 117
+   "page": 117,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Dragonmark Heir",
@@ -524,7 +675,10 @@
    "hit_die": "d8",
    "requirements": "Race: Member of the appropriate dragonmarked race and house. Skills: 7 ranks in any two skills. Feats: Favored in House, Least Dragonmark.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 121
+   "page": 121,
+   "issue": 320,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #320.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Ranger of the Night's Watch",
@@ -532,7 +686,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +4. Knowledge (local - the Ice Wall): 4 ranks. Ride: 6 ranks. Feat: Endurance. Special: Must take the oath of the Night's Watch and remain obedient to its officers.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 127
+   "page": 127,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Invisible Blade",
@@ -540,7 +697,10 @@
    "hit_die": "d6",
    "requirements": "Bluff: 8 ranks. Sense Motive: 6 ranks. Feats: Point Blank Shot, Far Shot, Weapon Focus (dagger, kukri, or punching dagger). Special: Must defeat an opponent of CR equal to his character level in single combat using only daggers, kukris, or punching daggers.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 131
+   "page": 131,
+   "issue": 303,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #303.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Occult Slayer",
@@ -548,7 +708,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (arcana): 4 ranks. Spellcraft: 3 ranks. Feats: Improved Initiative, Weapon Focus (any). Special: The candidate (or someone close to her) must have been brought to 0 hit points or below by a magical attack.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 132
+   "page": 132,
+   "issue": 303,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #303.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Reaping Mauler",
@@ -556,7 +719,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +5. Escape Artist: 8 ranks. Tumble: 5 ranks. Feats: Clever Wrestling, Improved Unarmed Strike. Special: Must have defeated at least three opponents one size category larger than himself with his bare hands.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 134
+   "page": 134,
+   "issue": 303,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #303.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Master Siege Engineer",
@@ -564,7 +730,10 @@
    "hit_die": "d10",
    "requirements": "Feats: Skill Focus (Profession [siege engineer]). Craft (siege weaponry): 4 ranks. Knowledge (architecture and engineering): 4 ranks. Profession (siege engineer): 8 ranks. Spot: 4 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 135
+   "page": 135,
+   "issue": 295,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #295.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Duelist",
@@ -572,7 +741,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +6. Skills: Perform 3 ranks, Tumble 5 ranks. Feats: Dodge, Weapon Proficiency (rapier), Ambidexterity, Mobility.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 136
+   "page": 136,
+   "issue": 275,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #275.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Bowman Charger",
@@ -580,7 +752,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +6. Skills: Handle Animal 8 ranks, Ride 8 ranks. Feats: Mounted Archery, Mounted Combat, Ride-By Attack, Weapon Focus (composite shortbow).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 139
+   "page": 139,
+   "issue": 325,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #325.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Oppressor",
@@ -588,7 +763,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any evil. Base Attack Bonus: +5. Intimidate: 8 ranks. Feats: Improved Grapple, Improved Unarmed Strike, Persuasive. Sneak Attack: +1d6. Special: Must have killed someone in public and be a known killer in at least one region.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 143
+   "page": 143,
+   "issue": 312,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #312.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Poisoner",
@@ -596,7 +774,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Any evil. Bluff: 5 ranks. Craft (poisonmaking): 8 ranks. Sleight of Hand: 8 ranks. Feat: Exotic Weapon Proficiency (blowgun). Special: Must have used poison to kill a specific person.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 144
+   "page": 144,
+   "issue": 312,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #312.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Replacement Killer",
@@ -604,7 +785,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Any evil. Bluff: 8 ranks. Diplomacy: 5 ranks. Disguise: 8 ranks. Knowledge (nobility and royalty): 3 ranks. Sense Motive: 5 ranks. Feats: Deceitful, Skill Focus (Disguise).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 146
+   "page": 146,
+   "issue": 312,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #312.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Poison Fist",
@@ -612,7 +796,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Any non-good. Base Attack Bonus: +3. Hide: 8 ranks. Intimidate: 5 ranks. Move Silently: 8 ranks. Feats: Dodge, Improved Unarmed Strike, Great Fortitude, Mobility, Stunning Fist (or monk's stunning attack). Special: Must choose a poison fist clan (Snake, Scorpion, or Spider).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 150
+   "page": 150,
+   "issue": 289,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #289.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Ghost-Faced Killer",
@@ -620,7 +807,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any evil. Base Attack Bonus: +5. Hide: 6 ranks. Concentration: 4 ranks. Intimidate: 4 ranks. Move Silently: 6 ranks. Feats: Death Blow, Improved Initiative, Power Attack, Quick Draw.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 152
+   "page": 152,
+   "issue": 289,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #289.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Weightless Foot",
@@ -628,7 +818,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any non-chaotic, non-evil. Base Attack Bonus: +4. Base Reflex Save: +2. Balance: 8 ranks. Climb: 4 ranks. Concentration: 4 ranks. Jump: 6 ranks. Tumble: 4 ranks. Feats: Dodge, Iron Will, Mobility, Point Blank Shot. Special: Must have the evasion special ability.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 155
+   "page": 155,
+   "issue": 289,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #289.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Nightsong Infiltrator",
@@ -636,7 +829,10 @@
    "hit_die": "d6",
    "requirements": "Open Locks: 10 ranks. Move Silently: 6 ranks. Disable Device: 4 ranks. Pick Pocket: 5 ranks. Feats: Alertness. Special: Must complete three months of training with the Nightsong Guild and contribute 10% of all earnings.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 157
+   "page": 157,
+   "issue": 294,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #294.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Nightsong Enforcer",
@@ -644,7 +840,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Move Silently: 10 ranks. Hide: 10 ranks. Feats: Improved Initiative, Quick Draw. Special: Must complete three months of training with the Nightsong Guild and contribute 10% of all earnings.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 159
+   "page": 159,
+   "issue": 293,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #293.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Crane)",
@@ -652,7 +851,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Crane): Combat Expertise, Dodge, Balance 5 ranks, Jump 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 162
+   "page": 162,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Dragon)",
@@ -660,7 +862,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Dragon): Weapon Focus (unarmed strike), Concentration 4 ranks, Intimidate 3 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 163
+   "page": 163,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Mantis)",
@@ -668,7 +873,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Mantis): Combat Expertise, Improved Trip, Concentration 2 ranks, Escape Artist 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 164
+   "page": 164,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Monkey)",
@@ -676,7 +884,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Monkey): Weapon Focus (quarterstaff), Balance 5 ranks, Tumble 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 164
+   "page": 164,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Panther)",
@@ -684,7 +895,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Panther): Improved Initiative, Hide 5 ranks, Move Silently 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 165
+   "page": 165,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Snake)",
@@ -692,7 +906,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Snake): Stunning Fist, Concentration 4 ranks, Heal 2 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 165
+   "page": 165,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shen (Tiger)",
@@ -700,7 +917,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 2 ranks. Survival: 3 ranks. Feat: Improved Unarmed Strike. Additional (Tiger): Power Attack, Concentration 2 ranks, Intimidate 4 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 166
+   "page": 166,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Acolyte of the Fist",
@@ -709,6 +929,9 @@
    "requirements": "Alignment: Any lawful. Tumble: 8 ranks. Jump: 8 ranks. Feats: Improved Unarmed Strike, Iron Will, Stunning Fist. Special: Once begun, cannot advance in another class until all ten levels are gained.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 168,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_c.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -727,6 +950,9 @@
    "requirements": "Unarmed Base Attack Bonus: +4/+1. Knowledge (religion): 4 ranks. Feats: Improved Unarmed Strike, Deflect Arrows, Dodge. Alignment: Lawful evil. Special: Must undergo the grisly secret initiation known as the \"Oath.\"",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 171,
+   "issue": 299,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #299.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_c.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -745,6 +971,9 @@
    "requirements": "Unarmed Base Attack Bonus: +4/+1. Feats: Improved Unarmed Strike, Deflect Arrows, Expertise, Improved Disarm. Alignment: Any lawful. Special: Must obtain permission to join the order at one of its chapter houses.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 172,
+   "issue": 299,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #299.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_c.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -764,6 +993,9 @@
    "requirements": "Alignment: Any nonlawful. Base Attack Bonus: +8. Wilderness Lore: 5 ranks. Feats: Improved Unarmed Strike, Iron Will. Special: Ability to rage 2/day.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 175,
+   "issue": 295,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #295.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_c.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -782,7 +1014,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +6. Escape Artist: 5 ranks. Feats: Improved Unarmed Strike, Power Attack, Stunning Fist.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 176
+   "page": 176,
+   "issue": 295,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #295.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Brawler",
@@ -790,7 +1025,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +7. Intimidate: 5 ranks. Feats: Alertness, Combat Reflexes, Improved Unarmed Strike.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 177
+   "page": 177,
+   "issue": 295,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #295.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Cave Stalker",
@@ -798,7 +1036,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Feats: Blind-Fight, Track. Race: Dwarf. Craft (trapmaking): 5 ranks. Move Silently: 5 ranks. Wilderness Lore: 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 179
+   "page": 179,
+   "issue": 292,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #292.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Fiend Binder",
@@ -806,7 +1047,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any evil. Feats: Iron Will. Race: Orc or half-orc. Animal Empathy: 8 ranks. Intimidate: 4 ranks. Spellcasting: Ability to cast summon monster I or summon nature's ally I.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 181
+   "page": 181,
+   "issue": 292,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #292.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Prairie Runner",
@@ -814,7 +1058,10 @@
    "hit_die": "d8",
    "requirements": "Feats: Endurance, Run. Race: Halfling. Intuit Direction: 4 ranks. Wilderness Lore: 8 ranks. Special: Must spend three days alone on the prairie.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 182
+   "page": 182,
+   "issue": 292,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #292.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Elder Druid",
@@ -822,7 +1069,10 @@
    "hit_die": "d4",
    "requirements": "Alignment: Any nonevil. Knowledge (arcana): 10 ranks. Knowledge (history): 5 ranks. Feats: Skill Focus (Knowledge [history]). Spellcasting: Must be able to cast spells. Special: Must be nominated and trained by another Elder Druid and forsake all other loyalties to any political power, nation, or deity.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 186
+   "page": 186,
+   "issue": 286,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #286.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Mystic",
@@ -830,7 +1080,10 @@
    "hit_die": "d6",
    "requirements": "Spellcraft: 10 ranks. Knowledge (arcana): 10 ranks. Knowledge (religion): 5 ranks. Feats: Spell Penetration, Spell Focus, one metamagic feat, and one item creation feat.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 187
+   "page": 187,
+   "issue": 274,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #274.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Aeromancer",
@@ -838,7 +1091,10 @@
    "hit_die": "d4",
    "requirements": "Knowledge (arcana): 14 ranks. Knowledge (nature): 5 ranks. Feats: Any two metamagic feats. Special: Access to and ability to cast gust of wind and control weather.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 194
+   "page": 194,
+   "issue": 308,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #308.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Eldritch Master",
@@ -846,7 +1102,10 @@
    "hit_die": "d4",
    "requirements": "Knowledge (arcana): 8 ranks. Spellcraft: 6 ranks. Diplomacy: 2 ranks. Intimidate: 2 ranks. Spellcasting: Must be able to cast arcane spells. Special: Must have made a pact or bargain with some powerful, otherworldly entity.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 197
+   "page": 197,
+   "issue": 280,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #280.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shaper of Form",
@@ -854,7 +1113,10 @@
    "hit_die": "d6",
    "requirements": "Skills: Craft (alchemy) 5 ranks, Craft (any other) 8 ranks, Knowledge (arcana) 5 ranks. Feats: Great Fortitude, Spell Focus (transmutation). Spells: Ability to cast six spells from the transmutation school. Special: Must have been contacted by the spirits of form.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 198
+   "page": 198,
+   "issue": 326,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #326.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Force Missile Mage",
@@ -862,7 +1124,10 @@
    "hit_die": "d4",
    "requirements": "Skills: Concentration 9 ranks, Spellcraft 9 ranks. Feat: Combat Casting. Spells: Ability to cast magic missile once per day.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 202
+   "page": 202,
+   "issue": 328,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #328.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Earthshaker",
@@ -870,7 +1135,10 @@
    "hit_die": "d8",
    "requirements": "Knowledge (dungeoneering): 6 ranks. Knowledge (nature): 12 ranks. Spells: Ability to cast soften earth and stone. Language: Terran.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 206
+   "page": 206,
+   "issue": 314,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #314.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Icesinger",
@@ -878,7 +1146,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Any non-good. Concentration: 9 ranks. Perform (any one): 9 ranks. Feats: Iron Will plus either Skill Focus (Concentration) or Skill Focus (Perform [any]). Special: Bardic music ability.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 207
+   "page": 207,
+   "issue": 314,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #314.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Firestorm Berserker",
@@ -886,7 +1157,10 @@
    "hit_die": "d12",
    "requirements": "Alignment: Any chaotic. Base Attack Bonus: +8. Intimidate: 6 ranks. Feats: Iron Will, Great Fortitude, Toughness. Special: Rage 3 times/day.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 208
+   "page": 208,
+   "issue": 314,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #314.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Purebreath Devotee",
@@ -894,7 +1168,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (nature): 4 ranks. Feats: Endurance, Iron Will. Special: Must go three days without eating, drinking, or using magic items that prevent hunger or thirst.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 210
+   "page": 210,
+   "issue": 314,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #314.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Flame Steward",
@@ -902,7 +1179,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any non-evil. Heal: 8 ranks. Knowledge (religion): 5 ranks. Knowledge (arcana): 5 ranks. Feats: Endurance, Power Attack.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 212
+   "page": 212,
+   "issue": 283,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #283.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Darkwater Knight",
@@ -910,7 +1190,10 @@
    "hit_die": "d6",
    "requirements": "Patron Deity: Any nature deity. Knowledge (nature): 6 ranks. Survival: 6 ranks. Swim: 6 ranks. Feats: Skill Focus (Swim), Water Focus. Language: Aquan. Spells: Ability to cast at least three spells with the Water descriptor (one of at least 2nd level).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 215
+   "page": 215,
+   "issue": 314,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #314.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Master Astrologer",
@@ -918,7 +1201,10 @@
    "hit_die": "d4",
    "requirements": "Skills: Knowledge (the planes) 4 ranks, Sense Motive 4 ranks, Profession (astrologer) 8 ranks. Feats: Skill Focus (Profession [astrologer]). Spells: Able to prepare spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 219
+   "page": 219,
+   "issue": 340,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #340.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Rage Mage",
@@ -926,7 +1212,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Any non-lawful. Base Attack: +5. Feat: Combat Casting. Special Ability: Rage. Note: Must be able to cast at least 1st-level arcane spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 224
+   "page": 224,
+   "issue": 277,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #277.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Psi-Hunter",
@@ -934,7 +1223,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Knowledge (psionics): 3 ranks. Feats: Track, Iron Will. Spellcasting: Must be able to cast arcane spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 227
+   "page": 227,
+   "issue": 281,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #281.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Truth Seeker",
@@ -942,7 +1234,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any non-evil. Base Attack: +5. Feats: Improved Unarmed Strike, Combat Reflexes, Dual Strike. Skills: Diplomacy 8 ranks, Sense Motive 4 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 230
+   "page": 230,
+   "issue": 281,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #281.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Zerth Cenobite",
@@ -950,7 +1245,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +4. Knowledge (the planes): 8 ranks. Feats: Improved Unarmed Strike, Deflect Arrows, Dodge, Mobility. Alignment: Any lawful. Special: Must find the Monastery of Zerth'Ad'Lun, be accepted by the sensei, and complete a unique trial.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 238
+   "page": 238,
+   "issue": 281,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #281.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Arcanopath Monk",
@@ -958,7 +1256,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +4. Knowledge (arcana): 8 ranks. Feats: Improved Unarmed Strike, Deflect Arrows, Dodge, Mobility. Alignment: Any lawful. Special: Must find the Monastery of Finithamon, be accepted by the sensei, and have slain an arcane spellcaster.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 240
+   "page": 240,
+   "issue": 281,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #281.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Spirit Speaker",
@@ -966,7 +1267,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +4. Base Will Save: +2. Skills: Diplomacy 3 ranks, Knowledge (arcana) 1 rank, Knowledge (nature) 1 rank.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 244
+   "page": 244,
+   "issue": 323,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #323.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Master of the Secret Sound",
@@ -974,7 +1278,10 @@
    "hit_die": "d6",
    "requirements": "Knowledge (arcana): 5 ranks. Listen: 5 ranks. Perform: 8 ranks. Spellcraft: 5 ranks. Feats: Alertness. Spellcasting: Must be able to cast 5th-level spells, five of which are sonic or language-dependent. Special: Must undergo a secret ritual each new level.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 246
+   "page": 246,
+   "issue": 297,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #297.pdf",
+   "issue_ocr_available": false
   },
   {
    "name": "Worldspeaker",
@@ -982,7 +1289,10 @@
    "hit_die": "d6",
    "requirements": "Concentration: 8 ranks. Decipher Script: 8 ranks. Knowledge (history): 4 ranks. Knowledge (nature): 4 ranks. Special: Must speak, read, and write three languages not on the character's racial bonus-language list.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 249
+   "page": 249,
+   "issue": 311,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #311.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Mourner",
@@ -990,7 +1300,10 @@
    "hit_die": "d6",
    "requirements": "Diplomacy: 8 ranks. Knowledge (religion): 5 ranks. Perform: 8 ranks. Special: Must have the bardic music ability.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 250
+   "page": 250,
+   "issue": 311,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #311.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Memory Smith",
@@ -998,7 +1311,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any good. Craft (weaponsmithing or armorsmithing): 5 ranks. Knowledge (religion): 3 ranks. Perform: 8 ranks. Use Magic Device: 5 ranks. Patron Deity: Must worship Moradin above all other gods.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 251
+   "page": 251,
+   "issue": 311,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #311.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Battle Howler of Gruumsh",
@@ -1006,7 +1322,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any chaotic. Knowledge (religion): 2 ranks. Perform: 8 ranks. Feats: Cleave, Power Attack. Patron Deity: Must worship Gruumsh above all other gods.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 252
+   "page": 252,
+   "issue": 311,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #311.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Green Whisperer",
@@ -1014,7 +1333,10 @@
    "hit_die": "d6",
    "requirements": "Alignment: Any neutral. Knowledge (nature): 8 ranks. Perform: 8 ranks. Survival: 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 253
+   "page": 253,
+   "issue": 311,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #311.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Charlatan",
@@ -1022,7 +1344,10 @@
    "hit_die": "d6",
    "requirements": "Skills: Bluff 8 ranks, Knowledge (arcana) 2 ranks or Knowledge (religion) 2 ranks, Perform (act) 4 ranks, Spellcraft 2 ranks. Feat: Skill Focus (Bluff).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 255
+   "page": 255,
+   "issue": 335,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #335.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Jester",
@@ -1030,7 +1355,10 @@
    "hit_die": "d6",
    "requirements": "Perform (comedy): 13 ranks. Perform (any other): 13 ranks. Bluff: 6 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 260
+   "page": 260,
+   "issue": 330,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #330.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Aerial Avenger",
@@ -1038,7 +1366,10 @@
    "hit_die": "d8",
    "requirements": "Base Reflex Save: +3. Skills: Tumble 5 ranks. Feats: Dodge, Mobility. Special: Must have a fly speed or the ability to cast fly at least twice per day.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 264
+   "page": 264,
+   "issue": 319,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #319.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Infused",
@@ -1046,7 +1377,10 @@
    "hit_die": "d12 (warrior) / d8 (spellcaster)",
    "requirements": "Base Attack Bonus: +4. Base Will Save: +2. Alignment: Any (cannot advance while evil). Special: Must share her soul with the personality of a particular celestial. Two paths (Infused Warrior / Infused Spellcaster) with identical requirements.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 267
+   "page": 267,
+   "issue": 321,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #321.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Whitehorn",
@@ -1054,7 +1388,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Chaotic good. Gender: Female. Ride: 8 ranks. Feats: Mounted Combat. Special: Must have ridden a unicorn at some time in her life.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 276
+   "page": 276,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Follower of the Skyserpent",
@@ -1062,7 +1399,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Lawful good. Concentration: 8 ranks. Sense Motive: 8 ranks. Spellcraft: 8 ranks. Spellcasting: Ability to cast 2nd-level arcane or divine spells. Special: Must have caught a villain red-handed, defeated him unaided, and received the blessing of a couatl.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 277
+   "page": 277,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Tree-Friend",
@@ -1070,7 +1410,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Chaotic good, chaotic neutral, or neutral good. Wilderness Lore: 8 ranks. Knowledge (nature): 8 ranks. Special: Must have saved a dryad's bound tree from destruction or corruption.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 277
+   "page": 277,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Artist's Vengeance",
@@ -1078,7 +1421,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Chaotic good. Perform: 8 ranks. Intimidate: 8 ranks. Class Feature: Bardic music ability. Special: The candidate's art must have been attacked, unfairly critiqued, or destroyed by another force.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 279
+   "page": 279,
+   "issue": 307,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #307.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Justicar",
@@ -1086,7 +1432,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Any lawful. Base Attack Bonus: +6. Feats: Track, Skill Focus (Gather Information). Wilderness Lore: 5 ranks. Gather Information: 5 ranks. Search: 5 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 281
+   "page": 281,
+   "issue": 290,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #290.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Sworn Slayer",
@@ -1094,7 +1443,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +6. Skills: Knowledge (appropriate to the chosen creature type) 4 ranks, Sense Motive 4 ranks. Special: Must swear a vow to destroy all creatures of a chosen kind in response to a great loss suffered at their claws.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 288
+   "page": 288,
+   "issue": 324,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #324.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Darkwood Stalker",
@@ -1102,7 +1454,10 @@
    "hit_die": "d8",
    "requirements": "Base Attack Bonus: +5. Feats: Dodge, Track. Race: Elf or half-elf. Hide: 5 ranks. Listen: 5 ranks. Move Silently: 5 ranks. Spot: 5 ranks. Wilderness Lore: 5 ranks. Speak Language: Orc.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 291
+   "page": 291,
+   "issue": 292,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #292.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Omatu Master",
@@ -1110,7 +1465,10 @@
    "hit_die": "d8",
    "requirements": "Race: Halfling. Base Attack Bonus: +4. Skill: Perform (dance) 2 ranks. Feats: Improved Trip, Improved Unarmed Strike, Skill Focus (Tumble), Stunning Fist. Special: Must have fought a Medium or larger opponent using only unarmed strikes and take an oath to protect the Docrae community.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 293
+   "page": 293,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Hunter of the Dead",
@@ -1118,7 +1476,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Any non-evil. Base Attack: +5. Knowledge (undead): 5 ranks. Special Ability: Must be able to turn undead. Special: Must have lost one level or ability score point to the draining power of the undead.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 295
+   "page": 295,
+   "issue": 276,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #276.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Luminaire",
@@ -1126,7 +1487,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Chaotic good. Base Attack Bonus: +3. Diplomacy: 4 ranks. Knowledge (any one): 7 ranks. Feats: Combat Expertise. Special: Must be a member of La Lumiere.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 298
+   "page": 298,
+   "issue": 315,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #315.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Dragonscribe",
@@ -1134,7 +1498,10 @@
    "hit_die": "d4",
    "requirements": "Diplomacy: 7 ranks. Knowledge (arcana): 13 ranks. Feats: Spell Penetration, Iron Will. Language: Draconic. Special: Must have personally observed at least three different kinds of dragons and be able to cast a 2nd-level or higher arcane spell from the Abjuration, Conjuration, and Divination schools.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 300
+   "page": 300,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Knight of the Scale",
@@ -1142,7 +1509,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Any good. Base Attack Bonus: +6. Knowledge (arcana): 4 ranks. Ride: 9 ranks. Feats: Mounted Combat, Weapon Focus (lance, heavy). Special: Must have killed a young adult or older dragon and commissioned armor made from its scales.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 302
+   "page": 302,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Heartseeker",
@@ -1150,7 +1520,10 @@
    "hit_die": "d6",
    "requirements": "Base Attack Bonus: +4. Concentration: 8 ranks. Knowledge (arcana): 8 ranks. Listen: 5 ranks. Spot: 5 ranks. Feats: Combat Casting, Spell Penetration, Weapon Focus (any bow). Spellcasting: Ability to cast arcane spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 305
+   "page": 305,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Vengeance Sworn",
@@ -1158,7 +1531,10 @@
    "hit_die": "d10",
    "requirements": "Base Attack Bonus: +6. Intimidate: 5 ranks. Knowledge (arcana): 5 ranks. Wilderness Lore: 5 ranks. Feats: Ambidexterity, Two-Weapon Fighting, Expertise. Special Ability: Rage. Spellcasting: Ability to cast 1st-level divine spells. Special: Must have been killed by a dragon or had a loved one killed by a dragon.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 305
+   "page": 305,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Wormhunter",
@@ -1166,7 +1542,10 @@
    "hit_die": "d8",
    "requirements": "Special: Must meet at least two of the following five criteria - base attack bonus +7; able to cast 4th-level divine spells; Knowledge (religion) 10 ranks; base Fortitude save +4; sneak attack +4d6. Special: Must have read through a copy of the Apostolic Scrolls.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 307
+   "page": 307,
+   "issue": 338,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #338.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Dragonkith",
@@ -1174,7 +1553,10 @@
    "hit_die": "d8",
    "requirements": "Language: Draconic. Base Attack Bonus: +6. Knowledge (arcana): 4 ranks. Feats: Alertness, Endurance. Special: Must be chosen by a dragon of the same alignment (loses all class abilities if the bond ends or the dragon dies).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 311
+   "page": 311,
+   "issue": 284,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #284.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Faceless One",
@@ -1182,7 +1564,10 @@
    "hit_die": "d8",
    "requirements": "Race: Any humanoid or monstrous humanoid. Alignment: Any evil. Bluff: 8 ranks. Disguise: 8 ranks. Spells: Must be able to cast alter self. Special: Must be accepted into the cult of the Faceless Ones and pass himself off as a person of importance for at least three days without magic.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 312
+   "page": 312,
+   "issue": 300,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #300.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Deep Thrall",
@@ -1190,7 +1575,10 @@
    "hit_die": "d10",
    "requirements": "Alignment: Neutral evil. Race: Any humanoid or monstrous humanoid. Sense Motive: 5 ranks. Swim: 8 ranks. Language: Aquan. Special: Must make friendly contact with a kraken (or be its slave) and accept being scarred by its tentacle.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 314
+   "page": 314,
+   "issue": 300,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #300.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Shoal Servant",
@@ -1198,7 +1586,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Neutral evil. Base Attack Bonus: +5. Feats: Great Fortitude. Patron: Blibdoolpoolp. Race: Any humanoid. Spellcasting: Must be able to cast divine spells. Special: Must stand at the seashore through three tides and be blessed by a kuo-toan cleric.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 316
+   "page": 316,
+   "issue": 300,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #300.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Tiger Mask",
@@ -1206,7 +1597,10 @@
    "hit_die": "d8",
    "requirements": "Alignment: Lawful evil. Race: Any non-monstrous humanoid. Diplomacy: 5 ranks. Gather Information: 8 ranks. Language: Infernal. Spellcasting: Must be able to cast 2nd-level spells. Special: Must make friendly contact with a rakshasa and undergo a scarring ritual.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 318
+   "page": 318,
+   "issue": 300,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #300.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Sphere Minion",
@@ -1214,7 +1608,10 @@
    "hit_die": "d6",
    "requirements": "Race: Any humanoid or monstrous humanoid. Alignment: Lawful evil. Patron: The Great Mother. Knowledge (arcana): 8 ranks. Spot: 4 ranks. Feats: Alertness, Weapon Focus (ray).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 322
+   "page": 322,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Illithidkin",
@@ -1222,7 +1619,10 @@
    "hit_die": "d6",
    "requirements": "Race: Any humanoid or monstrous humanoid. Alignment: Lawful evil. Patron: Ilsensine. Concentration: 8 ranks. Knowledge (psionics): 8 ranks. Special: Must willingly consume the brain of a sentient creature.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 323
+   "page": 323,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Snake Servant",
@@ -1230,7 +1630,10 @@
    "hit_die": "d8",
    "requirements": "Race: Any humanoid or monstrous humanoid. Alignment: Lawful evil. Patron: Shekenster. Base Attack Bonus: +5. Bluff: 5 ranks. Disguise: 5 ranks. Special: Must undergo a ceremony in which a medusa poisons him until his Strength is reduced to 0.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 324
+   "page": 324,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Waker of the Beast",
@@ -1238,7 +1641,10 @@
    "hit_die": "d12",
    "requirements": "Race: Any humanoid or monstrous humanoid. Alignment: Any evil. Base Attack Bonus: +7. Feats: Power Attack, Toughness.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 325
+   "page": 325,
+   "issue": 296,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #296.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Flesheater",
@@ -1246,7 +1652,10 @@
    "hit_die": "d8",
    "requirements": "Race: Halfling. Alignment: Chaotic evil. Move Silently: 8 ranks. Hide: 8 ranks. Feats: Evil Brand, Willing Deformity, Improved Unarmed Strike. Special: Must have all of their teeth sharpened to points.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 328
+   "page": 328,
+   "issue": 300,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #300.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Lifedrinker",
@@ -1254,7 +1663,10 @@
    "hit_die": "d12",
    "requirements": "Alignment: Any evil. Knowledge (arcana): 6 ranks. Spellcraft: 6 ranks. Special: Must have the vampire template.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 329
+   "page": 329,
+   "issue": 288,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #288.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "The Tainted",
@@ -1262,7 +1674,10 @@
    "hit_die": "d10 (warrior) / d6 (spellcaster)",
    "requirements": "Alignment: Any nonevil. Base Attack Bonus: +2. Base Will Save: +1. Special: Must share his soul with the personality of a particular fiend. Two paths (Tainted Warrior / Tainted Spellcaster) with identical requirements.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 332
+   "page": 332,
+   "issue": 302,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #302.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Osteomancer",
@@ -1270,7 +1685,10 @@
    "hit_die": "d8",
    "requirements": "Spellcasting: Ability to cast at least five transmutation spells, one of which is 3rd-level or higher. Skills: Heal 4 ranks, Knowledge (arcana) 4 ranks, Knowledge (nature) 4 ranks. Feat: Toughness.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 341
+   "page": 341,
+   "issue": 317,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #317.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Flux Adept",
@@ -1278,7 +1696,10 @@
    "hit_die": "d6",
    "requirements": "Spellcasting: Ability to cast 2nd-level spells. Skills: Heal 5 ranks, Knowledge (arcana) 7 ranks. Feats: At least one metamagic feat, Endurance, Great Fortitude.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 344
+   "page": 344,
+   "issue": 317,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #317.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Cerebrex",
@@ -1286,7 +1707,10 @@
    "hit_die": "d4",
    "requirements": "Spellcasting: Ability to cast 3rd-level arcane spells. Skills: Concentration 8 ranks, Craft (alchemy) 4 ranks, Knowledge (arcana) 8 ranks, Spellcraft 8 ranks.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 346
+   "page": 346,
+   "issue": 317,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #317.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Dwarven Thane",
@@ -1294,7 +1718,10 @@
    "hit_die": "d10",
    "requirements": "Race: Dwarf. Base Attack Bonus: +6. Feats: Ambidexterity, Power Attack, Two-Weapon Fighting, Weapon Focus (any axe), Weapon Focus (any hammer). Knowledge (religion): 5 ranks. Special: Must be a devout follower of a dwarven deity or of earth spirits.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 349
+   "page": 349,
+   "issue": 299,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #299.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Orc Blademaster",
@@ -1302,7 +1729,10 @@
    "hit_die": "d8",
    "requirements": "Race: Orc or half-orc. Base Attack Bonus: +6. Knowledge (religion): 5 ranks. Feats: Dodge, Exotic Weapon Proficiency (bastard sword), Mobility, Spring Attack, Expertise.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
-   "page": 350
+   "page": 350,
+   "issue": 299,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #299.pdf",
+   "issue_ocr_available": true
   },
   {
    "name": "Kabuki Warrior",
@@ -1311,6 +1741,9 @@
    "requirements": "Base Attack Bonus: +5 or better. Bluff: 5 ranks. Perform: 5 ranks. Tumble: 3 ranks. Feats: Dodge, Expertise, Mobility, Spring Attack. Special: The ability to cast three Illusion spells.",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 353,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_d.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [
@@ -1329,6 +1762,9 @@
    "requirements": "Alignment: Any nonchaotic, nonlawful (loses all class abilities if she becomes lawful or chaotic). Base Attack Bonus: +6 or better. Concentration: 3 ranks. Knowledge (religion): 3 ranks. Feats: Iron Will, Toughness, Weapon Focus (greatsword).",
    "citation": "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 \u2014 a compilation of the 3.0/3.5e prestige classes from Dragon Magazine #274-353. Vision-transcribed from the PDF page images (321/355 pages are image-only and the rest carry corrupt OCR). Book RAW, read off the page. `page` is the PDF page.",
    "page": 355,
+   "issue": 298,
+   "issue_source_key": "Dragon Magazine/Dragon Magazine #298.pdf",
+   "issue_ocr_available": true,
    "source_path": "reference/prestige_fulltext_batch_d.md",
    "pdf_source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
    "description_pages": [

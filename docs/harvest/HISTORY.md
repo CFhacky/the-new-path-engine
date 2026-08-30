@@ -712,3 +712,16 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   spans, description pages, separate PDF provenance, and uncapped full text.
   Codex coverage rises **13,731 → 13,747** with repository rows unchanged at
   **18,296**. All 129 unresolved classes remain explicitly empty.
+
+- **2026-08-30** — Corrected prestige-class source routing before the next
+  recovery wave. The 355-page compiled PDF remains the visual/page-citation
+  authority, but its sparse 6,200-line Markdown export is no longer an OCR
+  source. Every canonical row now records its Dragon issue and manifest key;
+  a fresh mapping check corrected Zerth Cenobite and Arcanopath Monk to Dragon
+  #281. The resolver follows each issue's manifest-declared output, derives the
+  `skipped_has_text` fallback from peer output directories, and rejects the
+  compiled export if selected. Knight of the Chase and Master of the Secret
+  Sound retain their historical #297 attribution but are explicit OCR gaps
+  because that issue extraction contains neither article. No new full
+  descriptions were generated; the accepted 16/145 descriptions and all
+  canonical mechanics remain unchanged.

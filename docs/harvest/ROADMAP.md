@@ -58,7 +58,10 @@ Suggested order:
    description spans; the three column-interleaved XPH rows remain explicit
    `NO COVERAGE`;
 2. **IN PROGRESS 2026-08-30:** prestige-class full text now has 16/145 exact,
-   visually verified batch-derived Markdown spans;
+   visually verified spans. Continue OCR-first from each row's manifest-routed
+   individual Dragon issue; use the compiled PDF only for visual verification.
+   Knight of the Chase and Master of the Secret Sound remain explicit #297
+   OCR gaps until their actual article source is located;
 3. AD&D 2e monster descriptions where page-image transcription is already
    available;
 4. GURPS 3e items and spells;
