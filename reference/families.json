@@ -271,7 +271,7 @@
       "json": "reference/magic_item_index.json",
       "markdown": "reference/magic_item_index.md",
       "entry_path": "sources[].items",
-      "expected_count": 1420
+      "expected_count": 1454
     },
     {
       "id": "maneuver",

@@ -14,7 +14,7 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 
 ## Magic Item Compendium — 842 items
 
-*Source: Magic Item Compendium (WotC, 2007), item entries.*  
+*Source: Magic Item Compendium (WotC, 2007), item entries.*
 *Harvest: ok — 842 items from Magic Item Compendium.md.*
 
 | Item | Tag | Price | Lvl | Body Slot / Property | CL | Aura | Page |
@@ -862,10 +862,10 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Gauntlets Of Ghost Fighting | — | 4,000 gp | 8th | Hands | 13th | Strong conjuration DC21 | 217 |
 | Shirt Of Wraith Stalking | — | 6,000 gp | 10th | Torso | 3rd | Faint abjuration DC16 | 217 |
 
-## Dungeon Master's Guide v3.5 — 216 items
+## Dungeon Master's Guide v3.5 — 250 items
 
-*Source: Dungeon Master's Guide v3.5, specific items and wondrous items (weapon/armor special abilities are term_harvest.py's).*  
-*Harvest: ok — 216 items from Dungeon Masters Guide v3.5.md.*
+*Source: Dungeon Master's Guide v3.5, specific items and wondrous items; rods Table 7-19 p.235 and descriptions pp.235-238; staffs Table 7-25 p.244 and descriptions pp.244-246 (weapon/armor special abilities are term_harvest.py's).*
+*Harvest: ok — 250 items from Dungeon Masters Guide v3.5.md.*
 
 | Item | Tag | Price | Lvl | Body Slot / Property | CL | Aura | Page |
 |---|---|---|---|---|---|---|---|
@@ -1085,10 +1085,44 @@ is one the OCR did not cleanly yield, recoverable from the source PDF.
 | Philosopher's Stone | — | — | — | — | 20th | Strong transmutation | 280 |
 | Talisman of the Sphere | — | — | — | — | 16th | Strong transmutation | 281 |
 | Talisman of Zagy | — | — | — | — | 20th | Strong conjuration | 281 |
+| Absorption | — | 50,000 gp | — | — | 15th | Strong abjuration | 235 |
+| Alertness | — | 85,000 gp | — | — | 11th | Moderate abjuration, divination, enchantment, and evocation | 235 |
+| Flailing | — | 50,000 gp | — | — | 9th | Moderate enchantment | 236 |
+| Lordly Might | — | 70,000 gp | — | — | 19th | Strong enchantment, evocation, necromancy, and transmutation | 236 |
+| Metamagic, Empower | — | 32,500 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Empower, Greater | — | 73,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Empower, Lesser | — | 9,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Enlarge | — | 11,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Enlarge, Greater | — | 24,500 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Enlarge, Lesser | — | 3,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Extend | — | 11,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Extend, Greater | — | 24,500 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Extend, Lesser | — | 3,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Maximize | — | 54,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Maximize, Greater | — | 121,500 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Maximize, Lesser | — | 14,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Quicken | — | 75,500 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Quicken, Greater | — | 170,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Quicken, Lesser | — | 35,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Silent | — | 11,000 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Silent, Greater | — | 24,500 gp | — | — | 17th | Strong no school | 237 |
+| Metamagic, Silent, Lesser | — | 3,000 gp | — | — | 17th | Strong no school | 237 |
+| Negation | — | 37,000 gp | — | — | 15th | Strong varied | 237 |
+| Splendor | — | 25,000 gp | — | — | 12th | Strong conjuration and transmutation | 237 |
+| Thunder and Lightning | — | 33,000 gp | — | — | 9th | Moderate evocation | 238 |
+| Wonder | — | 12,000 gp | — | — | 10th | Moderate enchantment | 238 |
+| Abjuration | — | 65,000 gp | — | — | 13th | Strong abjuration | 244 |
+| Divination | — | 73,500 gp | — | — | 13th | Strong divination | 245 |
+| Illusion | — | 65,000 gp | — | — | 13th | Strong illusion | 245 |
+| Illumination | — | 48,250 gp | — | — | 15th | Strong evocation | 245 |
+| Necromancy | — | 65,000 gp | — | — | 13th | Strong necromancy | 245 |
+| Power | — | 211,000 gp | — | — | 15th | Strong varied | 246 |
+| Swarming Insects | — | 24,750 gp | — | — | 9th | Moderate conjuration | 246 |
+| Woodlands | — | 101,250 gp | — | — | 13th | Moderate varied | 246 |
 
 ## Arms and Equipment Guide — 362 items
 
-*Source: Arms and Equipment Guide (3.0), magic items.*  
+*Source: Arms and Equipment Guide (3.0), magic items.*
 *Harvest: ok — 362 items from Arms And Equipment Guide.md.*
 
 | Item | Tag | Price | Lvl | Body Slot / Property | CL | Aura | Page |

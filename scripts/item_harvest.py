@@ -56,8 +56,9 @@ GOVERNING SOURCES
     each through its own detector. GURPS magic items remain in the separately
     labeled GURPS 3e index rather than being mixed into native D&D items. A
     configured Source whose file cannot be read prints NO COVERAGE and is never
-    improvised. The only recorded DMG limitation is the table-first rod/staff
-    pattern documented in docs/HARVEST_PROGRESS.md.
+    improvised. A dedicated additive path joins the DMG's table-first rod/staff
+    rows to their source-printed description headings without changing any
+    legacy detector row.
 """
 from __future__ import annotations
 
@@ -307,8 +308,8 @@ def detect_mic(lines: List[str], pages: List[int], book: str) -> List[Item]:
 # the nearest "Name:" colon-line above a trailer. term_harvest.py OWNS the two
 # weapon/armor "special ability" sections of this same book (the affixes), so
 # those ranges are masked here — the affixes are not re-listed as items. Rods
-# and staffs whose entries are charge tables, and ring entries the OCR garbled,
-# are an accepted partial gap (see docs/HARVEST_PROGRESS.md).
+# and staffs whose entries defeat this trailer-first grammar are recovered by
+# the additive, table-aware path below; this legacy detector remains untouched.
 # ---------------------------------------------------------------------------
 
 DMG_TRAILER = re.compile(
@@ -392,6 +393,169 @@ def detect_dmg(lines: List[str], pages: List[int], book: str) -> List[Item]:
         items.append(item)
     items.sort(key=lambda it: it.start)
     return items
+
+
+# Additive DMG table-first recovery. These rows are source-verified against
+# Tables 7-19 (PDF p.235) and 7-25 (PDF p.244) plus their own description
+# blocks. The legacy detector above remains unchanged and its rows stay first.
+# tuple: name, source heading, table aliases, price, OCR price evidence,
+#        aura, aura school(s), caster level, table page, section
+DMG_TABLE_GAP_ROWS = [
+    ("Absorption", "Absorption", ("Absorption",), "50,000 gp", ("$0,000", "50,000"), "Strong", "abjuration", "15th", 235, "rod"),
+    ("Alertness", "Alertness", ("Alertness",), "85,000 gp", ("85,000",), "Moderate", "abjuration, divination, enchantment, and evocation", "11th", 235, "rod"),
+    ("Flailing", "Flailing", ("Flailing",), "50,000 gp", ("$0,000", "50,000"), "Moderate", "enchantment", "9th", 235, "rod"),
+    ("Lordly Might", "Lordly Might", ("Lordly might",), "70,000 gp", ("70,000",), "Strong", "enchantment, evocation, necromancy, and transmutation", "19th", 235, "rod"),
+    ("Negation", "Negation", ("Negation",), "37,000 gp", ("37,000",), "Strong", "varied", "15th", 235, "rod"),
+    ("Splendor", "Splendor", ("Splendor",), "25,000 gp", ("23,000", "25,000"), "Strong", "conjuration and transmutation", "12th", 235, "rod"),
+    ("Thunder and Lightning", "Thunder and Lightning", ("Thunder and lightning",), "33,000 gp", ("33,000",), "Moderate", "evocation", "9th", 235, "rod"),
+    ("Wonder", "Wonder", ("Worder", "Wonder"), "12,000 gp", ("12,000",), "Moderate", "enchantment", "10th", 235, "rod"),
+    ("Abjuration", "Abjuration", ("Abjuration",), "65,000 gp", ("65,000",), "Strong", "abjuration", "13th", 244, "staff"),
+    ("Divination", "Divination", ("Divination",), "73,500 gp", ("73,500",), "Strong", "divination", "13th", 244, "staff"),
+    ("Illusion", "Tusion", ("illusion",), "65,000 gp", ("65,000",), "Strong", "illusion", "13th", 244, "staff"),
+    ("Illumination", "Ulumination", ("iumination", "Illumination"), "48,250 gp", ("48,250",), "Strong", "evocation", "15th", 244, "staff"),
+    ("Necromancy", "Necromancy", ("Necromancy",), "65,000 gp", ("65,000",), "Strong", "necromancy", "13th", 244, "staff"),
+    ("Power", "Power", ("Power",), "211,000 gp", ("211,000",), "Strong", "varied", "15th", 244, "staff"),
+    ("Swarming Insects", "Swarming Insects", ("Swarming insects",), "24,750 gp", ("24,750",), "Moderate", "conjuration", "9th", 244, "staff"),
+    ("Woodlands", "Woodlands", ("Woodlands",), "101,250 gp", ("101,250",), "Moderate", "varied", "13th", 244, "staff"),
+]
+
+DMG_METAMAGIC_GAPS = {
+    "Empower": (("Lesser", "9,000 gp", ("9,000",)), ("", "32,500 gp", ("32,500",)), ("Greater", "73,000 gp", ("73,000",))),
+    "Enlarge": (("Lesser", "3,000 gp", ("3,000",)), ("", "11,000 gp", ("11,000", "17,000")), ("Greater", "24,500 gp", ("24,500",))),
+    "Extend": (("Lesser", "3,000 gp", ("3,000",)), ("", "11,000 gp", ("11,000", "17,000")), ("Greater", "24,500 gp", ("24,500",))),
+    "Maximize": (("Lesser", "14,000 gp", ("14,000",)), ("", "54,000 gp", ("54,000",)), ("Greater", "121,500 gp", ("121,400", "121,500"))),
+    "Quicken": (("Lesser", "35,000 gp", ("35,000",)), ("", "75,500 gp", ("75,500",)), ("Greater", "170,000 gp", ("170,000",))),
+    "Silent": (("Lesser", "3,000 gp", ("3,000",)), ("", "11,000 gp", ("11,000",)), ("Greater", "24,500 gp", ("24,500",))),
+}
+
+DMG_METAMAGIC_TABLE_ALIASES = {
+    ("Enlarge", "Lesser"): ("Metamagic, Enlarge, lester",),
+    ("Quicken", "Lesser"): ("Metarmagic, Quicken, lesser",),
+}
+
+DMG_ROD_HEADINGS = (
+    "Absorption", "Alertness", "Cancellation", "Enemy Detection", "Flailing",
+    "Flame Extinguishing", "Immovable Rod", "Lordly Might",
+    "Metal and Mineral Detection", "Metamagic Rods", "Metamagic, Empower",
+    "Metamagic, Enlarge", "Metamagic, Extend", "Metamagic, Maximize",
+    "Metamagic, Quicken", "Metamagic, Silent", "Negation", "Python",
+    "Rulership", "Security", "Splendor", "Thunder and Lightning", "Viper",
+    "Withering", "Wonder",
+)
+DMG_STAFF_HEADINGS = (
+    "Abjuration", "Charming", "Conjuration", "Defense", "Divination",
+    "Earth and Stone", "Enchantment", "Evocation", "Fire", "Frost",
+    "Healing", "Tusion", "Ulumination", "Life", "Necromancy", "Passage",
+    "Power", "Size Alteration", "Swarming Insects", "Transmutation",
+    "Woodlands",
+)
+
+
+def _dmg_line(lines: List[str], pattern: str, start: int = 0) -> Optional[int]:
+    rx = re.compile(pattern, re.IGNORECASE)
+    return next((i for i in range(start, len(lines)) if rx.search(lines[i])), None)
+
+
+def _dmg_heading(lines: List[str], heading: str, start: int, end: int) -> Optional[int]:
+    rx = re.compile(r"^" + re.escape(heading) + r"\s*:", re.IGNORECASE)
+    return next((i for i in range(start, end) if rx.match(lines[i].strip())), None)
+
+
+def _dmg_table_evidence(lines: List[str], start: int, end: int,
+                        aliases: Tuple[str, ...],
+                        prices: Tuple[str, ...]) -> bool:
+    for raw in lines[start:end]:
+        folded = raw.casefold()
+        if (any(alias.casefold() in folded for alias in aliases)
+                and any(price.casefold() in folded for price in prices)):
+            return True
+    return False
+
+
+def _dmg_gap_specs():
+    specs = list(DMG_TABLE_GAP_ROWS)
+    for base, variants in DMG_METAMAGIC_GAPS.items():
+        for size, price, evidence in variants:
+            suffix = f", {size}" if size else ""
+            name = f"Metamagic, {base}{suffix}"
+            aliases = DMG_METAMAGIC_TABLE_ALIASES.get((base, size), (name,))
+            specs.append((name, f"Metamagic, {base}", aliases, price,
+                          evidence, "Strong", "no school", "17th", 235, "rod"))
+    return specs
+
+
+def detect_dmg_table_gaps(lines: List[str], pages: List[int], book: str,
+                          existing_names=()) -> List[Item]:
+    """Recover only the 34 table-first rows missed by detect_dmg.
+
+    A row is accepted only when its verified name/price pair is present in the
+    book's own table and its own description heading is present in the matching
+    section. OCR aliases are explicit and source-verified; output values are
+    repaired only where the PDF image itself confirms the character.
+    """
+    rod_desc = _dmg_line(lines, r"^\s*Rod Descriptions\s*$")
+    scrolls = _dmg_line(lines, r"^\s*SCROLLS\s*$", rod_desc or 0)
+    staff_start = _dmg_line(lines, r"^\s*STAFFS\s*$", scrolls or 0)
+    wands = _dmg_line(lines, r"^\s*WANDS\s*$", staff_start or 0)
+    rod_table = _dmg_line(lines, r"7-19.*Ro(?:d|p)s")
+    staff_table = _dmg_line(lines, r"7-25.*STAFFS", staff_start or 0)
+    staff_table_end = (_dmg_line(lines, r"\[PDF page \d+\]",
+                                 (staff_table + 1) if staff_table is not None else 0))
+    anchors = (rod_desc, scrolls, staff_start, wands, rod_table,
+               staff_table, staff_table_end)
+    if any(v is None for v in anchors):
+        if len(lines) > 10000:
+            print("NO COVERAGE: DMG table-first rods/staffs "
+                  "(section or table anchors not found)")
+        return []
+
+    table_bounds = {
+        "rod": (rod_table, rod_desc),
+        "staff": (staff_table, staff_table_end),
+    }
+    heading_bounds = {
+        "rod": (rod_desc, scrolls, DMG_ROD_HEADINGS),
+        "staff": (staff_start, wands, DMG_STAFF_HEADINGS),
+    }
+    existing = {name.casefold() for name in existing_names}
+    strict = len(lines) > 10000
+    recovered: List[Item] = []
+
+    for (name, heading, aliases, price, evidence, aura, school, caster,
+         table_page, section) in _dmg_gap_specs():
+        if name.casefold() in existing:
+            continue
+        ts, te = table_bounds[section]
+        hs, he, headings = heading_bounds[section]
+        present = (pages[ts] == table_page
+                   and _dmg_table_evidence(lines, ts, te, aliases, evidence))
+        start = _dmg_heading(lines, heading, hs, he)
+        if not present or start is None:
+            if strict:
+                reason = "table row" if not present else "description heading"
+                print(f"NO COVERAGE: DMG {name} ({reason} not found)")
+            continue
+
+        next_starts = [_dmg_heading(lines, candidate, start + 1, he)
+                       for candidate in headings]
+        next_starts = [i for i in next_starts if i is not None]
+        end = min(next_starts) if next_starts else he
+        if name == "Abjuration":
+            end = min(end, staff_table)
+        item = Item(name=name, book=book, page=pages[start],
+                    start=start, end=end, price=price,
+                    caster_level=caster, aura=aura, aura_school=school)
+        recovered.append(item)
+
+    recovered.sort(key=lambda item: (item.start, item.name))
+    return recovered
+
+
+def detect_dmg_with_tables(lines: List[str], pages: List[int], book: str) -> List[Item]:
+    legacy = detect_dmg(lines, pages, book)
+    additions = detect_dmg_table_gaps(
+        lines, pages, book, existing_names=[item.name for item in legacy])
+    return legacy + additions
 
 
 # ---------------------------------------------------------------------------
@@ -490,7 +654,7 @@ def detect_aeg(lines: List[str], pages: List[int], book: str) -> List[Item]:
 
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[Item]]] = {
     "mic": detect_mic,
-    "dmg": detect_dmg,
+    "dmg": detect_dmg_with_tables,
     "aeg": detect_aeg,
 }
 
@@ -520,7 +684,9 @@ SOURCES: List[Source] = [
         book="Dungeon Master's Guide v3.5",
         path=Path("D&D 3.5e/Core/Dungeon Masters Guide v3.5.md"),
         citation="Dungeon Master's Guide v3.5, specific items and wondrous "
-                 "items (weapon/armor special abilities are term_harvest.py's)",
+                 "items; rods Table 7-19 p.235 and descriptions pp.235-238; "
+                 "staffs Table 7-25 p.244 and descriptions pp.244-246 "
+                 "(weapon/armor special abilities are term_harvest.py's)",
         detector="dmg",
     ),
     Source(
@@ -626,7 +792,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         })
         md.append(f"## {src.book} — {len(src.items)} items")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Source: {src.citation}.*")
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
         if src.items:
@@ -762,6 +928,26 @@ Boots of Speed: As a free action, the wearer can act as though hasted for 10 rou
 Moderate transmutation; CL 10th; Craft Wondrous Item, haste; Price 12,000 gp; Weight 1 lb.
 """
 
+DMG_TABLE_FIXTURE = """## [PDF page 235]
+TABLE 7-19: Rods
+78-80 Absorption 50,000 gp
+Rod Descriptions
+Absorption: This rod stores spell energy.
+Strong abjuration; CL 15th; Craft Rod, spell turning; Price 50,000 gp.
+SCROLLS
+## [PDF page 244]
+STAFFS
+Abjuration: This staff allows use of shield and dispel magic.
+TABLE 7-25: STAFFS
+39-43 Abjuration 65,000 gp
+## [PDF page 245]
+Strong abjuration; CL 13th; Craft Staff, shield; Price 65,000 gp.
+Charming: This table row is not part of this focused fixture.
+Power: A description heading without a matching table row must not be accepted.
+WANDS
+"""
+
+
 AEG_FIXTURE = """## [PDF page 80]
 Equestrian's Saddle: Anyone seated in this military saddle feels more comfortable
 CHAPTER 4: HIRELINGS AND CREATURES
@@ -844,6 +1030,22 @@ def selftest(base: Path) -> int:
                 failures.append(f"Boots of Speed {(bs.aura, bs.caster_level, bs.price)}, "
                                 f"wanted Moderate / 10th / 12,000 gp")
 
+    # Table-first fixture: both the table row and the owning description
+    # heading are required. A heading without a table row remains uncovered.
+    table_lines = DMG_TABLE_FIXTURE.splitlines()
+    table_items = detect_dmg_table_gaps(
+        table_lines, _pages_for(table_lines), "Dungeon Master's Guide v3.5")
+    table_got = [(it.name, it.price, it.page, it.aura, it.caster_level)
+                 for it in table_items]
+    table_want = [
+        ("Absorption", "50,000 gp", 235, "Strong", "15th"),
+        ("Abjuration", "65,000 gp", 244, "Strong", "13th"),
+    ]
+    if table_got != table_want:
+        failures.append(f"DMG table-first fixture {table_got}, wanted "
+                        f"{table_want} (Power heading without a table row "
+                        "must remain uncovered)")
+
     # A&EG detector: a running CHAPTER header inside an item body must be
     # skipped while searching backward for the real source-printed name.
     aeg_lines = AEG_FIXTURE.splitlines()
@@ -863,7 +1065,7 @@ def selftest(base: Path) -> int:
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
         counts = {s.key: len(s.items) for s in corpus.sources}
-        expected_counts = {"mic": 842, "dmg": 216, "aeg": 362}
+        expected_counts = {"mic": 842, "dmg": 250, "aeg": 362}
         if counts != expected_counts:
             failures.append(f"live source counts {counts}, wanted {expected_counts}")
         belt = corpus.find("belt of battle", book="mic")
@@ -884,8 +1086,34 @@ def selftest(base: Path) -> int:
         # Live DMG source: specific/wondrous items, affixes masked out.
         dmg_src = next((s for s in corpus.sources if s.key == "dmg"), None)
         if dmg_src and (base / dmg_src.path).exists():
-            if len(dmg_src.items) < 150:
-                failures.append(f"only {len(dmg_src.items)} DMG items indexed; expected > 150")
+            dmg_pages = _pages_for(dmg_src.lines)
+            legacy_items = detect_dmg(dmg_src.lines, dmg_pages, dmg_src.book)
+            if len(legacy_items) != 216:
+                failures.append(f"legacy DMG detector changed to {len(legacy_items)} rows; "
+                                "wanted locked checkpoint count 216")
+            elif ([asdict(item) for item in dmg_src.items[:216]]
+                  != [asdict(item) for item in legacy_items]):
+                failures.append("the 216 locked legacy DMG rows are not the unchanged "
+                                "prefix of the additive harvest")
+            additions = dmg_src.items[len(legacy_items):]
+            want_additions = {spec[0] for spec in _dmg_gap_specs()}
+            got_additions = {item.name for item in additions}
+            if len(additions) != 34 or got_additions != want_additions:
+                failures.append(f"DMG table-first additions {len(additions)} / "
+                                f"{sorted(got_additions)}, wanted 34 / "
+                                f"{sorted(want_additions)}")
+            reps = {item.name: item for item in additions}
+            for name, wanted in {
+                "Absorption": ("50,000 gp", 235, "Strong", "15th"),
+                "Metamagic, Maximize, Greater": (
+                    "121,500 gp", 237, "Strong", "17th"),
+                "Illumination": ("48,250 gp", 245, "Strong", "15th"),
+            }.items():
+                item = reps.get(name)
+                got = ((item.price, item.page, item.aura, item.caster_level)
+                       if item else None)
+                if got != wanted:
+                    failures.append(f"live DMG {name} {got}, wanted {wanted}")
             bs = corpus.find("boots of speed", book="dmg")
             if not bs:
                 failures.append("Boots of Speed not found in live DMG")

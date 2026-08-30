@@ -8,10 +8,11 @@ It records no campaign canon and never authorizes a Notion write.
 | Measure | Verified value |
 |---|---:|
 | Reference families | 41 |
-| Accepted entries | 18,094 |
+| Accepted entries | 18,128 |
 | System labels | 9 |
-| Codex full-text blocks | 13,282 / 18,094 (73%) |
-| Harvest checkpoint | `reference-2026-08-29` |
+| Codex full-text blocks | 13,282 / 18,128 (73%) |
+| Harvest base tag | `reference-2026-08-29` |
+| Current verified unit | DMG table-first rods/staffs (2026-08-30) |
 | Family registry | `reference/families.json` |
 
 The registry is the machine-readable source for family paths, accepted-entry
