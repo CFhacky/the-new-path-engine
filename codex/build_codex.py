@@ -51,6 +51,8 @@ FULL-TEXT SOURCING — book RAW, never invented
                     are removed, and the complete descriptions bypass the 4.2k cap.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
+- psionic powers    sliced from harvester-owned exact source paths and validated
+                    description spans; ambiguous column-interleaved rows stay empty.
 - GURPS skills        sliced from exact Basic Set description spans; running page
                     furniture is removed and complete descriptions bypass the cap.
 - GURPS traits        sliced from exact Basic Set description/inline-definition
@@ -142,6 +144,33 @@ def _validate(seg: str, name: str) -> bool:
     head = _norm(seg[:300])
     tk = [t for t in nm.split() if len(t) >= 4] or nm.split()
     return bool(tk) and all(t in head for t in tk[:2])
+
+
+POWER_RUNNING_HEADER = re.compile(
+    r"^(?:CHAPTER\s+\d+|POWERS?(?:,\s+MANTLES)?|AND\s+ITEMS)$",
+    re.IGNORECASE,
+)
+
+
+def _strip_power_furniture(seg: str) -> str:
+    """Remove repeated page furniture from exact XPH/Complete Psionic spans."""
+    source = seg.splitlines()
+    out = []
+    for i, line in enumerate(source):
+        text = line.strip()
+        if re.fullmatch(r"## \[PDF page \d+\]", text, re.IGNORECASE):
+            continue
+        if POWER_RUNNING_HEADER.match(text):
+            continue
+        if text.isdigit():
+            neighbors = [value.strip() for value in source[max(0, i - 2):i + 3]
+                         if value.strip() and value.strip() != text]
+            if any(POWER_RUNNING_HEADER.match(value) for value in neighbors):
+                continue
+        if text and all(ord(char) < 32 for char in text):
+            continue
+        out.append(line)
+    return "\n".join(out).strip()
 
 
 def _strip_soulmeld_summary_tables(seg: str) -> str:
@@ -398,6 +427,10 @@ def selftest():
     assert rows[0]["citation"] == "Fixture Book p.1"
     assert rows[0]["system"] == "D&D 3.5e"
     assert _display_book("SRD 3.5") == "SRD 3.5"
+    power_fixture = ("ZONE OF TRUTH,\nPSIONIC\nTelepathy\n"
+                     "## [PDF page 107]\n106\nCHAPTER 4\nPOWERS, MANTLES\nAND ITEMS")
+    cleaned_power = _strip_power_furniture(power_fixture)
+    assert cleaned_power == "ZONE OF TRUTH,\nPSIONIC\nTelepathy"
     specs = _family_specs()
     assert len(specs) == 41
     assert sum(spec["expected_count"] for spec in specs) == 18_133
@@ -406,6 +439,7 @@ def selftest():
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance and system aliases inherited")
+    print("selftest: psionic page furniture removed from exact spans")
     print("selftest: 41-family registry totals 18,133 rows")
     print("selftest: PASS")
 
@@ -533,6 +567,14 @@ def build(report=False):
                 full = r["special_rules"].strip()
             elif fam == "spell":
                 full = spell_full(r)
+            elif (fam == "power" and isinstance(r.get("description_start"), int)
+                  and isinstance(r.get("description_end"), int)):
+                full = slice_full(
+                    r.get("book", ""), r["description_start"], r["description_end"],
+                    r["name"], _exact_source_file(r), _strip_power_furniture, None,
+                )
+            elif fam == "power":
+                full = ""
             elif fam == "soulmeld" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), _strip_soulmeld_summary_tables)
@@ -573,7 +615,8 @@ def build(report=False):
             extra = {}
             for k, v in r.items():
                 if k in ("name", "system", "book", "page", "citation", "start", "end",
-                         "description_key", "description_spans", "special_rules",
+                         "description_key", "description_start", "description_end",
+                         "description_spans", "special_rules",
                          "table_start", "table_end", "_corpus", "_source_path"):
                     continue
                 if isinstance(v, (str, int, float)) and str(v).strip() and str(v) != "None":

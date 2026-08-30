@@ -1,4 +1,4 @@
-# HARVEST HISTORY — frozen extraction ledger through 2026-08-29
+# HARVEST HISTORY — extraction ledger through 2026-08-30
 
 This file preserves the complete working ledger that produced the verified
 41-family checkpoint. It is historical evidence, not the live resume point.
@@ -258,6 +258,14 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 ---
 
 ## LOG
+
+- **2026-08-30** — Replaced fuzzy source resolution and 80-line caps for the
+  D&D 3.5e power family with harvester-owned exact source paths and validated
+  description boundaries. The 409 mechanical rows are unchanged after removing
+  provenance/span metadata. Expanded Psionics Handbook supplies 278 exact spans
+  and Complete Psionic 128; three XPH rows with column-interleaved power blocks
+  remain explicit `NO COVERAGE`. Codex power coverage rose **125/409 → 406/409**
+  and whole-Codex coverage rose **13,282 → 13,563 / 18,094**.
 
 - **2026-08-29** — Completed the cross-index integrity audit. All **41/41**
   harvester selftests pass. The Codex now walks all 41 committed families,

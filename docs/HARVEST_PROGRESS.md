@@ -10,9 +10,9 @@ It records no campaign canon and never authorizes a Notion write.
 | Reference families | 41 |
 | Accepted entries | 18,133 |
 | System labels | 9 |
-| Codex full-text blocks | 13,287 / 18,133 (73%) |
+| Codex full-text blocks | 13,568 / 18,133 (75%) |
 | Harvest base tag | `reference-2026-08-29` |
-| Current verified unit | DMG table-first rods/staffs (2026-08-30) |
+| Current verified unit | Psionic power full-text recovery (2026-08-30) |
 | Family registry | `reference/families.json` |
 
 The registry is the machine-readable source for family paths, accepted-entry

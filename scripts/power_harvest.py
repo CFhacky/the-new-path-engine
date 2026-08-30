@@ -9,9 +9,10 @@ lacks. This script harvests it.
 It walks the psionics text extractions and produces the COLLATION:
 
     reference/power_index.json  — every power block found: name, book, PDF
-                                  page, line span, and the quick fields a
-                                  triage read needs (discipline, subdiscipline
-                                  / descriptor, level list, display,
+                                  page, legacy detector span, exact validated
+                                  description span, source path, and the quick
+                                  fields a triage read needs (discipline,
+                                  subdiscipline / descriptor, level list, display,
                                   manifesting time, range, power points, power
                                   resistance, save), parsed where clean
     reference/power_index.md    — the same index for human eyes, by book
@@ -117,6 +118,15 @@ RUNNING_HEADER = re.compile(
     re.IGNORECASE,
 )
 
+DESCRIPTION_NO_COVERAGE = {
+    ("Expanded Psionics Handbook", "Jetect Remote Viewing"):
+        "OCR interleaves a second power before this entry's description",
+    ("Expanded Psionics Handbook", "Detect Teleportation"):
+        "OCR interleaves another power's header fields before the matching block",
+    ("Expanded Psionics Handbook", "Minor Creation, Psionic"):
+        "OCR inserts the Missive headings inside this entry's terminal fields",
+}
+
 
 def _plausible_name(s: str) -> bool:
     s = s.strip()
@@ -157,8 +167,10 @@ class Power:
     name: str
     book: str
     page: int
-    start: int  # line span in the extraction, for --export
+    start: int  # legacy detector boundary; preserved for row stability
     end: int
+    description_start: Optional[int] = None
+    description_end: Optional[int] = None
     discipline: Optional[str] = None
     subdiscipline: Optional[str] = None   # the (Sub) / [Descriptor] trailer
     level: Optional[str] = None
@@ -211,19 +223,19 @@ def _name_above(lines: List[str], disc_idx: int, limit: int = 4) -> Optional[int
     return None
 
 
-def _find_name(lines: List[str], disc_idx: int) -> Optional[Tuple[int, str]]:
-    """The power name above the discipline line. XPH names are single-line Title
-    Case; other books (Complete Psionic) use ALL-CAPS names that WRAP across the
-    column break ("ANALYZE DWEOMER," / "PSIONIC"). Gather extra ALL-CAPS
-    fragments upward ONLY when the nearest name line is itself ALL-CAPS — so a
-    Title-Case XPH name is never over-gathered — and title-case an ALL-CAPS
-    result so it reads like the Title-Case XPH names. Returns (top line, name).
+def _find_name(lines: List[str], disc_idx: int) -> Optional[Tuple[int, int, str]]:
+    """Recover a power name and both relevant boundaries.
+
+    Returns ``(legacy_top, name_top, name)``. ``legacy_top`` preserves the old
+    detector's entry boundary (which can include a running header), while
+    ``name_top`` is the first actual name fragment and anchors the exact
+    description span.
     """
     idx = _name_above(lines, disc_idx)
     if idx is None:
         return None
     name = lines[idx].strip()
-    top = idx
+    top = name_top = idx
     if name.isupper():
         frags = [name]
         j, gap = idx - 1, 0
@@ -264,7 +276,7 @@ def _find_name(lines: List[str], disc_idx: int) -> Optional[Tuple[int, str]]:
             if s.isupper() and 3 <= len(s) <= 44 \
                     and not FIELD_LABEL.match(s) and not DISC_ANCHOR.match(s):
                 frags.append(s)
-                top, gap = j, 0
+                top, name_top, gap = j, j, 0
                 j -= 1
                 continue
             break
@@ -272,7 +284,7 @@ def _find_name(lines: List[str], disc_idx: int) -> Optional[Tuple[int, str]]:
         name = " ".join(frags)
     if name.isupper():
         name = name.title()
-    return top, re.sub(r"\s+", " ", name).strip()
+    return top, name_top, re.sub(r"\s+", " ", name).strip()
 
 
 def _has_psi_field(lines: List[str], disc_idx: int, n: int,
@@ -290,9 +302,75 @@ def _has_psi_field(lines: List[str], disc_idx: int, n: int,
     return False
 
 
+def _last_description_end(lines: List[str], start: int, book: str) -> int:
+    """Bound the final power at the next printed section, never at file EOF."""
+    if book == "Complete Psionic":
+        for j in range(start + 1, len(lines)):
+            if lines[j].strip() == "PSIONIC ITEMS":
+                return j
+    else:
+        # Weapon of Energy is the last XPH power and the next PDF page begins
+        # the prestige-class chapter. Its page marker is the exact boundary.
+        for j in range(start + 1, len(lines)):
+            if PAGE.search(lines[j]):
+                return j
+    return len(lines)
+
+
+def _description_span_valid(lines: List[str], power: Power) -> bool:
+    start, end = power.description_start, power.description_end
+    if start is None or end is None or not (0 <= start < end <= len(lines)):
+        return False
+    name_tokens = re.findall(r"[a-z0-9]+", power.name.casefold())
+    head_tokens = re.findall(
+        r"[a-z0-9]+", " ".join(lines[start:min(end, start + 12)]).casefold()
+    )
+    return bool(name_tokens) and all(token in head_tokens for token in name_tokens[:2])
+
+
+def _description_body(lines: List[str], power: Power) -> List[str]:
+    """Return the exact span with only repeated PDF page furniture removed."""
+    if power.description_start is None or power.description_end is None:
+        return []
+    source = lines[power.description_start:power.description_end]
+    out: List[str] = []
+    for i, raw in enumerate(source):
+        text = raw.strip()
+        if PAGE.search(raw) or RUNNING_HEADER.match(text):
+            continue
+        if text.isdigit():
+            neighbors = [line.strip() for line in source[max(0, i - 2):i + 3]
+                         if line.strip() and line.strip() != text]
+            if any(RUNNING_HEADER.match(value) for value in neighbors):
+                continue
+        if text and all(ord(char) < 32 for char in text):
+            continue
+        out.append(raw)
+    return out
+
+
+def _competing_power_boundary(lines: List[str], disc_idx: int, end: int) -> int:
+    """Stop before an unaccepted power block exposed by column-interleaved OCR."""
+    levels = [j for j in range(disc_idx + 1, end) if LEVEL.match(lines[j].strip())]
+    if len(levels) < 2:
+        return end
+    competing_level = levels[1]
+    for j in range(competing_level - 1, max(disc_idx, competing_level - 14), -1):
+        text = lines[j].strip()
+        if not text or PAGE.search(lines[j]):
+            continue
+        if DISC_ANCHOR.match(text):
+            got = _find_name(lines, j)
+            return got[1] if got else j
+        if ((text.isupper() or text.istitle()) and _plausible_name(text)
+                and not FIELD_LABEL.match(text)):
+            return j
+    return competing_level
+
+
 def detect_xph(lines: List[str], pages: List[int], book: str) -> List[Power]:
     n = len(lines)
-    starts: List[Tuple[int, int, str, str, Optional[str]]] = []
+    starts: List[Tuple[int, int, int, str, str, Optional[str]]] = []
     used = set()
     for i, ln in enumerate(lines):
         m = DISC_ANCHOR.match(ln.strip())
@@ -303,19 +381,28 @@ def detect_xph(lines: List[str], pages: List[int], book: str) -> List[Power]:
         got = _find_name(lines, i)
         if got is None or got[0] in used:
             continue
-        top, name = got
+        top, name_top, name = got
         used.add(top)
         sub = _complete_descriptor(lines, i, m.group(2))
-        starts.append((top, i, name, m.group(1), sub))
+        starts.append((top, name_top, i, name, m.group(1), sub))
 
     starts.sort()
     powers: List[Power] = []
-    for k, (nm, disc_idx, name, disc, sub) in enumerate(starts):
-        e = starts[k + 1][0] if k + 1 < len(starts) else min(n, nm + 80)
-        e = min(e, nm + 80)
-        power = Power(name=name, book=book, page=pages[nm], start=nm, end=e,
-                      discipline=disc, subdiscipline=sub)
-        parse_quick_fields(power, lines[nm + 1:e])
+    for k, (nm, name_top, disc_idx, name, disc, sub) in enumerate(starts):
+        legacy_end = starts[k + 1][0] if k + 1 < len(starts) else min(n, nm + 80)
+        legacy_end = min(legacy_end, nm + 80)
+        description_end = (starts[k + 1][0] if k + 1 < len(starts)
+                           else _last_description_end(lines, name_top, book))
+        description_end = _competing_power_boundary(lines, disc_idx, description_end)
+        description_start: Optional[int] = name_top
+        if (book, name) in DESCRIPTION_NO_COVERAGE:
+            description_start = description_end = None
+        power = Power(
+            name=name, book=book, page=pages[nm], start=nm, end=legacy_end,
+            description_start=description_start, description_end=description_end,
+            discipline=disc, subdiscipline=sub,
+        )
+        parse_quick_fields(power, lines[nm + 1:legacy_end])
         powers.append(power)
     return powers
 
@@ -389,7 +476,9 @@ class Corpus:
             src.lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
             pages = _pages_for(src.lines)
             src.powers = DETECTORS[src.detector](src.lines, pages, src.book)
-            src.coverage = f"ok — {len(src.powers)} powers from {path.name}"
+            exact = sum(_description_span_valid(src.lines, p) for p in src.powers)
+            src.coverage = (f"ok — {len(src.powers)} powers from {path.name}; "
+                            f"{exact} exact description spans")
 
     def all_powers(self, book: Optional[str] = None):
         for src in self.sources:
@@ -430,9 +519,10 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "translator-ready packet for any row, then hand that packet to the",
         "system-translator skill for the paired 3.5e + GURPS build.",
         "",
-        "Every entry names its book and the PDF page the extraction recorded.",
-        "This index holds the MECHANICAL vocabulary only — discipline, level,",
-        "power points, range, and save — never invented facts; a field left as",
+        "Every entry names its book, PDF page, exact source path, and validated",
+        "description span where the OCR permits one. This index holds only",
+        "MECHANICAL vocabulary — discipline, level, power points, range, and",
+        "save — never invented facts; a field left as",
         "`—` is one the OCR did not cleanly yield, recoverable from the PDF.",
         "",
     ]
@@ -443,13 +533,23 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
             "key": src.key,
             "book": src.book,
             "citation": src.citation,
+            "source_path": str(src.path),
             "coverage": src.coverage,
+            "description_no_coverage": [
+                {"name": name, "reason": reason}
+                for (book, name), reason in DESCRIPTION_NO_COVERAGE.items()
+                if book == src.book
+            ],
             "powers": [asdict(p) for p in src.powers],
         })
         md.append(f"## {src.book} — {len(src.powers)} powers")
         md.append("")
         md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Extraction: `{src.path}`.*")
         md.append(f"*Harvest: {src.coverage}.*")
+        for (book, name), reason in DESCRIPTION_NO_COVERAGE.items():
+            if book == src.book:
+                md.append(f"*NO COVERAGE: {name} full description ({reason}).*")
         md.append("")
         if src.powers:
             md.append("| Power | Discipline | Level | PP | Range | Save | Page |")
@@ -493,7 +593,11 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
         return 1
     packets = []
     for src, p in hits:
-        body = [ln for ln in src.lines[p.start:p.end] if not PAGE.search(ln)]
+        body = _description_body(src.lines, p)
+        span = ([p.description_start + 1, p.description_end]
+                if p.description_start is not None and p.description_end is not None
+                else None)
+        gap_reason = DESCRIPTION_NO_COVERAGE.get((p.book, p.name))
         packets.append({
             "packet": "psionic-power-for-translation",
             "instructions": (
@@ -507,8 +611,10 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
             "source": {
                 "book": p.book, "pdf_page": p.page,
                 "extraction": str(corpus.base / src.path),
-                "lines": [p.start + 1, p.end],
+                "lines": span,
                 "citation": src.citation,
+                "coverage": (f"NO COVERAGE: {gap_reason}" if gap_reason
+                             else "ok — exact description span"),
             },
             "parsed": {k: v for k, v in asdict(p).items()
                        if k in ("discipline", "subdiscipline", "level", "display",
@@ -665,6 +771,20 @@ def selftest(base: Path) -> int:
                 failures.append(f"Dominate discipline={dom.discipline!r} "
                                 f"sub={dom.subdiscipline!r} pp={dom.power_points!r}, "
                                 f"wanted Telepathy / (Compulsion) [Mind-Affecting] / 7")
+            fixture_lines = corpus.sources[0].lines
+            invalid = [p.name for p in powers
+                       if not _description_span_valid(fixture_lines, p)]
+            if invalid:
+                failures.append(f"fixture description spans not name-led: {invalid}")
+            if any(p.description_end > powers[i + 1].start
+                   for i, p in enumerate(powers[:-1])):
+                failures.append("fixture description spans overlap the next entry")
+            bite_full = "\n".join(_description_body(fixture_lines, bite))
+            if "Your teeth elongate and sharpen" not in bite_full:
+                failures.append("fixture Bite of the Wolf description was truncated")
+            analyze_full = "\n".join(_description_body(fixture_lines, powers[-1])).strip()
+            if not analyze_full.startswith("ANALYZE DWEOMER,\nPSIONIC"):
+                failures.append("fixture Analyze Dweomer span starts with page furniture")
 
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
@@ -689,6 +809,61 @@ def selftest(base: Path) -> int:
                 failures.append(
                     f"Complete Psionic {name} page={found[0][1].page}, "
                     f"wanted {page}")
+        exact_counts = {
+            s.key: sum(_description_span_valid(s.lines, p) for p in s.powers)
+            for s in corpus.sources
+        }
+        expected_exact = {"xph": 278, "cpsi": 128}
+        if exact_counts != expected_exact:
+            failures.append(f"live exact description spans {exact_counts}, "
+                            f"wanted {expected_exact}")
+        no_coverage = {
+            p.name for s in corpus.sources for p in s.powers
+            if p.description_start is None or p.description_end is None
+        }
+        expected_gaps = {name for _, name in DESCRIPTION_NO_COVERAGE}
+        if no_coverage != expected_gaps:
+            failures.append(f"description NO COVERAGE {sorted(no_coverage)}, "
+                            f"wanted {sorted(expected_gaps)}")
+        leaked_gaps = [
+            p.name for s in corpus.sources for p in s.powers
+            if p.name in no_coverage and _description_body(s.lines, p)
+        ]
+        if leaked_gaps:
+            failures.append(f"NO COVERAGE rows still export prose: {leaked_gaps}")
+        long_counts = {
+            s.key: sum((p.description_end or 0) - (p.description_start or 0) > 80
+                       for p in s.powers)
+            for s in corpus.sources
+        }
+        expected_long = {"xph": 31, "cpsi": 3}
+        if long_counts != expected_long:
+            failures.append(f"live descriptions over 80 lines {long_counts}, "
+                            f"wanted {expected_long}")
+        multi_level = []
+        for src in corpus.sources:
+            for p in src.powers:
+                if p.description_start is None or p.description_end is None:
+                    continue
+                level_count = sum(
+                    bool(LEVEL.match(src.lines[j].strip()))
+                    for j in range(p.description_start, p.description_end)
+                )
+                if level_count != 1:
+                    multi_level.append((p.name, level_count))
+        if multi_level:
+            failures.append(f"description spans contain competing power blocks: "
+                            f"{multi_level[:8]}")
+        for src in corpus.sources:
+            if any((p.description_end or 0) > src.powers[i + 1].start
+                   for i, p in enumerate(src.powers[:-1])):
+                failures.append(f"{src.key} description spans overlap")
+        xph_last = corpus.sources[0].powers[-1]
+        cpsi_last = corpus.sources[1].powers[-1]
+        if not PAGE.search(corpus.sources[0].lines[xph_last.description_end or 0]):
+            failures.append("XPH final description is not bounded by the next PDF page")
+        if corpus.sources[1].lines[cpsi_last.description_end or 0].strip() != "PSIONIC ITEMS":
+            failures.append("Complete Psionic final description is not bounded by PSIONIC ITEMS")
         polluted = [p.name for s in corpus.sources for p in s.powers
                     if re.match(r"^(?:CHAPTER\b|POWERS?,\s+MANTLES\b)",
                                 p.name, re.IGNORECASE)]
@@ -735,6 +910,9 @@ def main() -> int:
     for src in corpus.sources:
         status = f"{len(src.powers):5d} powers" if src.powers else "    0 powers"
         print(f"  {src.book:30s} {status}  [{src.coverage}]")
+        for (book, name), reason in DESCRIPTION_NO_COVERAGE.items():
+            if book == src.book:
+                print(f"NO COVERAGE: {book} {name} full description ({reason})")
     if not any_ok:
         print("\nNothing harvested at all — refusing to write empty reference files.")
         return 1

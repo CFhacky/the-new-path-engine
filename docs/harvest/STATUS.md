@@ -27,7 +27,7 @@ DMG rods and staffs joined directly to Tables 7-19/7-25 and their descriptions.
 ## Codex presentation coverage
 
 The verified Codex build contains all 18,133 accepted entries and attaches
-13,287 validated full-text blocks (73.3%). Missing full text affects the
+13,568 validated full-text blocks (74.8%). Missing full text affects the
 presentation layer only; it does not remove already-harvested mechanical fields.
 
 Current complete full-text families include spells, soulmelds, vestiges,
@@ -69,4 +69,4 @@ python scripts\reference_audit.py --live --build-codex --report
 
 Expected terminal summaries are `REFERENCE_AUDIT families=41 rows=18133
 errors=0`, `LIVE_SELFTESTS total=41 failed=0`, and a Codex build of 18,133
-entries with 13,287 full-text blocks.
+entries with 13,568 full-text blocks.

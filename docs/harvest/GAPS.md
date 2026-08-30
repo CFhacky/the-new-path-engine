@@ -53,12 +53,12 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | WFRP gear | 3 / 107 |
 | WH40K Roleplay armour | 5 / 145 |
 | WH40K Roleplay weapons | 72 / 657 |
-| D&D 3.5e powers | 125 / 409 |
+| D&D 3.5e powers | 406 / 409 |
 | D&D 3.5e magic items | 848 / 1,454 |
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,287 / 18,133 full-text blocks. Improve these
+The whole Codex is currently 13,568 / 18,133 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 

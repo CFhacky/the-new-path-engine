@@ -56,7 +56,9 @@ percentage by fuzzy-matching prose to names.
 
 Suggested order:
 
-1. D&D 3.5e powers;
+1. **COMPLETE 2026-08-30:** D&D 3.5e powers now carry 406/409 validated
+   description spans; the three column-interleaved XPH rows remain explicit
+   `NO COVERAGE`;
 2. prestige-class requirement/description blocks;
 3. AD&D 2e monster descriptions where page-image transcription is already
    available;
