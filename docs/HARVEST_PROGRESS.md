@@ -10,7 +10,7 @@ It records no campaign canon and never authorizes a Notion write.
 | Reference families | 41 |
 | Accepted entries | 18,094 |
 | System labels | 9 |
-| Codex full-text blocks | 13,282 / 18,094 (73%) |
+| Codex full-text blocks | 13,563 / 18,094 (75%) |
 | Harvest checkpoint | `reference-2026-08-29` |
 | Family registry | `reference/families.json` |
 

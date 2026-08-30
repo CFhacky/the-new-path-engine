@@ -57,19 +57,23 @@ In order:
 
 Each extension must preserve the previous family rows exactly and keep edition
 labels separate from the existing GURPS 3e families.
+
 ## 5. Improve Codex prose coverage selectively
 
 Prefer cheap, exact-span wins in families with stable headings. Do not chase a
 percentage by fuzzy-matching prose to names.
 
-Suggested order:
+Completed 2026-08-30: D&D 3.5e powers rose from 125/409 to 406/409
+validated full descriptions. Three XPH column-interleaved rows remain explicit
+rather than attaching mixed prose.
 
-1. D&D 3.5e powers;
-2. prestige-class requirement/description blocks;
-3. AD&D 2e monster descriptions where page-image transcription is already
+Remaining suggested order:
+
+1. prestige-class requirement/description blocks;
+2. AD&D 2e monster descriptions where page-image transcription is already
    available;
-4. GURPS 3e items and spells;
-5. WFRP mutations and gear.
+3. GURPS 3e items and spells;
+4. WFRP mutations and gear.
 
 WH40K Roleplay gear/armour/weapon prose remains low priority until a better text
 layer appears. Existing mechanical rows are already useful and complete enough

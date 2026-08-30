@@ -7,15 +7,20 @@ extractions. The raw text stays on `I:\Sourcebooks` — use
 translator-ready packet for any row, then hand that packet to the
 system-translator skill for the paired 3.5e + GURPS build.
 
-Every entry names its book and the PDF page the extraction recorded.
-This index holds the MECHANICAL vocabulary only — discipline, level,
-power points, range, and save — never invented facts; a field left as
+Every entry names its book, PDF page, exact source path, and validated
+description span where the OCR permits one. This index holds only
+MECHANICAL vocabulary — discipline, level, power points, range, and
+save — never invented facts; a field left as
 `—` is one the OCR did not cleanly yield, recoverable from the PDF.
 
 ## Expanded Psionics Handbook — 281 powers
 
 *Source: Expanded Psionics Handbook (WotC, 2004), power descriptions.*  
-*Harvest: ok — 281 powers from Expanded Psionics Handbook.md.*
+*Extraction: `D&D 3.5e\Player Options\Expanded Psionics Handbook.md`.*
+*Harvest: ok — 281 powers from Expanded Psionics Handbook.md; 278 exact description spans.*
+*NO COVERAGE: Jetect Remote Viewing full description (OCR interleaves a second power before this entry's description).*
+*NO COVERAGE: Detect Teleportation full description (OCR interleaves another power's header fields before the matching block).*
+*NO COVERAGE: Minor Creation, Psionic full description (OCR inserts the Missive headings inside this entry's terminal fields).*
 
 | Power | Discipline | Level | PP | Range | Save | Page |
 |---|---|---|---|---|---|---|
@@ -304,7 +309,8 @@ power points, range, and save — never invented facts; a field left as
 ## Complete Psionic — 128 powers
 
 *Source: Complete Psionic (WotC, 2006), power descriptions.*  
-*Harvest: ok — 128 powers from Complete Psionic.md.*
+*Extraction: `D&D 3.5e\Player Options\Complete Psionic.md`.*
+*Harvest: ok — 128 powers from Complete Psionic.md; 128 exact description spans.*
 
 | Power | Discipline | Level | PP | Range | Save | Page |
 |---|---|---|---|---|---|---|

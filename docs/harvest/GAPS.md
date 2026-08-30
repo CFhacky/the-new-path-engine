@@ -56,13 +56,18 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | WFRP gear | 3 / 107 |
 | WH40K Roleplay armour | 5 / 145 |
 | WH40K Roleplay weapons | 72 / 657 |
-| D&D 3.5e powers | 125 / 409 |
+| D&D 3.5e powers | 406 / 409 |
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,282 / 18,094 full-text blocks. Improve these
+The whole Codex is currently 13,563 / 18,094 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
+
+Three Expanded Psionics Handbook rows remain explicit full-text `NO COVERAGE`:
+`Jetect Remote Viewing`, `Detect Teleportation`, and `Minor Creation, Psionic`.
+Their OCR interleaves another power's header or fields inside the target block;
+the 409 mechanical rows remain accepted, but no mixed prose is attached.
 
 For WH40K Roleplay weapons, gear, and armour, only 850 unique exact OCR
 description headings are available across the configured sources, including

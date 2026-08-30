@@ -25,13 +25,14 @@ contains explicit D&D 3.5e and GURPS 4e rows rather than an unlabeled blend.
 ## Codex presentation coverage
 
 The verified Codex build contains all 18,094 accepted entries and attaches
-13,282 validated full-text blocks (73.4%). Missing full text affects the
+13,563 validated full-text blocks (75.0%). Missing full text affects the
 presentation layer only; it does not remove already-harvested mechanical fields.
 
 Current complete full-text families include spells, soulmelds, vestiges,
 maneuvers, epic items/monsters/spells, and native GURPS gear, skills, traits,
-techniques, and spells. Several labeled legacy or equipment families retain
-lower prose coverage; see [GAPS.md](GAPS.md).
+techniques, and spells. D&D 3.5e powers are 406/409, with three
+column-interleaved XPH blocks explicit rather than mixed. Several labeled legacy
+or equipment families retain lower prose coverage; see [GAPS.md](GAPS.md).
 
 The built files under `codex/build/` embed sourcebook text and are intentionally
 git-ignored. Rebuild them from the external corpus; never commit them.
@@ -67,4 +68,4 @@ python scripts\reference_audit.py --live --build-codex --report
 
 Expected terminal summaries are `REFERENCE_AUDIT families=41 rows=18094
 errors=0`, `LIVE_SELFTESTS total=41 failed=0`, and a Codex build of 18,094
-entries with 13,282 full-text blocks.
+entries with 13,563 full-text blocks.

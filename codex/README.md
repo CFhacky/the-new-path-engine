@@ -69,6 +69,10 @@ works offline.
 - **Maneuvers** — sliced from the exact clean Tome of Battle alternate extraction
   and canonical heading-to-heading spans; complete descriptions bypass the normal
   4,200-character cap.
+- **D&D 3.5e psionic powers** — 406 of 409 rows use exact name-to-next-power spans
+  from the harvester's recorded XPH/Complete Psionic source path; repeated page
+  furniture is removed and complete descriptions bypass the cap. Three XPH
+  column-interleaved blocks remain explicit `NO COVERAGE`.
 - **GURPS skills** — all 263 rows slice exact Basic Set Skills-chapter spans;
   grouped definitions and wrapped headings are bounded separately, running page
   furniture is removed, and complete descriptions bypass the normal cap.
@@ -114,9 +118,9 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,282 of 18,094 entries** carry the full verbatim block. Strong: D&D 3.5e
-creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
-soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
+**13,563 of 18,094 entries** carry the full verbatim block. Strong: D&D 3.5e
+creatures 99% / powers 99% / spells, epic spells, epic items, epic monsters,
+maneuvers, soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,
 WHFB wargame profiles 74%, and 40K RP adversaries/talents/psychic ~99–100%.
