@@ -52,6 +52,8 @@ FULL-TEXT SOURCING — book RAW, never invented
 - mysteries          sliced from exact Tome of Magic heading-to-heading spans;
                     five verified floating illustration blocks are removed and
                     complete descriptions bypass the 4.2k cap.
+- utterances         sliced from exact Tome of Magic detail spans; exact
+                    source-verified caption exclusions retain the complete text.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
 - psionic powers    sliced from harvester-owned exact source paths and validated
@@ -487,15 +489,15 @@ Illus. by F. Vohwinkel"""
     assert "Afraid of the dark" not in caption_cleaned
     assert "Illus. by" not in caption_cleaned
     specs = _family_specs()
-    assert len(specs) == 42
-    assert sum(spec["expected_count"] for spec in specs) == 18_213
+    assert len(specs) == 43
+    assert sum(spec["expected_count"] for spec in specs) == 18_278
     assert any(spec["id"] == "terms_and_affixes"
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
-    print("selftest: 42-family registry totals 18,213 rows")
+    print("selftest: 43-family registry totals 18,278 rows")
     print("selftest: PASS")
 
 
@@ -640,6 +642,9 @@ def build(report=False):
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r),
                                   _strip_mystery_captions, None)
+            elif fam == "utterance" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), limit=None)
             elif fam == "maneuver" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), limit=None)

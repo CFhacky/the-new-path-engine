@@ -70,6 +70,9 @@ works offline.
   Tome of Magic heading-to-heading spans on PDF pp.142–154; five exact,
   source-verified floating illustration blocks are removed while entry prose is
   retained, and complete descriptions bypass the normal cap.
+- **Utterances** — all 65 truename utterances slice their exact Tome of Magic
+  detail blocks; exact source-verified caption exclusions preserve normal/reverse
+  text, and complete descriptions bypass the normal cap.
 - **Maneuvers** — sliced from the exact clean Tome of Battle alternate extraction
   and canonical heading-to-heading spans; complete descriptions bypass the normal
   4,200-character cap.
@@ -122,10 +125,10 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,648 of 18,213 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,713 of 18,278 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / powers 99% / spells, epic spells, epic items, epic monsters,
-maneuvers, soulmelds, vestiges, and shadow mysteries 100% / epic feats 97% /
-feats 86%, GURPS 4e gear,
+maneuvers, soulmelds, vestiges, shadow mysteries, and utterances 100% / epic
+feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,
 WHFB wargame profiles 75%, and 40K RP adversaries/talents/psychic ~99–100%.

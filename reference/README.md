@@ -36,6 +36,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `gurps_technique_index.{json,md}` | GURPS 4e Martial Arts **combat techniques** (difficulty, prerequisite, default, max, damage; all with exact full-description spans) | 112 | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet + Martial Arts (4e) — born-digital text |
 | `vestige_index.{json,md}` | D&D 3.5 pact-magic **vestiges** (vestige level, binding DC, special requirement, exact-source full-description spans) | 32 | `scripts/vestige_harvest.py` | Tome of Magic (3.5e), pp.20–50 — born-digital text |
 | `mystery_index.{json,md}` | D&D 3.5 shadow-magic **fundamentals and mysteries** (category, path, printed level/school/descriptors, range, subject, duration, save, resistance, exact full-description spans; five floating illustration blocks excluded) | 69 | `scripts/mystery_harvest.py` | Tome of Magic (3.5e), Shadow Magic descriptions, PDF pp.142–154 — born-digital text |
+| `utterance_index.{json,md}` | D&D 3.5 truename **utterances** (lexicon, level, Truespeak/DC rules, printed normal/reverse summaries, exact-source full-description spans) | 65 | `scripts/utterance_harvest.py` | Tome of Magic (3.5e), Truename Magic pp.232–253 — born-digital text |
 | `soulmeld_index.{json,md}` | D&D 3.5 incarnum **soulmelds** (classes, bindable chakras, basic effect, exact-source full-description spans) | 89 | `scripts/soulmeld_harvest.py` | Magic of Incarnum (3.5e), pp.54–94 — born-digital text |
 | `ad2e_psionic_index.{json,md}` | **AD&D 2e** psionic powers (discipline, Science/Devotion, power score, PSP costs, range, area) — labeled `system: AD&D 2e` | 150 | `scripts/ad2e_psionics_harvest.py` | Complete Psionics Handbook (2e) — born-digital text |
 | `prestige_class_index.{json,md}` | D&D 3.x **prestige classes** (hit die + full qualifying requirements) — vision-transcribed from the Dragon PrC Compendium | 145 | `scripts/prestige_class_harvest.py` | Dragon Magazine Prestige Class Compendium (Issues 274-353) |
@@ -83,7 +84,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 `I:\Sourcebooks` holds ~1,700 OCR'd `.md` extractions. These indices cover the
 mainline 3.5e systems plus the GURPS modifier set — a fraction of what is on the
 drive. Large bodies of harvestable mechanics are **not yet indexed** (more
-bestiaries, Tome of Magic truename utterances, higher-TL GURPS gear,
+bestiaries, higher-TL GURPS gear,
 Dragon Magazine, Forgotten Realms). The generating scripts are built to be extended by
 adding sources; the queue, the corpus inventory, and the exact next targets are
 in [../docs/HARVEST_PROGRESS.md](../docs/HARVEST_PROGRESS.md). Do not mistake

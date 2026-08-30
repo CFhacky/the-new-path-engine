@@ -366,6 +366,18 @@
       "expected_count": 143
     },
     {
+      "id": "utterance",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/utterance_harvest.py",
+      "json": "reference/utterance_index.json",
+      "markdown": "reference/utterance_index.md",
+      "entry_path": "sources[].utterances",
+      "expected_count": 65
+    },
+    {
       "id": "vestige",
       "systems": [
         "D&D 3.5e"

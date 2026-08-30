@@ -7,7 +7,7 @@ inventory is [../../reference/families.json](../../reference/families.json).
 
 | System label | Entries |
 |---|---:|
-| D&D 3.5e | 7,509 |
+| D&D 3.5e | 7,574 |
 | GURPS 4e | 2,156 |
 | GURPS 3e | 2,402 |
 | D&D 5e | 1,194 |
@@ -16,9 +16,9 @@ inventory is [../../reference/families.json](../../reference/families.json).
 | WFRP | 877 |
 | WH40K | 136 |
 | WHFB | 302 |
-| **Total** | **18,213** |
+| **Total** | **18,278** |
 
-There are 42 registered families. Native D&D 3.5e and GURPS 4e rows remain
+There are 43 registered families. Native D&D 3.5e and GURPS 4e rows remain
 separate from every labeled edition or game line. The shared terms family
 contains explicit D&D 3.5e and GURPS 4e rows rather than an unlabeled blend.
 The native magic-item family now holds 1,454 entries, including 34 table-first
@@ -26,14 +26,14 @@ DMG rods and staffs joined directly to Tables 7-19/7-25 and their descriptions.
 
 ## Codex presentation coverage
 
-The verified Codex build contains all 18,213 accepted entries and attaches
-13,648 validated full-text blocks (74.9%). Missing full text affects the
+The verified Codex build contains all 18,278 accepted entries and attaches
+13,713 validated full-text blocks (75.0%). Missing full text affects the
 presentation layer only; it does not remove already-harvested mechanical fields.
 
 Current complete full-text families include spells, soulmelds, vestiges,
-shadow mysteries, maneuvers, epic items/monsters/spells, and native GURPS gear,
-skills, traits, techniques, and spells. Several labeled legacy or equipment families retain
-lower prose coverage; see [GAPS.md](GAPS.md).
+shadow mysteries, utterances, maneuvers, epic items/monsters/spells, and native
+GURPS gear, skills, traits, techniques, and spells. Several labeled legacy or
+equipment families retain lower prose coverage; see [GAPS.md](GAPS.md).
 
 The built files under `codex/build/` embed sourcebook text and are intentionally
 git-ignored. Rebuild them from the external corpus; never commit them.
@@ -67,6 +67,6 @@ Full source-machine gate:
 python scripts\reference_audit.py --live --build-codex --report
 ```
 
-Expected terminal summaries are `REFERENCE_AUDIT families=42 rows=18213
-errors=0`, `LIVE_SELFTESTS total=42 failed=0`, and a Codex build of 18,213
-entries with 13,648 full-text blocks.
+Expected terminal summaries are `REFERENCE_AUDIT families=43 rows=18278
+errors=0`, `LIVE_SELFTESTS total=43 failed=0`, and a Codex build of 18,278
+entries with 13,713 full-text blocks.
