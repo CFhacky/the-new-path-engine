@@ -10,7 +10,7 @@ carries the exact full-description source span used by the Codex.
 
 *Source: Tome of Magic (WotC, D&D 3.5e), Truename Magic pp. 232-253.*
 *Extraction: I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md.*
-*Harvest: ok - 65 utterances from Tome of Magic.md; 65 exact description spans.*
+*Harvest: ok - 65 utterances from Tome of Magic.md; 65 exact descriptions; 8 verified illustration blocks excluded.*
 
 ### Evolving Mind
 
