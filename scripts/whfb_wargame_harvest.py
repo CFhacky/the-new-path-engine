@@ -4,8 +4,8 @@
 whfb_wargame_harvest.py  --  THE NEW PATH ENGINE reference-layer harvester.
 
 Extracts UNIT PROFILES (characteristic lines) and their explicit SPECIAL RULES
-sections from the BORN-DIGITAL Warhammer Fantasy Battle *tabletop wargame* army
-books and writes:
+sections from born-digital Warhammer Fantasy Battle *tabletop wargame* army
+books plus explicitly bounded, page-image-verified vision batches, and writes:
     reference/whfb_wargame_index.json
     reference/whfb_wargame_index.md
 
@@ -54,6 +54,7 @@ import os
 import re
 import json
 import math
+import hashlib
 import statistics
 
 try:
@@ -81,6 +82,15 @@ PROGRESS = (r"C:\Users\Chad\AppData\Local\Temp\claude"
             r"\whfb_wargame_progress.json")
 
 SYSTEM = "WHFB"
+
+# Bounded vision batch: this official 8th-edition scan has no text layer at all.
+# Exactly one rendered roster page was read at 3x and verified directly against
+# the page image.  The remaining pages stay explicit NO COVERAGE.
+VISION_HIGH_ELVES_STEM = "Armybook_8ed - High Elves"
+VISION_HIGH_ELVES_PDF_PAGE = 91
+VISION_HIGH_ELVES_PRINTED_PAGE = 92
+VISION_HIGH_ELVES_SHA256 = (
+    "43e54b9b3b52d363708a823287d87fd439c4e0038de3ab20393455f5cb22056b")
 
 # ----------------------------------------------------------------------------
 # Label vocabulary (lower-cased keys) -- WHFB characteristic line
@@ -128,6 +138,14 @@ def has_alpha(tok):
 # ----------------------------------------------------------------------------
 # PDF helpers
 # ----------------------------------------------------------------------------
+def file_sha256(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for block in iter(lambda: fh.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
 def avg_chars_per_page(doc, sample=12):
     n = doc.page_count
     if n <= 0:
@@ -1422,6 +1440,56 @@ def discover_pdfs():
     return files, faq
 
 
+def high_elves_vision_rows():
+    """Return the verified one-page High Elves vision batch.
+
+    The scan has zero PyMuPDF words on all 96 pages.  PDF page 91 (printed p.92)
+    was rendered at 3x and read directly.  It contains 12 printed profile lines;
+    the repeated Elven Steed line is identical in two units, so the index keeps
+    11 unique (name, profile) rows under the normal within-book dedupe policy.
+    """
+    common = "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages."
+    riders = ("SPECIAL RULES: Always Strikes First (Riders only), Martial "
+              "Prowess, Valour of Ages.")
+    reavers = ("SPECIAL RULES: Always Strikes First (Riders only), Fast Cavalry, "
+               "Martial Prowess, Valour of Ages.")
+    # name, unit context, troop type, M WS BS S T W I A Ld, rule block
+    raw = [
+        ("Spearman", "SPEARMEN", "Infantry", (5, 4, 4, 3, 3, 1, 5, 1, 8), common),
+        ("Sentinel", "SPEARMEN", "Infantry", (5, 4, 4, 3, 3, 1, 5, 2, 8), common),
+        ("Archer", "ARCHERS", "Infantry", (5, 4, 4, 3, 3, 1, 5, 1, 8), common),
+        ("Hawkeye", "ARCHERS", "Infantry", (5, 4, 5, 3, 3, 1, 5, 1, 8), common),
+        ("Sea Guard", "LOTHERN SEA GUARD", "Infantry", (5, 4, 4, 3, 3, 1, 5, 1, 8), common),
+        ("Sea Master", "LOTHERN SEA GUARD", "Infantry", (5, 4, 4, 3, 3, 1, 5, 2, 8), common),
+        ("Silver Helm", "SILVER HELMS", "Cavalry", (5, 4, 4, 3, 3, 1, 5, 1, 8), riders),
+        ("High Helm", "SILVER HELMS", "Cavalry", (5, 4, 4, 3, 3, 1, 5, 2, 8), riders),
+        ("Elven Steed", "SILVER HELMS", "-", (9, 3, 0, 3, 3, 1, 4, 1, 5), riders),
+        ("Ellyrian Reaver", "ELLYRIAN REAVERS", "Cavalry", (5, 4, 4, 3, 3, 1, 5, 1, 8), reavers),
+        ("Harbinger", "ELLYRIAN REAVERS", "Cavalry", (5, 4, 5, 3, 3, 1, 5, 1, 8), reavers),
+    ]
+    citation = "%s [PDF page %d] (printed p.%d)" % (
+        VISION_HIGH_ELVES_STEM, VISION_HIGH_ELVES_PDF_PAGE,
+        VISION_HIGH_ELVES_PRINTED_PAGE)
+    rows = []
+    for name, context, troop, values, rules in raw:
+        rows.append({
+            "name": name,
+            "profile": dict(zip(WHFB_STATS, map(str, values))),
+            "army": "High Elves",
+            "edition": "8th",
+            "official": True,
+            "system": SYSTEM,
+            "book": VISION_HIGH_ELVES_STEM,
+            "citation": citation,
+            "troop_type": troop,
+            "unit_context": context,
+            "special_rules": rules,
+            "rules_citations": [citation],
+            "vision_transcribed": True,
+        })
+    return rows
+
+
 # ----------------------------------------------------------------------------
 # Top-level harvest
 # ----------------------------------------------------------------------------
@@ -1438,7 +1506,8 @@ def harvest_all(verbose=True):
         "skipped_faq": [],
         "no_profiles": [],          # digital, official-looking, but 0 rows
         "mangled": [],              # (stem, junkfrac)
-        "no_coverage": [],          # scanned / open-failed
+        "vision_partial": [],        # bounded page-image batches
+        "no_coverage": [],          # scanned / open-failed / uncovered pages
         "page_gaps": [],
     }
 
@@ -1460,6 +1529,39 @@ def harvest_all(verbose=True):
             continue
 
         if not is_digital(doc):
+            if stem == VISION_HIGH_ELVES_STEM:
+                actual_sha = file_sha256(path)
+                if (doc.page_count != 96 or
+                        actual_sha != VISION_HIGH_ELVES_SHA256):
+                    if verbose:
+                        print("NO COVERAGE: %s (vision source fingerprint/page "
+                              "count does not match the verified scan)" % fname)
+                    result["no_coverage"].append(
+                        "%s (vision source mismatch)" % stem)
+                    doc.close()
+                    continue
+                rows = high_elves_vision_rows()
+                result["rows"].extend(rows)
+                result["per_book"][stem] = len(rows)
+                result["per_book_rules"][stem] = sum(
+                    bool(r.get("special_rules")) for r in rows)
+                result["vision_partial"].append({
+                    "book": stem,
+                    "covered_pdf_pages": [VISION_HIGH_ELVES_PDF_PAGE],
+                    "covered_printed_pages": [VISION_HIGH_ELVES_PRINTED_PAGE],
+                    "profiles": len(rows),
+                    "printed_profile_lines": 12,
+                    "source_sha256": VISION_HIGH_ELVES_SHA256,
+                    "method": "vision transcription from a 3x PyMuPDF render",
+                })
+                result["no_coverage"].append(
+                    "%s [PDF pages 1-90, 92-96]" % stem)
+                if verbose:
+                    print("VISION-PARTIAL: %s [PDF page %d] -> %d unique "
+                          "profiles (all other pages NO COVERAGE)"
+                          % (fname, VISION_HIGH_ELVES_PDF_PAGE, len(rows)))
+                doc.close()
+                continue
             if verbose:
                 print("NO COVERAGE: %s (scanned, image-only)" % fname)
             result["no_coverage"].append(stem)
@@ -1562,8 +1664,9 @@ def write_outputs(result):
                  "(characteristic lines: M WS BS S T W I A Ld) plus each profile's "
                  "explicit book-raw SPECIAL RULES section when unambiguously linked. "
                  "Distinct from the Warhammer Fantasy Roleplay (WFRP) line. Extracted "
-                 "from born-digital army-book PDF text layers only; scanned books are "
-                 "listed under no_coverage_scanned."),
+                 "from born-digital army-book PDF text layers plus one bounded, "
+                 "page-image-verified High Elves vision batch; uncovered scanned pages "
+                 "are listed under no_coverage_scanned."),
         "methodology_notes": [
             "Profiles reconstructed geometrically from the PDF text layer (PyMuPDF "
             "words mode): a header row of characteristic labels (M WS BS S T W I A Ld) "
@@ -1571,6 +1674,12 @@ def write_outputs(result):
             "the nearest column. The header is read live -- never hard-coded -- so a "
             "table that omits or reorders a column still parses. No number is ever "
             "guessed or corrected; unreadable cells are left empty.",
+            "The official 8th-edition High Elves PDF is a 96-page image-only scan: "
+            "PyMuPDF returns 0 characters and 0 words on every page. Exactly PDF "
+            "page 91 (printed p.92) was rendered at 3x and transcribed by vision, "
+            "then checked directly against the page image. Its 12 printed profile "
+            "lines yield 11 unique rows because Elven Steed is repeated identically. "
+            "Every other High Elves page remains explicit NO COVERAGE.",
             "These books lay text out glyph-by-glyph (there are no space characters in "
             "the content stream), so each unit name is rebuilt from the contiguous glyph "
             "cluster immediately left of the first stat column, inserting a space where "
@@ -1614,6 +1723,7 @@ def write_outputs(result):
         "digital_no_profiles": result["no_profiles"],
         "no_coverage_mangled": [
             {"book": s, "junk_alpha_fraction": jf} for s, jf in result["mangled"]],
+        "partial_coverage_vision": result["vision_partial"],
         "no_coverage_scanned": result["no_coverage"],
         "page_gaps": result["page_gaps"],
         "special_rules_no_coverage": result["rule_gaps"],
@@ -1629,16 +1739,17 @@ def write_outputs(result):
     lines.append("# Warhammer Fantasy Battle Wargame -- Unit Profile Index")
     lines.append("")
     lines.append("**System:** WHFB (tabletop wargame -- NOT the WFRP roleplay line)  ")
-    lines.append("**Total profiles:** %d  " % len(result["rows"]))
+    lines.append("**Total profiles:** %d" % len(result["rows"]))
     lines.append("**Profiles with special rules:** %d"
                  % sum(result["per_book_rules"].values()))
     lines.append("**Named special-rules gaps:** %d" % len(result["rule_gaps"]))
     lines.append("**Soft / uncertain rows:** %d  " % len(result["soft"]))
     lines.append("")
     lines.append("Profiles (M WS BS S T W I A Ld) extracted geometrically from the PDF "
-                 "text layer (PyMuPDF words mode) of the born-digital OFFICIAL Games "
-                 "Workshop army books. Fan-made/unofficial digital files and scanned, "
-                 "image-only books are listed below and were not harvested.")
+                 "text layer (PyMuPDF words mode) of born-digital OFFICIAL Games "
+                 "Workshop army books, plus one bounded High Elves page transcribed "
+                 "from a verified 3x render. Fan-made files and uncovered scanned pages "
+                 "remain explicit NO COVERAGE.")
     lines.append("")
     lines.append("## Methodology")
     lines.append("")
@@ -1656,6 +1767,17 @@ def write_outputs(result):
                      % (s, ar, ed, result["per_book"].get(s, 0),
                         result["per_book_rules"].get(s, 0)))
     lines.append("")
+    if result["vision_partial"]:
+        lines.append("## Bounded VISION coverage (official scanned book)")
+        lines.append("")
+        for b in result["vision_partial"]:
+            lines.append("- %s: PDF page %d (printed p.%d), %d unique profiles "
+                         "from %d printed profile lines; all other pages remain "
+                         "NO COVERAGE."
+                         % (b["book"], b["covered_pdf_pages"][0],
+                            b["covered_printed_pages"][0], b["profiles"],
+                            b["printed_profile_lines"]))
+        lines.append("")
     if result["digital_unofficial"]:
         lines.append("## Digital UNOFFICIAL / fan-made (skipped -- not harvested)")
         lines.append("")
@@ -1698,7 +1820,7 @@ def write_outputs(result):
         for gap in result["rule_gaps"]:
             lines.append("- %s" % gap)
         lines.append("")
-    lines.append("## NO COVERAGE (scanned, image-only)")
+    lines.append("## NO COVERAGE (scanned, image-only books or uncovered pages)")
     lines.append("")
     for s in result["no_coverage"]:
         lines.append("- %s" % s)
@@ -1840,10 +1962,11 @@ def selftest():
     res = harvest_all(verbose=False)
     rows = res["rows"]
     total = len(rows)
-    assert total == 291, "expected 291 profiles, got %d" % total
+    assert total == 302, "expected 302 profiles, got %d" % total
     expected_profiles = {
         "Armybook_8ed - Daemons of Chaos - 2012": 54,
         "Armybook_8ed - Dwarfs - 2014": 40,
+        "Armybook_8ed - High Elves": 11,
         "Armybook_8ed - Lizardmen": 49,
         "Armybook_8ed - Vampire Counts": 52,
         "Armybook_8ed - Warriors of Chaos 2012": 49,
@@ -1852,6 +1975,7 @@ def selftest():
     expected_rules = {
         "Armybook_8ed - Daemons of Chaos - 2012": 38,
         "Armybook_8ed - Dwarfs - 2014": 34,
+        "Armybook_8ed - High Elves": 11,
         "Armybook_8ed - Lizardmen": 28,
         "Armybook_8ed - Vampire Counts": 44,
         "Armybook_8ed - Warriors of Chaos 2012": 32,
@@ -1859,7 +1983,7 @@ def selftest():
     }
     assert res["per_book"] == expected_profiles, res["per_book"]
     assert res["per_book_rules"] == expected_rules, res["per_book_rules"]
-    assert sum(expected_rules.values()) == 217
+    assert sum(expected_rules.values()) == 228
     assert len(res["rule_gaps"]) == 74, len(res["rule_gaps"])
     for r in rows:
         assert r["system"] == "WHFB", "row not labelled WHFB: %r" % r
@@ -1901,6 +2025,15 @@ def selftest():
         ("Armybook_8ed - Wood Elves", "Ceithin-Har")]["special_rules"]
     assert "Hunter’s Mount:" in keyed[
         ("Armybook_8ed - Wood Elves", "Gwindalor")]["special_rules"]
+    hawkeye = keyed[(VISION_HIGH_ELVES_STEM, "Hawkeye")]
+    assert hawkeye["profile"] == {
+        "M": "5", "WS": "4", "BS": "5", "S": "3", "T": "3",
+        "W": "1", "I": "5", "A": "1", "Ld": "8"}, hawkeye
+    assert hawkeye["vision_transcribed"] is True
+    assert hawkeye["citation"].endswith("[PDF page 91] (printed p.92)")
+    assert len(res["vision_partial"]) == 1, res["vision_partial"]
+    assert res["vision_partial"][0]["printed_profile_lines"] == 12
+    assert res["vision_partial"][0]["source_sha256"] == VISION_HIGH_ELVES_SHA256
     assert len(res["digital_official"]) == 6, \
         "expected 6 official digital books, got %d" % len(res["digital_official"])
     assert len(res["mangled"]) >= 1, "expected the 1994 Chaos book to be gated as mangled"
@@ -1930,7 +2063,7 @@ def main(argv):
             return 2
         return 0
 
-    print("Harvesting WHFB wargame unit profiles from born-digital army books...")
+    print("Harvesting WHFB wargame unit profiles from digital and bounded-vision sources...")
     res = harvest_all(verbose=True)
     write_outputs(res)
     print("")
@@ -1938,13 +2071,14 @@ def main(argv):
           % (OUT_JSON, len(res["rows"]),
              sum(res["per_book_rules"].values()), len(res["rule_gaps"])))
     print("Wrote %s" % OUT_MD)
-    print("Digital-official: %d | Digital-unofficial: %d | Mangled: %d | "
-          "Rulebooks: %d | FAQ/errata: %d | No-profiles: %d | "
-          "Scanned (NO COVERAGE): %d | Soft rows: %d"
-          % (len(res["digital_official"]), len(res["digital_unofficial"]),
-             len(res["mangled"]), len(res["skipped_rulebook"]),
-             len(res["skipped_faq"]), len(res["no_profiles"]),
-             len(res["no_coverage"]), len(res["soft"])))
+    print("Digital-official: %d | Vision-partial: %d | Digital-unofficial: %d | "
+          "Mangled: %d | Rulebooks: %d | FAQ/errata: %d | No-profiles: %d | "
+          "Scanned/uncovered (NO COVERAGE): %d | Soft rows: %d"
+          % (len(res["digital_official"]), len(res["vision_partial"]),
+             len(res["digital_unofficial"]), len(res["mangled"]),
+             len(res["skipped_rulebook"]), len(res["skipped_faq"]),
+             len(res["no_profiles"]), len(res["no_coverage"]),
+             len(res["soft"])))
     return 0
 
 

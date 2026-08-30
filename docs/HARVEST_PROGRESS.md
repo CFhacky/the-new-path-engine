@@ -8,11 +8,11 @@ It records no campaign canon and never authorizes a Notion write.
 | Measure | Verified value |
 |---|---:|
 | Reference families | 41 |
-| Accepted entries | 18,133 |
+| Accepted entries | 18,144 |
 | System labels | 9 |
-| Codex full-text blocks | 13,568 / 18,133 (75%) |
+| Codex full-text blocks | 13,579 / 18,144 (75%) |
 | Harvest base tag | `reference-2026-08-29` |
-| Current verified unit | Psionic power full-text recovery (2026-08-30) |
+| Current verified unit | WHFB High Elves bounded vision batch (2026-08-30) |
 | Family registry | `reference/families.json` |
 
 The registry is the machine-readable source for family paths, accepted-entry

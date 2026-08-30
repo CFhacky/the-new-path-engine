@@ -433,14 +433,14 @@ def selftest():
     assert cleaned_power == "ZONE OF TRUTH,\nPSIONIC\nTelepathy"
     specs = _family_specs()
     assert len(specs) == 41
-    assert sum(spec["expected_count"] for spec in specs) == 18_133
+    assert sum(spec["expected_count"] for spec in specs) == 18_144
     assert any(spec["id"] == "terms_and_affixes"
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
-    print("selftest: 41-family registry totals 18,133 rows")
+    print("selftest: 41-family registry totals 18,144 rows")
     print("selftest: PASS")
 
 

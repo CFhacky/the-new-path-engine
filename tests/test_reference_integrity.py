@@ -18,7 +18,7 @@ class ReferenceIntegrityTests(unittest.TestCase):
     def test_family_registry_is_complete(self) -> None:
         families = reference_audit.load_manifest()
         self.assertEqual(len(families), 41)
-        self.assertEqual(sum(row["expected_count"] for row in families), 18_133)
+        self.assertEqual(sum(row["expected_count"] for row in families), 18_144)
         self.assertEqual(len({row["id"] for row in families}), 41)
         self.assertEqual(len({row["json"] for row in families}), 41)
 
@@ -26,7 +26,7 @@ class ReferenceIntegrityTests(unittest.TestCase):
         errors, summary = reference_audit.structural_audit()
         self.assertEqual(errors, [])
         self.assertEqual(summary["families"], 41)
-        self.assertEqual(summary["rows"], 18_133)
+        self.assertEqual(summary["rows"], 18_144)
 
     def test_terms_family_uses_normalized_name(self) -> None:
         families = reference_audit.load_manifest()

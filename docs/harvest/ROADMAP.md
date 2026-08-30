@@ -76,6 +76,14 @@ three-column spell pages as separate vision projects. Define a bounded book and
 page range before starting, preserve image/page provenance, and commit each
 verified batch independently.
 
+The first pilot is complete: WHFB High Elves 8th edition, PDF p.91 (printed
+p.92), rendered at 3x and checked directly against the source image. It yielded
+11 unique profiles and cited rule lists from 12 printed profile lines while all
+other pages stayed explicit `NO COVERAGE`. Continue scan work only through the
+same gate: measure the text layer, locate with OCR, render at 3x or better,
+transcribe against the image, lock exact rows in `--selftest`, and prove every
+previous row survives byte-identically.
+
 Dragon Magazine should begin with a read-only feasibility spike for a
 crunch-only detector. Do not create an index until precision can be measured
 against a representative issue sample.

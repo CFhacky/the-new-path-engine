@@ -1,8 +1,9 @@
 {
   "system": "WHFB",
-  "note": "Warhammer Fantasy Battle tabletop WARGAME unit profiles (characteristic lines: M WS BS S T W I A Ld) plus each profile's explicit book-raw SPECIAL RULES section when unambiguously linked. Distinct from the Warhammer Fantasy Roleplay (WFRP) line. Extracted from born-digital army-book PDF text layers only; scanned books are listed under no_coverage_scanned.",
+  "note": "Warhammer Fantasy Battle tabletop WARGAME unit profiles (characteristic lines: M WS BS S T W I A Ld) plus each profile's explicit book-raw SPECIAL RULES section when unambiguously linked. Distinct from the Warhammer Fantasy Roleplay (WFRP) line. Extracted from born-digital army-book PDF text layers plus one bounded, page-image-verified High Elves vision batch; uncovered scanned pages are listed under no_coverage_scanned.",
   "methodology_notes": [
     "Profiles reconstructed geometrically from the PDF text layer (PyMuPDF words mode): a header row of characteristic labels (M WS BS S T W I A Ld) fixes each column's x-centre, and every value row maps its stat tokens to the nearest column. The header is read live -- never hard-coded -- so a table that omits or reorders a column still parses. No number is ever guessed or corrected; unreadable cells are left empty.",
+    "The official 8th-edition High Elves PDF is a 96-page image-only scan: PyMuPDF returns 0 characters and 0 words on every page. Exactly PDF page 91 (printed p.92) was rendered at 3x and transcribed by vision, then checked directly against the page image. Its 12 printed profile lines yield 11 unique rows because Elven Steed is repeated identically. Every other High Elves page remains explicit NO COVERAGE.",
     "These books lay text out glyph-by-glyph (there are no space characters in the content stream), so each unit name is rebuilt from the contiguous glyph cluster immediately left of the first stat column, inserting a space where the horizontal gap widens to a word break. Decorative drop-cap / bullet glyphs are trimmed. The clean ALL-CAPS datasheet heading above the table is captured separately as unit_context.",
     "A datasheet prints several profile lines -- the unit, its champion/command upgrade, and any mount or monster -- each emitted as its own row sharing the unit_context heading. Troop Type (Infantry/Cavalry/Monster/Chariot/War Beast/...) is captured from the 'TROOP TYPE:' line beneath a bestiary block or from the trailing text column after Ld in the army-list summary.",
     "Movement values keep verbatim any '*' (variable) or random-movement die (e.g. 2D6); '-' marks a characteristic a model does not have. Leadership can reach 10. Parenthetical values are kept as printed.",
@@ -10,8 +11,8 @@
     "Only the OFFICIAL Games Workshop army books are harvested. Born-digital files whose filenames mark them fan-made/unofficial ('9th', 'PDF Room', 'pdf-free', version tags) are classified DIGITAL-UNOFFICIAL and skipped so a fan stat is never passed as an official one. The 1994 4th-ed Chaos book is born-digital by character count but its font/CMap is broken -- the characteristic DIGITS extract as garbage (a '4' becomes '-j'/'~') -- so a token-corruption gate (alpha-junk fraction > 1.5%) routes it to NO COVERAGE rather than fabricating numbers (Inviolable Rule 1). Core rulebooks are skipped by policy.",
     "Summary/army-list tables duplicate the per-datasheet bestiary profiles; exact (name, profile) duplicates are merged within each book (space/case insensitive), preferring the row that also carries a troop_type."
   ],
-  "total_profiles": 291,
-  "profiles_with_special_rules": 217,
+  "total_profiles": 302,
+  "profiles_with_special_rules": 228,
   "digital_official_books": [
     "Armybook_8ed - Daemons of Chaos - 2012",
     "Armybook_8ed - Dwarfs - 2014",
@@ -86,6 +87,21 @@
       "junk_alpha_fraction": 0.0273
     }
   ],
+  "partial_coverage_vision": [
+    {
+      "book": "Armybook_8ed - High Elves",
+      "covered_pdf_pages": [
+        91
+      ],
+      "covered_printed_pages": [
+        92
+      ],
+      "profiles": 11,
+      "printed_profile_lines": 12,
+      "source_sha256": "43e54b9b3b52d363708a823287d87fd439c4e0038de3ab20393455f5cb22056b",
+      "method": "vision transcription from a 3x PyMuPDF render"
+    }
+  ],
   "no_coverage_scanned": [
     "Armybook_4ed -  Undead - 1994",
     "Armybook_4ed - Chaos Dwarfs - 1994",
@@ -128,7 +144,7 @@
     "Armybook_7ed - Wood Elves - 2005 - 7th Edition",
     "Armybook_8ed - Dark_Elves (buggy)",
     "Armybook_8ed - Dark_Elves (cut)",
-    "Armybook_8ed - High Elves",
+    "Armybook_8ed - High Elves [PDF pages 1-90, 92-96]",
     "Armybook_8ed - Ogre Kingdoms",
     "Armybook_8ed - Orcs And Goblins",
     "Armybook_8ed - The Empire - 2011",
@@ -252,6 +268,7 @@
   "per_book_counts": {
     "Armybook_8ed - Daemons of Chaos - 2012": 54,
     "Armybook_8ed - Dwarfs - 2014": 40,
+    "Armybook_8ed - High Elves": 11,
     "Armybook_8ed - Lizardmen": 49,
     "Armybook_8ed - Vampire Counts": 52,
     "Armybook_8ed - Warriors of Chaos 2012": 49,
@@ -260,6 +277,7 @@
   "per_book_rule_counts": {
     "Armybook_8ed - Daemons of Chaos - 2012": 38,
     "Armybook_8ed - Dwarfs - 2014": 34,
+    "Armybook_8ed - High Elves": 11,
     "Armybook_8ed - Lizardmen": 28,
     "Armybook_8ed - Vampire Counts": 44,
     "Armybook_8ed - Warriors of Chaos 2012": 32,
@@ -2545,6 +2563,303 @@
       "book": "Armybook_8ed - Dwarfs - 2014",
       "citation": "Armybook_8ed - Dwarfs - 2014 [PDF page 99]",
       "troop_type": "Key: In=Infantry, WB=WarBeast"
+    },
+    {
+      "name": "Spearman",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Infantry",
+      "unit_context": "SPEARMEN",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Sentinel",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "2",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Infantry",
+      "unit_context": "SPEARMEN",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Archer",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Infantry",
+      "unit_context": "ARCHERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Hawkeye",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Infantry",
+      "unit_context": "ARCHERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Sea Guard",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Infantry",
+      "unit_context": "LOTHERN SEA GUARD",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Sea Master",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "2",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Infantry",
+      "unit_context": "LOTHERN SEA GUARD",
+      "special_rules": "SPECIAL RULES: Always Strikes First, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Silver Helm",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Cavalry",
+      "unit_context": "SILVER HELMS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "High Helm",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "2",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Cavalry",
+      "unit_context": "SILVER HELMS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Elven Steed",
+      "profile": {
+        "M": "9",
+        "WS": "3",
+        "BS": "0",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "4",
+        "A": "1",
+        "Ld": "5"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "-",
+      "unit_context": "SILVER HELMS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Ellyrian Reaver",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "4",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Cavalry",
+      "unit_context": "ELLYRIAN REAVERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Fast Cavalry, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
+    },
+    {
+      "name": "Harbinger",
+      "profile": {
+        "M": "5",
+        "WS": "4",
+        "BS": "5",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "I": "5",
+        "A": "1",
+        "Ld": "8"
+      },
+      "army": "High Elves",
+      "edition": "8th",
+      "official": true,
+      "system": "WHFB",
+      "book": "Armybook_8ed - High Elves",
+      "citation": "Armybook_8ed - High Elves [PDF page 91] (printed p.92)",
+      "troop_type": "Cavalry",
+      "unit_context": "ELLYRIAN REAVERS",
+      "special_rules": "SPECIAL RULES: Always Strikes First (Riders only), Fast Cavalry, Martial Prowess, Valour of Ages.",
+      "rules_citations": [
+        "Armybook_8ed - High Elves [PDF page 91] (printed p.92)"
+      ],
+      "vision_transcribed": true
     },
     {
       "name": "Saurus Warrior",

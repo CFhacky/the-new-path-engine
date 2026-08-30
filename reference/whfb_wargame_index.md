@@ -1,16 +1,17 @@
 # Warhammer Fantasy Battle Wargame -- Unit Profile Index
 
 **System:** WHFB (tabletop wargame -- NOT the WFRP roleplay line)  
-**Total profiles:** 291  
-**Profiles with special rules:** 217
+**Total profiles:** 302
+**Profiles with special rules:** 228
 **Named special-rules gaps:** 74
 **Soft / uncertain rows:** 1  
 
-Profiles (M WS BS S T W I A Ld) extracted geometrically from the PDF text layer (PyMuPDF words mode) of the born-digital OFFICIAL Games Workshop army books. Fan-made/unofficial digital files and scanned, image-only books are listed below and were not harvested.
+Profiles (M WS BS S T W I A Ld) extracted geometrically from the PDF text layer (PyMuPDF words mode) of born-digital OFFICIAL Games Workshop army books, plus one bounded High Elves page transcribed from a verified 3x render. Fan-made files and uncovered scanned pages remain explicit NO COVERAGE.
 
 ## Methodology
 
 - Profiles reconstructed geometrically from the PDF text layer (PyMuPDF words mode): a header row of characteristic labels (M WS BS S T W I A Ld) fixes each column's x-centre, and every value row maps its stat tokens to the nearest column. The header is read live -- never hard-coded -- so a table that omits or reorders a column still parses. No number is ever guessed or corrected; unreadable cells are left empty.
+- The official 8th-edition High Elves PDF is a 96-page image-only scan: PyMuPDF returns 0 characters and 0 words on every page. Exactly PDF page 91 (printed p.92) was rendered at 3x and transcribed by vision, then checked directly against the page image. Its 12 printed profile lines yield 11 unique rows because Elven Steed is repeated identically. Every other High Elves page remains explicit NO COVERAGE.
 - These books lay text out glyph-by-glyph (there are no space characters in the content stream), so each unit name is rebuilt from the contiguous glyph cluster immediately left of the first stat column, inserting a space where the horizontal gap widens to a word break. Decorative drop-cap / bullet glyphs are trimmed. The clean ALL-CAPS datasheet heading above the table is captured separately as unit_context.
 - A datasheet prints several profile lines -- the unit, its champion/command upgrade, and any mount or monster -- each emitted as its own row sharing the unit_context heading. Troop Type (Infantry/Cavalry/Monster/Chariot/War Beast/...) is captured from the 'TROOP TYPE:' line beneath a bestiary block or from the trailing text column after Ld in the army-list summary.
 - Movement values keep verbatim any '*' (variable) or random-movement die (e.g. 2D6); '-' marks a characteristic a model does not have. Leadership can reach 10. Parenthetical values are kept as printed.
@@ -28,6 +29,10 @@ Profiles (M WS BS S T W I A Ld) extracted geometrically from the PDF text layer 
 | Armybook_8ed - Vampire Counts | Vampire Counts | 8th | 52 | 44 |
 | Armybook_8ed - Warriors of Chaos 2012 | Warriors of Chaos | 8th | 49 | 32 |
 | Armybook_8ed - Wood Elves | Wood Elves | 8th | 47 | 41 |
+
+## Bounded VISION coverage (official scanned book)
+
+- Armybook_8ed - High Elves: PDF page 91 (printed p.92), 11 unique profiles from 12 printed profile lines; all other pages remain NO COVERAGE.
 
 ## Digital UNOFFICIAL / fan-made (skipped -- not harvested)
 
@@ -146,7 +151,7 @@ These profiles remain mechanically indexed, but no unambiguous explicit unit SPE
 - Armybook_8ed - Wood Elves / Arahan (no unambiguous explicit SPECIAL RULES section)
 - Armybook_8ed - Wood Elves / Forest Dragon (no unambiguous explicit SPECIAL RULES section)
 
-## NO COVERAGE (scanned, image-only)
+## NO COVERAGE (scanned, image-only books or uncovered pages)
 
 - Armybook_4ed -  Undead - 1994
 - Armybook_4ed - Chaos Dwarfs - 1994
@@ -189,7 +194,7 @@ These profiles remain mechanically indexed, but no unambiguous explicit unit SPE
 - Armybook_7ed - Wood Elves - 2005 - 7th Edition
 - Armybook_8ed - Dark_Elves (buggy)
 - Armybook_8ed - Dark_Elves (cut)
-- Armybook_8ed - High Elves
+- Armybook_8ed - High Elves [PDF pages 1-90, 92-96]
 - Armybook_8ed - Ogre Kingdoms
 - Armybook_8ed - Orcs And Goblins
 - Armybook_8ed - The Empire - 2011
@@ -338,6 +343,22 @@ These profiles remain mechanically indexed, but no unambiguous explicit unit SPE
 | Gyrobomber | M1 WS4 BS3 S4 T5 W3 I2 A2 Ld9 | Unique | m GYROBOMBERS | 8th | Armybook_8ed - Dwarfs - 2014 [PDF page 99] | yes |  |
 | Organ Gun | M- WS- BS- S- T7 W3 I- A- Ld- | WarMachine | ORGAN GUN FLAME CANNON | 8th | Armybook_8ed - Dwarfs - 2014 [PDF page 99] | yes |  |
 | Dwarf Warrior | M3 WS4 BS3 S3 T4 W1 I2 A1 Ld9 | Key: In=Infantry, WB=WarBeast |  | 8th | Armybook_8ed - Dwarfs - 2014 [PDF page 99] |  |  |
+
+## Armybook_8ed - High Elves
+
+| Unit | Profile | Troop Type | Context | Edition | Citation | Rules | Soft |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Spearman | M5 WS4 BS4 S3 T3 W1 I5 A1 Ld8 | Infantry | SPEARMEN | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Sentinel | M5 WS4 BS4 S3 T3 W1 I5 A2 Ld8 | Infantry | SPEARMEN | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Archer | M5 WS4 BS4 S3 T3 W1 I5 A1 Ld8 | Infantry | ARCHERS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Hawkeye | M5 WS4 BS5 S3 T3 W1 I5 A1 Ld8 | Infantry | ARCHERS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Sea Guard | M5 WS4 BS4 S3 T3 W1 I5 A1 Ld8 | Infantry | LOTHERN SEA GUARD | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Sea Master | M5 WS4 BS4 S3 T3 W1 I5 A2 Ld8 | Infantry | LOTHERN SEA GUARD | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Silver Helm | M5 WS4 BS4 S3 T3 W1 I5 A1 Ld8 | Cavalry | SILVER HELMS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| High Helm | M5 WS4 BS4 S3 T3 W1 I5 A2 Ld8 | Cavalry | SILVER HELMS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Elven Steed | M9 WS3 BS0 S3 T3 W1 I4 A1 Ld5 | - | SILVER HELMS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Ellyrian Reaver | M5 WS4 BS4 S3 T3 W1 I5 A1 Ld8 | Cavalry | ELLYRIAN REAVERS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
+| Harbinger | M5 WS4 BS5 S3 T3 W1 I5 A1 Ld8 | Cavalry | ELLYRIAN REAVERS | 8th | Armybook_8ed - High Elves [PDF page 91] (printed p.92) | yes |  |
 
 ## Armybook_8ed - Lizardmen
 

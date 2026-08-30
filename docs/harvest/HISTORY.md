@@ -259,6 +259,12 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 
 ## LOG
 
+- **2026-08-30** — Completed the first bounded wargame vision pilot against
+  official WHFB 8e High Elves PDF p.91 (printed p.92). Twelve printed profile
+  lines yielded 11 unique cited profiles; the repeated Elven Steed deduped
+  normally. All previous 291 WHFB rows remain byte-identical. WHFB is now 302
+  profiles / 228 with rules; all other scan pages remain explicit NO COVERAGE.
+
 - **2026-08-30** — Replaced fuzzy source resolution and 80-line caps for the
   D&D 3.5e power family with harvester-owned exact source paths and validated
   description boundaries. The 409 mechanical rows are unchanged after removing
