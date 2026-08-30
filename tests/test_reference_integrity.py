@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import pathlib
 import sys
 import unittest
@@ -34,6 +35,24 @@ class ReferenceIntegrityTests(unittest.TestCase):
         self.assertEqual(utterance["entry_path"], "sources[].utterances")
         self.assertEqual(utterance["expected_count"], 65)
         self.assertEqual(utterance["scope"], "native")
+
+    def test_prestige_full_text_is_exact_and_bounded(self) -> None:
+        data = json.loads(
+            (ROOT / "reference" / "prestige_class_index.json").read_text(encoding="utf-8")
+        )
+        rows = data["prestige_classes"]
+        self.assertEqual(len(rows), 145)
+        self.assertEqual(data["full_text_prestige_classes"], 16)
+        recovered = [row for row in rows if "full_description" in row]
+        self.assertEqual(len(recovered), 16)
+        self.assertEqual(len(rows) - len(recovered), 129)
+        for row in recovered:
+            self.assertTrue(row["source_path"].startswith("reference/prestige_fulltext_batch_"))
+            source = (ROOT / row["source_path"]).read_text(encoding="utf-8").splitlines()
+            exact = "\n".join(source[row["start"]:row["end"]]).strip()
+            self.assertEqual(row["full_description"], exact)
+            self.assertGreater(len(exact), 4200)
+            self.assertIn(row["name"].casefold(), exact[:200].casefold())
 
     def test_terms_family_uses_normalized_name(self) -> None:
         families = reference_audit.load_manifest()

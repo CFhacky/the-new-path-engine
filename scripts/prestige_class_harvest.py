@@ -38,7 +38,7 @@ import sys
 from collections import Counter
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import List, Optional
+from typing import Dict, List, Optional, Tuple
 
 if sys.platform == "win32":
     try:
@@ -49,6 +49,10 @@ if sys.platform == "win32":
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "prestige_class_index.json"
 OUT_MD = REPO / "reference" / "prestige_class_index.md"
+FULLTEXT_MAPS = tuple(
+    REPO / "reference" / f"prestige_fulltext_batch_{batch}_map.json"
+    for batch in "abcd"
+)
 BOOK = "Dragon Magazine Prestige Class Compendium (Issues 274-353)"
 CITATION = (
     "Dragon Magazine Prestige Class Compendium (Issues 274-353), v1.0 — a "
@@ -467,6 +471,123 @@ class PrestigeClass:
     requirements: Optional[str]
     citation: str
     page: int
+    source_path: Optional[str] = None
+    pdf_source_path: Optional[str] = None
+    description_pages: Optional[List[int]] = None
+    start: Optional[int] = None
+    end: Optional[int] = None
+    soft: Optional[bool] = None
+    full_description: Optional[str] = None
+
+
+def _name_key(value: str) -> str:
+    return "".join(char for char in value.casefold() if char.isalnum())
+
+
+def _load_full_text(prcs: List[PrestigeClass]) -> Dict[int, Dict[str, object]]:
+    """Validate all owned partitions and return recovered rows by ordinal."""
+    expected_ranges: Tuple[Tuple[int, int], ...] = (
+        (1, 37), (38, 73), (74, 109), (110, 145),
+    )
+    canonical = {ordinal: row for ordinal, row in enumerate(prcs, 1)}
+    recovered: Dict[int, Dict[str, object]] = {}
+    covered: List[int] = []
+
+    for map_path, expected_range in zip(FULLTEXT_MAPS, expected_ranges):
+        data = json.loads(map_path.read_text(encoding="utf-8"))
+        bounds = data.get("owned_ordinals")
+        if bounds != list(expected_range):
+            raise ValueError(
+                f"{map_path.name}: owned_ordinals {bounds!r} != {list(expected_range)!r}"
+            )
+        first, last = expected_range
+        owned = set(range(first, last + 1))
+        covered.extend(range(first, last + 1))
+
+        endpoint_names = data.get("owned_names")
+        if endpoint_names is not None:
+            expected_names = [canonical[first].name, canonical[last].name]
+            if endpoint_names != expected_names:
+                raise ValueError(
+                    f"{map_path.name}: owned_names do not match canonical endpoints"
+                )
+
+        recovered_rows = data.get("recovered")
+        unresolved_rows = data.get("unresolved")
+        if not isinstance(recovered_rows, list) or not isinstance(unresolved_rows, list):
+            raise ValueError(f"{map_path.name}: recovered/unresolved must be lists")
+        all_rows = recovered_rows + unresolved_rows
+        ordinals = [row.get("ordinal") for row in all_rows if isinstance(row, dict)]
+        if len(ordinals) != len(all_rows) or len(ordinals) != len(set(ordinals)):
+            raise ValueError(f"{map_path.name}: malformed or duplicate ordinals")
+        if set(ordinals) != owned:
+            raise ValueError(
+                f"{map_path.name}: recovered + unresolved do not exactly own {first}-{last}"
+            )
+
+        derived_source = data.get("derived_source")
+        if not isinstance(derived_source, str) or not derived_source.strip():
+            raise ValueError(f"{map_path.name}: missing derived_source")
+        source_path = Path(derived_source)
+        if source_path.is_absolute() or ".." in source_path.parts:
+            raise ValueError(f"{map_path.name}: derived_source must be repo-relative")
+        source_lines = (REPO / source_path).read_text(encoding="utf-8").splitlines()
+        intervals: List[Tuple[int, int, str]] = []
+
+        for row in all_rows:
+            ordinal = row["ordinal"]
+            expected = canonical[ordinal]
+            if row.get("name") != expected.name or row.get("page") != expected.page:
+                raise ValueError(
+                    f"{map_path.name}: ordinal {ordinal} contradicts canonical roster"
+                )
+
+        for row in recovered_rows:
+            ordinal = row["ordinal"]
+            expected = canonical[ordinal]
+            start, end = row.get("start"), row.get("end")
+            pages = row.get("description_pages")
+            if not isinstance(start, int) or not isinstance(end, int):
+                raise ValueError(f"{map_path.name}: non-integer span for {row['name']}")
+            if not (0 <= start < end <= len(source_lines)):
+                raise ValueError(f"{map_path.name}: invalid span for {row['name']}")
+            if not isinstance(pages, list) or not pages:
+                raise ValueError(f"{map_path.name}: missing description_pages for {row['name']}")
+            if not all(isinstance(page, int) for page in pages) or expected.page not in pages:
+                raise ValueError(f"{map_path.name}: invalid description_pages for {row['name']}")
+            if row.get("full_description") is not True or not isinstance(row.get("soft"), bool):
+                raise ValueError(f"{map_path.name}: recovery flags invalid for {row['name']}")
+
+            full = "\n".join(source_lines[start:end]).strip()
+            first_line = next(
+                (line.strip().lstrip("#").strip() for line in full.splitlines() if line.strip()),
+                "",
+            )
+            if _name_key(first_line) != _name_key(expected.name):
+                raise ValueError(f"{map_path.name}: slice does not begin with {row['name']}")
+            if _name_key(expected.name) not in _name_key(full):
+                raise ValueError(f"{map_path.name}: slice omits title {row['name']}")
+            intervals.append((start, end, row["name"]))
+            recovered[ordinal] = {
+                "source_path": source_path.as_posix(),
+                "pdf_source_path": row.get("source_path") or data.get("source_pdf"),
+                "description_pages": pages,
+                "start": start,
+                "end": end,
+                "soft": row["soft"],
+                "full_description": full,
+            }
+
+        intervals.sort()
+        for left, right in zip(intervals, intervals[1:]):
+            if left[1] > right[0]:
+                raise ValueError(
+                    f"{map_path.name}: overlapping recovered spans {left[2]} / {right[2]}"
+                )
+
+    if covered != list(range(1, len(prcs) + 1)):
+        raise ValueError("prestige full-text maps do not partition the canonical roster")
+    return recovered
 
 
 def build() -> List[PrestigeClass]:
@@ -482,6 +603,11 @@ def build() -> List[PrestigeClass]:
             hit_die=(hd or None),
             requirements=(req.strip() or None) if req else None,
             citation=CITATION, page=page))
+    full_text = _load_full_text(out)
+    for ordinal, metadata in full_text.items():
+        row = out[ordinal - 1]
+        for key, value in metadata.items():
+            setattr(row, key, value)
     return out
 
 
@@ -489,6 +615,7 @@ def write_index() -> int:
     prcs = build()
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     by_hd = Counter(p.hit_die or "?" for p in prcs)
+    full_count = sum(p.full_description is not None for p in prcs)
     md: List[str] = [
         "# PRESTIGE CLASS INDEX — The New Path",
         "",
@@ -499,18 +626,22 @@ def write_index() -> int:
         "**Vision-transcribed from the PDF page images** (321 of 355 pages are",
         "image-only and the rest carry corrupt OCR) — still book RAW, read off the",
         "page. The `requirements` field is each class's prerequisite block, the",
-        "qualifying mechanic a translator needs; the full class-feature text lives",
-        "at the class's page in the compendium. `page` is the PDF page.",
+        "qualifying mechanic a translator needs. Recovered full descriptions are",
+        "uncapped exact slices of the batch-derived Markdown; `page` is the PDF page.",
         "",
-        f"*{len(prcs)} prestige classes — Hit Die: " +
+        f"*{len(prcs)} prestige classes; {full_count}/{len(prcs)} carry verified full text — Hit Die: " +
         ", ".join(f"{n}x {hd}" for hd, n in sorted(by_hd.items())) + ".*",
         "",
-        "| Prestige Class | Hit Die | Requirements | Page |",
-        "|---|---|---|---|",
+        "| Prestige Class | Hit Die | Requirements | Page | Full Text | Source Slice |",
+        "|---|---|---|---|---|---|",
     ]
-    for p in sorted(prcs, key=lambda x: x.page):
+    for p in prcs:
         req = (p.requirements or "-").replace("|", "\\|")
-        md.append(f"| {p.name} | {p.hit_die or '-'} | {req} | {p.page} |")
+        full = "yes" if p.full_description is not None else "no"
+        source = f"`{p.source_path}:{p.start}-{p.end}`" if p.source_path else "-"
+        md.append(
+            f"| {p.name} | {p.hit_die or '-'} | {req} | {p.page} | {full} | {source} |"
+        )
     OUT_MD.write_text("\n".join(md) + "\n", encoding="utf-8")
 
     OUT_JSON.write_text(
@@ -520,8 +651,12 @@ def write_index() -> int:
                              "images (image-only / corrupt-OCR source). Book "
                              "RAW, read off the page. `page` is the PDF page."),
                     "total_prestige_classes": len(prcs),
+                    "full_text_prestige_classes": full_count,
                     "by_hit_die": dict(by_hd),
-                    "prestige_classes": [asdict(p) for p in prcs]}, indent=1),
+                    "prestige_classes": [
+                        {key: value for key, value in asdict(p).items() if value is not None}
+                        for p in prcs
+                    ]}, indent=1),
         encoding="utf-8")
     return len(prcs)
 
@@ -529,8 +664,36 @@ def write_index() -> int:
 def selftest() -> int:
     failures: List[str] = []
     prcs = build()
-    if len(prcs) <= 15:
-        failures.append(f"only {len(prcs)} prestige classes; expected > 15")
+    if len(prcs) != 145:
+        failures.append(f"found {len(prcs)} prestige classes; expected 145")
+    full_rows = [p for p in prcs if p.full_description is not None]
+    expected_full = sum(
+        len(json.loads(path.read_text(encoding="utf-8"))["recovered"])
+        for path in FULLTEXT_MAPS
+    )
+    if len(full_rows) != expected_full:
+        failures.append(
+            f"found {len(full_rows)} full descriptions; maps declare {expected_full}"
+        )
+    for ordinal, p in enumerate(prcs, 1):
+        expected = _T[ordinal - 1]
+        if (p.name, p.hit_die, p.requirements, p.page) != expected:
+            failures.append(f"ordinal {ordinal}: canonical mechanics/order changed")
+        if p.full_description is None:
+            if any(value is not None for value in (
+                    p.source_path, p.pdf_source_path, p.description_pages,
+                    p.start, p.end, p.soft)):
+                failures.append(f"{p.name}: unresolved row carries recovery metadata")
+            continue
+        if not p.source_path or not p.pdf_source_path or not p.description_pages:
+            failures.append(f"{p.name}: incomplete source provenance")
+            continue
+        source_lines = (REPO / p.source_path).read_text(encoding="utf-8").splitlines()
+        exact = "\n".join(source_lines[p.start:p.end]).strip()
+        if p.full_description != exact:
+            failures.append(f"{p.name}: full_description differs from exact source slice")
+        if len(p.full_description) <= 4200:
+            failures.append(f"{p.name}: expected uncapped recovery longer than Codex cap")
     names = {p.name for p in prcs}
     # a spread of specific PrCs transcribed from across the compendium
     for probe in ("Bloodsister", "Ancestral Avenger", "Radiant Servant of Pelor",

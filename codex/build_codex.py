@@ -27,7 +27,7 @@ publish `codex/build/engine_reference.html` as a private Artifact.
 
 INPUTS
 ------
-- reference/families.json    canonical registry of 42 family files and their
+- reference/families.json    canonical registry of 43 family files and their
                               explicit accepted-entry paths
 - reference/*_index.json      committed family files (name/fields/citation +
                               [start,end] spans and exact paths where emitted)
@@ -56,6 +56,8 @@ FULL-TEXT SOURCING — book RAW, never invented
                     source-verified caption exclusions retain the complete text.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
+- prestige classes   sliced from verified batch-derived Markdown spans; complete
+                    class rules bypass the 4.2k cap.
 - psionic powers    sliced from harvester-owned exact source paths and validated
                     description spans; ambiguous column-interleaved rows stay empty.
 - GURPS skills        sliced from exact Basic Set description spans; running page
@@ -112,7 +114,7 @@ SOURCE_ROOTS = [
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
-CAP = 4200  # exact vestige/mystery/maneuver/GURPS/epic spans bypass it
+CAP = 4200  # exact vestige/mystery/maneuver/prestige/GURPS/epic spans bypass it
 
 _STOP = set("gurps wfrp the of a an core rulebook compilation edition pdf md txt "
             "scan updated with errata hq premium".split())
@@ -510,7 +512,10 @@ def _exact_source_file(row):
     if path.is_absolute():
         return str(path)
     corpus = row.get("_corpus")
-    return str(Path(corpus) / path) if corpus else None
+    if corpus:
+        return str(Path(corpus) / path)
+    repo_path = REPO / path
+    return str(repo_path) if repo_path.exists() else None
 
 
 def build(report=False):
@@ -649,6 +654,9 @@ def build(report=False):
             elif fam == "maneuver" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), limit=None)
+            elif fam == "prestige_class" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), limit=None)
             elif fam == "epic_item" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
@@ -682,7 +690,8 @@ def build(report=False):
                 if k in ("name", "system", "book", "page", "citation", "start", "end",
                          "description_key", "description_start", "description_end",
                          "description_spans", "excluded_spans", "special_rules",
-                         "table_start", "table_end", "_corpus", "_source_path"):
+                         "full_description", "table_start", "table_end",
+                         "_corpus", "_source_path"):
                     continue
                 if isinstance(v, (str, int, float)) and str(v).strip() and str(v) != "None":
                     extra[k] = v

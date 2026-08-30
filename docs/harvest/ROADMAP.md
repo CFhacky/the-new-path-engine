@@ -57,7 +57,8 @@ Suggested order:
 1. **COMPLETE 2026-08-30:** D&D 3.5e powers now carry 406/409 validated
    description spans; the three column-interleaved XPH rows remain explicit
    `NO COVERAGE`;
-2. prestige-class requirement/description blocks;
+2. **IN PROGRESS 2026-08-30:** prestige-class full text now has 16/145 exact,
+   visually verified batch-derived Markdown spans;
 3. AD&D 2e monster descriptions where page-image transcription is already
    available;
 4. GURPS 3e items and spells;

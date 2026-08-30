@@ -55,7 +55,7 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | Family | Full text |
 |---|---:|
 | AD&D 2e monsters | 0 / 96 |
-| D&D 3.5e prestige classes | 0 / 145 |
+| D&D 3.5e prestige classes | 16 / 145 |
 | terms and affixes | 0 / 143 |
 | WFRP mutations | 0 / 505 |
 | WH40K Roleplay force fields | 0 / 13 |
@@ -68,7 +68,7 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,731 / 18,296 full-text blocks. Improve these
+The whole Codex is currently 13,747 / 18,296 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 

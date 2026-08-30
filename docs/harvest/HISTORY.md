@@ -702,3 +702,13 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   and Codex full-text coverage **13,713 → 13,731**. The live selftest locks the
   18-name roster and order, exact seven-cell spans, `neg.` glove weights, and
   the printed Monocrys Suit values.
+
+- **2026-08-30** — Began bounded prestige-class full-text recovery from the
+  image-only/corrupt-OCR Dragon Magazine Prestige Class Compendium. Four
+  canonical partitions cover all 145 roster ordinals without overlap; 16
+  complete rules blocks are now accepted from visually verified, class-owned
+  Markdown reconstructions. Recovered rows retain the original name, Hit Die,
+  requirements, page, citation, and canonical order while adding exact source
+  spans, description pages, separate PDF provenance, and uncapped full text.
+  Codex coverage rises **13,731 → 13,747** with repository rows unchanged at
+  **18,296**. All 129 unresolved classes remain explicitly empty.
