@@ -507,7 +507,7 @@
       "json": "reference/whfb_wargame_index.json",
       "markdown": "reference/whfb_wargame_index.md",
       "entry_path": "rows",
-      "expected_count": 291
+      "expected_count": 302
     }
   ]
 }

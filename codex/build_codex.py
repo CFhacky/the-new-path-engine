@@ -400,13 +400,13 @@ def selftest():
     assert _display_book("SRD 3.5") == "SRD 3.5"
     specs = _family_specs()
     assert len(specs) == 41
-    assert sum(spec["expected_count"] for spec in specs) == 18_094
+    assert sum(spec["expected_count"] for spec in specs) == 18_105
     assert any(spec["id"] == "terms_and_affixes"
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance and system aliases inherited")
-    print("selftest: 41-family registry totals 18,094 rows")
+    print("selftest: 41-family registry totals 18,105 rows")
     print("selftest: PASS")
 
 

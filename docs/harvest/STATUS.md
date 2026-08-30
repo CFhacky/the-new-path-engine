@@ -1,6 +1,6 @@
 # Harvest status
 
-Verified 2026-08-29. This is the live human summary; the enforceable family
+Verified 2026-08-30. This is the live human summary; the enforceable family
 inventory is [../../reference/families.json](../../reference/families.json).
 
 ## Accepted mechanical entries
@@ -15,8 +15,8 @@ inventory is [../../reference/families.json](../../reference/families.json).
 | WH40K Roleplay | 3,319 |
 | WFRP | 877 |
 | WH40K | 136 |
-| WHFB | 291 |
-| **Total** | **18,094** |
+| WHFB | 302 |
+| **Total** | **18,105** |
 
 There are 41 registered families. Native D&D 3.5e and GURPS 4e rows remain
 separate from every labeled edition or game line. The shared terms family
@@ -24,8 +24,8 @@ contains explicit D&D 3.5e and GURPS 4e rows rather than an unlabeled blend.
 
 ## Codex presentation coverage
 
-The verified Codex build contains all 18,094 accepted entries and attaches
-13,282 validated full-text blocks (73.4%). Missing full text affects the
+The verified Codex build contains all 18,105 accepted entries and attaches
+13,293 validated full-text blocks (73.4%). Missing full text affects the
 presentation layer only; it does not remove already-harvested mechanical fields.
 
 Current complete full-text families include spells, soulmelds, vestiges,
@@ -65,6 +65,6 @@ Full source-machine gate:
 python scripts\reference_audit.py --live --build-codex --report
 ```
 
-Expected terminal summaries are `REFERENCE_AUDIT families=41 rows=18094
-errors=0`, `LIVE_SELFTESTS total=41 failed=0`, and a Codex build of 18,094
-entries with 13,282 full-text blocks.
+Expected terminal summaries are `REFERENCE_AUDIT families=41 rows=18105
+errors=0`, `LIVE_SELFTESTS total=41 failed=0`, and a Codex build of 18,105
+entries with 13,293 full-text blocks.

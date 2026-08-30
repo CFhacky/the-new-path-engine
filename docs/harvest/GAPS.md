@@ -36,8 +36,11 @@ by `scripts/reference_audit.py`.
 
 - WH40K: 18 of 136 profiles have no unambiguous book-verbatim rule attachment.
   Forty-five scanned codexes remain vision-only.
-- WHFB: 74 of 291 profiles have no unambiguous rule attachment. Scanned books,
-  fan-made books, and one broken-CMap source remain excluded.
+- WHFB: 74 of 302 profiles have no unambiguous rule attachment. High Elves
+  PDF p.91 (printed p.92) now has bounded vision coverage (11 unique profiles,
+  all with page-verbatim rule lists); every other page of that scan remains
+  `NO COVERAGE`. Other scanned books, fan-made books, and one broken-CMap source
+  remain excluded.
 - The harvesters record these source/profile gaps directly. No special rule is
   inferred merely because a similarly named unit has one elsewhere.
 
@@ -60,7 +63,7 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,282 / 18,094 full-text blocks. Improve these
+The whole Codex is currently 13,293 / 18,105 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 

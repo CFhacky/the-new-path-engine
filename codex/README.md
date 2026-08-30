@@ -92,10 +92,11 @@ works offline.
 - **WH40K wargame profiles** — 118 of 136 rows use the book-verbatim SPECIAL
   RULES section attached by the geometric PDF harvester, with a separate rules
   page citation; 18 absent/ambiguous sections remain explicit `NO COVERAGE`.
-- **WHFB wargame profiles** — 217 of 291 rows use the book-verbatim SPECIAL
-  RULES section attached by same-column geometry, an explicit subject heading,
-  or a printed summary Page link validated against the exact unit name; 74
-  ambiguous sections remain explicit `NO COVERAGE`.
+- **WHFB wargame profiles** — 228 of 302 rows use the book-verbatim SPECIAL
+  RULES section. Six digital books use same-column geometry, explicit subject
+  headings, or validated summary Page links; 11 High Elves profiles come from
+  bounded vision transcription of PDF p.91 (printed p.92). The other High Elves
+  pages and 74 ambiguous sections remain explicit `NO COVERAGE`.
 - **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
 - **Every slice** is validated: the entry name—or its source-verified canonical
   `description_key` where the index label differs—must lead it, or the block is
@@ -114,12 +115,12 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,282 of 18,094 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,293 of 18,105 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
 soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,
-WHFB wargame profiles 74%, and 40K RP adversaries/talents/psychic ~99–100%.
+WHFB wargame profiles 75%, and 40K RP adversaries/talents/psychic ~99–100%.
 The 40K RP weapon/gear/armour rows already display their complete harvested
 mechanical fields; full prose is not a cheap lift. Across 1,389 rows, the OCR
 contains only 850 unique exact description headings (35/145 armour), so the

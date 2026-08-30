@@ -8,9 +8,9 @@ It records no campaign canon and never authorizes a Notion write.
 | Measure | Verified value |
 |---|---:|
 | Reference families | 41 |
-| Accepted entries | 18,094 |
+| Accepted entries | 18,105 |
 | System labels | 9 |
-| Codex full-text blocks | 13,282 / 18,094 (73%) |
+| Codex full-text blocks | 13,293 / 18,105 (73%) |
 | Harvest checkpoint | `reference-2026-08-29` |
 | Family registry | `reference/families.json` |
 
@@ -25,9 +25,10 @@ Do not infer the family set from filename globs.
 3. [harvest/STATUS.md](harvest/STATUS.md) — live verified state.
 4. [harvest/GAPS.md](harvest/GAPS.md) — explicit no-coverage register.
 5. [harvest/ROADMAP.md](harvest/ROADMAP.md) — prioritized next work.
-6. [harvest/HISTORY.md](harvest/HISTORY.md) — preserved dated ledger.
-7. [harvest/OCR_REPAIRS.md](harvest/OCR_REPAIRS.md) — verified source repairs.
-8. [../codex/README.md](../codex/README.md) — presentation-layer build.
+6. [harvest/VISION_FEASIBILITY.md](harvest/VISION_FEASIBILITY.md) — scan/CMap measurements and bounded workflow.
+7. [harvest/HISTORY.md](harvest/HISTORY.md) — preserved dated ledger.
+8. [harvest/OCR_REPAIRS.md](harvest/OCR_REPAIRS.md) — verified source repairs.
+9. [../codex/README.md](../codex/README.md) — presentation-layer build.
 
 ## Verification
 

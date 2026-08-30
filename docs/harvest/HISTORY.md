@@ -259,6 +259,16 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
 
 ## LOG
 
+- **2026-08-30** — Completed the first bounded wargame vision pilot against
+  official WHFB 8e High Elves PDF p.91 (printed p.92). The 96-page scan has
+  zero PyMuPDF characters/words on every page; OCR was used only to locate the
+  roster, then the selected page was rendered at 3x and checked directly. Twelve
+  printed profile lines yielded **11 unique profiles**, all with cited page-raw
+  rule lists; the repeated Elven Steed line deduped normally. All previous 291
+  WHFB rows remain byte-identical. WHFB is now **302 profiles / 228 with rules**;
+  repository total **18,105**, Codex full text **13,293**. Every other High Elves
+  page remains explicit NO COVERAGE.
+
 - **2026-08-29** — Completed the cross-index integrity audit. All **41/41**
   harvester selftests pass. The Codex now walks all 41 committed families,
   including the legacy-named 143-row terms/affixes file; inherits source-level
