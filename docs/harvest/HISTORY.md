@@ -658,3 +658,14 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   inline `[RELIC]`/`[SYNERGY]` tags. Registered in AUTHORITY.md. Created this
   progress ledger. Confirmed `creature_index` already covers MM3 + Draconomicon
   (the stale "bestiaries absent" queue item is closed).
+
+
+- **2026-08-30** — Added the native D&D 3.5e shadow-mystery family from
+  *Tome of Magic*: 9 fundamentals and 60 path mysteries, 69 total, on PDF
+  pp.142–154. The heading/category/Level-School detector handles the printed
+  two-line title and split column labels, preserves every individually printed
+  mechanical field, and records exact heading-to-heading description spans.
+  Per-block omissions remain explicit NO COVERAGE rather than inheriting the
+  chapter-wide casting-time rule or values from referenced spells. Registered
+  the family in the manifest and Codex; all 69 descriptions validate as full
+  text.

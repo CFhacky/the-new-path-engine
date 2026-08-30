@@ -28,6 +28,11 @@ by `scripts/reference_audit.py`.
 - `NO COVERAGE: table-first DMG rod/staff entries.` Their charge and spell
   tables precede any prose name anchor. A dedicated table-aware detector is
   required; Rod of Absorption is the representative failure.
+- Tome of Magic's 69 shadow-mystery blocks omit per-entry casting time; the
+  chapter-wide standard-action rule is not imputed. Referenced-spell blocks also
+  omit 8 ranges, 7 target/area/effect fields, 6 durations, and 19 save/resistance
+  pairs. These fields remain empty and are locked by `mystery_harvest.py
+  --selftest`; all 69 complete description spans remain covered.
 - Five Epic Level Handbook feat descriptions dependent on the genuinely blurred
   p.60 image remain empty. Their verified summary mechanics are retained, and
   the harvester locks the exact five-row gap set.
@@ -60,7 +65,7 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,282 / 18,094 full-text blocks. Improve these
+The whole Codex is currently 13,351 / 18,163 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 

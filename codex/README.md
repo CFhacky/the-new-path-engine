@@ -1,7 +1,7 @@
 # The Path Engine Codex — offline reference browser
 
 A downstream **presentation layer** for THE NEW PATH ENGINE reference layer:
-`build_codex.py` folds all 41 committed reference families registered in
+`build_codex.py` folds all 42 committed reference families registered in
 `reference/families.json` into ONE self-contained, searchable HTML page and —
 where it safely can — splices in each entry's **full book-verbatim stat block /
 description**, so the page is usable at the
@@ -49,7 +49,7 @@ works offline.
 
 | Input | Role |
 |---|---|
-| `reference/families.json` | canonical registry of all 41 families, their files, explicit accepted-entry paths, systems, and locked counts |
+| `reference/families.json` | canonical registry of all 42 families, their files, explicit accepted-entry paths, systems, and locked counts |
 | `reference/*_index.json` | committed family data (rows carry `[start,end]` spans where available; harvesters may also emit an exact relative source path) |
 | `scripts/spells_srd35.json` | clean SRD 3.5 spell text (Open Game Content) — the 605 SRD core spells |
 | `I:\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
@@ -66,6 +66,9 @@ works offline.
 - **Vestiges** — sliced from the exact Tome of Magic source and their true
   description spans; floated duplicate stat tablets are removed, and complete
   descriptions bypass the normal 4,200-character cap.
+- **Shadow mysteries** — all 69 fundamentals and path mysteries slice their exact
+  Tome of Magic heading-to-heading spans on PDF pp.142–154; complete descriptions
+  bypass the normal cap.
 - **Maneuvers** — sliced from the exact clean Tome of Battle alternate extraction
   and canonical heading-to-heading spans; complete descriptions bypass the normal
   4,200-character cap.
@@ -114,9 +117,10 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,282 of 18,094 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,351 of 18,163 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / spells, epic spells, epic items, epic monsters, maneuvers,
-soulmelds, and vestiges 100% / epic feats 97% / feats 86%, GURPS 4e gear,
+soulmelds, vestiges, and shadow mysteries 100% / epic feats 97% / feats 86%,
+GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,
 WHFB wargame profiles 74%, and 40K RP adversaries/talents/psychic ~99–100%.
