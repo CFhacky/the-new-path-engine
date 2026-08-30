@@ -490,14 +490,14 @@ Illus. by F. Vohwinkel"""
     assert "Illus. by" not in caption_cleaned
     specs = _family_specs()
     assert len(specs) == 43
-    assert sum(spec["expected_count"] for spec in specs) == 18_278
+    assert sum(spec["expected_count"] for spec in specs) == 18_296
     assert any(spec["id"] == "terms_and_affixes"
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
-    print("selftest: 43-family registry totals 18,278 rows")
+    print("selftest: 43-family registry totals 18,296 rows")
     print("selftest: PASS")
 
 

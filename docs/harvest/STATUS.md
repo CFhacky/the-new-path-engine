@@ -8,7 +8,7 @@ inventory is [../../reference/families.json](../../reference/families.json).
 | System label | Entries |
 |---|---:|
 | D&D 3.5e | 7,574 |
-| GURPS 4e | 2,156 |
+| GURPS 4e | 2,174 |
 | GURPS 3e | 2,402 |
 | D&D 5e | 1,194 |
 | AD&D 2e | 318 |
@@ -16,7 +16,7 @@ inventory is [../../reference/families.json](../../reference/families.json).
 | WFRP | 877 |
 | WH40K | 136 |
 | WHFB | 302 |
-| **Total** | **18,278** |
+| **Total** | **18,296** |
 
 There are 43 registered families. Native D&D 3.5e and GURPS 4e rows remain
 separate from every labeled edition or game line. The shared terms family
@@ -26,8 +26,8 @@ DMG rods and staffs joined directly to Tables 7-19/7-25 and their descriptions.
 
 ## Codex presentation coverage
 
-The verified Codex build contains all 18,278 accepted entries and attaches
-13,713 validated full-text blocks (75.0%). Missing full text affects the
+The verified Codex build contains all 18,296 accepted entries and attaches
+13,731 validated full-text blocks (75.1%). Missing full text affects the
 presentation layer only; it does not remove already-harvested mechanical fields.
 
 Current complete full-text families include spells, soulmelds, vestiges,
@@ -67,6 +67,6 @@ Full source-machine gate:
 python scripts\reference_audit.py --live --build-codex --report
 ```
 
-Expected terminal summaries are `REFERENCE_AUDIT families=43 rows=18278
-errors=0`, `LIVE_SELFTESTS total=43 failed=0`, and a Codex build of 18,278
-entries with 13,713 full-text blocks.
+Expected terminal summaries are `REFERENCE_AUDIT families=43 rows=18296
+errors=0`, `LIVE_SELFTESTS total=43 failed=0`, and a Codex build of 18,296
+entries with 13,731 full-text blocks.

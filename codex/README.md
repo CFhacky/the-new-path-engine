@@ -125,7 +125,7 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,713 of 18,278 entries** carry the full verbatim block. Strong: D&D 3.5e
+**13,731 of 18,296 entries** carry the full verbatim block. Strong: D&D 3.5e
 creatures 99% / powers 99% / spells, epic spells, epic items, epic monsters,
 maneuvers, soulmelds, vestiges, shadow mysteries, and utterances 100% / epic
 feats 97% / feats 86%, GURPS 4e gear,

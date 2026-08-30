@@ -37,9 +37,10 @@ In order:
 1. **COMPLETE 2026-08-30:** extended `gurps_trait_index` with Control, Create,
    Illusion, Leech, and Static from Powers P90–P98; all 469 Basic Set rows were
    preserved byte-identically, and Basic Set Neutralize was not duplicated;
-2. extend `gurps_gear_index` with one coherent higher-TL equipment table.
-   Recommended first unit: GURPS Ultra-Tech's Concealable Ballistic Armor Table
-   (p. 172 / PDF p. 173), a clean fixed-width roster of 18 TL9–11 armor rows;
+2. **COMPLETE 2026-08-30:** extended `gurps_gear_index` with GURPS
+   Ultra-Tech's Concealable Ballistic Armor Table (p.172 / PDF p.173): exactly
+   18 TL9–11 rows with location, split DR, cost, weight, LC, and exact seven-cell
+   source spans; all 186 prior Low-Tech rows remain unchanged;
 3. add additional bestiary books only where the existing attribute-block
    detector is demonstrably clean.
 

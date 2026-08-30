@@ -211,7 +211,7 @@
       "json": "reference/gurps_gear_index.json",
       "markdown": "reference/gurps_gear_index.md",
       "entry_path": "sources[].gear",
-      "expected_count": 186
+      "expected_count": 204
     },
     {
       "id": "gurps_skill",

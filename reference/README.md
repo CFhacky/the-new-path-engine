@@ -30,7 +30,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 | `dnd5e_spell_index.{json,md}` | **D&D 5e** spells (level, school, ritual, casting time, range, duration) — labeled `system: D&D 5e`, separate from 3.5e | 102 | `scripts/dnd5e_spell_harvest.py` | 4 5e books: Tasha’s, Diabolical Designs, Mordenkainen’s Almanac of Adventurers, Darkhold |
 | `dnd5e_item_index.{json,md}` | **D&D 5e** magic items (type, rarity, attunement) — labeled `system: D&D 5e`, separate from 3.5e | 575 | `scripts/dnd5e_item_harvest.py` | 10 5e books: Mordenkainen’s Tome of Marvelous Magic, Diabolical Designs, Treasures of Avernus, ... |
 | `dnd5e_creature_index.{json,md}` | **D&D 5e** monsters (size, type, AC, HP, CR, ability scores) — labeled `system: D&D 5e`, separate from 3.5e | 517 | `scripts/dnd5e_creature_harvest.py` | 12 5e books: Diabolical Designs, Chains of Asmodeus, Descent into Avernus, Blood War Bestiary, Dante’s Guide to Hell, Xanathar’s, ... |
-| `gurps_gear_index.{json,md}` | GURPS Low-Tech **weapons** (damage, reach, parry, cost, weight, ST) AND **armor** (TL, DR, cost, weight, don); all with exact source-row spans | 186 | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech (4e) — native GURPS gear, separate index |
+| `gurps_gear_index.{json,md}` | GURPS Low-Tech **weapons** and **armor**, plus GURPS Ultra-Tech **concealable ballistic armor** (TL, location, split DR, cost, weight, LC); all with exact source-row spans | 204 | `scripts/gurps_gear_harvest.py` | GURPS Low-Tech + Ultra-Tech (4e) — native GURPS gear, separate index |
 | `gurps_trait_index.{json,md}` | GURPS 4e **advantages & disadvantages** (type/nature where printed, point cost, book page; all with exact full-description/inline-definition spans) | 474 | `scripts/gurps_trait_harvest.py` | GURPS Basic Set: Characters — Trait Lists + descriptions, B18–B165; GURPS Powers — five non-Basic New Advantages, P90–P98 |
 | `gurps_skill_index.{json,md}` | GURPS 4e **skills** (controlling attribute, difficulty, defaults, book page; all with exact, non-overlapping full-description spans) | 263 | `scripts/gurps_skill_harvest.py` | GURPS Basic Set: Characters (4e) — Trait Lists roster + Skills chapter, B174–B228 |
 | `gurps_technique_index.{json,md}` | GURPS 4e Martial Arts **combat techniques** (difficulty, prerequisite, default, max, damage; all with exact full-description spans) | 112 | `scripts/gurps_technique_harvest.py` | GURPS Martial Arts Technique Cheat-Sheet + Martial Arts (4e) — born-digital text |
@@ -84,7 +84,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 `I:\Sourcebooks` holds ~1,700 OCR'd `.md` extractions. These indices cover the
 mainline 3.5e systems plus the GURPS modifier set — a fraction of what is on the
 drive. Large bodies of harvestable mechanics are **not yet indexed** (more
-bestiaries, higher-TL GURPS gear,
+bestiaries, further bounded higher-TL GURPS gear,
 Dragon Magazine, Forgotten Realms). The generating scripts are built to be extended by
 adding sources; the queue, the corpus inventory, and the exact next targets are
 in [../docs/HARVEST_PROGRESS.md](../docs/HARVEST_PROGRESS.md). Do not mistake

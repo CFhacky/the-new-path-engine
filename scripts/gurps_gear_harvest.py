@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
-"""gurps_gear_harvest.py — collate the GURPS Low-Tech gear tables.
+"""gurps_gear_harvest.py — collate source-bounded GURPS gear tables.
 
 THE PROCESS (Chad, 2026-08-28, continuing the GURPS shelf): gear — weapons and
 armor — is codified GURPS mechanics the reference layer still lacked. GURPS
-Low-Tech is the medieval/fantasy gear book. Its stat TABLES were OCR'd as a
-vertical column-dump (each row's cells one per line), so they get their own
-detector and their own index.
+Low-Tech supplies the medieval/fantasy tables; GURPS Ultra-Tech additively
+supplies one bounded 18-row Concealable Ballistic Armor table. Their stat tables
+were extracted as vertical column-dumps (each row's cells one per line), so each
+layout gets its own detector inside the shared native-GURPS index.
 
-    reference/gurps_gear_index.json  — every weapon (name, damage, reach, parry,
-                                       cost, weight, min ST) AND every torso-armor
-                                       (name, TL, DR, cost, weight, don), book+page
+    reference/gurps_gear_index.json  — Low-Tech weapons and torso armor plus
+                                       Ultra-Tech concealable ballistic armor,
+                                       with each table's printed fields and page
     reference/gurps_gear_index.md    — the same, for human eyes
 
 Every row records its exact complete table-row span and the exact relative
 source path so the offline codex can display the book-verbatim mechanical block
 without bleeding into the next item or repeated page furniture.
 
-Both the WEAPON table and the ARMOR table are parsed — each was OCR'd as a
-vertical column-dump and gets its own detector.
+The Low-Tech weapon/armor layouts and the bounded Ultra-Tech concealable-armor
+layout are parsed separately; no detector is generalized across unlike tables.
 
 WORKFLOW
     python gurps_gear_harvest.py                    # (re)build the index
@@ -37,7 +38,11 @@ GOVERNING SOURCE
       DR, Cost ($N), Weight, Don, then optional [Notes]. The anchor is a
       standalone $cost line whose four neighbours match the row signature (TL
       digit / name / DR / $cost / weight / don).
-    The PDF stands behind every extraction. This is native GURPS 4e data.
+    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Ultra-Tech.md
+    * Concealable Ballistic Armor Table — exactly 18 rows bounded by the printed
+      table title and `* Flexible.` footer. Each row is TL / name / location /
+      split DR / cost / weight / LC; the parser admits no other armor table.
+    The PDFs stand behind every extraction. This is native GURPS 4e data.
 """
 from __future__ import annotations
 
@@ -80,6 +85,10 @@ ARMOR_DR = re.compile(r"^\d{1,2}(?:/\d{1,2})?\*?$")     # "3", "1*", "4/2*"
 ARMOR_TL = re.compile(r"^\d$")                           # TL 0-8
 ARMOR_NAME = re.compile(r"^[A-Z][A-Za-z][A-Za-z ,'\u2019\-/()]{1,34}$")
 ARMOR_NUM = re.compile(r"^[\d,]+(?:\.\d+)?$")            # weight / don
+ULTRATECH_TL = re.compile(r"^(?:9|10|11)$")
+ULTRATECH_LOCATION = re.compile(r"^(?:body, limbs|hands|arms, torso|all|groin, legs|torso)$")
+ULTRATECH_WEIGHT = re.compile(r"^(?:neg\.|\d+(?:\.\d+)?)$")
+ULTRATECH_LC = re.compile(r"^[0-4]$")
 
 
 def _clean(v: str) -> Optional[str]:
@@ -107,11 +116,14 @@ class GurpsGear:
     tl: Optional[str] = None
     dr: Optional[str] = None
     don: Optional[str] = None
+    location: Optional[str] = None
+    lc: Optional[str] = None
     notes: Optional[str] = None
 
     def quick_fields(self) -> int:
         if self.category == "armor":
-            return sum(1 for v in (self.dr, self.cost, self.weight, self.don) if v)
+            return sum(1 for v in (self.dr, self.cost, self.weight, self.don,
+                                   self.location, self.lc) if v)
         return sum(1 for v in (self.damage, self.cost, self.weight, self.min_st) if v)
 
 
@@ -230,9 +242,50 @@ def detect_armor(lines: List[str], pages: List[int], book: str) -> List[GurpsGea
     return sorted(best.values(), key=lambda g: g.start)
 
 
+def detect_concealable_armor(
+    lines: List[str], pages: List[int], book: str
+) -> List[GurpsGear]:
+    """Read the bounded Ultra-Tech TL/name/location/DR/cost/weight/LC table."""
+    toks = [(i, lines[i].strip()) for i in range(len(lines))
+            if lines[i].strip() and not PAGE.search(lines[i])]
+    headings = [k for k, (_, value) in enumerate(toks)
+                if value == "Concealable Ballistic Armor Table"]
+    if len(headings) != 1:
+        return []
+    table_start = headings[0] + 1
+    endings = [k for k in range(table_start, len(toks))
+               if toks[k][1] == "* Flexible."]
+    if not endings:
+        return []
+    table_end = endings[0]
+
+    gear: List[GurpsGear] = []
+    for k in range(table_start + 4, table_end - 1):
+        i_cost, cost = toks[k]
+        if not ARMOR_COST.match(cost):
+            continue
+        i_tl, tl = toks[k - 4]
+        i_nm, nm = toks[k - 3]
+        _, location = toks[k - 2]
+        _, dr = toks[k - 1]
+        _, weight = toks[k + 1]
+        i_lc, lc = toks[k + 2]
+        if not (ULTRATECH_TL.match(tl) and ARMOR_NAME.match(nm)
+                and ULTRATECH_LOCATION.match(location) and ARMOR_DR.match(dr)
+                and ULTRATECH_WEIGHT.match(weight) and ULTRATECH_LC.match(lc)):
+            continue
+        gear.append(GurpsGear(
+            name=nm, book=book, page=pages[i_nm], start=i_tl, end=i_lc + 1,
+            category="armor", tl=tl, dr=dr, cost=cost, weight=weight,
+            location=location, lc=lc,
+        ))
+    return gear
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[GurpsGear]]] = {
     "weapons": detect_weapons,
     "armor": detect_armor,
+    "concealable-armor": detect_concealable_armor,
 }
 
 
@@ -249,11 +302,16 @@ class Source:
 
 
 _LOWTECH = Path("GURPS/GURPS 4e/GURPS 4e - Low-Tech.md")
+_ULTRATECH = Path("GURPS/GURPS 4e/GURPS 4e - Ultra-Tech.md")
 SOURCES: List[Source] = [
     Source("lowtech", "GURPS Low-Tech — Weapons", _LOWTECH,
            "GURPS Low-Tech (SJGames, 4e), Melee Weapon Table", "weapons"),
     Source("lowtech-armor", "GURPS Low-Tech — Armor", _LOWTECH,
            "GURPS Low-Tech (SJGames, 4e), Armor Table", "armor"),
+    Source("ultratech-concealable-armor",
+           "GURPS Ultra-Tech — Concealable Ballistic Armor", _ULTRATECH,
+           "GURPS Ultra-Tech (SJGames, 4e), Concealable Ballistic Armor Table, p.172",
+           "concealable-armor"),
 ]
 
 
@@ -295,7 +353,7 @@ class Corpus:
             src.lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
             pages = _pages_for(src.lines)
             src.gear = DETECTORS[src.detector](src.lines, pages, src.book)
-            noun = "armor pieces" if src.detector == "armor" else "weapons"
+            noun = "weapons" if src.detector == "weapons" else "armor pieces"
             src.coverage = f"ok — {len(src.gear)} {noun} from {path.name}"
 
     def all_gear(self, book: Optional[str] = None):
@@ -326,9 +384,10 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "# GURPS GEAR INDEX — The New Path",
         "",
         "**Generated by `scripts/gurps_gear_harvest.py`. Do not hand-edit;",
-        "rerun the harvest.** GURPS Low-Tech weapons AND armor (native GURPS 4e).",
+        "rerun the harvest.** GURPS Low-Tech weapons/armor plus the bounded",
+        "GURPS Ultra-Tech Concealable Ballistic Armor table (native GURPS 4e).",
         "The raw text stays on `I:\\Sourcebooks` — use `--export \"NAME\"` for the",
-        "packet. The stat tables were OCR'd as column-dumps; a field left `—` is",
+        "packet. The stat tables were extracted as column-dumps; a field left `—` is",
         "one the OCR did not cleanly yield. Every entry carries its exact complete",
         "source-row span for book-verbatim display in the offline codex.",
         "",
@@ -339,14 +398,29 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         sources_out.append({"key": src.key, "book": src.book, "citation": src.citation,
                             "source_path": str(src.path),
                             "category": src.detector, "coverage": src.coverage,
-                            "gear": [asdict(g) for g in src.gear]})
-        noun = "armor pieces" if src.detector == "armor" else "weapons"
+                            "gear": [
+                                {k: v for k, v in asdict(g).items()
+                                 if v is not None or k not in ("location", "lc")}
+                                for g in src.gear
+                            ]})
+        noun = "weapons" if src.detector == "weapons" else "armor pieces"
         md.append(f"## {src.book} — {len(src.gear)} {noun}")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        source_line = f"*Source: {src.citation}.*"
+        md.append(source_line if src.detector == "concealable-armor"
+                  else source_line + "  ")
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
-        if src.gear and src.detector == "armor":
+        if src.gear and src.detector == "concealable-armor":
+            md.append("| Armor | TL | Location | DR | Cost | Weight | LC | PDF Page |")
+            md.append("|---|---|---|---|---|---|---|---|")
+            for g in src.gear:
+                md.append(
+                    f"| {g.name} | {g.tl or '—'} | {g.location or '—'} | "
+                    f"{g.dr or '—'} | {g.cost or '—'} | {g.weight or '—'} | "
+                    f"{g.lc or '—'} | {g.page if g.page is not None else '—'} |"
+                )
+        elif src.gear and src.detector == "armor":
             md.append("| Armor | TL | DR | Cost | Weight | Don | Notes | Page |")
             md.append("|---|---|---|---|---|---|---|---|")
             for g in src.gear:
@@ -396,7 +470,8 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
                        "lines": [g.start + 1, g.end], "citation": src.citation},
             "parsed": {k: v for k, v in asdict(g).items()
                        if k in ("category", "damage", "reach", "parry", "cost",
-                                "weight", "min_st", "tl", "dr", "don", "notes") and v},
+                                "weight", "min_st", "tl", "dr", "don", "location",
+                                "lc", "notes") and v},
             "raw_block": re.sub(r"\n{3,}", "\n\n", "\n".join(body)).strip(),
         })
     text = json.dumps(packets if len(packets) > 1 else packets[0], indent=1)
@@ -472,6 +547,33 @@ $500
 [4]
 """
 
+ULTRATECH_FIXTURE = """## [PDF page 173]
+Concealable Ballistic Armor Table
+TL
+Armor
+Location
+DR
+Cost
+Weight
+LC
+Notes
+9
+Reflex Gloves
+hands
+6/2*
+$30
+neg.
+4
+11
+Monocrys Suit
+all
+24/8*
+$1,200
+8
+4
+* Flexible.
+"""
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -504,20 +606,65 @@ def selftest(base: Path) -> int:
         if armor[2].dr != "3*":
             failures.append(f"Mail, Light DR {armor[2].dr!r}, wanted '3*' (flexible)")
 
-    if base.is_dir() and (base / SOURCES[0].path).exists():
+    ulines = ULTRATECH_FIXTURE.splitlines()
+    ultra = detect_concealable_armor(
+        ulines, _pages_for(ulines), "GURPS Ultra-Tech"
+    )
+    unames = [g.name for g in ultra]
+    if unames != ["Reflex Gloves", "Monocrys Suit"]:
+        failures.append(f"Ultra-Tech fixture detected {unames}, wanted two armor rows")
+    else:
+        reflex, monocrys = ultra
+        if (reflex.location, reflex.dr, reflex.weight, reflex.lc) != (
+            "hands", "6/2*", "neg.", "4"
+        ):
+            failures.append(f"Reflex Gloves fixture fields are wrong: {reflex}")
+        if (monocrys.tl, monocrys.dr, monocrys.cost, monocrys.page) != (
+            "11", "24/8*", "$1,200", 173
+        ):
+            failures.append(f"Monocrys Suit fixture fields are wrong: {monocrys}")
+
+    if base.is_dir() and all((base / src.path).exists() for src in SOURCES):
         corpus = Corpus(base, _fresh_sources())
         wpns = sum(len(s.gear) for s in corpus.sources if s.detector == "weapons")
-        arm = sum(len(s.gear) for s in corpus.sources if s.detector == "armor")
+        low_arm = sum(len(s.gear) for s in corpus.sources if s.detector == "armor")
+        ultra_arm = sum(len(s.gear) for s in corpus.sources
+                        if s.detector == "concealable-armor")
         if wpns != 153:
             failures.append(f"{wpns} weapons indexed; expected exactly 153")
-        if arm != 33:
-            failures.append(f"{arm} armor pieces indexed; expected exactly 33")
+        if low_arm != 33:
+            failures.append(f"{low_arm} Low-Tech armor pieces indexed; expected 33")
+        if ultra_arm != 18:
+            failures.append(
+                f"{ultra_arm} Ultra-Tech concealable armor pieces indexed; expected 18"
+            )
 
         for src in corpus.sources:
             bad_spans = [g.name for g in src.gear
                          if g.end - g.start < 2 or not _span_leads(src.lines, g)]
             if bad_spans:
                 failures.append(f"{src.key}: invalid source spans: {bad_spans[:8]}")
+
+        ultra_src = next(
+            s for s in corpus.sources if s.detector == "concealable-armor"
+        )
+        expected_ultra = [
+            f"{material} {style}"
+            for material in ("Reflex", "Nanoweave", "Monocrys")
+            for style in ("Bodysuit", "Gloves", "Jacket", "Suit", "Trousers", "Vest")
+        ]
+        if [g.name for g in ultra_src.gear] != expected_ultra:
+            failures.append("Ultra-Tech armor roster/order differs from the printed table")
+        malformed_ultra = []
+        for g in ultra_src.gear:
+            cells = [line.strip() for line in ultra_src.lines[g.start:g.end]
+                     if line.strip() and not PAGE.search(line)]
+            if cells != [g.tl, g.name, g.location, g.dr, g.cost, g.weight, g.lc]:
+                malformed_ultra.append(g.name)
+        if malformed_ultra:
+            failures.append(
+                f"Ultra-Tech spans are not exact seven-cell rows: {malformed_ultra}"
+            )
 
         weapon_src = next(s for s in corpus.sources if s.detector == "weapons")
         raw_starts = set()
@@ -554,7 +701,7 @@ def selftest(base: Path) -> int:
         elif kat[0][1].damage is None:
             failures.append("Katana has no damage parsed")
     else:
-        print(f"  [SKIP] Low-Tech extraction not found — fixture checks only")
+        print("  [SKIP] Low-Tech or Ultra-Tech extraction not found — fixture checks only")
 
     for f in failures:
         print(f"SELFTEST FAIL: {f}")
@@ -593,7 +740,7 @@ def main() -> int:
 
     any_ok = any(s.gear for s in corpus.sources)
     for src in corpus.sources:
-        noun = "armor" if src.detector == "armor" else "weapons"
+        noun = "weapons" if src.detector == "weapons" else "armor"
         status = f"{len(src.gear):4d} {noun}" if src.gear else f"   0 {noun}"
         print(f"  {src.book:28s} {status}  [{src.coverage.split(' — ')[0]}]")
     if not any_ok:

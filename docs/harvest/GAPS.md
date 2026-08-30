@@ -68,7 +68,7 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,713 / 18,278 full-text blocks. Improve these
+The whole Codex is currently 13,731 / 18,296 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 
