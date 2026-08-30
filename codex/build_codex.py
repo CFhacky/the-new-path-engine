@@ -71,7 +71,9 @@ FULL-TEXT SOURCING — book RAW, never invented
                     two-column OCR source; variants deliberately share spans.
 - epic monsters      sliced from 50 canonical blocks in the reproducible ELH
                     two-column OCR source; printed variants share spans.
-- legacy rows        fuzzy-match a source filename, then slice by [start:end].
+- magic items       slice only from item_harvest.py's exact OCR source path;
+                    three verified aliases validate damaged OCR headings.
+- remaining legacy rows fuzzy-match a source filename, then slice by [start:end].
 - every slice is VALIDATED: the entry name (or a family-specific canonical
   description key) must lead it or the block is dropped.
 - wargame profiles  use the harvester-attached book-verbatim SPECIAL RULES block;
@@ -476,6 +478,30 @@ def selftest():
     assert rows[0]["book"] == "Fixture Book"
     assert rows[0]["citation"] == "Fixture Book p.1"
     assert rows[0]["system"] == "D&D 3.5e"
+    magic_fixture = {
+        "corpus": "fixture-corpus",
+        "sources": [{
+            "book": "Fixture Items",
+            "source_path": "exact/items.md",
+            "items": [{
+                "name": "Illusion", "description_key": "Tusion",
+                "start": 2, "end": 5,
+            }],
+        }],
+    }
+    magic_rows = _rows_at_path(magic_fixture, "sources[].items")
+    assert magic_rows[0]["_corpus"] == "fixture-corpus"
+    assert magic_rows[0]["_source_path"] == "exact/items.md"
+    assert magic_rows[0]["description_key"] == "Tusion"
+    assert _exact_source_file(magic_rows[0]).endswith(
+        str(Path("fixture-corpus") / "exact/items.md")
+    )
+    assert _validate("Tusion: source rules prose", "Tusion")
+    assert _validate("Ulumination: source rules prose", "Ulumination")
+    assert _validate(
+        "Headband of Sim-\nplemindedness: source rules prose",
+        "Headband of Sim plemindedness",
+    )
     assert _display_book("SRD 3.5") == "SRD 3.5"
     power_fixture = ("ZONE OF TRUTH,\nPSIONIC\nTelepathy\n"
                      "## [PDF page 107]\n106\nCHAPTER 4\nPOWERS, MANTLES\nAND ITEMS")
@@ -497,7 +523,7 @@ Illus. by F. Vohwinkel"""
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
-    print("selftest: source provenance and system aliases inherited")
+    print("selftest: source provenance, OCR aliases, and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
     print("selftest: 43-family registry totals 18,296 rows")
     print("selftest: PASS")
@@ -678,6 +704,13 @@ def build(report=False):
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
                                   _exact_source_file(r), _strip_gurps_skill_furniture, None)
+            elif fam == "magic_item" and "start" in r and "end" in r:
+                exact_source = _exact_source_file(r)
+                full = (slice_full(
+                    r.get("book", ""), r["start"], r["end"],
+                    r.get("description_key") or r["name"], exact_source,
+                    limit=None,
+                ) if exact_source else "")
             elif "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r))
@@ -710,6 +743,17 @@ def build(report=False):
             if full:
                 e["full"] = full
             rows_out.append(e)
+
+    missing_magic_items = [
+        row["name"] for row in rows_out
+        if row["fam"] == "magic_item" and not row.get("full")
+    ]
+    if tot["magic_item"] != 1454 or missing_magic_items:
+        raise ValueError(
+            "magic_item exact-OCR acceptance failed: "
+            f"{cov['magic_item']}/{tot['magic_item']} full; "
+            f"missing={missing_magic_items[:20]}"
+        )
 
     BUILD.mkdir(parents=True, exist_ok=True)
     raw = json.dumps(rows_out, ensure_ascii=False, separators=(",", ":")).replace("\uFFFD", "?")

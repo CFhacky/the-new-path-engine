@@ -160,6 +160,7 @@ class Item:
     aura_school: Optional[str] = None
     aura_dc: Optional[str] = None
     activation: Optional[str] = None
+    description_key: Optional[str] = None  # exact OCR-leading alias, if needed
 
     def quick_fields(self) -> int:
         return sum(1 for v in (self.price, self.body_slot, self.property,
@@ -671,6 +672,14 @@ class Source:
     items: List[Item] = field(default_factory=list)
 
 
+DESCRIPTION_KEY_OVERRIDES = {
+    ("dmg", "Illusion"): "Tusion",
+    ("dmg", "Illumination"): "Ulumination",
+    ("aeg", "Headband of Simplemindedness"):
+        "Headband of Sim plemindedness",
+}
+
+
 SOURCES: List[Source] = [
     Source(
         key="mic",
@@ -733,6 +742,10 @@ class Corpus:
             src.lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
             pages = _pages_for(src.lines)
             src.items = DETECTORS[src.detector](src.lines, pages, src.book)
+            for item in src.items:
+                item.description_key = DESCRIPTION_KEY_OVERRIDES.get(
+                    (src.key, item.name)
+                )
             src.coverage = f"ok — {len(src.items)} items from {path.name}"
 
     def all_items(self, book: Optional[str] = None):
@@ -786,9 +799,14 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         sources_out.append({
             "key": src.key,
             "book": src.book,
+            "source_path": src.path.as_posix(),
             "citation": src.citation,
             "coverage": src.coverage,
-            "items": [asdict(it) for it in src.items],
+            "items": [
+                {key: value for key, value in asdict(item).items()
+                 if key != "description_key" or value is not None}
+                for item in src.items
+            ],
         })
         md.append(f"## {src.book} — {len(src.items)} items")
         md.append("")
@@ -877,6 +895,14 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
 # ---------------------------------------------------------------------------
 # Selftest — detector against an embedded fixture, then live corpus checks
 # ---------------------------------------------------------------------------
+
+
+def _description_leads(block: str, key: str) -> bool:
+    norm = lambda value: re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+    tokens = [token for token in norm(key).split() if len(token) >= 4]
+    tokens = tokens or norm(key).split()
+    return bool(tokens) and all(token in norm(block[:300]) for token in tokens[:2])
+
 
 FIXTURE = """## [PDF page 72]
 BELT OF BATTLE
@@ -1068,6 +1094,35 @@ def selftest(base: Path) -> int:
         expected_counts = {"mic": 842, "dmg": 250, "aeg": 362}
         if counts != expected_counts:
             failures.append(f"live source counts {counts}, wanted {expected_counts}")
+        expected_paths = {
+            "mic": "D&D 3.5e/Magic and Items/Magic Item Compendium.md",
+            "dmg": "D&D 3.5e/Core/Dungeon Masters Guide v3.5.md",
+            "aeg": "D&D 3.0/Arms And Equipment Guide.md",
+        }
+        got_paths = {source.key: source.path.as_posix()
+                     for source in corpus.sources}
+        if got_paths != expected_paths:
+            failures.append(
+                f"exact OCR source paths {got_paths}, wanted {expected_paths}"
+            )
+        invalid_descriptions = []
+        for source, item in corpus.all_items():
+            block = "\n".join(source.lines[item.start:item.end]).strip()
+            key = item.description_key or item.name
+            if not block or not _description_leads(block, key):
+                invalid_descriptions.append(
+                    (source.key, item.name, key, item.start, item.end)
+                )
+        if invalid_descriptions:
+            failures.append(
+                "live exact-OCR description validation failed: "
+                f"{invalid_descriptions[:20]}"
+            )
+        elif sum(counts.values()) != 1454:
+            failures.append(
+                f"live exact-OCR descriptions total {sum(counts.values())}, "
+                "wanted 1454"
+            )
         belt = corpus.find("belt of battle", book="mic")
         if not belt:
             failures.append("Belt of Battle not found in live MIC")

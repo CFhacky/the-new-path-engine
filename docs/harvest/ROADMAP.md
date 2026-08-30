@@ -10,6 +10,18 @@ and 8 staffs. The additive detector requires both the book's own Table 7-19 or
 Table 7-25 row and the matching description heading, locks the old 1,420 rows
 unchanged, and raises the family to 1,454 entries.
 
+## Completed 2026-08-30: magic-item exact OCR routing
+
+All 1,454 existing MIC, DMG, and A&EG source spans now route through the exact
+OCR path already configured in `item_harvest.py`. This closes a Codex routing
+defect rather than performing new extraction or re-OCR. Three source-verified
+validation aliases cover the damaged headings `Tusion`, `Ulumination`, and the
+split `Headband of Sim-` / `plemindedness`; canonical item names and prose remain
+unchanged. Magic-item Codex coverage is 1,454/1,454.
+
+For every remaining Codex-empty family, audit existing OCR, exact source paths,
+and recorded spans before scheduling re-OCR or vision work.
+
 ## 1. Tome of Magic shadow mysteries — completed 2026-08-30
 
 The native D&D 3.5e `mystery` family now contains all 69 printed shadow-magic

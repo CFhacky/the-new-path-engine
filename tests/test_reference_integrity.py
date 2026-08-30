@@ -45,6 +45,39 @@ class ReferenceIntegrityTests(unittest.TestCase):
         self.assertEqual(utterance["expected_count"], 65)
         self.assertEqual(utterance["scope"], "native")
 
+    def test_magic_items_declare_exact_ocr_sources_and_aliases(self) -> None:
+        data = json.loads(
+            (ROOT / "reference" / "magic_item_index.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        expected_sources = {
+            "mic": ("D&D 3.5e/Magic and Items/Magic Item Compendium.md", 842),
+            "dmg": ("D&D 3.5e/Core/Dungeon Masters Guide v3.5.md", 250),
+            "aeg": ("D&D 3.0/Arms And Equipment Guide.md", 362),
+        }
+        self.assertEqual(len(data["sources"]), 3)
+        for source in data["sources"]:
+            self.assertEqual(
+                (source["source_path"], len(source["items"])),
+                expected_sources[source["key"]],
+            )
+        aliases = {
+            (source["key"], item["name"]): item["description_key"]
+            for source in data["sources"]
+            for item in source["items"]
+            if item.get("description_key")
+        }
+        self.assertEqual(aliases, {
+            ("dmg", "Illusion"): "Tusion",
+            ("dmg", "Illumination"): "Ulumination",
+            ("aeg", "Headband of Simplemindedness"):
+                "Headband of Sim plemindedness",
+        })
+        self.assertEqual(
+            sum(len(source["items"]) for source in data["sources"]), 1454
+        )
+
     def test_prestige_full_text_is_exact_and_complete(self) -> None:
         data = json.loads(
             (ROOT / "reference" / "prestige_class_index.json").read_text(encoding="utf-8")

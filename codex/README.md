@@ -107,7 +107,10 @@ works offline.
   RULES section attached by same-column geometry, an explicit subject heading,
   or a printed summary Page link validated against the exact unit name; 74
   ambiguous sections remain explicit `NO COVERAGE`.
-- **Legacy rows** — fuzzy-match a source filename, then slice by `[start:end]`.
+- **Magic items** — use the exact MIC, DMG, or A&EG OCR path emitted by
+  `item_harvest.py`; all 1,454 spans attach without fuzzy filename matching.
+- **Remaining legacy rows** — fuzzy-match a source filename, then slice by
+  `[start:end]`.
 - **Every slice** is validated: the entry name—or its source-verified canonical
   `description_key` where the index label differs—must lead it, or the block is
   dropped. A misaligned or wrong-file slice is never attached.
@@ -125,9 +128,10 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**13,747 of 18,296 entries** carry the full verbatim block. Strong: D&D 3.5e
-creatures 99% / powers 99% / spells, epic spells, epic items, epic monsters,
-maneuvers, soulmelds, vestiges, shadow mysteries, and utterances 100% / prestige
+**14,360 of 18,296 entries** carry the full verbatim block. Strong: D&D 3.5e
+creatures 99% / powers 99% / spells, magic items, epic spells, epic items,
+epic monsters, maneuvers, soulmelds, vestiges, shadow mysteries, and utterances
+100% / prestige
 classes 23/145 (16%) / epic feats 97% / feats 86%, GURPS 4e gear,
 skills, traits, and techniques 100%, GURPS 3e & 4e creatures/spells 94–100%,
 AD&D spells/psionics 100%, WFRP creatures 100%, WH40K wargame profiles 86%,

@@ -10,9 +10,9 @@ It records no campaign canon and never authorizes a Notion write.
 | Reference families | 43 |
 | Accepted entries | 18,296 |
 | System labels | 9 |
-| Codex full-text blocks | 13,754 / 18,296 (75%) |
+| Codex full-text blocks | 14,360 / 18,296 (78.5%) |
 | Harvest base tag | `reference-2026-08-30` |
-| Current verified unit | Prestige-class full-text recovery: 23/145 verified (2026-08-30) |
+| Current verified unit | Magic-item exact OCR routing: 1,454/1,454 full text (2026-08-30) |
 | Family registry | `reference/families.json` |
 
 The registry is the machine-readable source for family paths, accepted-entry

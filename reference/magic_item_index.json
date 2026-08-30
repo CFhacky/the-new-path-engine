@@ -6,6 +6,7 @@
   {
    "key": "mic",
    "book": "Magic Item Compendium",
+   "source_path": "D&D 3.5e/Magic and Items/Magic Item Compendium.md",
    "citation": "Magic Item Compendium (WotC, 2007), item entries",
    "coverage": "ok \u2014 842 items from Magic Item Compendium.md",
    "items": [
@@ -14328,6 +14329,7 @@
   {
    "key": "dmg",
    "book": "Dungeon Master's Guide v3.5",
+   "source_path": "D&D 3.5e/Core/Dungeon Masters Guide v3.5.md",
    "citation": "Dungeon Master's Guide v3.5, specific items and wondrous items; rods Table 7-19 p.235 and descriptions pp.235-238; staffs Table 7-25 p.244 and descriptions pp.244-246 (weapon/armor special abilities are term_harvest.py's)",
    "coverage": "ok \u2014 250 items from Dungeon Masters Guide v3.5.md",
    "items": [
@@ -18494,7 +18496,8 @@
      "aura": "Strong",
      "aura_school": "illusion",
      "aura_dc": null,
-     "activation": null
+     "activation": null,
+     "description_key": "Tusion"
     },
     {
      "name": "Illumination",
@@ -18511,7 +18514,8 @@
      "aura": "Strong",
      "aura_school": "evocation",
      "aura_dc": null,
-     "activation": null
+     "activation": null,
+     "description_key": "Ulumination"
     },
     {
      "name": "Necromancy",
@@ -18586,6 +18590,7 @@
   {
    "key": "aeg",
    "book": "Arms and Equipment Guide",
+   "source_path": "D&D 3.0/Arms And Equipment Guide.md",
    "citation": "Arms and Equipment Guide (3.0), magic items",
    "coverage": "ok \u2014 362 items from Arms And Equipment Guide.md",
    "items": [
@@ -24724,7 +24729,8 @@
      "aura": null,
      "aura_school": null,
      "aura_dc": null,
-     "activation": null
+     "activation": null,
+     "description_key": "Headband of Sim plemindedness"
     },
     {
      "name": "Necklace of the Vampire",

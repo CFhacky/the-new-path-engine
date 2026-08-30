@@ -50,12 +50,14 @@ by `scripts/reference_audit.py`.
 
 ## Codex presentation backlog
 
-These are full-prose attachment gaps, not missing harvested mechanics:
+These are Codex attachment gaps, not proven source-recovery gaps. Audit exact
+OCR paths and existing spans before scheduling re-OCR or vision work. The
+magic-item repair demonstrated that an empty attachment can be a routing defect.
 
 | Family | Full text |
 |---|---:|
 | AD&D 2e monsters | 0 / 96 |
-| D&D 3.5e prestige classes | 16 / 145 |
+| D&D 3.5e prestige classes | 23 / 145 |
 | terms and affixes | 0 / 143 |
 | WFRP mutations | 0 / 505 |
 | WH40K Roleplay force fields | 0 / 13 |
@@ -64,13 +66,13 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | WH40K Roleplay armour | 5 / 145 |
 | WH40K Roleplay weapons | 72 / 657 |
 | D&D 3.5e powers | 406 / 409 |
-| D&D 3.5e magic items | 848 / 1,454 |
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,747 / 18,296 full-text blocks. Improve these
-only by recording and validating true entry spans or by emitting a book-verbatim
-`full` field from the owning harvester.
+The whole Codex is currently 14,360 / 18,296 full-text blocks. The remaining
+3,936 empty attachments are a presentation count, not a trustworthy measure of
+missing OCR. Improve these only after exact-path audit, using validated true
+entry spans or a book-verbatim `full` field from the owning harvester.
 
 For WH40K Roleplay weapons, gear, and armour, only 850 unique exact OCR
 description headings are available across the configured sources, including

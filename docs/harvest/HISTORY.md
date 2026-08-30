@@ -735,3 +735,16 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   leakage. Prestige full-text coverage rises **16/145 → 23/145** and Codex
   coverage rises **13,747 → 13,754** with repository rows unchanged at
   **18,296**.
+
+- **2026-08-30** — Corrected a Codex presentation defect that falsely reported
+  606 native D&D 3.5e magic-item descriptions as absent. All 1,454 MIC, DMG,
+  and Arms & Equipment Guide rows already had exact OCR spans; `item_harvest.py`
+  discarded each source's configured relative path while serializing the index,
+  forcing Codex to fuzzy-match filenames. DMG then matched no file and A&EG
+  selected the wrong duplicate extraction. The index now emits exact per-source
+  OCR paths, Codex fails closed instead of fuzzing magic-item sources, and three
+  verified damaged-heading aliases validate `Tusion`, `Ulumination`, and the
+  split Headband of Simplemindedness title. No prose was invented or re-OCRed.
+  Direct comparison proves 1,454/1,454 built blocks equal their recorded OCR
+  slices. Codex coverage rises **13,754 → 14,360** with accepted repository rows
+  unchanged at **18,296**.
