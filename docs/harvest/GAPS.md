@@ -28,6 +28,11 @@ by `scripts/reference_audit.py`.
 - `NO COVERAGE: table-first DMG rod/staff entries.` Their charge and spell
   tables precede any prose name anchor. A dedicated table-aware detector is
   required; Rod of Absorption is the representative failure.
+- `NO COVERAGE: a distinct base Truespeak DC for the Lexicon of the
+  Perfected Map.` Tome of Magic prints creature, magic-object, and nonmagical-
+  object formulas, but does not state a separate place/area formula. All 12
+  Perfected Map utterances retain their other printed mechanics and exact
+  descriptions; the harvester does not infer a DC.
 - Five Epic Level Handbook feat descriptions dependent on the genuinely blurred
   p.60 image remain empty. Their verified summary mechanics are retained, and
   the harvester locks the exact five-row gap set.
@@ -60,7 +65,7 @@ These are full-prose attachment gaps, not missing harvested mechanics:
 | GURPS 3e items | 297 / 783 |
 | GURPS 3e spells | 372 / 766 |
 
-The whole Codex is currently 13,282 / 18,094 full-text blocks. Improve these
+The whole Codex is currently 13,347 / 18,159 full-text blocks. Improve these
 only by recording and validating true entry spans or by emitting a book-verbatim
 `full` field from the owning harvester.
 

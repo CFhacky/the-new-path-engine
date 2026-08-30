@@ -114,8 +114,8 @@ def structural_audit(report=False):
 
     ids = [spec.get("id") for spec in families]
     json_paths = [spec.get("json") for spec in families]
-    if len(families) != 41:
-        errors.append(f"manifest: {len(families)} families, expected 41")
+    if len(families) != 42:
+        errors.append(f"manifest: {len(families)} families, expected 42")
     if len(ids) != len(set(ids)):
         errors.append("manifest: duplicate family id")
     if len(json_paths) != len(set(json_paths)):

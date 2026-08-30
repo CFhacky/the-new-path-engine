@@ -36,14 +36,16 @@ Ship the harvester, JSON, Markdown, manifest row, docs row, `--selftest`, and
 Codex registration as one family commit. Deliberately update the locked
 repository family/row totals.
 
-## 3. Add Tome of Magic truename utterances
+## 3. Tome of Magic truename utterances — completed 2026-08-30
 
-Create a separate native D&D 3.5e `utterance` family. Keep lexicon, level,
-Truespeak DC mechanics, normal/reversed effect, duration, save, resistance,
-book, page, and full-description span distinct from mysteries and spells.
+The separate native D&D 3.5e `utterance` family now contains 65 entries:
+43 Evolving Mind, 10 Crafted Tool, and 12 Perfected Map. It preserves the
+printed lexicon/level rosters, normal and reversed summaries, duration, save,
+resistance, book/page provenance, and exact full-description spans. It remains
+independent of both spells and shadow mysteries.
 
-Do this after mysteries so the shared source-block lessons are known, while
-keeping the mechanics and tests independently reviewable.
+The book does not state a distinct base Truespeak DC for Perfected Map
+utterances. That 12-row mechanical gap is explicit rather than inferred.
 
 ## 4. Expand native GURPS 4e breadth
 
