@@ -1,0 +1,100 @@
+{
+  "generated_by": "manual vision transcription with page-image verification",
+  "source_pdf": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+  "source_markdown": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.md",
+  "derived_source": "reference/prestige_fulltext_batch_c.md",
+  "owned_ordinals": [74, 109],
+  "owned_names": ["Acolyte of the Fist", "Jester"],
+  "recovered": [
+    {
+      "ordinal": 74,
+      "name": "Acolyte of the Fist",
+      "page": 168,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 167,
+      "full_text_end_page": 168,
+      "description_pages": [167, 168],
+      "start": 6,
+      "end": 102,
+      "start_anchor": "While some monks focus inward",
+      "end_anchor": "Fist of energy",
+      "stop_before_anchor": "Oath & Order",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p167: begin at Acolyte of the Fist title; retain the complete class introduction and class features through the opening of Ki Strike; retain the invoked FISTS OF IRON feat box; exclude the author/illustrator caption and illustration",
+        "p168: resume Ki Strike at the top-left column; continue all remaining class features, requirements, class skills, Hit Die, and the ten-level advancement table; stop at the class-owned page end before the Oath & Order article on p169"
+      ],
+      "checks": {
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true,
+        "invoked_rules_box_retained": true
+      }
+    },
+    {
+      "ordinal": 75,
+      "name": "Reaper's Child",
+      "page": 171,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 170,
+      "full_text_end_page": 171,
+      "description_pages": [170, 171],
+      "start": 102,
+      "end": 166,
+      "start_anchor": "The reaper’s child is usually a monk",
+      "end_anchor": "Reaper of flesh",
+      "stop_before_anchor": "Monk of the Enabled Hand",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p170: begin at Reaper's Child title; retain the class introduction, full requirements, class skills, Hit Die, and complete five-level advancement table; follow the introduction continuation to p171",
+        "p171: resume the introduction in the upper middle column; retain all class features through the terminal Reaper of Flesh rule; exclude the FOR YOUR CAMPAIGN sidebar and stop before Monk of the Enabled Hand"
+      ],
+      "checks": {
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    }
+  ],
+  "unresolved": [
+    {"ordinal": 76, "name": "Monk of the Enabled Hand", "page": 172},
+    {"ordinal": 77, "name": "Primal Rager", "page": 175},
+    {"ordinal": 78, "name": "Fierce Grappler", "page": 176},
+    {"ordinal": 79, "name": "Brawler", "page": 177},
+    {"ordinal": 80, "name": "Cave Stalker", "page": 179},
+    {"ordinal": 81, "name": "Fiend Binder", "page": 181},
+    {"ordinal": 82, "name": "Prairie Runner", "page": 182},
+    {"ordinal": 83, "name": "Elder Druid", "page": 186},
+    {"ordinal": 84, "name": "The Mystic", "page": 187},
+    {"ordinal": 85, "name": "Aeromancer", "page": 194},
+    {"ordinal": 86, "name": "Eldritch Master", "page": 197},
+    {"ordinal": 87, "name": "Shaper of Form", "page": 198},
+    {"ordinal": 88, "name": "Force Missile Mage", "page": 202},
+    {"ordinal": 89, "name": "Earthshaker", "page": 206},
+    {"ordinal": 90, "name": "Icesinger", "page": 207},
+    {"ordinal": 91, "name": "Firestorm Berserker", "page": 208},
+    {"ordinal": 92, "name": "Purebreath Devotee", "page": 210},
+    {"ordinal": 93, "name": "Flame Steward", "page": 212},
+    {"ordinal": 94, "name": "Darkwater Knight", "page": 215},
+    {"ordinal": 95, "name": "Master Astrologer", "page": 219},
+    {"ordinal": 96, "name": "Rage Mage", "page": 224},
+    {"ordinal": 97, "name": "Psi-Hunter", "page": 227},
+    {"ordinal": 98, "name": "Truth Seeker", "page": 230},
+    {"ordinal": 99, "name": "Zerth Cenobite", "page": 238},
+    {"ordinal": 100, "name": "Arcanopath Monk", "page": 240},
+    {"ordinal": 101, "name": "Spirit Speaker", "page": 244},
+    {"ordinal": 102, "name": "Master of the Secret Sound", "page": 246},
+    {"ordinal": 103, "name": "Worldspeaker", "page": 249},
+    {"ordinal": 104, "name": "Mourner", "page": 250},
+    {"ordinal": 105, "name": "Memory Smith", "page": 251},
+    {"ordinal": 106, "name": "Battle Howler of Gruumsh", "page": 252},
+    {"ordinal": 107, "name": "Green Whisperer", "page": 253},
+    {"ordinal": 108, "name": "Charlatan", "page": 255},
+    {"ordinal": 109, "name": "Jester", "page": 260}
+  ],
+  "unresolved_policy": "No unresolved row is marked full. Every unresolved entry still requires complete title-to-class-end rendered-page verification."
+}
