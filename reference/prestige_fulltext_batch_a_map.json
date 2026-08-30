@@ -1,0 +1,145 @@
+{
+  "generated_by": "manual vision transcription with page-image verification",
+  "source_pdf": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+  "source_markdown": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.md",
+  "derived_source": "reference/prestige_fulltext_batch_a.md",
+  "owned_ordinals": [1, 37],
+  "owned_names": ["Chimeric Champion of Garl Glittergold", "Council Mage of Cormyr"],
+  "recovered": [
+    {
+      "ordinal": 9,
+      "name": "Bloodsister",
+      "page": 29,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 29,
+      "full_text_end_page": 31,
+      "description_pages": [29, 30, 31],
+      "start": 6,
+      "end": 84,
+      "start_anchor": "Bloodsister",
+      "end_anchor": "Twist the Knife (Ex)",
+      "stop_before_anchor": "Nightshade",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p29: begin at Bloodsister title in the article body; retain intro, Class Requirements, Class Skills, Hit Die, and advancement table; exclude preceding article history and page furniture",
+        "p30: continue the article body through Sneak Attack; exclude generic For Your Campaign sidebar, captions, and page furniture",
+        "p31: resume the interrupted Sneak Attack text at the upper-left, then Mind of Steel and Twist the Knife; stop before Nightshade title"
+      ],
+      "flow_overrides": [
+        "p29 requirements/skills/table are spatially left and below the title-led article text; normalize them after Class Features in the derived block",
+        "p31 Bloodsister continuation precedes the Nightshade body despite Nightshade sidebars appearing earlier in page reading order"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "name": "Nightshade",
+      "page": 31,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 31,
+      "full_text_end_page": 32,
+      "description_pages": [31, 32],
+      "start": 84,
+      "end": 164,
+      "start_anchor": "Nightshade",
+      "end_anchor": "Shadow Walk (Sp)",
+      "stop_before_anchor": "For Your Character",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p31: begin at Nightshade title and retain intro, Class Features opening, Class Requirements, Class Skills, Hit Die, and advancement table; exclude miniature labels and page furniture",
+        "p32: exclude generic For Your Character sidebar, then resume Nightshade Class Features from Light Adjusted through Shadow Walk and stop at class end"
+      ],
+      "flow_overrides": [
+        "p31 requirements/skills/table occupy independent sidebars and are normalized after the class features in the derived block",
+        "p32 upper-left generic campaign-adaptation sidebar is excluded before resuming the class feature column"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "name": "Deep Avenger",
+      "page": 36,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 36,
+      "full_text_end_page": 37,
+      "description_pages": [36, 37],
+      "start": 164,
+      "end": 231,
+      "start_anchor": "Deep Avenger",
+      "end_anchor": "Resist Poison (Ex)",
+      "stop_before_anchor": "Gloomblade",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p36: begin at Deep Avenger title; retain title-led prose, Class Features, requirements, class skills, Hit Die, and advancement table; exclude preceding NPC statistics and article furniture",
+        "p37: resume Rage at the top of the article column, retain Resist Poison, and stop before Gloomblade title"
+      ],
+      "flow_overrides": [
+        "p36 requirements/skills and advancement table are spatially interleaved with the feature prose and are normalized after Class Features",
+        "p37 Deep Avenger continuation is retained before the neighboring Gloomblade entry"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "name": "Gloomblade",
+      "page": 37,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 37,
+      "full_text_end_page": 39,
+      "description_pages": [37, 39],
+      "start": 231,
+      "end": 315,
+      "start_anchor": "Gloomblade",
+      "end_anchor": "Stonescreen Spell Description",
+      "stop_before_anchor": "Gray Sage",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p37: begin at Gloomblade title; retain title-led prose, Class Features, requirements, class skills, Hit Die, and advancement table; stop the main class body after the beginning of Ranged Disarm",
+        "p38: resume and finish Ranged Disarm before Gray Sage; exclude the unrelated Improved Counterspell feat sidebar",
+        "p39: retain the full Stonescreen spell-description sidebar invoked by the Gloomblade feature; exclude feats, equipment, captions, and page furniture"
+      ],
+      "flow_overrides": [
+        "p37 requirements/skills and advancement table are spatially interleaved and are normalized after Class Features",
+        "p38 Ranged Disarm continuation belongs to Gloomblade even though Gray Sage begins on the same page",
+        "p39 Stonescreen is retained as class-specific referenced rules prose and normalized to the end of the Gloomblade block"
+      ]
+    }
+  ],
+  "unresolved": [
+    {"ordinal": 1, "name": "Chimeric Champion of Garl Glittergold", "page": 12},
+    {"ordinal": 2, "name": "Itinerant Warder of Yondalla", "page": 14},
+    {"ordinal": 3, "name": "Justice Hammer of Moradin", "page": 16},
+    {"ordinal": 4, "name": "Mystic Keeper of Corellon Larethian", "page": 18},
+    {"ordinal": 5, "name": "Ancestral Avenger", "page": 19},
+    {"ordinal": 6, "name": "Gnome Giant-Killer", "page": 22},
+    {"ordinal": 7, "name": "Lightbearer", "page": 24},
+    {"ordinal": 8, "name": "Stonelord", "page": 25},
+    {"ordinal": 13, "name": "Gray Sage", "page": 38},
+    {"ordinal": 14, "name": "Shining Blade of Heironeous", "page": 41},
+    {"ordinal": 15, "name": "Radiant Servant of Pelor", "page": 43},
+    {"ordinal": 16, "name": "Fleet Runner of Ehlonna", "page": 44},
+    {"ordinal": 17, "name": "Mighty Contender of Kord", "page": 47},
+    {"ordinal": 18, "name": "Arvoreen's Keeper", "page": 50},
+    {"ordinal": 19, "name": "Arvoreen's Warder", "page": 51},
+    {"ordinal": 20, "name": "Battleguard of Tempus", "page": 53},
+    {"ordinal": 21, "name": "Blessed of Gruumsh", "page": 55},
+    {"ordinal": 22, "name": "Dancer of Sharess", "page": 58},
+    {"ordinal": 23, "name": "Deathstalker of Bhaal", "page": 60},
+    {"ordinal": 24, "name": "Dreadmaster", "page": 62},
+    {"ordinal": 25, "name": "Green Hunter", "page": 65},
+    {"ordinal": 26, "name": "Nightcloak", "page": 66},
+    {"ordinal": 27, "name": "Silverstar", "page": 68},
+    {"ordinal": 28, "name": "Harmonium Peacekeeper", "page": 72},
+    {"ordinal": 29, "name": "Anarchomancer", "page": 74},
+    {"ordinal": 30, "name": "The Athar", "page": 76},
+    {"ordinal": 31, "name": "The Cipher", "page": 77},
+    {"ordinal": 32, "name": "The Sensate", "page": 79},
+    {"ordinal": 33, "name": "The Sinker", "page": 80},
+    {"ordinal": 34, "name": "The Taker", "page": 82},
+    {"ordinal": 35, "name": "The Xaositect", "page": 83},
+    {"ordinal": 36, "name": "Battlepriest of Cormyr", "page": 87},
+    {"ordinal": 37, "name": "Council Mage of Cormyr", "page": 88}
+  ],
+  "unresolved_policy": "No unresolved row is marked full. Every unresolved entry still requires complete title-to-class-end rendered-page verification. Gray Sage remains unresolved pending its p39 continuation and its invoked Improved Counterspell rules text."
+}
