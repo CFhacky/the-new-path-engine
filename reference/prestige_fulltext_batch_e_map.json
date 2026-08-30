@@ -1,0 +1,415 @@
+{
+  "generated_by": "individual-issue OCR normalization with manual compiled-page verification",
+  "source_policy": "individual_issue_ocr_with_compiled_page_visual_verification",
+  "source_pdf": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+  "source_markdown": "multiple individual-issue OCR files; see recovered[].issue_ocr_path",
+  "derived_source": "reference/prestige_fulltext_batch_e.md",
+  "batch_kind": "supplemental verified recoveries",
+  "owned_ordinals": [
+    13,
+    14,
+    44,
+    78,
+    79,
+    122,
+    123
+  ],
+  "owned_names": [
+    "Gray Sage",
+    "Shining Blade of Heironeous",
+    "Boge of Nomog-Geaya",
+    "Fierce Grappler",
+    "Brawler",
+    "Dragonscribe",
+    "Knight of the Scale"
+  ],
+  "recovered": [
+    {
+      "ordinal": 13,
+      "name": "Gray Sage",
+      "page": 38,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 38,
+      "full_text_end_page": 39,
+      "description_pages": [
+        38,
+        39
+      ],
+      "compiled_visual_pages": [
+        38,
+        39
+      ],
+      "issue": "Dragon Magazine #298",
+      "issue_pdf_pages": [
+        58,
+        59,
+        60
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #298.md",
+      "issue_ocr_lines": [
+        "6186-6208",
+        "6213-6380",
+        "6541-6570"
+      ],
+      "start": 6,
+      "end": 76,
+      "start_anchor": "A gray sage is a silent, watchful figure of terrible devotion.",
+      "end_anchor": "| 10th | +5 | +3 | +3 | +7 | *Mordenkainen’s disjunction* | +1 level of existing class |",
+      "stop_before_anchor": "Shining Blade of Heironeous",
+      "hit_die": "d4",
+      "advancement_rows": 10,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "788c11948472b3f993889f5aa5cae9af0cef9d854d49d48a5bad7643cd387543",
+      "source_flow": [
+        "p38: retain the Gray Sage title, introduction, requirements, skills, Hit Die, advancement table, and class features in visible column order; exclude the prior Gloomblade continuation and page furniture",
+        "p39: retain the remaining Gray Sage features through Mordenkainen’s Disjunction; exclude the Rifts advertisement, Equipping the Troops, and page furniture"
+      ],
+      "printed_source_anomalies": [
+        "The advancement table prints “Increased spell penetration +6,” while the feature heading is “Improved Spell Penetration”; both printed forms are preserved."
+      ],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    },
+    {
+      "ordinal": 14,
+      "name": "Shining Blade of Heironeous",
+      "page": 41,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 40,
+      "full_text_end_page": 42,
+      "description_pages": [
+        40,
+        41,
+        42
+      ],
+      "compiled_visual_pages": [
+        40,
+        41,
+        42
+      ],
+      "issue": "Dragon Magazine #283",
+      "issue_pdf_pages": [
+        40,
+        41,
+        42
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #283.md",
+      "issue_ocr_lines": [
+        "2828-3104"
+      ],
+      "start": 76,
+      "end": 149,
+      "start_anchor": "Heironeous’s teachings focus on promoting good through the use of armed force.",
+      "end_anchor": "| 10th | +7 | +7 | +3 | +7 | Celestial transformation, smite evil 4/day | +1 level of existing class |",
+      "stop_before_anchor": "Radiant Servant of Pelor",
+      "hit_die": "d10",
+      "advancement_rows": 10,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "d36e12ae781623f78bbd6b0e400b264cb6ee61057c75bfbacb7b6f80a44b8dd6",
+      "source_flow": [
+        "p40: begin at the true Shining Blade class start and retain its opening class-owned prose; this corrects the earlier p41 start mapping",
+        "p41: retain requirements, skills, Hit Die, advancement material, and class features in visible column order",
+        "p42: retain the remaining weapon-enhancement features, Celestial Transformation, and Multiclass Note; stop before Radiant Servant of Pelor"
+      ],
+      "printed_source_anomalies": [
+        "The introduction prints the singular construction “The shining blades of Heironeous is an order”; it is preserved without grammatical correction."
+      ],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    },
+    {
+      "ordinal": 44,
+      "name": "Boge of Nomog-Geaya",
+      "page": 102,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 102,
+      "full_text_end_page": 103,
+      "description_pages": [
+        102,
+        103
+      ],
+      "compiled_visual_pages": [
+        102,
+        103
+      ],
+      "issue": "Dragon Magazine #315",
+      "issue_pdf_pages": [
+        91,
+        92
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #315.md",
+      "issue_ocr_lines": [
+        "13800-13843",
+        "13885-13931",
+        "13957-14019",
+        "14040-14094"
+      ],
+      "start": 149,
+      "end": 209,
+      "start_anchor": "The boge of Nomog-Geaya is a prestige class for the leaders of the Soldiers of the Last Order.",
+      "end_anchor": "| 10th | +7 | +7 | +3 | +7 | Mantle of authority | +1 level of existing spellcasting class |",
+      "stop_before_anchor": "Knight of the Chase",
+      "hit_die": "d8",
+      "advancement_rows": 10,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "b67185211993b9a647f03a0bb33834086bdd94cd90565615791284a1997d52fc",
+      "source_flow": [
+        "p102: retain the Boge title, class introduction, requirements, skills, Hit Die, advancement table, and class-owned feature flow; exclude preceding Galtai narrative outside the class",
+        "p103: retain all remaining class features, including the visually restored Master of Fire text and terminal Mantle of Authority rule; exclude the back-issues advertisement and stop before Knight of the Chase"
+      ],
+      "printed_source_anomalies": [
+        "Master of Fire prints “he can imbue both his longsword and his handaxe he wields”; the malformed source wording is preserved."
+      ],
+      "ocr_repairs": [
+        "Restored the missing Master of Fire middle from the compiled image.",
+        "Reconstructed all ten advancement rows and their spellcasting cells from the compiled image."
+      ],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    },
+    {
+      "ordinal": 78,
+      "name": "Fierce Grappler",
+      "page": 176,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 176,
+      "full_text_end_page": 176,
+      "description_pages": [
+        176
+      ],
+      "compiled_visual_pages": [
+        176
+      ],
+      "issue": "Dragon Magazine #295",
+      "issue_pdf_pages": [
+        72
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #295.md",
+      "issue_ocr_lines": [
+        "9184-9225",
+        "9239-9342"
+      ],
+      "start": 209,
+      "end": 270,
+      "start_anchor": "“A halfling against a half-orc!”",
+      "end_anchor": "| 5th | +5 | +4 | +1 | +1 | Choke-out |",
+      "stop_before_anchor": "Brawler",
+      "hit_die": "d10",
+      "advancement_rows": 5,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "1d724ea4c089da8771e130b678f4cd09c5451a1923f66f8f13a121a5a69f3625",
+      "source_flow": [
+        "p176: retain the complete Fierce Grappler class in visible column order through Choke-Out and the 5th-level row; exclude the interleaved Primal Rager continuation and stop before Brawler"
+      ],
+      "printed_source_anomalies": [],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    },
+    {
+      "ordinal": 79,
+      "name": "Brawler",
+      "page": 177,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 176,
+      "full_text_end_page": 177,
+      "description_pages": [
+        176,
+        177
+      ],
+      "compiled_visual_pages": [
+        176,
+        177
+      ],
+      "issue": "Dragon Magazine #295",
+      "issue_pdf_pages": [
+        72,
+        73,
+        74
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #295.md",
+      "issue_ocr_lines": [
+        "9343-9398",
+        "9445-9502",
+        "9533-9608"
+      ],
+      "start": 270,
+      "end": 329,
+      "start_anchor": "Hit him with a fist, and he smiles.",
+      "end_anchor": "| 5th | +5 | +4 | +4 | +1 | Bludgeoning substitution, crowd fighting +3 |",
+      "stop_before_anchor": "Master Siege Engineer",
+      "hit_die": "d10",
+      "advancement_rows": 5,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "c57c80a81eade724042ac9532eca6d3adc0d3a7744ce3738a00a30f6edf72921",
+      "source_flow": [
+        "p176: begin at Brawler after the Fierce Grappler boundary and retain the class-owned opening prose",
+        "p177: retain all remaining requirements, skills, Hit Die, advancement rows, and class features; exclude For Your Campaign, new feats, Master Siege Engineer, advertisements, captions, and sidebars"
+      ],
+      "printed_source_anomalies": [
+        "The Brawler proficiency paragraph prints “A fierce grappler gains proficiency with all simple and martial weapons”; the apparent class-name copy error is preserved."
+      ],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    },
+    {
+      "ordinal": 122,
+      "name": "Dragonscribe",
+      "page": 300,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 300,
+      "full_text_end_page": 301,
+      "description_pages": [
+        300,
+        301
+      ],
+      "compiled_visual_pages": [
+        300,
+        301
+      ],
+      "issue": "Dragon Magazine #296",
+      "issue_pdf_pages": [
+        29,
+        30
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #296.md",
+      "issue_ocr_lines": [
+        "1829-2091"
+      ],
+      "start": 329,
+      "end": 443,
+      "start_anchor": "Occasionally from the ranks of the learned and wise comes an individual who devotes himself totally to the study of draconic lore.",
+      "end_anchor": "| 5th | +2 | +1 | +1 | +4 | *Draconic binding* | +1 level of existing class |",
+      "stop_before_anchor": "Knight of the Scale",
+      "hit_die": "d4",
+      "advancement_rows": 5,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "6b794058aefac748476f6512baebb0f9356ef90b913a650ea79820d2efff55b0",
+      "source_flow": [
+        "p300: start at The Dragonscribe after the generic four-class article introduction; retain the complete class-owned prose, requirements, skills, Hit Die, table, and feature flow; exclude illustration furniture",
+        "p301: retain the remaining Dragonlore DCs, complete Summon Dragon lists, and terminal Draconic Binding rule; stop before Knight of the Scale"
+      ],
+      "printed_source_anomalies": [],
+      "ocr_repairs": [
+        "Corrected OCR “spellcasfer level” to the visually confirmed “spellcaster level.”",
+        "Corrected OCR “Fiendish while dragon” to the visually confirmed “Fiendish white dragon.”",
+        "Restored the Dragonlore DC 20 ending “after an encounter.”"
+      ],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true,
+        "dragonlore_dc_list_checked": true,
+        "summon_dragon_list_checked": true
+      }
+    },
+    {
+      "ordinal": 123,
+      "name": "Knight of the Scale",
+      "page": 302,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 301,
+      "full_text_end_page": 302,
+      "description_pages": [
+        301,
+        302
+      ],
+      "compiled_visual_pages": [
+        301,
+        302
+      ],
+      "issue": "Dragon Magazine #296",
+      "issue_pdf_pages": [
+        30,
+        31
+      ],
+      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #296.md",
+      "issue_ocr_lines": [
+        "2092-2235",
+        "2239-2265",
+        "2293-2313"
+      ],
+      "start": 443,
+      "end": 523,
+      "start_anchor": "Bolstered by the divine power of their god and driven by the force of their sacred duty",
+      "end_anchor": "| 10th | +10 | +6 | +3 | +3 | Righteous charge |",
+      "stop_before_anchor": "Heartseekers",
+      "hit_die": "d10",
+      "advancement_rows": 10,
+      "soft": false,
+      "full_description": true,
+      "uncapped_exact_slice": true,
+      "slice_sha256": "9f00cdc082745da187bef2a770c4957430a224bebecb88668fcf061f0818b03c",
+      "source_flow": [
+        "p301: start at Knight of the Scale immediately after Dragonscribe; retain the complete class-owned flow and exclude the duplicated orange pull quote",
+        "p302: retain the remaining rules through the complete Righteous Charge feature, requirements, skills, Hit Die, and advancement table; stop before Heartseekers and exclude page furniture"
+      ],
+      "printed_source_anomalies": [
+        "Dragonslaying prose prints “starting at 2nd level,” while the advancement table places Dragonslaying +1/+1d6 at 3rd level; both are preserved.",
+        "The printed prerequisite is “Weapon Focus (Lance, heavy)”; normalized sentence case preserves its printed argument order as “Weapon Focus (lance, heavy).”"
+      ],
+      "checks": {
+        "issue_ocr_compared": true,
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "advertisement_leakage_checked": true,
+        "sidebar_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true,
+        "reading_order_checked": true
+      }
+    }
+  ],
+  "unresolved": [],
+  "unresolved_policy": "This supplemental batch owns only the seven listed verified ordinals; it makes no claim about intervening ordinals."
+}

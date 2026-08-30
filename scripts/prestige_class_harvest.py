@@ -35,6 +35,7 @@ PROVENANCE
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from collections import Counter
@@ -54,6 +55,9 @@ OUT_MD = REPO / "reference" / "prestige_class_index.md"
 FULLTEXT_MAPS = tuple(
     REPO / "reference" / f"prestige_fulltext_batch_{batch}_map.json"
     for batch in "abcd"
+)
+FULLTEXT_OVERLAY_MAPS = (
+    REPO / "reference" / "prestige_fulltext_batch_e_map.json",
 )
 BOOK = "Dragon Magazine Prestige Class Compendium (Issues 274-353)"
 ISSUE_KEY = "Dragon Magazine/Dragon Magazine #{issue}.pdf"
@@ -593,9 +597,17 @@ def _load_full_text(prcs: List[PrestigeClass]) -> Dict[int, Dict[str, object]]:
     recovered: Dict[int, Dict[str, object]] = {}
     covered: List[int] = []
 
-    for map_path, expected_range in zip(FULLTEXT_MAPS, expected_ranges):
+    map_specs = list(zip(FULLTEXT_MAPS, expected_ranges))
+    map_specs.extend((path, None) for path in FULLTEXT_OVERLAY_MAPS)
+    for map_path, expected_range in map_specs:
         data = json.loads(map_path.read_text(encoding="utf-8"))
-        if data.get("source_policy") != "manifest_issue_ocr":
+        if expected_range is None:
+            if (data.get("batch_kind") != "supplemental verified recoveries"
+                    or data.get("source_policy") !=
+                    "individual_issue_ocr_with_compiled_page_visual_verification"):
+                raise ValueError(
+                    f"{map_path.name}: invalid supplemental recovery batch")
+        elif data.get("source_policy") != "manifest_issue_ocr":
             raise ValueError(
                 f"{map_path.name}: source_policy must route through the OCR manifest")
         if _is_compiled_sparse_markdown(data.get("source_markdown")):
@@ -603,33 +615,48 @@ def _load_full_text(prcs: List[PrestigeClass]) -> Dict[int, Dict[str, object]]:
                 f"{map_path.name}: compiled sparse Markdown selected despite "
                 "per-issue OCR availability")
         bounds = data.get("owned_ordinals")
-        if bounds != list(expected_range):
-            raise ValueError(
-                f"{map_path.name}: owned_ordinals {bounds!r} != {list(expected_range)!r}"
-            )
-        first, last = expected_range
-        owned = set(range(first, last + 1))
-        covered.extend(range(first, last + 1))
+        if expected_range is None:
+            if (not isinstance(bounds, list) or not bounds
+                    or not all(isinstance(value, int) for value in bounds)
+                    or len(bounds) != len(set(bounds))
+                    or not set(bounds).issubset(canonical)):
+                raise ValueError(
+                    f"{map_path.name}: malformed supplemental owned_ordinals")
+            owned = set(bounds)
+            expected_names = [canonical[ordinal].name for ordinal in bounds]
+        else:
+            if bounds != list(expected_range):
+                raise ValueError(
+                    f"{map_path.name}: owned_ordinals {bounds!r} != "
+                    f"{list(expected_range)!r}"
+                )
+            first, last = expected_range
+            owned = set(range(first, last + 1))
+            covered.extend(range(first, last + 1))
+            expected_names = [canonical[first].name, canonical[last].name]
 
         endpoint_names = data.get("owned_names")
-        if endpoint_names is not None:
-            expected_names = [canonical[first].name, canonical[last].name]
-            if endpoint_names != expected_names:
-                raise ValueError(
-                    f"{map_path.name}: owned_names do not match canonical endpoints"
-                )
+        if endpoint_names is not None and endpoint_names != expected_names:
+            raise ValueError(
+                f"{map_path.name}: owned_names contradict canonical roster"
+            )
 
         recovered_rows = data.get("recovered")
         unresolved_rows = data.get("unresolved")
         if not isinstance(recovered_rows, list) or not isinstance(unresolved_rows, list):
             raise ValueError(f"{map_path.name}: recovered/unresolved must be lists")
+        if expected_range is None and unresolved_rows:
+            raise ValueError(
+                f"{map_path.name}: supplemental batch must contain only recoveries"
+            )
         all_rows = recovered_rows + unresolved_rows
         ordinals = [row.get("ordinal") for row in all_rows if isinstance(row, dict)]
         if len(ordinals) != len(all_rows) or len(ordinals) != len(set(ordinals)):
             raise ValueError(f"{map_path.name}: malformed or duplicate ordinals")
         if set(ordinals) != owned:
             raise ValueError(
-                f"{map_path.name}: recovered + unresolved do not exactly own {first}-{last}"
+                f"{map_path.name}: recovered + unresolved do not exactly own "
+                f"{sorted(owned)!r}"
             )
 
         derived_source = data.get("derived_source")
@@ -665,7 +692,19 @@ def _load_full_text(prcs: List[PrestigeClass]) -> Dict[int, Dict[str, object]]:
             if row.get("full_description") is not True or not isinstance(row.get("soft"), bool):
                 raise ValueError(f"{map_path.name}: recovery flags invalid for {row['name']}")
 
-            full = "\n".join(source_lines[start:end]).strip()
+            exact_slice = "\n".join(source_lines[start:end])
+            if expected_range is None:
+                if row.get("uncapped_exact_slice") is not True:
+                    raise ValueError(
+                        f"{map_path.name}: exact-slice flag absent for "
+                        f"{row['name']}"
+                    )
+                digest = hashlib.sha256(exact_slice.encode("utf-8")).hexdigest()
+                if row.get("slice_sha256") != digest:
+                    raise ValueError(
+                        f"{map_path.name}: slice digest mismatch for {row['name']}"
+                    )
+            full = exact_slice.strip()
             first_line = next(
                 (line.strip().lstrip("#").strip() for line in full.splitlines() if line.strip()),
                 "",
@@ -675,6 +714,10 @@ def _load_full_text(prcs: List[PrestigeClass]) -> Dict[int, Dict[str, object]]:
             if _name_key(expected.name) not in _name_key(full):
                 raise ValueError(f"{map_path.name}: slice omits title {row['name']}")
             intervals.append((start, end, row["name"]))
+            if ordinal in recovered:
+                raise ValueError(
+                    f"{map_path.name}: duplicate recovered ordinal {ordinal}"
+                )
             recovered[ordinal] = {
                 "source_path": source_path.as_posix(),
                 "pdf_source_path": row.get("source_path") or data.get("source_pdf"),
@@ -816,7 +859,7 @@ def selftest() -> int:
     full_rows = [p for p in prcs if p.full_description is not None]
     expected_full = sum(
         len(json.loads(path.read_text(encoding="utf-8"))["recovered"])
-        for path in FULLTEXT_MAPS
+        for path in (*FULLTEXT_MAPS, *FULLTEXT_OVERLAY_MAPS)
     )
     if len(full_rows) != expected_full:
         failures.append(
@@ -859,8 +902,13 @@ def selftest() -> int:
         exact = "\n".join(source_lines[p.start:p.end]).strip()
         if p.full_description != exact:
             failures.append(f"{p.name}: full_description differs from exact source slice")
-        if len(p.full_description) <= 4200:
-            failures.append(f"{p.name}: expected uncapped recovery longer than Codex cap")
+        if not p.full_description.strip():
+            failures.append(f"{p.name}: recovered source slice is empty")
+        if (p.source_path != "reference/prestige_fulltext_batch_e.md"
+                and len(p.full_description) <= 4200):
+            failures.append(
+                f"{p.name}: expected uncapped recovery longer than Codex cap"
+            )
     names = {p.name for p in prcs}
     # a spread of specific PrCs transcribed from across the compendium
     for probe in ("Bloodsister", "Ancestral Avenger", "Radiant Servant of Pelor",

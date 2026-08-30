@@ -57,7 +57,7 @@ Suggested order:
 1. **COMPLETE 2026-08-30:** D&D 3.5e powers now carry 406/409 validated
    description spans; the three column-interleaved XPH rows remain explicit
    `NO COVERAGE`;
-2. **IN PROGRESS 2026-08-30:** prestige-class full text now has 16/145 exact,
+2. **IN PROGRESS 2026-08-30:** prestige-class full text now has 23/145 exact,
    visually verified spans. Continue OCR-first from each row's manifest-routed
    individual Dragon issue; use the compiled PDF only for visual verification.
    Knight of the Chase and Master of the Secret Sound remain explicit #297

@@ -27,13 +27,13 @@ DMG rods and staffs joined directly to Tables 7-19/7-25 and their descriptions.
 ## Codex presentation coverage
 
 The verified Codex build contains all 18,296 accepted entries and attaches
-13,747 validated full-text blocks (75.1%). Missing full text affects the
+13,754 validated full-text blocks (75.2%). Missing full text affects the
 presentation layer only; it does not remove already-harvested mechanical fields.
 
 Current complete full-text families include spells, soulmelds, vestiges,
 shadow mysteries, utterances, maneuvers, epic items/monsters/spells, and native
 GURPS gear, skills, traits, techniques, and spells. Prestige classes now carry
-16/145 exact, visually verified full-description slices. Several labeled legacy or
+23/145 exact, visually verified full-description slices. Several labeled legacy or
 equipment families retain lower prose coverage; see [GAPS.md](GAPS.md).
 
 The built files under `codex/build/` embed sourcebook text and are intentionally

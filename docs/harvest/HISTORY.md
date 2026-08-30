@@ -725,3 +725,13 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   because that issue extraction contains neither article. No new full
   descriptions were generated; the accepted 16/145 descriptions and all
   canonical mechanics remain unchanged.
+
+- **2026-08-30** — Added prestige-class full-text recovery Batch E as a
+  supplemental overlay on the four canonical roster partitions. Seven exact,
+  visually verified rules blocks were accepted: Gray Sage, Shining Blade of
+  Heironeous, Boge of Nomog-Geaya, Fierce Grappler, Brawler, Dragonscribe, and
+  Knight of the Scale. All 55 advancement rows and class-owned prose are
+  preserved without caption, advertisement, sidebar, or neighboring-class
+  leakage. Prestige full-text coverage rises **16/145 → 23/145** and Codex
+  coverage rises **13,747 → 13,754** with repository rows unchanged at
+  **18,296**.
