@@ -11,9 +11,10 @@ as a vertical column-dump (each row's cells one per line), so it gets its own
 detector and its own index.
 
     reference/gurps_trait_index.json — every advantage/disadvantage: name,
-                                       category, mental/physical/social, exotic/
-                                       supernatural, point cost, book page (Bxx),
-                                       PDF page, exact description [start, end]
+                                       category, mental/physical/social where
+                                       printed, exotic/supernatural where printed,
+                                       point cost, book page (Bxx/Pxx), PDF page,
+                                       exact description [start, end]
     reference/gurps_trait_index.md   — the same, for human eyes
 
 A second pass binds the locked appendix roster to the actual descriptions on
@@ -30,8 +31,15 @@ GOVERNING SOURCE
     Advantage vs. disadvantage is set by the most recent ADVANTAGES /
     DISADVANTAGES section header. The description pass resolves each printed
     B-page to its source heading/inline definition and stops at the next trait or
-    chapter cutover. This is native GURPS 4e data; the PDF stands behind every
-    extraction.
+    chapter cutover.
+    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Powers.md
+    — the discrete New Advantages section on pp. P90-P98. A separate additive
+    detector accepts only the five printed advantages absent from the Basic Set
+    roster, validates each heading/cost/page, and stops at the next printed
+    advantage or the MODIFIERS section. Neutralize is deliberately not duplicated:
+    the Basic Set roster already owns that trait. Powers enhancements/limitations
+    remain owned by terms_and_affixes.
+    These are native GURPS 4e data; the PDFs stand behind every extraction.
 """
 from __future__ import annotations
 
@@ -125,7 +133,7 @@ class GurpsTrait:
     kind: Optional[str] = None   # mental / physical / social
     nature: Optional[str] = None  # exotic / supernatural / mundane
     cost: Optional[str] = None   # point cost as printed ("25", "2/level", "-10", "varies")
-    book_page: Optional[str] = None  # the Bxx page where it's described
+    book_page: Optional[str] = None  # printed GURPS page, e.g. B34 or P90
 
     def quick_fields(self) -> int:
         return sum(1 for v in (self.kind, self.nature, self.cost, self.book_page) if v)
@@ -298,8 +306,63 @@ def _roster_digest(traits: List[GurpsTrait]) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
+# Printed Powers New Advantages roster. Neutralize is a section boundary only:
+# the Basic Set already owns that trait, and existing rows must remain untouched.
+POWERS_ADVANTAGES = {
+    "Control": (90, ("Variable",), True),
+    "Create": (92, ("Variable",), True),
+    "Illusion": (94, ("25 points",), True),
+    "Leech": (96, ("25 points for level 1 + 4", "points/additional level"), True),
+    "Neutralize": (97, ("50 points",), False),
+    "Static": (98, ("30 points",), True),
+}
+
+
+def detect_powers_traits(lines: List[str], pages: List[int],
+                         book: str) -> List[GurpsTrait]:
+    """Read the discrete P90-P98 New Advantages section without inference."""
+    anchors: Dict[str, Tuple[int, int, str]] = {}
+    for name, (printed_page, cost_lines, _accept) in POWERS_ADVANTAGES.items():
+        pdf_page = printed_page + 2
+        matches = []
+        for i, line in enumerate(lines):
+            if line.strip() != name or pages[i] != pdf_page:
+                continue
+            found, cursor = [], i + 1
+            while cursor < len(lines) and len(found) < len(cost_lines):
+                value = lines[cursor].strip()
+                cursor += 1
+                if value and not PAGE.search(value):
+                    found.append(value)
+            if tuple(found) == cost_lines:
+                matches.append((i, cursor, " ".join(found)))
+        if len(matches) != 1:
+            return []
+        anchors[name] = matches[0]
+
+    modifier_ends = [i for i, line in enumerate(lines)
+                     if line.strip() == "MODIFIERS"
+                     and pages[i] == 101 and i > anchors["Static"][0]]
+    if not modifier_ends:
+        return []
+
+    ordered_starts = sorted(start for start, _cursor, _cost in anchors.values())
+    section_end = min(modifier_ends)
+    out = []
+    for name, (printed_page, _cost_lines, accept) in POWERS_ADVANTAGES.items():
+        if not accept:
+            continue
+        start, _cursor, cost = anchors[name]
+        end = next((other for other in ordered_starts if other > start), section_end)
+        out.append(GurpsTrait(
+            name=name, book=book, page=printed_page + 2, start=start, end=end,
+            category="advantage", cost=cost, book_page=f"P{printed_page}"))
+    return sorted(out, key=lambda trait: trait.start)
+
+
 DETECTORS: Dict[str, Callable[[List[str], List[int], str], List[GurpsTrait]]] = {
     "traits": detect_traits,
+    "powers_traits": detect_powers_traits,
 }
 
 
@@ -320,6 +383,10 @@ SOURCES: List[Source] = [
            Path("GURPS/GURPS 4e/GURPS 4e - Basic Set - Characters.md"),
            "GURPS Basic Set: Characters (SJGames, 4e), Trait Lists appendix",
            "traits"),
+    Source("powers", "GURPS Powers",
+           Path("GURPS/GURPS 4e/GURPS 4e - Powers.md"),
+           "GURPS Powers (SJ Games, 4e), New Advantages, pp. P90-P98",
+           "powers_traits"),
 ]
 
 
@@ -351,9 +418,18 @@ class Corpus:
             src.lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
             pages = _pages_for(src.lines)
             src.traits = DETECTORS[src.detector](src.lines, pages, src.book)
-            mapped = attach_description_spans(src.lines, pages, src.traits)
-            src.coverage = (f"ok — {len(src.traits)} traits from {path.name}; "
-                            f"{mapped} exact description spans")
+            if src.detector == "traits":
+                mapped = attach_description_spans(src.lines, pages, src.traits)
+            else:
+                mapped = len(src.traits)
+            if src.detector == "powers_traits" and len(src.traits) != 5:
+                src.traits = []
+                src.coverage = (
+                    "NO COVERAGE — Powers New Advantages roster did not yield "
+                    "the five non-Basic traits cleanly")
+            else:
+                src.coverage = (f"ok — {len(src.traits)} traits from {path.name}; "
+                                f"{mapped} exact description spans")
 
     def all_traits(self, book: Optional[str] = None):
         for src in self.sources:
@@ -383,11 +459,12 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "# GURPS TRAIT INDEX — The New Path",
         "",
         "**Generated by `scripts/gurps_trait_harvest.py`. Do not hand-edit;",
-        "rerun the harvest.** GURPS 4e advantages and disadvantages (native GURPS",
-        "4e), from the Basic Set Trait Lists appendix. `cost` is the point cost as",
-        "printed; `book_page` (Bxx) points to the full description, and every row",
-        "carries its exact source span there. A field left `—` is one the OCR did",
-        "not cleanly yield. Use `--export \"NAME\"` for a translator packet.",
+        "rerun the harvest.** Native GURPS 4e advantages and disadvantages from",
+        "the Basic Set Trait Lists appendix plus Powers' five New Advantages absent",
+        "from that roster. `cost` is the point cost as printed; `book_page` (Bxx",
+        "or Pxx) points to the full description, and every row carries its exact",
+        "source span there. A field left `—` was not printed in the source roster.",
+        "Use `--export \"NAME\"` for a translator packet.",
         "",
     ]
     for src in corpus.sources:
@@ -401,7 +478,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
                             "traits": [asdict(t) for t in src.traits]})
         md.append(f"## {src.book} — {len(adv)} advantages, {len(dis)} disadvantages")
         md.append("")
-        md.append(f"*Source: {src.citation}.*  ")
+        md.append(f"*Source: {src.citation}.*")
         md.append(f"*Harvest: {src.coverage}.*")
         md.append("")
         for label, group in (("Advantages", adv), ("Disadvantages", dis)):
@@ -557,6 +634,40 @@ NEW DISADVANTAGES
 Unrelated design rules.
 """
 
+POWERS_FIXTURE = """## [PDF page 92]
+NEW
+ADVANTAGES
+Control
+Variable
+Control body.
+## [PDF page 94]
+Create
+Variable
+Create body.
+## [PDF page 96]
+Illusion
+25 points
+Illusion body.
+## [PDF page 98]
+Leech
+25 points for level 1 + 4
+points/additional level
+Leech body.
+## [PDF page 99]
+Neutralize
+50 points
+Existing Basic Set trait expansion.
+## [PDF page 100]
+Static
+30 points
+Static body.
+## [PDF page 101]
+BUILDING ABILITIES
+99
+MODIFIERS
+Modifier rules.
+"""
+
 
 def selftest(base: Path) -> int:
     failures: List[str] = []
@@ -624,6 +735,35 @@ def selftest(base: Path) -> int:
         if not sexless or sexless[0] != "Neutered or Sexless" \
                 or "NEW DISADVANTAGES" in sexless:
             failures.append(f"Sexless shared fixture span {sexless!r}")
+
+    powers_lines = POWERS_FIXTURE.splitlines()
+    powers_traits = detect_powers_traits(
+        powers_lines, _pages_for(powers_lines), "GURPS Powers")
+    powers_names = [trait.name for trait in powers_traits]
+    expected_powers = ["Control", "Create", "Illusion", "Leech", "Static"]
+    if powers_names != expected_powers:
+        failures.append(
+            f"Powers fixture detected {powers_names}, wanted {expected_powers}")
+    else:
+        powers_by_name = {trait.name: trait for trait in powers_traits}
+        if powers_by_name["Control"].cost != "Variable":
+            failures.append("Powers Control fixture cost drifted")
+        if powers_by_name["Leech"].cost != (
+                "25 points for level 1 + 4 points/additional level"):
+            failures.append("Powers Leech wrapped cost was not joined exactly")
+        if powers_by_name["Static"].book_page != "P98":
+            failures.append("Powers Static fixture citation drifted")
+        if any(trait.name == "Neutralize" for trait in powers_traits):
+            failures.append("Powers duplicated Basic Set Neutralize")
+        for trait in powers_traits:
+            block = powers_lines[trait.start:trait.end]
+            if not block or block[0] != trait.name:
+                failures.append(f"Powers {trait.name} fixture span does not lead")
+            if trait.name != "Static" and "MODIFIERS" in block:
+                failures.append(f"Powers {trait.name} crossed into modifiers")
+        static = powers_by_name["Static"]
+        if "MODIFIERS" in powers_lines[static.start:static.end]:
+            failures.append("Powers Static crossed into modifiers")
 
     if base.is_dir() and (base / SOURCES[0].path).exists():
         corpus = Corpus(base, _fresh_sources())
@@ -724,6 +864,42 @@ def selftest(base: Path) -> int:
         cr = live_trait("Combat Reflexes")
         if cr is None or cr.cost != "15":
             failures.append("Combat Reflexes missing or cost drifted from 15")
+
+        powers_path = base / SOURCES[1].path
+        powers_source = corpus.sources[1]
+        expected_powers_rows = [
+            ("Control", "Variable", "P90", 92),
+            ("Create", "Variable", "P92", 94),
+            ("Illusion", "25 points", "P94", 96),
+            ("Leech", "25 points for level 1 + 4 points/additional level",
+             "P96", 98),
+            ("Static", "30 points", "P98", 100),
+        ]
+        got_powers_rows = [
+            (trait.name, trait.cost, trait.book_page, trait.page)
+            for trait in powers_source.traits]
+        if not powers_path.exists():
+            failures.append(f"Powers extraction missing: {powers_path}")
+        elif got_powers_rows != expected_powers_rows:
+            failures.append(
+                f"live Powers roster {got_powers_rows!r}, "
+                f"wanted {expected_powers_rows!r}")
+        else:
+            powers_pages = _pages_for(powers_source.lines)
+            for trait in powers_source.traits:
+                block = powers_source.lines[trait.start:trait.end]
+                if not (block and block[0].strip() == trait.name):
+                    failures.append(f"live Powers {trait.name} span does not lead")
+                if powers_pages[trait.start] != trait.page:
+                    failures.append(f"live Powers {trait.name} PDF page drifted")
+                if trait.kind is not None or trait.nature is not None:
+                    failures.append(
+                        f"live Powers {trait.name} inferred an unprinted type")
+                if "MODIFIERS" in block:
+                    failures.append(
+                        f"live Powers {trait.name} crossed into modifiers")
+            if any(trait.name == "Neutralize" for trait in powers_source.traits):
+                failures.append("live Powers duplicated Basic Set Neutralize")
     else:
         print("  [SKIP] Basic Set extraction not found — fixture checks only")
 

@@ -8,9 +8,9 @@ It records no campaign canon and never authorizes a Notion write.
 | Measure | Verified value |
 |---|---:|
 | Reference families | 41 |
-| Accepted entries | 18,094 |
+| Accepted entries | 18,099 |
 | System labels | 9 |
-| Codex full-text blocks | 13,282 / 18,094 (73%) |
+| Codex full-text blocks | 13,287 / 18,099 (73%) |
 | Harvest checkpoint | `reference-2026-08-29` |
 | Family registry | `reference/families.json` |
 
