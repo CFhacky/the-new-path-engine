@@ -541,9 +541,10 @@ def build(report=False):
             elif fam == "vestige" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), _strip_vestige_tablets, None)
-            elif fam == "utterance" and "start" in r and "end" in r:
-                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
-                                  _exact_source_file(r), limit=None)
+            elif fam == "utterance" and r.get("description_spans"):
+                full = slice_full_spans(
+                    r.get("book", ""), r["description_spans"], r["name"],
+                    _exact_source_file(r), limit=None)
             elif fam == "maneuver" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), limit=None)
@@ -578,7 +579,8 @@ def build(report=False):
             extra = {}
             for k, v in r.items():
                 if k in ("name", "system", "book", "page", "citation", "start", "end",
-                         "description_key", "description_spans", "special_rules",
+                         "description_key", "description_spans", "excluded_spans",
+                         "special_rules",
                          "table_start", "table_end", "_corpus", "_source_path"):
                     continue
                 if isinstance(v, (str, int, float)) and str(v).strip() and str(v) != "None":

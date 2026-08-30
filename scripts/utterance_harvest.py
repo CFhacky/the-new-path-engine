@@ -48,6 +48,45 @@ DETAIL_NAMES = {
     "master the four winds": "Master the Four Winds",
 }
 
+# Exact, source-verified illustration furniture embedded inside eight otherwise
+# continuous description spans. These are deliberately keyed by utterance and
+# literal source lines; no generic caption stripping is permitted.
+CAPTION_BLOCKS = {
+    "analyze item": (
+        "Analyze item reveals valuable information about valuable objects",
+        "Illus. by J. Zhang",
+    ),
+    "speed of the zephyr greater": (
+        "With speed of the zephyr, even normally impassable terrain poses no dif\ufb01 culties",
+        "Illus. by J. Thomas",
+    ),
+    "morale boost": (
+        "Inertia surge can free you from",
+        "magical impediments",
+        "Illus. by. J. Thomas",
+    ),
+    "eldritch attraction": (
+        "A reversed breath of recovery utterance can stop an enemy in its tracks",
+        "Illus. by F. Vohwinkel",
+    ),
+    "energy negation greater": (
+        "By reversing an eldritch attraction utterance, Khetarin gives a hill giant a terrible surprise",
+        "Illus. by C. Frank",
+    ),
+    "preternatural clarity": (
+        "An utterance of preternatural clarity gives an ally renewed focus and combat prowess",
+        "Illus. by C. Frank",
+    ),
+    "ward of peace": (
+        "With a reversed ward of peace, Khetarin traps a marilith where it can do no harm . . . for now",
+        "Illus. by C. Frank",
+    ),
+    "energy vortex": (
+        "Khetarin calls forth an upheaval of earth",
+        "Illus. by C. Frank",
+    ),
+}
+
 LEXICONS = (
     ("evolving_mind", "EVOLVING MIND", 6, True),
     ("crafted_tool", "CRAFTED TOOL", 5, False),
@@ -94,6 +133,8 @@ class Utterance:
     target_basis: Optional[str] = None
     area_basis: Optional[str] = None
     dc_coverage: Optional[str] = None
+    description_spans: List[List[int]] = field(default_factory=list)
+    excluded_spans: List[List[int]] = field(default_factory=list)
 
 
 @dataclass
@@ -249,6 +290,40 @@ def _split_reversible(summary: str) -> Tuple[Optional[str], Optional[str]]:
     return normal.strip(), reverse.strip()
 
 
+def _caption_exclusions(
+    lines: List[str], name: str, start: int, end: int
+) -> List[List[int]]:
+    expected = CAPTION_BLOCKS.get(_norm(name))
+    if not expected:
+        return []
+    width = len(expected)
+    matches = [
+        i for i in range(start, end - width + 1)
+        if tuple(line.strip() for line in lines[i:i + width]) == expected
+    ]
+    if len(matches) != 1:
+        raise ValueError(
+            f"{name}: expected one exact illustration block, found {len(matches)}"
+        )
+    return [[matches[0], matches[0] + width]]
+
+
+def _description_spans(
+    start: int, end: int, excluded: List[List[int]]
+) -> List[List[int]]:
+    spans: List[List[int]] = []
+    cursor = start
+    for cut_start, cut_end in excluded:
+        if not (cursor <= cut_start < cut_end <= end):
+            raise ValueError(f"invalid exclusion [{cut_start}, {cut_end})")
+        if cursor < cut_start:
+            spans.append([cursor, cut_start])
+        cursor = cut_end
+    if cursor < end:
+        spans.append([cursor, end])
+    return spans
+
+
 def _apply_defaults(row: Utterance) -> None:
     if row.lexicon in ("evolving_mind", "crafted_tool") and not row.range:
         row.range = "60 feet"
@@ -344,6 +419,8 @@ def detect_utterances(
                     f"does not match detail level {detail_level}"
                 )
             name = DETAIL_NAMES.get(detail_key, summary["name"])
+            excluded_spans = _caption_exclusions(lines, name, start, end)
+            description_spans = _description_spans(start, end, excluded_spans)
             fields = _detail_fields(lines, level_line, end)
             normal_summary = reverse_summary = effect_summary = None
             if reversible:
@@ -376,6 +453,8 @@ def detect_utterances(
                     summary["name"] if _norm(summary["name"]) != _norm(name) else None
                 ),
                 dc_coverage=DC_GAP if lexicon == "perfected_map" else None,
+                description_spans=description_spans,
+                excluded_spans=excluded_spans,
             )
             _apply_defaults(row)
             found.append(row)
@@ -409,7 +488,7 @@ class Corpus:
             src.no_coverage.append(DC_GAP)
             src.coverage = (
                 f"ok - {len(src.utterances)} utterances from {path.name}; "
-                "65 exact description spans"
+                "65 exact descriptions; 8 verified illustration blocks excluded"
             )
 
     def all_utterances(self, book: Optional[str] = None):
@@ -544,16 +623,18 @@ def _md_cell(value: Optional[str]) -> str:
 def _raw_block(src: Source, row: Utterance) -> str:
     kept = []
     skip_folio = False
-    for line in src.lines[row.start:row.end]:
-        if PAGE.search(line):
-            skip_folio = True
-            continue
-        if skip_folio and re.fullmatch(r"\d{1,3}", line.strip()):
-            skip_folio = False
-            continue
-        if line.strip():
-            skip_folio = False
-        kept.append(line)
+    spans = row.description_spans or [[row.start, row.end]]
+    for start, end in spans:
+        for line in src.lines[start:end]:
+            if PAGE.search(line):
+                skip_folio = True
+                continue
+            if skip_folio and re.fullmatch(r"\d{1,3}", line.strip()):
+                skip_folio = False
+                continue
+            if line.strip():
+                skip_folio = False
+            kept.append(line)
     return "\n".join(kept).strip()
 
 
@@ -625,7 +706,10 @@ Level: 1
 Range: Touch
 Target: One object
 Duration: 1 round
-Description.
+Description before illustration.
+Analyze item reveals valuable information about valuable objects
+Illus. by J. Zhang
+Description after illustration.
 LEXICON OF THE
 PERFECTED MAP
 1ST-LEVEL UTTERANCES
@@ -667,6 +751,23 @@ def selftest(base: Path) -> int:
         failures.append(f"printed name discrepancy mismatch: {master}")
     if not master or master.truespeak_dc is not None or not master.dc_coverage:
         failures.append("Perfected Map DC gap was not kept explicit")
+    analyze = by_name.get("Analyze Item")
+    fixture_src = Source(
+        "fixture", "Tome of Magic (Truename Magic)", Path("fixture.md"),
+        "fixture", lines=fixture_lines, utterances=fixture,
+    )
+    analyze_raw = _raw_block(fixture_src, analyze) if analyze else ""
+    if not analyze or len(analyze.excluded_spans) != 1:
+        failures.append(f"fixture exact caption exclusion mismatch: {analyze}")
+    if (
+        "Illus. by" in analyze_raw
+        or "Analyze item reveals valuable information" in analyze_raw
+        or "Description before illustration." not in analyze_raw
+        or "Description after illustration." not in analyze_raw
+    ):
+        failures.append("fixture caption cleanup lost prose or leaked furniture")
+    if _caption_exclusions(["Illus. by Unverified"], "Hidden Truth", 0, 1):
+        failures.append("unconfigured illustration credit was generically removed")
 
     source_path = base / SOURCES[0].path
     if source_path.exists():
@@ -730,6 +831,59 @@ def selftest(base: Path) -> int:
                 bad_spans.append((row.name, row.start, row.end))
         if bad_spans:
             failures.append(f"invalid full-description spans: {bad_spans[:5]}")
+
+        expected_caption_names = {
+            "Analyze Item", "Speed of the Zephyr, Greater", "Morale Boost",
+            "Eldritch Attraction", "Energy Negation, Greater",
+            "Preternatural Clarity", "Ward of Peace", "Energy Vortex",
+        }
+        raw_affected = {
+            row.name for row in rows
+            if any(
+                "Illus. by" in line
+                for line in src.lines[row.start:row.end]
+            )
+        }
+        excluded_rows = {row.name for row in rows if row.excluded_spans}
+        excluded_blocks = sum(len(row.excluded_spans) for row in rows)
+        excluded_lines = sum(
+            end - start for row in rows
+            for start, end in row.excluded_spans
+        )
+        if raw_affected != expected_caption_names:
+            failures.append(f"raw caption-affected rows {sorted(raw_affected)}")
+        if excluded_rows != expected_caption_names:
+            failures.append(f"caption-excluded rows {sorted(excluded_rows)}")
+        if excluded_blocks != 8 or excluded_lines != 17:
+            failures.append(
+                f"caption exclusions {excluded_blocks} blocks/{excluded_lines} lines"
+            )
+
+        delivered = {row.name: _raw_block(src, row) for row in rows}
+        caption_phrases = [
+            _norm(" ".join(block[:-1])) for block in CAPTION_BLOCKS.values()
+        ]
+        leaks = [
+            name for name, text in delivered.items()
+            if "Illus. by" in text
+            or any(phrase in _norm(text) for phrase in caption_phrases)
+        ]
+        if leaks:
+            failures.append(f"caption furniture leaked into delivery: {leaks}")
+        retained = {
+            "Eldritch Attraction": "you move your target toward you up to 40 feet",
+            "Energy Negation, Greater": "this utterance wreathes your target in a type of energy",
+            "Preternatural Clarity": "5 insight bonus on any single attack roll",
+            "Ward of Peace": "this utterance does not prevent the warded creature",
+        }
+        for name, phrase in retained.items():
+            if phrase not in _norm(delivered.get(name, "")):
+                failures.append(f"{name}: continued mechanical prose was lost")
+        if "chapter 3 of the dungeon master s guide" not in _norm(
+            delivered.get("Transform the Landscape", "")
+        ):
+            failures.append("Transform the Landscape lost legitimate Chapter 3 prose")
+
         if "\ufffd" in "\n".join(src.lines):
             failures.append("source extraction contains U+FFFD")
         live = {row.name: row for row in rows}

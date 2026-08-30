@@ -7,7 +7,7 @@
    "key": "tome",
    "book": "Tome of Magic (Truename Magic)",
    "citation": "Tome of Magic (WotC, D&D 3.5e), Truename Magic pp. 232-253",
-   "coverage": "ok - 65 utterances from Tome of Magic.md; 65 exact description spans",
+   "coverage": "ok - 65 utterances from Tome of Magic.md; 65 exact descriptions; 8 verified illustration blocks excluded",
    "source_path": "D&D 3.5e\\Player Options\\Tome of Magic.md",
    "mechanics": {
     "action": "standard action; provokes attacks of opportunity",
@@ -52,7 +52,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27346,
+       27364
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Keen Weapon",
@@ -79,7 +86,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27364,
+       27379
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Agitate Metal",
@@ -106,7 +120,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27306,
+       27321
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Analyze Item",
@@ -133,7 +154,23 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27321,
+       27340
+      ],
+      [
+       27342,
+       27346
+      ]
+     ],
+     "excluded_spans": [
+      [
+       27340,
+       27342
+      ]
+     ]
     },
     {
      "name": "Rebuild Item",
@@ -160,7 +197,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27398,
+       27414
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Suppress Weapon",
@@ -187,7 +231,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27450,
+       27470
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Suppress Item",
@@ -214,7 +265,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27431,
+       27450
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Transmute Weapon",
@@ -241,7 +299,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27470,
+       27484
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Metamagic Catalyst",
@@ -268,7 +333,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27379,
+       27398
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Seize Item",
@@ -295,7 +367,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27414,
+       27431
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Defensive Edge",
@@ -322,7 +401,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26498,
+       26514
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Inertia Surge",
@@ -349,7 +435,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26667,
+       26695
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Knight\u2019s Puissance",
@@ -376,7 +469,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26695,
+       26708
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Universal Aptitude",
@@ -403,7 +503,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27056,
+       27086
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Word of Nurturing, Minor",
@@ -430,7 +537,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27153,
+       27171
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Archer\u2019s Eye",
@@ -457,7 +571,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26394,
+       26408
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Hidden Truth",
@@ -484,7 +605,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26630,
+       26644
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Perceive the Unseen",
@@ -511,7 +639,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26776,
+       26796
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Silent Caster",
@@ -538,7 +673,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26874,
+       26890
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Speed of the Zephyr",
@@ -565,7 +707,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26916,
+       26955
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Strike of Might",
@@ -592,7 +741,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26987,
+       27003
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Temporal Twist",
@@ -619,7 +775,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27030,
+       27056
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Word of Nurturing, Lesser",
@@ -646,7 +809,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27171,
+       27189
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Accelerated Attack",
@@ -673,7 +843,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26362,
+       26394
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Energy Negation",
@@ -700,7 +877,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26545,
+       26562
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Incarnation of Angels",
@@ -727,7 +911,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26644,
+       26667
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Seek the Sky",
@@ -754,7 +945,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26824,
+       26842
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Speed of the Zephyr, Greater",
@@ -781,7 +979,23 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26955,
+       26967
+      ],
+      [
+       26969,
+       26973
+      ]
+     ],
+     "excluded_spans": [
+      [
+       26967,
+       26969
+      ]
+     ]
     },
     {
      "name": "Temporal Spiral",
@@ -808,7 +1022,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27003,
+       27030
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Vision Sharpened",
@@ -835,7 +1056,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27086,
+       27102
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Word of Nurturing, Moderate",
@@ -862,7 +1090,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27189,
+       27210
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Breath of Cleansing",
@@ -889,7 +1124,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26408,
+       26432
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Caster Lens",
@@ -916,7 +1158,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26452,
+       26477
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Confounding Resistance",
@@ -943,7 +1192,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26477,
+       26498
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Magic Contraction",
@@ -970,7 +1226,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26722,
+       26739
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Morale Boost",
@@ -997,7 +1260,23 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26739,
+       26754
+      ],
+      [
+       26757,
+       26761
+      ]
+     ],
+     "excluded_spans": [
+      [
+       26754,
+       26757
+      ]
+     ]
     },
     {
      "name": "Spell Rebirth",
@@ -1024,7 +1303,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26973,
+       26987
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Word of Bolstering",
@@ -1051,7 +1337,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27137,
+       27153
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Word of Nurturing, Potent",
@@ -1078,7 +1371,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27210,
+       27228
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Eldritch Attraction",
@@ -1105,7 +1405,23 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26514,
+       26518
+      ],
+      [
+       26520,
+       26545
+      ]
+     ],
+     "excluded_spans": [
+      [
+       26518,
+       26520
+      ]
+     ]
     },
     {
      "name": "Energy Negation, Greater",
@@ -1132,7 +1448,23 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26562,
+       26572
+      ],
+      [
+       26574,
+       26588
+      ]
+     ],
+     "excluded_spans": [
+      [
+       26572,
+       26574
+      ]
+     ]
     },
     {
      "name": "Essence of Lifespark",
@@ -1159,7 +1491,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26588,
+       26613
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Preternatural Clarity",
@@ -1186,7 +1525,23 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26796,
+       26805
+      ],
+      [
+       26807,
+       26824
+      ]
+     ],
+     "excluded_spans": [
+      [
+       26805,
+       26807
+      ]
+     ]
     },
     {
      "name": "Seek the Sky, Greater",
@@ -1213,7 +1568,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26842,
+       26858
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Sensory Focus",
@@ -1240,7 +1602,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26858,
+       26874
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Ward of Peace",
@@ -1267,7 +1636,23 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27102,
+       27113
+      ],
+      [
+       27115,
+       27137
+      ]
+     ],
+     "excluded_spans": [
+      [
+       27113,
+       27115
+      ]
+     ]
     },
     {
      "name": "Word of Nurturing, Critical",
@@ -1294,7 +1679,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27228,
+       27245
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Breath of Recovery",
@@ -1321,7 +1713,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26432,
+       26452
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Ether Reforged",
@@ -1348,7 +1747,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26613,
+       26630
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Knight\u2019s Puissance, Greater",
@@ -1375,7 +1781,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26708,
+       26722
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Mystic Rampart",
@@ -1402,7 +1815,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26761,
+       26776
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Singular Mind",
@@ -1429,7 +1849,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       26890,
+       26916
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Word of Nurturing, Greater",
@@ -1456,7 +1883,14 @@
      "range_basis": "utterance default, Tome of Magic p. 233",
      "target_basis": "lexicon rule, Tome of Magic p. 234",
      "area_basis": null,
-     "dc_coverage": null
+     "dc_coverage": null,
+     "description_spans": [
+      [
+       27245,
+       27263
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Fog from the Void",
@@ -1483,7 +1917,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27582,
+       27594
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Shield of the Landscape",
@@ -1510,7 +1951,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27629,
+       27654
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Shockwave",
@@ -1537,7 +1985,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27654,
+       27668
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Energy Vortex",
@@ -1564,7 +2019,23 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27565,
+       27576
+      ],
+      [
+       27578,
+       27582
+      ]
+     ],
+     "excluded_spans": [
+      [
+       27576,
+       27578
+      ]
+     ]
     },
     {
      "name": "Speak Rock to Mud",
@@ -1591,7 +2062,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27668,
+       27680
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Transform the Landscape",
@@ -1618,7 +2096,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27692,
+       27718
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Lore of the World",
@@ -1645,7 +2130,14 @@
      "range_basis": null,
      "target_basis": null,
      "area_basis": null,
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27594,
+       27619
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Master the Four Winds",
@@ -1672,7 +2164,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27619,
+       27629
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Thwart the Traveler",
@@ -1699,7 +2198,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27680,
+       27692
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Anger the Sleeping Earth",
@@ -1726,7 +2232,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27523,
+       27536
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Conjunctive Gate",
@@ -1753,7 +2266,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27536,
+       27546
+      ]
+     ],
+     "excluded_spans": []
     },
     {
      "name": "Deny Passage",
@@ -1780,7 +2300,14 @@
      "range_basis": "lexicon default, Tome of Magic p. 250",
      "target_basis": null,
      "area_basis": "lexicon default, Tome of Magic p. 250",
-     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances."
+     "dc_coverage": "NO COVERAGE: Tome of Magic states no separate base Truespeak DC for Lexicon of the Perfected Map utterances.",
+     "description_spans": [
+      [
+       27546,
+       27565
+      ]
+     ],
+     "excluded_spans": []
     }
    ]
   }
