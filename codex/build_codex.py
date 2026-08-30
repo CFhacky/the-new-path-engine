@@ -27,7 +27,7 @@ publish `codex/build/engine_reference.html` as a private Artifact.
 
 INPUTS
 ------
-- reference/families.json    canonical registry of 41 family files and their
+- reference/families.json    canonical registry of 42 family files and their
                               explicit accepted-entry paths
 - reference/*_index.json      committed family files (name/fields/citation +
                               [start,end] spans and exact paths where emitted)
@@ -49,6 +49,8 @@ FULL-TEXT SOURCING — book RAW, never invented
                     columns interleaved into four blocks are removed first.
 - vestiges           sliced from exact-source heading spans; floated stat tablets
                     are removed, and the complete descriptions bypass the 4.2k cap.
+- mysteries          sliced from exact Tome of Magic heading-to-heading spans;
+                    complete descriptions bypass the 4.2k cap.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
 - psionic powers    sliced from harvester-owned exact source paths and validated
@@ -107,7 +109,7 @@ SOURCE_ROOTS = [
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
-CAP = 4200  # exact vestige/maneuver/GURPS skill/trait/epic spans bypass it
+CAP = 4200  # exact vestige/mystery/maneuver/GURPS/epic spans bypass it
 
 _STOP = set("gurps wfrp the of a an core rulebook compilation edition pdf md txt "
             "scan updated with errata hq premium".split())
@@ -432,15 +434,15 @@ def selftest():
     cleaned_power = _strip_power_furniture(power_fixture)
     assert cleaned_power == "ZONE OF TRUTH,\nPSIONIC\nTelepathy"
     specs = _family_specs()
-    assert len(specs) == 41
-    assert sum(spec["expected_count"] for spec in specs) == 18_144
+    assert len(specs) == 42
+    assert sum(spec["expected_count"] for spec in specs) == 18_213
     assert any(spec["id"] == "terms_and_affixes"
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
-    print("selftest: 41-family registry totals 18,144 rows")
+    print("selftest: 42-family registry totals 18,213 rows")
     print("selftest: PASS")
 
 
@@ -581,6 +583,9 @@ def build(report=False):
             elif fam == "vestige" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), _strip_vestige_tablets, None)
+            elif fam == "mystery" and "start" in r and "end" in r:
+                full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
+                                  _exact_source_file(r), limit=None)
             elif fam == "maneuver" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), limit=None)

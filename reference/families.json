@@ -286,6 +286,18 @@
       "expected_count": 208
     },
     {
+      "id": "mystery",
+      "systems": [
+        "D&D 3.5e"
+      ],
+      "scope": "native",
+      "harvester": "scripts/mystery_harvest.py",
+      "json": "reference/mystery_index.json",
+      "markdown": "reference/mystery_index.md",
+      "entry_path": "sources[].mysteries",
+      "expected_count": 69
+    },
+    {
       "id": "power",
       "systems": [
         "D&D 3.5e"

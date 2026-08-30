@@ -10,19 +10,14 @@ and 8 staffs. The additive detector requires both the book's own Table 7-19 or
 Table 7-25 row and the matching description heading, locks the old 1,420 rows
 unchanged, and raises the family to 1,454 entries.
 
-## 1. Add Tome of Magic shadow mysteries
+## 1. Tome of Magic shadow mysteries — completed 2026-08-30
 
-Create a native D&D 3.5e `mystery` family for the book's shadow-magic
-fundamentals and mysteries. Use the born-digital body blocks already proven
-usable by the vestige harvester.
-Required fields should come from the printed block only: name, path/category,
-level, school/descriptors where printed, casting time, range, target/area,
-duration, save, resistance, book, page, and exact full-description span.
-Do not force mysteries into the standard spell family.
-
-Ship the harvester, JSON, Markdown, manifest row, docs row, `--selftest`, and
-Codex registration as one family commit. Deliberately update the locked
-repository family/row totals.
+The native D&D 3.5e `mystery` family now contains all 69 printed shadow-magic
+fundamentals and path mysteries from PDF pp.142–154. Each row retains its
+category/path, printed level-school and optional per-block fields, exact page,
+and heading-to-heading full-description span. The shared chapter casting-time
+default was deliberately not imputed into individual rows whose blocks omit it.
+Mysteries remain separate from standard spells, vestiges, and utterances.
 
 ## 2. Add Tome of Magic truename utterances
 
