@@ -181,6 +181,11 @@
      ]
     }
    },
+   "caption_cleanup": {
+    "source_illustrator_lines": 5,
+    "excluded_blocks": 5,
+    "policy": "Five exact, same-PDF illustration blocks are excluded from export and Codex full text; description prose is retained."
+   },
    "mysteries": [
     {
      "name": "Steel Shadows",

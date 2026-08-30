@@ -13,7 +13,9 @@ Outputs:
 
 Governing source:
     I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md
-    Shadow Magic mystery descriptions, PDF pages 142-154.
+    Shadow Magic mystery descriptions, PDF pages 142-154. Five exact floating
+    illustration blocks are excluded from export/Codex delivery only after
+    same-page verification; the entry prose remains untouched.
 """
 from __future__ import annotations
 
@@ -96,6 +98,54 @@ def _plain(text: str) -> str:
 
 def _norm_name(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", _plain(text).casefold()).strip()
+
+
+# These five floating illustration blocks interrupt or trail mystery descriptions
+# in the source text layer. Each exact block was verified against the same PDF
+# page; only the unrelated caption/artist lines are removed.
+CAPTION_BLOCKS = (
+    (
+        "Irrin Coradran",
+        "uses umbral body to become",
+        "incorporeal before attacking",
+        "Illus. by S. Prescott",
+    ),
+    (
+        "By casting consume essence, Thanielle sucks the life out of her foe",
+        "Illus. by C. Critchlow",
+    ),
+    ("Illus. by E. Cox",),
+    (
+        "Afraid of the dark brings forth a shadowy duplicate",
+        "that attacks your enemy's will",
+        "Illus. by F. Vohwinkel",
+    ),
+    (
+        "Umbral touch turns Eveneth's hand into a deadly weapon",
+        "Illus. by J. Thomas",
+    ),
+)
+
+
+def _strip_mystery_captions(text: str) -> Tuple[str, int]:
+    lines = text.splitlines()
+    keys = [_norm_name(line) for line in lines]
+    removed: set[int] = set()
+    removed_blocks = 0
+    for block in CAPTION_BLOCKS:
+        wanted = [_norm_name(line) for line in block]
+        hits = [
+            index for index in range(0, len(keys) - len(wanted) + 1)
+            if keys[index:index + len(wanted)] == wanted
+        ]
+        if len(hits) == 1:
+            start = hits[0]
+            removed.update(range(start, start + len(wanted)))
+            removed_blocks += 1
+    cleaned = "\n".join(
+        line for index, line in enumerate(lines) if index not in removed
+    ).strip()
+    return cleaned, removed_blocks
 
 
 def _title_name(text: str) -> str:
@@ -385,6 +435,22 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
     for source in corpus.sources:
         total += len(source.mysteries)
         field_coverage = _field_coverage(source.mysteries)
+        caption_cleanup = {
+            "source_illustrator_lines": sum(
+                "\n".join(source.lines[row.start:row.end]).count("Illus. by")
+                for row in source.mysteries
+            ),
+            "excluded_blocks": sum(
+                _strip_mystery_captions(
+                    "\n".join(source.lines[row.start:row.end])
+                )[1]
+                for row in source.mysteries
+            ),
+            "policy": (
+                "Five exact, same-PDF illustration blocks are excluded from "
+                "export and Codex full text; description prose is retained."
+            ),
+        }
         sources_out.append({
             "key": source.key,
             "book": source.book,
@@ -393,6 +459,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
             "coverage": source.coverage,
             "source_path": str(source.path),
             "field_coverage": field_coverage,
+            "caption_cleanup": caption_cleanup,
             "mysteries": [asdict(mystery) for mystery in source.mysteries],
         })
         summary = "; ".join(
@@ -405,6 +472,8 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
             f"*System: {source.system}. Source: {source.citation}.*",
             f"*Extraction: {corpus.base / source.path}.*",
             f"*Harvest: {source.coverage}.*",
+            f"*Caption cleanup: {caption_cleanup['excluded_blocks']} exact floating "
+            "illustration blocks excluded; entry prose retained.*",
             f"*Printed-field coverage: {summary}.*",
             "*NO COVERAGE values are fields omitted by the individual printed block; "
             "shared chapter defaults and referenced-spell fields are not imputed.*",
@@ -448,7 +517,8 @@ def _raw_block(source: Source, mystery: Mystery) -> str:
         if line.strip():
             skip_printed_page = False
         body.append(line)
-    return "\n".join(body).strip()
+    cleaned, _ = _strip_mystery_captions("\n".join(body))
+    return cleaned
 
 
 def export_packet(corpus: Corpus, name: str, book: Optional[str],
@@ -572,6 +642,17 @@ def selftest(base: Path) -> int:
     reflection = fixture_by_name.get("Reflections of Things to Come")
     if not reflection or reflection.page != 149 or reflection.category != "Master":
         failures.append(f"wrapped Reflections heading: {reflection}")
+    caption_fixture = """ARROW OF DUSK
+Actual description prose.
+Afraid of the dark brings forth a shadowy duplicate
+that attacks your enemy's will
+Illus. by F. Vohwinkel"""
+    caption_cleaned, caption_count = _strip_mystery_captions(caption_fixture)
+    if (caption_count != 1 or "Actual description prose." not in caption_cleaned
+            or "Afraid of the dark" in caption_cleaned
+            or "Illus. by" in caption_cleaned):
+        failures.append(
+            f"caption fixture cleanup count={caption_count}: {caption_cleaned!r}")
 
     source_path = base / SOURCES[0].path
     if base.is_dir() and source_path.exists():
@@ -605,6 +686,48 @@ def selftest(base: Path) -> int:
                 bad_spans.append((row.name, row.start, row.end))
         if bad_spans:
             failures.append(f"invalid description spans: {bad_spans[:5]}")
+        raw_illustrator_lines = 0
+        removed_caption_blocks = 0
+        caption_leaks = []
+        caption_phrases = {
+            _norm_name(line) for block in CAPTION_BLOCKS for line in block
+        }
+        for row in rows:
+            raw = "\n".join(source.lines[row.start:row.end])
+            raw_illustrator_lines += raw.count("Illus. by")
+            cleaned, removed = _strip_mystery_captions(raw)
+            removed_caption_blocks += removed
+            cleaned_key = _norm_name(cleaned)
+            if ("Illus. by" in cleaned
+                    or any(phrase and phrase in cleaned_key
+                           for phrase in caption_phrases)):
+                caption_leaks.append(row.name)
+        if raw_illustrator_lines != 5:
+            failures.append(
+                f"raw mystery spans contain {raw_illustrator_lines} illustrator "
+                "lines; expected the five source-verified floating captions")
+        if removed_caption_blocks != 5 or caption_leaks:
+            failures.append(
+                f"caption cleanup removed {removed_caption_blocks}/5 blocks; "
+                f"leaks={caption_leaks}")
+        preserved_prose = {
+            "Voice of Shadow": "This mystery functions like the spell command.",
+            "Dusk and Dawn": "By drawing shade from the Plane of Shadow",
+            "Shadow Skin": "damage reduction according to your caster level",
+            "Arrow of Dusk": "triple the damage.",
+            "Widened Eyes": "four times as far as a human",
+        }
+        missing_prose = []
+        for name, phrase in preserved_prose.items():
+            row = by_name[name]
+            cleaned, _ = _strip_mystery_captions(
+                "\n".join(source.lines[row.start:row.end])
+            )
+            if phrase not in cleaned:
+                missing_prose.append(name)
+        if missing_prose:
+            failures.append(
+                f"caption cleanup removed required entry prose: {missing_prose}")
         pages = {row.page for row in rows}
         if min(pages) != 142 or max(pages) != 154:
             failures.append(f"PDF page range {min(pages)}-{max(pages)}, wanted 142-154")

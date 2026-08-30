@@ -683,3 +683,12 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   chapter-wide casting-time rule or values from referenced spells. Registered
   the family in the manifest and Codex; all 69 descriptions validate as full
   text.
+
+
+- **2026-08-30** — Corrected the shadow-mystery delivery spans after review
+  found unrelated floating illustration captions inside five raw line ranges.
+  The source-verified blocks are attached to Voice of Shadow, Dusk and Dawn,
+  Shadow Skin, Arrow of Dusk, and Widened Eyes. Export and Codex delivery now
+  remove exactly those five caption/artist blocks while retaining all actual
+  description prose. The live selftest locks five raw illustrator lines,
+  five successful exclusions, and zero delivered caption leaks.

@@ -50,6 +50,7 @@ FULL-TEXT SOURCING — book RAW, never invented
 - vestiges           sliced from exact-source heading spans; floated stat tablets
                     are removed, and the complete descriptions bypass the 4.2k cap.
 - mysteries          sliced from exact Tome of Magic heading-to-heading spans;
+                    five verified floating illustration blocks are removed and
                     complete descriptions bypass the 4.2k cap.
 - maneuvers          sliced from canonical exact-source description spans; complete
                     descriptions bypass the 4.2k cap.
@@ -224,6 +225,49 @@ def _strip_vestige_tablets(seg: str) -> str:
         out.append(src[i])
         i += 1
     return "\n".join(out).strip()
+
+
+_MYSTERY_CAPTION_BLOCKS = (
+    (
+        "Irrin Coradran",
+        "uses umbral body to become",
+        "incorporeal before attacking",
+        "Illus. by S. Prescott",
+    ),
+    (
+        "By casting consume essence, Thanielle sucks the life out of her foe",
+        "Illus. by C. Critchlow",
+    ),
+    ("Illus. by E. Cox",),
+    (
+        "Afraid of the dark brings forth a shadowy duplicate",
+        "that attacks your enemy's will",
+        "Illus. by F. Vohwinkel",
+    ),
+    (
+        "Umbral touch turns Eveneth's hand into a deadly weapon",
+        "Illus. by J. Thomas",
+    ),
+)
+
+
+def _strip_mystery_captions(seg: str) -> str:
+    """Remove five exact, source-verified floating illustration blocks."""
+    src = seg.splitlines()
+    keys = [_norm(line) for line in src]
+    removed = set()
+    for block in _MYSTERY_CAPTION_BLOCKS:
+        wanted = [_norm(line) for line in block]
+        hits = [
+            index for index in range(0, len(keys) - len(wanted) + 1)
+            if keys[index:index + len(wanted)] == wanted
+        ]
+        if len(hits) == 1:
+            start = hits[0]
+            removed.update(range(start, start + len(wanted)))
+    return "\n".join(
+        line for index, line in enumerate(src) if index not in removed
+    ).strip()
 
 
 def _strip_gurps_skill_furniture(seg: str) -> str:
@@ -433,6 +477,15 @@ def selftest():
                      "## [PDF page 107]\n106\nCHAPTER 4\nPOWERS, MANTLES\nAND ITEMS")
     cleaned_power = _strip_power_furniture(power_fixture)
     assert cleaned_power == "ZONE OF TRUTH,\nPSIONIC\nTelepathy"
+    caption_fixture = """ARROW OF DUSK
+Actual description prose.
+Afraid of the dark brings forth a shadowy duplicate
+that attacks your enemy's will
+Illus. by F. Vohwinkel"""
+    caption_cleaned = _strip_mystery_captions(caption_fixture)
+    assert "Actual description prose." in caption_cleaned
+    assert "Afraid of the dark" not in caption_cleaned
+    assert "Illus. by" not in caption_cleaned
     specs = _family_specs()
     assert len(specs) == 42
     assert sum(spec["expected_count"] for spec in specs) == 18_213
@@ -585,7 +638,8 @@ def build(report=False):
                                   _exact_source_file(r), _strip_vestige_tablets, None)
             elif fam == "mystery" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
-                                  _exact_source_file(r), limit=None)
+                                  _exact_source_file(r),
+                                  _strip_mystery_captions, None)
             elif fam == "maneuver" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), limit=None)
