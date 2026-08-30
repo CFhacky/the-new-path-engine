@@ -259,7 +259,7 @@
       "json": "reference/gurps_trait_index.json",
       "markdown": "reference/gurps_trait_index.md",
       "entry_path": "sources[].traits",
-      "expected_count": 469
+      "expected_count": 474
     },
     {
       "id": "magic_item",

@@ -1,7 +1,7 @@
 {
  "generated_by": "scripts/gurps_trait_harvest.py",
  "corpus": "I:\\Sourcebooks\\_text",
- "total_traits": 469,
+ "total_traits": 474,
  "sources": [
   {
    "key": "basicset",
@@ -5639,6 +5639,77 @@
      "nature": "mundane",
      "cost": "-10*",
      "book_page": "B163"
+    }
+   ]
+  },
+  {
+   "key": "powers",
+   "book": "GURPS Powers",
+   "citation": "GURPS Powers (SJ Games, 4e), New Advantages, pp. P90-P98",
+   "source_path": "GURPS\\GURPS 4e\\GURPS 4e - Powers.md",
+   "coverage": "ok \u2014 5 traits from GURPS 4e - Powers.md; 5 exact description spans",
+   "advantages": 5,
+   "disadvantages": 0,
+   "traits": [
+    {
+     "name": "Control",
+     "book": "GURPS Powers",
+     "page": 92,
+     "start": 13397,
+     "end": 13749,
+     "category": "advantage",
+     "kind": null,
+     "nature": null,
+     "cost": "Variable",
+     "book_page": "P90"
+    },
+    {
+     "name": "Create",
+     "book": "GURPS Powers",
+     "page": 94,
+     "start": 13749,
+     "end": 14094,
+     "category": "advantage",
+     "kind": null,
+     "nature": null,
+     "cost": "Variable",
+     "book_page": "P92"
+    },
+    {
+     "name": "Illusion",
+     "book": "GURPS Powers",
+     "page": 96,
+     "start": 14094,
+     "end": 14354,
+     "category": "advantage",
+     "kind": null,
+     "nature": null,
+     "cost": "25 points",
+     "book_page": "P94"
+    },
+    {
+     "name": "Leech",
+     "book": "GURPS Powers",
+     "page": 98,
+     "start": 14354,
+     "end": 14532,
+     "category": "advantage",
+     "kind": null,
+     "nature": null,
+     "cost": "25 points for level 1 + 4 points/additional level",
+     "book_page": "P96"
+    },
+    {
+     "name": "Static",
+     "book": "GURPS Powers",
+     "page": 100,
+     "start": 14699,
+     "end": 14810,
+     "category": "advantage",
+     "kind": null,
+     "nature": null,
+     "cost": "30 points",
+     "book_page": "P98"
     }
    ]
   }
