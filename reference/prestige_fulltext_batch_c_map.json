@@ -42,7 +42,7 @@
       "full_text_end_page": 171,
       "description_pages": [170, 171],
       "start": 102,
-      "end": 166,
+      "end": 167,
       "start_anchor": "The reaper’s child is usually a monk",
       "end_anchor": "Reaper of flesh",
       "stop_before_anchor": "Monk of the Enabled Hand",
@@ -58,11 +58,64 @@
         "neighbor_leakage_checked": true,
         "rules_tables_checked": true
       }
+    },
+    {
+      "ordinal": 76,
+      "name": "Monk of the Enabled Hand",
+      "page": 172,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 171,
+      "full_text_end_page": 173,
+      "description_pages": [171, 172, 173],
+      "start": 167,
+      "end": 231,
+      "start_anchor": "Monasteries can be found in every corner",
+      "end_anchor": "Lung soo “dragon’s tail slap”",
+      "stop_before_anchor": "Making Monks’ Orders",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p171: begin at Monk of the Enabled Hand title in the lower-right column after Reaper's Child; retain the opening class introduction",
+        "p172: resume the introduction in the left column; retain requirements, class skills, Hit Die, complete five-level advancement table, and class features through the opening of Kong Soo",
+        "p173: resume Kong Soo in the left column; retain the full Lung Soo terminal rule; exclude the generic FOR YOUR CHARACTER sidebar and stop before Making Monks’ Orders"
+      ],
+      "checks": {
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true
+      }
+    },
+    {
+      "ordinal": 77,
+      "name": "Primal Rager",
+      "page": 175,
+      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "full_text_start_page": 174,
+      "full_text_end_page": 176,
+      "description_pages": [174, 175, 176],
+      "start": 231,
+      "end": 297,
+      "start_anchor": "Timin slipped from his hiding place",
+      "end_anchor": "Heart of the beast",
+      "stop_before_anchor": "The Fierce Grappler",
+      "soft": false,
+      "full_description": true,
+      "source_flow": [
+        "p174: begin at THE PRIMAL RAGER title; retain the class-owned italic vignette and opening class introduction; exclude the preceding generic article lead, author/illustrator caption, and FOR YOUR CHARACTER sidebar",
+        "p175: resume the introduction in the left column; retain requirements, class skills, Hit Die, complete five-level advancement table, and class features through Rage",
+        "p176: retain the terminal Heart of the Beast feature in the upper-left column and stop before The Fierce Grappler"
+      ],
+      "checks": {
+        "rendered_pages_verified": true,
+        "caption_leakage_checked": true,
+        "neighbor_leakage_checked": true,
+        "rules_tables_checked": true,
+        "class_owned_vignette_retained": true
+      }
     }
   ],
   "unresolved": [
-    {"ordinal": 76, "name": "Monk of the Enabled Hand", "page": 172},
-    {"ordinal": 77, "name": "Primal Rager", "page": 175},
     {"ordinal": 78, "name": "Fierce Grappler", "page": 176},
     {"ordinal": 79, "name": "Brawler", "page": 177},
     {"ordinal": 80, "name": "Cave Stalker", "page": 179},

@@ -98,10 +98,10 @@ def main() -> int:
         fail(f"owned_names must be exactly {EXPECTED_ENDPOINTS!r}")
     if mapping.get("derived_source") != "reference/prestige_fulltext_batch_c.md":
         fail("wrong derived_source")
-    if [row.get("ordinal") for row in recovered] != [74, 75]:
-        fail("bounded candidate may recover only ordinals 74 and 75")
-    if [row.get("ordinal") for row in unresolved] != list(range(76, 110)):
-        fail("bounded candidate must leave ordinals 76..109 unresolved in order")
+    if [row.get("ordinal") for row in recovered] != [74, 75, 76, 77]:
+        fail("bounded candidate must recover exactly ordinals 74..77")
+    if [row.get("ordinal") for row in unresolved] != list(range(78, 110)):
+        fail("bounded candidate must leave ordinals 78..109 unresolved in order")
 
     rows = recovered + unresolved
     expected = {ordinal: (name, page) for ordinal, name, page in EXPECTED}
@@ -211,7 +211,7 @@ def main() -> int:
     if headings != recovered_names:
         fail(f"Markdown class headings do not equal recovered order: {headings!r}")
 
-    if [(start, end) for start, end, _, _ in spans] != [(6, 102), (102, 166)]:
+    if [(start, end) for start, end, _, _ in spans] != [(6, 102), (102, 167), (167, 231), (231, 297)]:
         fail(f"verified line spans changed: {[(start, end) for start, end, _, _ in spans]!r}")
     if spans and spans[-1][1] != len(lines):
         fail("final recovered entry must end at derived-file EOF")
@@ -219,6 +219,8 @@ def main() -> int:
     expected_pages = {
         74: (167, 168, [167, 168]),
         75: (170, 171, [170, 171]),
+        76: (171, 173, [171, 172, 173]),
+        77: (174, 176, [174, 175, 176]),
     }
     expected_abilities = {
         74: (
@@ -233,6 +235,17 @@ def main() -> int:
             "Whisper of Nerull (Su)", "Reaper’s Reinforcement (Su)",
             "Scythe Strike (Su)", "Oathgiver (Sp)", "Reaper of Flesh (Su)",
         ),
+        76: (
+            "Weapon and Armor Proficiency", "Monk Abilities (Ex)",
+            "Shim Soo “mind over hand” (Su)", "Ki Strike (Su)",
+            "Kal Soo “reverse hand” (Su)", "Kong Soo “empty hand” (Su)",
+            "Lung Soo “dragon’s tail slap” (Su)",
+        ),
+        77: (
+            "Weapon and Armor Proficiency", "Strength of the Beast (Ex)",
+            "Power Strike (Ex)", "Quell the Rage (Ex)",
+            "Damage Reduction (Su)", "Rage (Ex)", "Heart of the Beast (Ex)",
+        ),
     }
     for row in recovered:
         ordinal = row["ordinal"]
@@ -245,7 +258,7 @@ def main() -> int:
             if f"**{ability}:**" not in block:
                 fail(f"{ordinal}: missing verified ability {ability}")
         expected_rows = 10 if ordinal == 74 else 5
-        if len(re.findall(r"^\| (?:[1-9]|10) \|", block, flags=re.MULTILINE)) != expected_rows:
+        if len(re.findall(r"^\| (?:[1-9]|10)(?:st|nd|rd|th)? \|", block, flags=re.MULTILINE)) != expected_rows:
             fail(f"{ordinal}: advancement table must have exactly {expected_rows} rows")
 
     by_ordinal = {row.get("ordinal"): row for row in recovered}
@@ -264,7 +277,8 @@ def main() -> int:
     body = "\n".join(lines[6:]).casefold()
     for phrase in (
         "for your campaign", "order descriptions", "oath & order",
-        "monk of the enabled hand", "illustrated by", "by monte cook",
+        "for your character", "making monks’ orders", "the fierce grappler",
+        "illustrated by", "by monte cook",
     ):
         if phrase in body:
             fail(f"excluded article/sidebar/neighbor text leaked: {phrase}")
@@ -275,6 +289,11 @@ def main() -> int:
         "automatically confirmed a x4 critical",
         "the target is knocked prone by the furious kick",
         "shred (-9 hit points)",
+        "once plus once per prestige class level per day",
+        "knocked back 5 feet plus 1 foot for each point",
+        "you should be dead!",
+        "ability to rage 2/day",
+        "unarmed attacks deal 1d8 points of slashing damage",
     ):
         if required.casefold() not in body:
             fail(f"verified terminal/corrected rule missing: {required}")

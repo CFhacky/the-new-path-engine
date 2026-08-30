@@ -164,3 +164,134 @@ Hit Die: d8.
 | 3 | +2 | +3 | +3 | +3 | *Oathgiver* |
 | 4 | +3 | +4 | +4 | +4 | Scythe strike |
 | 5 | +3 | +4 | +4 | +4 | Reaper of flesh |
+
+## Monk of the Enabled Hand
+
+Monasteries can be found in every corner of the land, each filled with contemplative monks learning the special brand of martial arts each individual monastery specializes in. While the naive believe that a monk is a monk, the initiated know that every monastery teaches its own unique style. The Order of the Enabled Hand is one such cloister inhabited by monks. Versatile warriors skilled at fighting without weapons or armor, monks of the Enabled Hand pursue personal perfection through action as well as contemplation. The Order of the Enabled Hand is known for its good works and the protection its members offer the downtrodden. Wherever they go, monks of the Enabled Hand are respected, and chapter houses teaching the Enabled Hand style have sprung up in many unlikely places.
+
+Monks are the only characters suited to learn the style of the Enabled Hand.
+
+PCs might encounter monks of the Enabled Hand barefoot and dressed in peasant clothes moving unnoticed among the populace, catching outlaws, monsters, and corrupt leaders unawares. PC monks who wish to join the order are usually able to find a chapter house in most Medium-size and Large cities.
+
+### Class Features
+
+All of the following are class features of the monk of the enabled hand prestige class.
+
+**Weapon and Armor Proficiency:** Monks of the enabled hand, although potentially proficient with several weapons from their standard monk training generally eschew those weapons in favor of using only their hands.
+
+**Monk Abilities (Ex):** Monks of the enabled hand continue much of their monk training. As such, a monk of the enabled hand gains the unarmed attack bonus, unarmed damage, AC bonus, and unarmored speed as if he were a monk whose level equaled his monk level + his enabled hand level. For instance, a 6th-level monk/1st-level enabled hand monk has an unarmed attack bonus of +5/+2 (as if he were a 7th-level monk). Those who somehow manage to meet the requirements for this class who are not monks gain these abilities as if a monk equal to only their enabled hand level.
+
+**Shim Soo “mind over hand” (Su):** A monk of the enabled hand has the ability to ignore a creature’s armor with his unarmed attacks. The monk can use this supernatural ability once per round, but no more than once plus once per prestige class level per day. The enabled hand monk must declare he is using a shim soo attack before making the attack roll (thus, a missed attack roll ruins the attempt). Against “mind over hand” attacks, the foe uses his touch Armor Class.
+
+**Ki Strike (Su):** A monk of the enabled hand’s unarmed attack is empowered with *ki*. The unarmed strike damage from such an attack can deal damage to a creature with damage reduction, such as a wight, as if the blow were made with a weapon with a +1 enhancement bonus. This ability stacks with a standard monk’s ability of the same name.
+
+**Kal Soo “reverse hand” (Su):** A monk of the enabled hand can strike his opponent at the same instant his opponent strikes the monk. The enabled hand monk can choose to make an immediate attack of opportunity against an opponent that makes a successful melee attack roll or melee touch attack roll against the monk, but the enabled hand monk makes this attack at a -5 penalty to his base attack roll. The enabled hand monk cannot make more attacks of opportunity than he is normally allowed in a round. The monk can only use the reverse hand strike against an opponent he threatens.
+
+**Kong Soo “empty hand” (Su):** A monk of the enabled hand is already adept at disarming his opponents (via the Improved Disarm feat). However, a monk of the enabled hand is an expert at relieving his foes of their weapons. When using kong soo, the monk’s hands are treated as a Large weapon when the monk and his foe make opposed attack rolls with respect to their weapons (that is, if the foe holds a Large or smaller weapon, the foe gains no bonus to the opposed roll even though the monk’s “weapon” is his hand). Furthermore, as a result of his kong soo training, the monk of the enabled hand gains a +4 bonus to his opposed roll to disarm his foe from his kong soo training.
+
+**Lung Soo “dragon’s tail slap” (Su):** The enabled hand monk has the ability to send a creature that is damaged by his unarmed attacks flying across the battlefield. The monk can use this supernatural ability once per round, but no more than once per monk of the enabled hand level per day. The monk must declare he is using a dragon’s tail slap before making the attack roll (thus, a missed attack roll ruins the attempt). If a foe is struck by a monk of the enabled hand, the monk automatically initiates a bull rush-like attack (see Chapter 8 of the *Player’s Handbook*), except the attack is modified as follows.
+
+The enabled hand monk and his foe make opposed Strength checks. The enabled hand monk is treated as if he were one size category larger than his actual size for purposes of determining his size-category bonus to the opposed Strength check. In addition, the monk also automatically gains a +4 bonus from his lung soo training. The monk gets a +2 charge bonus if charging. The foe gets a +4 stability bonus if she has more than two legs or is otherwise exceptionally stable, as well as a +4 bonus for each size category she is above Medium-size, or a -4 penalty for each size category she is below Medium-size.
+
+If the monk of the enabled hand beats the foe, she is knocked back 5 feet plus 1 foot for each point by which the monk exceeds the foe’s check result. Furthermore, the foe takes an additional amount of damage from the attack equal to the number of feet she is knocked back. The enabled hand monk doesn’t move when his foe is knocked back. The foe may provoke attacks of opportunity when he is knocked back (though not from the monk), but the monk is not subject to attacks of opportunity because he doesn’t move (unlike a standard bull rush). If the monk fails the opposed check, he suffers no deleterious effect.
+
+### Class Requirements
+
+To qualify to become a monk of the enabled hand, a character must fulfill the following criteria:
+
+- Unarmed Base Attack Bonus: +4/+1.
+- Feats: Improved Unarmed Strike, Deflect Arrows, Expertise, Improved Disarm.
+- Alignment: Any lawful.
+- Special: Must obtain permission to join the order at any one of the many chapter houses that dot the land.
+
+### Class Skills
+
+The monk of the enabled hand’s class skills (and the key ability for each skill) are as follows:
+
+- Str: Climb, Jump, Swim.
+- Dex: Balance, Escape Artist, Hide, Move Silently, Tumble.
+- Con: Concentration.
+- Int: Craft, Knowledge (arcana).
+- Wis: Listen, Profession.
+- Cha: Diplomacy, Perform.
+
+Skill Points at Each Additional Level: 4 + Int modifier.
+
+Hit Die: d8.
+
+### Monk of the Enabled Hand Advancement
+
+| Level | Base Attack Bonus | Fort Save | Ref Save | Will Save | Special |
+|---:|---:|---:|---:|---:|---|
+| 1 | 0 | +2 | +2 | +2 | Monk abilities, Shim soo “mind over hand” |
+| 2 | +1 | +3 | +3 | +3 | *Ki* strike |
+| 3 | +2 | +3 | +3 | +3 | Kal soo “reverse hand” |
+| 4 | +3 | +4 | +4 | +4 | Kong soo “empty hand” |
+| 5 | +3 | +4 | +4 | +4 | Lung soo “dragon’s tail slap” |
+
+## Primal Rager
+
+*Timin slipped from his hiding place and struck out with his blade at the large man who had his partner in a death grip. The blade found its mark, and he smiled as the man dropped his partner with a grunt. That smile vanished as, instead of falling to the ground dead, the enraged man spun and struck out. Timin watched in horror as a clawed hand ripped into him, and as he fell to the ground all he could think to do was shout, “You should be dead!”*
+
+Many have heard tales of the ferocious and deadly nature of barbarian tribes, and many highly trained warriors have found out too late that skill with the blade is a poor match for the animal power of these wild fighters. Yet even among these fierce people, there are those who stand out as violent and untamed. So removed from civilization are these creatures that many hesitate to even call them men. Instead they are thought to be part beast, possessed by a spirit that thrives on chaos and battle. In some barbarian tribes this is seen as a blessing, and the primal rager holds great respect. For others, the primal rager’s nature is seen as a perversion, and he is feared and often driven from the tribe. This removal from the tribe, either by being set on a pedestal or by being driven out, leads to a solitary nature, and a primal rager often turns to a life of adventure as a means of finding some measure of acceptance.
+
+The primal rager pours everything into battle. He is as skilled without a weapon as with one, and he usually prefers to attack unarmed, using his great strength to overpower his opponents and to tear them limb from limb. He feels a close connection to the primal forces within himself and has learned to harness that power when in battle. Above all, he respects the strength of the body, even over the strength of steel.
+
+Half-orcs and humans are the most common primal ragers, but some dwarves also choose this path if they have been cast out of their clan or otherwise find themselves removed from dwarven society. Half-elves, halflings, and gnome primal ragers are very rare, but elven primal ragers are not unheard of.
+
+Most primal ragers are barbarians, but other characters who gain the ability to rage by multiclassing or through some other means can be primal ragers.
+
+### Class Features
+
+All the following are class features of the primal rager prestige class.
+
+**Weapon and Armor Proficiency:** A primal rager gains proficiency with light armor and medium armor.
+
+**Strength of the Beast (Ex):** Each time the primal rager uses his rage ability, he may choose to increase the fury of his attacks by sacrificing the duration of his rage. He must make this choice before the rage begins, and it cannot be altered once made. The primal rager can choose to give up a number of rounds from the duration of his rage equal to his primal rager levels and barbarian levels combined. For each round that he gives up, he gains an additional +1 to his Strength and Constitution. The added Constitution does not extend the duration of his rage, and all bonuses granted by use of this ability expire when the rage expires.
+
+**Power Strike (Ex):** At 1st level, the primal rager’s unarmed attacks are more deadly than most. His unarmed strikes deal 1d4 points of damage (1d3 for Small primal ragers). This damage is still subdual unless the primal rager decides to take the -4 penalty to his attack roll.
+
+At 3rd level, the damage a primal rager does with unarmed strikes increases to 1d6 damage (1d4 for Small primal ragers).
+
+**Quell the Rage (Ex):** At 2nd level, the primal rager can hold his temper without dismissing the rage. For a number of rounds equal to his Wisdom modifier, the primal rager may quell his rage: During this time he loses his rage bonuses, but he does not suffer from fatigue. He may then choose to return to his raging state for the remainder of its duration or end the rage. Ending the rage results in fatigue as normal. The primal rager must have at least one round of rage left before he is fatigued to use this ability.
+
+**Damage Reduction (Su):** Starting at 3rd level, the primal rager gains the ability to shrug off some amount of injury from weapon blows, unarmed strikes, and natural weapon attacks. Subtract 1 from the damage the primal rager takes each time he is dealt damage by such attacks. This damage reduction stacks with any damage reduction the primal rager has from levels in the barbarian class. Note that the primal rager’s damage reduction allows him to penetrate the damage reduction of other creatures with his unarmed attacks as noted in the *Monster Manual*.
+
+**Rage (Ex):** At 4th level, the primal rager can rage one additional time per day.
+
+**Heart of the Beast (Ex):** At 5th level, the primal rager’s fury becomes so great that the animal within him manifests during a rage. His hands grow large claws, and his skin thickens into an animal hide. During a rage, the primal rager’s damage reduction is increased by 1, and his unarmed attacks deal 1d8 points of slashing damage (1d6 for Small primal ragers). This damage is normal damage; the primal rager does not suffer a -4 penalty to hit.
+
+### Class Requirements
+
+To qualify to become a primal rager, a character must fulfill the following criteria:
+
+- Alignment: Any nonlawful.
+- Base Attack Bonus: +8.
+- Wilderness Lore: 5 ranks.
+- Feats: Improved Unarmed Strike, Iron Will.
+- Special: Ability to Rage 2/day.
+
+### Class Skills
+
+The primal rager’s class skills (and the key ability for each skill) are as follows:
+
+- Str: Climb, Jump, Swim.
+- Dex: Ride.
+- Con: —.
+- Int: Craft.
+- Wis: Intuit Direction, Listen, Spot, Wilderness Lore.
+- Cha: Handle Animal, Intimidate.
+
+Skill Points at Each Level: 4 + Int modifier.
+
+Hit Die: d10.
+
+### Primal Rager Advancement
+
+| Level | Base Attack Bonus | Fort Save | Ref Save | Will Save | Special |
+|---:|---:|---:|---:|---:|---|
+| 1st | +1 | +2 | +0 | +0 | Strength of the beast, power strike 1d4 |
+| 2nd | +2 | +3 | +0 | +0 | Quell the rage |
+| 3rd | +3 | +3 | +1 | +1 | Damage reduction 1/—, power strike 1d6 |
+| 4th | +4 | +4 | +1 | +1 | Rage +1/day |
+| 5th | +5 | +4 | +1 | +1 | Heart of the beast |
