@@ -3,14 +3,18 @@ name: Video transcript fetch
 # Manual utility: the Claude Code sandbox cannot reach YouTube, but a GitHub
 # runner can. Dispatch with a video id; the run prints the video's public
 # metadata and its transcript into the job log and uploads them as an artifact.
-# Nothing is committed. This is tooling, not canon or mechanics.
+# Push .github/video_request.json to trigger it from a client that cannot
+# dispatch workflows. Nothing else is committed. This is tooling, not canon or mechanics.
 
 on:
+  push:
+    paths:
+      - ".github/video_request.json"
   workflow_dispatch:
     inputs:
       video_id:
         description: "YouTube video id (the part after v= or youtu.be/)"
-        required: true
+        required: false
         type: string
       languages:
         description: "Comma-separated transcript language preference"
@@ -35,10 +39,17 @@ jobs:
         env:
           VIDEO_ID: ${{ inputs.video_id }}
           LANGS: ${{ inputs.languages }}
-        run: python scripts/video_transcript.py --video-id "$VIDEO_ID" --languages "$LANGS" --out-dir transcript_out
+        run: |
+          if [ -z "$VIDEO_ID" ]; then
+            VIDEO_ID=$(python -c 'import json;print(json.load(open(".github/video_request.json"))["video_id"])')
+          fi
+          if [ -z "$LANGS" ]; then LANGS="en,en-US,en-GB"; fi
+          echo "video_id=$VIDEO_ID" >> "$GITHUB_OUTPUT"
+          python scripts/video_transcript.py --video-id "$VIDEO_ID" --languages "$LANGS" --out-dir transcript_out
+        id: fetch
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: transcript-${{ inputs.video_id }}
+          name: transcript-${{ steps.fetch.outputs.video_id }}
           path: transcript_out
           if-no-files-found: warn
