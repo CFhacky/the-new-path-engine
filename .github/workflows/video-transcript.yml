@@ -1,0 +1,44 @@
+name: Video transcript fetch
+
+# Manual utility: the Claude Code sandbox cannot reach YouTube, but a GitHub
+# runner can. Dispatch with a video id; the run prints the video's public
+# metadata and its transcript into the job log and uploads them as an artifact.
+# Nothing is committed. This is tooling, not canon or mechanics.
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "YouTube video id (the part after v= or youtu.be/)"
+        required: true
+        type: string
+      languages:
+        description: "Comma-separated transcript language preference"
+        required: false
+        default: "en,en-US,en-GB"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --quiet --upgrade yt-dlp youtube-transcript-api
+      - name: Fetch metadata and transcript
+        env:
+          VIDEO_ID: ${{ inputs.video_id }}
+          LANGS: ${{ inputs.languages }}
+        run: python scripts/video_transcript.py --video-id "$VIDEO_ID" --languages "$LANGS" --out-dir transcript_out
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: transcript-${{ inputs.video_id }}
+          path: transcript_out
+          if-no-files-found: warn
