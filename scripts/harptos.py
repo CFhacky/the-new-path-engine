@@ -22,13 +22,23 @@ AUTHORITY
     nothing else. It does not know what happened on any date, only how dates
     relate to one another. It invents no canon and reads no state.
 
-LANE STAMPS
-    Dates carry a lane tag so two clocks can never be summed by accident:
+LANE STAMPS AND TWO NOTATIONS
+    Stamps carry a lane tag so two clocks can never be summed by accident:
 
-        ARIK:1495.Hammer.07     SHIVAN:D911     JORMUN:1498.Uktar.01
+        ARIK_SURFACE:1495.Hammer.07     SHIVAN:D911     JORMUN:1498.Uktar.01
 
-    A bare date parses with lane UNSTAMPED. Comparing or subtracting two
-    stamps of different lanes raises LaneMismatch by design.
+    A lane counts in ONE of two notations and must say which:
+
+        CALENDAR  a real Harptos date          1495.Hammer.07
+        ELAPSED   days since a named epoch     T+35, HELL+35
+
+    ELAPSED stamps are NOT calendar dates and this module will not pretend
+    otherwise. An Elapsed converts to a Date only when an epoch mapping is
+    supplied; without one it stays a count and says so. This is deliberate:
+    writing "Day 35 Hammer 1495" for the 35th day of an operation is what
+    put Hammer-1496 figures inside a Day-7 Hammer-1495 table.
+
+    Comparing or subtracting across lanes, or across notations, raises.
 
 USAGE
     python harptos.py convert "ARIK:1495.Hammer.07"
@@ -92,6 +102,14 @@ class HarptosError(ValueError):
 
 
 class LaneMismatch(HarptosError):
+    pass
+
+
+class NotationMismatch(HarptosError):
+    pass
+
+
+class NoEpoch(HarptosError):
     pass
 
 
@@ -246,6 +264,7 @@ _DAYNUM = re.compile(r"^[Dd](?:ay)?\s*(\d{1,6})$")
 _SPOKEN = re.compile(r"^(?:day\s+)?(\d{1,2})\s+([A-Za-z' ]+?)\s+(\d{3,5})(?:\s*DR)?$", re.I)
 _SPOKEN2 = re.compile(r"^([A-Za-z' ]+?)\s+(\d{1,2}),?\s+(\d{3,5})(?:\s*DR)?$", re.I)
 _FEST = re.compile(r"^([A-Za-z' ]+?),?\s+(\d{3,5})(?:\s*DR)?$", re.I)
+_ELAPSED = re.compile(r"^([A-Za-z_]{1,12})\s*\+\s*(\d{1,6})$")
 
 
 def parse(text: str, lane: str | None = None) -> Date:
@@ -257,6 +276,9 @@ def parse(text: str, lane: str | None = None) -> Date:
         s = s.strip()
     lane = (lane or "UNSTAMPED").upper()
 
+    m = _ELAPSED.match(s)
+    if m:
+        return Elapsed(int(m.group(2)), lane, m.group(1).upper())
     m = _DAYNUM.match(s)
     if m:
         return from_day_number(int(m.group(1)), lane)
@@ -278,13 +300,61 @@ def parse(text: str, lane: str | None = None) -> Date:
     raise HarptosError(f"cannot parse date: {text!r}")
 
 
-def delta(a: Date, b: Date) -> int:
-    """Days from a to b. Refuses to cross lanes."""
+@dataclass(frozen=True)
+class Elapsed:
+    """N days since a lane's named epoch. Not a calendar date."""
+
+    count: int
+    lane: str = "UNSTAMPED"
+    epoch_name: str = "T"
+
+    @property
+    def notation(self) -> str:
+        return "ELAPSED"
+
+    def stamp(self) -> str:
+        return f"{self.lane}:{self.epoch_name}+{self.count}"
+
+    def long(self) -> str:
+        return f"{self.epoch_name}+{self.count} ({self.epoch_name}-day {self.count})"
+
+    def plus(self, days: int) -> "Elapsed":
+        return Elapsed(self.count + days, self.lane, self.epoch_name)
+
+    def resolve(self, epoch: "Date | None") -> Date:
+        """Convert to a calendar date. Refuses without an epoch."""
+        if epoch is None:
+            raise NoEpoch(
+                f"{self.stamp()} is a count, not a date. Declare the epoch for "
+                f"lane {self.lane} before resolving it."
+            )
+        return epoch.plus(self.count)
+
+    def __str__(self) -> str:
+        return self.long()
+
+
+def notation(x) -> str:
+    return "ELAPSED" if isinstance(x, Elapsed) else "CALENDAR"
+
+
+def delta(a, b) -> int:
+    """Days from a to b. Refuses to cross lanes or notations."""
     if a.lane != b.lane and "UNSTAMPED" not in (a.lane, b.lane):
         raise LaneMismatch(
             f"refusing to subtract across lanes: {a.lane} vs {b.lane}. "
             "Two clocks are not one clock."
         )
+    if notation(a) != notation(b):
+        raise NotationMismatch(
+            f"refusing to subtract a {notation(a)} stamp from a {notation(b)} one "
+            f"({a.stamp()} vs {b.stamp()}). An elapsed count is not a date."
+        )
+    if isinstance(a, Elapsed):
+        if a.epoch_name != b.epoch_name:
+            raise NotationMismatch(
+                f"different epochs: {a.epoch_name} vs {b.epoch_name}")
+        return b.count - a.count
     return b.absolute() - a.absolute()
 
 
@@ -414,6 +484,28 @@ def selftest() -> int:
     except LaneMismatch:
         lane_guard = True
     ck("cross-lane subtraction refused", lane_guard, True)
+
+    ck("elapsed parses", parse("ARIK_HELL:T+35").count, 35)
+    ck("elapsed stamp round trip",
+       parse(parse("ARIK_HELL:T+35").stamp()).stamp(), "ARIK_HELL:T+35")
+    ck("elapsed delta", delta(parse("ARIK_HELL:T+7"), parse("ARIK_HELL:T+35")), 28)
+    ck("elapsed resolves against an epoch",
+       parse("ARIK_HELL:T+35").resolve(Date(1496, "Hammer", 1)).long(),
+       "5 Alturiak 1496 DR")
+
+    epoch_guard = False
+    try:
+        parse("ARIK_HELL:T+35").resolve(None)
+    except NoEpoch:
+        epoch_guard = True
+    ck("refuses to resolve without an epoch", epoch_guard, True)
+
+    notation_guard = False
+    try:
+        delta(parse("ARIK_HELL:T+7"), parse("ARIK_HELL:1495.Hammer.07"))
+    except NotationMismatch:
+        notation_guard = True
+    ck("elapsed vs calendar subtraction refused", notation_guard, True)
 
     shield_guard = False
     try:

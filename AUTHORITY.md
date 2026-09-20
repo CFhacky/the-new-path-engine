@@ -41,8 +41,8 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `spell_lookup.py` | SRD 3.5 + Spell Compendium extraction; SRD wins name collisions |
 | `monster_lookup.py` | sourcebook bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` |
 | `prose_gate.py` | standing prose law + military-fantasy-prose skill |
-| `harptos.py` | Calendar of Harptos published structure (twelve 30-day months, five festival days, Shieldmeet in years divisible by four). The campaign day-number epoch is NOT owned here: the anchor of record is Day 904 = 30 Tarsakh 1494 DR from the S073 day-sync, and Day 1 is reported DERIVED |
-| `runway.py` | the lane-stamped event spine at `baen-economy-engine/data/canonical/events.csv`; date arithmetic delegated entirely to `harptos.py`. Reads canonical tables, writes nothing, guesses no dates |
+| `harptos.py` | Calendar of Harptos published structure (twelve 30-day months, five festival days, Shieldmeet in years divisible by four). The campaign day-number epoch is NOT owned here: the anchor of record is Day 904 = 30 Tarsakh 1494 DR from the S073 day-sync, and Day 1 is reported DERIVED. Two notations: CALENDAR (Harptos dates) and ELAPSED (days since a lane's epoch); an ELAPSED count never silently becomes a date |
+| `runway.py` | the lane-stamped event spine at `baen-economy-engine/data/canonical/events.csv`; date arithmetic delegated entirely to `harptos.py`. plus `lane_epochs.csv`, which declares each lane's notation and epoch. Reads canonical tables, writes nothing, guesses no dates |
 | `session_open.py` | Notion Arik Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` and cited state pages |
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules |
 | `deferred_dice.py` | World-Move Law + Deferred Dice register; emits provenance, never writes Notion |

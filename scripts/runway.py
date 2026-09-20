@@ -75,20 +75,37 @@ def load(canonical: str):
     return rows, bad
 
 
+def _key(x):
+    """Sortable position for a row or a bare date/count."""
+    d = x["_date"] if isinstance(x, dict) else x
+    return d.count if isinstance(d, harptos.Elapsed) else d.absolute()
+
+
 def _line(r, ref=None) -> str:
     d = r["_date"]
     mark = _STATUS_MARK.get(r["status"], "  ")
     off = ""
     if ref is not None:
-        n = harptos.delta(ref, d)
-        off = f"{n:+5d}d"
+        try:
+            off = f"{harptos.delta(ref, d):+5d}d"
+        except harptos.HarptosError:
+            off = ""
     prec = "" if r["precision"] == "EXACT" else f"  ~{r['precision'].lower()}"
     amt = f"  {int(r['amount_gp']):,}".replace(",", ",") if r["amount_gp"] else ""
-    return (f"  {mark} {off:>7}  {d.long():<22} {r['display_name']}"
+    return (f"  {mark} {off:>7}  {d.long():<24} {r['display_name']}"
             f"{amt}{prec}")
 
 
-def cmd_lanes(rows, _ns):
+def _epochs(canonical):
+    path = os.path.join(canonical, "lane_epochs.csv")
+    if not os.path.exists(path):
+        return []
+    with open(path) as fh:
+        return list(csv.DictReader(fh))
+
+
+def cmd_lanes(rows, _ns, canonical=None):
+    reg = {e["lane"]: e for e in _epochs(canonical) if e["notation"] != "__CANDIDATE__"}
     lanes = {}
     for r in rows:
         lanes.setdefault(r["lane"], []).append(r)
@@ -97,16 +114,20 @@ def cmd_lanes(rows, _ns):
         anchors = [r for r in lanes[lane] if r["status"] == "ANCHOR"]
         pos = anchors[0] if anchors else None
         head = pos["_date"].long() if pos else "no anchor row"
-        print(f"  {lane:<8} {head:<24} {len(lanes[lane])} events")
+        e = reg.get(lane, {})
+        note = e.get("notation", "?")
+        flag = "  <- epoch UNPINNED" if e.get("epoch_status") == "NEEDS_USER" else ""
+        print(f"  {lane:<14} {note:<11} {head:<24} {len(lanes[lane])} events{flag}")
         if pos:
-            print(f"           {pos['display_name']}")
-    print("\n  Lanes never share a clock. runway/at refuse to cross them.")
+            print(f"                 {pos['display_name']}")
+    print("\n  Lanes never share a clock, and a CALENDAR stamp is never an ELAPSED"
+          "\n  count. runway/at refuse to cross either boundary.")
     return 0
 
 
 def cmd_runway(rows, ns):
     if ns.interval:
-        a, b = "ARIK:1495.Hammer.07", "ARIK:1496.Hammer.01"
+        a, b = "ARIK_SURFACE:1495.Hammer.01", "ARIK_SURFACE:1496.Hammer.01"
         title = "THE RESERVED INTERVAL  (SUSPENDED — nothing below advances by elapsed time)"
     else:
         a, b, title = ns.start, ns.end, "RUNWAY"
@@ -116,11 +137,15 @@ def cmd_runway(rows, ns):
     span = harptos.delta(A, B)
     inside = sorted(
         (r for r in rows
-         if r["lane"] == A.lane and A.absolute() <= r["_date"].absolute() <= B.absolute()),
-        key=lambda r: r["_date"].absolute())
+         if r["lane"] == A.lane
+         and harptos.notation(r["_date"]) == harptos.notation(A)
+         and _key(A) <= _key(r) <= _key(B)),
+        key=_key)
     print(f"{title}\n")
     print(f"  {A.long()}  ->  {B.long()}")
-    print(f"  {span} days ({span/365:.2f} years), {len(inside)} events on lane {A.lane}\n")
+    unit = "Hell-days" if isinstance(A, harptos.Elapsed) else "days"
+    extra = "" if isinstance(A, harptos.Elapsed) else f" ({span/365:.2f} years)"
+    print(f"  {span} {unit}{extra}, {len(inside)} events on lane {A.lane}\n")
     for r in inside:
         print(_line(r, A))
     flagged = [r for r in inside if r["precision"] not in ("EXACT",)]
@@ -135,8 +160,10 @@ def cmd_at(rows, ns):
     w = ns.window
     near = sorted(
         (r for r in rows
-         if r["lane"] == D.lane and abs(r["_date"].absolute() - D.absolute()) <= w),
-        key=lambda r: r["_date"].absolute())
+         if r["lane"] == D.lane
+         and harptos.notation(r["_date"]) == harptos.notation(D)
+         and abs(_key(r) - _key(D)) <= w),
+        key=_key)
     print(f"AT {D.long()}  (lane {D.lane}, +/-{w} days)\n")
     for r in near:
         print(_line(r, D))
@@ -156,10 +183,14 @@ def cmd_audit(rows, ns, bad=()):
                              f"row lane {r['lane']} vs stamp lane {d.lane}"))
         # A day-number wording ("Day 904", "~D917") carries no year by
         # construction; only check the year when one was actually written.
-        if stated and re.search(r"\b1[0-9]{3}\b", stated) \
+        if harptos.notation(d) == "CALENDAR" and stated \
+                and re.search(r"\b1[0-9]{3}\b", stated) \
                 and str(d.year) not in stated:
             problems.append(("YEAR_DISAGREES", r["event_id"],
                              f"stamped {d.year}, stated as {stated!r}"))
+        if harptos.notation(d) == "ELAPSED" and re.search(r"\b1[0-9]{3}\b", stated):
+            problems.append(("NOTATION_MIXED", r["event_id"],
+                             f"elapsed count stamped {d.stamp()} but written as {stated!r}"))
         if r["precision"] == "AMBIGUOUS":
             problems.append(("AMBIGUOUS_READING", r["event_id"], stated))
         if r["status"] == "NEEDS_USER":
@@ -171,8 +202,19 @@ def cmd_audit(rows, ns, bad=()):
     kind_w = max(len(k) for k, _, _ in problems)
     for kind, eid, detail in problems:
         print(f"  {kind:<{kind_w}}  {eid:<22} {detail}")
-    print(f"\n  {len(problems)} flagged. UNPINNED and AMBIGUOUS_READING need a ruling; "
-          f"the rest need a fix.")
+    ruling = {"UNPINNED", "AMBIGUOUS_READING"}
+    upstream = {"NOTATION_MIXED", "YEAR_DISAGREES"}
+    n_rule = sum(1 for k, _, _ in problems if k in ruling)
+    n_up = sum(1 for k, _, _ in problems if k in upstream)
+    n_bug = len(problems) - n_rule - n_up
+    print(f"\n  {len(problems)} flagged:")
+    if n_rule:
+        print(f"    {n_rule} need a RULING from the GM (unpinned or ambiguous)")
+    if n_up:
+        print(f"    {n_up} are SOURCE WORDING to correct upstream in Notion — the row "
+              f"here is already keyed correctly")
+    if n_bug:
+        print(f"    {n_bug} are DATA BUGS in events.csv")
     return 0
 
 
@@ -199,7 +241,7 @@ def main(argv=None) -> int:
     rows, bad = load(canonical)
 
     if ns.cmd == "lanes":
-        return cmd_lanes(rows, ns)
+        return cmd_lanes(rows, ns, canonical)
     if ns.cmd == "runway":
         if not ns.interval and not (ns.start and ns.end):
             raise SystemExit("give two dates, or --interval")
