@@ -261,4 +261,11 @@ def main(argv=None) -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except BrokenPipeError:
+        # piped into head/less and the reader went away; not an error
+        try:
+            sys.stdout.close()
+        finally:
+            os._exit(0)
