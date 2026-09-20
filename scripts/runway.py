@@ -132,9 +132,19 @@ def cmd_lanes(rows, _ns, canonical=None):
     return 0
 
 
+def _interval_bounds(rows):
+    """Read the Reserved Interval's ends from the spine, never hardcode them."""
+    def find(eid):
+        for r in rows:
+            if r["event_id"] == eid:
+                return r["stamp"]
+        raise SystemExit(f"{eid} missing from events.csv; cannot bound the interval")
+    return find("ev:surface-shelf"), find("ev:crossing")
+
+
 def cmd_runway(rows, ns):
     if ns.interval:
-        a, b = "ARIK_SURFACE:1495.Hammer.01", "ARIK_SURFACE:1496.Hammer.01"
+        a, b = _interval_bounds(rows)
         title = "THE RESERVED INTERVAL  (SUSPENDED — nothing below advances by elapsed time)"
     else:
         a, b, title = ns.start, ns.end, "RUNWAY"
