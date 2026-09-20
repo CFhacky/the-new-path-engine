@@ -338,6 +338,23 @@ def notation(x) -> str:
     return "ELAPSED" if isinstance(x, Elapsed) else "CALENDAR"
 
 
+DEFAULT_DILATION = 27.0   # Inevitable City: 27 inside-days per 1 surface day
+
+
+def to_surface(inside_days: float, ratio: float = DEFAULT_DILATION) -> float:
+    """Inside-days -> surface-days across a rate-change boundary."""
+    if ratio <= 0:
+        raise HarptosError("dilation ratio must be positive")
+    return inside_days / ratio
+
+
+def to_inside(surface_days: float, ratio: float = DEFAULT_DILATION) -> float:
+    """Surface-days -> inside-days across a rate-change boundary."""
+    if ratio <= 0:
+        raise HarptosError("dilation ratio must be positive")
+    return surface_days * ratio
+
+
 def delta(a, b) -> int:
     """Days from a to b. Refuses to cross lanes or notations."""
     if a.lane != b.lane and "UNSTAMPED" not in (a.lane, b.lane):
@@ -391,6 +408,12 @@ def main(argv=None) -> int:
     y.add_argument("year", type=int)
 
     sub.add_parser("epoch", help="show the day-number anchor and derived Day 1")
+
+    dl = sub.add_parser("dilate", help="convert across a rate-change boundary")
+    dl.add_argument("days", type=float)
+    dl.add_argument("--ratio", type=float, default=DEFAULT_DILATION)
+    dl.add_argument("--reverse", action="store_true",
+                    help="treat the input as surface-days instead of inside-days")
     sub.add_parser("selftest", help="run the built-in checks")
 
     ns = p.parse_args(argv)
@@ -423,6 +446,16 @@ def main(argv=None) -> int:
               f"{ANCHOR_DAY_OF} {ANCHOR_PERIOD} {ANCHOR_YEAR} DR")
         print(f"  Day 1 (DERIVED)   {day_one().long()}")
         print("  Day 1 is arithmetic from the anchor, not campaign canon. Confirm it.")
+        return 0
+    if ns.cmd == "dilate":
+        if ns.reverse:
+            n = to_inside(ns.days, ns.ratio)
+            print(f"  {ns.days:g} surface-days  =  {n:,.1f} inside-days "
+                  f"({n/365:.2f} inside-years)  at {ns.ratio:g}:1")
+        else:
+            n = to_surface(ns.days, ns.ratio)
+            print(f"  {ns.days:g} inside-days  =  {n:,.2f} surface-days "
+                  f"({n*24:.1f} surface-hours)  at {ns.ratio:g}:1")
         return 0
     if ns.cmd == "selftest":
         return selftest()
@@ -484,6 +517,10 @@ def selftest() -> int:
     except LaneMismatch:
         lane_guard = True
     ck("cross-lane subtraction refused", lane_guard, True)
+
+    ck("dilation, inside to surface", round(to_surface(27), 6), 1.0)
+    ck("dilation, surface to inside", to_inside(1), 27.0)
+    ck("dilation round trip", round(to_inside(to_surface(35)), 6), 35.0)
 
     ck("elapsed parses", parse("ARIK_HELL:T+35").count, 35)
     ck("elapsed stamp round trip",

@@ -116,8 +116,15 @@ def cmd_lanes(rows, _ns, canonical=None):
         head = pos["_date"].long() if pos else "no anchor row"
         e = reg.get(lane, {})
         note = e.get("notation", "?")
-        flag = "  <- epoch UNPINNED" if e.get("epoch_status") == "NEEDS_USER" else ""
+        st = e.get("boundary_status") or e.get("epoch_status") or ""
+        flag = "  <- boundary UNPINNED" if st == "NEEDS_USER" else ""
+        if st == "LOWER_BOUND_RULED":
+            flag = "  <- boundary ruled as a lower bound"
+        rate = e.get("rate_ratio") or ""
         print(f"  {lane:<14} {note:<11} {head:<24} {len(lanes[lane])} events{flag}")
+        if rate:
+            print(f"                 rate {rate}  —  T+7 costs the surface "
+                  f"{harptos.to_surface(7)*24:.1f} hours")
         if pos:
             print(f"                 {pos['display_name']}")
     print("\n  Lanes never share a clock, and a CALENDAR stamp is never an ELAPSED"
