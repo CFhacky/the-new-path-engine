@@ -18,6 +18,7 @@ python scripts/realm_map.py long_woe.realm.state.json render
 | Long Woe | wilderness | `long_woe.svg`, `long_woe.area.md` |
 | The Gulf of Lament | crossing | `gulf_of_lament.svg`, `gulf_of_lament.area.md` |
 | The Inevitable City, primeval stratum | composite-city | `inevitable_city_primeval.svg`, `inevitable_city_primeval.area.md` |
+| The Inevitable City (band 3, d10 areas) | composite-city | `inevitable_city.svg`, `inevitable_city.area.md` |
 
 The state files that produced them are throwaway (`*.state.json` is
 gitignored). Re-rendering from a state file is deterministic; rolling a new
