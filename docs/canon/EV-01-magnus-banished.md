@@ -5,7 +5,7 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD1 1:xxiii | Mindsight | Malcador | first | told as already accomplished; Vulkan is still in the webway with the warp behind him | "Vulkan has vanquished him and banished his deathless corpse into the outer darkness" | corpus-exact |
+| TEATD1 1:xxiii | Mindsight | Malcador | first | told as already accomplished; Vulkan is still in the webway with the warp behind him | "Vulkan has vanquished him and banished his deathless corpse into the outer darkness" | address-resolved; quote unchecked (no corpus) |
 
 ## Disagreements (kept, not harmonised)
 

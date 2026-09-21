@@ -5,7 +5,7 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD3 9:v | The Court | Garviel Loken | close-third | none stated; deeper into the city is deeper into its history | "they are reaching the primeval heart of it" | corpus-exact |
+| TEATD3 9:v | The Court | Garviel Loken | close-third | none stated; deeper into the city is deeper into its history | "they are reaching the primeval heart of it" | address-resolved; quote unchecked (no corpus) |
 
 ## Disagreements (kept, not harmonised)
 

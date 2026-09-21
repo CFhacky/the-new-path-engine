@@ -5,9 +5,9 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD2 8:xvii | Until we meet again | Horus Lupercal | second | none stated; Horus on his knees, eviscerated, then the eighth angle | "You reach along the eighth angle of space and grab." | corpus-exact |
-| TEATD3 9:i | Red and Black | omniscient, over the Angel's body | omniscient | afterwards | "The Angel's eyes are open, afterwards." | corpus-exact |
-| TEATD3 9:ii | Horus awaits | Rogal Dorn, told by a companion | hearsay | reported to Dorn while he surveys the warp-state landscape | "She tells him his brother is dead." | corpus-exact |
+| TEATD2 8:xvii | Until we meet again | Horus Lupercal | second | none stated; Horus on his knees, eviscerated, then the eighth angle | "You reach along the eighth angle of space and grab." | address-resolved; quote unchecked (no corpus) |
+| TEATD3 9:i | Red and Black | omniscient, over the Angel's body | omniscient | afterwards | "The Angel's eyes are open, afterwards." | address-resolved; quote unchecked (no corpus) |
+| TEATD3 9:ii | Horus awaits | Rogal Dorn, told by a companion | hearsay | reported to Dorn while he surveys the warp-state landscape | "She tells him his brother is dead." | address-resolved; quote unchecked (no corpus) |
 
 ## Disagreements (kept, not harmonised)
 

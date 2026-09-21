@@ -247,7 +247,7 @@ def selftest() -> int:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     p.add_argument("--registry", default=str(REGISTRY))
-    p.add_argument("--corpus", help="folder holding the pinned edition files named as the maps record them")
+    p.add_argument("--corpus", default=str(REPO / "corpus" / "teatd"), help="folder holding the pinned edition files named as the maps record them (default: corpus/teatd/)")
     p.add_argument("--out", default=str(OUT_DIR))
     p.add_argument("--check", action="store_true", help="exit 1 on any unresolved address, edition mismatch or quote miss")
     p.add_argument("--selftest", action="store_true")
@@ -256,7 +256,8 @@ def main() -> None:
         sys.exit(selftest())
     reg = load_registry(Path(a.registry))
     maps = load_maps(reg, REPO)
-    data, errors = build(reg, maps, Path(a.corpus) if a.corpus else None)
+    corpus = Path(a.corpus) if a.corpus and Path(a.corpus).is_dir() else None
+    data, errors = build(reg, maps, corpus)
     files = write_docs(data, Path(a.out))
     n_w = sum(len(e["witnesses"]) for e in data["events"])
     print(f"WROTE {len(files)} pages under {a.out}: {len(data['events'])} events, {n_w} witnesses, "

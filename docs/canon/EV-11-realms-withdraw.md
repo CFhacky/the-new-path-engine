@@ -5,7 +5,7 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD3 10:xviii | Kairos and chronos | omniscient | omniscient | the Inevitable City slides back over a period of eight hours | "over a period of eight hours, slides back into the midnight of the empyrean like some spectral parody of old Atlantis" | corpus-exact |
+| TEATD3 10:xviii | Kairos and chronos | omniscient | omniscient | the Inevitable City slides back over a period of eight hours | "over a period of eight hours, slides back into the midnight of the empyrean like some spectral parody of old Atlantis" | address-resolved; quote unchecked (no corpus) |
 
 ## Disagreements (kept, not harmonised)
 

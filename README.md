@@ -26,7 +26,7 @@ mirror snapshots. It does **not** hold live campaign canon or mutable session st
 | `scripts/realm_map.py` | `reference/teatd_realm_index.json` (facts SOURCE-VERIFIED, myth key INFERRED) + empyrean-siege-gm TEATD band rule; archetype tables are APPROVED PREPARATION pending ratification |
 | `scripts/verse_address.py` | the Stephanus layer: edition-pinned address maps (`KEY ch:verse ¶n`) under `reference/addresses/`; no body text; `--verify` refuses a drifted edition |
 | `scripts/canon_table.py` | the Eusebian layer: `reference/canon/events.json` (authored witness registry) → `docs/canon/` canon table and event pages; every address must resolve, quotes checked against the pinned corpus; disagreements kept, never harmonised |
-| `scripts/notion_novel_bind.py` | corpus tooling only: Notion page dump → clean markdown + EPUB; outputs are filed in the sourcebook corpus, never committed |
+| `scripts/notion_novel_bind.py` | corpus tooling only: Notion page dump → clean markdown + EPUB; outputs are filed under `corpus/teatd/` in this repository |
 | `docs/runtime-control/PLAY_CONTRACT.md` | The New Path Play Contract — Live Session Governance (Notion `3c4e8214-84b0-818f-93c0-df1da2e52043`) |
 
 ## THE DESIGN CONTRACT

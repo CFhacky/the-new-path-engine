@@ -5,8 +5,8 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD2 8:xvi | Fragments | omniscient | omniscient | none stated; the glare spreads and begins to fade within the verse | "thousands of square kilometres of the transmundane sprawl are further disintegrated to dust and ash" | corpus-exact |
-| TEATD3 9:ii | Horus awaits | Rogal Dorn | close-third | after the Dark King's shadow has gone; Dorn assesses the ground | "It's Chaos' own realm" | corpus-exact |
+| TEATD2 8:xvi | Fragments | omniscient | omniscient | none stated; the glare spreads and begins to fade within the verse | "thousands of square kilometres of the transmundane sprawl are further disintegrated to dust and ash" | address-resolved; quote unchecked (no corpus) |
+| TEATD3 9:ii | Horus awaits | Rogal Dorn | close-third | after the Dark King's shadow has gone; Dorn assesses the ground | "It's Chaos' own realm" | address-resolved; quote unchecked (no corpus) |
 
 ## Disagreements (kept, not harmonised)
 

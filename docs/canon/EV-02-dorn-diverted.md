@@ -5,7 +5,7 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD1 3:xix | Rogal in the desert | Rogal Dorn | close-third | Dorn experiences a century in the desert; the verse gives no external clock | "his pattern was diverted" | corpus-exact |
+| TEATD1 3:xix | Rogal in the desert | Rogal Dorn | close-third | Dorn experiences a century in the desert; the verse gives no external clock | "his pattern was diverted" | address-resolved; quote unchecked (no corpus) |
 
 ## Disagreements (kept, not harmonised)
 

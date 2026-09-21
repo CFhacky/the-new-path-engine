@@ -25,7 +25,7 @@ EDITION PINNING
 WHAT IS AND IS NOT IN THE MAP
     Unit addresses, anchors, line spans, paragraph counts, an optional verse
     title, and an incipit (the first eight words, the unit's traditional
-    name). No body text. The book is never copied into this repository.
+    name). No body text; the book itself lives under `corpus/` in this repository.
 
 USAGE
     python verse_address.py BOOK.md --key TEATD1 [--title T] [--out reference/addresses/teatd1.address.json]

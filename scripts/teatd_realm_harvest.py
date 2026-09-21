@@ -38,10 +38,9 @@ CORPUS
     (vol1.md / vol2.md / vol3.md, or files whose names contain "Volume I",
     "Volume II", "Volume III"), every quote is located exactly, its line
     number and detected verse heading are recorded, and `verification`
-    becomes "corpus-exact". Without a corpus the script prints NO COVERAGE
-    and the committed quotes keep their sweep/Notion status. The novels are
-    NEVER copied into this repository (see .gitignore: source text is not
-    committed).
+    becomes "corpus-exact". The default corpus folder is `corpus/teatd/` in
+    this repository; without it the script prints NO COVERAGE and the
+    committed quotes keep their sweep/Notion status.
 
 WORKFLOW
     python teatd_realm_harvest.py                      # (re)build the index
@@ -971,7 +970,7 @@ def build(corpus: Optional[Path]) -> Dict:
     return {
         "generated_by": "scripts/teatd_realm_harvest.py",
         "system": SYSTEM,
-        "corpus": str(corpus) if corpus else "NO COVERAGE -- pass --corpus DIR holding vol1.md/vol2.md/vol3.md",
+        "corpus": str(corpus) if corpus else "NO COVERAGE -- corpus/teatd/ not present (or pass --corpus DIR)",
         "sweep_date": SWEEP_DATE,
         "total_realms": len(rows),
         "total_mappable": sum(1 for r in rows if r["mappable"]),
@@ -1119,7 +1118,7 @@ def selftest() -> int:
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    p.add_argument("--corpus", help="folder holding vol1.md / vol2.md / vol3.md (novels are never committed)")
+    p.add_argument("--corpus", default=str(REPO / "corpus" / "teatd"), help="folder holding vol1.md / vol2.md / vol3.md (default: corpus/teatd/ in this repository)")
     p.add_argument("--search", help="find realms by name, alias, fact or referent")
     p.add_argument("--selftest", action="store_true")
     args = p.parse_args()
@@ -1128,7 +1127,7 @@ def main() -> None:
     if args.search:
         search(args.search)
         return
-    corpus = Path(args.corpus) if args.corpus else None
+    corpus = Path(args.corpus) if args.corpus and Path(args.corpus).is_dir() else None
     data = build(corpus)
     OUT_JSON.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     write_markdown(data, OUT_MD)

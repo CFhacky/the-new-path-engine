@@ -8,9 +8,9 @@ container built with the standard library only. Nothing is summarised,
 reflowed or invented: the body text passes through untouched apart from the
 Notion wrapper, embedded image links and the duplicated contents list.
 
-The novels themselves are never committed to this repository. Run this in a
-scratch folder and file the outputs in the sourcebook corpus
-(I:\\Sourcebooks\\_text\\...), where the harvesters expect them.
+Outputs are filed under `corpus/teatd/` in this repository (vol1.md,
+vol2.md, vol3.md and the EPUBs), where the harvesters and the address maps
+expect them.
 
 INPUT SHAPE (what the Notion MCP fetch returns for a page)
     Here is the result of "fetch" ...            <- preamble line
