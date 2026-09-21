@@ -584,10 +584,23 @@ def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]
             y = top + r * 180 + (45 * math.sin(i * 1.3) if layout == "coast" else 0)
             pos.append((x, y))
     elif layout == "concentric":
+        # approaches on the outer ring, the gate at the top of the middle ring,
+        # wards, hall, chapel and keep on the inner ring
+        gate = max(2, (n + 2) // 3 + 1)          # same slot rule as topology()
+        outer = list(range(0, gate - 1))
+        inner = list(range(gate, n))
+        cy2 = cy - 10
         for i in range(n):
-            r = min(w, h) * 0.40 * (1 - i / n)
-            a = -math.pi / 2 + i * 2.2
-            pos.append((cx + r * math.cos(a), cy + r * math.sin(a)))
+            if i in outer:
+                a = -math.pi / 2 + 2 * math.pi * (outer.index(i) + 0.5) / max(1, len(outer))
+                pos.append((cx + 300 * math.cos(a), cy2 + 225 * math.sin(a)))
+            elif i == gate - 1:
+                pos.append((cx, cy2 - 150))
+            else:
+                k = inner.index(i)
+                a = math.pi / 2 - 2 * math.pi * (k + 0.5) / max(1, len(inner)) + math.pi
+                r = 95 if len(inner) <= 3 else 130 if len(inner) <= 6 else 165
+                pos.append((cx + r * math.cos(a), cy2 + 20 + r * math.sin(a)))
     elif layout == "branch":
         for i in range(n):
             x = 110 + (w - 220) * i / max(1, n - 1)
