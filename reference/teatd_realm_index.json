@@ -1,7 +1,7 @@
 {
  "generated_by": "scripts/teatd_realm_harvest.py",
  "system": "WH40K Novel",
- "corpus": "/tmp/claude-0/-home-user/13a9485e-3342-541d-a8b4-a9a88360c284/scratchpad/teatd",
+ "corpus": "/home/user/the-new-path-engine/corpus/teatd",
  "sweep_date": "2026-09-21",
  "total_realms": 55,
  "total_mappable": 42,
