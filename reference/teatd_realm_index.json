@@ -1,0 +1,2136 @@
+{
+ "generated_by": "scripts/teatd_realm_harvest.py",
+ "system": "WH40K Novel",
+ "corpus": "/tmp/claude-0/-home-user/13a9485e-3342-541d-a8b4-a9a88360c284/scratchpad/teatd",
+ "sweep_date": "2026-09-21",
+ "total_realms": 55,
+ "total_mappable": 42,
+ "archetypes": {
+  "composite-city": "Stolen districts stitched into one urban body; deeper is older.",
+  "labyrinth": "A structure that closes behind you; the exit is granted, not found.",
+  "crossing": "A bridge, stair, gate or causeway between two realms; the crossing is the encounter.",
+  "junction": "An intersection, oblique, conjunction or angle: a transit coordinate, not a place to stay.",
+  "fortress": "A warded seat on a contested margin; the approaches are the fight.",
+  "wilderness": "Open or grown terrain that is itself alive, hostile, or dying.",
+  "shore": "An edge of the sea of the warp: tide, depth, islets, the far dark.",
+  "repository": "A place that keeps things: souls, dreams, roots, records.",
+  "condition": "A cosmological designation or overlay, not an area. The resolver applies it as a modifier and refuses to map it."
+ },
+ "edge_types": {
+  "angle": "a warped angle or oblique step sideways (9:xxi, 10:v)",
+  "intersection": "a numbered intersection of the immaterial (9:xxi)",
+  "conjunction": "a numbered conjunction between two realms (9:xxi)",
+  "oblique": "an oblique plane with its own fixed sky (9:xxi)",
+  "splice": "a doorway-sharp tear between material and immaterial (10:iii)",
+  "recursion": "the containing realm found inside the contained one (10:viii)"
+ },
+ "label_vocabulary": {
+  "SOURCE-VERIFIED": "stated in the trilogy at the cited chapter:verse",
+  "INFERRED": "the myth key and its rule: the author's reading, not the text",
+  "ROLLED": "produced by realm_map.py dice; never source"
+ },
+ "volumes": [
+  {
+   "key": "vol1",
+   "book": "The End and the Death Volume I",
+   "notion_page_id": "1f5e8214-84b0-810f-a31e-e15021ec89fc",
+   "chapters": "1-4",
+   "clean_text_chars": 882371,
+   "system": "WH40K Novel",
+   "citation": "Dan Abnett, The End and the Death Volume I (Black Library, Siege of Terra), chapters 1-4",
+   "coverage": "ok -- vol1.md (882243 chars); corpus pass: 85 exact, 0 missed (all volumes)"
+  },
+  {
+   "key": "vol2",
+   "book": "The End and the Death Volume II",
+   "notion_page_id": "1f5e8214-84b0-81c2-8d41-f86a2329b9dc",
+   "chapters": "5-8",
+   "clean_text_chars": 878638,
+   "system": "WH40K Novel",
+   "citation": "Dan Abnett, The End and the Death Volume II (Black Library, Siege of Terra), chapters 5-8",
+   "coverage": "ok -- vol2.md (878458 chars); corpus pass: 85 exact, 0 missed (all volumes)"
+  },
+  {
+   "key": "vol3",
+   "book": "The End and the Death Volume III",
+   "notion_page_id": "1f5e8214-84b0-81c0-b251-fe878a37aee3",
+   "chapters": "9-10",
+   "clean_text_chars": 776053,
+   "system": "WH40K Novel",
+   "citation": "Dan Abnett, The End and the Death Volume III (Black Library, Siege of Terra), chapters 9-10",
+   "coverage": "ok -- vol3.md (775989 chars); corpus pass: 85 exact, 0 missed (all volumes)"
+  }
+ ],
+ "realms": [
+  {
+   "name": "The Webway",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 1 v. xv (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "labyrinth",
+   "mappable": true,
+   "classification": "Named subdimension / transit network",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 1,
+     "verse": "xv",
+     "quote": "a labyrinthine subdimension that stretches across the galaxy",
+     "verification": "corpus-exact",
+     "line": 898
+    },
+    {
+     "volume": 1,
+     "chapter": 1,
+     "verse": "xv",
+     "quote": "subspace network of travel and communication",
+     "verification": "corpus-exact",
+     "line": 897
+    },
+    {
+     "volume": 1,
+     "chapter": 2,
+     "verse": "xii",
+     "quote": "psychoplastic halls",
+     "verification": "corpus-exact",
+     "line": 2148
+    }
+   ],
+   "facts": [
+    "Inherited and named by the aeldari; a subspace travel-and-communication network.",
+    "Transit is direct, comparatively swift, and insulated from ordinary warp hazards.",
+    "Runs under, around and above the warp rather than through realspace; the Emperor's Great Work was to reclaim it.",
+    "Its halls are psychoplastic; Vulkan claws his way back along them (2:xii); pursuing daemons echo through them as Magnus is banished (1:xxiii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The labyrinth of Daedalus and Ariadne's thread",
+    "citation": "Ovid, Metamorphoses VIII.152-182; Apollodorus, Epitome 1.9",
+    "rule": "Transit is safe only along a held thread. Leave the thread and the warp outside the wall is the encounter.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer 40,000 setting canon (name predates TEATD)"
+   }
+  },
+  {
+   "name": "Other spaces, realms and layers of creation",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 1 v. xvi (Notion page id in volumes[])",
+   "aliases": [
+    "other flavours of reality"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Unnamed cosmological realm-category",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 1,
+     "verse": "xvi",
+     "quote": "other spaces, other realms, other layers of creation and other flavours of reality",
+     "verification": "corpus-exact",
+     "line": 919
+    }
+   ],
+   "facts": [
+    "Catalogue of invader provenance; distinguishes material worlds from other ontological locations, with the warp as one member of the set."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The many mansions / the seven heavens",
+    "citation": "John 14:2; 2 Corinthians 12:2; 1 Enoch 71",
+    "rule": "Overlay: the folio may hold realms that are not warp at all. Tag the unknown ones as such rather than forcing them into Chaos.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Outer Darkness",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 1 v. xxiii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "shore",
+   "mappable": true,
+   "classification": "Banishment destination beyond the webway",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 1,
+     "verse": "xxiii",
+     "quote": "into the outer darkness",
+     "verification": "corpus-exact",
+     "line": 1352
+    }
+   ],
+   "facts": [
+    "Magnus's deathless corpse is banished there after Vulkan defeats him; used as a destination, not an adjective.",
+    "The verse does not define whether it is deep warp, exterior void or a distinct realm."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The outer darkness of the Gospel parables",
+    "citation": "Matthew 8:12; 22:13; 25:30 (\"cast into outer darkness; there shall be weeping and gnashing of teeth\")",
+    "rule": "A terminus at the folio's edge. One-way: nothing banished there returns on its own, and no exit is rolled.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Uigebealach",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 2 v. xii (Notion page id in volumes[])",
+   "aliases": [
+    "the labyrinth-knot",
+    "the crossroads of inertia"
+   ],
+   "archetype": "junction",
+   "mappable": true,
+   "classification": "Webway singularity-node / warp crossroads / labyrinth-knot",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 2,
+     "verse": "xii",
+     "quote": "the unmoving Uigebealach of the webway's singularity-node",
+     "verification": "corpus-exact",
+     "line": 2151
+    },
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xviii",
+     "quote": "whiche it is and is not",
+     "verification": "corpus-exact",
+     "line": 5006
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xvi",
+     "quote": "the labyrinth-knot of Uigebealach in the blazing warp",
+     "verification": "corpus-exact",
+     "line": 3461
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "the crossroads of inertia in Uigebealach",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "A known singularity-node of the webway, explicitly associated with neverness and metaphysical discontinuity (2:xii).",
+    "The Regno Kao folio places the Inevitable City close by it, 'whiche it is and is not' (4:xviii; archaic spelling in the folio).",
+    "A labyrinth-knot in the blazing warp (10:xvi).",
+    "At its crossroads the unquiet realms of the dead and the damned, the lost and the psychic part ways as reality re-separates (10:xviii).",
+    "The index keeps all four states; the tool must not collapse them into one identity."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The crossroads as psychopomp junction; Irish bealach (a pass, a way)",
+    "citation": "Hecate at the trivium (Theocritus, Idyll II; Ovid, Fasti I.141); Irish liminal lore of the crossroads; Deuteronomy 30:19 (the two ways)",
+    "rule": "Every road in meets every road out. The traveller's nature (dead, damned, lost, psychic) decides which exit takes them. No clock advances here.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The byssos and deep trenches of the warp",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 2 v. xii (Notion page id in volumes[])",
+   "aliases": [
+    "deep trenches of the warp",
+    "the yawning byssos"
+   ],
+   "archetype": "shore",
+   "mappable": true,
+   "classification": "Deep-warp abyss / ecologically differentiated deep regions",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 2,
+     "verse": "xii",
+     "quote": "the deep trenches of the warp",
+     "verification": "corpus-exact",
+     "line": 2144
+    },
+    {
+     "volume": 2,
+     "chapter": 6,
+     "verse": "viii",
+     "quote": "into the yawning byssos of the warp",
+     "verification": "corpus-exact",
+     "line": 2083
+    }
+   ],
+   "facts": [
+    "Translucent organisms from the deep trenches spill into the Throne Room when the webway door opens; they cannot survive realspace and decay into liquid organic waste (2:xii).",
+    "Malcador rides the Throne like an incandescent chariot into the byssos; there he meets ragged universes, razor-edged realities, looping dimensions and incompatible nows (6:viii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The abyss: Greek byssos, the sea-floor; the bottomless pit",
+    "citation": "Revelation 9:1-2 (abyssos); Genesis 1:2 (tehom); Job 38:16",
+    "rule": "Bathymetric: depth is pressure. Things from below die on surfacing, and things from above are crushed going down. Each interval deeper adds one band of exposure.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The void-wound",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 2 v. xii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "crossing",
+   "mappable": true,
+   "classification": "Tear where warp and realspace intermix",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 2,
+     "verse": "xii",
+     "quote": "void-wound",
+     "verification": "corpus-exact",
+     "line": 2134
+    }
+   ],
+   "facts": [
+    "Terra falls into a void-wound cut by Horus, where the forces of two universes, warp and realspace, intermix and begin to devour one another."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The rent veil",
+    "citation": "Matthew 27:51; Isaiah 64:1 (\"rend the heavens and come down\")",
+    "rule": "A tear, not a door. Both sides bleed through; the crossing has no fixed width and is widest where the fighting is.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The companion dimension",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 3 v. xii (Notion page id in volumes[])",
+   "aliases": [
+    "warped exoplanar space"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Sindermann's theoretical designation for the source of Neverborn",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 3,
+     "verse": "xii",
+     "quote": "a companion dimension, a warped exoplanar space that conjoins our own material reality",
+     "verification": "corpus-exact",
+     "line": 3253
+    }
+   ],
+   "facts": [
+    "In-universe attempt to explain Chaos without religious vocabulary; the other space has interacted with realspace throughout history and produced what was remembered as magic, daemons and visitation."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The interpretive key: myth as memory of the warp",
+    "citation": "Vol. II 5:viii (Malcador) is the in-fiction statement; compare Euhemerus and Plato, Phaedrus 229c-230a",
+    "rule": "Overlay: every earthly myth is a partial, degraded map. The folio may borrow any of them, labelled INFERRED.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Dorn's desert labyrinth",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 3 v. xix (Notion page id in volumes[])",
+   "aliases": [
+    "the diverted teleport prison"
+   ],
+   "archetype": "labyrinth",
+   "mappable": true,
+   "classification": "Unnamed exoplanar trap-realm",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 3,
+     "verse": "xix",
+     "quote": "caught in some gargantuan labyrinth",
+     "verification": "corpus-exact",
+     "line": 3646
+    }
+   ],
+   "facts": [
+    "Boundless soft yellow sand beneath a white haze; everything sunlit, no visible sun.",
+    "Ancient pink stone walls cross the dunes in forking geometric lines; from the highest dune, more dunes and walls.",
+    "Dorn is not aboard the Vengeful Spirit, alone, his transmission diverted; the place is a trap with no way out and perhaps no way in."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The desert as the perfect labyrinth",
+    "citation": "Borges, 'The Two Kings and the Two Labyrinths' (El Aleph, 1949); Herodotus II.148 (the Hawara labyrinth)",
+    "rule": "The desert is the labyrinth; the walls are decoys. The exit is granted by whoever set the trap, never found by search. Each interval of searching rolls exposure, not progress.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Xenos realms and exoplanar corpse-continents",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 3 v. xx (Notion page id in volumes[])",
+   "aliases": [
+    "saponified landscapes"
+   ],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Partially described non-Terran / exoplanar environments of Ollanius's long road",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 3,
+     "verse": "xx",
+     "quote": "exoplanar corpse-continents",
+     "verification": "corpus-exact",
+     "line": 3719
+    }
+   ],
+   "facts": [
+    "Remembered stations of the long companions' journey: dark places, mummified cities, caves crushed by time, saponified landscapes of xenos realms, forgotten battlefields, ruined hive arcologies, exoplanar corpse-continents.",
+    "The passage does not resolve which are warp-local, extra-dimensional, temporal or simply alien."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The valley of dry bones; the dead kings stirring in Sheol",
+    "citation": "Ezekiel 37:1-10; Isaiah 14:9",
+    "rule": "The ground is a body. Disturb it and it remembers what it was; the terrain's hazard is the terrain waking.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The hell-pit and the Vengeful Spirit as realm-junction",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 3 v. xxxii (Notion page id in volumes[])",
+   "aliases": [
+    "the primary pathway between realms"
+   ],
+   "archetype": "crossing",
+   "mappable": true,
+   "classification": "Hybrid materia-immateria environment / the ship as conduit",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 3,
+     "verse": "xxxii",
+     "quote": "a hell-pit, a realm of horror",
+     "verification": "corpus-exact",
+     "line": 4178
+    },
+    {
+     "volume": 1,
+     "chapter": 3,
+     "verse": "xxxii",
+     "quote": "the focus, the primary pathway between realms",
+     "verification": "corpus-exact",
+     "line": 4181
+    }
+   ],
+   "facts": [
+    "Malcador sees a hell-pit wrought by Horus and mistaken by Horus for heaven; the ship, Terra and the Solar Realm are half-sunk in the immaterium; the space around the Emperor is cankered voidmist of the empyrean.",
+    "The ship is ceasing to be a Gloriana-class vessel: decks and hull become a bridge between realspace and Chaos, dimensions mangled, Neverborn able to walk.",
+    "The entire Solar Realm is subsiding into the warp and the Vengeful Spirit is the focus, the primary pathway between realms."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Hell mistaken for heaven; the causeway over Chaos",
+    "citation": "Milton, Paradise Lost I.254-255 (\"The mind is its own place...\"); X.282-324 (Sin and Death build the bridge)",
+    "rule": "The ship is the causeway. Every deck is a bridge between two realms and both ends move; a route mapped on the way in is not the route out.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Hall of Leng",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xiv (Notion page id in volumes[])",
+   "aliases": [
+    "Leng"
+   ],
+   "archetype": "crossing",
+   "mappable": true,
+   "classification": "Material threshold with unusual dimensional sympathy",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xiv",
+     "quote": "Hall of Leng",
+     "verification": "corpus-exact",
+     "line": 4867
+    }
+   ],
+   "facts": [
+    "Sindermann: warped-space effects are uneven because some places are more connected or sympathetic to the immaterium; Leng is an ancient site of mystical significance and one reason the Palace stands where it does.",
+    "Mauer finds the Regno Kao folio there (4:xviii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The thin place; the plateau of Leng",
+    "citation": "Genesis 28:17 (Bethel, \"this is the gate of heaven\"); H. P. Lovecraft, The Dream-Quest of Unknown Kadath (1927)",
+    "rule": "A thin place. The door opens from the other side first; whoever waits at Leng is found before they find.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer 40,000 setting canon; Lovecraft's Leng beneath it"
+   }
+  },
+  {
+   "name": "Regno Kao, the Realm of Chaos",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xviii (Notion page id in volumes[])",
+   "aliases": [
+    "A Realm of Chaos",
+    "the realm of Chaos",
+    "Chaos' own realm",
+    "the empyric realm"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Explicit Chaos realm / the ancient mapped complex the other entries float in",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xviii",
+     "quote": "Regno Kao",
+     "verification": "corpus-exact",
+     "line": 4967
+    },
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "xi",
+     "quote": "Once you are within the realm of Chaos, nothing retains the semblance of sense.",
+     "verification": "corpus-exact",
+     "line": 934
+    },
+    {
+     "volume": 2,
+     "chapter": 6,
+     "verse": "xxii",
+     "quote": "split the empyric realm open",
+     "verification": "corpus-exact",
+     "line": 2656
+    },
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "ii",
+     "quote": "raised a realm of Chaos",
+     "verification": "corpus-exact",
+     "line": 4631
+    },
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "ii",
+     "quote": "Chaos' own realm",
+     "verification": "corpus-exact",
+     "line": 710
+    }
+   ],
+   "facts": [
+    "An old folio in the Hall of Leng titled Regno Kao, labelled 'A Realm of Chaos', holding maps of a city/labyrinth and describing a mutable realm seen in visions and fitful dreams, moving with ethereal tides (4:xviii).",
+    "The Vengeful Spirit has been devoured by the warp; remembered pieces of the ship become real in inconsistent arrangements (5:xi).",
+    "Horus splits the empyric realm open; ship, Throneworld, Palace and the realms of warp and Chaos are fused and entwined (6:xxii, 6:xxv).",
+    "Actae: Chaos has raised a realm of Chaos around Terra (8:ii). Dorn: 'Chaos' own realm' (9:ii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Chaos as the first thing; the rude unordered mass",
+    "citation": "Hesiod, Theogony 116; Ovid, Metamorphoses I.5-9 (\"rudis indigestaque moles\")",
+    "rule": "It is the medium every mappable entry floats in. Not itself an area: the resolver refuses to map it and applies it as the folio's paper.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Inevitable City",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xviii (Notion page id in volumes[])",
+   "aliases": [
+    "Urbs Ineleuctabilis",
+    "the inevitable realm",
+    "Horus's realm",
+    "the transmundane sprawl"
+   ],
+   "archetype": "composite-city",
+   "mappable": true,
+   "classification": "Central city/labyrinth of the Chaos realm-complex",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xviii",
+     "quote": "Urbs Ineleuctabilis",
+     "verification": "corpus-exact",
+     "line": 4978
+    },
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "xii",
+     "quote": "Your Inevitable City. Your realm.",
+     "verification": "corpus-exact",
+     "line": 951
+    },
+    {
+     "volume": 2,
+     "chapter": 6,
+     "verse": "xxxv",
+     "quote": "extruding and boring through its fabric",
+     "verification": "corpus-exact",
+     "line": 2993
+    },
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "xvi",
+     "quote": "transmundane sprawl",
+     "verification": "corpus-exact",
+     "line": 5112
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xii",
+     "quote": "the inevitable realm",
+     "verification": "corpus-exact",
+     "line": 3069
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "like some spectral parody of old Atlantis",
+     "verification": "corpus-exact",
+     "line": 3597
+    }
+   ],
+   "facts": [
+    "City and labyrinth at once; subject to ethereal currents; associated with Ruin and insanity; walls and turrets join across impossible distances and temporal relations; contains or adjoins the domain of the Four, vacant thrones, spirits of revenge and ruination (4:xviii).",
+    "Horus: the Court surrounded by a palace, the palace a city, the city an eternal city that encompasses the galaxy (5:xii).",
+    "Its architecture extrudes and bores through the Sanctum Imperialis like a parasite through a host (6:xxxv).",
+    "Inner Sanctum, Vengeful Spirit, Inevitable City and Outer Palace warscape are randomly blended; Palatine, Anterior and Magnificans battlefields appear as smouldering intrusions (6:xlii).",
+    "Enormous old walls, ancient dwellings, narrow cobbled streets, decaying tiled roofs, ivy-draped turrets, black stone fortifications; Palatine streets bisect decrepit alleys; walls collapse in huge masses of stone (7:i, 7:xxix).",
+    "Thousands of square kilometres of transmundane sprawl disintegrate when the Emperor rejects the Dark King's power; the refabricated ship rocks on its psykanic moorings (8:xvi).",
+    "Unseen by ordinary sight for centuries except to the saintly or insane; during the collapse it shelves away like a tilting continent and over roughly eight hours slides back into the midnight of the empyrean like some spectral parody of old Atlantis, leaving a few parts of itself in lost corners and hidden dim edges (10:xviii).",
+    "Ollanius's cut lands him in a different part of the inevitable realm than expected: it has internal regions (10:xii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Dis; Babylon the Great; Pandemonium; all cities blended; the ineluctable",
+    "citation": "Dante, Inferno VIII-IX; Revelation 17-18; Milton, Paradise Lost I.710-798; Calvino, Invisible Cities (1972); Plato, Timaeus 25 / Critias (Atlantis); Joyce, Ulysses ep. 3 (\"ineluctable modality of the visible\")",
+    "rule": "Every district is a stolen city. Go deeper and you go older. Two adjacent streets need not agree about which city they are in, and a wall that joins another realm is still a wall.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Inevitable City, primeval stratum",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. v (Notion page id in volumes[])",
+   "aliases": [
+    "the primeval city"
+   ],
+   "archetype": "composite-city",
+   "mappable": true,
+   "classification": "Deep historical stratum of the named city-realm",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "v",
+     "quote": "all the cities that have ever been",
+     "verification": "corpus-exact",
+     "line": 879
+    }
+   ],
+   "facts": [
+    "Loken's group reaches the oldest ruins yet: travelling deeper into geography is travelling deeper into history.",
+    "Human-looking streets and houses become rare; monumental grey-diorite blocks, ashlar columns, skeletal black buttresses, strange lichens and moss, structures with no sign of human manufacture.",
+    "Scraps of Palace and Vengeful Spirit persist only as warp-remembrances intruding into the older stratum."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The city before Babel; the cyclopean walls",
+    "citation": "Genesis 11:1-9; Pausanias II.16.5 (Cyclopean Mycenae); Lovecraft, At the Mountains of Madness (1936)",
+    "rule": "Nothing here was built for people. Doors are the wrong size, stairs the wrong pitch; every human-scale fragment is a memory, and memories are exits.",
+    "label": "INFERRED"
+   },
+   "parent": "The Inevitable City"
+  },
+  {
+   "name": "Calastar",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xviii (Notion page id in volumes[])",
+   "aliases": [
+    "that impossible city"
+   ],
+   "archetype": "composite-city",
+   "mappable": true,
+   "classification": "Impossible exoplanar city",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xviii",
+     "quote": "a mere lifetime's journey",
+     "verification": "corpus-exact",
+     "line": 5006
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "shatters loose",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "The Inevitable City lies a mere lifetime's journey from Calastar, yet its walls and turrets join directly to those of 'that impossible city' (4:xviii).",
+    "Calastar shatters loose, impossibly constructed towers swaying, as the fused realities separate (10:xviii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The drowned city of Ys; the tower that reached heaven",
+    "citation": "Breton legend of Ker-Ys (Gradlon, Dahut); Genesis 11:4",
+    "rule": "Distance is measured in lifetimes and adjacency in walls. You can touch it and never arrive; you can arrive and be a lifetime older.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer 40,000 setting canon (webway city)"
+   }
+  },
+  {
+   "name": "The City of Dust",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xviii (Notion page id in volumes[])",
+   "aliases": [
+    "City of Duste"
+   ],
+   "archetype": "composite-city",
+   "mappable": true,
+   "classification": "Warp/exoplanar city; both a district of the Inevitable City and a separable structure",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xviii",
+     "quote": "a moment's eternity",
+     "verification": "corpus-exact",
+     "line": 5006
+    },
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "iii",
+     "quote": "City of Dust",
+     "verification": "corpus-exact",
+     "line": 4668
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "skeletonised City of Dust",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "The folio places the Inevitable City a moment's eternity from the City of Duste (4:xviii).",
+    "The Emperor's path through the realm of Chaos reduces a great swathe of the Inevitable City to a City of Dust: an endless empty city of memory and melancholy, dirty roofs, overgrown byways, a broad ribbon of charred pale ash marking his progress; at once far off and just outside (8:iii).",
+    "During the withdrawal the skeletonised City of Dust splits free and drifts like an iceberg into the exoplanar gulf (10:xviii).",
+    "Keep both facts: district and separable realm."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Irkalla, the house of dust",
+    "citation": "Epic of Gilgamesh, Tablet VII (\"the house where dust is their food and clay their bread\"); Genesis 3:19; Job 7:21",
+    "rule": "Nothing living trades here. Whatever you carry in is ash by the time you find the exit, and the ash is the only trail.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The supernal realm",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xx (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Descriptive upper warp environment in which the aperture manifests",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xx",
+     "quote": "supernal realm",
+     "verification": "corpus-exact",
+     "line": 5084
+    }
+   ],
+   "facts": [
+    "The opening warp turns against the blind, unconstellated void while lightning reaches down onto Terra."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The firmament above the waters",
+    "citation": "Genesis 1:6-8; Ezekiel 1:22-26",
+    "rule": "Overlay: the sky of any area may be the underside of this. Lightning arrives before its cause.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The unresolved realms of possibility",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 4 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Prophetic / potential realities",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 4,
+     "verse": "xxi",
+     "quote": "the unresolved realms of possibility that only prophesy can see",
+     "verification": "corpus-exact",
+     "line": 5116
+    }
+   ],
+   "facts": [
+    "Actae: 'the Dark King' has a specific meaning in the warp and in these realms; not navigable geography but the warp's relation to prophecy, unrealised futures and god-birth."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The book sealed with seven seals; the things that must shortly come to pass",
+    "citation": "Revelation 5:1; Daniel 12:4",
+    "rule": "Overlay: a prophecy told inside an area seeds a facet of it. Not mappable.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Hell, Gehenna and the Pit",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 5 v. viii (Notion page id in volumes[])",
+   "aliases": [
+    "the inferno",
+    "the underworld"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Human mythic names for glimpsed warp totality; explicitly not separate realms",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "viii",
+     "quote": "Gehenna",
+     "verification": "corpus-exact",
+     "line": 868
+    }
+   ],
+   "facts": [
+    "Malcador compares the unleashed warp to Hell, Gehenna, the inferno, the Pit, an underworld stripped of natural law and hope, then states his belief that humanity's recurring concept of hell derives from glimpses of the empyrean through dreams, nightmares, prophecy and psychic vision."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Valley of Hinnom; the bottomless pit",
+    "citation": "2 Kings 23:10; Jeremiah 7:31; Matthew 5:22; Revelation 9:1-2; Dante, Inferno",
+    "rule": "The interpretive key for the whole folio: every earthly hell is a refracted map of the warp. Borrow their rules, label them INFERRED, and expect them to be partial.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The sunless sea of the empyrean",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 5 v. ix (Notion page id in volumes[])",
+   "aliases": [
+    "Horus's frozen infinite",
+    "the labyrinth of madness"
+   ],
+   "archetype": "shore",
+   "mappable": true,
+   "classification": "Descriptive deep-warp environment around the Inevitable City event",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "ix",
+     "quote": "the sunless sea of the empyrean",
+     "verification": "corpus-exact",
+     "line": 886
+    },
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "ix",
+     "quote": "labyrinth of madness",
+     "verification": "corpus-exact",
+     "line": 887
+    }
+   ],
+   "facts": [
+    "Chaos has opened the sunless sea to the Emperor, who draws directly from it.",
+    "Horus's trap is a labyrinth of madness, a frozen lawless eternity; day/night and temporal sequence are broken."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The sunless sea; the land of the Cimmerians",
+    "citation": "Coleridge, 'Kubla Khan' (1816); Homer, Odyssey XI.14-19",
+    "rule": "No day, no tide-table. Navigation is by memory alone, and memory is what this shore erodes.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Higher angles and unbounded dimensions of the immaterium",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 5 v. xliii (Notion page id in volumes[])",
+   "aliases": [
+    "the eighth angle of space",
+    "the numberless angles of the empyrean",
+    "the infinite planes",
+    "an adjacent plane of the warp"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Extra spatial dimensionality; overlay, not a discrete realm",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "xliii",
+     "quote": "other dimensions unfurl their properties",
+     "verification": "corpus-exact",
+     "line": 1759
+    },
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "xvii",
+     "quote": "the eighth angle of space",
+     "verification": "corpus-exact",
+     "line": 5320
+    },
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "numberless angles of the empyrean",
+     "verification": "corpus-exact",
+     "line": 2273
+    }
+   ],
+   "facts": [
+    "As Terra's reality fails, the four familiar dimensions are maimed and other dimensions unfurl with alien breadths; there is no limit to their number (5:xliii).",
+    "Horus contrasts Sanguinius's three dimensions with 'the multitude' he commands and seizes him along the eighth angle of space (8:xvii).",
+    "Horus bends a sword thrust away into an adjacent warp plane; fireballs attack along every axis of the infinite planes (9:xxi)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Dimensions beyond the third; the angles that hunt",
+    "citation": "Edwin Abbott, Flatland (1884); Frank Belknap Long, 'The Hounds of Tindalos' (1929)",
+    "rule": "Overlay: a defender with angle-access attacks from an edge the map does not draw. Every area gains one unmapped exit that only such a being can use.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The realm of shadows and candlelight",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 6 v. viii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Alternate/future reality perceived through the Throne",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 6,
+     "verse": "viii",
+     "quote": "a realm of shadows and candlelight, a grim darkness of ruin and disrepair",
+     "verification": "corpus-exact",
+     "line": 2099
+    }
+   ],
+   "facts": [
+    "Among innumerable possible nows one remains dark: humans shackled by ancient duties imperfectly remembered but obsessively performed; technology and culture decayed into rote ceremony.",
+    "Reads as a vision of the future Imperium; tagged temporal/alternate, not a daemon realm."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The house of bondage; vanity of vanities",
+    "citation": "Exodus 20:2; Ecclesiastes 1:2-9",
+    "rule": "Overlay only. Not mappable; if it intrudes, it intrudes as ritual performed by people who have forgotten why.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The intersectional realm",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 8 v. ii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Overlap zone ravaged by the Emperor's advance",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "ii",
+     "quote": "the intersectional realm",
+     "verification": "corpus-exact",
+     "line": 4590
+    }
+   ],
+   "facts": [
+    "The Scholaster Hall and surrounding city are gone; divine light has ravaged the intersectional realm for kilometres, leaving baked rubble and white ash beneath a black starless sky and a silent lightning horizon."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The burning of Edom; the plain of Sodom",
+    "citation": "Isaiah 34:9-10; Genesis 19:28",
+    "rule": "Aftermath terrain. Nothing casts a shadow; light comes from the horizon, so every silhouette is visible from every direction.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The warp-wilderness interlaced with the bridge",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 8 v. x (Notion page id in volumes[])",
+   "aliases": [
+    "the great realm of wilderness"
+   ],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Unnamed continental realm fused with ship architecture",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "x",
+     "quote": "great realm of wilderness",
+     "verification": "corpus-exact",
+     "line": 4881
+    }
+   ],
+   "facts": [
+    "Abaddon accepts that a great realm of wilderness has interlaced with the flagship's bridge; from a hill it appears endless and continental.",
+    "Land folded into impossible shelves and immense peaks; debris and dead cities cling vertically to the folds; sky stained by warpflux and pseudomatter beneath a baleful star.",
+    "The bridge hatch survives as a small bunker-like feature embedded in the landscape."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The frozen floor and the giants; the imaginary prisons",
+    "citation": "Dante, Inferno XXXI-XXXIV; Piranesi, Carceri d'invenzione (1750)",
+    "rule": "Vertical geography. Up and down are both routes. The way out is a hatch smaller than the door you came in by, and it is uphill.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Lupercal Court",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 8 v. xv (Notion page id in volumes[])",
+   "aliases": [
+    "Horus's Court",
+    "the Court-realm",
+    "this starless heaven"
+   ],
+   "archetype": "labyrinth",
+   "mappable": true,
+   "classification": "Horus's central psychofractal Court / the encompassing reality around him",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 8,
+     "verse": "xv",
+     "quote": "This realm is his Court, this world, this starless heaven, this reality.",
+     "verification": "corpus-exact",
+     "line": 5068
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "iv",
+     "quote": "Lupercal Court",
+     "verification": "corpus-exact",
+     "line": 2598
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "viii",
+     "quote": "gardens of the warp",
+     "verification": "corpus-exact",
+     "line": 2851
+    }
+   ],
+   "facts": [
+    "Erebus: the Court is not only the black throne chamber but the reality generated around Horus (8:xv).",
+    "The Court reasserts itself as psychofractal blackness, obsidian tiles and diorite blocks; side chapels, sub-temples, galleries and processionals multiply toward impossible vanishing points (10:iv).",
+    "Loken moves through its numberless angled dimensions from one duel-facet to another; a tailored ritual garden inside it has open black sky, water-mirror pools and a scrying function (10:iv).",
+    "Nested: the Court surrounds the flagship, which surrounds the neverness, which surrounds the Inevitable City, which surrounds Horus's realm, then Terra, the Solar Realm, the galaxy and the warp, and all of them surround each other in reverse (10:viii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Lupercal cave; the House of Fame; the House of Pride",
+    "citation": "Livy I.4; Ovid, Fasti II.381-422; Ovid, Metamorphoses XII.39-63; Spenser, Faerie Queene I.iv",
+    "rule": "The Court makes a room for each intruder, shaped from what the intruder expects. Galleries recede forever; the only real doors are the ones the intruder did not expect.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer 40,000 setting canon (Lupercal is Horus's title)"
+   }
+  },
+  {
+   "name": "The anti-realm of immateria and its facets",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xx (Notion page id in volumes[])",
+   "aliases": [
+    "the Terrestrial Realm (counterpart)",
+    "psychic facets"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Parallel plane of combat; generator of local realm-fragments",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xx",
+     "quote": "in the realm of materia and the anti-realm of immateria",
+     "verification": "corpus-exact",
+     "line": 2153
+    },
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xx",
+     "quote": "Terrestrial Realm",
+     "verification": "corpus-exact",
+     "line": 2075
+    }
+   ],
+   "facts": [
+    "The Emperor-Horus duel is fought simultaneously across mortal and empyric planes; superimposed realities tear and peel; the Terrestrial Realm is almost completely submerged.",
+    "A throne-room fragment Loken finds himself in is a psychic fragment conjured from Horus's imagination, probably one of many."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The battle for the soul fought in allegorical places",
+    "citation": "Prudentius, Psychomachia (c. 405); Bunyan, The Holy War (1682)",
+    "rule": "Overlay: any area can spawn a facet, a smaller copy of itself shaped by whoever is fighting in it. Facets close when the fight ends.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Twelfth Intersection of the Immaterial",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "junction",
+   "mappable": true,
+   "classification": "Named dimensional intersection / transit coordinate",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Twelfth Intersection of the Immaterial",
+     "verification": "corpus-exact",
+     "line": 2274
+    }
+   ],
+   "facts": [
+    "Horus dodges sideways along it while weaving between thorn trees in malnourished light to outflank the Emperor."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Twelve as the number of the ordered whole; the crown of thorns",
+    "citation": "Genesis 49:28; John 11:9; Matthew 27:29",
+    "rule": "A transit coordinate. Crossing it puts you beside your enemy instead of in front; the thorns take a toll from whoever crosses fastest.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Sixty-sixth Oblique",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "junction",
+   "mappable": true,
+   "classification": "Named oblique plane; skull-coloured moon that never sets",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "the Sixty-sixth Oblique where the skull-coloured moon never sets",
+     "verification": "corpus-exact",
+     "line": 2274
+    }
+   ],
+   "facts": [
+    "The Emperor takes guard there."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Golgotha, the place of the skull; the moon that stood still; the truncated number of the beast",
+    "citation": "Matthew 27:33; Joshua 10:12-13; Revelation 13:18",
+    "rule": "Fixed moon, no time. Every shadow points the same way: direction is free and stealth is impossible.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Vale of Creatures",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Named warp valley populated by demented things",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Vale of Creatures",
+     "verification": "corpus-exact",
+     "line": 2274
+    }
+   ],
+   "facts": [
+    "A radiant sigil is propelled through the vale while barking, demented things writhe around Horus."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The valley of the shadow of death; Legion",
+    "citation": "Psalm 23:4; Mark 5:9",
+    "rule": "The population is the terrain. Move and it moves with you; stand still and it forgets you for one interval.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Gulf of Lament",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "crossing",
+   "mappable": true,
+   "classification": "Warp gulf with a living-flesh bridge over an aeonic pit",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Gulf of Lament",
+     "verification": "corpus-exact",
+     "line": 2278
+    }
+   ],
+   "facts": [
+    "Horus crosses it by leaping along a narrow bridge of living flesh with febrile neuroplasticity, spanning a bottomless aeonic pit."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Chinvat bridge that narrows for the wicked; the bridge over Chaos",
+    "citation": "Videvdat 19.29-30 and Bundahishn 30 (Chinvat); Gylfaginning 49 (Gjallarbru); Islamic tradition of as-Sirat; Milton, Paradise Lost X.282-324",
+    "rule": "Bridge width is set by the crosser. It narrows for the unworthy, it is warm, and it remembers who crossed; the pit below has no bottom to roll against.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Bastion Stair in the realm of the red",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [
+    "the Bastion Stair",
+    "the realm of the red"
+   ],
+   "archetype": "crossing",
+   "mappable": true,
+   "classification": "Named warp stair-structure in a descriptively named realm",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "the brazen, screaming steps of the Bastion Stair in the realm of the red",
+     "verification": "corpus-exact",
+     "line": 2280
+    }
+   ],
+   "facts": [
+    "The Emperor follows Horus across inter-dimensional interstices to the brazen, screaming steps.",
+    "The realm of the red has no proper noun beyond this description."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Jacob's ladder; the brazen altar; the mountain that smoked",
+    "citation": "Genesis 28:12; Exodus 27:1-2; Exodus 19:18",
+    "rule": "Every step is a fight. You cannot descend a step you did not win, and the steps scream the name of whoever last lost on them.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer setting canon (the Bastion Stair; red as the Blood God's colour)"
+   }
+  },
+  {
+   "name": "The Mists of Unreason",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Named warp region",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Mists of Unreason",
+     "verification": "corpus-exact",
+     "line": 2280
+    }
+   ],
+   "facts": [
+    "Horus tries to evade through them while the Emperor tracks him despite the changing reality."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The dark wood; the Slough of Despond",
+    "citation": "Dante, Inferno I.1-12; Bunyan, The Pilgrim's Progress (1678)",
+    "rule": "Reasoning fails inside. A plan made in the mist is wrong; only a plan made before entering holds, and it holds only as long as nobody revises it.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Blizzard of Forgetting",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Named warp plateau / phenomenon-landscape",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Blizzard of Forgetting",
+     "verification": "corpus-exact",
+     "line": 2280
+    }
+   ],
+   "facts": [
+    "A bleak plateau crossed after the Mists of Unreason."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Lethe; the frozen ninth circle",
+    "citation": "Virgil, Aeneid VI.705-715; Dante, Purgatorio XXXI.91-102; Inferno XXXII-XXXIV (Cocytus)",
+    "rule": "Each interval costs one learned name from the lexicon ledger. The ledger is the map: what you have forgotten, you cannot navigate back to.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Crook of Shadows",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "labyrinth",
+   "mappable": true,
+   "classification": "Explicit slanting subdimension",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "that dingy, slanting subdimension where nothing is upright and everything is corners",
+     "verification": "corpus-exact",
+     "line": 2283
+    }
+   ],
+   "facts": [
+    "Horus uses it as a refuge and evasion route."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The hounds that come through angles; the rod and staff inverted",
+    "citation": "Frank Belknap Long, 'The Hounds of Tindalos' (1929); Psalm 23:4",
+    "rule": "Corners are doors and curves are walls. Anything that hunts by angle is already here; the only safe posture is a curve, and nothing here is curved.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Drifting Castle",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "labyrinth",
+   "mappable": true,
+   "classification": "Named warp structure with salt-caked asymmetric chambers",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "salt-caked and asymmetric chambers",
+     "verification": "corpus-exact",
+     "line": 2289
+    }
+   ],
+   "facts": [
+    "The Emperor crosses its chambers while escaping Horus's self-closing labyrinth."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Lot's wife; the Grail castle that moves; the floating island",
+    "citation": "Genesis 19:26; Vulgate Cycle (Corbenic); Swift, Gulliver's Travels III (Laputa)",
+    "rule": "Rooms close behind you. Salt marks every place where someone looked back; follow the salt and you find where they stopped.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Eightieth Conjunction",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "junction",
+   "mappable": true,
+   "classification": "Named dimensional junction",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Eightieth Conjunction",
+     "verification": "corpus-exact",
+     "line": 2289
+    }
+   ],
+   "facts": [
+    "The Emperor shifts from the Drifting Castle through it toward Long Woe."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Fourscore years, the span of a strong life",
+    "citation": "Psalm 90:10",
+    "rule": "A lifetime's junction. Crossing it ages what crosses by one interval of exposure, whichever way it goes.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Long Woe",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Named realm of fever-meadows, twilit glades and painforests",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "fever-meadows",
+     "verification": "corpus-exact",
+     "line": 2289
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "twilit glades and painforests",
+     "verification": "corpus-exact",
+     "line": 3595
+    }
+   ],
+   "facts": [
+    "Contains fever-meadows (9:xxi).",
+    "Its twilit glades and painforests are swallowed by rancid superheated steam and reduced to putrescent mush that drips into a dark abyss (10:xviii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Wood of Suicides; the garden that rots",
+    "citation": "Dante, Inferno XIII.1-108; Genesis 3:17-18",
+    "rule": "The vegetation is sentient and suffering. Cut it and it speaks; sleep in it and the fever is yours. Steam rising means the realm is ending, and it ends downhill.",
+    "label": "INFERRED",
+    "canon_first": "Secondary: the Plague God's garden in Warhammer setting canon"
+   }
+  },
+  {
+   "name": "The Tree of Souls",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "repository",
+   "mappable": true,
+   "classification": "Colossal warp landmark",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Tree of Souls",
+     "verification": "corpus-exact",
+     "line": 2289
+    }
+   ],
+   "facts": [
+    "The Emperor routes around its vast, root-gnarled base to disguise his approach."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Yggdrasil; the tree of life; Etz Chaim",
+    "citation": "Voluspa 19; Grimnismal 31; Genesis 2:9; Revelation 22:2",
+    "rule": "The roots reach other realms. Follow a root and you arrive somewhere else on the folio; the tree keeps what it is given and gives nothing back.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Sea of Souls",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "shore",
+   "mappable": true,
+   "classification": "Named warp sea with wild shores",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "wild shores",
+     "verification": "corpus-exact",
+     "line": 2290
+    }
+   ],
+   "facts": [
+    "The Emperor hunts Horus along its wild shores in a lion aspect."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The sea gives up its dead",
+    "citation": "Revelation 20:13; Homer, Odyssey XI (the shore of the dead)",
+    "rule": "The tide is souls. Low tide exposes the dead and what they carried; high tide takes the living. Roll the tide on entry.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer 40,000 setting canon (the warp as Sea of Souls)"
+   }
+  },
+  {
+   "name": "The Marcher Fortress and the Marches",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [
+    "Marcher Fortress",
+    "the Marches"
+   ],
+   "archetype": "fortress",
+   "mappable": true,
+   "classification": "Warp fortress on the margins of the Planes of Excess, with its approaches",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "mildewed Marcher Fortress",
+     "verification": "corpus-exact",
+     "line": 2292
+    },
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "the dark approaches of the Marches",
+     "verification": "corpus-exact",
+     "line": 2292
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "on the fringe of nothing",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "Horus takes refuge in the mildewed Marcher Fortress, which watches the stained margins of the Planes of Excess; he floods the dark approaches of the Marches with supernatural dread (9:xxi).",
+    "It burns on the fringe of nothing during the great withdrawal (10:xviii)."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Welsh Marches and their lords; the night approach on the camp",
+    "citation": "Statute of Rhuddlan (1284) and the Marcher lordships; Judges 7:16-22",
+    "rule": "A frontier keep. The approaches are the fight and the walls are not; dread on the approach is a rolled hazard, and the keep itself is mildew and quiet.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Planes of Excess",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 9 v. xxi (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Named warp planes / realm-complex with stained margins",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "Planes of Excess",
+     "verification": "corpus-exact",
+     "line": 2292
+    }
+   ],
+   "facts": [
+    "The Marcher Fortress overlooks their stained margins; the approaches carry psychic dread and hostile Chaos workings; the text does not assign the Planes to one god."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The circles of incontinence",
+    "citation": "Dante, Inferno V-VII; Proverbs 23:29-35",
+    "rule": "Every sense is a door. Whatever the traveller wants most is the terrain's weapon; roll the want before the hazard.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer setting canon by implication (the Dark Prince's domain); not assigned in the text"
+   }
+  },
+  {
+   "name": "The Abstraction of Plight",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. v (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "junction",
+   "mappable": true,
+   "classification": "Named dimensional evasion route / facet",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "v",
+     "quote": "Abstraction of Plight",
+     "verification": "corpus-exact",
+     "line": 2708
+    }
+   ],
+   "facts": [
+    "The Emperor slides sideways through it to evade Worldbreaker; treated as a traversable warped angle, not a metaphor."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The narrow escape; the strait gate",
+    "citation": "Matthew 7:13-14; Psalm 124:7",
+    "rule": "An evasion vector. Sliding through it spends strength; it can be used only by someone with warp strength to spend, and each use is narrower.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Forsaken Angle",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. v (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "junction",
+   "mappable": true,
+   "classification": "Named warped plane with twilit cliffs",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "v",
+     "quote": "the twilit cliffs of the Forsaken Angle",
+     "verification": "corpus-exact",
+     "line": 2708
+    }
+   ],
+   "facts": [
+    "The Emperor circles Horus through its twilit cliffs, then spills back into the Court when his stolen warp power weakens; Horus notes he no longer has the strength for warped angles."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Why hast thou forsaken me",
+    "citation": "Psalm 22:1; Matthew 27:46",
+    "rule": "The last angle a weakening warp-user can reach. Entering costs the strength to return; the cliffs are the fall back into wherever you came from.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The gardens of the warp",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. viii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Partially described warp habitat where psychneuein breed",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "viii",
+     "quote": "the gardens of the warp",
+     "verification": "corpus-exact",
+     "line": 2851
+    }
+   ],
+   "facts": [
+    "Psychneuein wake and begin to swarm there while all dimensions and moments fold into the Court's psychofractal point."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Eden inverted; the garden east of Eden",
+    "citation": "Genesis 2:8-9; 3:23-24",
+    "rule": "Something breeds here and noise wakes it. Every rolled hazard in a garden area is a swarm; the swarm follows psykers first.",
+    "label": "INFERRED",
+    "canon_first": "Secondary: the Plague God's garden in Warhammer setting canon"
+   }
+  },
+  {
+   "name": "The wild, un-timed steppes of the immaterium",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. ix (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Ancient warp hunting-ground",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "ix",
+     "quote": "wild and un-timed steppes of the immaterium",
+     "verification": "corpus-exact",
+     "line": 2905
+    }
+   ],
+   "facts": [
+    "The sagittaries have hunted there forever, bringing down every kind of warp quarry; the Dreadful Sagittary is named at 9:xxi and 10:iv, and 10:ix speaks of the two sagittaries."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Chiron and the centaur-archer; the Wild Hunt; Scythia",
+    "citation": "Ovid, Fasti V.379-414; the Wild Hunt (Herne, Odin's host); Herodotus IV",
+    "rule": "Open ground with no time. The hunters have always been behind you; the only cover is another quarry.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The splice between adjacent realms",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. iii (Notion page id in volumes[])",
+   "aliases": [
+    "the clean boundary"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Doorway-sharp tear between material and immaterial; overlay",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "iii",
+     "quote": "a tear between material and immaterial",
+     "verification": "corpus-exact",
+     "line": 2490
+    }
+   ],
+   "facts": [
+    "Moriana identifies a courtyard/cell-block discontinuity: the courtyard lies in one realm and the space through the cell door in another, adjacent; such boundaries are normally blurred and gradual, this one unusually clean and sharp."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The door in the wall",
+    "citation": "H. G. Wells, 'The Door in the Wall' (1906); Revelation 4:1",
+    "rule": "Overlay: a splice edge is a doorway-sharp boundary. Both sides are simultaneously true; a thing standing in the doorway is in two realms and rolls against both.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Desert of Gods",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Named warp/exoplanar landscape where no idol is permitted to stand",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "where no idol is permitted to stand",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "During the collapse it sags and pours away like sand through an hourglass."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The commandment against graven images; the wilderness of Sinai; Ozymandias",
+    "citation": "Exodus 20:4; Deuteronomy 32:10; Isaiah 40:19-20; Shelley, 'Ozymandias' (1818)",
+    "rule": "Aniconic. Any icon, banner, statue, effigy or Legion badge raised here falls within the interval. The sand runs down: the realm is a timer and the hourglass is the map.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The Dolmen Gates",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "crossing",
+   "mappable": true,
+   "classification": "Named dimensional gateway complex",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "troubled in their long slumber",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "The gates shudder, troubled in their long slumber, while the webway's psychoplastic conduits creak under the transition."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The portal tomb; the solstice passage",
+    "citation": "Neolithic dolmens (Poulnabrone, Brownshill); Newgrange winter-solstice alignment",
+    "rule": "A gate older than the webway. It opens on a schedule that is not yours; the crossing is waiting, and what waits with you is the encounter.",
+    "label": "INFERRED",
+    "canon_first": "Warhammer 40,000 setting canon (Necron dolmen gates)"
+   }
+  },
+  {
+   "name": "Islets of exoplanar matter and archipelagoes of haunted warp stars",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "shore",
+   "mappable": true,
+   "classification": "Unnamed partial realm-geography that does not survive the withdrawal",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "archipelagoes of haunted warp stars",
+     "verification": "corpus-exact",
+     "line": 3595
+    }
+   ],
+   "facts": [
+    "Some realms do not survive the transition at all; whole islets of exoplanar matter and archipelagoes of haunted warp stars combust or implode."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Isles of the Blessed; the stars falling to earth",
+    "citation": "Hesiod, Works and Days 170-173; Revelation 6:13",
+    "rule": "Temporary ground. Every islet has a life expectancy; roll it on arrival and count it down per interval.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Shabek",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Desolate grey worm-eaten fens",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "the worm-eaten fens of desolate Shabek",
+     "verification": "corpus-exact",
+     "line": 3595
+    }
+   ],
+   "facts": [
+    "Grey and forlorn; dissolves into mist during the withdrawal."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "Sobek's marsh; the worm that dieth not; Grendel's mere; the Styx marsh",
+    "citation": "Isaiah 66:24; Mark 9:48; Beowulf 1357-1376; Dante, Inferno VII.100-VIII.64",
+    "rule": "Footing is the encounter. The worms are the wrathful and they are under the mud; what sinks stays, and the mist is the realm leaving.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The bone-beds of fossil gods",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "wilderness",
+   "mappable": true,
+   "classification": "Unnamed dry bone-beds",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "bone-beds",
+     "verification": "corpus-exact",
+     "line": 3595
+    }
+   ],
+   "facts": [
+    "The dry bone-beds of fossil gods reduce to ash and blow away as the unnatural light fades."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The valley of dry bones; the Titans beneath Tartarus",
+    "citation": "Ezekiel 37:1-14; Hesiod, Theogony 717-735",
+    "rule": "The hills are gods. Strike the bone and it remembers being worshipped; the memory is the hazard, and it wants an offering.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Somnopolis, the Library of Lost and Mislaid Dreams",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [
+    "Somnopolis"
+   ],
+   "archetype": "repository",
+   "mappable": true,
+   "classification": "Named dream/warp repository-realm",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "never more remembered",
+     "verification": "corpus-exact",
+     "line": 3596
+    }
+   ],
+   "facts": [
+    "Consumed in a raging inferno during the withdrawal and never more remembered."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The Library of Babel; the Cave of Sleep; the burning of Alexandria",
+    "citation": "Borges, 'The Library of Babel' (1941); Ovid, Metamorphoses XI.592-632; Plutarch, Caesar 49",
+    "rule": "Everything unmade is shelved here: the plan not followed, the name not given. Take one and the shelf behind you burns; you may leave with exactly one thing.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "Neverness",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume I",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. I, ch. 2 v. xii (Notion page id in volumes[])",
+   "aliases": [
+    "un-time",
+    "the neverness storm",
+    "the singularity of neverness"
+   ],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Recurring atemporal warp-state; overlay",
+   "attestations": [
+    {
+     "volume": 1,
+     "chapter": 2,
+     "verse": "xii",
+     "quote": "neverness",
+     "verification": "corpus-exact",
+     "line": 2151
+    },
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "viii",
+     "quote": "neverness",
+     "verification": "corpus-exact",
+     "line": 2851
+    }
+   ],
+   "facts": [
+    "Vol. I: the abdication of metaphysical continuity when Terra is pinned in an infinite empyrean now; Uigebealach is associated with this state.",
+    "Vol. II: the crisis treated throughout as an eternal, lawless present.",
+    "Vol. III: a neverness storm, a singularity of neverness; ends when Horus dies and time re-forms; also an empyric archetype Horus uses in the psychomachia."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "That which hath been is now; the never-never",
+    "citation": "Ecclesiastes 3:15; J. M. Barrie, Peter and Wendy (1911)",
+    "rule": "Overlay: no clock advances inside. Exposure is counted in intervals, not hours; nothing outside notices how long you were gone.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The exoplanar membrane and fluid territories",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume II",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. II, ch. 5 v. ix (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Partially described dimensional substrate; overlay",
+   "attestations": [
+    {
+     "volume": 2,
+     "chapter": 5,
+     "verse": "ix",
+     "quote": "exoplanar membrane",
+     "verification": "corpus-exact",
+     "line": 895
+    },
+    {
+     "volume": 3,
+     "chapter": 9,
+     "verse": "xxi",
+     "quote": "adjacent layer of the warp's fluid territories",
+     "verification": "corpus-exact",
+     "line": 2278
+    }
+   ],
+   "facts": [
+    "Hostile forms bulge from an exoplanar membrane as the Emperor draws on the sunless sea (5:ix); in the psychomachia Horus drops through an adjacent layer of the warp's fluid territories, treating the immaterium as neighbouring layers, interstices, planes and angles rather than one void (9:xxi). The sweep index had filed these under 7:i and 10:v; the corpus pass corrected them."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The waters above and the waters below",
+    "citation": "Genesis 1:6-7; Psalm 148:4",
+    "rule": "Overlay: the ground of any area is a membrane. Anything can bulge through it from the layer beneath; a splice edge is where it already has.",
+    "label": "INFERRED"
+   }
+  },
+  {
+   "name": "The unquiet realms of the dead, the damned, the lost and the psychic",
+   "system": "WH40K Novel",
+   "book": "The End and the Death Volume III",
+   "page": null,
+   "citation": "Dan Abnett, The End and the Death Vol. III, ch. 10 v. xviii (Notion page id in volumes[])",
+   "aliases": [],
+   "archetype": "condition",
+   "mappable": false,
+   "classification": "Explicit unnamed realm classes that part ways at Uigebealach",
+   "attestations": [
+    {
+     "volume": 3,
+     "chapter": 10,
+     "verse": "xviii",
+     "quote": "the dead and the damned, the lost and the psychic",
+     "verification": "corpus-exact",
+     "line": 3594
+    }
+   ],
+   "facts": [
+    "Multiple distinct realms or classes of realm implied; the verse names none individually."
+   ],
+   "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
+   "myth_key": {
+    "referent": "The four last things; the regions of Hades",
+    "citation": "Virgil, Aeneid VI.426-547 (the regions of the dead sorted by their deaths); Revelation 20:12-14",
+    "rule": "Overlay: a traveller belongs to one of the four classes. Junction exits are sorted by class, not by choice.",
+    "label": "INFERRED"
+   }
+  }
+ ]
+}

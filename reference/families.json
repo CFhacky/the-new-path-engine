@@ -532,6 +532,32 @@
       "markdown": "reference/whfb_wargame_index.md",
       "entry_path": "rows",
       "expected_count": 302
+    },
+    {
+      "id": "teatd_realm",
+      "systems": [
+        "WH40K Novel"
+      ],
+      "scope": "labeled",
+      "harvester": "scripts/teatd_realm_harvest.py",
+      "json": "reference/teatd_realm_index.json",
+      "markdown": "reference/teatd_realm_index.md",
+      "entry_path": "realms",
+      "expected_count": 55,
+      "page_exceptions": [
+        {
+          "book": "The End and the Death Volume I",
+          "expected_count": 18
+        },
+        {
+          "book": "The End and the Death Volume II",
+          "expected_count": 8
+        },
+        {
+          "book": "The End and the Death Volume III",
+          "expected_count": 29
+        }
+      ]
     }
   ]
 }

@@ -22,6 +22,9 @@ mirror snapshots. It does **not** hold live campaign canon or mutable session st
 | `scripts/personality_roll.py` | Voice & Locks Codex PERSONALITY TELL entries + NPC Personality Axis State DB (`1114d5fb00e1443a95528d7f9c485700`) |
 | `scripts/prose_gate.py` | Register Directive + Content Law + AI-Default Sweep Addendum (surface-campaign-master-gm mirror, Notion `349e8214-84b0-8126-ac8f-f2de981bb8a9`) |
 | `scripts/resume_card.py` | Campaign Resume Card Schema and Maintenance (Notion `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`) |
+| `scripts/teatd_realm_harvest.py` | *The End and the Death* Vols I–III, Notion Horus Heresy Source Library (`1f5e8214-84b0-810f…`, `…81c2…`, `…81c0…`), sweep 2026-09-21; empyrean-siege-gm skill TEATD band rule |
+| `scripts/realm_map.py` | `reference/teatd_realm_index.json` (facts SOURCE-VERIFIED, myth key INFERRED) + empyrean-siege-gm TEATD band rule; archetype tables are APPROVED PREPARATION pending ratification |
+| `scripts/notion_novel_bind.py` | corpus tooling only: Notion page dump → clean markdown + EPUB; outputs are filed in the sourcebook corpus, never committed |
 | `docs/runtime-control/PLAY_CONTRACT.md` | The New Path Play Contract — Live Session Governance (Notion `3c4e8214-84b0-818f-93c0-df1da2e52043`) |
 
 ## THE DESIGN CONTRACT
