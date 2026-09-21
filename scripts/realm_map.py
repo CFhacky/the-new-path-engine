@@ -60,6 +60,38 @@ CAMPAIGN REALMS (--realm-file)
          "law": {"referent": "...", "citation": "...", "rule": "...", "label": "CAMPAIGN-RULING"},
          "population": {"families": ["bones", "buried", "hounds", "gargoyles"]}}
 
+BUILT PLACES (a place that is read, and grows, rather than re-rolled)
+    A suffered realm is thrown for whole and thrown for again on every entry.
+    A built one already exists, so the definition file may declare it and the
+    resolver refuses to invent it. Optional keys, all of them generic:
+        "grammar": {"layout": "...", "areas": {"1": ["kind", "dimensions"], ...},
+                    "hazards": {"1": "...", ...}, "law": {"1": "...", ...}}
+            The place describes itself in its own vocabulary instead of
+            borrowing the archetype's. Faces must run 1..n with no gaps.
+        "fixed_areas": [{"name", "dimensions", "cluster", "role", "note",
+                         "anchored", "label"}, ...]
+            The areas, in order, as canon. No area count, kind, hazard or
+            contradiction is rolled for them; only the law die is thrown.
+        "fixed_edges": [[a, b, "<edge type>"], ...]
+            The adjacencies, as canon, instead of a rolled topology.
+        "anchored": true
+            The ground does not lie: psychotecture contradictions are not
+            thrown, and the ledger says so at every area.
+        "never_roll": ["...", ...]
+            Printed in the ledger as refusals and on the sheet under "What
+            this folio refuses to roll".
+        "growth": {"die", "interval", "frontier", "note", "cluster", "edges",
+                   "anchored", "unanchored_faces", "attach_to", "max_areas",
+                   "cap_note", "kinds"}
+            Read by `grow`, which rolls a count off the die, then for each new
+            plot a kind from growth.kinds, a hazard, a host area out of
+            attach_to and an edge type out of growth.edges. A new plot takes
+            its host's cluster. Faces named in unanchored_faces break the
+            anchor and do roll a contradiction. Existing areas, existing edges
+            and the law roll are never touched.
+    Layout "lemniscate" draws a figure eight: areas carrying cluster "west" or
+    "east" go to the lobes, everything else to the waist. Geometry only.
+
 POPULATE (denizens, ROLLED from the engine's own bestiaries)
     `populate` seats creatures per area from reference/wh40krp_adversary_index.json
     (daemons and warp entities, 40k Roleplay profiles) and/or the fiend rows of
@@ -427,6 +459,33 @@ CONTRADICTION = {
 # INDEX
 # ============================================================================
 
+# ============================================================================
+# GRAMMAR -- an archetype table, or the override a campaign realm file carries.
+# The engine holds no campaign canon; a definition file may supply its own area
+# kinds, hazards and law so a built place is described in its own vocabulary
+# instead of borrowing the trilogy's.
+# ============================================================================
+
+def gram(state: Dict[str, Any]) -> Dict[str, Any]:
+    """Effective grammar for a state: the archetype's, with any file override."""
+    base = ARCH[state["archetype"]]
+    over = state.get("grammar") or {}
+    if not over:
+        return base
+    out = dict(base)
+    for key in ("areas", "hazards", "law"):
+        if over.get(key):
+            out[key] = {int(k): v for k, v in over[key].items()}
+    if over.get("layout"):
+        out["layout"] = over["layout"]
+    return out
+
+
+def _pairs(table: Dict[int, Any]) -> Dict[int, Tuple[str, str]]:
+    """Area rows may be [kind, dimensions] pairs in JSON; normalise to tuples."""
+    return {int(k): (v[0], v[1]) for k, v in table.items()}
+
+
 def load_index() -> Dict[str, Any]:
     if not INDEX.is_file():
         raise SystemExit(f"NO COVERAGE -- realm index missing at {INDEX}; run scripts/teatd_realm_harvest.py")
@@ -465,6 +524,37 @@ def load_realm_file(path: str) -> Dict[str, Any]:
         raise SystemExit(f"realm file {path}: archetype must be one of {sorted(ARCH)}")
     law = dict(d["law"])
     law.setdefault("label", "CAMPAIGN-RULING")
+    grammar = d.get("grammar") or {}
+    for key in ("areas", "hazards", "law"):
+        if grammar.get(key):
+            faces = sorted(int(k) for k in grammar[key])
+            if faces != list(range(1, len(faces) + 1)):
+                raise SystemExit(f"realm file {path}: grammar.{key} faces must run 1..n with no gaps")
+    for fa in d.get("fixed_areas", []):
+        for key in ("name", "dimensions"):
+            if key not in fa:
+                raise SystemExit(f"realm file {path}: every fixed_areas entry needs {key!r}")
+    for e in d.get("fixed_edges", []):
+        if not (isinstance(e, list) and len(e) == 3 and e[2] in EDGES.values()):
+            raise SystemExit(f"realm file {path}: fixed_edges entries must be [a, b, edge-type] "
+                             f"with the type in {sorted(set(EDGES.values()))}")
+    if d.get("fixed_edges") and not d.get("fixed_areas"):
+        raise SystemExit(f"realm file {path}: fixed_edges needs fixed_areas to number them against")
+    growth = d.get("growth") or {}
+    if growth:
+        if not growth.get("kinds"):
+            raise SystemExit(f"realm file {path}: growth needs a kinds table")
+        for a in (growth.get("attach_to") or []):
+            if not isinstance(a, int) or a < 1:
+                raise SystemExit(f"realm file {path}: growth.attach_to must be 1-based area numbers")
+        bad_faces = [f for f in (growth.get("unanchored_faces") or [])
+                     if str(f) not in {str(k) for k in growth["kinds"]}]
+        if bad_faces:
+            raise SystemExit(f"realm file {path}: growth.unanchored_faces {bad_faces} are not rows of growth.kinds")
+        if growth.get("edges"):
+            bad = [e for e in growth["edges"] if e not in EDGES.values()]
+            if bad:
+                raise SystemExit(f"realm file {path}: growth.edges not in the folio vocabulary: {bad}")
     return {
         "name": d["name"], "archetype": d["archetype"], "mappable": True,
         "classification": d.get("classification", "campaign realm"),
@@ -473,6 +563,12 @@ def load_realm_file(path: str) -> Dict[str, Any]:
         "attestations": list(d.get("attestations", [])),
         "myth_key": law,
         "population": d.get("population", {}),
+        "grammar": grammar,
+        "fixed_areas": list(d.get("fixed_areas", [])),
+        "fixed_edges": [list(e) for e in d.get("fixed_edges", [])],
+        "anchored": bool(d.get("anchored")),
+        "growth": growth,
+        "never_roll": list(d.get("never_roll", [])),
         "source_file": path,
     }
 
@@ -564,17 +660,51 @@ def cmd_new(path: str, args) -> None:
         raise SystemExit(f"--areas must be one of {sorted(AREA_DICE)}")
     if not 0 <= args.band <= 5:
         raise SystemExit("--band must be 0-5 (siege package threat bands)")
-    arch = ARCH[realm["archetype"]]
+    arch = dict(ARCH[realm["archetype"]])
+    over = realm.get("grammar") or {}
+    for key in ("areas", "hazards", "law"):
+        if over.get(key):
+            arch[key] = {int(k): v for k, v in over[key].items()}
+    if over.get("areas"):
+        arch["areas"] = _pairs(arch["areas"])
+    if over.get("layout"):
+        arch["layout"] = over["layout"]
+    anchored_realm = bool(realm.get("anchored"))
+    fixed = realm.get("fixed_areas") or []
     ledger: List[str] = []
     ledger.append(f"=== FOLIO ENTRY -- {realm['name']} ({realm['archetype']}) ===")
     ledger.append(f"({PREP_NOTE} Raw dice first.)")
-    n = roll(AREA_DICE[args.areas], f"area count ({args.areas})", ledger)
-    slots = SLOTS.get(realm["archetype"], {"min": 2, "first": None, "middle": None, "last": None})
-    n = max(n, slots["min"])
+    for line in realm.get("never_roll", []):
+        ledger.append(f"  REFUSED (declared fixed by the definition file, not rolled): {line}")
+    if fixed:
+        ledger.append(f"  area count NOT ROLLED: {len(fixed)} areas are fixed canon in {realm.get('source_file')}")
+        n = len(fixed)
+    else:
+        n = roll(AREA_DICE[args.areas], f"area count ({args.areas})", ledger)
+        slots_min = SLOTS.get(realm["archetype"], {"min": 2})["min"]
+        n = max(n, slots_min)
     law = roll(6, "law roll (the myth rule's parameter)", ledger)
+    slots = {"min": 2, "first": None, "middle": None, "last": None} if fixed \
+        else SLOTS.get(realm["archetype"], {"min": 2, "first": None, "middle": None, "last": None})
     span_at = (n + 1) // 2 if slots["middle"] else None
     areas = []
     for i in range(1, n + 1):
+        if fixed:
+            fa = fixed[i - 1]
+            anc = bool(fa.get("anchored", anchored_realm))
+            area = {"n": i, "face": 0, "kind": fa["name"], "dimensions": fa["dimensions"],
+                    "hazard": 1, "contradiction": 1, "fixed": True, "anchored": anc,
+                    "label": fa.get("label", "SOURCE-VERIFIED")}
+            if fa.get("note"):
+                area["note"] = fa["note"]
+            if fa.get("role"):
+                area["role"] = fa["role"]
+            if fa.get("cluster"):
+                area["cluster"] = fa["cluster"]
+            ledger.append(f"  A{i} fixed: {fa['name']} -- no kind, hazard or contradiction rolled"
+                          f"{' (anchored)' if anc else ''}")
+            areas.append(area)
+            continue
         rows = None
         if i == 1 and slots["first"]:
             rows, why = slots["first"], "first slot"
@@ -590,18 +720,33 @@ def cmd_new(path: str, args) -> None:
         else:
             face = rows[roll(len(rows), f"A{i} area kind ({why}: rows {rows})", ledger) - 1]
         hz = roll(6, f"A{i} hazard band", ledger)
-        cz = roll(8, f"A{i} psychotecture contradiction", ledger)
+        if anchored_realm:
+            cz = 1
+            ledger.append(f"  A{i} psychotecture contradiction NOT ROLLED: the realm is anchored "
+                          f"(the anchor is what a contradiction seed would have to break first)")
+        else:
+            cz = roll(8, f"A{i} psychotecture contradiction", ledger)
         area = {"n": i, "face": face, "kind": arch["areas"][face][0],
                 "dimensions": arch["areas"][face][1], "hazard": hz,
-                "contradiction": cz}
+                "contradiction": cz, "fixed": False, "anchored": anchored_realm}
         if cz == 8:
             others = [r["name"] for r in mappable(index) if r["name"] != realm["name"]]
             k = roll(len(others), f"A{i} intruding realm (1-{len(others)} of the mappable roster)", ledger)
             area["intrusion"] = others[k - 1]
         areas.append(area)
-    edges = topology(arch["layout"], n, ledger)
+    if realm.get("fixed_edges"):
+        for a, b, t in realm["fixed_edges"]:
+            if not (1 <= a <= n and 1 <= b <= n):
+                raise SystemExit(f"fixed_edges references A{a}/A{b} but the realm has {n} areas")
+        edges = [(a, b, t) for a, b, t in realm["fixed_edges"]]
+        ledger.append(f"  edges NOT ROLLED: {len(edges)} adjacencies are fixed canon in "
+                      f"{realm.get('source_file')}")
+    else:
+        edges = topology(arch["layout"], n, ledger)
     state = {
         "realm": realm["name"], "archetype": realm["archetype"], "layout": arch["layout"],
+        "grammar": over, "growth": realm.get("growth", {}),
+        "anchored": anchored_realm, "never_roll": realm.get("never_roll", []),
         "band": args.band, "entry": args.entry or "",
         "areas_die": args.areas, "law": law, "areas": areas,
         "edges": [list(e) for e in edges],
@@ -618,7 +763,7 @@ def cmd_new(path: str, args) -> None:
     save(path, state)
     print("\n".join(ledger))
     print()
-    print(f"  {n} areas rolled; law roll {law}: {arch['law'][law]}")
+    print(f"  {n} areas ({'fixed canon' if fixed else 'rolled'}); law roll {law}: {arch['law'][law]}")
     print(f"  State written: {path}. Render with `render`; re-rendering is deterministic.")
 
 
@@ -819,9 +964,123 @@ def cmd_export_sectors(path: str, args) -> None:
           f"(bands: {', '.join(s_['band'] for s_ in ex['sectors'])})")
 
 
-def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]:
+# ============================================================================
+# GROW -- append new areas to an existing folio without re-rolling the old ones.
+# A built place expands; a suffered place is re-rolled whole. This pass is for
+# the first kind: the existing areas, edges and law are left exactly as they
+# were and only the new work is thrown for. Requires a growth block in the
+# realm definition file (kinds table, frontier, permitted edge types).
+# ============================================================================
+
+def cmd_grow(path: str, args) -> None:
+    state = load(path)
+    growth = state.get("growth") or {}
+    if not growth:
+        raise SystemExit(f"{state['realm']} has no growth block -- a realm that is not built does not grow; "
+                         f"roll it again with `new` instead.")
+    die = args.plots or growth.get("die", "d6")
+    if die not in AREA_DICE:
+        raise SystemExit(f"--plots must be one of {sorted(AREA_DICE)}")
+    kinds = _pairs({int(k): v for k, v in growth["kinds"].items()})
+    faces = sorted(kinds)
+    if faces != list(range(1, len(faces) + 1)):
+        raise SystemExit("growth.kinds faces must run 1..n with no gaps")
+    edge_names = growth.get("edges") or list(EDGES.values())
+    anchored = bool(growth.get("anchored", state.get("anchored")))
+    arch = gram(state)
+    frontier = growth.get("frontier", "the frontier")
+    interval = args.label or growth.get("interval", "one interval")
+    existing = len(state["areas"])
+    if existing == 0:
+        raise SystemExit("nothing to grow from")
+    ledger: List[str] = ["", f"=== GROWTH PASS -- {state['realm']} / {interval} ===",
+                         f"({PREP_NOTE} Existing areas, edges and law are NOT re-rolled.)",
+                         f"  frontier: {frontier}; permitted edges: {', '.join(edge_names)}"]
+    if growth.get("note"):
+        ledger.append(f"  GM rule from the definition file: {growth['note']}")
+    k = roll(AREA_DICE[die], f"new plots this interval ({die})", ledger)
+    cap = growth.get("max_areas")
+    if cap and existing + k > int(cap):
+        allowed = max(0, int(cap) - existing)
+        ledger.append(f"  CAP: the definition file caps this realm at {cap} areas; {k} rolled, {allowed} buildable. "
+                      f"The rest needs new ground, which is a ruling and not a roll.")
+        k = allowed
+    grown = []
+    for j in range(1, k + 1):
+        i = existing + j
+        face = roll(len(faces), f"P{j} plot kind", ledger)
+        hz = roll(6, f"P{j} hazard band", ledger)
+        breaks = face in [int(x) for x in (growth.get("unanchored_faces") or [])]
+        if anchored and not breaks:
+            cz = 1
+            ledger.append(f"  P{j} psychotecture contradiction NOT ROLLED: anchored ground")
+        else:
+            if anchored and breaks:
+                ledger.append(f"  P{j} plot kind {face} is named in growth.unanchored_faces: "
+                              f"the anchor does not cover this plot, so the contradiction IS thrown")
+            cz = roll(8, f"P{j} psychotecture contradiction", ledger)
+        hosts = [a for a in (growth.get("attach_to") or []) if a <= existing] or list(range(1, existing + 1))
+        if len(hosts) == 1:
+            attach = hosts[0]
+            ledger.append(f"  P{j} attaches to A{attach}: the definition file names one frontier area")
+        else:
+            attach = hosts[roll(len(hosts), f"P{j} frontier area (1-{len(hosts)} of "
+                                            f"{'the declared frontier' if growth.get('attach_to') else 'every existing area'})",
+                                ledger) - 1]
+        et = edge_names[roll(len(edge_names), f"P{j} edge type (1-{len(edge_names)})", ledger) - 1]
+        area = {"n": i, "face": face, "kind": kinds[face][0], "dimensions": kinds[face][1],
+                "hazard": hz, "contradiction": cz, "fixed": False,
+                "anchored": anchored and not breaks, "grown": interval}
+        # a new plot belongs to the part of the place it was joined to, so the
+        # drawing stays honest; the file's cluster is only the fallback
+        host = next((a for a in state["areas"] if a["n"] == attach), None)
+        cl = (host or {}).get("cluster") or growth.get("cluster")
+        if cl:
+            area["cluster"] = cl
+        state["areas"].append(area)
+        state["edges"].append([attach, i, et])
+        grown.append((i, kinds[face][0], attach, et))
+    state["ledger"] = state["ledger"] + ledger
+    state.setdefault("growth_log", []).append(
+        {"interval": interval, "die": die, "plots": k,
+         "areas": [g[0] for g in grown], "frontier": frontier})
+    save(path, state)
+    print("\n".join(ledger))
+    print()
+    if not k:
+        print(f"  No new work this interval. {existing} areas stand.")
+        return
+    for i, kind, attach, et in grown:
+        print(f"  A{i}: {kind} -- joins A{attach} via {et}")
+    print(f"  {existing} -> {len(state['areas'])} areas. Hazard tables from the {state['archetype']} grammar; "
+          f"law roll {state['law']} unchanged: {arch['law'][state['law']]}")
+    print(f"  State updated: {path}. Re-render to redraw.")
+
+
+def _positions(layout: str, n: int, w: int, h: int,
+               clusters: Optional[List[str]] = None) -> List[Tuple[float, float]]:
     cx, cy = w / 2, h / 2 + 20
     pos: List[Tuple[float, float]] = []
+    if layout == "lemniscate":
+        # A figure-eight ground plan: two lobes joined at a waist. Areas may
+        # carry a cluster of "waist", "west" or "east"; anything else sits at
+        # the waist. Geometry only -- the engine states nothing about why a
+        # place is shaped this way.
+        cl = clusters or ["waist"] * n
+        waist = [i for i in range(n) if cl[i] not in ("west", "east")]
+        west = [i for i in range(n) if cl[i] == "west"]
+        east = [i for i in range(n) if cl[i] == "east"]
+        rx, ry = min(w * 0.21, 330), min(h * 0.27, 230)
+        off = min(w * 0.26, 400)
+        out: List[Optional[Tuple[float, float]]] = [None] * n
+        for k, i in enumerate(waist):
+            span = max(1, len(waist))
+            out[i] = (cx + (k - (span - 1) / 2) * 132, cy + (0 if span == 1 else (-38 if k % 2 else 38)))
+        for lobe, sign in ((west, -1), (east, 1)):
+            for k, i in enumerate(lobe):
+                a = 2 * math.pi * (k + 0.5) / max(1, len(lobe))
+                out[i] = (cx + sign * off + rx * math.cos(a) * -sign, cy + ry * math.sin(a))
+        return [q if q else (cx, cy) for q in out]
     if layout in ("ring", "star"):
         r = min(w, h) * 0.30
         if layout == "star":
@@ -882,9 +1141,12 @@ def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]
 
 
 def render_svg(state: Dict[str, Any]) -> str:
-    w, h = 1200, 820
     n = len(state["areas"])
-    pos = _positions(state["layout"], n, w, h)
+    # the canvas grows with the folio so a large built place stays legible
+    w = 1200 if n <= 14 else 1500 if n <= 20 else 1820
+    h = 820 if n <= 14 else 960 if n <= 20 else 1080
+    pos = _positions(state["layout"], n, w, h,
+                     [a.get("cluster", "waist") for a in state["areas"]])
     mk = state["index_snapshot"]["myth_key"]
     ink, paper, red, blue = "#2b2118", "#f1e7cf", "#8b1a1a", "#1d3d5c"
     halo = f"paint-order='stroke' stroke='{paper}' stroke-width='5' stroke-linejoin='round'"
@@ -901,7 +1163,7 @@ def render_svg(state: Dict[str, Any]) -> str:
             lines.append(cur)
         return lines
 
-    law_lines = wrap(f"LAW (INFERRED, {mk['referent']}): {mk['rule']}", 150)
+    law_lines = wrap(f"LAW ({mk.get('label', 'INFERRED')}, {mk['referent']}): {mk['rule']}", 150)
     law_svg = "".join(f"<text x='40' y='{96 + 16 * i}' font-size='13' fill='{blue}'>{escape(l)}</text>" for i, l in enumerate(law_lines))
     law_y = 96 + 16 * len(law_lines)
     out = [f"<svg xmlns='http://www.w3.org/2000/svg' width='{w}' height='{h}' viewBox='0 0 {w} {h}' "
@@ -912,7 +1174,7 @@ def render_svg(state: Dict[str, Any]) -> str:
            f"<text x='40' y='76' font-size='13'>{escape(state['archetype'])} / {escape(state['index_snapshot']['classification'])}"
            f" / attested {escape(', '.join(state['index_snapshot']['attestations']))} / band {state['band']}</text>",
            law_svg,
-           f"<text x='40' y='{law_y + 2}' font-size='12'>LAW ROLL {state['law']}: {escape(ARCH[state['archetype']]['law'][state['law']])}</text>"]
+           f"<text x='40' y='{law_y + 2}' font-size='12'>LAW ROLL {state['law']}: {escape(gram(state)['law'][state['law']])}</text>"]
     if state["layout"] == "coast":
         out.append(f"<path d='M 0 {h / 2 + 140} Q {w / 4} {h / 2 + 90} {w / 2} {h / 2 + 140} T {w} {h / 2 + 140} L {w} {h} L 0 {h} Z' fill='{blue}' opacity='0.12'/>")
         out.append(f"<text x='{w - 200}' y='{h - 60}' font-size='14' fill='{blue}'>the sea / the far dark</text>")
@@ -940,8 +1202,12 @@ def render_svg(state: Dict[str, Any]) -> str:
     for area, (x, y) in zip(state["areas"], pos):
         hz = area["hazard"]
         cz = area["contradiction"]
-        stroke = red if hz >= 4 else ink
+        stroke = red if (hz >= 4 and not area.get("anchored")) else ink
         out.append(f"<rect x='{x - 62:.0f}' y='{y - 28:.0f}' width='124' height='56' rx='6' fill='{paper}' stroke='{stroke}' stroke-width='{1 + hz / 2:.1f}'/>")
+        if area.get("anchored"):
+            out.append(f"<rect x='{x - 57:.0f}' y='{y - 23:.0f}' width='114' height='46' rx='4' fill='none' stroke='{ink}' stroke-width='0.8'/>")
+        if area.get("grown"):
+            out.append(f"<text x='{x:.0f}' y='{y - 34:.0f}' font-size='9' text-anchor='middle' fill='{blue}' {halo}>new work</text>")
         out.append(f"<text x='{x:.0f}' y='{y - 8:.0f}' font-size='13' font-weight='bold' text-anchor='middle'>A{area['n']}</text>")
         kind = area["kind"] if len(area["kind"]) <= 22 else area["kind"][:21] + "."
         out.append(f"<text x='{x:.0f}' y='{y + 9:.0f}' font-size='11' text-anchor='middle'>{escape(kind)}</text>")
@@ -950,7 +1216,10 @@ def render_svg(state: Dict[str, Any]) -> str:
             out.append(f"<text x='{x:.0f}' y='{y + 42:.0f}' font-size='10' text-anchor='middle' fill='{red}' {halo}>splice: {escape(area['intrusion'][:28])}</text>")
     out.append(f"<text x='40' y='{h - 60}' font-size='11'>Edges: solid intersection (thick) / dashed angle / dotted conjunction / dash-dot oblique / red splice / blue fine-dot recursion (loop = the area contains the realm). "
                f"Box weight = hazard band; red box = hazard 4+.</text>")
-    out.append(f"<text x='40' y='{h - 42}' font-size='11'>Labels: facts SOURCE-VERIFIED (index); law INFERRED (myth key); every area, exit and hazard ROLLED. {escape(PREP_NOTE)}</text>")
+    out.append(f"<text x='40' y='{h - 42}' font-size='11'>Labels: facts {escape(state['index_snapshot'].get('facts_label', 'SOURCE-VERIFIED').split(' (')[0])}; "
+               f"law {escape(mk.get('label', 'INFERRED'))}; areas and adjacencies "
+               f"{'READ from the definition file' if any(a.get('fixed') for a in state['areas']) else 'ROLLED'}, "
+               f"and the growth pass ROLLED. {escape(PREP_NOTE)}</text>")
     out.append(f"<text x='40' y='{h - 24}' font-size='11'>Ledger: {escape(' | '.join(l.strip() for l in state['ledger'][2:8]))} ...</text>")
     out.append("</svg>")
     return "\n".join(out) + "\n"
@@ -959,25 +1228,38 @@ def render_svg(state: Dict[str, Any]) -> str:
 def render_sheet(state: Dict[str, Any]) -> str:
     snap = state["index_snapshot"]
     mk = snap["myth_key"]
-    arch = ARCH[state["archetype"]]
+    arch = gram(state)
     o = [f"# Regno Kao folio -- {state['realm']}", "",
          f"*{state['archetype']}* -- {snap['classification']}  ",
          f"Attested: {', '.join(snap['attestations'])}  ",
          f"Threat band: {state['band']} (meaning per the siege package mechanical reference; NO COVERAGE here)  ",
          f"Entry: {state['entry'] or '(not stated)'}  ", "",
-         f"> {PREP_NOTE}", "",
+         f"> {PREP_NOTE}"
+         + ("  \n> Area kinds, hazards and the law table for this folio come from the realm "
+            "definition file, not from the archetype: the place describes itself in its own vocabulary."
+            if state.get("grammar") else ""), "",
          f"## What the source says ({snap.get('facts_label', 'SOURCE-VERIFIED')})"]
     for f in snap["facts"]:
         o.append(f"- {f}")
     o += ["", f"## Law of the place ({mk.get('label', 'INFERRED')} -- {mk['referent']})",
           f"*{mk['citation']}*  ", "", mk["rule"], "",
           f"**Law roll {state['law']}:** {arch['law'][state['law']]}", "",
-          "## Areas (ROLLED)", "",
-          "| # | Kind | Dimensions | Hazard | Contradiction |", "|---|---|---|---|---|"]
+          "## Areas", "",
+          "| # | Kind | Dimensions | Provenance | Hazard | Contradiction |", "|---|---|---|---|---|---|"]
     for a in state["areas"]:
         cz = CONTRADICTION[a["contradiction"]]
-        o.append(f"| A{a['n']} | {a['kind']} | {a['dimensions']} | {a['hazard']} | {'stable' if cz is None else cz.split(':')[0]} |")
+        prov = a.get("label", "ROLLED") if a.get("fixed") else ("ROLLED (new work)" if a.get("grown") else "ROLLED")
+        if a.get("anchored"):
+            prov += ", anchored"
+        o.append(f"| A{a['n']} | {a['kind']} | {a['dimensions']} | {prov} | {a['hazard']} | "
+                 f"{'stable' if cz is None else cz.split(':')[0]} |")
     o.append("")
+    if state.get("never_roll"):
+        o += ["### What this folio refuses to roll", "",
+              "*Declared fixed by the definition file. The resolver did not throw for any of these; "
+              "they are read, not generated.*", ""]
+        o += [f"- {line}" for line in state["never_roll"]]
+        o.append("")
     exits: Dict[int, List[str]] = {a["n"]: [] for a in state["areas"]}
     for a, b, t in state["edges"]:
         if b == 0:
@@ -992,8 +1274,19 @@ def render_sheet(state: Dict[str, Any]) -> str:
             exits[b].append(f"A{a} via {t}")
     for a in state["areas"]:
         o += [f"### A{a['n']} -- {a['kind']}", "",
-              f"- **Dimensions:** {a['dimensions']}",
-              f"- **Hazard band {a['hazard']}:** {arch['hazards'][a['hazard']]}"]
+              f"- **Dimensions:** {a['dimensions']}"]
+        if a.get("role"):
+            o.append(f"- **Role:** {a['role']}")
+        if a.get("note"):
+            o.append(f"- **Canon:** {a['note']}")
+        if a.get("fixed"):
+            o.append("- **Hazard:** none rolled; this area is fixed canon and its trouble comes from play, not the folio.")
+        else:
+            o.append(f"- **Hazard band {a['hazard']}:** {arch['hazards'][a['hazard']]}")
+        if a.get("anchored"):
+            o.append("- **Anchored:** psychotecture seeds do not fire here; the anchor holds the ground still.")
+        if a.get("grown"):
+            o.append(f"- **New work:** rolled on the growth pass{' (' + a['grown'] + ')' if isinstance(a.get('grown'), str) else ''}.")
         cz = CONTRADICTION[a["contradiction"]]
         if cz:
             o.append(f"- **Psychotecture:** {cz}")
@@ -1036,7 +1329,7 @@ def cmd_render(path: str, args) -> None:
 def cmd_show(path: str, args) -> None:
     state = load(path)
     print(f"=== {state['realm']} ({state['archetype']}, band {state['band']}) ===")
-    print(f"  law roll {state['law']}: {ARCH[state['archetype']]['law'][state['law']]}")
+    print(f"  law roll {state['law']}: {gram(state)['law'][state['law']]}")
     for a in state["areas"]:
         flag = "" if CONTRADICTION[a["contradiction"]] is None else f"  <- {CONTRADICTION[a['contradiction']].split(':')[0]}"
         print(f"  A{a['n']}: {a['kind']} ({a['dimensions']}) hazard {a['hazard']}{flag}")
@@ -1181,6 +1474,9 @@ def main() -> None:
     n.add_argument("--band", type=int, default=2)
     n.add_argument("--entry", default="")
     n.add_argument("--force", action="store_true")
+    g = sub.add_parser("grow")
+    g.add_argument("--plots", help="override the definition file's growth die (d6/d8/d10/d12)")
+    g.add_argument("--label", help="what interval this growth pass is (e.g. 'City-year 55')")
     r = sub.add_parser("render")
     r.add_argument("--svg")
     r.add_argument("--sheet")
@@ -1203,8 +1499,8 @@ def main() -> None:
         cmd_list()
         return
     if not args.state or not args.cmd:
-        p.error("state path and a command (new/render/show) are required")
-    {"new": cmd_new, "render": cmd_render, "show": cmd_show,
+        p.error("state path and a command (new/grow/render/show/populate/export-sectors) are required")
+    {"new": cmd_new, "grow": cmd_grow, "render": cmd_render, "show": cmd_show,
      "populate": cmd_populate, "export-sectors": cmd_export_sectors}[args.cmd](args.state, args)
 
 
