@@ -7,7 +7,7 @@ Entry: Loken's group, on foot, from a splice in the Sanctum
 
 > Archetype tables: APPROVED PREPARATION (realm_map.py), pending ratification; not source, not canon.
 
-## What the book says (SOURCE-VERIFIED)
+## What the source says (SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status))
 - Contains fever-meadows (9:xxi).
 - Its twilit glades and painforests are swallowed by rancid superheated steam and reduced to putrescent mush that drips into a dark abyss (10:xviii).
 
@@ -60,6 +60,16 @@ The vegetation is sentient and suffering. Cut it and it speaks; sleep in it and 
 - **Hazard band 1:** Quiet. The ground pretends.
 - **Psychotecture:** MAP CONTRADICTION: this area's exits do not match the way it was entered; the folio and the ground disagree, and the ground is lying.
 - **Exits:** A4 via oblique
+
+## Denizens (ROLLED from the engine bestiaries; stats in the cited index rows)
+
+| Area | Count | Creature | System | Source | Stat |
+|---|---|---|---|---|---|
+| A1 | 5 | Flamer Of Tzeentch | WH40K Roleplay | Black Crusade: Tome of Fate p.105 | wounds 20 |
+| A2 | 3 | Pink Horror | WH40K Roleplay | Black Crusade: Core Rulebook p.355 | wounds 18 |
+| A3 | 0 | empty | | | |
+| A4 | 0 | empty | | | |
+| A5 | 0 | empty | | | |
 
 ## Running it (skill rules)
 

@@ -21,6 +21,14 @@ python scripts/realm_map.py long_woe.realm.state.json render
 | The Inevitable City (band 3, d10 areas) | composite-city | `inevitable_city.svg`, `inevitable_city.area.md` |
 | The Marcher Fortress and the Marches (reached through the city's A5 splice) | fortress | `marcher_fortress.svg`, `marcher_fortress.area.md` |
 
+Beyond the trilogy: `new --realm-file <definition.json>` rolls a campaign
+realm from a definition the owning project keeps (the Malcador prison's
+shifting country lives in the vault, not here); `populate --pool daemon|fiend|both`
+seats Neverborn or fiends per area from the engine's bestiaries as cited rows;
+`export-sectors --out sectors.json` writes the rolled areas as a sector table
+for the vault's `realm_population.py` (`import_rolled_sectors`) plus an atlas
+block in that project's own row format.
+
 The state files that produced them are throwaway (`*.state.json` is
 gitignored). Re-rendering from a state file is deterministic; rolling a new
 state is not, by design.

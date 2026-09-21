@@ -43,14 +43,43 @@ USAGE
     python realm_map.py --list
     python realm_map.py long_woe.realm.state.json new --realm "Long Woe" \\
         [--areas d6|d8|d10|d12] [--band 0-5] [--entry "how the party arrives"] [--force]
+    python realm_map.py country.realm.state.json new --realm-file shifting_country.realm.json ...
+    python realm_map.py long_woe.realm.state.json populate --pool daemon|fiend|both [--force]
+    python realm_map.py country.realm.state.json export-sectors --out sectors.json [--miles-per-step 0.6]
     python realm_map.py long_woe.realm.state.json render [--svg out.svg] [--sheet out.md]
     python realm_map.py long_woe.realm.state.json show
     python realm_map.py --selftest
+
+CAMPAIGN REALMS (--realm-file)
+    A realm that is not in the trilogy index (Malcador's prison, Arik's
+    Inevitable City) is rolled from a definition file the owning project
+    keeps; nothing campaign-original is stored in this repository. Schema:
+        {"name": "...", "archetype": "<one of the eight>", "label": "CAMPAIGN-ORIGINAL",
+         "classification": "...", "facts": ["..."], "facts_citation": "vault path + ruling ids",
+         "attestations": ["DECISION_LEDGER MD2-22", ...],
+         "law": {"referent": "...", "citation": "...", "rule": "...", "label": "CAMPAIGN-RULING"},
+         "population": {"families": ["bones", "buried", "hounds", "gargoyles"]}}
+
+POPULATE (denizens, ROLLED from the engine's own bestiaries)
+    `populate` seats creatures per area from reference/wh40krp_adversary_index.json
+    (daemons and warp entities, 40k Roleplay profiles) and/or the fiend rows of
+    reference/creature_index.json (3.5e outsiders), filtered to the threat band.
+    It prints the index row (name, book, page, wounds or CR); stats stay in the
+    index. For a realm whose population is owned elsewhere (Malcador's 266 and
+    the D2 boss corpus) use `export-sectors` instead and let that engine roll.
+
+EXPORT-SECTORS (hand the map to the Malcador population engine)
+    Emits the rolled areas as a sector table in the shape realm_population.py
+    consumes: id, band (fringe/basin/roads/marches/hunt by hops from the entry),
+    centre in miles, group count, family pool; plus a markdown atlas block in
+    the project's own row format (Sector | Centre E,N miles | Inhabitants |
+    Place to fight) and per-sector Terrain / Sightlines / Exit vectors.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import math
 import os
 import secrets
@@ -424,6 +453,35 @@ def find_realm(index: Dict[str, Any], query: str) -> Dict[str, Any]:
 def mappable(index: Dict[str, Any]) -> List[Dict[str, Any]]:
     return [r for r in index["realms"] if r.get("mappable")]
 
+
+def load_realm_file(path: str) -> Dict[str, Any]:
+    """A campaign realm definition, normalised to the index row shape."""
+    with open(path, "r", encoding="utf-8") as f:
+        d = json.load(f)
+    for key in ("name", "archetype", "facts", "law"):
+        if key not in d:
+            raise SystemExit(f"realm file {path}: missing {key!r}")
+    if d["archetype"] not in ARCH:
+        raise SystemExit(f"realm file {path}: archetype must be one of {sorted(ARCH)}")
+    law = dict(d["law"])
+    law.setdefault("label", "CAMPAIGN-RULING")
+    return {
+        "name": d["name"], "archetype": d["archetype"], "mappable": True,
+        "classification": d.get("classification", "campaign realm"),
+        "facts": list(d["facts"]),
+        "facts_label": d.get("label", "CAMPAIGN-ORIGINAL") + (f" ({d['facts_citation']})" if d.get("facts_citation") else ""),
+        "attestations": list(d.get("attestations", [])),
+        "myth_key": law,
+        "population": d.get("population", {}),
+        "source_file": path,
+    }
+
+
+def fmt_attestation(a: Any) -> str:
+    if isinstance(a, dict):
+        return f"Vol. {'I' * a['volume']} {a['chapter']}:{a['verse']}"
+    return str(a)
+
 # ============================================================================
 # STATE
 # ============================================================================
@@ -490,7 +548,12 @@ def cmd_new(path: str, args) -> None:
     if os.path.exists(path) and not args.force:
         raise SystemExit(f"{path} exists -- pass --force to overwrite.")
     index = load_index()
-    realm = find_realm(index, args.realm)
+    if getattr(args, "realm_file", None):
+        realm = load_realm_file(args.realm_file)
+    elif args.realm:
+        realm = find_realm(index, args.realm)
+    else:
+        raise SystemExit("new needs --realm NAME or --realm-file PATH")
     if not realm.get("mappable"):
         print(f"NOT MAPPABLE -- {realm['name']} is a {realm['archetype']} "
               f"({realm['classification']}).")
@@ -545,8 +608,10 @@ def cmd_new(path: str, args) -> None:
         "index_snapshot": {
             "classification": realm["classification"],
             "facts": realm["facts"], "facts_label": realm.get("facts_label", "SOURCE-VERIFIED"),
-            "attestations": [f"Vol. {'I' * a['volume']} {a['chapter']}:{a['verse']}" for a in realm["attestations"]],
+            "attestations": [fmt_attestation(a) for a in realm["attestations"]],
             "myth_key": realm["myth_key"],
+            "population": realm.get("population", {}),
+            "source_file": realm.get("source_file"),
         },
         "ledger": ledger,
     }
@@ -555,6 +620,203 @@ def cmd_new(path: str, args) -> None:
     print()
     print(f"  {n} areas rolled; law roll {law}: {arch['law'][law]}")
     print(f"  State written: {path}. Render with `render`; re-rendering is deterministic.")
+
+
+# ============================================================================
+# POPULATE -- denizens from the engine's bestiaries (ROLLED; stats stay in the
+# cited index row). Band thresholds are APPROVED PREPARATION like the tables.
+# ============================================================================
+DAEMON_NAME = re.compile(r"daemon|neverborn|bloodletter|plaguebearer|horror|daemonette|flesh hound|nurgling|"
+                         r"fury|screamer|flamer|beast of nurgle|fiend|juggernaut|possessed|herald|keeper of secrets|"
+                         r"bloodthirster|great unclean|lord of change|unbound|warp", re.I)
+DAEMON_EXCLUDE = re.compile(r"ammunition|servitor|witch|weapon|spider|drive|engine|talisman|vortex", re.I)
+FIEND_TYPE = re.compile(r"outsider", re.I)
+# the 3.5e index stores a bare type word, so fiendhood is read from the name or the book
+FIEND_TAG = re.compile(r"demon|devil|daemon|yugoloth|fiend|loth\b|imp\b|quasit|succubus|balor|erinyes|barbazu|hamatula|"
+                       r"osyluth|gelugon|cornugon|kyton|lemure|glabrezu|hezrou|marilith|nalfeshnee|vrock|dretch|babau|"
+                       r"bebilith|retriever|nightmare|rakshasa|night hag|abyssal|infernal|hellcat|hellwasp|hell hound|"
+                       r"canoloth|mezzoloth|nycaloth|ultroloth|arcanaloth|obyrith|loumara|chasme|goristro|mane\b|"
+                       r"rutterkin|bar-lgura|palrethee|wastrilith|kelvezu|myrmyxicus|klurichir|bulezau|abrian|"
+                       r"paeliryon|xerfilstyx|advespa|amnizu|narzugon|spinagon|kocrachon|malebranche|pit lord|"
+                       r"steel predator|zovvut|solamith|arcanaloth|voor|kastighur|ekolid|uridezu|sibriex", re.I)
+FIEND_BOOKS = re.compile(r"fiend folio|fc1|fc2|fiendish codex|vile darkness|hordes of the abyss|tyrants of the nine", re.I)
+WOUND_CAP = {0: 12, 1: 20, 2: 35, 3: 60, 4: 120, 5: 10 ** 6}
+CR_CAP = {0: 2, 1: 4, 2: 7, 3: 11, 4: 16, 5: 10 ** 6}
+OCCUPIED_WORDS = re.compile(r"denizen|garrison|occupant|swarm|custodian|picket|surfaces|hunt|breeds|walks the corridors", re.I)
+
+
+def _num(v: Any) -> Optional[float]:
+    if v is None:
+        return None
+    m = re.match(r"\s*(\d+)(?:/(\d+))?", str(v))
+    if not m:
+        return None
+    return int(m.group(1)) / (int(m.group(2)) if m.group(2) else 1)
+
+
+def load_pools() -> Dict[str, List[Dict[str, Any]]]:
+    pools: Dict[str, List[Dict[str, Any]]] = {"daemon": [], "fiend": []}
+    adv = REPO / "reference" / "wh40krp_adversary_index.json"
+    if adv.is_file():
+        d = json.loads(adv.read_text(encoding="utf-8"))
+        for src in d["sources"]:
+            for r in src["adversaries"]:
+                if DAEMON_NAME.search(r["name"]) and not DAEMON_EXCLUDE.search(r["name"]):
+                    w = _num(r.get("wounds"))
+                    if w is not None:
+                        pools["daemon"].append({"name": r["name"], "book": r.get("book", src.get("book", "")),
+                                                "page": r.get("page"), "stat": f"wounds {int(w)}", "size": w,
+                                                "system": "WH40K Roleplay", "role": r.get("role", "")})
+    cre = REPO / "reference" / "creature_index.json"
+    if cre.is_file():
+        d = json.loads(cre.read_text(encoding="utf-8"))
+        for b in d["books"]:
+            key = next(k for k, v in b.items() if isinstance(v, list))
+            for r in b[key]:
+                t = str(r.get("type", ""))
+                cr = _num(r.get("cr"))
+                bookname = str(r.get("book", b.get("book", "")))
+                fiendish = FIEND_TAG.search(r["name"]) or FIEND_BOOKS.search(bookname)
+                if FIEND_TYPE.search(t) and fiendish and cr is not None and not re.match(r"^(Le|Ne|Ce|Cn|Ln|Lg|Ng|Cg|Ce)\s", r["name"]):
+                    pools["fiend"].append({"name": r["name"], "book": r.get("book", b.get("book", "")),
+                                           "page": r.get("page"), "stat": f"CR {r.get('cr')}", "size": cr,
+                                           "system": "D&D 3.5e", "role": t})
+    pools["daemon"].sort(key=lambda r: (r["size"], r["name"]))
+    pools["fiend"].sort(key=lambda r: (r["size"], r["name"]))
+    return pools
+
+
+def cmd_populate(path: str, args) -> None:
+    state = load(path)
+    if state.get("denizens") and not args.force:
+        raise SystemExit("denizens already rolled -- pass --force to re-roll (a new roll, not a reroll of the same dice)")
+    pools = load_pools()
+    want = ["daemon", "fiend"] if args.pool == "both" else [args.pool]
+    band = state["band"]
+    cap = {"daemon": WOUND_CAP[band], "fiend": CR_CAP[band]}
+    eligible = {k: [r for r in pools[k] if r["size"] <= cap[k]] for k in want}
+    for k in want:
+        if not eligible[k]:
+            raise SystemExit(f"NO COVERAGE -- no {k} rows at or below band {band} in the engine index")
+    ledger: List[str] = [f"=== POPULATE -- {state['realm']} (band {band}; pools {', '.join(want)}: "
+                         + ", ".join(f"{k} {len(eligible[k])} rows" for k in want) + ") ==="]
+    arch = ARCH[state["archetype"]]
+    den: Dict[str, Any] = {}
+    for a in state["areas"]:
+        hz_text = arch["hazards"][a["hazard"]]
+        if OCCUPIED_WORDS.search(hz_text):
+            occupied = True
+            ledger.append(f"  A{a['n']}: occupied by its hazard line (no presence roll)")
+        else:
+            r = roll(6, f"A{a['n']} presence (4+ occupied)", ledger)
+            occupied = r >= 4
+        if not occupied:
+            den[str(a["n"])] = None
+            continue
+        pool_key = want[roll(len(want), f"A{a['n']} pool", ledger) - 1] if len(want) > 1 else want[0]
+        rows = eligible[pool_key]
+        pick = rows[roll(len(rows), f"A{a['n']} creature (1-{len(rows)} of the {pool_key} pool at band {band})", ledger) - 1]
+        count = roll(3 if band >= 3 else 6, f"A{a['n']} count", ledger)
+        den[str(a["n"])] = {"name": pick["name"], "system": pick["system"], "book": pick["book"],
+                            "page": pick["page"], "stat": pick["stat"], "count": count, "pool": pool_key}
+        ledger.append(f"    -> {count} x {pick['name']} ({pick['system']}; {pick['book']} p.{pick['page']}; {pick['stat']})")
+    state["denizens"] = den
+    state["denizen_ledger"] = ledger
+    save(path, state)
+    print("\n".join(ledger))
+    print(f"  Denizens written to {path}; stats live in the cited index rows (never restated here).")
+
+
+# ============================================================================
+# EXPORT-SECTORS -- the rolled areas in the shape the Malcador population
+# engine consumes (id, band, centre miles, groups, families), plus its atlas rows.
+# ============================================================================
+BAND_BY_HOP = {0: "fringe", 1: "fringe", 2: "basin", 3: "roads"}
+GROUPS_BY_BAND = {"fringe": 1, "basin": 2, "roads": 2, "marches": 4, "hunt": 3}
+DEFAULT_FAMILIES = ["bones", "buried", "hounds", "gargoyles"]
+
+
+def _hops(state: Dict[str, Any]) -> Dict[int, int]:
+    n = len(state["areas"])
+    adj: Dict[int, set] = {i: set() for i in range(1, n + 1)}
+    for a, b, t in state["edges"]:
+        if b and a != b:
+            adj[a].add(b)
+            adj[b].add(a)
+    hops = {1: 0}
+    frontier = [1]
+    while frontier:
+        nxt = []
+        for u in frontier:
+            for v in adj[u]:
+                if v not in hops:
+                    hops[v] = hops[u] + 1
+                    nxt.append(v)
+        frontier = nxt
+    for i in range(1, n + 1):
+        hops.setdefault(i, n)
+    return hops
+
+
+def export_sectors(state: Dict[str, Any], prefix: str, miles_per_step: float) -> Dict[str, Any]:
+    n = len(state["areas"])
+    pos = _positions(state["layout"], n, 1200, 820)
+    hops = _hops(state)
+    degree: Dict[int, int] = {i: 0 for i in range(1, n + 1)}
+    for a, b, t in state["edges"]:
+        if b and a != b:
+            degree[a] += 1
+            degree[b] += 1
+    families = state.get("index_snapshot", {}).get("population", {}).get("families") or DEFAULT_FAMILIES
+    x0 = pos[0][0]
+    sectors = []
+    for a, (px, py) in zip(state["areas"], pos):
+        i = a["n"]
+        if i != 1 and degree[i] == 1:
+            band = "hunt"
+        elif hops[i] >= 4:
+            band = "marches"
+        else:
+            band = BAND_BY_HOP[hops[i]]
+        exits = [f"A{b if x == i else x} via {t}" for x, b, t in state["edges"] if b and (x == i or b == i) and x != b]
+        sectors.append({
+            "id": f"{prefix}{i}", "band": band,
+            "x": round((px - x0) / 300.0 * 0.6, 2), "y": round(hops[i] * miles_per_step, 2),
+            "groups": GROUPS_BY_BAND[band], "families": list(families),
+            "kind": a["kind"], "dimensions": a["dimensions"], "hazard": a["hazard"],
+            "contradiction": CONTRADICTION[a["contradiction"]].split(":")[0] if CONTRADICTION[a["contradiction"]] else None,
+            "exits": exits, "hops_from_entry": hops[i],
+        })
+    return {"realm": state["realm"], "archetype": state["archetype"], "prefix": prefix,
+            "miles_per_step": miles_per_step, "origin": f"{prefix}1 at (0,0) miles; north = away from the entry",
+            "band_rule": "fringe: 0-1 hops from the entry; basin: 2; roads: 3; marches: 4+; hunt: any dead-end other than the entry",
+            "sectors": sectors, "label": "ROLLED; population to be rolled by the consuming engine"}
+
+
+def sectors_markdown(ex: Dict[str, Any]) -> str:
+    o = [f"## Rolled sectors -- {ex['realm']} ({ex['archetype']})", "",
+         f"*{ex['origin']}. Bands: {ex['band_rule']}. Every row is ROLLED; inhabitants are rolled by the population engine at entry.*", "",
+         "| Sector | Band | Center E,N miles | Inhabitants | Place to fight |", "|---|---|---|---|---|"]
+    for s_ in ex["sectors"]:
+        o.append(f"| {s_['id']} | {s_['band']} | {s_['x']}, {s_['y']} | {s_['groups']} group(s), families {', '.join(s_['families'])} (rolled at entry) | {s_['kind']}: {s_['dimensions']} |")
+    o.append("")
+    for s_ in ex["sectors"]:
+        o += [f"### {s_['id']} -- {s_['kind']}", "",
+              f"- **Terrain:** {s_['dimensions']}; hazard band {s_['hazard']}" + (f"; psychotecture: {s_['contradiction']}" if s_["contradiction"] else ""),
+              f"- **Sightlines:** {'open ground' if any(w in s_['kind'].lower() for w in ('plain','steppe','meadow','flat','strand','square','plaza')) else 'broken by the terrain named above'}",
+              f"- **Exit vectors:** {'; '.join(s_['exits']) or 'none rolled'}", ""]
+    return "\n".join(o) + "\n"
+
+
+def cmd_export_sectors(path: str, args) -> None:
+    state = load(path)
+    ex = export_sectors(state, args.prefix, args.miles_per_step)
+    out = Path(args.out)
+    out.write_text(json.dumps(ex, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    md = out.with_suffix(".md")
+    md.write_text(sectors_markdown(ex), encoding="utf-8")
+    print(f"  exported {len(ex['sectors'])} sectors to {out} and {md} "
+          f"(bands: {', '.join(s_['band'] for s_ in ex['sectors'])})")
 
 
 def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]:
@@ -704,10 +966,10 @@ def render_sheet(state: Dict[str, Any]) -> str:
          f"Threat band: {state['band']} (meaning per the siege package mechanical reference; NO COVERAGE here)  ",
          f"Entry: {state['entry'] or '(not stated)'}  ", "",
          f"> {PREP_NOTE}", "",
-         "## What the book says (SOURCE-VERIFIED)"]
+         f"## What the source says ({snap.get('facts_label', 'SOURCE-VERIFIED')})"]
     for f in snap["facts"]:
         o.append(f"- {f}")
-    o += ["", f"## Law of the place (INFERRED -- {mk['referent']})",
+    o += ["", f"## Law of the place ({mk.get('label', 'INFERRED')} -- {mk['referent']})",
           f"*{mk['citation']}*  ", "", mk["rule"], "",
           f"**Law roll {state['law']}:** {arch['law'][state['law']]}", "",
           "## Areas (ROLLED)", "",
@@ -738,6 +1000,16 @@ def render_sheet(state: Dict[str, Any]) -> str:
         if a.get("intrusion"):
             o.append(f"- **Off-folio intrusion:** {a['intrusion']} -- roll its folio separately; its law applies inside the splice.")
         o.append(f"- **Exits:** {'; '.join(exits[a['n']]) if exits[a['n']] else 'none rolled (the way in is the way out, if it is still there)'}")
+        o.append("")
+    if state.get("denizens"):
+        o += ["## Denizens (ROLLED from the engine bestiaries; stats in the cited index rows)", "",
+              "| Area | Count | Creature | System | Source | Stat |", "|---|---|---|---|---|---|"]
+        for a in state["areas"]:
+            d = state["denizens"].get(str(a["n"]))
+            if d:
+                o.append(f"| A{a['n']} | {d['count']} | {d['name']} | {d['system']} | {d['book']} p.{d['page']} | {d['stat']} |")
+            else:
+                o.append(f"| A{a['n']} | 0 | empty | | | |")
         o.append("")
     o += ["## Running it (skill rules)", "",
           "- Track the party's EXPECTED location and EXPERIENCED location as two lines; a contradiction seed is where they part.",
@@ -811,7 +1083,7 @@ def selftest() -> int:
     with tempfile.TemporaryDirectory() as td:
         for realm in mappable(index):
             p = os.path.join(td, "t.realm.state.json")
-            a = A(); a.realm = realm["name"]; a.areas = "d8"; a.band = 2; a.entry = "test"; a.force = True
+            a = A(); a.realm = realm["name"]; a.realm_file = None; a.areas = "d8"; a.band = 2; a.entry = "test"; a.force = True
             import io, contextlib
             buf = io.StringIO()
             with contextlib.redirect_stdout(buf):
@@ -846,13 +1118,46 @@ def selftest() -> int:
                     check(ar.get("intrusion") and ar["intrusion"] != realm["name"], f"{realm['name']}: intrusion missing/self")
         # conditions refuse
         cond = next(r for r in index["realms"] if not r.get("mappable"))
-        a = A(); a.realm = cond["name"]; a.areas = "d8"; a.band = 0; a.entry = ""; a.force = True
+        a = A(); a.realm = cond["name"]; a.realm_file = None; a.areas = "d8"; a.band = 0; a.entry = ""; a.force = True
         try:
             with contextlib.redirect_stdout(io.StringIO()):
                 cmd_new(os.path.join(td, "c.realm.state.json"), a)
             fails.append("condition was mapped")
         except SystemExit as e:
             check(e.code == 2, "condition refusal must exit 2")
+        # populate: both pools, every area either empty or a cited row
+        pools = load_pools()
+        check(len(pools["daemon"]) >= 30 and len(pools["fiend"]) >= 15, f"pools too small: {len(pools['daemon'])} daemon / {len(pools['fiend'])} fiend")
+        a = A(); a.pool = "both"; a.force = True
+        with contextlib.redirect_stdout(io.StringIO()):
+            cmd_populate(p, a)
+        st = load(p)
+        check(set(st["denizens"]) == {str(x["n"]) for x in st["areas"]}, "denizens not keyed by every area")
+        for d in st["denizens"].values():
+            if d:
+                check(d["book"] and d["stat"] and d["count"] >= 1, f"denizen row incomplete: {d}")
+        check("## Denizens" in render_sheet(st), "sheet lacks denizens section")
+        # export-sectors: bands, ids, JSON round trip
+        ex = export_sectors(st, "X", 0.6)
+        check(len(ex["sectors"]) == len(st["areas"]) and ex["sectors"][0]["band"] == "fringe", "export bands/entry")
+        check(all(s_["band"] in GROUPS_BY_BAND for s_ in ex["sectors"]), "export band vocabulary")
+        json.dumps(ex); sectors_markdown(ex)
+        # realm file: a campaign realm rolls without touching the index
+        rf = os.path.join(td, "campaign.realm.json")
+        with open(rf, "w", encoding="utf-8") as fh:
+            json.dump({"name": "Test shifting country", "archetype": "wilderness", "label": "CAMPAIGN-ORIGINAL",
+                       "facts": ["the country re-rolls between visits"], "facts_citation": "DECISION_LEDGER MD2-22",
+                       "attestations": ["DECISION_LEDGER MD2-22"],
+                       "law": {"referent": "neverness", "citation": "MD2-29", "rule": "no clock inside", "label": "CAMPAIGN-RULING"},
+                       "population": {"families": ["bones", "hounds"]}}, fh)
+        a = A(); a.realm = None; a.realm_file = rf; a.areas = "d6"; a.band = 1; a.entry = ""; a.force = True
+        pc = os.path.join(td, "c.realm.state.json")
+        with contextlib.redirect_stdout(io.StringIO()):
+            cmd_new(pc, a)
+        stc = load(pc)
+        check(stc["index_snapshot"]["facts_label"].startswith("CAMPAIGN-ORIGINAL"), "campaign label lost")
+        check("CAMPAIGN-RULING" in render_sheet(stc) and "MD2-22" in render_sheet(stc), "campaign sheet labels")
+        check(export_sectors(stc, "M", 0.5)["sectors"][0]["families"] == ["bones", "hounds"], "realm-file families not carried")
         # render command writes files
         a = A(); a.svg = None; a.sheet = None
         with contextlib.redirect_stdout(io.StringIO()):
@@ -870,7 +1175,8 @@ def main() -> None:
     p.add_argument("state", nargs="?", help="NAME.realm.state.json (throwaway; gitignored)")
     sub = p.add_subparsers(dest="cmd")
     n = sub.add_parser("new")
-    n.add_argument("--realm", required=True)
+    n.add_argument("--realm")
+    n.add_argument("--realm-file", help="campaign realm definition JSON (see CAMPAIGN REALMS)")
     n.add_argument("--areas", default="d8")
     n.add_argument("--band", type=int, default=2)
     n.add_argument("--entry", default="")
@@ -879,6 +1185,13 @@ def main() -> None:
     r.add_argument("--svg")
     r.add_argument("--sheet")
     sub.add_parser("show")
+    pp = sub.add_parser("populate")
+    pp.add_argument("--pool", choices=["daemon", "fiend", "both"], default="daemon")
+    pp.add_argument("--force", action="store_true")
+    ex = sub.add_parser("export-sectors")
+    ex.add_argument("--out", required=True)
+    ex.add_argument("--prefix", default="X")
+    ex.add_argument("--miles-per-step", type=float, default=0.6)
     p.add_argument("--list", action="store_true")
     p.add_argument("--four-throw", action="store_true")
     p.add_argument("--selftest", action="store_true")
@@ -891,7 +1204,8 @@ def main() -> None:
         return
     if not args.state or not args.cmd:
         p.error("state path and a command (new/render/show) are required")
-    {"new": cmd_new, "render": cmd_render, "show": cmd_show}[args.cmd](args.state, args)
+    {"new": cmd_new, "render": cmd_render, "show": cmd_show,
+     "populate": cmd_populate, "export-sectors": cmd_export_sectors}[args.cmd](args.state, args)
 
 
 if __name__ == "__main__":
