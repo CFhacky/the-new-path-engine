@@ -40,8 +40,12 @@ import zipfile
 from pathlib import Path
 from typing import List, Optional, Tuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from verse_address import is_verse_title  # deliberate shared logic: EPUB anchors must match address maps
+
 IMAGE = re.compile(r"^\s*!\[[^\]]*\]\([^)]*\)\s*$")
-PART = re.compile(r"^\s*\**PART [A-Z]+\**\s*$")
+PART = re.compile(r"^\s*\**(?:PART [A-Z]+|FRAGMENTS)\**\s*$")
+BARE_ROMAN = re.compile(r"^\s*\**([ivxl]{1,7})\**\s*$")
 VERSE = re.compile(r"^\s*\**(\d{1,2}):([ivxl]{1,7})\**\s*$", re.IGNORECASE)
 
 
@@ -117,34 +121,48 @@ def split_chapters(lines: List[str]) -> List[Tuple[str, List[str]]]:
 
 
 def to_xhtml(title: str, lines: List[str]) -> str:
+    """One source line is one paragraph (the Notion export carries no blank
+    lines). Verse headings become <h2 id="v-CH-VERSE">, a following title
+    line becomes <h3>, and every paragraph carries id="v-CH-VERSE-pN" so
+    an address such as "TEATD1 4:xviii ¶3" is a link target."""
     out = [f"<h1>{html.escape(title)}</h1>"]
-    para: List[str] = []
-
-    def flush() -> None:
-        if para:
-            out.append("<p>" + "<br/>".join(html.escape(p) for p in para) + "</p>")
-            para.clear()
-
+    anchor = None
+    pcount = 0
+    expect_title = False
+    fragments = title.strip().upper() == "FRAGMENTS"
     for line in lines:
         s = line.strip()
         if not s:
-            flush()
             continue
         m = VERSE.match(s)
         if m:
-            flush()
-            out.append(f"<h2>{m.group(1)}:{m.group(2).lower()}</h2>")
+            anchor = f"v-{m.group(1)}-{m.group(2).lower()}"
+            pcount = 0
+            expect_title = True
+            out.append(f"<h2 id='{anchor}'>{m.group(1)}:{m.group(2).lower()}</h2>")
             continue
+        if fragments and BARE_ROMAN.match(s):
+            anchor = f"v-F-{BARE_ROMAN.match(s).group(1).lower()}"
+            pcount = 0
+            expect_title = True
+            out.append(f"<h2 id='{anchor}'>F:{BARE_ROMAN.match(s).group(1).lower()}</h2>")
+            continue
+        if expect_title and is_verse_title(s):
+            out.append(f"<h3 class='verse-title'>{html.escape(s.strip('*'))}</h3>")
+            expect_title = False
+            continue
+        expect_title = False
         if s.startswith("**") and s.endswith("**") and len(s) > 4:
-            flush()
             out.append(f"<h3>{html.escape(s.strip('*'))}</h3>")
             continue
-        para.append(s.strip("*") if s.startswith("*") and s.endswith("*") else s)
-    flush()
+        text = s.strip("*") if s.startswith("*") and s.endswith("*") else s
+        pcount += 1
+        pid = f" id='{anchor}-p{pcount}'" if anchor else ""
+        out.append(f"<p{pid}>{html.escape(text)}</p>")
     return ("<?xml version='1.0' encoding='utf-8'?>\n"
             "<html xmlns='http://www.w3.org/1999/xhtml' xmlns:epub='http://www.idpf.org/2007/ops'>"
             f"<head><title>{html.escape(title)}</title>"
-            "<style>body{font-family:serif;line-height:1.45}h2{font-variant:small-caps}</style></head>"
+            "<style>body{font-family:serif;line-height:1.45}h2{font-variant:small-caps}h3.verse-title{font-style:italic;font-weight:normal}</style></head>"
             "<body>" + "\n".join(out) + "</body></html>\n")
 
 
@@ -232,8 +250,13 @@ def selftest() -> int:
             if names[0] != "mimetype" or z.getinfo("mimetype").compress_type != zipfile.ZIP_STORED:
                 fails.append("mimetype must be first and stored")
             ch = z.read("OEBPS/ch03.xhtml").decode("utf-8")
-            if "<h2>2:i</h2>" not in ch or "&amp; ampersand" not in ch:
+            if "<h2 id='v-2-i'>2:i</h2>" not in ch or "&amp; ampersand" not in ch:
                 fails.append("xhtml headings or escaping wrong")
+            if "<p id='v-2-i-p1'>Third verse" not in ch:
+                fails.append("paragraph anchor id missing")
+            ch2 = z.read("OEBPS/ch02.xhtml").decode("utf-8")
+            if "<p id='v-1-i-p1'>First verse prose.</p>" not in ch2 or "<p id='v-1-ii-p1'>Second verse prose.</p>" not in ch2:
+                fails.append("per-line paragraphs / anchors wrong")
             import xml.etree.ElementTree as ET
             for n in names:
                 if n.endswith((".xhtml", ".opf", ".xml")):

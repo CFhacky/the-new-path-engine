@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "description": "Event registry for the Siege of Terra canon table (the Eusebian layer). Each event lists every witness: a pinned address, the narrator and narration mode, the synchronism the verse itself states, and a short quote. Disagreements between witnesses are recorded, never harmonised. Validated and rendered by scripts/canon_table.py; never a source of campaign canon.",
+  "books": [
+    {"key": "TEATD1", "title": "The End and the Death Volume I", "author": "Dan Abnett", "series": "Siege of Terra", "map": "reference/addresses/teatd1.address.json"},
+    {"key": "TEATD2", "title": "The End and the Death Volume II", "author": "Dan Abnett", "series": "Siege of Terra", "map": "reference/addresses/teatd2.address.json"},
+    {"key": "TEATD3", "title": "The End and the Death Volume III", "author": "Dan Abnett", "series": "Siege of Terra", "map": "reference/addresses/teatd3.address.json"},
+    {"key": "SOT-SOLAR", "title": "The Solar War", "author": "John French", "series": "Siege of Terra", "map": null},
+    {"key": "SOT-LOST", "title": "The Lost and the Damned", "author": "Guy Haley", "series": "Siege of Terra", "map": null},
+    {"key": "SOT-WALL", "title": "The First Wall", "author": "Gav Thorpe", "series": "Siege of Terra", "map": null},
+    {"key": "SOT-SAT", "title": "Saturnine", "author": "Dan Abnett", "series": "Siege of Terra", "map": null},
+    {"key": "SOT-MORTIS", "title": "Mortis", "author": "John French", "series": "Siege of Terra", "map": null},
+    {"key": "SOT-WARHAWK", "title": "Warhawk", "author": "Chris Wraight", "series": "Siege of Terra", "map": null},
+    {"key": "SOT-ECHOES", "title": "Echoes of Eternity", "author": "Aaron Dembski-Bowden", "series": "Siege of Terra", "map": null}
+  ],
+  "narration_modes": {
+    "first": "first person; the narrator is in the scene and says I",
+    "second": "second person; the text addresses the viewpoint character as you (Abnett's Horus verses)",
+    "close-third": "third person limited, anchored to one character's senses",
+    "omniscient": "unanchored narration",
+    "hearsay": "the event is reported to the viewpoint character, not witnessed"
+  },
+  "events": [
+    {
+      "id": "EV-01", "slug": "magnus-banished", "class": "banishment",
+      "title": "Vulkan vanquishes Magnus and banishes him into the outer darkness",
+      "witnesses": [
+        {"address": "TEATD1 1:xxiii", "narrator": "Malcador", "mode": "first",
+         "synchronism": "told as already accomplished; Vulkan is still in the webway with the warp behind him",
+         "quote": "Vulkan has vanquished him and banished his deathless corpse into the outer darkness"}
+      ],
+      "disagreements": "Single witness; Malcador admits he does not know how many times Vulkan died doing it."
+    },
+    {
+      "id": "EV-02", "slug": "dorn-diverted", "class": "displacement",
+      "title": "Dorn's teleport is intercepted and diverted into the desert labyrinth",
+      "witnesses": [
+        {"address": "TEATD1 3:xix", "narrator": "Rogal Dorn", "mode": "close-third",
+         "synchronism": "Dorn experiences a century in the desert; the verse gives no external clock",
+         "quote": "his pattern was diverted"}
+      ],
+      "disagreements": "The subjective century is the only duration stated; do not convert it to siege days."
+    },
+    {
+      "id": "EV-03", "slug": "regno-kao-found", "class": "discovery",
+      "title": "Mauer finds the Regno Kao folio in the Hall of Leng",
+      "witnesses": [
+        {"address": "TEATD1 4:xviii", "narrator": "Kyril Sindermann, with Mauer", "mode": "close-third",
+         "synchronism": "none stated",
+         "quote": "Regno Kao"}
+      ],
+      "disagreements": "None."
+    },
+    {
+      "id": "EV-04", "slug": "emperor-within-chaos", "class": "incursion",
+      "title": "The Emperor goes deeper into the realm of Chaos than ever before",
+      "witnesses": [
+        {"address": "TEATD2 5:xi", "narrator": "Malcador", "mode": "first",
+         "synchronism": "none stated; Malcador on the Throne, without the lifeline of throne, beacon or path back",
+         "quote": "He has never come this close to it before."},
+        {"address": "TEATD2 5:xii", "narrator": "Horus Lupercal", "mode": "second",
+         "synchronism": "none stated; Horus wanders the Court blind and calls for a light",
+         "quote": "Your Inevitable City. Your realm."}
+      ],
+      "disagreements": "Malcador calls it the realm of Chaos where nothing retains the semblance of sense; Horus calls the same place his city and his realm. Both stand."
+    },
+    {
+      "id": "EV-05", "slug": "death-of-sanguinius", "class": "death",
+      "title": "The death of Sanguinius",
+      "witnesses": [
+        {"address": "TEATD2 8:xvii", "narrator": "Horus Lupercal", "mode": "second",
+         "synchronism": "none stated; Horus on his knees, eviscerated, then the eighth angle",
+         "quote": "You reach along the eighth angle of space and grab."},
+        {"address": "TEATD3 9:i", "narrator": "omniscient, over the Angel's body", "mode": "omniscient",
+         "synchronism": "afterwards",
+         "quote": "The Angel's eyes are open, afterwards."},
+        {"address": "TEATD3 9:ii", "narrator": "Rogal Dorn, told by a companion", "mode": "hearsay",
+         "synchronism": "reported to Dorn while he surveys the warp-state landscape",
+         "quote": "She tells him his brother is dead."}
+      ],
+      "disagreements": "Three modes, one death: perpetrator's second person, an unanchored view of the corpse, and hearsay. No witness gives a clock; the only relative marker is the word afterwards."
+    },
+    {
+      "id": "EV-06", "slug": "intersectional-realm-ravaged", "class": "devastation",
+      "title": "The Emperor's advance lays waste to the intersectional realm and reduces a swathe of the Inevitable City to dust",
+      "witnesses": [
+        {"address": "TEATD2 8:ii", "narrator": "Oll Persson", "mode": "close-third",
+         "synchronism": "Oll wakes in the aftermath; cold, everything bright",
+         "quote": "The divine light has ravaged the intersectional realm and left nothing standing for kilometres"},
+        {"address": "TEATD2 8:iii", "narrator": "Malcador", "mode": "first",
+         "synchronism": "none stated; Malcador on the Throne watching the ribbon of ash",
+         "quote": "A great swathe of the Inevitable City has been reduced to a City of Dust in his wake."}
+      ],
+      "disagreements": "Oll sees baked rubble and white ash from the ground; Malcador sees the same devastation as a charred ribbon through the city from above. Same event, two scales."
+    },
+    {
+      "id": "EV-07", "slug": "dark-king-refused", "class": "discharge",
+      "title": "The Emperor refuses the Dark King and the discharge rolls across the transmuted realm",
+      "witnesses": [
+        {"address": "TEATD2 8:xvi", "narrator": "omniscient", "mode": "omniscient",
+         "synchronism": "none stated; the glare spreads and begins to fade within the verse",
+         "quote": "thousands of square kilometres of the transmundane sprawl are further disintegrated to dust and ash"},
+        {"address": "TEATD3 9:ii", "narrator": "Rogal Dorn", "mode": "close-third",
+         "synchronism": "after the Dark King's shadow has gone; Dorn assesses the ground",
+         "quote": "It's Chaos' own realm"}
+      ],
+      "disagreements": "The omniscient verse measures the discharge in square kilometres; Dorn's verse gives only a tactical assessment of what is left."
+    },
+    {
+      "id": "EV-08", "slug": "primeval-city", "class": "arrival",
+      "title": "Loken's group reaches the primeval heart of the Inevitable City",
+      "witnesses": [
+        {"address": "TEATD3 9:v", "narrator": "Garviel Loken", "mode": "close-third",
+         "synchronism": "none stated; deeper into the city is deeper into its history",
+         "quote": "they are reaching the primeval heart of it"}
+      ],
+      "disagreements": "None."
+    },
+    {
+      "id": "EV-09", "slug": "oll-at-horus-feet", "class": "arrival",
+      "title": "Ollanius Persson's cut through reality lands him at Horus's feet",
+      "witnesses": [
+        {"address": "TEATD3 10:xii", "narrator": "Oll Persson", "mode": "close-third",
+         "synchronism": "none stated; Oll disorientated, soaked, on the deck",
+         "quote": "this is not the same part of the inevitable realm, or the same room. This is right at his feet."}
+      ],
+      "disagreements": "None."
+    },
+    {
+      "id": "EV-10", "slug": "death-of-horus", "class": "death",
+      "title": "The death of Horus Lupercal",
+      "witnesses": [
+        {"address": "TEATD3 10:xvii", "narrator": "Garviel Loken", "mode": "close-third",
+         "synchronism": "the stroke itself; then the light begins to die",
+         "quote": "The blade goes in."},
+        {"address": "TEATD3 10:xviii", "narrator": "omniscient", "mode": "omniscient",
+         "synchronism": "in the instant of his death the grip of Chaos is broken",
+         "quote": "Horus is dead, and in the instant of his death, the grip of Chaos incarnate is broken."},
+        {"address": "TEATD3 10:xviii", "narrator": "Amit, asking Sartak", "mode": "hearsay",
+         "synchronism": "none stated; the fighting continues elsewhere",
+         "quote": "'Horus is dead?' Amit asks."}
+      ],
+      "disagreements": "Loken sees a stone knife go in; the omniscient verse names the death and its cosmological consequence; Amit has only a question and 'let's hope'. The verse itself says the end is neither the end expected nor the death foretold."
+    },
+    {
+      "id": "EV-11", "slug": "realms-withdraw", "class": "withdrawal",
+      "title": "The Four withdraw and the coupled realms tear loose from Terra",
+      "witnesses": [
+        {"address": "TEATD3 10:xviii", "narrator": "omniscient", "mode": "omniscient",
+         "synchronism": "the Inevitable City slides back over a period of eight hours",
+         "quote": "over a period of eight hours, slides back into the midnight of the empyrean like some spectral parody of old Atlantis"}
+      ],
+      "disagreements": "Single witness, but the only hard duration in the sequence. Use it as the synchronism for everything that ends with the neverness."
+    }
+  ]
+}
