@@ -3,36 +3,36 @@
 <rect x='14' y='14' width='1172' height='792' fill='none' stroke='#2b2118' stroke-width='2'/>
 <text x='40' y='52' font-size='26' font-weight='bold'>REGNO KAO -- folio: Long Woe</text>
 <text x='40' y='76' font-size='13'>wilderness / Named realm of fever-meadows, twilit glades and painforests / attested Vol. III 9:xxi, Vol. III 10:xviii / band 2</text>
-<text x='40' y='96' font-size='13' fill='#1d3d5c'>LAW (INFERRED, The Wood of Suicides; the garden that rots): The vegetation is sentient and suffering. Cut it and it speaks; sleep in it and the fever is yours. Steam rising means the realm is ending, and it ends downhill.</text>
-<text x='40' y='114' font-size='12'>LAW ROLL 4: Four intervals.</text>
-<line x1='649' y1='430' x2='527' y2='496'   stroke='#8b1a1a' stroke-width='3'/>
-<text x='588' y='457' font-size='11' text-anchor='middle' fill='#1d3d5c'>splice</text>
-<line x1='527' y1='496' x2='613' y2='283' stroke='#2b2118' stroke-width='2' stroke-dasharray='14 4 2 4'/>
-<text x='570' y='384' font-size='11' text-anchor='middle' fill='#1d3d5c'>oblique</text>
-<line x1='613' y1='283' x2='720' y2='586' stroke='#2b2118' stroke-width='2' stroke-dasharray='8 6'/>
-<text x='666' y='429' font-size='11' text-anchor='middle' fill='#1d3d5c'>angle</text>
-<line x1='720' y1='586' x2='358' y2='387' stroke='#2b2118' stroke-width='2' stroke-dasharray='14 4 2 4'/>
-<text x='539' y='481' font-size='11' text-anchor='middle' fill='#1d3d5c'>oblique</text>
-<rect x='587' y='402' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='2.5'/>
-<text x='649' y='422' font-size='13' font-weight='bold' text-anchor='middle'>A1</text>
-<text x='649' y='439' font-size='11' text-anchor='middle'>Fen</text>
-<text x='649' y='452' font-size='10' text-anchor='middle'>hz 3 / contradiction 5</text>
-<rect x='465' y='468' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='2.5'/>
-<text x='527' y='488' font-size='13' font-weight='bold' text-anchor='middle'>A2</text>
-<text x='527' y='505' font-size='11' text-anchor='middle'>Fen</text>
-<text x='527' y='518' font-size='10' text-anchor='middle'>hz 3</text>
-<rect x='551' y='255' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='2.0'/>
-<text x='613' y='275' font-size='13' font-weight='bold' text-anchor='middle'>A3</text>
-<text x='613' y='292' font-size='11' text-anchor='middle'>Forest</text>
-<text x='613' y='305' font-size='10' text-anchor='middle'>hz 2</text>
-<rect x='658' y='558' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='1.5'/>
-<text x='720' y='578' font-size='13' font-weight='bold' text-anchor='middle'>A4</text>
-<text x='720' y='595' font-size='11' text-anchor='middle'>Folded shelf</text>
-<text x='720' y='608' font-size='10' text-anchor='middle'>hz 1 / contradiction 7</text>
-<rect x='296' y='359' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='1.5'/>
-<text x='358' y='379' font-size='13' font-weight='bold' text-anchor='middle'>A5</text>
-<text x='358' y='396' font-size='11' text-anchor='middle'>Forest</text>
-<text x='358' y='409' font-size='10' text-anchor='middle'>hz 1 / contradiction 5</text>
+<text x='40' y='96' font-size='13' fill='#1d3d5c'>LAW (INFERRED, The Wood of Suicides; the garden that rots): The vegetation is sentient and suffering. Cut it and it speaks; sleep in it and the fever</text><text x='40' y='112' font-size='13' fill='#1d3d5c'>is yours. Steam rising means the realm is ending, and it ends downhill.</text>
+<text x='40' y='130' font-size='12'>LAW ROLL 4: Four intervals.</text>
+<line x1='695' y1='430' x2='484' y2='536'   stroke='#8b1a1a' stroke-width='3'/>
+<text x='590' y='477' font-size='11' text-anchor='middle' fill='#1d3d5c' paint-order='stroke' stroke='#f1e7cf' stroke-width='5' stroke-linejoin='round'>splice</text>
+<line x1='484' y1='536' x2='619' y2='212' stroke='#2b2118' stroke-width='2' stroke-dasharray='14 4 2 4'/>
+<text x='552' y='368' font-size='11' text-anchor='middle' fill='#1d3d5c' paint-order='stroke' stroke='#f1e7cf' stroke-width='5' stroke-linejoin='round'>oblique</text>
+<line x1='619' y1='212' x2='771' y2='653' stroke='#2b2118' stroke-width='2' stroke-dasharray='8 6'/>
+<text x='695' y='426' font-size='11' text-anchor='middle' fill='#1d3d5c' paint-order='stroke' stroke='#f1e7cf' stroke-width='5' stroke-linejoin='round'>angle</text>
+<line x1='771' y1='653' x2='275' y2='373' stroke='#2b2118' stroke-width='2' stroke-dasharray='14 4 2 4'/>
+<text x='523' y='507' font-size='11' text-anchor='middle' fill='#1d3d5c' paint-order='stroke' stroke='#f1e7cf' stroke-width='5' stroke-linejoin='round'>oblique</text>
+<rect x='633' y='402' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='2.5'/>
+<text x='695' y='422' font-size='13' font-weight='bold' text-anchor='middle'>A1</text>
+<text x='695' y='439' font-size='11' text-anchor='middle'>Fen</text>
+<text x='695' y='452' font-size='10' text-anchor='middle'>hz 3 / contradiction 5</text>
+<rect x='422' y='508' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='2.5'/>
+<text x='484' y='528' font-size='13' font-weight='bold' text-anchor='middle'>A2</text>
+<text x='484' y='545' font-size='11' text-anchor='middle'>Fen</text>
+<text x='484' y='558' font-size='10' text-anchor='middle'>hz 3</text>
+<rect x='557' y='184' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='2.0'/>
+<text x='619' y='204' font-size='13' font-weight='bold' text-anchor='middle'>A3</text>
+<text x='619' y='221' font-size='11' text-anchor='middle'>Forest</text>
+<text x='619' y='234' font-size='10' text-anchor='middle'>hz 2</text>
+<rect x='709' y='625' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='1.5'/>
+<text x='771' y='645' font-size='13' font-weight='bold' text-anchor='middle'>A4</text>
+<text x='771' y='662' font-size='11' text-anchor='middle'>Folded shelf</text>
+<text x='771' y='675' font-size='10' text-anchor='middle'>hz 1 / contradiction 7</text>
+<rect x='213' y='345' width='124' height='56' rx='6' fill='#f1e7cf' stroke='#2b2118' stroke-width='1.5'/>
+<text x='275' y='365' font-size='13' font-weight='bold' text-anchor='middle'>A5</text>
+<text x='275' y='382' font-size='11' text-anchor='middle'>Forest</text>
+<text x='275' y='395' font-size='10' text-anchor='middle'>hz 1 / contradiction 5</text>
 <text x='40' y='760' font-size='11'>Edges: solid intersection (thick) / dashed angle / dotted conjunction / dash-dot oblique / red splice / loop recursion. Box weight = hazard band; red box = hazard 4+.</text>
 <text x='40' y='778' font-size='11'>Labels: facts SOURCE-VERIFIED (index); law INFERRED (myth key); every area, exit and hazard ROLLED. Archetype tables: APPROVED PREPARATION (realm_map.py), pending ratification; not source, not canon.</text>
 <text x='40' y='796' font-size='11'>Ledger: d8 = 5  [area count (d8)] | d6 = 4  [law roll (the myth rule&#x27;s parameter)] | d12 = 4  [A1 area kind] | d6 = 3  [A1 hazard band] | d8 = 5  [A1 psychotecture contradiction] | d12 = 4  [A2 area kind] ...</text>

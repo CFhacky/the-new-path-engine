@@ -561,7 +561,7 @@ def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]
     cx, cy = w / 2, h / 2 + 20
     pos: List[Tuple[float, float]] = []
     if layout in ("ring", "star"):
-        r = min(w, h) * 0.33
+        r = min(w, h) * 0.30
         if layout == "star":
             pos.append((cx, cy))
             for i in range(1, n):
@@ -572,10 +572,16 @@ def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]
                 a = -math.pi / 2 + 2 * math.pi * i / n
                 pos.append((cx + r * math.cos(a), cy + r * math.sin(a)))
     elif layout in ("chain", "coast"):
-        left, right = 110, w - 110
+        per_row = 4
+        rows = max(1, math.ceil(n / per_row))
+        left, right = 130, w - 130
+        top = cy - 90 * (rows - 1) / 2
         for i in range(n):
-            x = left + (right - left) * i / max(1, n - 1)
-            y = cy + (60 * math.sin(i * 1.3) if layout == "coast" else 0)
+            r, c = divmod(i, per_row)
+            if r % 2:
+                c = per_row - 1 - c
+            x = left + (right - left) * c / (per_row - 1)
+            y = top + r * 180 + (45 * math.sin(i * 1.3) if layout == "coast" else 0)
             pos.append((x, y))
     elif layout == "concentric":
         for i in range(n):
@@ -589,7 +595,7 @@ def _positions(layout: str, n: int, w: int, h: int) -> List[Tuple[float, float]]
             pos.append((x, y))
     elif layout == "scatter":
         for i in range(n):
-            r = min(w, h) * 0.06 * (i + 1)
+            r = min(95 + 62 * i, 330)
             a = i * 2.399963  # golden angle; deterministic spiral
             pos.append((cx + r * math.cos(a), cy + r * math.sin(a)))
     else:  # stacks
@@ -606,6 +612,23 @@ def render_svg(state: Dict[str, Any]) -> str:
     pos = _positions(state["layout"], n, w, h)
     mk = state["index_snapshot"]["myth_key"]
     ink, paper, red, blue = "#2b2118", "#f1e7cf", "#8b1a1a", "#1d3d5c"
+    halo = f"paint-order='stroke' stroke='{paper}' stroke-width='5' stroke-linejoin='round'"
+
+    def wrap(text: str, width: int) -> List[str]:
+        words, lines, cur = text.split(), [], ""
+        for wd in words:
+            if len(cur) + len(wd) + 1 > width and cur:
+                lines.append(cur)
+                cur = wd
+            else:
+                cur = (cur + " " + wd).strip()
+        if cur:
+            lines.append(cur)
+        return lines
+
+    law_lines = wrap(f"LAW (INFERRED, {mk['referent']}): {mk['rule']}", 150)
+    law_svg = "".join(f"<text x='40' y='{96 + 16 * i}' font-size='13' fill='{blue}'>{escape(l)}</text>" for i, l in enumerate(law_lines))
+    law_y = 96 + 16 * len(law_lines)
     out = [f"<svg xmlns='http://www.w3.org/2000/svg' width='{w}' height='{h}' viewBox='0 0 {w} {h}' "
            f"font-family='Georgia, serif' fill='{ink}'>",
            f"<rect width='{w}' height='{h}' fill='{paper}'/>",
@@ -613,8 +636,8 @@ def render_svg(state: Dict[str, Any]) -> str:
            f"<text x='40' y='52' font-size='26' font-weight='bold'>REGNO KAO -- folio: {escape(state['realm'])}</text>",
            f"<text x='40' y='76' font-size='13'>{escape(state['archetype'])} / {escape(state['index_snapshot']['classification'])}"
            f" / attested {escape(', '.join(state['index_snapshot']['attestations']))} / band {state['band']}</text>",
-           f"<text x='40' y='96' font-size='13' fill='{blue}'>LAW (INFERRED, {escape(mk['referent'])}): {escape(mk['rule'])}</text>",
-           f"<text x='40' y='114' font-size='12'>LAW ROLL {state['law']}: {escape(ARCH[state['archetype']]['law'][state['law']])}</text>"]
+           law_svg,
+           f"<text x='40' y='{law_y + 2}' font-size='12'>LAW ROLL {state['law']}: {escape(ARCH[state['archetype']]['law'][state['law']])}</text>"]
     if state["layout"] == "coast":
         out.append(f"<path d='M 0 {h / 2 + 140} Q {w / 4} {h / 2 + 90} {w / 2} {h / 2 + 140} T {w} {h / 2 + 140} L {w} {h} L 0 {h} Z' fill='{blue}' opacity='0.12'/>")
         out.append(f"<text x='{w - 200}' y='{h - 60}' font-size='14' fill='{blue}'>the sea / the far dark</text>")
@@ -625,7 +648,7 @@ def render_svg(state: Dict[str, Any]) -> str:
         x1, y1 = pos[a - 1]
         if t == "recursion":
             out.append(f"<path d='M {x1 + 60} {y1 - 10} C {x1 + 120} {y1 - 70}, {x1 + 120} {y1 + 50}, {x1 + 60} {y1 + 10}' fill='none' stroke='{blue}' stroke-width='2'/>")
-            out.append(f"<text x='{x1 + 96}' y='{y1 - 40}' font-size='11' fill='{blue}'>recursion</text>")
+            out.append(f"<text x='{x1 + 96:.0f}' y='{y1 - 40:.0f}' font-size='11' fill='{blue}' {halo}>recursion</text>")
             continue
         if b == 0:
             out.append(f"<line x1='{x1:.0f}' y1='{y1 + 28:.0f}' x2='{x1:.0f}' y2='{y1 + 70:.0f}' {styles['closed']}/>")
@@ -637,7 +660,7 @@ def render_svg(state: Dict[str, Any]) -> str:
         width = "" if "stroke-width" in st else "stroke-width='2'"
         out.append(f"<line x1='{x1:.0f}' y1='{y1:.0f}' x2='{x2:.0f}' y2='{y2:.0f}' {stroke} {width} {st}/>")
         mx, my = (x1 + x2) / 2, (y1 + y2) / 2
-        out.append(f"<text x='{mx:.0f}' y='{my - 6:.0f}' font-size='11' text-anchor='middle' fill='{blue}'>{t}</text>")
+        out.append(f"<text x='{mx:.0f}' y='{my - 6:.0f}' font-size='11' text-anchor='middle' fill='{blue}' {halo}>{t}</text>")
     for area, (x, y) in zip(state["areas"], pos):
         hz = area["hazard"]
         cz = area["contradiction"]
@@ -648,7 +671,7 @@ def render_svg(state: Dict[str, Any]) -> str:
         out.append(f"<text x='{x:.0f}' y='{y + 9:.0f}' font-size='11' text-anchor='middle'>{escape(kind)}</text>")
         out.append(f"<text x='{x:.0f}' y='{y + 22:.0f}' font-size='10' text-anchor='middle'>hz {hz}{' / contradiction ' + str(cz) if cz >= 4 else ''}</text>")
         if area.get("intrusion"):
-            out.append(f"<text x='{x:.0f}' y='{y + 42:.0f}' font-size='10' text-anchor='middle' fill='{red}'>splice: {escape(area['intrusion'][:28])}</text>")
+            out.append(f"<text x='{x:.0f}' y='{y + 42:.0f}' font-size='10' text-anchor='middle' fill='{red}' {halo}>splice: {escape(area['intrusion'][:28])}</text>")
     out.append(f"<text x='40' y='{h - 60}' font-size='11'>Edges: solid intersection (thick) / dashed angle / dotted conjunction / dash-dot oblique / red splice / loop recursion. "
                f"Box weight = hazard band; red box = hazard 4+.</text>")
     out.append(f"<text x='40' y='{h - 42}' font-size='11'>Labels: facts SOURCE-VERIFIED (index); law INFERRED (myth key); every area, exit and hazard ROLLED. {escape(PREP_NOTE)}</text>")
