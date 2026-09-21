@@ -643,10 +643,11 @@ def render_svg(state: Dict[str, Any]) -> str:
         out.append(f"<text x='{w - 200}' y='{h - 60}' font-size='14' fill='{blue}'>the sea / the far dark</text>")
     styles = {"angle": "stroke-dasharray='8 6'", "intersection": "stroke-width='4'",
               "conjunction": "stroke-dasharray='2 5'", "oblique": "stroke-dasharray='14 4 2 4'",
-              "splice": f"stroke='{red}' stroke-width='3'", "recursion": "", "closed": f"stroke='{red}' stroke-dasharray='3 3'"}
+              "splice": f"stroke='{red}' stroke-width='3'", "recursion": f"stroke='{blue}' stroke-width='2' stroke-dasharray='1 3'",
+              "closed": f"stroke='{red}' stroke-dasharray='3 3'"}
     for a, b, t in state["edges"]:
         x1, y1 = pos[a - 1]
-        if t == "recursion":
+        if t == "recursion" and a == b:
             out.append(f"<path d='M {x1 + 60} {y1 - 10} C {x1 + 120} {y1 - 70}, {x1 + 120} {y1 + 50}, {x1 + 60} {y1 + 10}' fill='none' stroke='{blue}' stroke-width='2'/>")
             out.append(f"<text x='{x1 + 96:.0f}' y='{y1 - 40:.0f}' font-size='11' fill='{blue}' {halo}>recursion</text>")
             continue
@@ -672,7 +673,7 @@ def render_svg(state: Dict[str, Any]) -> str:
         out.append(f"<text x='{x:.0f}' y='{y + 22:.0f}' font-size='10' text-anchor='middle'>hz {hz}{' / contradiction ' + str(cz) if cz >= 4 else ''}</text>")
         if area.get("intrusion"):
             out.append(f"<text x='{x:.0f}' y='{y + 42:.0f}' font-size='10' text-anchor='middle' fill='{red}' {halo}>splice: {escape(area['intrusion'][:28])}</text>")
-    out.append(f"<text x='40' y='{h - 60}' font-size='11'>Edges: solid intersection (thick) / dashed angle / dotted conjunction / dash-dot oblique / red splice / loop recursion. "
+    out.append(f"<text x='40' y='{h - 60}' font-size='11'>Edges: solid intersection (thick) / dashed angle / dotted conjunction / dash-dot oblique / red splice / blue fine-dot recursion (loop = the area contains the realm). "
                f"Box weight = hazard band; red box = hazard 4+.</text>")
     out.append(f"<text x='40' y='{h - 42}' font-size='11'>Labels: facts SOURCE-VERIFIED (index); law INFERRED (myth key); every area, exit and hazard ROLLED. {escape(PREP_NOTE)}</text>")
     out.append(f"<text x='40' y='{h - 24}' font-size='11'>Ledger: {escape(' | '.join(l.strip() for l in state['ledger'][2:8]))} ...</text>")
@@ -706,8 +707,11 @@ def render_sheet(state: Dict[str, Any]) -> str:
     for a, b, t in state["edges"]:
         if b == 0:
             exits[a].append("a spur that has closed behind (no exit)")
-        elif t == "recursion":
+        elif t == "recursion" and a == b:
             exits[a].append(f"recursion: this area contains {state['realm']} again")
+        elif t == "recursion":
+            exits[a].append(f"A{b} via recursion (A{b} is also the whole of {state['realm']} again)")
+            exits[b].append(f"A{a} via recursion (the way back is inside A{a})")
         else:
             exits[a].append(f"A{b} via {t}")
             exits[b].append(f"A{a} via {t}")
@@ -812,6 +816,10 @@ def selftest() -> int:
                 fails.append(f"{realm['name']}: SVG not well-formed: {e}")
             check(f"A{len(st['areas'])} --" in sheet1 and "SOURCE-VERIFIED" in sheet1 and "INFERRED" in sheet1 and "ROLLED" in sheet1,
                   f"{realm['name']}: sheet labels")
+            for ea, eb, et in st["edges"]:
+                if et == "recursion" and ea != eb:
+                    check(f"A{eb} via recursion" in sheet1 and f"A{ea} via recursion" in sheet1,
+                          f"{realm['name']}: recursion edge A{ea}-A{eb} dropped from exits")
             sl = SLOTS.get(realm["archetype"])
             if sl:
                 check(len(st["areas"]) >= sl["min"], f"{realm['name']}: below slot minimum")

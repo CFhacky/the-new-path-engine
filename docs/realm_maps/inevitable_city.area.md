@@ -40,13 +40,13 @@ Every district is a stolen city. Go deeper and you go older. Two adjacent street
 - **Dimensions:** 15 yd arch, 20 yd deep passage
 - **Hazard band 6:** Parasite architecture: the city bores through what you brought with you (gear, a vehicle, a wall you were holding).
 - **Psychotecture:** MISSING EXIT: one rolled exit is absent when reached; it returns when nobody expects it to.
-- **Exits:** recursion: this area contains The Inevitable City again; A6 via conjunction
+- **Exits:** A2 via recursion (A2 is also the whole of The Inevitable City again); A6 via conjunction
 
 ### A2 -- Alley of a stolen city
 
 - **Dimensions:** 4 yd wide, 60 yd long, walls 3 storeys
 - **Hazard band 1:** Quiet. The city watches; nothing acts this interval.
-- **Exits:** A3 via angle
+- **Exits:** A1 via recursion (the way back is inside A1); A3 via angle
 
 ### A3 -- Cobbled street
 
@@ -68,13 +68,13 @@ Every district is a stolen city. Go deeper and you go older. Two adjacent street
 - **Hazard band 6:** Parasite architecture: the city bores through what you brought with you (gear, a vehicle, a wall you were holding).
 - **Psychotecture:** OFF-FOLIO INTRUSION: a memory of another realm is spliced into this area (rolled below); its law applies inside the splice.
 - **Off-folio intrusion:** The Marcher Fortress and the Marches -- roll its folio separately; its law applies inside the splice.
-- **Exits:** A4 via oblique; recursion: this area contains The Inevitable City again; A3 via angle
+- **Exits:** A4 via oblique; A6 via recursion (A6 is also the whole of The Inevitable City again); A3 via angle
 
 ### A6 -- Primeval stratum
 
 - **Dimensions:** grey-diorite hall 80 x 40 yd, columns 12 yd, no human doors
 - **Hazard band 3:** Intrusion: a smouldering battlefield from another place is folded into this street (fire, smoke, unexploded ordnance).
-- **Exits:** A1 via conjunction
+- **Exits:** A5 via recursion (the way back is inside A5); A1 via conjunction
 
 ## Running it (skill rules)
 
