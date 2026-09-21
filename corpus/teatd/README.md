@@ -18,7 +18,33 @@ Expected files and their pinned editions:
 
 Plus `The End and the Death Volume I.epub`, `… Volume II.epub`, `… Volume III.epub`.
 
-To place them: copy the six files sent in the build chat into this folder, then
+## Rebuilding this folder from Notion (no manual file handling)
+
+Any Claude Code session with the Notion connector can rebuild all six files
+without a human moving anything. The three volumes are pages in the Horus
+Heresy Source Library:
+
+| Volume | Notion page id |
+|---|---|
+| I | `1f5e8214-84b0-810f-a31e-e15021ec89fc` |
+| II | `1f5e8214-84b0-81c2-8d41-f86a2329b9dc` |
+| III | `1f5e8214-84b0-81c0-b251-fe878a37aee3` |
+
+Procedure (what the 2026-09-21 build did):
+
+1. Fetch each page with the Notion `fetch` tool. The harness saves the raw
+   result to disk (the tool result file); locate it under the session's
+   tool-results folder and copy it to a scratch path as `volN.txt`.
+2. `python scripts/notion_novel_bind.py volN.txt --md corpus/teatd/volN.md --epub "corpus/teatd/The End and the Death Volume <I|II|III>.epub"`
+3. Check the markdown hashes against the table above. A match means the
+   address maps under `reference/addresses/` are valid as committed; a
+   mismatch means Notion's export changed and the maps must be rebuilt
+   with `scripts/verse_address.py`.
+4. `python scripts/teatd_realm_harvest.py` and `python scripts/canon_table.py --check`, then commit.
+
+## Placing them by hand instead
+
+Copy the six files sent in the build chat into this folder, then
 
 ```
 sha256sum corpus/teatd/vol1.md corpus/teatd/vol2.md corpus/teatd/vol3.md
