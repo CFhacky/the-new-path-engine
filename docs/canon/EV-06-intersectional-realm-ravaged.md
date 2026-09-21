@@ -5,8 +5,8 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD2 8:ii | A Dark-crown’d King | Oll Persson | close-third | Oll wakes in the aftermath; cold, everything bright | "The divine light has ravaged the intersectional realm and left nothing standing for kilometres" | address-resolved; quote unchecked (no corpus) |
-| TEATD2 8:iii | A warning ignored | Malcador | first | none stated; Malcador on the Throne watching the ribbon of ash | "A great swathe of the Inevitable City has been reduced to a City of Dust in his wake." | address-resolved; quote unchecked (no corpus) |
+| TEATD2 8:ii | A Dark-crown’d King | Oll Persson | close-third | Oll wakes in the aftermath; cold, everything bright | "The divine light has ravaged the intersectional realm and left nothing standing for kilometres" | corpus-exact |
+| TEATD2 8:iii | A warning ignored | Malcador | first | none stated; Malcador on the Throne watching the ribbon of ash | "A great swathe of the Inevitable City has been reduced to a City of Dust in his wake." | corpus-exact |
 
 ## Disagreements (kept, not harmonised)
 

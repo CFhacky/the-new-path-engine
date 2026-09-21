@@ -5,7 +5,7 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD3 10:xii | The Guardsman | Oll Persson | close-third | none stated; Oll disorientated, soaked, on the deck | "this is not the same part of the inevitable realm, or the same room. This is right at his feet." | address-resolved; quote unchecked (no corpus) |
+| TEATD3 10:xii | The Guardsman | Oll Persson | close-third | none stated; Oll disorientated, soaked, on the deck | "this is not the same part of the inevitable realm, or the same room. This is right at his feet." | corpus-exact |
 
 ## Disagreements (kept, not harmonised)
 

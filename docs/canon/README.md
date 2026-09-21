@@ -34,4 +34,4 @@ Rows are events; columns are books. A cell holds every address in that book that
 
 ## Verification
 
-- address-resolved; quote unchecked (no corpus): 18
+- corpus-exact: 18

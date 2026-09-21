@@ -5,8 +5,8 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD2 5:xi | That which passeth all understanding | Malcador | first | none stated; Malcador on the Throne, without the lifeline of throne, beacon or path back | "He has never come this close to it before." | address-resolved; quote unchecked (no corpus) |
-| TEATD2 5:xii | Upon the face of Terra | Horus Lupercal | second | none stated; Horus wanders the Court blind and calls for a light | "Your Inevitable City. Your realm." | address-resolved; quote unchecked (no corpus) |
+| TEATD2 5:xi | That which passeth all understanding | Malcador | first | none stated; Malcador on the Throne, without the lifeline of throne, beacon or path back | "He has never come this close to it before." | corpus-exact |
+| TEATD2 5:xii | Upon the face of Terra | Horus Lupercal | second | none stated; Horus wanders the Court blind and calls for a light | "Your Inevitable City. Your realm." | corpus-exact |
 
 ## Disagreements (kept, not harmonised)
 

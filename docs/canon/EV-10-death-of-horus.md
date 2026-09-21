@@ -5,9 +5,9 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD3 10:xvii | The stroke | Garviel Loken | close-third | the stroke itself; then the light begins to die | "The blade goes in." | address-resolved; quote unchecked (no corpus) |
-| TEATD3 10:xviii | Kairos and chronos | omniscient | omniscient | in the instant of his death the grip of Chaos is broken | "Horus is dead, and in the instant of his death, the grip of Chaos incarnate is broken." | address-resolved; quote unchecked (no corpus) |
-| TEATD3 10:xviii | Kairos and chronos | Amit, asking Sartak | hearsay | none stated; the fighting continues elsewhere | "'Horus is dead?' Amit asks." | address-resolved; quote unchecked (no corpus) |
+| TEATD3 10:xvii | The stroke | Garviel Loken | close-third | the stroke itself; then the light begins to die | "The blade goes in." | corpus-exact |
+| TEATD3 10:xviii | Kairos and chronos | omniscient | omniscient | in the instant of his death the grip of Chaos is broken | "Horus is dead, and in the instant of his death, the grip of Chaos incarnate is broken." | corpus-exact |
+| TEATD3 10:xviii | Kairos and chronos | Amit, asking Sartak | hearsay | none stated; the fighting continues elsewhere | "'Horus is dead?' Amit asks." | corpus-exact |
 
 ## Disagreements (kept, not harmonised)
 

@@ -5,7 +5,7 @@
 
 | Address | Unit title | Narrator | Mode | Synchronism (as the verse states it) | Quote | Verification |
 |---|---|---|---|---|---|---|
-| TEATD1 4:xviii | A Realm of Chaos | Kyril Sindermann, with Mauer | close-third | none stated | "Regno Kao" | address-resolved; quote unchecked (no corpus) |
+| TEATD1 4:xviii | A Realm of Chaos | Kyril Sindermann, with Mauer | close-third | none stated | "Regno Kao" | corpus-exact |
 
 ## Disagreements (kept, not harmonised)
 
