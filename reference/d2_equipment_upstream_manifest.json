@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1",
+  "purpose": "Pinned upstream provenance for the New Path D2-derived equipment engine. Source mechanics are reimplemented; upstream GPL source is not vendored here.",
+  "upstream": {
+    "repository": "WalterCouto/D2CE",
+    "license": "GPL-3.0-or-later",
+    "commit": "c246509f385790462979004aeeaf7a47696ed605",
+    "tree": "f6ae482e04c8d525a8e10c7b4831a59ff86bacd7",
+    "verified_tree_complete": true
+  },
+  "files": [
+    {"path":"source/d2ce/Item.cpp","blob":"5845d6e9b57e1ef86d09ba662b25e7e9089afe15","role":"item serialization, quality, durability, sockets, requirements, set/runeword/property behavior"},
+    {"path":"source/d2ce/Item.h","blob":"59a37cb599fe8281ab0b24763fa1db38739b032d","role":"item object API, canEquip, defense, durability, set attributes, sockets, runewords"},
+    {"path":"source/d2ce/ItemConstants.h","blob":"4746d97aa61099a575095bdf0b6a89a27deec880","role":"item quality and equipped-slot enums"},
+    {"path":"source/d2ce/Character.cpp","blob":"70bd8b3b516b5a298a17fac7878c90ec0f1c6604","role":"equipped-item aggregation and character item state"},
+    {"path":"source/d2ce/Character.h","blob":"7546b80a3e159047b08fcfd693951f10bc42a3f2","role":"character equipment API"},
+    {"path":"source/D2ItemsForm.cpp","blob":"b823d475beba4d1751912c48a19ce330072fda24","role":"paperdoll interaction, sockets, equipped-item UI state"},
+    {"path":"source/res/TXT/global/excel/bodylocs.txt","blob":"1ce955cb66ca4011c63fa1630ad5a1e2b391b21f","role":"body-location vocabulary"},
+    {"path":"source/res/TXT/global/excel/armor.txt","blob":"cdb34e89242507dbae73e04dd5b4206259d5c1cd","role":"armor base records: defense, requirements, durability, sockets, tiers and appearance components"},
+    {"path":"source/res/TXT/global/excel/weapons.txt","blob":"1b88eab3b722a3d4026df035077a924eb1a4ade7","role":"weapon base records: damage, requirements, durability, sockets, tiers and weapon classes"},
+    {"path":"source/res/TXT/global/excel/setitems.txt","blob":"354cd75c6d9d6b951d7b6c49f758c93b387455b1","role":"set-piece base properties and per-piece partial-set bonuses"},
+    {"path":"source/res/TXT/global/excel/sets.txt","blob":"3ed3d222dddcd1645ebc5f861fd40208418ad1d9","role":"set-wide partial and full set bonuses"},
+    {"path":"source/res/TXT/global/excel/properties.txt","blob":"d05748d33638a4e24651de73e8809d4989a6bafb","role":"property-code to stat/effect mapping"},
+    {"path":"source/res/TXT/global/excel/runes.txt","blob":"32e227e0591fd903c7c4af19970a0e7d2bbaaad2","role":"runeword eligibility, ordered rune recipes and granted properties"},
+    {"path":"d2s_File_Format.md","blob":"507b6566dd620a18b5bde7c084398c34a2469008","role":"save-level equipment location, quality, durability, sockets and set-bonus bit semantics"}
+  ],
+  "adoption_rule": "Preserve D2 item/equipment state semantics wherever they are system-agnostic. Translate only terminal numeric combat effects into New Path 3.5e/GURPS/fused outputs. Extend slots and requirements only where campaign physicality needs states D2 does not represent."
+}
