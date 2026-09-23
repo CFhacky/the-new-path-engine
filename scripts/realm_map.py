@@ -74,6 +74,9 @@ EXPORT-SECTORS (hand the map to the Malcador population engine)
     centre in miles, group count, family pool; plus a markdown atlas block in
     the project's own row format (Sector | Centre E,N miles | Inhabitants |
     Place to fight) and per-sector Terrain / Sightlines / Exit vectors.
+    The centres are the folio's layout (hops x --miles-per-step), not the
+    consuming realm's geography; the export says so in "coordinates", and the
+    Malcador project seats each sector on its own approach by band.
 """
 from __future__ import annotations
 
@@ -789,6 +792,9 @@ def export_sectors(state: Dict[str, Any], prefix: str, miles_per_step: float) ->
         })
     return {"realm": state["realm"], "archetype": state["archetype"], "prefix": prefix,
             "miles_per_step": miles_per_step, "origin": f"{prefix}1 at (0,0) miles; north = away from the entry",
+            "coordinates": ("folio layout, not site geography: north is hops from the entry times miles_per_step, "
+                            "east is the drawn layout. A consuming project with its own site plan should seat "
+                            "sectors by band and hops_from_entry, not read these as distances to anything."),
             "band_rule": "fringe: 0-1 hops from the entry; basin: 2; roads: 3; marches: 4+; hunt: any dead-end other than the entry",
             "sectors": sectors, "label": "ROLLED; population to be rolled by the consuming engine"}
 
