@@ -6,7 +6,7 @@
 
 **How it is laid out.**
 
-- **Part One** gives everything you need first: what Warhammer 40,000 is, how the Heresy happened, a detailed retelling of all three volumes, the rules of the universe, who's who, and how the books are written.
+- **Part One** gives everything you need first, on both sides. For the story: what Warhammer 40,000 is, how the Heresy happened, a detailed retelling of all three volumes, the rules of the universe, who's who, and how the books are written. For the sources: a short course in the Bible, Norse, Greek, Egyptian and Persian myth, and the poets of hell, with a table of what the characters' names mean.
 - **Part Two** gives sixteen readings. Each shows the scene it rests on (**In the story**), the interpretation (**The reading**), and the myth, scripture or literature it draws on, told for someone who has not read that either.
 - **The Appendix** lists every realm of the warp the trilogy names, with its source.
 
@@ -292,6 +292,98 @@ Four techniques matter for everything in Part Two.
 3. **A dying narrator.** Malcador narrates his sections in the first person, from the Throne, while it burns him away: "Almost all of me is gone now" (TEATD2 5:viii). He sees further into the warp than anyone ever has and can affect nothing.
 4. **The Emperor has no inside.** For almost three volumes he is only seen from outside, by his sons, his servants and his enemy. He stays a god, unknowable, until he is a broken body on the floor.
 
+## 8. The other half: the myths and scriptures in brief
+
+Part Two reads the trilogy against a library of older stories. This section is the short course in that library, so that no reading depends on something you have not been told. Each reading also retells its own sources in full at the end. This is the map they hang on.
+
+Why the trilogy invites this at all: its own key, given by Malcador, is that humanity's idea of hell "is derived from the warp" (TEATD2 5:viii). If that is true inside the story, every myth is evidence, and the old poets were eyewitnesses. Abnett's afterword says the same from the author's side: imagination is "the key tool with which the warp may be apprehended. It is the root of magic" (Afterword, TEATD3).
+
+### The Bible
+
+**What it is.** The Bible is not one book but a library, written over roughly a thousand years.
+- **The Hebrew Bible**, which Christians call the **Old Testament**, is the scripture of Judaism. It has three parts:
+  - **the Law**, or Torah: Genesis to Deuteronomy, with creation, the fall, the patriarchs, the Exodus and the covenant;
+  - **the Prophets**: the histories of the kings, then Isaiah, Jeremiah, Ezekiel and the shorter prophets;
+  - **the Writings**: Psalms, Proverbs, Job, Daniel and others.
+- **The New Testament** is the Christian addition:
+  - **four Gospels** telling the life, death and resurrection of Jesus;
+  - **Acts**;
+  - **letters**, most by the apostle **Paul**;
+  - **Revelation**.
+
+**How it is cited.** The chapter divisions were added in the thirteenth century, and the verse numbers in the sixteenth. *Matthew 7:18* means the Gospel of Matthew, chapter 7, verse 18. The trilogy's own numbered verses (TEATD3 9:xxi) deliberately imitate this layout. Quotations in this companion use the **King James Version** of 1611, because its English is the one that echoes through four centuries of English literature, and so through Abnett.
+
+**The kinds of writing the readings use.**
+- **Creation and fall** (Genesis 1–4). God makes the world and humanity, and the first humans eat the forbidden fruit and are driven from Eden. Then the first murder: Cain kills his brother Abel. Readings 8 and 10.
+- **Covenant** (Deuteronomy). A binding agreement between God and a people, with blessings for keeping it and curses written in for breaking it. Reading 11.
+- **Psalms**, the hymnbook of ancient Israel, including Psalm 22, "My God, my God, why hast thou forsaken me?", which Jesus quotes on the cross. Reading 4.
+- **Prophecy.** The prophets are people who see God or his visions and speak for him. The Bible is frank that the seeing costs them. Reading 3.
+- **Apocalypse.** From the Greek for "unveiling," this is a kind of writing full of symbolic visions of the end of the world, handed to a seer: the second half of **Daniel** in the Old Testament, and **Revelation** at the end of the New. Its furniture includes seals and trumpets, a Beast whose number is 666, the great city **Babylon**, **Gog and Magog** at the last battle, and **Abaddon**, "the angel of the bottomless pit" (Revelation 9:11). Readings 2 and 4.
+- **Gospels and parables.** Jesus teaches in short stories, **parables**, like the servants entrusted with their master's money (reading 11).
+- **The Passion**, from the Latin for "suffering," is the account of Jesus's last days: betrayal, trial, the crown of thorns, the **crucifixion** at Golgotha, "the place of a skull," death and burial. In Western art since the Middle Ages, Christ is nailed with **three nails**, one through each hand and one through the crossed feet. The trilogy has Horus nail his father to a throne with three nails (reading 12). The crown Horus prepares for him is the crown of thorns in bloodlight.
+- **Paul's letters**, the earliest Christian writings, with the ideas the readings lean on. One is *kenosis*: God "emptying" himself to become a man (reading 13). Another: to be "absent from the body" is to be "present with the Lord" (reading 14).
+
+**The Christian story in one line**, because the trilogy walks it: creation, fall, a chosen people, prophets, God made man, the Passion, the Harrowing of Hell, resurrection, and an apocalypse to end the world. The Emperor gets several of these roles at once, and Horus gets the others.
+
+### Norse myth
+
+**The sources.** Almost everything known about the Norse gods comes from Iceland, written down two centuries after the Icelanders became Christian in about AD 1000.
+- **The *Poetic Edda*** is a collection of anonymous poems, preserved in one manuscript, the **Codex Regius**, from about 1270. Its greatest poems are the *Völuspá*, "the prophecy of the seeress," which tells the world from creation to its end, and the *Hávamál*, "the sayings of the High One," Odin's own wisdom.
+- **The *Prose Edda*** was written in about 1220 by **Snorri Sturluson**, a Christian Icelandic chieftain and scholar, as a handbook of the old stories for poets. Its middle part, *Gylfaginning*, retells the myths in order.
+
+So the Norse myths reach us as a Christian's memory of a pagan memory. That is exactly the shape of Malcador's key in reading 1: every surviving account is a partial, later copy of something nobody saw whole.
+
+**The world.** The world-tree **Yggdrasil** holds nine worlds. The gods, the **Æsir**, live in Asgard; a second family of gods, the **Vanir**, fought them and then made peace. The **giants**, the *jötnar*, are the gods' rivals, kin and lovers. **Odin**, the chief of the Æsir, is a god of war, poetry, magic, wisdom and the dead, who travels in disguise under many names. **Thor** is the thunderer. **Tyr** is the god of oaths. **Loki** is the trickster who is half-giant and ends as the gods' enemy. The warriors Odin chooses die in battle and are carried by the **valkyries** to **Valhalla**, where they fight and feast until the end.
+
+**The end.** The Norse gods know how their world ends, and cannot stop it. First comes the **Fimbulwinter**, three winters with no summer between them. Then **Ragnarök**, the doom of the gods. The wolves that chase the sun and moon catch them. **Fenrir** the wolf breaks his chain and swallows Odin. Thor and the world-serpent **Jörmungandr** kill each other. The fire-giant **Surtr** burns the world. And yet a green world rises again from the sea, and a few survive: Odin's silent son **Vidar**, who avenges him; Thor's sons; and the gods Balder and Höðr, back from the dead.
+
+This is the pattern the trilogy borrows most: a ruler who knows the end is coming, prepares for it anyway, loses, and in losing wins the world that comes after. Readings 5, 7, 8 and 9.
+
+### Greek and Roman myth
+
+- **The succession myth.** In **Hesiod's *Theogony*** (about 700 BC), the first thing is **Chaos**, the yawning void, and out of it come **Erebus**, primordial darkness, and Night. Then each generation of gods is overthrown by the next. Ouranos, the sky, is castrated by his son Kronos. Kronos swallows his own children to stop them doing the same, and is overthrown by his son **Zeus**. The oldest story in Greek religion is a son rising against his father. The Heresy is that story, and the trilogy knows it.
+- **Prometheus** the Titan stole fire from the gods for humanity, and was chained to a rock for it (reading 7).
+- **Homer's *Iliad*** is the war at Troy. **The *Odyssey*** is the hero Odysseus's ten-year voyage home, with his companions, past witches, monsters and the land of the dead (reading 16).
+- **Tragedy.** Athenian tragedy retold myths the audience already knew. Its power lay in *how* the known end arrived, and in the moment a character recognises the truth too late. **Oedipus**, who kills his father without knowing him, is the classic case (readings 9 and 15).
+- **Rome.** The city's founder **Romulus** and his twin were suckled by a she-wolf in a cave called the **Lupercal**, and every February the Romans held a festival there, the **Lupercalia** (readings 4 and 5). **Virgil's *Aeneid*** tells of **"pious" Aeneas**, *pius Aeneas*, the dutiful hero who carries his old father out of burning Troy (reading 16).
+
+### Egypt and Persia
+
+- **Horus and Osiris.** In Egyptian myth, the good king **Osiris** is murdered and dismembered by his brother **Set**. His wife **Isis** gathers the pieces and conceives a son, **Horus**, the falcon-headed sky god, who grows up to fight Set, avenge his father and take the throne. Every Egyptian pharaoh was the living Horus. The primarch Horus is named after the most dutiful son in ancient religion, and plays Set.
+- **Zoroastrianism** is the ancient religion of Persia, founded by the prophet Zarathustra (Zoroaster). It sees the world as a war between **Ahura Mazda**, the wise lord of truth and light, and **Angra Mainyu**, the destructive spirit, called **Ahriman** in later Persian. The dead cross the **Chinvat Bridge** to judgment, and at the end of time good defeats evil in a final renovation of the world. Many scholars think Persian ideas of a devil, a judgment and an end-time battle shaped later Judaism and Christianity. Readings 4 and 10.
+
+### The hidden common ancestor
+
+Most of the languages of Europe, Iran and northern India descend from one prehistoric language, **Proto-Indo-European**, spoken somewhere around the Black Sea five or six thousand years ago. Its speakers left no writing, but their words survive in their descendants, and so do some of their gods. The sky-father *Dyēus* became Greek **Zeus**, Sanskrit **Dyaus Pita**, and Latin **Jupiter**, *Iou-pater*, "sky-father." The Norse god **Tyr** takes his name from the same root word for "god." The French scholar **Georges Dumézil** argued that these peoples also shared patterns of myth, such as the split between two kinds of divine king (reading 7). This is the prehistoric pantheon behind the thesis in reading 7: a set of gods that everyone's myths remember a piece of, and nobody remembers whole.
+
+### The Christian poets of hell
+
+Three works of Christian literature shaped how the West pictures hell, and the trilogy draws on all three.
+- **Dante's *Divine Comedy*** (early 1300s) goes down through the nine circles of the *Inferno*, up the mountain of *Purgatory*, and into *Paradise*.
+- **Milton's *Paradise Lost*** (1667) retells the fall of Satan and of Adam and Eve, and gives Satan the grandest speeches.
+- **Bunyan's *The Pilgrim's Progress*** (1678) is an allegory of a soul's journey through places named for its trials. On the way, the pilgrim fights **Apollyon**, the Greek name Revelation gives to Abaddon.
+
+### What the names mean
+
+Warhammer names are chosen. A newcomer does not need them to follow the plot, but they carry the argument. Where the connection is certain it is stated; where it is only an echo it is marked.
+
+| Name | Source | What it says |
+|---|---|---|
+| **Horus** | The Egyptian son who avenges his murdered father | The dutiful son's name on the son who kills his father |
+| **Lupercal** | The she-wolf's cave of Romulus | Founder of an empire, suckled by a wolf |
+| **Abaddon** | "The angel of the bottomless pit" (Revelation 9:11), in Greek *Apollyon*, "the Destroyer" | Horus's heir takes the Talon in the last pages |
+| **Erebus** | Primordial darkness, born of Chaos in Hesiod | The Word Bearer who began Horus's fall |
+| **Ahriman** | Angra Mainyu, the Zoroastrian destructive spirit | The devil's name on the one son who tried to heal (reading 10) |
+| **Magnus** | Latin, "great" | The son who wanted to know everything |
+| **Vulkan** | **Vulcan**, the Roman smith-god | The smith who built the Talisman of Seven Hammers |
+| **Sanguinius** | Latin *sanguis*, "blood" | The angel whose blood is the Blood Angels' gift and curse |
+| **Constantin Valdor** | Echo of **Constantine the Great**, the Roman emperor who made the empire Christian | The Emperor's shield, whose master's empire will become a church |
+| **Euphrati Keeler** | Echo of the **Euphrates**, one of the four rivers of Eden (Genesis 2:14) | The saint whose chant saves the Emperor |
+| **Ollanius Pius** | Echo of Virgil's *pius Aeneas* | The dutiful man who stands over his fallen old friend |
+| **Actae** | Echo of **Actaea**, a sea-nymph in Hesiod and Homer | The Greek witch of Oll's voyage (reading 16) |
+| **Hetaeron** | Greek *hetairoi*, the Companions of Alexander the Great | The Emperor's inner guard |
+| **Anabasis** | Xenophon's "march up-country" | The name of the Emperor's final attack |
+
 ---
 
 # Part Two — The readings
@@ -406,6 +498,11 @@ Horus's verdict: "He is, and always has been, an entire arcana" (TEATD3 9:xxi).
 
 **Myth: the tarot.** The tarot is a deck of cards, first used for games in Renaissance Italy and later for divination. Its twenty-two trump cards, the **major arcana**, depict archetypes: the Magician, the Emperor, the Lovers, the Tower, the Hanged Man. The word *arcana* means "secrets." To call someone "an entire arcana" is to call him every archetype at once.
 
+**Myth: the winter, the wolf-coats and the she-wolf's feast.**
+- **Fimbulwinter**, "the mighty winter," is the first sign of Ragnarök in Snorri's *Gylfaginning*: three winters in a row with no summer between them, with snow from every direction, bitter frost and wars across the world. The Emperor who "drags winter behind Him like a pelt" is bringing the end of the world with him.
+- **The wolf-coats.** Old Norse sagas describe the **úlfheðnar**, "wolf-skins," warriors of Odin who went into battle wearing wolf pelts and fought in a trance, like the better-known *berserkir*, the "bear-shirts." To wear the wolf was to borrow its nature.
+- **The Lupercalia** was a Roman festival held every 15 February at the Lupercal cave. Priests called the *Luperci*, the "wolf-brothers," sacrificed goats and a dog, then ran around the Palatine Hill almost naked, striking bystanders with strips of goat-hide for fertility and purification. The name of Horus's house is the name of a ritual for cleansing the city.
+
 ## 6. The voice in the second person
 
 **In the story.** Three moments.
@@ -426,6 +523,14 @@ Every time, the bait is the same: autonomy. Be your own master; face him as your
 **Series background: Fulgrim and the gifts of the sons.** The primarchs were not only soldiers; each embodied one side of their father. Fulgrim, primarch of the Emperor's Children, was the perfectionist and the aesthete: the son of beauty, charm and pride. In the novel *Fulgrim* he takes up a daemon-haunted sword, is possessed, and kills his brother Ferrus Manus. He becomes a daemon prince of Slaanesh, the god of excess. The seducer is his gift from his father, turned to the enemy's use.
 
 **Correction.** The earlier reading treated the Emperor's use of Horus's inner voice as inference, a shape "never stated." Volume III 10:xvi states the Loken impersonation outright. It also names the whispers as the prayer of humanity. The thesis was more right than the first reading knew.
+
+**Scripture, myth and literature: the voice at the ear.** The oldest stories in the West are full of voices that are not what they seem, and the trilogy draws on all of them.
+- **The serpent's offer.** In Eden, the serpent does not command Eve. It flatters her with independence: "Ye shall not surely die: For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil" (Genesis 3:4–5). The bait is autonomy, the same bait the voice uses on Horus: "You are your own master."
+- **Milton's toad.** In *Paradise Lost*, the angels guarding Eden find Satan at night "Squat like a toad, close at the ear of Eve, / Assaying by his devilish art to reach / The organs of her fancy" (Book IV). He is whispering dreams into her sleep, so that she wakes believing the thoughts are her own. That is the second-person voice exactly.
+- **The temptation in the wilderness.** Satan takes Jesus to "an exceeding high mountain, and sheweth him all the kingdoms of the world, and the glory of them; And saith unto him, All these things will I give thee, if thou wilt fall down and worship me" (Matthew 4:8–9). Horus was offered the same, and took it.
+- **The lying spirit sent from heaven.** The strangest case is in 1 Kings 22. The prophet Micaiah sees the heavenly court deciding how to lure the wicked King Ahab to his death in battle. A spirit volunteers: "I will go forth, and I will be a lying spirit in the mouth of all his prophets. And he said, Thou shalt persuade him, and prevail also: go forth, and do so" (1 Kings 22:22). Here the deceiving voice is sent by the good side, to bring down a king who has earned it. That is the Emperor's move: the righteous power, speaking falsely through other mouths.
+- **The still small voice.** Against that stands the true voice. The prophet Elijah, fleeing for his life, waits on a mountain for God. God is not in the wind, the earthquake or the fire, but in "a still small voice" (1 Kings 19:12). The whispers Horus dismisses as noise are that voice: quiet, constant, and the one that matters.
+- **Odin in disguise.** Odin repeatedly visits kings and giants in disguise and talks them into ruin. In the poem *Grímnismál*, he sits bound between two fires in a king's hall, reveals himself, and the king falls on his own sword.
 
 ## 7. The sovereign trickster: Odin, Bolverk, Varuna
 
@@ -524,6 +629,10 @@ Ahriman also repeated his master's method: a secret rite, against his lord's wil
 
 **Scripture: the garden and the fruit.** In **Genesis 2–3**, God places Adam and Eve in the garden of Eden and forbids them one tree, the tree of the knowledge of good and evil. The serpent persuades Eve to eat, she gives the fruit to Adam, and they are driven out. God's sentence on Adam ends: "for dust thou art, and unto dust shalt thou return" (Genesis 3:19). Jesus, in the Sermon on the Mount, gives the rule for telling true teachers from false: "A good tree cannot bring forth evil fruit, neither can a corrupt tree bring forth good fruit … by their fruits ye shall know them" (Matthew 7:18–20).
 
+**Scripture and religion: the devil's name on the healer.**
+- **Ahriman** is the Middle Persian name of **Angra Mainyu**, the destructive spirit of Zoroastrianism, the adversary of the wise lord Ahura Mazda and the author of disease, decay and death. Setting and author gave the name to the one Thousand Son who tried to cure his brothers. Warhammer's grimmest joke is that the man named for the devil was the physician, and the cure was the curse.
+- **The tree of knowledge.** The fruit forbidden in Eden is specifically knowledge, "of good and evil." The Thousand Sons were the Legion of knowledge. The fall of Adam and the fall of Prospero are the same story: the wish to know as the gods know, and the dust that follows.
+
 ## 11. Covenant, curse, and the counters built in
 
 **Thesis raised in discussion.** The punishments of Magnus and the Thousand Sons for breaking faith are literally biblical, and perhaps the Emperor built them in: counters to moves he expected the enemy to make. The god of trickery and change got his hooks into the son who was meant for the Throne, and for their perfidy the Sons turned to dust and their father went to the outer dark.
@@ -595,6 +704,11 @@ The book tracks the question with one refrain, changed each time it comes back:
 The fourth line is the Emperor's own choice in Volume II, turned into Horus's error in Volume III. The father let the power go on purpose and fought as a man. The son let it go because he was tricked, and died as one. Magnitude is the setup, not the point. The Dark King is what the gods wanted him to become. The sword in a mortal hand is his refusal. The light he fights with at the end is not his own, but his people's: "the pure white light of a species that, in its madness, believes in Him beyond all reason" (TEATD3 10:xvi).
 
 **Scripture: kenosis.** In his letter to the Philippians (2:5–8), Paul describes Christ, "who, being in the form of God, thought it not robbery to be equal with God: but made himself of no reputation, and took upon him the form of a servant, and was made in the likeness of men." Theologians call this *kenosis*, from the Greek for "emptying": God choosing to set aside the powers of divinity and live as a man.
+
+**Scripture and literature: the refusals.**
+- **The third temptation.** In the wilderness, Satan offers Jesus "all the kingdoms of the world, and the glory of them" in exchange for worship. Jesus answers, "Get thee hence, Satan" (Matthew 4:8–10). The Dark King is that offer, made by the warp to the Emperor, and his refusal in Volume II is the same answer. Horus, offered the same thing, accepted it.
+- **Gethsemane.** The night before the crucifixion, Jesus prays in the garden of Gethsemane: "O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt" (Matthew 26:39). He could avoid what is coming and chooses not to.
+- **Galadriel's test.** In Tolkien's *The Lord of the Rings*, the elf-queen Galadriel is offered the One Ring, and pictures the terrible, beloved queen she would become with it. Then she refuses: "I pass the test," she says. "I will diminish, and go into the West, and remain Galadriel." To diminish on purpose, to stay yourself rather than become a god, is the whole of reading 13 in one line.
 
 ## 14. The Throne: the anti-theist argument turned around
 
