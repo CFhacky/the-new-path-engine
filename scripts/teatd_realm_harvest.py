@@ -175,7 +175,7 @@ REALMS: List[Dict] = [
         "facts": ["Magnus's deathless corpse is banished there after Vulkan defeats him; used as a destination, not an adjective.",
                   "The verse does not define whether it is deep warp, exterior void or a distinct realm."],
         "myth_key": M("The outer darkness of the Gospel parables",
-                      "Matthew 8:12; 22:13; 25:30 (\"cast into outer darkness; there shall be weeping and gnashing of teeth\")",
+                      "Matthew 8:12; 22:13; 25:30 (\"cast him into outer darkness; there shall be weeping and gnashing of teeth\")",
                       "A terminus at the folio's edge. One-way: nothing banished there returns on its own, and no exit is rolled."),
     },
     {
@@ -219,7 +219,7 @@ REALMS: List[Dict] = [
         "attestations": [A(1, 2, "xii", "void-wound")],
         "facts": ["Terra falls into a void-wound cut by Horus, where the forces of two universes, warp and realspace, intermix and begin to devour one another."],
         "myth_key": M("The rent veil",
-                      "Matthew 27:51; Isaiah 64:1 (\"rend the heavens and come down\")",
+                      "Matthew 27:51; Isaiah 64:1 (\"Oh that thou wouldest rend the heavens, that thou wouldest come down\")",
                       "A tear, not a door. Both sides bleed through; the crossing has no fixed width and is widest where the fighting is."),
     },
     {
@@ -369,7 +369,7 @@ REALMS: List[Dict] = [
             "Keep both facts: district and separable realm.",
         ],
         "myth_key": M("Irkalla, the house of dust",
-                      "Epic of Gilgamesh, Tablet VII (\"the house where dust is their food and clay their bread\"); Genesis 3:19; Job 7:21",
+                      "Epic of Gilgamesh, Tablet VII (the house of dust, where the dead eat dust and clay); Genesis 3:19; Job 7:21",
                       "Nothing living trades here. Whatever you carry in is ash by the time you find the exit, and the ash is the only trail."),
     },
     {

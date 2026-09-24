@@ -173,7 +173,7 @@
    "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
    "myth_key": {
     "referent": "The outer darkness of the Gospel parables",
-    "citation": "Matthew 8:12; 22:13; 25:30 (\"cast into outer darkness; there shall be weeping and gnashing of teeth\")",
+    "citation": "Matthew 8:12; 22:13; 25:30 (\"cast him into outer darkness; there shall be weeping and gnashing of teeth\")",
     "rule": "A terminus at the folio's edge. One-way: nothing banished there returns on its own, and no exit is rolled.",
     "label": "INFERRED"
    }
@@ -309,7 +309,7 @@
    "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
    "myth_key": {
     "referent": "The rent veil",
-    "citation": "Matthew 27:51; Isaiah 64:1 (\"rend the heavens and come down\")",
+    "citation": "Matthew 27:51; Isaiah 64:1 (\"Oh that thou wouldest rend the heavens, that thou wouldest come down\")",
     "rule": "A tear, not a door. Both sides bleed through; the crossing has no fixed width and is widest where the fighting is.",
     "label": "INFERRED"
    }
@@ -774,7 +774,7 @@
    "facts_label": "SOURCE-VERIFIED (sweep 2026-09-21; see attestations for verbatim status)",
    "myth_key": {
     "referent": "Irkalla, the house of dust",
-    "citation": "Epic of Gilgamesh, Tablet VII (\"the house where dust is their food and clay their bread\"); Genesis 3:19; Job 7:21",
+    "citation": "Epic of Gilgamesh, Tablet VII (the house of dust, where the dead eat dust and clay); Genesis 3:19; Job 7:21",
     "rule": "Nothing living trades here. Whatever you carry in is ash by the time you find the exit, and the ash is the only trail.",
     "label": "INFERRED"
    }

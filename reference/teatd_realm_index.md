@@ -111,7 +111,7 @@ Dan Abnett, *The End and the Death* Volumes I-III, sweep 2026-09-21. Named realm
 - The verse does not define whether it is deep warp, exterior void or a distinct realm.
 
 **Myth key (INFERRED)** -- The outer darkness of the Gospel parables  
-*Citation:* Matthew 8:12; 22:13; 25:30 ("cast into outer darkness; there shall be weeping and gnashing of teeth")  
+*Citation:* Matthew 8:12; 22:13; 25:30 ("cast him into outer darkness; there shall be weeping and gnashing of teeth")  
 *Law of the place:* A terminus at the folio's edge. One-way: nothing banished there returns on its own, and no exit is rolled.
 
 ## Uigebealach
@@ -161,7 +161,7 @@ Dan Abnett, *The End and the Death* Volumes I-III, sweep 2026-09-21. Named realm
 - Terra falls into a void-wound cut by Horus, where the forces of two universes, warp and realspace, intermix and begin to devour one another.
 
 **Myth key (INFERRED)** -- The rent veil  
-*Citation:* Matthew 27:51; Isaiah 64:1 ("rend the heavens and come down")  
+*Citation:* Matthew 27:51; Isaiah 64:1 ("Oh that thou wouldest rend the heavens, that thou wouldest come down")  
 *Law of the place:* A tear, not a door. Both sides bleed through; the crossing has no fixed width and is widest where the fighting is.
 
 ## The companion dimension
@@ -339,7 +339,7 @@ Dan Abnett, *The End and the Death* Volumes I-III, sweep 2026-09-21. Named realm
 - Keep both facts: district and separable realm.
 
 **Myth key (INFERRED)** -- Irkalla, the house of dust  
-*Citation:* Epic of Gilgamesh, Tablet VII ("the house where dust is their food and clay their bread"); Genesis 3:19; Job 7:21  
+*Citation:* Epic of Gilgamesh, Tablet VII (the house of dust, where the dead eat dust and clay); Genesis 3:19; Job 7:21  
 *Law of the place:* Nothing living trades here. Whatever you carry in is ash by the time you find the exit, and the ash is the only trail.
 
 ## The supernal realm

@@ -311,7 +311,7 @@ Why the trilogy invites this at all: its own key, given by Malcador, is that hum
   - **letters**, most by the apostle **Paul**;
   - **Revelation**.
 
-**How it is cited.** The chapter divisions were added in the thirteenth century, and the verse numbers in the sixteenth. *Matthew 7:18* means the Gospel of Matthew, chapter 7, verse 18. The trilogy's own numbered verses (TEATD3 9:xxi) deliberately imitate this layout. Quotations in this companion use the **King James Version** of 1611, because its English is the one that echoes through four centuries of English literature, and so through Abnett.
+**How it is cited.** The chapter divisions were added in the thirteenth century, and the verse numbers in the sixteenth. *Matthew 7:18* means the Gospel of Matthew, chapter 7, verse 18. The numbering is the same in every standard English translation, so the references work in a modern Bible such as the New King James Version, though the wording is modernised, with *you* for *thee* and similar changes. The trilogy's own numbered verses (TEATD3 9:xxi) deliberately imitate this layout. Quotations in this companion use the **King James Version** of 1611, because its English is the one that echoes through four centuries of English literature, and so through Abnett.
 
 **The kinds of writing the readings use.**
 - **Creation and fall** (Genesis 1–4). God makes the world and humanity, and the first humans eat the forbidden fruit and are driven from Eden. Then the first murder: Cain kills his brother Abel. Readings 8 and 10.
@@ -404,7 +404,7 @@ It also reverses the normal direction of allusion. Most writers borrow from Dant
 
 **Myth and literature: the underworlds the trilogy draws on.** Nearly every culture has imagined a land of the dead, and the trilogy treats all of them as partial memories of one real place. The three it uses most:
 - **Dante's *Inferno*** (early 1300s), the first part of the *Divine Comedy*. The poet Virgil guides Dante down through nine concentric circles of Hell, each punishing a sin more severe than the last, down to Satan frozen in ice at the centre of the earth. The sins of appetite are in the upper circles. Past the walls of the city of **Dis**, guarded by fallen angels, are the sins of malice and fraud.
-- **The *Epic of Gilgamesh***, the oldest great work of literature, from ancient Mesopotamia. When Gilgamesh's friend Enkidu is dying, he dreams of the underworld, **Irkalla**, the "house of dust," where the dead sit in darkness, clothed like birds in feathers, "where dust is their food and clay their bread."
+- **The *Epic of Gilgamesh***, the oldest great work of literature, from ancient Mesopotamia. When Gilgamesh's friend Enkidu is dying, he dreams of the underworld, **Irkalla**, the "house of dust," where the dead sit in darkness, clothed like birds in feathers, with dust and clay for their food.
 - **John Bunyan's *The Pilgrim's Progress*** (1678), an allegory in which a man called Christian flees the City of Destruction for the Celestial City. On the way he passes through places named for the trials of the soul: the Slough of Despond, Vanity Fair, the Valley of Humiliation, Doubting Castle.
 
 ## 2. The form is revelation
@@ -464,7 +464,7 @@ Some of the realms, and what they carry:
 - **The Lupercal Court**, Horus's own throne room, turns Dante's universe inside out. Horus sees it as nested shells: "Your Court, which surrounds your flagship, which surrounds the neverness, which surrounds the Inevitable City" (TEATD3 10:viii), and outward to the whole galaxy and the warp. Dante's Satan is frozen at the bottom of the universe with every heaven above him. Horus sits at the centre with everything, including the warp, as a shell around him.
 
 **Myth and literature: the sources of the realms.**
-- **Hesiod's *Theogony*** (Greek, about 700 BC) says that "first of all Chaos came into being": a yawning void before any form. **Ovid**, opening the *Metamorphoses*, describes it as "a rude and undigested mass."
+- **Hesiod's *Theogony*** (Greek, about 700 BC) says that "Verily at the first Chaos came to be" (in H. G. Evelyn-White's translation): a yawning void before any form. **Ovid**, opening the *Metamorphoses*, describes it, in Dryden's translation, as "rather a rude and indigested mass."
 - **Dis** is Dante's walled city of lower Hell. **Pandemonium**, "all the demons," is the capital the fallen angels build in Milton's *Paradise Lost*. **Babylon the Great** is the city of sin in Revelation.
 - **Irkalla** is the Mesopotamian house of dust, from *Gilgamesh*.
 - **Jorge Luis Borges**, "The Library of Babel" (1941), imagines the universe as an infinite library of every possible book, almost all of them nonsense. **Ovid's Cave of Sleep** (*Metamorphoses* XI) is the home of the god of sleep and his thousand sons, the dreams. **The Library of Alexandria** is the great library of antiquity whose burning became a symbol of lost knowledge.
@@ -588,7 +588,7 @@ At **Ragnarök**, the end of the world, Fenrir breaks free and swallows Odin who
 
 **Scripture and legend: the first murder, Gog, and the mercy-stroke.**
 - **Cain and Abel** (Genesis 4). Adam and Eve's first two sons bring offerings to God. God accepts the shepherd Abel's and not the farmer Cain's, and Cain kills his brother in the field. "The voice of thy brother's blood crieth unto me from the ground." Cain is marked and sent away to wander. In Christian and Jewish tradition this is the first murder, the root of all killing after it. The Bible does not say what Cain used. Medieval art often gives him a jawbone or a stone.
-- **Gog** is a name out of the Bible's end-times. In Ezekiel 38–39 "Gog, of the land of Magog" leads the nations against Israel in the last days and is destroyed. In Revelation 20, "Gog and Magog" are the nations Satan gathers for the final battle. In British legend, **Gogmagog** was the last of the giants of Albion, thrown from a cliff by the Trojan hero Corineus, a story told by Geoffrey of Monmouth. The athame is "the executioner of Gog."
+- **Gog** is a name out of the Bible's end-times. In Ezekiel 38–39 "Gog, the land of Magog" leads the nations against Israel in the last days and is destroyed. In Revelation 20, "Gog and Magog" are the nations Satan gathers for the final battle. In British legend, **Gogmagog** was the last of the giants of Albion, thrown from a cliff by the Trojan hero Corineus, a story told by Geoffrey of Monmouth. The athame is "the executioner of Gog."
 - **The round table.** The athame has also "lain on the painted top of a great round table" (TEATD1 1:xvi): King Arthur's.
 - **The misericordia**, "mercy" in Latin, was the long thin dagger of a medieval knight, used to give the death-stroke through the gaps in armour to a man too badly wounded to live.
 
@@ -623,7 +623,7 @@ And the Throne was his: "the day we realised that Magnus was no longer a viable 
 
 **In the story.** Ahriman is in the trilogy only briefly. In the last volume he sits in a dark archive under the Palace, laying out a tarot deck, as the warp withdraws. The pages around him have been bleeding: "The books have stopped bleeding … There has been a death" (TEATD3 10:xviii).
 
-**The reading.** The Gospel states the law of the garden: "a corrupt tree cannot bring forth good fruit." The Sons' sin was forbidden knowledge. The curse on Eden's fruit is "unto dust shalt thou return," and the Rubric produced exactly that: armour with dust inside. The disease is change, and every remedy the Sons can reach comes from the god of change. The only water in that garden is the poisoned spring.
+**The reading.** The Gospel states the law of the garden: "neither can a corrupt tree bring forth good fruit." The Sons' sin was forbidden knowledge. The curse on Eden's fruit is "unto dust shalt thou return," and the Rubric produced exactly that: armour with dust inside. The disease is change, and every remedy the Sons can reach comes from the god of change. The only water in that garden is the poisoned spring.
 
 Ahriman also repeated his master's method: a secret rite, against his lord's will, to rewrite a fate. The one son who truly tried did it the family way, which is the corrupt root. Abnett gives him one image in the finale: his tarot cards "discolour, like fallen leaves as the turn of winter blackens gold and red" (TEATD3 10:xviii). The leaves fall, and there is no spring in the garden.
 
@@ -678,7 +678,7 @@ So the thesis is literally what happens. Horus read the Emperor's hand as weak b
 
 **Myth: the tarot, card by card.** The **Imperial Tarot** of the setting is modelled on the real tarot. The historical deck began in fifteenth-century Italy as a card game, the *trionfi* or "triumphs," with an extra suit of picture cards that beat all the others. Our word "trump" comes from *trionfi*. The occult reading of the cards came later, in eighteenth-century France. There, the scholar Antoine Court de Gébelin claimed in *Le Monde primitif* (1781) that the trumps were a lost Egyptian book of wisdom. They were not, but the idea stuck. In the traditional order, the last of the twenty-one numbered trumps is **The World**: a figure dancing inside a wreath, surrounded by the four living creatures of Ezekiel and Revelation. It is the card of completion, the journey finished. Other trumps are close cousins of the Imperial cards: *The Emperor*, *The Tower* (once called *La Maison Dieu*, "the House of God"), and *Judgement*, where the dead rise at the angel's trumpet.
 
-**Scripture: the mandate.** *Mandatio* is formed from the Latin *mandatum*, a charge or commandment. The word's most famous use is at the Last Supper: "A new commandment (*mandatum novum*) I give unto you, That ye love one another" (John 13:34). It gave the English church the name **Maundy Thursday**. Loken, the Knight of Mandatio, is the son who keeps that commandment to the end, staying behind alone with the father who betrayed him: "I am the only one left who cares" (TEATD3 10:xix).
+**Scripture: the mandate.** *Mandatio* is formed from the Latin *mandatum*, a charge or commandment. The word's most famous use is at the Last Supper: "A new commandment I give unto you, That ye love one another" (John 13:34). In the Latin Bible the verse opens *mandatum novum*. It gave the English church the name **Maundy Thursday**. Loken, the Knight of Mandatio, is the son who keeps that commandment to the end, staying behind alone with the father who betrayed him: "I am the only one left who cares" (TEATD3 10:xix).
 
 **Correction.** An earlier version of this reading made Caecaltus the Knight of Mandatio and left the Guardsman and the Lantern unexplained. The Knight is Loken, by the verse title. Caecaltus is Revelation. The Guardsman is Oll and the Lantern is the Emperor, by Oll's own words.
 
@@ -848,7 +848,7 @@ Source: The many mansions / the seven heavens (John 14:2; 2 Corinthians 12:2; 1 
 
 **The Outer Darkness** · first appears Volume I, 1:xxiii  
 In the book: Magnus's deathless corpse is banished there after Vulkan defeats him; used as a destination, not an adjective. The verse does not define whether it is deep warp, exterior void or a distinct realm.  
-Source: The outer darkness of the Gospel parables (Matthew 8:12; 22:13; 25:30 ("cast into outer darkness; there shall be weeping and gnashing of teeth")).
+Source: The outer darkness of the Gospel parables (Matthew 8:12; 22:13; 25:30 ("cast him into outer darkness; there shall be weeping and gnashing of teeth")).
 
 **Uigebealach** · first appears Volume I, 2:xii  
 In the book: A known singularity-node of the webway, explicitly associated with neverness and metaphysical discontinuity (2:xii). A labyrinth-knot in the blazing warp (10:xvi).  
@@ -860,7 +860,7 @@ Source: The abyss: Greek byssos, the sea-floor; the bottomless pit (Revelation 9
 
 **The void-wound** · first appears Volume I, 2:xii  
 In the book: Terra falls into a void-wound cut by Horus, where the forces of two universes, warp and realspace, intermix and begin to devour one another.  
-Source: The rent veil (Matthew 27:51; Isaiah 64:1 ("rend the heavens and come down")).
+Source: The rent veil (Matthew 27:51; Isaiah 64:1 ("Oh that thou wouldest rend the heavens, that thou wouldest come down")).
 
 **The companion dimension** · first appears Volume I, 3:xii  
 In the book: In-universe attempt to explain Chaos without religious vocabulary; the other space has interacted with realspace throughout history and produced what was remembered as magic, daemons and visitation.  
@@ -900,7 +900,7 @@ Source: The drowned city of Ys; the tower that reached heaven (Breton legend of 
 
 **The City of Dust** · first appears Volume I, 4:xviii  
 In the book: The Emperor's path through the realm of Chaos reduces a great swathe of the Inevitable City to a City of Dust: an endless empty city of memory and melancholy, dirty roofs, overgrown byways, a broad ribbon of charred pale ash marking his progress; at once far off and just outside (8:iii). During the withdrawal the skeletonised City of Dust splits free and drifts like an iceberg into the exoplanar gulf (10:xviii).  
-Source: Irkalla, the house of dust (Epic of Gilgamesh, Tablet VII ("the house where dust is their food and clay their bread"); Genesis 3:19; Job 7:21).
+Source: Irkalla, the house of dust (Epic of Gilgamesh, Tablet VII (the house of dust, where the dead eat dust and clay); Genesis 3:19; Job 7:21).
 
 **The supernal realm** · first appears Volume I, 4:xx  
 In the book: The opening warp turns against the blind, unconstellated void while lightning reaches down onto Terra.  
