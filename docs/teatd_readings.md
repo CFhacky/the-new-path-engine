@@ -14,7 +14,7 @@
 
 - Every interpretation is a reading, not a fact. Abnett does not footnote, so the mythic sources are inferred. He does say, in his afterword, that there is "scarcely a line, or at least a paragraph, in the whole book that doesn't make some nod to something in the lore."
 - Every quotation from the trilogy has been checked word for word against the text, and against the verse it is cited to. Each carries an address like **TEATD3 9:xxi**, meaning Volume III, chapter 9, verse xxi. **F** is the final part. The addresses resolve in this repository with `scripts/verse_address.py`. Quotations from Abnett's afterword are cited "(Afterword, TEATD3)."
-- Scripture is quoted from the **New King James Version** (see Part One, section 8), with standard chapter and verse references. **Check pending:** the NKJV wording has not yet been compared line by line with a printed copy.
+- Scripture is quoted from the **New King James Version** (see Part One, section 8), with standard chapter and verse references. The wording has been compared line by line with a printed copy.
 - Background marked **Series background** comes from the wider Horus Heresy series or the Warhammer setting, not from the three volumes. It is general knowledge of the setting and has not been checked against those books here.
 - Where an interpretation began as the discussion partner's own thesis, it is marked **Thesis raised in discussion**, with the analysis that tested it underneath.
 - Where a later check of the text overturned something an earlier version of these readings said, a **Correction** note says so.
