@@ -7,14 +7,14 @@
 **How it is laid out.**
 
 - **Part One** gives everything you need first, on both sides. For the story: what Warhammer 40,000 is, how the Heresy happened, a detailed retelling of all three volumes, the rules of the universe, who's who, and how the books are written. For the sources: a short course in the Bible, Norse, Greek, Egyptian and Persian myth, and the poets of hell, with a table of what the characters' names mean.
-- **Part Two** gives sixteen readings. Each shows the scene it rests on (**In the story**), the interpretation (**The reading**), and the myth, scripture or literature it draws on, told for someone who has not read that either.
+- **Part Two** gives seventeen readings. Each shows the scene it rests on (**In the story**), the interpretation (**The reading**), and the myth, scripture or literature it draws on, told for someone who has not read that either.
 - **The Appendix** lists every realm of the warp the trilogy names, with its source.
 
 **How to read the labels.**
 
 - Every interpretation is a reading, not a fact. Abnett does not footnote, so the mythic sources are inferred. He does say, in his afterword, that there is "scarcely a line, or at least a paragraph, in the whole book that doesn't make some nod to something in the lore."
 - Every quotation from the trilogy has been checked word for word against the text, and against the verse it is cited to. Each carries an address like **TEATD3 9:xxi**, meaning Volume III, chapter 9, verse xxi. **F** is the final part. The addresses resolve in this repository with `scripts/verse_address.py`. Quotations from Abnett's afterword are cited "(Afterword, TEATD3)."
-- Scripture is quoted from the **New King James Version** (see Part One, section 8), with standard chapter and verse references. The wording has been compared line by line with a printed copy.
+- Scripture is quoted from the **New King James Version** (see Part One, section 8), with standard chapter and verse references. The wording has been compared line by line with a printed copy, except for Luke 15:20 and 15:24, which were added with reading 17 and await that check.
 - Quotations from Tennyson, Milton, Hesiod, Ovid, the *Hávamál*, the Book of Common Prayer and Joyce have been checked against public-domain texts (Project Gutenberg, via its GITenberg mirror), including punctuation and line breaks. The translation is named where it matters. The Tolkien quotation has been checked against a printed copy of *The Fellowship of the Ring*.
 - Background marked **Series background** comes from the wider Horus Heresy series or the Warhammer setting, not from the three volumes. It is general knowledge of the setting and has not been checked against those books here.
 - Where an interpretation began as the discussion partner's own thesis, it is marked **Thesis raised in discussion**, with the analysis that tested it underneath.
@@ -518,7 +518,7 @@ Horus's verdict: "He is, and always has been, an entire arcana" (TEATD3 9:xxi).
 - **The aspects can be called back.** In the chase the Emperor "is drawing on all His gifts, many of them gifts He passed on to His sons" (TEATD3 9:xxi). Horus later catalogues his brothers as "all of them too much like Him," with "Fulgrim too in love with his own glory" (TEATD3 10:xvi). The seducer at the Marcher Fortress is Fulgrim's inheritance played back against the brother who corrupted him.
 - **Horus has two channels, and hears only one.** He can hear the whispers and talks back to them: "You are always whispering … Whisper, whisper. It's annoying" (TEATD3 10:iv). The second-person voice that narrates him, "you," he never once answers, because he takes it for his own thoughts. It flatters him, tells him what he wants, and calls it his choice. At the moment he could kill his father it says: "Well, perhaps. It's your choice. You are your own master" (TEATD3 10:iv).
 - **The Emperor speaks through others.** Through Caecaltus he says "my son," and Horus hears it (TEATD3 10:vi). At the last he takes Loken's face and voice, the one son Horus still half loves, and uses them to talk Horus out of his power.
-- **The whispers were not the daemons.** When Horus lets go, the whispers he has heard "since Maloghurst first woke you" turn out to be one phrase, "uttered in unison by a million voices. Two million. An entire species" (TEATD3 10:xvi): "*The Emperor must live*." It is humanity praying. And the prayer has a traceable origin: a psychic call sent out on Dorn's authority by Actae, in borrowed flesh, through a prison wall (reading 16).
+- **The whispers were not the daemons.** When Horus lets go, the whispers he has heard "since Maloghurst first woke you" turn out to be one phrase, "uttered in unison by a million voices. Two million. An entire species" (TEATD3 10:xvi): "*The Emperor must live*." It is humanity praying. (How the Emperor himself speaks, through servants, masks and visions, and why, is reading 17, with a full catalogue in `docs/teatd_emperor_voice.md`.) And the prayer has a traceable origin: a psychic call sent out on Dorn's authority by Actae, in borrowed flesh, through a prison wall (reading 16).
 
 Every time, the bait is the same: autonomy. Be your own master; face him as yourself; be a man and feel it. And every time, Horus sets down the winning move to prove he chose freely. The trilogy spent three volumes putting the reader inside Horus's head as "you," and the last trick is that the reader was listening to the same voices he was.
 
@@ -676,7 +676,7 @@ And the third nail plays too. The pentacle left in the Emperor's shoulder comes 
 
 Two more things turn up in the dust. Among the Emperor's cards Leetu finds one that was not in the spread Horus read: "*The World*" (TEATD3 10:xix). It is the last trump of the traditional tarot, the card of completion. Mixed in with those are Horus's own cards, "*The Orphan* and *The Revenger*. *The Despoiler*," and Leetu "doesn't say their names. He knows whose deck they came from" (TEATD3 10:xix). The Despoiler goes, in the book's last pages, to Abaddon.
 
-So the thesis is literally what happens. Horus read the Emperor's hand as weak because he counted cards, not people. Every card is a servant or son whom the Emperor had placed on the board, and each of them wins a few seconds. He could not win alone. "He could not fight you alone. He could not beat you alone. But by bluff and ruse and stratagem and sacrifice, He has held your attention until He no longer has to" (TEATD3 10:xvi). That line answers the first thing the Emperor says in the trilogy: "*I cannot fight alone*" (TEATD1 1:xxiii).
+So the thesis is literally what happens. Horus read the Emperor's hand as weak because he counted cards, not people. Every card is a servant or son whom the Emperor had placed on the board, and each of them wins a few seconds. He could not win alone. "He could not fight you alone. He could not beat you alone. But by bluff and ruse and stratagem and sacrifice, He has held your attention until He no longer has to" (TEATD3 10:xvi). That line answers the first thing the Emperor says in the trilogy: "*I cannot fight alone*" (TEATD1 1:xxiii). The cards are also the last way he speaks at all. When his voice is gone, "signs and symbols are the only language we have left" (TEATD3 10:xx); see reading 17.
 
 **Myth: the tarot, card by card.** The **Imperial Tarot** of the setting is modelled on the real tarot. The historical deck began in fifteenth-century Italy as a card game, the *trionfi* or "triumphs," with an extra suit of picture cards that beat all the others. Our word "trump" comes from *trionfi*. The occult reading of the cards came later, in eighteenth-century France. There, the scholar Antoine Court de Gébelin claimed in *Le Monde primitif* (1781) that the trumps were a lost Egyptian book of wisdom. They were not, but the idea stuck. In the traditional order, the last of the twenty-one numbered trumps is **The World**: a figure dancing inside a wreath, surrounded by the four living creatures of Ezekiel and Revelation. It is the card of completion, the journey finished. Other trumps are close cousins of the Imperial cards: *The Emperor*, *The Tower* (once called *La Maison Dieu*, "the House of God"), and *Judgement*, where the dead rise at the angel's trumpet.
 
@@ -827,6 +827,115 @@ So Oll is the Ulysses of the poem: the old wanderer who will not rest, setting o
 - **Legends of the unknown soldier.** Every army that has fought a long war has produced a story of one ordinary soldier who held the line alone. It is usually not true in detail, and it is always true in what it means. The Imperial saint Ollanius Pius, in the wider setting, is that legend. The trilogy shows the story being told for the first time, by a witch who knew the man it was about.
 
 **Not to be confused.** The trilogy has a second Moriana: **Moriana Mouhausen**, one of Malcador's Chosen, who serves Vulkan in the Throne Room (TEATD1 3:ix). She is a different person, and she is standing beside Vulkan when Katerina Moriana's call reaches him (TEATD3 10:x).
+
+## 17. The Emperor's voice
+
+**Thesis raised in discussion.** Why does the Emperor speak through Caecaltus Dusk, throughout the trilogy, instead of answering himself? He speaks freely enough when he is building a psychic scene or appearing as someone else. A vision he puts someone into is itself a way of speaking. And the Loken scenes belong to the same pattern.
+
+**In the story.** This reading rests on a full catalogue, `docs/teatd_emperor_voice.md`. It records 324 passages across the three volumes in which the Emperor communicates, or someone remarks on how he does, each with its address and a verbatim quotation. They sort into six modes:
+- his own voice;
+- a mouthpiece;
+- an aspect, or mask;
+- a vision;
+- silence;
+- a sign.
+
+Signs and silences outnumber his own words by three to one. Volume II has no telepathic speech from him at all apart from one call. In Volume III he speaks in his own voice at three moments only.
+
+**The reading.** The Caecaltus arrangement is one part of a single rule. **The Emperor speaks freely whenever something stands between his face and the listener: a servant, a mask, or a scene of his own making. He almost never speaks bare-faced.** The text gives the rule, the reason, the cost, and the one exception.
+
+### The mouthpiece is an office
+
+The voice passes from hand to hand.
+- **Malcador holds it first, by explicit commission.** When Malcador asks whether he should tell the others, "He tells me that I speak for him in all things" (TEATD1 2:xii). At the council of the four champions: "His mind turns to me, and makes his resolution known. Once again, I become his voice" (TEATD1 2:xiv). The "once again" matters. This is a habit centuries old.
+- **Malcador knows it is a fault.** In the same verse he reproaches his lord: "For too long, as is your habit, you've seemed silent and remote, hiding your schemes from all" (TEATD1 2:xiv). He traces it to solitude: "He was too long alone, I fear" (TEATD1 2:xiv).
+- **The Emperor answers with a promise, privately, to Malcador:** "+I will answer him. I will answer every question they ask. I owe them that.+" (TEATD1 2:ix).
+- **He keeps it, briefly, once Malcador is gone.** When Malcador takes the Throne, the voice he has borrowed for centuries is gone. For the first time in the trilogy the Emperor speaks to his sons himself: "+The Hero,+ a voice corrects him gently" (TEATD1 2:xviii). He speaks aloud exactly once in the whole trilogy: "'Now we begin in earnest,' He says" (TEATD1 2:xviii).
+- **Then the office passes to the Hetaeron.** Caecaltus carries Malcador's sigil on his breastplate. By Volume II he feels "*The will of my master, the Emperor, moves through me*" and is "a passenger in his own body" (TEATD2 5:vi).
+
+### The mouthpiece is a mask
+
+The book joins the user's two observations in one line. In Volume II, Caecaltus is speaking to Oll for his king, and Oll protests, "Face me yourself. Don't speak to me through another." The proconsul answers: "My king bids me serve Him as an aspect" (TEATD2 8:iv).
+
+The servant *is* a mask. Caecaltus belongs on the same list as the war-king, the seducer, the wolf and the false Loken. He is one more face the Emperor speaks through. Malcador opened the trilogy by saying that "No one has ever seen his true face, or learned his true name" (TEATD1 1:v). The rule follows from that. A being with no single face speaks most easily through faces that are not his.
+
+### The reason given: to see him is to die
+
+The book states the reason plainly. "There is no alternative, Ollanius. One glimpse of my king would scatter your atoms. This must suffice" (TEATD2 8:iv). The Hetaeron know it from inside: "*If He lets us look at Him, we will die*" (TEATD2 5:xxxviii). Actae is destroyed by a single glimpse of the Dark King (TEATD2 7:xlii).
+
+This is God's answer to Moses almost word for word: "You cannot see My face; for no man shall see Me, and live" (Exodus 33:20). God gave Moses a spokesman too. Moses protested that he was no speaker, so God sent his brother Aaron to be his mouth (Exodus 4:16). The mouthpiece exists to protect the listener.
+
+### The division of labour
+
+Once the office exists, the text shows how it is used. In the confrontation with Sanguinius (TEATD1 2:xxii), which ends with "+Companions, elucidate my son. He does not listen to me.+", the roles split cleanly:
+- **His own voice keeps the questions and the praise:** "+But to face me, unflinching and defiant, shows your courage is not weak.+" (TEATD1 2:xxii).
+- **The Companions deliver the hard truths.** That Sanguinius is too badly hurt, that his father fears the wound is mortal: Caecaltus speaks such lines "as though the words are not his own and he is merely reporting them" (TEATD1 2:xxii).
+
+At the last question, why we suffer, the pattern runs to its end:
+1. He gives a one-line answer of his own: "+Because whatever we are and whatever we do, we are, and must always be, human.+"
+2. Five Companions gloss it, one after another, like a chorus.
+3. When words run out, he shows Sanguinius a vision: "his gift of foresight commandeered by his father's will" (TEATD1 2:xxiv).
+
+The vision contains its own theory of why he prefers to show: "Emotions are symbols, instantly bypassing conscious decision and conveying more than words can ever manage" (TEATD1 2:xxiv).
+
+### The vision is speech
+
+The user's second point is right, and the text bears it out. When the Emperor wants to say something whole, he builds a scene.
+- **To Malcador,** before the assault: "he shows me his plan. Effortlessly, he takes my mindsight into his, and melds them together" (TEATD1 1:xxx).
+- **Against Horus's illusions** aboard the flagship: "He shares his searing mindsight with them" (TEATD1 3:xxxii). Shared sight is the weapon.
+- **In the duel, the scenes become sentences.** He answers blows with places. "His parry is particularly impressive. He parries your swing with Cthonia," the gang-world where Horus was found as a child (TEATD3 9:xxi). "He parries you with Isstvan V, still white-hot and smouldering from your victory" (TEATD3 9:xxi). Each location is an argument addressed to his son: this is where I found you, and this is what you did. Horus hears it and pretends not to understand: "How is this supposed to hurt?"
+- **The one aspect that speaks in the chase,** the seducer at the Marcher Fortress, speaks inside Horus's own second-person voice: "Don't be like Him. Listen, the greatest satisfaction will come from beating Him as *you*" (TEATD3 9:xxi). It is a mask telling Horus to drop his masks.
+
+### Yielding in the first person
+
+Over the argument with Oll, the pronouns tell the story.
+- **At first,** the proconsul speaks of "my king", and the narration marks the voice: "replies Caecaltus Dusk, though the voice he uses is not his own" (TEATD2 8:vi).
+- **Then** a "me" slips through. The proconsul pauses before one answer "as if waiting to be given the right answer" (TEATD2 8:vi).
+- **By the crisis,** the mouth says "I": "I cannot do it without this power, Ollanius" (TEATD2 8:xiv). And at the moment he gives way, the voice through Caecaltus is fully the Emperor's own, personal and almost fond: "You were ever the most stubborn and principled of those who came to me, Ollanius" (TEATD2 8:xiv).
+
+The mask thins exactly as he changes his mind. He can argue in a borrowed voice. He concedes in the first person.
+
+### Loken: instrument, informant, private line, face
+
+The user remembered the Loken scenes, and together they are the most complete case in the trilogy.
+- **Instrument.** Loken tells Oll that Rubio's old sword burns in his hands: "power flows through it when I wield it. That power is not mine" (TEATD2 7:xli). In Volume III the narration confirms it: "The Emperor placed His power in Loken, so that he could act as His instrument" (TEATD3 9:xx).
+- **Informant.** When Loken kneels, "I am your servant, my Emperor," the Emperor answers without a word. He reads him, "as though a great psychic power has effortlessly extended the merest, inquisitive fraction of itself" (TEATD2 8:xiv). From what the daemon Samus showed Loken, he learns Horus's final trap. Loken is how the Emperor listens.
+- **Private line.** At the end, Loken stands over the crushed body and speaks to it. "You were right," he says. "Their grip on him is too great. He will not turn back, and he cannot be saved" (TEATD3 10:xiv). Horus mocks him, "You speak to Him as though He had sense and life left to answer?", and Loken says only, "He does" (TEATD3 10:xiv). The body is an empty husk. Only after it is over do we learn what Loken meant: "He can no longer hear the Master of Mankind in his head" (TEATD3 10:xix). The Emperor had been speaking inside Loken the whole time.
+- **Face.** And when the Emperor finally reasons with Horus, "A feeling heart… Be a man and show you are sensible to it" (TEATD3 10:xvi), he does it in Loken's face and voice. Loken has carried the Emperor's power, his hearing and his private voice. At the last he lends him his face.
+
+### Silence as a verdict
+
+With Horus the rule becomes judgment.
+- **In Volume I, the Emperor does address Horus directly, but only in wrath.** "+I will burn your touch out of them, first-found.+" (TEATD1 3:v). And through the warp: "+I am here, Horus Lupercal, and for you, I am the end and the death.+" (TEATD1 3:xxxii).
+- **At the parley in Volume III, he speaks, but not to Horus.** "+You have killed my son.+", and then, four times, "+Why?+" (TEATD3 9:ix). Horus answers as if the words were for him, until he sees the Old Four behind him and understands: "He had been talking to them about you. He considers you dead. Dead and lost" (TEATD3 9:ix).
+- **From then on, the silence is the sentence.** "He didn't even bother to decline your offer. He didn't acknowledge you at all" (TEATD3 9:xxi). Nailed and tortured, "He refuses to scream or voice His pain" (TEATD3 9:xvi). When Horus longs for one word of recognition: "No words. He'd never say it. He can't speak anyway" (TEATD3 10:iv). Horus once spent "thirty years of learning His shorthand, learning to read His gnomic comments" (TEATD3 9:ix), and now he is given nothing to read.
+
+Then, once the power has gone out of Horus and he is only a man, the Emperor speaks to him in his own voice for the only time in the volume: "+I wait for you and I forgive you.+" (TEATD3 10:xvi).
+
+"Dead and lost," and then "I wait for you." It is the parable of the prodigal son, spoken by the father. The son was counted dead. The father waits on the road. And the words he has kept back through the whole duel are forgiveness: "for this my son was dead and is alive again; he was lost and is found" (Luke 15:24).
+
+### When the voice is gone: signs
+
+When he can no longer speak at all, the signs take over.
+- **The star.** In Volume II a steadfast white star guides Valdor, Dorn and Sanguinius through the warp without a word. It goes out at the instant he sheds the Dark King's power, and in its place comes the one call of the volume: "*Those who may hear me, join me now*" (TEATD2 8:xvi). The narration glosses it: "The Emperor seldom speaks directly" (TEATD2 8:xx).
+- **The cards.** In Volume III the tarot cards carry him. Leetu is sure of it: "But He'd show us. If there was a chance, He'd find a way to show us. That's what He does" (TEATD3 10:xix). Dorn, holding *The Throne*: "So he speaks to us after all" (TEATD3 10:xix).
+- **Malcador's last word on it.** Dying, Malcador names what the two of them have been doing all along: "signs and symbols are the only language we have left" (TEATD3 10:xx).
+
+So the Caecaltus question has an answer in four parts.
+1. **Office.** Speaking through another is an old office, not a whim. Malcador held it and knew it for a fault.
+2. **Protection.** To see or hear him bare is lethal, so the mouthpiece guards the listener.
+3. **Freedom.** The mask, the mouthpiece and the vision all let him say what he can no longer say as himself. After Volume II he has cut his own feelings away, and Loken's face can still plead.
+4. **Exception.** The whole architecture exists so that the one time he does speak bare-faced to his son, the words are forgiveness.
+
+**Scripture and language: the spokesman, the messenger, the mask, the waiting father.**
+- **Moses and Aaron** (Exodus 4:10–16). At the burning bush, Moses protests that he cannot do what God asks, because he is slow of speech. God answers that Aaron, Moses's brother, will speak for him. Aaron will be Moses's mouth, and Moses will be to Aaron as God. The Bible's first spokesman is appointed because the one with the message cannot say it himself.
+- **The face that kills** (Exodus 33:18–23), told in full with reading 3. Moses asks to see God's glory. God answers that no one can see his face and live, and shows him only his back.
+- **The messenger who speaks as God.** The Greek *angelos*, from which "angel" comes, means "messenger." In the Hebrew Bible, "the Angel of the LORD" often speaks in God's own first person. At the burning bush the text slides from the angel who appears in the fire to God who calls from it (Exodus 3:2–4). The messenger and the sender blur, as the proconsul's "my king" slides into "I."
+- **Sons, and servants.** The Letter to the Hebrews opens by saying that God spoke in many ways through the prophets, and at last through his Son (Hebrews 1:1–2). The Emperor's tragedy runs the other way. His sons would not carry his word, so servants did.
+- **The prodigal son** (Luke 15:11–32). A younger son takes his inheritance early, leaves, and wastes it all in a far country. Starving, he comes home, meaning to ask only to be taken on as a hired servant. "But when he was still a great way off, his father saw him and had compassion, and ran and fell on his neck and kissed him" (Luke 15:20). The father orders a feast, "for this my son was dead and is alive again; he was lost and is found" (Luke 15:24). The father has been watching the road all along. In the trilogy, the Emperor judges Horus "dead and lost" and then says "I wait for you".
+- ***Persona*** is the Latin word for the mask a Roman actor wore, and from it come "person" and "personality." The Roman scholar Aulus Gellius (*Attic Nights* V.7) records a derivation from *per-sonare*, "to sound through," because the actor's voice sounded through the mask's mouth. Modern linguists doubt the etymology and prefer an Etruscan origin, *phersu*. The image fits the Emperor all the same: the voice comes through the mask.
+
+**Correction.** Earlier readings in this companion, and the discussion behind them, said or implied that the Emperor never addresses Horus directly until the end. He does, in Volume I (TEATD1 3:v, 3:xxxii). And the words at the parley, "+You have killed my son.+", which were first read as spoken to Horus, are addressed to the Old Four (TEATD3 9:ix).
 
 ---
 
