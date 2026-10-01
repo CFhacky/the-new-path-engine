@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Edit",
+      "Write",
+      "Read",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Skill",
+      "mcp__github",
+      "mcp__Remote_Desktop_Commander",
+      "mcp__claude-code-remote__read_documentation",
+      "mcp__claude-code-remote__get_session",
+      "mcp__claude-code-remote__list_repos",
+      "mcp__Notion__notion-search",
+      "mcp__Notion__notion-ai-search",
+      "mcp__Notion__notion-fetch",
+      "mcp__Notion__notion-query-data-sources",
+      "mcp__Notion__notion-query-multiple-data-sources",
+      "mcp__Notion__notion-get-comments",
+      "mcp__Notion__notion-get-users",
+      "mcp__Notion__notion-get-teams",
+      "mcp__Notion__notion-list-recent-pages",
+      "mcp__Notion__notion-download-attachment",
+      "mcp__Google_Drive__search_files",
+      "mcp__Google_Drive__read_file_content",
+      "mcp__Google_Drive__download_file_content",
+      "mcp__Google_Drive__get_file_metadata",
+      "mcp__Google_Drive__get_file_permissions",
+      "mcp__Google_Drive__list_recent_files"
+    ],
+    "ask": [
+      "mcp__github__merge_pull_request",
+      "mcp__github__delete_file",
+      "mcp__github__create_repository",
+      "mcp__github__fork_repository",
+      "mcp__Remote_Desktop_Commander__shutdown",
+      "mcp__Remote_Desktop_Commander__set_config_value"
+    ]
+  }
+}
