@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-03",
- "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD. DMG batch drafted 2026-10-03; drafts are NOT ratified; Notion Registry append needs owner rulings on the forks in each file.",
+ "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD. DMG batch drafted 2026-10-03; drafts are NOT ratified; Notion Registry append needs owner rulings on the forks in each file. MIC weapon properties drafted 2026-10-03 from D:\\Backup\\I-drive\\Sourcebooks (batches mic-01..12); the 13 MIC weapon crystals and the MIC Specific weapons section are out of scope for this pass.",
  "done": [
   {
    "name": "Crusader",
@@ -170,7 +170,8 @@
    "aura": "conjuration",
    "page": 29,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Aquan",
@@ -180,7 +181,8 @@
    "aura": "evocation",
    "page": 29,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Aquatic",
@@ -190,7 +192,8 @@
    "aura": "abjuration",
    "page": 29,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Auran",
@@ -200,7 +203,8 @@
    "aura": "evocation",
    "page": 29,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Banishing",
@@ -210,7 +214,8 @@
    "aura": "abjuration",
    "page": 29,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Berserker",
@@ -220,7 +225,8 @@
    "aura": "enchantment",
    "page": 30,
    "applies_to": "Two-handed melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Binding",
@@ -230,7 +236,8 @@
    "aura": "abjuration",
    "page": 30,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Blessed",
@@ -240,7 +247,8 @@
    "aura": "transmutation",
    "page": 30,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Blindsighted",
@@ -250,7 +258,8 @@
    "aura": "divination",
    "page": 30,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-01.md"
   },
   {
    "name": "Bloodfeeding",
@@ -260,7 +269,8 @@
    "aura": "necromancy",
    "page": 30,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Bloodstone",
@@ -270,7 +280,8 @@
    "aura": "necromancy",
    "page": 30,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Blurstrike",
@@ -280,7 +291,8 @@
    "aura": "illusion",
    "page": 30,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Body Feeder",
@@ -290,7 +302,8 @@
    "aura": "necromancy",
    "page": 31,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Brash",
@@ -300,7 +313,8 @@
    "aura": "abjuration",
    "page": 31,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Brutal Surge",
@@ -310,7 +324,8 @@
    "aura": "evocation",
    "page": 31,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Chargebreaker",
@@ -320,7 +335,8 @@
    "aura": "enchantment",
    "page": 32,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Charging",
@@ -330,7 +346,8 @@
    "aura": "transmutation",
    "page": 32,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Collision",
@@ -340,7 +357,8 @@
    "aura": "transmutation",
    "page": 32,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-02.md"
   },
   {
    "name": "Consumptive",
@@ -350,7 +368,8 @@
    "aura": "necromancy",
    "page": 32,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Corrosive",
@@ -360,7 +379,8 @@
    "aura": "conjuration",
    "page": 32,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Cursespewing",
@@ -370,7 +390,8 @@
    "aura": "necromancy",
    "page": 32,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Deadly Precision",
@@ -380,7 +401,8 @@
    "aura": "transmutation",
    "page": 33,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Defensive Surge",
@@ -390,7 +412,8 @@
    "aura": "abjuration",
    "page": 33,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Desiccating",
@@ -400,7 +423,8 @@
    "aura": "necromancy",
    "page": 33,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Desiccating Burst",
@@ -410,7 +434,8 @@
    "aura": "necromancy",
    "page": 33,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Disarming",
@@ -420,7 +445,8 @@
    "aura": "transmutation",
    "page": 33,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Dislocator",
@@ -430,7 +456,8 @@
    "aura": "conjuration",
    "page": 33,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Dispelling",
@@ -440,7 +467,8 @@
    "aura": "abjuration",
    "page": 34,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-03.md"
   },
   {
    "name": "Divine Wrath",
@@ -450,7 +478,8 @@
    "aura": "evocation",
    "page": 34,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Domineering",
@@ -460,7 +489,8 @@
    "aura": "necromancy",
    "page": 34,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Doom Burst",
@@ -470,7 +500,8 @@
    "aura": "necromancy",
    "page": 34,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Dragondoom",
@@ -480,7 +511,8 @@
    "aura": "transmutation",
    "page": 34,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Dragonhunter",
@@ -490,7 +522,8 @@
    "aura": null,
    "page": 34,
    "applies_to": "Projectile weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Eager",
@@ -500,7 +533,8 @@
    "aura": "evocation",
    "page": 35,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Energy Aura",
@@ -510,7 +544,8 @@
    "aura": "evocation",
    "page": 35,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Energy Surge",
@@ -520,7 +555,8 @@
    "aura": "evocation",
    "page": 35,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Enervating",
@@ -530,7 +566,8 @@
    "aura": "necromancy",
    "page": 35,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-04.md"
   },
   {
    "name": "Ethereal Reaver",
@@ -540,7 +577,8 @@
    "aura": "divination",
    "page": 35,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Everbright",
@@ -550,7 +588,8 @@
    "aura": "evocation",
    "page": 35,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Fiercebane",
@@ -560,7 +599,8 @@
    "aura": "conjuration",
    "page": 36,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Force",
@@ -570,7 +610,8 @@
    "aura": "evocation",
    "page": 36,
    "applies_to": "Projectile weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Ghost Strike",
@@ -580,7 +621,8 @@
    "aura": "conjuration",
    "page": 36,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Harmonizing",
@@ -590,7 +632,8 @@
    "aura": "illusion",
    "page": 36,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Heavenly Burst",
@@ -600,7 +643,8 @@
    "aura": "evocation",
    "page": 37,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Hideaway",
@@ -610,7 +654,8 @@
    "aura": "transmutation",
    "page": 37,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Holy Surge",
@@ -620,7 +665,8 @@
    "aura": "evocation",
    "page": 37,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-05.md"
   },
   {
    "name": "Hunting",
@@ -630,7 +676,8 @@
    "aura": "abjuration",
    "page": 37,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Ignan",
@@ -640,7 +687,8 @@
    "aura": "evocation",
    "page": 37,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Illuminating",
@@ -650,7 +698,8 @@
    "aura": "evocation",
    "page": 37,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Illusion Bane",
@@ -660,7 +709,8 @@
    "aura": "divination",
    "page": 37,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Illusion Theft",
@@ -670,7 +720,8 @@
    "aura": "divination",
    "page": 38,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Impact",
@@ -680,7 +731,8 @@
    "aura": "evocation",
    "page": 38,
    "applies_to": "Bludgeoning weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Impaling",
@@ -690,7 +742,8 @@
    "aura": "transmutation",
    "page": 38,
    "applies_to": "Piercing melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-06.md"
   },
   {
    "name": "Impedance",
@@ -700,7 +753,8 @@
    "aura": "abjuration",
    "page": 38,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Implacable",
@@ -710,7 +764,8 @@
    "aura": "necromancy",
    "page": 38,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Incorporeal Binding",
@@ -720,7 +775,8 @@
    "aura": "conjuration",
    "page": 39,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Knockback",
@@ -730,7 +786,8 @@
    "aura": "evocation",
    "page": 39,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Lucky",
@@ -740,7 +797,8 @@
    "aura": "divination",
    "page": 39,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Magebane",
@@ -750,7 +808,8 @@
    "aura": "evocation",
    "page": 39,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Maiming",
@@ -760,7 +819,8 @@
    "aura": "transmutation",
    "page": 39,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Manifester",
@@ -770,7 +830,8 @@
    "aura": "divination",
    "page": 39,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Metalline",
@@ -780,7 +841,8 @@
    "aura": "transmutation",
    "page": 39,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Mighty Smiting",
@@ -790,7 +852,8 @@
    "aura": "evocation",
    "page": 40,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-07.md"
   },
   {
    "name": "Mindcrusher",
@@ -800,7 +863,8 @@
    "aura": "necromancy",
    "page": 40,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Mindfeeder",
@@ -810,7 +874,8 @@
    "aura": "necromancy",
    "page": 40,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Morphing",
@@ -820,7 +885,8 @@
    "aura": "transmutation",
    "page": 40,
    "applies_to": "Melee or thrown weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Necrotic Focus",
@@ -830,7 +896,8 @@
    "aura": "necromancy",
    "page": 40,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Paralytic Burst",
@@ -840,7 +907,8 @@
    "aura": "enchantment",
    "page": 40,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Paralyzing",
@@ -850,7 +918,8 @@
    "aura": "enchantment",
    "page": 40,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Parrying",
@@ -860,7 +929,8 @@
    "aura": "enchantment",
    "page": 41,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Power Storing",
@@ -870,7 +940,8 @@
    "aura": "evocation",
    "page": 41,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Precise",
@@ -880,7 +951,8 @@
    "aura": "evocation",
    "page": 41,
    "applies_to": "Ranged weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Prismatic Burst",
@@ -890,7 +962,8 @@
    "aura": "evocation",
    "page": 41,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-08.md"
   },
   {
    "name": "Profane",
@@ -900,7 +973,8 @@
    "aura": "necromancy",
    "page": 41,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Profane Burst",
@@ -910,7 +984,8 @@
    "aura": "necromancy",
    "page": 41,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Psibane",
@@ -920,7 +995,8 @@
    "aura": "divination",
    "page": 42,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Psychic",
@@ -930,7 +1006,8 @@
    "aura": "no school",
    "page": 42,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Psychokinetic",
@@ -940,7 +1017,8 @@
    "aura": "evocation",
    "page": 42,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Psychokinetic Burst",
@@ -950,7 +1028,8 @@
    "aura": "evocation",
    "page": 42,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Resounding",
@@ -960,7 +1039,8 @@
    "aura": "enchantment",
    "page": 43,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Revealing",
@@ -970,7 +1050,8 @@
    "aura": "evocation",
    "page": 43,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-09.md"
   },
   {
    "name": "Sacred",
@@ -980,7 +1061,8 @@
    "aura": "conjuration",
    "page": 43,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Sacred Burst",
@@ -990,7 +1072,8 @@
    "aura": "conjuration",
    "page": 43,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Screaming",
@@ -1000,7 +1083,8 @@
    "aura": "evocation",
    "page": 43,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Screaming Burst",
@@ -1010,7 +1094,8 @@
    "aura": "evocation",
    "page": 43,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Shadowstrike",
@@ -1020,7 +1105,8 @@
    "aura": "illusion",
    "page": 44,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Shattermantle",
@@ -1030,7 +1116,8 @@
    "aura": "divination",
    "page": 44,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Shielding",
@@ -1040,7 +1127,8 @@
    "aura": "transmutation",
    "page": 44,
    "applies_to": "Light melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Sizing",
@@ -1050,7 +1138,8 @@
    "aura": "transmutation",
    "page": 44,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Slow Burst",
@@ -1060,7 +1149,8 @@
    "aura": "transmutation",
    "page": 44,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-10.md"
   },
   {
    "name": "Soulbound",
@@ -1070,7 +1160,8 @@
    "aura": "abjuration",
    "page": 44,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-11.md"
   },
   {
    "name": "Soulbound, Greater",
@@ -1080,7 +1171,8 @@
    "aura": "abjuration",
    "page": 44,
    "applies_to": "Weapon Asa free action, you choose how to allocate",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-11.md"
   },
   {
    "name": "Stygian",
@@ -1090,7 +1182,8 @@
    "aura": "necromancy",
    "page": 45,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-11.md"
   },
   {
    "name": "Sundering",
@@ -1100,7 +1193,8 @@
    "aura": "transmutation",
    "page": 45,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-11.md"
   },
   {
    "name": "Sweeping",
@@ -1110,7 +1204,8 @@
    "aura": null,
    "page": 45,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-11.md"
   },
   {
    "name": "Terran",
@@ -1120,7 +1215,8 @@
    "aura": "evocation",
    "page": 46,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Transmuting",
@@ -1130,7 +1226,8 @@
    "aura": "transmutation",
    "page": 46,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Unholy Surge",
@@ -1140,7 +1237,8 @@
    "aura": "evocation",
    "page": 46,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Vampiric",
@@ -1150,7 +1248,8 @@
    "aura": "necromancy",
    "page": 46,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Vanishing",
@@ -1160,7 +1259,8 @@
    "aura": "conjuration",
    "page": 46,
    "applies_to": "Melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Venomous",
@@ -1170,7 +1270,8 @@
    "aura": "necromancy",
    "page": 46,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Warning",
@@ -1180,7 +1281,8 @@
    "aura": "transmutation",
    "page": 47,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "covered",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Weakening",
@@ -1190,7 +1292,8 @@
    "aura": "necromancy",
    "page": 47,
    "applies_to": "Weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   },
   {
    "name": "Whirling",
@@ -1200,7 +1303,8 @@
    "aura": "transmutation",
    "page": 47,
    "applies_to": "Slashing melee weapon",
-   "status": "blocked-no-source-text"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/mic/mic-12.md"
   }
  ]
 }
