@@ -1,0 +1,2552 @@
+{
+ "source": "https://d2emu.com/db/runeword",
+ "harvested": "2026-10-03",
+ "note": "Personal campaign convenience data; not canon, not book RAW.",
+ "count": 99,
+ "records": [
+  {
+   "id": "ancients-pledge",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/ancients-pledge",
+   "name": "Ancients' Pledge",
+   "quality": "Runeword",
+   "base": "Ral + Ort + Tal",
+   "icon": "https://d2emu.com/db/assets/items/largeshield_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Any Shield",
+    "Req level:": "21"
+   },
+   "mods": [
+    "+50% Enhanced Defense",
+    "Cold Resist +30%",
+    "All Resistances +13%",
+    "Lightning Resist +35%",
+    "Fire Resist +35%",
+    "Poison Resist +35%",
+    "10% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "authority",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/authority",
+   "name": "Authority",
+   "quality": "Runeword",
+   "base": "Hel + Shael + Ral",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "29"
+   },
+   "mods": [
+    "2% Chance to Cast Level 10 Psychic Ward when Struck",
+    "10% Chance to Cast Level 15 Miasma Chain on Striking",
+    "+2 to Warlock Skills",
+    "+20% Faster Hit Recovery",
+    "+40–60% Enhanced Damage",
+    "Fire Resist +30%",
+    "Requirements -15%"
+   ]
+  },
+  {
+   "id": "beast",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/beast",
+   "name": "Beast",
+   "quality": "Runeword",
+   "base": "Ber + Tir + Um + Mal + Lum",
+   "icon": "https://d2emu.com/db/assets/items/doubleaxe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Axe, Scepter, Hammer",
+    "Req level:": "63"
+   },
+   "mods": [
+    "Level 9 Fanaticism Aura When Equipped",
+    "+40% Increased Attack Speed",
+    "+240–270% Enhanced Damage",
+    "20% Chance of Crushing Blow",
+    "25% Chance of Open Wounds",
+    "+3 to Werebear",
+    "+3 to Lycanthropy",
+    "Prevent Monster Heal",
+    "+25–40 to Strength",
+    "+10 to Energy",
+    "+2 to Mana after Each Kill",
+    "Level 13 Summon Grizzly (5 Charges)"
+   ]
+  },
+  {
+   "id": "black",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/black",
+   "name": "Black",
+   "quality": "Runeword",
+   "base": "Thul + Io + Nef",
+   "icon": "https://d2emu.com/db/assets/items/spikedclub_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Club, Hammer, Mace",
+    "Req level:": "35"
+   },
+   "mods": [
+    "+15% Increased Attack Speed",
+    "+120% Enhanced Damage",
+    "+200 to Attack Rating",
+    "Adds 3–14 Cold Damage",
+    "40% Chance of Crushing Blow",
+    "Knockback",
+    "+10 to Vitality",
+    "Magic Damage Reduced by 2",
+    "Level 4 Corpse Explosion (12 Charges)"
+   ]
+  },
+  {
+   "id": "bone",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/bone",
+   "name": "Bone",
+   "quality": "Runeword",
+   "base": "Sol + Um + Um",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "47"
+   },
+   "mods": [
+    "15% Chance to Cast Level 10 Bone Spear on Striking",
+    "15% Chance to Cast Level 10 Bone Armor when Struck",
+    "+2 to Necromancer Skills",
+    "+100–150 to Mana",
+    "All Resistances +15%",
+    "All Resistances +15%",
+    "Damage Reduced by 7"
+   ]
+  },
+  {
+   "id": "bramble",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/bramble",
+   "name": "Bramble",
+   "quality": "Runeword",
+   "base": "Ral + Ohm + Sur + Eth",
+   "icon": "https://d2emu.com/db/assets/items/gothicplate_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Armor",
+    "Req level:": "61"
+   },
+   "mods": [
+    "Level 15–21 Thorns Aura When Equipped",
+    "+50% Faster Hit Recovery",
+    "+25–50% to Poison Skill Damage",
+    "+300 Defense",
+    "Increase Maximum Mana 5%",
+    "Regenerate Mana 15%",
+    "+5% to Maximum Cold Resist",
+    "Fire Resist +30%",
+    "Poison Resist +100%",
+    "+13 to Life after Each Kill",
+    "Level 13 Spirit of Barbs (33 Charges)"
+   ]
+  },
+  {
+   "id": "brand",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/brand",
+   "name": "Brand",
+   "quality": "Runeword",
+   "base": "Jah + Lo + Mal + Gul",
+   "icon": "https://d2emu.com/db/assets/items/huntersbow_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "65"
+   },
+   "mods": [
+    "100% Chance to Cast Level 18 Bone Spear on Striking",
+    "35% Chance to Cast Level 14 Amplify Damage when Struck",
+    "Fires Explosive Arrows or Bolts",
+    "+260–340% Enhanced Damage",
+    "Ignore Target's Defense",
+    "20% Bonus to Attack Rating",
+    "+280–330% Damage to Demons",
+    "20% Deadly Strike",
+    "Prevent Monster Heal",
+    "Prevent Monster Heal",
+    "Knockback"
+   ]
+  },
+  {
+   "id": "breath-of-the-dying",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/breath-of-the-dying",
+   "name": "Breath of the Dying",
+   "quality": "Runeword",
+   "base": "Vex + Hel + El + Eld + Zod + Eth",
+   "icon": "https://d2emu.com/db/assets/items/militarypick_graphic.png",
+   "stats": {
+    "Sockets:": "6",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "69"
+   },
+   "mods": [
+    "50% Chance to Cast Level 20 Poison Nova when You Kill an Enemy",
+    "+60% Increased Attack Speed",
+    "+350–400% Enhanced Damage",
+    "-25% Target Defense",
+    "+50 to Attack Rating",
+    "+125% Damage to Undead",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "7% Mana Stolen per Hit",
+    "12–15% Life Stolen per Hit",
+    "Prevent Monster Heal",
+    "+30 to All Attributes",
+    "+1 to Light Radius",
+    "Requirements -20%",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "bulwark",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/bulwark",
+   "name": "Bulwark",
+   "quality": "Runeword",
+   "base": "Shael + Io + Sol",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "35"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "4–6% Life Stolen per Hit",
+    "+75–100% Enhanced Defense",
+    "+10 to Vitality",
+    "Increase Maximum Life 5%",
+    "Replenish Life +30",
+    "Damage Reduced by 10–15%",
+    "Damage Reduced by 7"
+   ]
+  },
+  {
+   "id": "call-to-arms",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/call-to-arms",
+   "name": "Call to Arms",
+   "quality": "Runeword",
+   "base": "Amn + Ral + Mal + Ist + Ohm",
+   "icon": "https://d2emu.com/db/assets/items/doubleaxe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "57"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+40% Increased Attack Speed",
+    "+200–240% Enhanced Damage",
+    "+50% Enhanced Damage",
+    "Adds 5–30 Fire Damage",
+    "7% Life Stolen per Hit",
+    "+2–6 to Battle Command",
+    "+1–6 to Battle Orders",
+    "+1–4 to Battle Cry",
+    "Prevent Monster Heal",
+    "Replenish Life +12",
+    "30% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "chains-of-honor",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/chains-of-honor",
+   "name": "Chains of Honor",
+   "quality": "Runeword",
+   "base": "Dol + Um + Ber + Ist",
+   "icon": "https://d2emu.com/db/assets/items/gothicplate_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Armor",
+    "Req level:": "63"
+   },
+   "mods": [
+    "+2 to All Skills",
+    "+200% Damage to Demons",
+    "+100% Damage to Undead",
+    "8% Life Stolen per Hit",
+    "+70% Enhanced Defense",
+    "+20 to Strength",
+    "Replenish Life +7",
+    "All Resistances +50%",
+    "All Resistances +15%",
+    "Damage Reduced by 8%",
+    "25% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "chaos",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/chaos",
+   "name": "Chaos",
+   "quality": "Runeword",
+   "base": "Fal + Ohm + Um",
+   "icon": "https://d2emu.com/db/assets/items/claws_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Hand to Hand",
+    "Req level:": "57"
+   },
+   "mods": [
+    "9% Chance to Cast Level 11 Frozen Orb on Striking",
+    "11% Chance to Cast Level 9 Charged Bolt on Striking",
+    "+35% Increased Attack Speed",
+    "+240–290% Enhanced Damage",
+    "+50% Enhanced Damage",
+    "Adds 216–471 Magic Damage",
+    "25% Chance of Open Wounds",
+    "+1 to Whirlwind",
+    "+10 to Strength",
+    "+15 to Life after Each Demon Kill"
+   ]
+  },
+  {
+   "id": "coven",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/coven",
+   "name": "Coven",
+   "quality": "Runeword",
+   "base": "Ist + Ral + Io",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "51"
+   },
+   "mods": [
+    "5% Chance to Cast Level 10 Sigil: Lethargy when Struck",
+    "+1 to All Skills",
+    "+20% Faster Cast Rate",
+    "+30–50% Enhanced Defense",
+    "+10 to Vitality",
+    "Fire Resist +30%",
+    "+1–5 to Life after Each Kill",
+    "1–15% Better Chance of Finding Magic Items",
+    "25% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "crescent-moon",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/crescent-moon",
+   "name": "Crescent Moon",
+   "quality": "Runeword",
+   "base": "Shael + Um + Tir",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Axe, Sword, Polearm",
+    "Req level:": "47"
+   },
+   "mods": [
+    "7% Chance to Cast Level 13 Static Field on Striking",
+    "10% Chance to Cast Level 17 Chain Lightning on Striking",
+    "+20% Increased Attack Speed",
+    "+180–220% Enhanced Damage",
+    "Ignore Target's Defense",
+    "-35% to Enemy Lightning Resistance",
+    "25% Chance of Open Wounds",
+    "+9–11 Magic Absorb",
+    "+2 to Mana after Each Kill",
+    "Level 18 Summon Spirit Wolf (30 Charges)"
+   ]
+  },
+  {
+   "id": "cure",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/cure",
+   "name": "Cure",
+   "quality": "Runeword",
+   "base": "Shael + Io + Tal",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "35"
+   },
+   "mods": [
+    "Level 1 Cleansing Aura When Equipped",
+    "+20% Faster Hit Recovery",
+    "+75–100% Enhanced Defense",
+    "+10 to Vitality",
+    "Increase Maximum Life 5%",
+    "Poison Resist +10–30%",
+    "Poison Resist +30%",
+    "Poison Length Reduced by 50%"
+   ]
+  },
+  {
+   "id": "death",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/death",
+   "name": "Death",
+   "quality": "Runeword",
+   "base": "Hel + El + Vex + Ort + Gul",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Sword, Axe",
+    "Req level:": "55"
+   },
+   "mods": [
+    "25% Chance to Cast Level 18 Glacial Spike on Attack",
+    "100% Chance to Cast Level 44 Chain Lightning when You Die",
+    "+300–385% Enhanced Damage",
+    "20% Bonus to Attack Rating",
+    "+50 to Attack Rating",
+    "Adds 1–50 Lightning Damage",
+    "7% Mana Stolen per Hit",
+    "50% Chance of Crushing Blow",
+    "0.5% Deadly Strike per level (0–49% at levels 1–99)",
+    "+1 to Light Radius",
+    "Level 22 Blood Golem (15 Charges)",
+    "Indestructible",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "delirium",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/delirium",
+   "name": "Delirium",
+   "quality": "Runeword",
+   "base": "Lem + Ist + Io",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "51"
+   },
+   "mods": [
+    "11% Chance to Cast Level 18 Confuse on Striking",
+    "14% Chance to Cast Level 13 Terror when Struck",
+    "6% Chance to Cast Level 14 Mind Blast when Struck",
+    "1% Chance to Cast Level 50 Delirium when Struck",
+    "+2 to All Skills",
+    "+261 Defense",
+    "+10 to Vitality",
+    "50% Extra Gold from Monsters",
+    "25% Better Chance of Finding Magic Items",
+    "Level 17 Attract (60 Charges)"
+   ]
+  },
+  {
+   "id": "destruction",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/destruction",
+   "name": "Destruction",
+   "quality": "Runeword",
+   "base": "Vex + Lo + Ber + Jah + Ko",
+   "icon": "https://d2emu.com/db/assets/items/scythe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Polearm, Sword",
+    "Req level:": "65"
+   },
+   "mods": [
+    "5% Chance to Cast Level 23 Molten Boulder on Striking",
+    "100% Chance to Cast Level 45 Meteor when You Die",
+    "15% Chance to Cast Level 22 Nova on Attack",
+    "23% Chance to Cast Level 12 Volcano on Striking",
+    "+350% Enhanced Damage",
+    "Ignore Target's Defense",
+    "Adds 100–180 Magic Damage",
+    "7% Mana Stolen per Hit",
+    "20% Chance of Crushing Blow",
+    "20% Deadly Strike",
+    "Prevent Monster Heal",
+    "+10 to Dexterity"
+   ]
+  },
+  {
+   "id": "doom",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/doom",
+   "name": "Doom",
+   "quality": "Runeword",
+   "base": "Hel + Ohm + Um + Lo + Cham",
+   "icon": "https://d2emu.com/db/assets/items/doubleaxe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Axe, Polearm, Hammer",
+    "Req level:": "67"
+   },
+   "mods": [
+    "5% Chance to Cast Level 18 Volcano on Striking",
+    "Level 12 Holy Freeze Aura When Equipped",
+    "+2 to All Skills",
+    "+45% Increased Attack Speed",
+    "+280–320% Enhanced Damage",
+    "+50% Enhanced Damage",
+    "-40–60% to Enemy Cold Resistance",
+    "20% Deadly Strike",
+    "25% Chance of Open Wounds",
+    "Prevent Monster Heal",
+    "Freezes Target +3",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "dragon",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/dragon",
+   "name": "Dragon",
+   "quality": "Runeword",
+   "base": "Sur + Lo + Sol",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor, Any Shield",
+    "Req level:": "61",
+    "Bonus Variants:": "Armor and Shield"
+   },
+   "mods": [
+    "12% Chance to Cast Level 15 Hydra on Striking",
+    "20% Chance to Cast Level 18 Venom when Struck",
+    "Level 14 Holy Fire Aura When Equipped",
+    "+360 Defense",
+    "+230 Defense vs. Missile",
+    "+3–5 to All Attributes",
+    "0.375 Strength per level (0–37 at levels 1–99)"
+   ]
+  },
+  {
+   "id": "dream",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/dream",
+   "name": "Dream",
+   "quality": "Runeword",
+   "base": "Io + Jah + Pul",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm, Any Shield",
+    "Req level:": "65",
+    "Bonus Variants:": "Helm and Shield"
+   },
+   "mods": [
+    "10% Chance to Cast Level 15 Confuse when Struck",
+    "Level 15 Holy Shock Aura When Equipped",
+    "+20–30% Faster Hit Recovery",
+    "+150–220 Defense",
+    "0.625 Mana per level (0–61 at levels 1–99)",
+    "All Resistances +5–20%",
+    "12–25% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "duress",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/duress",
+   "name": "Duress",
+   "quality": "Runeword",
+   "base": "Shael + Um + Thul",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "47"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "+20% Faster Hit Recovery",
+    "+10–20% Enhanced Damage",
+    "Adds 37–133 Cold Damage",
+    "15% Chance of Crushing Blow",
+    "33% Chance of Open Wounds",
+    "+150–200% Enhanced Defense",
+    "-20% Slower Stamina Drain",
+    "All Resistances +15%",
+    "Cold Resist +30%"
+   ]
+  },
+  {
+   "id": "edge",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/edge",
+   "name": "Edge",
+   "quality": "Runeword",
+   "base": "Tir + Tal + Amn",
+   "icon": "https://d2emu.com/db/assets/items/shortbow_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "25"
+   },
+   "mods": [
+    "Level 15 Thorns Aura When Equipped",
+    "+35% Increased Attack Speed",
+    "+320–380% Damage to Demons",
+    "+280% Damage to Undead",
+    "Adds 75 Poison Damage over 5 Seconds",
+    "7% Life Stolen per Hit",
+    "Prevent Monster Heal",
+    "+5–10 to All Attributes",
+    "+2 to Mana after Each Kill",
+    "Reduces all Vendor Prices 15%"
+   ]
+  },
+  {
+   "id": "enigma",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/enigma",
+   "name": "Enigma",
+   "quality": "Runeword",
+   "base": "Jah + Ith + Ber",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "65"
+   },
+   "mods": [
+    "+2 to All Skills",
+    "+45% Faster Run/Walk",
+    "+1 to Teleport",
+    "+750–775 Defense",
+    "0.75 Strength per level (0–74 at levels 1–99)",
+    "Increase Maximum Life 5%",
+    "Damage Reduced by 8%",
+    "+14 to Life after Each Kill",
+    "15% Damage Taken Goes to Mana",
+    "1% Magic Find per level (1–99% at levels 1–99)"
+   ]
+  },
+  {
+   "id": "enlightenment",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/enlightenment",
+   "name": "Enlightenment",
+   "quality": "Runeword",
+   "base": "Pul + Ral + Sol",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "45"
+   },
+   "mods": [
+    "5% Chance to Cast Level 15 Fire Ball on Striking",
+    "5% Chance to Cast Level 15 Blaze when Struck",
+    "+2 to Sorceress Skills",
+    "+1 to Warmth",
+    "+30% Enhanced Defense",
+    "Fire Resist +30%",
+    "Damage Reduced by 7"
+   ]
+  },
+  {
+   "id": "eternity",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/eternity",
+   "name": "Eternity",
+   "quality": "Runeword",
+   "base": "Amn + Ber + Ist + Sol + Sur",
+   "icon": "https://d2emu.com/db/assets/items/doubleaxe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Melee Weapon",
+    "Req level:": "63"
+   },
+   "mods": [
+    "+260–310% Enhanced Damage",
+    "+9 to Minimum Damage",
+    "7% Life Stolen per Hit",
+    "20% Chance of Crushing Blow",
+    "Hit Blinds Target +1",
+    "Slows Target by 33%",
+    "Replenish Life +16",
+    "Regenerate Mana 16%",
+    "Cannot Be Frozen",
+    "30% Better Chance of Finding Magic Items",
+    "Level 8 Revive (88 Charges)",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "exile",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/exile",
+   "name": "Exile",
+   "quality": "Runeword",
+   "base": "Vex + Ohm + Ist + Dol",
+   "icon": "https://d2emu.com/db/assets/items/targe_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Paladin Item",
+    "Req level:": "57"
+   },
+   "mods": [
+    "15% Chance to Cast Level 5 Life Tap on Striking",
+    "Level 13–16 Defiance Aura When Equipped",
+    "+2 to Offensive Auras (Paladin Only)",
+    "+30% Faster Block Rate",
+    "Freezes Target +1",
+    "+220–260% Enhanced Defense",
+    "Replenish Life +7",
+    "+5% to Maximum Cold Resist",
+    "+5% to Maximum Fire Resist",
+    "25% Better Chance of Finding Magic Items",
+    "Repairs 1 durability in 25 seconds"
+   ]
+  },
+  {
+   "id": "faith",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/faith",
+   "name": "Faith",
+   "quality": "Runeword",
+   "base": "Ohm + Jah + Lem + Eld",
+   "icon": "https://d2emu.com/db/assets/items/huntersbow_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "65"
+   },
+   "mods": [
+    "Level 12–15 Fanaticism Aura When Equipped",
+    "+1–2 to All Skills",
+    "+280% Enhanced Damage",
+    "+50% Enhanced Damage",
+    "Ignore Target's Defense",
+    "300% Bonus to Attack Rating",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "Adds 120 Fire Damage",
+    "All Resistances +15%",
+    "Reanimate As: [Returned]",
+    "75% Extra Gold from Monsters"
+   ]
+  },
+  {
+   "id": "famine",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/famine",
+   "name": "Famine",
+   "quality": "Runeword",
+   "base": "Fal + Ohm + Ort + Jah",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Axe, Hammer",
+    "Req level:": "65"
+   },
+   "mods": [
+    "+30% Increased Attack Speed",
+    "+270–320% Enhanced Damage",
+    "+50% Enhanced Damage",
+    "Ignore Target's Defense",
+    "Adds 180–200 Magic Damage",
+    "Adds 50–200 Fire/Lightning/Cold Damage",
+    "Adds 1–50 Lightning Damage",
+    "12% Life Stolen per Hit",
+    "Prevent Monster Heal",
+    "+10 to Strength",
+    "Ethereal"
+   ]
+  },
+  {
+   "id": "flickering-flame",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/flickering-flame",
+   "name": "Flickering Flame",
+   "quality": "Runeword",
+   "base": "Nef + Pul + Vex",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "55"
+   },
+   "mods": [
+    "Level 4–8 Resist Fire Aura When Equipped",
+    "+3 to Fire Skills",
+    "-10–15% to Enemy Fire Resistance",
+    "+30% Enhanced Defense",
+    "+30 Defense vs. Missile",
+    "+50–75 to Mana",
+    "+5% to Maximum Fire Resist",
+    "Half Freeze Duration",
+    "Poison Length Reduced by 50%"
+   ]
+  },
+  {
+   "id": "fortitude",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/fortitude",
+   "name": "Fortitude",
+   "quality": "Runeword",
+   "base": "El + Sol + Dol + Lo",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Weapon, Armor",
+    "Req level:": "59",
+    "Bonus Variants:": "Weapon and Armor"
+   },
+   "mods": [
+    "20% Chance to Cast Level 15 Chilling Armor when Struck",
+    "+25% Faster Cast Rate",
+    "+300% Enhanced Damage",
+    "+200% Enhanced Defense",
+    "1 Life per level (1–99 at levels 1–99)",
+    "All Resistances +25–30%",
+    "12% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "fury",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/fury",
+   "name": "Fury",
+   "quality": "Runeword",
+   "base": "Jah + Gul + Eth",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Melee Weapon",
+    "Req level:": "65"
+   },
+   "mods": [
+    "+40% Increased Attack Speed",
+    "+209% Enhanced Damage",
+    "Ignore Target's Defense",
+    "-25% Target Defense",
+    "20% Bonus to Attack Rating",
+    "6% Life Stolen per Hit",
+    "33% Deadly Strike",
+    "66% Chance of Open Wounds",
+    "Prevent Monster Heal",
+    "+5 to Frenzy (Class Only)"
+   ]
+  },
+  {
+   "id": "gloom",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/gloom",
+   "name": "Gloom",
+   "quality": "Runeword",
+   "base": "Fal + Um + Pul",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "47"
+   },
+   "mods": [
+    "15% Chance to Cast Level 3 Dim Vision when Struck",
+    "+10% Faster Hit Recovery",
+    "+170–230% Enhanced Defense",
+    "+30% Enhanced Defense",
+    "+10 to Strength",
+    "All Resistances +30%",
+    "All Resistances +15%",
+    "Half Freeze Duration",
+    "5% Damage Taken Goes to Mana",
+    "-3 to Light Radius"
+   ]
+  },
+  {
+   "id": "grief",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/grief",
+   "name": "Grief",
+   "quality": "Runeword",
+   "base": "Eth + Tir + Lo + Mal + Ral",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Sword, Axe",
+    "Req level:": "59"
+   },
+   "mods": [
+    "35% Chance to Cast Level 15 Venom on Striking",
+    "+30–40% Increased Attack Speed",
+    "Damage +340–400",
+    "Ignore Target's Defense",
+    "-25% Target Defense",
+    "1.875% Damage to Demons per level (1–185% at levels 1–99)",
+    "Adds 5–30 Fire Damage",
+    "-20–25% to Enemy Poison Resistance",
+    "20% Deadly Strike",
+    "Prevent Monster Heal",
+    "+10–15 to Life after Each Kill",
+    "+2 to Mana after Each Kill"
+   ]
+  },
+  {
+   "id": "ground",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/ground",
+   "name": "Ground",
+   "quality": "Runeword",
+   "base": "Shael + Io + Ort",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "35"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "+75–100% Enhanced Defense",
+    "+10 to Vitality",
+    "Increase Maximum Life 5%",
+    "Lightning Resist +10–30%",
+    "Lightning Resist +30%",
+    "+10–15% Lightning Absorb"
+   ]
+  },
+  {
+   "id": "hand-of-justice",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/hand-of-justice",
+   "name": "Hand of Justice",
+   "quality": "Runeword",
+   "base": "Sur + Cham + Amn + Lo",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "67"
+   },
+   "mods": [
+    "100% Chance to Cast Level 36 Blaze when You Level Up",
+    "100% Chance to Cast Level 48 Meteor when You Die",
+    "Level 16 Holy Fire Aura When Equipped",
+    "+33% Increased Attack Speed",
+    "+280–330% Enhanced Damage",
+    "Ignore Target's Defense",
+    "-20% to Enemy Fire Resistance",
+    "7% Life Stolen per Hit",
+    "20% Deadly Strike",
+    "Hit Blinds Target +1",
+    "Freezes Target +3"
+   ]
+  },
+  {
+   "id": "harmony",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/harmony",
+   "name": "Harmony",
+   "quality": "Runeword",
+   "base": "Tir + Ith + Sol + Ko",
+   "icon": "https://d2emu.com/db/assets/items/huntersbow_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "39"
+   },
+   "mods": [
+    "Level 10 Vigor Aura When Equipped",
+    "+200–275% Enhanced Damage",
+    "+9 to Minimum Damage",
+    "+9 to Maximum Damage",
+    "Adds 55–160 Fire/Lightning/Cold Damage",
+    "+2–6 to Valkyrie",
+    "+10 to Dexterity",
+    "Regenerate Mana 20%",
+    "+2 to Mana after Each Kill",
+    "+2 to Light Radius",
+    "Level 20 Revive (25 Charges)"
+   ]
+  },
+  {
+   "id": "heart-of-the-oak",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/heart-of-the-oak",
+   "name": "Heart of the Oak",
+   "quality": "Runeword",
+   "base": "Ko + Vex + Pul + Thul",
+   "icon": "https://d2emu.com/db/assets/items/gnarledstaff_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Staff, Mace",
+    "Req level:": "55"
+   },
+   "mods": [
+    "+3 to All Skills",
+    "+40% Faster Cast Rate",
+    "+75% Damage to Demons",
+    "+100 to Attack Rating against Demons",
+    "Adds 3–14 Cold Damage",
+    "7% Mana Stolen per Hit",
+    "+10 to Dexterity",
+    "Replenish Life +20",
+    "Increase Maximum Mana 15%",
+    "All Resistances +30–40%",
+    "Level 4 Oak Sage (25 Charges)",
+    "Level 14 Raven (60 Charges)"
+   ]
+  },
+  {
+   "id": "hearth",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/hearth",
+   "name": "Hearth",
+   "quality": "Runeword",
+   "base": "Shael + Io + Thul",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "35"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "+75–100% Enhanced Defense",
+    "+10 to Vitality",
+    "Increase Maximum Life 5%",
+    "Cold Resist +10–30%",
+    "Cold Resist +30%",
+    "+10–15% Cold Absorb",
+    "Cannot Be Frozen"
+   ]
+  },
+  {
+   "id": "holy-thunder",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/holy-thunder",
+   "name": "Holy Thunder",
+   "quality": "Runeword",
+   "base": "Eth + Ral + Ort + Tal",
+   "icon": "https://d2emu.com/db/assets/items/warscepter_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Scepter",
+    "Req level:": "21"
+   },
+   "mods": [
+    "+60% Enhanced Damage",
+    "+10 to Maximum Damage",
+    "-25% Target Defense",
+    "Adds 5–30 Fire Damage",
+    "Adds 20–60 Lightning Damage",
+    "Adds 1–50 Lightning Damage",
+    "Adds 75 Poison Damage over 5 Seconds",
+    "+3 to Holy Shock (Class Only)",
+    "+5% to Maximum Lightning Resist",
+    "Lightning Resist +60%",
+    "Level 7 Chain Lightning (60 Charges)"
+   ]
+  },
+  {
+   "id": "honor",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/honor",
+   "name": "Honor",
+   "quality": "Runeword",
+   "base": "Amn + El + Ith + Tir + Sol",
+   "icon": "https://d2emu.com/db/assets/items/doubleaxe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Melee Weapon",
+    "Req level:": "27"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+160% Enhanced Damage",
+    "+9 to Minimum Damage",
+    "+9 to Maximum Damage",
+    "+250 to Attack Rating",
+    "7% Life Stolen per Hit",
+    "25% Deadly Strike",
+    "+10 to Strength",
+    "Replenish Life +10",
+    "+2 to Mana after Each Kill",
+    "+1 to Light Radius"
+   ]
+  },
+  {
+   "id": "hysteria",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/hysteria",
+   "name": "Hysteria",
+   "quality": "Runeword",
+   "base": "Shael + Ko + Eld",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "39"
+   },
+   "mods": [
+    "+65% Faster Run/Walk",
+    "+40% Increased Attack Speed",
+    "+20% Faster Hit Recovery",
+    "+6 to Evade",
+    "+10 to Dexterity",
+    "35% Slower Stamina Drain",
+    "15% Slower Stamina Drain",
+    "All Resistances +10%"
+   ]
+  },
+  {
+   "id": "ice",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/ice",
+   "name": "Ice",
+   "quality": "Runeword",
+   "base": "Amn + Shael + Jah + Lo",
+   "icon": "https://d2emu.com/db/assets/items/huntersbow_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "65"
+   },
+   "mods": [
+    "25% Chance to Cast Level 22 Frost Nova on Striking",
+    "100% Chance to Cast Level 40 Blizzard when You Level Up",
+    "Level 18 Holy Freeze Aura When Equipped",
+    "+20% Increased Attack Speed",
+    "+140–210% Enhanced Damage",
+    "Ignore Target's Defense",
+    "+25–30% to Cold Skill Damage",
+    "-20% to Enemy Cold Resistance",
+    "7% Life Stolen per Hit",
+    "20% Deadly Strike",
+    "3.125% Extra Gold from Monsters per level (3–309% at levels 1–99)"
+   ]
+  },
+  {
+   "id": "infinity",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/infinity",
+   "name": "Infinity",
+   "quality": "Runeword",
+   "base": "Ber + Mal + Ber + Ist",
+   "icon": "https://d2emu.com/db/assets/items/voulge_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Polearm, Spear",
+    "Req level:": "63"
+   },
+   "mods": [
+    "50% Chance to Cast Level 20 Chain Lightning when You Kill an Enemy",
+    "Level 12 Conviction Aura When Equipped",
+    "+35% Faster Run/Walk",
+    "+255–325% Enhanced Damage",
+    "-45–55% to Enemy Lightning Resistance",
+    "20% Chance of Crushing Blow",
+    "20% Chance of Crushing Blow",
+    "Prevent Monster Heal",
+    "0.5 Vitality per level (0–49 at levels 1–99)",
+    "30% Better Chance of Finding Magic Items",
+    "Level 21 Cyclone Armor (30 Charges)"
+   ]
+  },
+  {
+   "id": "insight",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/insight",
+   "name": "Insight",
+   "quality": "Runeword",
+   "base": "Ral + Tir + Tal + Sol",
+   "icon": "https://d2emu.com/db/assets/items/voulge_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Polearm, Staff, Missile Weapon",
+    "Req level:": "27"
+   },
+   "mods": [
+    "Level 12–17 Meditation Aura When Equipped",
+    "+35% Faster Cast Rate",
+    "+200–260% Enhanced Damage",
+    "+9 to Minimum Damage",
+    "180–250% Bonus to Attack Rating",
+    "Adds 5–30 Fire Damage",
+    "Adds 75 Poison Damage over 5 Seconds",
+    "+1–6 to Critical Strike",
+    "+5 to All Attributes",
+    "+2 to Mana after Each Kill",
+    "23% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "kings-grace",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/kings-grace",
+   "name": "King's Grace",
+   "quality": "Runeword",
+   "base": "Amn + Ral + Thul",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Sword, Scepter",
+    "Req level:": "25"
+   },
+   "mods": [
+    "+100% Enhanced Damage",
+    "+150 to Attack Rating",
+    "+100% Damage to Demons",
+    "+100 to Attack Rating against Demons",
+    "+50% Damage to Undead",
+    "+100 to Attack Rating against Undead",
+    "Adds 5–30 Fire Damage",
+    "Adds 3–14 Cold Damage",
+    "7% Life Stolen per Hit"
+   ]
+  },
+  {
+   "id": "kingslayer",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/kingslayer",
+   "name": "Kingslayer",
+   "quality": "Runeword",
+   "base": "Mal + Um + Gul + Fal",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Sword, Axe",
+    "Req level:": "53"
+   },
+   "mods": [
+    "+30% Increased Attack Speed",
+    "+230–270% Enhanced Damage",
+    "-25% Target Defense",
+    "20% Bonus to Attack Rating",
+    "33% Chance of Crushing Blow",
+    "25% Chance of Open Wounds",
+    "25% Chance of Open Wounds",
+    "+1 to Vengeance",
+    "Prevent Monster Heal",
+    "+10 to Strength",
+    "40% Extra Gold from Monsters"
+   ]
+  },
+  {
+   "id": "last-wish",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/last-wish",
+   "name": "Last Wish",
+   "quality": "Runeword",
+   "base": "Jah + Mal + Jah + Sur + Jah + Ber",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "6",
+    "Allowed Bases:": "Sword, Hammer, Axe",
+    "Req level:": "65"
+   },
+   "mods": [
+    "20% Chance to Cast Level 20 Charged Bolt on Attack",
+    "10% Chance to Cast Level 18 Life Tap on Striking",
+    "6% Chance to Cast Level 11 Fade when Struck",
+    "Level 17 Might Aura When Equipped",
+    "+330–375% Enhanced Damage",
+    "Ignore Target's Defense",
+    "Ignore Target's Defense",
+    "Ignore Target's Defense",
+    "40–50% Chance of Crushing Blow",
+    "20% Chance of Crushing Blow",
+    "Prevent Monster Heal",
+    "Hit Blinds Target +1",
+    "0.5% Magic Find per level (0–49% at levels 1–99)"
+   ]
+  },
+  {
+   "id": "lawbringer",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/lawbringer",
+   "name": "Lawbringer",
+   "quality": "Runeword",
+   "base": "Amn + Lem + Ko",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Sword, Hammer, Scepter",
+    "Req level:": "43"
+   },
+   "mods": [
+    "20% Chance to Cast Level 15 Decrepify on Striking",
+    "Level 16–18 Sanctuary Aura Aura When Equipped",
+    "-50% Target Defense",
+    "Adds 150–210 Fire Damage",
+    "Adds 130–180 Cold Damage",
+    "7% Life Stolen per Hit",
+    "Slain Monsters Rest in Peace",
+    "+200–250 Defense vs. Missile",
+    "+10 to Dexterity",
+    "75% Extra Gold from Monsters"
+   ]
+  },
+  {
+   "id": "leaf",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/leaf",
+   "name": "Leaf",
+   "quality": "Runeword",
+   "base": "Tir + Ral",
+   "icon": "https://d2emu.com/db/assets/items/shortstaff_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Staff",
+    "Req level:": "19"
+   },
+   "mods": [
+    "+3 to Fire Skills",
+    "Adds 5–30 Fire Damage",
+    "+3 to Inferno (Class Only)",
+    "+3 to Fire Bolt (Class Only)",
+    "+3 to Warmth (Class Only)",
+    "2 Defense per level (2–198 at levels 1–99)",
+    "Cold Resist +33%",
+    "+2 to Mana after Each Kill"
+   ]
+  },
+  {
+   "id": "lionheart",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/lionheart",
+   "name": "Lionheart",
+   "quality": "Runeword",
+   "base": "Hel + Lum + Fal",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "41"
+   },
+   "mods": [
+    "+20% Enhanced Damage",
+    "+25 to Strength",
+    "+15 to Dexterity",
+    "+20 to Vitality",
+    "+10 to Energy",
+    "+50 to Life",
+    "All Resistances +30%",
+    "Requirements -15%"
+   ]
+  },
+  {
+   "id": "lore",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/lore",
+   "name": "Lore",
+   "quality": "Runeword",
+   "base": "Ort + Sol",
+   "icon": "https://d2emu.com/db/assets/items/cap_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Helm",
+    "Req level:": "27"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+10 to Energy",
+    "Lightning Resist +30%",
+    "Damage Reduced by 7",
+    "+2 to Mana after Each Kill",
+    "+2 to Light Radius"
+   ]
+  },
+  {
+   "id": "malice",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/malice",
+   "name": "Malice",
+   "quality": "Runeword",
+   "base": "Ith + El + Eth",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Melee Weapon",
+    "Req level:": "15"
+   },
+   "mods": [
+    "+33% Enhanced Damage",
+    "+9 to Maximum Damage",
+    "-25% Target Defense",
+    "+50 to Attack Rating",
+    "100% Chance of Open Wounds",
+    "Prevent Monster Heal",
+    "-100 to Monster Defense Per Hit",
+    "Replenish Life -5",
+    "-1 to Light Radius",
+    "+1 to Light Radius"
+   ]
+  },
+  {
+   "id": "mania",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/mania",
+   "name": "Mania",
+   "quality": "Runeword",
+   "base": "Shael + Ko + Eld",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "39"
+   },
+   "mods": [
+    "5% Chance to Cast Level 1 Burst of Speed on Striking",
+    "Level 1 Fanaticism Aura When Equipped",
+    "+10% Increased Attack Speed",
+    "+20% Increased Attack Speed",
+    "+180–200% Enhanced Damage",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "+10 to Dexterity"
+   ]
+  },
+  {
+   "id": "melody",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/melody",
+   "name": "Melody",
+   "quality": "Runeword",
+   "base": "Shael + Ko + Nef",
+   "icon": "https://d2emu.com/db/assets/items/shortbow_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "39"
+   },
+   "mods": [
+    "+3 to Bow and Crossbow Skills (Amazon Only)",
+    "+20% Increased Attack Speed",
+    "+50% Enhanced Damage",
+    "+300% Damage to Undead",
+    "+3 to Critical Strike (Class Only)",
+    "+3 to Dodge (Class Only)",
+    "+3 to Slow Missiles (Class Only)",
+    "Knockback",
+    "+10 to Dexterity"
+   ]
+  },
+  {
+   "id": "memory",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/memory",
+   "name": "Memory",
+   "quality": "Runeword",
+   "base": "Lum + Io + Sol + Eth",
+   "icon": "https://d2emu.com/db/assets/items/gnarledstaff_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Staff",
+    "Req level:": "37"
+   },
+   "mods": [
+    "+3 to Sorceress Skills",
+    "+33% Faster Cast Rate",
+    "+9 to Minimum Damage",
+    "-25% Target Defense",
+    "+3 to Energy Shield (Class Only)",
+    "+2 to Static Field (Class Only)",
+    "+50% Enhanced Defense",
+    "+10 to Vitality",
+    "+10 to Energy",
+    "Increase Maximum Mana 20%",
+    "Magic Damage Reduced by 7"
+   ]
+  },
+  {
+   "id": "metamorphosis",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/metamorphosis",
+   "name": "Metamorphosis",
+   "quality": "Runeword",
+   "base": "Io + Cham + Fal",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "67"
+   },
+   "mods": [
+    "100% Chance to Cast Level 1 Mark of the Bear on Striking",
+    "100% Chance to Cast Level 1 Mark of the Wolf on Striking",
+    "+5 to Shape Shifting Skills (Druid Only)",
+    "25% Chance of Crushing Blow",
+    "+50–80% Enhanced Defense",
+    "+10 to Strength",
+    "+10 to Vitality",
+    "All Resistances +10%",
+    "Cannot Be Frozen"
+   ]
+  },
+  {
+   "id": "mist",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/mist",
+   "name": "Mist",
+   "quality": "Runeword",
+   "base": "Cham + Shael + Gul + Thul + Ith",
+   "icon": "https://d2emu.com/db/assets/items/longbow_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "67"
+   },
+   "mods": [
+    "Level 8–12 Concentration Aura When Equipped",
+    "+3 to All Skills",
+    "+20% Increased Attack Speed",
+    "Piercing Attack",
+    "+325–375% Enhanced Damage",
+    "+9 to Maximum Damage",
+    "20% Bonus to Attack Rating",
+    "Adds 3–14 Cold Damage",
+    "Freezes Target +3",
+    "+24 to Vitality",
+    "All Resistances +40%"
+   ]
+  },
+  {
+   "id": "mosaic",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/mosaic",
+   "name": "Mosaic",
+   "quality": "Runeword",
+   "base": "Mal + Gul + Amn",
+   "icon": "https://d2emu.com/db/assets/items/claws_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Hand to Hand",
+    "Req level:": "53"
+   },
+   "mods": [
+    "+50% chance for finishing moves to not consume charges",
+    "+2 to Martial Arts (Assassin Only)",
+    "+20% Increased Attack Speed",
+    "+200–250% Enhanced Damage",
+    "20% Bonus to Attack Rating",
+    "+8–15% to Fire Skill Damage",
+    "+8–15% to Cold Skill Damage",
+    "+8–15% to Lightning Skill Damage",
+    "7% Life Stolen per Hit",
+    "Prevent Monster Heal"
+   ]
+  },
+  {
+   "id": "myth",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/myth",
+   "name": "Myth",
+   "quality": "Runeword",
+   "base": "Hel + Amn + Nef",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "25"
+   },
+   "mods": [
+    "10% Chance to Cast Level 1 Taunt on Striking",
+    "3% Chance to Cast Level 1 Howl when Struck",
+    "+2 to Barbarian Skills",
+    "+30 Defense vs. Missile",
+    "Replenish Life +10",
+    "Attacker Takes Damage of 14",
+    "Requirements -15%"
+   ]
+  },
+  {
+   "id": "nadir",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/nadir",
+   "name": "Nadir",
+   "quality": "Runeword",
+   "base": "Nef + Tir",
+   "icon": "https://d2emu.com/db/assets/items/cap_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Helm",
+    "Req level:": "13"
+   },
+   "mods": [
+    "+50% Enhanced Defense",
+    "+10 Defense",
+    "+30 Defense vs. Missile",
+    "+5 to Strength",
+    "+2 to Mana after Each Kill",
+    "-33% Extra Gold from Monsters",
+    "-3 to Light Radius",
+    "Level 13 Cloak of Shadows (9 Charges)"
+   ]
+  },
+  {
+   "id": "oath",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/oath",
+   "name": "Oath",
+   "quality": "Runeword",
+   "base": "Shael + Pul + Mal + Lum",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Sword, Axe, Mace",
+    "Req level:": "49"
+   },
+   "mods": [
+    "30% Chance to Cast Level 20 Bone Spirit on Striking",
+    "+30% Increased Attack Speed",
+    "+20% Increased Attack Speed",
+    "+210–340% Enhanced Damage",
+    "+75% Damage to Demons",
+    "+100 to Attack Rating against Demons",
+    "Prevent Monster Heal",
+    "+10 to Energy",
+    "+10–15 Magic Absorb",
+    "Level 17 Iron Golem (14 Charges)",
+    "Level 16 Heart of Wolverine (20 Charges)",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "obedience",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/obedience",
+   "name": "Obedience",
+   "quality": "Runeword",
+   "base": "Hel + Ko + Thul + Eth + Fal",
+   "icon": "https://d2emu.com/db/assets/items/scythe_graphic.png",
+   "stats": {
+    "Sockets:": "5",
+    "Allowed Bases:": "Polearm, Spear",
+    "Req level:": "41"
+   },
+   "mods": [
+    "30% Chance to Cast Level 21 Enchant when You Kill an Enemy",
+    "+40% Faster Hit Recovery",
+    "+370% Enhanced Damage",
+    "-25% Target Defense",
+    "Adds 3–14 Cold Damage",
+    "-25% to Enemy Fire Resistance",
+    "40% Chance of Crushing Blow",
+    "+200–300 Defense",
+    "+10 to Strength",
+    "+10 to Dexterity",
+    "All Resistances +20–30%",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "obsession",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/obsession",
+   "name": "Obsession",
+   "quality": "Runeword",
+   "base": "Zod + Ist + Lem + Lum + Io + Nef",
+   "icon": "https://d2emu.com/db/assets/items/warstaff_graphic.png",
+   "stats": {
+    "Sockets:": "6",
+    "Allowed Bases:": "Staff",
+    "Req level:": "69"
+   },
+   "mods": [
+    "24% Chance to Cast Level 10 Weaken when Struck",
+    "+4 to All Skills",
+    "+65% Faster Cast Rate",
+    "+60% Faster Hit Recovery",
+    "Knockback",
+    "+10 to Vitality",
+    "+10 to Energy",
+    "Increase Maximum Life 15–25%",
+    "Regenerate Mana 15–30%",
+    "All Resistances +60–70%",
+    "75% Extra Gold from Monsters",
+    "30% Better Chance of Finding Magic Items",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "passion",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/passion",
+   "name": "Passion",
+   "quality": "Runeword",
+   "base": "Dol + Ort + Eld + Lem",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "43"
+   },
+   "mods": [
+    "+25% Increased Attack Speed",
+    "+160–210% Enhanced Damage",
+    "50–80% Bonus to Attack Rating",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "Adds 1–50 Lightning Damage",
+    "+1 to Zeal",
+    "+1 to Berserk",
+    "Hit Blinds Target +10",
+    "Hit Causes Monster to Flee 32%",
+    "75% Extra Gold from Monsters",
+    "Level 3 Heart of Wolverine (12 Charges)"
+   ]
+  },
+  {
+   "id": "pattern",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/pattern",
+   "name": "Pattern",
+   "quality": "Runeword",
+   "base": "Tal + Ort + Thul",
+   "icon": "https://d2emu.com/db/assets/items/claws_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Hand to Hand",
+    "Req level:": "23"
+   },
+   "mods": [
+    "+30% Faster Block Rate",
+    "+40–80% Enhanced Damage",
+    "10% Bonus to Attack Rating",
+    "Adds 12–32 Fire Damage",
+    "Adds 1–50 Lightning Damage",
+    "Adds 3–14 Cold Damage",
+    "Adds 75 Poison Damage over 5 Seconds",
+    "+6 to Strength",
+    "+6 to Dexterity",
+    "All Resistances +15%"
+   ]
+  },
+  {
+   "id": "peace",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/peace",
+   "name": "Peace",
+   "quality": "Runeword",
+   "base": "Shael + Thul + Amn",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "29"
+   },
+   "mods": [
+    "2% Chance to Cast Level 15 Valkyrie on Striking",
+    "4% Chance to Cast Level 5 Slow Missiles when Struck",
+    "+2 to Amazon Skills",
+    "+20% Faster Hit Recovery",
+    "+2 to Critical Strike",
+    "Cold Resist +30%",
+    "Attacker Takes Damage of 14"
+   ]
+  },
+  {
+   "id": "phoenix",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/phoenix",
+   "name": "Phoenix",
+   "quality": "Runeword",
+   "base": "Vex + Vex + Lo + Jah",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Weapon, Any Shield",
+    "Req level:": "65",
+    "Bonus Variants:": "Weapon and Shield"
+   },
+   "mods": [
+    "40% Chance to Cast Level 22 Firestorm on Striking",
+    "100% Chance to Cast Level 40 Blaze when You Level Up",
+    "Level 10–15 Redemption Aura When Equipped",
+    "+350–400% Enhanced Damage",
+    "-28% to Enemy Fire Resistance",
+    "+350–400 Defense vs. Missile",
+    "+15–21 Fire Absorb"
+   ]
+  },
+  {
+   "id": "plague",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/plague",
+   "name": "Plague",
+   "quality": "Runeword",
+   "base": "Cham + Shael + Um",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Sword, Knife, Hand to Hand",
+    "Req level:": "67"
+   },
+   "mods": [
+    "20% Chance to Cast Level 12 Lower Resist when Struck",
+    "25% Chance to Cast Level 15 Poison Nova on Striking",
+    "Level 13–17 Cleansing Aura When Equipped",
+    "+1–2 to All Skills",
+    "+20% Increased Attack Speed",
+    "+220–320% Enhanced Damage",
+    "-23% to Enemy Poison Resistance",
+    "0.375% Deadly Strike per level (0–37% at levels 1–99)",
+    "25% Chance of Open Wounds",
+    "Freezes Target +3"
+   ]
+  },
+  {
+   "id": "pride",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/pride",
+   "name": "Pride",
+   "quality": "Runeword",
+   "base": "Cham + Sur + Io + Lo",
+   "icon": "https://d2emu.com/db/assets/items/voulge_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Polearm, Spear",
+    "Req level:": "67"
+   },
+   "mods": [
+    "25% Chance to Cast Level 17 Fire Wall when Struck",
+    "Level 16–20 Concentration Aura When Equipped",
+    "260–300% Bonus to Attack Rating",
+    "1% Damage to Demons per level (1–99% at levels 1–99)",
+    "Adds 50–280 Lightning Damage",
+    "20% Deadly Strike",
+    "Hit Blinds Target +1",
+    "Freezes Target +3",
+    "+10 to Vitality",
+    "Replenish Life +8",
+    "1.875% Extra Gold from Monsters per level (1–185% at levels 1–99)"
+   ]
+  },
+  {
+   "id": "principle",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/principle",
+   "name": "Principle",
+   "quality": "Runeword",
+   "base": "Ral + Gul + Eld",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "53"
+   },
+   "mods": [
+    "100% Chance to Cast Level 5 Holy Bolt on Striking",
+    "+2 to Paladin Skills",
+    "+50% Damage to Undead",
+    "+100–150 to Life",
+    "15% Slower Stamina Drain",
+    "+5% to Maximum Poison Resist",
+    "Fire Resist +30%"
+   ]
+  },
+  {
+   "id": "prudence",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/prudence",
+   "name": "Prudence",
+   "quality": "Runeword",
+   "base": "Mal + Tir",
+   "icon": "https://d2emu.com/db/assets/items/quilted_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Armor",
+    "Req level:": "49"
+   },
+   "mods": [
+    "+25% Faster Hit Recovery",
+    "+140–170% Enhanced Defense",
+    "All Resistances +25–35%",
+    "Damage Reduced by 3",
+    "Magic Damage Reduced by 10",
+    "Magic Damage Reduced by 7",
+    "+2 to Mana after Each Kill",
+    "+1 to Light Radius",
+    "Repairs 1 durability in 25 seconds"
+   ]
+  },
+  {
+   "id": "radiance",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/radiance",
+   "name": "Radiance",
+   "quality": "Runeword",
+   "base": "Nef + Sol + Ith",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "27"
+   },
+   "mods": [
+    "+75% Enhanced Defense",
+    "+30 Defense vs. Missile",
+    "+10 to Vitality",
+    "+10 to Energy",
+    "+33 to Mana",
+    "Damage Reduced by 7",
+    "Magic Damage Reduced by 3",
+    "15% Damage Taken Goes to Mana",
+    "+5 to Light Radius"
+   ]
+  },
+  {
+   "id": "rain",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/rain",
+   "name": "Rain",
+   "quality": "Runeword",
+   "base": "Ort + Mal + Ith",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "49"
+   },
+   "mods": [
+    "5% Chance to Cast Level 15 Twister on Striking",
+    "5% Chance to Cast Level 15 Cyclone Armor when Struck",
+    "+2 to Druid Skills",
+    "+100–150 to Mana",
+    "Lightning Resist +30%",
+    "Magic Damage Reduced by 7",
+    "15% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "rhyme",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/rhyme",
+   "name": "Rhyme",
+   "quality": "Runeword",
+   "base": "Shael + Eth",
+   "icon": "https://d2emu.com/db/assets/items/smallshield_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Any Shield",
+    "Req level:": "29"
+   },
+   "mods": [
+    "+20% Faster Block Rate",
+    "+20% Faster Block Rate",
+    "20% Increased Chance of Blocking",
+    "Regenerate Mana 15%",
+    "All Resistances +25%",
+    "Cannot Be Frozen",
+    "50% Extra Gold from Monsters",
+    "25% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "rift",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/rift",
+   "name": "Rift",
+   "quality": "Runeword",
+   "base": "Hel + Ko + Lem + Gul",
+   "icon": "https://d2emu.com/db/assets/items/voulge_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Polearm, Scepter",
+    "Req level:": "53"
+   },
+   "mods": [
+    "20% Chance to Cast Level 16 Tornado on Striking",
+    "16% Chance to Cast Level 21 Frozen Orb on Attack",
+    "20% Bonus to Attack Rating",
+    "Adds 160–250 Magic Damage",
+    "Adds 60–180 Fire Damage",
+    "+5–10 to All Attributes",
+    "+10 to Dexterity",
+    "38% Damage Taken Goes to Mana",
+    "75% Extra Gold from Monsters",
+    "Level 15 Iron Maiden (40 Charges)",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "ritual",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/ritual",
+   "name": "Ritual",
+   "quality": "Runeword",
+   "base": "Amn + Shael + Ohm",
+   "icon": "https://d2emu.com/db/assets/items/kriss_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Knife",
+    "Req level:": "57"
+   },
+   "mods": [
+    "13% Chance to Cast Level 1 Sigil: Death when Struck",
+    "+20% Increased Attack Speed",
+    "+20% Increased Attack Speed",
+    "+200–270% Enhanced Damage",
+    "+50% Enhanced Damage",
+    "200–260% Bonus to Attack Rating",
+    "+150–250% Damage to Demons",
+    "7% Life Stolen per Hit",
+    "Slain Monsters Rest in Peace",
+    "+3–5 to Life after Each Kill"
+   ]
+  },
+  {
+   "id": "sanctuary",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/sanctuary",
+   "name": "Sanctuary",
+   "quality": "Runeword",
+   "base": "Ko + Ko + Mal",
+   "icon": "https://d2emu.com/db/assets/items/largeshield_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Any Shield",
+    "Req level:": "49"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "+20% Faster Block Rate",
+    "20% Increased Chance of Blocking",
+    "+130–160% Enhanced Defense",
+    "+250 Defense vs. Missile",
+    "+20 to Dexterity",
+    "All Resistances +50–70%",
+    "Magic Damage Reduced by 7",
+    "Level 12 Slow Missiles (60 Charges)"
+   ]
+  },
+  {
+   "id": "silence",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/silence",
+   "name": "Silence",
+   "quality": "Runeword",
+   "base": "Dol + Eld + Hel + Ist + Tir + Vex",
+   "icon": "https://d2emu.com/db/assets/items/militarypick_graphic.png",
+   "stats": {
+    "Sockets:": "6",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "55"
+   },
+   "mods": [
+    "+2 to All Skills",
+    "+20% Increased Attack Speed",
+    "+20% Faster Hit Recovery",
+    "+200% Enhanced Damage",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "4% Mana Stolen per Hit",
+    "7% Mana Stolen per Hit",
+    "Hit Blinds Target +33",
+    "Hit Causes Monster to Flee 32%",
+    "All Resistances +75%",
+    "+2 to Mana after Each Kill",
+    "30% Better Chance of Finding Magic Items",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "smoke",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/smoke",
+   "name": "Smoke",
+   "quality": "Runeword",
+   "base": "Nef + Lum",
+   "icon": "https://d2emu.com/db/assets/items/quilted_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Armor",
+    "Req level:": "37"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "+75% Enhanced Defense",
+    "+250 Defense vs. Missile",
+    "+30 Defense vs. Missile",
+    "+10 to Energy",
+    "All Resistances +50%",
+    "-1 to Light Radius",
+    "Level 6 Weaken (18 Charges)"
+   ]
+  },
+  {
+   "id": "spirit",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/spirit",
+   "name": "Spirit",
+   "quality": "Runeword",
+   "base": "Tal + Thul + Ort + Amn",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Sword, Any Shield",
+    "Req level:": "25",
+    "Bonus Variants:": "Sword and Shield"
+   },
+   "mods": [
+    "+2 to All Skills",
+    "+25–35% Faster Cast Rate",
+    "+55% Faster Hit Recovery",
+    "+250 Defense vs. Missile",
+    "+22 to Vitality",
+    "+89–112 to Mana",
+    "+3–8 Magic Absorb"
+   ]
+  },
+  {
+   "id": "splendor",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/splendor",
+   "name": "Splendor",
+   "quality": "Runeword",
+   "base": "Eth + Lum",
+   "icon": "https://d2emu.com/db/assets/items/smallshield_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Any Shield",
+    "Req level:": "37"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+10% Faster Cast Rate",
+    "+20% Faster Block Rate",
+    "+60–100% Enhanced Defense",
+    "+10 to Energy",
+    "Regenerate Mana 15%",
+    "50% Extra Gold from Monsters",
+    "20% Better Chance of Finding Magic Items",
+    "+3 to Light Radius"
+   ]
+  },
+  {
+   "id": "stealth",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/stealth",
+   "name": "Stealth",
+   "quality": "Runeword",
+   "base": "Tal + Eth",
+   "icon": "https://d2emu.com/db/assets/items/quilted_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Armor",
+    "Req level:": "17"
+   },
+   "mods": [
+    "+25% Faster Run/Walk",
+    "+25% Faster Cast Rate",
+    "+25% Faster Hit Recovery",
+    "+6 to Dexterity",
+    "Regenerate Mana 15%",
+    "+15 Maximum Stamina",
+    "Poison Resist +30%",
+    "Magic Damage Reduced by 3"
+   ]
+  },
+  {
+   "id": "steel",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/steel",
+   "name": "Steel",
+   "quality": "Runeword",
+   "base": "Tir + El",
+   "icon": "https://d2emu.com/db/assets/items/shortsword_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Sword, Axe, Mace",
+    "Req level:": "13"
+   },
+   "mods": [
+    "+25% Increased Attack Speed",
+    "+20% Enhanced Damage",
+    "+3 to Minimum Damage",
+    "+3 to Maximum Damage",
+    "+50 to Attack Rating",
+    "50% Chance of Open Wounds",
+    "+2 to Mana after Each Kill",
+    "+1 to Light Radius"
+   ]
+  },
+  {
+   "id": "stone",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/stone",
+   "name": "Stone",
+   "quality": "Runeword",
+   "base": "Shael + Um + Pul + Lum",
+   "icon": "https://d2emu.com/db/assets/items/gothicplate_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Armor",
+    "Req level:": "47"
+   },
+   "mods": [
+    "+40% Faster Hit Recovery",
+    "+20% Faster Hit Recovery",
+    "+220–260% Enhanced Defense",
+    "+30% Enhanced Defense",
+    "+300 Defense vs. Missile",
+    "+16 to Strength",
+    "+16 to Vitality",
+    "+10 to Energy",
+    "All Resistances +15%",
+    "Level 16 Clay Golem (16 Charges)",
+    "Level 16 Molten Boulder (80 Charges)"
+   ]
+  },
+  {
+   "id": "strength",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/strength",
+   "name": "Strength",
+   "quality": "Runeword",
+   "base": "Amn + Tir",
+   "icon": "https://d2emu.com/db/assets/items/handaxe_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Melee Weapon",
+    "Req level:": "25"
+   },
+   "mods": [
+    "+35% Enhanced Damage",
+    "7% Life Stolen per Hit",
+    "25% Chance of Crushing Blow",
+    "+20 to Strength",
+    "+10 to Vitality",
+    "+2 to Mana after Each Kill"
+   ]
+  },
+  {
+   "id": "temper",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/temper",
+   "name": "Temper",
+   "quality": "Runeword",
+   "base": "Shael + Io + Ral",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "35"
+   },
+   "mods": [
+    "+20% Faster Hit Recovery",
+    "+75–100% Enhanced Defense",
+    "+10 to Vitality",
+    "Increase Maximum Life 5%",
+    "Fire Resist +10–30%",
+    "Fire Resist +30%",
+    "+10–15% Fire Absorb"
+   ]
+  },
+  {
+   "id": "treachery",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/treachery",
+   "name": "Treachery",
+   "quality": "Runeword",
+   "base": "Shael + Thul + Lem",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "43"
+   },
+   "mods": [
+    "25% Chance to Cast Level 15 Venom on Striking",
+    "5% Chance to Cast Level 15 Fade when Struck",
+    "+2 to Assassin Skills",
+    "+45% Increased Attack Speed",
+    "+20% Faster Hit Recovery",
+    "Cold Resist +30%",
+    "50% Extra Gold from Monsters"
+   ]
+  },
+  {
+   "id": "unbending-will",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/unbending-will",
+   "name": "Unbending Will",
+   "quality": "Runeword",
+   "base": "Fal + Io + Ith + Eld + El + Hel",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "6",
+    "Allowed Bases:": "Sword",
+    "Req level:": "41"
+   },
+   "mods": [
+    "18% Chance to Cast Level 18 Taunt on Striking",
+    "+3 to Combat Skills (Barbarian Only)",
+    "+20–30% Increased Attack Speed",
+    "+300–350% Enhanced Damage",
+    "+9 to Maximum Damage",
+    "+50 to Attack Rating",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "8–10% Life Stolen per Hit",
+    "Prevent Monster Heal",
+    "+10 to Strength",
+    "+10 to Vitality",
+    "Damage Reduced by 8",
+    "+1 to Light Radius",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "venom",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/venom",
+   "name": "Venom",
+   "quality": "Runeword",
+   "base": "Tal + Dol + Mal",
+   "icon": "https://d2emu.com/db/assets/items/axe_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Weapon",
+    "Req level:": "49"
+   },
+   "mods": [
+    "Ignore Target's Defense",
+    "Adds 213 Poison Damage over 7 Seconds",
+    "Adds 75 Poison Damage over 5 Seconds",
+    "7% Mana Stolen per Hit",
+    "Prevent Monster Heal",
+    "Hit Causes Monster to Flee 32%",
+    "Level 15 Poison Explosion (27 Charges)",
+    "Level 13 Poison Nova (11 Charges)"
+   ]
+  },
+  {
+   "id": "vigilance",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/vigilance",
+   "name": "Vigilance",
+   "quality": "Runeword",
+   "base": "Dol + Gul",
+   "icon": "https://d2emu.com/db/assets/items/oldbook_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Grimoire, Any Shield, Voodoo Heads, Auric Shields",
+    "Req level:": "53"
+   },
+   "mods": [
+    "5% Chance to Cast Level 10 Ring of Fire when Struck",
+    "+10% Faster Run/Walk",
+    "+30% Faster Block Rate",
+    "+75–100% Enhanced Defense",
+    "+20–40 to Life",
+    "Replenish Life +7",
+    "+20–40 to Mana",
+    "+5% to Maximum Poison Resist",
+    "All Resistances +25–35%"
+   ]
+  },
+  {
+   "id": "voice-of-reason",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/voice-of-reason",
+   "name": "Voice of Reason",
+   "quality": "Runeword",
+   "base": "Lem + Ko + El + Eld",
+   "icon": "https://d2emu.com/db/assets/items/crystalsword_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Sword, Mace",
+    "Req level:": "43"
+   },
+   "mods": [
+    "18% Chance to Cast Level 20 Ice Blast on Striking",
+    "15% Chance to Cast Level 13 Frozen Orb on Striking",
+    "+50 to Attack Rating",
+    "+220–350% Damage to Demons",
+    "+280–300% Damage to Undead",
+    "+75% Damage to Undead",
+    "+50 to Attack Rating against Undead",
+    "Adds 100–220 Cold Damage",
+    "-24% to Enemy Cold Resistance",
+    "+10 to Dexterity",
+    "Cannot Be Frozen",
+    "75% Extra Gold from Monsters",
+    "+1 to Light Radius"
+   ]
+  },
+  {
+   "id": "void",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/void",
+   "name": "Void",
+   "quality": "Runeword",
+   "base": "Thul + Zod + Ist",
+   "icon": "https://d2emu.com/db/assets/items/kriss_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Knife",
+    "Req level:": "69"
+   },
+   "mods": [
+    "+2 to All Skills",
+    "+40% Faster Cast Rate",
+    "Adds 3–14 Cold Damage",
+    "+10–15% to Magic Skill Damage",
+    "+1–3 to Abyss",
+    "+8–12 to All Attributes",
+    "30% Better Chance of Finding Magic Items",
+    "Level 4 Decrepify (35 Charges)",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "wealth",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/wealth",
+   "name": "Wealth",
+   "quality": "Runeword",
+   "base": "Lem + Ko + Tir",
+   "icon": "https://d2emu.com/db/assets/items/ringmail_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Armor",
+    "Req level:": "43"
+   },
+   "mods": [
+    "+10 to Dexterity",
+    "+2 to Mana after Each Kill",
+    "250% Extra Gold from Monsters",
+    "50% Extra Gold from Monsters",
+    "100% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "white",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/white",
+   "name": "White",
+   "quality": "Runeword",
+   "base": "Dol + Io",
+   "icon": "https://d2emu.com/db/assets/items/bonewand_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Wand",
+    "Req level:": "35"
+   },
+   "mods": [
+    "+3 to Poison and Bone Skills (Necromancer Only)",
+    "+20% Faster Cast Rate",
+    "+3 to Bone Armor (Class Only)",
+    "+2 to Bone Spear (Class Only)",
+    "+4 to Skeleton Mastery (Class Only)",
+    "Hit Causes Monster to Flee 32%",
+    "+10 to Vitality",
+    "+13 to Mana",
+    "Magic Damage Reduced by 4"
+   ]
+  },
+  {
+   "id": "wind",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/wind",
+   "name": "Wind",
+   "quality": "Runeword",
+   "base": "Sur + El",
+   "icon": "https://d2emu.com/db/assets/items/handaxe_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Melee Weapon",
+    "Req level:": "61"
+   },
+   "mods": [
+    "10% Chance to Cast Level 9 Tornado on Striking",
+    "+20% Faster Run/Walk",
+    "+40% Increased Attack Speed",
+    "+15% Faster Hit Recovery",
+    "+120–160% Enhanced Damage",
+    "-50% Target Defense",
+    "+50 to Attack Rating",
+    "Hit Blinds Target +1",
+    "+1 to Light Radius",
+    "Level 13 Twister (127 Charges)"
+   ]
+  },
+  {
+   "id": "wisdom",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/wisdom",
+   "name": "Wisdom",
+   "quality": "Runeword",
+   "base": "Pul + Ith + Eld",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Sockets:": "3",
+    "Allowed Bases:": "Helm",
+    "Req level:": "45"
+   },
+   "mods": [
+    "Piercing Attack",
+    "15–25% Bonus to Attack Rating",
+    "4–8% Mana Stolen per Hit",
+    "+30% Enhanced Defense",
+    "+10 to Energy",
+    "15% Slower Stamina Drain",
+    "Cannot Be Frozen",
+    "+5 to Mana after Each Kill",
+    "15% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "wrath",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/wrath",
+   "name": "Wrath",
+   "quality": "Runeword",
+   "base": "Pul + Lum + Ber + Mal",
+   "icon": "https://d2emu.com/db/assets/items/huntersbow_graphic.png",
+   "stats": {
+    "Sockets:": "4",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "63"
+   },
+   "mods": [
+    "5% Chance to Cast Level 10 Life Tap on Striking",
+    "30% Chance to Cast Level 1 Decrepify on Striking",
+    "+300% Damage to Demons",
+    "+75% Damage to Demons",
+    "+100 to Attack Rating against Demons",
+    "+250–300% Damage to Undead",
+    "Adds 85–120 Magic Damage",
+    "Adds 41–240 Lightning Damage",
+    "20% Chance of Crushing Blow",
+    "Prevent Monster Heal",
+    "+10 to Energy",
+    "Cannot Be Frozen"
+   ]
+  },
+  {
+   "id": "zephyr",
+   "category": "runeword",
+   "url": "https://d2emu.com/db/runeword/zephyr",
+   "name": "Zephyr",
+   "quality": "Runeword",
+   "base": "Ort + Eth",
+   "icon": "https://d2emu.com/db/assets/items/shortbow_graphic.png",
+   "stats": {
+    "Sockets:": "2",
+    "Allowed Bases:": "Missile Weapon",
+    "Req level:": "21"
+   },
+   "mods": [
+    "7% Chance to Cast Level 1 Twister when Struck",
+    "+25% Faster Run/Walk",
+    "+25% Increased Attack Speed",
+    "+33% Enhanced Damage",
+    "-25% Target Defense",
+    "+66 to Attack Rating",
+    "Adds 1–50 Lightning Damage",
+    "+25 Defense"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Doll Ledger</title>
+<style>
+:root{--bg:#f4f1ea;--panel:#fff;--ink:#1c1b19;--mute:#6b665c;--line:#d9d3c4;--uni:#9a6b12;--set:#2b7a3d;--rw:#6a4fb3;--acc:#8a2a1c}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1014;--panel:#171b21;--ink:#e5e2de;--mute:#8f8a80;--line:#2a2f37;--uni:#d9a53a;--set:#4fc46a;--rw:#a28cf0;--acc:#e0644f}}
+:root[data-theme=dark]{--bg:#0d1014;--panel:#171b21;--ink:#e5e2de;--mute:#8f8a80;--line:#2a2f37;--uni:#d9a53a;--set:#4fc46a;--rw:#a28cf0;--acc:#e0644f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 system-ui,sans-serif}
+header{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+h1{font-size:18px;margin:0 auto 0 0}h2{font-size:14px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+main{display:grid;grid-template-columns:minmax(300px,380px) 1fr minmax(260px,340px);gap:14px;padding:14px;align-items:start}
+@media(max-width:1000px){main{grid-template-columns:1fr}}
+section{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}
+button,select,input{font:inherit;color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:5px 9px}
+button{cursor:pointer}button:hover{border-color:var(--acc)}
+.doll{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.slot{min-height:78px;border:1px dashed var(--line);border-radius:8px;padding:6px;font-size:12px;cursor:pointer;position:relative}
+.slot b{display:block;font-size:10px;text-transform:uppercase;color:var(--mute);letter-spacing:.06em}
+.slot.full{border-style:solid}.slot img{width:32px;height:32px;float:right;object-fit:contain}
+.slot.sel{outline:2px solid var(--acc)}
+.q-unique{color:var(--uni)}.q-set{color:var(--set)}.q-runeword{color:var(--rw)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}.row>input[type=search]{flex:1;min-width:140px}
+.card{border:1px solid var(--line);border-radius:8px;padding:8px;margin-bottom:8px}
+.card h3{margin:0;font-size:15px}.card small{color:var(--mute)}
+.card ul{margin:6px 0 0;padding-left:18px;font-size:13px;color:#7a8fe0}
+.card .st{font-size:12px;color:var(--mute);margin-top:4px}
+.card .act{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}
+.cat{max-height:80vh;overflow:auto}.note{width:100%;margin-top:6px;font-size:12px}
+.sum li{font-size:12px;color:var(--mute)}
+</style></head><body>
+<header><h1>Paper Doll Ledger</h1>
+<label>Holder <select id="holder"></select></label>
+<button id="addHolder">+ Holder</button><button id="exp">Export</button>
+<label class="btn"><button id="impb">Import</button><input id="imp" type="file" accept=".json" hidden></label>
+<button id="theme">Theme</button></header>
+<main>
+<section><h2 id="dollTitle">Doll</h2><div class="doll" id="doll"></div>
+<h2 style="margin-top:14px">Equipped mods (raw list)</h2><ul class="sum" id="sum"></ul></section>
+<section><h2>Catalog</h2><div class="row"><input type="search" id="q" placeholder="Search name, base, or mod (e.g. 'life steal')">
+<select id="cat"><option value="all">All</option><option value="unique">Unique</option><option value="set">Set</option><option value="runeword">Runeword</option></select></div>
+<div class="cat" id="catalog"></div></section>
+<section><h2>Hoard <span id="cnt"></span></h2><div class="row"><select id="loc"><option value="*">Every location</option></select><button id="addLoc">+ Location</button></div><div id="hoard"></div></section>
+</main>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const DATA=JSON.parse(document.getElementById('data').textContent);
+const BY={};DATA.forEach(r=>BY[r.category+':'+r.id]=r);
+const SLOTS=['head','amulet','body','weapon','offhand','gloves','belt','boots','ring1','ring2'];
+const LABEL={head:'Head',amulet:'Amulet',body:'Body',weapon:'Weapon',offhand:'Off-hand',gloves:'Gloves',belt:'Belt',boots:'Boots',ring1:'Ring',ring2:'Ring'};
+const K=(a)=>new RegExp('\\b('+a+')\\b','i');
+const RULES=[['amulet',K('amulet')],['ring1',/^ring$/i],['belt',K('belt|sash|coil|fleece|girdle')],['boots',K('boots|greaves')],
+['gloves',K('gloves|gauntlets|bracers|vambraces|mitts|cestus|claws|talons')],
+['head',K('demonhead|guard|spirit|helm|cap|crown|circlet|tiara|diadem|mask|shako|casque|sallet|armet|basinet|visor|skull|guise|corona|visage|war hat|bone helm')],
+['body',K('armor|mail|plate|coat|cuirass|leather|skin|shell|shroud|sharktooth|trellised|ghost armor')],
+['offhand',K('shield|buckler|rondache|aegis|ward|pavise|scutum|monarch|heater|trophy|spirit|heart|orb|crystal|shard')]];
+function guess(r){const b=r.base||'';if(r.category==='runeword')return 'weapon';
+ if(/charm|jewel/i.test(b))return null;
+ const ks=Object.keys(r.stats||{});
+ if(ks.some(k=>/block/i.test(k)))return 'offhand';
+ if(ks.some(k=>/damage|base speed/i.test(k)))return 'weapon';
+ for(const [s,re] of RULES)if(re.test(b))return s;return 'body';}
+let S;try{S=JSON.parse(localStorage.getItem('d2ledger')||'null')}catch(e){}
+S=S||{holders:['Arik'],holder:'Arik',locs:['Stash','Hoard'],items:[],n:1};
+const save=()=>{try{localStorage.setItem('d2ledger',JSON.stringify(S))}catch(e){}};
+let selSlot=null;const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function card(r,acts,extra=''){return `<div class="card"><h3 class="q-${r.category}">${esc(r.name)}</h3><small>${esc(r.quality)}${r.base?' · '+esc(r.base):''}</small>
+<div class="st">${Object.entries(r.stats).map(([k,v])=>esc(k+' '+v)).join(' · ')}</div><ul>${r.mods.map(m=>`<li>${esc(m)}</li>`).join('')}</ul>${extra}<div class="act">${acts}</div></div>`}
+function renderCatalog(){const q=$('q').value.toLowerCase(),c=$('cat').value;let n=0,h='';
+ for(const r of DATA){if(c!=='all'&&r.category!==c)continue;
+  if(q&&!(r.name+' '+(r.base||'')+' '+r.mods.join(' ')).toLowerCase().includes(q))continue;
+  if(++n>60)break;h+=card(r,`<button data-add="${r.category}:${r.id}">+ Add to hoard</button>`)}
+ $('catalog').innerHTML=h||'<small>No matches.</small>'+(n>60?'':'');}
+function renderDoll(){$('dollTitle').textContent=S.holder+' — doll';
+ $('doll').innerHTML=SLOTS.map(s=>{const it=S.items.find(i=>i.equipped===S.holder&&i.slot===s);const r=it&&BY[it.key];
+  return `<div class="slot ${r?'full':''} ${selSlot===s?'sel':''}" data-slot="${s}"><b>${LABEL[s]}</b>${r?`${r.icon?`<img src="${esc(r.icon)}" alt="" onerror="this.remove()">`:''}<span class="q-${r.category}">${esc(r.name)}</span><br><small>${esc(r.base||'')}</small>`:'<small>empty</small>'}</div>`}).join('');
+ const mods=S.items.filter(i=>i.equipped===S.holder).flatMap(i=>(BY[i.key]?.mods)||[]);
+ $('sum').innerHTML=mods.map(m=>`<li>${esc(m)}</li>`).join('')||'<li>Nothing equipped.</li>';}
+function renderHoard(){const L=$('loc').value;const list=S.items.filter(i=>L==='*'||(!i.equipped&&i.loc===L)||(L==='Equipped'&&i.equipped));
+ $('cnt').textContent='('+S.items.length+')';
+ $('hoard').innerHTML=list.map(i=>{const r=BY[i.key];if(!r)return '';const g=i.slot||guess(r);
+  const where=i.equipped?`Equipped · ${esc(i.equipped)} (${LABEL[i.slot]})`:esc(i.loc);
+  const acts=`<button data-eq="${i.id}">Equip → ${esc(S.holder)}</button><button data-mv="${i.id}">Move</button><button data-rm="${i.id}">Remove</button>`;
+  return card(r,acts,`<div class="st"><b>${where}</b> · slot guess: ${g?LABEL[g]:'carried (charm/jewel)'}</div><input class="note" data-note="${i.id}" placeholder="Notes (found where, who has it…)" value="${esc(i.note||'')}">`)}).join('')||'<small>Empty.</small>';}
+function renderAll(){$('holder').innerHTML=S.holders.map(h=>`<option ${h===S.holder?'selected':''}>${esc(h)}</option>`).join('');
+ const cur=$('loc').value;$('loc').innerHTML='<option value="*">Every location</option><option>Equipped</option>'+S.locs.map(l=>`<option>${esc(l)}</option>`).join('');
+ if([...$('loc').options].some(o=>o.value===cur))$('loc').value=cur;renderDoll();renderHoard();}
+document.addEventListener('click',e=>{const t=e.target;
+ if(t.dataset.add){const r=BY[t.dataset.add];S.items.push({id:S.n++,key:t.dataset.add,loc:S.locs[0],equipped:null,slot:null,note:''});save();renderAll();}
+ else if(t.dataset.rm){S.items=S.items.filter(i=>i.id!=t.dataset.rm);save();renderAll();}
+ else if(t.dataset.mv){const i=S.items.find(i=>i.id==t.dataset.mv);const l=prompt('Move to which location?\n'+S.locs.join(', '),i.loc);if(l){if(!S.locs.includes(l))S.locs.push(l);i.loc=l;i.equipped=null;i.slot=null;save();renderAll();}}
+ else if(t.dataset.eq){const i=S.items.find(i=>i.id==t.dataset.eq),r=BY[i.key];let s=selSlot||guess(r);
+  if(!s){alert('Charms and jewels are carried, not worn. Keep it in a location.');return}
+  if(s==='ring1'&&S.items.some(x=>x.equipped===S.holder&&x.slot==='ring1'))s='ring2';
+  S.items.forEach(x=>{if(x.equipped===S.holder&&x.slot===s){x.equipped=null;x.slot=null}});
+  i.equipped=S.holder;i.slot=s;selSlot=null;save();renderAll();}
+ else{const sl=t.closest('[data-slot]');if(sl){const s=sl.dataset.slot;const it=S.items.find(i=>i.equipped===S.holder&&i.slot===s);
+  if(it&&selSlot===s){it.equipped=null;it.slot=null}else selSlot=selSlot===s?null:s;save();renderAll();}}});
+document.addEventListener('change',e=>{if(e.target.dataset.note){S.items.find(i=>i.id==e.target.dataset.note).note=e.target.value;save()}});
+$('q').oninput=renderCatalog;$('cat').onchange=renderCatalog;$('loc').onchange=renderHoard;
+$('holder').onchange=e=>{S.holder=e.target.value;selSlot=null;save();renderAll()};
+$('addHolder').onclick=()=>{const n=prompt('Holder name (character, mule, stronghold vault)?');if(n&&!S.holders.includes(n)){S.holders.push(n);S.holder=n;save();renderAll()}};
+$('addLoc').onclick=()=>{const n=prompt('New location (e.g. Dragon hoard, Veil vault)?');if(n&&!S.locs.includes(n)){S.locs.push(n);save();renderAll()}};
+$('exp').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S,null,1)],{type:'application/json'}));a.download='d2-ledger.json';a.click()};
+$('impb').onclick=()=>$('imp').click();
+$('imp').onchange=async e=>{try{S=JSON.parse(await e.target.files[0].text());save();renderAll()}catch(x){alert('Not a ledger file.')}};
+$('theme').onclick=()=>{const r=document.documentElement;r.dataset.theme=(r.dataset.theme==='dark')?'light':'dark'};
+renderCatalog();renderAll();
+</script></body></html>

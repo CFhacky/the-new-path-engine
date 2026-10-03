@@ -1,0 +1,3703 @@
+{
+ "source": "https://d2emu.com/db/set",
+ "harvested": "2026-10-03",
+ "note": "Personal campaign convenience data; not canon, not book RAW.",
+ "count": 175,
+ "records": [
+  {
+   "id": "aldurs-advance",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/aldurs-advance",
+   "name": "Aldur's Advance",
+   "quality": "Exceptional Set",
+   "base": "Battle Boots",
+   "icon": "https://d2emu.com/db/assets/items/aldursadvance_graphic.png",
+   "stats": {
+    "Defense:": "39–47",
+    "Durability:": "18",
+    "Req Strength:": "95",
+    "Req level:": "45",
+    "Quality level:": "29",
+    "Treasure class:": "51",
+    "Assassin Kick Damage:": "37–64"
+   },
+   "mods": [
+    "+40% Faster Run/Walk",
+    "+50 to Life",
+    "+180 Maximum Stamina",
+    "Heal Stamina Plus 32%",
+    "Fire Resist +40–50%",
+    "10% Damage Taken Goes to Mana",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "aldurs-deception",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/aldurs-deception",
+   "name": "Aldur's Deception",
+   "quality": "Elite Set",
+   "base": "Shadow Plate",
+   "icon": "https://d2emu.com/db/assets/items/aldursdeception_graphic.png",
+   "stats": {
+    "Defense:": "746–857",
+    "Durability:": "70",
+    "Req Strength:": "115",
+    "Req level:": "76",
+    "Quality level:": "29",
+    "Treasure class:": "84"
+   },
+   "mods": [
+    "+1 to Shape Shifting Skills (Druid Only)",
+    "+1 to Elemental Skills (Druid Only)",
+    "+300 Defense",
+    "+20 to Strength",
+    "+15 to Dexterity",
+    "Lightning Resist +40–50%",
+    "Requirements -50%"
+   ]
+  },
+  {
+   "id": "aldurs-rhythm",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/aldurs-rhythm",
+   "name": "Aldur's Rhythm",
+   "quality": "Exceptional Set",
+   "base": "Jagged Star",
+   "icon": "https://d2emu.com/db/assets/items/aldursrythm_graphic.png",
+   "stats": {
+    "One-hand damage:": "20–31",
+    "Base Speed:": "10",
+    "Durability:": "72",
+    "Req Strength:": "74",
+    "Req level:": "42",
+    "Quality level:": "29",
+    "Treasure class:": "39"
+   },
+   "mods": [
+    "+30% Increased Attack Speed",
+    "Adds 40–62 Damage",
+    "+200% Damage to Demons",
+    "Adds 50–75 Lightning Damage",
+    "5% Mana Stolen per Hit",
+    "10% Life Stolen per Hit",
+    "Socketed (2–5)"
+   ]
+  },
+  {
+   "id": "aldurs-stony-gaze",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/aldurs-stony-gaze",
+   "name": "Aldur's Stony Gaze",
+   "quality": "Exceptional Set",
+   "base": "Hunter's Guise",
+   "icon": "https://d2emu.com/db/assets/items/aldursstoneygaze_graphic.png",
+   "stats": {
+    "Defense:": "157–171",
+    "Durability:": "20",
+    "Req Strength:": "56",
+    "Req level:": "36",
+    "Quality level:": "29",
+    "Treasure class:": "48"
+   },
+   "mods": [
+    "+25% Faster Hit Recovery",
+    "+90 Defense",
+    "Regenerate Mana 17%",
+    "Cold Resist +40–50%",
+    "+5 to Light Radius",
+    "Socketed (2)"
+   ]
+  },
+  {
+   "id": "aldurs-watchtower",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/aldurs-watchtower",
+   "name": "Aldur's Watchtower",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "150% Bonus to Attack Rating (2 Items)",
+    "50% Better Chance Of Getting Magic Items (3 Items)",
+    "10% Life Stolen per Hit (4 Items)"
+   ]
+  },
+  {
+   "id": "angelic-halo",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/angelic-halo",
+   "name": "Angelic Halo",
+   "quality": "Normal Set",
+   "base": "Ring",
+   "icon": "https://d2emu.com/db/assets/items/ring2_graphic.png",
+   "stats": {
+    "Req level:": "12",
+    "Quality level:": "17"
+   },
+   "mods": [
+    "+20 to Life",
+    "Replenish Life +6"
+   ]
+  },
+  {
+   "id": "angelic-mantle",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/angelic-mantle",
+   "name": "Angelic Mantle",
+   "quality": "Normal Set",
+   "base": "Ring Mail",
+   "icon": "https://d2emu.com/db/assets/items/angelicmantle_graphic.png",
+   "stats": {
+    "Defense:": "68",
+    "Durability:": "26",
+    "Req Strength:": "36",
+    "Req level:": "12",
+    "Quality level:": "17",
+    "Treasure class:": "12"
+   },
+   "mods": [
+    "+40% Enhanced Defense",
+    "Damage Reduced by 3"
+   ]
+  },
+  {
+   "id": "angelic-raiment",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/angelic-raiment",
+   "name": "Angelic Raiment",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+10 to Dexterity (2 Items)",
+    "+50 To Mana (3 Items)"
+   ]
+  },
+  {
+   "id": "angelic-sickle",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/angelic-sickle",
+   "name": "Angelic Sickle",
+   "quality": "Normal Set",
+   "base": "Sabre",
+   "icon": "https://d2emu.com/db/assets/items/angelicsickle_graphic.png",
+   "stats": {
+    "One-hand damage:": "3–8",
+    "Base Speed:": "-10",
+    "Durability:": "32",
+    "Req Strength:": "25",
+    "Req Dexterity:": "25",
+    "Req level:": "12",
+    "Quality level:": "17",
+    "Treasure class:": "9"
+   },
+   "mods": [
+    "+75 to Attack Rating",
+    "+250% Damage to Undead"
+   ]
+  },
+  {
+   "id": "angelic-wings",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/angelic-wings",
+   "name": "Angelic Wings",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu2_graphic.png",
+   "stats": {
+    "Req level:": "12",
+    "Quality level:": "17"
+   },
+   "mods": [
+    "20% Damage Taken Goes to Mana",
+    "+3 to Light Radius"
+   ]
+  },
+  {
+   "id": "arcannas-deathwand",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arcannas-deathwand",
+   "name": "Arcanna's Deathwand",
+   "quality": "Normal Set",
+   "base": "War Staff",
+   "icon": "https://d2emu.com/db/assets/items/arcannasdeathwand_graphic.png",
+   "stats": {
+    "Two-hand damage:": "12–28",
+    "Base Speed:": "20",
+    "Durability:": "50",
+    "Req level:": "15",
+    "Quality level:": "20",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "+1 to Sorceress Skills",
+    "25% Deadly Strike"
+   ]
+  },
+  {
+   "id": "arcannas-flesh",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arcannas-flesh",
+   "name": "Arcanna's Flesh",
+   "quality": "Normal Set",
+   "base": "Light Plate",
+   "icon": "https://d2emu.com/db/assets/items/arcannasflesh_graphic.png",
+   "stats": {
+    "Defense:": "90–107",
+    "Durability:": "60",
+    "Req Strength:": "41",
+    "Req level:": "15",
+    "Quality level:": "20",
+    "Treasure class:": "36"
+   },
+   "mods": [
+    "Damage Reduced by 3",
+    "+2 to Light Radius"
+   ]
+  },
+  {
+   "id": "arcannas-head",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arcannas-head",
+   "name": "Arcanna's Head",
+   "quality": "Normal Set",
+   "base": "Skull Cap",
+   "icon": "https://d2emu.com/db/assets/items/arcannashead_graphic.png",
+   "stats": {
+    "Defense:": "8–11",
+    "Durability:": "18",
+    "Req Strength:": "15",
+    "Req level:": "15",
+    "Quality level:": "20",
+    "Treasure class:": "6"
+   },
+   "mods": [
+    "Replenish Life +4",
+    "Attacker Takes Damage of 2"
+   ]
+  },
+  {
+   "id": "arcannas-sign",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arcannas-sign",
+   "name": "Arcanna's Sign",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu3_graphic.png",
+   "stats": {
+    "Req level:": "15",
+    "Quality level:": "20"
+   },
+   "mods": [
+    "+15 to Mana",
+    "Regenerate Mana 20%"
+   ]
+  },
+  {
+   "id": "arcannas-tricks",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/arcannas-tricks",
+   "name": "Arcanna's Tricks",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+50 To Mana (2 Items)",
+    "+50 To Life (3 Items)",
+    "Regenerate Mana 12% (3 Items)"
+   ]
+  },
+  {
+   "id": "arctic-binding",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arctic-binding",
+   "name": "Arctic Binding",
+   "quality": "Normal Set",
+   "base": "Light Belt",
+   "icon": "https://d2emu.com/db/assets/items/arcticbinding_graphic.png",
+   "stats": {
+    "Defense:": "33",
+    "Durability:": "14",
+    "Req level:": "2",
+    "Quality level:": "3",
+    "Treasure class:": "9"
+   },
+   "mods": [
+    "+30 Defense",
+    "Cold Resist +40%"
+   ]
+  },
+  {
+   "id": "arctic-furs",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arctic-furs",
+   "name": "Arctic Furs",
+   "quality": "Normal Set",
+   "base": "Quilted Armor",
+   "icon": "https://d2emu.com/db/assets/items/arcticfurs_graphic.png",
+   "stats": {
+    "Defense:": "45–51",
+    "Durability:": "20",
+    "Req Strength:": "12",
+    "Req level:": "2",
+    "Quality level:": "3",
+    "Treasure class:": "3"
+   },
+   "mods": [
+    "+275–325% Enhanced Defense",
+    "All Resistances +10%"
+   ]
+  },
+  {
+   "id": "arctic-gear",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/arctic-gear",
+   "name": "Arctic Gear",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+5 to Strength (2 Items)",
+    "+50 To Life (3 Items)"
+   ]
+  },
+  {
+   "id": "arctic-horn",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arctic-horn",
+   "name": "Arctic Horn",
+   "quality": "Normal Set",
+   "base": "Short War Bow",
+   "icon": "https://d2emu.com/db/assets/items/arctichorn_graphic.png",
+   "stats": {
+    "Two-hand damage:": "6–14",
+    "Base Speed:": "0",
+    "Durability:": "48",
+    "Req Strength:": "35",
+    "Req Dexterity:": "55",
+    "Req level:": "2",
+    "Quality level:": "3",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+50% Enhanced Damage",
+    "20% Bonus to Attack Rating"
+   ]
+  },
+  {
+   "id": "arctic-mitts",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/arctic-mitts",
+   "name": "Arctic Mitts",
+   "quality": "Normal Set",
+   "base": "Light Gauntlets",
+   "icon": "https://d2emu.com/db/assets/items/arcticmitts_graphic.png",
+   "stats": {
+    "Defense:": "9–11",
+    "Durability:": "18",
+    "Req Strength:": "45",
+    "Req level:": "2",
+    "Quality level:": "3",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+10% Increased Attack Speed",
+    "+20 to Life"
+   ]
+  },
+  {
+   "id": "banes-authority",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/banes-authority",
+   "name": "Bane's Authority",
+   "quality": "Normal Set",
+   "base": "Light Belt",
+   "icon": "https://d2emu.com/db/assets/items/lightbelt_graphic.png",
+   "stats": {
+    "Defense:": "3",
+    "Durability:": "14",
+    "Req level:": "8",
+    "Quality level:": "7",
+    "Treasure class:": "9"
+   },
+   "mods": [
+    "+10% Faster Cast Rate",
+    "+20 to Life"
+   ]
+  },
+  {
+   "id": "banes-garments",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/banes-garments",
+   "name": "Bane's Garments",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+80% Enhanced Damage (2 Items)"
+   ]
+  },
+  {
+   "id": "banes-oathmaker",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/banes-oathmaker",
+   "name": "Bane's Oathmaker",
+   "quality": "Normal Set",
+   "base": "Kris",
+   "icon": "https://d2emu.com/db/assets/items/kriss_graphic.png",
+   "stats": {
+    "One-hand damage:": "2–11",
+    "Base Speed:": "-20",
+    "Durability:": "24",
+    "Req Dexterity:": "45",
+    "Req level:": "8",
+    "Quality level:": "7",
+    "Treasure class:": "18"
+   },
+   "mods": [
+    "+20% Faster Run/Walk",
+    "1 Maximum Damage per level (1–99 at levels 1–99)"
+   ]
+  },
+  {
+   "id": "banes-wraithskin",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/banes-wraithskin",
+   "name": "Bane's Wraithskin",
+   "quality": "Normal Set",
+   "base": "Hard Leather Armor",
+   "icon": "https://d2emu.com/db/assets/items/hardleather_graphic.png",
+   "stats": {
+    "Defense:": "71–74",
+    "Durability:": "28",
+    "Req Strength:": "20",
+    "Req level:": "8",
+    "Quality level:": "7",
+    "Treasure class:": "6"
+   },
+   "mods": [
+    "+50 Defense",
+    "Magic Resist +30%"
+   ]
+  },
+  {
+   "id": "berserkers-arsenal",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/berserkers-arsenal",
+   "name": "Berserker's Arsenal",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+50 To Life (2 Items)"
+   ]
+  },
+  {
+   "id": "berserkers-hatchet",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/berserkers-hatchet",
+   "name": "Berserker's Hatchet",
+   "quality": "Normal Set",
+   "base": "Double Axe",
+   "icon": "https://d2emu.com/db/assets/items/berserkerhatchet_graphic.png",
+   "stats": {
+    "One-hand damage:": "5–13",
+    "Base Speed:": "10",
+    "Durability:": "24",
+    "Req Strength:": "43",
+    "Req level:": "3",
+    "Quality level:": "5",
+    "Treasure class:": "15"
+   },
+   "mods": [
+    "30% Bonus to Attack Rating",
+    "5% Mana Stolen per Hit"
+   ]
+  },
+  {
+   "id": "berserkers-hauberk",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/berserkers-hauberk",
+   "name": "Berserker's Hauberk",
+   "quality": "Normal Set",
+   "base": "Splint Mail",
+   "icon": "https://d2emu.com/db/assets/items/berserkerhauberk_graphic.png",
+   "stats": {
+    "Defense:": "90–95",
+    "Durability:": "30",
+    "Req Strength:": "51",
+    "Req level:": "3",
+    "Quality level:": "5",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+1 to Barbarian Skills",
+    "Magic Damage Reduced by 2"
+   ]
+  },
+  {
+   "id": "berserkers-headgear",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/berserkers-headgear",
+   "name": "Berserker's Headgear",
+   "quality": "Normal Set",
+   "base": "Helm",
+   "icon": "https://d2emu.com/db/assets/items/berserkerheadgear_graphic.png",
+   "stats": {
+    "Defense:": "30–33",
+    "Durability:": "24",
+    "Req Strength:": "26",
+    "Req level:": "3",
+    "Quality level:": "5",
+    "Treasure class:": "12"
+   },
+   "mods": [
+    "+15 Defense",
+    "Fire Resist +25%"
+   ]
+  },
+  {
+   "id": "bul-kathos-children",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/bul-kathos-children",
+   "name": "Bul-Kathos' Children",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+2 To All Skills",
+    "Adds 200 Fire Damage",
+    "+200 to Attack Rating",
+    "+200% Damage to Undead",
+    "+200% Damage to Demons",
+    "10% Life Stolen per Hit",
+    "20% Deadly Strike",
+    "+200 Defense"
+   ]
+  },
+  {
+   "id": "bul-kathos-sacred-charge",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/bul-kathos-sacred-charge",
+   "name": "Bul-Kathos' Sacred Charge",
+   "quality": "Elite Set",
+   "base": "Colossus Blade",
+   "icon": "https://d2emu.com/db/assets/items/bulkathossacredcharge_graphic.png",
+   "stats": {
+    "One-hand damage:": "25–65",
+    "Two-hand damage:": "58–115",
+    "Base Speed:": "5",
+    "Durability:": "50",
+    "Req Strength:": "189",
+    "Req Dexterity:": "110",
+    "Req level:": "61",
+    "Quality level:": "50",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "+20% Increased Attack Speed",
+    "+200% Enhanced Damage",
+    "35% Chance of Crushing Blow",
+    "All Resistances +20%"
+   ]
+  },
+  {
+   "id": "bul-kathos-tribal-guardian",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/bul-kathos-tribal-guardian",
+   "name": "Bul-Kathos' Tribal Guardian",
+   "quality": "Elite Set",
+   "base": "Mythical Sword",
+   "icon": "https://d2emu.com/db/assets/items/bulkathostribalguardian_graphic.png",
+   "stats": {
+    "One-hand damage:": "40–50",
+    "Base Speed:": "0",
+    "Durability:": "44",
+    "Req Strength:": "147",
+    "Req Dexterity:": "124",
+    "Req level:": "54",
+    "Quality level:": "50",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "+20% Increased Attack Speed",
+    "+200% Enhanced Damage",
+    "Adds 49 Poison Damage over 2 Seconds",
+    "+20 to Strength",
+    "Fire Resist +50%"
+   ]
+  },
+  {
+   "id": "cathans-mesh",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cathans-mesh",
+   "name": "Cathan's Mesh",
+   "quality": "Normal Set",
+   "base": "Chain Mail",
+   "icon": "https://d2emu.com/db/assets/items/cathansmesh_graphic.png",
+   "stats": {
+    "Defense:": "87–90",
+    "Durability:": "45",
+    "Req Strength:": "24",
+    "Req level:": "11",
+    "Quality level:": "15",
+    "Treasure class:": "15"
+   },
+   "mods": [
+    "+15 Defense",
+    "Requirements -50%"
+   ]
+  },
+  {
+   "id": "cathans-rule",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cathans-rule",
+   "name": "Cathan's Rule",
+   "quality": "Normal Set",
+   "base": "Battle Staff",
+   "icon": "https://d2emu.com/db/assets/items/cathansrule_graphic.png",
+   "stats": {
+    "Two-hand damage:": "6–13",
+    "Base Speed:": "0",
+    "Durability:": "40",
+    "Req level:": "11",
+    "Quality level:": "15",
+    "Treasure class:": "18"
+   },
+   "mods": [
+    "+1 to Fire Skills",
+    "+10 to Maximum Fire Damage"
+   ]
+  },
+  {
+   "id": "cathans-seal",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cathans-seal",
+   "name": "Cathan's Seal",
+   "quality": "Normal Set",
+   "base": "Ring",
+   "icon": "https://d2emu.com/db/assets/items/ring4_graphic.png",
+   "stats": {
+    "Req level:": "11",
+    "Quality level:": "15"
+   },
+   "mods": [
+    "6% Life Stolen per Hit",
+    "Damage Reduced by 2"
+   ]
+  },
+  {
+   "id": "cathans-sigil",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cathans-sigil",
+   "name": "Cathan's Sigil",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu1_graphic.png",
+   "stats": {
+    "Req level:": "11",
+    "Quality level:": "15"
+   },
+   "mods": [
+    "+10% Faster Hit Recovery",
+    "Attacker Takes Lightning Damage of 5"
+   ]
+  },
+  {
+   "id": "cathans-traps",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/cathans-traps",
+   "name": "Cathan's Traps",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Adds 15–20 Fire Damage (2 Items)",
+    "Regenerate Mana 16% (2 Items)",
+    "Lightning Resist +25% (3 Items)"
+   ]
+  },
+  {
+   "id": "cathans-visage",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cathans-visage",
+   "name": "Cathan's Visage",
+   "quality": "Normal Set",
+   "base": "Mask",
+   "icon": "https://d2emu.com/db/assets/items/mask_graphic.png",
+   "stats": {
+    "Defense:": "9–27",
+    "Durability:": "20",
+    "Req Strength:": "23",
+    "Req level:": "11",
+    "Quality level:": "15",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+20 to Mana",
+    "Cold Resist +25%"
+   ]
+  },
+  {
+   "id": "civerbs-cudgel",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/civerbs-cudgel",
+   "name": "Civerb's Cudgel",
+   "quality": "Normal Set",
+   "base": "Grand Scepter",
+   "icon": "https://d2emu.com/db/assets/items/grandscepter_graphic.png",
+   "stats": {
+    "One-hand damage:": "8–18",
+    "Base Speed:": "10",
+    "Durability:": "60",
+    "Req Strength:": "37",
+    "Req level:": "9",
+    "Quality level:": "13",
+    "Treasure class:": "15"
+   },
+   "mods": [
+    "+17–23 to Maximum Damage",
+    "+75 to Attack Rating"
+   ]
+  },
+  {
+   "id": "civerbs-icon",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/civerbs-icon",
+   "name": "Civerb's Icon",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu1_graphic.png",
+   "stats": {
+    "Req level:": "9",
+    "Quality level:": "13"
+   },
+   "mods": [
+    "Replenish Life +4",
+    "Regenerate Mana 40%"
+   ]
+  },
+  {
+   "id": "civerbs-vestments",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/civerbs-vestments",
+   "name": "Civerb's Vestments",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Fire Resist +25% (2 Items)"
+   ]
+  },
+  {
+   "id": "civerbs-ward",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/civerbs-ward",
+   "name": "Civerb's Ward",
+   "quality": "Normal Set",
+   "base": "Large Shield",
+   "icon": "https://d2emu.com/db/assets/items/civerbsward_graphic.png",
+   "stats": {
+    "Defense:": "27–29",
+    "Durability:": "24",
+    "Req Strength:": "34",
+    "Req level:": "9",
+    "Quality level:": "13",
+    "Treasure class:": "12",
+    "Base Block:": "12%",
+    "Class Block:": "Pal: 57%; Ama/Asn/Bar/War: 52%; Dru/Nec/Sor: 47%",
+    "Paladin Smite Damage:": "2–4"
+   },
+   "mods": [
+    "15% Increased Chance of Blocking",
+    "+15 Defense"
+   ]
+  },
+  {
+   "id": "cleglaws-brace",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/cleglaws-brace",
+   "name": "Cleglaw's Brace",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+50 Defense (2 Items)"
+   ]
+  },
+  {
+   "id": "cleglaws-claw",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cleglaws-claw",
+   "name": "Cleglaw's Claw",
+   "quality": "Normal Set",
+   "base": "Small Shield",
+   "icon": "https://d2emu.com/db/assets/items/cleglawsclaw_graphic.png",
+   "stats": {
+    "Defense:": "25–27",
+    "Durability:": "16",
+    "Req Strength:": "22",
+    "Req level:": "4",
+    "Quality level:": "6",
+    "Treasure class:": "6",
+    "Base Block:": "5%",
+    "Class Block:": "Pal: 35%; Ama/Asn/Bar/War: 30%; Dru/Nec/Sor: 25%",
+    "Paladin Smite Damage:": "2–3"
+   },
+   "mods": [
+    "+17 Defense",
+    "Poison Length Reduced by 75%"
+   ]
+  },
+  {
+   "id": "cleglaws-pincers",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cleglaws-pincers",
+   "name": "Cleglaw's Pincers",
+   "quality": "Normal Set",
+   "base": "Chain Gloves",
+   "icon": "https://d2emu.com/db/assets/items/cleglawspincers_graphic.png",
+   "stats": {
+    "Defense:": "8–9",
+    "Durability:": "16",
+    "Req Strength:": "25",
+    "Req level:": "4",
+    "Quality level:": "6",
+    "Treasure class:": "12"
+   },
+   "mods": [
+    "Slows Target by 25%",
+    "Knockback"
+   ]
+  },
+  {
+   "id": "cleglaws-tooth",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cleglaws-tooth",
+   "name": "Cleglaw's Tooth",
+   "quality": "Normal Set",
+   "base": "Long Sword",
+   "icon": "https://d2emu.com/db/assets/items/cleglawstooth_graphic.png",
+   "stats": {
+    "One-hand damage:": "3–19",
+    "Base Speed:": "-10",
+    "Durability:": "44",
+    "Req Strength:": "55",
+    "Req Dexterity:": "39",
+    "Req level:": "4",
+    "Quality level:": "6",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "30% Bonus to Attack Rating",
+    "50% Deadly Strike"
+   ]
+  },
+  {
+   "id": "cow-kings-hide",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cow-kings-hide",
+   "name": "Cow King's Hide",
+   "quality": "Normal Set",
+   "base": "Studded Leather",
+   "icon": "https://d2emu.com/db/assets/items/studdedleather_graphic.png",
+   "stats": {
+    "Defense:": "57",
+    "Durability:": "32",
+    "Req Strength:": "27",
+    "Req level:": "18",
+    "Quality level:": "20",
+    "Treasure class:": "9"
+   },
+   "mods": [
+    "18% Chance to Cast Level 5 Chain Lightning when Struck",
+    "+60% Enhanced Defense",
+    "+30 to Life",
+    "All Resistances +18%"
+   ]
+  },
+  {
+   "id": "cow-kings-hooves",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cow-kings-hooves",
+   "name": "Cow King's Hooves",
+   "quality": "Normal Set",
+   "base": "Heavy Boots",
+   "icon": "https://d2emu.com/db/assets/items/heavyboots_graphic.png",
+   "stats": {
+    "Defense:": "30–41",
+    "Durability:": "14",
+    "Req Strength:": "18",
+    "Req level:": "13",
+    "Quality level:": "20",
+    "Treasure class:": "9",
+    "Assassin Kick Damage:": "4–10"
+   },
+   "mods": [
+    "+30% Faster Run/Walk",
+    "Adds 25–35 Fire Damage",
+    "+25–35 Defense",
+    "+20 to Dexterity",
+    "25% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "cow-kings-horns",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/cow-kings-horns",
+   "name": "Cow King's Horns",
+   "quality": "Exceptional Set",
+   "base": "War Hat",
+   "icon": "https://d2emu.com/db/assets/items/cap_graphic.png",
+   "stats": {
+    "Defense:": "120–128",
+    "Durability:": "12",
+    "Req Strength:": "20",
+    "Req level:": "25",
+    "Quality level:": "20",
+    "Treasure class:": "36"
+   },
+   "mods": [
+    "+75 Defense",
+    "Half Freeze Duration",
+    "Attacker Takes Damage of 10",
+    "35% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "cow-kings-leathers",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/cow-kings-leathers",
+   "name": "Cow King's Leathers",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Poison Resist +25% (2 Items)",
+    "+100 Defense (2 Items)"
+   ]
+  },
+  {
+   "id": "credendum",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/credendum",
+   "name": "Credendum",
+   "quality": "Elite Set",
+   "base": "Mithril Coil",
+   "icon": "https://d2emu.com/db/assets/items/credendum_graphic.png",
+   "stats": {
+    "Defense:": "108–115",
+    "Durability:": "16",
+    "Req Strength:": "106",
+    "Req level:": "65",
+    "Quality level:": "39",
+    "Treasure class:": "75"
+   },
+   "mods": [
+    "+50 Defense",
+    "+10 to Strength",
+    "+10 to Dexterity",
+    "All Resistances +15%"
+   ]
+  },
+  {
+   "id": "dangoons-teaching",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/dangoons-teaching",
+   "name": "Dangoon's Teaching",
+   "quality": "Elite Set",
+   "base": "Reinforced Mace",
+   "icon": "https://d2emu.com/db/assets/items/dangoonsteaching_graphic.png",
+   "stats": {
+    "One-hand damage:": "41–49",
+    "Base Speed:": "0",
+    "Durability:": "60",
+    "Req Strength:": "145",
+    "Req Dexterity:": "46",
+    "Req level:": "68",
+    "Quality level:": "55",
+    "Treasure class:": "63"
+   },
+   "mods": [
+    "10% Chance to Cast Level 3 Frost Nova on Striking",
+    "+40% Increased Attack Speed",
+    "1.5 Maximum Damage per level (1–148 at levels 1–99)",
+    "Adds 20–30 Fire Damage"
+   ]
+  },
+  {
+   "id": "dark-adherent",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/dark-adherent",
+   "name": "Dark Adherent",
+   "quality": "Elite Set",
+   "base": "Dusk Shroud",
+   "icon": "https://d2emu.com/db/assets/items/darkadherent_graphic.png",
+   "stats": {
+    "Defense:": "666–882",
+    "Durability:": "20",
+    "Req Strength:": "77",
+    "Req level:": "43",
+    "Quality level:": "39",
+    "Treasure class:": "66"
+   },
+   "mods": [
+    "25% Chance to Cast Level 3 Nova when Struck",
+    "Adds 24–34 Poison Damage over 2 Seconds",
+    "+305–415 Defense",
+    "Fire Resist +24%"
+   ]
+  },
+  {
+   "id": "deaths-disguise",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/deaths-disguise",
+   "name": "Death's Disguise",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "8% Life Stolen per Hit (2 Items)"
+   ]
+  },
+  {
+   "id": "deaths-guard",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/deaths-guard",
+   "name": "Death's Guard",
+   "quality": "Normal Set",
+   "base": "Sash",
+   "icon": "https://d2emu.com/db/assets/items/deathsguard_graphic.png",
+   "stats": {
+    "Defense:": "22",
+    "Durability:": "12",
+    "Req level:": "6",
+    "Quality level:": "8",
+    "Treasure class:": "3"
+   },
+   "mods": [
+    "+20 Defense",
+    "Cannot Be Frozen"
+   ]
+  },
+  {
+   "id": "deaths-hand",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/deaths-hand",
+   "name": "Death's Hand",
+   "quality": "Normal Set",
+   "base": "Leather Gloves",
+   "icon": "https://d2emu.com/db/assets/items/deathshand_graphic.png",
+   "stats": {
+    "Defense:": "2–3",
+    "Durability:": "12",
+    "Req level:": "6",
+    "Quality level:": "8",
+    "Treasure class:": "3"
+   },
+   "mods": [
+    "Poison Resist +50%",
+    "Poison Length Reduced by 75%"
+   ]
+  },
+  {
+   "id": "deaths-touch",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/deaths-touch",
+   "name": "Death's Touch",
+   "quality": "Normal Set",
+   "base": "War Sword",
+   "icon": "https://d2emu.com/db/assets/items/deathstouch_graphic.png",
+   "stats": {
+    "One-hand damage:": "8–20",
+    "Base Speed:": "0",
+    "Durability:": "44",
+    "Req Strength:": "71",
+    "Req Dexterity:": "45",
+    "Req level:": "6",
+    "Quality level:": "8",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+25% Enhanced Damage",
+    "4% Life Stolen per Hit"
+   ]
+  },
+  {
+   "id": "griswolds-heart",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/griswolds-heart",
+   "name": "Griswold's Heart",
+   "quality": "Exceptional Set",
+   "base": "Ornate Plate",
+   "icon": "https://d2emu.com/db/assets/items/griswoldsheart_graphic.png",
+   "stats": {
+    "Defense:": "917–950",
+    "Durability:": "60",
+    "Req Strength:": "102",
+    "Req level:": "45",
+    "Quality level:": "44",
+    "Treasure class:": "66"
+   },
+   "mods": [
+    "+2 to Defensive Auras (Paladin Only)",
+    "+500 Defense",
+    "+20 to Strength",
+    "Socketed (3)",
+    "Requirements -40%"
+   ]
+  },
+  {
+   "id": "griswolds-honor",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/griswolds-honor",
+   "name": "Griswold's Honor",
+   "quality": "Elite Set",
+   "base": "Vortex Shield",
+   "icon": "https://d2emu.com/db/assets/items/griswoldshonor_graphic.png",
+   "stats": {
+    "Defense:": "290–333",
+    "Durability:": "90",
+    "Req Strength:": "148",
+    "Req level:": "68",
+    "Quality level:": "44",
+    "Treasure class:": "87",
+    "Base Block:": "19%",
+    "Class Block:": "Pal: 69%",
+    "Paladin Smite Damage:": "5–87"
+   },
+   "mods": [
+    "+65% Faster Block Rate",
+    "20% Increased Chance of Blocking",
+    "+108 Defense",
+    "All Resistances +45%",
+    "Socketed (3)"
+   ]
+  },
+  {
+   "id": "griswolds-legacy",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/griswolds-legacy",
+   "name": "Griswold's Legacy",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+20 to Strength (2 Items)",
+    "+30 to Dexterity (3 Items)"
+   ]
+  },
+  {
+   "id": "griswolds-redemption",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/griswolds-redemption",
+   "name": "Griswold's Redemption",
+   "quality": "Elite Set",
+   "base": "Caduceus",
+   "icon": "https://d2emu.com/db/assets/items/griswoldsredemption_graphic.png",
+   "stats": {
+    "One-hand damage:": "37–43",
+    "Base Speed:": "-10",
+    "Durability:": "70",
+    "Req Strength:": "78",
+    "Req Dexterity:": "56",
+    "Req level:": "53",
+    "Quality level:": "44",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "+40% Increased Attack Speed",
+    "+200–240% Enhanced Damage",
+    "+200% Damage to Undead",
+    "Requirements -20%",
+    "Socketed (3–4)"
+   ]
+  },
+  {
+   "id": "griswolds-valor",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/griswolds-valor",
+   "name": "Griswold's Valor",
+   "quality": "Elite Set",
+   "base": "Corona",
+   "icon": "https://d2emu.com/db/assets/items/griswoldsvalor_graphic.png",
+   "stats": {
+    "Defense:": "249–290",
+    "Durability:": "50",
+    "Req Strength:": "105",
+    "Req level:": "69",
+    "Quality level:": "44",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "+50–75% Enhanced Defense",
+    "All Resistances +5%",
+    "0.25 Cold Damage Absorbed per level (0–24 at levels 1–99)",
+    "20–30% Better Chance of Finding Magic Items",
+    "Socketed (2)",
+    "Requirements -40%"
+   ]
+  },
+  {
+   "id": "guillaumes-face",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/guillaumes-face",
+   "name": "Guillaume's Face",
+   "quality": "Exceptional Set",
+   "base": "Winged Helm",
+   "icon": "https://d2emu.com/db/assets/items/guillaumesface_graphic.png",
+   "stats": {
+    "Defense:": "217",
+    "Durability:": "40",
+    "Req Strength:": "115",
+    "Req level:": "34",
+    "Quality level:": "41",
+    "Treasure class:": "51"
+   },
+   "mods": [
+    "+30% Faster Hit Recovery",
+    "35% Chance of Crushing Blow",
+    "15% Deadly Strike",
+    "+120% Enhanced Defense",
+    "+15 to Strength"
+   ]
+  },
+  {
+   "id": "haemosus-adamant",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/haemosus-adamant",
+   "name": "Haemosu's Adamant",
+   "quality": "Exceptional Set",
+   "base": "Cuirass",
+   "icon": "https://d2emu.com/db/assets/items/haemosusadament_graphic.png",
+   "stats": {
+    "Defense:": "688–702",
+    "Durability:": "50",
+    "Req Strength:": "52",
+    "Req level:": "44",
+    "Quality level:": "55",
+    "Treasure class:": "48"
+   },
+   "mods": [
+    "+500 Defense",
+    "+40 Defense vs. Melee",
+    "+35 Defense vs. Missile",
+    "+75 to Life",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "heavens-brethren",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/heavens-brethren",
+   "name": "Heaven's Brethren",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "10% Life Stolen per Hit (2 Items)",
+    "Replenish Life +30 (3 Items)",
+    "3 Maximum Fire Damage per level (3–297 at levels 1–99) (3 Items)"
+   ]
+  },
+  {
+   "id": "horazons-countenance",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/horazons-countenance",
+   "name": "Horazon's Countenance",
+   "quality": "Elite Set",
+   "base": "Demonhead",
+   "icon": "https://d2emu.com/db/assets/items/horazons_countenance_graphic.png",
+   "stats": {
+    "Defense:": "101–154",
+    "Durability:": "20",
+    "Req Strength:": "102",
+    "Req level:": "62",
+    "Quality level:": "40",
+    "Treasure class:": "75"
+   },
+   "mods": [
+    "+1 to Warlock Skills",
+    "1% Bonus to Attack Rating per level (1–99% at levels 1–99)",
+    "+10–20 to Strength",
+    "Magic Damage Reduced by 7–10"
+   ]
+  },
+  {
+   "id": "horazons-dominion",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/horazons-dominion",
+   "name": "Horazon's Dominion",
+   "quality": "Exceptional Set",
+   "base": "Russet Armor",
+   "icon": "https://d2emu.com/db/assets/items/splintmail_graphic.png",
+   "stats": {
+    "Defense:": "427–488",
+    "Durability:": "30",
+    "Req Strength:": "97",
+    "Req level:": "55",
+    "Quality level:": "40",
+    "Treasure class:": "51"
+   },
+   "mods": [
+    "+2 to Skill Tab 21",
+    "+75–100% Enhanced Defense",
+    "+75–100 to Mana",
+    "Cold Resist +15–25%",
+    "Lightning Resist +15–25%",
+    "Fire Resist +15–25%"
+   ]
+  },
+  {
+   "id": "horazons-hold",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/horazons-hold",
+   "name": "Horazon's Hold",
+   "quality": "Exceptional Set",
+   "base": "Demonhide Gloves",
+   "icon": "https://d2emu.com/db/assets/items/leathergloves_graphic.png",
+   "stats": {
+    "Defense:": "28–35",
+    "Durability:": "12",
+    "Req Strength:": "20",
+    "Req level:": "48",
+    "Quality level:": "40",
+    "Treasure class:": "33"
+   },
+   "mods": [
+    "+95–150 to Attack Rating",
+    "Adds 140–270 Fire Damage",
+    "10% Chance of Crushing Blow",
+    "+10–15 to Dexterity",
+    "+30–40 to Life"
+   ]
+  },
+  {
+   "id": "horazons-legacy",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/horazons-legacy",
+   "name": "Horazon's Legacy",
+   "quality": "Elite Set",
+   "base": "Mirrored Boots",
+   "icon": "https://d2emu.com/db/assets/items/lightplateboots_graphic.png",
+   "stats": {
+    "Defense:": "59–68",
+    "Durability:": "18",
+    "Req Strength:": "115",
+    "Req level:": "67",
+    "Quality level:": "40",
+    "Treasure class:": "81",
+    "Assassin Kick Damage:": "50–145"
+   },
+   "mods": [
+    "+30% Faster Run/Walk",
+    "+10–15 to Strength",
+    "+10–15 to Dexterity",
+    "Magic Resist +20–30%",
+    "Cannot Be Frozen",
+    "Requirements -30%"
+   ]
+  },
+  {
+   "id": "horazons-secrets",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/horazons-secrets",
+   "name": "Horazon's Secrets",
+   "quality": "Elite Set",
+   "base": "Occult Codex",
+   "icon": "https://d2emu.com/db/assets/items/tome_graphic.png",
+   "stats": {
+    "Defense:": "98–142",
+    "Durability:": "20",
+    "Req Strength:": "91",
+    "Req level:": "57",
+    "Quality level:": "40",
+    "Treasure class:": "66",
+    "Base Block:": "8%",
+    "Class Block:": "War: 53%"
+   },
+   "mods": [
+    "+2 to Skill Tab 22",
+    "+30% Faster Hit Recovery",
+    "20% Increased Chance of Blocking",
+    "+20–30 to Vitality",
+    "+30–50 to Life"
+   ]
+  },
+  {
+   "id": "horazons-splendor",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/horazons-splendor",
+   "name": "Horazon's Splendor",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+20 to Dexterity (2 Items)",
+    "+30 to Energy (3 Items)",
+    "+300 Defense (4 Items)"
+   ]
+  },
+  {
+   "id": "hsarus-defense",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/hsarus-defense",
+   "name": "Hsarus' Defense",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Attacker Takes Damage of 5 (2 Items)"
+   ]
+  },
+  {
+   "id": "hsarus-iron-fist",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hsarus-iron-fist",
+   "name": "Hsarus' Iron Fist",
+   "quality": "Normal Set",
+   "base": "Buckler",
+   "icon": "https://d2emu.com/db/assets/items/hsarusironfist_graphic.png",
+   "stats": {
+    "Defense:": "4–6",
+    "Durability:": "12",
+    "Req Strength:": "12",
+    "Req level:": "3",
+    "Quality level:": "4",
+    "Treasure class:": "3",
+    "Paladin Smite Damage:": "1–3"
+   },
+   "mods": [
+    "+10 to Strength",
+    "Damage Reduced by 2"
+   ]
+  },
+  {
+   "id": "hsarus-iron-heel",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hsarus-iron-heel",
+   "name": "Hsarus' Iron Heel",
+   "quality": "Normal Set",
+   "base": "Chain Boots",
+   "icon": "https://d2emu.com/db/assets/items/hsarusironwheel_graphic.png",
+   "stats": {
+    "Defense:": "8–9",
+    "Durability:": "16",
+    "Req Strength:": "30",
+    "Req level:": "3",
+    "Quality level:": "4",
+    "Treasure class:": "12",
+    "Assassin Kick Damage:": "6–12"
+   },
+   "mods": [
+    "+20% Faster Run/Walk",
+    "Fire Resist +25%"
+   ]
+  },
+  {
+   "id": "hsarus-iron-stay",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hsarus-iron-stay",
+   "name": "Hsarus' Iron Stay",
+   "quality": "Normal Set",
+   "base": "Belt",
+   "icon": "https://d2emu.com/db/assets/items/hsarusironstay_graphic.png",
+   "stats": {
+    "Defense:": "5",
+    "Durability:": "16",
+    "Req Strength:": "25",
+    "Req level:": "3",
+    "Quality level:": "4",
+    "Treasure class:": "12"
+   },
+   "mods": [
+    "+20 to Life",
+    "Cold Resist +20%"
+   ]
+  },
+  {
+   "id": "hwanins-blessing",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hwanins-blessing",
+   "name": "Hwanin's Blessing",
+   "quality": "Normal Set",
+   "base": "Belt",
+   "icon": "https://d2emu.com/db/assets/items/hwaninsblessing_graphic.png",
+   "stats": {
+    "Defense:": "5",
+    "Durability:": "16",
+    "Req Strength:": "25",
+    "Req level:": "35",
+    "Quality level:": "28",
+    "Treasure class:": "12"
+   },
+   "mods": [
+    "Adds 3–33 Lightning Damage",
+    "Prevent Monster Heal",
+    "1.5 Defense per level (1–148 at levels 1–99)",
+    "12% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "hwanins-justice",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hwanins-justice",
+   "name": "Hwanin's Justice",
+   "quality": "Exceptional Set",
+   "base": "Bill",
+   "icon": "https://d2emu.com/db/assets/items/voulge_graphic.png",
+   "stats": {
+    "Two-hand damage:": "14–53",
+    "Base Speed:": "0",
+    "Durability:": "50",
+    "Req Strength:": "95",
+    "Req level:": "28",
+    "Quality level:": "28",
+    "Treasure class:": "39"
+   },
+   "mods": [
+    "10% Chance to Cast Level 3 Ice Blast on Striking",
+    "+40% Increased Attack Speed",
+    "+200% Enhanced Damage",
+    "+330 to Attack Rating",
+    "Adds 5–25 Lightning Damage",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "hwanins-majesty",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/hwanins-majesty",
+   "name": "Hwanin's Majesty",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+100 Defense (2 Items)",
+    "+200 Defense (3 Items)"
+   ]
+  },
+  {
+   "id": "hwanins-refuge",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hwanins-refuge",
+   "name": "Hwanin's Refuge",
+   "quality": "Exceptional Set",
+   "base": "Tigulated Mail",
+   "icon": "https://d2emu.com/db/assets/items/scalemail_graphic.png",
+   "stats": {
+    "Defense:": "376–390",
+    "Durability:": "36",
+    "Req Strength:": "86",
+    "Req level:": "30",
+    "Quality level:": "28",
+    "Treasure class:": "45"
+   },
+   "mods": [
+    "10% Chance to Cast Level 3 Static Field when Struck",
+    "+200 Defense",
+    "+100 to Life",
+    "Poison Resist +27%"
+   ]
+  },
+  {
+   "id": "hwanins-splendor",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/hwanins-splendor",
+   "name": "Hwanin's Splendor",
+   "quality": "Exceptional Set",
+   "base": "Grand Crown",
+   "icon": "https://d2emu.com/db/assets/items/hwaninssplendor_graphic.png",
+   "stats": {
+    "Defense:": "228",
+    "Durability:": "50",
+    "Req Strength:": "103",
+    "Req level:": "45",
+    "Quality level:": "28",
+    "Treasure class:": "57"
+   },
+   "mods": [
+    "+100% Enhanced Defense",
+    "Replenish Life +20",
+    "Cold Resist +37%",
+    "Magic Damage Reduced by 10"
+   ]
+  },
+  {
+   "id": "immortal-king",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/immortal-king",
+   "name": "Immortal King",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+50 to Attack Rating (2 Items)",
+    "+75 to Attack Rating (3 Items)",
+    "+125 to Attack Rating (4 Items)",
+    "+200 to Attack Rating (5 Items)"
+   ]
+  },
+  {
+   "id": "immortal-kings-detail",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/immortal-kings-detail",
+   "name": "Immortal King's Detail",
+   "quality": "Exceptional Set",
+   "base": "War Belt",
+   "icon": "https://d2emu.com/db/assets/items/girdle_graphic.png",
+   "stats": {
+    "Defense:": "77–88",
+    "Durability:": "24",
+    "Req Strength:": "110",
+    "Req level:": "29",
+    "Quality level:": "37",
+    "Treasure class:": "54"
+   },
+   "mods": [
+    "+36 Defense",
+    "+25 to Strength",
+    "Lightning Resist +31%",
+    "Fire Resist +28%"
+   ]
+  },
+  {
+   "id": "immortal-kings-forge",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/immortal-kings-forge",
+   "name": "Immortal King's Forge",
+   "quality": "Exceptional Set",
+   "base": "War Gauntlets",
+   "icon": "https://d2emu.com/db/assets/items/gauntlets_graphic.png",
+   "stats": {
+    "Defense:": "108–118",
+    "Durability:": "24",
+    "Req Strength:": "110",
+    "Req level:": "30",
+    "Quality level:": "37",
+    "Treasure class:": "54"
+   },
+   "mods": [
+    "12% Chance to Cast Level 4 Charged Bolt when Struck",
+    "+65 Defense",
+    "+20 to Strength",
+    "+20 to Dexterity"
+   ]
+  },
+  {
+   "id": "immortal-kings-pillar",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/immortal-kings-pillar",
+   "name": "Immortal King's Pillar",
+   "quality": "Exceptional Set",
+   "base": "War Boots",
+   "icon": "https://d2emu.com/db/assets/items/plateboots_graphic.png",
+   "stats": {
+    "Defense:": "118–128",
+    "Durability:": "24",
+    "Req Strength:": "125",
+    "Req level:": "31",
+    "Quality level:": "37",
+    "Treasure class:": "54",
+    "Assassin Kick Damage:": "39–80"
+   },
+   "mods": [
+    "+40% Faster Run/Walk",
+    "+110 to Attack Rating",
+    "+75 Defense",
+    "+44 to Life"
+   ]
+  },
+  {
+   "id": "immortal-kings-soul-cage",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/immortal-kings-soul-cage",
+   "name": "Immortal King's Soul Cage",
+   "quality": "Elite Set",
+   "base": "Sacred Armor",
+   "icon": "https://d2emu.com/db/assets/items/immortalsoulcage_graphic.png",
+   "stats": {
+    "Defense:": "887–1000",
+    "Durability:": "60",
+    "Req Strength:": "232",
+    "Req level:": "76",
+    "Quality level:": "37",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "5% Chance to Cast Level 5 Enchant when Struck",
+    "+2 to Combat Skills (Barbarian Only)",
+    "+400 Defense",
+    "Poison Resist +50%"
+   ]
+  },
+  {
+   "id": "immortal-kings-stone-crusher",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/immortal-kings-stone-crusher",
+   "name": "Immortal King's Stone Crusher",
+   "quality": "Elite Set",
+   "base": "Ogre Maul",
+   "icon": "https://d2emu.com/db/assets/items/maul_graphic.png",
+   "stats": {
+    "Two-hand damage:": "77–106",
+    "Base Speed:": "10",
+    "Durability:": "60",
+    "Req Strength:": "225",
+    "Req level:": "76",
+    "Quality level:": "37",
+    "Treasure class:": "69"
+   },
+   "mods": [
+    "+40% Increased Attack Speed",
+    "+200% Enhanced Damage",
+    "+200% Damage to Demons",
+    "+200% Damage to Undead",
+    "35–40% Chance of Crushing Blow",
+    "Indestructible",
+    "Socketed (2)"
+   ]
+  },
+  {
+   "id": "immortal-kings-will",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/immortal-kings-will",
+   "name": "Immortal King's Will",
+   "quality": "Normal Set",
+   "base": "Avenger Guard",
+   "icon": "https://d2emu.com/db/assets/items/immortalwill_graphic.png",
+   "stats": {
+    "Defense:": "160–175",
+    "Durability:": "55",
+    "Req Strength:": "65",
+    "Req level:": "47",
+    "Quality level:": "37",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "+2 to Warcries (Barbarian Only)",
+    "+125 Defense",
+    "37% Extra Gold from Monsters",
+    "25–40% Better Chance of Finding Magic Items",
+    "+4 to Light Radius",
+    "Socketed (2)"
+   ]
+  },
+  {
+   "id": "infernal-cranium",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/infernal-cranium",
+   "name": "Infernal Cranium",
+   "quality": "Normal Set",
+   "base": "Cap",
+   "icon": "https://d2emu.com/db/assets/items/infernalcranium_graphic.png",
+   "stats": {
+    "Defense:": "3–5",
+    "Durability:": "12",
+    "Req level:": "5",
+    "Quality level:": "7",
+    "Treasure class:": "3"
+   },
+   "mods": [
+    "All Resistances +10%",
+    "20% Damage Taken Goes to Mana"
+   ]
+  },
+  {
+   "id": "infernal-sign",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/infernal-sign",
+   "name": "Infernal Sign",
+   "quality": "Normal Set",
+   "base": "Heavy Belt",
+   "icon": "https://d2emu.com/db/assets/items/infernalbuckle_graphic.png",
+   "stats": {
+    "Defense:": "31",
+    "Durability:": "18",
+    "Req Strength:": "45",
+    "Req level:": "5",
+    "Quality level:": "7",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+25 Defense",
+    "+20 to Life"
+   ]
+  },
+  {
+   "id": "infernal-tools",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/infernal-tools",
+   "name": "Infernal Tools",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Adds 7 Poison Damage over 3.2 Seconds (2 Items)",
+    "+10 To Mana (3 Items)"
+   ]
+  },
+  {
+   "id": "infernal-torch",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/infernal-torch",
+   "name": "Infernal Torch",
+   "quality": "Normal Set",
+   "base": "Grim Wand",
+   "icon": "https://d2emu.com/db/assets/items/grimwand_graphic.png",
+   "stats": {
+    "One-hand damage:": "5–11",
+    "Base Speed:": "0",
+    "Durability:": "15",
+    "Req level:": "5",
+    "Quality level:": "7",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+1 to Necromancer Skills",
+    "+8 to Minimum Damage"
+   ]
+  },
+  {
+   "id": "irathas-coil",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/irathas-coil",
+   "name": "Iratha's Coil",
+   "quality": "Normal Set",
+   "base": "Crown",
+   "icon": "https://d2emu.com/db/assets/items/irathascoil_graphic.png",
+   "stats": {
+    "Defense:": "25–45",
+    "Durability:": "50",
+    "Req Strength:": "55",
+    "Req level:": "15",
+    "Quality level:": "21",
+    "Treasure class:": "30"
+   },
+   "mods": [
+    "Lightning Resist +30%",
+    "Fire Resist +30%"
+   ]
+  },
+  {
+   "id": "irathas-collar",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/irathas-collar",
+   "name": "Iratha's Collar",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu1_graphic.png",
+   "stats": {
+    "Req level:": "15",
+    "Quality level:": "21"
+   },
+   "mods": [
+    "Poison Resist +30%",
+    "Poison Length Reduced by 75%"
+   ]
+  },
+  {
+   "id": "irathas-cord",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/irathas-cord",
+   "name": "Iratha's Cord",
+   "quality": "Normal Set",
+   "base": "Heavy Belt",
+   "icon": "https://d2emu.com/db/assets/items/irathascord_graphic.png",
+   "stats": {
+    "Defense:": "31",
+    "Durability:": "18",
+    "Req Strength:": "45",
+    "Req level:": "15",
+    "Quality level:": "21",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+5 to Minimum Damage",
+    "+25 Defense"
+   ]
+  },
+  {
+   "id": "irathas-cuff",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/irathas-cuff",
+   "name": "Iratha's Cuff",
+   "quality": "Normal Set",
+   "base": "Light Gauntlets",
+   "icon": "https://d2emu.com/db/assets/items/irathascuff_graphic.png",
+   "stats": {
+    "Defense:": "9–11",
+    "Durability:": "18",
+    "Req Strength:": "45",
+    "Req level:": "15",
+    "Quality level:": "21",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "Cold Resist +30%",
+    "Half Freeze Duration"
+   ]
+  },
+  {
+   "id": "irathas-finery",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/irathas-finery",
+   "name": "Iratha's Finery",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+50 Defense (2 Items)",
+    "+20% Faster Run/Walk (3 Items)",
+    "Piercing Attack (3 Items)"
+   ]
+  },
+  {
+   "id": "isenharts-armory",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/isenharts-armory",
+   "name": "Isenhart's Armory",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+10 to Strength (2 Items)",
+    "+10 to Dexterity (3 Items)"
+   ]
+  },
+  {
+   "id": "isenharts-case",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/isenharts-case",
+   "name": "Isenhart's Case",
+   "quality": "Normal Set",
+   "base": "Breast Plate",
+   "icon": "https://d2emu.com/db/assets/items/isenhartscase_graphic.png",
+   "stats": {
+    "Defense:": "105–108",
+    "Durability:": "50",
+    "Req Strength:": "30",
+    "Req level:": "8",
+    "Quality level:": "11",
+    "Treasure class:": "18"
+   },
+   "mods": [
+    "+40 Defense",
+    "Magic Damage Reduced by 2"
+   ]
+  },
+  {
+   "id": "isenharts-horns",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/isenharts-horns",
+   "name": "Isenhart's Horns",
+   "quality": "Normal Set",
+   "base": "Full Helm",
+   "icon": "https://d2emu.com/db/assets/items/isenhartshorns_graphic.png",
+   "stats": {
+    "Defense:": "23–26",
+    "Durability:": "30",
+    "Req Strength:": "41",
+    "Req level:": "8",
+    "Quality level:": "11",
+    "Treasure class:": "15"
+   },
+   "mods": [
+    "+6 to Dexterity",
+    "Damage Reduced by 2"
+   ]
+  },
+  {
+   "id": "isenharts-lightbrand",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/isenharts-lightbrand",
+   "name": "Isenhart's Lightbrand",
+   "quality": "Normal Set",
+   "base": "Broad Sword",
+   "icon": "https://d2emu.com/db/assets/items/isenhartslightbrand_graphic.png",
+   "stats": {
+    "One-hand damage:": "7–14",
+    "Base Speed:": "0",
+    "Durability:": "32",
+    "Req Strength:": "48",
+    "Req level:": "8",
+    "Quality level:": "11",
+    "Treasure class:": "15"
+   },
+   "mods": [
+    "+20% Increased Attack Speed",
+    "+10 to Minimum Damage"
+   ]
+  },
+  {
+   "id": "isenharts-parry",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/isenharts-parry",
+   "name": "Isenhart's Parry",
+   "quality": "Normal Set",
+   "base": "Gothic Shield",
+   "icon": "https://d2emu.com/db/assets/items/isenhartsparry_graphic.png",
+   "stats": {
+    "Defense:": "70–75",
+    "Durability:": "40",
+    "Req Strength:": "60",
+    "Req level:": "8",
+    "Quality level:": "11",
+    "Treasure class:": "30",
+    "Base Block:": "16%",
+    "Class Block:": "Pal: 46%; Ama/Asn/Bar/War: 41%; Dru/Nec/Sor: 36%",
+    "Paladin Smite Damage:": "2–6"
+   },
+   "mods": [
+    "+40 Defense",
+    "Attacker Takes Lightning Damage of 4"
+   ]
+  },
+  {
+   "id": "laying-of-hands",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/laying-of-hands",
+   "name": "Laying of Hands",
+   "quality": "Elite Set",
+   "base": "Bramble Mitts",
+   "icon": "https://d2emu.com/db/assets/items/layingofhands_graphic.png",
+   "stats": {
+    "Defense:": "79–87",
+    "Durability:": "12",
+    "Req Strength:": "50",
+    "Req level:": "63",
+    "Quality level:": "39",
+    "Treasure class:": "57"
+   },
+   "mods": [
+    "10% Chance to Cast Level 3 Holy Bolt on Striking",
+    "+20% Increased Attack Speed",
+    "+350% Damage to Demons",
+    "+25 Defense",
+    "Fire Resist +50%"
+   ]
+  },
+  {
+   "id": "magnus-skin",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/magnus-skin",
+   "name": "Magnus' Skin",
+   "quality": "Exceptional Set",
+   "base": "Sharkskin Gloves",
+   "icon": "https://d2emu.com/db/assets/items/magnusskin_graphic.png",
+   "stats": {
+    "Defense:": "60",
+    "Durability:": "14",
+    "Req Strength:": "20",
+    "Req level:": "37",
+    "Quality level:": "41",
+    "Treasure class:": "39"
+   },
+   "mods": [
+    "+20% Increased Attack Speed",
+    "+100 to Attack Rating",
+    "+50% Enhanced Defense",
+    "Fire Resist +15%",
+    "+3 to Light Radius"
+   ]
+  },
+  {
+   "id": "mavinas-battle-hymn",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/mavinas-battle-hymn",
+   "name": "M'avina's Battle Hymn",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+20 to Strength (2 Items)",
+    "+30 to Dexterity (3 Items)"
+   ]
+  },
+  {
+   "id": "mavinas-caster",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/mavinas-caster",
+   "name": "M'avina's Caster",
+   "quality": "Elite Set",
+   "base": "Grand Matron Bow",
+   "icon": "https://d2emu.com/db/assets/items/mavinascaster_graphic.png",
+   "stats": {
+    "Two-hand damage:": "14–72",
+    "Base Speed:": "10",
+    "Durability:": "55",
+    "Req Strength:": "108",
+    "Req Dexterity:": "152",
+    "Req level:": "70",
+    "Quality level:": "21",
+    "Treasure class:": "78"
+   },
+   "mods": [
+    "+40% Increased Attack Speed",
+    "Fires Magic Arrows",
+    "+188% Enhanced Damage",
+    "+50 to Attack Rating"
+   ]
+  },
+  {
+   "id": "mavinas-embrace",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/mavinas-embrace",
+   "name": "M'avina's Embrace",
+   "quality": "Elite Set",
+   "base": "Kraken Shell",
+   "icon": "https://d2emu.com/db/assets/items/mavinasembrace_graphic.png",
+   "stats": {
+    "Defense:": "767–873",
+    "Durability:": "48",
+    "Req Strength:": "122",
+    "Req level:": "70",
+    "Quality level:": "21",
+    "Treasure class:": "81"
+   },
+   "mods": [
+    "10% Chance to Cast Level 3 Glacial Spike when Struck",
+    "+2 to Passive and Magic Skills (Amazon Only)",
+    "4 Defense per level (4–396 at levels 1–99)",
+    "+350 Defense",
+    "Magic Damage Reduced by 5–12",
+    "Requirements -30%"
+   ]
+  },
+  {
+   "id": "mavinas-icy-clutch",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/mavinas-icy-clutch",
+   "name": "M'avina's Icy Clutch",
+   "quality": "Exceptional Set",
+   "base": "Battle Gauntlets",
+   "icon": "https://d2emu.com/db/assets/items/mavinasicyclutch_graphic.png",
+   "stats": {
+    "Defense:": "84–97",
+    "Durability:": "18",
+    "Req Strength:": "88",
+    "Req level:": "32",
+    "Quality level:": "21",
+    "Treasure class:": "51"
+   },
+   "mods": [
+    "Adds 6–18 Cold Damage",
+    "+45–50 Defense",
+    "+10 to Strength",
+    "+15 to Dexterity",
+    "Half Freeze Duration",
+    "56% Extra Gold from Monsters"
+   ]
+  },
+  {
+   "id": "mavinas-tenet",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/mavinas-tenet",
+   "name": "M'avina's Tenet",
+   "quality": "Exceptional Set",
+   "base": "Sharkskin Belt",
+   "icon": "https://d2emu.com/db/assets/items/mavinastenet_graphic.png",
+   "stats": {
+    "Defense:": "81–86",
+    "Durability:": "14",
+    "Req Strength:": "20",
+    "Req level:": "45",
+    "Quality level:": "21",
+    "Treasure class:": "39"
+   },
+   "mods": [
+    "+20% Faster Run/Walk",
+    "5% Mana Stolen per Hit",
+    "+50 Defense",
+    "+5 to Light Radius"
+   ]
+  },
+  {
+   "id": "mavinas-true-sight",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/mavinas-true-sight",
+   "name": "M'avina's True Sight",
+   "quality": "Elite Set",
+   "base": "Diadem",
+   "icon": "https://d2emu.com/db/assets/items/mavinastruesight_graphic.png",
+   "stats": {
+    "Defense:": "200–210",
+    "Durability:": "20",
+    "Req level:": "59",
+    "Quality level:": "21",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "+30% Increased Attack Speed",
+    "+150 Defense",
+    "Replenish Life +10",
+    "+25 to Mana"
+   ]
+  },
+  {
+   "id": "milabregas-diadem",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/milabregas-diadem",
+   "name": "Milabrega's Diadem",
+   "quality": "Normal Set",
+   "base": "Crown",
+   "icon": "https://d2emu.com/db/assets/items/milabregasdiadem_graphic.png",
+   "stats": {
+    "Defense:": "25–45",
+    "Durability:": "50",
+    "Req Strength:": "55",
+    "Req level:": "17",
+    "Quality level:": "23",
+    "Treasure class:": "30"
+   },
+   "mods": [
+    "+15 to Life",
+    "+15 to Mana"
+   ]
+  },
+  {
+   "id": "milabregas-orb",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/milabregas-orb",
+   "name": "Milabrega's Orb",
+   "quality": "Normal Set",
+   "base": "Kite Shield",
+   "icon": "https://d2emu.com/db/assets/items/milabregasorb_graphic.png",
+   "stats": {
+    "Defense:": "41–43",
+    "Durability:": "30",
+    "Req Strength:": "47",
+    "Req level:": "17",
+    "Quality level:": "23",
+    "Treasure class:": "15",
+    "Base Block:": "8%",
+    "Class Block:": "Pal: 38%; Ama/Asn/Bar/War: 33%; Dru/Nec/Sor: 28%",
+    "Paladin Smite Damage:": "2–5"
+   },
+   "mods": [
+    "+25 Defense",
+    "20% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "milabregas-regalia",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/milabregas-regalia",
+   "name": "Milabrega's Regalia",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+75 to Attack Rating (2 Items)",
+    "2 Maximum Lightning Damage per level (2–198 at levels 1–99) (2 Items)",
+    "+125 to Attack Rating (3 Items)",
+    "Cannot Be Frozen (3 Items)"
+   ]
+  },
+  {
+   "id": "milabregas-robe",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/milabregas-robe",
+   "name": "Milabrega's Robe",
+   "quality": "Normal Set",
+   "base": "Ancient Armor",
+   "icon": "https://d2emu.com/db/assets/items/milabregasrobe_graphic.png",
+   "stats": {
+    "Defense:": "218–233",
+    "Durability:": "60",
+    "Req Strength:": "100",
+    "Req level:": "17",
+    "Quality level:": "23",
+    "Treasure class:": "42"
+   },
+   "mods": [
+    "Damage Reduced by 2",
+    "Attacker Takes Damage of 3"
+   ]
+  },
+  {
+   "id": "milabregas-rod",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/milabregas-rod",
+   "name": "Milabrega's Rod",
+   "quality": "Normal Set",
+   "base": "War Scepter",
+   "icon": "https://d2emu.com/db/assets/items/warscepter_graphic.png",
+   "stats": {
+    "One-hand damage:": "10–17",
+    "Base Speed:": "-10",
+    "Durability:": "70",
+    "Req Strength:": "55",
+    "Req level:": "17",
+    "Quality level:": "23",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+1 to Paladin Skills",
+    "+50% Enhanced Damage",
+    "+2 to Light Radius"
+   ]
+  },
+  {
+   "id": "najs-ancient-vestige",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/najs-ancient-vestige",
+   "name": "Naj's Ancient Vestige",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+175 Defense (2 Items)",
+    "1.5% Magic Find per level (1–148% at levels 1–99) (2 Items)"
+   ]
+  },
+  {
+   "id": "najs-circlet",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/najs-circlet",
+   "name": "Naj's Circlet",
+   "quality": "Normal Set",
+   "base": "Circlet",
+   "icon": "https://d2emu.com/db/assets/items/najscirclet_graphic.png",
+   "stats": {
+    "Defense:": "95–105",
+    "Durability:": "35",
+    "Req level:": "28",
+    "Quality level:": "43",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "12% Chance to Cast Level 5 Chain Lightning when Struck",
+    "Adds 25–35 Fire Damage",
+    "+75 Defense",
+    "+15 to Strength",
+    "+5 to Light Radius"
+   ]
+  },
+  {
+   "id": "najs-light-plate",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/najs-light-plate",
+   "name": "Naj's Light Plate",
+   "quality": "Elite Set",
+   "base": "Hellforge Plate",
+   "icon": "https://d2emu.com/db/assets/items/platemail_graphic.png",
+   "stats": {
+    "Defense:": "721–830",
+    "Durability:": "60",
+    "Req Strength:": "79",
+    "Req level:": "71",
+    "Quality level:": "43",
+    "Treasure class:": "78"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+300 Defense",
+    "+65 to Life",
+    "All Resistances +25%",
+    "45% Damage Taken Goes to Mana",
+    "Requirements -60%"
+   ]
+  },
+  {
+   "id": "najs-puzzler",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/najs-puzzler",
+   "name": "Naj's Puzzler",
+   "quality": "Elite Set",
+   "base": "Elder Staff",
+   "icon": "https://d2emu.com/db/assets/items/lazarusspire_graphic.png",
+   "stats": {
+    "Two-hand damage:": "80–93",
+    "Base Speed:": "0",
+    "Durability:": "35",
+    "Req Strength:": "44",
+    "Req Dexterity:": "37",
+    "Req level:": "78",
+    "Quality level:": "43",
+    "Treasure class:": "75"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+30% Faster Cast Rate",
+    "+150% Enhanced Damage",
+    "Adds 6–45 Lightning Damage",
+    "+35 to Energy",
+    "+70 to Mana",
+    "Level 11 Teleport (69 Charges)"
+   ]
+  },
+  {
+   "id": "natalyas-mark",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/natalyas-mark",
+   "name": "Natalya's Mark",
+   "quality": "Elite Set",
+   "base": "Scissors Suwayyah",
+   "icon": "https://d2emu.com/db/assets/items/natalyasmark_graphic.png",
+   "stats": {
+    "One-hand damage:": "40–51",
+    "Base Speed:": "0",
+    "Durability:": "68",
+    "Req Strength:": "118",
+    "Req Dexterity:": "118",
+    "Req level:": "79",
+    "Quality level:": "22",
+    "Treasure class:": "87"
+   },
+   "mods": [
+    "+40% Increased Attack Speed",
+    "+200% Enhanced Damage",
+    "Ignore Target's Defense",
+    "+200% Damage to Demons",
+    "+200% Damage to Undead",
+    "Adds 12–17 Fire Damage",
+    "Adds 50 Cold Damage"
+   ]
+  },
+  {
+   "id": "natalyas-odium",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/natalyas-odium",
+   "name": "Natalya's Odium",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Magic Damage Reduced by 15 (2 Items)",
+    "+200 Defense (3 Items)",
+    "Poison Resist +20% (4 Items)"
+   ]
+  },
+  {
+   "id": "natalyas-shadow",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/natalyas-shadow",
+   "name": "Natalya's Shadow",
+   "quality": "Elite Set",
+   "base": "Loricated Mail",
+   "icon": "https://d2emu.com/db/assets/items/natalyasshadow_graphic.png",
+   "stats": {
+    "Defense:": "540–721",
+    "Durability:": "36",
+    "Req Strength:": "149",
+    "Req level:": "73",
+    "Quality level:": "22",
+    "Treasure class:": "75"
+   },
+   "mods": [
+    "+2 to Shadow Disciplines (Assassin Only)",
+    "+150–225 Defense",
+    "1 Life per level (1–99 at levels 1–99)",
+    "Poison Resist +25%",
+    "Poison Length Reduced by 75%",
+    "Socketed (1–3)"
+   ]
+  },
+  {
+   "id": "natalyas-soul",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/natalyas-soul",
+   "name": "Natalya's Soul",
+   "quality": "Exceptional Set",
+   "base": "Mesh Boots",
+   "icon": "https://d2emu.com/db/assets/items/natalyassoul_graphic.png",
+   "stats": {
+    "Defense:": "112–169",
+    "Durability:": "66",
+    "Req Strength:": "65",
+    "Req level:": "25",
+    "Quality level:": "22",
+    "Treasure class:": "45",
+    "Assassin Kick Damage:": "23–52"
+   },
+   "mods": [
+    "+40% Faster Run/Walk",
+    "+75–125 Defense",
+    "0.25% Stamina Regeneration per level (0–24% at levels 1–99)",
+    "Cold Resist +15–25%",
+    "Lightning Resist +15–25%"
+   ]
+  },
+  {
+   "id": "natalyas-totem",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/natalyas-totem",
+   "name": "Natalya's Totem",
+   "quality": "Exceptional Set",
+   "base": "Grim Helm",
+   "icon": "https://d2emu.com/db/assets/items/natalyastotem_graphic.png",
+   "stats": {
+    "Defense:": "195–300",
+    "Durability:": "40",
+    "Req Strength:": "58",
+    "Req level:": "59",
+    "Quality level:": "22",
+    "Treasure class:": "51"
+   },
+   "mods": [
+    "+135–175 Defense",
+    "+10–20 to Strength",
+    "+20–30 to Dexterity",
+    "All Resistances +10–20%",
+    "Magic Damage Reduced by 3"
+   ]
+  },
+  {
+   "id": "ondals-almighty",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/ondals-almighty",
+   "name": "Ondal's Almighty",
+   "quality": "Elite Set",
+   "base": "Spired Helm",
+   "icon": "https://d2emu.com/db/assets/items/ondalsalmighty_graphic.png",
+   "stats": {
+    "Defense:": "164–209",
+    "Durability:": "40",
+    "Req Strength:": "116",
+    "Req level:": "69",
+    "Quality level:": "55",
+    "Treasure class:": "81"
+   },
+   "mods": [
+    "10% Chance to Cast Level 3 Weaken on Striking",
+    "+24% Faster Hit Recovery",
+    "+50 Defense",
+    "+10 to Strength",
+    "+15 to Dexterity",
+    "Requirements -40%"
+   ]
+  },
+  {
+   "id": "orphans-call",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/orphans-call",
+   "name": "Orphan's Call",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+35 To Life (2 Items)",
+    "Attacker Takes Damage of 5 (3 Items)",
+    "+100 Defense (4 Items)"
+   ]
+  },
+  {
+   "id": "rite-of-passage",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/rite-of-passage",
+   "name": "Rite of Passage",
+   "quality": "Exceptional Set",
+   "base": "Demonhide Boots",
+   "icon": "https://d2emu.com/db/assets/items/riteofpassage_graphic.png",
+   "stats": {
+    "Defense:": "53–60",
+    "Durability:": "12",
+    "Req Strength:": "20",
+    "Req level:": "29",
+    "Quality level:": "39",
+    "Treasure class:": "36",
+    "Assassin Kick Damage:": "26–46"
+   },
+   "mods": [
+    "+30% Faster Run/Walk",
+    "+25 Defense",
+    "+15–25 Maximum Stamina",
+    "Half Freeze Duration"
+   ]
+  },
+  {
+   "id": "sanders-folly",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/sanders-folly",
+   "name": "Sander's Folly",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+50 Defense (2 Items)",
+    "+75 to Attack Rating (3 Items)"
+   ]
+  },
+  {
+   "id": "sanders-paragon",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sanders-paragon",
+   "name": "Sander's Paragon",
+   "quality": "Normal Set",
+   "base": "Cap",
+   "icon": "https://d2emu.com/db/assets/items/sandersparagon_graphic.png",
+   "stats": {
+    "Defense:": "3–5",
+    "Durability:": "12",
+    "Req level:": "25",
+    "Quality level:": "20",
+    "Treasure class:": "3"
+   },
+   "mods": [
+    "1 Defense per level (1–99 at levels 1–99)",
+    "Attacker Takes Damage of 8",
+    "35% Better Chance of Finding Magic Items"
+   ]
+  },
+  {
+   "id": "sanders-riprap",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sanders-riprap",
+   "name": "Sander's Riprap",
+   "quality": "Normal Set",
+   "base": "Heavy Boots",
+   "icon": "https://d2emu.com/db/assets/items/sandersriprap_graphic.png",
+   "stats": {
+    "Defense:": "5–6",
+    "Durability:": "14",
+    "Req Strength:": "18",
+    "Req level:": "20",
+    "Quality level:": "20",
+    "Treasure class:": "9",
+    "Assassin Kick Damage:": "4–10"
+   },
+   "mods": [
+    "+40% Faster Run/Walk",
+    "+100 to Attack Rating",
+    "+5 to Strength",
+    "+10 to Dexterity"
+   ]
+  },
+  {
+   "id": "sanders-superstition",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sanders-superstition",
+   "name": "Sander's Superstition",
+   "quality": "Normal Set",
+   "base": "Bone Wand",
+   "icon": "https://d2emu.com/db/assets/items/sanderssuperstition_graphic.png",
+   "stats": {
+    "One-hand damage:": "3–7",
+    "Base Speed:": "-20",
+    "Durability:": "15",
+    "Req level:": "25",
+    "Quality level:": "20",
+    "Treasure class:": "18"
+   },
+   "mods": [
+    "+20% Faster Cast Rate",
+    "+75% Enhanced Damage",
+    "Adds 25–75 Cold Damage",
+    "8% Mana Stolen per Hit",
+    "+25 to Mana"
+   ]
+  },
+  {
+   "id": "sanders-taboo",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sanders-taboo",
+   "name": "Sander's Taboo",
+   "quality": "Normal Set",
+   "base": "Heavy Gloves",
+   "icon": "https://d2emu.com/db/assets/items/sanderstaboo_graphic.png",
+   "stats": {
+    "Defense:": "25–31",
+    "Durability:": "14",
+    "Req level:": "28",
+    "Quality level:": "20",
+    "Treasure class:": "9"
+   },
+   "mods": [
+    "+20% Increased Attack Speed",
+    "Adds 8–10 Poison Damage over 3 Seconds",
+    "+20–25 Defense",
+    "+40 to Life"
+   ]
+  },
+  {
+   "id": "sazabis-cobalt-redeemer",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sazabis-cobalt-redeemer",
+   "name": "Sazabi's Cobalt Redeemer",
+   "quality": "Elite Set",
+   "base": "Cryptic Sword",
+   "icon": "https://d2emu.com/db/assets/items/sazabiscobaltredeemer_graphic.png",
+   "stats": {
+    "One-hand damage:": "5–77",
+    "Base Speed:": "-10",
+    "Durability:": "44",
+    "Req Strength:": "99",
+    "Req Dexterity:": "109",
+    "Req level:": "73",
+    "Quality level:": "34",
+    "Treasure class:": "84"
+   },
+   "mods": [
+    "+40% Increased Attack Speed",
+    "+150% Enhanced Damage",
+    "+318% Damage to Demons",
+    "Adds 25–35 Cold Damage",
+    "+5 to Strength",
+    "+15 to Dexterity",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "sazabis-ghost-liberator",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sazabis-ghost-liberator",
+   "name": "Sazabi's Ghost Liberator",
+   "quality": "Elite Set",
+   "base": "Balrog Skin",
+   "icon": "https://d2emu.com/db/assets/items/sazabisghostliberator_graphic.png",
+   "stats": {
+    "Defense:": "810–917",
+    "Durability:": "30",
+    "Req Strength:": "165",
+    "Req level:": "67",
+    "Quality level:": "34",
+    "Treasure class:": "78"
+   },
+   "mods": [
+    "+30% Faster Hit Recovery",
+    "+300 to Attack Rating against Demons",
+    "+400 Defense",
+    "+25 to Strength",
+    "+50–75 to Life"
+   ]
+  },
+  {
+   "id": "sazabis-grand-tribute",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/sazabis-grand-tribute",
+   "name": "Sazabi's Grand Tribute",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+40% Faster Run/Walk (2 Items)",
+    "Poison Length Reduced by 75% (2 Items)"
+   ]
+  },
+  {
+   "id": "sazabis-mental-sheath",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sazabis-mental-sheath",
+   "name": "Sazabi's Mental Sheath",
+   "quality": "Exceptional Set",
+   "base": "Basinet",
+   "icon": "https://d2emu.com/db/assets/items/sazabismentalsheath_graphic.png",
+   "stats": {
+    "Defense:": "175–184",
+    "Durability:": "30",
+    "Req Strength:": "82",
+    "Req level:": "43",
+    "Quality level:": "34",
+    "Treasure class:": "45"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "+100 Defense",
+    "Lightning Resist +15–20%",
+    "Fire Resist +15–20%"
+   ]
+  },
+  {
+   "id": "sigons-complete-steel",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/sigons-complete-steel",
+   "name": "Sigon's Complete Steel",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "10% Life Stolen per Hit (2 Items)",
+    "+100 Defense (3 Items)"
+   ]
+  },
+  {
+   "id": "sigons-gage",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sigons-gage",
+   "name": "Sigon's Gage",
+   "quality": "Normal Set",
+   "base": "Gauntlets",
+   "icon": "https://d2emu.com/db/assets/items/sigonsgauntlets_graphic.png",
+   "stats": {
+    "Defense:": "12–15",
+    "Durability:": "24",
+    "Req Strength:": "60",
+    "Req level:": "6",
+    "Quality level:": "9",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+20 to Attack Rating",
+    "+10 to Strength"
+   ]
+  },
+  {
+   "id": "sigons-guard",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sigons-guard",
+   "name": "Sigon's Guard",
+   "quality": "Normal Set",
+   "base": "Tower Shield",
+   "icon": "https://d2emu.com/db/assets/items/sigonsguard_graphic.png",
+   "stats": {
+    "Defense:": "22–25",
+    "Durability:": "60",
+    "Req Strength:": "75",
+    "Req level:": "6",
+    "Quality level:": "9",
+    "Treasure class:": "24",
+    "Base Block:": "24%",
+    "Class Block:": "Pal: 74%; Ama/Asn/Bar/War: 69%; Dru/Nec/Sor: 64%",
+    "Paladin Smite Damage:": "1–5"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "20% Increased Chance of Blocking"
+   ]
+  },
+  {
+   "id": "sigons-sabot",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sigons-sabot",
+   "name": "Sigon's Sabot",
+   "quality": "Normal Set",
+   "base": "Greaves",
+   "icon": "https://d2emu.com/db/assets/items/sigonsgreaves_graphic.png",
+   "stats": {
+    "Defense:": "12–15",
+    "Durability:": "24",
+    "Req Strength:": "70",
+    "Req level:": "6",
+    "Quality level:": "9",
+    "Treasure class:": "27",
+    "Assassin Kick Damage:": "10–20"
+   },
+   "mods": [
+    "+20% Faster Run/Walk",
+    "Cold Resist +40%"
+   ]
+  },
+  {
+   "id": "sigons-shelter",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sigons-shelter",
+   "name": "Sigon's Shelter",
+   "quality": "Normal Set",
+   "base": "Gothic Plate",
+   "icon": "https://d2emu.com/db/assets/items/sigonsshelter_graphic.png",
+   "stats": {
+    "Defense:": "170",
+    "Durability:": "55",
+    "Req Strength:": "70",
+    "Req level:": "6",
+    "Quality level:": "9",
+    "Treasure class:": "33"
+   },
+   "mods": [
+    "+25% Enhanced Defense",
+    "Lightning Resist +30%"
+   ]
+  },
+  {
+   "id": "sigons-visor",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sigons-visor",
+   "name": "Sigon's Visor",
+   "quality": "Normal Set",
+   "base": "Great Helm",
+   "icon": "https://d2emu.com/db/assets/items/sigonsvisor_graphic.png",
+   "stats": {
+    "Defense:": "55–60",
+    "Durability:": "40",
+    "Req Strength:": "63",
+    "Req level:": "6",
+    "Quality level:": "9",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "+25 Defense",
+    "+30 to Mana"
+   ]
+  },
+  {
+   "id": "sigons-wrap",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/sigons-wrap",
+   "name": "Sigon's Wrap",
+   "quality": "Normal Set",
+   "base": "Plated Belt",
+   "icon": "https://d2emu.com/db/assets/items/sigonswrap_graphic.png",
+   "stats": {
+    "Defense:": "8–11",
+    "Durability:": "24",
+    "Req Strength:": "60",
+    "Req level:": "6",
+    "Quality level:": "9",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+20 to Life",
+    "Fire Resist +20%"
+   ]
+  },
+  {
+   "id": "taebaeks-glory",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/taebaeks-glory",
+   "name": "Taebaek's Glory",
+   "quality": "Elite Set",
+   "base": "Ward",
+   "icon": "https://d2emu.com/db/assets/items/taebaeksglory_graphic.png",
+   "stats": {
+    "Defense:": "203–220",
+    "Durability:": "100",
+    "Req Strength:": "185",
+    "Req level:": "81",
+    "Quality level:": "55",
+    "Treasure class:": "84",
+    "Base Block:": "24%",
+    "Class Block:": "Pal: 79%; Ama/Asn/Bar/War: 74%; Dru/Nec/Sor: 69%",
+    "Paladin Smite Damage:": "11–35"
+   },
+   "mods": [
+    "+30% Faster Block Rate",
+    "25% Increased Chance of Blocking",
+    "+50 Defense",
+    "+100 to Mana",
+    "Lightning Resist +30%",
+    "Attacker Takes Damage of 30",
+    "Indestructible"
+   ]
+  },
+  {
+   "id": "tal-rashas-adjudication",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tal-rashas-adjudication",
+   "name": "Tal Rasha's Adjudication",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu2_graphic.png",
+   "stats": {
+    "Req level:": "67",
+    "Quality level:": "26"
+   },
+   "mods": [
+    "+2 to Sorceress Skills",
+    "Adds 3–32 Lightning Damage",
+    "+50 to Life",
+    "+42 to Mana",
+    "Lightning Resist +33%"
+   ]
+  },
+  {
+   "id": "tal-rashas-fine-spun-cloth",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tal-rashas-fine-spun-cloth",
+   "name": "Tal Rasha's Fine-Spun Cloth",
+   "quality": "Exceptional Set",
+   "base": "Mesh Belt",
+   "icon": "https://d2emu.com/db/assets/items/talrashasfine-spuncloth_graphic.png",
+   "stats": {
+    "Defense:": "35–40",
+    "Durability:": "16",
+    "Req Strength:": "47",
+    "Req level:": "53",
+    "Quality level:": "26",
+    "Treasure class:": "45"
+   },
+   "mods": [
+    "+20 to Dexterity",
+    "+30 to Mana",
+    "37% Damage Taken Goes to Mana",
+    "10–15% Better Chance of Finding Magic Items",
+    "Requirements -20%"
+   ]
+  },
+  {
+   "id": "tal-rashas-guardianship",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tal-rashas-guardianship",
+   "name": "Tal Rasha's Guardianship",
+   "quality": "Elite Set",
+   "base": "Lacquered Plate",
+   "icon": "https://d2emu.com/db/assets/items/talrashasguardianship_graphic.png",
+   "stats": {
+    "Defense:": "833–941",
+    "Durability:": "55",
+    "Req Strength:": "84",
+    "Req level:": "71",
+    "Quality level:": "26",
+    "Treasure class:": "84"
+   },
+   "mods": [
+    "+400 Defense",
+    "Cold Resist +40%",
+    "Lightning Resist +40%",
+    "Fire Resist +40%",
+    "Magic Damage Reduced by 15",
+    "88% Better Chance of Finding Magic Items",
+    "Requirements -60%"
+   ]
+  },
+  {
+   "id": "tal-rashas-horadric-crest",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tal-rashas-horadric-crest",
+   "name": "Tal Rasha's Horadric Crest",
+   "quality": "Exceptional Set",
+   "base": "Death Mask",
+   "icon": "https://d2emu.com/db/assets/items/mask_graphic.png",
+   "stats": {
+    "Defense:": "99–131",
+    "Durability:": "20",
+    "Req Strength:": "55",
+    "Req level:": "66",
+    "Quality level:": "26",
+    "Treasure class:": "48"
+   },
+   "mods": [
+    "10% Mana Stolen per Hit",
+    "10% Life Stolen per Hit",
+    "+45 Defense",
+    "+60 to Life",
+    "+30 to Mana",
+    "All Resistances +15%"
+   ]
+  },
+  {
+   "id": "tal-rashas-lidless-eye",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tal-rashas-lidless-eye",
+   "name": "Tal Rasha's Lidless Eye",
+   "quality": "Exceptional Set",
+   "base": "Swirling Crystal",
+   "icon": "https://d2emu.com/db/assets/items/talrashaslidlesseye_graphic.png",
+   "stats": {
+    "One-hand damage:": "18–42",
+    "Base Speed:": "10",
+    "Durability:": "50",
+    "Req level:": "65",
+    "Quality level:": "26",
+    "Treasure class:": "51"
+   },
+   "mods": [
+    "+20% Faster Cast Rate",
+    "+1–2 to Fire Mastery (Class Only)",
+    "+1–2 to Lightning Mastery (Class Only)",
+    "+1–2 to Cold Mastery (Class Only)",
+    "+10 to Energy",
+    "+57 to Life",
+    "+77 to Mana"
+   ]
+  },
+  {
+   "id": "tal-rashas-wrappings",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/tal-rashas-wrappings",
+   "name": "Tal Rasha's Wrappings",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Replenish Life +10 (2 Items)",
+    "65% Better Chance Of Getting Magic Items (3 Items)",
+    "25% Faster Hit Recovery (4 Items)"
+   ]
+  },
+  {
+   "id": "tancreds-battlegear",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/tancreds-battlegear",
+   "name": "Tancred's Battlegear",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Adds 15 Lightning Damage (2 Items)",
+    "5% Life Stolen per Hit (3 Items)"
+   ]
+  },
+  {
+   "id": "tancreds-crowbill",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tancreds-crowbill",
+   "name": "Tancred's Crowbill",
+   "quality": "Normal Set",
+   "base": "Military Pick",
+   "icon": "https://d2emu.com/db/assets/items/tancredscrowbill_graphic.png",
+   "stats": {
+    "One-hand damage:": "7–11",
+    "Base Speed:": "-10",
+    "Durability:": "26",
+    "Req Strength:": "49",
+    "Req Dexterity:": "33",
+    "Req level:": "20",
+    "Quality level:": "27",
+    "Treasure class:": "21"
+   },
+   "mods": [
+    "+80% Enhanced Damage",
+    "+75 to Attack Rating"
+   ]
+  },
+  {
+   "id": "tancreds-hobnails",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tancreds-hobnails",
+   "name": "Tancred's Hobnails",
+   "quality": "Normal Set",
+   "base": "Boots",
+   "icon": "https://d2emu.com/db/assets/items/tancredshobnails_graphic.png",
+   "stats": {
+    "Defense:": "2–3",
+    "Durability:": "12",
+    "Req level:": "20",
+    "Quality level:": "27",
+    "Treasure class:": "3",
+    "Assassin Kick Damage:": "3–8"
+   },
+   "mods": [
+    "+10 to Dexterity",
+    "Heal Stamina Plus 25%"
+   ]
+  },
+  {
+   "id": "tancreds-skull",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tancreds-skull",
+   "name": "Tancred's Skull",
+   "quality": "Normal Set",
+   "base": "Bone Helm",
+   "icon": "https://d2emu.com/db/assets/items/tancredsskull_graphic.png",
+   "stats": {
+    "Defense:": "33–36",
+    "Durability:": "40",
+    "Req Strength:": "25",
+    "Req level:": "20",
+    "Quality level:": "27",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "+10% Enhanced Damage",
+    "+40 to Attack Rating"
+   ]
+  },
+  {
+   "id": "tancreds-spine",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tancreds-spine",
+   "name": "Tancred's Spine",
+   "quality": "Normal Set",
+   "base": "Full Plate Mail",
+   "icon": "https://d2emu.com/db/assets/items/tancredsspine_graphic.png",
+   "stats": {
+    "Defense:": "150–161",
+    "Durability:": "70",
+    "Req Strength:": "80",
+    "Req level:": "20",
+    "Quality level:": "27",
+    "Treasure class:": "39"
+   },
+   "mods": [
+    "+15 to Strength",
+    "+40 to Life"
+   ]
+  },
+  {
+   "id": "tancreds-weird",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/tancreds-weird",
+   "name": "Tancred's Weird",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu3_graphic.png",
+   "stats": {
+    "Req level:": "20",
+    "Quality level:": "27"
+   },
+   "mods": [
+    "Damage Reduced by 2",
+    "Magic Damage Reduced by 1"
+   ]
+  },
+  {
+   "id": "telling-of-beads",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/telling-of-beads",
+   "name": "Telling of Beads",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu2_graphic.png",
+   "stats": {
+    "Req level:": "30",
+    "Quality level:": "39"
+   },
+   "mods": [
+    "+1 to All Skills",
+    "Cold Resist +18%",
+    "Poison Resist +35–50%",
+    "Attacker Takes Damage of 8–10"
+   ]
+  },
+  {
+   "id": "the-disciple",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/the-disciple",
+   "name": "The Disciple",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+150 Defense (2 Items)",
+    "Adds 21 Poison Damage over 3 Seconds (3 Items)",
+    "+10 to Strength (4 Items)",
+    "+10 to Dexterity (5 Items)"
+   ]
+  },
+  {
+   "id": "trang-ouls-avatar",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/trang-ouls-avatar",
+   "name": "Trang-Oul's Avatar",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "Regenerate Mana 15% (2 Items)",
+    "+18 to Fire Ball (2 Items)",
+    "Regenerate Mana 15% (3 Items)",
+    "+13 to Fire Wall (3 Items)",
+    "Regenerate Mana 15% (4 Items)",
+    "+10 to Meteor (4 Items)"
+   ]
+  },
+  {
+   "id": "trang-ouls-claws",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/trang-ouls-claws",
+   "name": "Trang-Oul's Claws",
+   "quality": "Exceptional Set",
+   "base": "Heavy Bracers",
+   "icon": "https://d2emu.com/db/assets/items/trang-oulsclaws_graphic.png",
+   "stats": {
+    "Defense:": "67–74",
+    "Durability:": "16",
+    "Req Strength:": "58",
+    "Req level:": "45",
+    "Quality level:": "32",
+    "Treasure class:": "45"
+   },
+   "mods": [
+    "+2 to Curses (Necromancer Only)",
+    "+20% Faster Cast Rate",
+    "+30 Defense",
+    "Cold Resist +30%"
+   ]
+  },
+  {
+   "id": "trang-ouls-girth",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/trang-ouls-girth",
+   "name": "Trang-Oul's Girth",
+   "quality": "Elite Set",
+   "base": "Troll Belt",
+   "icon": "https://d2emu.com/db/assets/items/trang-oulsgirth_graphic.png",
+   "stats": {
+    "Defense:": "134–166",
+    "Durability:": "18",
+    "Req Strength:": "91",
+    "Req level:": "47",
+    "Quality level:": "32",
+    "Treasure class:": "84"
+   },
+   "mods": [
+    "+75–100 Defense",
+    "+66 to Life",
+    "Replenish Life +5",
+    "+25–50 to Mana",
+    "+30 Maximum Stamina",
+    "Cannot Be Frozen",
+    "Requirements -40%"
+   ]
+  },
+  {
+   "id": "trang-ouls-guise",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/trang-ouls-guise",
+   "name": "Trang-Oul's Guise",
+   "quality": "Elite Set",
+   "base": "Bone Visage",
+   "icon": "https://d2emu.com/db/assets/items/trang-oulsguise_graphic.png",
+   "stats": {
+    "Defense:": "180–257",
+    "Durability:": "40",
+    "Req Strength:": "106",
+    "Req level:": "65",
+    "Quality level:": "32",
+    "Treasure class:": "84"
+   },
+   "mods": [
+    "+25% Faster Hit Recovery",
+    "+80–100 Defense",
+    "Replenish Life +5",
+    "+150 to Mana",
+    "Attacker Takes Damage of 20"
+   ]
+  },
+  {
+   "id": "trang-ouls-scales",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/trang-ouls-scales",
+   "name": "Trang-Oul's Scales",
+   "quality": "Exceptional Set",
+   "base": "Chaos Armor",
+   "icon": "https://d2emu.com/db/assets/items/trang-oulsscales_graphic.png",
+   "stats": {
+    "Defense:": "857",
+    "Durability:": "70",
+    "Req Strength:": "84",
+    "Req level:": "49",
+    "Quality level:": "32",
+    "Treasure class:": "63"
+   },
+   "mods": [
+    "+2 to Summoning Skills (Necromancer Only)",
+    "+40% Faster Run/Walk",
+    "+150% Enhanced Defense",
+    "+100 Defense vs. Missile",
+    "Poison Resist +40%",
+    "Requirements -40%"
+   ]
+  },
+  {
+   "id": "trang-ouls-wing",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/trang-ouls-wing",
+   "name": "Trang-Oul's Wing",
+   "quality": "Exceptional Set",
+   "base": "Cantor Trophy",
+   "icon": "https://d2emu.com/db/assets/items/trang-oulswing_graphic.png",
+   "stats": {
+    "Defense:": "175–189",
+    "Durability:": "20",
+    "Req Strength:": "50",
+    "Req level:": "54",
+    "Quality level:": "32",
+    "Treasure class:": "51",
+    "Base Block:": "10%",
+    "Class Block:": "Nec: 60%"
+   },
+   "mods": [
+    "+2 to Poison and Bone Skills (Necromancer Only)",
+    "30% Increased Chance of Blocking",
+    "+125 Defense",
+    "+25 to Strength",
+    "+15 to Dexterity",
+    "Fire Resist +38–45%",
+    "Poison Resist +40%"
+   ]
+  },
+  {
+   "id": "vidalas-ambush",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/vidalas-ambush",
+   "name": "Vidala's Ambush",
+   "quality": "Normal Set",
+   "base": "Leather Armor",
+   "icon": "https://d2emu.com/db/assets/items/vidalasambush_graphic.png",
+   "stats": {
+    "Defense:": "64–67",
+    "Durability:": "24",
+    "Req Strength:": "15",
+    "Req level:": "14",
+    "Quality level:": "19",
+    "Treasure class:": "3"
+   },
+   "mods": [
+    "+50 Defense",
+    "+11 to Dexterity"
+   ]
+  },
+  {
+   "id": "vidalas-barb",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/vidalas-barb",
+   "name": "Vidala's Barb",
+   "quality": "Normal Set",
+   "base": "Long Battle Bow",
+   "icon": "https://d2emu.com/db/assets/items/vidalasbarb_graphic.png",
+   "stats": {
+    "Two-hand damage:": "3–18",
+    "Base Speed:": "10",
+    "Durability:": "44",
+    "Req Strength:": "40",
+    "Req Dexterity:": "50",
+    "Req level:": "14",
+    "Quality level:": "19",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "Adds 1–20 Lightning Damage"
+   ]
+  },
+  {
+   "id": "vidalas-fetlock",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/vidalas-fetlock",
+   "name": "Vidala's Fetlock",
+   "quality": "Normal Set",
+   "base": "Light Plated Boots",
+   "icon": "https://d2emu.com/db/assets/items/vidalasfetlock_graphic.png",
+   "stats": {
+    "Defense:": "9–11",
+    "Durability:": "18",
+    "Req Strength:": "50",
+    "Req level:": "14",
+    "Quality level:": "19",
+    "Treasure class:": "21",
+    "Assassin Kick Damage:": "8–16"
+   },
+   "mods": [
+    "+30% Faster Run/Walk",
+    "+150 Maximum Stamina"
+   ]
+  },
+  {
+   "id": "vidalas-rig",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/vidalas-rig",
+   "name": "Vidala's Rig",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "+75 to Attack Rating (2 Items)",
+    "7% Mana Stolen per Hit (2 Items)",
+    "+15 to Dexterity (3 Items)"
+   ]
+  },
+  {
+   "id": "vidalas-snare",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/vidalas-snare",
+   "name": "Vidala's Snare",
+   "quality": "Normal Set",
+   "base": "Amulet",
+   "icon": "https://d2emu.com/db/assets/items/amu2_graphic.png",
+   "stats": {
+    "Req level:": "14",
+    "Quality level:": "19"
+   },
+   "mods": [
+    "+15 to Life",
+    "Cold Resist +20%"
+   ]
+  },
+  {
+   "id": "warlords-authority",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/warlords-authority",
+   "name": "Warlord's Authority",
+   "quality": "Normal Set",
+   "base": "Plated Belt",
+   "icon": "https://d2emu.com/db/assets/items/girdle_graphic.png",
+   "stats": {
+    "Defense:": "8–11",
+    "Durability:": "24",
+    "Req Strength:": "60",
+    "Req level:": "1",
+    "Quality level:": "100",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+25 to Life",
+    "Lightning Resist +20%"
+   ]
+  },
+  {
+   "id": "warlords-conquest",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/warlords-conquest",
+   "name": "Warlord's Conquest",
+   "quality": "Normal Set",
+   "base": "Gauntlets",
+   "icon": "https://d2emu.com/db/assets/items/gauntlets_graphic.png",
+   "stats": {
+    "Defense:": "12–15",
+    "Durability:": "24",
+    "Req Strength:": "60",
+    "Req level:": "1",
+    "Quality level:": "100",
+    "Treasure class:": "27"
+   },
+   "mods": [
+    "+45 to Attack Rating",
+    "+15 to Strength"
+   ]
+  },
+  {
+   "id": "warlords-crushers",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/warlords-crushers",
+   "name": "Warlord's Crushers",
+   "quality": "Normal Set",
+   "base": "Greaves",
+   "icon": "https://d2emu.com/db/assets/items/plateboots_graphic.png",
+   "stats": {
+    "Defense:": "12–15",
+    "Durability:": "24",
+    "Req Strength:": "70",
+    "Req level:": "1",
+    "Quality level:": "100",
+    "Treasure class:": "27",
+    "Assassin Kick Damage:": "10–20"
+   },
+   "mods": [
+    "+20% Faster Run/Walk",
+    "Fire Resist +20%"
+   ]
+  },
+  {
+   "id": "warlords-glory",
+   "category": "set-collection",
+   "url": "https://d2emu.com/db/set-collection/warlords-glory",
+   "name": "Warlord's Glory",
+   "quality": "Set Collection",
+   "base": null,
+   "icon": null,
+   "stats": {},
+   "mods": [
+    "15% Life Stolen per Hit (2 Items)",
+    "+150 Defense (3 Items)"
+   ]
+  },
+  {
+   "id": "warlords-lust",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/warlords-lust",
+   "name": "Warlord's Lust",
+   "quality": "Normal Set",
+   "base": "Great Helm",
+   "icon": "https://d2emu.com/db/assets/items/greathelm_graphic.png",
+   "stats": {
+    "Defense:": "45–50",
+    "Durability:": "40",
+    "Req Strength:": "63",
+    "Req level:": "1",
+    "Quality level:": "100",
+    "Treasure class:": "24"
+   },
+   "mods": [
+    "+15 Defense",
+    "+30 to Life"
+   ]
+  },
+  {
+   "id": "warlords-mantle",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/warlords-mantle",
+   "name": "Warlord's Mantle",
+   "quality": "Normal Set",
+   "base": "Full Plate Mail",
+   "icon": "https://d2emu.com/db/assets/items/fullplate_graphic.png",
+   "stats": {
+    "Defense:": "202",
+    "Durability:": "70",
+    "Req Strength:": "80",
+    "Req level:": "1",
+    "Quality level:": "100",
+    "Treasure class:": "39"
+   },
+   "mods": [
+    "+25% Enhanced Defense",
+    "Cold Resist +30%"
+   ]
+  },
+  {
+   "id": "whitstans-guard",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/whitstans-guard",
+   "name": "Whitstan's Guard",
+   "quality": "Exceptional Set",
+   "base": "Round Shield",
+   "icon": "https://d2emu.com/db/assets/items/whitstansguard_graphic.png",
+   "stats": {
+    "Defense:": "154",
+    "Durability:": "64",
+    "Req Strength:": "53",
+    "Req level:": "29",
+    "Quality level:": "41",
+    "Treasure class:": "39",
+    "Base Block:": "12%",
+    "Class Block:": "Pal: 97%; Ama/Asn/Bar/War: 92%; Dru/Nec/Sor: 87%",
+    "Paladin Smite Damage:": "7–14"
+   },
+   "mods": [
+    "+40% Faster Block Rate",
+    "55% Increased Chance of Blocking",
+    "+175% Enhanced Defense",
+    "Half Freeze Duration",
+    "+5 to Light Radius"
+   ]
+  },
+  {
+   "id": "wilhelms-pride",
+   "category": "set",
+   "url": "https://d2emu.com/db/set/wilhelms-pride",
+   "name": "Wilhelm's Pride",
+   "quality": "Exceptional Set",
+   "base": "Battle Belt",
+   "icon": "https://d2emu.com/db/assets/items/wilhelmspride_graphic.png",
+   "stats": {
+    "Defense:": "75",
+    "Durability:": "18",
+    "Req Strength:": "88",
+    "Req level:": "42",
+    "Quality level:": "41",
+    "Treasure class:": "51"
+   },
+   "mods": [
+    "5% Mana Stolen per Hit",
+    "5% Life Stolen per Hit",
+    "+75% Enhanced Defense",
+    "Cold Resist +10%"
+   ]
+  }
+ ]
+}
