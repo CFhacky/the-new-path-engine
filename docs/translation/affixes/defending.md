@@ -1,0 +1,15 @@
+# DEFENDING — PARTIAL
+Source: https://www.d20srd.org/srd/magicItems/magicWeapons.htm (Magic Weapon Special Ability Descriptions) · printed bonus-equivalent / price: +1 bonus (moderate abjuration, CL 8th, Craft Magic Arms and Armor, shield or shield of faith)
+Source text (key facts, quoted briefly): "allows the wielder to transfer some or all of the sword's enhancement bonus to his AC as a bonus that stacks with all others. As a free action, the wielder chooses how to allocate the weapon's enhancement bonus at the start of his turn before using the weapon, and the effect to AC lasts until his next turn."
+Existing pool coverage: Warding (Defensive 01-06): AC +1/+1/+2/+3/+4 (deflection); GURPS DR +n (Gadget). Also Shield Wall (49-54, shield-type AC). Gap: Warding is a free, permanent AC bonus; Defending is a zero-sum reallocation of the weapon's own enhancement bonus, chosen each turn.
+Verdict: PARTIAL. Warding covers the AC end and its GURPS DR mapping; emit only the per-turn transfer rule. One printed rung (+1), no tiers.
+
+Translation identity: flat (bounded by the weapon's base enhancement bonus; wielder stats never scale it) · armor interaction: the AC bonus is untyped and stacks with armor, shield and everything else · cap: allocation cannot exceed the weapon's enhancement bonus; reassigned only at the start of the wielder's turn.
+3.5e (delta): At the start of the wielder's turn, as a free action, the wielder moves any 0..N points of the weapon's enhancement bonus from the weapon to AC (N = base enhancement bonus; special-ability bonus-equivalents never count). The weapon's attack and damage enhancement drops by the same amount; the AC bonus lasts until the wielder's next turn. No d100, no save, no SR, no DC. No Fatal Wound interaction (no healing).
+GURPS (delta): Chassis Gadget (Breakable DR 6 -25%, Can Be Stolen -10% = -35%). Follow the Warding precedent: moving n points reduces the weapon's Weapon Bond by n (Striking row precedent) and grants Damage Resistance +n (5/level in gurps_trait_index; 5 x 0.65 = 3.25 per level after the Gadget limitations), set at the start of the wielder's turn and held until the next. Weapon Bond cost is not in the index; net zero-sum totals are open. Magical -10% not applied (defensive, not an attack).
+Pricing: +1 bonus-equivalent = 2,000 gp (bonus-squared x 2,000; matches printed +1).
+Name collision: Warding (Defensive 01-06); Shield Wall (Defensive 49-54); SRD "defending" is also a creature-trait word in some stat blocks; SRD Defending is the only weapon property by this name; Savage Blow (Offensive 43-48, a tradeoff of Power Attack, different mechanic).
+Forks needing a ruling:
+1. What counts as the "enhancement bonus". Recommended default: only the base +N; pool Striking bonuses and other bonus-equivalent affixes do not count.
+2. GURPS mapping: DR (Warding precedent) or Defense Bonus (Aegis precedent). Recommended default: DR, per Warding.
+3. Does the transferred amount also reduce damage, not only attack? Recommended default: yes (attack and damage), since the SRD calls it a transfer of the enhancement bonus.
