@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-03",
- "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD.",
+ "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD. DMG batch drafted 2026-10-03; drafts are NOT ratified; Notion Registry append needs owner rulings on the forks in each file.",
  "done": [
   {
    "name": "Crusader",
@@ -12,123 +12,153 @@
  "dmg": [
   {
    "name": "Anarchic",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/anarchic.md"
   },
   {
    "name": "Axiomatic",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/axiomatic.md"
   },
   {
    "name": "Bane",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/bane.md"
   },
   {
    "name": "Brilliant Energy",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/brilliant-energy.md"
   },
   {
    "name": "Dancing",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/dancing.md"
   },
   {
    "name": "Defending",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/defending.md"
   },
   {
    "name": "Disruption",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/disruption.md"
   },
   {
    "name": "Distance",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/distance.md"
   },
   {
    "name": "Flaming",
-   "status": "queued"
+   "status": "covered",
+   "file": "docs/translation/affixes/flaming.md"
   },
   {
    "name": "Flaming Burst",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/flaming-burst.md"
   },
   {
    "name": "Frost",
-   "status": "queued"
+   "status": "covered",
+   "file": "docs/translation/affixes/frost.md"
   },
   {
    "name": "Ghost Touch",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/ghost-touch.md"
   },
   {
    "name": "Holy",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/holy.md"
   },
   {
    "name": "Icy Burst",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/icy-burst.md"
   },
   {
    "name": "Keen",
-   "status": "queued"
+   "status": "covered",
+   "file": "docs/translation/affixes/keen.md"
   },
   {
    "name": "Ki Focus",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/ki-focus.md"
   },
   {
    "name": "Merciful",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/merciful.md"
   },
   {
    "name": "Mighty Cleaving",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/mighty-cleaving.md"
   },
   {
    "name": "Returning",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/returning.md"
   },
   {
    "name": "Seeking",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/seeking.md"
   },
   {
    "name": "Shock",
-   "status": "queued"
+   "status": "covered",
+   "file": "docs/translation/affixes/shock.md"
   },
   {
    "name": "Shocking Burst",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/shocking-burst.md"
   },
   {
    "name": "Speed",
-   "status": "queued"
+   "status": "covered",
+   "file": "docs/translation/affixes/speed.md"
   },
   {
    "name": "Spell Storing",
-   "status": "queued"
+   "status": "drafted-partial",
+   "file": "docs/translation/affixes/spell-storing.md"
   },
   {
    "name": "Thundering",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/thundering.md"
   },
   {
    "name": "Throwing",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/throwing.md"
   },
   {
    "name": "Unholy",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/unholy.md"
   },
   {
    "name": "Vicious",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/vicious.md"
   },
   {
    "name": "Vorpal",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/vorpal.md"
   },
   {
    "name": "Wounding",
-   "status": "queued"
+   "status": "drafted-new",
+   "file": "docs/translation/affixes/wounding.md"
   }
  ],
  "mic": [
