@@ -4,7 +4,7 @@
 > (`396e8214-84b0-8129-aded-cf6eb787cbbe`), which is canon and wins on any disagreement. Appended 2026-10-03
 > with Canon Change Log pairing (Notion `3eee8214-84b0-8140-b911-e5d8c8a53557`). Rulings D1–D5 (Chad, 2026-10-03) are recorded below.
 > This file is kept as the sourced record and rate-card reference for the remaining weapon affixes.
-> **Still open:** GURPS point total (Unreliable/Accessibility percentage and Regeneration cost, from the Basic Set).
+> GURPS point total closed 2026-10-03 (Registry errata).
 
 **Status:** DRAFT · **Source concept:** WoW weapon enchant "Enchant Weapon - Crusader" (Classic spell 20034) · **Category:** Item (affix family), system-translator → loot-engine Registry loop
 **Registry diff run:** 2026-10-03. Registry last edited 2026-08-12. Only the Fatal Wound family is ratified after the 2026-07-07 snapshot. No Crusader entry exists in the Registry, the system-translator catalog, or `reference/` (the repo only has the unrelated Tome of Battle Crusader class/maneuvers and Land Raider Crusader).
@@ -90,15 +90,17 @@ One d100 serves both systems: the same 10% proc, rolled on every damaging hit th
 - **Heal:** Regeneration (limited: one burst per proc, restores 5 / 8 / 12 HP at once). Same mapping precedent as the ratified Life Shield and Lifedrinker rows.
 - **Ends no Fatal Wound stacks at any stack count, at cap included** (ruling D2).
 
-**Limitations and point transparency** (ST costs 10/level; point totals are never price):
+**Limitations and point transparency** (ST costs 10/level; point totals are never price). Closed 2026-10-03, see Registry errata:
+- The 10%-per-hit proc matches Unreliable (activation 5 or less, 3d6 <= 5 = 9.3%) at -80%.
+- With Breakable -25% and Can Be Stolen -10% the limitations total -115%, which the -80% cap reduces to -80%. Holy Strength costs 20% of base.
 
-| Tier | ST before limitations | Breakable (DR 6) −25% + Can Be Stolen (grab first) −10% = −35% | + proc limitation |
-|---|---|---|---|
-| Magic | 10 | **6.5** | Unreliable/Accessibility for the 10%-per-hit proc, **percentage not retrieved** |
-| Rare | 20 | **13** | same |
-| Unique | 30 | **19.5** | same |
+| Tier | ST before limitations | After limitations (cap -80%) |
+|---|---|---|
+| Magic | 10 | **2** |
+| Rare | 20 | **4** |
+| Unique | 30 | **6** |
 
-Regeneration cost is "Variable" in the repo index (`gurps_trait_index`), so it is not totalled. The total is **incomplete until the proc limitation and the heal cost are set from the book**, so no final point figure is stated.
+The heal (Regeneration burst) is carried uncosted, like the Registry's other heal rows. *Sourcing note:* the Unreliable table and the -80% cap come from search retrieval of the Basic Set, not the book; a printed-table disagreement gets a dated errata correcting point totals only.
 
 ## 5. COLLISION AND INTERACTION NOTES
 

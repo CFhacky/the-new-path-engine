@@ -1,0 +1,1176 @@
+{
+ "generated": "2026-10-03",
+ "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD.",
+ "done": [
+  {
+   "name": "Crusader",
+   "source": "WoW",
+   "status": "ratified",
+   "registry": "Affix Registry section 2"
+  }
+ ],
+ "dmg": [
+  {
+   "name": "Anarchic",
+   "status": "queued"
+  },
+  {
+   "name": "Axiomatic",
+   "status": "queued"
+  },
+  {
+   "name": "Bane",
+   "status": "queued"
+  },
+  {
+   "name": "Brilliant Energy",
+   "status": "queued"
+  },
+  {
+   "name": "Dancing",
+   "status": "queued"
+  },
+  {
+   "name": "Defending",
+   "status": "queued"
+  },
+  {
+   "name": "Disruption",
+   "status": "queued"
+  },
+  {
+   "name": "Distance",
+   "status": "queued"
+  },
+  {
+   "name": "Flaming",
+   "status": "queued"
+  },
+  {
+   "name": "Flaming Burst",
+   "status": "queued"
+  },
+  {
+   "name": "Frost",
+   "status": "queued"
+  },
+  {
+   "name": "Ghost Touch",
+   "status": "queued"
+  },
+  {
+   "name": "Holy",
+   "status": "queued"
+  },
+  {
+   "name": "Icy Burst",
+   "status": "queued"
+  },
+  {
+   "name": "Keen",
+   "status": "queued"
+  },
+  {
+   "name": "Ki Focus",
+   "status": "queued"
+  },
+  {
+   "name": "Merciful",
+   "status": "queued"
+  },
+  {
+   "name": "Mighty Cleaving",
+   "status": "queued"
+  },
+  {
+   "name": "Returning",
+   "status": "queued"
+  },
+  {
+   "name": "Seeking",
+   "status": "queued"
+  },
+  {
+   "name": "Shock",
+   "status": "queued"
+  },
+  {
+   "name": "Shocking Burst",
+   "status": "queued"
+  },
+  {
+   "name": "Speed",
+   "status": "queued"
+  },
+  {
+   "name": "Spell Storing",
+   "status": "queued"
+  },
+  {
+   "name": "Thundering",
+   "status": "queued"
+  },
+  {
+   "name": "Throwing",
+   "status": "queued"
+  },
+  {
+   "name": "Unholy",
+   "status": "queued"
+  },
+  {
+   "name": "Vicious",
+   "status": "queued"
+  },
+  {
+   "name": "Vorpal",
+   "status": "queued"
+  },
+  {
+   "name": "Wounding",
+   "status": "queued"
+  }
+ ],
+ "mic": [
+  {
+   "name": "Acidic Burst",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "conjuration",
+   "page": 29,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Aquan",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "7th",
+   "aura": "evocation",
+   "page": 29,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Aquatic",
+   "tag": null,
+   "price": "+2,000 gp",
+   "cl": "7th",
+   "aura": "abjuration",
+   "page": 29,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Auran",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "7th",
+   "aura": "evocation",
+   "page": 29,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Banishing",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "13th",
+   "aura": "abjuration",
+   "page": 29,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Berserker",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "enchantment",
+   "page": 30,
+   "applies_to": "Two-handed melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Binding",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "abjuration",
+   "page": 30,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Blessed",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "transmutation",
+   "page": 30,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Blindsighted",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "6th",
+   "aura": "divination",
+   "page": 30,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Bloodfeeding",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "necromancy",
+   "page": 30,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Bloodstone",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "necromancy",
+   "page": 30,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Blurstrike",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "6th",
+   "aura": "illusion",
+   "page": 30,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Body Feeder",
+   "tag": null,
+   "price": "+3 bonus",
+   "cl": "9th",
+   "aura": "necromancy",
+   "page": 31,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Brash",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "5th",
+   "aura": "abjuration",
+   "page": 31,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Brutal Surge",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "11th",
+   "aura": "evocation",
+   "page": 31,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Chargebreaker",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "5th",
+   "aura": "enchantment",
+   "page": 32,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Charging",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "transmutation",
+   "page": 32,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Collision",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "6th",
+   "aura": "transmutation",
+   "page": 32,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Consumptive",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "7th",
+   "aura": "necromancy",
+   "page": 32,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Corrosive",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "conjuration",
+   "page": 32,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Cursespewing",
+   "tag": null,
+   "price": "+3 bonus",
+   "cl": "11th",
+   "aura": "necromancy",
+   "page": 32,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Deadly Precision",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "transmutation",
+   "page": 33,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Defensive Surge",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "5th",
+   "aura": "abjuration",
+   "page": 33,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Desiccating",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "necromancy",
+   "page": 33,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Desiccating Burst",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "necromancy",
+   "page": 33,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Disarming",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "5th",
+   "aura": "transmutation",
+   "page": 33,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Dislocator",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "conjuration",
+   "page": 33,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Dispelling",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "5th",
+   "aura": "abjuration",
+   "page": 34,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Divine Wrath",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "13th",
+   "aura": "evocation",
+   "page": 34,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Domineering",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "11th",
+   "aura": "necromancy",
+   "page": 34,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Doom Burst",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "11th",
+   "aura": "necromancy",
+   "page": 34,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Dragondoom",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "transmutation",
+   "page": 34,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Dragonhunter",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": null,
+   "page": 34,
+   "applies_to": "Projectile weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Eager",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": "evocation",
+   "page": 35,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Energy Aura",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "15th",
+   "aura": "evocation",
+   "page": 35,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Energy Surge",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "evocation",
+   "page": 35,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Enervating",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "11th",
+   "aura": "necromancy",
+   "page": 35,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Ethereal Reaver",
+   "tag": null,
+   "price": "+3 bonus",
+   "cl": "12th",
+   "aura": "divination",
+   "page": 35,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Everbright",
+   "tag": null,
+   "price": "+2,000 gp",
+   "cl": "12th",
+   "aura": "evocation",
+   "page": 35,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Fiercebane",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "conjuration",
+   "page": 36,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Force",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "9th",
+   "aura": "evocation",
+   "page": 36,
+   "applies_to": "Projectile weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Ghost Strike",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "11th",
+   "aura": "conjuration",
+   "page": 36,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Harmonizing",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "illusion",
+   "page": 36,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Heavenly Burst",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "evocation",
+   "page": 37,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Hideaway",
+   "tag": null,
+   "price": "+2,000 gp",
+   "cl": "5th",
+   "aura": "transmutation",
+   "page": 37,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Holy Surge",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "11th",
+   "aura": "evocation",
+   "page": 37,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Hunting",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "6th",
+   "aura": "abjuration",
+   "page": 37,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Ignan",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "7th",
+   "aura": "evocation",
+   "page": 37,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Illuminating",
+   "tag": null,
+   "price": "+500 gp",
+   "cl": "5th",
+   "aura": "evocation",
+   "page": 37,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Illusion Bane",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "divination",
+   "page": 37,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Illusion Theft",
+   "tag": "SYNERGY",
+   "price": "+2 bonus",
+   "cl": "17th",
+   "aura": "divination",
+   "page": 38,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Impact",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "evocation",
+   "page": 38,
+   "applies_to": "Bludgeoning weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Impaling",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": "transmutation",
+   "page": 38,
+   "applies_to": "Piercing melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Impedance",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "11th",
+   "aura": "abjuration",
+   "page": 38,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Implacable",
+   "tag": null,
+   "price": "+3 bonus",
+   "cl": "9th",
+   "aura": "necromancy",
+   "page": 38,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Incorporeal Binding",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": "conjuration",
+   "page": 39,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Knockback",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "11th",
+   "aura": "evocation",
+   "page": 39,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Lucky",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "15th",
+   "aura": "divination",
+   "page": 39,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Magebane",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "evocation",
+   "page": 39,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Maiming",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "transmutation",
+   "page": 39,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Manifester",
+   "tag": null,
+   "price": "+12,000 gp",
+   "cl": "sth",
+   "aura": "divination",
+   "page": 39,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Metalline",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "9th",
+   "aura": "transmutation",
+   "page": 39,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Mighty Smiting",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "evocation",
+   "page": 40,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Mindcrusher",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "12th",
+   "aura": "necromancy",
+   "page": 40,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Mindfeeder",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "15th",
+   "aura": "necromancy",
+   "page": 40,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Morphing",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": "transmutation",
+   "page": 40,
+   "applies_to": "Melee or thrown weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Necrotic Focus",
+   "tag": null,
+   "price": "+3 bonus",
+   "cl": "7th",
+   "aura": "necromancy",
+   "page": 40,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Paralytic Burst",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "9th",
+   "aura": "enchantment",
+   "page": 40,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Paralyzing",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "enchantment",
+   "page": 40,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Parrying",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "15th",
+   "aura": "enchantment",
+   "page": 41,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Power Storing",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "evocation",
+   "page": 41,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Precise",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "evocation",
+   "page": 41,
+   "applies_to": "Ranged weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Prismatic Burst",
+   "tag": null,
+   "price": "+30,000 gp",
+   "cl": "13th",
+   "aura": "evocation",
+   "page": 41,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Profane",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "necromancy",
+   "page": 41,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Profane Burst",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "necromancy",
+   "page": 41,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Psibane",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "15th",
+   "aura": "divination",
+   "page": 42,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Psychic",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "17th",
+   "aura": "no school",
+   "page": 42,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Psychokinetic",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "evocation",
+   "page": 42,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Psychokinetic Burst",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "evocation",
+   "page": 42,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Resounding",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "enchantment",
+   "page": 43,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Revealing",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "evocation",
+   "page": 43,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Sacred",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "conjuration",
+   "page": 43,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Sacred Burst",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "conjuration",
+   "page": 43,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Screaming",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "evocation",
+   "page": 43,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Screaming Burst",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "12th",
+   "aura": "evocation",
+   "page": 43,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Shadowstrike",
+   "tag": null,
+   "price": "+5,000 gp",
+   "cl": "15th",
+   "aura": "illusion",
+   "page": 44,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Shattermantle",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "divination",
+   "page": 44,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Shielding",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "10th",
+   "aura": "transmutation",
+   "page": 44,
+   "applies_to": "Light melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Sizing",
+   "tag": null,
+   "price": "+5,000 gp",
+   "cl": "9th",
+   "aura": "transmutation",
+   "page": 44,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Slow Burst",
+   "tag": null,
+   "price": "+5,000 gp",
+   "cl": "sth",
+   "aura": "transmutation",
+   "page": 44,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Soulbound",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "6th",
+   "aura": "abjuration",
+   "page": 44,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Soulbound, Greater",
+   "tag": "SYNERGY",
+   "price": "+2 bonus",
+   "cl": "18th",
+   "aura": "abjuration",
+   "page": 44,
+   "applies_to": "Weapon Asa free action, you choose how to allocate",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Stygian",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": "necromancy",
+   "page": 45,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Sundering",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "5th",
+   "aura": "transmutation",
+   "page": 45,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Sweeping",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "5th",
+   "aura": null,
+   "page": 45,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Terran",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "7th",
+   "aura": "evocation",
+   "page": 46,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Transmuting",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "13th",
+   "aura": "transmutation",
+   "page": 46,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Unholy Surge",
+   "tag": "SYNERGY",
+   "price": "+1 bonus",
+   "cl": "11th",
+   "aura": "evocation",
+   "page": 46,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Vampiric",
+   "tag": null,
+   "price": "+2 bonus",
+   "cl": "9th",
+   "aura": "necromancy",
+   "page": 46,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Vanishing",
+   "tag": null,
+   "price": "+8,000 gp",
+   "cl": "10th",
+   "aura": "conjuration",
+   "page": 46,
+   "applies_to": "Melee weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Venomous",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "9th",
+   "aura": "necromancy",
+   "page": 46,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Warning",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "7th",
+   "aura": "transmutation",
+   "page": 47,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Weakening",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "sth",
+   "aura": "necromancy",
+   "page": 47,
+   "applies_to": "Weapon",
+   "status": "blocked-no-source-text"
+  },
+  {
+   "name": "Whirling",
+   "tag": null,
+   "price": "+1 bonus",
+   "cl": "11th",
+   "aura": "transmutation",
+   "page": 47,
+   "applies_to": "Slashing melee weapon",
+   "status": "blocked-no-source-text"
+  }
+ ]
+}
