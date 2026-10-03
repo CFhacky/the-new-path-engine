@@ -1,0 +1,6 @@
+# FLAMING — COVERED
+Source: https://www.d20srd.org/srd/magicItems/magicWeapons.htm (Magic Weapon Special Ability Descriptions) · printed bonus-equivalent / price: +1 bonus (moderate evocation, CL 10th, Craft Magic Arms and Armor and flame blade, flame strike, or fireball)
+Source text (key facts, quoted briefly): "Upon command, a flaming weapon is sheathed in fire. The fire does not harm the wielder. The effect remains until another command is given. A flaming weapon deals an extra 1d6 points of fire damage on a successful hit. Bows, crossbows, and slings so crafted bestow the fire energy upon their ammunition." SRD generic rule: additional dice are not multiplied on a critical hit; command word = standard action.
+Existing pool coverage: Flaming (Elemental pool 01-08): +1d4/+1d6/+1d8/+2d6/+3d6 fire damage on hit; GURPS IA (Burning, Follow-Up). The SRD 1d6 is exactly the pool's T4 value.
+Gap: the pool row carries no command-word on/off clause (standard action to ignite, stays lit until the next command) and no ammunition-bestowal line; both are SRD flavor, not a new mechanic. The "does not harm the wielder" clause is implicit in the pool row.
+Verdict: COVERED. Use the Elemental Flaming row at T4 for SRD parity; emit no new family, no new tier, no new price (printed +1 = 2,000 gp matches bonus-squared).
