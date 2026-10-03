@@ -33,7 +33,7 @@
 - The wiki gives the current 240/+40 values and the level-60 and level-30 reduction notes, but not the exact scaling formula. Treat the numbers as "source-given at the stated levels," not as a derivable curve.
 - Reagents conflict between pages (2 vs 4 Large Brilliant Shard). Irrelevant to mechanics, since campaign pricing is SRD gp. Not carried.
 - Whether re-proc on the *same* weapon refreshes or ignores the buff is not stated in the sources retrieved. The refresh rule below is **design, not sourced**.
-- GURPS *Unreliable* limitation percentages could not be retrieved this session (not in `reference/`, web search returned nothing). The GURPS total below stops before that limitation.
+- GURPS Unreliable table: retrieved via search, not read from the book (see Registry errata, 2026-10-03). The point total is closed on that basis.
 
 ---
 
