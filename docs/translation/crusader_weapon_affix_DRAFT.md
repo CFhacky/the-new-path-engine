@@ -1,9 +1,10 @@
 # THE CRUSADER FAMILY — weapon suffix (rate-limited proc: self-heal + Holy Strength)
 
-> **NON-AUTHORITATIVE DRAFT.** Prepared for the Notion Affix Registry
-> (`396e8214-84b0-8129-aded-cf6eb787cbbe`), which is canon. Nothing here is ratified.
-> On ratification the entry is appended to the Registry with a Canon Change Log pairing,
-> and this file is deleted or reduced to the source packet. Rulings D1–D4 are recorded below (Chad, 2026-10-03). D5 (price method) is still open.
+> **NON-AUTHORITATIVE MIRROR / SOURCE PACKET.** The ratified entry is Section 2 of the Notion Affix Registry
+> (`396e8214-84b0-8129-aded-cf6eb787cbbe`), which is canon and wins on any disagreement. Appended 2026-10-03
+> with Canon Change Log pairing (Notion `3eee8214-84b0-8140-b911-e5d8c8a53557`). Rulings D1–D5 (Chad, 2026-10-03) are recorded below.
+> This file is kept as the sourced record and rate-card reference for the remaining weapon affixes.
+> **Still open:** GURPS point total (Unreliable/Accessibility percentage and Regeneration cost, from the Basic Set).
 
 **Status:** DRAFT · **Source concept:** WoW weapon enchant "Enchant Weapon - Crusader" (Classic spell 20034) · **Category:** Item (affix family), system-translator → loot-engine Registry loop
 **Registry diff run:** 2026-10-03. Registry last edited 2026-08-12. Only the Fatal Wound family is ratified after the 2026-07-07 snapshot. No Crusader entry exists in the Registry, the system-translator catalog, or `reference/` (the repo only has the unrelated Tome of Battle Crusader class/maneuvers and Land Raider Crusader).
@@ -67,7 +68,7 @@ PROC [item name — Crusader]: d100=NN vs 10% → FIRES / no effect. Heal: X. Ho
 ```
 
 **Effect (on fire):**
-1. **Heal.** The wielder is healed the tier amount. It is magical healing (positive energy). Undead wielders are damaged instead, per standard positive-energy rules. It restores HP only and does **not** clear Fatal Wound stacks (ruling D2).
+1. **Heal.** The wielder is healed the tier amount. It is magical healing (positive energy). Undead wielders are damaged instead, per standard positive-energy rules. It restores HP only and ends **no** Fatal Wound stacks at any stack count, at cap included (ruling D2).
 2. **Holy Strength.** An **untyped** Strength bonus equal to the tier value for 3 rounds. It applies to melee attack and damage, Strength checks and skills, and carrying capacity. Untyped so that two Crusader weapons stack, as the source states (ruling D3). Same-weapon re-proc refreshes the duration.
 
 **Limits.**
@@ -76,7 +77,7 @@ PROC [item name — Crusader]: d100=NN vs 10% → FIRES / no effect. Heal: X. Ho
 - Melee weapons only. It does not ride ranged weapons, because the source says "when attacking in melee" (a melee-proc family never rides a ranged weapon, per the loot-engine substitution rule).
 - Procs never proc other procs.
 
-**Pricing (D5 open; this is the recommended default).** Bonus-equivalent +1 / +2 / +3 by tier, priced bonus-squared: **2,000 / 8,000 / 18,000 gp** as an affix on a masterwork weapon. Cross-check by uptime: the buff's active share of the time depends on attacks per round. At one attack per round it is about 3 / (3 + 10) ≈ 23%, so the SRD stat-bonus price × 0.23 gives roughly **920 / 3,680 / 8,280 gp**. At three attacks per round it is about 45% (**1,800 / 7,200 / 16,200 gp**), which lands close to the engine figure. At four attacks it is about 51%.
+**Pricing (ruling D5: engine convention).** Bonus-equivalent +1 / +2 / +3 by tier, priced bonus-squared: **2,000 / 8,000 / 18,000 gp** as an affix on a masterwork weapon. Cross-check by uptime: the buff's active share of the time depends on attacks per round. At one attack per round it is about 3 / (3 + 10) ≈ 23%, so the SRD stat-bonus price × 0.23 gives roughly **920 / 3,680 / 8,280 gp**. At three attacks per round it is about 45% (**1,800 / 7,200 / 16,200 gp**), which lands close to the engine figure. At four attacks it is about 51%.
 
 **Caster level:** 5th / 8th / 11th (Magic / Rare / Unique). Aura: moderate (strong at Unique) transmutation/conjuration. *Placeholder; set when the entry is ratified.*
 
@@ -87,7 +88,7 @@ One d100 serves both systems: the same 10% proc, rolled on every damaging hit th
 **Chassis:** Gadget on the weapon.
 - **Holy Strength:** ST **+1 / +2 / +3** (the 3.5e +2 / +4 / +6 at the exchange-rate 2:1). Duration **15 seconds, exact**. Refreshes on same-weapon re-proc. Stacks across two Crusader weapons.
 - **Heal:** Regeneration (limited: one burst per proc, restores 5 / 8 / 12 HP at once). Same mapping precedent as the ratified Life Shield and Lifedrinker rows.
-- **Does not clear Fatal Wound stacks** (ruling D2). Counts as magical healing for the at-cap lock.
+- **Ends no Fatal Wound stacks at any stack count, at cap included** (ruling D2).
 
 **Limitations and point transparency** (ST costs 10/level; point totals are never price):
 
@@ -114,7 +115,7 @@ Regeneration cost is "Variable" in the repo index (`gurps_trait_index`), so it i
 - **D2 — Heal vs. Fatal Wound. RULED.** Restore HP only; does not clear Fatal Wound stacks.
 - **D3 — Holy Strength is untyped. RULED.** Stacks across two Crusader weapons; the two-weapon cap and 3-round duration are the brakes.
 - **D4 — Duration. RULED.** 3 rounds (2.5 rounds rounded up); GURPS stays an exact 15 s.
-- **D5 — Price method. OPEN.** Engine convention (+1 / +2 / +3 → 2,000 / 8,000 / 18,000 gp) or the time-weighted figures. Recommended: engine convention, because per-hit procs make it track a multi-attack fighter's uptime.
+- **D5 — Price method. RULED (A).** Engine convention: +1 / +2 / +3 → 2,000 / 8,000 / 18,000 gp. Per-hit procs make it track a multi-attack fighter's uptime.
 
 *Sources:*
 [Enchant Weapon - Crusader](https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Crusader) ·
