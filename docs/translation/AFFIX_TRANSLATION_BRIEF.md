@@ -1,5 +1,7 @@
 # Weapon-affix translation brief (read fully before converting anything)
 
+**Read `docs/translation/FUSED_ENGINE_RESOLUTION.md` first. It supersedes this brief wherever they differ:** GURPS dice read as-is; riders ignore worn DR; negative levels use the Energy Drained condition; alignment stays on the 3.5e side; colliding names stay and never merge; GURPS point totals are not required on affix entries.
+
 Job: convert each assigned weapon affix into a campaign Affix Registry entry in **both** D&D 3.5e and GURPS 4e, using the ratified Crusader entry as the format and rate card.
 Reference entry: `docs/translation/crusader_weapon_affix_DRAFT.md` (Notion Affix Registry section 2 is canon; this repo file mirrors it).
 

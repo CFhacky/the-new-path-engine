@@ -1,4 +1,5 @@
 # KEEN — COVERED (with a pool discrepancy)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +1 bonus; moderate transmutation; CL 10th; Craft Magic Arms and Armor, keen edge
 Source text (key facts): doubles the weapon's threat range (a 19-20 longsword threatens on 17-20); only piercing or slashing weapons; does not stack with keen edge or Improved Critical.
 Existing pool coverage: Keen Edge (Offensive 13-18): "Improved threat range: x1.5 (as Keen) at T3+; at T5-T4 +1 to confirm crits"; GURPS reduces the margin needed for a critical by 2 at T3+. The row names itself "as Keen" but states x1.5, not the printed doubling.

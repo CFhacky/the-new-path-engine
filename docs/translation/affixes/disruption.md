@@ -1,4 +1,5 @@
 # DISRUPTION — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: https://www.d20srd.org/srd/magicItems/magicWeapons.htm (Magic Weapon Special Ability Descriptions) · printed bonus-equivalent / price: +2 bonus (strong conjuration, CL 14th, Craft Magic Arms and Armor, heal)
 Source text (key facts, quoted briefly): "the bane of all undead. Any undead creature struck in combat must succeed on a DC 14 Will save or be destroyed. A weapon of disruption must be a bludgeoning weapon."
 Existing pool coverage: none. Radiant (Elemental 45-50) deals extra damage to undead (x1.5), Turn Mastery (Skill/Class 43-48) improves turning, Soul Anchor (Condition 97-100) acts on kills; gap: no row destroys an undead outright on a failed save.

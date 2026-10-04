@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 06 (Hunting to Impaling)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 37-38, read from D:\Backup\I-drive\Sourcebooks\_text (OCR). Drafts, not ratified. Conventions as in mic-01. Impedance and later entries continue in batch 07.
 
 ## HUNTING (printed +1; moderate abjuration, CL 6th; prereq greater magic fang) — NEW

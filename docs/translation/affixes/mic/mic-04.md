@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 04 (Dispelling, Greater to Enervating)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 34-35, read from D:\Backup\I-drive\Sourcebooks\_text (OCR; "sth" read as 5th, "3dé" as 3d6). Drafts, not ratified. Conventions as in mic-01 (Gadget -35%, point totals OPEN, bonus-squared pricing, ammunition as printed). Daily-use abilities that say "once activated it cannot be activated by another creature until the following day" carry that attunement rule as printed.
 
 ## DISPELLING, GREATER (SYNERGY, printed +1; strong abjuration, CL 15th; prereq Dispelling, greater dispel magic) — COVERED

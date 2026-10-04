@@ -1,4 +1,5 @@
 # HOLY — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +2 bonus; moderate evocation [good]; CL 7th; Craft Magic Arms and Armor, holy smite, creator must be good
 Source text (key facts): imbued with holy power; the weapon is good-aligned and bypasses the matching damage reduction; extra 2d6 damage against all evil creatures; one negative level on any evil creature wielding it (lasts while held, never becomes level loss, not removable by restoration while held); ammunition carries the holy power.
 Existing pool coverage: none keyed to alignment. Radiant (Elemental 45-50) is positive-energy damage (undead x1.5), not an alignment smite; Banefire is element-subtype only.

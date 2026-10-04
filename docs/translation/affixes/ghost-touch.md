@@ -1,4 +1,5 @@
 # GHOST TOUCH — PARTIAL
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +1 bonus; moderate conjuration; CL 9th; Craft Magic Arms and Armor, plane shift
 Source text (key facts): deals damage normally against incorporeal creatures regardless of its bonus (their 50% chance to avoid damage does not apply); an incorporeal creature can pick up and move the weapon at any time, and a manifesting ghost can wield it against corporeal foes; it counts as corporeal or incorporeal, whichever benefits the wielder.
 Existing pool coverage: Penetrating Strikes (Offensive 85-90): GURPS "Affects Insubstantial at T3+"; 3.5e lists material bypass only. Gap: the pool row works at T3+ only, carries no 50%-miss clause, and has no incorporeal-wielder or dual-status clause.

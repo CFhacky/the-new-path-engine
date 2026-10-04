@@ -1,4 +1,5 @@
 # ICY BURST — PARTIAL
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +2 bonus; moderate evocation; CL 10th; Craft Magic Arms and Armor, chill metal or ice storm
 Source text (key facts): functions as a frost weapon that also explodes with frost on a critical hit; on a crit, extra 1d10 cold (x3 multiplier: 2d10; x4: 3d10); the frost does not harm the wielder; ammunition carries the cold; the crit rider applies even if the frost ability is not active.
 Existing pool coverage: Freezing (Elemental 09-16) covers the frost half. Elemental Burst (Elemental 75-80) is a different mechanic (10-ft burst, Reflex half), not a single-target crit rider.

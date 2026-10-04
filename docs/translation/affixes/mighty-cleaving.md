@@ -1,4 +1,5 @@
 # MIGHTY CLEAVING — PARTIAL
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +1 bonus; moderate evocation; CL 8th; Craft Magic Arms and Armor, divine power
 Source text (key facts): allows a wielder with the Cleave feat to make one additional cleave attempt in a round.
 Existing pool coverage: Cleave Through (temper 23A-1, a post-affix layer, not an affix pool row): on a kill, a free attack on an adjacent foe (as Cleave; T2+ Great Cleave); GURPS Extra Attack 1 (Trigger: killing blow). The temper grants the cleave itself; it does not add an extra per-round attempt.

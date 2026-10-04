@@ -1,4 +1,5 @@
 # THROWING — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: https://www.d20srd.org/srd/magicItems/magicWeapons.htm returned 403 to WebFetch. Text read in full from a 3.5 SRD transcription (https://git.aror.org/florian/d20srd, commit fd8366bb20). The DMG OCR route was permission-denied; not read. · printed bonus-equivalent: +1 (no flat gp printed). CL 5, faint transmutation.
 Source text (key facts, quoted briefly): "This ability can only be placed on a melee weapon. A melee weapon crafted with this ability gains a range increment of 10 feet and can be thrown by wielder proficient in its normal use."
 Existing pool coverage: none in Part 1 pools. The Siege aspect (Part 3, 24E: "Melee attack gains 30/60/100 ft range") is a different layer and a different range. Gap: nothing grants a thrown profile to a melee weapon.

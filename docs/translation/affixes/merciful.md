@@ -1,4 +1,5 @@
 # MERCIFUL — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +1 bonus; faint conjuration; CL 5th (OCR "§th", read as 5th, OCR-uncertain); Craft Magic Arms and Armor, cure light wounds
 Source text (key facts): the weapon deals an extra 1d6 damage (OCR "tdé", read as 1d6 by the sibling abilities, OCR-uncertain) and all damage it deals is nonlethal; on command the weapon suppresses this until commanded to resume; ammunition carries the effect.
 Existing pool coverage: none (Life Shield and Second Wind are healing, not nonlethal delivery).

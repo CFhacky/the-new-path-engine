@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 09 (Profane to Revealing)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 41-43, read from D:\Backup\I-drive\Sourcebooks\_text (OCR). Drafts, not ratified. Conventions as in mic-01; Sacred continues in batch 10 because its text spans the next block. Psionic-gated entries wait on a psionic user in the campaign.
 
 ## PROFANE (printed +1; moderate necromancy, CL 7th; prereq inflict light wounds) — PARTIAL

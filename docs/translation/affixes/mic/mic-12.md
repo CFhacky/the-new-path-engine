@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 12 (Terran to Whirling)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 46-47, read from D:\Backup\I-drive\Sourcebooks\_text (OCR; "sth" read as 5th). Drafts, not ratified. Conventions as in mic-01. The "Specific" weapons section that follows these entries (Arrow of Biting, Assassin Whip, Axe of Ancestral Virtue and others) is out of scope: those are named items, not affixes.
 
 ## TERRAN (printed +2; moderate evocation, CL 7th; prereq earth subtype) — PARTIAL

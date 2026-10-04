@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 07 (Impedance to Mighty Smiting)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 38-40, read from D:\Backup\I-drive\Sourcebooks\_text (OCR; "sth" read as 5th, "1dé" as 1d6, "2dé" as 2d6). Drafts, not ratified. Conventions as in mic-01.
 
 ## IMPEDANCE (printed +2; moderate abjuration, CL 11th; prereq antimagic field) — NEW

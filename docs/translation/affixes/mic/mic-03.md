@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 03 (Consumptive to Dispelling)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 32-34, read from D:\Backup\I-drive\Sourcebooks\_text (OCR; one garbled "2dé6" read as 2d6 in batch 01, "sth" read as 5th, "1dé" as 1d6). Drafts, not ratified. Conventions as in mic-01.
 
 ## CONSUMPTIVE (printed +2; moderate necromancy, CL 7th; prereq enervation) — COVERED

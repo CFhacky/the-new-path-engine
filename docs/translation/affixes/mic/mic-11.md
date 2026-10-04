@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 11 (Soulbound to Sweeping)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 44-46, read from D:\Backup\I-drive\Sourcebooks\_text (two-column OCR; Soulbreaker's delay figure and Spellstrike's printed price are garbled and marked). Drafts, not ratified. Conventions as in mic-01. Soulbound entries need incarnum (the Registry references have a soulmeld index); they wait on an incarnum user in the campaign.
 
 ## SOULBOUND (printed +1 item level; moderate abjuration, CL 6th; prereq magic weapon, essentia pool 2) — NEW (incarnum)

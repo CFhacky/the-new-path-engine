@@ -1,4 +1,5 @@
 # MIC weapon properties, batch 08 (Mindcrusher to Prismatic Burst)
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 40-41, read from D:\Backup\I-drive\Sourcebooks\_text (OCR). Drafts, not ratified. Conventions as in mic-01. Entries that depend on psionics (power points) are class-gated and wait on a psionic user in the campaign; the 3.5e side is complete, the GURPS conversion of power points to Energy Reserve is OPEN throughout.
 
 ## MINDCRUSHER (printed +2; strong necromancy, CL 12th; prereq vampiric touch or psychic vampire) — NEW

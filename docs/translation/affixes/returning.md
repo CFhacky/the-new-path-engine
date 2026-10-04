@@ -1,4 +1,5 @@
 # RETURNING — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +1 bonus; moderate transmutation; CL 7th; Craft Magic Arms and Armor, telekinesis
 Source text (key facts): only on a weapon that can be thrown; the weapon flies back to the thrower just before the thrower's next turn, ready to use again that turn; catching it is a free action; if the character cannot catch it, or has moved since throwing, it drops to the ground in the square from which it was thrown.
 Existing pool coverage: none. Throwing (batch C file) gives melee weapons a thrown range; Returning is its natural pair.

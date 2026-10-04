@@ -1,4 +1,5 @@
 # DISTANCE — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: https://www.d20srd.org/srd/magicItems/magicWeapons.htm (Magic Weapon Special Ability Descriptions; listed on the Ranged Weapon Special Abilities table) · printed bonus-equivalent / price: +1 bonus (moderate divination, CL 6th, Craft Magic Arms and Armor, clairaudience/clairvoyance)
 Source text (key facts, quoted briefly): "This property can only be placed on a ranged weapon. A weapon of distance has double the range increment of other weapons of its kind."
 Existing pool coverage: none. Siege (aspect table 24E) gives a melee attack range but is an aspect, not an affix; Throwing (SRD, queued) gives a melee weapon a range increment; gap: no pool row doubles a range increment.

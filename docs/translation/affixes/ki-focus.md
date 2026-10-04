@@ -1,4 +1,5 @@
 # KI FOCUS — NEW
+> **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: DMG v3.5 pp. 223-227 (OCR, D:\Backup\I-drive\Sourcebooks\_text) · printed: Price +1 bonus; moderate transmutation; CL 5th (OCR "sth", read as 5th, OCR-uncertain); Craft Magic Arms and Armor, creator must be a monk
 Source text (key facts): the weapon channels the wielder's ki, letting her use special ki attacks through it as if they were unarmed attacks: the monk's stunning attack, ki strike and quivering palm, and the Stunning Fist feat; melee weapons only.
 Existing pool coverage: none. The Skill/Class pool has martial rows (Weapon Mastery, Commander's Voice, Battle Meditation, Signature Move) but nothing for unarmed-only class abilities.
