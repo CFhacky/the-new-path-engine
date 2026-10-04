@@ -1,0 +1,176 @@
+SOURCE PACKET: Warhammer Fantasy Battles Dwarf weapon runes (runic weapons), RUNIC ITEMS chapter, WEAPON RUNES section.
+BOOK: "Warhammer Armies: Dwarfs" (the unofficial 9th-edition fan compilation scanned as "Warhammer Armies_ Dwarfs - PDF Room", compiled by Mathias Eliasson, warhammerarmiesproject.blogspot.com; not a Games Workshop product). OCR text layer, 300 dpi, scanned source.
+FILE: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md, lines 19,440-20,200 (PDF pages 200-204; PDF page numbers equal the printed page numbers).
+FIDELITY: a TRANSCRIPTION of the rules text from that OCR file, read in one pass: obvious OCR noise normalized (stray glyphs, broken ligatures, line-break hyphens); names, point costs and rules wording kept as the OCR showed them. The flavour/lore paragraph under each rune is omitted and marked [lore omitted]. The laptop file is the authoritative verbatim source.
+SCALE: WFB tabletop rules text (To Hit, To Wound, Armour Save, special rules), not stat profiles: mapped through the special-rule table in corpus-mass-translator references/wargame-profile-conversion.md, never the WFRP percentile table.
+RULES OF THE RUNES (same chapter, verbatim in substance): up to three runes per item (the Rule of Three); weapon runes only on weapons, always hand weapons (Rule of Form); no two items with the same rune combination (Rule of Pride); no master rune more than once per army and only one master rune per item (Jealous Runes); other runes combine, and multiples of most runes escalate (the points cost for multiples is not uniform).
+SCOPE: weapon runes only (21). Armour, talismanic, banner and engineering runes are not weapon enchants and are not in this pass. WFRP runic weapons (Old World Armoury) were not read in this pass.
+Format: "=== NAME ===", then key: value lines.
+
+=== Master Rune of Alaric the Mad ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 201)
+tooltip: "A weapon engraved with the Master Rune of Alaric the Mad has the Ignores Armour Saves special rule."
+facts: cost 40 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Death ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 201)
+tooltip: "A weapon engraved with the Master Rune of Death grants its wielder the Heroic Killing Blow special rule."
+facts: cost 40 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Dragon Slaying ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 201)
+tooltip: "Against Dragons and Drakes, a weapon engraved with the Master Rune of Dragon Slaying will always wound on a To Wound roll of 2+ and has the Multiple Wounds (2) special rule."
+facts: cost 40 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Smiting ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 201)
+tooltip: "A weapon engraved with the Master Rune of Smiting has the Multiple Wounds (D6) special rule."
+facts: cost 40 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Skalf Blackhammer ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 201)
+tooltip: "A weapon engraved with the Master Rune of Skalf Blackhammer will Wound any model not in magic armour on a To Wound roll of 2+, regardless of the target's Toughness. Against models in magic armour, a roll of 3+ is required."
+facts: cost 30 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Breaking ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 201)
+tooltip: "If a Dwarf with a weapon engraved with the Master Rune of Breaking scores one or more successful hits against a model with a magic weapon, the foe's magic weapon is destroyed on a D6 roll of 2+ (roll once, regardless of the number of successful hits). A foe with a destroyed magic weapon counts as being armed with a hand weapon. If the foe has more than one magic weapon (Paired weapons count as one), roll a D6 to randomly determine which one is destroyed."
+facts: cost 25 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Snorri Spangelhelm ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "A weapon engraved with the Master Rune of Snorri Spangelhelm always hits on a To Hit roll of 2+."
+facts: cost 25 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Swiftness ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "A weapon engraved with the Master Rune of Swiftness has the Always Strikes First special rule."
+facts: cost 25 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Banishment ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "A weapon engraved with the Master Rune of Banishment may re-roll failed To Wound rolls against models with the Ethereal, Undead or Vampiric special rule."
+facts: cost 20 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Flight ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "A weapon engraved with the Master Rune of Flight can be thrown like a throwing weapon with a range of up to 12" which always hits on a roll of 2+. Roll To Wound as if the target had suffered a hit from the weapon in close combat. Any additional runes on the weapon will also take effect. After this, the weapon flies back to the wielder. A weapon with the Master Rune of Flight can also be used in close combat as normal."
+facts: cost 20 points; [lore omitted].
+gaps: none.
+
+=== Master Rune of Kragg the Grim ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "This rune can only be placed on great weapons. It allows the great weapon to be inscribed with runes."
+facts: cost 15 points; [lore omitted].
+gaps: none.
+
+=== Rune of Daemon Slaying ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "Against any model with the Daemonic special rule, a weapon engraved with a Rune of Daemon Slaying receives a +1 bonus To Hit and To Wound. With two Runes: +1 To Hit and To Wound and the Multiple Wounds (D3) special rule. With three Runes: hits and Wounds on a roll of 2+, has Multiple Wounds (D3) and no ward saves can be taken against it."
+facts: cost 25/50/100 points; [lore omitted].
+gaps: none.
+
+=== Rune of Fire ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 202)
+tooltip: "One Rune of Fire: the Flaming Attacks special rule. Two Runes: Flaming Attacks, and grants its wielder a Strength 4 Breath Weapon with the Flaming Attacks special rule. Three Runes: Flaming Attacks and a Strength 4 Breath Weapon that has the Flaming Attacks and Multiple Wounds (D3) special rules."
+facts: cost 10/45/75 points; [lore omitted].
+gaps: none.
+
+=== Rune of Fury ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "One Rune of Fury grants its wielder +1 Attack. Two Runes: +1 Attack and the Frenzy special rule. Three Runes: +1 Attack and Frenzy and, after each successful roll To Hit and To Wound, it grants its user another Attack; roll To Hit and To Wound as normal. Attacks generated this way do not generate further Attacks."
+facts: cost 15/30/60 points; [lore omitted].
+gaps: none.
+
+=== Rune of Cleaving ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "One Rune of Cleaving: the Armour Piercing (1) special rule. Two Runes: Armour Piercing (1) and +1 Strength. Three Runes: Armour Piercing (1), +1 Strength and the Killing Blow special rule."
+facts: cost 10/30/50 points; [lore omitted].
+gaps: none.
+
+=== Rune of Striking ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "One Rune of Striking grants its wielder +1 Weapon Skill. Two Runes: +1 Weapon Skill and the wielder may re-roll failed To Hit rolls in close combat. Three Runes: Weapon Skill 10 and re-roll failed To Hit rolls in close combat."
+facts: cost 10/35/50 points; [lore omitted].
+gaps: none.
+
+=== Rune of Might ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "One Rune of Might doubles its wielder's Strength against foes of Toughness 5 or higher in close combat. Two Runes: the previous effect and the Multiple Wounds (D3) special rule against foes of Toughness 5 or higher in close combat. A third Rune has no further effect."
+facts: cost 30/40 points; [lore omitted].
+gaps: none.
+
+=== Rune of Dismay ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "One Rune of Dismay grants its wielder the Fear special rule. Two Runes grant the Terror special rule. A third Rune has no further effect."
+facts: cost 15/25 points; [lore omitted].
+gaps: none.
+
+=== Rune of Parrying ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "A weapon engraved with a Rune of Parrying causes all enemy models attempting to attack its wielder in close combat to suffer a -1 penalty on their To Hit rolls. Multiples of this rune have no further effect."
+facts: cost 25 points; [lore omitted].
+gaps: none.
+
+=== Grudge Rune ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "For each Grudge Rune in your army, nominate one enemy character or monster at the beginning of the game. The wielder of a weapon engraved with a Grudge Rune gains +1 To Hit and can re-roll failed To Wound rolls in close combat when attacking the nominated model. Multiples of this rune have no further effect."
+facts: cost 20 points; [lore omitted].
+gaps: none.
+
+=== Rune of Speed ===
+group: Weapon rune (WFB Dwarf runic item)
+quality: clean
+url: D:\Backup\I-drive\Sourcebooks\_text\Warhammer\Fantasy Army Books\Warhammer Armies_ Dwarfs - PDF Room.md (PDF page 203)
+tooltip: "A weapon engraved with a Rune of Speed grants its wielder +1 Initiative. Each Rune of Speed adds +1 Initiative."
+facts: cost 5 points; [lore omitted].
+gaps: none.
