@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-03",
- "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD. DMG batch drafted 2026-10-03; drafts are NOT ratified; Notion Registry append needs owner rulings on the forks in each file. MIC weapon properties drafted 2026-10-03 from D:\\Backup\\I-drive\\Sourcebooks (batches mic-01..12); the 13 MIC weapon crystals and the MIC Specific weapons section are out of scope for this pass.",
+ "note": "Weapon-affix worklist. status: queued|drafted|covered|blocked-no-source-text. MIC rows need source packets exported on the I: machine (python scripts/item_harvest.py --export NAME); DMG rows are sourced from the 3.5 SRD. DMG batch drafted 2026-10-03; drafts are NOT ratified; Notion Registry append needs owner rulings on the forks in each file. MIC weapon properties drafted 2026-10-03 from D:\\Backup\\I-drive\\Sourcebooks (batches mic-01..12); the 13 MIC weapon crystals and the MIC Specific weapons section are out of scope for this pass. PIPELINE (2026-10-04): the corpus now runs through weapon_affixes/_translation_state.json (harvest, triage, convert, register); pipeline_status on each row mirrors that file. 'status' keeps the original draft label.",
  "done": [
   {
    "name": "Crusader",
@@ -13,152 +13,212 @@
   {
    "name": "Anarchic",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/anarchic.md"
+   "file": "docs/translation/affixes/anarchic.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Axiomatic",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/axiomatic.md"
+   "file": "docs/translation/affixes/axiomatic.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Bane",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/bane.md"
+   "file": "docs/translation/affixes/bane.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Brilliant Energy",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/brilliant-energy.md"
+   "file": "docs/translation/affixes/brilliant-energy.md",
+   "pipeline_status": "registered",
+   "tier": 1
   },
   {
    "name": "Dancing",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/dancing.md"
+   "file": "docs/translation/affixes/dancing.md",
+   "pipeline_status": "registered",
+   "tier": 1
   },
   {
    "name": "Defending",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/defending.md"
+   "file": "docs/translation/affixes/defending.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Disruption",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/disruption.md"
+   "file": "docs/translation/affixes/disruption.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Distance",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/distance.md"
+   "file": "docs/translation/affixes/distance.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Flaming",
    "status": "covered",
-   "file": "docs/translation/affixes/flaming.md"
+   "file": "docs/translation/affixes/flaming.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Flaming Burst",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/flaming-burst.md"
+   "file": "docs/translation/affixes/flaming-burst.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Frost",
    "status": "covered",
-   "file": "docs/translation/affixes/frost.md"
+   "file": "docs/translation/affixes/frost.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Ghost Touch",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/ghost-touch.md"
+   "file": "docs/translation/affixes/ghost-touch.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Holy",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/holy.md"
+   "file": "docs/translation/affixes/holy.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Icy Burst",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/icy-burst.md"
+   "file": "docs/translation/affixes/icy-burst.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Keen",
    "status": "covered",
-   "file": "docs/translation/affixes/keen.md"
+   "file": "docs/translation/affixes/keen.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Ki Focus",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/ki-focus.md"
+   "file": "docs/translation/affixes/ki-focus.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Merciful",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/merciful.md"
+   "file": "docs/translation/affixes/merciful.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Mighty Cleaving",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mighty-cleaving.md"
+   "file": "docs/translation/affixes/mighty-cleaving.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Returning",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/returning.md"
+   "file": "docs/translation/affixes/returning.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Seeking",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/seeking.md"
+   "file": "docs/translation/affixes/seeking.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Shock",
    "status": "covered",
-   "file": "docs/translation/affixes/shock.md"
+   "file": "docs/translation/affixes/shock.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Shocking Burst",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/shocking-burst.md"
+   "file": "docs/translation/affixes/shocking-burst.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Speed",
    "status": "covered",
-   "file": "docs/translation/affixes/speed.md"
+   "file": "docs/translation/affixes/speed.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 2
   },
   {
    "name": "Spell Storing",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/spell-storing.md"
+   "file": "docs/translation/affixes/spell-storing.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Thundering",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/thundering.md"
+   "file": "docs/translation/affixes/thundering.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Throwing",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/throwing.md"
+   "file": "docs/translation/affixes/throwing.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Unholy",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/unholy.md"
+   "file": "docs/translation/affixes/unholy.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Vicious",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/vicious.md"
+   "file": "docs/translation/affixes/vicious.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Vorpal",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/vorpal.md"
+   "file": "docs/translation/affixes/vorpal.md",
+   "pipeline_status": "registered",
+   "tier": 1
   },
   {
    "name": "Wounding",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/wounding.md"
+   "file": "docs/translation/affixes/wounding.md",
+   "pipeline_status": "registered",
+   "tier": 3
   }
  ],
  "mic": [
@@ -171,7 +231,9 @@
    "page": 29,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Aquan",
@@ -182,7 +244,9 @@
    "page": 29,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Aquatic",
@@ -193,7 +257,9 @@
    "page": 29,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Auran",
@@ -204,7 +270,9 @@
    "page": 29,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Banishing",
@@ -215,7 +283,9 @@
    "page": 29,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Berserker",
@@ -226,7 +296,9 @@
    "page": 30,
    "applies_to": "Two-handed melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Binding",
@@ -237,7 +309,9 @@
    "page": 30,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Blessed",
@@ -248,7 +322,9 @@
    "page": 30,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Blindsighted",
@@ -259,7 +335,9 @@
    "page": 30,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-01.md"
+   "file": "docs/translation/affixes/mic/mic-01.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Bloodfeeding",
@@ -270,7 +348,9 @@
    "page": 30,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Bloodstone",
@@ -281,7 +361,9 @@
    "page": 30,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Blurstrike",
@@ -292,7 +374,9 @@
    "page": 30,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Body Feeder",
@@ -303,7 +387,9 @@
    "page": 31,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 2
   },
   {
    "name": "Brash",
@@ -314,7 +400,9 @@
    "page": 31,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Brutal Surge",
@@ -325,7 +413,9 @@
    "page": 31,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Chargebreaker",
@@ -336,7 +426,9 @@
    "page": 32,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Charging",
@@ -347,7 +439,9 @@
    "page": 32,
    "applies_to": "Melee weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Collision",
@@ -358,7 +452,9 @@
    "page": 32,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-02.md"
+   "file": "docs/translation/affixes/mic/mic-02.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Consumptive",
@@ -369,7 +465,9 @@
    "page": 32,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 3
   },
   {
    "name": "Corrosive",
@@ -380,7 +478,9 @@
    "page": 32,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Cursespewing",
@@ -391,7 +491,9 @@
    "page": 32,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "registered",
+   "tier": 2
   },
   {
    "name": "Deadly Precision",
@@ -402,7 +504,9 @@
    "page": 33,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Defensive Surge",
@@ -413,7 +517,9 @@
    "page": 33,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Desiccating",
@@ -424,7 +530,9 @@
    "page": 33,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Desiccating Burst",
@@ -435,7 +543,9 @@
    "page": 33,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Disarming",
@@ -446,7 +556,9 @@
    "page": 33,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Dislocator",
@@ -457,7 +569,9 @@
    "page": 33,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Dispelling",
@@ -468,7 +582,9 @@
    "page": 34,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-03.md"
+   "file": "docs/translation/affixes/mic/mic-03.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Divine Wrath",
@@ -479,7 +595,9 @@
    "page": 34,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Domineering",
@@ -490,7 +608,9 @@
    "page": 34,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Doom Burst",
@@ -501,7 +621,9 @@
    "page": 34,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Dragondoom",
@@ -512,7 +634,9 @@
    "page": 34,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Dragonhunter",
@@ -523,7 +647,9 @@
    "page": 34,
    "applies_to": "Projectile weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Eager",
@@ -534,7 +660,9 @@
    "page": 35,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Energy Aura",
@@ -545,7 +673,9 @@
    "page": 35,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Energy Surge",
@@ -556,7 +686,9 @@
    "page": 35,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Enervating",
@@ -567,7 +699,9 @@
    "page": 35,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-04.md"
+   "file": "docs/translation/affixes/mic/mic-04.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Ethereal Reaver",
@@ -578,7 +712,9 @@
    "page": 35,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 2
   },
   {
    "name": "Everbright",
@@ -589,7 +725,9 @@
    "page": 35,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Fiercebane",
@@ -600,7 +738,9 @@
    "page": 36,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Force",
@@ -611,7 +751,9 @@
    "page": 36,
    "applies_to": "Projectile weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Ghost Strike",
@@ -622,7 +764,9 @@
    "page": 36,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Harmonizing",
@@ -633,7 +777,9 @@
    "page": 36,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Heavenly Burst",
@@ -644,7 +790,9 @@
    "page": 37,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Hideaway",
@@ -655,7 +803,9 @@
    "page": 37,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Holy Surge",
@@ -666,7 +816,9 @@
    "page": 37,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-05.md"
+   "file": "docs/translation/affixes/mic/mic-05.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Hunting",
@@ -677,7 +829,9 @@
    "page": 37,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Ignan",
@@ -688,7 +842,9 @@
    "page": 37,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Illuminating",
@@ -699,7 +855,9 @@
    "page": 37,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Illusion Bane",
@@ -710,7 +868,9 @@
    "page": 37,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Illusion Theft",
@@ -721,7 +881,9 @@
    "page": 38,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Impact",
@@ -732,7 +894,9 @@
    "page": 38,
    "applies_to": "Bludgeoning weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Impaling",
@@ -743,7 +907,9 @@
    "page": 38,
    "applies_to": "Piercing melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-06.md"
+   "file": "docs/translation/affixes/mic/mic-06.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Impedance",
@@ -754,7 +920,9 @@
    "page": 38,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Implacable",
@@ -765,7 +933,9 @@
    "page": 38,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "registered",
+   "tier": 2
   },
   {
    "name": "Incorporeal Binding",
@@ -776,7 +946,9 @@
    "page": 39,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Knockback",
@@ -787,7 +959,9 @@
    "page": 39,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Lucky",
@@ -798,7 +972,9 @@
    "page": 39,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Magebane",
@@ -809,7 +985,9 @@
    "page": 39,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Maiming",
@@ -820,7 +998,9 @@
    "page": 39,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Manifester",
@@ -831,7 +1011,9 @@
    "page": 39,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "blocked",
+   "tier": 3
   },
   {
    "name": "Metalline",
@@ -842,7 +1024,9 @@
    "page": 39,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Mighty Smiting",
@@ -853,7 +1037,9 @@
    "page": 40,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-07.md"
+   "file": "docs/translation/affixes/mic/mic-07.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Mindcrusher",
@@ -864,7 +1050,9 @@
    "page": 40,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "blocked",
+   "tier": 3
   },
   {
    "name": "Mindfeeder",
@@ -875,7 +1063,9 @@
    "page": 40,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "blocked",
+   "tier": 4
   },
   {
    "name": "Morphing",
@@ -886,7 +1076,9 @@
    "page": 40,
    "applies_to": "Melee or thrown weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Necrotic Focus",
@@ -897,7 +1089,9 @@
    "page": 40,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 2
   },
   {
    "name": "Paralytic Burst",
@@ -908,7 +1102,9 @@
    "page": 40,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Paralyzing",
@@ -919,7 +1115,9 @@
    "page": 40,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Parrying",
@@ -930,7 +1128,9 @@
    "page": 41,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Power Storing",
@@ -941,7 +1141,9 @@
    "page": 41,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "blocked",
+   "tier": 4
   },
   {
    "name": "Precise",
@@ -952,7 +1154,9 @@
    "page": 41,
    "applies_to": "Ranged weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Prismatic Burst",
@@ -963,7 +1167,9 @@
    "page": 41,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-08.md"
+   "file": "docs/translation/affixes/mic/mic-08.md",
+   "pipeline_status": "registered",
+   "tier": 1
   },
   {
    "name": "Profane",
@@ -974,7 +1180,9 @@
    "page": 41,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Profane Burst",
@@ -985,7 +1193,9 @@
    "page": 41,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Psibane",
@@ -996,7 +1206,9 @@
    "page": 42,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "blocked",
+   "tier": 3
   },
   {
    "name": "Psychic",
@@ -1007,7 +1219,9 @@
    "page": 42,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "blocked",
+   "tier": 3
   },
   {
    "name": "Psychokinetic",
@@ -1018,7 +1232,9 @@
    "page": 42,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "blocked",
+   "tier": 4
   },
   {
    "name": "Psychokinetic Burst",
@@ -1029,7 +1245,9 @@
    "page": 42,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "blocked",
+   "tier": 4
   },
   {
    "name": "Resounding",
@@ -1040,7 +1258,9 @@
    "page": 43,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Revealing",
@@ -1051,7 +1271,9 @@
    "page": 43,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-09.md"
+   "file": "docs/translation/affixes/mic/mic-09.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Sacred",
@@ -1062,7 +1284,9 @@
    "page": 43,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Sacred Burst",
@@ -1073,7 +1297,9 @@
    "page": 43,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Screaming",
@@ -1084,7 +1310,9 @@
    "page": 43,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Screaming Burst",
@@ -1095,7 +1323,9 @@
    "page": 43,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Shadowstrike",
@@ -1106,7 +1336,9 @@
    "page": 44,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Shattermantle",
@@ -1117,7 +1349,9 @@
    "page": 44,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Shielding",
@@ -1128,7 +1362,9 @@
    "page": 44,
    "applies_to": "Light melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Sizing",
@@ -1139,7 +1375,9 @@
    "page": 44,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Slow Burst",
@@ -1150,7 +1388,9 @@
    "page": 44,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-10.md"
+   "file": "docs/translation/affixes/mic/mic-10.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Soulbound",
@@ -1161,7 +1401,9 @@
    "page": 44,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-11.md"
+   "file": "docs/translation/affixes/mic/mic-11.md",
+   "pipeline_status": "blocked",
+   "tier": 4
   },
   {
    "name": "Soulbound, Greater",
@@ -1172,7 +1414,9 @@
    "page": 44,
    "applies_to": "Weapon Asa free action, you choose how to allocate",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-11.md"
+   "file": "docs/translation/affixes/mic/mic-11.md",
+   "pipeline_status": "blocked",
+   "tier": 3
   },
   {
    "name": "Stygian",
@@ -1183,7 +1427,9 @@
    "page": 45,
    "applies_to": "Weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-11.md"
+   "file": "docs/translation/affixes/mic/mic-11.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Sundering",
@@ -1194,7 +1440,9 @@
    "page": 45,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-11.md"
+   "file": "docs/translation/affixes/mic/mic-11.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Sweeping",
@@ -1205,7 +1453,9 @@
    "page": 45,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-11.md"
+   "file": "docs/translation/affixes/mic/mic-11.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Terran",
@@ -1216,7 +1466,9 @@
    "page": 46,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Transmuting",
@@ -1227,7 +1479,9 @@
    "page": 46,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Unholy Surge",
@@ -1238,7 +1492,9 @@
    "page": 46,
    "applies_to": "Melee weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Vampiric",
@@ -1249,7 +1505,9 @@
    "page": 46,
    "applies_to": "Melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 3
   },
   {
    "name": "Vanishing",
@@ -1260,7 +1518,9 @@
    "page": 46,
    "applies_to": "Melee weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Venomous",
@@ -1271,7 +1531,9 @@
    "page": 46,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Warning",
@@ -1282,7 +1544,9 @@
    "page": 47,
    "applies_to": "Weapon",
    "status": "covered",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "duplicate_of_catalog",
+   "tier": 4
   },
   {
    "name": "Weakening",
@@ -1293,7 +1557,9 @@
    "page": 47,
    "applies_to": "Weapon",
    "status": "drafted-partial",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 4
   },
   {
    "name": "Whirling",
@@ -1304,7 +1570,9 @@
    "page": 47,
    "applies_to": "Slashing melee weapon",
    "status": "drafted-new",
-   "file": "docs/translation/affixes/mic/mic-12.md"
+   "file": "docs/translation/affixes/mic/mic-12.md",
+   "pipeline_status": "registered",
+   "tier": 4
   }
  ]
 }

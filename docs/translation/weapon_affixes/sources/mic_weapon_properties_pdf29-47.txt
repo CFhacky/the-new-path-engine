@@ -1,0 +1,1269 @@
+SOURCE: Magic Item Compendium, OCR text layer, chapter 2 "Weapon Properties" (alphabetical).
+FILE: D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Magic and Items\Magic Item Compendium.md, lines ~4800-9150 (PDF pages 29-47).
+This is a TRANSCRIPTION, not a byte-exact copy: art captions and whitespace garbage were dropped, obvious OCR noise normalized ("sth"->5th, "dé"->d6, "Ifthe"->"If the", line-break hyphens joined); wording, numbers and prices kept as the OCR showed them. The laptop file is the authoritative verbatim source.
+Page 45 is a two-column OCR interleave; entries rebuilt from it (Soulbreaker, Souldrinking, Spellstrike, Stunning, Stunning Surge) are flagged degraded in the state file. "## [PDF page N]" markers are the file's own.
+Chapter intro facts: a weapon with a special property needs at least +1 enhancement; modified bonus (enhancement + property equivalents) cap +10; market price cap 200,000 gp (not counting special materials / masterwork). "Synergy" items have a synergy prerequisite (an existing property already on the weapon). "Relic" items are for a character devoted to a deity.
+
+## [PDF page 29]
+
+ACIDIC BURST [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) conjuration
+Activation: Standard (command) and --
+Synergy Prerequisite: Corrosive
+An acidic burst weapon functions as a corrosive weapon (see page 31). In addition, the weapon automatically showers an opponent with acid upon a successful critical hit, dealing extra acid damage as set out on the table below. This acid does not harm you or any creature other than the target. This is a continuous effect and requires no activation. Even if the weapon has not been activated to deal the extra 1d6 points of acid damage that comes from the corrosive property, the weapon still deals its extra acid damage on a successful critical hit.
+Critical Multiplier / Extra Acid Damage: x2 1d10; x3 2d10; x4 3d10
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, Melf's acid arrow.
+Cost to Create: Varies.
+
+AQUAN
+Price: +2 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) evocation
+Activation: --
+An aquan weapon automatically overcomes the damage reduction of any creature that has the fire subtype. In addition, the weapon deals an extra 2d6 points of damage against such creatures. An aquan weapon also bestows one negative level on any creature that has the fire subtype and attempts to wield it. The negative level remains as long as the weapon is in hand and disappears when the weapon is no longer held. This negative level never results in actual level loss, but it cannot be overcome in any way (including restoration spells) while the weapon is wielded.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, water subtype.
+Cost to Create: Varies.
+
+AQUATIC
+Price: +2,000 gp
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) abjuration
+Activation: --
+While wielding an aquatic weapon, you do not incur any penalties that would otherwise apply to using the weapon underwater (DMG 92), as though you were affected by a freedom of movement spell.
+Prerequisites: Craft Magic Arms and Armor, freedom of movement.
+Cost to Create: 1,000 gp, 80 XP, 2 days.
+
+ARCANE MIGHT
+Price: +1 bonus
+Property: Bows (not crossbows)
+Caster Level: 15th
+Aura: Strong; (DC 22) transmutation
+Activation: Swift (mental)
+You can channel the energy of your arcane spells through this bow to make the arrows fired from it more damaging. As a swift action, you can sacrifice a prepared arcane spell from memory (or an unused spell slot if you are a spontaneous arcane caster). Doing so grants a bonus equal to the sacrificed spell's level on the next damage roll you make with the bow that turn.
+Prerequisites: Craft Magic Arms and Armor, greater magic weapon.
+Cost to Create: Varies.
+
+AURAN
+Price: +2 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) evocation
+Activation: --
+An auran weapon automatically overcomes the damage reduction of any creature that has the earth subtype. In addition, the weapon deals an extra 2d6 points of damage against such creatures. An auran weapon also bestows one negative level on any creature that has the earth subtype and attempts to wield it. The negative level remains as long as the weapon is in hand and disappears when the weapon is no longer held. This negative level never results in actual level loss, but it cannot be overcome in any way (including restoration spells) while the weapon is wielded.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, air subtype.
+Cost to Create: Varies.
+
+BANISHING
+Price: +2 bonus
+Property: Weapon
+Caster Level: 13th
+Aura: Strong; (DC 21) abjuration
+Activation: Free (command)
+
+## [PDF page 30]
+
+When you strike an extraplanar creature of 26 Hit Dice or fewer while wielding a weapon that has this property, you can activate the weapon to banish that creature back to its home plane (Will DC 20 negates). A creature so banished cannot return for at least 24 hours. A creature that succeeds on its save cannot be banished by the same weapon for 24 hours.
+If the creature struck has damage reduction that requires a particular weapon alignment or special material to overcome, increase the save DC by 2 for each such property shared by the weapon. For example, if you use a holy banishing cold iron weapon against a hezrou (damage reduction 10/good), the save DC would increase by 2, while against a marilith (damage reduction 10/good and cold iron), the save DC would increase by 4.
+The banishing property can be activated three times per day.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, banishment.
+Cost to Create: Varies.
+
+BERSERKER
+Price: +1 bonus
+Property: Two-handed melee weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) enchantment
+Activation: --
+In your hands, a berserker weapon deals an extra 1d8 points of damage on any successful attack while you are raging.
+Prerequisites: Craft Magic Arms and Armor, rage.
+Cost to Create: Varies.
+
+BINDING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) abjuration
+Activation: Swift (command)
+When you activate a binding weapon, the next successful attack you make with it before the end of your turn prevents the target from using any form of extradimensional travel, as the dimensional anchor spell. The binding property functions two times per day, and the effect lasts for 10 minutes.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, dimensional anchor.
+Cost to Create: Varies.
+
+BLESSED
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: -- and swift (command)
+A blessed weapon is treated as good-aligned for the purpose of overcoming damage reduction. This effect is continuous and requires no activation. In addition, three times per day you can activate a blessed weapon to automatically confirm all critical threats against evil foes for 1 round (as if the weapon were affected by the bless weapon spell). Other effects related to threatening or confirming critical hits (such as the keen edge spell or the vorpal weapon property) don't confer an additional benefit on a weapon that has this property.
+Prerequisites: Craft Magic Arms and Armor, bless weapon.
+Cost to Create: Varies.
+
+BLINDSIGHTED
+Price: +2 bonus
+Property: Weapon
+Caster Level: 6th
+Aura: Moderate; (DC 18) divination
+Activation: Standard (command)
+When activated, a blindsighted weapon emits a susurrus of whispered notes (Listen DC 10). While wielding the activated weapon, you gain blindsight out to 30 feet. This effect is negated by silence spells and effects. The blindsighted property functions three times per day, and the effect lasts for 1 minute.
+Prerequisites: Craft Magic Arms and Armor, see invisibility.
+Cost to Create: Varies.
+
+BLOODFEEDING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) necromancy
+Activation: -- and free (command)
+Every time a bloodfeeding weapon deals damage to a living creature, it gains 1 "blood point," which it can store for up to 1 hour. The weapon can store a maximum of 10 blood points. This effect is continuous and requires no activation. When you deal damage to a creature while wielding a bloodfeeding weapon, you can activate the weapon to spend up to 5 stored blood points. Each blood point you spend in this way deals an extra 2 points of damage to that creature. The weapon doesn't gain any blood points from a strike on which you use this ability.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch.
+Cost to Create: Varies.
+
+BLOODSTONE
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) necromancy
+Activation: Free (command)
+A bloodstone weapon can store and cast a vampiric touch spell against a creature it strikes, just as if it were a spell storing weapon (DMG 225). Any such spell cast from a bloodstone weapon is automatically empowered (as if by the Empower Spell feat). A bloodstone weapon can store no more than one such spell at any time, and it cannot store a spell other than vampiric touch.
+Prerequisites: Craft Magic Arms and Armor, Empower Spell, vampiric touch.
+Cost to Create: Varies.
+
+BLURSTRIKE
+Price: +2 bonus
+Property: Melee weapon
+Caster Level: 6th
+Aura: Moderate; (DC 18) illusion
+Activation: Swift (command)
+
+## [PDF page 31]
+
+When activated, a blurstrike weapon partially fades from view for 1 round, appearing only as a faint outline (though you, as the wielder, can see it normally). When you attack, an activated blurstrike weapon (along with your hand and arm) appears to others as an amorphous blur, preventing a foe from knowing exactly where the blow is aimed. After you activate this property, your opponent is considered flat-footed against the first attack you make with the blurstrike weapon in the round when you activate it. Creatures that don't rely on sight for combat (such as those with the blindsight special quality) and creatures with uncanny dodge aren't treated as flat-footed against this attack. The blurstrike property functions ten times per day.
+Prerequisites: Craft Magic Arms and Armor, blur.
+Cost to Create: Varies.
+
+BODY FEEDER
+Price: +3 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) necromancy
+Activation: --
+Whenever a bodyfeeder weapon you wield scores a successful critical hit against a living creature, you gain temporary hit points equal to half the damage dealt by the critical hit. These temporary hit points last for up to 1 minute and don't stack with those from any other source, including additional critical hits with this weapon.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch or claws of the vampire (EPH 84).
+Cost to Create: Varies.
+
+BRASH
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) abjuration
+Activation: --
+If you enter a rage while wielding a brash weapon, the rage lasts for an extra 3 rounds. In addition, while raging and wielding a brash weapon, you gain immunity to fear effects.
+Prerequisites: Craft Magic Arms and Armor, remove fear.
+Cost to Create: Varies.
+
+BRUTAL SURGE
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) evocation
+Activation: Swift (command)
+After a successful melee attack with a brutal surge weapon, you can command the weapon to initiate a bull rush attempt against the target of the attack in addition to dealing its normal damage. This attempt does not provoke attacks of opportunity and is resolved using your size, Strength, and other relevant characteristics. If you wield a brutal surge weapon in two hands, you gain a +2 bonus on the opposed Strength check. If successful, the bull rush pushes the affected creature back the greatest possible distance allowed by the result of the opposed check, but you do not move along with the target. Movement caused by this bull rush attempt provokes attacks of opportunity from other creatures normally, but you cannot make an attack of opportunity against the affected creature. The brutal surge property is usable a number of times per day equal to 1 + your Con bonus (if any). Once you activate this property, it can't be activated by any other creature until the following day.
+Prerequisites: Craft Magic Arms and Armor, Bigby's forceful hand.
+Cost to Create: Varies.
+
+## [PDF page 32]
+
+CHANGELING
+Price: +2,000 gp
+Property: Spear, shortspear, or longspear
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: Swift (command)
+A changeling weapon allows you to choose its length and appearance each time you attack with it. Once per round, by speaking the appropriate command word, you can change the weapon into a spear, a shortspear, or a longspear sized appropriately for you. As part of the same action, you can make its haft and head appear to be composed of any wood, stone, metal, or combination thereof that you want, and add any decorative flourishes desired, though the spear's actual composition does not change.
+Prerequisites: Craft Magic Arms and Armor, shrink item.
+Cost to Create: 1,000 gp, 80 XP, 2 days.
+
+CHARGEBREAKER
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) enchantment
+Activation: --
+Any charging creature hit by a chargebreaker weapon must succeed on a DC 14 Fortitude save or be knocked prone.
+Prerequisites: Craft Magic Arms and Armor, daze monster.
+Cost to Create: Varies.
+
+CHARGING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Moderate; (DC 19) transmutation
+Activation: --
+When you are mounted and wielding a weapon that has this property, you deal an extra 2d6 points of damage on a successful charge attack.
+Prerequisites: Craft Magic Arms and Armor, Spirited Charge, keen edge.
+Cost to Create: Varies.
+
+COLLISION
+Price: +2 bonus
+Property: Weapon
+Caster Level: 6th
+Aura: Moderate; (DC 18) transmutation
+Activation: --
+A collision weapon temporarily increases its own mass at the end point of each swing or shot. When you wield such a weapon, you deal an extra 5 points of damage with each hit.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, weapon of impact (SC 237).
+Cost to Create: Varies.
+
+CONSUMPTIVE
+Price: +2 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) necromancy
+Activation: Standard (command)
+When activated, a consumptive weapon is shrouded in negative energy that seems to draw light into it. The negative energy does not harm you as long as you have the weapon in hand. The effect persists until you speak a second command word. A weapon that has this property deals an extra 1d8 points of damage to any living creature on a successful hit.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, enervation.
+Cost to Create: Varies.
+
+CORROSIVE
+Price: +1 bonus
+Property: Weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) conjuration
+Activation: Standard (command)
+When activated, a corrosive weapon is sheathed in acid. The acid does not harm you as long as you have the weapon in hand. The effect persists until you speak a second command word. A weapon that has this property deals an extra 1d6 points of acid damage on a successful hit.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, acid fog, acid storm (SC 7), Melf's acid arrow, or storm of vengeance.
+Cost to Create: Varies.
+
+CURSESPEWING
+Price: +3 bonus
+Property: Weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) necromancy
+Activation: --
+
+## [PDF page 33]
+
+Whenever this weapon scores a critical hit against a target, it bestows a curse that imposes a -4 penalty on attack rolls, saving throws, skill checks, and ability checks for 1 minute. Multiple strikes aren't cumulative with one another.
+Prerequisites: Craft Magic Arms and Armor, bestow curse.
+Cost to Create: Varies.
+
+DEADLY PRECISION
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: --
+A deadly precision weapon deals an extra 1d6 points of damage whenever you make a successful sneak attack or sudden strike (CAd 8) with it. The property grants no benefit if you don't already have one of these class features, and its bonus doesn't increase if you have both.
+Prerequisites: Craft Magic Arms and Armor, keen edge.
+Cost to Create: Varies.
+
+DEFENSIVE SURGE
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) abjuration
+Activation: Swift (command)
+After a successful melee attack with a defensive surge weapon in any round in which you use the Combat Expertise feat or fight defensively, you can activate the weapon and gain an additional +2 bonus to Armor Class until the start of your next turn. This ability is usable a number of times per day equal to 1 + your Int bonus (if any). Once you activate this property, it can't be activated by any other creature until the following day.
+Prerequisites: Craft Magic Arms and Armor, shield.
+Cost to Create: Varies.
+
+DESICCATING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Moderate; (DC 19) necromancy
+Activation: --
+A desiccating weapon destroys the water in a living creature that it strikes, dealing an extra 1d4 points of damage (or an extra 1d8 points against plants and against elementals that have the water subtype).
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, desiccating bubble (SC 63).
+Cost to Create: Varies.
+
+DESICCATING BURST [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) necromancy
+Activation: --
+Synergy Prerequisite: Desiccating
+A desiccating burst weapon functions as a desiccating weapon (see above). In addition, the weapon explodes with a dehydrating blast on a successful critical hit, dealing extra damage as set out in the table below. (This effect activates even if the target is not normally vulnerable to extra damage from critical hits.) The amount of damage is determined by the weapon's critical multiplier and is doubled against plants and against elementals that have the water subtype. This burst does not harm you or any creature other than the target. This is a continuous effect and requires no activation. Even if the weapon has not been activated to deal extra damage because of the desiccating property, the weapon still deals its extra damage on a successful critical hit.
+Critical Multiplier / Extra Damage / Plant-Elemental Damage: x2 1d8 2d8; x3 2d8 4d8; x4 3d8 6d8
+In addition, the critical hit renders the struck creature fatigued for 8 hours or until it consumes at least 1 gallon of water or some other rehydrating liquid.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, horrid wilting.
+Cost to Create: Varies.
+
+DISARMING
+Price: +2 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Moderate; (DC 17) transmutation
+Activation: --
+A disarming weapon grants you a +2 bonus on disarm attempts. In addition, opponents cannot disarm you of this weapon.
+Prerequisites: Craft Magic Arms and Armor, bull's strength.
+Cost to Create: Varies.
+
+DISLOCATOR
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) conjuration
+Activation: Swift (mental)
+When you activate a dislocator weapon, the next successful attack you make before the end of your turn causes your target to be teleported up to 10 feet in any direction you choose (Will DC 17 negates). You can't teleport a target into an occupied space (such an attempt automatically fails and wastes the effect).
+Projectile weapons bestow this property on their ammunition.
+A dislocator weapon functions three times per day.
+Prerequisites: Craft Magic Arms and Armor, teleport.
+Cost to Create: Varies.
+
+## [PDF page 34]
+
+DISLOCATOR, GREAT [SYNERGY]
+Price: +1 bonus
+Synergy Prerequisite: Dislocator
+This property functions as a dislocator weapon (see above), except the target can be teleported up to 30 feet in any direction (Will DC 20 negates).
+Prerequisites: Craft Magic Arms and Armor, greater teleport.
+Cost to Create: Varies.
+
+DISPELLING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) abjuration
+Activation: Free (command)
+When you strike a creature or object with a dispelling weapon, you can activate it to target that creature or object with a targeted dispel magic effect (as the spell). A dispelling weapon functions three times per day.
+Prerequisites: Craft Magic Arms and Armor, dispel magic.
+Cost to Create: Varies.
+
+DISPELLING, GREATER [SYNERGY]
+Price: +1 bonus
+Caster Level: 15th
+Aura: Strong; (DC 22) abjuration
+Synergy Prerequisite: Dispelling
+This weapon functions as a dispelling weapon (see above), except that when you activate it, the creature or object struck is affected by a targeted greater dispel magic effect (as the spell). A greater dispelling weapon functions three times per day.
+Prerequisites: Craft Magic Arms and Armor, greater dispel magic.
+Cost to Create: Varies.
+
+DIVINE WRATH
+Price: +1 bonus
+Property: Weapon
+Caster Level: 13th
+Aura: Strong; (DC 21) evocation
+Activation: Swift (mental)
+Divine wrath weapons are especially prized by paladins and clerics of Heironeous. Whenever you hold such a weapon in your hand, you can expend a turn undead attempt to imbue it with divine power for 1 round. If your next successful attack with it hits an undead target, the weapon deals an extra 1d6 points of damage per point of Charisma bonus you possess (minimum 1d6).
+Prerequisites: Craft Magic Arms and Armor, searing light, turn undead, good alignment.
+Cost to Create: Varies.
+
+DOMINEERING
+Price: +2 bonus
+Property: Weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) necromancy
+Activation: --
+A creature hit by a domineering weapon becomes shaken for 1 minute (Will DC 16 negates). This effect doesn't stack with itself or with any other fear effects (it can't render an already shaken creature frightened, for example).
+Prerequisites: Craft Magic Arms and Armor, fear.
+Cost to Create: Varies.
+
+DOOM BURST
+Price: +2 bonus
+Property: Weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) necromancy
+Activation: --
+Whenever you score a critical hit with this weapon, a wave of blackness washes over the target, causing it to become shaken (no saving throw) for 5 rounds. This effect activates even if the creature struck is not normally subject to extra damage from critical hits. This effect doesn't stack with itself or with any other fear effects (it can't render an already shaken creature frightened, for example).
+Prerequisites: Craft Magic Arms and Armor, fear.
+Cost to Create: Varies.
+
+DRAGONDOOM
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) transmutation
+Activation: Swift (command)
+When wielding a dragondoom weapon, you can choose to deliver a smite attack against a Large or larger creature of the dragon type up to three times each day. For every size category of the dragon larger than Medium, the smite attack deals an extra 1d6 points of damage (+1d6 against a Large dragon, +2d6 against Huge, +3d6 against Gargantuan, and +4d6 against Colossal). You must declare the smite attack before you make your attack roll. If the attack misses (or the creature you strike is not of the dragon type), the smite is wasted.
+Prerequisites: Craft Magic Arms and Armor, fell the greatest foe (SC 90).
+Cost to Create: Varies.
+
+DRAGONHUNTER
+Price: +1 bonus
+Property: Projectile weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) transmutation, necromancy
+Activation: --
+A creature of the dragon type that is hit by a projectile fired from this weapon takes 1 point of Strength damage in addition to the normal damage from the weapon. In addition, the weapon's critical multiplier increases by 1 if the target is a dragon. For example, a critical hit from a dragonhunter longbow has a x4 damage multiplier (instead of the normal x3) against a dragon, so such a creature would take four times normal damage (but still only 1 point of Strength damage) with a critical hit.
+
+## [PDF page 35]
+
+Other effects related to threatening or confirming critical hits (such as keen edge or bless weapon spells) don't function when placed on a weapon that has this property.
+Prerequisites: Craft Magic Arms and Armor, keen edge, ray of enfeeblement.
+Cost to Create: Varies.
+
+EAGER
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) evocation
+Activation: --
+An eager weapon can be drawn as a free action. While wielding it, you gain a +2 bonus on initiative checks and a +2 bonus on damage rolls made during a surprise round and the first round of combat.
+Prerequisites: Craft Magic Arms and Armor, cat's grace.
+Cost to Create: Varies.
+
+ENERGY AURA
+Price: +2 bonus
+Property: Weapon
+Caster Level: 15th
+Aura: Strong; (DC 22) evocation
+Activation: Standard (command)
+Once activated, each hit by this weapon deals an extra 1d6 points of damage of an energy type of your choice (acid, cold, electricity, or fire, chosen when activated). This energy does not harm you, regardless of the type selected. The energy damage remains the same until you activate the weapon again.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, chill metal, flame blade, Melf's acid arrow, shocking grasp.
+Cost to Create: Varies.
+
+ENERGY SURGE [SYNERGY]
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) evocation
+Activation: Swift (command)
+Synergy Prerequisite: Corrosive, flaming, frost, or shock
+An energy surge weapon functions as a weapon of the prerequisite type (corrosive, flaming, frost, or shock). In addition, on a successful melee attack with an energy surge weapon, you can command it to expel a blast of energy, of the same type as the prerequisite property, which deals an extra 3d6 points of damage to the target of the attack. The synergy prerequisite property need not be active to activate the energy surge property. This ability is usable a number of times per day equal to 1 + your Con bonus (if any). Once you activate this property, it can't be activated by any other creature until the following day. A weapon can have this property more than once, but only once per synergy prerequisite, and each activation only triggers one type of surge. For example, you could have a +1 corrosive surge flaming surge longsword, and each activation would deal either 3d6 points of acid damage or 3d6 points of fire damage. Each diamond set into the pommel or haft of an energy surge weapon radiates a different color that corresponds to the energy damage dealt by the weapon: green (acid), blue (cold), yellow (electricity), or red (fire).
+Prerequisites: Craft Magic Arms and Armor, spell for the prerequisite property.
+Cost to Create: Varies.
+
+ENERVATING
+Price: +2 bonus
+Property: Weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) necromancy
+Activation: --
+When you score a critical hit against a living creature with an enervating weapon, the weapon bestows one negative level on the target. Assuming the subject survives, it regains lost levels after 1 hour. Usually, negative levels have a chance of permanently draining a victim's levels, but the negative levels from the enervating property don't last long enough to do so.
+Prerequisites: Craft Magic Arms and Armor, enervation.
+Cost to Create: Varies.
+
+ETHEREAL REAVER
+Price: +3 bonus
+Property: Melee weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) divination
+Activation: --
+An ethereal reaver weapon functions as a ghost touch weapon (DMG 224). In addition, such a weapon allows you to see invisible creatures as if you were subject to a see invisibility spell.
+Prerequisites: Craft Magic Arms and Armor, see invisibility.
+Cost to Create: Varies.
+
+EVERBRIGHT
+Price: +2,000 gp
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) evocation
+Activation: Standard (command)
+An everbright weapon can flash with a brilliant light twice per day at your command. When it is activated, all creatures within 20 feet of you are blinded for 1 round (Reflex DC 14 negates).
+
+## [PDF page 36]
+
+An everbright weapon is also immune to acid damage and rusting effects.
+Prerequisites: Craft Magic Arms and Armor, searing light.
+Cost to Create: Varies.
+
+FIERCEBANE [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) conjuration
+Activation: --
+Synergy Prerequisite: Bane
+A fiercebane weapon excels at attacking one type or subtype of creature. It acts as a bane weapon against the creature type (and subtype, if relevant) to which its synergy prerequisite ability was attuned. Whenever it strikes its designated bane enemy, it begins to emit a low, eager hum, as if it were actually feeding off the victim's life blood. A fiercebane weapon glows when a designated foe comes within 60 feet, even if you cannot see or detect it. In addition, the weapon deals extra damage on every successful critical hit. The amount depends on its critical multiplier, as follows.
+Critical Multiplier / Extra Damage: x2 1d10; x3 2d10; x4 3d10
+Projectile weapons bestow this property upon their ammunition.
+Lore: gnome ranger Tir Hearthand created the first fiercebane weapon, an orc bane scimitar named Hearthand (Knowledge [arcana] or Knowledge [history] DC 20; the original is believed lost, DC 30).
+Prerequisites: Craft Magic Arms and Armor, summon monster I.
+Cost to Create: Varies.
+
+FLESHGRINDING
+Price: +2 bonus
+Property: Piercing or slashing melee weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) transmutation
+Activation: Free (command)
+You can activate a fleshgrinding weapon any time you deal damage with it to a living creature in melee. When this occurs, you let go of the weapon and it magically animates, grinding itself into the foe's flesh. In each round at the start of your turn, it automatically damages that creature as if you had scored a normal hit with it (including damage from the weapon's enhancement bonus, other weapon properties, and your normal bonus from Strength, but not extra damage from feats such as Power Attack). The grinding continues for 5 rounds or until you or someone else pulls the fleshgrinding weapon free; doing this requires a standard action and (for anyone other than you) a successful DC 20 Strength check. After the duration expires, a fleshgrinding weapon returns to your hand (as the returning weapon property). It will not return to your hand if the target has pulled the weapon free and still holds it.
+Prerequisites: Craft Magic Arms and Armor, animate objects.
+Cost to Create: Varies.
+
+FORCE
+Price: +2 bonus
+Property: Projectile weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) evocation
+Activation: --
+A projectile weapon with the force property turns ammunition shot from it into a force attack. These force projectiles automatically overcome damage reduction and suffer no miss chance against incorporeal targets, but they don't damage creatures immune to force effects. Ammunition shot from a force weapon deals the same amount of damage as normal ammunition.
+Prerequisites: Craft Magic Arms and Armor, magic missile.
+Cost to Create: Varies.
+
+GHOST STRIKE [SYNERGY]
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) conjuration
+Activation: --
+Synergy Prerequisite: Ghost touch
+A ghost strike weapon functions as a ghost touch weapon (DMG 224). In addition, sneak attacks and critical hits made with a ghost strike weapon against an undead creature affect it as if it were a living creature.
+Prerequisites: Craft Magic Arms and Armor, undeath to death.
+Cost to Create: Varies.
+
+HARMONIZING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) illusion
+Activation: --; see text
+A harmonizing weapon accompanies you in song if drawn, granting a +2 competence bonus on Perform (sing) checks. In addition, if you hold a harmonizing weapon when you begin a bardic music effect, the weapon can continue the effect for you, allowing you to focus on other efforts. One round after you begin a bardic music effect that allows or requires continued use or concentration (including inspire courage, countersong, fascinate, inspire competence, inspire greatness, song of freedom, and inspire heroics), the weapon picks up and continues the performance flawlessly for 10 rounds, until you start another bardic music effect, or until you command it to end as a swift (mental) action.
+Prerequisites: Craft Magic Arms and Armor, ghost sound, bardic music.
+Cost to Create: Varies.
+
+## [PDF page 37]
+
+HEAVENLY BURST
+Price: +1 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) evocation
+Activation: --
+On a critical hit against an evil creature, a heavenly burst weapon discharges a shower of radiance that deals 3d6 points of damage to the target and blinds it for 1 round. A successful DC 14 Fortitude save negates the blindness.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, holy smite.
+Cost to Create: Varies.
+
+HIDEAWAY
+Price: +2,000 gp
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: Swift (command)
+When activated, a hideaway weapon folds up into a bundle two size categories smaller than you, making it easy to conceal. You gain a +2 bonus on Sleight of Hand checks to conceal a hideaway weapon when it's folded up (as if it were a dagger). A second command word (also a swift action) causes the weapon to unfold to its normal shape.
+Prerequisites: Craft Magic Arms and Armor, shrink item.
+Cost to Create: 1,000 gp, 80 XP, 2 days.
+
+HOLY SURGE [SYNERGY]
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) evocation
+Activation: -- and swift (command)
+Synergy Prerequisite: Holy
+A holy surge weapon functions as a holy weapon (DMG 225). This is a continuous effect and requires no activation. In addition, on a successful melee attack with a holy surge weapon, you can command it to emit a burst of holy energy. Against an evil target, this burst deals an extra 3d6 points of damage. If used against a non-evil creature, it deals no additional damage, and that use of the property is wasted. This ability is usable a number of times per day equal to 1 + your Cha bonus (if any). Once you activate this property, it can't be activated by any other creature until the following day.
+Prerequisites: Craft Magic Arms and Armor, holy smite or holy word.
+Cost to Create: Varies.
+
+HUNTING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 6th
+Aura: Moderate; (DC 18) abjuration
+Activation: --
+A hunting weapon increases your bonus on weapon damage rolls by 4 against your favored enemies (see the ranger class feature; PH 47).
+Prerequisites: Craft Magic Arms and Armor, greater magic fang.
+Cost to Create: Varies.
+
+IGNAN
+Price: +2 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) evocation
+Activation: --
+An ignan weapon automatically overcomes the damage reduction of any creature that has the water subtype. In addition, the weapon deals an extra 2d6 points of damage against such targets. An ignan weapon also bestows one negative level on any creature that has the water subtype and attempts to wield it. The negative level remains as long as the weapon is in hand and disappears when it is no longer held. This negative level never results in actual level loss, but it cannot be overcome in any way (including restoration spells) while the weapon is wielded.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, fire subtype.
+Cost to Create: Varies.
+
+ILLUMINATING
+Price: +500 gp
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) evocation
+Activation: --
+When drawn, an illuminating weapon glows with pure white light, brightly illuminating a 20-foot-radius area and providing shadowy illumination for another 20 feet beyond that.
+Prerequisites: Craft Magic Arms and Armor, light.
+Cost to Create: 250 gp, 20 XP, 1 day.
+
+ILLUSION BANE
+Price: +1 bonus
+Property: Weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) divination
+Activation: -- and swift (command)
+Any attack with an illusion bane weapon ignores any miss chance created by an illusion effect (including effects that mimic illusions, such as a displacer beast's displacement effect). However, you must still target the correct square when making an attack against a foe that has total concealment. This is a continuous effect and requires no activation. In addition, once per day you can activate an illusion bane weapon to destroy illusion effects. This ability can take one of two forms: After hitting a creature, you can activate the weapon in the same round to make a dispel check (1d20+10) against each illusion spell currently affecting the target. This effect essentially acts as a targeted dispel magic spell, but it functions only against magic of the illusion school. You must make a separate check for each illusion spell affecting the target. Alternatively, you can attempt to dispel a single illusion by touching it with the
+
+## [PDF page 38]
+
+illusion bane weapon and speaking the appropriate command word. For example, touching a silent image spell (or an image generated by the mirror image spell) with the weapon subjects it to the dispel check immediately. A successful check against any part of the illusion dispels the whole effect, so dispelling one mirror image ends the spell entirely for the target creature.
+Lore: created by a sect of the church of St. Cuthbert (Knowledge [religion] DC 20); functions much like dispel magic but only against illusion effects (Knowledge [arcana] DC 25).
+Prerequisites: Craft Magic Arms and Armor, true seeing, dispel magic.
+Cost to Create: Varies.
+
+ILLUSION THEFT [SYNERGY]
+Price: +2 bonus
+Property: Weapon
+Caster Level: 17th
+Aura: Strong; (DC 23) divination
+Activation: Standard (command)
+Synergy Prerequisite: Illusion bane
+An illusion theft weapon functions as an illusion bane weapon (see above). In addition, such a weapon allows you to disrupt opponents' illusions and transfer their protective qualities to yourself. The first illusion spell that this weapon dispels with its illusion bane property is automatically stored within it. This ability functions like the spell storing property (DMG 225), with the following exceptions. It must be an illusion spell, but it need not be 3rd level or lower. A spell cannot be cast into the weapon; it can store only a spell that it has actually dispelled through the illusion bane ability. An illusion theft weapon need not actually strike a creature to activate the stored spell. The stored spell is preserved as originally cast in every way, except that its duration is effectively arrested at the time you steal it. As soon as the spell is stored, you immediately become aware of its effect and its remaining duration, and you can activate it at any time. You can choose a different target to be affected by the stored spell if you so desire. When the spell is activated, the duration begins passing again as if no time had elapsed. Once a stored illusion spell has been discharged, you cannot activate the weapon's illusion theft property again until you have successfully dispelled another illusion (using the illusion bane property), which is then stored within the weapon.
+Prerequisites: Craft Magic Arms and Armor, true seeing, dispel magic.
+Cost to Create: Varies.
+
+IMPACT
+Price: +1 bonus
+Property: Bludgeoning weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) evocation
+Activation: --
+An impact weapon has double the threat range of a normal weapon of its type. For example, an impact quarterstaff scores a threat on a roll of 19-20, and an impact heavy flail scores a threat on a roll of 17-20. This effect doesn't stack with any other effect that expands a weapon's critical threat range.
+Prerequisites: Craft Magic Arms and Armor, weapon of impact (SC 237).
+Cost to Create: Varies.
+
+IMPALING
+Price: +1 bonus
+Property: Piercing melee weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) transmutation
+Activation: Swift (command)
+Three times per day, you can activate this weapon to treat its next attack (if made before the end of your turn) as a touch attack. You must declare that you are using this property before making your attack roll. If the attack misses, the use is wasted.
+Prerequisites: Craft Magic Arms and Armor, find the gap (SC 91).
+Cost to Create: Varies.
+
+IMPEDANCE
+Price: +2 bonus
+Property: Weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) abjuration
+Activation: --
+An impedance weapon mimics the impeded magic planar trait (DMG 150). When you use it to strike a creature, the target's ability to cast spells or use spell-like abilities is impeded for 1d6 rounds. To cast an impeded spell or use an impeded spell-like ability, the creature must attempt a Spellcraft check, Intelligence check, or Charisma check (whichever one is made with the highest bonus). The DC for this check is 15 + the spell level. If the check succeeds, the effect functions normally; if the check fails, the effect does not function and the spell or the use of the spell-like ability is lost.
+Prerequisites: Craft Magic Arms and Armor, antimagic field.
+Cost to Create: Varies.
+
+IMPLACABLE
+Price: +3 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 18) necromancy
+Activation: --
+When an implacable weapon deals damage to a living creature, the wound bleeds profusely and the creature takes 2 additional points of damage at the start of each of the wielder's turns for the next 5 rounds. Multiple wounds are cumulative (a creature struck three times in the same round would take 6 points of damage per round for the next 5 rounds). This bleeding can be stopped by a successful DC 15 Heal check or any effect that restores hit points (such as cure light wounds). However, while the wound is active, anyone attempting to cast a spell on the target that would restore hit points must succeed on a DC 15 caster level check. An implacable weapon counts as adamantine for the purpose of overcoming the damage reduction of aberrations.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch.
+Cost to Create: Varies.
+
+## [PDF page 39]
+
+INCORPOREAL BINDING [SYNERGY]
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) conjuration
+Activation: --
+Synergy Prerequisite: Ghost touch
+An incorporeal binding weapon functions as a ghost touch weapon (DMG 224). In addition, when this weapon strikes an incorporeal creature, it emits a single pulse of gray energy that temporarily anchors the target more firmly to the material world. An incorporeal creature damaged by this weapon loses the benefit of its incorporeal miss chance (50%) and its 50% chance to ignore spells for 1 round. It does, however, retain all other benefits of incorporealness, including immunity to all nonmagical attack forms, the ability to pass through solid objects, and a deflection bonus to AC equal to its Charisma bonus (if any).
+Prerequisites: Craft Magic Arms and Armor, dimensional anchor, plane shift.
+Cost to Create: Varies.
+
+KNOCKBACK
+Price: +1 bonus
+Property: Weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) evocation
+Activation: Swift (command)
+Three times per day, you can activate this weapon and use it to drive your opponent back. The next time you hit a creature with the weapon before the end of your turn, the target must succeed on a DC 19 Fortitude save or be pushed back 5 feet. If the target can't move back, this ability has no effect. The knockback property works only on creatures of your own size category or smaller.
+Prerequisites: Craft Magic Arms and Armor, repulsion.
+Cost to Create: Varies.
+
+LUCKY
+Price: +1 bonus
+Property: Weapon
+Caster Level: 15th
+Aura: Strong; (DC 22) divination
+Activation: Free (mental)
+A lucky weapon offers a second chance at success. Once per day, you can reroll a single failed attack roll.
+Prerequisites: Craft Magic Arms and Armor, moment of prescience or fate of one (EPH 107).
+Cost to Create: Varies.
+
+MAGEBANE
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Moderate; (DC 19) evocation
+Activation: --
+Weapons that have this property are feared by arcane spellcasters. Against any creature that can cast arcane spells or use invocations (CAr 7), a magebane weapon's enhancement bonus is 2 higher than normal. (Thus, a +1 longsword with the magebane property becomes a +3 longsword when wielded against such targets.) Furthermore, a magebane weapon deals an extra 2d6 points of damage against targets capable of casting arcane spells or using invocations. The magebane property can be added to a cold iron weapon without paying the extra 2,000 gp (DMG 284).
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, dispel magic.
+Cost to Create: Varies.
+
+MAIMING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: --
+A maiming weapon twists and digs into the flesh of its target, rending, tearing, smashing, and bruising it. Whenever you score a critical hit with this weapon, it deals an amount of extra damage depending on its critical multiplier.
+Critical Multiplier / Extra Damage: x2 1d6; x3 2d6; x4 3d6
+Prerequisites: Craft Magic Arms and Armor, keen edge.
+Cost to Create: Varies.
+
+MANIFESTER
+Price: +12,000 gp
+Property: Weapon
+Caster Level: 5th
+Aura: Moderate; (DC 19) divination
+Activation: Free (mental)
+When manifesting a power, the bearer of this weapon can draw 5 power points from it. These points must all be used on the same power, and that power cannot be imbued with power points from any other source. A manifester weapon functions once per day.
+Prerequisites: Craft Magic Arms and Armor, any 3rd-level psionic power.
+Cost to Create: 6,000 gp, 480 XP, 12 days.
+
+METALLINE
+Price: +2 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) transmutation
+Activation: Standard (command)
+When you activate a metalline weapon, you can change its composition to adamantine, alchemical silver, cold iron, or ordinary steel.
+Prerequisites: Craft Magic Arms and Armor, fabricate.
+Cost to Create: Varies.
+
+## [PDF page 40]
+
+MIGHTY SMITING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Moderate; (DC 19) evocation
+Activation: --
+If you have a smite ability (smite, smite evil, smite shadowlands, or the like), you gain an extra +2 bonus on your smite attack rolls and damage rolls. In addition, you gain one additional use of your smite ability each day while wielding this weapon. If you have more than one smite ability, you must choose which one gains the extra use. A weapon of mighty smiting only grants one extra smite per day, regardless of how many characters wield it.
+Prerequisites: Craft Magic Arms and Armor, divine power.
+Cost to Create: Varies.
+
+MINDCRUSHER
+Price: +2 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) necromancy
+Activation: --
+Any psionic creature struck in combat by a mindcrusher weapon loses a number of power points equal to half the amount of hit point damage the weapon deals on that strike. Only the base damage of the weapon contributes to the power point loss; additional damage from high Strength or other sources does not cause additional power point loss. A creature with no power points, including any nonpsionic creature, must succeed on a DC 17 Will save or take 1 point of Wisdom damage.
+A projectile weapon bestows this property upon its ammunition.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch or psychic vampire (EPH 127).
+Cost to Create: Varies.
+
+MINDFEEDER
+Price: +1 bonus
+Property: Weapon
+Caster Level: 15th
+Aura: Strong; (DC 22) necromancy
+Activation: --
+When you score a critical hit with a mindfeeder weapon, you gain 1 temporary power point for every 5 points of damage dealt by the critical hit. These temporary power points last for up to 1 minute. You gain power points even if the target has none. As with temporary hit points, temporary power points do not stack with each other; they overlap. Thus, if the wielder of a mindfeeder weapon successfully scores a critical hit while still enjoying temporary power points from a previous critical hit, the wielder gains only the higher of the two values: either her current number of temporary power points, or the new influx of temporary power points, whichever is greater. Creatures immune to extra damage from critical hits do not trigger mindfeeder weapons.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch or psychic vampire (EPH 127).
+Cost to Create: Varies.
+
+MORPHING
+Price: +1 bonus
+Property: Melee or thrown weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) transmutation
+Activation: Standard
+You can reshape a morphing weapon into any other melee or thrown weapon of the same size and type (light, one-handed, or two-handed). For instance, a morphing greatsword could become a spear, greataxe, or dire flail. If a single weapon created with the morphing property becomes a double weapon, only one end of the double weapon retains the weapon's magical bonus, although the other end is masterwork. If a double weapon created with the morphing property becomes a single weapon, it can have the properties of either end of the original double weapon. The properties of the other end are dormant but not lost; they become active again when the morphing weapon once again becomes a double weapon.
+Prerequisites: Craft Magic Arms and Armor, fabricate.
+Cost to Create: Varies.
+
+NECROTIC FOCUS
+Price: +3 bonus
+Property: Melee weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) necromancy
+Activation: --
+A necrotic focus weapon serves as a channel for your ability drain or energy drain supernatural ability. While wielding it, you deal ability drain or bestow negative levels through it as if attacking with your natural weapons. If a saving throw against the effect is allowed, add the weapon's enhancement bonus to the save DC.
+Prerequisites: Craft Magic Arms and Armor, enervation, spectral hand.
+Cost to Create: Varies.
+
+PARALYTIC BURST
+Price: +2 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) enchantment
+Activation: --
+Whenever you score a critical hit with this weapon, a wave of green energy washes over the target, paralyzing it for 1 round (Will DC 17 negates). This effect activates even if the target is not normally subject to extra damage from critical hits.
+Prerequisites: Craft Magic Arms and Armor, hold monster.
+Cost to Create: Varies.
+
+PARALYZING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) enchantment
+Activation: Swift (command)
+
+## [PDF page 41]
+
+When a paralyzing weapon is activated, the next creature struck by the weapon must succeed on a DC 17 Will save or be paralyzed. Each round on its turn, the target can attempt a new saving throw to end the effect; otherwise, the paralysis lasts for 10 rounds. A paralyzing weapon functions once per day.
+Prerequisites: Craft Magic Arms and Armor, hold monster.
+Cost to Create: Varies.
+
+PARRYING
+Price: +2 bonus
+Property: Weapon
+Caster Level: 15th
+Aura: Strong; (DC 22) enchantment
+Activation: --
+A parrying weapon allows you to discern events an instant into the future, granting you a +1 insight bonus to AC. The weapon makes you so adept at parrying that it grants you a +1 insight bonus on saving throws. The bonuses are granted whenever you hold the weapon, even if you are flat-footed.
+Prerequisites: Craft Magic Arms and Armor, divine protection (SC 70) or defensive precognition (EPH 124).
+Cost to Create: Varies.
+
+POWER STORING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) evocation
+Activation: Free (command)
+A power storing weapon allows a manifester to store a single targeted power of up to 5 power points in the weapon. (The power must have a manifesting time of 1 standard action.) Any time the weapon strikes a creature and the creature takes damage from it, the weapon can manifest the power on that creature if you desire. Once the power is manifested, the weapon is empty, and a manifester can store any other targeted power of up to 5 power points into it. The weapon telepathically whispers to you the name of the power currently stored within it. A randomly generated power storing weapon has a 50% chance to have a power stored in it already.
+Prerequisites: Craft Magic Arms and Armor, manifester level 12th.
+Cost to Create: Varies.
+
+PRECISE
+Price: +1 bonus
+Property: Ranged weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) evocation
+Activation: --
+You can shoot or throw a precise weapon at an opponent engaged in melee without incurring the standard -4 penalty. This benefit does not apply if you already have the Precise Shot feat.
+Prerequisites: Craft Magic Arms and Armor, Precise Shot.
+Cost to Create: Varies.
+
+PRISMATIC BURST
+Price: +30,000 gp
+Property: Weapon
+Caster Level: 13th
+Aura: Strong; (DC 21) evocation
+Activation: --
+Whenever you score a successful critical hit with this weapon, multicolored light springs from the gems and cascades along its blade or head, subjecting the target to a prismatic spray effect (save DC 20; see spell description, PH 264). This effect activates even if the target is not normally subject to extra damage from critical hits.
+Prerequisites: Craft Magic Arms and Armor, prismatic spray.
+Cost to Create: Varies.
+
+PROFANE
+Price: +1 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 17) necromancy
+Activation: Standard (command)
+By speaking the appropriate command word, you can sheathe a profane weapon in crackling black negative energy. If you have no Constitution score, this energy does not harm you; otherwise you take 1 point of Constitution damage for each round that you hold the weapon while the effect is activated. This effect lasts until you speak another command word to end it. While activated, a profane weapon deals an extra 1d6 points of damage to any living target (or 2d6 points against a good outsider) on a successful hit. Also, it is treated as evil-aligned for the purpose of overcoming damage reduction.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, inflict light wounds.
+Cost to Create: Varies.
+
+PROFANE BURST [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) necromancy
+Activation: Standard (command) and --
+Synergy Prerequisite: Profane
+A profane burst weapon functions as a profane weapon (see above). In addition, the weapon explodes with negative energy on a successful critical hit, dealing extra negative energy damage as set out in the table below. (This effect activates even if the target is not normally subject to extra damage from critical hits.) A profane burst weapon deals even more damage to good outsiders on a successful critical hit. This burst does not harm you or any creature other than the target if you are undead; otherwise, you take 1d4 points of Constitution damage (or Charisma damage if you have no Constitution score). This is a continuous effect and requires no activation. Even if the weapon has not been activated to deal extra damage because of the profane property, the weapon still deals its extra negative energy damage on a successful critical hit.
+
+## [PDF page 42]
+
+Critical Multiplier / Extra Damage / Good Outsider Extra Damage: x2 1d10 2d10; x3 2d10 4d10; x4 3d10 6d10
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, inflict critical wounds.
+Cost to Create: Varies.
+
+PSIBANE
+Price: +2 bonus
+Property: Weapon
+Caster Level: 15th
+Aura: Strong; (DC 22) divination
+Activation: --
+A psibane weapon is crafted to oppose psionic beings. When used against any creature that has the psionic subtype (EPH 183), its effective enhancement bonus is 2 higher than its actual enhancement bonus (so a +1 psibane longsword instead has a +3 enhancement bonus against psionic foes). It deals an extra 2d6 points of damage against psionic opponents. A psibane weapon bestows one negative level on any psionic creature attempting to wield it. This negative level remains as long as the weapon is in hand and disappears when the weapon is no longer wielded. This negative level never results in actual level loss, but it cannot be overcome in any way while the weapon is wielded.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, dispel magic or bend reality (EPH 80).
+Cost to Create: Varies.
+
+PSYCHIC
+Price: +2 bonus
+Property: Weapon
+Caster Level: 17th
+Aura: Strong; (DC 23) no school
+Activation: --
+A psychic weapon's power depends on its wielder. It gains an enhancement bonus based on the wielder's current power point reserve, as shown on the table below. (This benefit doesn't stack with the weapon's normal enhancement bonus.) The weapon's enhancement bonus decreases (to a minimum of +1) as the wielder spends power points, and it increases whenever the wielder gains enough power points (by any means) to put his power point reserve into the next higher category.
+Power Point Reserve / Enhancement Bonus: 0* +1; 1-29 +2; 30-79 +3; 80-129 +4; 130 or higher +5. (*Includes any wielder without power points.)
+Prerequisites: Craft Magic Arms and Armor, wish or reality revision (EPH 128).
+Cost to Create: Varies.
+
+PSYCHOKINETIC
+Price: +1 bonus
+Property: Weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) evocation
+Activation: Standard (command)
+Upon command, a psychokinetic weapon glows from the inside with lethal psionic energy. Such a weapon deals an extra 1d4 points of force damage on a successful hit. This extra damage is not affected by damage reduction, and it affects incorporeal creatures even if the attack would normally miss due to the incorporeal miss chance. The energy does not harm you while wielding the weapon.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, blast of force (SC 31) or concussive blast (EPH 85).
+Cost to Create: Varies.
+
+PSYCHOKINETIC BURST [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) evocation
+Activation: Standard (command) and --
+Synergy Prerequisite: Psychokinetic
+This weapon functions as a psychokinetic weapon (see above). In addition, the weapon releases a blast of destructive psionic energy on a successful critical hit, dealing extra force damage as set out in the table below. (This effect activates even if the target is not normally subject to extra damage from critical hits.) This burst does not harm you or any creature other than the target. This is a continuous effect and requires no activation. Even if the weapon has not been activated to deal extra damage because of the psychokinetic property, the weapon still deals its extra force damage on a successful critical hit.
+Critical Multiplier / Extra Force Damage: x2 1d6; x3 2d6; x4 3d6
+This extra damage is not affected by damage reduction, and it affects incorporeal creatures even if the attack would normally miss due to the incorporeal miss chance.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, blast of force (SC 31) or concussive blast (EPH 85).
+Cost to Create: Varies.
+
+QUICK LOADING
+Price: +1 bonus
+Property: Crossbow
+Caster Level: 9th
+Aura: Moderate; (DC 19) conjuration
+Activation: Free (manipulation) or move (manipulation); see text
+A quick loading crossbow accesses an extradimensional space that can hold up to 100 bolts, allowing you to reload the crossbow more rapidly than normal. Reloading a quick loading hand or light crossbow is a free action (allowing a character with multiple attacks to use his full attack rate), and reloading a quick loading heavy crossbow is a move action. Different types of bolts can be held in the extradimensional space, and you can select freely from these when reloading the crossbow. Adding or removing a bolt
+
+## [PDF page 43]
+
+by hand from an extradimensional space requires a move (manipulation) action.
+Prerequisites: Craft Magic Arms and Armor, Leomund's secret chest, shrink item.
+Cost to Create: Varies.
+
+RESOUNDING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) enchantment
+Activation: --
+A resounding weapon emits a deep, ringing chime each time it successfully hits a target. The sound carries over the din of battle, encouraging your allies. When you strike a foe with a resounding weapon, allies (including you) within 30 feet gain a +1 morale bonus on attack rolls and saves against fear effects for 1 round.
+Prerequisites: Craft Magic Arms and Armor, bless.
+Cost to Create: Varies.
+
+REVEALING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) evocation
+Activation: --
+Any opponent struck by a weapon that has this property is outlined in magical flames, as the faerie fire spell, for 1 round.
+Prerequisites: Craft Magic Arms and Armor, faerie fire.
+Cost to Create: Varies.
+
+SACRED
+Price: +1 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) conjuration
+Activation: Standard (command)
+By speaking the appropriate command word, you can sheathe a sacred weapon in luminous positive energy. If you are not undead, this energy does not harm you; otherwise, you take 1 point of Charisma damage for each round that you hold the weapon. This effect lasts until you speak another command word to end it. While activated, a sacred weapon deals an extra 1d6 points of damage to any undead target (or 2d6 points against an evil outsider) on a successful hit. Also, it is treated as good-aligned for the purpose of overcoming damage reduction.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, cure light wounds.
+Cost to Create: Varies.
+
+SACRED BURST [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) conjuration
+Activation: --
+Synergy Prerequisite: Sacred
+A sacred burst weapon functions as a sacred weapon (see above). In addition, the weapon explodes with positive energy on a successful critical hit, dealing extra positive energy damage to creatures as set out in the table below. (This effect activates even if the target is not normally subject to extra damage from critical hits.) A sacred burst weapon deals even more damage to evil outsiders on a successful critical hit. This burst does not harm you or any creature other than the target unless you are undead; if you are, you take 1d4 points of Charisma damage from the burst. This is a continuous effect and requires no activation. Even if the weapon has not been activated to deal extra damage because of the sacred property, the weapon still deals its extra positive energy damage on a successful critical hit.
+Critical Multiplier / Extra Damage / Evil Outsider Extra Damage: x2 1d10 2d10; x3 2d10 4d10; x4 3d10 6d10
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, cure critical wounds.
+Cost to Create: Varies.
+
+SCREAMING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) evocation
+Activation: Standard (command)
+Upon command, this weapon begins to vibrate gently, though it emits no actual sound in this mode. Whenever an activated screaming weapon hits, it produces a high-pitched sound and deals an extra 1d4 points of sonic damage to the target. This noise is unpleasant, but it has no adverse effect upon any creatures other than the one struck. The ability of a screaming weapon to deal extra sonic damage is negated in any area of magical silence. Screaming weapons have no additional adverse effect on creatures with unusually acute hearing, although such creatures tend to dislike them.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, shout or sound burst.
+Cost to Create: Varies.
+
+SCREAMING BURST [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 12th
+Aura: Strong; (DC 21) evocation
+Activation: --
+Synergy Prerequisite: Screaming
+A screaming burst weapon functions as a screaming weapon (see above). In addition, the weapon explodes with sonic energy on a successful critical hit, dealing extra sonic damage as set out in the table below. (This effect activates even if the target is not normally subject to extra damage from critical hits.) This burst does not harm you or any creature other than the target. This is a continuous effect and requires no activation. Even if the weapon has not been activated to deal extra damage because of the screaming property, the weapon still deals its extra sonic damage on a successful critical hit.
+
+## [PDF page 44]
+
+Critical Multiplier / Extra Sonic Damage: x2 1d8; x3 2d8; x4 3d8
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, shout or sound burst.
+Cost to Create: Varies.
+
+SHADOWSTRIKE
+Price: +5,000 gp
+Property: Weapon
+Caster Level: 15th
+Aura: Strong; (DC 22) illusion
+Activation: Swift (mental)
+A shadowstrike weapon can reach through your own shadow to catch foes off guard. Once per day, you can activate the property to add 5 feet to the weapon's reach for a single attack. The target is denied its Dexterity bonus to AC for this attack.
+Prerequisites: Craft Magic Arms and Armor, shadow conjuration.
+Cost to Create: 2,500 gp, 200 XP, 5 days.
+
+SHATTERMANTLE
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) divination
+Activation: --
+A shattermantle weapon damages a foe's spell resistance. Each time the weapon strikes a foe that has spell resistance, the value of that spell resistance is reduced by 2 for 1 round. The penalties for multiple hits during the same round stack. For example, if you succeed on three attacks in the same round against the same foe, that foe's spell resistance is reduced by 6 until the beginning of your next turn.
+Prerequisites: Craft Magic Arms and Armor, assay spell resistance (SC 17).
+Cost to Create: Varies.
+
+SHIELDING
+Price: +1 bonus
+Property: Light melee weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) transmutation
+Activation: Swift (command)
+A shielding weapon is most often employed as an off-hand weapon. Activating a shielding weapon transforms it into a heavy steel shield, with the same enhancement bonus as the weapon itself (both for AC and when making shield bash attacks).
+Prerequisites: Craft Magic Arms and Armor, animate objects, shield.
+Cost to Create: Varies.
+
+SIZING
+Price: +5,000 gp
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) transmutation
+Activation: Swift (command)
+Activating a sizing weapon changes its size category to any other that you desire.
+Prerequisites: Craft Magic Arms and Armor, shrink item.
+Cost to Create: 2,500 gp, 200 XP, 5 days.
+
+SLOW BURST
+Price: +5,000 gp
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: --
+A chill aura numbs this weapon's victim when you strike true. Whenever you score a critical hit with this weapon, the target is slowed (as the slow spell) for 3 rounds (Will DC 14 negates). This effect activates even if the creature struck is not normally subject to extra damage from critical hits.
+Prerequisites: Craft Magic Arms and Armor, slow.
+Cost to Create: 2,500 gp, 200 XP, 5 days.
+
+SOULBOUND
+Price (Item Level): +1 bonus
+Property: Weapon
+Caster Level: 6th
+Aura: Moderate; (DC 18) abjuration
+Activation: Swift (mental)
+A soulbound weapon serves as a receptacle for your essentia, much as a soulmeld does. Every point of essentia invested in the weapon increases its enhancement bonus on attack rolls and damage rolls by 1, up to a maximum enhancement bonus of +3. Each soulbound weapon has an essentia capacity. The maximum number of essentia points that can be invested in it equals this value or your normal essentia capacity (see Table 2-1: Essentia Capacity, Magic of Incarnum 19), whichever is lower. A soulbound weapon has a maximum essentia capacity of 2.
+Chakra Bind: A soulbound weapon grants bonuses when it is bound to a chakra, as described below. These effects function continuously, with no need for activation. See Binding Items to Chakras (MoI 108) for more information.
+Arms: Binding a soulbound weapon to your arms chakra grants you a +2 insight bonus on rolls made to confirm critical hits with the weapon.
+Brow: Binding a soulbound weapon to your brow chakra allows you, if you miss an attack because of concealment, to reroll your miss chance percentile roll one time to see if you actually hit. This benefit is usable once per round.
+Hands: Binding a soulbound weapon to your hands chakra grants you a +2 insight bonus on initiative checks while the weapon is held.
+Prerequisites: Craft Magic Arms and Armor, magic weapon, essentia pool 2.
+Cost to Create: Varies.
+
+SOULBOUND, GREATER [SYNERGY]
+Price (Item Level): +2 bonus
+Caster Level: 18th
+Aura: Strong; (DC 24) abjuration
+This property functions as the soulbound property (see above), except a greater soulbound weapon has a maximum essentia capacity of 4 (instead of 2), for a maximum enhancement bonus of +5 (instead of +3).
+Prerequisites: Craft Magic Arms and Armor, magic weapon, essentia pool 4.
+
+## [PDF page 45]
+[two-column OCR interleave on this page; the five entries below are rebuilt from it]
+
+SOULBREAKER [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 17th
+Aura: Strong; (DC 23) necromancy
+Activation: --
+Synergy Prerequisite: Enervating
+This weapon functions as an enervating weapon (see page 34). However, a negative level gained from an attack from a soulbreaker weapon doesn't fade [OCR: "after 1 hour" lost; the text reads] "...24h..." [garbled; delay figure uncertain]: if the negative level or levels have not been purged, the subject must succeed on a DC 18 Fortitude save for each negative level or lose a character level.
+Prerequisites: Craft Magic Arms and Armor, energy drain.
+Cost to Create: Varies.
+
+SOULDRINKING [SYNERGY]
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) necromancy
+Activation: --
+Synergy Prerequisite: Enervating
+This weapon functions as an enervating weapon (see page 34). In addition, when a souldrinking weapon scores a critical hit on a living creature, it grants you 5 temporary hit points and a +2 morale bonus on melee damage rolls. The temporary hit points don't stack with temporary hit points from any other source. This effect fades after 10 minutes.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch.
+Cost to Create: Varies.
+
+SPELLSTRIKE
+[heading and price line lost to column interleave; name and +1 inferred from surrounding text, OCR-uncertain]
+Property: Weapon
+Caster Level: 8th
+Aura: Moderate; (DC 19) abjuration
+Activation: Free (mental)
+A spellstrike weapon allows you to transfer some or all of the weapon's enhancement bonus, using it as a bonus on your saving throws against spells or spell-like abilities. As a free action, you choose how to allocate the weapon's enhancement bonus at the start of your turn before using the weapon, and the effect on saving throws lasts until the start of your next turn.
+Prerequisites: Craft Magic Arms and Armor, resistance.
+Cost to Create: Varies.
+
+STUNNING [SYNERGY]
+Price: +1 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) enchantment
+Activation: --
+Synergy Prerequisite: Screaming
+A stunning weapon functions as a screaming weapon (see page 42). In addition, on a successful critical hit with a stunning weapon, the target must succeed on a DC 17 Fortitude save or be stunned for 1 round.
+Projectile weapons bestow this property on their ammunition.
+Prerequisites: Craft Magic Arms and Armor, hold monster.
+Cost to Create: Varies.
+
+STUNNING SURGE
+Price: +1 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) enchantment
+Activation: Swift (command)
+On a successful melee attack, you can command this weapon to emit a surge of magical energy. Unless the target succeeds on a Fortitude save (DC 10 + 1/2 your character level + your Cha modifier), it is stunned for [duration garbled in OCR; read as 1 round]. This ability is usable a number of times per day equal to 1 + your Charisma bonus (if any). Once you activate this ability, it can't be activated by any other creature until the following day.
+Prerequisites: Craft Magic Arms and Armor, hold monster.
+Cost to Create: Varies.
+
+STYGIAN
+Price: +1 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) necromancy
+Activation: Swift (mental)
+When you activate a stygian weapon, the next successful attack you make before the end of your turn bestows one negative level on the target in addition to dealing normal damage. This negative level lasts for 10 minutes, and thus can't result in a permanent level decrease. A stygian weapon functions three times per day.
+Prerequisites: Craft Magic Arms and Armor, enervation.
+Cost to Create: Varies.
+
+SUNDERING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: --
+A sundering weapon allows you to attack as if you have the Improved Sunder feat, and it deals an extra 1d6 points of damage on a sunder attempt.
+Prerequisites: Craft Magic Arms and Armor, Improved Sunder, weapon of impact (SC 237) or metaphysical weapon (EPH 118).
+Cost to Create: Varies.
+
+SWEEPING
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) transmutation
+Activation: --
+
+## [PDF page 46]
+
+This property grants you a +2 competence bonus on any Strength check made to trip an opponent with the weapon.
+Prerequisites: Craft Magic Arms and Armor, bull's strength.
+Cost to Create: Varies.
+
+TERRAN
+Price: +2 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) evocation
+Activation: --
+A terran weapon automatically overcomes the damage reduction of any creature that has the air subtype. In addition, the weapon deals an extra 2d6 points of damage against such targets. A terran weapon also bestows one negative level on any creature that has the air subtype and attempts to wield it. The negative level remains as long as the weapon is in hand and disappears when it is no longer held. This negative level never results in actual level loss, but it cannot be overcome in any way (including restoration spells) while the weapon is wielded.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, earth subtype.
+Cost to Create: Varies.
+
+TRANSMUTING
+Price: +2 bonus
+Property: Weapon
+Caster Level: 13th
+Aura: Strong; (DC 21) transmutation
+Activation: --
+When you score a successful hit with a transmuting weapon against a creature that has damage reduction, that attack is resolved normally. At the start of your next turn, however, the weapon transforms, taking on the properties required to overcome that creature's damage reduction. Once so changed, the weapon overcomes the designated type of damage reduction for 10 rounds, or until you strike a creature that has a different type of damage reduction. In this case, the weapon transforms in the same manner to overcome that damage reduction instead. If the target has multiple types of damage reduction, the weapon overcomes all of them. If the creature gains a new type of damage reduction after initially being struck (from changing its form, for example), the weapon must change again before it can overcome the new type. A transmuting weapon does not gain any other benefit of the properties it takes on, and it always deals normal damage.
+Prerequisites: Craft Magic Arms and Armor, fabricate.
+Cost to Create: Varies.
+
+UNHOLY SURGE [SYNERGY]
+Price: +1 bonus
+Property: Melee weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) evocation
+Activation: -- and swift (command)
+Synergy Prerequisite: Unholy
+This weapon functions as an unholy weapon (DMG 226). This is a continuous effect and requires no activation. In addition, on a successful melee attack with an unholy surge weapon, you can command it to emit a burst of unholy energy, which deals an extra 3d6 points of damage to a good-aligned target. If used against a non-good creature, it deals no additional damage, and that use of the ability is wasted. This ability is usable a number of times per day equal to 1 + your Cha bonus (if any). Once you activate this property, it can't be activated by any other creature until the following day.
+Prerequisites: Craft Magic Arms and Armor, unholy blight or unholy word.
+Cost to Create: Varies.
+
+VAMPIRIC
+Price: +2 bonus
+Property: Melee weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) necromancy
+Activation: --
+A vampiric weapon deals an extra 1d6 points of damage to any living creature it hits, and you heal damage equal to this amount.
+Prerequisites: Craft Magic Arms and Armor, vampiric touch.
+Cost to Create: Varies.
+
+VANISHING
+Price: +8,000 gp
+Property: Melee weapon
+Caster Level: 10th
+Aura: Moderate; (DC 20) conjuration
+Activation: Swift (command)
+A vanishing weapon allows you to travel short distances instantaneously. Once per day, after a successful melee attack, you can transport yourself and any equipment you are carrying to any spot within 60 feet by activating the weapon. This movement otherwise conforms to the limitations given for the dimension door spell (PH 221).
+Prerequisites: Craft Magic Arms and Armor, dimension door.
+Cost to Create: 4,000 gp, 320 XP, 8 days.
+
+VENOMOUS
+Price: +1 bonus
+Property: Weapon
+Caster Level: 9th
+Aura: Moderate; (DC 19) necromancy
+Activation: Swift (command)
+When activated, a venomous weapon coats itself in injury poison (Fort DC 14, 1d4 Str/1d4 Str), which lasts for 1 minute or until your next successful attack with the weapon, whichever comes first. A venomous weapon functions three times per day.
+Projectile weapons bestow this property on their ammunition.
+Prerequisites: Craft Magic Arms and Armor, poison.
+Cost to Create: Varies.
+
+## [PDF page 47]
+
+WARNING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 7th
+Aura: Moderate; (DC 18) transmutation
+Activation: --
+A warning weapon grants you a +5 insight bonus on initiative checks as long as it is held.
+Prerequisites: Craft Magic Arms and Armor, cat's grace.
+Cost to Create: Varies.
+
+WEAKENING
+Price: +1 bonus
+Property: Weapon
+Caster Level: 5th
+Aura: Faint; (DC 17) necromancy
+Activation: --
+When you score a critical hit with a weakening weapon, the target takes a -4 penalty to its Strength score (to a minimum score of 1) for 10 minutes. Multiple strikes aren't cumulative.
+Projectile weapons bestow this property upon their ammunition.
+Prerequisites: Craft Magic Arms and Armor, ray of enfeeblement.
+Cost to Create: Varies.
+
+WHIRLING
+Price: +1 bonus
+Property: Slashing melee weapon
+Caster Level: 11th
+Aura: Moderate; (DC 20) transmutation
+Activation: Full-round (mental)
+Three times per day, you can use this weapon to make a whirling attack that has a chance of striking all nearby opponents. Instead of making your regular attacks, you instead make one melee attack at your full attack bonus against each opponent within reach of the weapon. This property otherwise functions like the Whirlwind Attack feat.
+Prerequisites: Craft Magic Arms and Armor, haste.
+Cost to Create: Varies.

@@ -20,6 +20,15 @@ BOOKS = {
         "names_from": "dmg",
         "degraded": {"Frost", "Ki Focus", "Dancing"},  # OCR figure still doubtful in the packet
     },
+    "mic": {
+        "packet": os.path.join(HERE, "sources", "mic_weapon_properties_pdf29-47.txt"),
+        "source_book": "D&D 3.5e/Magic and Items/Magic Item Compendium.md",
+        "names_from": "mic",
+        "heading": "upper",
+        "extra_names": ["Arcane Might", "Changeling", "Dislocator, Great", "Dispelling, Greater", "Fleshgrinding",
+                        "Quick Loading", "Soulbreaker", "Souldrinking", "Spellstrike", "Stunning", "Stunning Surge"],  # headings are ALL CAPS, optional trailing [SYNERGY]
+        "degraded": {"Soulbreaker", "Souldrinking", "Spellstrike", "Stunning", "Stunning Surge"},
+    },
 }
 PAGE = re.compile(r"^## \[PDF page (\d+)\]\s*$")
 
@@ -56,6 +65,7 @@ def cid(book, page, name):
 
 def harvest(key, spec, state):
     names = [e["name"] for e in json.load(open(WORKLIST, encoding="utf-8"))[spec["names_from"]]]
+    names += [n for n in spec.get("extra_names", []) if n not in names]  # drafted but absent from the worklist
     lines = open(spec["packet"], encoding="utf-8").read().splitlines()
     heads, page = {}, None  # name -> (line index, pdf page)
     for i, ln in enumerate(lines):
@@ -63,7 +73,12 @@ def harvest(key, spec, state):
         if m:
             page = int(m.group(1)); continue
         for n in names:
-            if ln.startswith(n + ":") and n not in heads:
+            if n in heads:
+                continue
+            if spec.get("heading") == "upper":
+                if re.sub(r"\s*\[SYNERGY\]\s*$", "", ln.strip()) == n.upper():
+                    heads[n] = (i, page)
+            elif ln.startswith(n + ":"):
                 heads[n] = (i, page)
     missing = [n for n in names if n not in heads]
     order = sorted(heads.items(), key=lambda kv: kv[1][0])
