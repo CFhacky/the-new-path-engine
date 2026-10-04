@@ -1,0 +1,389 @@
+SOURCE PACKET: World of Warcraft weapon enchants, Classic through Warlords of Draenor (profession enchants, shaman imbues, death knight runeforging).
+GATHERED: 2026-10-04 by web search (3+ queries) and full-page fetches of warcraft.wiki.gg pages; one page per enchant plus the WeaponEnchantID roster page (62 IDs) and the Enchantments-by-slot page (truncated after the Hands section).
+FIDELITY: WebFetch returns a small model's extraction of each page, not a byte-exact copy. Tooltips below are quoted as returned; every number is as returned; anything the page did not give is marked NOT PRESENT and is never filled from memory. "Secondary" marks a figure taken from a search-result snippet of another page (stated per entry). The WoD marks came from the truncated slot page only (their own pages returned 404): flagged degraded.
+SCOPE: effect and proc enchants. Plain flat-stat enchants (Agility, Strength, Spellpower, Striking and the like), cosmetic and test IDs are excluded. Crusader is already ratified (Registry section 2) and is not repeated.
+Format: "=== NAME ===", then key: value lines. Blocks end at the next "===".
+
+=== Fiery Weapon ===
+group: Profession, Classic
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Fiery_Weapon
+tooltip: "Permanently enchant a melee weapon to often strike for 34 additional Fire damage."
+facts: 6 PPM; enchanting skill 265-300; cannot be applied to items higher than level 136; reagents 1 Essence of Fire, 4 Large Brilliant Shard.
+gaps: patch changes NOT PRESENT.
+
+=== Lifestealing ===
+group: Profession, Classic
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Lifestealing
+tooltip: "Permanently enchant a melee weapon to often steal life from the enemy and give it to the wielder. Has a reduced effect for players above level 60."
+facts: 6 ppm; item level cap 600; patch 1.9.0 (2006-01-03) changed from fire damage to shadow damage; removed in patch 5.0.4. Secondary (forum comment via search): steals 30 life per proc, deals shadow damage, can be resisted.
+gaps: damage and heal amounts are secondary only.
+
+=== Icy Chill ===
+group: Profession, Classic
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Icy_Chill
+tooltip: "Permanently enchant a melee weapon to often chill the target, reducing their movement and attack speed. Has a reduced effect for players above level 60."
+facts: enchanting skill 285-300; item level cap 136; reagents 4 Large Brilliant Shard, 1 Essence of Water, 1 Essence of Air, 1 Icecap. Secondary (wiki Icy Chill spell page via search): frost debuff, movement slowed by 30%, time between attacks increased by 25%, for 5 seconds. Patch 2.3.2 changed functionality (no numbers given).
+gaps: proc rate or PPM NOT PRESENT (page notes it is unclear whether PPM or chance on hit).
+
+=== Unholy Weapon ===
+group: Profession, Classic
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Unholy_Weapon
+tooltip: "Permanently enchant a melee weapon to often inflict a curse on the target, inflicting Shadow damage and reducing their melee damage."
+facts: enchanting skill 295-300; item level cap 136; reagents 4 Essence of Undeath, 4 Large Brilliant Shard; patch 3.3.0 (2009-12-08): now inflicts Shadow damage in addition to its original effect. Secondary (search): the curse reduces the target's damage by 15 and lasts 12 seconds.
+gaps: proc rate NOT PRESENT; shadow damage amount NOT PRESENT.
+
+=== Demonslaying ===
+group: Profession, Classic
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Demonslaying
+tooltip: "Permanently enchant a melee weapon to have a chance of stunning and doing heavy damage to demons. Causes your weapon to become engulfed in flames, much like Fiery Weapon."
+facts: enchanting skill 230-290; item level cap 136; reagents 1 Elixir of Demonslaying, 2 Rich Illusion Dust, 2 Large Brilliant Shard.
+gaps: proc rate, stun length and damage amounts NOT PRESENT.
+
+=== Mongoose ===
+group: Profession, Burning Crusade
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Mongoose
+tooltip: "Permanently enchant a melee weapon to occasionally increase Agility by 60 and haste by 15. Cannot be applied to items higher than level 600."
+facts: current page values (scaled down from the original). Secondary (search, original TBC): +120 Agility and 30 haste rating, lasts 15 seconds, proc most likely normalized to 1 PPM. Reagents 40 Arcane Dust, 8 Greater Planar Essence, 10 Large Prismatic Shard, 6 Void Crystal.
+gaps: PPM NOT PRESENT on the page itself.
+
+=== Executioner ===
+group: Profession, Burning Crusade
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Executioner
+tooltip: "Permanently enchant a melee weapon to occasionally grant you 60 critical strike rating."
+facts: patch 4.0.1 (2010-10-12) changed from armor penetration to critical strike rating; patch 3.3.3 (2010-03-23) only one instance of the effect active at a time; item level cap 600. Secondary (search, original): ignores 840 armor for 15 seconds. Reagents 6 Void Crystal, 10 Large Prismatic Shard, 6 Greater Planar Essence, 30 Arcane Dust, 3 Elixir of Major Strength.
+gaps: proc rate NOT PRESENT.
+
+=== Spellsurge ===
+group: Profession, Burning Crusade
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Spellsurge
+tooltip: "Permanently enchant a melee weapon to make your spells sometimes restore 100 mana to nearby party members. Cannot be applied to items higher than level 600."
+facts: 3% chance on spell cast to restore 100 mana to all party members over 10 seconds; item level cap 600; reagents 12 Large Prismatic Shard, 10 Greater Planar Essence, 20 Arcane Dust.
+gaps: patch changes NOT PRESENT.
+
+=== Battlemaster ===
+group: Profession, Burning Crusade
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Battlemaster
+tooltip: "Permanently enchant a melee weapon to occasionally heal nearby party members for 76 to 126 when attacking in melee."
+facts: "Proc rate is 1 PPM melee only" (testing data approximately 1.5-1.8% per swing); item level cap 600; reagents 8 Void Crystal, 8 Large Prismatic Shard, 2 Primal Water.
+gaps: patch changes NOT PRESENT.
+
+=== Deathfrost ===
+group: Profession, Burning Crusade
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Deathfrost
+tooltip: "Permanently enchant a melee weapon to cause your damaging spells and melee weapon hits to occasionally inflict additional Frost damage and slow the target."
+facts: spells 50% proc, 25-second internal cooldown; melee 10-12.5% proc, no internal cooldown; item level cap 600; slow does not work on targets level 73 or higher (patch 3.0.3); patch 2.4.0 added; patch 2.4.3 now procs off DoTs including Consecration; reagents 2 Primal Shadow, 2 Primal Water.
+gaps: frost damage amount, slow amount and duration NOT PRESENT.
+
+=== Berserking ===
+group: Profession, Wrath of the Lich King
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Berserking
+tooltip: "Permanently enchant a melee weapon to sometimes increase your attack power by 400, but at the cost of reduced armor."
+facts: reagents 12 Infinite Dust, 4 Greater Cosmic Essence, 4 Dream Shard, 10 Abyss Crystal, Runed Copper Rod (tool).
+gaps: proc rate, duration, armor reduction amount, item level cap NOT PRESENT.
+
+=== Black Magic ===
+group: Profession, Wrath of the Lich King
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Black_Magic
+tooltip: "Permanently enchant a melee weapon to cause your harmful spells to sometimes increase haste by 62."
+facts: approximately 35% proc, 35-second internal cooldown; item level cap 600; patch 3.3.0 (2009-12-08) changed from inflicting damage over time on the target to increasing the caster's haste rating; patch 3.0.8 reagents changed to 6 Greater Cosmic Essence, 6 Dream Shard, 6 Abyss Crystal.
+gaps: duration NOT PRESENT.
+
+=== Blade Ward ===
+group: Profession, Wrath of the Lich King
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Blade_Ward
+tooltip: "Permanently enchant a weapon to sometimes grant Blade Warding when striking an enemy. Blade Warding increases your parry rating by 100 and inflicts 286 to 315 damage on your next parry. Lasts 10 sec."
+facts: approximately 5% proc chance per hit; item level cap 600; reagents 4 Abyss Crystal, 8 Greater Cosmic Essence, 1 Titansteel Bar.
+gaps: patch changes NOT PRESENT.
+
+=== Blood Draining ===
+group: Profession, Wrath of the Lich King
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Blood_Draining
+tooltip: "Permanently enchant your weapon to sometimes grant Blood Reserve when striking an enemy or inflicting damage with bleed attacks. When you fall below 35% health, Blood Reserve restores 180 to 219 health. Lasts 20 sec and stacks up to 5 times. Cannot be applied to items higher than level 600."
+facts: patch 3.1.0 (2009-04-14) added; hotfix 2009-05-22 fixed Blood Reserve restoring proper health amounts; reagents 40 Infinite Dust, 1 Scarlet Ruby, 4 Abyss Crystal.
+gaps: proc rate NOT PRESENT; whether the heal is per stack or total is not stated.
+
+=== Windfury Weapon ===
+group: Shaman imbue
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Windfury_Weapon
+tooltip: "Imbue your main-hand weapon with the element of Wind for 1 hour. Each main-hand attack has a 25% chance to trigger two extra attacks, dealing (27.945% of Attack power) Physical damage each."
+facts: current retail version (patch 12.0.0); 25% proc; no internal cooldown but cannot proc off itself; duration 1 hour; many damage retunes 9.0.2 to 12.0.0.
+gaps: the Classic-era tooltip was not retrieved.
+
+=== Flametongue Weapon ===
+group: Shaman imbue
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Flametongue_Weapon
+tooltip: "Imbue your weapon with the element of Fire for 1 hour, causing each of your attacks to deal (3.96% of Attack Power) additional Fire damage." (Enhancement); Elemental: "increasing the damage of your Fire spells by 5.0%."
+facts: current retail version; duration 1 hour; patch 5.0.4 raised duration 30 to 60 minutes; patch 5.0.4 additional magic damage 5% to 7%.
+gaps: Classic-era tooltip not retrieved; proc NOT PRESENT (it is an every-attack rider).
+
+=== Frostbrand Weapon ===
+group: Shaman imbue
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Frostbrand_Weapon
+tooltip: "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 48 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 5 minutes."
+facts: Classic version; duration 5 minutes (buff), 8 seconds (debuff); patch 6.0.2 removed; patch 3.0.2 snare increased to 50% from 25%; patch 2.0.1 now applies to both main-hand and off-hand weapons.
+gaps: proc chance NOT PRESENT.
+
+=== Rockbiter Weapon ===
+group: Shaman imbue
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rockbiter_Weapon
+tooltip: "Imbue the Shaman's weapon, increasing melee attack power by 50 and allowing melee attacks to cause additional threat when using that weapon."
+facts: Classic version; duration 5 minutes; patch 2.0.1 changed from flat attack power bonus to damage proc and duration to 30 minutes; patch 6.0.2 removed.
+gaps: none beyond Classic scope.
+
+=== Earthliving Weapon ===
+group: Shaman imbue
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Earthliving_Weapon
+tooltip: "Imbue your weapon with the element of Earth for 1 hour. Your Riptide, Healing Wave, Healing Surge, and Chain Heal healing a 20% chance to trigger Earthliving on the target, healing for (138.915% of Spell power) over 6 sec."
+facts: current retail version; 20% proc; 1 hour imbue, 6 second heal over time; patch 11.0.2 HoT duration 12 to 6 seconds and healing +75%.
+gaps: Classic-era version not retrieved.
+
+=== Rune of Razorice ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_Razorice
+tooltip: "Engrave your weapon with a rune that causes (1.127% of Attack power) extra weapon damage as Frost damage and increases enemies' vulnerability to your Frost attacks by 3%, stacking up to 5 times."
+facts: level 8, cast time 5 seconds; debuff Razorice: Frost damage taken from the Death Knight's abilities +3% per stack, 20 seconds, max 5 stacks; patch 3.3.3 changed from 10 stacks of 1% to 5 stacks of 2%.
+gaps: proc NOT PRESENT (it is an every-hit effect).
+
+=== Rune of the Fallen Crusader ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_the_Fallen_Crusader
+tooltip: "Affixes your rune weapon with a rune that has a chance to heal you for 4% and increase total Strength by 15% for 15 sec. Modifying your rune weapon requires a Rune Forge in Ebon Hold."
+facts: level 8, cast time 5 seconds; duration 15 seconds; patch 11.0.2 heal 6% to 4%; patch 7.0.3 Strength 15% (from 20%), heal 6% (from 3%); patch 3.1.0 Strength reduced to 15%, proc chance doubled. Named in the Affix Registry (Crusader, section 2) as the percent-scaled sibling.
+gaps: proc rate NOT PRESENT.
+
+=== Rune of Cinderglacier ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_Cinderglacier
+tooltip: "Affixes your rune weapon with a rune that has a chance to increase the damage by 20% of your next 2 spells that deal Frost or Shadow damage. Lasts 30 sec."
+facts: spell ID 53341; duration 30 seconds; patch 3.0.2 added; patch 6.0.2 removed.
+gaps: proc rate NOT PRESENT.
+
+=== Rune of Swordbreaking ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_Swordbreaking
+tooltip: "Affixes your one-handed rune weapon with a rune that increases Parry chance by 2% and reduces the duration of Disarm effects by 50%."
+facts: level 63; cast time 5 seconds; patch 5.1.0 disarm reduction 60% to 50%; patch 4.0.6 50% to 60%; patch 3.0.2 added; removed 6.0.2.
+gaps: none.
+
+=== Rune of Swordshattering ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_Swordshattering
+tooltip: "Affixes your two-handed rune weapon with a rune that increases Parry chance by 4% and reduces the duration of Disarm effects by 50%."
+facts: level 63; same patch history as Swordbreaking.
+gaps: none.
+
+=== Rune of Spellbreaking ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_Spellbreaking
+tooltip: "Affixes your one-handed rune weapon with a rune that deflects 2% of all spell damage and reduces the duration of Silence effects by 50% (not cumulative with additional Silence duration reduction)."
+facts: level 57; patch 3.2.0 now reduces damage from Holy spells; removed 7.0.3.
+gaps: none.
+
+=== Rune of Spellshattering ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_Spellshattering
+tooltip: "Affixes your two-handed rune weapon with a rune that deflects 4% of all spell damage and reduces the duration of Silence effects by 50%."
+facts: level 57; cast time 5 seconds; removed 7.0.3.
+gaps: none.
+
+=== Rune of the Stoneskin Gargoyle ===
+group: Death knight runeforging
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Rune_of_the_Stoneskin_Gargoyle
+tooltip: "Engrave your weapon with a rune that increases Armor by 5% and all stats by 5%." (current)
+facts: level 8; cast time 5 seconds; patch 7.0.3 armor 4% to 5%, stat bonus changed from 2% Stamina to 5% all stats; patch 4.0.1 Defense 25 replaced with 4% Armor; patch 3.0.8 added. Page calls it the only recommended runeforge for death knight tanks.
+gaps: original Wrath tooltip not retrieved.
+
+=== Avalanche ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Avalanche
+tooltip: "Permanently enchant a weapon to often deal 74 Nature damage to an enemy damaged by your spells or struck by your melee attacks. Cannot be applied to items higher than level 136."
+facts: patch 4.0.3a (2010-11-23) added; reagents 4 Hypnotic Dust, 6 Greater Celestial Essence.
+gaps: proc rate NOT PRESENT.
+
+=== Windwalk ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Windwalk
+tooltip: "Permanently enchant a weapon to sometimes increase dodge by 99 and movement speed by 10% for 10 sec when striking in melee, stacking with passive movement speed effects."
+facts: no internal cooldown, can refresh itself; item level cap 136; patch 4.0.3a added.
+gaps: proc rate NOT PRESENT.
+
+=== Mending ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Mending
+tooltip: "Permanently enchant a weapon to sometimes heal you when damaging an enemy with spells and melee attacks."
+facts: requires a level 300 or higher item (as returned); patch 4.0.3a added.
+gaps: heal amount and proc rate NOT PRESENT.
+
+=== Landslide ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Landslide
+tooltip: "Permanently enchant a weapon to sometimes increase attack power by 100 for 12 sec when striking in melee."
+facts: 1 PPM, no internal cooldown, can refresh itself; item level cap 600; patch 4.0.3a added; reagents 6 Hypnotic Dust, 5 Greater Celestial Essence, 5 Heavenly Shard, 5 Maelstrom Crystal.
+gaps: none.
+
+=== Power Torrent ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Power_Torrent
+tooltip: "Permanently enchant a weapon to sometimes increase Intellect by 83 for 12 sec when dealing damage or healing with spells."
+facts: internal cooldown 45 seconds; approximately 33% proc; item level cap 136; patch 4.0.3a added.
+gaps: none.
+
+=== Hurricane ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Hurricane
+tooltip: "Permanently enchant a melee weapon to sometimes increase haste by 74 for 12 sec when healing or dealing spell or melee damage."
+facts: internal cooldown 45 seconds; approximately 10-15% proc; item level cap 136; reagents 6 Heavenly Shard, 6 Volatile Air; patch 4.0.3a added.
+gaps: none.
+
+=== Elemental Slayer ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Elemental_Slayer
+tooltip: "Permanently enchant a melee weapon to sometimes disrupt elementals when struck by your melee attacks, dealing Arcane damage and silencing them for 5 sec."
+facts: item level cap 600; reagents 7 Hypnotic Dust, 2 Heavenly Shard, 1 Greater Celestial Essence.
+gaps: proc rate, damage amount NOT PRESENT.
+
+=== Heartsong ===
+group: Profession, Cataclysm
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Heartsong
+tooltip: "Permanently enchant a weapon to sometimes increase Versatility by 30 for 15 sec when healing or dealing damage with spells."
+facts: 20-second internal cooldown, approximately 25% proc; item level cap 136; reagents 9 Hypnotic Dust, 3 Greater Celestial Essence, 3 Heavenly Shard, 3 Volatile Life.
+gaps: none.
+
+=== Dancing Steel ===
+group: Profession, Mists of Pandaria
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Dancing_Steel
+tooltip: "Permanently enchants a melee weapon to sometimes increase your Strength or Agility by 81 when dealing melee damage. Your highest stat is always chosen."
+facts: item level cap 136; patch 5.2.0 15% increased chance to activate; patch 5.0.4 added; reagents 12 Spirit Dust, 10 Sha Crystal.
+gaps: proc rate and duration NOT PRESENT.
+
+=== Elemental Force ===
+group: Profession, Mists of Pandaria
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Elemental_Force
+tooltip: "Permanently enchants a melee weapon to sometimes inflict 58 additional Elemental damage when dealing damage with spells and melee attacks. Cannot be applied to items higher than level 50."
+facts: reagents 3 Mysterious Essence; several squishes; patch 5.0.4 added.
+gaps: proc rate NOT PRESENT.
+
+=== River's Song ===
+group: Profession, Mists of Pandaria
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_River%27s_Song
+tooltip: "sometimes increase your dodge by 65 for 7 sec when dealing melee damage"
+facts: item level cap 136; reagents 1 River's Heart, 50 Mysterious Essence; patch 5.0.4 added.
+gaps: proc rate NOT PRESENT.
+
+=== Jade Spirit ===
+group: Profession, Mists of Pandaria
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Jade_Spirit
+tooltip: "Permanently enchants a melee weapon to sometimes increase your Intellect by 65 when healing or dealing damage with spells. If less than 25% of your mana remains when the effect is triggered, your Versatility will also increase by 30."
+facts: item level cap 136; reagents 4 Mysterious Essence, 10 Sha Crystal; patch 5.0.4 added.
+gaps: proc rate and duration NOT PRESENT.
+
+=== Colossus ===
+group: Profession, Mists of Pandaria
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Colossus
+tooltip: "Permanently enchants a melee weapon to make your damaging melee strikes sometimes activate a Mogu protection spell, absorbing up to 371 damage."
+facts: item level cap 136.
+gaps: proc rate, duration, patch history NOT PRESENT.
+
+=== Windsong ===
+group: Profession, Mists of Pandaria
+quality: clean
+url: https://warcraft.wiki.gg/wiki/Enchant_Weapon_-_Windsong
+tooltip: "Permanently enchants a melee weapon to sometimes increase your critical strike, haste, or mastery by 59 for 12 sec when dealing damage or healing with spells and melee attacks."
+facts: item level cap 136; reagents 12 Spirit Dust, 1 Ethereal Shard; patch 5.0.4 added; hotfixes 2012-10-12 and 2012-10-16 (periodic effects can activate it; no longer removes Stealth).
+gaps: proc rate NOT PRESENT.
+
+=== Mark of the Thunderlord ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized from the truncated slot page) +500 crit for 6 sec, crits extending duration.
+facts: numbers only as summarized; no tooltip wording.
+gaps: verbatim tooltip, proc rate, caps NOT PRESENT.
+
+=== Mark of the Frostwolf ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized) +500 multistrike for 6 sec, 2 stacks.
+facts: numbers only as summarized.
+gaps: verbatim tooltip, proc rate NOT PRESENT.
+
+=== Mark of Blackrock ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized) +500 armor below 50% health for 12 sec.
+facts: numbers only as summarized.
+gaps: verbatim tooltip, proc rate NOT PRESENT.
+
+=== Mark of Shadowmoon ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized) +500 spirit for 15 sec.
+facts: numbers only as summarized.
+gaps: verbatim tooltip, proc rate NOT PRESENT.
+
+=== Mark of the Shattered Hand ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized) 1500 bleed damage + 4500/6 sec.
+facts: numbers only as summarized; the "4500/6 sec" reading is ambiguous.
+gaps: verbatim tooltip, proc rate NOT PRESENT.
+
+=== Mark of Warsong ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized) +1000 haste, -10% every 2 sec.
+facts: numbers only as summarized.
+gaps: verbatim tooltip, proc rate, duration NOT PRESENT.
+
+=== Mark of Bleeding Hollow ===
+group: Profession, Warlords of Draenor
+quality: degraded
+url: https://warcraft.wiki.gg/wiki/Enchantments_by_slot (own page returned 404)
+tooltip: (as summarized) +500 mastery for 12 sec.
+facts: numbers only as summarized.
+gaps: verbatim tooltip, proc rate NOT PRESENT.
