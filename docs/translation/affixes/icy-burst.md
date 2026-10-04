@@ -10,5 +10,5 @@ GURPS (delta): chassis Gadget (Breakable -25%, Can Be Stolen -10%); Innate Attac
 Pricing: printed +2 = 8,000 gp as a standalone ability that includes the frost half (Freezing at T4 + delta).
 Name collision: Elemental Burst (pool, different mechanic); Frost (sibling); SRD Flaming Burst and Shocking Burst (same template).
 Forks needing a ruling:
-1. GURPS has no critical multiplier. Default: use the weapon's 3.5e multiplier class.
+1. Engine ruling: the weapon's own 3.5e crit multiplier applies; no GURPS conversion is needed.5e multiplier class.
 2. Bursts on one weapon: Icy Burst replaces Frost, never stacks with it. Default: not allowed together.

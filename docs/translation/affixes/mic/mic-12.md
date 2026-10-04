@@ -14,7 +14,7 @@ Mirror of Holy Surge (batch 05): functions as unholy (continuous); on a successf
 
 ## VAMPIRIC (printed +2; moderate necromancy, CL 9th; melee; prereq vampiric touch) — NEW
 Source: an extra 1d6 damage to any living creature it hits, and you heal damage equal to that amount.
-Pool: Leech (Resource 19-24: recover 1/1/2/3/5 HP per hit) is a flat heal with no extra damage; this is damage plus a matching heal (average 3.5, between Leech T3 and T2). 3.5e: +1d6 untyped to living targets, heal equal to the roll (cap 6 per hit); bloodless targets give nothing. GURPS: Innate Attack Follow-Up 1d+1 plus a Vampiric-style leech of the injury (the pool's Leech row uses Vampiric Attack; costs OPEN). Price: +2 = 8,000 gp.
+Pool: Leech (Resource 19-24: recover 1/1/2/3/5 HP per hit) is a flat heal with no extra damage; this is damage plus a matching heal (average 3.5, between Leech T3 and T2). 3.5e: +1d6 untyped to living targets, heal equal to the roll (cap 6 per hit); bloodless targets give nothing. GURPS: Innate Attack Follow-Up 1d6 plus a Vampiric-style leech of the injury (the pool's Leech row uses Vampiric Attack; costs OPEN). Price: +2 = 8,000 gp.
 Forks: 1. healing versus Fatal Wound: default the Registry norm applies: the Vampiric heal is magical healing and ends Fatal Wound stacks like any other (consistent with Crusader after D2 was reversed 2026-10-04).
 
 ## VANISHING (printed +8,000 gp; moderate conjuration, CL 10th; melee; prereq dimension door) — COVERED
@@ -24,7 +24,7 @@ Pool: Phasewalk (Utility 37-42): dimension door 1/1/2/3/at-will per day at 30/30
 ## VENOMOUS (printed +1; moderate necromancy, CL 9th; prereq poison) — PARTIAL (name collision)
 Source: swift (command), three times per day: the weapon coats itself in injury poison (Fort DC 14, 1d4 Str initial and 1d4 Str secondary) lasting 1 minute or until your next successful attack; ammunition.
 Pool: NAME COLLISION with the pool "Venomous" (Elemental 33-38: +1d4/+1d6/+1d8/+2d6/+3d6 poison damage; Fort DC 12/14/16/18/22 or sickened; IA Toxic, Follow-Up, Cyclic). The printed one delivers a poison that does ability damage. Delta = the payload and the 3/day, 1-minute window.
-3.5e: as printed, fixed DC 14, poison immunities apply. GURPS: Innate Attack (Toxic) as a Follow-Up poison with a HT roll and an ST-loss effect (modifiers OPEN), Limited Use 3/day. Price: +1 = 2,000 gp. Forks: 1. rename on ratification (default "Venomous (poison coat)" for this one).
+3.5e: as printed, fixed DC 14, poison immunities apply. GURPS: Innate Attack (Toxic) as a Follow-Up poison with a HT roll and an ST-loss effect (modifiers OPEN), Limited Use 3/day. Price: +1 = 2,000 gp. Forks: 1. names stay, never merge (Fatal Wound precedent).
 
 ## WARNING (printed +1; moderate transmutation, CL 7th; prereq cat's grace) — COVERED
 Source: +5 insight bonus on initiative checks as long as it is held.
@@ -33,7 +33,7 @@ Pool: Timesense (Utility fragment 97-100): never surprised; +2/+2/+4/+6/+8 initi
 ## WEAKENING (printed +1; faint necromancy, CL 5th; prereq ray of enfeeblement) — PARTIAL (name collision)
 Source: on a critical hit the target takes a -4 penalty to its Strength score (minimum 1) for 10 minutes; multiple strikes do not stack; ammunition.
 Pool: NAME COLLISION with the pool "Weakening" (Condition 37-42): on hit -1/-1/-2/-3/-4 Str for 1d4 rounds, Fortitude save; the printed one is crit-triggered, -4 for 10 minutes, no save. The T1 value matches the magnitude only.
-3.5e: as printed, no save (flagged), no stacking. GURPS: Affliction (ST penalty) Trigger critical (percentages OPEN), -2 ST at the 2:1 conversion. Price: +1 = 2,000 gp. Forks: 1. rename on ratification; 2. no save printed (default as printed, crit-only).
+3.5e: as printed, no save (flagged), no stacking. GURPS: Affliction (ST penalty) Trigger critical (percentages OPEN), -2 ST at the 2:1 conversion. Price: +1 = 2,000 gp. Forks: 1. names stay, never merge (Fatal Wound precedent); 2. no save printed (default as printed, crit-only).
 
 ## WHIRLING (printed +1; moderate transmutation, CL 11th; slashing melee; prereq haste) — NEW
 Source: full-round (mental), three times per day: instead of your regular attacks, make one melee attack at full attack bonus against each opponent within reach; otherwise as the Whirlwind Attack feat.

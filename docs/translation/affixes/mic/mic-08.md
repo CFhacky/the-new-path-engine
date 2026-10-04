@@ -2,11 +2,11 @@
 > **Fused-engine resolution applies:** where this draft's GURPS dice, DR handling, negative-level stand-in, GURPS alignment tag or name-collision rename differ from `docs/translation/FUSED_ENGINE_RESOLUTION.md`, that file wins (dice read as-is; riders ignore worn DR; Energy Drained condition; alignment stays on the 3.5e side; names stay, never merge).
 Source: Magic Item Compendium pp. 40-41, read from D:\Backup\I-drive\Sourcebooks\_text (OCR). Drafts, not ratified. Conventions as in mic-01. Entries that depend on psionics (power points) are class-gated and wait on a psionic user in the campaign; the 3.5e side is complete, the GURPS conversion of power points to Energy Reserve is OPEN throughout.
 
-## MINDCRUSHER (printed +2; strong necromancy, CL 12th; prereq vampiric touch or psychic vampire) — NEW
+## MINDCRUSHER (printed +2; strong necromancy, CL 12th; prereq vampiric touch or psychic vampire) — NEW [INACTIVE until a psionic/incarnum character exists]
 Source: a psionic creature struck loses power points equal to half the hit point damage dealt (base weapon damage only; Strength and extras do not count); a creature with no power points, including nonpsionic creatures, must make a DC 17 Will save or take 1 point of Wisdom damage; ammunition.
 Pool: none. 3.5e: as printed, fixed DC 17. GURPS: ER or FP drain on psionic targets and a Will roll against 1 point of IQ-equivalent damage (OPEN). Price: +2 = 8,000 gp. Forks: 1. Wisdom damage to nonpsionic creatures on every hit (default as printed).
 
-## MINDFEEDER (printed +1; strong necromancy, CL 15th; prereq vampiric touch or psychic vampire) — NEW
+## MINDFEEDER (printed +1; strong necromancy, CL 15th; prereq vampiric touch or psychic vampire) — NEW [INACTIVE until a psionic/incarnum character exists]
 Source: on a critical hit gain 1 temporary power point per 5 damage dealt by the crit, lasting up to 1 minute, gained even if the target has none; temporary points overlap rather than stack (higher value wins); crit-immune creatures do not trigger it; ammunition.
 Pool: none; the parallel of Body Feeder (batch 02) for power points. It scales with crit damage, not flat-source (stated). Price: +1 = 2,000 gp. Forks: none.
 
@@ -31,7 +31,7 @@ Source: +1 insight bonus to AC and +1 insight bonus on saves whenever you hold i
 Pool: Warding (Defensive 01-06, AC) and Stalwart (13-18, all saves) at T5-T4 supply +1 each. Delta = the insight bonus type, which stacks with their deflection and resistance bonuses.
 3.5e: as printed. GURPS: Defense Bonus +1 and +1 to resist (Will and HT) while held (Gadget). Price: +2 = 8,000 gp. Forks: none.
 
-## POWER STORING (printed +1; strong evocation, CL 12th; prereq manifester level 12th) — PARTIAL
+## POWER STORING (printed +1; strong evocation, CL 12th; prereq manifester level 12th) — PARTIAL [INACTIVE until a psionic/incarnum character exists]
 Source: store a single targeted power of up to 5 power points (manifesting time 1 standard action); when the weapon strikes and damages a creature it can manifest the power on it; once manifested the weapon is empty and can be refilled; a randomly generated one has a 50% chance to hold a power; the weapon whispers the stored power's name.
 Pool: DMG Spell Storing and Reservoir (Resource 49-54). Delta = psionic variant. Same rulings as Spell Storing. Price: +1 = 2,000 gp. Forks: gated by psionics.
 

@@ -26,7 +26,7 @@ Pool: nearest Warding (Defensive 01-06, always-on deflection AC) and Aegis; neit
 
 ## DESICCATING (printed +1; moderate necromancy, CL 5th; prereq desiccating bubble) — NEW
 Source: destroys water in a living creature; extra 1d4 damage (1d8 against plants and water-subtype elementals); ammunition.
-Pool: none (Venomous is poison; Shadowtouch is negative energy). 3.5e: +1d4 untyped on a hit (+1d8 vs plants and water elementals), not multiplied on a crit; bloodless targets that have no water (constructs, undead) take none. GURPS: Innate Attack Follow-Up 1d-2 (Wounding ladder precedent 1d4 = 1d-2; 1d8 = 1d+1 for the vulnerable targets, Hunter's Mark precedent). Price: +1 = 2,000 gp. Forks: none.
+Pool: none (Venomous is poison; Shadowtouch is negative energy). 3.5e: +1d4 untyped on a hit (+1d8 vs plants and water elementals), not multiplied on a crit; bloodless targets that have no water (constructs, undead) take none. GURPS: Innate Attack Follow-Up 1d4 (1d8 for the vulnerable targets; dice read as-is). Price: +1 = 2,000 gp. Forks: none.
 
 ## DESICCATING BURST (SYNERGY, printed +1; strong necromancy, CL 12th; prereq Desiccating, horrid wilting) — PARTIAL
 Source: functions as Desiccating; on a critical hit extra damage by multiplier x2 1d8, x3 2d8, x4 3d8, doubled against plants and water-subtype elementals (applies even to creatures immune to crit extra damage); the struck creature is fatigued for 8 hours or until it drinks a gallon of water; ammunition.

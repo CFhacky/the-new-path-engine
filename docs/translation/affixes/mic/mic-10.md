@@ -5,14 +5,14 @@ Source: Magic Item Compendium pp. 43-44, read from D:\Backup\I-drive\Sourcebooks
 ## SACRED (printed +1; moderate conjuration, CL 7th; prereq cure light wounds) — PARTIAL
 Source: standard (command) toggle sheathing the weapon in positive energy; if you are undead you take 1 point of Charisma damage per round you hold it active; while active, extra 1d6 to any undead target (2d6 against an evil outsider) and it counts as good-aligned for DR; ammunition.
 Pool: Radiant (Elemental 45-50) gives +1d6 positive energy at T4 (undead x1.5). Delta = the good-DR tag, the 2d6 vs evil outsiders, and the undead wielder's Charisma cost. Mirror of Profane (batch 09).
-3.5e/GURPS: as printed; GURPS Innate Attack Follow-Up 1d+1, +1d vs evil outsiders, Costs Fatigue-style drain on an undead wielder (OPEN). Price: +1 = 2,000 gp. Forks: shared alignment-tag ruling.
+3.5e/GURPS: as printed; GURPS Innate Attack Follow-Up 1d6 (2d6 vs evil outsiders), Costs Fatigue-style drain on an undead wielder (OPEN). Price: +1 = 2,000 gp. Forks: shared alignment-tag ruling.
 
 ## SACRED BURST (SYNERGY, printed +1; strong conjuration, CL 12th; prereq Sacred, cure critical wounds) — PARTIAL
 Source: functions as Sacred; on a critical hit extra positive energy damage x2 1d10, x3 2d10, x4 3d10, or vs an evil outsider 2d10 / 4d10 / 6d10 (applies even to crit-immune targets); harmless to you unless you are undead, in which case you take 1d4 Charisma damage; continuous; ammunition. Burst template over Sacred (mirror of Profane Burst). Price: +1 on top. Forks: shared burst fork.
 
 ## SCREAMING (printed +1; moderate evocation, CL 7th; prereq shout or sound burst) — NEW
 Source: standard (command): the weapon vibrates and each hit deals an extra 1d4 sonic damage to the target only; negated in an area of magical silence; no extra effect on creatures with acute hearing.
-Pool: the Elemental pool has no pure sonic row (Stormborn is sonic plus lightning, split); the printed 1d4 equals the Elemental T5 die. 3.5e: as printed. GURPS: Innate Attack Follow-Up 1d-2 (Wounding ladder: 1d4 = 1d-2) with a Crushing [Sonic] special effect (the exchange table lists sonic as Crushing; the pool uses Crushing [Sonic]). Price: +1 = 2,000 gp. Forks: none.
+Pool: the Elemental pool has no pure sonic row (Stormborn is sonic plus lightning, split); the printed 1d4 equals the Elemental T5 die. 3.5e: as printed. GURPS: Innate Attack Follow-Up 1d4 (dice read as-is) with a Crushing [Sonic] special effect (the exchange table lists sonic as Crushing; the pool uses Crushing [Sonic]). Price: +1 = 2,000 gp. Forks: none.
 
 ## SCREAMING BURST (SYNERGY, printed +1; strong evocation, CL 12th; prereq Screaming, shout or sound burst) — PARTIAL
 Source: functions as Screaming; on a critical hit extra sonic damage x2 1d8, x3 2d8, x4 3d8 (even to crit-immune targets); only the target is harmed; continuous; ammunition. Burst template over Screaming (DMG Thundering is a different ability with a deafen save). Price: +1 on top. Forks: shared burst fork.

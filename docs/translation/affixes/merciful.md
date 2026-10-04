@@ -6,7 +6,7 @@ Existing pool coverage: none (Life Shield and Second Wind are healing, not nonle
 Verdict: NEW. One printed rung (+1).
 Translation identity: flat (1d6 never scales; not multiplied on a crit) · armor-agnostic (the hit must land) · no cap, passive; toggle on command.
 3.5e: on each damaging hit the weapon adds +1d6 untyped damage, and all damage from the weapon (base and extra) is nonlethal. Command word suppresses and resumes the ability. No save, no SR. No healing interaction.
-GURPS: chassis Gadget (Breakable -25%, Can Be Stolen -10%). Extra damage = Innate Attack, Follow-Up +0%, 1d+1 (Executioner precedent: +1d6 = 1d+1), Magical -10%. Nonlethal delivery means the damage is taken as FP loss rather than HP; the trait and its modifier for that are OPEN, so no point total is stated.
+GURPS: chassis Gadget (Breakable -25%, Can Be Stolen -10%). Extra damage = Innate Attack, Follow-Up +0%, 1d6 (dice read as-is), Magical -10%. Nonlethal delivery means the damage is taken as FP loss rather than HP; the trait and its modifier for that are OPEN, so no point total is stated.
 Pricing: printed +1 = 2,000 gp.
 Name collision: none in the Registry; SRD merciful special ability is this one.
 Forks needing a ruling:

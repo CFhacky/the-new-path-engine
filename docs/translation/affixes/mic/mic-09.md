@@ -5,26 +5,26 @@ Source: Magic Item Compendium pp. 41-43, read from D:\Backup\I-drive\Sourcebooks
 ## PROFANE (printed +1; moderate necromancy, CL 7th; prereq inflict light wounds) — PARTIAL
 Source: standard (command) toggle sheathing the weapon in negative energy; unless you have no Constitution score you take 1 point of Constitution damage per round the effect is on; while active, an extra 1d6 to any living target (2d6 against a good outsider) and it is treated as evil-aligned for DR; ammunition.
 Pool: Shadowtouch (Elemental 39-44, +1d6 negative energy at T4; undead take half) is the damage half. Delta = the evil-DR tag, the 2d6 vs good outsiders, and the wielder's Constitution cost.
-3.5e: as printed. The wielder's cost is a drawback (stated, per round while active). GURPS: Innate Attack Follow-Up 1d+1, +1d vs good outsiders, Costs Fatigue or HP drain per turn on the wielder (modifier OPEN). Price: +1 = 2,000 gp. Forks: 1. the Constitution cost: default keep as printed (it is the property's price for its low +1).
+3.5e: as printed. The wielder's cost is a drawback (stated, per round while active). GURPS: Innate Attack Follow-Up 1d6 (2d6 vs good outsiders), Costs Fatigue or HP drain per turn on the wielder (modifier OPEN). Price: +1 = 2,000 gp. Forks: 1. the Constitution cost: default keep as printed (it is the property's price for its low +1).
 
 ## PROFANE BURST (SYNERGY, printed +1; strong necromancy, CL 12th; prereq Profane, inflict critical wounds) — PARTIAL
 Source: functions as Profane; on a critical hit extra negative energy damage x2 1d10, x3 2d10, x4 3d10, or against a good outsider 2d10 / 4d10 / 6d10 (applies even to crit-immune targets); the burst harms only the target if you are undead, otherwise you take 1d4 Constitution damage (Charisma damage if you have no Con); continuous, works even when Profane is not active; ammunition.
-Pool: Profane (above) plus the burst template (Icy Burst). Delta = the crit rider and the wielder's per-burst cost. 3.5e/GURPS: crit dice by multiplier class (default 1d / 2d / 3d, doubled vs good outsiders), self-damage 1d4 Con per burst. Price: +1 on top of Profane. Forks: shares the burst fork (GURPS has no crit multiplier).
+Pool: Profane (above) plus the burst template (Icy Burst). Delta = the crit rider and the wielder's per-burst cost. 3.5e/GURPS: crit dice by multiplier class (default 1d / 2d / 3d, doubled vs good outsiders), self-damage 1d4 Con per burst. Price: +1 on top of Profane. Forks: none (the weapon's own 3.5e crit multiplier applies).
 
-## PSIBANE (printed +2; strong divination, CL 15th; prereq dispel magic or bend reality) — PARTIAL
+## PSIBANE (printed +2; strong divination, CL 15th; prereq dispel magic or bend reality) — PARTIAL [INACTIVE until a psionic/incarnum character exists]
 Source: against a creature with the psionic subtype, effective enhancement +2 and extra 2d6; one negative level on any psionic creature wielding it; ammunition.
 Pool: DMG Bane and Banefire; same family as Aquan (batch 01) and Magebane, keyed to the psionic subtype. Price: +2 = 8,000 gp. Forks: shares the opposed-subtype weapon rulings; gated by psionics in the campaign.
 
-## PSYCHIC (printed +2; strong, no school, CL 17th; prereq wish or reality revision) — NEW (wielder-scaling)
+## PSYCHIC (printed +2; strong, no school, CL 17th; prereq wish or reality revision) — NEW (wielder-scaling) [INACTIVE until a psionic/incarnum character exists]
 Source: the weapon's enhancement bonus depends on the wielder's current power point reserve: 0 (including any wielder with no power points) +1, 1-29 +2, 30-79 +3, 80-129 +4, 130 or more +5; it falls to a minimum of +1 as points are spent and rises as the reserve crosses the next band; does not stack with the weapon's normal enhancement bonus.
 Pool: Striking (Offensive 01-06) is a fixed enhancement ladder. This scales with a wielder resource, stated explicitly (not flat-source).
 3.5e: as printed. GURPS: Weapon Bond or damage bonus +1..+5 by Energy Reserve bands (band conversion OPEN). Price: printed +2 = 8,000 gp although it can reach +5 effective; flagged. Forks: 1. repricing (default price at the printed +2, since the top band needs a very large reserve).
 
-## PSYCHOKINETIC (printed +1; moderate evocation, CL 10th; prereq blast of force or concussive blast) — NEW
+## PSYCHOKINETIC (printed +1; moderate evocation, CL 10th; prereq blast of force or concussive blast) — NEW [INACTIVE until a psionic/incarnum character exists]
 Source: standard (command): extra 1d4 force damage on a hit, not reduced by damage reduction, affecting incorporeal creatures even when the attack would miss through the incorporeal chance; harmless to you; ammunition.
 Pool: none (the Elemental pool has no force row; Penetrating Strikes bypasses DR types, not all). 3.5e: as printed. GURPS: Innate Attack (Crushing) with Armor Divisor and Affects Insubstantial, Follow-Up (the exchange table gives magical force as Crushing plus Armor Divisor; percentages OPEN). Price: +1 = 2,000 gp. Forks: none.
 
-## PSYCHOKINETIC BURST (SYNERGY, printed +1; strong evocation, CL 12th; prereq Psychokinetic, blast of force or concussive blast) — PARTIAL
+## PSYCHOKINETIC BURST (SYNERGY, printed +1; strong evocation, CL 12th; prereq Psychokinetic, blast of force or concussive blast) — PARTIAL [INACTIVE until a psionic/incarnum character exists]
 Source: functions as Psychokinetic; on a critical hit extra force damage x2 1d6, x3 2d6, x4 3d6 (applies even to crit-immune targets), not reduced by DR, affects incorporeal; works even when the base is not active; ammunition. Burst template over Psychokinetic. Price: +1 on top. Forks: shares the burst fork.
 
 ## QUICK LOADING (printed +1; moderate conjuration, CL 9th; crossbow; prereq Leomund's secret chest, shrink item) — NEW

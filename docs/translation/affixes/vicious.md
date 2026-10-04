@@ -6,7 +6,7 @@ Existing pool coverage: none that matches. Wounding (Offensive 07-12) is plain b
 Verdict: new family, one rung, SRD-faithful.
 Translation identity: flat (no Str/enhancement/ST scaling) · armor interaction: see fork 1 · cap behavior: none; the self-damage is the brake.
 3.5e: Melee weapons only. On each hit that deals damage, +2d6 to the opponent and 1d6 to the wielder, both untyped, not multiplied on a crit (unstated; default), no save, no SR, no d100 (printed trigger is every strike, not a proc). Undead/constructs: the wielder still takes the 1d6 (the text has no exception). Does not heal anyone; no Fatal Wound interaction.
-GURPS: Innate Attack Follow-Up +0%, 2d-1 cr to the opponent (Wounding-row ladder, T2 2d6 = 2d-1); 1d cr back to the wielder (T3 1d6 = 1d on the same ladder). Gadget Breakable -25% + Can Be Stolen -10% = -35%. The percentage for damage to the user, and the mapping of "hurts the wielder" onto a limitation, are open (not retrieved). Points: not computable.
+GURPS: Innate Attack Follow-Up +0%, 2d6 to the opponent and 1d6 back to the wielder (dice read as-is). Gadget Breakable -25% + Can Be Stolen -10% = -35%. The percentage for damage to the user, and the mapping of "hurts the wielder" onto a limitation, are open (not retrieved). Points: not computable.
 Pricing: +1 = 2,000 gp.
 Name collision: Blood Price Engine, Blood Pact, Berserker; the word "vicious" is also general weapon flavor text.
 Forks needing a ruling: 1. Trigger on any hit vs only damage past DR: default only a hit that deals damage past DR (matches proc conventions), then the 2d6 joins that damage and the 1d6 hits the wielder. 2. Can the wielder's 1d6 be reduced by DR/resist: default no, untyped and unreducible. 3. GURPS self-damage limitation percentage: open.

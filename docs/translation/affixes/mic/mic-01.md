@@ -8,12 +8,12 @@ Pool abbreviations: rows named are the Registry's canonical pool rows (loot-engi
 Source: functions as a corrosive weapon; on a critical hit adds acid damage by multiplier x2 1d10, x3 2d10, x4 3d10; does not harm the wielder; works even when Corrosive is not activated; ammunition.
 Pool: Corroding (Elemental 25-32) is the acid half. Delta = crit rider only (same shape as DMG Icy Burst).
 3.5e: on a confirmed crit, extra acid damage 1d10 / 2d10 / 3d10 by multiplier class (not multiplied again). GURPS: Innate Attack (Corrosion), Follow-Up +0%, Trigger critical, dice default 1d / 2d / 3d. Price: +1 on top of Corrosive (printed synergy price).
-Forks: GURPS has no crit multiplier, default use the weapon's 3.5e multiplier class.
+Forks: Engine ruling: the weapon's own 3.5e crit multiplier applies.
 
 ## AQUAN (printed +2; moderate evocation, CL 7th; prereq water subtype) — PARTIAL
 Source: overcomes the damage reduction of any creature with the fire subtype; extra 2d6 vs such creatures; bestows one negative level on any fire-subtype creature that tries to wield it (lasts while held, never becomes level loss, not removable by restoration while held); ammunition.
 Pool: Banefire (Elemental 93-96, +2d6 vs a chosen element subtype) gives the 2d6 rider. Delta = the DR bypass and the subtype-wielder negative level. One family with Auran (earth), Ignan (water) and Terran (air), all +2: weapon keyed to the subtype opposed to its element.
-3.5e: as printed, 2d6 untyped, not multiplied on a crit. GURPS: Innate Attack Follow-Up 2d with Accessibility "only vs. the opposed subtype" (percentage OPEN); DR-bypass has no GURPS effect beyond the tag; wielder penalty -1 to all rolls while held (design intent, same default as the alignment weapons).
+3.5e: as printed, 2d6 untyped, not multiplied on a crit. GURPS: Innate Attack Follow-Up 2d with Accessibility "only vs. the opposed subtype" (percentage OPEN); DR-bypass has no GURPS effect beyond the tag; wielder penalty the Energy Drained condition while held (engine ruling)design intent, same default as the alignment weapons).
 Price: +2 = 8,000 gp. Forks: shared with the alignment-weapon rulings (GURPS subtype tag, wielder penalty); Aquan and Banefire on one weapon, default not allowed.
 
 ## AQUATIC (printed +2,000 gp; moderate abjuration, CL 7th; prereq freedom of movement) — NEW
@@ -36,8 +36,8 @@ Pool: none (Dispelling Strike is Condition 85-90 and neutralizes magic).
 
 ## BERSERKER (printed +1; moderate enchantment, CL 7th; two-handed melee) — NEW
 Source: extra 1d8 damage on any successful attack while raging.
-Pool: NAME COLLISION. The pool row "Berserker" (Offensive 61-66) is +1/+1/+2/+3/+4 damage with -AC while attacking and needs no rage; this is a different mechanic. Rename on ratification (e.g. keep the printed name only for this entry and rename the pool-adjacent one), or cite as "Berserker (rage)".
-3.5e: +1d8 untyped on any hit while raging; requires rage. GURPS: Innate Attack Follow-Up 1d+2 (Hunter's Mark precedent 1d8 = 1d+1) with Accessibility "while berserk" (percentage OPEN). Price: +1 = 2,000 gp.
+Pool: NAME COLLISION. The pool row "Berserker" (Offensive 61-66) is +1/+1/+2/+3/+4 damage with -AC while attacking and needs no rage; this is a different mechanic. Names stay and never merge (Fatal Wound precedent); a collision note is the only change.
+3.5e: +1d8 untyped on any hit while raging; requires rage. GURPS: Innate Attack Follow-Up 1d8 (dice read as-is) with Accessibility "while berserk" (percentage OPEN). Price: +1 = 2,000 gp.
 Forks: 1. GURPS rage stand-in (default: while under the Berserk disadvantage or a campaign rage trait).
 
 ## BINDING (printed +1; moderate abjuration, CL 10th; prereq dimensional anchor) — NEW

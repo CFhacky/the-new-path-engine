@@ -23,7 +23,7 @@ Pool: none for the crit-trigger shaken. 3.5e: as printed, trigger confirmed crit
 
 ## DRAGONDOOM (printed +1; moderate transmutation, CL 7th; melee; prereq fell the greatest foe) — NEW
 Source: swift (command), three times per day, deliver a smite against a Large or larger dragon-type creature; extra damage per size category above Medium: Large +1d6, Huge +2d6, Gargantuan +3d6, Colossal +4d6; declare before the attack roll; a miss or a non-dragon wastes it.
-Pool: Banefire is element-subtype only; Hunter's Mark is the closest bonus-vs-target row. 3.5e: as printed, cap +4d6, 3/day. GURPS: Innate Attack Follow-Up by size category (1d+1 / 2d / 2d+... per the Hunter's Mark and Executioner ladders, OPEN), Limited Use 3/day. Price: +1 = 2,000 gp. Forks: none.
+Pool: Banefire is element-subtype only; Hunter's Mark is the closest bonus-vs-target row. 3.5e: as printed, cap +4d6, 3/day. GURPS: Innate Attack Follow-Up by size category (1d6 / 2d6 / 3d6 / 4d6 for Large, Huge, Gargantuan, Colossal; dice read as-is), Limited Use 3/day. Price: +1 = 2,000 gp. Forks: none.
 
 ## DRAGONHUNTER (printed +1; moderate transmutation and necromancy, CL 9th; projectile; prereq keen edge, ray of enfeeblement) — NEW
 Source: a dragon-type creature hit by a projectile takes 1 point of Strength damage in addition to normal damage; the weapon's critical multiplier is +1 against dragons (Strength damage is not multiplied); effects that expand or confirm critical threats (keen edge, bless weapon) do not function on this weapon.
@@ -41,8 +41,8 @@ Pool: Flaming, Freezing, Shocking and Corroding (Elemental pool) each give +1d6 
 
 ## ENERGY SURGE (SYNERGY, printed +1; faint evocation, CL 5th; melee; prereq Corrosive, Flaming, Frost or Shock) — PARTIAL
 Source: functions as the prerequisite weapon; swift (command) on a successful melee attack: a blast of the same energy deals extra 3d6; the prerequisite need not be active; uses per day = 1 + Con bonus; attunement; a weapon can carry it once per prerequisite, each activation triggers one type.
-Pool: the four Elemental rows give the base; no on-demand burst. 3.5e: as printed; scales with Con bonus for uses (stated). GURPS: Innate Attack Follow-Up 3d6 = 2d (Executioner T3 precedent: +2d6 = 2d; 3d6 default 3d-1, OPEN), Limited Use. Price: +1 on top of the base. Forks: none.
+Pool: the four Elemental rows give the base; no on-demand burst. 3.5e: as printed; scales with Con bonus for uses (stated). GURPS: Innate Attack Follow-Up 3d6 (dice read as-is), Limited Use. Price: +1 on top of the base. Forks: none.
 
 ## ENERVATING (printed +2; moderate necromancy, CL 11th; prereq enervation) — NEW
 Source: on a critical hit against a living creature, one negative level on the target; if the subject survives it regains the level after 1 hour; the levels never become permanent drain.
-Pool: none (Weakening and Exhaustion are narrower). 3.5e: as printed, no save printed (flagged), crit-only, one level per crit (stacks per crit, each recovers after its own hour). GURPS: -1 to all rolls and -ish FP/HP for 1 hour (the negative-level stand-in is OPEN, same default as the alignment weapons). Price: +2 = 8,000 gp. Forks: 1. stacking of repeated crits (default additive, never multiplicative; cap none printed).
+Pool: none (Weakening and Exhaustion are narrower). 3.5e: as printed, no save printed (flagged), crit-only, one level per crit (stacks per crit, each recovers after its own hour). The negative level is the Energy Drained condition for 1 hour (engine). Price: +2 = 8,000 gp. Forks: 1. stacking of repeated crits (default additive, never multiplicative; cap none printed).

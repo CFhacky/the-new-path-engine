@@ -11,6 +11,6 @@ GURPS: Chassis: Gadget on the weapon (Breakable DR 6 -25%, Can Be Stolen -10% = 
 Pricing: +2 bonus-equivalent = 8,000 gp (bonus-squared x 2,000; matches the printed +2).
 Name collision: SRD Anarchic (opposed twin; also queued); SRD Holy/Unholy (queued; same template); spell order's wrath. The adjective "axiomatic" also names a creature subtype/template in the SRD (axiomatic creatures); unrelated to the weapon quality.
 Forks needing a ruling:
-1. GURPS has no alignment axis. Recommended default: the target tag is read from the 3.5e alignment line of the creature; GURPS-only stat blocks must carry a Lawful/Chaotic tag.
-2. GURPS equivalent of the negative level on a chaotic wielder. Recommended default: -1 to all attribute and skill rolls while the weapon is held, unremovable except by letting go (number is design intent, unverified).
+1. RULED by the engine: the target's alignment is read from its 3.5e stat block; no GURPS alignment tag is built.
+2. RULED by the engine: a wrong-aligned wielder takes the Energy Drained condition while holding the weapon (-1 attacks/saves/skills/ability checks, -5 HP, -1 effective level; never level loss).
 3. Axiomatic and Anarchic on one weapon. Recommended default: mutually exclusive (contradictory alignment; SRD fetched text does not say).

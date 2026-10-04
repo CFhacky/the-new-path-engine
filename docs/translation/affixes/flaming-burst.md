@@ -13,4 +13,4 @@ Name collision: pool Elemental Burst (Elemental 75-80, 10-ft area, Ref half; NOT
 Forks needing a ruling:
 1. Price when combined. Recommended default: Flaming Burst is a standalone +2 that includes Flaming; never stack Flaming and Flaming Burst on one weapon.
 2. GURPS dice mapping for d10. Recommended default: 1d / 2d / 3d, as Lethal Focus; revisit if d10 average (5.5) needs a +1.
-3. GURPS has no critical multiplier. Recommended default: use the weapon's 3.5e multiplier class (x2/x3/x4) to pick 1d/2d/3d; x5+ not printed, so no rung.
+3. Engine ruling: the weapon's own 3.5e crit multiplier applies; no GURPS conversion is needed.5e multiplier class (x2/x3/x4) to pick 1d/2d/3d; x5+ not printed, so no rung.
