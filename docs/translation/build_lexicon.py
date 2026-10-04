@@ -90,7 +90,7 @@ for f in sorted(glob.glob(os.path.join(HERE, "affixes", "mic", "mic-*.md"))):
         pr, g = price_from_heading(head)
         for nm in names:
             pg = pages.get(nm.upper())
-            rows.append(dict(name=nm.title().replace("'S", "'s"), src=f"MIC p.{pg}" if pg else "MIC (synergy/greater)",
+            rows.append(dict(name=nm.title().replace("'S", "'s"), src=f"MIC p.{pg}" if pg else ("MIC (synergy)" if "SYNERGY" in head else "MIC"),
                              verdict=verdict, pool=pool, effect=effect, price=pr, gp=g,
                              flags=flags(head + "\n" + body, head), file=os.path.relpath(f, HERE)))
 
@@ -106,6 +106,27 @@ BASE = {
 }
 for r in rows:
     if r["name"] in BASE: r["pool"] = BASE[r["name"]]
+
+BASE_ROW = {
+ "Warning": "Timesense (Utility fragment 97-100)", "Flaming Burst": "Flaming (Elemental 01-08)", "Shocking Burst": "Shocking (Elemental 17-24)",
+ "Icy Burst": "Freezing (Elemental 09-16)", "Power Storing": "Spell Storing (DMG) / Reservoir (Resource 49-54)",
+ "Spellstrike": "Defending (DMG) / Stalwart (Defensive 13-18)", "Ethereal Reaver": "Ghost Touch (DMG) + Truesight (Utility 31-36)",
+ "Aquan": "Banefire (Elemental 93-96)", "Auran": "Banefire (Elemental 93-96)", "Ignan": "Banefire (Elemental 93-96)", "Terran": "Banefire (Elemental 93-96)",
+ "Desiccating Burst": "Desiccating (MIC)", "Psychokinetic Burst": "Psychokinetic (MIC)", "Sacred Burst": "Sacred (MIC)", "Screaming Burst": "Screaming (MIC)",
+ "Energy Aura": "Flaming / Freezing / Shocking / Corroding (Elemental)", "Energy Surge": "Flaming / Freezing / Shocking / Corroding (Elemental)",
+ "Fiercebane": "Bane (DMG)", "Magebane": "Bane (DMG)", "Psibane": "Bane (DMG)",
+ "Ghost Strike": "Ghost Touch (DMG)", "Incorporeal Binding": "Ghost Touch (DMG)", "Holy Surge": "Holy (DMG)", "Unholy Surge": "Unholy (DMG)",
+ "Mighty Cleaving": "Cleave Through (temper 23A-1)", "Parrying": "Warding (Defensive 01-06) + Stalwart (Defensive 13-18)",
+ "Profane": "Shadowtouch (Elemental 39-44)", "Profane Burst": "Profane (MIC)", "Soulbreaker": "Enervating (MIC)", "Souldrinking": "Enervating (MIC)",
+ "Venomous": "none (pool 'Venomous' is a different affix; names stay)", "Weakening": "none (pool 'Weakening' is a different affix; names stay)",
+}
+_POOLROW = re.compile(r"([A-Z][A-Za-z' ]+?) \((?:Elemental|Offensive|Defensive|Resource|Utility|Skill/Class|Condition)(?: pool)? ?\d\d-\d\d\)")
+for r in rows:
+    if r["name"] in BASE_ROW:
+        r["base"] = BASE_ROW[r["name"]]
+    else:
+        ms = [m.group(0).replace(" pool", "") for m in _POOLROW.finditer(r["pool"])]
+        r["base"] = ", ".join(dict.fromkeys(ms))[:90] if ms else "none"
 rows.sort(key=lambda r: r["name"].lower())
 
 # ---- completeness check ------------------------------------------------------
@@ -123,7 +144,7 @@ for w in wl["dmg"]:
 for r in rows:
     if not r["effect"]: problems.append(f"no effect text: {r['name']}")
     if not r["price"]: problems.append(f"no price: {r['name']}")
-    if r["verdict"] in ("COVERED", "DELTA") and (not r["pool"] or r["pool"].lower().startswith("none")):
+    if r["verdict"] in ("COVERED", "DELTA") and r["base"] == "none" and "names stay" not in r["pool"] + r["base"]:
         problems.append(f"{r['verdict']} row names no existing pool row: {r['name']}")
 
 # ---- write ---------------------------------------------------------------------
@@ -138,12 +159,12 @@ lines = [
     "",
     "Price is the printed book price: +N bonus priced bonus-squared x 2,000 gp, or the printed flat gp. Flags: OCR-uncertain (a scanned figure could not be verified), INACTIVE (needs a psionic/incarnum character), ruled (one of the four engine-gap rulings applies).",
     "",
-    "| Affix | Source | Verdict | Existing row / base | Printed effect | Price | Flags |",
-    "|---|---|---|---|---|---|---|",
+    "| Affix | Source | Verdict | Base row | Existing-row note | Printed effect | Price | Flags |",
+    "|---|---|---|---|---|---|---|---|",
 ]
 for r in rows:
-    lines.append("| {} | {} | {} | {} | {} | {} | {} |".format(
-        r["name"], r["src"], r["verdict"], clean(r["pool"], 120), clean(r["effect"], 200),
+    lines.append("| {} | {} | {} | {} | {} | {} | {} | {} |".format(
+        r["name"], r["src"], r["verdict"], r["base"], clean(r["pool"], 120), clean(r["effect"], 200),
         r["price"] or "—", "; ".join(r["flags"]) or ""))
 lines += ["", "## The four rulings the engine does not settle", "",
           "1. **Implacable:** capped at 5 stacks, never on a weapon that also carries Fatal Wound, any magical healing ends it.",
