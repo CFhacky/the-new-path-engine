@@ -68,7 +68,7 @@ PROC [item name — Crusader]: d100=NN vs 10% → FIRES / no effect. Heal: X. Ho
 ```
 
 **Effect (on fire):**
-1. **Heal.** The wielder is healed the tier amount. It is magical healing (positive energy). Undead wielders are damaged instead, per standard positive-energy rules. It restores HP only and ends **no** Fatal Wound stacks at any stack count, at cap included (ruling D2).
+1. **Heal.** The wielder is healed the tier amount. It is magical healing (positive energy). Undead wielders are damaged instead, per standard positive-energy rules. It is ordinary magical healing and carries no Fatal Wound exception: it ends Fatal Wound stacks like any magical healing (ruling D2 REVERSED 2026-10-04).
 2. **Holy Strength.** An **untyped** Strength bonus equal to the tier value for 3 rounds. It applies to melee attack and damage, Strength checks and skills, and carrying capacity. Untyped so that two Crusader weapons stack, as the source states (ruling D3). Same-weapon re-proc refreshes the duration.
 
 **Limits.**
@@ -88,7 +88,7 @@ One d100 serves both systems: the same 10% proc, rolled on every damaging hit th
 **Chassis:** Gadget on the weapon.
 - **Holy Strength:** ST **+1 / +2 / +3** (the 3.5e +2 / +4 / +6 at the exchange-rate 2:1). Duration **15 seconds, exact**. Refreshes on same-weapon re-proc. Stacks across two Crusader weapons.
 - **Heal:** Regeneration (limited: one burst per proc, restores 5 / 8 / 12 HP at once). Same mapping precedent as the ratified Life Shield and Lifedrinker rows.
-- **Ends no Fatal Wound stacks at any stack count, at cap included** (ruling D2).
+- **Ordinary magical healing: ends Fatal Wound stacks like any magical healing** (ruling D2 reversed 2026-10-04).
 
 **Limitations and point transparency** (ST costs 10/level; point totals are never price). Closed 2026-10-03, see Registry errata:
 - The 10%-per-hit proc matches Unreliable (activation 5 or less, 3d6 <= 5 = 9.3%) at -80%.
@@ -105,7 +105,7 @@ The heal (Regeneration burst) is carried uncosted, like the Registry's other hea
 ## 5. COLLISION AND INTERACTION NOTES
 
 - **Name collisions.** (a) Tome of Battle *Crusader* class and *Crusader's Strike*; the affix is a weapon suffix and never touches the class. (b) In-campaign "Crusader" adversaries: a Notion search hit on the Bloodaxe Legion page mentions a 5th Cohort casualty to "Crusader radiant…". That page was **not read** in this pass. (c) The ratified pool affixes *Leech* (HP on hit, flat) and *Radiant* (positive-energy damage) overlap in flavor only. Crusader is a proc heal plus a stat buff and shares no mechanic with either. Names above are placeholders, to be earned from backstory per the naming rule.
-- **Fatal Wound.** The Fatal Wound registry rule says *any magical healing* clears stacks below cap and is the only thing that works at cap. A self-heal proc would therefore end a full bleed stack. Ruling D2 overrides that for Crusader: the heal restores HP only and leaves the stacks alone.
+- **Fatal Wound.** The Fatal Wound registry rule says *any magical healing* clears stacks below cap and is the only thing that works at cap. A self-heal proc therefore ends a bleed stack. Ruling D2 first overrode that, then was reversed on 2026-10-04: no exception, the Crusader heal ends stacks like any magical healing.
 
 **Chekhov note (proposal; touches canon, so not asserted).** The moment this family exists in the lexicon it exists for whoever fields holy orders and for Aldric Steelgaze's smiths. A self-heal-plus-strength weapon in the hands of a crusading order is the natural counter-pressure to the Fatal Wound bleed line. Deliberate: it arms both sides. Which faction fields it first should be read from the Bloodaxe Legion / Crusader page before this is ratified.
 
@@ -114,7 +114,7 @@ The heal (Regeneration burst) is carried uncosted, like the Registry's other hea
 ## RULINGS
 
 - **D1 — Per hit. RULED (Chad, 2026-10-03).** Each damaging hit rolls its own 10% d100, per proc-conventions §1.
-- **D2 — Heal vs. Fatal Wound. RULED.** Restore HP only; does not clear Fatal Wound stacks.
+- **D2 — Heal vs. Fatal Wound. RULED, then REVERSED (Chad, 2026-10-04).** The heal is ordinary magical healing and ends Fatal Wound stacks like any magical healing. Registry errata line appended 2026-10-04; Change Log entry supersedes the 2026-10-03 one.
 - **D3 — Holy Strength is untyped. RULED.** Stacks across two Crusader weapons; the two-weapon cap and 3-round duration are the brakes.
 - **D4 — Duration. RULED.** 3 rounds (2.5 rounds rounded up); GURPS stays an exact 15 s.
 - **D5 — Price method. RULED (A).** Engine convention: +1 / +2 / +3 → 2,000 / 8,000 / 18,000 gp. Per-hit procs make it track a multi-attack fighter's uptime.

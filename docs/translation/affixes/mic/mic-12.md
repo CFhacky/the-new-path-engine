@@ -14,7 +14,7 @@ Mirror of Holy Surge (batch 05): functions as unholy (continuous); on a successf
 ## VAMPIRIC (printed +2; moderate necromancy, CL 9th; melee; prereq vampiric touch) — NEW
 Source: an extra 1d6 damage to any living creature it hits, and you heal damage equal to that amount.
 Pool: Leech (Resource 19-24: recover 1/1/2/3/5 HP per hit) is a flat heal with no extra damage; this is damage plus a matching heal (average 3.5, between Leech T3 and T2). 3.5e: +1d6 untyped to living targets, heal equal to the roll (cap 6 per hit); bloodless targets give nothing. GURPS: Innate Attack Follow-Up 1d+1 plus a Vampiric-style leech of the injury (the pool's Leech row uses Vampiric Attack; costs OPEN). Price: +2 = 8,000 gp.
-Forks: 1. healing versus Fatal Wound: default the Crusader ruling applies (the heal restores HP only and ends no Fatal Wound stacks); the Registry norm would otherwise let any healing end them below cap.
+Forks: 1. healing versus Fatal Wound: default the Registry norm applies: the Vampiric heal is magical healing and ends Fatal Wound stacks like any other (consistent with Crusader after D2 was reversed 2026-10-04).
 
 ## VANISHING (printed +8,000 gp; moderate conjuration, CL 10th; melee; prereq dimension door) — COVERED
 Source: swift (command), once per day after a successful melee attack, transport yourself and carried equipment to any spot within 60 feet, with the limits of dimension door.
