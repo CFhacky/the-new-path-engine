@@ -1,0 +1,274 @@
+{
+ "R12 Sacred-precinct buffer around each spring mouth (ft)": {
+  "throws": [
+   7,
+   5,
+   12,
+   8
+  ],
+  "lower_median": 7,
+  "result": 200,
+  "table": [
+   "3-5: 100",
+   "6-8: 200",
+   "9-12: 300",
+   "13-15: 500",
+   "16-18: 800"
+  ]
+ },
+ "R13 Node Two terrain and water": {
+  "throws": [
+   9,
+   10,
+   7,
+   10
+  ],
+  "lower_median": 9,
+  "result": "Open erg edge, dunes, no water (all water hauled)",
+  "table": [
+   "3-5: Rocky outcrop with a cistern seep (water on site, ~200 gal/day)",
+   "6-8: Hamada gravel plain with an old Bedine well (water on site, shared with Bedine)",
+   "9-12: Open erg edge, dunes, no water (all water hauled)",
+   "13-15: Dry wadi bed, seasonal water (on site 1d3 months a year, hauled otherwise)",
+   "16-18: Old foundations of Netherese-era make (water unknown; survey flag before build)"
+  ]
+ },
+ "R14 Node Two standing garrison (heads)": {
+  "throws": [
+   10,
+   11,
+   15,
+   9
+  ],
+  "lower_median": 10,
+  "result": 8,
+  "table": [
+   "3-5: 4",
+   "6-8: 6",
+   "9-12: 8",
+   "13-15: 10",
+   "16-18: 15"
+  ]
+ },
+ "R15 Node Two garrison source": {
+  "throws": [
+   10,
+   14,
+   9,
+   7
+  ],
+  "lower_median": 9,
+  "result": "Rotated from Cuneus's lent section",
+  "table": [
+   "3-5: Detached from the Crown garrison",
+   "6-8: Detached from the Crown garrison",
+   "9-12: Rotated from Cuneus's lent section",
+   "13-15: Al-Rashid Bedine auxiliaries under a Legion file leader",
+   "16-18: Al-Rashid Bedine auxiliaries under a Legion file leader"
+  ]
+ },
+ "R16 Charge Yard civil works (gp, Frontier Phase 2 band)": {
+  "throws": [
+   17,
+   7,
+   12,
+   15
+  ],
+  "lower_median": 12,
+  "result": 18000,
+  "table": [
+   "3-5: 12000",
+   "6-8: 15000",
+   "9-12: 18000",
+   "13-15: 21000",
+   "16-18: 25000"
+  ]
+ },
+ "R17 Charge Yard footprint (ft)": {
+  "throws": [
+   13,
+   13,
+   10,
+   14
+  ],
+  "lower_median": 13,
+  "result": "150 x 200",
+  "table": [
+   "3-5: 80 x 120",
+   "6-8: 100 x 150",
+   "9-12: 120 x 180",
+   "13-15: 150 x 200",
+   "16-18: 200 x 250"
+  ]
+ },
+ "R18a E-07 distance from the Crown (miles)": {
+  "throws": [
+   13,
+   10,
+   17,
+   7
+  ],
+  "lower_median": 10,
+  "result": 40,
+  "table": [
+   "3-5: 12",
+   "6-8: 25",
+   "9-12: 40",
+   "13-15: 60",
+   "16-18: 90"
+  ]
+ },
+ "R18b E-07 bearing from the Crown": {
+  "throws": [
+   7,
+   7,
+   12,
+   11
+  ],
+  "lower_median": 7,
+  "result": "NE",
+  "table": [
+   "3-5: N",
+   "6-8: NE",
+   "9-12: E",
+   "13-15: SE",
+   "16-18: S"
+  ]
+ },
+ "R19a Cult of the Dragon detection skill vs a charging site": {
+  "throws": [
+   14,
+   14,
+   11,
+   10
+  ],
+  "lower_median": 11,
+  "result": 12,
+  "table": [
+   "3-5: 8",
+   "6-8: 10",
+   "9-12: 12",
+   "13-15: 14",
+   "16-18: 16"
+  ]
+ },
+ "R19b Shade Remnant detection skill": {
+  "throws": [
+   9,
+   9,
+   7,
+   10
+  ],
+  "lower_median": 9,
+  "result": 12,
+  "table": [
+   "3-5: 8",
+   "6-8: 10",
+   "9-12: 12",
+   "13-15: 14",
+   "16-18: 16"
+  ]
+ },
+ "R19c Thay detection skill": {
+  "throws": [
+   12,
+   13,
+   12,
+   16
+  ],
+  "lower_median": 12,
+  "result": 12,
+  "table": [
+   "3-5: 8",
+   "6-8: 10",
+   "9-12: 12",
+   "13-15: 14",
+   "16-18: 16"
+  ]
+ },
+ "R19d Storm-makers (unknown) detection skill": {
+  "throws": [
+   12,
+   16,
+   11,
+   10
+  ],
+  "lower_median": 11,
+  "result": 12,
+  "table": [
+   "3-5: 8",
+   "6-8: 10",
+   "9-12: 12",
+   "13-15: 14",
+   "16-18: 16"
+  ]
+ },
+ "R19e Tariq ibn Dayan al-Asad detection skill": {
+  "throws": [
+   10,
+   11,
+   9,
+   9
+  ],
+  "lower_median": 9,
+  "result": 12,
+  "table": [
+   "3-5: 8",
+   "6-8: 10",
+   "9-12: 12",
+   "13-15: 14",
+   "16-18: 16"
+  ]
+ },
+ "R20 Catastrophic dump damage per stored charge (Reflex DC 22 half)": {
+  "throws": [
+   8,
+   11,
+   12,
+   11
+  ],
+  "lower_median": 11,
+  "result": "1d6 per charge",
+  "table": [
+   "3-5: 1d6 per 2 charges",
+   "6-8: 1d6 per charge",
+   "9-12: 1d6 per charge",
+   "13-15: 2d6 per charge",
+   "16-18: 3d6 per charge"
+  ]
+ },
+ "R21 Catastrophic dump radius per 25 charges stored (ft)": {
+  "throws": [
+   11,
+   11,
+   14,
+   11
+  ],
+  "lower_median": 11,
+  "result": 30,
+  "table": [
+   "3-5: 10",
+   "6-8: 20",
+   "9-12: 30",
+   "13-15: 40",
+   "16-18: 60"
+  ]
+ },
+ "R22 Node Two compound footprint (palisaded)": {
+  "throws": [
+   9,
+   12,
+   7,
+   6
+  ],
+  "lower_median": 7,
+  "result": "80 x 100 ft",
+  "table": [
+   "3-5: 60 x 80 ft",
+   "6-8: 80 x 100 ft",
+   "9-12: 100 x 120 ft",
+   "13-15: 120 x 150 ft",
+   "16-18: 150 x 200 ft"
+  ]
+ }
+}
