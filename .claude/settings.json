@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Remote_Desktop_Commander__read_file",
+      "mcp__Remote_Desktop_Commander__read_multiple_files",
+      "mcp__Remote_Desktop_Commander__list_directory",
+      "mcp__Remote_Desktop_Commander__get_file_info",
+      "mcp__Remote_Desktop_Commander__list_devices",
+      "mcp__Notion__notion-fetch",
+      "mcp__Notion__notion-search",
+      "mcp__Notion__notion-update-page",
+      "mcp__Notion__notion-create-pages",
+      "mcp__Notion__notion-query-data-sources",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(sed -n:*)"
+    ]
+  }
+}
