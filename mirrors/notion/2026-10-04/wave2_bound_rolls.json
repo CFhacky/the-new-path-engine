@@ -1,0 +1,234 @@
+{
+ "R1a Field cell mass (lb)": {
+  "throws": [
+   11,
+   8,
+   11,
+   9
+  ],
+  "lower_median": 9,
+  "result": 18,
+  "table": [
+   "3-5: 10",
+   "6-8: 14",
+   "9-12: 18",
+   "13-15: 24",
+   "16-18: 30"
+  ]
+ },
+ "R1b Standard cell mass (lb)": {
+  "throws": [
+   11,
+   8,
+   13,
+   12
+  ],
+  "lower_median": 11,
+  "result": 100,
+  "table": [
+   "3-5: 60",
+   "6-8: 80",
+   "9-12: 100",
+   "13-15: 120",
+   "16-18: 140"
+  ]
+ },
+ "R2 Pillar-grade sonde aloft": {
+  "throws": [
+   16,
+   13,
+   8,
+   15
+  ],
+  "lower_median": 13,
+  "result": "not feasible aloft: Pillar grade is the ground-mounted Stormring mast cell",
+  "table": [
+   "3-5: feasible aloft",
+   "6-18: not feasible aloft: Pillar grade is the ground-mounted Stormring mast cell"
+  ]
+ },
+ "R3 Sonde operating ceiling / tether (ft)": {
+  "throws": [
+   15,
+   12,
+   14,
+   9
+  ],
+  "lower_median": 12,
+  "result": 400,
+  "table": [
+   "3-5: 200",
+   "6-8: 300",
+   "9-12: 400",
+   "13-15: 600",
+   "16-18: 800"
+  ]
+ },
+ "R4 Direct-strike chance per sonde per lightning-active hour (%)": {
+  "throws": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "lower_median": 12,
+  "result": 15,
+  "table": [
+   "3-5: 5",
+   "6-8: 10",
+   "9-12: 15",
+   "13-15: 25",
+   "16-18: 35"
+  ]
+ },
+ "R5 Bus capacity per node (charges/hour)": {
+  "throws": [
+   9,
+   5,
+   10,
+   10
+  ],
+  "lower_median": 9,
+  "result": 5,
+  "table": [
+   "3-5: 2",
+   "6-8: 3",
+   "9-12: 5",
+   "13-15: 8",
+   "16-18: 12"
+  ]
+ },
+ "R6 Line loss on 37-mile Node Two-Crown run (%)": {
+  "throws": [
+   8,
+   12,
+   15,
+   9
+  ],
+  "lower_median": 9,
+  "result": 10,
+  "table": [
+   "3-5: 2",
+   "6-8: 5",
+   "9-12: 10",
+   "13-15: 15",
+   "16-18: 20"
+  ]
+ },
+ "R7a Stormring civil works base (gp)": {
+  "throws": [
+   6,
+   8,
+   7,
+   9
+  ],
+  "lower_median": 7,
+  "result": 15000,
+  "table": [
+   "3-5: 12000",
+   "6-8: 15000",
+   "9-12: 18000",
+   "13-15: 21000",
+   "16-18: 25000"
+  ]
+ },
+ "R7b Stormring counts as major installation": {
+  "throws": [
+   10,
+   8,
+   5,
+   13
+  ],
+  "lower_median": 8,
+  "result": "small-scale (x1)",
+  "table": [
+   "3-6: major (x3)",
+   "7-18: small-scale (x1)"
+  ]
+ },
+ "R8a Nightly lightning-active threshold (3d6 <= X)": {
+  "throws": [
+   10,
+   12,
+   10,
+   8
+  ],
+  "lower_median": 10,
+  "result": 10,
+  "table": [
+   "3-5: 6",
+   "6-8: 8",
+   "9-12: 10",
+   "13-15: 12",
+   "16-18: 14"
+  ]
+ },
+ "R8b Lightning-active hours per active night (die)": {
+  "throws": [
+   10,
+   8,
+   13,
+   14
+  ],
+  "lower_median": 10,
+  "result": "1d6",
+  "table": [
+   "3-5: 1d2",
+   "6-8: 1d3",
+   "9-12: 1d6",
+   "13-15: 2d4",
+   "16-18: 2d6"
+  ]
+ },
+ "R9 Sonde housing mass (% of cell mass)": {
+  "throws": [
+   14,
+   9,
+   9,
+   11
+  ],
+  "lower_median": 9,
+  "result": 75,
+  "table": [
+   "3-5: 25",
+   "6-8: 50",
+   "9-12: 75",
+   "13-15: 100",
+   "16-18: 150"
+  ]
+ },
+ "R10 Tether mass (lb per 100 ft, conductive line with crystal-thread core)": {
+  "throws": [
+   8,
+   12,
+   12,
+   8
+  ],
+  "lower_median": 8,
+  "result": 4,
+  "table": [
+   "3-5: 2",
+   "6-8: 4",
+   "9-12: 6",
+   "13-15: 8",
+   "16-18: 12"
+  ]
+ },
+ "R11 Levitation failure outcome (what a failed strike check means)": {
+  "throws": [
+   11,
+   10,
+   6,
+   9
+  ],
+  "lower_median": 9,
+  "result": "Enchantment suppressed 1d4 days; sonde falls; ground winch brake arrests it at half height; cell intact, housing needs 1 week of repair",
+  "table": [
+   "3-5: Enchantment destroyed; sonde falls the full tether; cell cracks on impact (catastrophic dump of its stored charge at the landing point)",
+   "6-8: Enchantment destroyed; sonde falls; cell survives on d100 <= 50, else cracks as above",
+   "9-12: Enchantment suppressed 1d4 days; sonde falls; ground winch brake arrests it at half height; cell intact, housing needs 1 week of repair",
+   "13-15: Enchantment suppressed 1d6 rounds; winch brake arrests the drop; no damage",
+   "16-18: Flicker only; sonde dips and recovers; no damage"
+  ]
+ }
+}
