@@ -1,0 +1,253 @@
+SOURCE PACKET: Diablo II weapon modifiers (non-runeword): attack modifiers and the magic-affix ladders for melee weapons.
+GATHERED: 2026-10-04 by web search (3 queries) and full-page fetches of https://maxroll.gg/d2/resources/attack-modifiers (D2 Resurrected attack-modifier reference, all 19 entries), https://www.purediablo.com/?p=3217 (melee weapon prefixes) and https://www.purediablo.com/?p=3211 (melee weapon suffixes). Two other pages returned 403/402 and were not used.
+FIDELITY: WebFetch returns a small model's extraction of each page, not a byte-exact copy; numbers as returned; NOT PRESENT means the page did not give it. The Maxroll page describes D2 Resurrected (Nightmare and Hell effectiveness figures are for that game's difficulties); the affix lists are the classic Lord of Destruction ladders.
+SCOPE: effect and damage modifiers. Excluded: plain stat suffixes (+Strength, +Dexterity), socket affixes, item-requirement reductions (Ease, Simplicity), throwing-quantity affixes, and per-character-level affixes (Hawkeye, Fool's, Grinding). The runeword registry already exists in Notion and is not redone.
+Format: "=== NAME ===", then key: value lines.
+
+=== Crushing Blow ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "deals additional damage prior to the attack's damage, equal to a fraction of the remaining Life total of the target"
+facts: formula 1/4 of current Life / (0.5 + 0.5N), N = players in game up to 8; critical hits do not increase it; affected by the target's Damage Resist and Damage Reduced by %; not affected by -% Damage Resistance; integer Damage Reduced does not reduce it; Sanctuary does not protect Immune-to-Physical undead.
+gaps: per-item chance values not on this page (the search snippet shows Bloodtree Stump at 50%).
+
+=== Deadly Strike ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "gives a chance to double the Physical Damage of the attack"
+facts: counts as a Critical Hit for total chance; percent summed from all gear; off-hand weapon percent applies only when that weapon strikes; combining sources: 100 - ((100 - DS%) x (100 - CS%) / 100); barbarian mercenaries, valkyries and iron golems have independent 5% crit (can stack to quadruple); does not apply to impale, dragon talon, dragon tail, dragon flight, sacrifice, smite.
+gaps: none.
+
+=== Fires Explosive Arrows or Bolts ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "replaces any standard Attack with explodingarrow with Skill Level determined by the weapon source"
+facts: does not apply if a skill is used with the weapon; weapon source levels: Raven Claw 3, Hellcast 5, Demon Machine 6, Kuko Shakaku 7, Blood Raven's Charge 13, Brand 15.
+gaps: Exploding Arrow damage numbers NOT PRESENT.
+
+=== Fires Magic Arrows ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Replaces any standard Attack with magicarrow with Skill Level determined by the weapon source"
+facts: does not apply if a skill is used with the weapon; source levels: M'avina's Caster 1, Witherstring 3, Wizendraw 5, Widowmaker 11, Witchwild String 20.
+gaps: Magic Arrow damage numbers NOT PRESENT.
+
+=== Freeze Target ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Freezes normal or minions monsters, and applies Chill to all other targets as long as target is not Immune to Cold or have 0 Chill Effectiveness"
+facts: only freezes normal and minion monsters; freeze or chill length random 1 to 9 seconds (25-225 frames), effectiveness 1/2 in Nightmare and 1/4 in Hell; chance, melee: 30 + 5(4 x {Freeze Target sum} + {attacker level - defender level}); ranged: that / 3; applied by any melee or ranged attack except blade sentinel, blade shield and extra multishot arrows.
+gaps: none.
+
+=== Hit Blinds Target ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "cast a level 1-20 dimvision on the target which Blinds it"
+facts: blinds only normal and minion monsters; reduces monster awareness to melee range only (no skills or special abilities); chance, melee: 30 + 5(4 x {Hit Blinds Target sum} + {attacker level - defender level}), ranged: that / 3; dimvision level min((% chance - random(99)) / 5 + 1, 20); duration halved in Nightmare, quartered in Hell; if applied together with Flee, flee takes precedence.
+gaps: base duration NOT PRESENT.
+
+=== Hit Causes Monster to Flee ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "causes the target to flee in the direction opposite of the attacker due to applying a flee effect"
+facts: only normal and minion monsters; applied by any melee or ranged attack except blade sentinel, blade shield and extra multishot arrows; the target may keep fleeing after the effect expires until its next AI check; cannot overwrite grim ward or terror; if applied with Hit Blinds Target, flee takes precedence.
+gaps: duration NOT PRESENT.
+
+=== Ignore Target's Defense ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Calculates attacks made on normal, minion monsters, or Character Summons as having 0 Defense"
+facts: only for attacks made with that weapon; does not work on player characters, mercenaries, elites or act bosses.
+gaps: none.
+
+=== Knockback ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "target which can be knocked back will be moved up to 3 sub-tiles away from the attack direction and put into Hit Recovery"
+facts: does not apply if the target is frozen or killed; chance by target size: size 1 100%, size 2 50%, size 3 25%, bosses 0% (act bosses, ubers, ancients, Griswold, Izual, Nihlathak, Coldworm); not golems, druid vines or spirits.
+gaps: none.
+
+=== Life Stolen ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "returns Life to the attacker equal to a % of the damage dealt"
+facts: on strikes dealing Physical damage; effectiveness 1/2 in Nightmare, 1/3 in Hell; a modified percentage under 1% rounds to 0%; the target's Drain Effectiveness reduces it (0% = none; most undead have 0%). Search ladder (PureDiablo suffixes): Leech 2-5%, Locust 4-7%, Lamprey 6-9% life stolen per hit.
+gaps: none.
+
+=== Mana Stolen ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "returns Mana to the attacker equal to a % of the damage dealt"
+facts: same rules as Life Stolen. Ladder (PureDiablo suffixes): Bat 2-5%, Wraith 4-7%, Vampire 6-9% mana stolen per hit.
+gaps: none.
+
+=== Monster Defense per Hit ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "reduces the target's Defense value by an amount stated on the item"
+facts: only attacks made with that weapon; reduces base Defense before any +% Defense; values: Soul Drainer -50, Woestave -50, Crainte Vomir -70, Stone Crusher -100, Malice -100.
+gaps: duration NOT PRESENT.
+
+=== Chance to Cast on Attack ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Gives a % Chance to Cast the listed Skill when making a melee attack hit check against a target"
+facts: the attack need not hit, only be attempted; procced also by mercenaries, summons and monsters with gear; skill synergies apply; ranged weapons do not proc unless used by a shape-shifted druid; charged bolt and frozen orb originate from the attacker, all others from the target.
+gaps: none.
+
+=== Chance to Cast on Striking ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Gives a % Chance to Cast the listed Skill when making a melee attack hit check that succeeds, and hit is not Blocked or Dodged"
+facts: the attack must hit but need not deal damage; venom and enchant are cast on the attacker; poison nova and static field centre on the attacker; directional skills (firestorm, twister, tornado, bone spirit, charged bolt, frozen orb) cast toward the target from the attacker; all others originate at the target. Search example: "5% Chance To Cast Level 18 Volcano On Striking".
+gaps: none.
+
+=== Open Wounds ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "causes the target to begin Bleeding, applying damage and stopping damage regeneration for 8 seconds"
+facts: applies only if monsters take damage or are regenerating; always applies to characters if the strike succeeds; damage effectiveness 1/2 for elites and act bosses, 1/4 for player characters (melee), 1/8 (ranged); no damage reduction can affect it; reapplication replaces the effect and resets the timer; duration cannot be reduced; life gain still works. Life drain per frame (1/256ths): level 1-15 9 x slvl + 31; 16-30 18 x slvl - 104; 31-45 27 x slvl - 374; 46-60 36 x slvl - 779; over 60 45 x slvl - 1319. Example: a level 50 character does 797.65 damage over 8 s (200 frames).
+gaps: none.
+
+=== Piercing Attack ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Adds a chance to missile weapon attacks to Pierce the target when hit, and hit subsequent targets behind them"
+facts: percent summed from all sources; blocking does not stop a piercing missile; a missile can pierce up to 4 times (5 targets); per-item chances: Stormstrike 25%, Gut Siphon 33%, Razortail 33%, Doomslinger 35%, Kuko Shakaku 50%, Ichorsting 50%, Warshrike 50%, Demon Machine 66%, Buriza-Do Kyanon 100%.
+gaps: none.
+
+=== Prevent Monster Heal ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "stops monster damage regeneration for 80 minutes (120,000 frames)"
+facts: applied only by player characters (not mercenaries or iron golems); only if the monster takes damage; cannot be applied to Uber/Pandemonium event bosses (Lilith, Duriel, Izual, Mephisto, Diablo, Baal).
+gaps: none.
+
+=== Slows Target ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Slows the target's attack rate and velocity by a %"
+facts: lasts 30 seconds unless another slow is applied; reapplication resets duration only; maximum 90% for normal and minion monsters, 50% for player characters, elites and act bosses; applied by mercenaries and iron golems.
+gaps: none.
+
+=== Target Defense Reduction ===
+group: Attack modifier (Maxroll)
+quality: clean
+url: https://maxroll.gg/d2/resources/attack-modifiers
+tooltip: "Causes attacks to calculate chance to hit as if the target had less Defense according to a % reduction"
+facts: only for attacks made with that weapon; full percentage on normal and minion monsters; halved against player characters, mercenaries, super uniques and act bosses; Defense cannot go below 0%.
+gaps: none.
+
+=== Fire Damage ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211 and https://www.purediablo.com/?p=3217
+tooltip: suffixes "Flame" +1-[2-5] fire damage (req. 3); "Fire" +[1-4]-[6-11] (11); "Burning" +[5-9]-[10-20] (18); "Incineration" +[10-16]-[21-75] (level NOT PRESENT). Prefixes "Fiery" +16-25 min and 31-60 max fire damage (18); "Smoldering" +26-50 / 61-90 (26); "Smoking" +51-80 / 91-130 (level NOT PRESENT); "Flaming" +81-120 / 131-180 (51); "Condensing" +121-170 / 181-240 (67).
+facts: ranges as returned.
+gaps: some level requirements NOT PRESENT.
+
+=== Cold Damage ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211 and https://www.purediablo.com/?p=3217
+tooltip: suffixes "Frost" +1-[1-2] cold damage, 2 s chill (3); "Icicle" +1-[3-4], 3 s (9); "Glacier" +[2-4]-[4-15], 4 s (20); "Winter" +[5-9]-[16-50], 5 s (37). Prefixes "Snowy" +6-9 min to 19-30 max cold, 1 s (18); "Shivering" +10-15 / 31-45, 2 s (26); "Boreal" +16-23 / 46-90, 3 s (40); "Hibernal" +25-45 / 91-140, 4 s (60).
+facts: ranges as returned.
+gaps: none.
+
+=== Lightning Damage ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211 and https://www.purediablo.com/?p=3217
+tooltip: suffixes "Shock" +1-[6-8] lightning (3); "Lightning" +1-[9-16] (11); "Thunder" +1-[17-40] (18); "Storms" +[1-6]-[41-120] (26). Prefixes "Static" +1 min and 49-120 max (18); "Glowing" 121-180 (25); "Buzzing" 181-260 (36); "Arcing" 261-360 (50); "Shocking" 361-480 (level NOT PRESENT).
+facts: ranges as returned.
+gaps: some level requirements NOT PRESENT.
+
+=== Poison Damage ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211 and https://www.purediablo.com/?p=3217
+tooltip: suffixes "Blight" +7 poison over 3 s (3); "Venom" +21 over 4 s (11); "Pestilence" +50 over 5 s (18); "Anthrax" +100 over 6 s (25). Prefixes "Septic" +6 over 2 s (1); "Foul" +12 over 3 s (7); "Corrosive" +80 over 4 s (15); "Toxic" +150 over 5 s (26); "Pestilent" +275 over 6 s (37).
+facts: ranges as returned.
+gaps: none.
+
+=== Enhanced Damage ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3217
+tooltip: prefixes "Jagged" +10-20% damage (req. 1); "Deadly" 21-30% (3); "Vicious" 31-40% (6); "Brutal" 41-50% (10); "Massive" 51-65% (15); "Savage" 66-80% (19); "Merciless" 81-100% (24); "Ferocious" 101-200% (33); "Cruel" 201-300% (43/48). Combined with attack rating: "Sharp" +10-20 AR and 10-20% (3); "Fine" 21-40 AR and 21-30% (9); "Warrior's" 41-60 and 31-40% (13); "Soldier's" 61-80 and 41-50% (19); "Knight's" 81-100 and 51-65% (30); "Lord's" 101-120 and 66-80% (39); "King's" 121-150 and 81-100% (48); "Master's" 151-250 and 101-150% (48); "Grandmaster's" 251-300 and 151-200% (61).
+facts: ranges as returned.
+gaps: none.
+
+=== Attack Rating ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3217
+tooltip: prefixes "Bronze" +10-20 Attack Rating (req. 1); "Iron" 21-40 (3); "Steel" 41-60 (6); "Silver" 61-80 (9); "Gold" 81-100 (12); "Platinum" 101-120 (16); "Meteoric" 121-150 (20); "Strange" 151-300 (24); "Weird" 301-450 (27).
+facts: ranges as returned.
+gaps: none.
+
+=== Minimum and Maximum Damage ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211
+tooltip: suffixes minimum damage "Worth" +1-2 (1), "Measure" +3-4 (9), "Excellence" +5-8 (18), "Performance" +9-14 (40), "Transcendence" +15-20 (68); maximum damage "Craftsmanship" +1 (1), "Quality" +2 (3), "Maiming" +3-4 (5), "Slaying" +5-7 (8), "Gore" +8-10 (10), "Carnage" +11-14 (14), "Slaughter" +15-20 (18), "Butchery" +21-40 (27), "Evisceration" +41-63 (37).
+facts: ranges as returned.
+gaps: none.
+
+=== Damage vs Demons ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3217
+tooltip: prefixes "Lunar" +25-50 AR vs Demons, +10-25% damage vs Demons (req. 1); "Arcadian" 51-100 AR, 26-50% (11); "Unearthly" 101-150, 51-100% (18); "Astral" 151-200, 101-150% (26); "Elysian" 201-300, 151-200% (33); "Celestial" 300-400, 201-300% (41).
+facts: ranges as returned.
+gaps: none.
+
+=== Damage vs Undead ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3217
+tooltip: prefixes "Consecrated" +25-75 AR vs Undead, +25-75% damage vs Undead (req. 1); "Pure" 76-175 AR, 76-125% (11); "Sacred" 175-250, 126-200% (18); "Hallowed" 251-325, 201-275% (27); "Divine" 326-450, 276-350% (37).
+facts: ranges as returned.
+gaps: none.
+
+=== Attack Speed ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211
+tooltip: suffixes "Readiness" +10% attack rate (req. 3); "Alacrity" +20% (17); "Swiftness" +30% (26); "Quickness" +40% (38).
+facts: ranges as returned.
+gaps: none.
+
+=== Damage Reduced ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211
+tooltip: suffixes "Health" Damage Reduced by 1 (req. 5); "Protection" by 2 (13); "Absorption" by 3 (19).
+facts: ranges as returned.
+gaps: none.
+
+=== Life Regeneration ===
+group: Magic affix ladder (PureDiablo)
+quality: clean
+url: https://www.purediablo.com/?p=3211
+tooltip: suffix "Regeneration" +3-5 life regeneration (req. 52).
+facts: as returned.
+gaps: the time unit of the regeneration NOT PRESENT.
