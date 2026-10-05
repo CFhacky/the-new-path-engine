@@ -107,4 +107,34 @@ TS per ~500-troop element (Battle Layer §4, [DIAL]): Regular 40, Veteran 60, El
 
 ## 8. Still open
 - **Gate C (Chad):** C15 (Warden's Vigil garrison in Uktar 1498), C16 (how Gary and Sania get from Isle de Troll, and who calls them).
-- **SR for Phase 6/9:** Red Wizard, Thayan undead and war-golem stat blocks; Khorzad, Ersk and Vigil scout skills; Jin's sheet; Virelle's 3.5e/GURPS port; holding card; Mass Combat tables (live result stands in).
+- **SR for Phase 6/9:** Red Wizard, Thayan undead and war-golem stat blocks; Khorzad, Ersk and Vigil scout skills; Virelle's 3.5e/GURPS port (Jin's sheet exists: Jin the Whisper — Emperor's Hand); holding card; Mass Combat tables (live result stands in).
+
+## 9. Chad's weightings (5 Oct 2026, append-only)
+
+### 9a. Thayan undead quality +3
+Chad left the application to the module. Applied as:
+- **Every Thayan undead element rolls its quality at fire on 3d6 + 3**: 3–8 Regular 12 · 9–14 Veteran 14 · 15–18 Elite 16 · **19–21 Legendary 18** (the Battle Layer's top rung, TS 130 per ~500).
+- **Which elements are undead:**
+	- The column's undead contingent (new **F13**).
+	- The undead share of each Red Wizard household: half its F8 size, rounded down. The living retinue keeps the static Veteran 14.
+	- Any dead Thay manages to raise mid-battle, if the raising beats the Frozen Threshold. They are deployed undead too.
+- **F13, column undead contingent** (only when F1 includes a Vraxis column). Size: 3-5 80 · 6-8 150 · 9-12 300 · 13-15 500 · 16-18 800. Sources: Vraxis's 80+ bound undead; Akhet-Senet's ~3k undead pool.
+- On average the +3 turns a Veteran roll into Elite about half the time and opens Legendary. Thay's dead are the best troops on the field.
+
+### 9b. Cult of the Dragon: Jin strikes first
+- **F14, Cult involvement (at fire).**
+	- Read the Cult's current Annex result. If none stands for the month, roll it now: detection 16, then the Annex intent layer.
+	- **The Cult is involved if its intent is steal, seize or destroy.** Its object is the bank: a full bank is a power source for the soulless dracolich body (Annex).
+- **If the Cult is involved, Jin the Whisper triggers automatically** (Chad). He and his hand (the Emperor's Hand, with what he draws from the Order of the Storm's Edge at his discretion) **strike the Cult before the main fight.**
+	- This is a separate pre-battle encounter on the fused engine. Jin's sheet exists: LE Monk 7 / Rogue 3 / Assassin 10 (Jin the Whisper — Emperor's Hand).
+	- It is a pause point. Jin captures or destroys at his own judgment (Annex ruling), and anything Cult-held that he judges too dangerous is fair game.
+	- The pre-battle strike **does not count against the empire's 3-layer cap**, because it happens before the battle. If Jin then also enters the main battle on his own trigger, that does count.
+	- **If Jin's strike fails or only partly succeeds,** the surviving Cult element enters the main battle as a **third side**. It is hostile to both, and its object is the bank.
+- **Cult layer card:**
+
+| Asset | Side | Tier | Strength | Concealment | Arrival | Authorised by | Exposure cost | Source |
+|---|---|---|---|---|---|---|---|---|
+| Cult of the Dragon eastern cell | Third side | Hidden | F15 | **−6** (D: 9, 13, 11, 6 → 9) | Before the main fight; Jin meets it first | Cult cell leadership | Cult learns the empire has a throne agent in Anauroch; Jin is seen by whoever watches | Threat Annex (S) |
+
+- **F15, Cult cell strength (at fire):** 3-8 a cell of agents (skirmish scale) · 9-14 the cell plus hired blades (60–150; size by d6 × 15 + 45) · 15-18 the cell with a dragon-cult ally on the wing (stat SR, Phase 6).
+- **Virelle:** Cult evidence (the dracolich recovery plan, its agents) is exactly the kind of prize her trigger 2 names. If both act, custody of the Cult survivors is contested (§3).

@@ -198,5 +198,17 @@
   ],
   "bound": 10,
   "result": 8
+ },
+ {
+  "id": "K concealment \u2014 Third side: Cult of the Dragon cell",
+  "table": "3-5 -2; 6-8 -4; 9-12 -6; 13-15 -8; 16-18 -10",
+  "throws": [
+   9,
+   13,
+   11,
+   6
+  ],
+  "bound": 9,
+  "result": -6
  }
 ]
