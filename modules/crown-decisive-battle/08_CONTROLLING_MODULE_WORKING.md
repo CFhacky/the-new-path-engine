@@ -373,3 +373,10 @@ At each one: **stop, recompute Mass Combat, record the live result.**
 - The field at dusk. The ice holds the Thayan dead standing where the aura caught them, hundreds of them, white and still in their ranks.
 - Here and there, a body whose master died mid-command still stands **without** ice, waiting for an order that will never come. When the wind gusts, they sway.
 - **Cut** to the morning after.
+
+> **Errata (5 Oct 2026, Chad):**
+> - **Pre-bound dead don't count against the limit** (05 §9f, 08b §6).
+> - **Mage Tracker:** add one row **"Pre-bound (F13)"**: size from F13, quality 3d6+3, controller = commander. It does not idle on a mage's death.
+> - **Beat 1:** the pre-bound horde walks **first**, ahead of the retinues. They're the cheap dead, spent to find the aura.
+> - **Beat 7:** if the commander dies or flees, the pre-bound dead freeze on their last order.
+> - **Ratified:** the breach refill of 1d4 rounds and the Threshold placeholder of 3d6 vs level + 4. Both are now rulings, no longer R.

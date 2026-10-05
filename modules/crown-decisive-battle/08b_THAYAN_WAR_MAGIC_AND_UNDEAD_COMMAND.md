@@ -114,3 +114,12 @@ SRD spell levels are given in brackets. The GM picks from these lists by the mag
 - **F20:** level per mage (above).
 - **F21:** temperament per mage, d6 (§3).
 - **F13: superseded.** Undead strength is the sum of the retinues.
+
+## 6. Errata (5 Oct 2026): Chad rulings on the open items
+- **Pre-bound dead don't count against the limit.** F13 returns as the column's pre-bound contingent, outside the mage pools (05 §9f). §1's "What this replaces" note is amended: F13 is **added to**, not replaced by, the retinues.
+	- Two kinds of dead are now on the field:
+		- **Retinue dead** idle when their mage dies.
+		- **Pre-bound dead** keep their last order until the commander changes it.
+	- Killing mages strips the retinues. Killing the commander locks the horde on its last order. An "advance" horde keeps walking into the aura; a "hold" horde stays put and becomes the rearguard.
+- **Ice-wall breach refill, 1d4 rounds: ratified** (Gate D item closed).
+- **Frozen Threshold raising, 3d6 vs the mage's level + 4: ratified as the working rule** until Phase 9 writes the full contest.

@@ -194,3 +194,9 @@ F16 is no longer rolled at fire. The standing roster is in `05a_THE_HAND_ROSTER.
 - The new sealed rolls are **F19** (mage ratio), **F20** (level per mage) and **F21** (temperament per mage). They are in `08b_THAYAN_WAR_MAGIC_AND_UNDEAD_COMMAND.md` §1, §3 and §5.
 - §9a's household rule ("half its F8 size undead") is also superseded. A household's undead is its mage's pool; its F8 size is the living retinue.
 - **Retained:** the 3d6+3 quality, and that raised dead count as deployed undead.
+
+### 9f. Errata (5 Oct 2026, Chad ruling): pre-bound dead
+- **Chad: pre-bound dead don't count against the control limit.**
+- **F13 is reinstated, renamed "pre-bound dead".** The size table (3–5 80 · 6–8 150 · 9–12 300 · 13–15 500 · 16–18 800) and its trigger stand. These are the column's dead, bound before the march (Vraxis's standing 80+; Akhet-Senet's ~3k pool). They sit **outside** every mage's 4 HD/CL pool. Quality 3d6+3 (§9a).
+- **Thay's undead total = F13 pre-bound + the sum of mage retinues (F19–F21).** §9e is amended to match: F13 is no longer superseded.
+- **Application (R):** pre-bound dead obey standing orders set at the binding. **They do not idle when a mage dies.** Only the column commander (F17) can change their orders mid-battle. Killing the commander freezes them on their last order, not off.
