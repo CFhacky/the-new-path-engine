@@ -301,7 +301,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 - **Campaign weight (flagged, not hidden):**
 	- **Against enemies:** Tiamat and her sent peer chromatic; the Cult of the Dragon's dracolich project (Crown battle, F14); and yuan-ti and naga cults wherever they sit.
 	- **Against friends:** the bane does not care about allegiance. It bites **Jörmun** (lindwurm), **Gary** (an ancient red), **Shi'van's bonded dragon** and the **Wyrmhelm Program's** whole roster. A Hand priest carrying the bead walks among the empire's dragons with a weapon that wants their scale. The bead **is aware** of every reptile within 60 ft that it would bane (an extension of the Bite), so Jörmun's handlers will notice it the first time a priest comes near.
-- GURPS: weapon gadget enhancement +2d (Bane: Reptilian/Draconic, a common class, −0%? GM may set −10% given the breadth), plus Follow-Up Crippling (severed head; no regrowth for 1 day) against multi-headed targets.
+- GURPS: weapon gadget enhancement +2d (Bane: Reptilian/Draconic, a broad class; suggested limitation −10%, GM's call), plus Follow-Up Crippling (severed head; no regrowth for 1 day) against multi-headed targets.
 
 #### Layer 3 — In the holder's hand (after the pledge is received)
 
@@ -341,7 +341,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 3. **Standing.** The theft gives Amaterasu's court, and Talos's man, a lawful complaint (§6).
 4. **Layers 2 and 3 work while it is stolen.** The Pledge still registers, **and the holder receives the Feed** (power 6).
 
-**Power-tier check.** These powers sit level with Kusanagi's shrine blade, which is also an artifact with an at-will defining power (Turn the Wind). The heaviest lines are the five breath-born (five CR 5 elementals once a day), the Hail (8d6+4d6 in a 50-ft killing ground once a day), and Bane of the Eight, which now covers every reptile, including every dragon, the empire's own among them. Both sit below the CR 18–20 apex band and give a priest of 13–14 a single scene-defining move a day. Bane of the Eight is the line with strategic weight: Tiamat on one side, the empire's own dragons on the other. **Unpriced (relic). Never loot-rolled.**
+**Power-tier check.** These powers sit level with Kusanagi's shrine blade, which is also an artifact with an at-will defining power (Turn the Wind). The heaviest lines are the five breath-born (five CR 5 elementals once a day), the Hail (8d6+4d6 in a 50-ft killing ground once a day), and Bane of the Eight, which now covers every reptile, including every dragon, the empire's own among them. The first two sit below the CR 18–20 apex band and give a priest of 13–14 a single scene-defining move a day. Bane of the Eight is the line with strategic weight: Tiamat on one side, the empire's own dragons on the other. **Unpriced (relic). Never loot-rolled.**
 
 **Who claims it:**
 
