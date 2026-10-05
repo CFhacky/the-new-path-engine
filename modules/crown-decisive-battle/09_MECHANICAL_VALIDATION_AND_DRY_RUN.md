@@ -219,3 +219,23 @@ Once per day. **This is the single most powerful play available to him in the ba
 3. **V14 Threshold contest:** keep the +4 mindless dial, or raise it?
 4. **V16 individuals in Mass Combat:** supply Mass Combat's rule, or rule the DIAL (a CR 20 individual counts as Legendary air, TS 260)? **Session 2 waits on this.**
 5. **V6 Chain-Breaking targets:** confirm one tether, one pre-bound element or one Lien per day, with released dead turning on the nearest living.
+
+## 7. Ruled (Chad, 5 Oct 2026)
+1. **V1:** SR 37 (HD = 12 sorcerer levels) confirmed. The Cold-Breakers rewrite (08b §8) stands.
+2. **V7:** territory awareness = **presence and position**, not identity. The reveal model stays live inside 10 mi.
+3. **V14:** the Threshold contest stands as written, including +4 for mindless raising.
+4. **V16:** **DIAL ruled.** A CR 20 individual counts in Mass Combat as a **Legendary air element, TS 260** (130 × 2). It still acts through significant actions.
+	- This applies to Jörmun and to Gary.
+	- **Below CR 20 (R, by the same logic):** Khorzad and other exceptional individuals take the nearest Quality rung by sheet, ×2 if airborne. Rungs: Regular 40, Veteran 60, Elite 90, Legendary 130. Each counts as one element.
+	- The Hand counts as **one Elite element** (5 members of CR 13–14; R).
+	- Case 1 now reads about **266 + Khorzad vs 281**. **Session 2 is unblocked.**
+5. **V6:** Chain-Breaking confirmed. Once a day it severs **one mage's retinue tether, one pre-bound element, or one Grave Lien**. Released dead turn on the nearest living.
+
+**Phase 9 closed.** Remaining SR items carry into Phase 10:
+- Khorzad, Ersk and Vigil sheets.
+- Golem blocks.
+- The Brazier's stats.
+- Gary's SR and saves.
+- The stone wall's thickness.
+- Whether Vraxis has the Spell Penetration feats.
+- The Mass Combat Results tables (the live result still stands in).
