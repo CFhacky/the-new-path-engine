@@ -1,0 +1,155 @@
+{
+ "R19a' Cult of the Dragon detection (Tier B)": {
+  "throws": [
+   4,
+   18,
+   12,
+   13
+  ],
+  "lower_median": 12,
+  "result": 16,
+  "table": [
+   "3-5: 12",
+   "6-8: 14",
+   "9-12: 16",
+   "13-15: 18",
+   "16-18: 20"
+  ]
+ },
+ "R19b' Shade Remnant detection (Tier B)": {
+  "throws": [
+   8,
+   15,
+   9,
+   12
+  ],
+  "lower_median": 9,
+  "result": 16,
+  "table": [
+   "3-5: 12",
+   "6-8: 14",
+   "9-12: 16",
+   "13-15: 18",
+   "16-18: 20"
+  ]
+ },
+ "R19c' Thay / Red Wizard scrying detection (Tier A)": {
+  "throws": [
+   15,
+   14,
+   14,
+   7
+  ],
+  "lower_median": 14,
+  "result": 20,
+  "table": [
+   "3-5: 14",
+   "6-8: 16",
+   "9-12: 18",
+   "13-15: 20",
+   "16-18: 22"
+  ]
+ },
+ "R19d' Storm-maker detection (Tier A)": {
+  "throws": [
+   16,
+   8,
+   9,
+   7
+  ],
+  "lower_median": 8,
+  "result": 16,
+  "table": [
+   "3-5: 14",
+   "6-8: 16",
+   "9-12: 18",
+   "13-15: 20",
+   "16-18: 22"
+  ]
+ },
+ "R19f Vaelthrix detection (Tier B)": {
+  "throws": [
+   12,
+   9,
+   6,
+   8
+  ],
+  "lower_median": 8,
+  "result": 14,
+  "table": [
+   "3-5: 12",
+   "6-8: 14",
+   "9-12: 16",
+   "13-15: 18",
+   "16-18: 20"
+  ]
+ },
+ "R19g Phaerimm detection, only once the sharn barrier is stressed (Tier A)": {
+  "throws": [
+   6,
+   9,
+   16,
+   11
+  ],
+  "lower_median": 9,
+  "result": 18,
+  "table": [
+   "3-5: 14",
+   "6-8: 16",
+   "9-12: 18",
+   "13-15: 20",
+   "16-18: 22"
+  ]
+ },
+ "R19h Ioulaum detection, only once placed or active (Tier A)": {
+  "throws": [
+   6,
+   12,
+   9,
+   12
+  ],
+  "lower_median": 9,
+  "result": 18,
+  "table": [
+   "3-5: 14",
+   "6-8: 16",
+   "9-12: 18",
+   "13-15: 20",
+   "16-18: 22"
+  ]
+ },
+ "R23 E-07 horror growth: +1 CR per N charges' worth of echo crystal eaten": {
+  "throws": [
+   12,
+   8,
+   9,
+   14
+  ],
+  "lower_median": 9,
+  "result": 25,
+  "table": [
+   "3-5: 50",
+   "6-8: 40",
+   "9-12: 25",
+   "13-15: 15",
+   "16-18: 10"
+  ]
+ },
+ "R24 E-07 horror CR cap": {
+  "throws": [
+   10,
+   8,
+   7,
+   13
+  ],
+  "lower_median": 8,
+  "result": 18,
+  "table": [
+   "3-5: 16",
+   "6-8: 18",
+   "9-12: 20",
+   "13-15: 22",
+   "16-18: 24"
+  ]
+ }
+}
