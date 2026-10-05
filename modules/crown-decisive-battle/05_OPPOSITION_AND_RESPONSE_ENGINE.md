@@ -149,3 +149,26 @@ Chad left the application to the module. Applied as:
 	- 18: an exotic outside the Veil kit, Menagerie-type. The individual is named from an existing roster where one fits, or flagged for Chad.
 - **Stat source for Phase 6:** the operative profile plus the class package. Exotics use their own pages.
 - **Census:** the Hand is Jin's pre-battle force. It does not count against the empire's 3-layer cap unless it follows Jin into the main battle.
+
+### 9c errata (5 Oct 2026, append-only): the Blue Hour, not the Westward Menagerie
+- §9c cited the 🎭 Menagerie roster page (the westward pursuit company: Serael, Sania, Empyrean, Thess, Selariel). **That was the wrong source.** Chad's example is the host in **The Blue Hour — Dalelands Opening** (Session Prose 343e8214-84b0-8197-be1a-ecd776df27e5): eighty Veil operatives, each one different, stepping out of shadow around Arik at Tethford.
+- **What the Blue Hour establishes about a Hand-type draw:**
+	- **One uniform:** black silk gloves with silver threading to the elbow.
+	- **Arrival by shadow,** out of any dark deep enough to hide a cat. That is Shadow Jump, so Gray tier or higher on the operative ladder.
+	- **Work in cells,** threes in a triangle, spaced at intervals, silent.
+	- **Each operative different** on the common kit:
+		- the broad man with edged-weapon scarring on his forearms
+		- the woman with a loaded hand crossbow and a bandolier of red-, blue- and white-threaded pouches
+		- the sorcerer with bone and crystal foci braided into her hair
+		- the legionnaire-built striker whose hands rest half-closed
+		- the boy with a thin knife sheathed horizontally for a reversed draw
+		- the staff-carrier moving with joints trained out of human angles
+		- the old operative who has catalogued every guard rotation
+- **F16 replaced** (the earlier table stands only as superseded record). One roll per slot, five slots, all on the Veil operative kit at Gray tier or higher unless the 18 says otherwise:
+	- **3-7:** close-work blade (the scarred knife-men, the reverse-draw boy)
+	- **8-10:** striker (the half-closed hands; unarmed or staff, monk-pattern)
+	- **11-13:** shooter-alchemist (hand crossbow, threaded pouches)
+	- **14-16:** sorcerer (foci in the hair)
+	- **17:** watcher-analyst (the old cataloguer: intelligence, not killing)
+	- **18:** a non-Veil-base member Jin has drawn on his own account (stat SR; flag for Chad)
+- **The Westward Menagerie is not available to the Hand** and plays no part in this module. Its Sania entry is a future expedition and does not conflict with her Isle de Troll posting in 1498.
