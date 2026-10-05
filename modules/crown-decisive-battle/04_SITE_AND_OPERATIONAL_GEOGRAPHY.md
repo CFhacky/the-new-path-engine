@@ -73,3 +73,12 @@ Deviations: none
 	- Gary's sheet gives fly 150 ft (poor), so 60 / **45** / 30 mph. Carrying Sania, he cruises at **45 mph**.
 	- His sheet predates LOG-788 and matches neither stock 3.5e (an ancient red flies 200 ft) nor the Wyrmhelm page's own wild-red example ("fly 200 ft cruises 80 mph"). At 200 ft he would cruise at **60 mph** with a rider. Which value stands is a Chad call; the module uses 150 until then.
 	- Isle de Troll (on the Surbrin, near Yartar) to the Crown is not on Notion and has to be measured on the published map. A Warmother-class flyer under riders covers 430–540 mi per flying day (LOG-788), so Gary arrives **within a day of being called**, not several days. C16 narrows to: the measured distance, Gary's fly speed (150 or 200), and who calls him.
+
+## C16 resolved (Chad, 5 Oct 2026, append-only)
+- **Gary's fly speed is 200 ft** (Gary page corrected). Cruise with Sania aboard: **60 mph** (LOG-788).
+- **Concealment:** at Isle de Troll Sania carries Gary cat-sized in her coat. Thay's intelligence sees neither a dragon nor her.
+- **Distance, measured from landmarks** on the calibrated atlas (`CFhacky/baen-atlas`: Faerûn Atlas 2025 master raster, 0.7508 mi/px, provisional scale):
+	- Crown point (normalised 0.53318, 0.15566) to the Yartar marker (1644, 528): **841.6 mi** straight line. The same registration reproduces the Southern Hinge's 411.7 mi Crown–S4 control.
+	- Isle de Troll is "north of Yartar" on the Surbrin, 38 road miles NE of the Long Road junction, which is 12 mi south of Yartar. It has no atlas point. Taking that offset, **Isle de Troll to the Crown ≈ 815–845 mi (I), working figure 830 mi.**
+- **Transit:** 830 mi ÷ 60 mph ≈ **13.8 flying hours**. LOG-788's flying day is about 8–10 hours, so Gary lands on the **second day after the call**, roughly 24–36 hours after it. A forced single-day flight is not ruled.
+- **In the module:** the Gary-and-Sania layer arrives 24–36 h after Jörmun's call (crystal communications; the caller is taken to be Jörmun unless Chad rules otherwise). The call has to come off scouting: if the main body is spotted on its 85-mi approach, he is there in time. If the bait is the first warning and Jörmun waits, he is not.
