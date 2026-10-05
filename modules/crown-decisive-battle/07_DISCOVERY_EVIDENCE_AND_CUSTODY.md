@@ -326,3 +326,12 @@ The layer model runs both ways, so these are Thay's discoveries. **Each one feed
 	- Vraxis's ward pages (C-2b): +4 after a week's study; reproduction after a month by Seliara or a specialist
 - **Questioning the dead in the ice: NO blanket ability.** The Frozen Threshold traps souls but does not let Jörmun interrogate them. Standard magic applies only through allies or consumables. *Speak with dead* is a cleric spell, not on the sorcerer list. 7.8's first option is closed. Hezrim's break condition ("shown his own fallen in the ice") stands, because seeing the trapped dead is canon and questioning them is not. A future ability to question the trapped is a possible growth hook, not current canon.
 - **Still open:** the Node Two leak (S-3, scrying or a mole).
+
+## 7.17 The Node Two leak (Chad, 5 Oct 2026: option C)
+**F18, sealed at fire.**
+- 3d6: **3–12 scrying.** The route card shows Branch A. Thay's seers marked the second sonde field by its lightning.
+- **13–18 a mole.** The route card shows Branch B. Roll **F18b** for which population the mole comes from:
+	- 3–8: a Bedine grazing-rider of a Crown-allied clan
+	- 9–13: a legionary of Mago's garrison or the wedge
+	- 14–18: someone in the Crown's civil staff or a caravan regular
+- The mole's identity and motive are built when it fires. The thread opens only if the dice say so. **Virelle's trigger 1** (a Veil asset about to be burned) is checked if the mole's channel runs through anyone the Veil has turned.
