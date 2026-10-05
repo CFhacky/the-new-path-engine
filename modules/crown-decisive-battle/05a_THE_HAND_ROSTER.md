@@ -40,3 +40,9 @@ Deviations: none
 - **The priests' deity.** Trickery and Death together need a god who grants both, and the Veil's clergy has no page here. Nym's and Lorne's patron is Chad's call.
 - **Name near-miss:** Teodric Halvane / Halver Sarn (NPC). Different enough to keep; write Teodric's full name on first reference.
 - **Stats:** Phase 6 builds each member from the Veil Standard Field Operative Profile (Gray) plus the 3.5e class at the rolled level, with the GURPS side per FUSED_ENGINE_RESOLUTION.
+
+## Patron (Chad, 5 Oct 2026, append-only)
+- **Nym Esharan and Lorne Ashby serve the Storm King's office:** the Susanoo seat that Arik is filling, the Pale Name (Kusanagi page: the office "filling", power "flowing to the Pale Name by inheritance"). The office grants **Trickery and Death** as a CAMPAIGN-RULING: Susanoo's outrages and the drunken Orochi on one side, his rule of Ne-no-Kuni, the Root Country of the dead, on the other.
+- **Arik does not know he has priests.**
+- **Forward note, not yet ruled:** when Arik finds out, Chad expects to take a page from the Emperor of Mankind. Arik would deny worship as a rule and allow these priests as a sanctioned exception. That is a future scene.
+- **Enma-Ō stays in the cosmology.** Susanoo's Root Country (Shinto) and Enma's hells (Buddhist, from Yama) are separate afterlives that coexist in the same tradition. The Hand wears oni faces, and oni are Enma's wardens, so priests of another office are wearing his servants' faces. Whether Enma takes notice is an open hook.
