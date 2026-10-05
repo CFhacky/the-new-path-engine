@@ -138,3 +138,14 @@ Chad left the application to the module. Applied as:
 
 - **F15, Cult cell strength (at fire):** 3-8 a cell of agents (skirmish scale) · 9-14 the cell plus hired blades (60–150; size by d6 × 15 + 45) · 15-18 the cell with a dragon-cult ally on the wing (stat SR, Phase 6).
 - **Virelle:** Cult evidence (the dracolich recovery plan, its agents) is exactly the kind of prize her trigger 2 names. If both act, custody of the Cult survivors is contested (§3).
+
+### 9c. The Hand (Chad, 5 Oct 2026)
+- **The Hand is a five-person draw** of warriors and killers, picked by Jin at his discretion. Jin leads it and is not one of the five.
+- **Most members are built on the Veil operative kit** (Veil Standard Field Operative Profile, Notion 334e8214-84b0-81c2-b05e-e0eed6155be5) before their classes or kits are added. Some are not: the Menagerie (Westward Pursuit roster, 39de8214-84b0-819f-881b-f7aa0c560b05: a construct, a vampire, a celestial, a clerk, an elf) shows the range.
+- **F16, Hand composition (at fire, only when Jin strikes).** One roll per slot, five slots:
+	- 3-10: Veil-base warrior (combat class package on the operative kit)
+	- 11-14: Veil-base killer (assassin or shadow package)
+	- 15-17: Veil-base specialist (caster, healer or breacher)
+	- 18: an exotic outside the Veil kit, Menagerie-type. The individual is named from an existing roster where one fits, or flagged for Chad.
+- **Stat source for Phase 6:** the operative profile plus the class package. Exotics use their own pages.
+- **Census:** the Hand is Jin's pre-battle force. It does not count against the empire's 3-layer cap unless it follows Jin into the main battle.
