@@ -63,3 +63,6 @@ Source: ⚔️ The Stride Line — Equipment Specifications (Notion 35ee8214-84b
 
 - **Base cost:** Strider 30,000 Crowns. Stalker per its spec. The suits are Veil-issued, not owned.
 - **Still to do in Phase 6:** weapons and signature items through the loot-engine / Affix Registry; the 3.5e/GURPS stat lines with the suit applied.
+
+## Character note (Chad, 5 Oct 2026)
+The Menagerie, the Veil host of the Blue Hour that the Hand is drawn from, is "something like the original Gotei 13". Each member is an individually monstrous killer with a personal art, held together by loyalty to one head rather than by uniform discipline. The Hand's five are written to that standard. **Open:** whether the rolled 13–14 levels sit too low for that register (Chad's call).
