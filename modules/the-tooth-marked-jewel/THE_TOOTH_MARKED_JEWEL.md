@@ -255,6 +255,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 
 - **The Bite (Su, always on).**
 	- The bearer knows the location of every creature of the Orochi line within 60 ft, with no save. That includes **the Fourth Tail in Kusanagi**, and each of them knows where the bead is too.
+	- **In the clergy's hands** the awareness widens to **every reptilian creature within 60 ft** (see Bane of the Eight), though only the Orochi line knows the bead in return.
 	- Within 30 ft of Yashiori, the tooth-marks on the grip fill with dew; within 5 ft, the dew runs (§4.1, finding it).
 - **Nothing Leaves** (curse, below) applies to anyone who carries it off the island without leave.
 
@@ -287,13 +288,20 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 - **Cost:** the weeping is real. The bearer is **shaken for 1 hour** afterward.
 - GURPS: Control (Air) 4, Area 20 yd, Selective (Eye 3 yd); Innate Attack 2d (fatigue, Area, Cyclic), plus Affliction (Knockdown) vs HT-3; 1/day.
 
-**4. Bane of the Eight (Su, always on).**
-- Weapons the bearer wields count as **+2 holy-equivalent** against, and deal **+2d6 damage** to, two kinds of target:
-	- creatures of the Orochi line;
-	- **any creature with more than one head.** That means hydras, the Orochi's remnants, and, by design, **Tiamat and her five-headed kind**.
-- **A confirmed critical with such a weapon severs a head.** For creatures that regrow heads, the stump stays sealed for 24 hours, as the sake-drowned heads never rose again.
-- **Against Tiamat** this rides the campaign's live dragon threat (Stat Reference: "Tiamat, the live enemy"; five heads, each acting; 185 slashing severs one). **A sealed head does not grow back that day.** Flagged for Chad: it hands the empire a real anti-Tiamat lever.
-- GURPS: Weapon gadget enhancement +2d (Bane: multi-headed / Orochi line), with a Follow-Up Crippling rider (severed head, no regrowth for 1 day).
+**4. Bane of the Eight (Su, always on).** *Revised per Chad, 5 Oct 2026: a bonus against anything reptilian.*
+- Susanoo killed the serpent. The bead carries the bite, and the bite remembers **scale**.
+- Weapons the bearer wields count as **+2 holy-equivalent** against, and deal **+2d6 damage** to, **anything reptilian**:
+	- **Dragons:** the whole dragon type, true dragons and lesser, chromatic and metallic, lindwurms and wyverns, dragonborn and half-dragons, and dracoliches.
+	- **Snakes and serpents:** every snake animal, giant and dire snakes, sea serpents, and serpentine magical beasts.
+	- **Nagas,** all kinds, named on purpose even though 3.5e types them as aberrations.
+	- **The reptilian subtype and its kin:** lizardfolk, kobolds, troglodytes, yuan-ti of every caste, crocodiles and lizards, basilisks, behirs and hydras.
+	- **The Orochi line,** including the Fourth Tail's hosts. Against a host, the bane counts only on the host's serpent half, which is the GM's call at the table.
+- **Multi-headed reptiles:** a confirmed critical **severs a head**. For creatures that regrow heads, the stump stays sealed for 24 hours, as the sake-drowned heads never rose again. **Tiamat** (five heads, each acting; 185 slashing severs one) qualifies twice over.
+- **Test for edge cases:** if it has scales and cold blood, or comes from dragon or serpent stock, it counts. Constructs shaped like dragons do not, since there is nothing in them to bite.
+- **Campaign weight (flagged, not hidden):**
+	- **Against enemies:** Tiamat and her sent peer chromatic; the Cult of the Dragon's dracolich project (Crown battle, F14); and yuan-ti and naga cults wherever they sit.
+	- **Against friends:** the bane does not care about allegiance. It bites **Jörmun** (lindwurm), **Gary** (an ancient red), **Shi'van's bonded dragon** and the **Wyrmhelm Program's** whole roster. A Hand priest carrying the bead walks among the empire's dragons with a weapon that wants their scale. The bead **is aware** of every reptile within 60 ft that it would bane (an extension of the Bite), so Jörmun's handlers will notice it the first time a priest comes near.
+- GURPS: weapon gadget enhancement +2d (Bane: Reptilian/Draconic, a common class, −0%? GM may set −10% given the breadth), plus Follow-Up Crippling (severed head; no regrowth for 1 day) against multi-headed targets.
 
 #### Layer 3 — In the holder's hand (after the pledge is received)
 
@@ -333,7 +341,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 3. **Standing.** The theft gives Amaterasu's court, and Talos's man, a lawful complaint (§6).
 4. **Layers 2 and 3 work while it is stolen.** The Pledge still registers, **and the holder receives the Feed** (power 6).
 
-**Power-tier check.** These powers sit level with Kusanagi's shrine blade, which is also an artifact with an at-will defining power (Turn the Wind). The heaviest lines are the five breath-born (five CR 5 elementals once a day) and the Hail (8d6+4d6 in a 50-ft killing ground once a day). Both sit below the CR 18–20 apex band and give a priest of 13–14 a single scene-defining move a day. Bane of the Eight against Tiamat is the one line with strategic weight. **Unpriced (relic). Never loot-rolled.**
+**Power-tier check.** These powers sit level with Kusanagi's shrine blade, which is also an artifact with an at-will defining power (Turn the Wind). The heaviest lines are the five breath-born (five CR 5 elementals once a day), the Hail (8d6+4d6 in a 50-ft killing ground once a day), and Bane of the Eight, which now covers every reptile, including every dragon, the empire's own among them. Both sit below the CR 18–20 apex band and give a priest of 13–14 a single scene-defining move a day. Bane of the Eight is the line with strategic weight: Tiamat on one side, the empire's own dragons on the other. **Unpriced (relic). Never loot-rolled.**
 
 **Who claims it:**
 
@@ -625,7 +633,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 **Open items for Chad:**
 1. **R4, the clock.** When does the discovery land in Arik's lane, given the Jörmun clock at Uktar 1498, Arik's arc around 1495, and Jin's lane unset (LOG-824)?
 2. **Kitsuki's prayers answering through the seat** (§6.3). That is a cosmological ruling: do the office's *other* worshippers already draw through Arik?
-3. **Hagata-no-Tama's powers v2** (§4.1): three layers, seven powers, the Bridle/Feed fork, the access rule. Rulings needed: is Celestial Bureau registration the right shape for "primacy"; does **Bane of the Eight** get to count against Tiamat (it is a real strategic lever); and does the Yakumo-ha count as office clergy for access (ties to item 2).
+3. **Hagata-no-Tama's powers v2** (§4.1): three layers, seven powers, the Bridle/Feed fork, the access rule. Rulings needed: is Celestial Bureau registration the right shape for "primacy"; Bane of the Eight is now ruled (Chad: all reptiles, including dragons, snakes and nagas); still open is whether its awareness of the empire's own dragons (Jörmun, Gary, Wyrmhelm) should cut both ways; and does the Yakumo-ha count as office clergy for access (ties to item 2).
 4. **The masks as the island's price** (S4). The masks are Chad's ruling (the crimson oni masks), so giving them away is his call to allow.
 5. **Pale Name meter price** for the vision and for each outcome (R3).
 6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
