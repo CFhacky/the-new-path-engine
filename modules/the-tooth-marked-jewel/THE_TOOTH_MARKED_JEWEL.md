@@ -255,7 +255,12 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 
 - **The Bite (Su, always on).**
 	- The bearer knows the location of every creature of the Orochi line within 60 ft, with no save. That includes **the Fourth Tail in Kusanagi**, and each of them knows where the bead is too.
-	- **In the clergy's hands** the awareness widens to **every reptilian creature within 60 ft** (see Bane of the Eight), though only the Orochi line knows the bead in return.
+	- **In the clergy's hands** the awareness widens to **every reptilian creature within 60 ft** (see Bane of the Eight).
+- **Scale Remembers (Su, always on; ruled by Chad, 5 Oct 2026: "yes, dragons sense it too").**
+	- **Every creature of the dragon type within 60 ft knows where the bead is and what it is**, whoever holds it, in any hand, stolen or given. No save, and no concealment blocks it.
+	- To a dragon it registers at the scales, as cold along the spine-ridge and the lips drawing back from the teeth: the serpent-killer's bite, in the room.
+	- Lesser reptiles (snakes, lizardfolk, nagas, yuan-ti) do not sense it. **Dragons and the Orochi line do.**
+	- At a dragon's own discretion, a Sense Motive DC 15 tells it that the bearer is the threat rather than the room.
 	- Within 30 ft of Yashiori, the tooth-marks on the grip fill with dew; within 5 ft, the dew runs (§4.1, finding it).
 - **Nothing Leaves** (curse, below) applies to anyone who carries it off the island without leave.
 
@@ -300,7 +305,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 - **Test for edge cases:** if it has scales and cold blood, or comes from dragon or serpent stock, it counts. Constructs shaped like dragons do not, since there is nothing in them to bite.
 - **Campaign weight (flagged, not hidden):**
 	- **Against enemies:** Tiamat and her sent peer chromatic; the Cult of the Dragon's dracolich project (Crown battle, F14); and yuan-ti and naga cults wherever they sit.
-	- **Against friends:** the bane does not care about allegiance. It bites **Jörmun** (lindwurm), **Gary** (an ancient red), **Shi'van's bonded dragon** and the **Wyrmhelm Program's** whole roster. A Hand priest carrying the bead walks among the empire's dragons with a weapon that wants their scale. The bead **is aware** of every reptile within 60 ft that it would bane (an extension of the Bite), so Jörmun's handlers will notice it the first time a priest comes near.
+	- **Against friends:** the bane does not care about allegiance. It bites **Jörmun** (lindwurm), **Gary** (an ancient red), **Shi'van's bonded dragon** and the **Wyrmhelm Program's** whole roster. A Hand priest carrying the bead walks among the empire's dragons with a weapon that wants their scale. The bead **is aware** of every reptile within 60 ft that it would bane, and **the dragons are aware of the bead** (Scale Remembers). Jörmun, Gary and any Wyrmhelm dragon will know the first time a priest comes within 60 ft, and know what it is.
 - GURPS: weapon gadget enhancement +2d (Bane: Reptilian/Draconic, a broad class; suggested limitation −10%, GM's call), plus Follow-Up Crippling (severed head; no regrowth for 1 day) against multi-headed targets.
 
 #### Layer 3 — In the holder's hand (after the pledge is received)
@@ -573,6 +578,7 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 | CP2 | **Petition or theft** (S4) | Heavy | **Petition:** the truth told aloud, the masks given, Sone's bout available, a clean registration. **Theft:** the curse, Sone's sword, Calloway's lever, a registration with a stain. |
 | CP3 | **The masks and Enma** (S2/S5) | Medium | **Surrender** them to the wardens → the faces go to Enma. **Argue** jurisdiction → a hearing later. **Trick** → it goes in the ledger. **Fight** → Enma notices. Giving them to the daughters first (CP2) changes the question. |
 | CP4 | **Kusanagi** | Heavy | **Involve her:** she opens doors in Kozakura, and Hiruta and Kitsuki know her old name. But she cannot land on the island, **the Fourth Tail feels the bead within 60 ft**, and she is Arik's sworn retainer: **the secret reaches Arik early.** **The Atsuta box** shows the bead's resting place without the dawn-list leads, but opening it tells Kusanagi someone looked (K3), which also brings the discovery early. **Leave her out:** slower, safer. |
+| CP4b | **The way home** | Medium | **Through Eastern Anauroch** (fast, wind walk, home ground): every dragon within 60 ft knows (Scale Remembers), and Jörmun may reach Arik first. **Round it** (slower, through the Moonsea or by sea): Calloway's ground, and days added to every pursuer's clock. |
 | CP5 | **Delivery** (S6) | Terminal | **Place it in his hand** → forces the discovery and completes the pledge if he closes his hand. **Enshrine it in his name and say nothing** → the office is fed, the holder never receives it, nothing is registered, the secret holds. That is the sect choosing the seat over the man, which Jin would call the one sin of the office. |
 | CP6 | **The Two Winners** (§3.2) | Heavy, slow | When the clock fills: does Lorne leave, stay and serve the temperament inside the sect, or get brought back? The discovery scene then has to answer **which priest Arik sanctions**. |
 
@@ -581,6 +587,12 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 ## 9. The discovery: how the arc ends at Arik
 
 **The forcing logic.** The pledge must be *received*, and only the holder can receive it (§4.1). Every success path ends with two masked Veil agents, or two unmasked ones if the island took their faces, standing in front of Arik with a jade bead and a confession. **Failure paths reach him too, worse:** through Calloway's story, Kitsuki's Bureau suit, or a priest's trial in Enma's court.
+
+**The dragon route (Scale Remembers).** The priests come home through Eastern Anauroch, which is Jörmun's country. Any dragon within 60 ft of the bead knows it is there.
+- **Jörmun** is the Frostborn Legate, a lindwurm and a PC, and he will feel a serpent-killer's tooth walk past him.
+- **Gary** (an ancient red) and **Shi'van's bonded dragon** will feel it too.
+- **The Wyrmhelm roster** feels it at any base the priests pass.
+- What any of them do with that knowledge belongs to play; for Jörmun it belongs to his player. **Any of them can carry it to Arik before the priests do.** That is the most likely early discovery, and it makes the priests' route home a choice: cross the empire's dragon country, or go round it.
 
 **The room (set the table; do not write Arik's answer).** The venue and date are R4 (open). Whoever is in the hall, these are live:
 
@@ -633,7 +645,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 **Open items for Chad:**
 1. **R4, the clock.** When does the discovery land in Arik's lane, given the Jörmun clock at Uktar 1498, Arik's arc around 1495, and Jin's lane unset (LOG-824)?
 2. **Kitsuki's prayers answering through the seat** (§6.3). That is a cosmological ruling: do the office's *other* worshippers already draw through Arik?
-3. **Hagata-no-Tama's powers v2** (§4.1): three layers, seven powers, the Bridle/Feed fork, the access rule. Rulings needed: is Celestial Bureau registration the right shape for "primacy"; Bane of the Eight is now ruled (Chad: all reptiles, including dragons, snakes and nagas); still open is whether its awareness of the empire's own dragons (Jörmun, Gary, Wyrmhelm) should cut both ways; and does the Yakumo-ha count as office clergy for access (ties to item 2).
+3. **Hagata-no-Tama's powers v2** (§4.1): three layers, seven powers, the Bridle/Feed fork, the access rule. Rulings needed: is Celestial Bureau registration the right shape for "primacy"; Bane of the Eight is now ruled (Chad: all reptiles, including dragons, snakes and nagas); dragons sense it in turn (ruled: Scale Remembers); and does the Yakumo-ha count as office clergy for access (ties to item 2).
 4. **The masks as the island's price** (S4). The masks are Chad's ruling (the crimson oni masks), so giving them away is his call to allow.
 5. **Pale Name meter price** for the vision and for each outcome (R3).
 6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
