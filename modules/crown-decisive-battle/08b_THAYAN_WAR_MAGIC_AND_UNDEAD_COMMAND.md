@@ -123,3 +123,62 @@ SRD spell levels are given in brackets. The GM picks from these lists by the mag
 	- Killing mages strips the retinues. Killing the commander locks the horde on its last order. An "advance" horde keeps walking into the aura; a "hold" horde stays put and becomes the rearguard.
 - **Ice-wall breach refill, 1d4 rounds: ratified** (Gate D item closed).
 - **Frozen Threshold raising, 3d6 vs the mage's level + 4: ratified as the working rule** until Phase 9 writes the full contest.
+
+## 7. Knives in the cadre: Thayan internecine behaviour (Chad, 5 Oct 2026)
+> **Chad:** the Grave Lien is *one example* of the internecine behaviour of Thayans. Every cadre carries its feuds onto the field. **The Lien contests the Threshold (ruled).**
+
+### 7a. Hidden agenda per mage: F22 (3d6, sealed at fire, one per mage)
+**Target.** Unless the entry names someone, the target is the mage directly above them in level on the Tracker; ties go to the nearer temperament. The highest-level mage aims at the commander.
+
+| 3d6 | Agenda | What it does on the field | Fires when |
+|---|---|---|---|
+| 3 | **Grave Lien** | Carries a soul-trap gem keyed to the target (§7b) | The target dies |
+| 4 | **Watcher** | Reports on the commander to an outside patron (identity SR). Won't risk themselves. Surrenders to save their notes | Thay's line wavers (first adverse recompute) |
+| 5 | **Poacher** | Has *command undead* or *control undead* ready for the target's retinue. Lets the target die so the idle dead can be taken | The target dies, or is pinned |
+| 6 | **Credit thief** | Raises the target's fallen as their own and claims the target's kills in the report | Any round the target's dead fall near them |
+| 7 | **Saboteur** | Tampered with the target's *contingency*. It fails on 1–3 on d6 when it should fire | The target's contingency triggers |
+| 8–12 | **Loyal enough** | No active agenda. Feuds stay in Thay | — |
+| 13 | **Withholder** | Holds back the slots the target's assault needs. Casts a round late | The target leads a breach or seize |
+| 14 | **Friendly fire** | Will catch the target in an area spell "by accident" if one lines up (d6 each chance: 1–2, they do it) | The target is near the enemy within a burst |
+| 15 | **Turncoat-in-waiting** | Surrenders early and sells rivals. **+4 to the empire's interrogation rolls on anything about the target** | The first pause after Thay loses a mage |
+| 16 | **False eye** | Feeds the commander false scrying to shame the target. **Thay's Enemy Knowledge gains one false line** | Beat 0 scrying |
+| 17 | **Ambition** | Wants the commander's place. **Will not intervene to save the commander** | The commander is in danger |
+| 18 | **Lien on the commander** | As 3, aimed upward. If the roller *is* the commander, it's aimed at their own second | The commander dies |
+
+About 58% of mages roll 8–12 and are loyal enough. A cadre of 8 averages three or four knives; a cadre of 22, nine.
+
+**Vraxis's own knife: F23 (3d6, at fire).** 3–15: none. **16–18: Vraxis holds a Grave Lien on the column commander (F17)**, keyed from Vraxhal. He trusts his officer exactly that far. If F17 rolled Vraxis himself, F23 is void.
+
+### 7b. Grave Lien (the item)
+- **What it is.** A gem keyed by blood or hair to one named person. When that person dies, wherever they are, it fires *trap the soul* [8] on them. A corpse gets no save. Zulkir-court tradecraft.
+- **3.5e.** Custom item: spell level 8 × CL 15 × 2,000 gp ÷ 5 (single use, R), **48,000 gp, plus the gem** (*trap the soul* material: 1,000 gp per HD of the target). Craft Wondrous Item. Faint conjuration through the gem's mount: Spellcraft DC 23 to identify.
+- **GURPS.** A single-use charm carrying Soul Jar (target-keyed, triggered on death). Point cost is not stated (Fused Engine rule). Resolution is a Quick Contest, the Lien at effective 15.
+- **Blocks:**
+	- *Death ward* on the target (the Lien counts as a death effect, R).
+	- Destroying the gem before the death.
+	- Holding the target's body **inside a dimensional lock** (*dimensional lock* [8], R).
+	- *Dimensional anchor* does nothing.
+- **Inside the Frozen Threshold, the Lien contests (Chad).** Opposed d20:
+	- **Lien: d20 + 15** (its CL).
+	- **Threshold: d20 + 20** (Jörmun's CR, R; the Threshold mechanics in Phase 9 replace this number if they set a different strength).
+	- **Lien wins:** the soul goes to the gem.
+	- **Ice wins:** the soul freezes in the Threshold, and the gem **cracks empty**. The holder knows at once. **That's a clue to Thay about what the Crown is** (R-6-adjacent). Thay learns that its tradecraft fails here.
+	- **GURPS mirror:** Quick Contest, the Lien at 15 vs the Threshold at 20 (R).
+- **As loot or evidence.** A filled Lien is a held Red Wizard's soul. The empire can bargain with it, question it with *speak with dead*, or sell it back. That doesn't conflict with the no-soul-interrogation ruling: it's the gem talking, not Jörmun.
+
+### 7c. Running the knives
+- **Tracker columns:** add **Agenda (F22)** and **Target** to every mage row.
+- **Knives drawn.** Count each agenda that **fires** during the battle (not the loyal ones). At each pause point:
+	- **2–3 fired:** Thay −1 Strategy on that recompute.
+	- **4+ fired:** Thay −2 Strategy.
+	- This stacks against the cadre bonus (+1/+2), so a large, feuding cadre can cancel its own advantage. That's Thay's real weakness.
+- **What players can learn and exploit:**
+	- **Prisoners:** every captured mage with an agenda gives up their target's agenda at T2 or better. Turncoats give it up at T1.
+	- **Watching the field:** a Spot or Vision roll at −4 notices a red robe holding back a round (Withholder), or a burst that clips its own side (Friendly fire).
+	- **Enemy Knowledge:** a False eye line means Thay's picture of the Crown is wrong in a way the players can **use**. Name the false line at fire so it's consistent.
+	- **Diplomacy:** an Ambition or Turncoat mage can be **turned in the field**. Diplomacy vs Will, +4 if their target is still alive and winning.
+- **How it sounds** (one line per agenda type when it fires):
+	- Withholder, to their apprentice: *"Not yet. Let him knock first."*
+	- Poacher, as a rival falls: *"His dead are standing idle — take them. Take them now."*
+	- Ambition, watching the commander pinned: *"…He'll manage."*
+	- A Lien cracking empty in the holder's palm: *crk* — and a breath of frost off the stone.

@@ -380,3 +380,8 @@ At each one: **stop, recompute Mass Combat, record the live result.**
 > - **Beat 1:** the pre-bound horde walks **first**, ahead of the retinues. They're the cheap dead, spent to find the aura.
 > - **Beat 7:** if the commander dies or flees, the pre-bound dead freeze on their last order.
 > - **Ratified:** the breach refill of 1d4 rounds and the Threshold placeholder of 3d6 vs level + 4. Both are now rulings, no longer R.
+
+> **Errata (5 Oct 2026, Chad): internecine Thay.**
+> - Add F22 (hidden agenda per mage) and F23 (Vraxis's Lien on the commander) to §8.0 firing. Add **Agenda / Target** columns to the Mage Tracker.
+> - Count **knives drawn** at every pause point: 2–3 fired gives Thay −1 Strategy, 4+ gives −2.
+> - Inside the Threshold the **Grave Lien contests it** (d20 + 15 vs d20 + 20). Full rules in 08b §7.
