@@ -243,29 +243,106 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 
 **How it is found (G).** It is unmarked among ten thousand offerings. **When Yashiori comes within 30 ft of it, the tooth-marks on the grip fill with dew.** Within 5 ft, the dew runs. A Search check alone (DC 35 / Vision-6) can also find it, by a searcher who already knows to look for a bitten bead.
 
-**Properties (P, every line needs Chad's ruling):**
+**Properties (P, v2 after Chad's note "the gem needs more concrete powers").** Caster level 18 for all effects. Save DCs are flat. Powers sit in three layers: what **anyone** holding it gets, what **the office's clergy** can wield, and what **the holder** receives when the pledge completes. In anyone else's hand the bead is a curved green stone with a bite in it.
 
-- **Pledge of the Clean Heart (Su).** The bead is a pledge, and a pledge has to be *received*.
-	- When a priest of the office places it in the hand of the office's holder and the holder closes his hand on it, the office's priesthood is entered on the Celestial Bureau's rolls under the holder's seal (K13).
-	- **Primacy:** every Kara-Turan shrine of Susanoo must route its formal petitions through the registered clergy, or the Bureau leaves them unanswered. This is the "sect in primacy" Chad asked for, written in Kara-Tur's own grammar.
-	- **Registered clerics:** +1 caster level on Trickery and Death domain spells. Yashiori's dawn appetite is met by touching the blade to the bead, at any distance from a dawn horizon.
-	- **If the holder refuses, or never takes it, nothing is registered.** Only the holder can complete the pledge, so the quest cannot succeed without the discovery scene (§9).
-- **The Bite (Su).** The bead remembers the serpent-killer's jaw.
-	- Any creature of the Orochi line within 60 ft knows the bead is there, with no save. That includes **the Fourth Tail in Kusanagi**, and what the tenant does about it is open.
-	- Whether the bead is a **bridle** (the oath of a clean heart, completed) or a **feed** (the appetite that followed the oath in the myth) is the arc's last open question. Nym and Lorne each hold one answer.
-- **Nothing Leaves (Su, active only while it is held without the daughters' leave):**
-	1. **The Unspoken.** The bearer cannot speak of what they saw on the island. An attempt makes a Will save, DC 25. On a failure they lose their voice for 24 hours (no verbal components, no command words). Each bearer gets one success; after that the save is automatic failure.
-	2. **The sea remembers.** At sea, weather within 1 mile of the bead worsens one category every 6 hours until it is ashore (DMG weather bands). Ashore, storms within 10 miles bend toward the bearer. For a storm god's priests this is a mercy that reads as a curse, or the other way round.
-	3. **Standing.** The theft gives Amaterasu's court, and Talos's man, a lawful complaint (§6).
-	- With the daughters' leave, none of this applies.
+**Who the bead answers (the access rule).**
+- **Anyone:** Layer 1 only.
+- **Clergy of the office** (Nym, Lorne, and the Yakumo-ha if §11 item 2 rules that they draw through the seat): Layers 1 and 2.
+- **The holder, after the pledge is received:** all three layers.
+- **Amaterasu's agents:** Layer 1, plus *The Oath-Test* alone. In her hand it answers as her jewel and nothing more.
+
+#### Layer 1 — In any hand
+
+- **The Bite (Su, always on).**
+	- The bearer knows the location of every creature of the Orochi line within 60 ft, with no save. That includes **the Fourth Tail in Kusanagi**, and each of them knows where the bead is too.
+	- Within 30 ft of Yashiori, the tooth-marks on the grip fill with dew; within 5 ft, the dew runs (§4.1, finding it).
+- **Nothing Leaves** (curse, below) applies to anyone who carries it off the island without leave.
+
+#### Layer 2 — In the office's clergy's hands
+
+**1. The Oath-Test (Ukei) (Su, 3/day, standard action).**
+- The bearer names a statement and has a creature within 10 ft swear to it with its breath on the bead.
+	- **True oath:** the breath leaves the bead as a white mist that settles and is gone.
+	- **False oath:** the mist rises as a snarling face for a heartbeat, and the swearer takes **3d6 sonic damage, no save**, as the lie tears out of the chest.
+- **The reading cannot be fooled** by *glibness*, *mind blank*, *nondetection* or any Bluff result. It answers whether the swearer **believes** the statement true. A sincere fool passes.
+- A creature that refuses to swear when asked is **marked**: for 24 hours, every Sense Motive check against it is made at +10.
+- *The irony for Trickery priests is deliberate.* A bearer who swears falsely on his own bead takes the damage and **loses Layer 2 for a day**.
+- GURPS: Detect Lies (Cosmic, ignores all concealment; −10 to resist), plus Innate Attack 3d (cr, triggered by a false oath).
+
+**2. The Five Born of Breath (Su, 1/day, full-round action).**
+- In the oath-contest Susanoo chewed the jewels and breathed out five gods. The bearer puts the bead in his mouth, bites down and exhales a 30-ft cone of mist that stands up as **five breath-born warriors**.
+- **Each one:** a Large air elemental (MM, CR 5; 60 hp) with a crackling glaive in place of its slam: 2d6+6 slashing plus 1d6 electricity.
+- **Duration:** 10 rounds or until destroyed. They obey the bearer without needing a command action.
+- **When the five die or time out, they go back into the bead as mist.** If any one of them was destroyed, the bearer takes 1d6 damage per destroyed warrior. They were breathed out of him.
+- GURPS: Allies (5 breath-kami, 150-point equivalents, Summonable, Minion), 1/day, Costs Fatigue 3.
+
+**3. The Mourning Wind (Su, 1/day, standard action; concentration up to 1 minute).**
+- The bearer weeps on the bead, and Susanoo's grief for his mother pours out of it as a **60-ft-radius windstorm** centered on the bearer, who moves with it.
+- **Inside it:**
+	- All ranged weapon attacks and thrown objects automatically fail.
+	- Medium and smaller creatures make a **Fort DC 24** each round or are knocked prone and blown 2d4×5 ft away from the bearer.
+	- Flying creatures smaller than Huge cannot hold position.
+	- The wind strips moisture. Living creatures take **2d6 nonlethal damage a round**, and plants inside it wither to straw. Water inside it falls a finger's width per round, as the seas dried for him.
+- **The bearer and his allies within 10 ft** sit in the still eye: unaffected, and able to shoot outward.
+- **Cost:** the weeping is real. The bearer is **shaken for 1 hour** afterward.
+- GURPS: Control (Air) 4, Area 20 yd, Selective (Eye 3 yd); Innate Attack 2d (fatigue, Area, Cyclic), plus Affliction (Knockdown) vs HT-3; 1/day.
+
+**4. Bane of the Eight (Su, always on).**
+- Weapons the bearer wields count as **+2 holy-equivalent** against, and deal **+2d6 damage** to, two kinds of target:
+	- creatures of the Orochi line;
+	- **any creature with more than one head.** That means hydras, the Orochi's remnants, and, by design, **Tiamat and her five-headed kind**.
+- **A confirmed critical with such a weapon severs a head.** For creatures that regrow heads, the stump stays sealed for 24 hours, as the sake-drowned heads never rose again.
+- **Against Tiamat** this rides the campaign's live dragon threat (Stat Reference: "Tiamat, the live enemy"; five heads, each acting; 185 slashing severs one). **A sealed head does not grow back that day.** Flagged for Chad: it hands the empire a real anti-Tiamat lever.
+- GURPS: Weapon gadget enhancement +2d (Bane: multi-headed / Orochi line), with a Follow-Up Crippling rider (severed head, no regrowth for 1 day).
+
+#### Layer 3 — In the holder's hand (after the pledge is received)
+
+**5. The Pledge of the Clean Heart (Su, permanent once received).**
+- When a priest of the office places the bead in the holder's hand and the holder closes his hand on it, the office's priesthood is entered on the Celestial Bureau's rolls under the holder's seal (K13).
+- **Primacy:** every Kara-Turan shrine of Susanoo must route its formal petitions through the registered clergy, or the Bureau leaves them unanswered. This is the "sect in primacy" Chad asked for, in Kara-Tur's own grammar.
+- **Registered clerics:** +1 caster level on Trickery and Death domain spells. Yashiori's dawn appetite is met by touching the blade to the bead, at any distance from a dawn horizon.
+- **If the holder refuses, or never takes it, nothing is registered,** so the quest cannot succeed without the discovery scene (§9).
+
+**6. Bridle or Feed (Su, permanent once received). How the bead came off the island decides which one the holder gets.**
+
+| | **The Bridle** (bead given lawfully: petition granted) | **The Feed** (bead stolen) |
+|---|---|---|
+| Reading it proves | Nym's: the pale one bends the temperament | Lorne's: the temperament throws the pale one |
+| Mind | **+4 sacred bonus on Will saves** against mind-affecting and emotion effects. **Immune to confusion and rage effects** he does not choose. | **Immune to fear.** −2 on Will saves against rage, compulsion and drink. |
+| Body | Once per day, end any one ongoing effect on himself as a free action (the horse taken down to its chest) | **The Storm's Rage, 1/day:** as a 15th-level barbarian's greater rage (+6 Str, +6 Con, +3 Will, −2 AC) for 10 rounds. **While raging, every melee hit deals +2d6 electricity.** Ending the rage early takes a Will save, DC 20. |
+| The office | **The Sealed Ring:** *Hail of the Eight Rings* (below), 1/day | **The Wrecked Hall:** in a rage, he deals **double damage to structures and objects**, as the hall of the sun was wrecked |
+| Cost | None. The bridle holds. | **The Thirst:** Kusanagi's template. Alcohol at double effect; Will DC 20 to refuse a drink offered freely. **A Fourth Tail in the room wakes.** |
+
+- **What the mechanics settle and what they don't.** They settle which effect the holder gets. They do **not** settle the reading: the Bridle could still be the feed in disguise, and the Feed could still be grief that needed out. The four readings stay open (§3).
+- GURPS:
+	- **Bridle:** Indomitable (vs emotion), Resistant to Mind Control (+8), plus a 1/day Neutralize-self.
+	- **Feed:** Berserk (controlled 1/day, Will-4 to stop) with Innate Attack 2d (burn, Follow-Up to melee), Unfazeable (fear only), and Addiction (alcohol)-equivalent Compulsive Carousing (12).
+
+**7. Hail of the Eight Rings (Su, 1/day; holder with the Bridle, or any registered cleric holding the bead).**
+- The vision's first beat made into a weapon. **Point:** anywhere within 1 mile that the user can see.
+- **The hail:** eight concentric rings of hail fall around that point, each 5 ft wide, the outermost **50 ft** across.
+	- A creature caught in a ring takes **8d6 bludgeoning + 4d6 cold** (Reflex DC 25 half).
+	- The rings stand for **10 minutes** as **walls of falling ice**: crossing one deals another 4d6 bludgeoning, and they block line of sight.
+- **The gap:** the user may leave the eighth ring open with a gap the width of a doorway, facing a direction he chooses. **Allies the user names cross every ring freely.** The open door is the only safe way out for everyone else.
+- It is a killing ground with a single exit, and the exit is the user's to choose.
+- GURPS: Innate Attack 8d cr + 4d burn (frost), Area 8 yd, Persistent walls (Obstruction) 10 min, Selective (allies), plus a single designed gap; 1/day.
+
+#### The curse: Nothing Leaves (while the bead is held without the daughters' leave)
+1. **The Unspoken.** The bearer cannot speak of what they saw on the island. An attempt makes a Will save, DC 25. On a failure they lose their voice for 24 hours (no verbal components, no command words). Each bearer gets one success; after that, failure is automatic.
+2. **The sea remembers.** At sea, weather within 1 mile worsens one category every 6 hours until the bead is ashore. Ashore, storms within 10 miles bend toward the bearer.
+3. **Standing.** The theft gives Amaterasu's court, and Talos's man, a lawful complaint (§6).
+4. **Layers 2 and 3 work while it is stolen.** The Pledge still registers, **and the holder receives the Feed** (power 6).
+
+**Power-tier check.** These powers sit level with Kusanagi's shrine blade, which is also an artifact with an at-will defining power (Turn the Wind). The heaviest lines are the five breath-born (five CR 5 elementals once a day) and the Hail (8d6+4d6 in a 50-ft killing ground once a day). Both sit below the CR 18–20 apex band and give a priest of 13–14 a single scene-defining move a day. Bane of the Eight against Tiamat is the one line with strategic weight. **Unpriced (relic). Never loot-rolled.**
 
 **Who claims it:**
+
 - **Amaterasu's court:** the jewel was hers.
 - **The Yakumo-ha:** their founding ancestor was breathed out of the jewels Susanoo chewed.
 - **The office:** the bite is his.
 - **The Orochi remnant:** the bite is its *memory*.
 
-**GURPS:** Pledge as a Patron-gadget trigger (Celestial Bureau registration, Special Abilities for registered clergy, +1 effective Power Investiture for two domains). Bite: Detect (Orochi lineage), 60 ft, always on. Unspoken: Affliction (Mute, 1 day; Trigger: speech about the island; Will-5).
+**GURPS summary:** per-power lines above. The Pledge is a Patron-gadget trigger (Celestial Bureau registration, plus +1 effective Power Investiture for two domains for registered clergy).
 
 ### 4.2 Okitsu-no-shima, the island of the eldest daughter (G location; Kara-Turan analog to Okinoshima)
 
@@ -469,8 +546,8 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 
 | Outcome | What it takes | What the sect gains | What it costs | What the world does |
 |---|---|---|---|---|
-| **Full, lawful** | Leave from the daughters (masks given), the bout with Sone won, the bead received by Arik | **Primacy:** registered clergy, Kara-Turan shrines route through them, +1 CL on domain spells, Yashiori's appetite fed anywhere | Two masks lost to the island. The secret told aloud to Ichiki. Arik knows. | Amaterasu's court is satisfied. Kitsuki loses the paper war and **learns where his prayers go**. Enma's docket holds an inter-court matter. Talos has nothing. |
-| **Full, stolen** | The bead taken and received by Arik | The same registration, but the Bureau files it with a theft attached | The Unspoken and the sea curse until the daughters are appeased. Sone hunting. Calloway's story. | Amaterasu holds a grievance with standing. The Yakumo-ha can contest it forever. **Talos has his lever.** |
+| **Full, lawful** | Leave from the daughters (masks given), the bout with Sone won, the bead received by Arik | **Primacy:** registered clergy, Kara-Turan shrines route through them, +1 CL on domain spells, Yashiori's appetite fed anywhere. **The holder receives the Bridle**, and the clergy can call the Hail of the Eight Rings. | Two masks lost to the island. The secret told aloud to Ichiki. Arik knows. | Amaterasu's court is satisfied. Kitsuki loses the paper war and **learns where his prayers go**. Enma's docket holds an inter-court matter. Talos has nothing. |
+| **Full, stolen** | The bead taken and received by Arik | The same registration, but the Bureau files it with a theft attached. **The holder receives the Feed** (the Storm's Rage, the Thirst; the Fourth Tail wakes). | The Unspoken and the sea curse until the daughters are appeased. Sone hunting. Calloway's story. | Amaterasu holds a grievance with standing. The Yakumo-ha can contest it forever. **Talos has his lever.** |
 | **Partial: offered and refused** | The bead reaches Arik, and he will not close his hand | Nothing is registered. The bead is a pledge offered and not received. | The priests stand exposed before the man they served in secret | Everything rides on Chad's Emperor-of-Mankind answer (§9) |
 | **Partial: the bout lost** | Sone throws the petitioner | The bead goes back to the island. The sect keeps its secret and its masks, if they never petitioned. | Face before Heaven. The vision unanswered. | The court's watch ends. Kitsuki knows. |
 | **Failure: the remnant** | The bead drowned in the eighth vat, or lost at sea | Nothing | The bite in the serpent's keeping | **Bridle becomes feed.** The temperament in the vision has one less restraint. Read it on reading 3. |
@@ -548,7 +625,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 **Open items for Chad:**
 1. **R4, the clock.** When does the discovery land in Arik's lane, given the Jörmun clock at Uktar 1498, Arik's arc around 1495, and Jin's lane unset (LOG-824)?
 2. **Kitsuki's prayers answering through the seat** (§6.3). That is a cosmological ruling: do the office's *other* worshippers already draw through Arik?
-3. **Hagata-no-Tama's properties** (§4.1), every line P. In particular: is a Celestial Bureau registration the right shape for "primacy"?
+3. **Hagata-no-Tama's powers v2** (§4.1): three layers, seven powers, the Bridle/Feed fork, the access rule. Rulings needed: is Celestial Bureau registration the right shape for "primacy"; does **Bane of the Eight** get to count against Tiamat (it is a real strategic lever); and does the Yakumo-ha count as office clergy for access (ties to item 2).
 4. **The masks as the island's price** (S4). The masks are Chad's ruling (the crimson oni masks), so giving them away is his call to allow.
 5. **Pale Name meter price** for the vision and for each outcome (R3).
 6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
