@@ -278,7 +278,7 @@ That proves Thay–Zhent coordination and points straight at the Black Road conv
 
 **(c) The Akhet Brazier** (F8 14–18): an **artifact candidate**, which goes to the Artifacts DB and needs Chad's approval.
 - A bronze brazier from the Sun-Crowned Heights, its bowl holding a coal that has burned since the Mulhorandi founding of the plateau's temples.
-- **R (design, artifact tier):** within 60 ft of it, cold damage of every kind is converted to fire. Jörmun's aura there burns his enemies' allies' way instead, and his breath's cold half becomes fire.
+- **R (design, artifact tier):** within 60 ft of it, cold damage of every kind is converted to fire. Inside that ring Jörmun's aura scorches instead of freezing, and the cold half of his breath turns to fire. Thay's troops carry fire wards, so the aura stops being lethal to them; Gary, immune to fire, becomes his only ally who can stand close.
 - It is a hard counter. It needs a bearer, it can be **extinguished by smothering it in snow from the Frozen Threshold**, and it is exactly the object Jin's trigger names.
 - **Keeper:** its bearer, a Red Wizard of Evocation (Wizard 14, Will +10).
 - **T1:** its range. **T2:** the smothering weakness. **T3:** that a second brazier exists at Vraxhal.
