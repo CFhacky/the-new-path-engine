@@ -1,0 +1,170 @@
+===== Ivrael (CR 14, named, weapon, martial)
+==============================================================
+LOOT ROLL — dice via Python secrets — BINDING
+hook: CR 14 · magnitude named · category weapon · archetype martial
+==============================================================
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=57 +20 (named) → 77 → Legendary
+BASE ITEM: weapon d20=9 → Battleaxe | 3.5e: 1d8 | ×3 | S | GURPS: sw+1 cut | 1 | 0U | 10
+  FLAVOR: d6=4 → elven (fine balance)
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=96 → Condition/Control
+    d100=93 → Taunt [Condition/Control] | T1 value: 23
+  POOL (weighted, martial): d100=2 → Offensive
+    d100=22 → Armor Piercing [Offensive] | T1 value: 10
+  POOL (weighted, martial): d100=47 → Resource
+    d100=63 → Souldrinker [Resource] | T1 value: 20
+  POOL (weighted, martial): d100=6 → Offensive
+    d100=73 → Predator's Instinct [Offensive] | T1 value: +4
+GREATER CHECK [Taunt]: d100=30 vs 25% → no
+GREATER CHECK [Armor Piercing]: d100=39 vs 25% → no
+GREATER CHECK [Souldrinker]: d100=64 vs 25% → no
+GREATER CHECK [Predator's Instinct]: d100=27 vs 25% → no
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=9 → family I Blood/Shadow/Death; entry d10=5 → read references/affix-families.md Part 3 (23I)
+LEGENDARY ASPECT: d10=8 → table H Curse/Control Engine; entry d8=7 → read references/affix-families.md Part 3 (24H)
+SOCKETS: d100=27 → 0 socket(s)
+MASTERWORK: d20=18 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+--------------------------------------------------------------
+UDRP COST BAND: Legendary → 6–12 pts + add-ons (greater +2 ea · temper +2–5 · aspect +4–12 · socket +1 ea)
+NEXT: read tier values from references/affix-families.md for every draw, stat BOTH systems, price via SRD formulas, then run the validation checklist and manifest check in SKILL.md before this item is real.
+===== Nym (CR 14, named, weapon, divine)
+==============================================================
+LOOT ROLL — dice via Python secrets — BINDING
+hook: CR 14 · magnitude named · category weapon · archetype divine
+==============================================================
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=92 +20 (named) → 99 → Unique
+BASE ITEM: weapon d20=1 → Dagger | 3.5e: 1d4 | 19–20/×2 | P or S | GURPS: thr−1 imp / sw−3 cut | C, 1 | −1 | 5
+  FLAVOR: d6=4 → elven (fine balance)
+→ Unique: EXIT the dice pipeline. Author per references/unique-design.md. UDRP cost band 15–30. The roll earns authorship, nothing more.
+===== Teodric (CR 14, named, weapon, arcane)
+==============================================================
+LOOT ROLL — dice via Python secrets — BINDING
+hook: CR 14 · magnitude named · category weapon · archetype arcane
+==============================================================
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=1 +20 (named) → 21 → Rare
+BASE ITEM: weapon d20=4 → Bastard sword | 3.5e: 1d10 | 19–20/×2 | S | GURPS: sw+1 cut / thr+2 imp (2H) | 1, 2 | 0 | 11
+  FLAVOR: d6=4 → elven (fine balance)
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, arcane): d100=18 → Defensive
+    d100=18 → Stalwart [Defensive] | T1 value: +4
+  POOL (weighted, arcane): d100=35 → Resource
+    d100=90 → Overcharge [Resource]
+  POOL (weighted, arcane): d100=98 → Condition/Control
+    d100=86 → Dispelling Strike [Condition/Control] | T1 value: 16
+GREATER CHECK [Stalwart]: d100=92 vs 10% → no
+GREATER CHECK [Overcharge]: d100=72 vs 10% → no
+GREATER CHECK [Dispelling Strike]: d100=48 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=83 → 0
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: d100=92 → 2 socket(s)
+  SOCKET 1 TYPE: d100=13 → Gem
+  SOCKET 2 TYPE: d100=15 → Gem
+MASTERWORK: Rare → optional/none by ladder
+--------------------------------------------------------------
+UDRP COST BAND: Rare → 3–6 pts + add-ons (greater +2 ea · temper +2–5 · aspect +4–12 · socket +1 ea)
+NEXT: read tier values from references/affix-families.md for every draw, stat BOTH systems, price via SRD formulas, then run the validation checklist and manifest check in SKILL.md before this item is real.
+===== Durgan (CR 14, named, weapon, arcane)
+==============================================================
+LOOT ROLL — dice via Python secrets — BINDING
+hook: CR 14 · magnitude named · category weapon · archetype arcane
+==============================================================
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=27 +20 (named) → 47 → Rare
+BASE ITEM: weapon d20=20 → Heavy crossbow | 3.5e: 1d10 | 19–20/×2 | P | GURPS: 4d imp (ranged) | ranged | — | 7†
+  FLAVOR: d6=1 → human/imperial pattern
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, arcane): d100=10 → Defensive
+    d100=27 → Evasion [Defensive]
+  POOL (weighted, arcane): d100=81 → Elemental
+    d100=33 → Venomous [Elemental] | T1 value: +3d6
+  POOL (weighted, arcane): d100=24 → Resource
+    d100=62 → Souldrinker [Resource] | T1 value: 20
+GREATER CHECK [Evasion]: d100=82 vs 10% → no
+GREATER CHECK [Venomous]: d100=22 vs 10% → no
+GREATER CHECK [Souldrinker]: d100=28 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=4 → 1
+  TEMPER 1: d10=6 → family F Minion/Companion; entry d10=2 → read references/affix-families.md Part 3 (23F)
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: d100=26 → 0 socket(s)
+MASTERWORK: Rare → optional/none by ladder
+--------------------------------------------------------------
+UDRP COST BAND: Rare → 3–6 pts + add-ons (greater +2 ea · temper +2–5 · aspect +4–12 · socket +1 ea)
+NEXT: read tier values from references/affix-families.md for every draw, stat BOTH systems, price via SRD formulas, then run the validation checklist and manifest check in SKILL.md before this item is real.
+===== Lorne (CR 13, named, weapon, divine)
+==============================================================
+LOOT ROLL — dice via Python secrets — BINDING
+hook: CR 13 · magnitude named · category weapon · archetype divine
+==============================================================
+TIER: set by CR 13 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=26 +20 (named) → 46 → Rare
+BASE ITEM: weapon d20=3 → Longsword | 3.5e: 1d8 | 19–20/×2 | S | GURPS: sw+1 cut / thr+1 imp | 1 | 0 | 10
+  FLAVOR: d6=6 → old-empire salvage
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, divine): d100=42 → Resource
+    d100=3 → Mana Well [Resource] | T1 value: +60
+  POOL (weighted, divine): d100=27 → Defensive
+    d100=28 → Evasion [Defensive]
+  POOL (weighted, divine): d100=95 → Summoning/Companion
+    d100=56 → Undead Servitor [Summoning/Companion] | T1 value: 12
+GREATER CHECK [Mana Well]: d100=57 vs 10% → no
+GREATER CHECK [Evasion]: d100=78 vs 10% → no
+GREATER CHECK [Undead Servitor]: d100=89 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=66 → 0
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: d100=97 → 3 socket(s)
+  SOCKET 1 TYPE: d100=27 → Gem
+  SOCKET 2 TYPE: d100=20 → Gem
+  SOCKET 3 TYPE: d100=4 → Gem
+MASTERWORK: Rare → optional/none by ladder
+--------------------------------------------------------------
+UDRP COST BAND: Rare → 3–6 pts + add-ons (greater +2 ea · temper +2–5 · aspect +4–12 · socket +1 ea)
+NEXT: read tier values from references/affix-families.md for every draw, stat BOTH systems, price via SRD formulas, then run the validation checklist and manifest check in SKILL.md before this item is real.
+===== follow-up rolls (gems d7: 1 Ruby 2 Sapphire 3 Emerald 4 Diamond 5 Topaz 6 Amethyst 7 Skull)
+-- Teodric gem 1
+ROLL 1d7: raw=[5] -> 5
+-- Teodric gem 2
+ROLL 1d7: raw=[7] -> 7
+-- Lorne gem 1
+ROLL 1d7: raw=[5] -> 5
+-- Lorne gem 2
+ROLL 1d7: raw=[6] -> 6
+-- Lorne gem 3
+ROLL 1d7: raw=[6] -> 6
+-- Ivrael UDRP Legendary base 2d4+4 (6-12)
+ROLL 2d4+4: raw=[1, 1] +4 -> 6
+-- Ivrael temper add-on 1d4+1 (2-5)
+ROLL 1d4+1: raw=[1] +1 -> 2
+-- Ivrael aspect add-on 3d3+3 (6-12 within 4-12)
+ROLL 3d3+3: raw=[2, 3, 2] +3 -> 10
+-- Teodric UDRP Rare base 1d4+2
+ROLL 1d4+2: raw=[3] +2 -> 5
+-- Durgan UDRP Rare base 1d4+2
+ROLL 1d4+2: raw=[3] +2 -> 5
+-- Durgan temper add-on 1d4+1
+ROLL 1d4+1: raw=[1] +1 -> 2
+-- Lorne UDRP Rare base 1d4+2
+ROLL 1d4+2: raw=[1] +2 -> 3
+-- Ivrael CL 1d4+12
+ROLL 1d4+12: raw=[4] +12 -> 16
+-- Teodric CL 1d4+12
+ROLL 1d4+12: raw=[2] +12 -> 14
+-- Durgan CL 1d4+12
+ROLL 1d4+12: raw=[2] +12 -> 14
+-- Lorne CL 1d4+12
+ROLL 1d4+12: raw=[2] +12 -> 14
+-- Ivrael MW 17-20 major property d4 (SRD +2 non-alignment melee: 1 flaming burst, 2 icy burst, 3 shocking burst, 4 wounding)
+ROLL 1d4: raw=[3] -> 3
+-- Nym Unique UDRP 1d16+14 (15-30)
+ROLL 1d16+14: raw=[7] +14 -> 21

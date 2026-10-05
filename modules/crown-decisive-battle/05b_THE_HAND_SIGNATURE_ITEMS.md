@@ -1,0 +1,149 @@
+# The Hand — signature items (loot-engine, 5 Oct 2026)
+
+```
+PREFLIGHT
+Skills loaded: surface-campaign-master-gm, loot-engine, campaign-document-builder
+Notion pages fetched: ⚔️ Affix Registry (2026-10-04; registry diff: the Crusader family, ratified 2026-10-03, is newer than the 2026-07-07 snapshot and is live; nothing drawn from it); The Hand — Standing Roster
+Skill references read: affix-families.md (Sections 11–19, 21A, 23F, 23I, 24H, 25), unique-design.md, proc-conventions.md
+Deviations: none. Raw script output: hand_loot_rolls.txt
+```
+
+> **Status.** Generated items, carried by NPC allies. **Custody: the members' own property, Veil-issued or personal; not Jörmun's treasure.** They enter loot only if a member falls and the body is held, and then the custody contest runs, not a split. Nothing here has happened in play.
+>
+> Tier is SET by CR (member level) at Tier 2, plus one band for *named* = **Tier 1**. All affix values read from the T1 column. Hooks: CR 13–14 · named · weapon · archetype by role.
+
+**Dice summary (full stdout in `hand_loot_rolls.txt`).**
+
+| Member | Rarity d100 (+20 named) | Base d20 · flavor d6 | Affixes (T1) | Layers | UDRP |
+|---|---|---|---|---|---|
+| Ivrael | 57 → 77 **Legendary** | 9 battleaxe · 4 elven | Taunt · Armor Piercing · Souldrinker · Predator's Instinct | temper 23I-5 Blood Frenzy · aspect 24H-7 Despair · MW 18 (+3, major d4=3 shocking burst) | 6 base (2d4+4: 1,1) + temper 2 + aspect 10 + MW Q15+ 6 = **24** |
+| Nym | 92 → 99 **Unique** (exit) | 1 dagger · 4 elven | authored | — | 1d16+14: 7 → **21** |
+| Teodric | 1 → 21 **Rare** | 4 bastard sword · 4 elven | Stalwart · Overcharge · Dispelling Strike | 2 sockets: Topaz (d7=5), Skull (d7=7) | 5 + sockets 2 = **7** |
+| Durgan | 27 → 47 **Rare** | 20 heavy crossbow · 1 imperial | Evasion · Venomous · Souldrinker | temper 23F-2 Shared Vitality | 5 + temper 2 = **7** |
+| Lorne | 26 → 46 **Rare** | 3 longsword · 6 old-empire salvage | Mana Well · Evasion · Undead Servitor | 3 sockets: Topaz, Amethyst, Amethyst | 3 + sockets 3 = **6** |
+
+No greater affixes (all greater checks failed). Item CLs (1d4+12): Ivrael 16, Teodric 14, Durgan 14, Lorne 14. Gem types were rolled 1d7 over the seven Section 25 gems in printed order.
+
+**Column-parity readings needing Chad's ruling (mana affixes).** The campaign has no 3.5e mana pool. Following the S076 precedent (the GURPS column governs scope and the 3.5e side is restated to match), I propose: **1 ER = 1 spell level of slot recovery or slot capacity, on the fused engine.**
+- Souldrinker T1 (ER 6 on kill) → on a kill, recover expended slots totalling up to 6 spell levels, at most once per round.
+- Mana Well T1 (ER +12) → a 12-level reserve of bonus slots, refilling at dawn.
+- On Ivrael, a fighter with no slots, the *affinity translation* sends Souldrinker's ER to the Stride suit's Soul Ember Core and to the axe's own activated powers: one kill restores one daily use of Taunt and refreshes Blood Frenzy's trigger window.
+
+These readings are flagged, not ratified.
+
+---
+
+## THE COUNTED DOOR
+Battleaxe (elven, fine balance) · Legendary · Tier 1 · Campaign band T1 · Weapon, one-handed
+
+### D&D 3.5e Properties
+- **+3 shocking burst battleaxe** (MW 17–20 band: +3 enhancement total plus one major property; major d4 = 3). 1d8+3 +1d6 electricity; on a crit +1d10 electricity (×3 battleaxe: +2d10). ×3 crit.
+- **Taunt (T1):** on hit, once per encounter: the target must attack Ivrael next round. Will DC 23 negates. Compulsion, mind-affecting.
+- **Armor Piercing (T1):** ignores the first 10 points of hardness or DR on each hit.
+- **Souldrinker (T1):** on a kill, 6 ER, restated per the parity reading above (affinity translation logged).
+- **Predator's Instinct (T1):** +4 insight bonus to initiative; +1 to attack in the first round of combat.
+- **Temper 23I-5 Blood Frenzy (T1 column):** below 50% HP, +4 attack and +3d6 damage.
+- **Aspect 24H-7 Despair:** any creature Ivrael strikes while it is under a fear effect cannot receive magical healing until the fear ends. The axe has no fear source of its own. The Hand's two Death-domain priests supply it, and the item is built around that.
+- CL 16 · Market: +3 shocking burst battleaxe 50,310 gp (+5 bonus-equivalent, SRD). The affix layer is UDRP-priced with no SRD analogue: **UDRP 24**.
+
+### GURPS 4e Properties
+- Gadget battleaxe, Fine (balanced). Masterwork band: +2 damage plus a major advantage, read as Innate Attack (burning, electrical, Follow-Up) at 1d (shocking).
+- Taunt: Affliction (Compulsive Attack, Will-based, Follow-Up).
+- Armor Piercing: Armor Divisor (5).
+- Predator's Instinct: Combat Reflexes plus Enhanced Time Sense.
+- Blood Frenzy: Berserk (trigger: below half HP; controlled).
+- Souldrinker: ER recovery 6 on kill.
+- Despair: Affliction rider, healing suppression while the target is Frightened.
+- Limitations: Breakable (DR 6) −25%, Can Be Stolen (grab first) −10%. Point total not computed (transparency only).
+
+### Lore Hook
+An elven war-axe with a narrow, deep beard and a haft wrapped in grey ray-skin. Its first bearer held a postern of Myth Drannor's outer wall during the Weeping War. He drew every attacker onto himself while the refugees went through behind him, and he died when a second door he had not counted opened at his back. The axe was carried out by a child who could not lift it. Ivrael counts the exits aloud in Elvish before every fight because the axe's story is his inheritance, not his luck. **Complication:** the Taunt makes Ivrael the target of every brute in reach, and Despair only works if a priest has frightened the enemy first. Separate him from Nym and Lorne and the axe is half itself. Elves of the Coronal's court consider it stolen grave-goods.
+
+---
+
+## YASHIORI
+Dagger (elven, fine balance) · **Unique** (authored) · Tier 1 band · Weapon, light
+
+*Name source:* in the Susanoo myth that Nym's office belongs to, the storm god brews *yashiori*, a sake strained eight times, sets out eight vats, and kills the eight-headed serpent while it sleeps drunk. Trickery and death in one story, which is Nym's domain pair.
+
+### D&D 3.5e Properties
+- **+2 dagger.** 1d4+2, 19–20/×2.
+- **Eighth Straining (Trickery), 3/day, on hit:** the target makes a Will save, DC 21 (flat source), or is **confused** for 1 round, as the spell. Mind-affecting.
+- **The Root Country (Death), passive:** a creature slain by Yashiori cannot be animated, raised as undead, or have its corpse used for a necromantic spell for 24 hours. This is aimed squarely at Thay. It does **not** decide where the soul goes: Jörmun's Frozen Threshold still claims souls that die inside his territory. That interaction is canon-sensitive and is flagged.
+- **Aspect-grade behavior, Drunk Serpent:** against a confused or sleeping target, Yashiori's critical threat range is 15–20 and its sneak attack dice (if any) are not reduced by concealment.
+- **Appetite (the cost):** Yashiori must be wetted at dawn with strong drink or the bearer's blood (1 hp), offered in the Storm King's name. A dawn missed puts both properties dormant until the next dawn. Nym's office therefore has a daily rite, and the empire's Emperor does not know he is its recipient.
+- CL 14 · Market: +2 dagger 8,302 gp; confusion on hit 3/day (spell level 4 × CL 14 × 1,800 × 3/5 = 60,480 gp, as a second property at 75% = 45,360); Root Country (third property, priced as +1 bonus-equivalent 2,000 at 50% = 1,000); **≈ 54,662 gp**. **UDRP 21.**
+
+### GURPS 4e Properties
+- Gadget dagger, Fine (balanced), +2 damage.
+- Eighth Straining: Affliction 1 (Will-based; Follow-Up; Confused), 3/day.
+- Root Country: a Follow-Up rider that blocks animation and reanimation of the slain for 24 hours (Magical).
+- Drunk Serpent: improved critical threshold against Confused or Unconscious targets.
+- Appetite: Trigger (daily wetting; dormant without it).
+- Limitations: Breakable (DR 6) −25%, Can Be Stolen −10%. Point total not computed.
+
+### Lore Hook
+A slim leaf-blade of moon-elf work, its bone grip stained amber all the way through, as if the bone had drunk. It was a rite-knife in a Storm's Edge house in Kara-Tur, used to cut the eight seals on the vats at the Orochi festival, and it came to Nym with a list of the dawns it had never missed. The blade smells faintly of rice wine even after cleaning. **Complication:** the Root Country makes Yashiori a Red Wizard's nightmare and a prize Thay will pay to recover or destroy. Its dawn rite is a prayer to a god-office whose holder does not know he is being prayed to. And Enma-Ō's wardens may object to a death-knife that decides what happens to the dead without his court.
+
+---
+
+## STALWART BASTARD SWORD OF DISPELLING (Teodric Halvane)
+Bastard sword (elven, fine balance) · Rare · Tier 1 · Weapon
+
+- **3.5e:**
+	- Masterwork bastard sword (335 gp). Teodric lacks the exotic proficiency, so he wields it two-handed as a martial weapon.
+	- **Stalwart T1:** +4 resistance bonus to all saves.
+	- **Overcharge T1:** at will, the next spell or ability deals maximum damage, as Maximize Spell. An enchanter rarely deals damage, so this is the sword's waiting edge.
+	- **Dispelling Strike T1:** on hit, once per encounter, a targeted dispel at CL 16.
+	- **Sockets:** Topaz (retaliation 3d6 on being hit in melee) and Skull (leech 8 HP per hit).
+	- CL 14 · **UDRP 7**.
+	- Fiscal flag: an at-will Overcharge outprices any SRD metamagic rod. UDRP governs.
+- **GURPS:**
+	- Stalwart: Will +4 and HT +3.
+	- Overcharge: next Innate Attack at maximum dice, frequency at will.
+	- Dispelling Strike: Neutralize (Magic), on hit, once per encounter.
+	- Topaz: retaliation 3d. Skull: 8 HP Leech per hit.
+	- Breakable −25%, Can Be Stolen −10%.
+- **Lore:** an elven blade too long for him, taken off a dead Zhentarim mage-hunter outside Yartar the night Teodric was recruited. He keeps it for the dispelling stroke, which is the one argument an enchanter can't talk his way around.
+
+## VENOMOUS HEAVY CROSSBOW OF EVASION (Durgan Emberlode)
+Heavy crossbow (imperial pattern) · Rare · Tier 1 · Weapon, ranged
+
+- **3.5e:**
+	- Masterwork heavy crossbow (350 gp). 1d10, 19–20/×2.
+	- **Evasion T1:** at will, one attack per round that allows a Reflex save for half becomes save-for-zero.
+	- **Venomous T1:** +3d6 poison damage. Fort DC 22 or sickened.
+	- **Souldrinker T1:** 6 ER on a kill, under the parity reading. For a sorcerer this means recovering up to 6 spell levels of slots.
+	- **Temper 23F-2 Shared Vitality (T1):** when Durgan is healed, his summoned creatures within 30 ft heal 50% as much.
+	- CL 14 · **UDRP 7**.
+- **GURPS:**
+	- Evasion: Enhanced Dodge 2, plus Luck (Defensive, 1/day).
+	- Venomous: Innate Attack (Toxic, Follow-Up, Cyclic) 3d.
+	- Souldrinker: ER 6 on kill.
+	- Shared Vitality: Ally partial Regeneration.
+	- Breakable −25%, Can Be Stolen −10%.
+- **Lore and kit errata:** the roster's "short hammer he never seems to use" stays, as an unmagicked keepsake. The signature piece is this crossbow, cranked with a Legion windlass the dwarf has rebuilt twice. Durgan's own fire never touches the bolts, which carry poison he is careful not to breathe.
+
+## LONGSWORD OF THE UNDEAD SERVITOR (Lorne Ashby)
+Longsword (old-empire salvage) · Rare · Tier 1 · Weapon
+
+- **3.5e:**
+	- Masterwork longsword (315 gp).
+	- **Mana Well T1:** a 12-level slot reserve under the parity reading, refilling at dawn.
+	- **Evasion T1:** as on Durgan's crossbow.
+	- **Undead Servitor T1:** raise one corpse as a skeleton or zombie of up to 12 HD for 24 hours. A Death-domain priest's blade.
+	- **Sockets:** Topaz (3d6 retaliation) and two Amethysts (+25 HP each, +50 total).
+	- CL 14 · **UDRP 6**.
+- **GURPS:**
+	- Mana Well: ER (Magical) +12.
+	- Evasion: Enhanced Dodge 2, plus Luck (Defensive, 1/day).
+	- Undead Servitor: Ally (Minion; Requires Corpse).
+	- Topaz: retaliation 3d. Amethysts: HP +25 each.
+	- Breakable −25%, Can Be Stolen −10%.
+- **Interaction with the battle:** Undead Servitor raises corpses on the empire's side, so it runs into the Frozen Threshold exactly as Thay's necromancy does. Lorne's raised dead inside Jörmun's territory face the same contest. And Yashiori in Nym's hand blocks the raising of whatever Nym kills.
+- **Lore and kit errata:** the roster's hand crossbow and split staff stay as working kit. The signature piece is this salvaged imperial longsword with three gem settings, two of them empty when he found it.
+
+---
+
+## Manifest
+Module manifest (this file) and arc manifest (Affix Registry): The Counted Door (Legendary T1) · Yashiori (Unique T1 band) · Stalwart Bastard Sword of Dispelling (Rare T1) · Venomous Heavy Crossbow of Evasion (Rare T1) · Longsword of the Undead Servitor (Rare T1). Status for all five: generated or authored, carried by the Hand. Collision checks: "The Counted Door" and "Yashiori" returned no item hits; "The Eighth Cask" was rejected as too close to *The Eighth Veil*.
