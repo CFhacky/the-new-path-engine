@@ -166,12 +166,12 @@ Once per day. **This is the single most powerful play available to him in the ba
 - **The Battle Layer's TS is per 500-troop element by Quality, with ×2 for air.** It has no entry for a CR 20 dragon, a CR 20 red dragon in sphinx form, Khorzad, or a five-man Hand.
 - **Dry-run TS** (case 1 in §5, using the Battle Layer DIAL values; partial elements count pro rata, R):
 	- Empire: the garrison (30 Veteran) **3.6**, the wedge (21 Veteran) **2.5**, and the screen (SR).
-	- Thay: column 1,700 Veteran **204**, pre-bound 300 Elite **54**, retinues of about 145 bodies Veteran **17**.
+	- Thay: column 1,700 Veteran **204**, pre-bound 300 Elite **54**, retinues of about 192 bodies (8 × W9: 12 zombies + 12 skeletons each) Veteran **23**.
 	- That's **about 1:45**. No force-ratio table rescues that. In fiction, though, Jörmun alone ends most of those 1,700.
 - **The Battle Layer cannot run this battle as written.** It needs one of two things:
 	- **(a) Mass Combat's own rule for exceptional individuals and monsters, transcribed.** I recall it has one but can't verify it. The Mass Combat PDF is the source, and Chad has ruled the laptop off, so **Chad supplies the rule or the page**.
 	- **(b) A Chad DIAL ruling:** a CR 20 individual counts as a Legendary air element (TS 130 × 2 = **260**) for TS purposes, still acting through significant actions. Gary counts the same. Khorzad and the Hand go by sheet.
-	- Under (b), case 1 runs at roughly **270 vs 275**, a real contest. That reads correctly against the fiction.
+	- Under (b), case 1 runs at roughly **266 (plus Khorzad, SR) vs 281**, a real contest. That reads correctly against the fiction.
 - **Until one of these is ruled, Session 2's Mass Combat rounds cannot produce honest live results.**
 
 ## 3. Probability checks on the sealed tables
@@ -187,7 +187,7 @@ Once per day. **This is the single most powerful play available to him in the ba
 - **E9 Threshold contest:** written (V14). The placeholder is retired.
 - **F8 answer to the cold, effects** (05 §7 says "effects in Phase 9"). Now concrete against V1–V3:
 	- **Warding rite over a sector (3–8):** inside a 300-ft sector, the Primordial Cold **loses immunity-piercing**, so undead and *resist energy* work again. Lasts 1 hour. Costs the casters (3 Red Wizards) all their 3rd+ slots.
-	- **Trained cadre, Cold-Breakers (9–13):** 6 casters with Spell Penetration and Greater Spell Penetration and *orb*-free SRD lists. They concentrate SR-No tools: walls, *acid fog*, *greater dispel magic*. **Their purpose is to hold him in place for 3 rounds while the column does its work.** That is the doctrine V1 forces.
+	- **Trained cadre, Cold-Breakers (9–13):** 6 casters drilled on SR: No tools only. They concentrate SR-No tools: walls, *acid fog*, *greater dispel magic*. **Their purpose is to hold him in place for 3 rounds while the column does its work.** That is the doctrine V1 forces.
 	- **Artifact, the Akhet Brazier (14–18):** a 120-ft zone where cold is suppressed; the aura deals 0 inside it. Fire immunity matters, because Gary stands inside it. The artifact's defences are **SR (artifact candidate, approved for the module; stats via magic-research at Phase 10)**.
 - **Khorzad, Ersk and Vigil scout skills:** still SR. Each needs its sheet.
 - **Golem stats (S-4, S-11):** still SR. The war-golem blocks need the sourcebook text.
