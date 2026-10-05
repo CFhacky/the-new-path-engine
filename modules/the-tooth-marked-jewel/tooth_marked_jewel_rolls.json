@@ -1,0 +1,94 @@
+{
+ "method": "Python secrets; 3d6 x4 throws; lower median (2nd lowest); no rerolls",
+ "date": "2026-10-05",
+ "rolls": [
+  {
+   "id": "TJ-1",
+   "question": "Dawn of the vision (day of Uktar 1498 = result)",
+   "throws": [
+    13,
+    12,
+    13,
+    6
+   ],
+   "result": 12
+  },
+  {
+   "id": "TJ-2",
+   "question": "Lorne witnesses: 3-10 Nym alone; 11-18 both, Lorne sees the other figure winning",
+   "throws": [
+    17,
+    11,
+    11,
+    9
+   ],
+   "result": 11
+  },
+  {
+   "id": "TJ-3",
+   "question": "Ichiki Shoun reaction to the Hand landing (GURPS reaction, no modifier): 3-6 Bad, 7-9 Poor, 10-12 Neutral, 13-15 Good, 16-18 Very Good",
+   "throws": [
+    12,
+    8,
+    8,
+    10
+   ],
+   "result": 8
+  },
+  {
+   "id": "TJ-4",
+   "question": "Yakumo-ha awareness stage: 3-6 S1 Anauroch, 7-10 S2 rite-house, 11-14 S3 crossing, 15-18 S5 return",
+   "throws": [
+    8,
+    8,
+    7,
+    14
+   ],
+   "result": 8
+  },
+  {
+   "id": "TJ-5",
+   "question": "Orochi remnant awareness stage: 3-6 S1, 7-10 S2, 11-14 S3, 15-18 S5",
+   "throws": [
+    5,
+    11,
+    9,
+    13
+   ],
+   "result": 9
+  },
+  {
+   "id": "TJ-6",
+   "question": "Talos (Calloway) awareness stage: 3-6 S1, 7-10 S2, 11-14 S4 island, 15-18 S5",
+   "throws": [
+    13,
+    5,
+    10,
+    15
+   ],
+   "result": 10
+  },
+  {
+   "id": "TJ-7",
+   "question": "Amaterasu's court watch begins: 3-6 S1 (the deer at the vision), 7-10 S2, 11-14 S3, 15-18 S4",
+   "throws": [
+    10,
+    10,
+    9,
+    6
+   ],
+   "result": 9
+  },
+  {
+   "id": "TJ-8",
+   "question": "Enma's wardens: first Yashiori kill on Kara-Turan soil -> arrival delay: 3-8 same night, 9-13 next dusk, 14-18 three days",
+   "throws": [
+    5,
+    15,
+    6,
+    13
+   ],
+   "result": 6
+  }
+ ]
+}

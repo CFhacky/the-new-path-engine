@@ -1,0 +1,562 @@
+# The Tooth-Marked Jewel — the Bout at the Eighth Ring and the Hagata-no-Tama quest
+
+```
+PREFLIGHT
+Skills loaded: surface-campaign-master-gm (arc reference: arc-arik-north), world-lore-reference, campaign-document-builder
+Notion canon pages fetched (2026-10-05): Kusanagi (2026-08-02); Jin the Whisper — Emperor's Hand (2026-09-09); Order of the Storm's Edge (2026-09-09); The Hand — Standing Roster (2026-10-05); Change Log LOG-820..833; Divine Avatars & Aspects — Stat Reference (2026-06-29); Power-Tier Quick Reference (2026-06-29); Aspect of the Pale Name — GURPS Sheet (2026-06-29); The Pale Name Evolution (2026-08-20); Kara-Tur Strategic Survey — Master Index (2026-09-30); Kara-Tur — Extraordinary Force Register (2026-09-29); Eastern Interoperability — Jörmun and Kara-Tur (2026-09-29); Mask of the Occupied Oni (2026-09-29); The Storm King's Claim (2026-03-24); Cloak of Wandering Thunder (2026-06-23)
+Repo read: branch ccr-6d9e69ce-nd0fn0, modules/crown-decisive-battle/00-03, 04, 05, 05a, 05b, 06
+Name checks: NPC database, Notion search (see §11)
+Deviations: adventure-arc-builder not loaded; this is a design document, not yet a module. Load it if Chad wants the arc run as a module.
+```
+
+> **Status. DESIGN DRAFT, PROJECTED.** Chad approved the skeleton on 5 Oct 2026 ("good skeleton, need fleshing"). This file is the fleshed version, for his review **before** anything goes to Notion or the Change Log. **Nothing here has happened in play.** The scene prose in §2.4 is draft read-aloud for when the vision fires, not a record of events. Rolls are in `tooth_marked_jewel_rolls.json` (Python `secrets`, 3d6, four throws, lower median, no rerolls).
+
+**Labels:** SOURCE-VERIFIED (S) · CAMPAIGN-RULING (R) · ROLLED (D) · INFERRED (I) · GENERATED (G, authored here, replaceable) · SOURCE REQUIRED (SR) · PROPOSED (P, needs Chad).
+
+---
+
+## Contents
+0. Rulings this document carries
+1. Canon register
+2. The vision: the Bout at the Eighth Ring
+3. The readings
+4. The objective: Hagata-no-Tama and Okitsu-no-shima
+5. The route, stage by stage
+6. The opposition across the heavens
+7. Stakes and outcomes
+8. Choice points
+9. The discovery: how the arc ends at Arik
+10. Rolls ledger
+11. Names, collisions and open items
+
+---
+
+## 0. Rulings this document carries
+
+| # | Ruling | Status |
+|---|---|---|
+| R1 | The "portion of Arik's aspect" is **testimony**: the Pale Name glimpsed at work, not the CR 18 Aspect body. That keeps the Pale Name Evolution off-page rule intact ("exists only in effects, testimony, and purist countermeasures until instantiation"). | Skeleton approved (Chad, 5 Oct) |
+| R2 | The objective is **not** the imperial Yasakani jewel. It is one bead from the string Susanoo chewed in the oath-contest, which kept his bite. The imperial regalia stays where it is, outside the Kara-Tur survey's dynastic stop condition. | Skeleton approved |
+| R3 | The vision counts as recognition against the Pale Name meter, **unpriced** until played. | Skeleton approved; price is Chad's |
+| R4 | The arc runs on the **Jörmun play clock** (Uktar 1498), where the Hand exists. The discovery scene lands in Arik's lane, and its date is open (Jin's lane placement is unset, LOG-824). | OPEN, Chad |
+| R5 | The vision happens **outside** Jörmun's 10-mile Frozen Threshold, so it makes no ruling on the Root Country versus the Threshold. | G |
+
+---
+
+## 1. Canon register (key facts)
+
+| ID | Fact | Source | Status |
+|---|---|---|---|
+| K1 | Arik fills a vacant Kara-Turan storm-god office (Susanoo) "by inheritance of narrative". Talos has no standing and no mechanism to contest it. | Kusanagi page | S |
+| K2 | Kusanagi's fealty feeds the Pale Name. Her half-second vision of Arik as Susanoo (Yoshitoshi iconography) keeps four readings open forever. The coldest one is adopted alongside: the Fourth Tail showed her the image to get the kneeling, because a sworn host is a protected host. | Kusanagi page | S |
+| K3 | The Atsuta box holds the wrong sword. Opening it tells Kusanagi someone looked. | Kusanagi page | S |
+| K4 | Kusanagi's shrine blade carries **the Sickness**: drawn near a reigning sovereign, 1 Con damage per hour. She never draws it in Arik's hall. | Kusanagi page | S |
+| K5 | Nym Esharan (elf Cleric 14) and Lorne Ashby (half-elf Cleric 13), Trickery/Death, serve the Storm King's office. **Arik does not know he has priests.** | LOG-832; Hand roster | R (Chad) |
+| K6 | Forward note, not ruled: when Arik finds out, he takes the Emperor-of-Mankind line. Worship is denied as a rule, and these priests are a sanctioned exception. | LOG-832 | Open (Chad) |
+| K7 | Enma-Ō stays in the cosmology. His hells and Susanoo's Root Country are separate afterlives. Oni are Enma's wardens, and the Hand wears their faces. Whether Enma notices is an open hook. | LOG-832 | R (Chad), hook open |
+| K8 | **Yashiori**: +2 elven dagger. Eighth Straining (confusion on hit, 3/day, Will DC 21). The Root Country (the slain can't be animated for 24 h). Drunk Serpent (crit 15–20 vs confused or sleeping targets). **Appetite:** wetted at dawn with strong drink or 1 hp of the bearer's blood, offered in the Storm King's name; a missed dawn puts it dormant. It came to Nym "with a list of the dawns it had never missed", from "a Storm's Edge house in Kara-Tur" where it cut the eight seals on the vats at the Orochi festival. Thay will pay to recover or destroy it. Enma's wardens "may object". | 05b | S (authored card) |
+| K9 | The Hand: five men in crimson oni masks, Veil operative kit at Gray tier or higher, Shadow Jump, black silk gloves with silver threading to the elbow. Jin draws them from the Menagerie's middle ranks. | Hand roster | S / R |
+| K10 | Jin kneels to the seat, not the man. His Code of Honor: serve the seat, never sit it. He never raises a claw to the throne. | Jin page | S |
+| K11 | The Hand's theater is Eastern Anauroch on the Jörmun clock, Uktar 1498, around the Crown of Eight Springs (a conditional battle module). | Crown battle 00-03, 05, 06 | S |
+| K12 | Aspect of the Pale Name: design draft, uninstantiated, meter 0.65. Arik is CR 18 base and about CR 20 effective in Storm Lord form. | Aspect sheet; Pale Name Evolution; Stat Reference | S |
+| K13 | Kara-Tur keeps a celestial bureaucracy. Writs, reclassification and true names are its tools (the Mask of the Occupied Oni's breaker table). | Mask page; Eastern Interoperability | S |
+| K14 | Kozakura's sacred geography is not one centralized church. Temples, shrines and local communities hold separate rights, and national permission does not settle them. | Eastern Interoperability §7 | S (provisional prep) |
+| K15 | Kozakura/Red Gate/oni hooks are not imported into the Banang theater without evidence of reach. | Extraordinary Force Register | S |
+
+**Myth anchors used (real-world sources, adapted as Kara-Turan):**
+- **The oath-contest (ukei).** Amaterasu chewed Susanoo's ten-span sword and breathed out three goddesses. Susanoo chewed the jewel-strings from her hair and arms and breathed out five gods. She claimed the five as hers, because the jewels were hers. He declared he had won (gentle daughters from his sword proved a clean heart), then wrecked her hall.
+- **The three daughters** are enshrined on the Munakata line, the farthest at Okitsu-gū on Okinoshima. That island takes no women, has men wash naked in the sea before landing, forbids taking anything away, and forbids speaking of what was seen there. It holds tens of thousands of votive offerings, magatama among them.
+- **Ame-no-Hohi**, one of the five gods born from the chewed jewels, was sent by Amaterasu to subdue Izumo, went over to its lord for three years, and is the ancestor of Izumo's hereditary high priests.
+- **Takemikazuchi** of Kashima, Amaterasu's thunder-and-sword god, took Izumo for Heaven by beating Takeminakata in a hand-grappling contest, the mythic first sumo bout. His messengers are deer.
+- **Gozu and Mezu**, ox-head and horse-head, are the jailers of the Buddhist hells under Enma.
+- Susanoo wept for his dead mother until the mountains withered and the seas dried. He built his first palace at Suga, saying his heart was refreshed, and made the first poem there: *eight clouds rise*.
+
+---
+
+## 2. The vision: the Bout at the Eighth Ring
+
+### 2.1 Trigger and staging
+
+- **When:** dawn, **12 Uktar 1498 DR** (D, TJ-1 = 12). The rite is Yashiori's daily wetting. Nothing else is needed to trigger it.
+- **Where (G):** **the Red Saddle**, a sandstone ridge 14 miles west-south-west of the Crown of Eight Springs and outside Jörmun's 10-mile line (R5). It runs half a mile north to south and is 60 ft wide at its crown. The **rite-stone** is a flat slab of red sandstone 4 ft by 3 ft at the highest point, tilted a hand's breadth toward the east. Nym chose it because it faces the dawn over open plain with nothing in the way.
+- **Who (D, TJ-2 = 11):** **both priests witness it.** Nym kneels at the slab. Lorne crouches six paces behind and to his right, the witness's place, out of the line of the dawn.
+- **What Lorne sees differs.** On the same bout, **Lorne sees the maned figure throwing the pale one.** Nym sees the pale one bending the maned one to the belt. Neither is lying. This seeds a schism inside a two-man sect (§3.3, §8 CP6).
+- **Duration:** one held breath, about 20 seconds by the hail's own fall time. It does not repeat. Another wetting at the same stone the next dawn produces ordinary weather.
+
+### 2.2 The beats (physical, in order)
+
+| # | Beat | What is physically there afterward | Check that reads it (3.5e / GURPS) |
+|---|---|---|---|
+| 1 | **Hail from a clear sky, in eight rings.** The first ring lands at arm's length from the slab; each ring falls about one man-length wider. Ground outside the rings stays dry. | Eight concentric rings of hail on the gravel, melting in about 40 minutes under the Uktar sun. The outermost is ~50 ft across. | None needed. The rings are visible. |
+| 2 | **The eighth ring stops short.** A gap the width of a doorway in the outermost ring, on the east side. | The gap, which holds a **bearing: east by a hand's width north**. Followed far enough, it runs to the strait between Kozakura and Koryo (§4). | Survival or Knowledge (geography) DC 20 / Navigation-12: the bearing projects past Kara-Tur's coast. The exact landfall comes in Stage 1. |
+| 3 | **A wind that wails like a son mourning his mother.** It rises from every side at once: the sob, the catch of breath, the long hoarse cry. Dust sheets off the plain and the dune crests strip. | The dune line west of the ridge has lost its crests. Ridges of loose sand lie against the windward side of every rock. | Knowledge (religion) DC 25 / Theology (Kara-Turan)-14: Susanoo weeping for his mother until the mountains withered. |
+| 4 | **Lightning that strikes, then refuses.** Bolts drop from cloud that was not there a breath before, stop a hand's width above the ridge, hang crackling, and withdraw upward. Three of them. | Three fused glass spots on the ridge, each the size of a palm, where the hanging bolts heated the sand without touching it. | Spellcraft DC 22: no spell signature. The effect reads as weather that changed its mind. |
+| 5 | **Two figures wrestle in the storm-front**, over the plain to the east, as tall as the Crown's wall is long. Sumo grammar: a belt grip, knees bent, one driving in. | Nothing physical. | Knowledge (religion) DC 25 / Theology-14: gods wrestling for a land, the first bout. |
+| 6 | **The bout breaks off** at the moment of the throw. Storm, figures and wind are gone at once. | Silence, and the *tik* of melting hail. | — |
+| 7 | **The blade takes both offerings.** The rice spirit is gone from Yashiori's edge, and there is blood on it, Nym's, though he did not cut himself. A shallow nick sits on the heel of his left glove's thumb, through the silk. | 1 hp gone from Nym, unexplained. | Heal DC 15: a self-inflicted angle, from his own blade. |
+| 8 | **The grip is bitten.** Two crescents of small dents are pressed into Yashiori's amber bone grip, an upper and a lower arc, the width of a human mouth. | **Permanent.** The tooth-marks stay. | Heal DC 18 / Physiology-12: a human bite, or something with a human jaw. |
+
+**The two figures (for the GM's eye; the prose carries it):**
+- **The pale one.** Shoulders and arms of storm-cloud with lightning running in the joints, and no face: a smooth pale oval like the blank of a mask before the carver starts (the Mask of Varn). **Only part of it is there.** Below the waist it is rain, grey ropes of it falling onto the plain. It holds the other by the belt with both hands.
+- **The maned one.** The office's temperament. A mane of black cloud flung back, a face streaming wet, the mouth open in the howl the wind is making. Eight long shadows rise behind it like necks. It smells of sake, a heavy sweet-sour reek rolling off the plain as if a brewery had split its vats.
+
+### 2.3 What the vision does not do
+- It speaks no words and gives no instruction. The quest is the gap, the bite and the blade's history (Stage 1).
+- It does not tell Arik. **Arik does not know it happened.**
+- It does not instantiate the Aspect. It moves the meter by an amount Chad has not priced (R3).
+- It cannot be summoned again. Divinations aimed at the event return the office's weather: hail, a wailing wind, and nothing that can be cross-examined.
+
+### 2.4 Draft scene prose (read-aloud for when it fires; PROJECTED, not played)
+
+*Appearance details for Nym and Lorne beyond the roster (face, hair, eyes, build, scar, the gourd) are G and replaceable. The kit is S from the roster and 05b.*
+
+---
+
+The Red Saddle ran north to south for half a mile, a spine of broken sandstone sixty feet across at its crown. The rite-stone sat at the highest point: a slab of red rock four feet by three, tilted a hand's breadth toward the east and scoured smooth by more centuries of wind than anyone had counted. Frost furred the gravel around it in a grey crust that crunched under a boot. Fourteen miles east-north-east, the Crown of Eight Springs lay along the plain as a pale bar, its wall still dark, and the sky over it had gone from black to the deep, blood-under-skin blue that comes a quarter-hour before the sun. Nothing moved between the ridge and the wall except a single thread of dust far out on the flats, some Bedine rider already about his business.
+
+The air on the ridge was dry enough to split a lip. It smelled of cold stone and old dust, and of the gun oil Lorne worked into his crossbow's swivel every night whether it needed it or not.
+
+Nym Esharan knelt at the slab's western edge with the dawn in front of him.
+
+He was long in the bone and spare through the chest, the build elves of his line carried when they had spent their prime working rather than eating. The Strider suit fitted him close: matte gunmetal plates over a quilted underlayer, the fittings at shoulder and knee done in shakudō gone dark as old bronze. Down the spine ran a single band of guilloche engraving cut by a Forgedeep hand, fine parallel lines that followed the strain through the plates the way water finds a gully. Black silk gloves reached to his elbows, with silver thread worked through them in a pattern that showed only when he turned his wrist to the light. A sling of wax-sealed vials hung at his left hip, eleven of them, each stopper marked with a thumbprint of colored wax. His holy symbol hung at his throat on a plain cord, a disc of black iron filed so flat and clean that it named no god to anyone who looked.
+
+He had pushed the mask up onto his forehead for the rite. Zalantar, the Veil's dark wood, carved into an oni's snarl with short horns, tusks and a heavy brow, and lacquered crimson by his own hand. The grain showed pale at the horn-tips, where his thumb rested when he wore it down. Under it his face was narrow and long, high at the cheekbone, his skin the grey-white of birch bark in winter. Black hair was cropped close to the skull so it never caught in the mask's ties. Grey eyes, flecked amber near the pupil. A thin white scar ran from the left corner of his mouth to the hinge of his jaw and pulled that side a fraction tighter when he spoke.
+
+Lorne Ashby crouched six paces behind him and to the right, out of the line of the dawn, where the rite put its witness. He was a head shorter than Nym and lean as a coachman's whip, with the rounder jaw and heavier brow of his human side and ears that came to a blunt point. He wore his sandy hair tied back with a strip of rawhide. Freckles crossed a nose broken once and set crooked by someone in a hurry. His Stalker suit sat heavier than Nym's: russet-burnished plates with Bloodaxe interlace, beasts biting one another's tails, running in black niello down both vambraces. A hand crossbow rode on a swivel mount at the center of his chest, and the split staff lay across his thighs with both rods locked. His own mask, zalantar as well, hung from his belt by its cord, face down against his hip.
+
+He was humming. Three bars of a Moonsea shanty, the same three, over and over, low enough that the wind took most of it.
+
+"You'll hum through the rite," Nym said without turning his head.
+
+"I hum through everything. Gods like a tune."
+
+"This one might not."
+
+"Then he can tell me." Lorne shifted his weight off one knee onto the other. *Crunch* went the frost. "He's never told you anything."
+
+Nym let that go. He drew Yashiori from the sheath at the small of his back. A slim leaf-blade of moon-elf work, the length of his hand from wrist to fingertip, its bone grip stained amber all the way through, as if the bone had drunk. The smell came off it the moment it cleared the leather, rice wine, sweet and sour together. He had cleaned the blade after the last wetting and after every one before it, and it had never once smelled of anything else.
+
+The gourd lay on the slab beside his knee: lacquered black, the size of two fists, full of clear rice spirit he bought from a Shou caravan-master at the Golden Way's western end, at four times what it was worth. He worked the stopper free with his teeth. Then he touched the mask's chin with two fingers of his left hand, the way he did before every casting, and held the blade flat over the stone.
+
+"In the Storm King's name," he said in Elvish. He said it again in Kozakuran, and the vowels were still wrong.
+
+He poured. The spirit ran the length of the blade in a thin bright sheet, gathered at the point and fell onto the red stone. *Tip. Tip. Tip.*
+
+The rim of the sun cleared the plain.
+
+The first hailstone struck the slab beside his knee. *Tik.* It bounced once and lay there, a white bead the size of a pea, in a sky with no cloud in it from one horizon to the other.
+
+Then the rest came down.
+
+They fell in a ring. Nym saw it form: a circle of white an arm's length out from the slab, every stone landing on the line, *tik-tik-tak-tik*, rattling off the gravel and the frost. Inside the ring the ground stayed bare. Outside it stayed bare. Another ring dropped a man's length wider, and the stones were bigger now, grape-sized, cracking where they hit. Then a third. A fourth. The sound built from a patter to a rattle to a long hissing roar, and Lorne said something Nym did not hear. Nym counted. He could not stop himself counting. Five. Six. The sixth ring fell across Lorne's boots and Lorne did not move them. The eighth ring came down fifty feet across, white on the red ridge in the first raw light of the sun, and on its eastern side, dead in the line of the dawn, it stopped short. A gap the width of a doorway. The hail on either side of it lay heaped against nothing, as if it had struck a wall.
+
+The wind rose from every side at once.
+
+It came up off the plain with a sound Nym had heard before, once, a hundred years ago, from a man kneeling in a burned street over a shape under a blanket. The deep hitch of breath. The sob that tears its way up through the chest because there is no room left for it. The long hoarse cry after it, going on past the point where a man's lungs should have given out. Dust lifted off the flats in sheets the color of rust. West of the ridge, the dune crests stripped away in long smoking banners. The shanty stopped.
+
+Lightning dropped out of a sky that had no business holding it.
+
+The bolt came straight down at the ridge, blue-white, and stopped. It hung a hand's width above the sand forty feet north of the slab, a rope of fire hissing and spitting, *krrrrrsssh*, and the stink of it filled Nym's mouth, struck flint and hot iron. Every hair on his arms lifted under the silk. Silver thread sparked at his wrists. Then the bolt went back up the way it had come, slowly, the way a hand withdraws from a dog that has not decided whether to bite. A second came down south of him and did the same. A third hung over the gap in the eighth ring and quivered there, humming at a pitch he felt in his back teeth, and withdrew.
+
+Out on the plain, in the storm-front the wind had raised, two shapes were wrestling.
+
+They stood taller than the Crown's wall was long. Nym saw the grip first, because the grip was everything: two hands of storm-cloud clamped on a belt of black cloud, knuckles lit from inside with running lightning. The one holding the belt had shoulders and arms of thunderhead and no face. A smooth, pale oval sat where a face should have been, like the blank a mask-carver starts from, before the first cut. Below its waist it had no legs, only rain, grey ropes of it pouring onto the plain and driving into the ground for purchase.
+
+The other had a face, and the face was weeping. A mane of black cloud flew back from it. Water streamed off its cheeks and jaw in sheets, and its mouth hung open on the howl the wind was making. Behind it rose eight long shadows, swaying like necks. The smell reached the ridge a breath later, sake, an ocean of it, sweet and rotten, as if every brewery in Kozakura had split its vats on the same morning.
+
+The pale one drove in. It bent the maned one at the belt, both hands, leaning its whole weight down and forward the way a horse-breaker takes a stallion's head down to its chest. The maned one's knees buckled. The rain under the pale one shortened as it closed. Nym watched the maned head go down, down, the howl breaking off into a choked gasp, the eight shadows thrashing behind it—
+
+Everything stopped.
+
+The figures were gone. The wind was gone. The dust hung over the plain a moment longer and then began to fall, very slowly, in a red haze. The sun stood a finger above the horizon, ordinary and cold. There was no cloud in the sky.
+
+On the ridge the hail lay in eight rings around the slab and started to melt. *Tik.* A stone shifted. *Tik.*
+
+Nym looked down at Yashiori.
+
+The rice spirit was gone from the blade. Every drop of it. Where it had run, a thin dark line of blood lay along the edge, from the heel to the point, and when he turned his left hand over there was a nick in the heel of the thumb, through the silk, shallow and clean. He had not felt it go in.
+
+He turned the dagger to see the grip. Two crescents of small dents had been pressed into the amber bone, an upper arc and a lower one, the span of a mouth. They had not been there when he drew it.
+
+Behind him the frost crunched. Lorne had stood. His face had gone the color of the ash in a cold fire, and his right hand rested on the crossbow's swivel without seeming to know it was there.
+
+"It threw him," Lorne said.
+
+Nym did not turn round. "It had him by the belt."
+
+"I saw it. Clean over the hip. The one with the mane. He went in under the pale one's arms and lifted it and threw it down on the plain, and the plain *broke*, Nym, I watched the ground split." Lorne's voice was quite level, and too fast. "Then it stopped."
+
+"It had him to the knee." Nym laid the dagger on the slab with the bitten grip facing up. "The maned one. Bent at the belt. One more breath and he was down."
+
+They looked at each other across six paces of melting ice.
+
+"Well," Lorne said at last. "One of us is wrong."
+
+"Or neither of us is." Nym stood. His knees cracked; he had knelt longer than he thought. He walked to the eighth ring and stopped at the gap. Fifty feet out from the slab, the hail heaped on either side of it in two neat drifts, the space between them bare gravel with the frost still on it. The ice had not even dusted it. He put his boot in the gap, then took it out again.
+
+"Bearing," he said.
+
+Lorne came up beside him, unclipped the hand crossbow from its swivel and sighted down the stock through the gap at the horizon, the way he would lay a bolt on a man three hundred yards out. He held it a long time.
+
+"East," he said. "A hand's width north of east. Nothing out there for a thousand miles but the Hordelands." He lowered the bow. "And past them, the sea."
+
+Nym went back to the slab. He knelt, picked up Yashiori and worked the oiled packet out of the sheath's lining, where it had ridden since the day the dagger came to him. Forty leaves of rice paper folded small, each one covered in a narrow column of brush-script, one entry to a dawn. A list of the dawns it had never missed. He had read every leaf. He unfolded the first one, the oldest, and held it to the light. In the top corner, faint and brown, an inkstone seal: eight vats in a ring, and a ninth cup set in the middle.
+
+He folded the packet away. Then he reached up and drew the mask down over his face, and the crimson snarl settled into place, and the zalantar was cold against his skin.
+
+"Pack the gourd," he said. "We're going east."
+
+Lorne stood a moment longer at the gap in the ring, looking out at the plain where the ground had or had not split. Then he hung the crossbow back on its swivel, crouched for the gourd, and started down the ridge after the priest with the shanty gone out of his mouth.
+
+---
+
+## 3. The readings (all kept open forever, as with Kusanagi's)
+
+The design rule: **every physical residue in §2.2 is consistent with every reading.** No later discovery may close a reading. Evidence can only make one feel likelier to the character holding it.
+
+| # | Reading | What it says the bout was | What a believer points to | What a sceptic points to |
+|---|---|---|---|---|
+| 1 | **The priest's own mind** | Nym is a cleric of a god whose holder does not know he exists. Faith, ambition and the dagger's daily rite produced the image. The hail is freak Uktar weather. | It was too precise to be weather: eight rings, the gap, the bite. | Lorne saw a different winner. Two minds, two pictures. |
+| 2 | **The Pale Name, shaping its recognition** | The Name showed its own clergy a god at work, because being watched at work is what feeds it. | The faceless pale figure, the Varn blank. The vision counts against the meter (R3). | Testimony of a thing that wants testimony proves nothing. |
+| 3 | **The office itself** | Susanoo's residue in the seat, with grief, rage and appetite intact, showed its priest that the temperament is still unbroken, and asked for the pledge that finishes the oath. | The weeping, the eight shadows, the sake, the bite. Every detail is the myth's. | The office is a vacancy filled by narrative. Narratives do not ask for things. |
+| 4 | **It was simply true** | Part of Arik's authority is in a real fight with an inheritance that came with the seat, and the fight is not over. | Both witnesses saw a bout. Both saw it break off undecided. | Arik has never shown a sign of it. (He would not. That is the point.) |
+
+**The cold reading, adopted alongside (as Kusanagi's Fourth Tail reading is):** the **Orochi remnant** staged it, or bent it. The island's rule, *nothing leaves*, is the only thing keeping the tooth-marked bead out of the serpent's reach. A bead in motion can be taken. The eight shadows behind the maned figure are the tell for anyone who wants to read it this way. The bite on the grip could be Susanoo's, or the bite of something that remembers being bitten. **Consequence:** the remnant has an interest in the quest succeeding as far as the island's shore and failing everywhere after.
+
+### 3.1 How each witness reads it (defaults; play can move them)
+- **Nym** holds reading 4 and lets the others stand. To him the bout is an order without words: the bridle needs the bead.
+- **Lorne** holds reading 3, darkened by what he saw. The temperament won, or will. The office is not being broken; it is breaking its holder. If that is true, the bead feeds the maned one, and Lorne has to decide which of the two figures he serves.
+
+### 3.2 The schism seed (from TJ-2)
+A sect of two now has two theologies. Nothing forces it into the open early. Each stage in §5 lists one beat where it can surface. **Track it as a clock (G): "The Two Winners", 0/4.** It advances when the priests act on different readings in the same scene, and when it fills, the sect splits. Lorne then serves the temperament: the rage, the grief, the appetite. That is still the same office, so his spells still come. The open question for the discovery scene becomes **which of his priests Arik sanctions.**
+
+---
+
+## 4. The objective: Hagata-no-Tama and Okitsu-no-shima
+
+### 4.1 Hagata-no-Tama, the Tooth-Marked Jewel (G; properties P)
+*Relic · unpriced · cannot be crafted, bought or loot-rolled (artifact tier is outside loot-engine's scope)*
+
+**What it is.** One curved jewel (magatama) from the string Susanoo took from his sister's left hair-bunch and chewed in the oath-contest. Most of what he chewed became breath and gods. This bead kept his bite. When the contest was over he held it up as his proof that his heart was clean, said *I have won*, and went to wreck her hall. Someone laid it with the daughters, the three goddesses his own sword had made, on the island where nothing leaves. It has lain there since, one bead among thousands, unlabelled.
+
+**What it looks like.** Deep green jadeite, comma-shaped, the length of a thumb, bored through the head for a string that rotted away centuries ago. The surface is polished to a wet shine everywhere except two crescents of tiny pits on its convex back, an upper and a lower arc, the span of a mouth: **the same bite now on Yashiori's grip.** It has one old chip at the tail. It is warm at dawn and cold the rest of the day. It smells of rain hitting hot stone.
+
+**How it is found (G).** It is unmarked among ten thousand offerings. **When Yashiori comes within 30 ft of it, the tooth-marks on the grip fill with dew.** Within 5 ft, the dew runs. A Search check alone (DC 35 / Vision-6) can also find it, by a searcher who already knows to look for a bitten bead.
+
+**Properties (P, every line needs Chad's ruling):**
+
+- **Pledge of the Clean Heart (Su).** The bead is a pledge, and a pledge has to be *received*.
+	- When a priest of the office places it in the hand of the office's holder and the holder closes his hand on it, the office's priesthood is entered on the Celestial Bureau's rolls under the holder's seal (K13).
+	- **Primacy:** every Kara-Turan shrine of Susanoo must route its formal petitions through the registered clergy, or the Bureau leaves them unanswered. This is the "sect in primacy" Chad asked for, written in Kara-Tur's own grammar.
+	- **Registered clerics:** +1 caster level on Trickery and Death domain spells. Yashiori's dawn appetite is met by touching the blade to the bead, at any distance from a dawn horizon.
+	- **If the holder refuses, or never takes it, nothing is registered.** Only the holder can complete the pledge, so the quest cannot succeed without the discovery scene (§9).
+- **The Bite (Su).** The bead remembers the serpent-killer's jaw.
+	- Any creature of the Orochi line within 60 ft knows the bead is there, with no save. That includes **the Fourth Tail in Kusanagi**, and what the tenant does about it is open.
+	- Whether the bead is a **bridle** (the oath of a clean heart, completed) or a **feed** (the appetite that followed the oath in the myth) is the arc's last open question. Nym and Lorne each hold one answer.
+- **Nothing Leaves (Su, active only while it is held without the daughters' leave):**
+	1. **The Unspoken.** The bearer cannot speak of what they saw on the island. An attempt makes a Will save, DC 25. On a failure they lose their voice for 24 hours (no verbal components, no command words). Each bearer gets one success; after that the save is automatic failure.
+	2. **The sea remembers.** At sea, weather within 1 mile of the bead worsens one category every 6 hours until it is ashore (DMG weather bands). Ashore, storms within 10 miles bend toward the bearer. For a storm god's priests this is a mercy that reads as a curse, or the other way round.
+	3. **Standing.** The theft gives Amaterasu's court, and Talos's man, a lawful complaint (§6).
+	- With the daughters' leave, none of this applies.
+
+**Who claims it:**
+- **Amaterasu's court:** the jewel was hers.
+- **The Yakumo-ha:** their founding ancestor was breathed out of the jewels Susanoo chewed.
+- **The office:** the bite is his.
+- **The Orochi remnant:** the bite is its *memory*.
+
+**GURPS:** Pledge as a Patron-gadget trigger (Celestial Bureau registration, Special Abilities for registered clergy, +1 effective Power Investiture for two domains). Bite: Detect (Orochi lineage), 60 ft, always on. Unspoken: Affliction (Mute, 1 day; Trigger: speech about the island; Will-5).
+
+### 4.2 Okitsu-no-shima, the island of the eldest daughter (G location; Kara-Turan analog to Okinoshima)
+
+- **Where:** in the strait between Kozakura and Koryo, **38 miles** off Kozakura's western coast. It is a Ring 3 location in the Kara-Tur survey's scheme. Its sovereignty is shrine-held and national claims are irrelevant to it (K14).
+- **Shape:** an island **2.5 miles** round, one steep granite peak rising **800 ft** from the sea, all of it old forest: camphor, chinquapin and tabu trees, with fern under them and moss on everything. There is one landing, a black-shingle beach on the south side 200 ft long, and one stone stair of **1,140 steps** from the beach to the shrine.
+- **The shrine (Okitsu-miya):** a plain cypress hall, 24 ft by 16 ft, built against the foot of a cluster of granite boulders the size of houses at the 300-ft contour, with a roof of cypress bark. Light is green and dim at noon. It smells of wet stone, leaf-rot, salt and cedar smoke. The sound is surf below, wind in the canopy, and crows.
+- **The offering field:** among and under the boulders behind the hall, a thousand years of offerings lie where they were set down, never cleared. Bronze mirrors green with age. Iron blades rusted to lace. Gilt-bronze horse-trappings. Gold rings. Glass beads. **Magatama in their thousands.** The ground is a crust of old treasure under leaf mould, about **60 ft by 90 ft**, with boulders for walls and roof. Nothing there has been counted, because counting it would be speaking of it.
+- **The island's four rules (S from Okinoshima, adapted):**
+	1. **No women.** (The Hand rolled five men. Kusanagi cannot land, which keeps her and the Fourth Tail out of Stage 4.)
+	2. **Men strip and wash in the sea** before they set foot on the shingle. They come ashore naked, unarmed and **unmasked**. Kit can be landed afterward only with the resident priest's permission, and he does not give it.
+	3. **Nothing leaves.** Not a pebble, not a leaf, not a drop of the spring water.
+	4. **What is seen is not spoken of.** The island's common name on the mainland is *the Island Not Spoken Of*.
+- **The daughters.** Three goddesses breathed out of Susanoo's sword. The eldest keeps Okitsu; her sisters keep the middle island and the mainland shrine. **They are the office's daughters by the contest.** They are not Amaterasu's to command, though she bore them by breath. They answer as sea and weather, never as a voice.
+
+### 4.3 Ichiki Shōun, resident priest (G NPC; name-checked)
+*Human (Kozakuran) male, 71. Kannushi of Okitsu-miya, on a ten-day rotation from the mainland shrine. Expert 4/Cleric 5 (the daughters; Protection/Water). GURPS ~150 CP; Religious Ritual (Kozakuran)-15, Boating-12, Weather Sense-14.*
+
+**Description.** Five foot one, bird-boned and bent forward at the shoulders from forty years on that stair. Bald, with white stubble over the scalp and jaw that he shaves every third day with a razor older than he is. His face is brown and deeply creased, and both eyes are cloudy at the rims but sharp in the middle. His hands are salt-cracked across every knuckle. He wears a faded white robe with a hemp sash and straw sandals, and goes barefoot on the stair. He smells of cedar smoke and fish. He carries nothing but a sakaki branch and a wooden ladle.
+
+**Voice.** Speaks rarely and in the island's register: what he says is short, and what he does not say is the point. He has a habit of repeating the last word a visitor said, flatly, as if weighing it. *"Leave."* *"Leave?"*
+
+**Reaction (D, TJ-3 = 8, Poor).** He takes the strangers for pirates, or worse, from the moment their boat grounds. He will watch them wash. He will not refuse their landing, because the rite allows any man who washes to land. **He refuses to admit them to the petition** (§5, Stage 4), and he will not move from in front of the shrine door. Turning him needs a reason the island would accept, which means the truth unadorned. That is a hard thing for two Trickery priests.
+
+**What he knows:** where the bead lies, roughly (the eastern edge of the field, "where the old ones put the things that bit"). What the daughters asked of the last man who petitioned for something to leave, eighty years ago: they asked for the thing he used most to lie, and he gave it.
+
+**His private thought (for the GM):** *"Washed men with soldiers' backs, and the thin one's knife smells of brewery. The old men said the daughters' father would send for his tooth one day. They didn't say he'd send this."*
+
+---
+
+## 5. The route, stage by stage
+
+**Awareness map (D):** every watching heaven picks up the trail at **Stage 2**. Yakumo-ha TJ-4 = 8, the Orochi remnant TJ-5 = 9, Talos TJ-6 = 10, Amaterasu's watch TJ-7 = 9. **Stage 2 is the arc's crucible.** Enma's wardens (TJ-8 = 6) arrive **the same night** as the first Yashiori kill on Kara-Turan soil, wherever that falls.
+
+| Stage | Where | Clock pressure | Who is watching |
+|---|---|---|---|
+| S1 The sign | Red Saddle, Anauroch, and the Golden Way's western end | Leaving Jörmun's theater while the Crown battle is still a live trigger | Nobody yet |
+| S2 The rite-house | Yashio-dono, Kurogane valley, Kozakura | The first frost festival (G): the eighth vat is opened in 9 days | **Everyone** |
+| S3 The crossing | 38 miles of the strait | Winter seas; the boat captain's nerve | Deer on the headland; eight wakes in the water |
+| S4 The island | Okitsu-no-shima | Ten days until Ichiki's relief boat arrives | The daughters; Ichiki |
+| S5 The return | Strait → Kozakura → the long road west | The curse, if stolen; the pursuit | Everyone, now moving |
+| S6 Delivery | Arik's lane | R4, open | — |
+
+### S1 — The sign (Eastern Anauroch)
+- **Leads in hand:** the bearing (east, a hand's width north), the bitten grip, and the **dawn-list seal**: eight vats in a ring with a ninth cup in the middle, the seal of **Yashio-dono, the Hall of the Eight Strainings** (G).
+- **Identifying the seal:** Knowledge (religion) DC 25 or Theology (Kara-Turan)-14. Or legwork among the Shou caravan-traders at the Golden Way's western end, routed through `hybrid-information-gathering` (Gather Information DC 22, one day, ~40 gp in drink and goodwill). A success gives "a brewing shrine of the storm god in Kozakura's iron country, the house that brews the Orochi festival's sake". A margin of 5+ adds "the festival opens its eighth vat at first frost".
+- **Getting east.** Kozakura is about 5,000 miles away as the wind blows. Four routes:
+	1. **Wind walk (default, the priests alone).** *Wind walk* is a cleric 6th-level spell: Nym can carry himself plus up to four others. At 600 ft per round that is about 68 mph, for up to 14 hours a casting, so roughly **950 miles a day and 5–6 days east**. Storm-god priests riding the wind to their god's country: the fiction does the work. Each day's flight still ends in a dawn rite somewhere on the way.
+	2. **Shadow walk or greater teleport** through **Teodric Halvane** (Wizard 14) or **Durgan Emberlode** (Sorcerer 14). Faster, but it puts more of the Hand into the arc, which brings Jin into it (CP1). Greater teleport needs a destination someone has seen, and none of them has seen Kozakura.
+	3. **The Veil's shadow route** to Kara-Tur, if one exists. SR: Shadow Gate Network GM Reference, not read for this draft.
+	4. **The long road**: the Golden Way through the Hordelands and Shou Lung. That is months, and S2's festival clock runs out first.
+- **Cost of leaving:** the Crown Decisive Battle is a conditional module, and the Hand is its E0 pre-battle strike if the Cult is involved (06, E0). **Two priests gone means the Hand fights E0 without its healers.** Taking a caster as well means E0 at three.
+- **Schism beat:** Lorne asks to read the dawn-list himself. If Nym refuses, The Two Winners +1.
+
+### S2 — The rite-house (Yashio-dono, Kurogane valley, Kozakura) — the crucible
+- **Place (G).** A river valley in Kozakura's iron-sand country. The water runs rust-red after rain, and the villages smelt iron in clay furnaces that burn for three days and nights at a time. The shrine-brewery sits on a terrace above the river: a walled compound **200 ft by 150 ft** with a torii of black-lacquered cedar at the gate.
+- **The brewing hall** is **90 ft by 60 ft**, dim even at noon, its rafters black with a century of steam. **Eight cedar vats**, each 9 ft tall and 8 ft across, stand in a ring around a waist-high stone. On the stone sits a **ninth cup**, a shallow red-lacquer dish the size of two hands. The hall smells of steamed rice, koji mould, wet cedar and the sour-sweet reek of fermentation. The sound is the vats ticking as they work, *plok … plok*, the brewers' work-songs, and the river below.
+- **Hiruta Genzō (G NPC),** master brewer-priest (§6.6). He knows:
+	- The rite-knife left this house forty years ago in an apprentice's sleeve, going west. The dawn-list kept going in other hands, and he has wondered about it every autumn since.
+	- The house's founding story: the storm god's tooth went to his daughters, and the house brews so the tooth will never thirst.
+	- The **eighth vat never empties**, and has not in living memory. Brewers who sleep in the hall dream of heads.
+- **What happens here, by default:**
+	1. **The eighth vat is the remnant made physical** (the cold reading, §3). It holds sake that is sweeter every year and never runs dry. Anyone carrying Yashiori into the hall finds the grip's tooth-marks dry and hot. A *detect evil* reads the vat as a monstrous outsider, exactly as it reads Kusanagi (K2).
+	2. **The Yakumo-ha (TJ-4)** learn through the house's tithe: a novice runs to the Izumo-line shrine with word of masked foreigners asking about the tooth.
+	3. **Amaterasu's watch (TJ-7):** at dusk on the first evening, **a white deer stands at the torii** and does not run when approached. It is Kashima's messenger (§6.1).
+	4. **Talos (TJ-6):** a Calishite trader moored at the valley's river-mouth port prays to the Storm Lord and passes word west by *sending* to Bereth Calloway (§6.5).
+	5. **The remnant (TJ-5)** tries to keep the priests here until festival night. Brewers it has soaked through (Hiruta's two senior men, G) offer the eighth vat's cup. Kusanagi's curse is the template: alcohol at double effect, Will DC 20 to refuse a drink offered freely. **This applies to anyone who drinks from the eighth vat.**
+	6. **Enma's wardens (TJ-8):** if Yashiori kills anyone here (Yakumo-ha shrine guards, a soaked brewer), Gozu and Mezu arrive the same night.
+- **Choice point:** CP4 (Kusanagi) is first live here, because Hiruta knows her old name and her story. The Atsuta box can be reached from here as a side-path (§8).
+- **Schism beat:** Lorne pours his own dawn offering into the eighth vat. The Two Winners +1.
+
+### S3 — The crossing (the strait)
+- **From:** Isohama (G), a fishing port at the valley's mouth: stone breakwater, drying racks of squid, tar and smoke.
+- **The run:** **38 miles** to Okitsu-no-shima in Uktar seas. Boats go only for the shrine rotation. A captain will sail for 300 gp or for a reason he believes (Diplomacy DC 20, or Bluff DC 25 because he has heard every lie about that island). Boating/Profession (sailor) DC 18 for the passage, 10–14 hours.
+- **On the headland** as they put out: **Sone Takamichi** watches from the cape shrine with the white deer beside him. He does not act; the bead has not moved.
+- **In the water:** eight long wakes run alongside the boat from mid-strait. Nothing surfaces. Spot DC 20: the wakes keep station like an escort. **The remnant wants them to reach the shore.**
+- **Schism beat:** Lorne reads the escort as the maned one's favor ("He's seeing us in"). If Nym contradicts him in front of the captain, The Two Winners +1.
+
+### S4 — The island (Okitsu-no-shima)
+- **Landing.** The boat grounds on the black shingle. Ichiki Shōun stands at the foot of the stair and watches. Every man strips and wades in to the chest. *Misogi*: winter sea, Fort DC 15 or 1d6 nonlethal from cold, which the cold-hardened ignore.
+	- **The masks stay in the boat.** The Hand comes ashore faceless for the first time since they lacquered the wood.
+	- The kit stays too. Yashiori can be landed only by trickery, by stealing it ashore, or with Ichiki's leave, which he refuses (TJ-3).
+- **Without Yashiori the bead is hard to find** (DC 35, §4.1). Getting the dagger ashore is the first real Trickery problem of the arc. Options: Sleight of Hand DC 25 against Ichiki's Spot, wrapped in a hair-knot, or carried in the mouth.
+- **The petition (the lawful path).** At dawn the petitioner stands before the shrine and says why the thing must leave.
+	1. **Ichiki first.** He refuses (Poor). Turning him needs **the truth unadorned**, so any Bluff or magical persuasion fails automatically on the island. A Diplomacy check (DC 25; GURPS reaction re-rolled at +2 if the truth is told whole) succeeds only if the speaker names the office, its holder and the fact that the holder does not know. **For Nym and Lorne that means telling a stranger, out loud, the secret their sect exists inside.**
+	2. **The daughters answer in weather.**
+		- A **flat calm at the shrine** means granted, with a price.
+		- **Wind from the land** means refused; leave with nothing.
+		- **A squall** means the petition is heard but the petitioner lied somewhere, so try again or be refused.
+		- Roll at play: 3d6 + the margin of the Diplomacy check. 3–9 refused, 10–14 squall, 15+ calm.
+	3. **The price (G; Ichiki knows the precedent):** *the thing you use most to lie.* **The masks.** Every petitioner leaves his crimson oni face on the offering field, a lacquered oni among the bronze mirrors.
+		- Consequence: the masks pass out of Enma's warden-faces and into the daughters' keeping (§6.2). The Hand is down two faces.
+		- **Jin and the rest of the Hand must decide whether those masks were Nym's and Lorne's to give.** Each member chose his own wood (K9).
+- **The theft (the other path).** Find the bead by the dew on the grip, take it and go. Ichiki cannot stop them and does not try. He watches, repeats the last word they said, and goes into the shrine to pray. The **Nothing Leaves** curse attaches (§4.1). The sea starts worsening from the moment the boat pushes off.
+- **Schism beat:** if Lorne will not give his mask, the petition fails for him alone. The daughters grant leave to the bead and not to him, and he leaves with the curse's first clause (the Unspoken) on him personally. The Two Winners +1.
+
+### S5 — The return (strait → Kozakura → west)
+Everyone who became aware at S2 is now moving (§6 for their methods).
+
+| Threat | When it lands | Lawful path (leave granted) | Theft path |
+|---|---|---|---|
+| **Sone Takamichi** (Amaterasu) | On the Isohama shingle, first landfall | A formal challenge, once. He wants a **bout for the bead** under Kashima's terms (§6.1). He keeps his word whatever the result. | He fights to kill after one formal challenge. The deer brings a second blade by the next dusk. |
+| **The Yakumo-ha** | Within 2 days of landfall | A petition to the Celestial Bureau contesting the registration (paper war), plus shrine warriors to delay them | Shrine warriors to take the bead, and a public denunciation |
+| **The Orochi remnant** | The first night ashore, or the eighth vat if they pass Yashio-dono again | It wants the bead in motion and away from Arik. It tries the drink first. | Same, at sea as well: the "escort" turns |
+| **Enma's wardens** | The same night as the first Yashiori kill on Kara-Turan soil (TJ-8), if one has not already happened | They want the masks. If the masks are on the island, they want an accounting instead. | Masks and Yashiori's denied dead |
+| **Talos (Bereth Calloway)** | Where the priests come back into Faerûn | He has nothing to say, so he tries to provoke a theft-shaped act in front of witnesses | He has his story, and brings witnesses and a Talassan chapter-house |
+
+### S6 — Delivery
+The bead must be **placed in the holder's hand and received** (§4.1). See §9.
+
+---
+
+## 6. The opposition across the heavens
+
+*Stat lines are P (proposed): CR bands are set against the Hand (CR 13–14 each) so every opponent is a peer threat, never a wall. Full builds go through the same Phase 6 pipeline as the Hand. Every named NPC is name-checked (§11).*
+
+### 6.1 Amaterasu's court: Sone Takamichi and the white deer
+**Why they come.** The bead was **her** jewel. The gods breathed out of her jewels were hers by her own ruling, and the imperial line comes from one of them. A foreign claimant in her banished brother's seat is sending servants to take her property off her nieces' island. Heaven's answer is the one it gave Izumo: send Kashima.
+
+**Sone Takamichi (G).** *Human (Kozakuran) male, 44. Swordsman-retainer of the Kashima shrine. Fighter 13, CR 13 (P). GURPS ~400 CP: Broadsword (katana)-20, Sumo Wrestling-19, Judo-16, Savoir-Faire (Shrine)-14, Strategy-12. Honesty (12), Code of Honor (Kashima: one challenge, stated terms, kept word), Duty (the court).*
+- **Description.** Five foot eight, built through the neck and shoulders like a draught ox, a grappler's frame under a swordsman's posture. Shaved pate with a tight topknot. A broad face, the nose broken flat more than once, and the left ear thickened into a lump of gristle from forty years on the bout-ring sand. Black eyes set deep. Clean-shaven. Dark-blue kosode and hakama, plain except for a small white crest at each shoulder: a deer's antler crossed with a lightning stroke. One sword, worn edge-up on the left hip, in an undecorated black scabbard; he carries no companion blade, as the old Kashima men did. A short knife with an antler handle at the small of his back. Straw sandals, bare calves scarred white along both shins. He smells of camphor oil and wet wool.
+- **Voice.** Formal. He states terms in full sentences and then stops talking. He never threatens. *"I am Sone Takamichi of Kashima. You have my lady's jewel. I offer you one bout for it, on the sand, by the old terms. If you throw me, it is yours and I will say so to Heaven. If I throw you, it goes back to the island. Choose a day."*
+- **The bout (Kashima terms).** A ring of sand 15 ft across. Unarmed and unarmoured. Best of three falls: a fall is any part of the body above the sole touching the sand, or leaving the ring.
+	- **3.5e:** opposed grapple checks, three exchanges a fall. Sone's grapple is +22 (P): BAB +13, Str +4, Improved Grapple +4, a +1 sumo specialty.
+	- **GURPS:** Sumo Wrestling quick contests, best of three.
+	- **He keeps the result exactly**, either way, and reports it to the court through the deer. A thrown Kashima man is the strongest legal footing the office can get in Heaven: **winning the bout clears the bead's standing with Amaterasu's court.**
+- **On the theft path,** he gives one formal challenge. If they refuse, he fights to kill, sword out, as soon as they are clear of shrine ground.
+- **The white deer.** A spirit messenger, CR 5 (P). It cannot be harmed on shrine ground. It sees through illusion and disguise at will (*true seeing*). It can step into the Spirit World and carry word to the court by the next dusk. It never fights. It watches, and what it sees, the court knows.
+- **Private thought:** *"An elf priest and a half-elf priest, and neither of them knows who he serves well enough to say it plainly. My lady's brother was the same. Weeping, raging and clever, and never once still."*
+
+### 6.2 Enma-Ō's hells: Gozu and Mezu
+**Why they come.** Two causes of action:
+1. **The faces.** Oni are Enma's wardens. The Hand wears warden-faces in the service of a different death-office, and in Enma's court that is impersonation of an officer.
+2. **The denied dead.** Yashiori's Root Country keeps the slain from being raised for 24 hours, and in Kara-Tur that interferes with Enma's intake.
+They come the **same night** as the first Yashiori kill on Kara-Turan soil (TJ-8 = 6).
+
+**Gozu (Ox-Head) and Mezu (Horse-Head) (myth figures; builds P).** *Large outsiders (lawful, evil, native to Enma's hells), CR 15 each (P), 20 HD. 3.5e chassis: start from the MM oni and ogre-mage line and build up. SR for the full block.*
+- **Gozu.** Twelve feet tall: the head of a black ox with the left horn broken off at the root, and below it a man's body, bull-heavy, its skin the dark red of old liver. An iron collar is riveted round the neck. He carries a ten-foot iron fork with three blackened tines. He smells of byre, dung and brimstone. He speaks slowly, one word at a time, as if each costs him.
+- **Mezu.** As tall, narrower: a chestnut horse's head with a white blaze and wet, rolling eyes on a long-limbed body with grey-green skin. A chain of black iron hangs coiled from shoulder to hip, and a ledger is bound in hide at his belt. He talks fast, and reads aloud.
+- **Ledger-sight (Su, P).** Whatever a creature has killed is written in Mezu's ledger. Neither can be hidden from a killer whose dead they are owed: *nondetection* and *mind blank* do not stop the finding, though they do stop scrying.
+- **Warden's Seizure (Su, P).** Mezu's chain grapples at 15 ft reach (grapple +30). With a grappled creature in hand, either of them can plane shift to Enma's court as a standard action. **A seized priest stands trial.**
+- **How they open.** With a summons, never an attack: *"Enma-Ō's court requires an accounting of the faces."* They demand the masks.
+	- **Surrender:** the masks go to Enma, and the Hand has lost its faces to the court.
+	- **Argue jurisdiction:** the dead belong to the Root Country, a separate afterlife (K7). Knowledge (the planes) DC 25 / Law (Kara-Turan celestial) contest vs Mezu's 16. A win buys a hearing in a month instead of a seizure tonight.
+	- **Trick them:** the obvious Trickery move. Every trick that works is written in the ledger.
+	- **Fight.** Then **Enma notices** (K7 hook fires).
+- **If the masks were left on the island** (S4 lawful path), the wardens find them in the daughters' keeping and want an accounting instead: an inter-court matter. That is the cleanest outcome, and it still puts the Hand on Enma's docket.
+
+### 6.3 The rival sect: the Yakumo-ha (the House of Eight Clouds)
+**Who they are (G).** The hereditary shrine-house of Susanoo's Izumo line, seated at **Yakumo-dono at Suga** in Kozakura. It is the place the myth says Susanoo built his first palace and made the first poem: *eight clouds rise*. Its high priests descend from a god breathed out of the jewels Susanoo chewed, a god Amaterasu sent to subdue Izumo who served Izumo's lord instead. **Half Sun, half Storm, by blood.**
+
+**Why they come.** The seat is Kozakura's to fill, or no one's. A foreign drow in Susanoo's office is a usurpation, and two foreign priests registered as the office's clergy would put a millennium-old house under the orders of strangers. And the bead is **their ancestor's womb**.
+
+**Kitsuki Masatane (G).** *Human (Kozakuran) male, 63. High priest of the Yakumo-ha. Cleric 15, Trickery/Death (the office's own grant, LOG-832), CR 15. GURPS ~350 CP: Religious Ritual-18, Law (Celestial Bureau)-17, Poetry-16, Savoir-Faire (High)-16, Politics-15.*
+- **Description.** Tall for a Kozakuran, five foot eleven, gaunt, and stooped at the neck the way tall men get from bowing through doorways. White hair dressed in the court manner under a tall black-lacquered cap. A long, hollow-cheeked face, clean-shaven, with a mole at the corner of the right eye. Eyes heavy-lidded and dark. White over-robe on pale purple hakama, the colour of his hereditary rank. Long fingers, the right first and second stained grey with ink at the tips. A folding fan of cypress slats that he opens a slat at a time when he is thinking. He smells of incense and inkstone.
+- **Voice.** Soft and exact, with the habit of answering in poetry when cornered. *"Eight clouds rise over Izumo. Eight-fold the fence they build. It was our fence first."*
+- **The ruling hook (P, flagged for Chad):** since 1493, the year the office filled (K1), **his prayers have answered in a voice he does not know.** His spells still come, and they come **through the seat**: through Arik. He knows something changed and has spent five years trying to learn what. **The Hand's quest tells him.**
+- **Methods:**
+	- **A paper war.** A petition to the Celestial Bureau contesting any registration, which he has the standing to file. He is a better lawyer than either Hand priest. Without the holder's own seal, he wins.
+	- **Shrine warriors.** Twenty sohei (Fighter 4–6, P) under a captain (Fighter 9, G, unnamed).
+	- **Alliances.** With Amaterasu's court, on his Sun half, against a common usurper. Possibly with Talos, quietly, because the enemy of my usurper serves.
+- **Private thought:** *"Five years my gods have answered in a stranger's weather. Now strangers come asking where the tooth lies. Good. At last someone will tell me who has been listening."*
+
+### 6.4 The Orochi remnant (the Koshi brood)
+**What it is.** Not a body; an appetite left in pieces. **The Fourth Tail** lives in Kusanagi (K2). Another piece lives in **the eighth vat at Yashio-dono** (S2), and others in the strait (the eight wakes) and wherever sake is brewed for the festival. It ate seven daughters before the storm god came. It has not stopped wanting.
+
+**What it wants.** The bead **in motion**, off the island and **away from the holder**. The bead carries the bite. A bite that is owned is a bridle; a bite in the serpent's keeping is a memory it can unmake. Its ideal ending: the bead **drowned in the eighth vat**, or carried within 60 ft of the Fourth Tail with no Arik in the room (open).
+
+**Methods (P):**
+- **The drink.** Will DC 20 to refuse a cup offered freely, double effect, applied to anyone who drinks the eighth vat (S2).
+- **Soaked men.** Hiruta's two senior brewers (G, unnamed). Commoner 3 / Expert 2. They read as monstrous outsiders to *detect evil*, and they offer cups.
+- **The wakes.** Huge water-bodies with teeth, CR 12 each (P; elemental chassis with grab and drown). Eight of them, though never more than two strike together.
+- **The vision itself**, on the cold reading (§3).
+- **Endgame hook:** if the bead reaches Arik's hall while Kusanagi is in it, the Fourth Tail knows (§4.1, the Bite). That ties to the Kusanagi page's warning that the cure will be a war, because the tenant will fight from inside her senses.
+
+### 6.5 Talos's heaven: Stormlord Bereth Calloway
+**Why he comes.** Talos has no standing and no mechanism to contest the office (K1). What he can do is make the claim **look stolen**. A theft from a sacred island gives him a complaint any court will hear, and gives the storm-faithful of Faerûn a story that turns recognition into suspicion.
+
+**Bereth Calloway (G).** *Human (Faerûnian) male, 47. Stormlord of Talos, Cleric 13, Destruction/Storm, CR 13 (P). GURPS ~350 CP: Religious Ritual (Talos)-15, Public Speaking-16, Intimidation-15, Fast-Talk-14, Weather Sense-14.*
+- **Description.** Six foot one and heavy, gone soft at the belly over a frame that was hard once. A weather-burned red face. A black beard shot through with copper-coloured streaks where lightning crossed it at thirty, and the right eye milky white from the same strike; he wears no patch. Hands like spades. Leather and chain under a storm-grey cloak worked with jagged gold forks. Talos's three-bolt symbol hammered into a bronze plaque on his chest. A heavy flanged mace whose head is forged into a forked bolt. He smells of ozone, sweat and wine.
+- **Voice.** Loud and amused, a preacher's voice; he laughs at his own threats. *"A drow sits in a dead god's chair and sends his little elves to rob a girl's island. I don't need to fight you, lads. I need a crowd."*
+- **Methods.**
+	- **Witnesses**, through a Talassan chapter and hired notaries.
+	- **Provocation:** he tries to make the priests do something theft-shaped in public.
+	- **On the theft path he already has his story.** He carries it to Talos's church, to Faerûn's storm-faithful, and to anyone who would pay for a lever on Arik (cross-ref: the Pale Name Evolution's "two-front squeeze", where every attack survived is still recognition).
+	- He fights only when cornered. He is not stupid.
+- **Private thought:** *"The Storm Lord can't touch the chair. I can touch the man's reputation. Gods are made of what people say about them. So are thrones."*
+
+### 6.6 The ground at Yashio-dono: Hiruta Genzō
+*Human (Kozakuran) male, 58. Master brewer-priest of Yashio-dono. Expert 6 / Adept 3 (G), CR 6. GURPS ~150 CP: Brewing-18, Religious Ritual-14, Merchant-13.*
+- **Description.** Short and thick-armed, with a belly like one of his own vats. Grey hair shaved to stubble. A round face red at the cheeks from forty years of steam, and the left eye half-closed by an old burn from a boiling-rice accident. Indigo work-coat, sleeves tied back with a cord, a headband soaked dark. Forearms scalded pink in patches. Wooden clogs. He smells of koji and rice-steam.
+- **Voice.** Gruff, practical, and pious about the work rather than the gods. *"The knife came home smelling of my rice. Forty years. You've kept it fed. Sit down."*
+- **What he wants:** the knife's story; to be rid of the eighth vat without losing the festival; and for nobody to drink from it while foreigners are watching.
+- **Private thought:** *"Bitten. The grip's bitten. My grandfather said the god's tooth would wake when the god woke. He didn't say the god would be a foreigner, or that I'd be glad."*
+
+### 6.7 Background: Thay
+Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activate Thay. If the Crown battle has fired and Thay knows the dagger, the Golden Way legs of the journey are exposed.
+
+---
+
+## 7. Stakes and outcomes
+
+| Outcome | What it takes | What the sect gains | What it costs | What the world does |
+|---|---|---|---|---|
+| **Full, lawful** | Leave from the daughters (masks given), the bout with Sone won, the bead received by Arik | **Primacy:** registered clergy, Kara-Turan shrines route through them, +1 CL on domain spells, Yashiori's appetite fed anywhere | Two masks lost to the island. The secret told aloud to Ichiki. Arik knows. | Amaterasu's court is satisfied. Kitsuki loses the paper war and **learns where his prayers go**. Enma's docket holds an inter-court matter. Talos has nothing. |
+| **Full, stolen** | The bead taken and received by Arik | The same registration, but the Bureau files it with a theft attached | The Unspoken and the sea curse until the daughters are appeased. Sone hunting. Calloway's story. | Amaterasu holds a grievance with standing. The Yakumo-ha can contest it forever. **Talos has his lever.** |
+| **Partial: offered and refused** | The bead reaches Arik, and he will not close his hand | Nothing is registered. The bead is a pledge offered and not received. | The priests stand exposed before the man they served in secret | Everything rides on Chad's Emperor-of-Mankind answer (§9) |
+| **Partial: the bout lost** | Sone throws the petitioner | The bead goes back to the island. The sect keeps its secret and its masks, if they never petitioned. | Face before Heaven. The vision unanswered. | The court's watch ends. Kitsuki knows. |
+| **Failure: the remnant** | The bead drowned in the eighth vat, or lost at sea | Nothing | The bite in the serpent's keeping | **Bridle becomes feed.** The temperament in the vision has one less restraint. Read it on reading 3. |
+| **Failure: the wardens** | A priest seized to Enma's court | One priest left, alone | A trial in the hells | Enma notices (K7). The Hand is on his docket. |
+
+**The Pale Name meter (R3).** Each outcome feeds it, unpriced. Even the failures were addressed to the Name: every attack survived is recognition, per the Pale Name Evolution's two-front squeeze.
+
+---
+
+## 8. Choice points
+
+| # | Choice | Weight | Options and consequences |
+|---|---|---|---|
+| CP1 | **Jin's sanction** | Heavy | **Ask** (Jin's code: serve the seat, never sit it; he may judge that the priests are deciding *for* the seat) → roll Jin's reaction at play; he may forbid, join, or send Teodric or Durgan. **Go without asking** → the Hand learns afterward, and Jin's trust in the priests is spent. |
+| CP2 | **Petition or theft** (S4) | Heavy | **Petition:** the truth told aloud, the masks given, Sone's bout available, a clean registration. **Theft:** the curse, Sone's sword, Calloway's lever, a registration with a stain. |
+| CP3 | **The masks and Enma** (S2/S5) | Medium | **Surrender** them to the wardens → the faces go to Enma. **Argue** jurisdiction → a hearing later. **Trick** → it goes in the ledger. **Fight** → Enma notices. Giving them to the daughters first (CP2) changes the question. |
+| CP4 | **Kusanagi** | Heavy | **Involve her:** she opens doors in Kozakura, and Hiruta and Kitsuki know her old name. But she cannot land on the island, **the Fourth Tail feels the bead within 60 ft**, and she is Arik's sworn retainer: **the secret reaches Arik early.** **The Atsuta box** shows the bead's resting place without the dawn-list leads, but opening it tells Kusanagi someone looked (K3), which also brings the discovery early. **Leave her out:** slower, safer. |
+| CP5 | **Delivery** (S6) | Terminal | **Place it in his hand** → forces the discovery and completes the pledge if he closes his hand. **Enshrine it in his name and say nothing** → the office is fed, the holder never receives it, nothing is registered, the secret holds. That is the sect choosing the seat over the man, which Jin would call the one sin of the office. |
+| CP6 | **The Two Winners** (§3.2) | Heavy, slow | When the clock fills: does Lorne leave, stay and serve the temperament inside the sect, or get brought back? The discovery scene then has to answer **which priest Arik sanctions**. |
+
+---
+
+## 9. The discovery: how the arc ends at Arik
+
+**The forcing logic.** The pledge must be *received*, and only the holder can receive it (§4.1). Every success path ends with two masked Veil agents, or two unmasked ones if the island took their faces, standing in front of Arik with a jade bead and a confession. **Failure paths reach him too, worse:** through Calloway's story, Kitsuki's Bureau suit, or a priest's trial in Enma's court.
+
+**The room (set the table; do not write Arik's answer).** The venue and date are R4 (open). Whoever is in the hall, these are live:
+
+- **Arik.** He has never been told he has priests. He holds the Pale Name and the Storm King's office, and he wears the Cloak of Wandering Thunder.
+	- Chad's forward note (K6): the Emperor-of-Mankind line. Worship denied as a rule, these priests a sanctioned exception. **Chad rules this live.**
+	- The question the arc hands him: **which priest?** Nym, who saw the bridle, or Lorne, who saw the throw. Or both. Or neither.
+- **Jin.** If present, he kneels at Arik's left knee, as is canon for him (K10). He serves the seat, and the priests served it without the man. **What Jin says, if he speaks, is the office reading of what they did.**
+- **Lirien.** The priests are Veil agents. Her network has been running a cult inside itself and she did not know. Her face is a scene of its own; route through `hybrid-intelligence-ops` for the Veil fallout.
+- **Kusanagi,** if present. **The Sickness (K4):** she cannot draw the shrine blade in a sovereign's hall. The **Bite (§4.1)**: the Fourth Tail knows the bead is in the room. Her own vision of Arik as Susanoo, with its four readings, is now one of three visions of the same seat. Hers, Nym's and Lorne's disagree on which storm god he is and on who is winning.
+- **The bead** on the table, or in his hand, or refused.
+
+**What the discovery is NOT allowed to settle:** the four readings (§3), bridle versus feed (§4.1), or the meter's price. Those stay open, as Kusanagi's vision does.
+
+---
+
+## 10. Rolls ledger (D)
+Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of four), no rerolls. File: `tooth_marked_jewel_rolls.json`. Script: `roll.py`.
+
+| ID | Question | Throws | Result | Reading |
+|---|---|---|---|---|
+| TJ-1 | Dawn of the vision (day of Uktar 1498) | 13, 12, 13, 6 | **12** | **12 Uktar 1498 DR** |
+| TJ-2 | Lorne witnesses: 3–10 Nym alone; 11–18 both, Lorne sees the other figure win | 17, 11, 11, 9 | **11** | **Both witness. Lorne sees the maned one throw the pale one.** |
+| TJ-3 | Ichiki Shōun's reaction (GURPS, no modifier) | 12, 8, 8, 10 | **8** | **Poor.** Allows the landing, refuses the petition. |
+| TJ-4 | Yakumo-ha awareness stage | 8, 8, 7, 14 | **8** | **S2**, the rite-house |
+| TJ-5 | Orochi remnant awareness stage | 5, 11, 9, 13 | **9** | **S2** |
+| TJ-6 | Talos (Calloway) awareness stage | 13, 5, 10, 15 | **10** | **S2** |
+| TJ-7 | Amaterasu's watch begins | 10, 10, 9, 6 | **9** | **S2** (the deer at the torii) |
+| TJ-8 | Enma's wardens: delay after the first Yashiori kill on Kara-Turan soil | 5, 15, 6, 13 | **6** | **The same night** |
+
+**Rolls held for play (not thrown):** Jin's reaction (CP1); the daughters' answer (S4, 3d6 + Diplomacy margin); Sone's bout (opposed grapples / Sumo contests); the wardens' jurisdiction contest; The Two Winners clock advances.
+
+---
+
+## 11. Names, collisions and open items
+
+**Name checks (NPC database SQL + Notion search, 5 Oct 2026):**
+
+| Name | Result |
+|---|---|
+| Kitsuki Masatane | No match |
+| Sone Takamichi | No match. **Note:** *Tenjin Kasuga* exists (an iaijutsu NPC). Kasuga is also the deer shrine tied to Kashima. Sone's crest avoids the Kasuga name. |
+| Bereth Calloway | No match |
+| Ichiki Shōun | No match |
+| Hiruta Genzō | No match |
+| Gozu, Mezu, Enma | No NPC rows (myth figures) |
+| ~~Varen Hask~~ | **Rejected:** near-miss with *Varen Keth* (Binding Expert) |
+| Okitsu-no-shima, Hagata-no-Tama, Yashio-dono | No Notion hits |
+| Yakumo-ha, Isohama, Kurogane valley, Red Saddle | Generated; no hits |
+
+**Open items for Chad:**
+1. **R4, the clock.** When does the discovery land in Arik's lane, given the Jörmun clock at Uktar 1498, Arik's arc around 1495, and Jin's lane unset (LOG-824)?
+2. **Kitsuki's prayers answering through the seat** (§6.3). That is a cosmological ruling: do the office's *other* worshippers already draw through Arik?
+3. **Hagata-no-Tama's properties** (§4.1), every line P. In particular: is a Celestial Bureau registration the right shape for "primacy"?
+4. **The masks as the island's price** (S4). The masks are Chad's ruling (the crimson oni masks), so giving them away is his call to allow.
+5. **Pale Name meter price** for the vision and for each outcome (R3).
+6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
+7. **The Veil shadow route to Kara-Tur** (S1 option 3): the Shadow Gate Network page was not read for this draft.
+8. **Adventure-arc-builder:** if this should become a playable module, run it through the Notion adventure-arc-builder next. This document is its design brief.
+
+**On approval (not done yet):**
+- A Notion child page under **The Hand — Standing Roster**, carrying this document.
+- The repo mirror (this file) stays on branch `claude/sleepy-hawking-oap9se`.
+- A Change Log entry in the 📋 Canon Change Log, Session field blank, PROJECTED, nothing played.
+- A cross-link line appended (append-only) to the Hand roster and the Kusanagi page's banked-hooks list.
