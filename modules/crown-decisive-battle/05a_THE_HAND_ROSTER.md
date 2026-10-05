@@ -46,3 +46,20 @@ Deviations: none
 - **Arik does not know he has priests.**
 - **Forward note, not yet ruled:** when Arik finds out, Chad expects to take a page from the Emperor of Mankind. Arik would deny worship as a rule and allow these priests as a sanctioned exception. That is a future scene.
 - **Enma-Ō stays in the cosmology.** Susanoo's Root Country (Shinto) and Enma's hells (Buddhist, from Yama) are separate afterlives that coexist in the same tradition. The Hand wears oni faces, and oni are Enma's wardens, so priests of another office are wearing his servants' faces. Whether Enma takes notice is an open hook.
+
+## Stride suits (rolled 5 Oct 2026; Chad: "many have stride armor that's customised")
+Source: ⚔️ The Stride Line — Equipment Specifications (Notion 35ee8214-84b0-81ef-a58a-fe38bf340264, v1.2).
+- **Tier ceiling by qualification.** Phantom needs BAB +12 or 18 ranks (Ivrael only, at Fighter 14). Stalker needs BAB +8 or 12 ranks plus Veil senior-operative status (everyone else).
+- **Decoration.** Veil austerity is the base: matte, shakudō fittings, shallow unfilled engraving visible only up close, Lirien's authorisation. A second tradition was rolled for each member's individuality.
+- Rolls: tier 3-8 Strider / 9-15 Stalker / 16-18 Phantom (Stalker ceiling: 9-18 Stalker); second tradition 3-7 none / 8-9 Forgedeep / 10-11 Bloodaxe Nordic / 12-13 Calishite-Amnian / 14-18 urushi; budget in four bands inside the tier's range. Throws are in `hand_roster_rolls.json`.
+
+| Member | Suit | Second tradition | Decoration (Crowns) | What it looks like |
+|---|---|---|---|---|
+| Ivrael Quillatar | **Strider** (AC 18, DR 5/magic, SR 5, speed 50) | none: pure Veil austerity | 1,000 | Matte gunmetal, shakudō fittings, one master's mark inside the forearm. The plainest suit in the Hand, worn by its best blade. He qualified for a Phantom and took a Strider. |
+| Nym Esharan | **Strider** | Forgedeep dwarven | 600 | Austerity with one guilloche band along the spine's stress line. An elf priest's suit with dwarf-made engraving that follows the force through the plate. |
+| Teodric Halvane | **Stalker** (AC 22, DR 7/magic, SR 10, speed 60) | Bloodaxe Nordic | 2,500 | Russet-burnished, Younger Futhark etched at the temple-band and inner wrists, niello-filled. An enchanter wearing legion runes. |
+| Durgan Emberlode | **Strider** | Calishite-Amnian | 1,000 | Austerity broken by one vitreous-enamel band in sang-red at the gorget, the only bright colour in the Hand apart from the masks. |
+| Lorne Ashby | **Stalker** | Bloodaxe Nordic | 2,500 | Russet with animal-style interlace on the spaulders and niello knotwork at the cape mount. |
+
+- **Base cost:** Strider 30,000 Crowns. Stalker per its spec. The suits are Veil-issued, not owned.
+- **Still to do in Phase 6:** weapons and signature items through the loot-engine / Affix Registry; the 3.5e/GURPS stat lines with the suit applied.

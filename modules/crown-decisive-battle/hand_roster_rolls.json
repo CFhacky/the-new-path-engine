@@ -328,5 +328,170 @@
   ],
   "bound": 11,
   "result": "Trickery / Death"
+ },
+ {
+  "id": "Ivrael Quillatar suit tier (ceiling Phantom)",
+  "throws": [
+   8,
+   17,
+   17,
+   6
+  ],
+  "bound": 8,
+  "result": "Strider"
+ },
+ {
+  "id": "Ivrael Quillatar second decoration tradition (over Veil austerity)",
+  "throws": [
+   7,
+   10,
+   12,
+   5
+  ],
+  "bound": 7,
+  "result": "none (pure Veil austerity)"
+ },
+ {
+  "id": "Ivrael Quillatar decoration budget, Crowns (Strider band)",
+  "throws": [
+   13,
+   12,
+   16,
+   4
+  ],
+  "bound": 12,
+  "result": 1000
+ },
+ {
+  "id": "Nym Esharan suit tier (ceiling Stalker)",
+  "throws": [
+   14,
+   8,
+   9,
+   4
+  ],
+  "bound": 8,
+  "result": "Strider"
+ },
+ {
+  "id": "Nym Esharan second decoration tradition (over Veil austerity)",
+  "throws": [
+   10,
+   8,
+   10,
+   7
+  ],
+  "bound": 8,
+  "result": "Forgedeep dwarven"
+ },
+ {
+  "id": "Nym Esharan decoration budget, Crowns (Strider band)",
+  "throws": [
+   13,
+   10,
+   10,
+   10
+  ],
+  "bound": 10,
+  "result": 600
+ },
+ {
+  "id": "Teodric Halvane suit tier (ceiling Stalker)",
+  "throws": [
+   12,
+   9,
+   14,
+   9
+  ],
+  "bound": 9,
+  "result": "Stalker"
+ },
+ {
+  "id": "Teodric Halvane second decoration tradition (over Veil austerity)",
+  "throws": [
+   10,
+   10,
+   13,
+   7
+  ],
+  "bound": 10,
+  "result": "Bloodaxe Nordic"
+ },
+ {
+  "id": "Teodric Halvane decoration budget, Crowns (Stalker band)",
+  "throws": [
+   7,
+   12,
+   10,
+   7
+  ],
+  "bound": 7,
+  "result": 2500
+ },
+ {
+  "id": "Durgan Emberlode suit tier (ceiling Stalker)",
+  "throws": [
+   7,
+   10,
+   7,
+   11
+  ],
+  "bound": 7,
+  "result": "Strider"
+ },
+ {
+  "id": "Durgan Emberlode second decoration tradition (over Veil austerity)",
+  "throws": [
+   12,
+   14,
+   8,
+   13
+  ],
+  "bound": 12,
+  "result": "Calishite-Amnian"
+ },
+ {
+  "id": "Durgan Emberlode decoration budget, Crowns (Strider band)",
+  "throws": [
+   6,
+   12,
+   11,
+   14
+  ],
+  "bound": 11,
+  "result": 1000
+ },
+ {
+  "id": "Lorne Ashby suit tier (ceiling Stalker)",
+  "throws": [
+   11,
+   10,
+   6,
+   9
+  ],
+  "bound": 9,
+  "result": "Stalker"
+ },
+ {
+  "id": "Lorne Ashby second decoration tradition (over Veil austerity)",
+  "throws": [
+   10,
+   16,
+   9,
+   14
+  ],
+  "bound": 10,
+  "result": "Bloodaxe Nordic"
+ },
+ {
+  "id": "Lorne Ashby decoration budget, Crowns (Stalker band)",
+  "throws": [
+   6,
+   10,
+   9,
+   13
+  ],
+  "bound": 9,
+  "result": 2500
  }
 ]
