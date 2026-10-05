@@ -315,3 +315,258 @@ Source: ⚔️ The Stride Line — Equipment Specifications v1.2 (`35ee8214-84b0
 ## Rulings (Chad, 5 Oct 2026, append-only)
 - **Open 2 resolved: the drow passes as unremarkable.** Quavein Orlzynn wears no disguise or glamour in the field. A drow in the Veil reads as ordinary because the Director is one. He adds no pressure to the drow-identity thread.
 - **Open 3 resolved: the clerics serve the Storm King's office.** Quavein Orlzynn (Cleric 17) and Osmund Tarrow (Cleric 12) serve the same office as the Hand's Nym Esharan and Lorne Ashby: the Susanoo seat Arik is filling, the Pale Name. The office grants **Trickery and Death** (Hand ruling), so both take those domains and no domain roll is needed. The host now holds **four priests of the office**: Quavein, Osmund, Nym and Lorne, spread across Divisions I, IV and VII. **Arik does not know he has priests** (Hand ruling stands). Quavein is a captain-rank priest of an office whose holder doesn't know he has a clergy; the ledger he keeps "for the Veil" may be kept for the office too. That is a hook, not a fact.
+
+## Rulings, round two (Chad, 5 Oct 2026, append-only)
+Throws are in `menagerie_round2_rolls.json` (same method).
+- **1a: the shared name is an echo.** The Chapel's clerk has heard of the Veil host. The empire's reputation travels west ahead of the expedition, and the name follows the company because of it.
+- **2a: Aerendyl's suit counts as clothing for monk features.** This is an Institut-style modification, and it fits his sabatons already being cut away.
+- **3a: Zaheda's suit is a non-metal build:** darkwood and dragonhide plates over crystal mesh, and the only one of its kind. It keeps the Stalker tier, with cost and statistics set in the stat phase.
+- **4a: Jin's orders win on Hand operations, and the captain's win otherwise.**
+- **5: schools and heritage, rolled:**
+  - Hadda Krell is an **evoker**. The Silk is force work.
+  - Kerra Lisle is a **transmuter**.
+  - Wenna Sorrel is an **enchanter**.
+  - Edwyn Coldry is an **abjurer**.
+  - Naevys Tolúrin's heritage is **fey**.
+- **6a: Quavein's Phantom needs no mage variant,** which saves 35,000 Crowns.
+- **7a: Lorne Ashby is the staff adept seen at Tethford.** The Blue Hour's man with a staff, stepping out of the shadow of a two-foot rock and moving like joints trained out of angular human movement, is Lorne, the Hand lieutenant of Division IV.
+- **8b: Ysmay's refused order, rolled:** *stand down from a kill already begun, because the target had become an asset mid-operation.* She did not stand down. See her entry below.
+- **9a, with a note (Chad):** the captains "don't have enough details yet, just enough to be semi characters right now." Full characters come before stat blocks. They follow below.
+- **Quavein is a war priest, so he differs from the others (Chad).** He serves the same office, but its warrior face: Susanoo the Orochi-slayer, the storm with a sword in it. His domains are **War**, fixed, and **Water**, rolled: the sea Izanagi first gave Susanoo to rule. Trickery and Death stay with Osmund Tarrow, Nym Esharan and Lorne Ashby.
+
+## The captains as characters (5 Oct 2026)
+These rolls were added to each captain: **recruitment route** (the Veil's Recruitment Pipeline, with extra entries), **what they want**, and **the captain they clash with**. The rest is authored. Everything here is background from before play.
+
+### The rival web at a glance
+| Captain | Clashes with (rolled) | Who clashes with them |
+|---|---|---|
+| I Quavein | VII Naevys | — |
+| II Hadda | III Tarvash | — |
+| III Tarvash | VIII Brunna | II Hadda |
+| IV Aerendyl | VI Marit | XII Ilvaera |
+| V Kesh | VII Naevys | IX Mercy, X Zaheda |
+| VI Marit | VIII Brunna | IV Aerendyl, VIII Brunna, XIII Dace |
+| VII Naevys | VIII Brunna | I Quavein, V Kesh |
+| VIII Brunna | VI Marit | III Tarvash, VI Marit, VII Naevys, XI Ysmay |
+| IX Mercy | V Kesh | — |
+| X Zaheda | V Kesh | — |
+| XI Ysmay | VIII Brunna | — |
+| XII Ilvaera | IV Aerendyl | — |
+| XIII Dace | VI Marit | — |
+
+**What the dice made:**
+- **Brunna the Shrike is the host's lightning rod.** Four captains clash with her, and she and Marit clash with each other.
+- **The loud ones draw fire.** Naevys and Kesh, the two fastest promotions in the host, take two rivals each.
+- **The wants pair captains off.** Four captains want a place of their own (Hadda, Tarvash, Brunna, Ilvaera). Five want a debt settled (Aerendyl, Kesh, Marit, Mercy, Zaheda). Two want one named enemy dead (Quavein, Dace).
+
+### I — Quavein Orlzynn, "the Bursar": the war-priest
+*Recruited: Noble (disgraced heirs) · Wants: one named enemy dead · Clashes with: Naevys*
+- **Before.** He was the third son of a minor drow house. A rival bought its matron's death from a priestess, and he was the one left alive to carry the shame. He came up through the sea caves on the Sword Coast and saw open water for the first time on a winter night, with a gale on it. That is where the office found him: a voice in the storm that was neither Lolth nor any god he knew. He has served it since, as the war priest of a seat whose holder has not yet sat down.
+- **Into the Veil.** Through the Noble pipeline. A disgraced heir reads courts the way a clerk reads accounts, and drow courts are the hardest accounts there are. He was placed to read surface houses for Cassien's Drift. Within a season he had moved himself sideways into direct action and nobody had stopped him.
+- **The war priest.** Nym, Lorne and Osmund carry the office's quiet face: trickery, the Root Country, the dead. Quavein carries the other one: Susanoo with Kusanagi drawn, the storm on the sea. He prays before a fight and never after. His spells hit, or they keep him standing while he hits. He is the only priest in the host the others hear praying, low and level, on the way in.
+- **How he talks.** Quiet, exact, in the language of accounts.
+  - *"You owe the Veil three nights' sleep. I'm collecting one."*
+  - *"Sit. This won't take long, and then it will be finished."*
+  - *"Write it down. What's written down is paid, eventually."*
+- **What he wants.** The priestess who ended his house, dead. Her name is the first entry in the black book, and the only one that has never balanced. (Her name and house are left open for Chad. They touch Underdark canon.)
+- **The crack.** He cannot stand a debt in either direction. A favour done for him makes him dangerous to the giver until he has paid it back.
+- **The rival.** Naevys. To him, her bare face is a cost her division pays for her vanity, and he enters her division's losses in his book in red ink. She knows and reads the red entries aloud to him at mess.
+- **Lirien and Arik.** Lirien is the one person whose accounts he cannot see to the bottom of, and he likes that. Arik is the man the office is pouring into. Quavein watches him the way a sailor watches the sky.
+- **Secret (hook).** The back of the black book holds a second ledger, in drow script: what the office has given and what it is owed. He is keeping accounts for a god who does not yet know he is one.
+
+### II — Hadda Krell, "Spider-Hadda": the evoker who duels
+*Recruited: Social (Drift) · Wants: a place that is hers · Clashes with: Tarvash*
+- **Before.** She grew up in a Luskan tenement. A sea-wizard bought her apprenticeship and rented her out as a pit-mage. She won enough pit duels to buy herself free, then challenged the sea-wizard to a formal duel with witnesses and killed him inside the rules. In Waterdeep she taught duelling magic to rich men's sons. Their fathers paid her to teach, and paid her more not to.
+- **Into the Veil.** Cassien's Drift wanted a reputation-killer. A public challenge from a half-orc woman, and a public first-blood loss to her, ends a young noble's season more surely than a knife. She did the work for two years before anyone told her who was paying.
+- **How she talks.** Blunt and dry, like a schoolmistress. She corrects your form while she cuts you.
+  - *"Again. Slower. You're dead twice already."*
+  - *"First blood. Mine to call."*
+  - *"I don't hate you. I'm grading you."*
+- **What she wants.** A duelling hall in Neverwinter with her name cut over the door. The deed is drafted. She has never signed it.
+- **The crack.** She needs witnesses. A fight nobody sees doesn't count to her, which is a bad habit in a covert service.
+- **The rival.** Tarvash. He pressed one of her students into the Veil without asking her. She has challenged him twice, and he has laughed twice.
+- **Lirien and Arik.** Lirien has never accepted a challenge from her, and Hadda counts that as her only loss. She wants Arik to see her fight once.
+- **Secret (hook).** She has never lost a duel, and she is afraid of what she will do the first time she does.
+
+### III — Tarvash Oruk, "the Press-Gang": the man who brings strays home
+*Recruited: by Virelle Saan in the demon war · Wants: a place that is his · Clashes with: Brunna*
+- **Before.** He is the son of a pasha's stable-master and was a horse-archer in an Amnian mercenary company. A demon incursion ate the company, and he shot his way out alone and kept shooting. Virelle Saan found him on a rooftop with an empty quiver, holding the street below with two scimitars. He has fought her demon war since, and he is Virelle's man as much as Lirien's.
+- **How he talks.** Loud and warm, full of Alzhedo proverbs, and he calls everyone "cousin".
+  - *"Cousin, you climb like a goat. Good. Goats live."*
+  - *"The hawk doesn't ask the rabbit for papers."*
+  - *"I'll do the paperwork after. I always do the paperwork after."*
+- **What he wants.** A house on a hill with a stable, for the people he has pulled in. He calls his recruits family and means it.
+- **The crack.** He can't leave a stray. Every person he brings in is a risk he has vouched for with his own neck.
+- **The rival.** Brunna. She killed a prisoner Tarvash was halfway to turning into a recruit. He has not forgiven her, and the prisoner's name is on his list of family.
+- **Lirien and Arik.** Lirien reads his paperwork, sighs and signs it, and he adores her for the sigh. To him, Arik is an emperor who needs riders.
+- **Secret (hook).** One of the three people in his triangle is lying about who she is. He knows it, and he has not told Lirien.
+
+### IV — Aerendyl Ostahr, "Long-Road": the bear who walks
+*Recruited: Magical (academy dropouts) · Wants: a debt repaid · Clashes with: Marit*
+- **Before.** He was a moon elf student at the Lady's College in Silverymoon, and he walked out mid-term. Spells wanted words, and his body had stopped needing any. He walked west and nearly starved. A human abbot at a mountain monastery took him in, taught him the hold and the throw, and never asked his name.
+- **Into the Veil.** The monastery was the Veil's rural "monastery" front, one of its three academies. The abbot was a Veil instructor. Aerendyl learned this two years in, and stayed.
+- **How he talks.** Few words, long pauses, and distances in place of answers.
+  - *"Two days. Walking."*
+  - *"I'll be there."*
+  - *"Hold still. It's easier."*
+- **What he wants.** To repay the abbot, who is old now. He teaches at the monastery between operations, unpaid, and carries the abbot's firewood.
+- **The crack.** He is gentle and lonely. He hasn't spoken Elvish since Silverymoon.
+- **The rival.** Marit. He can't be tracked by the gate ledger, and she has taken that as a personal challenge. She has tailed him three times, he has shaken her three times, and he is running out of patience with it.
+- **Lirien and Arik.** Lirien cannot see him in the network and has chosen to trust that he arrives. He walked three hundred miles to look at Arik once, and stayed.
+- **Secret (hook).** He calls walking a preference. The truth is that the Shadow Gate lattice feels to him like a held breath, and the breath belongs to someone else.
+
+### V — Kesh Durrow, "Ten-Paces": the dock rat with one eye
+*Recruited: Street (Dock Rats) · Wants: a debt repaid · Clashes with: Naevys*
+- **Before.** He was a half-orc orphan on the Neverwinter docks. A dockmaster burned his left eye with a brazier iron for stealing a fish. An old Luskan bosun with a horn bow taught him to shoot from the other eye, and taught him the sickles for when the bow is too slow.
+- **Into the Veil.** Through the Dock Rats, the Veil's street pipeline. He ran messages, then watched doors, then shot the man who came out of one. He is the youngest captain and the fastest promoted.
+- **How he talks.** Spare, literal, in dock cant.
+  - *"Ten paces. Count 'em."*
+  - *"Didn't miss."*
+  - *"You want something, say it's from the Emperor."*
+- **What he wants.** The debt owed to him. The dockmaster is alive and a harbour official now. Once a year Kesh stands ten paces from him in a crowd, and does not shoot.
+- **The crack.** "Answers only to Arik" is a young man's hunger for one man's notice. He has never spoken to Arik. Tethford is the closest he has stood to him.
+- **The rival.** Naevys. They are the two fastest promotions in the host, and she laughs at him. He hates being laughed at more than he hates being hit.
+- **Rivals of his.** Mercy and Zaheda. See their entries.
+- **Secret (hook).** The bosun is buried in a pauper's field in Luskan. Kesh pays a gravedigger to keep the grass cut, and nobody in the Veil knows he goes there.
+
+### VI — Marit Hollowell, "Old Teeth": the widow who never stops walking
+*Recruited: Social (Drift), by way of Nightingale Services · Wants: a debt repaid · Clashes with: Brunna*
+- **Before.** She is a Waterdeep dock widow. Four men killed her husband over a cargo, and she tracked them for two years and killed all four. The teeth started then: four of them, the first on the string.
+- **Into the Veil.** Nightingale Services placed her as a housekeeper. A housekeeper sees where a household sleeps, and she tracked through three great houses before anyone noticed that people left them feet first. Cassien's Drift took her in.
+- **How she talks.** A dockside mother's voice, dry, and she calls the young ones "pet".
+  - *"Eat something, pet. Long day."*
+  - *"He sleeps on his left side. Always has. That's how."*
+  - *"Don't hurry. Hurry is how they hear you."*
+- **What she wants.** The debt owed to her. Somebody paid those four men, and she has followed that payment for years. The Veil is the best tracking tool in the world, and that is why she joined.
+- **The crack.** The string is grief worn as a trophy, and Lirien knows it. Lirien lets it stand, and Marit knows that too. She would die for Lirien over that one silence.
+- **The rival.** Brunna. To Marit, bodies pinned to walls are showing off and evidence left lying about, and she has said so to Brunna's face. Brunna says the teeth are worse. They are both right.
+- **Rivals of hers.** Aerendyl (she can't track him), Brunna, and Dace (she calls him a liability, and he knows she's right).
+- **Arik.** He is the employer. Her devotion runs to Lirien and the Veil, and to Arik only through them.
+- **Secret (hook).** She has a name now, from the Veil's own files, for the one who paid. It belongs to someone the Veil protects. She hasn't told anyone.
+
+### VII — Naevys Tolúrin, "the Barefaced": fey-blooded and loud about it
+*Recruited: Magical (academy dropouts) · Wants: to be the best alive at her art · Clashes with: Brunna*
+- **Before.** She comes from a sun elf house of formal wizards. Her magic came to her untaught. Her grandmother rode with a wild hunt for a season and came back carrying a child. The house sent Naevys to an academy to have the fey trained out of her. She burned the practice hall to its footings and walked out laughing. She hunted boar with the fey as a girl, which is where the tusk at her throat comes from.
+- **Into the Veil.** Through the Magical pipeline: the academy that expelled her sold her file to the Veil. She runs the biggest division in the host, seven triangles, because people follow a face.
+- **How she talks.** Loud, laughing and profane, with elven oaths.
+  - *"Look at me. There. Now you'll remember."*
+  - *"Hiding's for people with something to lose."*
+  - *"Again! Do it again, that was gorgeous."*
+- **What she wants.** To be the best sorcerer alive. She keeps a list of better sorcerers. It has three names on it, and she means to pass each of them, not kill them.
+- **The crack.** She cannot stand being forgotten. The bare face is a refusal to be erased.
+- **The rival.** Brunna said, to her face and in front of her division, that the Barefaced will get her people killed. Naevys has been waiting ever since for Brunna to be wrong.
+- **Rivals of hers.** Quavein (the red ink) and Kesh (the laughter).
+- **Lirien and Arik.** Lirien loathes the face. It is their standing argument, and Naevys enjoys every round. She thinks Arik is the only person alive who shows his face more than she does: he walked up to Tethford's wall alone, blazing.
+- **Ally.** Nym Esharan, her Hand lieutenant: a quiet priest who keeps a loud captain alive.
+- **Secret (hook).** The bare face is a fey bargain. If she is hidden from the world's sight for a full day, the hunt comes to take her back.
+
+### VIII — Brunna Coldhollow, "the Shrike": the one everyone argues with
+*Recruited: Magical (academy dropouts) · Wants: a place that is hers · Clashes with: Marit*
+- **Before.** Coldhollow was a small delve that fell when she was a girl. A collapse buried her for three days in the dark with her mother's body. She trained at a clan forge-school in runecraft and left it for the sword, apprenticing herself to a human sword-saint of the setting-sun school. He took a prisoner alive once on her advice. The prisoner came back a year later and killed him in his sleep.
+- **Into the Veil.** Through the Magical pipeline. The Veil's technical division wanted her rune training. It got her blades instead and has not complained.
+- **How she talks.** Terse, crude and dwarvish. She says exactly what she means.
+  - *"Alive was a suggestion."*
+  - *"Pinned's honest. You know where everyone is."*
+  - *"Don't like it, don't watch."*
+- **What she wants.** Coldhollow's doors back on their hinges: a hall to stand in that she does not have to share with the dead.
+- **The crack.** A live prisoner, to her, is a knife left on the table. The rule that she kills when told to capture comes from her teacher's death.
+- **The lightning rod.** Four captains clash with her: Tarvash (the prisoner he meant to turn), Naevys (the public warning), Marit (the walls) and Ysmay (who calls it a butcher's work). She knows. It doesn't seem to touch her.
+- **The rival.** Marit, both ways. Brunna thinks the teeth are worse.
+- **Lirien and Arik.** Lirien stopped giving her capture jobs, and Brunna counts that as a fair contract. She liked watching Arik walk up to the wall alone.
+- **Ally.** Teodric Halvane, her Hand lieutenant, is the one man she lets talk her down.
+- **Why no suit.** The three days in the collapse. "A suit is a cage with a door."
+- **Secret (hook).** For all that, she keeps one prisoner alive in a cell only she knows about, and has for years.
+
+### IX — Mercy Vantreth, "Quiet Mercy": the silent rage with a family
+*Recruited: by Lirien personally · Wants: a debt repaid · Clashes with: Kesh*
+- **Before.** He was a deckhand on a Sword Coast whaler. As a child he learned that screaming brought the beatings, so his rage came out silent. When pirates boarded the whaler he held the rail alone with a flensing cleaver and a gaff. Lirien was aboard as a passenger under cover and watched the whole thing. She spoke to him once on the dock at Neverwinter.
+- **How he talks.** Soft and slow. He apologises between violent acts and speaks in sailors' idiom.
+  - *"Sorry. Hold on."*
+  - *"Weather's turning."*
+  - *"I don't shout. Never did."*
+- **What he wants.** To pay off a debt. His wife's family owe the tanners' guild for a lease. He pays it down in silver from his Veil wages, quietly, a little each month.
+- **The crack.** The family the Veil doesn't know about. He fears Lirien finding out more than anything a fight can do to him.
+- **The rival.** Kesh, who told him once that a man who says sorry is a man with something to lose. It was too close to the truth.
+- **Lirien and Arik.** He would do anything for Lirien. He hopes his children grow up in Arik's world.
+- **Ally.** Faelith Ammarin, his lieutenant, who sings off-key when he goes quiet.
+- **Secret (hook).** His eldest child has the silent rage already.
+
+### X — Zaheda Qorrin, "Ink-Tiger": the druid who writes everything down
+*Recruited: by Lirien personally · Wants: a debt repaid · Clashes with: Kesh*
+- **Before.** She was a druid of a Calishite desert circle that served a pasha as his huntsmen. She kept the pasha's tiger. When he ordered it killed for mauling a guest, she let it go instead. It gave her the four scars and then its shape. Her circle performed the exile rite, which strikes her from their memory. She writes everything down so that something remembers.
+- **Into the Veil.** The Veil captured a courier's notebook in a cipher it could not break. Lirien wanted the writer more than the contents and went to Calimshan herself to find her.
+- **How she talks.** Precise and scholarly, in a formal Common edged with Alzhedo, and she writes while she talks.
+  - *"Say it again. I want the exact words."*
+  - *"Noted."*
+  - *"You've already decided. I'm only writing it down."*
+- **What she wants.** To repay the debt she owes her circle. She writes them a letter every month and never sends it. There are dozens.
+- **The crack.** The notebook is a guard against being forgotten a second time.
+- **The rival.** Kesh can't read. He saw his own name in her book and demanded to know what it said, and she won't tell him.
+- **Lirien and Arik.** The two have a mutual, professional respect. Lirien has asked her twice to stop writing. Zaheda is writing a book about Arik.
+- **Ally.** Patience Haskett, her tiefling lieutenant, has started learning her cipher. She hasn't stopped him.
+- **The suit (ruling 3a).** Darkwood and dragonhide plates over crystal mesh, with Aljibah verse in gold koftgari. It is the only non-metal Stride suit in existence.
+- **Secret (hook).** The book about Arik. It is two hundred pages long, and the last entry is from Tethford.
+
+### XI — Ysmay Corran, "Ysmay Who Said No": the old blade
+*Recruited: Social (Drift) · Wants: a death worth having · Clashes with: Brunna*
+- **Before.** She spent sixty years as a fencing master and bodyguard to noble houses, and lost three charges in that long career. She remembers each of them by name and by the cut she was a heartbeat late on.
+- **Into the Veil.** Cassien's Drift wanted a dowager: an old woman at a party, someone nobody watches. She has stood behind a dozen chairs in a dozen ballrooms with a sword under her shawl.
+- **The refusal (rolled).** On one operation Lirien ordered her to stand down mid-kill. The target had become an asset partway through. Ysmay's blade was already moving and she finished the cut. That night she walked into Lirien's room, laid her sword on the table hilt-first, sat down and waited to be killed. Her reason: "You don't stop a cut halfway. It's a cruelty to both." Lirien has never said why she let her live.
+- **How she talks.** Clipped and old-fashioned, with formal courtesies. She uses full names.
+  - *"Mistress Krell. You're dropping your left."*
+  - *"No."*
+  - *"I've buried better than you, child. Sit down."*
+- **What she wants.** A death worth having. She will not die in bed, and she has said so in writing.
+- **The rival.** Brunna. Ysmay calls her killing a butcher's work. Brunna calls Ysmay's discipline vanity.
+- **Lirien and Arik.** Since the refusal, the two of them share the respect dangerous people have for each other. Ysmay has guarded kings, and thinks Arik is the first one worth the job.
+- **Ally.** Rhun Talbridge, her lieutenant, who hands her the water before she asks.
+- **Secret (hook).** Her eyes are failing. In darkness she is what she always was. In bright light she is half blind, and the Night Hunt is no longer only a preference.
+
+### XII — Ilvaera Doun, "the Volunteer": the kind one
+*Recruited: Noble (disgraced heirs) · Wants: a place that is hers · Clashes with: Aerendyl*
+- **Before.** She was heir to a wood elf chieftain's line in the High Forest. She killed a guest under her father's roof because the guest meant the clan harm, and nobody had asked her to do it. Guest-murder is the one crime the clan does not forgive. She was exiled.
+- **Into the Veil.** Through the Noble pipeline, as a disgraced heir: an elf with courtly manners and nowhere to go home to.
+- **How she talks.** Warm, kind and apologetic, with elven courtesies. She frightens people because she means every word.
+  - *"I'm so sorry. Hold still, it's quicker."*
+  - *"He'd have wanted it. I'm sure he would."*
+  - *"Did I do well?"*
+- **What she wants.** A clan again. She wants the empire to be the one she lost, and Arik to be the chieftain who thanks her once.
+- **The crack.** She needs to be needed. Every unasked kill is an offering.
+- **The rival.** Aerendyl. He once walked across a province to stop one of her volunteered kills, and held her in the Hold until the target was gone. She has not forgiven the embrace.
+- **Lirien and Arik.** Lirien knows about the volunteering and has not stopped it, and Ilvaera takes that as permission. Lirien's silence may be a choice of its own.
+- **Ally.** Edwyn Coldry, her abjurer lieutenant, who cleans up after her.
+- **Secret (hook).** One of her volunteered kills was someone Arik wanted alive. Nobody has found out yet.
+
+### XIII — Dace Tolland, "Any-Comer": the brawler who sees it coming
+*Recruited: Military (discharged soldiers) · Wants: one named enemy dead · Clashes with: Marit*
+- **Before.** He was a Waterdhavian, a city watchman, and psionic from childhood: he saw the next heartbeat before it arrived. His older brother died in a sanctioned duel with a Waterdeep fencing master. Dace challenged the man and was refused, and has been refused every time since. He was discharged for brawling with the officer who told him to let it go.
+- **Into the Veil.** Through the Military pipeline (discharged soldiers), on direct action.
+- **How he talks.** Cheerful and quick, in Waterdhavian slang, and he interrupts.
+  - *"Sure. Now? Now's good."*
+  - *"You're going to go left."*
+  - *"Anyone. Anywhere. That's the rule."*
+- **What he wants.** The fencing master dead, in a fair fight. He accepts every challenge because that man accepted none. (The master's name is left open for Chad.)
+- **The rival.** Marit calls him a liability, and he's annoyed because she's right.
+- **Lirien and Arik.** He likes Arik, a man who walks up to a wall alone. **Hook:** Lirien uses his brawling as cover. A loud man pulls eyes away from the quiet ones, and he does not know he is a decoy.
+- **Ally.** Ashavel Oriym, his lieutenant with the war-fans.
+- **Secret (hook).** Lately he sometimes sees further than one heartbeat ahead. When he does, Arik is in it.
+
+## Open after round two (for Chad)
+- **Names to set:** Quavein's priestess, along with her house, which touches Underdark canon, and Dace's fencing master.
+- **Hooks offered, not facts:**
+  - Quavein's second ledger
+  - Aerendyl and the lattice's held breath
+  - Naevys's fey bargain
+  - Brunna's secret prisoner
+  - Ilvaera's wrong kill
+  - Dace as Lirien's decoy, and his further sight
+  - Zaheda's book about Arik
+  - Tarvash's lying recruit
+  - Marit's protected name
+  - Ysmay's failing eyes
+  - Mercy's eldest
+  - Hadda's unlost duel
+  - Kesh's bosun
+
+  Strike any you don't want.
+- **Stat blocks next (9a),** built on these characters.

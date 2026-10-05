@@ -9,6 +9,7 @@ Included:
 - `MENAGERIE_ROSTER.md` — the roster page (Notion renders the tables as `<table>` blocks; this file uses Markdown tables)
 - `menagerie_roster_rolls.json` — every table and throw (Python `secrets`, 3d6, four throws, lower median, no rerolls; uniqueness slides logged)
 - `roll_menagerie.py` — the script that produced the JSON
+- `menagerie_round2_rolls.json` and `roll_menagerie_round2.py` — round two (schools, heritage, Quavein's second domain, Ysmay's refused order, recruitment, wants, rivals)
 
 Append-only links added the same day: The Blue Hour — Dalelands Opening `343e8214-84b0-8197-be1a-ecd776df27e5`, The Veil `2fbe8214-84b0-815f-ba19-e874f0becc19`, The Hand — Standing Roster `3f0e8214-84b0-812a-9ae9-d14d08bd1893`.
 

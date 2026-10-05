@@ -1,0 +1,788 @@
+{
+ "method": "Python secrets; 3d6; four throws; lower median; no rerolls. Rival rolls slide off the captain's own seat.",
+ "date": "2026-10-05",
+ "tables": {
+  "wizard_school": [
+   [
+    3,
+    5,
+    "divination"
+   ],
+   [
+    6,
+    7,
+    "abjuration"
+   ],
+   [
+    8,
+    8,
+    "conjuration"
+   ],
+   [
+    9,
+    9,
+    "evocation"
+   ],
+   [
+    10,
+    10,
+    "transmutation"
+   ],
+   [
+    11,
+    11,
+    "enchantment"
+   ],
+   [
+    12,
+    12,
+    "necromancy"
+   ],
+   [
+    13,
+    13,
+    "illusion"
+   ],
+   [
+    14,
+    18,
+    "universalist"
+   ]
+  ],
+  "sorcerer_heritage": [
+   [
+    3,
+    7,
+    "draconic"
+   ],
+   [
+    8,
+    9,
+    "elemental (fire)"
+   ],
+   [
+    10,
+    11,
+    "fey"
+   ],
+   [
+    12,
+    13,
+    "celestial"
+   ],
+   [
+    14,
+    18,
+    "aberrant"
+   ]
+  ],
+  "quavein_second_domain (War fixed; Susanoo's warrior face; Trickery and Death excluded)": [
+   [
+    3,
+    8,
+    "Weather (the storm)"
+   ],
+   [
+    9,
+    10,
+    "Water (the sea he was first given)"
+   ],
+   [
+    11,
+    12,
+    "Destruction"
+   ],
+   [
+    13,
+    18,
+    "Strength"
+   ]
+  ],
+  "ysmay_refused_order": [
+   [
+    3,
+    6,
+    "execute a child who witnessed an operation (Silence Protocol)"
+   ],
+   [
+    7,
+    8,
+    "leave a wounded operative behind to make the extraction window"
+   ],
+   [
+    9,
+    10,
+    "stand down from a kill already begun, because the target had become an asset mid-operation"
+   ],
+   [
+    11,
+    12,
+    "kill an old comrade from her life before the Veil"
+   ],
+   [
+    13,
+    14,
+    "hand a prisoner to an interrogation she judged butchery"
+   ],
+   [
+    15,
+    18,
+    "leave Arik's side during a fight"
+   ]
+  ],
+  "recruitment_route (Veil Recruitment Pipeline + extras)": [
+   [
+    3,
+    5,
+    "a Veil target who was turned instead of killed"
+   ],
+   [
+    6,
+    7,
+    "Street (Dock Rats)"
+   ],
+   [
+    8,
+    8,
+    "Military (discharged soldiers)"
+   ],
+   [
+    9,
+    9,
+    "Magical (academy dropouts)"
+   ],
+   [
+    10,
+    10,
+    "Noble (disgraced heirs)"
+   ],
+   [
+    11,
+    11,
+    "Social (Drift)"
+   ],
+   [
+    12,
+    12,
+    "recruited by Lirien personally"
+   ],
+   [
+    13,
+    13,
+    "recruited by Virelle Saan in the demon war"
+   ],
+   [
+    14,
+    18,
+    "came to Arik and asked"
+   ]
+  ],
+  "what_they_want": [
+   [
+    3,
+    6,
+    "a death worth having"
+   ],
+   [
+    7,
+    8,
+    "to be the best alive at their art"
+   ],
+   [
+    9,
+    10,
+    "a debt repaid, to them or by them"
+   ],
+   [
+    11,
+    12,
+    "a place that is theirs"
+   ],
+   [
+    13,
+    14,
+    "one named enemy dead"
+   ],
+   [
+    15,
+    18,
+    "to see what Arik becomes"
+   ]
+  ],
+  "rival_seat": [
+   [
+    3,
+    4,
+    1
+   ],
+   [
+    5,
+    5,
+    2
+   ],
+   [
+    6,
+    6,
+    3
+   ],
+   [
+    7,
+    7,
+    4
+   ],
+   [
+    8,
+    8,
+    5
+   ],
+   [
+    9,
+    9,
+    6
+   ],
+   [
+    10,
+    10,
+    7
+   ],
+   [
+    11,
+    11,
+    8
+   ],
+   [
+    12,
+    12,
+    9
+   ],
+   [
+    13,
+    13,
+    10
+   ],
+   [
+    14,
+    14,
+    11
+   ],
+   [
+    15,
+    16,
+    12
+   ],
+   [
+    17,
+    18,
+    13
+   ]
+  ]
+ },
+ "throws": [
+  {
+   "id": "Hadda Krell wizard school",
+   "throws": [
+    13,
+    9,
+    12,
+    6
+   ],
+   "bound": 9,
+   "result": "evocation"
+  },
+  {
+   "id": "Kerra Lisle wizard school",
+   "throws": [
+    10,
+    10,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "transmutation"
+  },
+  {
+   "id": "Wenna Sorrel wizard school",
+   "throws": [
+    11,
+    12,
+    9,
+    13
+   ],
+   "bound": 11,
+   "result": "enchantment"
+  },
+  {
+   "id": "Edwyn Coldry wizard school",
+   "throws": [
+    5,
+    11,
+    10,
+    7
+   ],
+   "bound": 7,
+   "result": "abjuration"
+  },
+  {
+   "id": "Naevys Tolurin sorcerer heritage",
+   "throws": [
+    11,
+    11,
+    10,
+    10
+   ],
+   "bound": 10,
+   "result": "fey"
+  },
+  {
+   "id": "Quavein Orlzynn second domain",
+   "throws": [
+    13,
+    8,
+    9,
+    12
+   ],
+   "bound": 9,
+   "result": "Water (the sea he was first given)"
+  },
+  {
+   "id": "Ysmay Corran refused order",
+   "throws": [
+    9,
+    7,
+    9,
+    14
+   ],
+   "bound": 9,
+   "result": "stand down from a kill already begun, because the target had become an asset mid-operation"
+  },
+  {
+   "id": "Captain 1 Quavein recruitment route",
+   "throws": [
+    10,
+    12,
+    7,
+    15
+   ],
+   "bound": 10,
+   "result": "Noble (disgraced heirs)"
+  },
+  {
+   "id": "Captain 1 Quavein what they want",
+   "throws": [
+    14,
+    10,
+    13,
+    15
+   ],
+   "bound": 13,
+   "result": "one named enemy dead"
+  },
+  {
+   "id": "Captain 1 Quavein rival captain (seat)",
+   "throws": [
+    12,
+    15,
+    10,
+    9
+   ],
+   "bound": 10,
+   "result": "7 Naevys"
+  },
+  {
+   "id": "Captain 2 Hadda recruitment route",
+   "throws": [
+    11,
+    11,
+    6,
+    12
+   ],
+   "bound": 11,
+   "result": "Social (Drift)"
+  },
+  {
+   "id": "Captain 2 Hadda what they want",
+   "throws": [
+    15,
+    8,
+    12,
+    12
+   ],
+   "bound": 12,
+   "result": "a place that is theirs"
+  },
+  {
+   "id": "Captain 2 Hadda rival captain (seat)",
+   "throws": [
+    6,
+    15,
+    7,
+    4
+   ],
+   "bound": 6,
+   "result": "3 Tarvash"
+  },
+  {
+   "id": "Captain 3 Tarvash recruitment route",
+   "throws": [
+    13,
+    10,
+    13,
+    13
+   ],
+   "bound": 13,
+   "result": "recruited by Virelle Saan in the demon war"
+  },
+  {
+   "id": "Captain 3 Tarvash what they want",
+   "throws": [
+    5,
+    11,
+    15,
+    14
+   ],
+   "bound": 11,
+   "result": "a place that is theirs"
+  },
+  {
+   "id": "Captain 3 Tarvash rival captain (seat)",
+   "throws": [
+    11,
+    12,
+    12,
+    10
+   ],
+   "bound": 11,
+   "result": "8 Brunna"
+  },
+  {
+   "id": "Captain 4 Aerendyl recruitment route",
+   "throws": [
+    14,
+    8,
+    12,
+    9
+   ],
+   "bound": 9,
+   "result": "Magical (academy dropouts)"
+  },
+  {
+   "id": "Captain 4 Aerendyl what they want",
+   "throws": [
+    9,
+    13,
+    8,
+    15
+   ],
+   "bound": 9,
+   "result": "a debt repaid, to them or by them"
+  },
+  {
+   "id": "Captain 4 Aerendyl rival captain (seat)",
+   "throws": [
+    10,
+    8,
+    12,
+    9
+   ],
+   "bound": 9,
+   "result": "6 Marit"
+  },
+  {
+   "id": "Captain 5 Kesh recruitment route",
+   "throws": [
+    6,
+    6,
+    10,
+    14
+   ],
+   "bound": 6,
+   "result": "Street (Dock Rats)"
+  },
+  {
+   "id": "Captain 5 Kesh what they want",
+   "throws": [
+    10,
+    14,
+    7,
+    11
+   ],
+   "bound": 10,
+   "result": "a debt repaid, to them or by them"
+  },
+  {
+   "id": "Captain 5 Kesh rival captain (seat)",
+   "throws": [
+    11,
+    10,
+    11,
+    9
+   ],
+   "bound": 10,
+   "result": "7 Naevys"
+  },
+  {
+   "id": "Captain 6 Marit recruitment route",
+   "throws": [
+    13,
+    11,
+    9,
+    13
+   ],
+   "bound": 11,
+   "result": "Social (Drift)"
+  },
+  {
+   "id": "Captain 6 Marit what they want",
+   "throws": [
+    14,
+    12,
+    7,
+    10
+   ],
+   "bound": 10,
+   "result": "a debt repaid, to them or by them"
+  },
+  {
+   "id": "Captain 6 Marit rival captain (seat)",
+   "throws": [
+    6,
+    12,
+    11,
+    13
+   ],
+   "bound": 11,
+   "result": "8 Brunna"
+  },
+  {
+   "id": "Captain 7 Naevys recruitment route",
+   "throws": [
+    12,
+    6,
+    15,
+    9
+   ],
+   "bound": 9,
+   "result": "Magical (academy dropouts)"
+  },
+  {
+   "id": "Captain 7 Naevys what they want",
+   "throws": [
+    7,
+    11,
+    7,
+    12
+   ],
+   "bound": 7,
+   "result": "to be the best alive at their art"
+  },
+  {
+   "id": "Captain 7 Naevys rival captain (seat)",
+   "throws": [
+    16,
+    11,
+    17,
+    9
+   ],
+   "bound": 11,
+   "result": "8 Brunna"
+  },
+  {
+   "id": "Captain 8 Brunna recruitment route",
+   "throws": [
+    14,
+    9,
+    4,
+    13
+   ],
+   "bound": 9,
+   "result": "Magical (academy dropouts)"
+  },
+  {
+   "id": "Captain 8 Brunna what they want",
+   "throws": [
+    5,
+    15,
+    12,
+    13
+   ],
+   "bound": 12,
+   "result": "a place that is theirs"
+  },
+  {
+   "id": "Captain 8 Brunna rival captain (seat)",
+   "throws": [
+    9,
+    11,
+    14,
+    7
+   ],
+   "bound": 9,
+   "result": "6 Marit"
+  },
+  {
+   "id": "Captain 9 Mercy recruitment route",
+   "throws": [
+    11,
+    13,
+    14,
+    12
+   ],
+   "bound": 12,
+   "result": "recruited by Lirien personally"
+  },
+  {
+   "id": "Captain 9 Mercy what they want",
+   "throws": [
+    9,
+    10,
+    10,
+    14
+   ],
+   "bound": 10,
+   "result": "a debt repaid, to them or by them"
+  },
+  {
+   "id": "Captain 9 Mercy rival captain (seat)",
+   "throws": [
+    9,
+    12,
+    5,
+    8
+   ],
+   "bound": 8,
+   "result": "5 Kesh"
+  },
+  {
+   "id": "Captain 10 Zaheda recruitment route",
+   "throws": [
+    17,
+    12,
+    11,
+    14
+   ],
+   "bound": 12,
+   "result": "recruited by Lirien personally"
+  },
+  {
+   "id": "Captain 10 Zaheda what they want",
+   "throws": [
+    9,
+    6,
+    13,
+    13
+   ],
+   "bound": 9,
+   "result": "a debt repaid, to them or by them"
+  },
+  {
+   "id": "Captain 10 Zaheda rival captain (seat)",
+   "throws": [
+    12,
+    4,
+    8,
+    9
+   ],
+   "bound": 8,
+   "result": "5 Kesh"
+  },
+  {
+   "id": "Captain 11 Ysmay recruitment route",
+   "throws": [
+    11,
+    12,
+    15,
+    10
+   ],
+   "bound": 11,
+   "result": "Social (Drift)"
+  },
+  {
+   "id": "Captain 11 Ysmay what they want",
+   "throws": [
+    6,
+    7,
+    9,
+    3
+   ],
+   "bound": 6,
+   "result": "a death worth having"
+  },
+  {
+   "id": "Captain 11 Ysmay rival captain (seat)",
+   "throws": [
+    17,
+    13,
+    11,
+    11
+   ],
+   "bound": 11,
+   "result": "8 Brunna"
+  },
+  {
+   "id": "Captain 12 Ilvaera recruitment route",
+   "throws": [
+    11,
+    11,
+    6,
+    10
+   ],
+   "bound": 10,
+   "result": "Noble (disgraced heirs)"
+  },
+  {
+   "id": "Captain 12 Ilvaera what they want",
+   "throws": [
+    13,
+    11,
+    12,
+    17
+   ],
+   "bound": 12,
+   "result": "a place that is theirs"
+  },
+  {
+   "id": "Captain 12 Ilvaera rival captain (seat)",
+   "throws": [
+    11,
+    6,
+    9,
+    7
+   ],
+   "bound": 7,
+   "result": "4 Aerendyl"
+  },
+  {
+   "id": "Captain 13 Dace recruitment route",
+   "throws": [
+    8,
+    13,
+    8,
+    13
+   ],
+   "bound": 8,
+   "result": "Military (discharged soldiers)"
+  },
+  {
+   "id": "Captain 13 Dace what they want",
+   "throws": [
+    5,
+    15,
+    13,
+    15
+   ],
+   "bound": 13,
+   "result": "one named enemy dead"
+  },
+  {
+   "id": "Captain 13 Dace rival captain (seat)",
+   "throws": [
+    14,
+    12,
+    8,
+    9
+   ],
+   "bound": 9,
+   "result": "6 Marit"
+  }
+ ]
+}
