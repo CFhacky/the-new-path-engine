@@ -66,3 +66,4 @@ Source: ⚔️ The Stride Line — Equipment Specifications (Notion 35ee8214-84b
 
 ## Character note (Chad, 5 Oct 2026)
 The Menagerie, the Veil host of the Blue Hour that the Hand is drawn from, is "something like the original Gotei 13". Each member is an individually monstrous killer with a personal art, held together by loyalty to one head rather than by uniform discipline. The Hand's five are written to that standard. **Open:** whether the rolled 13–14 levels sit too low for that register (Chad's call).
+- **Resolved (Chad, 5 Oct 2026): option A.** The rolled levels stand. The Hand is Jin's working draw from the Menagerie's middle ranks, not its captains; the Menagerie's apex is defined separately.
