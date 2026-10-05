@@ -1,0 +1,299 @@
+{
+ "C1 Origin": {
+  "throws": [
+   11,
+   12,
+   10,
+   12
+  ],
+  "lower_median": 11,
+  "result": "Ex-Legion, Jörmun's own hire",
+  "table": [
+   "3-10: Legion officer seconded with the lent section",
+   "11-14: Ex-Legion, Jörmun's own hire",
+   "15-18: Outside professional (foreign cavalry or mercenary)"
+  ]
+ },
+ "C2 Rank (if Legion)": {
+  "throws": [
+   12,
+   12,
+   10,
+   6
+  ],
+  "lower_median": 10,
+  "result": "Optio",
+  "table": [
+   "3-8: Senior Sergeant",
+   "9-14: Optio",
+   "15-18: Centurion"
+  ]
+ },
+ "C3 Race": {
+  "throws": [
+   5,
+   12,
+   16,
+   13
+  ],
+  "lower_median": 12,
+  "result": "Orc",
+  "table": [
+   "3-10: Human",
+   "11-13: Orc",
+   "14-15: Dwarf",
+   "16-18: Half-Elf"
+  ]
+ },
+ "C4 Age": {
+  "throws": [
+   13,
+   8,
+   9,
+   12
+  ],
+  "lower_median": 9,
+  "result": 36,
+  "table": [
+   "3-5: 26",
+   "6-8: 31",
+   "9-12: 36",
+   "13-15: 42",
+   "16-18: 48"
+  ]
+ },
+ "C5 3.5e character level": {
+  "throws": [
+   10,
+   8,
+   12,
+   8
+  ],
+  "lower_median": 8,
+  "result": 8,
+  "table": [
+   "3-5: 6",
+   "6-8: 8",
+   "9-12: 10",
+   "13-15: 12",
+   "16-18: 14"
+  ]
+ },
+ "C6 Marshal levels within it": {
+  "throws": [
+   9,
+   9,
+   13,
+   11
+  ],
+  "lower_median": 9,
+  "result": 2,
+  "table": [
+   "3-8: 1",
+   "9-14: 2",
+   "15-18: 3"
+  ]
+ },
+ "C7 GURPS Tactics": {
+  "throws": [
+   13,
+   12,
+   6,
+   11
+  ],
+  "lower_median": 11,
+  "result": 15,
+  "table": [
+   "3-5: 13",
+   "6-8: 14",
+   "9-12: 15",
+   "13-15: 16",
+   "16-18: 17"
+  ]
+ },
+ "C8 GURPS Strategy": {
+  "throws": [
+   9,
+   9,
+   7,
+   4
+  ],
+  "lower_median": 7,
+  "result": 12,
+  "table": [
+   "3-5: 11",
+   "6-8: 12",
+   "9-12: 13",
+   "13-15: 14",
+   "16-18: 15"
+  ]
+ },
+ "C9 GURPS Leadership": {
+  "throws": [
+   12,
+   8,
+   11,
+   15
+  ],
+  "lower_median": 11,
+  "result": 14,
+  "table": [
+   "3-5: 12",
+   "6-8: 13",
+   "9-12: 14",
+   "13-15: 15",
+   "16-18: 16"
+  ]
+ },
+ "C10 GURPS Driving (Heavy Wheeled)": {
+  "throws": [
+   10,
+   12,
+   5,
+   11
+  ],
+  "lower_median": 10,
+  "result": 14,
+  "table": [
+   "3-5: 12",
+   "6-8: 13",
+   "9-12: 14",
+   "13-15: 15",
+   "16-18: 16"
+  ]
+ },
+ "C11 GURPS IQ": {
+  "throws": [
+   8,
+   12,
+   16,
+   8
+  ],
+  "lower_median": 8,
+  "result": 12,
+  "table": [
+   "3-5: 11",
+   "6-8: 12",
+   "9-12: 13",
+   "13-15: 14",
+   "16-18: 15"
+  ]
+ },
+ "C12 GURPS ST": {
+  "throws": [
+   6,
+   10,
+   15,
+   7
+  ],
+  "lower_median": 7,
+  "result": 11,
+  "table": [
+   "3-5: 10",
+   "6-8: 11",
+   "9-12: 12",
+   "13-15: 13",
+   "16-18: 14"
+  ]
+ },
+ "C13 GURPS DX": {
+  "throws": [
+   11,
+   10,
+   12,
+   14
+  ],
+  "lower_median": 11,
+  "result": 12,
+  "table": [
+   "3-5: 10",
+   "6-8: 11",
+   "9-12: 12",
+   "13-15: 13",
+   "16-18: 14"
+  ]
+ },
+ "C14 GURPS HT": {
+  "throws": [
+   10,
+   11,
+   13,
+   13
+  ],
+  "lower_median": 11,
+  "result": 12,
+  "table": [
+   "3-5: 10",
+   "6-8: 11",
+   "9-12: 12",
+   "13-15: 13",
+   "16-18: 14"
+  ]
+ },
+ "C15 Overconfidence (pursuit) self-control number": {
+  "throws": [
+   11,
+   9,
+   12,
+   11
+  ],
+  "lower_median": 11,
+  "result": 12,
+  "table": [
+   "3-5: 6",
+   "6-8: 9",
+   "9-12: 12",
+   "13-15: 12",
+   "16-18: 15"
+  ]
+ },
+ "C16 Who pays the lent section": {
+  "throws": [
+   12,
+   9,
+   9,
+   9
+  ],
+  "lower_median": 9,
+  "result": "Legion pays wages; Jörmun pays charge, maintenance and consumables",
+  "table": [
+   "3-8: Legion pays everything",
+   "9-14: Legion pays wages; Jörmun pays charge, maintenance and consumables",
+   "15-18: Jörmun pays everything while lent"
+  ]
+ },
+ "C17 Active-sandstorm speed factor (off-road)": {
+  "throws": [
+   13,
+   5,
+   9,
+   15
+  ],
+  "lower_median": 9,
+  "result": "x0.5",
+  "table": [
+   "3-5: x0.75",
+   "6-8: x0.5",
+   "9-12: x0.5",
+   "13-15: x0.33",
+   "16-18: x0.25"
+  ]
+ },
+ "C18 Why he left the Legion": {
+  "throws": [
+   11,
+   10,
+   17,
+   7
+  ],
+  "lower_median": 10,
+  "result": "Served out his term; Jörmun hired him on discharge",
+  "table": [
+   "3-5: Broken to the ranks and discharged for pursuing past his orders",
+   "6-8: Wounded out of the Legion; recovered after discharge",
+   "9-12: Served out his term; Jörmun hired him on discharge",
+   "13-15: Left after a feud with a superior officer",
+   "16-18: Quietly released by Korgan to serve Jörmun"
+  ]
+ }
+}
