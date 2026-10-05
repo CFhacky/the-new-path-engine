@@ -52,12 +52,12 @@ SRD spell levels are given in brackets. The GM picks from these lists by the mag
 	- *transmute rock to mud* [5] undermines a wall section's footing.
 	- *stone shape* [4] seals the defenders' sally ports.
 - **The ice wall** (S062: aquifer-fed, self-regenerating, does not melt under fire):
-	- *disintegrate* [6] removes a 10-ft cube of it.
+	- *disintegrate* [6] removes a 10-ft cube of it. The wall is 12 ft thick at the base (S062), so **one casting does not hole it**. A breach takes two *disintegrates* on the same face, or one plus a *passwall*-equivalent effort. That is why breaching needs a pair of Breakers working together.
 	- **R (design, Gate D):** a breach refills in **1d4 rounds**. Thay must push dead through the gap before it closes. That is the job of the mass retinues.
 	- Fire doesn't work on it, and every Thayan mage knows that from Marduck's survivors at the Siege.
 - **Screening the assault:** *solid fog* [4] over the kill zone stops archers and the Moranth sharpers. *Wall of force* [5] blocks the gate from inside after a breach.
 - **Clearing the walls:**
-	- *cloudkill* [5] rolls onto the parapet. The ~22 Legion men there are its targets.
+	- *cloudkill* [5] rolls onto the parapet. Mago's ~30-man garrison (00-03 Party line) is its target.
 	- *fireball* [3] and *lightning bolt* [3] in massed volleys.
 	- **Circle of death** [6] (Fort negates; it kills creatures under 9 HD) is aimed at the garrison. **This is how a few mages can empty a wall,** and it is why the garrison should be told to hold behind cover.
 

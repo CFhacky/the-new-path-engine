@@ -187,3 +187,10 @@ Chad left the application to the module. Applied as:
 
 ### 9d. The Hand is rolled now (Chad, 5 Oct 2026)
 F16 is no longer rolled at fire. The standing roster is in `05a_THE_HAND_ROSTER.md`. The Hand wears crimson-lacquered oni masks of wood each member chose.
+
+### 9e. Errata (5 Oct 2026, Chad ruling): F13 superseded
+- **F13 (§9a) is superseded.** Chad: "effectively every Thayan mage is a commander of the undead".
+- Thay's undead are now the **sum of the mage retinues**: 4 HD per caster level per mage, with each retinue's quality on 3d6+3 (§9a stands).
+- The new sealed rolls are **F19** (mage ratio), **F20** (level per mage) and **F21** (temperament per mage). They are in `08b_THAYAN_WAR_MAGIC_AND_UNDEAD_COMMAND.md` §1, §3 and §5.
+- §9a's household rule ("half its F8 size undead") is also superseded. A household's undead is its mage's pool; its F8 size is the living retinue.
+- **Retained:** the 3d6+3 quality, and that raised dead count as deployed undead.
