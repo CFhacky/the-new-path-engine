@@ -107,3 +107,11 @@ Deviations: adventure-arc-builder and hybrid-module-generator are followed from 
 ## Decisions only Chad can make (Gate B)
 1. **Approve or redirect the "Zama in reverse" reading:** Thay baits the wedge away, and the wedge's return decides the battle.
 2. **The aura:** in dragon form, can Jörmun spare allies inside 60 ft, or does it hit everything (C1)? The module's central dilemma depends on the answer.
+
+## Gate B rulings received (5 Oct 2026, append-only)
+- **Sania:** stationed at Isle de Troll, outside Thay's intel picture. She rides Gary in as a hidden empire layer.
+- **Jin the Whisper (own discretion):** triggers on a sufficient threat to the Emperor's goals, and/or an artifact he judges too dangerous loose around the empire's Anauroch plans. He may capture or destroy.
+- **Virelle Saan (own discretion), approved:** triggers on (1) a Veil asset about to be burned, (2) a prize worth taking alive, (3) demons or planar powers. Sealed response roll at module fire: Watch / Extract / Black Null / Commit operatives / Commit forces and funds. Price: Veil custody of prisoners and evidence. Jin and Virelle can contest custody of the same prize.
+- Recorded on the Hazard and Threat Annex, paired Canon Change Log entry 3f0e8214-84b0-8122-9e02-c3f02cfe8609.
+
+**Still open at Gate B:** decision 1 (Zama in reverse), decision 2 (the aura), hidden-layer weighting and cap. Virelle needs a 3.5e/GURPS port before the module can field her.
