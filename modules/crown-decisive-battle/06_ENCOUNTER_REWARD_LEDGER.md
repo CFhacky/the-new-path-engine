@@ -63,3 +63,19 @@ Deviations: none
 - Virelle's 3.5e/GURPS port.
 - Mass Combat tables (the live result stands in).
 - The Frozen Threshold raising contest.
+
+## 6.6 Advancement — RULED (Chad, 5 Oct 2026; supersedes the XP bullets in 6.1 and the proposal in 6.3)
+This uses the campaign's existing dual-rail model (⚔️ Advancement & Training Register — Arik Arc, Notion 386e8214-84b0-81f1-8871-d603a4181cb7; the Jörmun lane keeps its own register).
+1. **Jörmun (PC).**
+	- **XP:** the per-session story award, on the S074/S075 precedent of 3,200 XP for a story or strategic session without a personal set-piece. Add DMG per-creature XP for foes he personally overcomes (E4 commander, E5 answer to the cold, E6 Zaltor's party). The objective awards OA-1 to OA-3 are dropped.
+	- **CP:** 5–8 for a dense session.
+2. **Named NPCs** (Mago, Cuneus, Vorian, the Hand, Khorzad, Sania, Ersk, Safiya, others). **No XP.** Skill Table only.
+	- **Decisive-battle banking:** +2 to their primary skill for a significant action in the battle (pause point, named duel, turning beat); +1 if present but not featured.
+	- At 8 banked, roll d6 per the register.
+	- Discrete new abilities are logged on their own sheets, tied to the story.
+3. **Units** (Legion section, Mago's garrison, Bedine riders, Node Two's eight). **Veterancy roll (new campaign ruling):** after a **won** battle, each surviving unit rolls 3d6.
+	- ≤6: Quality rises one step on the Battle Layer ladder.
+	- ≥17: Quality drops one step (it learned the wrong lessons).
+	- Otherwise: no change.
+	- Survivors of a loss do not roll.
+4. **Gary and the Warmothers** keep their own kill tallies on their own sheets, per the register.
