@@ -239,3 +239,13 @@ Once per day. **This is the single most powerful play available to him in the ba
 - The stone wall's thickness.
 - Whether Vraxis has the Spell Penetration feats.
 - The Mass Combat Results tables (the live result still stands in).
+
+## 8. Errata (Phase 10, 5 Oct 2026)
+- **§7.4 "below CR 20" narrowed (I).**
+	- CR 15–19 individuals count as one Elite element (90, ×2 airborne).
+	- **Below CR 15, no TS.** They act only through significant actions.
+	- Khorzad (CR 5, sheet) therefore takes no TS. Counting him as a 500-troop element overstated him.
+	- A team of 5 at CR 13+ (the Hand) counts as one Elite element.
+	- The Battle Layer page carries the same errata.
+- **§4 Akhet Brazier:** the "120-ft zone, cold suppressed" wording is struck. **07 §7.12c governs:** within 60 ft, cold damage becomes fire; the Brazier is smothered by snow from the Threshold.
+- **V1 Vraxis:** his sheet lists no Spell Penetration feats (S). His penetration chance against SR 37 is 0%.
