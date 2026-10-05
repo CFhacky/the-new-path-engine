@@ -311,3 +311,7 @@ Source: ⚔️ The Stride Line — Equipment Specifications v1.2 (`35ee8214-84b0
 - **Unchanged:** what the Blue Hour shows. Nothing else here has happened in play.
 - **Next:** the stat phase and signature-item mechanics (loot-engine), then Chad's rulings on the open list.
 - **Links:** *The Blue Hour — Dalelands Opening* (Session Prose); *The Veil* (faction); *The Hand — Standing Roster* (Jin the Whisper).
+
+## Rulings (Chad, 5 Oct 2026, append-only)
+- **Open 2 resolved: the drow passes as unremarkable.** Quavein Orlzynn wears no disguise or glamour in the field. A drow in the Veil reads as ordinary because the Director is one. He adds no pressure to the drow-identity thread.
+- **Open 3 resolved: the clerics serve the Storm King's office.** Quavein Orlzynn (Cleric 17) and Osmund Tarrow (Cleric 12) serve the same office as the Hand's Nym Esharan and Lorne Ashby: the Susanoo seat Arik is filling, the Pale Name. The office grants **Trickery and Death** (Hand ruling), so both take those domains and no domain roll is needed. The host now holds **four priests of the office**: Quavein, Osmund, Nym and Lorne, spread across Divisions I, IV and VII. **Arik does not know he has priests** (Hand ruling stands). Quavein is a captain-rank priest of an office whose holder doesn't know he has a clergy; the ledger he keeps "for the Veil" may be kept for the office too. That is a hook, not a fact.
