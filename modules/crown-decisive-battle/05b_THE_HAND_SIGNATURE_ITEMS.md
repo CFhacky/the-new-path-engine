@@ -147,3 +147,10 @@ Longsword (old-empire salvage) · Rare · Tier 1 · Weapon
 
 ## Manifest
 Module manifest (this file) and arc manifest (Affix Registry): The Counted Door (Legendary T1) · Yashiori (Unique T1 band) · Stalwart Bastard Sword of Dispelling (Rare T1) · Venomous Heavy Crossbow of Evasion (Rare T1) · Longsword of the Undead Servitor (Rare T1). Status for all five: generated or authored, carried by the Hand. Collision checks: "The Counted Door" and "Yashiori" returned no item hits; "The Eighth Cask" was rejected as too close to *The Eighth Veil*.
+
+## Rulings (Chad, 5 Oct 2026, append-only)
+- **Mana affixes: option A.** **1 ER = 1 spell level** of slot recovery or capacity.
+	- Souldrinker T1: on a kill, recover expended slots totalling up to 6 spell levels, at most once per round (Durgan).
+	- Mana Well T1: a 12-level bonus-slot reserve, refilling at dawn (Lorne).
+- **Ivrael's axe: option (ii), affinity translation.** On a kill, Souldrinker's 6 ER tops up the Stride suit's Soul Ember Core and restores one daily use of Taunt. Logged on the card: *affinity translation: Souldrinker — "a kill refuels the bearer" → suit core plus Taunt use*.
+- **Yashiori vs the Frozen Threshold: option C.** For now the Root Country is bodies only: no animation for 24 h, and it does not touch where souls go. What the Susanoo office does with the dead is decided in the Susanoo sect chat, and the dagger is updated after that.
