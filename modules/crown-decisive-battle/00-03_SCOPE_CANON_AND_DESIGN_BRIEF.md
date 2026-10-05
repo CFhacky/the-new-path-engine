@@ -115,3 +115,10 @@ Deviations: adventure-arc-builder and hybrid-module-generator are followed from 
 - Recorded on the Hazard and Threat Annex, paired Canon Change Log entry 3f0e8214-84b0-8122-9e02-c3f02cfe8609.
 
 **Still open at Gate B:** decision 1 (Zama in reverse), decision 2 (the aura), hidden-layer weighting and cap. Virelle needs a 3.5e/GURPS port before the module can field her.
+
+## Gate B passed (Chad, 5 Oct 2026, append-only)
+1. **Zama in reverse:** approved.
+2. **Aura:** no ally sparing. The Cold Aura hits allies inside 60 ft (effort) / 100 ft (relaxed), Gary included.
+3. **Hidden layers:** at most 3 per side ("perhaps": provisional).
+
+The held rolls are split. **C9 is rolled now** (G1: 9, 5, 13, 6 → 6 = **85 mi north**). The Thay option, committed force and bait form are sealed **at fire** with the rest of the order of battle (05 §7), as C8 already required. Phases 4–5 are in `04_SITE_AND_OPERATIONAL_GEOGRAPHY.md` and `05_OPPOSITION_AND_RESPONSE_ENGINE.md`; rolls in `phase4_5_bound_rolls.json`.

@@ -1,0 +1,178 @@
+[
+ {
+  "id": "G1 Plateau (Vraxhal) distance north of the Crown",
+  "throws": [
+   9,
+   5,
+   13,
+   6
+  ],
+  "bound": 6,
+  "result": "85 mi"
+ },
+ {
+  "id": "K concealment \u2014 Thay: Red Wizard household",
+  "throws": [
+   11,
+   7,
+   15,
+   7
+  ],
+  "bound": 7,
+  "result": -4
+ },
+ {
+  "id": "K concealment \u2014 Thay: Zhentarim sellswords",
+  "throws": [
+   12,
+   12,
+   10,
+   16
+  ],
+  "bound": 12,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Thay/contested: Al-Asad Lion clan",
+  "throws": [
+   12,
+   7,
+   10,
+   14
+  ],
+  "bound": 10,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Thay: Arcane Brotherhood cadre",
+  "throws": [
+   10,
+   7,
+   10,
+   10
+  ],
+  "bound": 10,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Thay: Answer to the cold",
+  "throws": [
+   10,
+   11,
+   8,
+   13
+  ],
+  "bound": 10,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Empire: Gary and Sania",
+  "throws": [
+   7,
+   9,
+   9,
+   17
+  ],
+  "bound": 9,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Empire: Jin the Whisper",
+  "throws": [
+   6,
+   17,
+   12,
+   11
+  ],
+  "bound": 11,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Empire: Veil cell (Virelle)",
+  "throws": [
+   10,
+   14,
+   10,
+   8
+  ],
+  "bound": 10,
+  "result": -6
+ },
+ {
+  "id": "K concealment \u2014 Empire: Bedine riders (Al-Rashid / Al-Saif)",
+  "throws": [
+   7,
+   11,
+   10,
+   5
+  ],
+  "bound": 7,
+  "result": -4
+ },
+ {
+  "id": "Q quality \u2014 Vraxis column infantry",
+  "throws": [
+   9,
+   7,
+   13,
+   13
+  ],
+  "bound": 9,
+  "result": "Veteran 14"
+ },
+ {
+  "id": "Q quality \u2014 Vraxis mounted lancers",
+  "throws": [
+   14,
+   14,
+   11,
+   12
+  ],
+  "bound": 12,
+  "result": "Veteran 14"
+ },
+ {
+  "id": "Q quality \u2014 Red Wizard household retinue",
+  "throws": [
+   12,
+   13,
+   8,
+   10
+  ],
+  "bound": 10,
+  "result": "Veteran 14"
+ },
+ {
+  "id": "Q quality \u2014 Zhentarim sellswords",
+  "throws": [
+   11,
+   9,
+   10,
+   9
+  ],
+  "bound": 9,
+  "result": "Veteran 14"
+ },
+ {
+  "id": "Q quality \u2014 Al-Asad Lion clan (floor Regular: 'trained, not levied')",
+  "throws": [
+   11,
+   7,
+   13,
+   7
+  ],
+  "bound": 7,
+  "result": "Regular 12"
+ },
+ {
+  "id": "Q quality \u2014 Bedine riders",
+  "throws": [
+   13,
+   12,
+   8,
+   11
+  ],
+  "bound": 11,
+  "result": "Veteran 14"
+ }
+]
