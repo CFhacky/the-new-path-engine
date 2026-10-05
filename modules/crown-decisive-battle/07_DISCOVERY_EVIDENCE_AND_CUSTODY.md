@@ -318,3 +318,11 @@ The layer model runs both ways, so these are Thay's discoveries. **Each one feed
 	- Jin at −2 if Jörmun keeps a dangerous item.
 	- Virelle at −2 if Jörmun hands Veil-relevant evidence to Jin.
 	- A bad reaction becomes a standing chill. A good one is a favour owed.
+
+## 7.16 Rulings (Chad, 5 Oct 2026, append-only)
+- **Approved design:**
+	- the Hearthward (7.12a) as written
+	- the Akhet Brazier (7.12c) as an artifact candidate. It enters the Artifacts DB only if F8 rolls 14–18 and it appears in play.
+	- Vraxis's ward pages (C-2b): +4 after a week's study; reproduction after a month by Seliara or a specialist
+- **Questioning the dead in the ice: NO blanket ability.** The Frozen Threshold traps souls but does not let Jörmun interrogate them. Standard magic applies only through allies or consumables. *Speak with dead* is a cleric spell, not on the sorcerer list. 7.8's first option is closed. Hezrim's break condition ("shown his own fallen in the ice") stands, because seeing the trapped dead is canon and questioning them is not. A future ability to question the trapped is a possible growth hook, not current canon.
+- **Still open:** the Node Two leak (S-3, scrying or a mole).
