@@ -174,5 +174,29 @@
   ],
   "bound": 11,
   "result": "Veteran 14"
+ },
+ {
+  "id": "C15 Warden's Vigil garrison, Uktar 1498",
+  "table": "3-10 caretaker watch from Mago ~30; 11-14 one 3rd Cohort century (80); 15-18 two centuries (160) with Runa",
+  "throws": [
+   10,
+   9,
+   14,
+   10
+  ],
+  "bound": 10,
+  "result": "caretaker watch from Mago ~30"
+ },
+ {
+  "id": "C15a Vigil caretaker watch size (drawn from Mago ~30)",
+  "table": "3-5 4; 6-8 6; 9-12 8; 13-15 10; 16-18 12",
+  "throws": [
+   12,
+   9,
+   10,
+   12
+  ],
+  "bound": 10,
+  "result": 8
  }
 ]

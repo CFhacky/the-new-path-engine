@@ -48,7 +48,7 @@ TS per ~500-troop element (Battle Layer §4, [DIAL]): Regular 40, Veteran 60, El
 | Khorzad | Visible | Air overwatch; −4 to scrying at the Crown | — | Present | Jörmun (co-opted) | — | S |
 | Vorian's screen (Vorian, Ersk, Safiya) | Visible | Skirmish | — | Present | Jörmun | — | S |
 | The wedge (Cuneus; 20, or 12 with Node Two manned) | Visible (Thay detected the Array and the wedge) | Mobile element; no vehicle rule in Mass Combat (live result) | — | Per the core clock | Jörmun | — | Doctrine (S) |
-| Warden's Vigil garrison | Visible | **C15 — Gate C** | — | Present | Legate Runa Dornveil | — | Vigil page (S) |
+| Warden's Vigil watch | Visible | 8 from Mago's ~30 (D, C15/C15a); observation and signal only | — | Present | Mago | — | Vigil page; roll C15 |
 | Gary and Sania | Hidden (out of theatre; Thay's intel does not count Sania) | CR 20 ancient red, air ×2; vulnerable to cold | **−6** (D) | **C16 — Gate C** | Jörmun calls; Sania handles | Thay learns Gary was never gone | Annex ruling (Chad); Gary page |
 | Bedine riders (Al-Rashid, Al-Saif) | Reserve | F11 size; **Veteran 14** (D) | **−4** (D) | F11 | Farouk (blood-oath, S062) / Al-Saif chief | Bedine blood in a Baen–Thay war; spirit-speaker politics | Legate Region; S062 (S) |
 | Jin the Whisper | Hidden, own discretion | Per Jin's sheet (SR) | **−6** (D) | F10 | Jin | A throne agent seen in Anauroch | Annex ruling (Chad) |

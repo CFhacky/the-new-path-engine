@@ -82,3 +82,9 @@ Deviations: none
 	- Isle de Troll is "north of Yartar" on the Surbrin, 38 road miles NE of the Long Road junction, which is 12 mi south of Yartar. It has no atlas point. Taking that offset, **Isle de Troll to the Crown ≈ 815–845 mi (I), working figure 830 mi.**
 - **Transit:** 830 mi ÷ 60 mph ≈ **13.8 flying hours**. LOG-788's flying day is about 8–10 hours, so Gary lands on the **second day after the call**, roughly 24–36 hours after it. A forced single-day flight is not ruled.
 - **In the module:** the Gary-and-Sania layer arrives 24–36 h after Jörmun's call (crystal communications; the caller is taken to be Jörmun unless Chad rules otherwise). The call has to come off scouting: if the main body is spotted on its 85-mi approach, he is there in time. If the bait is the first warning and Jörmun waits, he is not.
+
+## C15 resolved by roll (Chad: "roll it", 5 Oct 2026, append-only)
+- **C15**, 3-10 caretaker watch / 11-14 one 3rd Cohort century / 15-18 two centuries with Runa: throws 10, 9, 14, 10 → **10, caretaker watch.** The 3rd Cohort has rotated home to Forgedeep (Black Road force page).
+- **C15a**, watch size 4/6/8/10/12: throws 12, 9, 10, 12 → **8**, drawn from Mago's ~30 on rotation.
+- **Effect:** the Vigil is an observation post and signal relay with 8 men, not a fighting position. The Crown's wall holds **about 22**. On the NE approach (F5 3–8) the Vigil sees Thay first, from 12+ mi. The watch has to fall back through the 340-ft passage or be lost.
+- Warden's Vigil page updated. Gate C is now clear.
