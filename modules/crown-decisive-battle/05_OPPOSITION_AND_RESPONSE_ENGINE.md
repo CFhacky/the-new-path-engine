@@ -184,3 +184,6 @@ Chad left the application to the module. Applied as:
 - **Kits express individuality (Chad, 5 Oct 2026).** The class is the role and the kit is the person. Each member carries a personal kit with at least one signature piece and a visible tell, in the Blue Hour manner: threaded pouches, foci braided in the hair, a horizontal reverse-draw sheath, scarred forearms. No two members of a draw share a kit beyond the gloves.
 	- **Built at fire, per member.** The class and level from F16 set what the kit has to do. The signature piece's mechanics come from the item pipeline (loot-engine / Affix Registry, both systems) and are not freehanded. The look is authored.
 	- The kit is what a scouting success or a survivor's description can identify. It is also what Thay's Enemy Knowledge picture records if the Hand is exposed.
+
+### 9d. The Hand is rolled now (Chad, 5 Oct 2026)
+F16 is no longer rolled at fire. The standing roster is in `05a_THE_HAND_ROSTER.md`. The Hand wears crimson-lacquered oni masks of wood each member chose.

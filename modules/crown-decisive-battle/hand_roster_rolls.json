@@ -1,0 +1,332 @@
+[
+ {
+  "id": "F16 fifth slot role",
+  "throws": [
+   10,
+   8,
+   12,
+   12
+  ],
+  "bound": 10,
+  "result": "priest"
+ },
+ {
+  "id": "Hand 1 level",
+  "throws": [
+   13,
+   16,
+   7,
+   9
+  ],
+  "bound": 9,
+  "result": 14
+ },
+ {
+  "id": "Hand 1 race",
+  "throws": [
+   11,
+   8,
+   11,
+   15
+  ],
+  "bound": 11,
+  "result": "elf"
+ },
+ {
+  "id": "Hand 1 sex",
+  "throws": [
+   10,
+   13,
+   11,
+   10
+  ],
+  "bound": 10,
+  "result": "male"
+ },
+ {
+  "id": "Hand 1 age",
+  "throws": [
+   7,
+   9,
+   14,
+   5
+  ],
+  "bound": 7,
+  "result": "prime"
+ },
+ {
+  "id": "Hand 1 mask_wood",
+  "throws": [
+   9,
+   11,
+   11,
+   9
+  ],
+  "bound": 9,
+  "result": "zalantar / darkwood"
+ },
+ {
+  "id": "Hand 2 level",
+  "throws": [
+   5,
+   10,
+   17,
+   11
+  ],
+  "bound": 10,
+  "result": 14
+ },
+ {
+  "id": "Hand 2 race",
+  "throws": [
+   9,
+   11,
+   11,
+   12
+  ],
+  "bound": 11,
+  "result": "elf"
+ },
+ {
+  "id": "Hand 2 sex",
+  "throws": [
+   14,
+   9,
+   8,
+   13
+  ],
+  "bound": 9,
+  "result": "male"
+ },
+ {
+  "id": "Hand 2 age",
+  "throws": [
+   10,
+   8,
+   13,
+   12
+  ],
+  "bound": 10,
+  "result": "prime"
+ },
+ {
+  "id": "Hand 2 mask_wood",
+  "throws": [
+   10,
+   5,
+   14,
+   13
+  ],
+  "bound": 10,
+  "result": "zalantar / darkwood"
+ },
+ {
+  "id": "Hand 2 domains",
+  "throws": [
+   13,
+   7,
+   10,
+   12
+  ],
+  "bound": 10,
+  "result": "Trickery / Death"
+ },
+ {
+  "id": "Hand 3 level",
+  "throws": [
+   12,
+   9,
+   17,
+   7
+  ],
+  "bound": 9,
+  "result": 14
+ },
+ {
+  "id": "Hand 3 race",
+  "throws": [
+   7,
+   10,
+   12,
+   7
+  ],
+  "bound": 7,
+  "result": "human"
+ },
+ {
+  "id": "Hand 3 sex",
+  "throws": [
+   5,
+   12,
+   8,
+   11
+  ],
+  "bound": 8,
+  "result": "male"
+ },
+ {
+  "id": "Hand 3 age",
+  "throws": [
+   14,
+   15,
+   16,
+   11
+  ],
+  "bound": 14,
+  "result": "seasoned"
+ },
+ {
+  "id": "Hand 3 mask_wood",
+  "throws": [
+   15,
+   8,
+   15,
+   12
+  ],
+  "bound": 12,
+  "result": "keyaki zelkova"
+ },
+ {
+  "id": "Hand 3 school",
+  "throws": [
+   12,
+   11,
+   9,
+   14
+  ],
+  "bound": 11,
+  "result": "enchantment"
+ },
+ {
+  "id": "Hand 4 level",
+  "throws": [
+   7,
+   15,
+   14,
+   9
+  ],
+  "bound": 9,
+  "result": 14
+ },
+ {
+  "id": "Hand 4 race",
+  "throws": [
+   14,
+   14,
+   10,
+   12
+  ],
+  "bound": 12,
+  "result": "dwarf"
+ },
+ {
+  "id": "Hand 4 sex",
+  "throws": [
+   13,
+   10,
+   7,
+   8
+  ],
+  "bound": 8,
+  "result": "male"
+ },
+ {
+  "id": "Hand 4 age",
+  "throws": [
+   12,
+   12,
+   9,
+   12
+  ],
+  "bound": 12,
+  "result": "prime"
+ },
+ {
+  "id": "Hand 4 mask_wood",
+  "throws": [
+   9,
+   11,
+   14,
+   6
+  ],
+  "bound": 9,
+  "result": "zalantar / darkwood"
+ },
+ {
+  "id": "Hand 4 sorcerer style",
+  "throws": [
+   9,
+   7,
+   6,
+   8
+  ],
+  "bound": 7,
+  "result": "draconic heritage"
+ },
+ {
+  "id": "Hand 5 level",
+  "throws": [
+   11,
+   14,
+   8,
+   7
+  ],
+  "bound": 8,
+  "result": 13
+ },
+ {
+  "id": "Hand 5 race",
+  "throws": [
+   6,
+   9,
+   17,
+   10
+  ],
+  "bound": 9,
+  "result": "half-elf"
+ },
+ {
+  "id": "Hand 5 sex",
+  "throws": [
+   11,
+   13,
+   6,
+   10
+  ],
+  "bound": 10,
+  "result": "male"
+ },
+ {
+  "id": "Hand 5 age",
+  "throws": [
+   11,
+   11,
+   14,
+   8
+  ],
+  "bound": 11,
+  "result": "prime"
+ },
+ {
+  "id": "Hand 5 mask_wood",
+  "throws": [
+   13,
+   9,
+   9,
+   5
+  ],
+  "bound": 9,
+  "result": "zalantar / darkwood"
+ },
+ {
+  "id": "Hand 5 domains",
+  "throws": [
+   11,
+   8,
+   11,
+   15
+  ],
+  "bound": 11,
+  "result": "Trickery / Death"
+ }
+]
