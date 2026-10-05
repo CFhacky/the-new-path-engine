@@ -172,3 +172,12 @@ Chad left the application to the module. Applied as:
 	- **17:** watcher-analyst (the old cataloguer: intelligence, not killing)
 	- **18:** a non-Veil-base member Jin has drawn on his own account (stat SR; flag for Chad)
 - **The Westward Menagerie is not available to the Hand** and plays no part in this module. Its Sania entry is a future expedition and does not conflict with her Isle de Troll posting in 1498.
+
+### 9c second errata (Chad, 5 Oct 2026, append-only): the Hand is combined arms
+- **Every member of the Hand is a Veil agent**, built on the Veil operative kit at Gray tier or higher (Shadow Jump). On top of that kit each is a **warrior, priest, mage or sorcerer of high ability**. The Hand is a combined-arms team, not a squad of killers. Jin is the killer.
+- **F16 replaced again** (both earlier tables are superseded record; there is no non-Veil slot):
+	- **Fixed core, four slots:** one warrior, one priest, one mage, one sorcerer. Jin draws a complete combined-arms team every time.
+	- **Fifth slot, rolled:** 3-8 second warrior · 9-12 second priest · 13-15 second mage · 16-18 second sorcerer.
+	- **Class level, rolled per member** ("high ability"): 3-5 level 12 · 6-8 level 13 · 9-12 level 14 · 13-15 level 16 · 16-18 level 18. This is class levels on top of the operative kit. Jin (Monk 7 / Rogue 3 / Assassin 10) stays the apex.
+- **The Blue Hour still sets the look:** the gloves, arrival by shadow, silence, and every one of them different.
+- **Stat source for Phase 6:** Veil Standard Field Operative Profile (Gray tier) + the 3.5e class at the rolled level, with the GURPS side per FUSED_ENGINE_RESOLUTION. Priests take their domains and deity from the Veil's existing clergy where a page exists; otherwise that is flagged to Chad.
