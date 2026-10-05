@@ -1,0 +1,3589 @@
+{
+ "method": "Python secrets; 3d6; four throws; bound = lower median (2nd smallest); no rerolls. Uniqueness tables slide a repeat to the next unused entry (k+1, 18 wraps to 3).",
+ "date": "2026-10-05",
+ "tables": {
+  "captain_level": [
+   [
+    3,
+    6,
+    15
+   ],
+   [
+    7,
+    9,
+    16
+   ],
+   [
+    10,
+    12,
+    17
+   ],
+   [
+    13,
+    15,
+    18
+   ],
+   [
+    16,
+    17,
+    19
+   ],
+   [
+    18,
+    18,
+    20
+   ]
+  ],
+  "lieutenant_level": [
+   [
+    3,
+    6,
+    12
+   ],
+   [
+    7,
+    10,
+    13
+   ],
+   [
+    11,
+    14,
+    14
+   ],
+   [
+    15,
+    18,
+    15
+   ]
+  ],
+  "race": [
+   [
+    3,
+    3,
+    "genasi"
+   ],
+   [
+    4,
+    4,
+    "goliath"
+   ],
+   [
+    5,
+    5,
+    "aasimar"
+   ],
+   [
+    6,
+    6,
+    "tiefling"
+   ],
+   [
+    7,
+    7,
+    "half-orc"
+   ],
+   [
+    8,
+    9,
+    "human"
+   ],
+   [
+    10,
+    10,
+    "half-elf"
+   ],
+   [
+    11,
+    11,
+    "elf"
+   ],
+   [
+    12,
+    12,
+    "dwarf"
+   ],
+   [
+    13,
+    13,
+    "drow"
+   ],
+   [
+    14,
+    14,
+    "halfling"
+   ],
+   [
+    15,
+    18,
+    "gnome"
+   ]
+  ],
+  "sex": [
+   [
+    3,
+    9,
+    "male"
+   ],
+   [
+    10,
+    18,
+    "female"
+   ]
+  ],
+  "age": [
+   [
+    3,
+    7,
+    "young"
+   ],
+   [
+    8,
+    10,
+    "prime"
+   ],
+   [
+    11,
+    12,
+    "seasoned"
+   ],
+   [
+    13,
+    18,
+    "old"
+   ]
+  ],
+  "triangle_tier": [
+   [
+    3,
+    11,
+    "Gray"
+   ],
+   [
+    12,
+    18,
+    "Dusk"
+   ]
+  ],
+  "captain_suit_tier": [
+   [
+    3,
+    6,
+    "none (Veil kit only)"
+   ],
+   [
+    7,
+    8,
+    "Strider"
+   ],
+   [
+    9,
+    10,
+    "Stalker"
+   ],
+   [
+    11,
+    18,
+    "Phantom"
+   ]
+  ],
+  "lt_suit_tier_stalker_ceiling": [
+   [
+    3,
+    8,
+    "Strider"
+   ],
+   [
+    9,
+    18,
+    "Stalker"
+   ]
+  ],
+  "lt_suit_tier_phantom_ceiling": [
+   [
+    3,
+    8,
+    "Strider"
+   ],
+   [
+    9,
+    15,
+    "Stalker"
+   ],
+   [
+    16,
+    18,
+    "Phantom"
+   ]
+  ],
+  "second_tradition": [
+   [
+    3,
+    7,
+    "none (pure Veil austerity)"
+   ],
+   [
+    8,
+    9,
+    "Forgedeep dwarven"
+   ],
+   [
+    10,
+    11,
+    "Bloodaxe Nordic"
+   ],
+   [
+    12,
+    13,
+    "Calishite-Amnian"
+   ],
+   [
+    14,
+    18,
+    "Metropolitan urushi"
+   ]
+  ],
+  "budget_band": [
+   [
+    3,
+    6,
+    0
+   ],
+   [
+    7,
+    10,
+    1
+   ],
+   [
+    11,
+    14,
+    2
+   ],
+   [
+    15,
+    18,
+    3
+   ]
+  ],
+  "captain_art": {
+   "3": "Favored Soul",
+   "4": "Hexblade",
+   "5": "Warlock",
+   "6": "Ranger (archer-skirmisher)",
+   "7": "Monk",
+   "8": "Rogue / Assassin",
+   "9": "Fighter",
+   "10": "Wizard",
+   "11": "Cleric",
+   "12": "Sorcerer",
+   "13": "Swordsage",
+   "14": "Barbarian",
+   "15": "Druid",
+   "16": "Warblade",
+   "17": "Duskblade",
+   "18": "Psychic Warrior"
+  },
+  "emblem": {
+   "3": "Manticore",
+   "4": "Wolverine",
+   "5": "Heron",
+   "6": "Wolf",
+   "7": "Raven",
+   "8": "Adder",
+   "9": "Hound",
+   "10": "Boar",
+   "11": "Hawk",
+   "12": "Spider",
+   "13": "Bear",
+   "14": "Mantis",
+   "15": "Shrike",
+   "16": "Moray",
+   "17": "Tiger",
+   "18": "Owl"
+  },
+  "lawless": {
+   "3": "accepts any challenge, from anyone, anywhere",
+   "4": "has killed a Veil operative; sanctioned after the fact",
+   "5": "sleeps in the enemy's house",
+   "6": "settles grudges personally, off the books",
+   "7": "kills when told to take alive, if they judge it cleaner",
+   "8": "runs a private side-ledger of operations Lirien learns of afterwards",
+   "9": "answers to Arik, and only grudgingly to Lirien's staff",
+   "10": "recruits without clearance",
+   "11": "duels for sport",
+   "12": "keeps a trophy from every kill",
+   "13": "walks rather than gate-jumps, so the network never logs them",
+   "14": "shows their face in the field",
+   "15": "keeps a family the Veil does not know about",
+   "16": "writes everything down",
+   "17": "refused a direct order from Lirien once, and lived",
+   "18": "takes work Arik has not asked for, on Arik's behalf"
+  },
+  "triangle_and_hand_seat": [
+   [
+    3,
+    4,
+    1
+   ],
+   [
+    5,
+    5,
+    2
+   ],
+   [
+    6,
+    6,
+    3
+   ],
+   [
+    7,
+    7,
+    4
+   ],
+   [
+    8,
+    8,
+    5
+   ],
+   [
+    9,
+    9,
+    6
+   ],
+   [
+    10,
+    10,
+    7
+   ],
+   [
+    11,
+    11,
+    8
+   ],
+   [
+    12,
+    12,
+    9
+   ],
+   [
+    13,
+    13,
+    10
+   ],
+   [
+    14,
+    14,
+    11
+   ],
+   [
+    15,
+    16,
+    12
+   ],
+   [
+    17,
+    18,
+    13
+   ]
+  ],
+  "budget_crowns": {
+   "Strider": [
+    300,
+    600,
+    1000,
+    1500
+   ],
+   "Stalker": [
+    1500,
+    2500,
+    3750,
+    5000
+   ],
+   "Phantom": [
+    5000,
+    8000,
+    11500,
+    15000
+   ]
+  }
+ },
+ "throws": [
+  {
+   "id": "Captain 1 level",
+   "throws": [
+    12,
+    7,
+    15,
+    13
+   ],
+   "bound": 12,
+   "result": 17
+  },
+  {
+   "id": "Captain 1 art/class",
+   "throws": [
+    13,
+    9,
+    15,
+    11
+   ],
+   "bound": 11,
+   "result": "Cleric"
+  },
+  {
+   "id": "Captain 1 race",
+   "throws": [
+    12,
+    13,
+    16,
+    14
+   ],
+   "bound": 13,
+   "result": "drow"
+  },
+  {
+   "id": "Captain 1 sex",
+   "throws": [
+    16,
+    14,
+    8,
+    7
+   ],
+   "bound": 8,
+   "result": "male"
+  },
+  {
+   "id": "Captain 1 age",
+   "throws": [
+    11,
+    7,
+    15,
+    13
+   ],
+   "bound": 11,
+   "result": "seasoned"
+  },
+  {
+   "id": "Captain 1 emblem animal",
+   "throws": [
+    4,
+    7,
+    8,
+    8
+   ],
+   "bound": 7,
+   "result": "Raven"
+  },
+  {
+   "id": "Captain 1 lawless streak",
+   "throws": [
+    8,
+    10,
+    8,
+    8
+   ],
+   "bound": 8,
+   "result": "runs a private side-ledger of operations Lirien learns of afterwards"
+  },
+  {
+   "id": "Captain 1 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    15,
+    17,
+    12,
+    14
+   ],
+   "bound": 14,
+   "result": "Phantom"
+  },
+  {
+   "id": "Captain 1 second decoration tradition",
+   "throws": [
+    10,
+    8,
+    12,
+    15
+   ],
+   "bound": 10,
+   "result": "Bloodaxe Nordic"
+  },
+  {
+   "id": "Captain 1 decoration budget band (Phantom)",
+   "throws": [
+    11,
+    9,
+    13,
+    9
+   ],
+   "bound": 9,
+   "result": "band 2: 8000 Crowns"
+  },
+  {
+   "id": "Captain 2 level",
+   "throws": [
+    12,
+    9,
+    11,
+    6
+   ],
+   "bound": 9,
+   "result": 16
+  },
+  {
+   "id": "Captain 2 art/class",
+   "throws": [
+    8,
+    11,
+    10,
+    13
+   ],
+   "bound": 10,
+   "result": "Wizard"
+  },
+  {
+   "id": "Captain 2 race",
+   "throws": [
+    7,
+    10,
+    11,
+    6
+   ],
+   "bound": 7,
+   "result": "half-orc"
+  },
+  {
+   "id": "Captain 2 sex",
+   "throws": [
+    11,
+    14,
+    10,
+    11
+   ],
+   "bound": 11,
+   "result": "female"
+  },
+  {
+   "id": "Captain 2 age",
+   "throws": [
+    14,
+    9,
+    12,
+    13
+   ],
+   "bound": 12,
+   "result": "seasoned"
+  },
+  {
+   "id": "Captain 2 emblem animal",
+   "throws": [
+    12,
+    15,
+    14,
+    11
+   ],
+   "bound": 12,
+   "result": "Spider"
+  },
+  {
+   "id": "Captain 2 lawless streak",
+   "throws": [
+    11,
+    12,
+    7,
+    12
+   ],
+   "bound": 11,
+   "result": "duels for sport"
+  },
+  {
+   "id": "Captain 2 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    8,
+    11,
+    12,
+    11
+   ],
+   "bound": 11,
+   "result": "Phantom"
+  },
+  {
+   "id": "Captain 2 second decoration tradition",
+   "throws": [
+    10,
+    10,
+    9,
+    9
+   ],
+   "bound": 9,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Captain 2 decoration budget band (Phantom)",
+   "throws": [
+    7,
+    14,
+    12,
+    13
+   ],
+   "bound": 12,
+   "result": "band 3: 11500 Crowns"
+  },
+  {
+   "id": "Captain 3 level",
+   "throws": [
+    16,
+    9,
+    12,
+    10
+   ],
+   "bound": 10,
+   "result": 17
+  },
+  {
+   "id": "Captain 3 art/class",
+   "throws": [
+    9,
+    6,
+    14,
+    13
+   ],
+   "bound": 9,
+   "result": "Fighter"
+  },
+  {
+   "id": "Captain 3 race",
+   "throws": [
+    7,
+    8,
+    7,
+    9
+   ],
+   "bound": 7,
+   "result": "half-orc"
+  },
+  {
+   "id": "Captain 3 sex",
+   "throws": [
+    10,
+    15,
+    9,
+    7
+   ],
+   "bound": 9,
+   "result": "male"
+  },
+  {
+   "id": "Captain 3 age",
+   "throws": [
+    17,
+    13,
+    9,
+    10
+   ],
+   "bound": 10,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 3 emblem animal",
+   "throws": [
+    7,
+    11,
+    12,
+    11
+   ],
+   "bound": 11,
+   "result": "Hawk"
+  },
+  {
+   "id": "Captain 3 lawless streak",
+   "throws": [
+    9,
+    14,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "recruits without clearance"
+  },
+  {
+   "id": "Captain 3 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    5,
+    14,
+    9,
+    9
+   ],
+   "bound": 9,
+   "result": "Stalker"
+  },
+  {
+   "id": "Captain 3 second decoration tradition",
+   "throws": [
+    13,
+    9,
+    16,
+    12
+   ],
+   "bound": 12,
+   "result": "Calishite-Amnian"
+  },
+  {
+   "id": "Captain 3 decoration budget band (Stalker)",
+   "throws": [
+    10,
+    11,
+    10,
+    9
+   ],
+   "bound": 10,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Captain 4 level",
+   "throws": [
+    9,
+    7,
+    10,
+    14
+   ],
+   "bound": 9,
+   "result": 16
+  },
+  {
+   "id": "Captain 4 art/class",
+   "throws": [
+    7,
+    9,
+    9,
+    7
+   ],
+   "bound": 7,
+   "result": "Monk"
+  },
+  {
+   "id": "Captain 4 race",
+   "throws": [
+    8,
+    15,
+    11,
+    12
+   ],
+   "bound": 11,
+   "result": "elf"
+  },
+  {
+   "id": "Captain 4 sex",
+   "throws": [
+    12,
+    6,
+    9,
+    12
+   ],
+   "bound": 9,
+   "result": "male"
+  },
+  {
+   "id": "Captain 4 age",
+   "throws": [
+    8,
+    11,
+    9,
+    16
+   ],
+   "bound": 9,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 4 emblem animal",
+   "throws": [
+    11,
+    11,
+    10,
+    11
+   ],
+   "bound": 11,
+   "result": "Bear",
+   "slide": {
+    "occupied": [
+     11,
+     12
+    ],
+    "landed": 13
+   }
+  },
+  {
+   "id": "Captain 4 lawless streak",
+   "throws": [
+    13,
+    13,
+    9,
+    15
+   ],
+   "bound": 13,
+   "result": "walks rather than gate-jumps, so the network never logs them"
+  },
+  {
+   "id": "Captain 4 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    10,
+    8,
+    14,
+    13
+   ],
+   "bound": 10,
+   "result": "Stalker"
+  },
+  {
+   "id": "Captain 4 second decoration tradition",
+   "throws": [
+    11,
+    6,
+    17,
+    8
+   ],
+   "bound": 8,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Captain 4 decoration budget band (Stalker)",
+   "throws": [
+    13,
+    11,
+    10,
+    14
+   ],
+   "bound": 11,
+   "result": "band 3: 3750 Crowns"
+  },
+  {
+   "id": "Captain 5 level",
+   "throws": [
+    12,
+    14,
+    3,
+    9
+   ],
+   "bound": 9,
+   "result": 16
+  },
+  {
+   "id": "Captain 5 art/class",
+   "throws": [
+    10,
+    5,
+    6,
+    11
+   ],
+   "bound": 6,
+   "result": "Ranger (archer-skirmisher)"
+  },
+  {
+   "id": "Captain 5 race",
+   "throws": [
+    7,
+    6,
+    16,
+    12
+   ],
+   "bound": 7,
+   "result": "half-orc"
+  },
+  {
+   "id": "Captain 5 sex",
+   "throws": [
+    6,
+    9,
+    15,
+    8
+   ],
+   "bound": 8,
+   "result": "male"
+  },
+  {
+   "id": "Captain 5 age",
+   "throws": [
+    10,
+    5,
+    10,
+    6
+   ],
+   "bound": 6,
+   "result": "young"
+  },
+  {
+   "id": "Captain 5 emblem animal",
+   "throws": [
+    4,
+    14,
+    13,
+    11
+   ],
+   "bound": 11,
+   "result": "Mantis",
+   "slide": {
+    "occupied": [
+     11,
+     12,
+     13
+    ],
+    "landed": 14
+   }
+  },
+  {
+   "id": "Captain 5 lawless streak",
+   "throws": [
+    10,
+    8,
+    14,
+    6
+   ],
+   "bound": 8,
+   "result": "answers to Arik, and only grudgingly to Lirien's staff",
+   "slide": {
+    "occupied": [
+     8
+    ],
+    "landed": 9
+   }
+  },
+  {
+   "id": "Captain 5 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    11,
+    14,
+    9,
+    10
+   ],
+   "bound": 10,
+   "result": "Stalker"
+  },
+  {
+   "id": "Captain 5 second decoration tradition",
+   "throws": [
+    9,
+    11,
+    12,
+    8
+   ],
+   "bound": 9,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Captain 5 decoration budget band (Stalker)",
+   "throws": [
+    11,
+    5,
+    8,
+    18
+   ],
+   "bound": 8,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Captain 6 level",
+   "throws": [
+    9,
+    14,
+    12,
+    10
+   ],
+   "bound": 10,
+   "result": 17
+  },
+  {
+   "id": "Captain 6 art/class",
+   "throws": [
+    10,
+    8,
+    8,
+    6
+   ],
+   "bound": 8,
+   "result": "Rogue / Assassin"
+  },
+  {
+   "id": "Captain 6 race",
+   "throws": [
+    14,
+    9,
+    7,
+    10
+   ],
+   "bound": 9,
+   "result": "human"
+  },
+  {
+   "id": "Captain 6 sex",
+   "throws": [
+    10,
+    9,
+    13,
+    14
+   ],
+   "bound": 10,
+   "result": "female"
+  },
+  {
+   "id": "Captain 6 age",
+   "throws": [
+    11,
+    15,
+    16,
+    5
+   ],
+   "bound": 11,
+   "result": "seasoned"
+  },
+  {
+   "id": "Captain 6 emblem animal",
+   "throws": [
+    15,
+    9,
+    7,
+    13
+   ],
+   "bound": 9,
+   "result": "Hound"
+  },
+  {
+   "id": "Captain 6 lawless streak",
+   "throws": [
+    8,
+    8,
+    11,
+    10
+   ],
+   "bound": 8,
+   "result": "keeps a trophy from every kill",
+   "slide": {
+    "occupied": [
+     8,
+     9,
+     10,
+     11
+    ],
+    "landed": 12
+   }
+  },
+  {
+   "id": "Captain 6 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    18,
+    10,
+    5,
+    8
+   ],
+   "bound": 8,
+   "result": "Strider"
+  },
+  {
+   "id": "Captain 6 second decoration tradition",
+   "throws": [
+    9,
+    4,
+    5,
+    6
+   ],
+   "bound": 5,
+   "result": "none (pure Veil austerity)"
+  },
+  {
+   "id": "Captain 6 decoration budget band (Strider)",
+   "throws": [
+    14,
+    12,
+    11,
+    12
+   ],
+   "bound": 12,
+   "result": "band 3: 1000 Crowns"
+  },
+  {
+   "id": "Captain 7 level",
+   "throws": [
+    13,
+    9,
+    8,
+    7
+   ],
+   "bound": 8,
+   "result": 16
+  },
+  {
+   "id": "Captain 7 art/class",
+   "throws": [
+    7,
+    17,
+    11,
+    6
+   ],
+   "bound": 7,
+   "result": "Sorcerer",
+   "slide": {
+    "occupied": [
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "landed": 12
+   }
+  },
+  {
+   "id": "Captain 7 race",
+   "throws": [
+    12,
+    15,
+    11,
+    7
+   ],
+   "bound": 11,
+   "result": "elf"
+  },
+  {
+   "id": "Captain 7 sex",
+   "throws": [
+    14,
+    15,
+    12,
+    11
+   ],
+   "bound": 12,
+   "result": "female"
+  },
+  {
+   "id": "Captain 7 age",
+   "throws": [
+    13,
+    10,
+    9,
+    12
+   ],
+   "bound": 10,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 7 emblem animal",
+   "throws": [
+    10,
+    10,
+    14,
+    7
+   ],
+   "bound": 10,
+   "result": "Boar"
+  },
+  {
+   "id": "Captain 7 lawless streak",
+   "throws": [
+    8,
+    10,
+    10,
+    10
+   ],
+   "bound": 10,
+   "result": "shows their face in the field",
+   "slide": {
+    "occupied": [
+     10,
+     11,
+     12,
+     13
+    ],
+    "landed": 14
+   }
+  },
+  {
+   "id": "Captain 7 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    12,
+    7,
+    12,
+    12
+   ],
+   "bound": 12,
+   "result": "Phantom"
+  },
+  {
+   "id": "Captain 7 second decoration tradition",
+   "throws": [
+    10,
+    6,
+    7,
+    9
+   ],
+   "bound": 7,
+   "result": "none (pure Veil austerity)"
+  },
+  {
+   "id": "Captain 7 decoration budget band (Phantom)",
+   "throws": [
+    9,
+    14,
+    10,
+    10
+   ],
+   "bound": 10,
+   "result": "band 2: 8000 Crowns"
+  },
+  {
+   "id": "Captain 8 level",
+   "throws": [
+    11,
+    11,
+    8,
+    8
+   ],
+   "bound": 8,
+   "result": 16
+  },
+  {
+   "id": "Captain 8 art/class",
+   "throws": [
+    13,
+    9,
+    15,
+    11
+   ],
+   "bound": 11,
+   "result": "Swordsage",
+   "slide": {
+    "occupied": [
+     11,
+     12
+    ],
+    "landed": 13
+   }
+  },
+  {
+   "id": "Captain 8 race",
+   "throws": [
+    12,
+    16,
+    14,
+    10
+   ],
+   "bound": 12,
+   "result": "dwarf"
+  },
+  {
+   "id": "Captain 8 sex",
+   "throws": [
+    13,
+    14,
+    11,
+    12
+   ],
+   "bound": 12,
+   "result": "female"
+  },
+  {
+   "id": "Captain 8 age",
+   "throws": [
+    11,
+    8,
+    9,
+    7
+   ],
+   "bound": 8,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 8 emblem animal",
+   "throws": [
+    13,
+    14,
+    16,
+    8
+   ],
+   "bound": 13,
+   "result": "Shrike",
+   "slide": {
+    "occupied": [
+     13,
+     14
+    ],
+    "landed": 15
+   }
+  },
+  {
+   "id": "Captain 8 lawless streak",
+   "throws": [
+    10,
+    7,
+    7,
+    16
+   ],
+   "bound": 7,
+   "result": "kills when told to take alive, if they judge it cleaner"
+  },
+  {
+   "id": "Captain 8 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    13,
+    6,
+    10,
+    6
+   ],
+   "bound": 6,
+   "result": "none (Veil kit only)"
+  },
+  {
+   "id": "Captain 9 level",
+   "throws": [
+    11,
+    11,
+    4,
+    9
+   ],
+   "bound": 9,
+   "result": 16
+  },
+  {
+   "id": "Captain 9 art/class",
+   "throws": [
+    11,
+    8,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "Barbarian",
+   "slide": {
+    "occupied": [
+     10,
+     11,
+     12,
+     13
+    ],
+    "landed": 14
+   }
+  },
+  {
+   "id": "Captain 9 race",
+   "throws": [
+    11,
+    6,
+    7,
+    6
+   ],
+   "bound": 6,
+   "result": "tiefling"
+  },
+  {
+   "id": "Captain 9 sex",
+   "throws": [
+    12,
+    16,
+    8,
+    4
+   ],
+   "bound": 8,
+   "result": "male"
+  },
+  {
+   "id": "Captain 9 age",
+   "throws": [
+    11,
+    10,
+    9,
+    13
+   ],
+   "bound": 10,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 9 emblem animal",
+   "throws": [
+    11,
+    10,
+    7,
+    9
+   ],
+   "bound": 9,
+   "result": "Moray",
+   "slide": {
+    "occupied": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "landed": 16
+   }
+  },
+  {
+   "id": "Captain 9 lawless streak",
+   "throws": [
+    11,
+    8,
+    8,
+    13
+   ],
+   "bound": 8,
+   "result": "keeps a family the Veil does not know about",
+   "slide": {
+    "occupied": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "landed": 15
+   }
+  },
+  {
+   "id": "Captain 9 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    13,
+    13,
+    8,
+    12
+   ],
+   "bound": 12,
+   "result": "Phantom"
+  },
+  {
+   "id": "Captain 9 second decoration tradition",
+   "throws": [
+    9,
+    10,
+    9,
+    12
+   ],
+   "bound": 9,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Captain 9 decoration budget band (Phantom)",
+   "throws": [
+    15,
+    13,
+    8,
+    10
+   ],
+   "bound": 10,
+   "result": "band 2: 8000 Crowns"
+  },
+  {
+   "id": "Captain 10 level",
+   "throws": [
+    11,
+    9,
+    4,
+    8
+   ],
+   "bound": 8,
+   "result": 16
+  },
+  {
+   "id": "Captain 10 art/class",
+   "throws": [
+    17,
+    5,
+    10,
+    13
+   ],
+   "bound": 10,
+   "result": "Druid",
+   "slide": {
+    "occupied": [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "landed": 15
+   }
+  },
+  {
+   "id": "Captain 10 race",
+   "throws": [
+    14,
+    9,
+    7,
+    14
+   ],
+   "bound": 9,
+   "result": "human"
+  },
+  {
+   "id": "Captain 10 sex",
+   "throws": [
+    12,
+    13,
+    10,
+    13
+   ],
+   "bound": 12,
+   "result": "female"
+  },
+  {
+   "id": "Captain 10 age",
+   "throws": [
+    15,
+    13,
+    7,
+    8
+   ],
+   "bound": 8,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 10 emblem animal",
+   "throws": [
+    11,
+    6,
+    13,
+    9
+   ],
+   "bound": 9,
+   "result": "Tiger",
+   "slide": {
+    "occupied": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "landed": 17
+   }
+  },
+  {
+   "id": "Captain 10 lawless streak",
+   "throws": [
+    11,
+    15,
+    5,
+    13
+   ],
+   "bound": 11,
+   "result": "writes everything down",
+   "slide": {
+    "occupied": [
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "landed": 16
+   }
+  },
+  {
+   "id": "Captain 10 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    9,
+    11,
+    15,
+    9
+   ],
+   "bound": 9,
+   "result": "Stalker"
+  },
+  {
+   "id": "Captain 10 second decoration tradition",
+   "throws": [
+    14,
+    12,
+    8,
+    16
+   ],
+   "bound": 12,
+   "result": "Calishite-Amnian"
+  },
+  {
+   "id": "Captain 10 decoration budget band (Stalker)",
+   "throws": [
+    13,
+    9,
+    9,
+    13
+   ],
+   "bound": 9,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Captain 11 level",
+   "throws": [
+    8,
+    6,
+    8,
+    16
+   ],
+   "bound": 8,
+   "result": 16
+  },
+  {
+   "id": "Captain 11 art/class",
+   "throws": [
+    11,
+    8,
+    11,
+    8
+   ],
+   "bound": 8,
+   "result": "Warblade",
+   "slide": {
+    "occupied": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "landed": 16
+   }
+  },
+  {
+   "id": "Captain 11 race",
+   "throws": [
+    10,
+    6,
+    13,
+    11
+   ],
+   "bound": 10,
+   "result": "half-elf"
+  },
+  {
+   "id": "Captain 11 sex",
+   "throws": [
+    11,
+    11,
+    11,
+    9
+   ],
+   "bound": 11,
+   "result": "female"
+  },
+  {
+   "id": "Captain 11 age",
+   "throws": [
+    13,
+    12,
+    16,
+    13
+   ],
+   "bound": 13,
+   "result": "old"
+  },
+  {
+   "id": "Captain 11 emblem animal",
+   "throws": [
+    9,
+    12,
+    13,
+    9
+   ],
+   "bound": 9,
+   "result": "Owl",
+   "slide": {
+    "occupied": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "landed": 18
+   }
+  },
+  {
+   "id": "Captain 11 lawless streak",
+   "throws": [
+    6,
+    9,
+    11,
+    7
+   ],
+   "bound": 7,
+   "result": "refused a direct order from Lirien once, and lived",
+   "slide": {
+    "occupied": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "landed": 17
+   }
+  },
+  {
+   "id": "Captain 11 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    15,
+    5,
+    14,
+    14
+   ],
+   "bound": 14,
+   "result": "Phantom"
+  },
+  {
+   "id": "Captain 11 second decoration tradition",
+   "throws": [
+    15,
+    5,
+    11,
+    7
+   ],
+   "bound": 7,
+   "result": "none (pure Veil austerity)"
+  },
+  {
+   "id": "Captain 11 decoration budget band (Phantom)",
+   "throws": [
+    10,
+    7,
+    6,
+    12
+   ],
+   "bound": 7,
+   "result": "band 2: 8000 Crowns"
+  },
+  {
+   "id": "Captain 12 level",
+   "throws": [
+    14,
+    9,
+    15,
+    12
+   ],
+   "bound": 12,
+   "result": 17
+  },
+  {
+   "id": "Captain 12 art/class",
+   "throws": [
+    6,
+    6,
+    12,
+    12
+   ],
+   "bound": 6,
+   "result": "Duskblade",
+   "slide": {
+    "occupied": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "landed": 17
+   }
+  },
+  {
+   "id": "Captain 12 race",
+   "throws": [
+    4,
+    13,
+    11,
+    12
+   ],
+   "bound": 11,
+   "result": "elf"
+  },
+  {
+   "id": "Captain 12 sex",
+   "throws": [
+    10,
+    15,
+    9,
+    12
+   ],
+   "bound": 10,
+   "result": "female"
+  },
+  {
+   "id": "Captain 12 age",
+   "throws": [
+    13,
+    8,
+    12,
+    17
+   ],
+   "bound": 12,
+   "result": "seasoned"
+  },
+  {
+   "id": "Captain 12 emblem animal",
+   "throws": [
+    11,
+    12,
+    8,
+    13
+   ],
+   "bound": 11,
+   "result": "Manticore",
+   "slide": {
+    "occupied": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "landed": 3
+   }
+  },
+  {
+   "id": "Captain 12 lawless streak",
+   "throws": [
+    7,
+    5,
+    8,
+    13
+   ],
+   "bound": 7,
+   "result": "takes work Arik has not asked for, on Arik's behalf",
+   "slide": {
+    "occupied": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "landed": 18
+   }
+  },
+  {
+   "id": "Captain 12 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    11,
+    12,
+    8,
+    10
+   ],
+   "bound": 10,
+   "result": "Stalker"
+  },
+  {
+   "id": "Captain 12 second decoration tradition",
+   "throws": [
+    15,
+    13,
+    5,
+    8
+   ],
+   "bound": 8,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Captain 12 decoration budget band (Stalker)",
+   "throws": [
+    16,
+    11,
+    8,
+    13
+   ],
+   "bound": 11,
+   "result": "band 3: 3750 Crowns"
+  },
+  {
+   "id": "Captain 13 level",
+   "throws": [
+    9,
+    5,
+    9,
+    12
+   ],
+   "bound": 9,
+   "result": 16
+  },
+  {
+   "id": "Captain 13 art/class",
+   "throws": [
+    4,
+    10,
+    6,
+    6
+   ],
+   "bound": 6,
+   "result": "Psychic Warrior",
+   "slide": {
+    "occupied": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "landed": 18
+   }
+  },
+  {
+   "id": "Captain 13 race",
+   "throws": [
+    8,
+    3,
+    8,
+    8
+   ],
+   "bound": 8,
+   "result": "human"
+  },
+  {
+   "id": "Captain 13 sex",
+   "throws": [
+    9,
+    8,
+    7,
+    12
+   ],
+   "bound": 8,
+   "result": "male"
+  },
+  {
+   "id": "Captain 13 age",
+   "throws": [
+    12,
+    16,
+    9,
+    9
+   ],
+   "bound": 9,
+   "result": "prime"
+  },
+  {
+   "id": "Captain 13 emblem animal",
+   "throws": [
+    7,
+    14,
+    6,
+    17
+   ],
+   "bound": 7,
+   "result": "Adder",
+   "slide": {
+    "occupied": [
+     7
+    ],
+    "landed": 8
+   }
+  },
+  {
+   "id": "Captain 13 lawless streak",
+   "throws": [
+    11,
+    8,
+    8,
+    7
+   ],
+   "bound": 8,
+   "result": "accepts any challenge, from anyone, anywhere",
+   "slide": {
+    "occupied": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "landed": 3
+   }
+  },
+  {
+   "id": "Captain 13 Stride suit tier (ceiling Phantom)",
+   "throws": [
+    13,
+    8,
+    11,
+    9
+   ],
+   "bound": 9,
+   "result": "Stalker"
+  },
+  {
+   "id": "Captain 13 second decoration tradition",
+   "throws": [
+    14,
+    14,
+    16,
+    14
+   ],
+   "bound": 14,
+   "result": "Metropolitan urushi"
+  },
+  {
+   "id": "Captain 13 decoration budget band (Stalker)",
+   "throws": [
+    10,
+    9,
+    6,
+    14
+   ],
+   "bound": 9,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Triangle 1 captain seat",
+   "throws": [
+    8,
+    8,
+    10,
+    9
+   ],
+   "bound": 8,
+   "result": 5
+  },
+  {
+   "id": "Triangle 1 tier",
+   "throws": [
+    11,
+    12,
+    11,
+    6
+   ],
+   "bound": 11,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 2 captain seat",
+   "throws": [
+    11,
+    4,
+    9,
+    6
+   ],
+   "bound": 6,
+   "result": 3
+  },
+  {
+   "id": "Triangle 2 tier",
+   "throws": [
+    6,
+    13,
+    11,
+    15
+   ],
+   "bound": 11,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 3 captain seat",
+   "throws": [
+    5,
+    8,
+    7,
+    9
+   ],
+   "bound": 7,
+   "result": 4
+  },
+  {
+   "id": "Triangle 3 tier",
+   "throws": [
+    8,
+    9,
+    6,
+    15
+   ],
+   "bound": 8,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 4 captain seat",
+   "throws": [
+    11,
+    9,
+    3,
+    10
+   ],
+   "bound": 9,
+   "result": 6
+  },
+  {
+   "id": "Triangle 4 tier",
+   "throws": [
+    9,
+    11,
+    9,
+    11
+   ],
+   "bound": 9,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 5 captain seat",
+   "throws": [
+    11,
+    7,
+    10,
+    14
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 5 tier",
+   "throws": [
+    8,
+    7,
+    11,
+    11
+   ],
+   "bound": 8,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 6 captain seat",
+   "throws": [
+    12,
+    6,
+    13,
+    17
+   ],
+   "bound": 12,
+   "result": 9
+  },
+  {
+   "id": "Triangle 6 tier",
+   "throws": [
+    11,
+    11,
+    8,
+    13
+   ],
+   "bound": 11,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 7 captain seat",
+   "throws": [
+    13,
+    10,
+    8,
+    17
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 7 tier",
+   "throws": [
+    6,
+    9,
+    10,
+    13
+   ],
+   "bound": 9,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 8 captain seat",
+   "throws": [
+    7,
+    7,
+    11,
+    8
+   ],
+   "bound": 7,
+   "result": 4
+  },
+  {
+   "id": "Triangle 8 tier",
+   "throws": [
+    7,
+    13,
+    5,
+    11
+   ],
+   "bound": 7,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 9 captain seat",
+   "throws": [
+    12,
+    15,
+    9,
+    16
+   ],
+   "bound": 12,
+   "result": 9
+  },
+  {
+   "id": "Triangle 9 tier",
+   "throws": [
+    17,
+    7,
+    11,
+    11
+   ],
+   "bound": 11,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 10 captain seat",
+   "throws": [
+    9,
+    6,
+    12,
+    9
+   ],
+   "bound": 9,
+   "result": 6
+  },
+  {
+   "id": "Triangle 10 tier",
+   "throws": [
+    13,
+    10,
+    4,
+    8
+   ],
+   "bound": 8,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 11 captain seat",
+   "throws": [
+    10,
+    6,
+    15,
+    7
+   ],
+   "bound": 7,
+   "result": 4
+  },
+  {
+   "id": "Triangle 11 tier",
+   "throws": [
+    14,
+    5,
+    11,
+    8
+   ],
+   "bound": 8,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 12 captain seat",
+   "throws": [
+    13,
+    10,
+    9,
+    12
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 12 tier",
+   "throws": [
+    11,
+    18,
+    9,
+    7
+   ],
+   "bound": 9,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 13 captain seat",
+   "throws": [
+    9,
+    10,
+    11,
+    14
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 13 tier",
+   "throws": [
+    11,
+    14,
+    15,
+    9
+   ],
+   "bound": 11,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 14 captain seat",
+   "throws": [
+    7,
+    15,
+    14,
+    13
+   ],
+   "bound": 13,
+   "result": 10
+  },
+  {
+   "id": "Triangle 14 tier",
+   "throws": [
+    16,
+    10,
+    9,
+    15
+   ],
+   "bound": 10,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 15 captain seat",
+   "throws": [
+    7,
+    8,
+    11,
+    15
+   ],
+   "bound": 8,
+   "result": 5
+  },
+  {
+   "id": "Triangle 15 tier",
+   "throws": [
+    4,
+    9,
+    5,
+    9
+   ],
+   "bound": 5,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 16 captain seat",
+   "throws": [
+    16,
+    10,
+    10,
+    7
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 16 tier",
+   "throws": [
+    10,
+    11,
+    13,
+    13
+   ],
+   "bound": 11,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 17 captain seat",
+   "throws": [
+    10,
+    11,
+    13,
+    8
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 17 tier",
+   "throws": [
+    9,
+    13,
+    7,
+    6
+   ],
+   "bound": 7,
+   "result": "Gray"
+  },
+  {
+   "id": "Triangle 18 captain seat",
+   "throws": [
+    10,
+    12,
+    12,
+    5
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Triangle 18 tier",
+   "throws": [
+    14,
+    12,
+    13,
+    10
+   ],
+   "bound": 12,
+   "result": "Dusk"
+  },
+  {
+   "id": "Hand lieutenant seat: Ivrael Quillatar",
+   "throws": [
+    8,
+    15,
+    10,
+    7
+   ],
+   "bound": 8,
+   "result": 5
+  },
+  {
+   "id": "Hand lieutenant seat: Nym Esharan",
+   "throws": [
+    10,
+    6,
+    12,
+    13
+   ],
+   "bound": 10,
+   "result": 7
+  },
+  {
+   "id": "Hand lieutenant seat: Teodric Halvane",
+   "throws": [
+    11,
+    11,
+    13,
+    4
+   ],
+   "bound": 11,
+   "result": 8
+  },
+  {
+   "id": "Hand lieutenant seat: Durgan Emberlode",
+   "throws": [
+    13,
+    9,
+    14,
+    9
+   ],
+   "bound": 9,
+   "result": 6
+  },
+  {
+   "id": "Hand lieutenant seat: Lorne Ashby",
+   "throws": [
+    5,
+    14,
+    12,
+    7
+   ],
+   "bound": 7,
+   "result": 4
+  },
+  {
+   "id": "Lieutenant (seat 1) level",
+   "throws": [
+    5,
+    6,
+    13,
+    9
+   ],
+   "bound": 6,
+   "result": 12
+  },
+  {
+   "id": "Lieutenant (seat 1) art/class",
+   "throws": [
+    14,
+    11,
+    10,
+    14
+   ],
+   "bound": 11,
+   "result": "Cleric"
+  },
+  {
+   "id": "Lieutenant (seat 1) race",
+   "throws": [
+    9,
+    13,
+    11,
+    7
+   ],
+   "bound": 9,
+   "result": "human"
+  },
+  {
+   "id": "Lieutenant (seat 1) sex",
+   "throws": [
+    5,
+    8,
+    15,
+    4
+   ],
+   "bound": 5,
+   "result": "male"
+  },
+  {
+   "id": "Lieutenant (seat 1) age",
+   "throws": [
+    8,
+    15,
+    14,
+    8
+   ],
+   "bound": 8,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 1) suit tier (ceiling stalker)",
+   "throws": [
+    7,
+    10,
+    14,
+    12
+   ],
+   "bound": 10,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 1) second decoration tradition",
+   "throws": [
+    13,
+    8,
+    12,
+    7
+   ],
+   "bound": 8,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Lieutenant (seat 1) decoration budget band (Stalker)",
+   "throws": [
+    5,
+    12,
+    12,
+    13
+   ],
+   "bound": 12,
+   "result": "band 3: 3750 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 2) level",
+   "throws": [
+    11,
+    15,
+    8,
+    13
+   ],
+   "bound": 11,
+   "result": 14
+  },
+  {
+   "id": "Lieutenant (seat 2) art/class",
+   "throws": [
+    10,
+    10,
+    14,
+    12
+   ],
+   "bound": 10,
+   "result": "Wizard"
+  },
+  {
+   "id": "Lieutenant (seat 2) race",
+   "throws": [
+    10,
+    11,
+    8,
+    8
+   ],
+   "bound": 8,
+   "result": "human"
+  },
+  {
+   "id": "Lieutenant (seat 2) sex",
+   "throws": [
+    14,
+    9,
+    11,
+    13
+   ],
+   "bound": 11,
+   "result": "female"
+  },
+  {
+   "id": "Lieutenant (seat 2) age",
+   "throws": [
+    7,
+    12,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 2) suit tier (ceiling stalker)",
+   "throws": [
+    9,
+    9,
+    13,
+    11
+   ],
+   "bound": 9,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 2) second decoration tradition",
+   "throws": [
+    4,
+    17,
+    10,
+    7
+   ],
+   "bound": 7,
+   "result": "none (pure Veil austerity)"
+  },
+  {
+   "id": "Lieutenant (seat 2) decoration budget band (Stalker)",
+   "throws": [
+    10,
+    6,
+    10,
+    12
+   ],
+   "bound": 10,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 3) level",
+   "throws": [
+    12,
+    13,
+    11,
+    14
+   ],
+   "bound": 12,
+   "result": 14
+  },
+  {
+   "id": "Lieutenant (seat 3) art/class",
+   "throws": [
+    10,
+    8,
+    12,
+    10
+   ],
+   "bound": 10,
+   "result": "Wizard"
+  },
+  {
+   "id": "Lieutenant (seat 3) race",
+   "throws": [
+    14,
+    11,
+    8,
+    8
+   ],
+   "bound": 8,
+   "result": "human"
+  },
+  {
+   "id": "Lieutenant (seat 3) sex",
+   "throws": [
+    15,
+    10,
+    11,
+    12
+   ],
+   "bound": 11,
+   "result": "female"
+  },
+  {
+   "id": "Lieutenant (seat 3) age",
+   "throws": [
+    8,
+    15,
+    12,
+    9
+   ],
+   "bound": 9,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 3) suit tier (ceiling stalker)",
+   "throws": [
+    17,
+    7,
+    15,
+    14
+   ],
+   "bound": 14,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 3) second decoration tradition",
+   "throws": [
+    13,
+    8,
+    10,
+    13
+   ],
+   "bound": 10,
+   "result": "Bloodaxe Nordic"
+  },
+  {
+   "id": "Lieutenant (seat 3) decoration budget band (Stalker)",
+   "throws": [
+    10,
+    10,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 9) level",
+   "throws": [
+    13,
+    10,
+    12,
+    11
+   ],
+   "bound": 11,
+   "result": 14
+  },
+  {
+   "id": "Lieutenant (seat 9) art/class",
+   "throws": [
+    15,
+    12,
+    9,
+    7
+   ],
+   "bound": 9,
+   "result": "Fighter"
+  },
+  {
+   "id": "Lieutenant (seat 9) race",
+   "throws": [
+    11,
+    8,
+    11,
+    13
+   ],
+   "bound": 11,
+   "result": "elf"
+  },
+  {
+   "id": "Lieutenant (seat 9) sex",
+   "throws": [
+    10,
+    13,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "female"
+  },
+  {
+   "id": "Lieutenant (seat 9) age",
+   "throws": [
+    12,
+    10,
+    11,
+    8
+   ],
+   "bound": 10,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 9) suit tier (ceiling phantom)",
+   "throws": [
+    12,
+    11,
+    10,
+    13
+   ],
+   "bound": 11,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 9) second decoration tradition",
+   "throws": [
+    8,
+    12,
+    5,
+    9
+   ],
+   "bound": 8,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Lieutenant (seat 9) decoration budget band (Stalker)",
+   "throws": [
+    10,
+    11,
+    7,
+    10
+   ],
+   "bound": 10,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 10) level",
+   "throws": [
+    9,
+    12,
+    8,
+    10
+   ],
+   "bound": 9,
+   "result": 13
+  },
+  {
+   "id": "Lieutenant (seat 10) art/class",
+   "throws": [
+    9,
+    6,
+    12,
+    12
+   ],
+   "bound": 9,
+   "result": "Fighter"
+  },
+  {
+   "id": "Lieutenant (seat 10) race",
+   "throws": [
+    6,
+    12,
+    6,
+    13
+   ],
+   "bound": 6,
+   "result": "tiefling"
+  },
+  {
+   "id": "Lieutenant (seat 10) sex",
+   "throws": [
+    9,
+    8,
+    13,
+    6
+   ],
+   "bound": 8,
+   "result": "male"
+  },
+  {
+   "id": "Lieutenant (seat 10) age",
+   "throws": [
+    15,
+    11,
+    10,
+    9
+   ],
+   "bound": 10,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 10) suit tier (ceiling phantom)",
+   "throws": [
+    17,
+    14,
+    9,
+    10
+   ],
+   "bound": 10,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 10) second decoration tradition",
+   "throws": [
+    10,
+    13,
+    6,
+    12
+   ],
+   "bound": 10,
+   "result": "Bloodaxe Nordic"
+  },
+  {
+   "id": "Lieutenant (seat 10) decoration budget band (Stalker)",
+   "throws": [
+    15,
+    8,
+    11,
+    4
+   ],
+   "bound": 8,
+   "result": "band 2: 2500 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 11) level",
+   "throws": [
+    10,
+    11,
+    7,
+    8
+   ],
+   "bound": 8,
+   "result": 13
+  },
+  {
+   "id": "Lieutenant (seat 11) art/class",
+   "throws": [
+    8,
+    9,
+    10,
+    10
+   ],
+   "bound": 9,
+   "result": "Fighter"
+  },
+  {
+   "id": "Lieutenant (seat 11) race",
+   "throws": [
+    12,
+    10,
+    9,
+    10
+   ],
+   "bound": 10,
+   "result": "half-elf"
+  },
+  {
+   "id": "Lieutenant (seat 11) sex",
+   "throws": [
+    8,
+    10,
+    8,
+    10
+   ],
+   "bound": 8,
+   "result": "male"
+  },
+  {
+   "id": "Lieutenant (seat 11) age",
+   "throws": [
+    12,
+    8,
+    5,
+    16
+   ],
+   "bound": 8,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 11) suit tier (ceiling phantom)",
+   "throws": [
+    11,
+    11,
+    10,
+    7
+   ],
+   "bound": 10,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 11) second decoration tradition",
+   "throws": [
+    10,
+    13,
+    15,
+    12
+   ],
+   "bound": 12,
+   "result": "Calishite-Amnian"
+  },
+  {
+   "id": "Lieutenant (seat 11) decoration budget band (Stalker)",
+   "throws": [
+    11,
+    17,
+    12,
+    11
+   ],
+   "bound": 11,
+   "result": "band 3: 3750 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 12) level",
+   "throws": [
+    8,
+    10,
+    7,
+    10
+   ],
+   "bound": 8,
+   "result": 13
+  },
+  {
+   "id": "Lieutenant (seat 12) art/class",
+   "throws": [
+    7,
+    10,
+    11,
+    10
+   ],
+   "bound": 10,
+   "result": "Wizard"
+  },
+  {
+   "id": "Lieutenant (seat 12) race",
+   "throws": [
+    6,
+    11,
+    15,
+    9
+   ],
+   "bound": 9,
+   "result": "human"
+  },
+  {
+   "id": "Lieutenant (seat 12) sex",
+   "throws": [
+    17,
+    9,
+    7,
+    9
+   ],
+   "bound": 9,
+   "result": "male"
+  },
+  {
+   "id": "Lieutenant (seat 12) age",
+   "throws": [
+    13,
+    14,
+    10,
+    11
+   ],
+   "bound": 11,
+   "result": "seasoned"
+  },
+  {
+   "id": "Lieutenant (seat 12) suit tier (ceiling stalker)",
+   "throws": [
+    12,
+    16,
+    12,
+    9
+   ],
+   "bound": 12,
+   "result": "Stalker"
+  },
+  {
+   "id": "Lieutenant (seat 12) second decoration tradition",
+   "throws": [
+    8,
+    10,
+    9,
+    14
+   ],
+   "bound": 9,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Lieutenant (seat 12) decoration budget band (Stalker)",
+   "throws": [
+    10,
+    18,
+    11,
+    11
+   ],
+   "bound": 11,
+   "result": "band 3: 3750 Crowns"
+  },
+  {
+   "id": "Lieutenant (seat 13) level",
+   "throws": [
+    10,
+    16,
+    13,
+    12
+   ],
+   "bound": 12,
+   "result": 14
+  },
+  {
+   "id": "Lieutenant (seat 13) art/class",
+   "throws": [
+    13,
+    13,
+    15,
+    10
+   ],
+   "bound": 13,
+   "result": "Swordsage"
+  },
+  {
+   "id": "Lieutenant (seat 13) race",
+   "throws": [
+    16,
+    7,
+    12,
+    11
+   ],
+   "bound": 11,
+   "result": "elf"
+  },
+  {
+   "id": "Lieutenant (seat 13) sex",
+   "throws": [
+    12,
+    12,
+    11,
+    9
+   ],
+   "bound": 11,
+   "result": "female"
+  },
+  {
+   "id": "Lieutenant (seat 13) age",
+   "throws": [
+    8,
+    3,
+    10,
+    8
+   ],
+   "bound": 8,
+   "result": "prime"
+  },
+  {
+   "id": "Lieutenant (seat 13) suit tier (ceiling stalker)",
+   "throws": [
+    8,
+    15,
+    8,
+    7
+   ],
+   "bound": 8,
+   "result": "Strider"
+  },
+  {
+   "id": "Lieutenant (seat 13) second decoration tradition",
+   "throws": [
+    5,
+    10,
+    13,
+    9
+   ],
+   "bound": 9,
+   "result": "Forgedeep dwarven"
+  },
+  {
+   "id": "Lieutenant (seat 13) decoration budget band (Strider)",
+   "throws": [
+    11,
+    9,
+    12,
+    14
+   ],
+   "bound": 11,
+   "result": "band 3: 1000 Crowns"
+  }
+ ],
+ "summary": {
+  "captains": [
+   {
+    "seat": 1,
+    "level": 17,
+    "art": "Cleric",
+    "race": "drow",
+    "sex": "male",
+    "age": "seasoned",
+    "emblem": "Raven",
+    "lawless": "runs a private side-ledger of operations Lirien learns of afterwards",
+    "suit": "Phantom",
+    "tradition": "Bloodaxe Nordic",
+    "budget": 8000
+   },
+   {
+    "seat": 2,
+    "level": 16,
+    "art": "Wizard",
+    "race": "half-orc",
+    "sex": "female",
+    "age": "seasoned",
+    "emblem": "Spider",
+    "lawless": "duels for sport",
+    "suit": "Phantom",
+    "tradition": "Forgedeep dwarven",
+    "budget": 11500
+   },
+   {
+    "seat": 3,
+    "level": 17,
+    "art": "Fighter",
+    "race": "half-orc",
+    "sex": "male",
+    "age": "prime",
+    "emblem": "Hawk",
+    "lawless": "recruits without clearance",
+    "suit": "Stalker",
+    "tradition": "Calishite-Amnian",
+    "budget": 2500
+   },
+   {
+    "seat": 4,
+    "level": 16,
+    "art": "Monk",
+    "race": "elf",
+    "sex": "male",
+    "age": "prime",
+    "emblem": "Bear",
+    "lawless": "walks rather than gate-jumps, so the network never logs them",
+    "suit": "Stalker",
+    "tradition": "Forgedeep dwarven",
+    "budget": 3750
+   },
+   {
+    "seat": 5,
+    "level": 16,
+    "art": "Ranger (archer-skirmisher)",
+    "race": "half-orc",
+    "sex": "male",
+    "age": "young",
+    "emblem": "Mantis",
+    "lawless": "answers to Arik, and only grudgingly to Lirien's staff",
+    "suit": "Stalker",
+    "tradition": "Forgedeep dwarven",
+    "budget": 2500
+   },
+   {
+    "seat": 6,
+    "level": 17,
+    "art": "Rogue / Assassin",
+    "race": "human",
+    "sex": "female",
+    "age": "seasoned",
+    "emblem": "Hound",
+    "lawless": "keeps a trophy from every kill",
+    "suit": "Strider",
+    "tradition": "none (pure Veil austerity)",
+    "budget": 1000
+   },
+   {
+    "seat": 7,
+    "level": 16,
+    "art": "Sorcerer",
+    "race": "elf",
+    "sex": "female",
+    "age": "prime",
+    "emblem": "Boar",
+    "lawless": "shows their face in the field",
+    "suit": "Phantom",
+    "tradition": "none (pure Veil austerity)",
+    "budget": 8000
+   },
+   {
+    "seat": 8,
+    "level": 16,
+    "art": "Swordsage",
+    "race": "dwarf",
+    "sex": "female",
+    "age": "prime",
+    "emblem": "Shrike",
+    "lawless": "kills when told to take alive, if they judge it cleaner",
+    "suit": "none (Veil kit only)"
+   },
+   {
+    "seat": 9,
+    "level": 16,
+    "art": "Barbarian",
+    "race": "tiefling",
+    "sex": "male",
+    "age": "prime",
+    "emblem": "Moray",
+    "lawless": "keeps a family the Veil does not know about",
+    "suit": "Phantom",
+    "tradition": "Forgedeep dwarven",
+    "budget": 8000
+   },
+   {
+    "seat": 10,
+    "level": 16,
+    "art": "Druid",
+    "race": "human",
+    "sex": "female",
+    "age": "prime",
+    "emblem": "Tiger",
+    "lawless": "writes everything down",
+    "suit": "Stalker",
+    "tradition": "Calishite-Amnian",
+    "budget": 2500
+   },
+   {
+    "seat": 11,
+    "level": 16,
+    "art": "Warblade",
+    "race": "half-elf",
+    "sex": "female",
+    "age": "old",
+    "emblem": "Owl",
+    "lawless": "refused a direct order from Lirien once, and lived",
+    "suit": "Phantom",
+    "tradition": "none (pure Veil austerity)",
+    "budget": 8000
+   },
+   {
+    "seat": 12,
+    "level": 17,
+    "art": "Duskblade",
+    "race": "elf",
+    "sex": "female",
+    "age": "seasoned",
+    "emblem": "Manticore",
+    "lawless": "takes work Arik has not asked for, on Arik's behalf",
+    "suit": "Stalker",
+    "tradition": "Forgedeep dwarven",
+    "budget": 3750
+   },
+   {
+    "seat": 13,
+    "level": 16,
+    "art": "Psychic Warrior",
+    "race": "human",
+    "sex": "male",
+    "age": "prime",
+    "emblem": "Adder",
+    "lawless": "accepts any challenge, from anyone, anywhere",
+    "suit": "Stalker",
+    "tradition": "Metropolitan urushi",
+    "budget": 2500
+   }
+  ],
+  "lieutenants_new": [
+   {
+    "seat": 1,
+    "level": 12,
+    "art": "Cleric",
+    "race": "human",
+    "sex": "male",
+    "age": "prime",
+    "suit": "Stalker",
+    "tradition": "Forgedeep dwarven",
+    "budget": 3750
+   },
+   {
+    "seat": 2,
+    "level": 14,
+    "art": "Wizard",
+    "race": "human",
+    "sex": "female",
+    "age": "prime",
+    "suit": "Stalker",
+    "tradition": "none (pure Veil austerity)",
+    "budget": 2500
+   },
+   {
+    "seat": 3,
+    "level": 14,
+    "art": "Wizard",
+    "race": "human",
+    "sex": "female",
+    "age": "prime",
+    "suit": "Stalker",
+    "tradition": "Bloodaxe Nordic",
+    "budget": 2500
+   },
+   {
+    "seat": 9,
+    "level": 14,
+    "art": "Fighter",
+    "race": "elf",
+    "sex": "female",
+    "age": "prime",
+    "suit": "Stalker",
+    "tradition": "Forgedeep dwarven",
+    "budget": 2500
+   },
+   {
+    "seat": 10,
+    "level": 13,
+    "art": "Fighter",
+    "race": "tiefling",
+    "sex": "male",
+    "age": "prime",
+    "suit": "Stalker",
+    "tradition": "Bloodaxe Nordic",
+    "budget": 2500
+   },
+   {
+    "seat": 11,
+    "level": 13,
+    "art": "Fighter",
+    "race": "half-elf",
+    "sex": "male",
+    "age": "prime",
+    "suit": "Stalker",
+    "tradition": "Calishite-Amnian",
+    "budget": 3750
+   },
+   {
+    "seat": 12,
+    "level": 13,
+    "art": "Wizard",
+    "race": "human",
+    "sex": "male",
+    "age": "seasoned",
+    "suit": "Stalker",
+    "tradition": "Forgedeep dwarven",
+    "budget": 3750
+   },
+   {
+    "seat": 13,
+    "level": 14,
+    "art": "Swordsage",
+    "race": "elf",
+    "sex": "female",
+    "age": "prime",
+    "suit": "Strider",
+    "tradition": "Forgedeep dwarven",
+    "budget": 1000
+   }
+  ],
+  "hand_seats": {
+   "Ivrael Quillatar": 5,
+   "Nym Esharan": 7,
+   "Teodric Halvane": 8,
+   "Durgan Emberlode": 6,
+   "Lorne Ashby": 4
+  },
+  "triangles": [
+   {
+    "triangle": 1,
+    "seat": 5,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 2,
+    "seat": 3,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 3,
+    "seat": 4,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 4,
+    "seat": 6,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 5,
+    "seat": 7,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 6,
+    "seat": 9,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 7,
+    "seat": 7,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 8,
+    "seat": 4,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 9,
+    "seat": 9,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 10,
+    "seat": 6,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 11,
+    "seat": 4,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 12,
+    "seat": 7,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 13,
+    "seat": 7,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 14,
+    "seat": 10,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 15,
+    "seat": 5,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 16,
+    "seat": 7,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 17,
+    "seat": 7,
+    "tier": "Gray"
+   },
+   {
+    "triangle": 18,
+    "seat": 7,
+    "tier": "Dusk"
+   }
+  ]
+ }
+}
