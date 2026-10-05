@@ -1,0 +1,212 @@
+{
+ "method": "Python secrets; 3d6; four throws; lower median; no rerolls.",
+ "date": "2026-10-05",
+ "tables": {
+  "drow_f_first_a": {
+   "3": "Zes",
+   "4": "Vel",
+   "5": "Ilh",
+   "6": "Shi",
+   "7": "Mal",
+   "8": "Char",
+   "9": "Ulvi",
+   "10": "Ny",
+   "11": "Quil",
+   "12": "Bel",
+   "13": "Gree",
+   "14": "Ard",
+   "15": "Ece",
+   "16": "Jhael",
+   "17": "Vier",
+   "18": "SiN"
+  },
+  "drow_f_first_b": {
+   "3": "ra",
+   "4": "ndra",
+   "5": "yrr",
+   "6": "ziira",
+   "7": "vayas",
+   "8": "thra",
+   "9": "nolu",
+   "10": "dril",
+   "11": "viira",
+   "12": "lyss",
+   "13": "ssra",
+   "14": "nzrae",
+   "15": "kriiv",
+   "16": "bryn",
+   "17": "nae",
+   "18": "lith"
+  },
+  "drow_house_a": {
+   "3": "Xor",
+   "4": "Vrin",
+   "5": "Mez",
+   "6": "Teken",
+   "7": "Hla",
+   "8": "Ky",
+   "9": "Dyr",
+   "10": "Aun",
+   "11": "Szol",
+   "12": "Ilm",
+   "13": "Zau",
+   "14": "Rhyl",
+   "15": "Oblin",
+   "16": "Ghal",
+   "17": "Vel",
+   "18": "Tor"
+  },
+  "drow_house_b": {
+   "3": "'rret",
+   "4": "ndar",
+   "5": "'zith",
+   "6": "vrae",
+   "7": "zaer",
+   "8": "'ghal",
+   "9": "nnyl",
+   "10": "tyrr",
+   "11": "xun",
+   "12": "'ral",
+   "13": "zynt",
+   "14": "'vaern",
+   "15": "oss",
+   "16": "kyn",
+   "17": "'quor",
+   "18": "laith"
+  },
+  "wd_first": {
+   "3": "Ambrose",
+   "4": "Lucan",
+   "5": "Osbert",
+   "6": "Theron",
+   "7": "Cassius",
+   "8": "Rowan",
+   "9": "Gideon",
+   "10": "Aldous",
+   "11": "Severin",
+   "12": "Jory",
+   "13": "Matthias",
+   "14": "Corwin",
+   "15": "Ellery",
+   "16": "Fenwick",
+   "17": "Lysander",
+   "18": "Peregrine"
+  },
+  "wd_surname": {
+   "3": "Ashgrove",
+   "4": "Vantorre",
+   "5": "Delcourt",
+   "6": "Merriweather",
+   "7": "Stallis",
+   "8": "Rennick",
+   "9": "Brightlance",
+   "10": "Holloway",
+   "11": "Castellane",
+   "12": "Dunmarrow",
+   "13": "Ilsworth",
+   "14": "Pellucid",
+   "15": "Ravenell",
+   "16": "Thorncastle",
+   "17": "Westerly",
+   "18": "Quillon"
+  }
+ },
+ "throws": [
+  {
+   "id": "Priestess first name, part 1",
+   "throws": [
+    7,
+    10,
+    11,
+    12
+   ],
+   "bound": 10,
+   "result": "Ny"
+  },
+  {
+   "id": "Priestess first name, part 2",
+   "throws": [
+    5,
+    11,
+    8,
+    18
+   ],
+   "bound": 8,
+   "result": "thra"
+  },
+  {
+   "id": "Priestess house, part 1",
+   "throws": [
+    14,
+    10,
+    10,
+    9
+   ],
+   "bound": 10,
+   "result": "Aun"
+  },
+  {
+   "id": "Priestess house, part 2",
+   "throws": [
+    14,
+    14,
+    8,
+    11
+   ],
+   "bound": 11,
+   "result": "xun"
+  },
+  {
+   "id": "Fencing master first name",
+   "throws": [
+    13,
+    8,
+    17,
+    9
+   ],
+   "bound": 9,
+   "result": "Gideon"
+  },
+  {
+   "id": "Fencing master surname",
+   "throws": [
+    12,
+    12,
+    15,
+    12
+   ],
+   "bound": 12,
+   "result": "Dunmarrow"
+  }
+ ],
+ "results": {
+  "priestess": "Quilthra of House Aunxun",
+  "fencing_master": "Jory Ilsworth"
+ },
+ "collision_slides": [
+  {
+   "part": "Priestess first name, part 1",
+   "from": "Ny (bound 10)",
+   "to": "Quil (k=11)",
+   "reason": "Ny+thra = 'Nythra' near-misses NPC 'Nyathra Symryvvin' (drow)"
+  },
+  {
+   "part": "Fencing master first name",
+   "from": "Gideon (bound 9)",
+   "to": "Aldous (k=10)",
+   "reason": "'Gideon' duplicates NPC 'Gideon Pollard'"
+  },
+  {
+   "part": "Fencing master surname",
+   "from": "Dunmarrow (bound 12)",
+   "to": "Ilsworth (k=13)",
+   "reason": "'Dunmarrow' near-misses 'Hugh Dunbarrow' / Dunbarrow's Riders"
+  },
+  {
+   "part": "Fencing master first name",
+   "from": "Aldous (k=10, after first slide)",
+   "to": "Jory (k=11)",
+   "reason": "'Aldous' is the first name of seven existing NPCs"
+  }
+ ]
+}
