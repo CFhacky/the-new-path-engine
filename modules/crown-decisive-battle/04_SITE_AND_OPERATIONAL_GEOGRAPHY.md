@@ -67,3 +67,9 @@ Deviations: none
 |---|---|---|
 | C15 | Warden's Vigil lists "3rd Cohort 'Breaker's March' elements under Legate Runa Dornveil" as garrison, with a camp perimeter garrison. D9 sets the Crown garrison at ~30. Is the Vigil manned in Uktar 1498, and by how many? | **Gate C** (Chad) |
 | C16 | Sania is at Isle de Troll and rides Gary in. Gary's overland flight (fly 150 ft) covers about 15 mph (I: speed ÷ 10); the distance from Isle de Troll to the Crown is not on Notion. How Gary gets there (flight, teleport, warren transit) and who calls him are not written. | **Gate C** (Chad) |
+
+## Errata (5 Oct 2026, append-only)
+- **C16 flight speed corrected.** The "about 15 mph (speed ÷ 10)" above is wrong. The campaign's overland ruling (LOG-788, 17 Sep 2026) covers all winged creatures, wild dragons included: **cruise mph = fly speed in ft ÷ 10 × load factor** (×4 unladen, ×3 riders and kit, ×2 heavy cargo).
+	- Gary's sheet gives fly 150 ft (poor), so 60 / **45** / 30 mph. Carrying Sania, he cruises at **45 mph**.
+	- His sheet predates LOG-788 and matches neither stock 3.5e (an ancient red flies 200 ft) nor the Wyrmhelm page's own wild-red example ("fly 200 ft cruises 80 mph"). At 200 ft he would cruise at **60 mph** with a rider. Which value stands is a Chad call; the module uses 150 until then.
+	- Isle de Troll (on the Surbrin, near Yartar) to the Crown is not on Notion and has to be measured on the published map. A Warmother-class flyer under riders covers 430–540 mi per flying day (LOG-788), so Gary arrives **within a day of being called**, not several days. C16 narrows to: the measured distance, Gary's fly speed (150 or 200), and who calls him.
