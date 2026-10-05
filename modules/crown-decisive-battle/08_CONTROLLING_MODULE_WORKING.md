@@ -385,3 +385,12 @@ At each one: **stop, recompute Mass Combat, record the live result.**
 > - Add F22 (hidden agenda per mage) and F23 (Vraxis's Lien on the commander) to §8.0 firing. Add **Agenda / Target** columns to the Mage Tracker.
 > - Count **knives drawn** at every pause point: 2–3 fired gives Thay −1 Strategy, 4+ gives −2.
 > - Inside the Threshold the **Grave Lien contests it** (d20 + 15 vs d20 + 20). Full rules in 08b §7.
+
+> **Errata (Phase 9, 5 Oct 2026; full text in 09):**
+> - Jörmun's SR 37, Boundary Walker and permanent death ward change Thay's answer to him (08b §8).
+> - Chain-Sight and Chain-Breaking go to the player as a **once-a-day choice**: cut a retinue, a pre-bound element or a Lien.
+> - Territory awareness gives him presence and position inside 10 mi.
+> - Beat 5 uses the full Threshold contest (d20 + CL ±4 vs d20 + 22).
+> - **On F1 3–6, Session 2 is E6 alone on the fused engine.**
+> - **A tunnel approach is sealable** (significant action).
+> - **Mass Combat rounds wait on V16**, the TS rule for individuals.

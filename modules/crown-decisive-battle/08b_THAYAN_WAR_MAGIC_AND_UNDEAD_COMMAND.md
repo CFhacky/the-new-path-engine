@@ -182,3 +182,16 @@ About 58% of mages roll 8–12 and are loyal enough. A cadre of 8 averages three
 	- Poacher, as a rival falls: *"His dead are standing idle — take them. Take them now."*
 	- Ambition, watching the commander pinned: *"…He'll manage."*
 	- A Lien cracking empty in the holder's palm: *crk* — and a breath of frost off the stone.
+
+## 8. Errata from Phase 9 validation (5 Oct 2026; see 09)
+- **§1 retinue mix:** Wizard 7 and Wizard 9 retinues are skeletons and zombies only. *Create undead* is 6th level (W11+). Worked example: W9, 36 HD = 12 zombies + 12 skeletons. Created undead fill the pool by Chad's ruling (a recorded deviation from RAW).
+- **§2D Answering Jörmun:**
+	- His **SR 37** (09 V1) stops every SR: Yes spell from any caster but Vraxis, who gets through 20% of the time at best.
+	- **Struck as primary tools:** *slow*, *fear*, *enervation*, *dimensional anchor*, *waves of fatigue/exhaustion*. *Forcecage* fails anyway (Boundary Walker). Death effects fail too (permanent death ward).
+	- **Replacement doctrine:** cast **around** him with *wall of force*, *wall of iron*, *solid fog*, *acid fog* and *cloudkill* (all SR: No). Use *greater dispel magic* on his buffs. Throw bodies into the aura. **Hold him for three rounds while the column works.**
+	- The Cold-Breakers cadre is the trained version of this (09 §4).
+- **§2F Withdrawal:** contingency companion ≤ CL/3, so W11 carries *gaseous form* or *fly*, and W12–14 carry *dimension door* (920 ft at W13, still inside the territory). **Only Vraxis carries a contingent teleport.** Real escape is a *teleport* on the mage's own turn.
+- **§2E Raising:** every *animate dead* needs a 25 gp onyx per HD. Each mage carries 1d4 × 4 HD of onyx (R). Inside the territory, raising uses the full Threshold contest (09 V14), and the 3d6 placeholder is retired.
+- **§7b Grave Lien:** the price is **6,000 gp + gem** (09 V12); 48,000 is struck. The Threshold side is **d20 + 22** (09 V13).
+- **Above 12 mages:** group the rest into cadres of 5 on the Tracker (09 case 2).
+- **Brotherhood casters** don't command undead and take no F19–F22 rolls (09 case 5).
