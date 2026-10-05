@@ -245,7 +245,7 @@ Before Session 2, fill one row per Thayan mage from F19–F21. **This sheet is t
 - Light comes up grey, then hard white off the erg. Long shadows run north from every rock.
 - Out on the approach, the sand **moves**. The planted ghouls come up first, shaking grit from their joints. Behind them the mass of zombies and skeletons climbs out of the gullies in lines.
 - They march in step. They aren't fast, and they make no sound but *crunch-crunch-crunch*, thousands of feet on frozen sand.
-- The living Thayan column is **behind** them, out of the aura's 10-mile reach? **No.** Inside the Threshold, the aura pressure is Jörmun's, not distance's. The column holds 400–600 yards back, and **the mages stand among their own dead**, red robes like wounds in a grey field.
+- The living Thayan column holds 400–600 yards back, behind its dead. **The mages do not:** they stand among their own retinues, red robes like wounds in a grey field.
 
 **Why the dead come first (tell the table through action, not exposition).**
 - The dead do not fear.
@@ -286,9 +286,9 @@ Before Session 2, fill one row per Thayan mage from F19–F21. **This sheet is t
 	- Herders throw every mass body they have into the hole during that window.
 	- **If only one Breaker has *disintegrate*,** the hole doesn't open. Thay switches to the stone wall: a *passwall* through the 120-ft run, or *transmute rock to mud* under it.
 3. **Butchers clear the parapet.**
-	- *Cloudkill* rolls onto the platform: 5 HD or less die outright, 6+ save.
-	- Then *circle of death* on any packed section: Fort negates, and it kills creatures under 9 HD.
-	- **Mago's garrison is the target.** This is how 30 men become 15 in two casts.
+	- *Cloudkill* rolls onto the platform (SRD): 3 HD or less die outright, 4–6 HD save or die, and above 6 HD take Con damage.
+	- Then *circle of death* on any packed section (SRD): 40-ft burst, kills 1d4 HD of creatures per caster level, those under 9 HD only, lowest first; Fort negates.
+	- **Mago's garrison is the target.** A Wizard 11's circle kills up to 11d4 HD of men under 9 HD in one burst. This is how 30 men become 15 in two casts.
 4. **The Seizer prepares.** It uses *scrying* or *arcane eye* on the bank for the next round's jump.
 
 **Empire answers on the board.**
@@ -297,8 +297,8 @@ Before Session 2, fill one row per Thayan mage from F19–F21. **This sheet is t
 | Breakers at the ice | Kill them: they are the two mages standing closest to the wall. Khorzad's lightning, archers through the crenels (if the fog isn't up yet), Jörmun turning back |
 | The breach is open | Vorian in his sealed suit **plugs it physically** for 1d4 rounds until the ice refills. The *Dungeon Crasher* moment |
 | *Cloudkill* on the platform | The garrison drops off the platform to the inside foot of the wall. It rolls downhill; get above it |
-| *Circle of death* | Spread out (the 40-ft burst rewards it). Saves are honest. Named NPCs keep their saves |
-| Stone-wall *passwall* | The hole is a hole for 9 × CL minutes (SRD), not forever. Hold it with the screen. Moranth grenades into the gap, if re-armed |
+| *Circle of death* | Spread out: the burst kills only 1d4 HD per caster level, so dispersal starves it. Saves are honest. Named NPCs keep their saves |
+| Stone-wall *passwall* | The passage lasts 2 hours per caster level (SRD), so it will not close in this battle. Hold it with the screen; Moranth grenades into the gap, if re-armed. *Dispel magic* closes it |
 
 **Mago's d6 under the cloud.**
 | d6 | Mago does |
