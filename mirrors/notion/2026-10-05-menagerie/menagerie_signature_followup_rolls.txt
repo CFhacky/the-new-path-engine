@@ -1,0 +1,55 @@
+==============================================================
+MENAGERIE SIGNATURE ITEMS — FOLLOW-UP ROLLS — BINDING
+==============================================================
+-- masterwork properties
+Quavein beak-mace MW14 mid property: d12=9 → mighty cleaving
+Hadda punch-dagger MW17 major property: d4=1 → flaming burst
+Kesh mantis-sickles MW17 major property: d4=3 → shocking burst
+Brunna tucks MW20 major property: d4=2 → icy burst
+Osmund censer MW9 minor property: d3=3 → ghost touch
+Faelith tower shield MW13 shield mid property: d4=2 → bashing
+Edwyn mail mitten MW12 minor property: d3=2 → defending
+-- capstones (one non-Greater affix becomes Greater)
+Brunna capstone: d4=3 → Souldrinker
+Zaheda capstone: d3=2 → Swiftfoot
+-- temper add-ons 1d4+1
+Quavein temper add-on: 1d4+1 → raw [2] → 3
+Hadda temper add-on: 1d4+1 → raw [4] → 5
+Tarvash temper add-on: 1d4+1 → raw [4] → 5
+Aerendyl temper add-on: 1d4+1 → raw [4] → 5
+Kesh temper add-on: 1d4+1 → raw [2] → 3
+Marit temper add-on: 1d4+1 → raw [1] → 2
+Brunna temper add-on: 1d4+1 → raw [3] → 4
+Zaheda temper add-on: 1d4+1 → raw [3] → 4
+Dace temper add-on: 1d4+1 → raw [4] → 5
+Osmund temper add-on: 1d4+1 → raw [2] → 3
+Faelith temper add-on: 1d4+1 → raw [1] → 2
+Patience temper add-on: 1d4+1 → raw [2] → 3
+Rhun temper add-on: 1d4+1 → raw [2] → 3
+Edwyn temper add-on: 1d4+1 → raw [1] → 2
+Ashavel temper add-on: 1d4+1 → raw [3] → 4
+-- aspect add-ons 3d3+3
+Quavein aspect add-on: 3d3+3 → raw [2, 3, 2] → 10
+Hadda aspect add-on: 3d3+3 → raw [3, 2, 3] → 11
+Kesh aspect add-on: 3d3+3 → raw [2, 2, 2] → 9
+Marit aspect add-on: 3d3+3 → raw [3, 1, 1] → 8
+Brunna aspect add-on: 3d3+3 → raw [3, 3, 2] → 11
+Zaheda aspect add-on: 3d3+3 → raw [2, 2, 2] → 9
+Osmund aspect add-on: 3d3+3 → raw [1, 1, 3] → 8
+Faelith aspect add-on: 3d3+3 → raw [2, 2, 2] → 9
+Rhun aspect add-on: 3d3+3 → raw [3, 2, 3] → 11
+Edwyn aspect add-on: 3d3+3 → raw [3, 1, 3] → 10
+-- socket fills (proposed readings)
+Quavein seal: d2=1 → Defensive
+  Quavein seal: Defensive d100=17 → Stalwart | T1 value: +4
+Naevys seal: d2=1 → Defensive
+  Naevys seal: Defensive d100=79 → Aegis | T1 value: +5
+Aerendyl charm: d2=1 → Utility
+  Aerendyl charm: Utility d100=99 → Dimensional Pocket | T2 value: 100
+Aerendyl strange: seed d10=10 → table J Mythic Behavior; entry d6=6
+Aerendyl strange UDRP add-on: 1d6+2 → raw [6] → 8
+Dace strange: seed d10=7 → table G Mobility; entry d8=6
+Dace strange UDRP add-on: 1d6+2 → raw [2] → 4
+Rhun strange: seed d10=9 → table I Corpse/Blood/Death Engine; entry d8=4
+Rhun strange UDRP add-on: 1d6+2 → raw [5] → 7
+Marit shard, Ashavel shard: Elemental Shard T1 (Huge elemental 1/day), no roll; element authored

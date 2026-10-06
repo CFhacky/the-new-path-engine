@@ -1,0 +1,461 @@
+==============================================================
+MENAGERIE SIGNATURE ITEMS — loot_roll.py functions, Python secrets, BINDING
+==============================================================
+
+### Quavein Orlzynn — the beak-mace (heavy mace) · CR 17 · named · archetype divine
+TIER: set by CR 17 → Tier 1 — Legendary (router rule: tier is SET, never rolled, when challenge is known)
+RARITY: d100=56 +20 (named) → 76 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, divine): d100=69 → Skill/Class
+    d100=68 → Familiar Bond [Skill/Class] | T1 value: +5
+  POOL (weighted, divine): d100=7 → Offensive
+    d100=24 → Armor Piercing [Offensive] | T1 value: 10
+  POOL (weighted, divine): d100=18 → Defensive
+    d100=2 → Warding [Defensive] | T1 value: +4
+  POOL (weighted, divine): d100=5 → Offensive
+    d100=37 → Executioner [Offensive] | T1 value: +4d6
+GREATER CHECK [Familiar Bond]: d100=38 vs 25% → no
+GREATER CHECK [Armor Piercing]: d100=35 vs 25% → no
+GREATER CHECK [Warding]: d100=36 vs 25% → no
+GREATER CHECK [Executioner]: d100=13 vs 25% → GREATER
+  → apply Section 20 conversion ladder to: Executioner
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=8 → family H Critical/Precision; entry d10=8 → read references/affix-families.md Part 3 (23H)
+LEGENDARY ASPECT: d10=5 → table E Skill Transformation; entry d8=7 → read references/affix-families.md Part 3 (24E)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=14 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [4, 3] +4 → 11
+ITEM CL: 1d4+12 → raw 4 → 16
+
+### Hadda — the punch-dagger · CR 16 · named · archetype arcane
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=55 +20 (named) → 75 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, arcane): d100=13 → Defensive
+    d100=19 → Iron Skin [Defensive] | T1 value: 8
+  POOL (weighted, arcane): d100=89 → Elemental
+    d100=38 → Venomous [Elemental] | T1 value: +3d6
+  POOL (weighted, arcane): d100=19 → Defensive
+    d100=91 → Absorption [Defensive] | T1 value: 50
+  POOL (weighted, arcane): d100=71 → Skill/Class
+    d100=3 → Arcane Amplification [Skill/Class] | T1 value: +3
+GREATER CHECK [Iron Skin]: d100=67 vs 25% → no
+GREATER CHECK [Venomous]: d100=85 vs 25% → no
+GREATER CHECK [Absorption]: d100=42 vs 25% → no
+GREATER CHECK [Arcane Amplification]: d100=14 vs 25% → GREATER
+  → apply Section 20 conversion ladder to: Arcane Amplification
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=3 → family C Defensive; entry d10=7 → read references/affix-families.md Part 3 (23C)
+LEGENDARY ASPECT: d10=4 → table D Resource Loop; entry d8=1 → read references/affix-families.md Part 3 (24D)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=17 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [2, 2] +4 → 8
+ITEM CL: 1d4+12 → raw 1 → 13
+
+### Tarvash — the paired scimitars (one roll, both blades) · CR 17 · named · archetype martial
+TIER: set by CR 17 → Tier 1 — Legendary (router rule: tier is SET, never rolled, when challenge is known)
+RARITY: d100=19 +20 (named) → 39 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=6 → Offensive
+    d100=69 → Vorpal Edge [Offensive] | T1 value: 3
+  POOL (weighted, martial): d100=6 → Offensive
+    d100=76 → Predator's Instinct [Offensive] | T1 value: +4
+  POOL (weighted, martial): d100=63 → Utility
+    d100=98 → Dimensional Pocket [Utility] | T1 value: 250
+GREATER CHECK [Vorpal Edge]: d100=23 vs 10% → no
+GREATER CHECK [Predator's Instinct]: d100=98 vs 10% → no
+GREATER CHECK [Dimensional Pocket]: d100=71 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=30 → 1
+  TEMPER 1: d10=8 → family H Critical/Precision; entry d10=10 → read references/affix-families.md Part 3 (23H)
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [1] +2 → 3
+ITEM CL: 1d4+12 → raw 2 → 14
+
+### Aerendyl — the prayer-cord (garrotte) · CR 16 · named · archetype martial
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=35 +20 (named) → 55 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=55 → Utility
+    d100=25 → Linguist [Utility]
+  POOL (weighted, martial): d100=68 → Skill/Class
+    d100=75 → Channel [Skill/Class] | T1 value: +4
+  POOL (weighted, martial): d100=76 → Skill/Class
+    d100=22 → Wild Shape [Skill/Class] | T1 value: +3
+GREATER CHECK [Linguist]: d100=45 vs 10% → no
+GREATER CHECK [Channel]: d100=52 vs 10% → no
+GREATER CHECK [Wild Shape]: d100=45 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=5 → 1
+  TEMPER 1: d10=6 → family F Minion/Companion; entry d10=9 → read references/affix-families.md Part 3 (23F)
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [2] +2 → 4
+ITEM CL: 1d4+12 → raw 2 → 14
+
+### Kesh — the mantis-sickles (one roll, both blades) · CR 16 · named · archetype martial
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=62 +20 (named) → 82 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=63 → Utility
+    d100=43 → Waterborn [Utility] | T1 value: 40
+  POOL (weighted, martial): d100=40 → Defensive
+    d100=8 → Fortification [Defensive] | T1 value: 100%
+  POOL (weighted, martial): d100=86 → Elemental
+    d100=75 → Elemental Burst [Elemental] | T1 value: 8d6
+  POOL (weighted, martial): d100=73 → Skill/Class
+    d100=70 → Familiar Bond [Skill/Class] | T1 value: +5
+GREATER CHECK [Waterborn]: d100=23 vs 25% → GREATER
+GREATER CHECK [Fortification]: d100=73 vs 25% → no
+GREATER CHECK [Elemental Burst]: d100=86 vs 25% → no
+GREATER CHECK [Familiar Bond]: d100=73 vs 25% → no
+  → apply Section 20 conversion ladder to: Waterborn
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=9 → family I Blood/Shadow/Death; entry d10=3 → read references/affix-families.md Part 3 (23I)
+LEGENDARY ASPECT: d10=4 → table D Resource Loop; entry d8=5 → read references/affix-families.md Part 3 (24D)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=17 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [3, 3] +4 → 10
+ITEM CL: 1d4+12 → raw 3 → 15
+
+### Marit — the boning knife (dagger) · CR 17 · named · archetype shadow
+TIER: set by CR 17 → Tier 1 — Legendary (router rule: tier is SET, never rolled, when challenge is known)
+RARITY: d100=50 +20 (named) → 70 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, shadow): d100=79 → Skill/Class
+    d100=68 → Familiar Bond [Skill/Class] | T1 value: +5
+  POOL (weighted, shadow): d100=33 → Resource
+    d100=4 → Mana Well [Resource] | T1 value: +60
+  POOL (weighted, shadow): d100=31 → Resource
+    d100=32 → Endurance [Resource] | T1 value: +8
+  POOL (weighted, shadow): d100=30 → Resource
+    pool restriction: Resource already used 2× → reroll pool
+  POOL (weighted, shadow): d100=52 → Utility
+    d100=21 → Skillmaster [Utility] | T1 value: +6
+GREATER CHECK [Familiar Bond]: d100=39 vs 25% → no
+GREATER CHECK [Mana Well]: d100=82 vs 25% → no
+GREATER CHECK [Endurance]: d100=73 vs 25% → no
+GREATER CHECK [Skillmaster]: d100=89 vs 25% → no
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=6 → family F Minion/Companion; entry d10=8 → read references/affix-families.md Part 3 (23F)
+LEGENDARY ASPECT: d10=1 → table A Damage Conversion; entry d8=7 → read references/affix-families.md Part 3 (24A)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=5 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [2, 3] +4 → 9
+ITEM CL: 1d4+12 → raw 4 → 16
+
+### Naevys — the boar-spear (shortspear) · CR 16 · named · archetype arcane
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=78 +20 (named) → 98 → Unique
+→ Unique: EXIT the dice pipeline; author per unique-design.md.
+UDRP BASE: Unique 1d16+14 → raw 11 +14 → 25
+ITEM CL: 1d4+12 → raw 1 → 13
+
+### Brunna — the tucks (one roll, both estocs) · CR 16 · named · archetype shadow
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=64 +20 (named) → 84 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, shadow): d100=21 → Defensive
+    d100=80 → Aegis [Defensive] | T1 value: +5
+  POOL (weighted, shadow): d100=48 → Utility
+    d100=94 → Chameleon [Utility]
+  POOL (weighted, shadow): d100=39 → Resource
+    d100=61 → Souldrinker [Resource] | T1 value: 20
+  POOL (weighted, shadow): d100=51 → Utility
+    d100=16 → Featherfall [Utility]
+GREATER CHECK [Aegis]: d100=95 vs 25% → no
+GREATER CHECK [Chameleon]: d100=80 vs 25% → no
+GREATER CHECK [Souldrinker]: d100=93 vs 25% → no
+GREATER CHECK [Featherfall]: d100=77 vs 25% → no
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=2 → family B Elemental Augment; entry d10=7 → read references/affix-families.md Part 3 (23B)
+LEGENDARY ASPECT: d10=3 → table C Defensive Trigger; entry d8=7 → read references/affix-families.md Part 3 (24C)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=20 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [3, 4] +4 → 11
+ITEM CL: 1d4+12 → raw 4 → 16
+
+### Mercy — the gaff (light pick) · CR 16 · named · archetype martial
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=96 +20 (named) → 99 → Unique
+→ Unique: EXIT the dice pipeline; author per unique-design.md.
+UDRP BASE: Unique 1d16+14 → raw 16 +14 → 30
+ITEM CL: 1d4+12 → raw 4 → 16
+
+### Zaheda — the notebook and reed pen (wondrous) · CR 16 · named · archetype divine
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=37 +20 (named) → 57 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, divine): d100=7 → Offensive
+    d100=80 → Riposte [Offensive]
+  POOL (weighted, divine): d100=53 → Utility
+    d100=74 → Sustenance [Utility]
+  POOL (weighted, divine): d100=51 → Utility
+    d100=3 → Swiftfoot [Utility] | T1 value: +20
+  POOL (weighted, divine): d100=86 → Elemental
+    d100=100 → Chaos Element [Elemental]
+GREATER CHECK [Riposte]: d100=85 vs 25% → no
+GREATER CHECK [Sustenance]: d100=1 vs 25% → GREATER
+GREATER CHECK [Swiftfoot]: d100=33 vs 25% → no
+GREATER CHECK [Chaos Element]: d100=51 vs 25% → no
+  → apply Section 20 conversion ladder to: Sustenance
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=5 → family E Mobility; entry d10=9 → read references/affix-families.md Part 3 (23E)
+LEGENDARY ASPECT: d10=6 → table F Summon Alteration; entry d8=7 → read references/affix-families.md Part 3 (24F)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=20 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [2, 2] +4 → 8
+ITEM CL: 1d4+12 → raw 4 → 16
+
+### Ysmay — the old sword (bastard sword) · CR 16 · named · archetype martial
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=28 +20 (named) → 48 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=100 → Rare Build-Around
+    d100=89 → Undeath Covenant [Rare Build-Around]
+  POOL (weighted, martial): d100=60 → Utility
+    d100=93 → Chameleon [Utility]
+  POOL (weighted, martial): d100=97 → Condition/Control
+    d100=1 → Slowing [Condition/Control] | T1 value: 22
+GREATER CHECK [Undeath Covenant]: d100=33 vs 10% → no
+GREATER CHECK [Chameleon]: d100=87 vs 10% → no
+GREATER CHECK [Slowing]: d100=27 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=80 → 0
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [4] +2 → 6
+ITEM CL: 1d4+12 → raw 1 → 13
+
+### Ilvaera — the manticore darts (one roll, the quiver of twenty) · CR 17 · named · archetype hybrid
+TIER: set by CR 17 → Tier 1 — Legendary (router rule: tier is SET, never rolled, when challenge is known)
+RARITY: d100=93 +20 (named) → 99 → Unique
+→ Unique: EXIT the dice pipeline; author per unique-design.md.
+UDRP BASE: Unique 1d16+14 → raw 4 +14 → 18
+ITEM CL: 1d4+12 → raw 2 → 14
+
+### Dace — the short spear (shortspear) · CR 16 · named · archetype hybrid
+TIER: set by CR 16 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=19 +20 (named) → 39 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, hybrid): d100=56 → Utility
+    d100=95 → Chameleon [Utility]
+  POOL (weighted, hybrid): d100=48 → Utility
+    d100=40 → Phasewalk [Utility] | T1 value: 200
+  POOL (weighted, hybrid): d100=53 → Utility
+    pool restriction: Utility already used 2× → reroll pool
+  POOL (weighted, hybrid): d100=92 → Condition/Control
+    d100=29 → Terrifying [Condition/Control] | T1 value: 24
+GREATER CHECK [Chameleon]: d100=66 vs 10% → no
+GREATER CHECK [Phasewalk]: d100=20 vs 10% → no
+GREATER CHECK [Terrifying]: d100=28 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=23 → 1
+  TEMPER 1: d10=7 → family G Curse/Control; entry d10=5 → read references/affix-families.md Part 3 (23G)
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [3] +2 → 5
+ITEM CL: 1d4+12 → raw 3 → 15
+
+### Osmund Tarrow — the brass censer (light flail) · CR 12 · named · archetype divine
+TIER: set by CR 12 → Tier 3 — Heroic (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 2 — Heroic Elite
+RARITY: d100=37 +20 (named) → 57 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, divine): d100=80 → Skill/Class
+    d100=1 → Arcane Amplification [Skill/Class] | T2 value: +2
+  POOL (weighted, divine): d100=44 → Resource
+    d100=54 → Reservoir [Resource] | T2 value: 8
+  POOL (weighted, divine): d100=72 → Skill/Class
+    d100=95 → Wardbreaker [Skill/Class] | T2 value: +4
+  POOL (weighted, divine): d100=5 → Offensive
+    d100=83 → Riposte [Offensive]
+GREATER CHECK [Arcane Amplification]: d100=98 vs 25% → no
+GREATER CHECK [Reservoir]: d100=99 vs 25% → no
+GREATER CHECK [Wardbreaker]: d100=71 vs 25% → no
+GREATER CHECK [Riposte]: d100=69 vs 25% → no
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=6 → family F Minion/Companion; entry d10=6 → read references/affix-families.md Part 3 (23F)
+LEGENDARY ASPECT: d10=9 → table I Corpse/Blood/Death Engine; entry d8=7 → read references/affix-families.md Part 3 (24I)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=9 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [4, 4] +4 → 12
+ITEM CL: 1d4+12 → raw 3 → 15
+
+### Kerra Lisle — the duelling rapier · CR 14 · named · archetype arcane
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=76 +20 (named) → 96 → Unique
+→ Unique: EXIT the dice pipeline; author per unique-design.md.
+UDRP BASE: Unique 1d16+14 → raw 12 +14 → 26
+ITEM CL: 1d4+12 → raw 2 → 14
+
+### Wenna Sorrel — the short hatchet (handaxe) · CR 14 · named · archetype arcane
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=34 +20 (named) → 54 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, arcane): d100=33 → Resource
+    d100=30 → Mana Leech [Resource] | T1 value: 8
+  POOL (weighted, arcane): d100=9 → Offensive
+    d100=29 → Rapid Assault [Offensive]
+  POOL (weighted, arcane): d100=50 → Utility
+    d100=19 → Skillmaster [Utility] | T1 value: +6
+GREATER CHECK [Mana Leech]: d100=59 vs 10% → no
+GREATER CHECK [Rapid Assault]: d100=69 vs 10% → no
+GREATER CHECK [Skillmaster]: d100=48 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=80 → 0
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [1] +2 → 3
+ITEM CL: 1d4+12 → raw 4 → 16
+
+### Faelith Ammarin — the darkwood tower shield (armor; bashed) · CR 14 · named · archetype martial
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=43 +20 (named) → 63 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=28 → Defensive
+    d100=55 → Second Wind [Defensive]
+  POOL (weighted, martial): d100=46 → Resource
+    d100=85 → Overcharge [Resource]
+  POOL (weighted, martial): d100=50 → Resource
+    d100=66 → Souldrinker [Resource] | T1 value: 20
+  POOL (weighted, martial): d100=9 → Offensive
+    d100=23 → Armor Piercing [Offensive] | T1 value: 10
+GREATER CHECK [Second Wind]: d100=88 vs 25% → no
+GREATER CHECK [Overcharge]: d100=12 vs 25% → GREATER
+GREATER CHECK [Souldrinker]: d100=12 vs 25% → GREATER
+GREATER CHECK [Armor Piercing]: d100=69 vs 25% → no
+  → apply Section 20 conversion ladder to: Overcharge, Souldrinker
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=8 → family H Critical/Precision; entry d10=5 → read references/affix-families.md Part 3 (23H)
+LEGENDARY ASPECT: d10=9 → table I Corpse/Blood/Death Engine; entry d8=6 → read references/affix-families.md Part 3 (24I)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=13 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [2, 3] +4 → 9
+ITEM CL: 1d4+12 → raw 2 → 14
+
+### Patience Haskett — the two-headed flail (dire flail) · CR 13 · named · archetype martial
+TIER: set by CR 13 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=10 +20 (named) → 30 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=65 → Skill/Class
+    d100=94 → Wardbreaker [Skill/Class] | T1 value: +6
+  POOL (weighted, martial): d100=58 → Utility
+    d100=53 → Pack Mule [Utility] | T1 value: +6
+  POOL (weighted, martial): d100=87 → Elemental
+    d100=70 → Prismatic [Elemental] | T1 value: +2d8
+GREATER CHECK [Wardbreaker]: d100=99 vs 10% → no
+GREATER CHECK [Pack Mule]: d100=47 vs 10% → no
+GREATER CHECK [Prismatic]: d100=28 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=14 → 1
+  TEMPER 1: d10=9 → family I Blood/Shadow/Death; entry d10=9 → read references/affix-families.md Part 3 (23I)
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [1] +2 → 3
+ITEM CL: 1d4+12 → raw 2 → 14
+
+### Rhun Talbridge — the pollaxe (halberd) · CR 13 · named · archetype martial
+TIER: set by CR 13 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=53 +20 (named) → 73 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=72 → Skill/Class
+    d100=91 → Wardbreaker [Skill/Class] | T1 value: +6
+  POOL (weighted, martial): d100=5 → Offensive
+    d100=11 → Wounding [Offensive] | T1 value: +3d6
+  POOL (weighted, martial): d100=60 → Utility
+    d100=52 → Pack Mule [Utility] | T1 value: +6
+  POOL (weighted, martial): d100=82 → Skill/Class
+    d100=64 → Weapon Mastery [Skill/Class] | T1 value: +2
+GREATER CHECK [Wardbreaker]: d100=63 vs 25% → no
+GREATER CHECK [Wounding]: d100=13 vs 25% → GREATER
+GREATER CHECK [Pack Mule]: d100=94 vs 25% → no
+GREATER CHECK [Weapon Mastery]: d100=20 vs 25% → GREATER
+  → apply Section 20 conversion ladder to: Wounding, Weapon Mastery
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=2 → family B Elemental Augment; entry d10=8 → read references/affix-families.md Part 3 (23B)
+LEGENDARY ASPECT: d10=6 → table F Summon Alteration; entry d8=6 → read references/affix-families.md Part 3 (24F)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=1 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [3, 2] +4 → 9
+ITEM CL: 1d4+12 → raw 1 → 13
+
+### Edwyn Coldry — the mail mitten (spiked gauntlet) · CR 13 · named · archetype arcane
+TIER: set by CR 13 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=40 +20 (named) → 60 → Legendary
+AFFIX COUNT: Legendary → 4 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, arcane): d100=68 → Skill/Class
+    d100=50 → Trapsmith [Skill/Class] | T1 value: +6
+  POOL (weighted, arcane): d100=25 → Resource
+    d100=64 → Souldrinker [Resource] | T1 value: 20
+  POOL (weighted, arcane): d100=95 → Condition/Control
+    d100=16 → Binding [Condition/Control] | T1 value: 23
+  POOL (weighted, arcane): d100=15 → Defensive
+    d100=53 → Shield Wall [Defensive] | T1 value: +4
+GREATER CHECK [Trapsmith]: d100=90 vs 25% → no
+GREATER CHECK [Souldrinker]: d100=7 vs 25% → GREATER
+GREATER CHECK [Binding]: d100=7 vs 25% → GREATER
+GREATER CHECK [Shield Wall]: d100=57 vs 25% → no
+  → apply Section 20 conversion ladder to: Souldrinker, Binding
+TEMPER SLOTS: Legendary → 1
+  TEMPER 1: d10=4 → family D Resource; entry d10=8 → read references/affix-families.md Part 3 (23D)
+LEGENDARY ASPECT: d10=6 → table F Summon Alteration; entry d8=8 → read references/affix-families.md Part 3 (24F)
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: d20=12 → quality band per Section 21 (capstone at 20: one non-Greater affix → Greater)
+UDRP BASE: Legendary 2d4+4 → raw [2, 1] +4 → 7
+ITEM CL: 1d4+12 → raw 1 → 13
+
+### Ashavel Oriym — the iron war-fans (one roll, the pair) · CR 14 · named · archetype shadow
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=4 +20 (named) → 24 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, shadow): d100=63 → Utility
+    d100=83 → Trackless [Utility] | T1 value: +20
+  POOL (weighted, shadow): d100=97 → Condition/Control
+    d100=46 → Blinding [Condition/Control] | T1 value: 25
+  POOL (weighted, shadow): d100=97 → Condition/Control
+    d100=96 → Taunt [Condition/Control] | T1 value: 23
+GREATER CHECK [Trackless]: d100=76 vs 10% → no
+GREATER CHECK [Blinding]: d100=68 vs 10% → no
+GREATER CHECK [Taunt]: d100=49 vs 10% → no
+TEMPER SLOTS: Rare 0–1 → d100=42 → 1
+  TEMPER 1: d10=3 → family C Defensive; entry d10=5 → read references/affix-families.md Part 3 (23C)
+LEGENDARY ASPECT: Rare → n/a
+SOCKETS: skipped by rule (rolled 5 Oct 2026, menagerie_socket_rolls.txt)
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare 1d4+2 → raw [2] +2 → 4
+ITEM CL: 1d4+12 → raw 2 → 14

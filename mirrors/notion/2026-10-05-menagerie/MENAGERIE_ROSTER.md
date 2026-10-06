@@ -1070,3 +1070,22 @@ Advantages: Combat Reflexes; Ambidexterity; Trained by a Master; Night Vision 3.
 - **The rune readings for Fal and Mal**: confirm.
 - **Mercy's word of recall:** keyed to the tanners' lane, or to a safe house?
 - **The empty seal, charm, shard and strange sockets** are filled in the signature-item pass, with the affixes, tempers and aspects through loot-engine (that pass skips its socket roll).
+
+---
+
+## Round five (6 Oct 2026): rulings confirmed, signature items
+**Rulings confirmed (Chad):**
+- **Lieutenant's Writ** (R1 extended): Shadow Jump 40 ft/day, shadow to shadow (Su), through Nightwind attunement, for the eight Menagerie lieutenants. *Open:* whether the five Hand seats hold it too. Their blocks predate it.
+- **Fal** (Hadda): +10 on Strength checks. **Mal** (Mercy): a creature hit by the gaff cannot heal by any means until the end of Mercy's next turn.
+- **Mercy's *word of recall*** is keyed to the tanners' lane in Neverwinter, where his family lives. It is now the gaff's built-in cost.
+
+**Signature items:** all 21 pieces went through loot-engine.
+- 4 Uniques, authored: *Come On Then*, *The Quiet Rail*, *The Apology*, *Not Mine*.
+- 10 Legendaries and 7 Rares.
+
+Full cards, stat-block errata and the module manifest are in `MENAGERIE_SIGNATURE_ITEMS.md` (Notion child page *The Menagerie — Signature Items*, `3f1e8214-84b0-8183-9a95-f646f647de07`). The arc manifest is appended on the Affix Registry. Change Log: `3f1e8214-84b0-81ba-a5f1-c3048cc8bbb2`. Nothing here has happened in play.
+
+**Open after round five:**
+- Five readings: the empty-socket contents (seal, charm, shard, strange); the division rule for companion draws; Arcane Amplification on Osmund; Wardbreaker on fighters; Zaheda's notebook in tiger form.
+- **Ysmay's Undeath Covenant** (binding roll): how it got into her sword, and whether she knows.
+- **Edwyn's faith** and **the priestess who ended Quavein's house**, both left open.
