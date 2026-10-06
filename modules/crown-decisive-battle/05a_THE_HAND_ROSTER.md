@@ -71,3 +71,10 @@ The Menagerie, the Veil host of the Blue Hour that the Hand is drawn from, is "s
 ## Ruling (Chad, 6 Oct 2026)
 - **Nym Esharan is a woman**, overriding the rolled "male" (`hand_roster_rolls.json` keeps the raw throw). The rest of the roll stands.
 - **Raising the dead is Nym's personal conviction, not the Storm King's office's law.** She holds that the dead belong to the Root Country and that keeping them there is her office; Lorne and Osmund raise without penalty. See *The Menagerie — Pairings* (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`).
+
+
+---
+
+## Rulings (Chad, 6 Oct 2026: "your choice", append-only)
+- **Durgan's signature item is his short hammer** (Thundering Light Hammer of Distance), and **Lorne's is his splitting staff** (Staff of Divine Wrath). Both were rebased from the rolled heavy crossbow and longsword, with affixes unchanged. Cards: 05b, final errata.
+- **The Stalker suit is medium armour** for armour-category tests. The Strider is light.

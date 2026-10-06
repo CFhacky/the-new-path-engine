@@ -249,3 +249,40 @@ Longsword · Rare · T1 · CL 13
 - ER 6 on a kill. Magic Resistance +4.
 
 *The longsword no longer raises the dead.* Lorne still raises with his spells; the sword now **puts down** the undead and doubles the man who carries it.
+
+
+---
+
+## Errata — 6 Oct 2026 (later still): Durgan and Lorne rebased to their kits (Chad: Claude's call)
+The affixes are unchanged; the bases follow the authored kit. **Retired:** Thundering Heavy Crossbow of Distance, Longsword of Divine Wrath. Lorne's hand crossbow stays unmagicked kit.
+
+### H3. THUNDERING LIGHT HAMMER OF DISTANCE — Durgan Emberlode
+The short hammer he never seems to use · Rare · T1 · CL 14 · *rebased 6 Oct 2026 from a heavy crossbow to his kit (Chad: Claude's call)*
+#### D&D 3.5e
+- **Masterwork light hammer.** 1d4, ×2, bludgeoning; thrown, range increment 20 ft.
+- **Distance:** thrown range increment **40 ft**, double. (Ruling: a thrown weapon counts as a ranged weapon for Distance.)
+- **Thundering (Greater):** on a critical hit, **+1d10 sonic** (base 1d8 at ×2), and the target is **deafened** permanently unless it makes Fort **DC 16** (base 14).
+- **Profane Burst (Magic Item Compendium):** negative energy on a hit while active; on a critical hit, +1d10 (2d10 against good outsiders). Each burst costs Durgan **1d4 Con**.
+- **Temper 23I-9 Blood Pact:** 1/day, spend 25% of his maximum HP to **double one spell's or attack's damage**. A doubled *delayed blast fireball* is the point. (Rerolled twice: Whirlwind and Momentum Crit were rolled against the crossbow; neither suits a sorcerer's hammer either, so the reroll stands.)
+- Market: +3 bonus-equivalent, **18,301 gp**. **UDRP 12.**
+#### GURPS 4e
+- Fine throwing hammer; range ×2. Crushing (sonic) critical rider, plus Deafness.
+- Toxic (cosmic) critical rider, which costs HT. Damage ×2 (HP cost), 1/day.
+
+*Why the hammer.* His kit was authored with a short hammer he never seems to use. Now when he does use it, it thunders: a sorcerer's last-ditch weapon that deafens the casters it touches. The crossbow is gone.
+
+### H4. STAFF OF DIVINE WRATH — Lorne Ashby
+The staff that splits into two short rods · Rare · T1 · CL 13 · *rebased 6 Oct 2026 from a longsword to his kit (Chad: Claude's call)*
+#### D&D 3.5e
+- **Masterwork quarterstaff** (double weapon, 1d6/1d6). It splits into **two short rods** (light clubs, 1d6 each) as a move action and locks back together the same way. The properties sit on the **head rod**; the tail rod is masterwork only.
+- **Divine Wrath (Greater):** as a swift action, spend a turn-undead attempt. If his next hit lands on an undead creature, it deals **+1d8 per point of Charisma bonus** (base 1d6).
+- **Shadow Clone:** at will, a shadow duplicate of himself with **50%** of his statistics. Split, each of them holds a rod.
+- **Souldrinker (parity ruling):** a kill recovers up to **6 spell levels** of expended slots, once per round.
+- **Temper 23C-4 Enduring Ward:** **+4 SR**.
+- **Sockets (kept):** Topaz and two Amethyst (+50 HP), set in the head rod.
+- Market: +1 bonus-equivalent on one end, **2,600 gp**. **UDRP 11.**
+#### GURPS 4e
+- Fine quarterstaff / paired batons. Holy Innate Attack against undead. Duplication (50%).
+- ER 6 on a kill. Magic Resistance +4.
+
+*The staff puts the dead down.* Lorne still raises with his spells; the head rod ends anyone else's dead, and his shadow takes the other rod. It is the staff from Tethford, the man who stepped out of a two-foot rock's shadow. His hand crossbow stays unmagicked kit.
