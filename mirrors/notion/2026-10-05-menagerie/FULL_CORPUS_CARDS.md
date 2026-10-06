@@ -78,6 +78,7 @@ An iron haft wrapped in raven-black cord. The flanged head is dull, and the beak
 ## 2. MINE TO CALL — Hadda Krell
 A duelling hilt with no blade until she wants one · **Unique-grade** (authored on her rolled Legendary draws; Chad, 6 Oct 2026) · T1 · CL 17
 *Replaces The Pointing Trowel. The rolled affixes, temper, aspect, masterwork result and sockets are kept and ride on the hilt. The base is now a permanent* black blade of disaster *(Spell Compendium p. 29), held rather than floating.*
+*Source checked against the book text (Spell Compendium (Premium) extraction, Chad's archive): a 3-ft planar rift; melee touch at base attack bonus + Int; Fort or disintegrated for 2d6/caster level (max 40d6), 5d6 on a save; passes magical barriers of its level or lower, not antimagic or dead magic; harms ethereal and incorporeal creatures as a force effect; touch AC 13; dimensional anchor dispels it, and dispel magic, a sphere of annihilation or a rod of cancellation affect it. The 18–20 threat range and the 1d4-round anchor suppression are this card's rulings, not the spell's.*
 ### D&D 3.5e
 - **The hilt:** blackened steel, a swept guard, Forgedeep guilloche along the lines of force, a sigil filed off the pommel. Empty, it passes any search as a sword with a broken blade.
 - **The blade (Su):** as a free action she opens a **black blade-shaped planar rift**, a slot in the air where the light doesn't go, and closes it the same way.
