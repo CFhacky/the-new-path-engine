@@ -263,3 +263,7 @@ He speaks to everyone in the room as if he has known them for years. For three r
 - Damage breaks the charm only on the creature that took it.
 - **GURPS:** Mind Control (Area 13 yd, charm only) with Truthfulness 1/turn; Neutralize (Magic) each turn; Limited Use 1/day.
 - **After:** they remember everything they said. Brunna's prisoners talk before she gets to them, which is the only way she has ever lost one.
+
+---
+
+**Ruling (Chad, 6 Oct 2026, append-only):** **Nym Esharan is a woman.** This overrides the rolled "elf, male, prime" (Hand roster, 5 Oct). Every earlier "he/his" for Nym, here and on the Hand roster, item cards, releases and pairings, reads as "she/her". The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death.

@@ -310,3 +310,13 @@ Arik doesn't know he has any of them.
 - **Brunna + Teodric:** Old Friends questions the Larder. The pinned answer truthfully while they hang.
 - **Ysmay's medics (unchanged):** Lorne's release does nothing for her, but his *harm* still does.
 - **Nym against Lorne and Osmund:** Eight Vats' year-and-a-day ban is now the sharpest point of the office's quarrel over the dead.
+
+---
+
+**Ruling (Chad, 6 Oct 2026, append-only):** **Nym Esharan is a woman.** This overrides the rolled "elf, male, prime" (Hand roster, 5 Oct). Every earlier "he/his" for Nym, here and on the Hand roster, item cards, releases and pairings, reads as "she/her". The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death.
+
+**Ruling (Chad, 6 Oct 2026): raising is Nym's conviction, not the office's law.** This replaces the "doctrine" reading. Nym believes the dead belong to the Root Country and that keeping them there is *her* office in particular. The Storm King's office has never said so.
+- **No penalty mechanics.** Lorne and Osmund are not heretics and lose nothing for raising. Nym thinks they are stealing, and tells them.
+- **The quarrel stays between three priests**, with nobody above them to settle it: the seat's holder is Arik, who doesn't know he has priests.
+- **Nym enforces it herself.** Yashiori's 24-hour ban and Eight Vats' year-and-a-day ban are her deliberate tools, used on the dead the others would take. She may quietly put down what they raise.
+- **The test comes when Arik learns he has priests.** Whoever he backs on the dead decides whether Nym was the office's voice all along, or one priest with a conviction.

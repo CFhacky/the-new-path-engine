@@ -1114,3 +1114,13 @@ How the host's **spells** and **releases** combine across the field:
 Orders: a captain orders their own lieutenant; cross-division pairings take Lirien; rival pairings take Arik.
 
 Full set: `MENAGERIE_PAIRINGS.md` (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`). Change Log: `3f1e8214-84b0-8156-82ed-ff40bbbcae69`. Nothing here has happened in play.
+
+---
+
+**Ruling (Chad, 6 Oct 2026, append-only):** **Nym Esharan is a woman.** This overrides the rolled "elf, male, prime" (Hand roster, 5 Oct). Every earlier "he/his" for Nym, here and on the Hand roster, item cards, releases and pairings, reads as "she/her". The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death.
+
+**Ruling (Chad, 6 Oct 2026): raising is Nym's conviction, not the office's law.** This replaces the "doctrine" reading. Nym believes the dead belong to the Root Country and that keeping them there is *her* office in particular. The Storm King's office has never said so.
+- **No penalty mechanics.** Lorne and Osmund are not heretics and lose nothing for raising. Nym thinks they are stealing, and tells them.
+- **The quarrel stays between three priests**, with nobody above them to settle it: the seat's holder is Arik, who doesn't know he has priests.
+- **Nym enforces it herself.** Yashiori's 24-hour ban and Eight Vats' year-and-a-day ban are her deliberate tools, used on the dead the others would take. She may quietly put down what they raise.
+- **The test comes when Arik learns he has priests.** Whoever he backs on the dead decides whether Nym was the office's voice all along, or one priest with a conviction.
