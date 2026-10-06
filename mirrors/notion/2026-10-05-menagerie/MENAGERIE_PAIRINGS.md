@@ -212,3 +212,90 @@ Four captains clash with Brunna. Each of their releases takes her pinned away be
 ## Open
 - **The Hand's casters** (Lorne, Nym, Durgan, Teodric) are not paired here. Their seats sit in Divisions IV–VIII, and they would pair with Aerendyl, Kesh, Marit, Naevys and Brunna.
 - **Naevys and Ysmay** is not on the rolled rival web. The sunburst pairing is a hook, not an assertion.
+
+---
+
+# 5. THE HAND'S CASTERS (appended 6 Oct 2026)
+
+**Where their spells were.** Nowhere: the Hand's stats were deferred to Crown Decisive Battle Phase 6 and never built. Each casting line below is the **class at its rolled level, with domains as ruled** (the Storm King's office grants Trickery and Death). That is the same method used for the Menagerie lieutenants' lists. **Save DCs are left open**: they need the ability scores, which Phase 6 sets. Lists are flagged as the Phase 6 seed, for Chad to confirm.
+
+<table header-row="true">
+<tr><td>Hand member · seat</td><td>Art · caster level</td><td>Spells (to 7th level)</td></tr>
+<tr><td>Nym Esharan · Lt VII (Naevys)</td><td>Cleric 14, Trickery/Death · CL 14</td><td>Domain: <em>disguise self, invisibility, nondetection, confusion, false vision, mislead, screen</em> / <em>cause fear, death knell, animate dead, death ward, slay living, create undead, destruction</em>. Core: <em>silence, dispel magic, greater command, harm, heal, blade barrier</em>. The trickster of the two: confusion, screens and false trails, which matches Yashiori's confusion on hit.</td></tr>
+<tr><td>Lorne Ashby · Lt IV (Aerendyl)</td><td>Cleric 13, Trickery/Death · CL 13</td><td>Same domains. Core: <em>prayer, dispel magic, freedom of movement, harm, heal, control undead</em>. The dead-handler of the two: he raises with <em>animate dead</em>, <em>create undead</em> and the Undead Servitor longsword (12 HD, 24 hours), and keeps them with <em>control undead</em>.</td></tr>
+<tr><td>Teodric Halvane · Lt VIII (Brunna)</td><td>Wizard 14, enchanter · CL 14</td><td><em>charm monster, modify memory, dominate person, mass suggestion, geas/quest, greater heroism, insanity, power word stun, greater dispel magic, dimension door, shield</em>. The sword's at-will Overcharge maximises his spells' dice.</td></tr>
+<tr><td>Durgan Emberlode · Lt VI (Marit)</td><td>Sorcerer 14, draconic (fire) · CL 14</td><td>Known: <em>scorching ray, fireball, haste, fire shield, wall of fire, cone of cold, chain lightning, disintegrate, delayed blast fireball, dimension door, shield</em>. The crossbow's Souldrinker recovers 6 spell levels on a kill.</td></tr>
+</table>
+
+Ivrael Quillatar (Lt V, Kesh) is a fighter and casts nothing. He's paired below because his axe's **Despair** aspect is built for the priests.
+
+**The Hand has no releases.** The round-six releases went to the 13 captains and the 8 new lieutenants. The Hand's five hold the same rank and have none. **Open:** whether they get lesser releases too. Jin's orders win on Hand operations.
+
+## 5a. Captain and Hand lieutenant
+
+### IV. Aerendyl + Lorne — *What Long Road Breaks, Lorne Keeps*
+- **Spells:** Lorne's *death ward* and *freedom of movement* go on Aerendyl before contact.
+- **With the release:** whatever Long Road crushes, Lorne raises inside the quake: the Undead Servitor's 12 HD corpse, then *animate dead* on the rest. Every dead thing he raises fights from the ground Aerendyl owns.
+- **From across the field:** a barefoot elf holding a gatehouse, and the people it fell on getting up again.
+
+### V. Kesh + Ivrael — *Despair at Ten Paces* (no caster)
+- Ivrael's axe: a creature it strikes **while frightened** cannot receive magical healing until the fear ends.
+- Kesh has no fear source, so the Hand's priests supply it (5c). Inside ten paces the sickles hook the target prone and Ivrael's axe finds it there.
+
+### VI. Marit + Durgan — *The Quarry Arrives on a Fire*
+- **With the release:** Durgan casts *delayed blast fireball* where Marit stands, timed to go off when the hounds bring her quarry (up to 5 rounds). The quarry comes through every wall on the plane and lands on it.
+- **Spells:** Marit's *obscuring mist* and *greater invisibility* give her the three unseen rounds her death attack needs. Durgan's *wall of fire* holds the target's friends back.
+- **From across the field:** hounds, a scream from somewhere far off that is suddenly here, then fire.
+
+### VII. Naevys + Nym — *The Confused Line*
+- **Spells:** Nym's *confusion* lands on the enemy line before the Charge. Confused creatures can't coordinate a counter-spell against her maximised area spell.
+- **With the release:** confused creatures can't get out of the Hunt's path; a confused target that rolls "act normally" still moves only by the confusion table. Nym's *screen* hides which line the Hunt will take.
+- **Friction inside the division:** Yashiori's Root Country stops the slain being animated for 24 hours. Nym's kills are the one thing Lorne and Osmund can't raise.
+
+### VIII. Brunna + Teodric — *The Larder Talks*
+- **The problem:** Brunna kills prisoners if it's cleaner, and Lirien has stopped giving her capture jobs.
+- **The pairing:** Teodric casts *dominate person* or *modify memory* on someone pinned in the Larder. The pinned answer his questions before she finishes them, and the Veil gets its interrogation without a prisoner.
+- **His sword:** its dispelling stroke takes the wards off whoever she's pinned.
+- **From across the field:** a dwarf waiting with a spike, and a grey-templed man talking quietly to someone nailed to a door.
+
+## 5b. The Storm King's priests
+The office now has **four priests in the host:**
+- **Quavein** (War/Water), the warrior face.
+- **Osmund, Nym and Lorne** (all Trickery/Death).
+
+Arik doesn't know he has any of them.
+- **Ysmay's medics.** Osmund, Nym and Lorne all carry *harm*, and each one heals Ysmay through the Covenant (CL 12 / 14 / 13: 120 / 140 / 130). Quavein's *heal* is the one that hurts her.
+- **Raising versus the Root Country.** Lorne and Osmund raise the dead (Undead Servitor, Death Knight, *create undead*). Nym's Yashiori forbids it on his kills for 24 hours. **The same office argues with itself** over whether the dead belong to the field or to the Root Country.
+- **Four priests at once.** If all four stand in one fight:
+	- Quavein's Gale carries the funeral smoke.
+	- Nym confuses the line.
+	- Lorne and Osmund raise what drops, except Nym's kills.
+
+## 5c. Across the host
+### Nym or Lorne + Ivrael — *Despair*
+- Either priest's *cause fear* (or Nym's *confusion*, used to break formation) sets up Ivrael's axe: a frightened target the axe strikes cannot be magically healed.
+- Add Dace's Terrifying (DC 24, 27 within his aura) and the whole front rank can be frightened and unhealable at once.
+
+### Teodric + Wenna + Edwyn — *The Table of Three*
+- Edwyn's *mind fog*: −10 on Will saves.
+- Then two enchanters at caster level 14:
+	- Teodric's *dominate person* or *insanity* (maximised dice from his sword where they matter);
+	- Wenna's *feeblemind* or *mass suggestion*.
+- Three lieutenants can take a captain, or a court, off the board.
+
+### Durgan + Hadda — *Fire in the Cage*
+- Hadda's windowless *forcecage* (or a *wall of force* box) seals the target in.
+- Durgan's *delayed blast fireball* goes in before the last wall closes. There is nowhere for the blast or the target to go.
+
+### Durgan + Mercy — *Steam* (they ruin each other)
+- Fire goes out in the Reef. Durgan's best spells do nothing inside Mercy's black water, and the boiling-point edge of the sphere scalds his own side.
+- They are not rivals on the rolled web. This is the elemental friction for Phase 6 to play with.
+
+### Lorne + Ysmay — *The Watch's Second Medic*
+- Lorne's *harm* (130) keeps Ysmay standing when Osmund is in another division's fight.
+- With Rhun's Stand Watch and her deferred damage, the Division XI fight runs 10 rounds with Ysmay at full strength.
+
+## Open (Hand)
+- **The four casting lines** above are the Phase 6 seed, for Chad to confirm. DCs follow once Phase 6 sets the ability scores.
+- **Hand releases:** yes or no.
+- **Raising versus the Root Country:** is it doctrine inside the office, or just friction between the priests?
