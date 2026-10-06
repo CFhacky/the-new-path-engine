@@ -14,7 +14,7 @@ mistaken for 3.5e RAW.
                                           PDF page; each stamped system D&D 5e
     reference/dnd5e_creature_index.md    — the same, for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY
 packet — a 5e block the system-translator skill converts to the 3.5e + GURPS
 pair (BOTH still required in the output, per that skill's rule).
 
@@ -25,7 +25,7 @@ WORKFLOW
     python dnd5e_creature_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\D&D 5e\\ — the 5e bestiaries (Blood War Bestiary,
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\D&D 5e\\ — the 5e bestiaries (Blood War Bestiary,
     Dante's Guide to Hell, Xanathar's Enemies and Allies, The Book of Hordes).
     A 5e stat block is a NAME line, then "Size type, alignment", then "Armor
     Class N", "Hit Points N (…)", "Speed …", the six ability scores, and
@@ -49,7 +49,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "dnd5e_creature_index.json"
 OUT_MD = REPO / "reference" / "dnd5e_creature_index.md"

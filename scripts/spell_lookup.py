@@ -9,7 +9,7 @@ GOVERNING SOURCES:
        srd35-md transcription of the official SRD).
     2. Spell Compendium (Premium) — supplemental spells, parsed LIVE from
        the local text extraction:
-       I:\\Sourcebooks\\_md\\Spell_Compendium.md
+       D:\\Backup\\I-drive\\Sourcebooks\\_md\\Spell_Compendium.md
        (override with --compendium PATH; skipped if the file is absent).
 
 DESIGN CONTRACT (repo README):
@@ -35,7 +35,7 @@ import re
 import sys
 from typing import Dict, List, Optional
 
-DEFAULT_COMPENDIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
+DEFAULT_COMPENDIUM = r"D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 SRD_JSON = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         "spells_srd35.json")
 

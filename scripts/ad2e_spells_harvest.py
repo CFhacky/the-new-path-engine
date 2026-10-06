@@ -13,7 +13,7 @@ and the 5e `dnd5e_spell_index`. Every row is stamped `"system": "AD&D 2e"`.
     reference/ad2e_spell_index.md   — the same, for human eyes
 
 GOVERNING SOURCES
-    AD&D 2e books with NEW spell lists on `I:\\Sourcebooks\\_text\\AD&D\\` —
+    AD&D 2e books with NEW spell lists on `D:\\Backup\\I-drive\\Sourcebooks\\_text\\AD&D\\` —
     Menzoberranzan, Drow of the Underdark (FOR2), Elves of Evermeet (FOR5),
     Giantcraft (FOR7). Each spell is a "Nth-Level Spell" header, a NAME (School)
     line, then the fields — either inline ("Range: 40 yards") or as an alternating
@@ -38,7 +38,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "ad2e_spell_index.json"
 OUT_MD = REPO / "reference" / "ad2e_spell_index.md"

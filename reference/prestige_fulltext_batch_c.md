@@ -1,6 +1,6 @@
 # Prestige-Class Full Text — Batch C
 
-Source: `I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
+Source: `D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
 
 Scope: canonical prestige-class ordinals 74–109. Only complete, visually verified rules blocks may be added below. Article sidebars, running furniture, folios, advertisements, illustration captions, and neighboring-class prose are excluded, except that the Acolyte of the Fist must retain the class-invoked `FISTS OF IRON` box.
 

@@ -5,7 +5,7 @@ rerun the harvest.** One row per GURPS *3rd-edition* magic item — the 3e
 Magic Items books (prose entries with a `Component Spells:` /
 `Asking Price:` footer), kept SEPARATE from the D&D `magic_item_index`.
 Every row is tagged `system = "GURPS 3e"` so the translator tools know
-which edition they are reading. The raw text stays on `I:\Sourcebooks` —
+which edition they are reading. The raw text stays on `D:\Backup\I-drive\Sourcebooks` —
 use `--export "NAME"` for the translator-ready packet.
 
 `Component Spells` are the prerequisite enchantments needed to make the

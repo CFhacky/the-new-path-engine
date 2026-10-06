@@ -16,13 +16,13 @@ this index is character-clean.
     reference/gurps_technique_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Martial Arts - Techniques
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Martial Arts - Techniques
     Cheat Sheet.md — the Techniques Table, a column-dump: NAME, Difficulty (A/H/
     H+2/H+3), Prerequisite, Default, Maximum, Damage (may wrap several lines),
     Page. A row begins after the preceding Page cell; all non-furniture lines
     up to the bare difficulty cell (A / H / H+2 / H+3) form the possibly wrapped
     name. The first following bare integer is its Martial Arts page.
-    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Martial Arts.md
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Martial Arts.md
     supplies each complete, exact description. Native GURPS 4e; Martial Arts
     (Dell'Orto & Punch) is the court of appeal for all full text.
 """
@@ -44,7 +44,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps_technique_index.json"
 OUT_MD = REPO / "reference" / "gurps_technique_index.md"

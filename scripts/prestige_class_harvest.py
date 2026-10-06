@@ -6,7 +6,7 @@ SOURCE ROUTING. The compiled 355-page PDF is a scan: 321 pages have no
 text layer and the remaining ~34 carry corrupt text. Its page images remain the
 visual authority for the canonical name, Hit Die, requirements, and compiled
 page citation. Full-text recovery, however, must route by the explicit Dragon
-issue on each row through I:\\Sourcebooks\\_ocr_manifest.json. The manifest's
+issue on each row through D:\\Backup\\I-drive\\Sourcebooks\\_ocr_manifest.json. The manifest's
 per-issue output path is authoritative; the resolver derives skipped_has_text
 fallbacks from manifest peer-output directories and never assumes one global
 _md or _text directory. The sparse compiled Markdown export is forbidden when

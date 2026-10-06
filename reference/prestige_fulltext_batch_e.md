@@ -1,6 +1,6 @@
 # Prestige-Class Full Text — Batch E
 
-Visual authority: `I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
+Visual authority: `D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
 
 Scope: seven OCR-first recoveries verified against the compiled page images. Only complete class-owned rules blocks are retained; advertisements, captions, pull quotes, sidebars, running furniture, and neighboring-class prose are excluded.
 

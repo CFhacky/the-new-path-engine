@@ -16,7 +16,7 @@ so it gets its own detector and its own index.
     reference/gurps_skill_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md
     — the Skills portion of the Trait Lists appendix. A skill row is a NAME line,
     then the columns one per line: Attr (the controlling attribute), Diff (the
     difficulty letter), then the Defaults cell and the Page cell interleaved. The
@@ -43,7 +43,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps_skill_index.json"
 OUT_MD = REPO / "reference" / "gurps_skill_index.md"

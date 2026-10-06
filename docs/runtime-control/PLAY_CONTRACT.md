@@ -14,7 +14,7 @@ Use this order whenever sources disagree:
 
 1. **Chad's current instruction.**
 2. **Live Notion authority:** Campaign Router, Campaign Lane Router, lane boot/current-state page, Canon Change Log, current session prompt or recovery boot, and relevant entity pages.
-3. **The verified vault mirror** at `I:\ARCHIVIST OF BAEN\Canon\`, but only after checking that the mirrored page is not older than the controlling Notion page or Canon Change Log entry.
+3. **The verified vault mirror** at `D:\Backup\I-drive\ARCHIVIST OF BAEN\Canon\`, but only after checking that the mirrored page is not older than the controlling Notion page or Canon Change Log entry.
 4. **Ratified skills and protocol pages** for procedure.
 5. **The New Path Engine** for deterministic mechanics, validation, and this operating contract.
 6. **Dated GitHub mirrors, transcripts, uploaded files, pasted documents, and chat archives** as evidence only.

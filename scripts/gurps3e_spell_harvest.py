@@ -18,7 +18,7 @@ stamped `system = "GURPS 3e"`.
                                          prerequisites, item)
     reference/gurps3e_spell_index.md   — the same index for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY packet
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY packet
 (verbatim block + provenance + parsed fields). The GURPS-3e half is native; the
 system-translator skill builds the paired D&D 3.5e (and 4e) treatments.
 
@@ -28,7 +28,7 @@ WORKFLOW
     python gurps3e_spell_harvest.py --export "Fireball"
     python gurps3e_spell_harvest.py --selftest
 
-GOVERNING SOURCES  (I:\\Sourcebooks\\_text\\GURPS\\GURPS 3E\\)
+GOVERNING SOURCES  (D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 3E\\)
     A GURPS 3e spell is a Title-Case NAME line, then its CLASS on its own line —
     a bare class word ("Regular", "Missile", ...) OR a class word plus a "; "
     resistance clause the 3e books print ("Regular; Resisted by IQ", "Area;
@@ -64,7 +64,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps3e_spell_index.json"
 OUT_MD = REPO / "reference" / "gurps3e_spell_index.md"
@@ -372,7 +372,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "system (class / resistance / cost / casting time / prerequisites), kept",
         "SEPARATE from the 4e `gurps_spell_index` and from the D&D `spell_index`.",
         f"Every row is tagged `system = \"{SYSTEM}\"` so the translator tools know",
-        "which edition they are reading. The raw text stays on `I:\\Sourcebooks` —",
+        "which edition they are reading. The raw text stays on `D:\\Backup\\I-drive\\Sourcebooks` —",
         "use `--export \"NAME\"` for the translator-ready packet.",
         "",
         "A field left as `—` is one the OCR did not cleanly yield; `resist` is the",
@@ -439,7 +439,7 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
                 "treatments. 3e prints the resistance on the class line ('Regular; "
                 "Resisted by IQ') and rates spells Hard by default (a '(VH)' marks "
                 "Very Hard). The raw_block is OCR text — check oddities against the "
-                "source PDF on I:\\Sourcebooks."
+                "source PDF on D:\\Backup\\I-drive\\Sourcebooks."
             ),
             "name": sp.name,
             "system": SYSTEM,

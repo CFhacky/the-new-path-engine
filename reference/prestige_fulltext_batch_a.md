@@ -1,6 +1,6 @@
 # Prestige-Class Full Text — Batch A
 
-Source: `I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
+Source: `D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
 
 Scope: canonical prestige-class ordinals 1–37. Only the complete, visually verified rules blocks below are accepted. Article sidebars, running furniture, folios, captions, and neighboring-class prose are excluded.
 

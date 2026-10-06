@@ -5,7 +5,7 @@ rerun the harvest.** One row per GURPS *3rd-edition* creature — the 3e
 attribute block (ST/DX/IQ/HT, Speed-or-Move/Dodge, PD/DR), kept SEPARATE
 from the 4e `gurps_creature_index`. Every row is tagged
 `system = "GURPS 3e"` so the translator tools know which edition they are
-reading. The raw text stays on `I:\Sourcebooks` — use `--export "NAME"`
+reading. The raw text stays on `D:\Backup\I-drive\Sourcebooks` — use `--export "NAME"`
 for the translator-ready packet. A field left as `—` is one the OCR did
 not cleanly yield; PD is the 3e-only passive defense; a compound `HT` like
 `12/20-26` is HT / hit-points as the book prints it.

@@ -18,7 +18,7 @@ Only War, Black Crusade).
     reference/wh40krp_psychic_index.md   — the same, for human eyes
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the five core rulebooks,
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the five core rulebooks,
     each with a Psychic Powers / Psychic Techniques chapter. THREE stat-block
     formats coexist and each gets its own detector:
 
@@ -106,7 +106,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wh40krp_psychic_index.json"
 OUT_MD = REPO / "reference" / "wh40krp_psychic_index.md"

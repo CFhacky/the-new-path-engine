@@ -1,6 +1,6 @@
 # Wargame scan and CMap feasibility
 
-Verified 2026-08-30 against the PDFs under `I:\Sourcebooks\Warhammer`.
+Verified 2026-08-30 against the PDFs under `D:\Backup\I-drive\Sourcebooks\Warhammer`.
 This is mechanics-source analysis only; it contains no campaign canon.
 
 ## Explicit backlog inventory

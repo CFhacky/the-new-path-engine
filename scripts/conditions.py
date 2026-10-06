@@ -5,10 +5,10 @@ The New Path campaign engine (the-new-path-engine)
 
 GOVERNING SOURCES (read, not memory):
     Dungeon Master's Guide 3.5, Chapter 8 Glossary, "Condition Summary",
-    pp. 300-301  (I:\\Sourcebooks\\_md\\Dungeon_Masters_Guide_3.5.md,
+    pp. 300-301  (D:\\Backup\\I-drive\\Sourcebooks\\_md\\Dungeon_Masters_Guide_3.5.md,
     PDF pages 301-302 of the transcription)
     D&D 3.5 DM Screen, "Armor Class Modifiers (PH page 151)" panel
-    (I:\\Sourcebooks\\_md\\DM_Screen.md, PDF page 5) — supplies the melee/ranged
+    (D:\\Backup\\I-drive\\Sourcebooks\\_md\\DM_Screen.md, PDF page 5) — supplies the melee/ranged
     AC-modifier cross-check table and the two screen-only rows
     (Kneeling or Sitting, Squeezing Through a Space).
 

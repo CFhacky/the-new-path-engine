@@ -20,7 +20,7 @@ WORKFLOW
     python dnd5e_item_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\D&D 5e\\ — the 5e item books (Mordenkainen's Tome
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\D&D 5e\\ — the 5e item books (Mordenkainen's Tome
     of Marvelous Magic, Baldur's Gate: Items and Encounters, Treasures of
     Avernus, Drizzt's Travelogue, etc.). A 5e item is a NAME line then a type
     line: "Wondrous item, rare (requires attunement)" / "Weapon (any sword),
@@ -44,7 +44,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "dnd5e_item_index.json"
 OUT_MD = REPO / "reference" / "dnd5e_item_index.md"

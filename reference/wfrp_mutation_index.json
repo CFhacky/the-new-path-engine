@@ -2,7 +2,7 @@
  "generated_by": "scripts/wfrp_mutation_harvest.py",
  "system": "WFRP",
  "edition": "WFRP 2e",
- "corpus": "I:\\Sourcebooks\\_text",
+ "corpus": "D:\\Backup\\I-drive\\Sourcebooks\\_text",
  "description": "WFRP 2e Chaos mutations and Gifts of the Chaos Gods (plus in-file Vampire blood gifts). One row per table entry, with RAW mechanical effect text. DISTINCT from wfrp_creature_index (creature profiles).",
  "total_rows": 505,
  "by_kind": {

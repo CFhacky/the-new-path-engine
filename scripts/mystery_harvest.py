@@ -12,7 +12,7 @@ Outputs:
     reference/mystery_index.md
 
 Governing source:
-    I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md
+    D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md
     Shadow Magic mystery descriptions, PDF pages 142-154. Five exact floating
     illustration blocks are excluded from export/Codex delivery only after
     same-page verification; the entry prose remains untouched.
@@ -33,7 +33,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "mystery_index.json"
 OUT_MD = REPO / "reference" / "mystery_index.md"

@@ -9,9 +9,9 @@ and page — never guessed.** Where a garbled entry cannot be resolved from the
 source with certainty, it is FLAGGED below, not invented.
 
 **Two kinds of repair:**
-1. **Source OCR fix** — the extraction `.md` on `I:\Sourcebooks` had a garbled
+1. **Source OCR fix** — the extraction `.md` on `D:\Backup\I-drive\Sourcebooks` had a garbled
    name line; the line was corrected in place (verify-then-replace), so every
-   future harvest of that book is clean. Logged here because `I:\Sourcebooks`
+   future harvest of that book is clean. Logged here because `D:\Backup\I-drive\Sourcebooks`
    is not version-controlled; this log is the record and the re-apply list if a
    book is ever re-OCR'd.
 2. **Detector fix** — the name was fine in the source but the harvest script
@@ -22,7 +22,7 @@ source with certainty, it is FLAGGED below, not invented.
 
 ## 2026-08-27 — Expanded Psionics Handbook (source OCR fixes)
 
-File: `I:\Sourcebooks\_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Player Options\Expanded Psionics Handbook.md`
 Nine power NAME lines were OCR-mangled. Each corrected to the true power,
 verified from the block's own class / level / description:
 
@@ -52,8 +52,8 @@ non-feat rows from `feat_index` (1253 → 1244) with no loss of real feats.
 
 Files:
 
-- `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`
-- `I:\Sourcebooks\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.pdf`
+- `D:\Backup\I-drive\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`
+- `D:\Backup\I-drive\Sourcebooks\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.pdf`
 
 The Trait Lists repeat the singular word `Advantage` as a *column heading* on
 both the ADVANTAGES and DISADVANTAGES pages. The old detector treated every
@@ -72,7 +72,7 @@ positive-side rows remain. Every affected cost stays the book's printed
 
 ## 2026-08-29 — GURPS Basic Set skill roster (detector fixes, no source edit)
 
-File: `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Basic Set - Characters.md`
 
 Four Trait Lists rows put the second half of the skill name *after* the Page
 cell. The old detector therefore indexed a truncated name, lost the `/TL` flag,
@@ -93,7 +93,7 @@ tech-level skills.
 
 ## 2026-08-29 — Epic Level Handbook epic feats (derived OCR source)
 
-File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-feats.ocr-columns.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-feats.ocr-columns.md`
 
 This is reproducible source generation, not a hand-repair of body text.
 `epic_feat_harvest.py --extract-source` renders ELH pp.50-69 at 4× and OCRs
@@ -109,7 +109,7 @@ They remain explicit `NO COVERAGE`; no OCR body value was guessed or repaired.
 
 ## 2026-08-29 — Epic Level Handbook epic items (derived OCR source)
 
-File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-items.ocr-columns.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-items.ocr-columns.md`
 
 This is reproducible source generation, not hand-repaired body text.
 `epic_item_harvest.py --extract-source` renders ELH pp.126-146 at 4× and OCRs
@@ -122,7 +122,7 @@ records the generated file's SHA-256; no OCR mechanic was guessed or rewritten.
 
 ## 2026-08-29 — Epic Level Handbook epic spells (derived OCR source)
 
-File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-spells.ocr-columns.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-spells.ocr-columns.md`
 
 This is reproducible source generation, not hand-repaired body text.
 `epic_spell_harvest.py --extract-source` renders ELH pp.74-88 and 92-102 at 4×
@@ -136,7 +136,7 @@ rewritten.
 
 ## 2026-08-29 — Epic Level Handbook epic monsters (derived OCR source)
 
-File: `I:\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-monsters.ocr-columns.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-monsters.ocr-columns.md`
 
 This is reproducible source generation, not hand-repaired body text.
 `epic_monster_harvest.py --extract-source` renders ELH pp.158-230 at 4× and
@@ -150,7 +150,7 @@ SHA-256, which the JSON index records; no OCR mechanic was guessed or repaired.
 
 ## 2026-08-29 — GURPS Martial Arts cheat-sheet wrapped names (parser repair)
 
-File: `I:\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Martial Arts - Techniques Cheat Sheet.md`
+File: `D:\Backup\I-drive\Sourcebooks\_text\GURPS\GURPS 4e\GURPS 4e - Martial Arts - Techniques Cheat Sheet.md`
 
 No source text was edited. The born-digital table dumps several technique names
 over two or three lines, but the old detector treated only the line immediately

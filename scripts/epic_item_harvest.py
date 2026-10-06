@@ -82,10 +82,10 @@ if sys.platform == "win32":
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "epic_item_index.json"
 OUT_MD = REPO / "reference" / "epic_item_index.md"
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 SOURCE_REL = Path(r"D&D 3.5e\DM Toolkits\Epic Level Handbook.epic-items.ocr-columns.md")
 SOURCE = CORPUS / SOURCE_REL
-PDF_SOURCE = Path(r"I:\Sourcebooks\D&D 3.5e\DM Toolkits\Epic Level Handbook.pdf")
+PDF_SOURCE = Path(r"D:\Backup\I-drive\Sourcebooks\D&D 3.5e\DM Toolkits\Epic Level Handbook.pdf")
 TESSERACT = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
 BOOK = "Epic Level Handbook"
 CITATION = (

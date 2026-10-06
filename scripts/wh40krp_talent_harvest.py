@@ -23,7 +23,7 @@ WORKFLOW
     python wh40krp_talent_harvest.py --export "Quick Draw" --book dh
     python wh40krp_talent_harvest.py --selftest
 
-GOVERNING SOURCES  (I:\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\)
+GOVERNING SOURCES  (D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\)
     Each core rulebook carries a "Talents" chapter. The books split into two
     presentation families, so a talent is read from whichever layer is CLEANEST
     per book (book RAW either way — the same talent, just a different column):
@@ -66,7 +66,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wh40krp_talent_index.json"
 OUT_MD = REPO / "reference" / "wh40krp_talent_index.md"

@@ -27,7 +27,7 @@ EXPECTED = {
         "name": "Gray Sage", "page": 38, "span": (6, 76),
         "compiled": [38, 39], "issue": "Dragon Magazine #298",
         "issue_pages": [58, 59, 60],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #298.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #298.md",
         "ocr_lines": ["6186-6208", "6213-6380", "6541-6570"],
         "hit_die": "d4", "rows": 10,
         "abilities": (
@@ -47,7 +47,7 @@ EXPECTED = {
         "name": "Shining Blade of Heironeous", "page": 41, "span": (76, 149),
         "compiled": [40, 41, 42], "issue": "Dragon Magazine #283",
         "issue_pages": [40, 41, 42],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #283.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #283.md",
         "ocr_lines": ["2828-3104"], "hit_die": "d10", "rows": 10,
         "abilities": (
             "Weapon and Armor Proficiency", "Detect Evil", "Smite Evil",
@@ -66,7 +66,7 @@ EXPECTED = {
         "name": "Boge of Nomog-Geaya", "page": 102, "span": (149, 209),
         "compiled": [102, 103], "issue": "Dragon Magazine #315",
         "issue_pages": [91, 92],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #315.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #315.md",
         "ocr_lines": ["13800-13843", "13885-13931", "13957-14019", "14040-14094"],
         "hit_die": "d8", "rows": 10,
         "abilities": (
@@ -87,7 +87,7 @@ EXPECTED = {
         "name": "Fierce Grappler", "page": 176, "span": (209, 270),
         "compiled": [176], "issue": "Dragon Magazine #295",
         "issue_pages": [72],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #295.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #295.md",
         "ocr_lines": ["9184-9225", "9239-9342"],
         "hit_die": "d10", "rows": 5,
         "abilities": (
@@ -107,7 +107,7 @@ EXPECTED = {
         "name": "Brawler", "page": 177, "span": (270, 329),
         "compiled": [176, 177], "issue": "Dragon Magazine #295",
         "issue_pages": [72, 73, 74],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #295.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #295.md",
         "ocr_lines": ["9343-9398", "9445-9502", "9533-9608"],
         "hit_die": "d10", "rows": 5,
         "abilities": (
@@ -127,7 +127,7 @@ EXPECTED = {
         "name": "Dragonscribe", "page": 300, "span": (329, 443),
         "compiled": [300, 301], "issue": "Dragon Magazine #296",
         "issue_pages": [29, 30],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #296.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #296.md",
         "ocr_lines": ["1829-2091"], "hit_die": "d4", "rows": 5,
         "abilities": (
             "Weapon and Armor Proficiency", "Spells per Day/Spells Known",
@@ -145,7 +145,7 @@ EXPECTED = {
         "name": "Knight of the Scale", "page": 302, "span": (443, 523),
         "compiled": [301, 302], "issue": "Dragon Magazine #296",
         "issue_pages": [30, 31],
-        "ocr_path": r"I:\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #296.md",
+        "ocr_path": r"D:\Backup\I-drive\Sourcebooks\_text\Dragon Magazine\Dragon Magazine #296.md",
         "ocr_lines": ["2092-2235", "2239-2265", "2293-2313"],
         "hit_die": "d10", "rows": 10,
         "abilities": (

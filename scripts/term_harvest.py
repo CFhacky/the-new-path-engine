@@ -6,7 +6,7 @@ and terms and what not from gurps and dnd... may I suggest creating a process
 to do that from my many many gurps and dnd and warhammer sourcebooks."
 
 This script IS that process. It walks the text-layer extractions the OCR
-pipeline already produced under I:\\Sourcebooks\\_text, harvests the named
+pipeline already produced under D:\\Backup\\I-drive\\Sourcebooks\\_text, harvests the named
 modifier vocabulary of each configured section, and writes:
 
     reference/terms_and_affixes_index.md    — the human reference by system
@@ -20,9 +20,9 @@ it never improvises (udrp_delve.py's convention).
 GOVERNING SOURCES
   - DMG v3.5 "Magic Weapon Special Ability Descriptions" (pp. 223-226) and
     "Magic Armor and Shield Special Ability Descriptions" (pp. 218-219), via
-    the text extraction at I:\\Sourcebooks\\_text\\D&D 3.5e\\Core\\.
+    the text extraction at D:\\Backup\\I-drive\\Sourcebooks\\_text\\D&D 3.5e\\Core\\.
   - GURPS 4e Basic Set: Characters, ENHANCEMENTS (B102) and LIMITATIONS
-    (B110), via I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\.
+    (B110), via D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\.
   - CONDITIONS ARE DELIBERATELY NOT HARVESTED HERE: conditions.py (DMG
     pp. 300-301) and gurps_conditions.py (B419-429) are already the
     authoritative rosters. One source of truth per layer; this file points
@@ -49,7 +49,7 @@ import sys
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_MD = REPO / "reference" / "terms_and_affixes_index.md"
 OUT_JSON = REPO / "reference" / "terms_and_affixes_index.json"
@@ -159,7 +159,7 @@ KNOWN_NO_COVERAGE = [
 # drops punctuation strangely — "Ghost Touch:.A ghost touch weapon" cost the
 # first harvest an entry — so stray punctuation right after the colon is
 # tolerated and stripped. Checked against the extraction; the PDFs on
-# I:\Sourcebooks are the court of appeal for anything the text layer garbles.
+# D:\Backup\I-drive\Sourcebooks are the court of appeal for anything the text layer garbles.
 COLON_DEF = re.compile(r"^([A-Z][A-Za-z'’\- ]{1,32}?)\s*:[.,]?\s*(\S.*)$")
 
 # Words that mean a COLON_DEF match is layout, not an affix.

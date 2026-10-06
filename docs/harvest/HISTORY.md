@@ -16,8 +16,8 @@ facts. Every harvested entry cites its book and page; a missing anchor prints
 `gurps_conditions.py` and are deliberately not duplicated. Do not touch Notion
 from here; do not add any in-world fact or prose to the repo (that is a defect).
 
-**Corpus root.** `I:\Sourcebooks` — OCR/text-layer extractions at `_md`,
-`_text`, and `_md\_bestiary`. The PDFs on `I:\Sourcebooks` stand behind every
+**Corpus root.** `D:\Backup\I-drive\Sourcebooks` — OCR/text-layer extractions at `_md`,
+`_text`, and `_md\_bestiary`. The PDFs on `D:\Backup\I-drive\Sourcebooks` stand behind every
 extraction and are the court of appeal for any garbled number.
 
 **At a glance (2026-08-29).** Forty-one reference index families, 18,094 accepted entries.
@@ -29,7 +29,7 @@ D&D 5e monsters (517), 5e magic items (575), 5e spells (102), AD&D 2e psionic po
 `--selftest` that passes. Run any `scripts/*_harvest.py` with no args to rebuild
 its index.
 
-**This is a high-value SLICE, not the whole corpus.** `I:\Sourcebooks` holds
+**This is a high-value SLICE, not the whole corpus.** `D:\Backup\I-drive\Sourcebooks` holds
 ~1,700 OCR'd `.md` extractions; these indices harvest the mainline 3.5e systems
 plus labeled material from dozens of sourcebooks. Substantial harvestable
 mechanics remain unindexed; see **CORPUS SCOPE** below for the
@@ -90,7 +90,7 @@ feats do too):
 
 ## CORPUS SCOPE — what is on the drive vs. what is harvested
 
-`I:\Sourcebooks` is far larger than the harvested slice. Counts from a
+`D:\Backup\I-drive\Sourcebooks` is far larger than the harvested slice. Counts from a
 2026-08-27 sweep (`.md` extractions; `_text` tree unless noted):
 
 | Shelf | `.md` files | Harvested so far |
@@ -126,8 +126,8 @@ Highest-value UNHARVESTED 3.5e content, by directory (all under
   book-verified headings. Five descriptions that cross or occupy the genuinely
   blurred p.60 image remain empty and explicit `NO COVERAGE`; they are never
   inferred from neighboring text. The real ELH PDF
-  (`I:\Sourcebooks\...\Epic Level Handbook.pdf`, 11.9 MB, 334 pp) is the court
-  of appeal and PyMuPDF reads it directly from `I:\`.
+  (`D:\Backup\I-drive\Sourcebooks\...\Epic Level Handbook.pdf`, 11.9 MB, 334 pp) is the court
+  of appeal and PyMuPDF reads it directly from `D:\Backup\I-drive\`.
   **Two tiers for corrupt OCR:** (1) `scripts/reocr.py` handles plain scans and
   fixes visual order, but individual characters still need mechanical
   spot-checks; (2) rendered-page vision is required for ornate pages and exact
@@ -250,7 +250,7 @@ must print `NO COVERAGE — extraction missing: <path>` and be recorded here.
   cannot be resolved from the source is FLAGGED, not invented. The repair method
   and every fix are recorded in [OCR_REPAIRS.md](OCR_REPAIRS.md): source `.md`
   name lines are corrected in place (so every future harvest is clean, since
-  `I:\Sourcebooks` is not version-controlled and that log is the re-apply list),
+  `D:\Backup\I-drive\Sourcebooks` is not version-controlled and that log is the re-apply list),
   and detector-level false positives are fixed in the scripts. First pass fixed
   9 XPH power names and 8 feat false positives; 5 fragmentary creature names are
   flagged for PDF verification.

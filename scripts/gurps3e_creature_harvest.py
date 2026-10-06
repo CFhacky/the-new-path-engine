@@ -16,7 +16,7 @@ NO 4e-only Will/Per/FP/SM), so they get their OWN index, separate from the 4e
                                             plus Size/Weight/Damage/Reach/Habitat
     reference/gurps3e_creature_index.md    — the same index for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY packet
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY packet
 (verbatim block + provenance + parsed attributes). The GURPS-3e half is native;
 the system-translator skill builds the paired D&D 3.5e (and 4e) statlines.
 
@@ -26,7 +26,7 @@ WORKFLOW
     python gurps3e_creature_harvest.py --export "Manticore"
     python gurps3e_creature_harvest.py --selftest
 
-GOVERNING SOURCES  (I:\\Sourcebooks\\_text\\GURPS\\GURPS 3E\\)
+GOVERNING SOURCES  (D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 3E\\)
     A GURPS 3e creature entry is a Title-Case OR ALL-CAPS name line, then the
     stat block whose first line is "ST: N" (N may be a range like "18-24").
     The 3e-specific signature is the derived-stat cluster near the ST line —
@@ -61,7 +61,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps3e_creature_index.json"
 OUT_MD = REPO / "reference" / "gurps3e_creature_index.md"
@@ -433,7 +433,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "attribute block (ST/DX/IQ/HT, Speed-or-Move/Dodge, PD/DR), kept SEPARATE",
         "from the 4e `gurps_creature_index`. Every row is tagged",
         f"`system = \"{SYSTEM}\"` so the translator tools know which edition they are",
-        "reading. The raw text stays on `I:\\Sourcebooks` — use `--export \"NAME\"`",
+        "reading. The raw text stays on `D:\\Backup\\I-drive\\Sourcebooks` — use `--export \"NAME\"`",
         "for the translator-ready packet. A field left as `—` is one the OCR did",
         "not cleanly yield; PD is the 3e-only passive defense; a compound `HT` like",
         "`12/20-26` is HT / hit-points as the book prints it.",

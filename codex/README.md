@@ -23,7 +23,7 @@ and the full-text blocks are book-RAW (sliced verbatim, never paraphrased or inv
 
 ## The built page is NOT committed
 
-The output embeds book-verbatim text sliced from the OCR sources on `I:\Sourcebooks`.
+The output embeds book-verbatim text sliced from the OCR sources on `D:\Backup\I-drive\Sourcebooks`.
 Per the repo law — *"the raw text is deliberately NOT copied into the repository"* —
 everything under `codex/build/` is git-ignored. Only the **builder** and the
 **template** are tracked. Rebuild on demand, then publish the page as a **private**
@@ -52,7 +52,7 @@ works offline.
 | `reference/families.json` | canonical registry of all 42 families, their files, explicit accepted-entry paths, systems, and locked counts |
 | `reference/*_index.json` | committed family data (rows carry `[start,end]` spans where available; harvesters may also emit an exact relative source path) |
 | `scripts/spells_srd35.json` | clean SRD 3.5 spell text (Open Game Content) — the 605 SRD core spells |
-| `I:\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
+| `D:\Backup\I-drive\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
 | `codex/codex_template.html` | the page shell (search UI + the `__ENGINE_DATA_B64__` slot) |
 
 ## How the full text is sourced (book RAW, validated)

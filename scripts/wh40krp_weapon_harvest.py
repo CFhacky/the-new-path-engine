@@ -23,7 +23,7 @@ WORKFLOW
     python wh40krp_weapon_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the five core rulebooks.
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the five core rulebooks.
     Their Armoury tables (Table 5-7 "Ranged Weapons", Table 5-9 "Melee Weapons",
     and their kin) were OCR'd as a VERTICAL COLUMN-DUMP: each weapon is a run of
     cells, one per line, in a fixed column order —
@@ -57,7 +57,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wh40krp_weapon_index.json"
 OUT_MD = REPO / "reference" / "wh40krp_weapon_index.md"

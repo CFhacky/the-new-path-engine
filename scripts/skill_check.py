@@ -10,7 +10,7 @@ one-off skill checks (can she climb this, does the lock hold, does the bluff
 land) that previously got a DC improvised in the moment instead of looked up.
 
 SOURCE: D&D 3.5e DM Screen (Wizards of the Coast, 2003) and GURPS 4e GM's
-Screen (Steve Jackson Games, 2005), both in I:\\Sourcebooks. Both are
+Screen (Steve Jackson Games, 2005), both in D:\\Backup\\I-drive\\Sourcebooks. Both are
 scanned-image PDFs with no text layer -- OCR'd via tesseract on 2026-07-02.
 
 CONFIDENCE, stated per the same discipline fused_round.py and

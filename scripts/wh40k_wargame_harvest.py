@@ -47,7 +47,7 @@ except Exception as e:  # pragma: no cover
 # ----------------------------------------------------------------------------
 # Paths
 # ----------------------------------------------------------------------------
-SRC_DIR = r"I:\Sourcebooks\Warhammer\40K\Compilation v2\Codex"
+SRC_DIR = r"D:\Backup\I-drive\Sourcebooks\Warhammer\40K\Compilation v2\Codex"
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _ROOT = os.path.dirname(_HERE)

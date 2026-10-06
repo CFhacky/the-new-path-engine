@@ -17,7 +17,7 @@ campaign's native 3.5e / GURPS RAW.
                                               weapons/gear summaries; book + page
     reference/wh40krp_adversary_index.md    — the same index, for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY
 packet — a 40kRP block the system-translator skill converts to the hybrid's
 3.5e + GURPS pair (BOTH still required in that skill's output).
 
@@ -28,7 +28,7 @@ WORKFLOW
     python wh40krp_adversary_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the adversary-dense books.
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the adversary-dense books.
     A 40kRP adversary is a NAME then a PROFILE of nine characteristics as
     percentages, WS BS S T Ag Int Per WP Fel, then Movement, Wounds, Skills,
     Talents, Traits, Armour, Weapons, Gear. The books lay the profile out five
@@ -87,7 +87,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wh40krp_adversary_index.json"
 OUT_MD = REPO / "reference" / "wh40krp_adversary_index.md"

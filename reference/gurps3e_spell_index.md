@@ -5,7 +5,7 @@ rerun the harvest.** One row per GURPS *3rd-edition* spell — the 3e magic
 system (class / resistance / cost / casting time / prerequisites), kept
 SEPARATE from the 4e `gurps_spell_index` and from the D&D `spell_index`.
 Every row is tagged `system = "GURPS 3e"` so the translator tools know
-which edition they are reading. The raw text stays on `I:\Sourcebooks` —
+which edition they are reading. The raw text stays on `D:\Backup\I-drive\Sourcebooks` —
 use `--export "NAME"` for the translator-ready packet.
 
 A field left as `—` is one the OCR did not cleanly yield; `resist` is the

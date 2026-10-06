@@ -10,7 +10,7 @@ order — in a throwaway state file passed explicitly by path.
 
 GOVERNING SOURCES (read, not memory):
     DMG 3.5, Chapter 8 Glossary, "Condition Summary", pp. 300-301
-    (I:\\Sourcebooks\\_md\\Dungeon_Masters_Guide_3.5.md) — supplies the
+    (D:\\Backup\\I-drive\\Sourcebooks\\_md\\Dungeon_Masters_Guide_3.5.md) — supplies the
     hp-state derivations this script automates:
       * Disabled     — exactly 0 hp (or stable-and-conscious in negatives)
       * Dying        — -1 to -9 hp; end of each round d%: 10% stabilize,

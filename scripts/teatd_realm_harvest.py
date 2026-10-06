@@ -44,7 +44,7 @@ CORPUS
 
 WORKFLOW
     python teatd_realm_harvest.py                      # (re)build the index
-    python teatd_realm_harvest.py --corpus I:/Sourcebooks/_text/Warhammer/Novels/TEATD
+    python teatd_realm_harvest.py --corpus D:/Backup/I-drive/Sourcebooks/_text/Warhammer/Novels/TEATD
     python teatd_realm_harvest.py --search "Long Woe"
     python teatd_realm_harvest.py --selftest
 

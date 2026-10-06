@@ -10,7 +10,7 @@ chakra-bind effects are in the full description (PDF page). Native 3.5e.
 ## Magic of Incarnum — 89 soulmelds
 
 *Source: Magic of Incarnum (WotC, 3.5e), soulmeld tables and descriptions pp. 54–94.*
-*Extraction: `I:\Sourcebooks\_text\D&D 3.5e\Player Options\Magic of Incarnum.md`.*
+*Extraction: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Player Options\Magic of Incarnum.md`.*
 *Harvest: ok — 89 soulmelds from Magic of Incarnum.md.*
 
 | Soulmeld | Classes | Chakras | Basic Effect | PDF p. |

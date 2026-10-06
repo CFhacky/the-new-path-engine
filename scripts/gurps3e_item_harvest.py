@@ -16,7 +16,7 @@ MAGIC ITEMS, from the three GURPS Magic Items books. Every row is stamped
                                         setting, energy cost to create)
     reference/gurps3e_item_index.md   — the same index for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY packet
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY packet
 (verbatim block + provenance + parsed fields). The GURPS-3e half is native; the
 system-translator skill builds the paired D&D 3.5e (and 4e) treatments.
 
@@ -26,7 +26,7 @@ WORKFLOW
     python gurps3e_item_harvest.py --export "Demon Armor"
     python gurps3e_item_harvest.py --selftest
 
-GOVERNING SOURCES  (I:\\Sourcebooks\\_text\\GURPS\\GURPS 3E\\)
+GOVERNING SOURCES  (D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 3E\\)
     Unlike D&D magic items (a labeled Price/Body Slot/Aura stat block), a GURPS 3e
     magic item is written as PROSE with a two-line FOOTER: a `Component Spells:`
     line (the prerequisite enchantments) followed by an `Asking Price:` line (the
@@ -69,7 +69,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps3e_item_index.json"
 OUT_MD = REPO / "reference" / "gurps3e_item_index.md"
@@ -427,7 +427,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "Magic Items books (prose entries with a `Component Spells:` /",
         "`Asking Price:` footer), kept SEPARATE from the D&D `magic_item_index`.",
         f"Every row is tagged `system = \"{SYSTEM}\"` so the translator tools know",
-        "which edition they are reading. The raw text stays on `I:\\Sourcebooks` —",
+        "which edition they are reading. The raw text stays on `D:\\Backup\\I-drive\\Sourcebooks` —",
         "use `--export \"NAME\"` for the translator-ready packet.",
         "",
         "`Component Spells` are the prerequisite enchantments needed to make the",
@@ -496,7 +496,7 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str],
                 "4e) treatments. 'Component Spells' are the prerequisite "
                 "enchantments; 'Asking Price' is the $ market cost. The raw_block is "
                 "prose (Magic Items 2/3 are OCR) — check oddities against the source "
-                "PDF on I:\\Sourcebooks."
+                "PDF on D:\\Backup\\I-drive\\Sourcebooks."
             ),
             "name": it.name,
             "system": SYSTEM,

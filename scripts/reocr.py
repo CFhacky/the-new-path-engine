@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """reocr.py — re-OCR a PDF into clean text, replacing a corrupt OCR extraction.
 
-WHY: some `.md` extractions on I:\\Sourcebooks are corrupt OCR (dropped leading
+WHY: some `.md` extractions on D:\\Backup\\I-drive\\Sourcebooks are corrupt OCR (dropped leading
 characters, Cyrillic bleed, and — in the AD&D Monstrous Compendium — a two-column
 stat block whose value cells are scrambled out of order). The source PDFs are
 fine. This tool renders the PDF pages with PyMuPDF and re-OCRs the images with

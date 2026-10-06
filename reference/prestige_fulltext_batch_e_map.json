@@ -1,7 +1,7 @@
 {
   "generated_by": "individual-issue OCR normalization with manual compiled-page verification",
   "source_policy": "individual_issue_ocr_with_compiled_page_visual_verification",
-  "source_pdf": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+  "source_pdf": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
   "source_markdown": "multiple individual-issue OCR files; see recovered[].issue_ocr_path",
   "derived_source": "reference/prestige_fulltext_batch_e.md",
   "batch_kind": "supplemental verified recoveries",
@@ -28,7 +28,7 @@
       "ordinal": 13,
       "name": "Gray Sage",
       "page": 38,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 38,
       "full_text_end_page": 39,
       "description_pages": [
@@ -45,7 +45,7 @@
         59,
         60
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #298.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #298.md",
       "issue_ocr_lines": [
         "6186-6208",
         "6213-6380",
@@ -83,7 +83,7 @@
       "ordinal": 14,
       "name": "Shining Blade of Heironeous",
       "page": 41,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 40,
       "full_text_end_page": 42,
       "description_pages": [
@@ -102,7 +102,7 @@
         41,
         42
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #283.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #283.md",
       "issue_ocr_lines": [
         "2828-3104"
       ],
@@ -139,7 +139,7 @@
       "ordinal": 44,
       "name": "Boge of Nomog-Geaya",
       "page": 102,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 102,
       "full_text_end_page": 103,
       "description_pages": [
@@ -155,7 +155,7 @@
         91,
         92
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #315.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #315.md",
       "issue_ocr_lines": [
         "13800-13843",
         "13885-13931",
@@ -198,7 +198,7 @@
       "ordinal": 78,
       "name": "Fierce Grappler",
       "page": 176,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 176,
       "full_text_end_page": 176,
       "description_pages": [
@@ -211,7 +211,7 @@
       "issue_pdf_pages": [
         72
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #295.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #295.md",
       "issue_ocr_lines": [
         "9184-9225",
         "9239-9342"
@@ -245,7 +245,7 @@
       "ordinal": 79,
       "name": "Brawler",
       "page": 177,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 176,
       "full_text_end_page": 177,
       "description_pages": [
@@ -262,7 +262,7 @@
         73,
         74
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #295.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #295.md",
       "issue_ocr_lines": [
         "9343-9398",
         "9445-9502",
@@ -300,7 +300,7 @@
       "ordinal": 122,
       "name": "Dragonscribe",
       "page": 300,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 300,
       "full_text_end_page": 301,
       "description_pages": [
@@ -316,7 +316,7 @@
         29,
         30
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #296.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #296.md",
       "issue_ocr_lines": [
         "1829-2091"
       ],
@@ -357,7 +357,7 @@
       "ordinal": 123,
       "name": "Knight of the Scale",
       "page": 302,
-      "source_path": "I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
+      "source_path": "D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf",
       "full_text_start_page": 301,
       "full_text_end_page": 302,
       "description_pages": [
@@ -373,7 +373,7 @@
         30,
         31
       ],
-      "issue_ocr_path": "I:\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #296.md",
+      "issue_ocr_path": "D:\\Backup\\I-drive\\Sourcebooks\\_text\\Dragon Magazine\\Dragon Magazine #296.md",
       "issue_ocr_lines": [
         "2092-2235",
         "2239-2265",

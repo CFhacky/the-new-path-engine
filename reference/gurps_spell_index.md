@@ -4,7 +4,7 @@
 rerun the harvest.** One row per GURPS Magic spell. This is the GURPS
 magic system (class / cost / casting time / prerequisites) — separate
 from the D&D `spell_index`, because the two systems' spells are not the
-same thing. The raw text stays on `I:\Sourcebooks` — use `--export
+same thing. The raw text stays on `D:\Backup\I-drive\Sourcebooks` — use `--export
 "NAME"` for the translator-ready packet.
 
 A field left as `—` is one the OCR did not cleanly yield.

@@ -18,7 +18,7 @@ mirror snapshots. It does **not** hold live campaign canon or mutable session st
 | Tool / document | Governing source |
 |---|---|
 | `scripts/fused_round.py` | Talent Catalog — Combat Vocabulary, Parts VII–IX (Notion `37ce8214-84b0-81d3-ab92-fb245a10f9a1`) |
-| `scripts/skill_check.py` | D&D 3.5e DM Screen + GURPS 4e GM's Screen transcriptions (`I:\Sourcebooks`) |
+| `scripts/skill_check.py` | D&D 3.5e DM Screen + GURPS 4e GM's Screen transcriptions (`D:\Backup\I-drive\Sourcebooks`) |
 | `scripts/personality_roll.py` | Voice & Locks Codex PERSONALITY TELL entries + NPC Personality Axis State DB (`1114d5fb00e1443a95528d7f9c485700`) |
 | `scripts/prose_gate.py` | Register Directive + Content Law + AI-Default Sweep Addendum (surface-campaign-master-gm mirror, Notion `349e8214-84b0-8126-ac8f-f2de981bb8a9`) |
 | `scripts/resume_card.py` | Campaign Resume Card Schema and Maintenance (Notion `3c4e8214-84b0-81dc-b0ae-eaf6ebb9bb48`) |
@@ -56,7 +56,7 @@ Current lane resumes live under the Notion **Campaign Resume Router — Current 
 ## REFERENCE HARVEST
 
 The reference layer extracts book-RAW mechanics from the external
-`I:\Sourcebooks` corpus. It is not campaign canon. Start with
+`D:\Backup\I-drive\Sourcebooks` corpus. It is not campaign canon. Start with
 [reference/README.md](reference/README.md) for the family catalog and
 [docs/HARVEST_PROGRESS.md](docs/HARVEST_PROGRESS.md) for current status, gaps,
 history, and the prioritized roadmap.

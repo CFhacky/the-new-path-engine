@@ -14,7 +14,7 @@ D&D spells, so they do not belong in spell_index.
                                         prerequisites, item, book, PDF page
     reference/gurps_spell_index.md    — the same index for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY
 packet on demand for the system-translator skill (which pairs a D&D 3.5e and a
 GURPS treatment — here the GURPS half is already native).
 
@@ -25,7 +25,7 @@ WORKFLOW
     python gurps_magic_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Magic.md — the OCR
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Magic.md — the OCR
     extraction. A GURPS spell is a NAME (Title Case) followed by its CLASS
     (Regular / Area / Missile / Melee / Blocking / Special / Information /
     Enchantment / Cosmic) on its own line, then a description, then the field
@@ -56,7 +56,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps_spell_index.json"
 OUT_MD = REPO / "reference" / "gurps_spell_index.md"
@@ -326,7 +326,7 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         "rerun the harvest.** One row per GURPS Magic spell. This is the GURPS",
         "magic system (class / cost / casting time / prerequisites) — separate",
         "from the D&D `spell_index`, because the two systems' spells are not the",
-        "same thing. The raw text stays on `I:\\Sourcebooks` — use `--export",
+        "same thing. The raw text stays on `D:\\Backup\\I-drive\\Sourcebooks` — use `--export",
         "\"NAME\"` for the translator-ready packet.",
         "",
         "A field left as `—` is one the OCR did not cleanly yield.",
@@ -388,7 +388,7 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
                 "A native GURPS 4e spell. If the system-translator skill needs a "
                 "paired D&D 3.5e treatment, build the 3.5e half; the GURPS half is "
                 "already here. The raw_block is OCR text; check oddities against "
-                "the source PDF on I:\\Sourcebooks."
+                "the source PDF on D:\\Backup\\I-drive\\Sourcebooks."
             ),
             "name": sp.name,
             "source": {"book": sp.book, "pdf_page": sp.page,

@@ -23,7 +23,7 @@ definitions, four shared pairs, and the printed Xenophilia page drift. The
 roster detector also distinguishes section titles from repeated column labels.
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Characters.md
     — the TRAIT LISTS appendix. A trait row is a NAME line, then the columns one
     per line: M/P/Soc (mental/physical/social), X/Sup (exotic/supernatural, or a
     dash for mundane), Cost, Page. The anchor is the M/P/Soc line immediately
@@ -32,7 +32,7 @@ GOVERNING SOURCE
     DISADVANTAGES section header. The description pass resolves each printed
     B-page to its source heading/inline definition and stops at the next trait or
     chapter cutover.
-    I:\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Powers.md
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\GURPS\\GURPS 4e\\GURPS 4e - Powers.md
     — the discrete New Advantages section on pp. P90-P98. A separate additive
     detector accepts only the five printed advantages absent from the Basic Set
     roster, validates each heading/cost/page, and stops at the next printed
@@ -58,7 +58,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "gurps_trait_index.json"
 OUT_MD = REPO / "reference" / "gurps_trait_index.md"

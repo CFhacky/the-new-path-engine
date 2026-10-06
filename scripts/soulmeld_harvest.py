@@ -16,7 +16,7 @@ basic effect. Those tables were extracted from a BORN-DIGITAL PDF text layer
     reference/soulmeld_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Magic of Incarnum.md — the
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Magic of Incarnum.md — the
     three soulmeld summary tables (Table 4-1 Incarnate, 4-2 Soulborn, 4-3
     Totemist), each a Chakra / Soulmeld / Basic Effect column-dump grouped under
     chakra headers. A soulmeld shared by several classes / bindable to several
@@ -40,7 +40,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "soulmeld_index.json"
 OUT_MD = REPO / "reference" / "soulmeld_index.md"

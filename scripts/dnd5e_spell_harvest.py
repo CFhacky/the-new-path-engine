@@ -11,7 +11,7 @@ index, separate from the 3.5e `spell_index` and stamped `"system": "D&D 5e"`.
     reference/dnd5e_spell_index.md    — the same, for human eyes
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\D&D 5e\\ — 5e books with spell lists (Tasha's,
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\D&D 5e\\ — 5e books with spell lists (Tasha's,
     Diabolical Designs, Mordenkainen's Almanac of Adventurers, Darkhold). A 5e
     spell is a NAME line then "Nth-level school (ritual)" or "cantrip school",
     then Casting Time / Range / Components / Duration. Detection anchors on the
@@ -34,7 +34,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "dnd5e_spell_index.json"
 OUT_MD = REPO / "reference" / "dnd5e_spell_index.md"

@@ -4,7 +4,7 @@ monster_lookup.py — D&D 3.5e monster stat block finder
 The New Path campaign engine (the-new-path-engine)
 
 GOVERNING SOURCES (local text extractions, read live):
-    I:\\Sourcebooks\\_md\\_bestiary\\*.md   (override with --bestiary DIR)
+    D:\\Backup\\I-drive\\Sourcebooks\\_md\\_bestiary\\*.md   (override with --bestiary DIR)
     Extracted from text-layer PDFs: MM1 (Premium), MM2, MM4, MM5,
     Fiend Folio, Fiendish Codex I & II, Lords of Madness, Libris Mortis,
     Epic Level Handbook. (MM3 and Draconomicon are image-only scans and
@@ -39,7 +39,7 @@ import re
 import sys
 from typing import Dict, List, Optional, Tuple
 
-DEFAULT_BESTIARY = r"I:\Sourcebooks\_md\_bestiary"
+DEFAULT_BESTIARY = r"D:\Backup\I-drive\Sourcebooks\_md\_bestiary"
 
 PAGE = re.compile(r"<!-- page (\d+) -->")
 BAD_STARTS = ("Hit Dice", "Initiative", "Speed", "Armor Class", "Base Attack",

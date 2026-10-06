@@ -67,8 +67,8 @@ except Exception as e:  # pragma: no cover
 # Paths
 # ----------------------------------------------------------------------------
 SRC_DIRS = [
-    r"I:\Sourcebooks\Warhammer\Fantasy\Armybooks",
-    r"I:\Sourcebooks\Warhammer\Fantasy Army Books",
+    r"D:\Backup\I-drive\Sourcebooks\Warhammer\Fantasy\Armybooks",
+    r"D:\Backup\I-drive\Sourcebooks\Warhammer\Fantasy Army Books",
 ]
 
 _HERE = os.path.dirname(os.path.abspath(__file__))

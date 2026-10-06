@@ -5,7 +5,7 @@ The New Path campaign engine (the-new-path-engine)
 
 GOVERNING SOURCES (read, not memory):
     GURPS 4e Basic Set: Campaigns
-    (I:\\Sourcebooks\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Campaigns.pdf,
+    (D:\\Backup\\I-drive\\Sourcebooks\\GURPS\\GURPS 4e\\GURPS 4e - Basic Set - Campaigns.pdf,
      text layer read directly; page cites are BOOK pages, B###)
       B419  General Injury (HP thresholds), Shock
       B420  Major Wounds, Knockdown and Stunning, Effects of Stun,

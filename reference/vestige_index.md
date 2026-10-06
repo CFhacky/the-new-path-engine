@@ -10,7 +10,7 @@ is bound to its complete book-verbatim description and granted powers.
 ## Tome of Magic (Pact Magic) — 32 vestiges
 
 *Source: Tome of Magic (WotC, 3.5e), Pact Magic — vestige summary, tablets, and descriptions pp. 20–50.*
-*Extraction: `I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md`.*
+*Extraction: `D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md`.*
 *Harvest: ok — 32 vestiges from Tome of Magic.md.*
 
 | Vestige | Level | Binding DC | Special Req. | PDF p. |

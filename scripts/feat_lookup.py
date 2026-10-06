@@ -6,7 +6,7 @@ The New Path campaign engine (the-new-path-engine)
 GOVERNING SOURCES:
     1. feats_srd35.json -- bundled, parsed from SRD 3.5 (all PH core
        feats). Ships beside this script. SRD wins on name collision.
-    2. Live supplement extractions at I:\\Sourcebooks\\_md\\_feats\\*.md
+    2. Live supplement extractions at D:\\Backup\\I-drive\\Sourcebooks\\_md\\_feats\\*.md
        (override with --feats-dir).
 
 DESIGN CONTRACT (repo README): stateless, no dice, cites book + page,
@@ -36,7 +36,7 @@ from typing import Dict, List, Optional, Tuple
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-DEFAULT_DIR = r"I:\Sourcebooks\_md\_feats"
+DEFAULT_DIR = r"D:\Backup\I-drive\Sourcebooks\_md\_feats"
 SRD_JSON = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         "feats_srd35.json")
 

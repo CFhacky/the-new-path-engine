@@ -23,7 +23,7 @@ WORKFLOW
     python wfrp_gear_harvest.py --selftest
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\Warhammer\\Fantasy\\Old_World_Armoury.md — the
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\Fantasy\\Old_World_Armoury.md — the
     dedicated WFRP 2e arms-&-armour sourcebook, the goldmine. The Fantasy/
     folder holds NO WFRP 2e core rulebook (its other books are Warhammer Fantasy
     BATTLE wargame army books, a different game), so the Armoury is the sole
@@ -66,7 +66,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wfrp_gear_index.json"
 OUT_MD = REPO / "reference" / "wfrp_gear_index.md"

@@ -8,9 +8,9 @@ its mechanical effect text, RAW from the book. This index is DISTINCT from
 reference/wfrp_creature_index.* (creature profiles) -- no creature stats here.
 
 Primary source (born-digital clean text, not OCR):
-    I:\\Sourcebooks\\_text\\Warhammer\\Fantasy\\Tome_of_Corruption.md
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\Fantasy\\Tome_of_Corruption.md
 Secondary:
-    I:\\Sourcebooks\\_text\\Warhammer\\Fantasy\\Nights_Dark_Masters_Lost_Bloodlines.md
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\Fantasy\\Nights_Dark_Masters_Lost_Bloodlines.md
 
 Tables harvested (Tome of Corruption, WFRP 2e):
     Mutations : Table 3-1 (master d1000), 3-2 Khorne, 3-3 Nurgle, 3-4 Slaanesh,
@@ -47,7 +47,7 @@ from pathlib import Path
 SYSTEM = "WFRP"
 EDITION = "WFRP 2e"
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 FANTASY = CORPUS / "Warhammer" / "Fantasy"
 
 TOME_FILE = "Tome_of_Corruption.md"

@@ -7,7 +7,7 @@ short printed effect summaries. The detail blocks supply the entry fields and
 true heading-to-heading source spans used by the Codex.
 
 Governing source:
-  I:\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md
+  D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Player Options\Tome of Magic.md
   Tome of Magic, Truename Magic, printed pp. 232-253.
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "utterance_index.json"
 OUT_MD = REPO / "reference" / "utterance_index.md"

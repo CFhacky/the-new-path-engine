@@ -85,7 +85,7 @@ Do **not** hand-edit the `.json`/`.md` files — rerun the generating script.
 
 ## IMPORTANT — this is a high-value SLICE, not the whole corpus
 
-`I:\Sourcebooks` holds ~1,700 OCR'd `.md` extractions. These indices cover the
+`D:\Backup\I-drive\Sourcebooks` holds ~1,700 OCR'd `.md` extractions. These indices cover the
 mainline 3.5e systems plus the GURPS modifier set — a fraction of what is on the
 drive. Large bodies of harvestable mechanics are **not yet indexed** (more
 bestiaries, further bounded higher-TL GURPS gear,

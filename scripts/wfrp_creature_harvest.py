@@ -20,7 +20,7 @@ harvests those; they are deliberately NOT collected here).
                                           Weapons summaries; book + PDF page
     reference/wfrp_creature_index.md     — the same index, for human eyes
 
-The raw text stays on I:\\Sourcebooks; `--export` emits a TRANSLATOR-READY
+The raw text stays on D:\\Backup\\I-drive\\Sourcebooks; `--export` emits a TRANSLATOR-READY
 packet — a WFRP block the system-translator skill converts to the hybrid's
 3.5e + GURPS pair (BOTH still required in that skill's output).
 
@@ -31,7 +31,7 @@ WORKFLOW
     python wfrp_creature_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\Warhammer\\Fantasy\\ — a MIX of WFRP roleplay books
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\Fantasy\\ — a MIX of WFRP roleplay books
     and WHFB wargame army books. Only the ROLEPLAY books carry the percentage
     profile, and only they are configured here. A WFRP roleplay stat block is a
     vertical layout: the name, then a `Main Profile` header, then the eight
@@ -79,7 +79,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wfrp_creature_index.json"
 OUT_MD = REPO / "reference" / "wfrp_creature_index.md"

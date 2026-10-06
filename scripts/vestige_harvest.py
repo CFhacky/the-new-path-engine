@@ -15,7 +15,7 @@ book is Cyrillic-free and clean), so this index is character-clean.
     reference/vestige_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Tome of Magic.md — the
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\D&D 3.5e\\Player Options\\Tome of Magic.md — the
     vestige summary table plus the explicit per-entry tablets and ALL-CAPS
     ``NAME, EPITHET`` description headings. The summary supplies an initial row;
     the tablets are the court of appeal for level/DC/requirement and recover the
@@ -39,7 +39,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "vestige_index.json"
 OUT_MD = REPO / "reference" / "vestige_index.md"

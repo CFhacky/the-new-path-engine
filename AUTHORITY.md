@@ -39,7 +39,7 @@ The only cross-session files scripts may own are explicitly ratified operational
 | `character_state.py` | PH typed-bonus stacking and class tables; Notion Advancement & Training Register |
 | `pc_add.py` | bridge only — inherits both parents' sources |
 | `spell_lookup.py` | SRD 3.5 + Spell Compendium extraction; SRD wins name collisions |
-| `monster_lookup.py` | sourcebook bestiary extractions at `I:\Sourcebooks\_md\_bestiary\` |
+| `monster_lookup.py` | sourcebook bestiary extractions at `D:\Backup\I-drive\Sourcebooks\_md\_bestiary\` |
 | `prose_gate.py` | standing prose law + military-fantasy-prose skill |
 | `session_open.py` | Notion Arik Session Start Protocol `364e8214-84b0-8144-bfc4-cd1f25ae3c3a` and cited state pages |
 | `udrp_delve.py` | UDRP v2.0 + dungeon-generation + monster-ecology modules |

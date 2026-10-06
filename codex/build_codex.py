@@ -20,7 +20,7 @@ WH40K / WHFB / ...) and its book + page citation. Nothing here is native canon.
 WHY THE BUILT PAGE IS NOT COMMITTED
 -----------------------------------
 The output embeds book-verbatim text sliced from the OCR sources on
-`I:\\Sourcebooks`. Per the repo law ("the raw text is deliberately NOT copied into
+`D:\\Backup\\I-drive\\Sourcebooks`. Per the repo law ("the raw text is deliberately NOT copied into
 the repository"), the generated files under `codex/build/` are git-ignored. Only
 THIS builder and `codex/codex_template.html` are tracked. Rebuild on demand; then
 publish `codex/build/engine_reference.html` as a private Artifact.
@@ -32,7 +32,7 @@ INPUTS
 - reference/*_index.json      committed family files (name/fields/citation +
                               [start,end] spans and exact paths where emitted)
 - scripts/spells_srd35.json   clean SRD 3.5 spell text (Open Game Content, bundled)
-- I:\\Sourcebooks\\_md, _text   the OCR sources, sliced by each row's line span
+- D:\\Backup\\I-drive\\Sourcebooks\\_md, _text   the OCR sources, sliced by each row's line span
 - codex/codex_template.html   the page shell (contains the __ENGINE_DATA_B64__ slot)
 
 OUTPUT (git-ignored)
@@ -108,13 +108,13 @@ BUILD = REPO / "codex" / "build"
 
 # The OCR sources live outside the repo, exactly as the harvesters read them.
 SOURCE_ROOTS = [
-    r"I:\Sourcebooks\_md\_bestiary",
-    r"I:\Sourcebooks\_md",
-    r"I:\Sourcebooks\_text",
+    r"D:\Backup\I-drive\Sourcebooks\_md\_bestiary",
+    r"D:\Backup\I-drive\Sourcebooks\_md",
+    r"D:\Backup\I-drive\Sourcebooks\_text",
 ]
 # Legacy fallback for spell indices created before spell_harvest.py emitted each
 # source's exact relative extraction path.
-SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
+SPELL_COMPENDIUM_PREMIUM = r"D:\Backup\I-drive\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
 
 CAP = 4200  # exact vestige/mystery/maneuver/prestige/GURPS/epic spans bypass it
 

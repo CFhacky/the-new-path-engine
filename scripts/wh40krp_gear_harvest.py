@@ -22,7 +22,7 @@ WORKFLOW
     python wh40krp_gear_harvest.py --selftest
 
 GOVERNING SOURCES
-    I:\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the five core rulebooks.
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\Warhammer\\40K Roleplay\\ — the five core rulebooks.
     Each book's Armoury chapter carries several small "Gear" tables — General
     Equipment / Clothing, Drugs & Consumables, Tools, Cybernetics, and (Black
     Crusade) Wargear.  They were OCR'd as a VERTICAL COLUMN-DUMP: each row is a
@@ -68,7 +68,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "wh40krp_gear_index.json"
 OUT_MD = REPO / "reference" / "wh40krp_gear_index.md"

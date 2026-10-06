@@ -1,6 +1,6 @@
 # Prestige-Class Full Text — Batch B
 
-Source: `I:\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
+Source: `D:\\Backup\\I-drive\\Sourcebooks\\Dragon Magazine\\Dragon Magazine - Prestige Class Compendium Issues 274-353.pdf`
 
 Scope: canonical prestige-class ordinals 38–73. This bounded candidate accepts only the six complete, visually verified rules blocks below. Running furniture, article bylines, advertisements, illustration captions, unrelated sidebars, and neighboring-class prose are excluded. Directly class-owned rules sidebars are retained.
 

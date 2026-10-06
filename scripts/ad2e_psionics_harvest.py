@@ -16,7 +16,7 @@ is source material for the system-translator skill.
     reference/ad2e_psionic_index.md   — the same, for human eyes
 
 GOVERNING SOURCE
-    I:\\Sourcebooks\\_text\\AD&D\\...\\Complete Psionics Handbook (2e).md — a
+    D:\\Backup\\I-drive\\Sourcebooks\\_text\\AD&D\\...\\Complete Psionics Handbook (2e).md — a
     born-digital text layer (Cyrillic-free). Each power is a NAME line then an
     alternating label/value block ("Power Score:" / "Wis -5" / "Initial Cost:" /
     "9" / …). The anchor is the "Power Score:" line (every power opens with it);
@@ -39,7 +39,7 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-CORPUS = Path(r"I:\Sourcebooks\_text")
+CORPUS = Path(r"D:\Backup\I-drive\Sourcebooks\_text")
 REPO = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO / "reference" / "ad2e_psionic_index.json"
 OUT_MD = REPO / "reference" / "ad2e_psionic_index.md"
