@@ -651,3 +651,36 @@ Each exists for the other side the moment it exists at all. The likeliest early 
 - whoever Marit's paymaster has hired, for force-ward counters.
 
 Which faction fields any of them first is a campaign call and is not asserted here.
+
+---
+
+## Errata — 6 Oct 2026: the plus-damage audit (Chad flagged the inconsistency; the cards above are superseded only on these points)
+
+**How the plus is meant to work.** A rolled Legendary's enhancement comes from its masterwork d20 on table 21A, and on nothing else:
+
+| Masterwork d20 | 3.5e enhancement | GURPS damage |
+|---|---|---|
+| 1–4 | none (+1 to one secondary property) | +1 to skill or Acc only |
+| 5–8 | +1 | +1 |
+| 9–12 | +1 and a minor property | +1, Min ST −1 |
+| 13–16 | +2 and a mid-tier property | +2 and one Follow-Up add-on |
+| 17–20 | +3 and a major property | +2 and a major advantage |
+
+Read that way, the Legendaries are: Marit (5) +1, Osmund (9) +1, Edwyn (12) +1, Quavein (14) +2, Hadda (17) +3, Kesh (17) +3, Brunna (20) +3, **Rhun (1) none**. The spread from +1 to +3 is the dice; the error was Rhun.
+
+1. **Rhun Talbridge, *The Relief* (3.5e), corrected.** Masterwork 1 gives **no enhancement**. The card wrongly made it a +1 halberd.
+   - The pollaxe is a **masterwork halberd**: R6 +1 to attack, no enhancement bonus.
+   - The secondary property is **+1 on trip attempts with the hook**.
+   - Damage **1d10** (not 1d10+1). Market **310 gp** (not 2,310).
+   - Errata line: *The Relief* +23/+18/+13/+13, **1d10+15** +5d6, 19–20/×3. The earlier line's 1d10+16 is withdrawn.
+   - UDRP is unchanged at 34: masterwork below 5 always added 0.
+2. **GURPS Greater dice, corrected.** The 3.5e ladder (20B) multiplies the dice by about 1.5: 3d6 → 5d6, 4d6 → 6d6. The GURPS columns must step the same way, from the T1 GURPS value:
+   - **Quavein, Executioner (Greater):** T1 4d becomes **6d** (not 4d+2).
+   - **Rhun, Wounding (Greater):** T1 2d becomes **3d** (not 3d+2).
+3. **Quavein, *The Last Column* (GURPS), corrected.** The band 13–16 add-on belongs to the masterwork's own mid-tier property, *mighty cleaving*, not to Executioner. Executioner already has its own Innate Attack line, so the card counted it twice.
+   - The GURPS line reads: **+2 damage; Extra Attack 1 (trigger: a foe in reach is downed), as mighty cleaving.**
+
+Checked and consistent, no change:
+- The Legendaries: Hadda, Kesh, Marit, Brunna, Osmund, Edwyn. Faelith's shield enhancement goes to AC; the bash takes the bashing property's own +1.
+- The Uniques: Naevys +2, Mercy +2, Kerra +2, Ilvaera +1.
+- The Rares, which are masterwork only.
