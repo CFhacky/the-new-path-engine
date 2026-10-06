@@ -217,3 +217,49 @@ She fans herself once, slowly, and the desert comes through the fan.
 - Ashavel moves through her own wind unseen (total concealment).
 - **GURPS:** Innate Attack 8d burning (Cone 20 yd) with Knockback and Affliction (Blindness); Obscure (Vision) on herself; Limited Use 1/day.
 - **After:** sand in every seam and the smell of hot stone. Dace's challenger usually never reaches him.
+---
+
+# THE HAND (lesser releases: 3 rounds, DC 21; Chad, 6 Oct 2026)
+Chad ruled: the Hand's casting lines stand, and the Hand gets releases. These five are lieutenants of the Menagerie, on the same frame as the eight: bound, never loot, 1/day. **Jin's orders win on Hand operations**, including when to call these releases.
+
+## Lt IV (Hand). Lorne Ashby — *Out of a Small Stone's Shadow*
+He hums the three bars of the Moonsea shanty, and the staff splits into its two rods. At Tethford he stepped out of the shadow of a two-foot rock. Now every shadow does that.
+- For 3 rounds, **every shadow within 100 ft is a door** for Lorne and for up to **four** of his raised dead.
+	- Each round they step out wherever they like.
+	- Whatever they strike out of a shadow is flat-footed against that attack and takes **+4d6**.
+- Anything slain in the area rises as his servitor at the end of the round (Fort DC 21 for the corpse's spirit to refuse), to a maximum of 4.
+- **GURPS:** Warp (Accessibility: shadow to shadow, Area 33 yd, includes 4 Allies); Follow-Up 4d on attacks from shadow; Ally Group (raised, max 4); Limited Use 1/day.
+- **After:** the shanty stops on the third bar. The dead he raised go back into the shadows and don't come out.
+
+## Lt V (Hand). Ivrael Quillatar — *The Counted Door*
+He counts the exits aloud in Elvish. When he reaches the end, there is only one.
+- Within **40 ft**, every exit but one is sealed by force walls. Ivrael stands in the one left open.
+- Every enemy within 40 ft must attack him for the 3 rounds (Will DC 21 negates, one save). He gets an attack of opportunity on each one that comes at him.
+- **Despair** applies to everything he strikes while it is frightened, and the room is frightened.
+- **GURPS:** Force Wall (Area 13 yd, all but one exit), Affliction (Compulsive Attack, Area), Counter Attack against all; Limited Use 1/day.
+- **After:** the walls drop and the door is just a door. He counts the exits again, quieter.
+
+## Lt VI (Hand). Durgan Emberlode — *The Banked Coal*
+His breath stops smoking. Then the dragon in his blood stops hiding.
+- The scale-scarring on his neck becomes scales: **+4 natural armor** and fire immunity for the duration.
+- Each round he breathes a **60-ft cone of fire, 10d6** (Reflex DC 21 half).
+- Anything within 10 ft of him takes **3d6 fire** at the start of its turn.
+- His spells cast in the release count as maximised. Teodric's sword is not the only Overcharge in the Hand.
+- **GURPS:** Innate Attack 10d burning (Cone 20 yd), Damage Aura 3d burning (3 yd), DR 4 and Immunity (fire); Limited Use 1/day.
+- **After:** the frost doesn't settle on anything near him for a day. The scales go back to scars, a little further up his jaw each time.
+
+## Lt VII (Hand). Nym Esharan — *Eight Vats*
+He touches the mask's chin, wets Yashiori, and the Storm King's oldest trick fills the field: the eight-headed serpent was killed drunk.
+- **Eight** creatures within 60 ft must save (Will DC 21) or fall into a drunken sleep for the 3 rounds: helpless, and woken only by damage.
+- Yashiori's strikes on a sleeper are **automatic critical hits**.
+- **The Root Country:** a creature Nym kills during the release **cannot be raised, resurrected or animated for a year and a day**, by anyone, the host's own priests included.
+- **GURPS:** Affliction (Sleep, 8 targets, Area 20 yd), Follow-Up crit on sleepers; Cosmic (prevents raising, 1 year and 1 day); Limited Use 1/day.
+- **After:** the field smells of rice wine. Lorne and Osmund will never get his dead, and the office goes on arguing.
+
+## Lt VIII (Hand). Teodric Halvane — *Old Friends*
+He speaks to everyone in the room as if he has known them for years. For three rounds, they believe it.
+- Within **40 ft**, every enemy is charmed (Will DC 21; enchanters and the mind-blank warded excepted). They lower their weapons, they don't attack anyone they see Teodric speak to, and **each answers one question truthfully each round**.
+- His sword's dispelling stroke runs each round at **CL 16** against one target in the area, at no action.
+- Damage breaks the charm only on the creature that took it.
+- **GURPS:** Mind Control (Area 13 yd, charm only) with Truthfulness 1/turn; Neutralize (Magic) each turn; Limited Use 1/day.
+- **After:** they remember everything they said. Brunna's prisoners talk before she gets to them, which is the only way she has ever lost one.

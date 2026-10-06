@@ -299,3 +299,14 @@ Arik doesn't know he has any of them.
 - **The four casting lines** above are the Phase 6 seed, for Chad to confirm. DCs follow once Phase 6 sets the ability scores.
 - **Hand releases:** yes or no.
 - **Raising versus the Root Country:** is it doctrine inside the office, or just friction between the priests?
+
+---
+
+## 5d. The Hand's releases in pairing (appended 6 Oct 2026; Chad: casting lines stand, the Hand gets releases)
+- **Aerendyl + Lorne:** in Long Road's quake, Lorne's dead come out of the shadows of whatever Aerendyl is holding up. Their strikes are flat-footed and +4d6 against anything that can't stand.
+- **Kesh + Ivrael:** the Counted Door forces every enemy towards Ivrael, through Kesh's ten paces. The sickles hook them prone on the way in, and the frightened don't heal.
+- **Marit + Durgan:** the hounds bring the quarry, and Durgan breathes on the spot where it lands.
+- **Naevys + Nym:** Eight Vats puts the line to sleep, and the Hunt rides over the sleepers. Nym's dead go to the Root Country for a year and a day.
+- **Brunna + Teodric:** Old Friends questions the Larder. The pinned answer truthfully while they hang.
+- **Ysmay's medics (unchanged):** Lorne's release does nothing for her, but his *harm* still does.
+- **Nym against Lorne and Osmund:** Eight Vats' year-and-a-day ban is now the sharpest point of the office's quarrel over the dead.
