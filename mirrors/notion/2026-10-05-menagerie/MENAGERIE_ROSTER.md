@@ -1089,3 +1089,14 @@ Full cards, stat-block errata and the module manifest are in `MENAGERIE_SIGNATUR
 - Five readings: the empty-socket contents (seal, charm, shard, strange); the division rule for companion draws; Arcane Amplification on Osmund; Wardbreaker on fighters; Zaheda's notebook in tiger form.
 - **Ysmay's Undeath Covenant** (binding roll): how it got into her sword, and whether she knows.
 - **Edwyn's faith** and **the priestess who ended Quavein's house**, both left open.
+
+---
+
+## Round six (6 Oct 2026): releases
+**Chad's ruling:** the rolled signature items read as "mild inconvenience", not Gotei 13. The register he chose is **raw spectacle**.
+
+The rolled items stay as each weapon's **sealed state**. Every bearer now has an authored **release** on top:
+- **Captains:** 1/day, 1 minute, DC 26, built to break formations and buildings.
+- **Lieutenants:** 1/day, 3 rounds, DC 21, about a quarter the size.
+
+Releases are bound to the bearer, not the item. They are never loot and sit outside UDRP and the manifests. Full set: `MENAGERIE_RELEASES.md` (Notion `3f1e8214-84b0-8180-ba92-ca1f176faa66`). Change Log: `3f1e8214-84b0-81e3-83bd-f5157fab994a`. Nothing here has happened in play.
