@@ -19,19 +19,19 @@ Deviations: none
 | # | Name | Role | Level | Race / sex | Age | Mask wood | Specific |
 |---|---|---|---|---|---|---|---|
 | 1 | **Ivrael Quillatar** | Warrior (Fighter) | 14 | Elf, male | Prime | Zalantar (darkwood) | — |
-| 2 | **Nym Esharan** | Priest (Cleric) | 14 | Elf, male | Prime | Zalantar | Domains **Trickery / Death** |
+| 2 | **Nym Esharan** | Priest (Cleric) | 14 | Elf, female | Prime | Zalantar | Domains **Trickery / Death** |
 | 3 | **Teodric Halvane** | Mage (Wizard) | 14 | Human, male | Seasoned | Keyaki zelkova | **Enchanter** |
 | 4 | **Durgan Emberlode** | Sorcerer | 14 | Dwarf, male | Prime | Zalantar | **Draconic heritage** |
 | 5 | **Lorne Ashby** | Priest (Cleric), the rolled fifth slot | 13 | Half-elf, male | Prime | Zalantar | Domains **Trickery / Death** |
 
-**The dice clustered,** as the lower-median rule does: four 14s, four darkwood masks, five men, two Trickery/Death priests. No reroll. Read in the fiction:
+**The dice clustered,** as the lower-median rule does: four 14s, four darkwood masks, five men as rolled (Nym is a woman by Chad's ruling, 6 Oct), two Trickery/Death priests. No reroll. Read in the fiction:
 - **Darkwood is the Veil's wood:** a light, strong shadow timber that four of them chose.
 - **Teodric's zelkova** is the outlier: an eastern hardwood, a seasoned enchanter's choice.
 - **Two priests of the same domains** make the Hand a death-cult's mirror pointed at the Cult of the Dragon.
 
 ## Kits (individuality; looks authored, signature mechanics to the item pipeline in Phase 6)
 1. **Ivrael Quillatar.** A long single-edged elven blade worn edge-up at the hip, its scabbard throat bound in silver wire. He carries no shield; his off hand is a mailed glove under the silk. Tell: he counts exits aloud under his breath in Elvish before a fight.
-2. **Nym Esharan.** A holy symbol filed down to a plain black disc so it names no god at a glance. A sling of wax-sealed vials at the left hip. Tell: he touches the mask's chin before every casting.
+2. **Nym Esharan.** A holy symbol filed down to a plain black disc so it names no god at a glance. A sling of wax-sealed vials at the left hip. Tell: she touches the mask's chin before every casting.
 3. **Teodric Halvane.** Grey at the temples behind the mask. Rings on four fingers of the left hand, each a different metal. A slim spellbook bound in eel-skin, chained to his belt. Tell: he speaks to people as if he has known them for years.
 4. **Durgan Emberlode.** A dwarf whose blood runs hot. Frost melts on him, Blue Hour style. Scale-patterned scarring creeps up his neck under the beard, which is braided with copper. No weapon but a short hammer he never seems to use. Tell: his breath smokes in warm air.
 5. **Lorne Ashby.** The youngest-looking: half-elf, lean. A hand crossbow on a swivel at the chest and a staff that splits into two short rods. Tell: he hums the same three bars of a Moonsea shanty.
@@ -67,3 +67,7 @@ Source: ⚔️ The Stride Line — Equipment Specifications (Notion 35ee8214-84b
 ## Character note (Chad, 5 Oct 2026)
 The Menagerie, the Veil host of the Blue Hour that the Hand is drawn from, is "something like the original Gotei 13". Each member is an individually monstrous killer with a personal art, held together by loyalty to one head rather than by uniform discipline. The Hand's five are written to that standard. **Open:** whether the rolled 13–14 levels sit too low for that register (Chad's call).
 - **Resolved (Chad, 5 Oct 2026): option A.** The rolled levels stand. The Hand is Jin's working draw from the Menagerie's middle ranks, not its captains; the Menagerie's apex is defined separately.
+
+## Ruling (Chad, 6 Oct 2026)
+- **Nym Esharan is a woman**, overriding the rolled "male" (`hand_roster_rolls.json` keeps the raw throw). The rest of the roll stands.
+- **Raising the dead is Nym's personal conviction, not the Storm King's office's law.** She holds that the dead belong to the Root Country and that keeping them there is her office; Lorne and Osmund raise without penalty. See *The Menagerie — Pairings* (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`).
