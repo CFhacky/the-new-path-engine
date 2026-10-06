@@ -16,6 +16,7 @@ Included:
 - `MENAGERIE_SIGNATURE_ITEMS.md` — round five: the 21 signature items (dual-system cards, errata, module manifest); Notion child page `3f1e8214-84b0-8183-9a95-f646f647de07`
 - `menagerie_signature_rolls.txt` / `roll_menagerie_signature_items.py` and `menagerie_signature_followup_rolls.txt` / `roll_menagerie_signature_followups.py` — round five dice (loot_roll.py functions, raw stdout)
 - `MENAGERIE_RELEASES.md` — round six: the 21 authored releases (Notion `3f1e8214-84b0-8180-ba92-ca1f176faa66`)
+- `MENAGERIE_PAIRINGS.md` — round seven: spell and release pairings (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`)
 - `menagerie_round2_rolls.json` and `roll_menagerie_round2.py` — round two (schools, heritage, Quavein's second domain, Ysmay's refused order, recruitment, wants, rivals)
 
 Append-only links added the same day: The Blue Hour — Dalelands Opening `343e8214-84b0-8197-be1a-ecd776df27e5`, The Veil `2fbe8214-84b0-815f-ba19-e874f0becc19`, The Hand — Standing Roster `3f0e8214-84b0-812a-9ae9-d14d08bd1893`.

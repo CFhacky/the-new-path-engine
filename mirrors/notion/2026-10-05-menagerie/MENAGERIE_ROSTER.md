@@ -1100,3 +1100,17 @@ The rolled items stay as each weapon's **sealed state**. Every bearer now has an
 - **Lieutenants:** 1/day, 3 rounds, DC 21, about a quarter the size.
 
 Releases are bound to the bearer, not the item. They are never loot and sit outside UDRP and the manifests. Full set: `MENAGERIE_RELEASES.md` (Notion `3f1e8214-84b0-8180-ba92-ca1f176faa66`). Change Log: `3f1e8214-84b0-81e3-83bd-f5157fab994a`. Nothing here has happened in play.
+
+---
+
+## Round seven (6 Oct 2026): pairings
+How the host's **spells** and **releases** combine across the field:
+- the casters' table, with each one's lists as written in their stat blocks;
+- the 8 captain–lieutenant pairs;
+- 8 spell pairings across divisions, rules as written;
+- 4 release pairings between captains;
+- the rival web made mechanical: pairs that fit perfectly and won't start, and pairs that ruin each other.
+
+Orders: a captain orders their own lieutenant; cross-division pairings take Lirien; rival pairings take Arik.
+
+Full set: `MENAGERIE_PAIRINGS.md` (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`). Change Log: `3f1e8214-84b0-8156-82ed-ff40bbbcae69`. Nothing here has happened in play.
