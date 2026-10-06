@@ -214,7 +214,7 @@ Masterwork 20 under table 21C (kept): +2 to every affix value, and the capstone.
 	- *True seeing* sees through it only on a caster level check against DC 27.
 - **Temper 23D-8 Sacrifice Pool (parity ruling):** a willing ally may give HP for her slots, 5 HP per spell level.
 - **Aspect 24F-6 Pack:** when 3 or more of her summoned creatures attack the same target, each gains **+2 to attack and +1d6 damage**.
-- **Tiger form:** still waiting on reading 5 (the page, not the book).
+- **Tiger form (ruled):** the notebook melds into the tiger and **its powers stay active**. That overrides the RAW rule that melded items stop working; the cover is the tiger's own hide.
 - Market: no SRD enhancement; **UDRP 37.**
 ### GURPS 4e
 - Gadget, held. Berserk (controlled, after 3 turns) +5.
@@ -469,3 +469,8 @@ The masterwork-driven attack lines from round 5 stand: Quavein +22, Hadda +19, K
 - **The Stalker suit is medium armour** for every armour-category test. The Strider stays light. Faelith's Wind aspect works in her Stalker suit; Edwyn's Nimble raises its Max Dex.
 - **Edwyn Coldry is lawful neutral.** He kept the order's discipline and lost its faith. The Holy mitten works for him without penalty, and it still burns evil for a god he no longer prays to.
 - **Bases follow the kit.** Durgan's piece is his short hammer, and Lorne's is his splitting staff (cards H3 and H4, rebased). Teodric's sword stays; his kit has no weapon to move it onto.
+
+## Rulings (Chad, 6 Oct 2026: "take these leans")
+- **Socket fills confirmed** as proposed in round five: Quavein's seal Stalwart +4, Naevys's seal Aegis +5, Aerendyl's charm Dimensional Pocket 100 lb, the strange sockets (Aerendyl Weave, Dace Coiled Spring, Rhun Revenant), and the shards (Marit earth, Ashavel air).
+- **Zaheda's notebook works in tiger form.** It melds and stays active, as a campaign override of the RAW rule that melded items stop working. Battle Trance, Absorption, the raised servitor, Chameleon, Sacrifice Pool and Pack all carry into the tiger.
+- **The companion-draw rule is moot.** After the full-corpus pass no piece carries a companion- or minion-keyed draw without a companion: Kesh's Animal Bond has his animal companion, and Zaheda's Pack has her summons. The round-five division rule (such a draw applies to one sworn operative of the bearer's division) stays on file, unruled, in case a later roll needs it.

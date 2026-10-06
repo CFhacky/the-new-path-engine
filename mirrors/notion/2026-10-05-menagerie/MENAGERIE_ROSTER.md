@@ -1163,4 +1163,10 @@ Chad ruled that every signature piece is re-rolled against the full corpus, excl
 - **Stalker suit: medium armour** for armour-category tests; the Strider is light. Faelith's Wind works.
 - **Edwyn Coldry: lawful neutral.** The Holy mitten works for him without penalty.
 - **Bases follow the kit:** Durgan's hammer (Thundering Light Hammer of Distance) and Lorne's splitting staff (Staff of Divine Wrath). The crossbow and the longsword are retired.
-- **Still open** (Chad doesn't know yet): the socket readings, the companion-draw rule, Zaheda's notebook in tiger form.
+- ~~Socket readings, companion-draw rule, Zaheda's notebook in tiger form~~: ruled below.
+
+**Rulings (Chad, 6 Oct 2026: "take these leans"):**
+- **Socket fills confirmed** as proposed in round five (seals, charm, strange sockets, shards).
+- **Zaheda's notebook works in tiger form:** it melds and stays active (a campaign override of RAW).
+- **The companion-draw rule is moot** after the full-corpus pass: no piece has a companion-keyed draw without a companion. The round-five division rule stays on file, unruled.
+- **No open item remains on the signature items.**
