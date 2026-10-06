@@ -77,3 +77,7 @@
 8. **Timelines and current state:** nothing advanced. The module is unplayed, and only the resume card carries the armed note.
 9. **Verified:** the controlling page re-fetched (content, tables, child pages and mentions present); the Module Queue row found by search. One formatting fix was applied (the contingency line).
 10. **Recorded:** Canon Change Log entry `3f0e8214-84b0-81c4-8f02-c9790b72498c`, plus this page. Audit page on Notion: `3f0e8214-84b0-818b-bbe5-f4d9bc46cacb`.
+
+## 6. Errata (6 Oct 2026)
+- **§3 resolved:** Chad confirms Northwatch is **unplayed**. The firing guard stands as written: Vraxis is free and commanding.
+- **Controlling module correction:** the wedge is **2 Wardrakes + 1 Roadrider** (Mobile Wedge TO&E). The "3 Wardrakes" in v1.0 was a transcription error.

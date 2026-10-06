@@ -26,7 +26,7 @@ Deviations: none
 # GM QUICK REFERENCE
 
 ## Fire it
-**Trigger (C):** Thay's monthly Annex detection roll returns *seize* after Crown Phase A exists (sondes flying). **Guard (C, pending Chad):** Vraxis is free and in command at Vraxhal (the Northwatch sortie on his page unplayed). That date is Day 0.
+**Trigger (C):** Thay's monthly Annex detection roll returns *seize* after Crown Phase A exists (sondes flying). **Guard (C, confirmed by Chad 6 Oct 2026: Northwatch is unplayed):** Vraxis is free and in command at Vraxhal. If the Northwatch sortie is ever played first, the module re-gates. That date is Day 0.
 **At fire, roll all at once** (Python `secrets`, four throws, lower median, no rerolls) and record on Deferred Dice. Two rows hold the tables:
 - **Row A** (F1–F15, F17, F18): *Crown Decisive Battle — sealed order of battle*.
 - **Row B** (F13, F19–F23): *Thayan dead, mage cadre and knives*.
@@ -104,7 +104,7 @@ Deviations: none
 
 ## The empire's side
 - **Crown:** Mago (orc centurion) and ~22 of his ~30 (8 at the Vigil). Veteran 14 (I).
-- **The wedge:** Gaius Cuneus + 20; 3 Wardrakes and a Roadrider. Turn-back 30 mi on the core pair, 45 mi with the stowed core.
+- **The wedge:** Gaius Cuneus + 20; **2 Wardrakes** (W1 Command, W2) and **1 Roadrider** (Mobile Wedge TO&E). Turn-back 30 mi on the core pair, 45 mi with the stowed core.
 	- Pursuit out of contact: Cuneus rolls 3d6 vs 12.
 - **Khorzad:** manticore, CR 5, 57 hp, AC 17, fly 50 (clumsy).
 	- 6 spikes +8 (1d8+2), 180 ft, 24 a day.
