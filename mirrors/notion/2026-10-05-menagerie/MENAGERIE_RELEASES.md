@@ -270,4 +270,4 @@ He speaks to everyone in the room as if he has known them for years. For three r
 
 ---
 
-*Ivrael's axe was retired and his blade rerolled on 6 Oct 2026 (`HAND_IVRAEL_REROLL.md`); his release text above reflects it.*
+*The signature items under these releases were re-rolled against the full corpus on 6 Oct 2026 (`FULL_CORPUS_CARDS.md`). Every release line that leaned on a retired affix was corrected in place: Brunna (no flight), Ysmay (no Covenant), Osmund (no Death Knight), Edwyn (the mitten, not a summon), Ivrael (Stalwart and Smiting, not Bladesinger), Durgan (no Overcharge) and Teodric (no dispelling stroke). The releases themselves are unchanged.*
