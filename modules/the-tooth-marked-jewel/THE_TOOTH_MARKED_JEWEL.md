@@ -62,6 +62,9 @@ Deviations: adventure-arc-builder not loaded; this is a design document, not yet
 | K13 | Kara-Tur keeps a celestial bureaucracy. Writs, reclassification and true names are its tools (the Mask of the Occupied Oni's breaker table). | Mask page; Eastern Interoperability | S |
 | K14 | Kozakura's sacred geography is not one centralized church. Temples, shrines and local communities hold separate rights, and national permission does not settle them. | Eastern Interoperability §7 | S (provisional prep) |
 | K15 | Kozakura/Red Gate/oni hooks are not imported into the Banang theater without evidence of reach. | Extraordinary Force Register | S |
+| K16 | Electra is Arik's plenipotentiary for the Thayan parley, Uktar–Nightal 1498, Eastern Anauroch, under a sealed, issue-specific commission. Arik does not attend. | LOG-704, LOG-767 | R (Chad) |
+| K17 | Electra's current mechanics are the **July** Complete Character Sheet: Wizard (War Magic) 14 / Rogue (Mastermind) 5 / Aberrant Mind 3, CR 18, Commander of Bloodaxe Military Intelligence, Staff of Thunder and Lightning. The April page stays her narrative home (divine scar, personas, Choice Journal). | Chad, 6 Oct 2026; Change Log 6 Oct | R (Chad) |
+| K18 | **Electra notices the vision.** | Chad, 6 Oct 2026 | R (Chad) |
 
 **Myth anchors used (real-world sources, adapted as Kara-Turan):**
 - **The oath-contest (ukei).** Amaterasu chewed Susanoo's ten-span sword and breathed out three goddesses. Susanoo chewed the jewel-strings from her hair and arms and breathed out five gods. She claimed the five as hers, because the jewels were hers. He declared he had won (gentle daughters from his sword proved a clean heart), then wrecked her hall.
@@ -207,6 +210,35 @@ He folded the packet away. Then he reached up and drew the mask down over his fa
 "Pack the gourd," he said. "We're going east."
 
 Lorne stood a moment longer at the gap in the ring, looking out at the plain where the ground had or had not split. Then he hung the crossbow back on its swivel, crouched for the gourd, and started down the ridge after the priest with the shanty gone out of his mouth.
+
+---
+
+### 2.5 The third witness: Electra (ruled by Chad, 6 Oct 2026: "yes she notices")
+
+**Where she is.** On station in the Crown's country for the Thayan parley (K16). Her exact position that dawn is open. She does **not** stand on the Red Saddle.
+
+**What she notices (she sees no figures).** The bout is shown only to the office's clergy. Electra gets the event from outside, as an intelligence officer would. **Her account is the sceptic's account, and that keeps the four readings open.**
+
+| Channel | What it gives her | Basis |
+|---|---|---|
+| **The Staff of Thunder and Lightning** | At dawn the staff pulls in her hand toward the west-south-west, as a compass needle would. She is a lightning battlemage, and she knows lightning that strikes and then refuses to land is not weather. | July sheet (K17) |
+| **The divine scar** | The scar burns shoulder to hip for the length of a held breath. It is a celestial beacon, and something divine has just manifested within range. | April narrative page |
+| **Identity Anchor on Arik** | She maintains the anchor on Arik without telling him. At the same moment it registers **a pull**: strain on an identity she has sworn to herself to keep whole. She cannot tell whether the pull came from Arik or from her own scar flaring, and she will never be able to. | April narrative page. Ambiguity kept on purpose (§3). |
+| **Forensics, the same morning** | Eight melting hail rings, a doorway-wide gap in the eastern one, three palm-sized spots of fused glass, the stripped dune crests, two sets of tracks in Stride suits, and a smell of rice spirit on the stone. | Investigation / Gather Information; Spellcraft DC 22 finds no spell signature |
+| **The priests themselves** | Within 30 ft of Nym or Lorne, her telepathy can read surface thoughts. That gives her the words *Storm King*, *the bout*, the bitten grip, and the disagreement about who won. | Aberrant Mind telepathy; the GM sets the DC |
+
+**What this makes her.** The first person in Arik's service who can know that he has priests. She commands Bloodaxe Military Intelligence; the priests are Veil agents in Jin's Hand. So **a counter-intelligence finding crosses the line between two services**, and lands on a woman whose own question is whether an instrument can choose its master.
+
+**Her choice (unplayed; Chad's or the dice's).** Whatever she chooses, she logs it in the Choice Journal.
+
+| Option | What it sets off |
+|---|---|
+| **Report to Arik at once** | The discovery arrives now, before the quest. Arik's Emperor-of-Mankind answer (K6) comes **before** the bead exists, and the quest becomes either sanctioned or forbidden. |
+| **Hold it and open a file** | Her default lean (P). It is intelligence first: she wants to know if it is real before she puts it in front of him. **Her own mirror question**, an instrument that chose its master, makes her protect them longer than she should. |
+| **Go to Nym privately** | Silence in exchange for access. She becomes the sanctioned eye inside an unsanctioned sect, or the third member of it. |
+| **Tell Lirien** | The priests are Veil agents. Lirien learns her network has been running a cult inside itself. The fallout routes through `hybrid-intelligence-ops`. |
+
+**Envoy note (primer draft, P).** If Arik later sends Electra into Kozakura, the realm reads the priests as the first envoys and her as the second, which puts her on **the returning-arrow beat**. For a woman carrying Dispater's sleeper programming, a myth whose beat is "the sovereign's tool turns" is the worst possible fit, and the most dramatic one. Not ruled.
 
 ---
 
@@ -588,6 +620,8 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 
 **The forcing logic.** The pledge must be *received*, and only the holder can receive it (§4.1). Every success path ends with two masked Veil agents, or two unmasked ones if the island took their faces, standing in front of Arik with a jade bead and a confession. **Failure paths reach him too, worse:** through Calloway's story, Kitsuki's Bureau suit, or a priest's trial in Enma's court.
 
+**The Electra route (K18).** This is the earliest possible discovery. She knows from 12 Uktar. **When she tells Arik, if she does, decides whether the discovery comes before the quest, during it, or after the bead arrives** (§2.5). If she holds the file, she is in the room for the discovery scene with a dossier she has kept from him. That is its own scene.
+
 **The dragon route (Scale Remembers).** The priests come home through Eastern Anauroch, which is Jörmun's country. Any dragon within 60 ft of the bead knows it is there.
 - **Jörmun** is the Frostborn Legate, a lindwurm and a PC, and he will feel a serpent-killer's tooth walk past him.
 - **Gary** (an ancient red) and **Shi'van's bonded dragon** will feel it too.
@@ -650,6 +684,8 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 5. **Pale Name meter price** for the vision and for each outcome (R3).
 6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
 7. **The Veil shadow route to Kara-Tur** (S1 option 3): the Shadow Gate Network page was not read for this draft.
+8a. **Electra's choice** (§2.5): report, hold, approach Nym, or tell Lirien. Rule it, or roll it at play through `personality_roll.py`.
+8b. **Electra as envoy to Kozakura** (§2.5 note; primer). Not ruled.
 8. **Adventure-arc-builder:** if this should become a playable module, run it through the Notion adventure-arc-builder next. This document is its design brief.
 
 **On approval (not done yet):**
