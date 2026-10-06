@@ -168,3 +168,38 @@ ROLL 1d4+12: raw=[2] +12 -> 14
 ROLL 1d4: raw=[3] -> 3
 -- Nym Unique UDRP 1d16+14 (15-30)
 ROLL 1d16+14: raw=[7] +14 -> 21
+
+===== Ivrael REROLL (6 Oct 2026, logic criterion; base authored)
+==============================================================
+IVRAEL QUILLATAR -- SIGNATURE WEAPON REROLL -- BINDING (logic criterion in force)
+==============================================================
+BASE: AUTHORED -- elven single-edged longblade worn edge-up, bastard sword stats (1d10, 19-20, S)
+TIER: set by CR 14 → Tier 2 — Heroic Elite (router rule: tier is SET, never rolled, when challenge is known)
+TIER BUMP: magnitude 'named' → +1 band → Tier 1 — Legendary
+RARITY: d100=11 +20 (named) → 31 → Rare
+AFFIX COUNT: Rare → 3 (fixed by rarity ladder)
+AFFIX DRAWS:
+  POOL (weighted, martial): d100=68 → Skill/Class
+    d100=83 -> Stalker's Art -- LOGIC: no sneak attack (ranged) -> reroll within pool
+    d100=32 -> Bladesinger [Skill/Class] | T1 value: +3
+  POOL (weighted, martial): d100=62 → Utility
+    d100=93 -> Chameleon [Utility]
+  POOL (weighted, martial): d100=56 → Utility
+    d100=75 -> Sustenance [Utility]
+GREATER CHECK [Bladesinger]: d100=39 vs 10% → no
+GREATER CHECK [Chameleon]: d100=4 vs 10% → GREATER
+GREATER CHECK [Sustenance]: d100=53 vs 10% → no
+  → apply Section 20 conversion ladder to: Chameleon
+TEMPER SLOTS: Rare -> 0
+LEGENDARY ASPECT: Rare -> n/a
+SOCKETS: d100=69 -> 1
+  SOCKET 1: d100=69 -> Charm
+MASTERWORK: Rare → optional/none by ladder
+UDRP BASE: Rare -> raw [1] +2 -> 3
+ITEM CL: 1d4+12 -> raw 3 -> 15
+-- LOG NOTE: the Rare temper-slot d100 above was rolled but not printed (script gap); its result (0 slots) stands.
+-- Charm socket fill (round-5 proposed reading: d2 Utility / Skill-Class, row one tier lower = T2, never Greater; logic criterion applies)
+CHARM: d2=1 -> Utility
+  d100=75 -> Sustenance
+  -> Sustenance DUPLICATE of an affix already on the blade -> reroll within Utility (engine duplicate rule)
+  d100=22 -> Skillmaster | T2 value: +5

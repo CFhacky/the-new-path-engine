@@ -154,3 +154,34 @@ Module manifest (this file) and arc manifest (Affix Registry): The Counted Door 
 	- Mana Well T1: a 12-level bonus-slot reserve, refilling at dawn (Lorne).
 - **Ivrael's axe: option (ii), affinity translation.** On a kill, Souldrinker's 6 ER tops up the Stride suit's Soul Ember Core and restores one daily use of Taunt. Logged on the card: *affinity translation: Souldrinker — "a kill refuels the bearer" → suit core plus Taunt use*.
 - **Yashiori vs the Frozen Threshold: option C.** For now the Root Country is bodies only: no animation for 24 h, and it does not touch where souls go. What the Susanoo office does with the dead is decided in the Susanoo sect chat, and the dagger is updated after that.
+
+---
+
+## Errata — 6 Oct 2026: Ivrael's weapon rerolled (Chad: rolls must make logical sense)
+**The Counted Door is retired.** The roll overwrote his authored look (a long single-edged elven blade worn edge-up) with a battleaxe, and it put a spell-slot affix on a fighter with no spells. Replacement, rolled with the base authored and illogical draws rerolled and logged:
+
+## CHAMELEON ELVEN LONGBLADE OF SUSTENANCE
+Elven single-edged longblade, worn edge-up; scabbard throat bound in silver wire · Rare · Tier 1 · Ivrael Quillatar (Hand, Lt V)
+
+### D&D 3.5e Properties
+- **Masterwork elven longblade** (bastard sword stats): 1d10, 19–20/×2, slashing. One-handed with Exotic Weapon Proficiency, a fighter feat.
+- **Bladesinger (T1):** **+3 dodge** bonus to AC while he wields it.
+- **Chameleon (T1, GREATER):**
+	- At will, the blade and scabbard look like anything of their size: a walking stick, a surveyor's rod, a furled banner.
+	- **Greater:** the disguise also holds against *detect magic* and *identify*. *True seeing* sees through it only on a caster level check against DC 26 (10 + CL 15 + 1).
+- **Sustenance (T1):** he needs no food, water or sleep.
+- **Charm socket, Skillmaster (T2):** **+5 competence** to Spot, Search and Listen. The man who counts the exits sees all of them.
+- CL 15. Market: masterwork bastard sword **335 gp**. UDRP 3 + Greater 2 + socket 1 = **UDRP 6**.
+
+### GURPS 4e Properties
+- Fine (balanced) longblade: Broadsword or Two-Handed Sword skill, sw+1 cut / thr+2 imp.
+- Bladesinger: Enhanced Parry (Broadsword) 3.
+- Chameleon: Morph (cosmetic, at will), plus Resistant to detection magic (Gadget).
+- Sustenance: Doesn't Eat or Drink, Doesn't Sleep.
+- Skillmaster: Observation +4.
+- Limitations: Breakable (DR 6) −25%, Can Be Stolen −10%.
+
+*Rolled Rare: a mechanical name with no lore weight by rule. The Myth Drannor postern-warden story was the axe's, and it retires with the axe. Ivrael still counts the exits aloud in Elvish; that is his own habit now. A Veil blade that can pass as a walking stick, and a man who doesn't sleep, suit the Hand's work better than a war-axe ever did.*
+
+
+Full record, dice and knock-on errata: `mirrors/notion/2026-10-05-menagerie/HAND_IVRAEL_REROLL.md` (branch claude/festive-cerf-gedf1j).
