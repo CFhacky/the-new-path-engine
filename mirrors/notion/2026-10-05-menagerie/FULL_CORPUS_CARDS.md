@@ -29,7 +29,7 @@ The old item names that change are retired on the manifests.
 | Piece | Rarity · tier | Affixes (★ = Greater) | Temper · aspect | UDRP |
 |---|---|---|---|---|
 | Quavein · The Last Column | Legendary · T1 | Dimensional Pocket · Mana Leech★ · Warding · Second Wind | 23H-8 Vital Strike · 24E-5 Detonation | 31 |
-| Hadda · The Pointing Trowel | Legendary · T1 | Souldrinking · Master Rune of Skalf Blackhammer · Striking · Morphing★ | 23H-5 Armor Shatter · 24J-1 Inevitable | 31 |
+| Hadda · Mine to Call | Unique-grade (rolled Legendary draws) · T1 | Souldrinking · Master Rune of Skalf Blackhammer · Striking · Morphing★ | 23H-5 Armor Shatter · 24J-1 Inevitable | 36 |
 | Tarvash | Rare · T1 | Parrying · Riposte · Shield Wall | none | 3 |
 | Aerendyl | Rare · T1 | Weapon Mastery · Master Rune of Dragon Slaying · Undying | 23H-2 Killing Blow | 16 |
 | Kesh · Inside Ten | Legendary · T1 | Animal Bond · Mind Fog · Deflecting · Rune of Cleaving★ | 23E-3 Shadowstep · 24J-5 Cataclysm | 34 |
@@ -75,28 +75,41 @@ Heavy mace, flanged, hooked reverse beak · Legendary · T1 · CL 16
 ### Lore
 An iron haft wrapped in raven-black cord. The flanged head is dull, and the beak's tip is the one bright point on the man. It was the bursar's mace of the minor house that raised him. When a rival bought the matron's death from a priestess, the house's last ledger was left open with its final column never totalled, and Quavein carried out the book and the mace together. **Complication:** every account he collects pays for his next spell, so the longer a fight runs the more he has to cast. The priestess who ended his house would know the mace on sight, and the column will not balance until her name does.
 
-## 2. THE POINTING TROWEL — Hadda Krell
-Punching dagger, H-grip, trowel blade · Legendary · T1 · CL 13
+## 2. MINE TO CALL — Hadda Krell
+A duelling hilt with no blade until she wants one · **Unique-grade** (authored on her rolled Legendary draws; Chad, 6 Oct 2026) · T1 · CL 17
+*Replaces The Pointing Trowel. The rolled affixes, temper, aspect, masterwork result and sockets are kept and ride on the hilt. The base is now a permanent* black blade of disaster *(Spell Compendium p. 29), held rather than floating.*
 ### D&D 3.5e
-- **+3 flaming burst punching dagger** (masterwork 17, kept). 1d4+3 plus 1d6 fire; on a critical hit, +2d10 fire.
-- **Striking:** **+4 enhancement** to attack. It replaces the +3 on attack rolls only, so the net is +1 to hit.
-- **Souldrinking (Magic Item Compendium):** enervating.
-	- A critical hit gives the target one negative level, which it regains after an hour if it survives.
-	- A critical hit against a living creature also gives Hadda 5 temporary HP and +2 morale on melee damage for 10 minutes.
-- **Master Rune of Skalf Blackhammer (Warhammer):** her hits ignore the target's DR/X and natural armour bonus, unless it wears magic armour; then they ignore its DR/X only.
-- **Morphing (Greater):** as a **swift** action (base: standard), the dagger reshapes into any other light melee or thrown weapon.
-- **Temper 23H-5 Armor Shatter:** on a critical hit, the target's armour loses **2d4 AC** until repaired.
+- **The hilt:** blackened steel, a swept guard, Forgedeep guilloche along the lines of force, a sigil filed off the pommel. Empty, it passes any search as a sword with a broken blade.
+- **The blade (Su):** as a free action she opens a **black blade-shaped planar rift**, a slot in the air where the light doesn't go, and closes it the same way.
+	- **Melee touch attacks** at **base attack bonus + Int bonus** (as the spell) + Striking. Attack **+20/+15/+15/+15/+15 touch**. No weapon proficiency is needed; she directs it the way the spell's caster does.
+	- **Damage:** **2d6+3 force**, plus **1d6 fire** (flaming burst runs down the rift's edge). Threat **18–20, ×2**; on a critical hit +1d10 fire.
+	- Force: it hits incorporeal and ethereal creatures normally.
+	- **It passes through magical barriers of 9th level or lower**: *wall of force*, *forcecage*, *globe of invulnerability*, her own Silk. It cannot enter an *antimagic field* or dead magic.
+- **Disaster (her call).** On a confirmed critical hit she may **call it**. The target must make a **Fort save (DC 23)** or be **disintegrated**: **34d6** (2d6 per caster level, CL 17), and a creature reduced to 0 HP is dust. On a successful save it takes **5d6**. Spell resistance applies to the Disaster, at CL 17.
+	- If she doesn't call it, the crit is a crit and nothing more: first blood, hers to call.
+- **Striking:** **+4 enhancement** to attack. It replaces the hilt's +3 on attack rolls.
+- **Souldrinking (Magic Item Compendium):** enervating. A critical hit gives a negative level, and against a living creature gives Hadda 5 temporary HP and +2 morale on melee damage for 10 minutes. It applies whether or not she calls Disaster.
+- **Master Rune of Skalf Blackhammer (Warhammer):** her hits ignore the target's DR/X (touch attacks already ignore its armour and natural armour).
+- **Morphing (Greater):** as a swift action the rift's length changes, from a stiletto's span to a sidesword's three feet. Knife range stays her range.
+- **Temper 23H-5 Armor Shatter:** a critical hit still costs the target's armour **2d4 AC** until repaired. The rift doesn't care, but her allies do.
 - **Aspect 24J-1 Inevitable:** she can't be surprised, flanked or denied her Dex bonus. She always acts in a surprise round and is immune to illusions below 7th level.
-- **Sockets (kept):** spell gem holding *forcecage*; rune **Fal** (+10 on Strength checks).
-- Market: +9 bonus-equivalent, **162,302 gp**. **UDRP 31.**
+- **Sockets (kept), set in the hilt:** spell gem holding *forcecage*; rune **Fal** (+10 on Strength checks).
+- **Stopping it:**
+	- *Dimensional anchor* cast at the rift closes it and **seals the hilt for 1d4 rounds**.
+	- *Dispel magic* (targeted) suppresses the hilt for 1d4 rounds, as for any magic item.
+	- A rod of cancellation or a sphere of annihilation destroys the rift permanently; the hilt becomes steel.
+	- It can't be harmed by physical attacks.
+- Market: the rolled hilt (+9 bonus-equivalent) 162,302 gp, plus the rift (a 9th-level effect at CL 17, continuous: 306,000 gp). **≈ 468,302 gp.** Not for sale. **UDRP 36** (the rolled 31, +5 for an authored 9th-level built-in, as a capstone).
+- **Hadda's feats:** Weapon Finesse is retrained to **Spell Penetration** (+2 on caster level checks against SR, which the Disaster needs). Her old punching dagger was never covered by a wizard's proficiencies; that hidden −4 is gone with it.
 ### GURPS 4e
-- Fine punch dagger, +2 damage, burning 1d Follow-Up.
-- Weapon Bond +4. Souldrinking: temp HP 5 and +1 damage.
-- Skalf: ignores natural DR, and worn DR unless the armour is magic.
-- Morph (weapon forms). Armor Shatter: DR −2d4.
+- Innate Attack 2d+3 crushing (force; Affects Insubstantial; Armor Divisor (Ignores) against non-magical DR; Melee, Reach C–1), plus burning 1d Follow-Up. Uses Innate Attack (Beam) skill.
+- Disaster: Follow-Up Innate Attack 34d corrosion (Accessibility: critical hit, user's choice; Resistible, HT-5); on a success, 5d.
+- Penetrates magical barriers (Cosmic, ≤9th level). Disrupted by Dimensional Anchor and Dispel.
+- Weapon Bond +4. Souldrinking: temp HP 5 and +1 damage. Armor Shatter: DR −2d4.
 - Inevitable: Combat Reflexes, 360° Vision and Illusion resistance.
 ### Lore
-In the Luskan pits the sea-wizard who owned her apprenticeship let his pit-mages carry no blades. Hadda went in with a mason's pointing trowel and came out with the purse. A Forgedeep journeyman in Waterdeep reforged the trowel and engraved the guilloche on the cross-bars to follow the line of force. **Complication:** the master rune in its grip is dwarf work no journeyman should have been able to strike. Forgedeep will want to know who struck it. The Luskan pit families still tell the story of the girl with the trowel their own way.
+The sea-wizard who bought her apprenticeship rented her to the Luskan pits as a girl and let his pit-mages carry no blades. He carried this. The rift was his work, a ninth-circle working laid permanently into a duelling hilt: the pit-master's last word, opened on anyone who forgot whose pit it was. When she had won enough purses to buy herself free, Hadda challenged him to a formal duel, with witnesses, and killed him inside the rules. The hilt was hers by right of the duel. A Forgedeep master in Waterdeep reworked the grip for a half-orc's hand, cut the guilloche along the lines of force and filed the sea-wizard's sigil off the pommel. She named it the first time someone asked her how her duels end: *"First blood. Mine to call."*
+**Complication:** the Arcane Brotherhood of Luskan knows that hilt; one of their own made it, and they never accepted how he lost it. The master rune in the grip is dwarf work no one at Forgedeep will admit to striking. And Hadda has never lost a duel. Every fight she has won, she decided how it ended. If the hilt is ever taken from her, she will find out what she is without the choice.
 
 ## 3. PARRYING SCIMITARS OF RIPOSTE — Tarvash Oruk
 Paired Calishite scimitars (one item) · Rare · T1 · CL 14
@@ -441,7 +454,7 @@ The masterwork-driven attack lines from round 5 stand: Quavein +22, Hadda +19, K
 | Bearer | Changed lines |
 |---|---|
 | Quavein | **AC 31, touch 20, flat-footed 29** (Warding). Second Wind 3/day. Mana Leech: 5 spell levels per hit. |
-| Hadda | Attack **+20/+15/+15/+15/+15** (Striking +4). DR back to 8/magic. **Spell DC back to 18 + level, evocation 20 + level.** Can't be flanked or surprised. |
+| Hadda | Attack **+20/+15/+15/+15/+15 touch** with the rift (BAB + Int + Striking), 2d6+3 force + 1d6 fire, 18–20; Disaster on a called crit (Fort DC 23, 34d6). Weapon Finesse → Spell Penetration. DR back to 8/magic. **Spell DC back to 18 + level, evocation 20 + level.** Can't be flanked or surprised. |
 | Tarvash | AC **+5** (Parrying +1 insight, Shield Wall +4); saves +1. Riposte at will. Initiative back to +14. |
 | Aerendyl | Unarmed damage back to 2d8. Stunning Fist back to 16/day. Threat range +1; critical multiplier +1. DR 5/— below 0 HP. |
 | Kesh | Damage **1d6+9** (Rune of Cleaving +2 Str). No longer immune to critical hits; swim speed gone. |
@@ -474,3 +487,6 @@ The masterwork-driven attack lines from round 5 stand: Quavein +22, Hadda +19, K
 - **Socket fills confirmed** as proposed in round five: Quavein's seal Stalwart +4, Naevys's seal Aegis +5, Aerendyl's charm Dimensional Pocket 100 lb, the strange sockets (Aerendyl Weave, Dace Coiled Spring, Rhun Revenant), and the shards (Marit earth, Ashavel air).
 - **Zaheda's notebook works in tiger form.** It melds and stays active, as a campaign override of the RAW rule that melded items stop working. Battle Trance, Absorption, the raised servitor, Chameleon, Sacrifice Pool and Pack all carry into the tiger.
 - **The companion-draw rule is moot.** After the full-corpus pass no piece carries a companion- or minion-keyed draw without a companion: Kesh's Animal Bond has his animal companion, and Zaheda's Pack has her summons. The round-five division rule (such a draw applies to one sworn operative of the bearer's division) stays on file, unruled, in case a later roll needs it.
+
+## Ruling (Chad, 6 Oct 2026): Hadda's weapon
+Hadda's piece must be a real weapon. **The Pointing Trowel is retired.** Her signature piece is now ***Mine to Call***: the sea-wizard's duelling hilt holding a permanent *black blade of disaster* (Spell Compendium p. 29), with her rolled Legendary draws riding on the hilt (card 2). It is authored, Unique-grade, and pairs with Kerra's *Not Mine*. Disaster fires only on a confirmed critical hit she chooses to call.
