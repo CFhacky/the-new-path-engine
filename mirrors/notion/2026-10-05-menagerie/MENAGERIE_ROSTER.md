@@ -77,8 +77,8 @@ Each entry gives the look head to toe, the art, the signature piece, the signatu
 ### II — Hadda Krell, "Spider-Hadda"
 *Wizard 16 · half-orc, female, seasoned · Spider · Phantom, mage variant (Forgedeep dwarven)*
 - **Look.** Six feet, heavy-boned, with grey-green skin crazed by fine white scar lines on both forearms: duelling scars, dozens of them. Her tusks are filed flat and capped in silver. Iron-grey hair hangs to her waist in a single rope plait. Wire-rimmed spectacles sit on a broken nose. Her spellbook travels in a riveted steel case at the right hip, chained to the belt.
-- **Art.** She is a battle-wizard who fights at knife range. The left hand casts. The right holds a long-handled punching dagger with a triangular blade. She opens by filling the room with force and closes with the dagger, with no gap in between where a swordsman could get comfortable.
-- **Signature piece.** *The punch-dagger:* an H-grip of blackened steel with a blade like a narrow trowel, and fine guilloche lines on the cross-bars that follow the force of a thrust.
+- **Art.** She is a battle-wizard who fights at knife range. The left hand casts. The right holds an empty duelling hilt, and then a three-foot rift where the blade should be. She opens by filling the room with force and closes with the dagger, with no gap in between where a swordsman could get comfortable.
+- **Signature piece.** ***Mine to Call:*** a blackened-steel duelling hilt with a swept guard and guilloche along the lines of force, the dead sea-wizard's sigil filed off the pommel. Its blade is a permanent *black blade of disaster*: a slot in the air where the light doesn't go.
 - **Signature technique: the Silk.** In her first breath of a fight she strings fine threads of force across the space, invisible until they glint. From then on every step her opponent takes runs into a line she has already drawn.
 - **Tell.** She takes the spectacles off, folds them and pockets them before she kills. People who know her watch her hands for that.
 - **Lawless streak.** She duels for sport: Legion officers, hedge-mages, travelling swordsmen, anyone who will take the challenge. Her duels end at first blood, by her choice and only her choice.
@@ -627,14 +627,14 @@ Advantages: Combat Reflexes; Clerical Investment (the Storm King's office); Powe
 **DR 8/magic; magical DR 4; SR 12.**
 **Fused active defenses:** Dodge 12; Parry 14 (knife parry −1).
 **Attacks** (full-attack count 5):
-- *punch-dagger (punching dagger, signature piece)* +17/+12/+12/+12/+12, 1d4+5, ×3; Weapon Finesse
+- *Mine to Call (planar rift, signature piece)* +20/+15/+15/+15/+15 melee touch (BAB + Int + Striking), 2d6+3 force + 1d6 fire, 18–20/×2; on a crit she calls, Fort DC 23 or disintegrated (34d6; 5d6 on a save)
 - *Evening's Edge claws* +16, 1d6+5
 **Features.** **Captain's Writ (R1):** Shadow Jump 80 ft/day, shadow to shadow (Su), through Nightwind attunement. Darkvision 60 ft (half-orc). Evoker: +1 DC on evocation from specialisation is folded into Spell Focus below; prohibited schools are open (**Chad**: suggest enchantment and illusion).
 **Casting.** Arcane caster level 16; save DC 18 + spell level, **20 + spell level for evocation** (Spell Focus, Greater Spell Focus). Core list: *wall of force, forcecage, Bigby's crushing hand, Otiluke's telekinetic sphere, Mordenkainen's sword, chain lightning, Tenser's transformation, quickened shield, greater dispel magic, dimension door*. **The Silk** is her signature technique: a reshaped *wall of force* strung as threads, written up through magic-research.
-**Feats.** Scribe Scroll, Weapon Finesse, Spell Focus (evocation), Greater Spell Focus (evocation), Quicken Spell, Empower Spell, Maximize Spell, Combat Casting, Improved Initiative.
+**Feats.** Scribe Scroll, Spell Penetration, Spell Focus (evocation), Greater Spell Focus (evocation), Quicken Spell, Empower Spell, Maximize Spell, Combat Casting, Improved Initiative.
 **Skills.** Concentration +22, Spellcraft +27, Knowledge (arcana) +27, Intimidate +11, Tumble +14.
 **Kit.** Evening's Edge gloves (claws 1d6, finesse; armor bonus overlapped by the suit), hand crossbow with drow sleep poison, Moranth munitions, communication crystal, cloak of resistance +4, ring of protection +3; headband of intellect +6, Evening's Edge of captain's grade (+4 Dex woven in), amulet of health +2. Spellbook in a riveted steel case on a chain.
-**Tactics.** Opens with force (the Silk, then a *forcecage* or *Bigby's* hand on the strongest body), closes with the punch-dagger behind a quickened *shield*. *Tenser's transformation* when she wants a duel to be physical. Calls first blood herself.
+**Tactics.** Opens with force (the Silk, then a *forcecage* or *Bigby's* hand on the strongest body), closes with the rift behind a quickened *shield*, through her own walls. *Tenser's transformation* when she wants a duel to be physical. Calls first blood herself.
 **GURPS 4e (≈480 CP, campaign scale, not itemised).** ST 12; DX 12; IQ 15; HT 11. HP 12; Will 15; Per 15; FP 11. Basic Speed 5.75; Move 5 (9 suited); Dodge 12; Parry 14.
 Advantages: Combat Reflexes; Magery 6; Fearlessness 2; Night Vision 4. Key skills: Knife-16, Thaumatology-19, Innate Attack (beam)-18, Fast-Draw (knife)-15, Teaching-16, Savoir-Faire (high society)-13. Disadvantages: Bully (grades people); Compulsive Behaviour (needs witnesses); Overconfidence; Secret (never lost).
 
@@ -885,7 +885,7 @@ Advantages: Combat Reflexes; Danger Sense; Precognition (combat, Limited); Enhan
 | Piece | Sockets (rolled) | Fill |
 |---|---|---|
 | I Quavein — beak-mace | 3: spell gem · seal · spell gem | Spell gems: ***destruction*** (7th) and ***heal*** (6th, for whoever he decides is worth it). Seal empty. |
-| II Hadda — punch-dagger | 2: spell gem · rune | Spell gem: ***forcecage*** (7th), the Silk's closing knot. Rune **Fal** (see the reading below). |
+| II Hadda — Mine to Call (hilt) | 2: spell gem · rune | Spell gem: ***forcecage*** (7th), the Silk's closing knot. Rune **Fal** (see the reading below). |
 | III Tarvash — paired scimitars | none | — |
 | IV Aerendyl — prayer-cord | 3: strange · spell gem · charm | Affinity translation: the sockets sit in the bear-claw fob and two knots. Spell gem: ***regenerate*** (7th), for the long road. Strange and charm sockets empty. |
 | V Kesh — mantis-sickles | none | — |
@@ -1132,7 +1132,7 @@ Chad ruled that every signature piece is re-rolled against the full corpus, excl
 | Bearer | Piece |
 |---|---|
 | Quavein | *The Last Column*: Dimensional Pocket, Mana Leech (Greater), Warding, Second Wind |
-| Hadda | *The Pointing Trowel*: Souldrinking, Master Rune of Skalf Blackhammer, Striking, Morphing (Greater) |
+| Hadda | *Mine to Call* (Unique-grade; a permanent *black blade of disaster* on the hilt): Souldrinking, Master Rune of Skalf Blackhammer, Striking, Morphing (Greater) |
 | Tarvash | Parrying Scimitars of Riposte |
 | Aerendyl | Undying Prayer-Cord of Dragon Slaying |
 | Kesh | *Inside Ten*: Animal Bond, Mind Fog, Deflecting, Rune of Cleaving (Greater) |
@@ -1170,3 +1170,5 @@ Chad ruled that every signature piece is re-rolled against the full corpus, excl
 - **Zaheda's notebook works in tiger form:** it melds and stays active (a campaign override of RAW).
 - **The companion-draw rule is moot** after the full-corpus pass: no piece has a companion-keyed draw without a companion. The round-five division rule stays on file, unruled.
 - **No open item remains on the signature items.**
+
+**Ruling (Chad, 6 Oct 2026): Hadda's weapon is real.** *The Pointing Trowel* is retired. Her signature piece is ***Mine to Call***: the sea-wizard's duelling hilt holding a permanent *black blade of disaster*, with her rolled draws riding on the hilt. It is Unique-grade and pairs with Kerra's *Not Mine*. Disaster fires only on a confirmed critical hit she chooses to call. Her look, stat block and tactics above are corrected in place; Weapon Finesse is retrained to Spell Penetration.
