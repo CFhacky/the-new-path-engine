@@ -235,8 +235,8 @@ He hums the three bars of the Moonsea shanty, and the staff splits into its two 
 He counts the exits aloud in Elvish. When he reaches the end, there is only one.
 - Within **40 ft**, every exit but one is sealed by force walls. Ivrael stands in the one left open.
 - Every enemy within 40 ft must attack him for the 3 rounds (Will DC 21 negates, one save). He gets an attack of opportunity on each one that comes at him.
-- **Despair** applies to everything he strikes while it is frightened, and the room is frightened.
-- **GURPS:** Force Wall (Area 13 yd, all but one exit), Affliction (Compulsive Attack, Area), Counter Attack against all; Limited Use 1/day.
+- While the Counted Door holds, his Bladesinger dodge bonus doubles to **+6**. Everything forced to come at him is swinging at the hardest target in the room.
+- **GURPS:** Force Wall (Area 13 yd, all but one exit), Affliction (Compulsive Attack, Area), Counter Attack against all, Enhanced Parry +6; Limited Use 1/day.
 - **After:** the walls drop and the door is just a door. He counts the exits again, quieter.
 
 ## Lt VI (Hand). Durgan Emberlode — *The Banked Coal*
@@ -270,4 +270,4 @@ He speaks to everyone in the room as if he has known them for years. For three r
 
 ---
 
-**Errata (6 Oct 2026, Ivrael reroll):** *The Counted Door* (axe) is retired. In Ivrael's release, the Despair line is withdrawn; instead, while the Counted Door holds, his Bladesinger dodge bonus doubles to +6. See `HAND_IVRAEL_REROLL.md`.
+*Ivrael's axe was retired and his blade rerolled on 6 Oct 2026 (`HAND_IVRAEL_REROLL.md`); his release text above reflects it.*

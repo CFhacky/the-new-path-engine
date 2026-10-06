@@ -227,7 +227,7 @@ Four captains clash with Brunna. Each of their releases takes her pinned away be
 <tr><td>Durgan Emberlode · Lt VI (Marit)</td><td>Sorcerer 14, draconic (fire) · CL 14</td><td>Known: <em>scorching ray, fireball, haste, fire shield, wall of fire, cone of cold, chain lightning, disintegrate, delayed blast fireball, dimension door, shield</em>. The crossbow's Souldrinker recovers 6 spell levels on a kill.</td></tr>
 </table>
 
-Ivrael Quillatar (Lt V, Kesh) is a fighter and casts nothing. He's paired below because his axe's **Despair** aspect is built for the priests.
+Ivrael Quillatar (Lt V, Kesh) is a fighter and casts nothing. He's paired below for his blade and his release.
 
 **The Hand has no releases.** The round-six releases went to the 13 captains and the 8 new lieutenants. The Hand's five hold the same rank and have none. **Open:** whether they get lesser releases too. Jin's orders win on Hand operations.
 
@@ -238,9 +238,8 @@ Ivrael Quillatar (Lt V, Kesh) is a fighter and casts nothing. He's paired below 
 - **With the release:** whatever Long Road crushes, Lorne raises inside the quake: the Undead Servitor's 12 HD corpse, then *animate dead* on the rest. Every dead thing he raises fights from the ground Aerendyl owns.
 - **From across the field:** a barefoot elf holding a gatehouse, and the people it fell on getting up again.
 
-### V. Kesh + Ivrael — *Despair at Ten Paces* (no caster)
-- Ivrael's axe: a creature it strikes **while frightened** cannot receive magical healing until the fear ends.
-- Kesh has no fear source, so the Hand's priests supply it (5c). Inside ten paces the sickles hook the target prone and Ivrael's axe finds it there.
+### V. Kesh + Ivrael — *The Wall at Ten Paces* (no caster)
+- Inside ten paces Kesh's sickles hook the target prone. Ivrael, +3 dodge with his longblade, is the line they're hooked against.
 
 ### VI. Marit + Durgan — *The Quarry Arrives on a Fire*
 - **With the release:** Durgan casts *delayed blast fireball* where Marit stands, timed to go off when the hounds bring her quarry (up to 5 rounds). The quarry comes through every wall on the plane and lands on it.
@@ -272,10 +271,6 @@ Arik doesn't know he has any of them.
 	- Lorne and Osmund raise what drops, except Nym's kills.
 
 ## 5c. Across the host
-### Nym or Lorne + Ivrael — *Despair*
-- Either priest's *cause fear* (or Nym's *confusion*, used to break formation) sets up Ivrael's axe: a frightened target the axe strikes cannot be magically healed.
-- Add Dace's Terrifying (DC 24, 27 within his aura) and the whole front rank can be frightened and unhealable at once.
-
 ### Teodric + Wenna + Edwyn — *The Table of Three*
 - Edwyn's *mind fog*: −10 on Will saves.
 - Then two enchanters at caster level 14:
@@ -304,7 +299,7 @@ Arik doesn't know he has any of them.
 
 ## 5d. The Hand's releases in pairing (appended 6 Oct 2026; Chad: casting lines stand, the Hand gets releases)
 - **Aerendyl + Lorne:** in Long Road's quake, Lorne's dead come out of the shadows of whatever Aerendyl is holding up. Their strikes are flat-footed and +4d6 against anything that can't stand.
-- **Kesh + Ivrael:** the Counted Door forces every enemy towards Ivrael, through Kesh's ten paces. The sickles hook them prone on the way in, and the frightened don't heal.
+- **Kesh + Ivrael:** the Counted Door forces every enemy towards Ivrael, through Kesh's ten paces. The sickles hook them prone on the way in, and Ivrael, at +6 dodge, is the wall they arrive at.
 - **Marit + Durgan:** the hounds bring the quarry, and Durgan breathes on the spot where it lands.
 - **Naevys + Nym:** Eight Vats puts the line to sleep, and the Hunt rides over the sleepers. Nym's dead go to the Root Country for a year and a day.
 - **Brunna + Teodric:** Old Friends questions the Larder. The pinned answer truthfully while they hang.
@@ -323,4 +318,4 @@ Arik doesn't know he has any of them.
 
 ---
 
-**Errata (6 Oct 2026, Ivrael reroll):** Ivrael's axe and its Despair aspect are retired. Withdrawn: Kesh + Ivrael *Despair at Ten Paces* (5a), Nym or Lorne + Ivrael *Despair* (5c), and the "frightened don't heal" line in 5d. Kesh + Ivrael now reads: the Counted Door forces every enemy towards Ivrael through Kesh's ten paces; the sickles hook them prone on the way in, and Ivrael at +6 dodge is the wall they arrive at.
+*Ivrael's axe was retired and his blade rerolled on 6 Oct 2026 (`HAND_IVRAEL_REROLL.md`); the pairings above reflect it.*
