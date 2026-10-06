@@ -203,3 +203,6 @@ CHARM: d2=1 -> Utility
   d100=75 -> Sustenance
   -> Sustenance DUPLICATE of an affix already on the blade -> reroll within Utility (engine duplicate rule)
   d100=22 -> Skillmaster | T2 value: +5
+
+
+=== 6 Oct 2026: SUPERSEDED for Ivrael, Teodric, Durgan, Lorne by the full-corpus pass. Raw dice: mirrors/notion/2026-10-05-menagerie/full_corpus_pass_rolls.txt (branch claude/festive-cerf-gedf1j). Yashiori stands. ===

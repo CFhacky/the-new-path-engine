@@ -185,3 +185,67 @@ Elven single-edged longblade, worn edge-up; scabbard throat bound in silver wire
 
 
 Full record, dice and knock-on errata: `mirrors/notion/2026-10-05-menagerie/HAND_IVRAEL_REROLL.md` (branch claude/festive-cerf-gedf1j).
+
+
+---
+
+## Errata — 6 Oct 2026 (later): full-corpus re-roll (Chad: roll the whole corpus, no post-creation enchants)
+Supersedes the cards above for **Ivrael, Teodric, Durgan and Lorne**, including the Chameleon longblade errata. **Yashiori (Unique) stands unchanged.** Rarity, masterwork, sockets and bases are kept; affixes, tempers and aspects were rolled again against the loot-engine pools plus the DMG/MIC weapon properties, Diablo II modifiers and Warhammer runes, with no duplicates across the host and an in-pool reroll for anything the bearer can't use. Dice: `mirrors/notion/2026-10-05-menagerie/full_corpus_pass_rolls.txt` on `claude/festive-cerf-gedf1j`.
+
+**Retired names:** Stalwart Bastard Sword of Dispelling, Venomous Heavy Crossbow of Evasion, Longsword of the Undead Servitor, Chameleon Elven Longblade of Sustenance.
+
+### H1. METALLINE LONGBLADE OF SMITING — Ivrael Quillatar
+Elven single-edged longblade (bastard sword stats) · Rare · T1 · CL 15 · *replaces today's earlier reroll*
+#### D&D 3.5e
+- **Masterwork elven longblade.** 1d10, 19–20, slashing.
+- **Master Rune of Smiting (Warhammer):** every damaging hit adds a **second roll of the weapon's damage dice** (dice only, not multiplied on a critical hit).
+- **Metalline (Magic Item Compendium):** as a standard action, the blade becomes **adamantine, alchemical silver, cold iron or steel**.
+- **Stalwart:** **+4 resistance** to all saves.
+- **Socket (kept):** charm, Skillmaster +5 Spot, Search and Listen.
+- Market: +5 bonus-equivalent, **50,335 gp**. **UDRP 4.**
+#### GURPS 4e
+- A second injury roll per hit. Material switch (Armor Divisor (2) against the matching DR).
+- Will +4, HT +3.
+
+### H2. SACRED BURST BASTARD SWORD OF IGNORED DEFENSE — Teodric Halvane
+Elven bastard sword, two-handed · Rare · T1 · CL 14
+#### D&D 3.5e
+- **Masterwork bastard sword.**
+- **Ignore Target's Defense (Diablo II):** his attacks against creatures **under 17 HD** resolve as touch attacks: armour, shield and natural armour are ignored.
+- **Sacred Burst (Magic Item Compendium):** on a critical hit, **+1d10 positive energy** (×2), or 2d10 against an evil outsider.
+- **Metamagic Font:** 3/day, apply one metamagic feat to a spell without raising its level.
+- **Temper 23E-7 Aerial Dash:** 1/encounter, fly 100 ft in a straight line.
+- **Sockets (kept):** Topaz (3d6 retaliation) and Skull (8 HP per hit).
+- Market: +4 bonus-equivalent, **32,335 gp**. **UDRP 12.**
+#### GURPS 4e
+- Defender's Parry, Block and Dodge at −3 (Tier 2 and below).
+- Burning (holy) on a critical. Modular metamagic, 3/day.
+
+### H3. THUNDERING HEAVY CROSSBOW OF DISTANCE — Durgan Emberlode
+Heavy crossbow · Rare · T1 · CL 14
+#### D&D 3.5e
+- **Masterwork heavy crossbow.** 1d10, 19–20.
+- **Distance:** range increment **240 ft**, double.
+- **Thundering (Greater):** on a critical hit, **+1d10 sonic** (base 1d8), and the target is **deafened** permanently unless it makes Fort **DC 16** (base 14).
+- **Profane Burst (Magic Item Compendium):** negative energy on a hit while active; on a critical hit, +1d10 (2d10 against good outsiders). Each burst costs Durgan **1d4 Con**.
+- **Temper 23I-9 Blood Pact:** 1/day, spend 25% of his maximum HP to **double one spell's or attack's damage**. A doubled *delayed blast fireball* is the point. (Rerolled twice: Whirlwind and Momentum Crit don't work on a heavy crossbow.)
+- Market: +3 bonus-equivalent, **18,350 gp**. **UDRP 12.**
+#### GURPS 4e
+- Acc +1; range ×2. Crushing (sonic) critical rider, plus Deafness.
+- Toxic (cosmic) critical rider, which costs HT. Damage ×2 (HP cost), 1/day.
+
+### H4. LONGSWORD OF DIVINE WRATH — Lorne Ashby
+Longsword · Rare · T1 · CL 13
+#### D&D 3.5e
+- **Masterwork longsword.**
+- **Divine Wrath (Greater):** as a swift action, spend a turn-undead attempt. If his next hit lands on an undead creature, it deals **+1d8 per point of Charisma bonus** (base 1d6).
+- **Shadow Clone:** at will, a shadow duplicate of himself with **50%** of his statistics.
+- **Souldrinker (parity ruling):** a kill recovers up to **6 spell levels** of expended slots, once per round.
+- **Temper 23C-4 Enduring Ward:** **+4 SR**.
+- **Sockets (kept):** Topaz and two Amethyst (+50 HP).
+- Market: +1 bonus-equivalent, **2,315 gp**. **UDRP 11.**
+#### GURPS 4e
+- Holy Innate Attack against undead. Duplication (50%).
+- ER 6 on a kill. Magic Resistance +4.
+
+*The longsword no longer raises the dead.* Lorne still raises with his spells; the sword now **puts down** the undead and doubles the man who carries it.
