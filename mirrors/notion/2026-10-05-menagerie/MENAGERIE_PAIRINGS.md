@@ -272,7 +272,7 @@ Arik doesn't know he has any of them.
 ### Teodric + Wenna + Edwyn — *The Table of Three*
 - Edwyn's *mind fog*: −10 on Will saves.
 - Then two enchanters at caster level 14:
-	- Teodric's *dominate person* or *insanity* (maximised dice from his sword where they matter);
+	- Teodric's *dominate person* or *insanity* (his sword's Metamagic Font extends or silences one of them at no level cost);
 	- Wenna's *feeblemind* or *mass suggestion*.
 - Three lieutenants can take a captain, or a court, off the board.
 
@@ -285,12 +285,12 @@ Arik doesn't know he has any of them.
 - They are not rivals on the rolled web. This is the elemental friction for Phase 6 to play with.
 
 ### Lorne + Ysmay — *The Watch's Second Medic*
-- Lorne's *harm* (130) keeps Ysmay standing when Osmund is in another division's fight.
+- Lorne's *heal* (130) keeps Ysmay standing when Osmund is in another division's fight.
 - With Rhun's Stand Watch and her deferred damage, the Division XI fight runs 10 rounds with Ysmay at full strength.
 
 ## Open (Hand)
 - **The four casting lines** above are the Phase 6 seed, for Chad to confirm. DCs follow once Phase 6 sets the ability scores.
-- **Hand releases:** yes or no.
+- **Hand releases:** yes (Chad, 6 Oct 2026; section 5d).
 - **Raising versus the Root Country:** is it doctrine inside the office, or just friction between the priests?
 
 ---
