@@ -1,0 +1,132 @@
+{
+ "I Quavein": {
+  "piece": "beak-mace",
+  "tier": 1,
+  "sockets": [
+   "Spell gem (Reservoir T1: one stored spell up to 7th level)",
+   "Seal socket (empty; filled in the item pass)",
+   "Spell gem (Reservoir T1: one stored spell up to 7th level)"
+  ]
+ },
+ "II Hadda": {
+  "piece": "punch-dagger",
+  "tier": 1,
+  "sockets": [
+   "Spell gem (Reservoir T1: one stored spell up to 7th level)",
+   "Rune: Fal"
+  ]
+ },
+ "III Tarvash": {
+  "piece": "paired scimitars",
+  "tier": 1,
+  "sockets": []
+ },
+ "IV Aerendyl": {
+  "piece": "prayer-cord",
+  "tier": 1,
+  "sockets": [
+   "Strange socket (empty; filled in the item pass)",
+   "Spell gem (Reservoir T1: one stored spell up to 7th level)",
+   "Charm socket (empty; filled in the item pass)"
+  ]
+ },
+ "V Kesh": {
+  "piece": "mantis-sickles",
+  "tier": 1,
+  "sockets": []
+ },
+ "VI Marit": {
+  "piece": "boning knife",
+  "tier": 1,
+  "sockets": [
+   "Shard socket (empty; filled in the item pass)"
+  ]
+ },
+ "VII Naevys": {
+  "piece": "boar-spear",
+  "tier": 1,
+  "sockets": [
+   "Seal socket (empty; filled in the item pass)",
+   "Gem: Sapphire"
+  ]
+ },
+ "VIII Brunna": {
+  "piece": "the tucks",
+  "tier": 1,
+  "sockets": []
+ },
+ "IX Mercy": {
+  "piece": "the gaff",
+  "tier": 1,
+  "sockets": [
+   "Rune: Mal",
+   "Spell gem (Reservoir T1: one stored spell up to 7th level)"
+  ]
+ },
+ "X Zaheda": {
+  "piece": "notebook and reed pen (focus)",
+  "tier": 1,
+  "sockets": []
+ },
+ "XI Ysmay": {
+  "piece": "the old sword",
+  "tier": 1,
+  "sockets": []
+ },
+ "XII Ilvaera": {
+  "piece": "manticore darts (the quiver)",
+  "tier": 1,
+  "sockets": []
+ },
+ "XIII Dace": {
+  "piece": "short spear",
+  "tier": 1,
+  "sockets": [
+   "Strange socket (empty; filled in the item pass)"
+  ]
+ },
+ "Lt I Osmund Tarrow": {
+  "piece": "brass censer",
+  "tier": 2,
+  "sockets": []
+ },
+ "Lt II Kerra Lisle": {
+  "piece": "duelling rapier",
+  "tier": 1,
+  "sockets": []
+ },
+ "Lt III Wenna Sorrel": {
+  "piece": "short hatchet",
+  "tier": 1,
+  "sockets": []
+ },
+ "Lt IX Faelith Ammarin": {
+  "piece": "darkwood tower shield",
+  "tier": 1,
+  "sockets": []
+ },
+ "Lt X Patience Haskett": {
+  "piece": "two-headed flail",
+  "tier": 1,
+  "sockets": []
+ },
+ "Lt XI Rhun Talbridge": {
+  "piece": "pollaxe",
+  "tier": 1,
+  "sockets": [
+   "Strange socket (empty; filled in the item pass)"
+  ]
+ },
+ "Lt XII Edwyn Coldry": {
+  "piece": "mail mitten",
+  "tier": 1,
+  "sockets": []
+ },
+ "Lt XIII Ashavel Oriym": {
+  "piece": "iron war-fans",
+  "tier": 1,
+  "sockets": [
+   "Shard socket (empty; filled in the item pass)"
+  ]
+ }
+}

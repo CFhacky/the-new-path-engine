@@ -1,0 +1,67 @@
+===== I Quavein — beak-mace (Tier 1)
+[I Quavein socket count] ROLL d100: raw=[95] -> 95
+[I Quavein socket 1 type] ROLL d100: raw=[15] -> 15
+[I Quavein socket 1 gem kind (1 stat / 2 spell)] ROLL d2: raw=[2] -> 2
+[I Quavein socket 2 type] ROLL d100: raw=[53] -> 53
+[I Quavein socket 3 type] ROLL d100: raw=[17] -> 17
+[I Quavein socket 3 gem kind (1 stat / 2 spell)] ROLL d2: raw=[2] -> 2
+===== II Hadda — punch-dagger (Tier 1)
+[II Hadda socket count] ROLL d100: raw=[84] -> 84
+[II Hadda socket 1 type] ROLL d100: raw=[28] -> 28
+[II Hadda socket 1 gem kind (1 stat / 2 spell)] ROLL d2: raw=[2] -> 2
+[II Hadda socket 2 type] ROLL d100: raw=[31] -> 31
+[II Hadda socket 2 high rune d10] ROLL d10: raw=[6] -> 6
+===== III Tarvash — paired scimitars (Tier 1)
+[III Tarvash socket count] ROLL d100: raw=[3] -> 3
+===== IV Aerendyl — prayer-cord (Tier 1)
+[IV Aerendyl socket count] ROLL d100: raw=[98] -> 98
+[IV Aerendyl socket 1 type] ROLL d100: raw=[96] -> 96
+[IV Aerendyl socket 2 type] ROLL d100: raw=[20] -> 20
+[IV Aerendyl socket 2 gem kind (1 stat / 2 spell)] ROLL d2: raw=[2] -> 2
+[IV Aerendyl socket 3 type] ROLL d100: raw=[80] -> 80
+===== V Kesh — mantis-sickles (Tier 1)
+[V Kesh socket count] ROLL d100: raw=[40] -> 40
+===== VI Marit — boning knife (Tier 1)
+[VI Marit socket count] ROLL d100: raw=[46] -> 46
+[VI Marit socket 1 type] ROLL d100: raw=[88] -> 88
+===== VII Naevys — boar-spear (Tier 1)
+[VII Naevys socket count] ROLL d100: raw=[87] -> 87
+[VII Naevys socket 1 type] ROLL d100: raw=[60] -> 60
+[VII Naevys socket 2 type] ROLL d100: raw=[13] -> 13
+[VII Naevys socket 2 gem kind (1 stat / 2 spell)] ROLL d2: raw=[1] -> 1
+[VII Naevys socket 2 gem d7] ROLL d7: raw=[2] -> 2
+===== VIII Brunna — the tucks (Tier 1)
+[VIII Brunna socket count] ROLL d100: raw=[29] -> 29
+===== IX Mercy — the gaff (Tier 1)
+[IX Mercy socket count] ROLL d100: raw=[81] -> 81
+[IX Mercy socket 1 type] ROLL d100: raw=[50] -> 50
+[IX Mercy socket 1 high rune d10] ROLL d10: raw=[10] -> 10
+[IX Mercy socket 2 type] ROLL d100: raw=[30] -> 30
+[IX Mercy socket 2 gem kind (1 stat / 2 spell)] ROLL d2: raw=[2] -> 2
+===== X Zaheda — notebook and reed pen (focus) (Tier 1)
+[X Zaheda socket count] ROLL d100: raw=[18] -> 18
+===== XI Ysmay — the old sword (Tier 1)
+[XI Ysmay socket count] ROLL d100: raw=[36] -> 36
+===== XII Ilvaera — manticore darts (the quiver) (Tier 1)
+[XII Ilvaera socket count] ROLL d100: raw=[18] -> 18
+===== XIII Dace — short spear (Tier 1)
+[XIII Dace socket count] ROLL d100: raw=[61] -> 61
+[XIII Dace socket 1 type] ROLL d100: raw=[95] -> 95
+===== Lt I Osmund Tarrow — brass censer (Tier 2)
+[Lt I Osmund Tarrow socket count] ROLL d100: raw=[8] -> 8
+===== Lt II Kerra Lisle — duelling rapier (Tier 1)
+[Lt II Kerra Lisle socket count] ROLL d100: raw=[40] -> 40
+===== Lt III Wenna Sorrel — short hatchet (Tier 1)
+[Lt III Wenna Sorrel socket count] ROLL d100: raw=[12] -> 12
+===== Lt IX Faelith Ammarin — darkwood tower shield (Tier 1)
+[Lt IX Faelith Ammarin socket count] ROLL d100: raw=[44] -> 44
+===== Lt X Patience Haskett — two-headed flail (Tier 1)
+[Lt X Patience Haskett socket count] ROLL d100: raw=[22] -> 22
+===== Lt XI Rhun Talbridge — pollaxe (Tier 1)
+[Lt XI Rhun Talbridge socket count] ROLL d100: raw=[55] -> 55
+[Lt XI Rhun Talbridge socket 1 type] ROLL d100: raw=[98] -> 98
+===== Lt XII Edwyn Coldry — mail mitten (Tier 1)
+[Lt XII Edwyn Coldry socket count] ROLL d100: raw=[43] -> 43
+===== Lt XIII Ashavel Oriym — iron war-fans (Tier 1)
+[Lt XIII Ashavel Oriym socket count] ROLL d100: raw=[59] -> 59
+[Lt XIII Ashavel Oriym socket 1 type] ROLL d100: raw=[81] -> 81

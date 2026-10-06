@@ -46,11 +46,11 @@ def build(c):
             hp+= hd if first else hd/2+0.5; first=False
         lvl+=l
     hp=int(hp)+m(e["con"])*lvl
-    cloak=4; defl=3; nat=0 if (c.get('items',{}).get('con') or c.get('items',{}).get('wis')) else 2
+    cloak=c.get('cloak',4); defl=c.get('defl',3); nat=0 if (c.get('items',{}).get('con') or c.get('items',{}).get('wis')) else 2
     F+=m(e["con"])+cloak+su["sv"]; R+=m(e["dex"])+cloak+su["sv"]; W+=m(e[c.get("wis_stat","wis")])+cloak+su["sv"]
     cls_ac=c.get("class_ac",0)
     if c.get("suit") and not c.get("suit_as_clothing"):
-        ac=su["ac"]+m(pre_suit["dex"])+defl+nat+cls_ac
+        ac=su["ac"]+m(pre_suit["dex"])+defl+nat+cls_ac+c.get("shield_ac",0)
     else:
         ac=10+c.get("armor",0)+m(e["dex"])+defl+nat+cls_ac
     touch=10+m(e["dex"])+defl+cls_ac
@@ -65,7 +65,10 @@ def gurps(c,d):
     skill=DX+c["g_skill_bonus"]; ad=d["su"]["ad"]
     dodge=math.floor(bs)+3+1+ad; parry=skill//2+3+1+ad+c.get("parry_adj",0)
     return ST,DX,IQ,HT,will,per,bs,math.floor(bs),dodge,parry,skill
-caps=json.load(open("menagerie_captains_data.json"))
+import sys
+SRC=sys.argv[1] if len(sys.argv)>1 else "menagerie_captains_data.json"
+DST=sys.argv[2] if len(sys.argv)>2 else "captains_statblocks.md"
+caps=json.load(open(SRC))
 out=[]
 for c in caps:
     d=build(c); ST,DX,IQ,HT,will,per,bs,mv,dodge,parry,skill=gurps(c,d); su=d["su"]
@@ -92,5 +95,5 @@ for c in caps:
     lines.append(f"**GURPS 4e (≈{30*d['lvl']} CP, campaign scale, not itemised).** ST {ST}; DX {DX}; IQ {IQ}; HT {HT}. HP {ST+c.get('g_hp',0)}; Will {will+c.get('g_will',0)}; Per {per+c.get('g_per',0)}; FP {HT}. Basic Speed {bs:.2f}; Move {mv} ({mv+su['spd']//10 if c.get('suit') else mv} suited); Dodge {dodge}; Parry {parry}.")
     lines.append(f"Advantages: {c['g_adv']}. Key skills: {c['g_skill_name']}-{skill}, {c['g_skills']}. Disadvantages: {c['g_dis']}.")
     out.append("\n".join(lines))
-open("captains_statblocks.md","w").write("\n\n".join(out)+"\n")
+open(DST,"w").write("\n\n".join(out)+"\n")
 print("\n\n".join(out))
