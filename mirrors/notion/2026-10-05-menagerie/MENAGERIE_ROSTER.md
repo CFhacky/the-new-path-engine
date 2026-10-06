@@ -1150,13 +1150,17 @@ Chad ruled that every signature piece is re-rolled against the full corpus, excl
 | Ashavel | Fiercebane War-Fans of Lifedrinking |
 | Ivrael (Hand) | Metalline Longblade of Smiting |
 | Teodric (Hand) | Sacred Burst Bastard Sword of Ignored Defense |
-| Durgan (Hand) | Thundering Heavy Crossbow of Distance |
-| Lorne (Hand) | Longsword of Divine Wrath |
+| Durgan (Hand) | Thundering Light Hammer of Distance (rebased to his kit) |
+| Lorne (Hand) | Staff of Divine Wrath (rebased to his kit) |
 
 **Retired item names:** the round-five Rare names for these eleven Rares, and Ivrael's earlier reroll from today. The ten Legendaries keep their names and lore.
 
 **Open after round eight:**
-- **Faelith's Wind aspect** needs non-heavy armour; the Stalker suit's category isn't ruled.
-- **Patience's alignment:** if he is lawful, the Anarchic flail gives him a negative level.
-- **Edwyn's Holy mitten:** fine unless he's evil.
+- ~~Faelith's Wind, Patience's alignment, Edwyn's Holy mitten~~: ruled below.
 
+**Rulings (Chad, 6 Oct 2026: "your choice"):**
+- **Patience Haskett: chaotic neutral.** The Anarchic flail costs him nothing.
+- **Stalker suit: medium armour** for armour-category tests; the Strider is light. Faelith's Wind works.
+- **Edwyn Coldry: lawful neutral.** The Holy mitten works for him without penalty.
+- **Bases follow the kit:** Durgan's hammer (Thundering Light Hammer of Distance) and Lorne's splitting staff (Staff of Divine Wrath). The crossbow and the longsword are retired.
+- **Still open** (Chad doesn't know yet): the socket readings, the companion-draw rule, Zaheda's notebook in tiger form.

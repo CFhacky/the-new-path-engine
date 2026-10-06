@@ -17,7 +17,7 @@
 - **On hand audit:** three more illogical results the filter missed were rerolled and logged:
 	- Faelith's Signature Move (a fighter has no save-DC class ability);
 	- Edwyn's Chain Lightning temper (no lightning on the glove);
-	- Durgan's Whirlwind temper, then Momentum Crit (melee and extra-attack techniques on a heavy crossbow).
+	- Durgan's Whirlwind temper, then Momentum Crit (melee and extra-attack techniques on what was then a heavy crossbow).
 
 **Superseded by this pass:**
 - The round-5 cards for these 21 pieces.
@@ -47,8 +47,8 @@ The old item names that change are retired on the manifests.
 | Ashavel | Rare · T1 | Lifedrinker★ · Fiercebane · Bladesinger | 23I-1 Exsanguinate | 12 |
 | Ivrael (Hand) | Rare · T1 | Metalline · Stalwart · Master Rune of Smiting | none | 4 |
 | Teodric (Hand) | Rare · T1 | Sacred Burst · Metamagic Font · Ignore Target's Defense | 23E-7 Aerial Dash | 12 |
-| Durgan (Hand) | Rare · T1 | Thundering★ · Profane Burst · Distance | 23I-9 Blood Pact | 12 |
-| Lorne (Hand) | Rare · T1 | Divine Wrath★ · Shadow Clone · Souldrinker | 23C-4 Enduring Ward | 11 |
+| Durgan (Hand) · light hammer | Rare · T1 | Thundering★ · Profane Burst · Distance | 23I-9 Blood Pact | 12 |
+| Lorne (Hand) · split staff | Rare · T1 | Divine Wrath★ · Shadow Clone · Souldrinker | 23C-4 Enduring Ward | 11 |
 
 **UDRP** = the kept rarity base + Greater 2 each + the new temper (1d4+1) and aspect (3d3+3) rolls + the kept masterwork and socket add-ons. **Rune rung by tier:** a T1 piece carries a Warhammer stacking rune at 3 runes. **Item CLs** are unchanged.
 
@@ -402,34 +402,36 @@ Elven bastard sword, two-handed · Rare · T1 · CL 14
 - Defender's Parry, Block and Dodge at −3 (Tier 2 and below).
 - Burning (holy) on a critical. Modular metamagic, 3/day.
 
-## H3. THUNDERING HEAVY CROSSBOW OF DISTANCE — Durgan Emberlode
-Heavy crossbow · Rare · T1 · CL 14
+## H3. THUNDERING LIGHT HAMMER OF DISTANCE — Durgan Emberlode
+The short hammer he never seems to use · Rare · T1 · CL 14 · *rebased 6 Oct 2026 from a heavy crossbow to his kit (Chad: Claude's call)*
 ### D&D 3.5e
-- **Masterwork heavy crossbow.** 1d10, 19–20.
-- **Distance:** range increment **240 ft**, double.
-- **Thundering (Greater):** on a critical hit, **+1d10 sonic** (base 1d8), and the target is **deafened** permanently unless it makes Fort **DC 16** (base 14).
+- **Masterwork light hammer.** 1d4, ×2, bludgeoning; thrown, range increment 20 ft.
+- **Distance:** thrown range increment **40 ft**, double. (Ruling: a thrown weapon counts as a ranged weapon for Distance.)
+- **Thundering (Greater):** on a critical hit, **+1d10 sonic** (base 1d8 at ×2), and the target is **deafened** permanently unless it makes Fort **DC 16** (base 14).
 - **Profane Burst (Magic Item Compendium):** negative energy on a hit while active; on a critical hit, +1d10 (2d10 against good outsiders). Each burst costs Durgan **1d4 Con**.
-- **Temper 23I-9 Blood Pact:** 1/day, spend 25% of his maximum HP to **double one spell's or attack's damage**. A doubled *delayed blast fireball* is the point. (Rerolled twice: Whirlwind and Momentum Crit don't work on a heavy crossbow.)
-- Market: +3 bonus-equivalent, **18,350 gp**. **UDRP 12.**
+- **Temper 23I-9 Blood Pact:** 1/day, spend 25% of his maximum HP to **double one spell's or attack's damage**. A doubled *delayed blast fireball* is the point. (Rerolled twice: Whirlwind and Momentum Crit were rolled against the crossbow; neither suits a sorcerer's hammer either, so the reroll stands.)
+- Market: +3 bonus-equivalent, **18,301 gp**. **UDRP 12.**
 ### GURPS 4e
-- Acc +1; range ×2. Crushing (sonic) critical rider, plus Deafness.
+- Fine throwing hammer; range ×2. Crushing (sonic) critical rider, plus Deafness.
 - Toxic (cosmic) critical rider, which costs HT. Damage ×2 (HP cost), 1/day.
 
-## H4. LONGSWORD OF DIVINE WRATH — Lorne Ashby
-Longsword · Rare · T1 · CL 13
+*Why the hammer.* His kit was authored with a short hammer he never seems to use. Now when he does use it, it thunders: a sorcerer's last-ditch weapon that deafens the casters it touches. The crossbow is gone.
+
+## H4. STAFF OF DIVINE WRATH — Lorne Ashby
+The staff that splits into two short rods · Rare · T1 · CL 13 · *rebased 6 Oct 2026 from a longsword to his kit (Chad: Claude's call)*
 ### D&D 3.5e
-- **Masterwork longsword.**
+- **Masterwork quarterstaff** (double weapon, 1d6/1d6). It splits into **two short rods** (light clubs, 1d6 each) as a move action and locks back together the same way. The properties sit on the **head rod**; the tail rod is masterwork only.
 - **Divine Wrath (Greater):** as a swift action, spend a turn-undead attempt. If his next hit lands on an undead creature, it deals **+1d8 per point of Charisma bonus** (base 1d6).
-- **Shadow Clone:** at will, a shadow duplicate of himself with **50%** of his statistics.
+- **Shadow Clone:** at will, a shadow duplicate of himself with **50%** of his statistics. Split, each of them holds a rod.
 - **Souldrinker (parity ruling):** a kill recovers up to **6 spell levels** of expended slots, once per round.
 - **Temper 23C-4 Enduring Ward:** **+4 SR**.
-- **Sockets (kept):** Topaz and two Amethyst (+50 HP).
-- Market: +1 bonus-equivalent, **2,315 gp**. **UDRP 11.**
+- **Sockets (kept):** Topaz and two Amethyst (+50 HP), set in the head rod.
+- Market: +1 bonus-equivalent on one end, **2,600 gp**. **UDRP 11.**
 ### GURPS 4e
-- Holy Innate Attack against undead. Duplication (50%).
+- Fine quarterstaff / paired batons. Holy Innate Attack against undead. Duplication (50%).
 - ER 6 on a kill. Magic Resistance +4.
 
-*The longsword no longer raises the dead.* Lorne still raises with his spells; the sword now **puts down** the undead and doubles the man who carries it.
+*The staff puts the dead down.* Lorne still raises with his spells; the head rod ends anyone else's dead, and his shadow takes the other rod. It is the staff from Tethford, the man who stepped out of a two-foot rock's shadow. His hand crossbow stays unmagicked kit.
 
 ---
 
@@ -457,5 +459,13 @@ The masterwork-driven attack lines from round 5 stand: Quavein +22, Hadda +19, K
 | Ashavel | AC **+3 dodge** (Bladesinger). Heals 38 per kill. |
 | Ivrael | +4 to all saves. Damage dice rolled twice. |
 | Teodric | Touch attacks against creatures under 17 HD. |
-| Durgan | Range increment 240 ft. Profane Burst costs him 1d4 Con. |
-| Lorne | SR +4 (Stalker suit SR 10 → 14). Shadow clone. |
+| Durgan | Thrown light hammer, range increment 40 ft. Profane Burst costs him 1d4 Con. |
+| Lorne | Staff 1d6/1d6 or two rods. SR +4 (Stalker suit SR 10 → 14). Shadow clone. |
+
+---
+
+## Rulings (Chad, 6 Oct 2026: "your choice")
+- **Patience Haskett is chaotic neutral.** A tiefling who whirls a flail at whatever is in front of him and keeps no code. The Anarchic flail sits with him cleanly: no negative level.
+- **The Stalker suit is medium armour** for every armour-category test. The Strider stays light. Faelith's Wind aspect works in her Stalker suit; Edwyn's Nimble raises its Max Dex.
+- **Edwyn Coldry is lawful neutral.** He kept the order's discipline and lost its faith. The Holy mitten works for him without penalty, and it still burns evil for a god he no longer prays to.
+- **Bases follow the kit.** Durgan's piece is his short hammer, and Lorne's is his splitting staff (cards H3 and H4, rebased). Teodric's sword stays; his kit has no weapon to move it onto.
