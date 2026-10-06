@@ -320,3 +320,7 @@ Arik doesn't know he has any of them.
 - **The quarrel stays between three priests**, with nobody above them to settle it: the seat's holder is Arik, who doesn't know he has priests.
 - **Nym enforces it herself.** Yashiori's 24-hour ban and Eight Vats' year-and-a-day ban are her deliberate tools, used on the dead the others would take. She may quietly put down what they raise.
 - **The test comes when Arik learns he has priests.** Whoever he backs on the dead decides whether Nym was the office's voice all along, or one priest with a conviction.
+
+---
+
+**Errata (6 Oct 2026, Ivrael reroll):** Ivrael's axe and its Despair aspect are retired. Withdrawn: Kesh + Ivrael *Despair at Ten Paces* (5a), Nym or Lorne + Ivrael *Despair* (5c), and the "frightened don't heal" line in 5d. Kesh + Ivrael now reads: the Counted Door forces every enemy towards Ivrael through Kesh's ten paces; the sickles hook them prone on the way in, and Ivrael at +6 dodge is the wall they arrive at.

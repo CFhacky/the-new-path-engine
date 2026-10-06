@@ -267,3 +267,7 @@ He speaks to everyone in the room as if he has known them for years. For three r
 ---
 
 **Ruling (Chad, 6 Oct 2026):** **Nym Esharan is a woman**, overriding the rolled "male" (Hand roster, 5 Oct). The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death. The text is corrected throughout.
+
+---
+
+**Errata (6 Oct 2026, Ivrael reroll):** *The Counted Door* (axe) is retired. In Ivrael's release, the Despair line is withdrawn; instead, while the Counted Door holds, his Bladesinger dodge bonus doubles to +6. See `HAND_IVRAEL_REROLL.md`.

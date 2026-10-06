@@ -24,3 +24,4 @@ Append-only links added the same day: The Blue Hour — Dalelands Opening `343e8
 Notion is canon. Nothing on the roster has happened in play beyond what the Blue Hour prose shows.
 
 This directory is immutable. A later export gets a new dated directory.
+- `HAND_IVRAEL_REROLL.md`, `roll_hand_ivrael_reroll.py`, `hand_ivrael_reroll.txt` — Ivrael's signature weapon rerolled under the logic criterion (Chad, 6 Oct 2026)
