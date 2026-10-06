@@ -265,7 +265,7 @@ The office now has **four priests in the host:**
 
 Arik doesn't know he has any of them.
 - **Ysmay's medics.** Osmund, Nym and Lorne all carry *harm*, and each one heals Ysmay through the Covenant (CL 12 / 14 / 13: 120 / 140 / 130). Quavein's *heal* is the one that hurts her.
-- **Raising versus the Root Country.** Lorne and Osmund raise the dead (Undead Servitor, Death Knight, *create undead*). Nym's Yashiori forbids it on his kills for 24 hours. **The same office argues with itself** over whether the dead belong to the field or to the Root Country.
+- **Raising versus the Root Country.** Lorne and Osmund raise the dead (Undead Servitor, Death Knight, *create undead*). Nym's Yashiori forbids it on her kills for 24 hours. **The same office argues with itself** over whether the dead belong to the field or to the Root Country.
 - **Four priests at once.** If all four stand in one fight:
 	- Quavein's Gale carries the funeral smoke.
 	- Nym confuses the line.
@@ -313,7 +313,7 @@ Arik doesn't know he has any of them.
 
 ---
 
-**Ruling (Chad, 6 Oct 2026, append-only):** **Nym Esharan is a woman.** This overrides the rolled "elf, male, prime" (Hand roster, 5 Oct). Every earlier "he/his" for Nym, here and on the Hand roster, item cards, releases and pairings, reads as "she/her". The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death.
+**Ruling (Chad, 6 Oct 2026):** **Nym Esharan is a woman**, overriding the rolled "male" (Hand roster, 5 Oct). The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death. The text is corrected throughout.
 
 **Ruling (Chad, 6 Oct 2026): raising is Nym's conviction, not the office's law.** This replaces the "doctrine" reading. Nym believes the dead belong to the Root Country and that keeping them there is *her* office in particular. The Storm King's office has never said so.
 - **No penalty mechanics.** Lorne and Osmund are not heretics and lose nothing for raising. Nym thinks they are stealing, and tells them.

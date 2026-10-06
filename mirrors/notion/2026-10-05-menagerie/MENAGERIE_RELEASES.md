@@ -249,12 +249,12 @@ His breath stops smoking. Then the dragon in his blood stops hiding.
 - **After:** the frost doesn't settle on anything near him for a day. The scales go back to scars, a little further up his jaw each time.
 
 ## Lt VII (Hand). Nym Esharan — *Eight Vats*
-He touches the mask's chin, wets Yashiori, and the Storm King's oldest trick fills the field: the eight-headed serpent was killed drunk.
+She touches the mask's chin, wets Yashiori, and the Storm King's oldest trick fills the field: the eight-headed serpent was killed drunk.
 - **Eight** creatures within 60 ft must save (Will DC 21) or fall into a drunken sleep for the 3 rounds: helpless, and woken only by damage.
 - Yashiori's strikes on a sleeper are **automatic critical hits**.
 - **The Root Country:** a creature Nym kills during the release **cannot be raised, resurrected or animated for a year and a day**, by anyone, the host's own priests included.
 - **GURPS:** Affliction (Sleep, 8 targets, Area 20 yd), Follow-Up crit on sleepers; Cosmic (prevents raising, 1 year and 1 day); Limited Use 1/day.
-- **After:** the field smells of rice wine. Lorne and Osmund will never get his dead, and the office goes on arguing.
+- **After:** the field smells of rice wine. Lorne and Osmund will never get her dead, and the office goes on arguing.
 
 ## Lt VIII (Hand). Teodric Halvane — *Old Friends*
 He speaks to everyone in the room as if he has known them for years. For three rounds, they believe it.
@@ -266,4 +266,4 @@ He speaks to everyone in the room as if he has known them for years. For three r
 
 ---
 
-**Ruling (Chad, 6 Oct 2026, append-only):** **Nym Esharan is a woman.** This overrides the rolled "elf, male, prime" (Hand roster, 5 Oct). Every earlier "he/his" for Nym, here and on the Hand roster, item cards, releases and pairings, reads as "she/her". The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death.
+**Ruling (Chad, 6 Oct 2026):** **Nym Esharan is a woman**, overriding the rolled "male" (Hand roster, 5 Oct). The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death. The text is corrected throughout.

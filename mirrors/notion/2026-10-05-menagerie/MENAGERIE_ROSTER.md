@@ -206,7 +206,7 @@ One per captain. Five seats are held by the Hand: Jin's working draw from the Me
 | IV | *Lorne Ashby* (Hand) | Cleric | 13 | Half-elf, male, prime | Hand crossbow on a chest swivel; staff that splits into two rods | Hums three bars of a Moonsea shanty |
 | V | *Ivrael Quillatar* (Hand) | Fighter | 14 | Elf, male, prime | Long single-edged elven blade worn edge-up | Counts exits aloud in Elvish |
 | VI | *Durgan Emberlode* (Hand) | Sorcerer | 14 | Dwarf, male, prime | Short hammer he never seems to use | Breath smokes in warm air |
-| VII | *Nym Esharan* (Hand) | Cleric | 14 | Elf, male, prime | Holy symbol filed to a plain black disc; vials at the hip | Touches the mask's chin before casting |
+| VII | *Nym Esharan* (Hand) | Cleric | 14 | Elf, female, prime | Holy symbol filed to a plain black disc; vials at the hip | Touches the mask's chin before casting |
 | VIII | *Teodric Halvane* (Hand) | Wizard (enchanter) | 14 | Human, male, seasoned | Four rings of four metals; eel-skin spellbook on a chain | Speaks to strangers as old friends |
 | IX | **Faelith Ammarin** | Fighter | 14 | Elf, female, prime | A darkwood tower shield edged in iron, used to hit people | Sings under her breath, in Elvish, off-key |
 | X | **Patience Haskett** | Fighter | 13 | Tiefling, male, prime | A two-headed heavy flail with spiked iron balls | His tail-tip taps the ground in threes before he moves |
@@ -1117,7 +1117,7 @@ Full set: `MENAGERIE_PAIRINGS.md` (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`
 
 ---
 
-**Ruling (Chad, 6 Oct 2026, append-only):** **Nym Esharan is a woman.** This overrides the rolled "elf, male, prime" (Hand roster, 5 Oct). Every earlier "he/his" for Nym, here and on the Hand roster, item cards, releases and pairings, reads as "she/her". The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death.
+**Ruling (Chad, 6 Oct 2026):** **Nym Esharan is a woman**, overriding the rolled "male" (Hand roster, 5 Oct). The rest of the roll stands: elf, prime, Cleric 14, Trickery/Death. The text is corrected throughout.
 
 **Ruling (Chad, 6 Oct 2026): raising is Nym's conviction, not the office's law.** This replaces the "doctrine" reading. Nym believes the dead belong to the Root Country and that keeping them there is *her* office in particular. The Storm King's office has never said so.
 - **No penalty mechanics.** Lorne and Osmund are not heretics and lose nothing for raising. Nym thinks they are stealing, and tells them.
