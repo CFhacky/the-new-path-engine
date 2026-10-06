@@ -1,0 +1,441 @@
+======================================================================
+FULL-CORPUS AFFIX PASS — loot_roll.py dice (Python secrets) — BINDING — every throw printed
+======================================================================
+Pool sizes: Offensive 70, Defensive 23, Resource 26, Utility 26, Skill/Class 29, Elemental 45, Condition/Control 46, Summoning/Companion 9, Rare Build-Around 10 | total 284
+
+### Quavein · CR 17 · T1 · Legendary (4 affixes, kept) · archetype divine · MW property kept: mighty cleaving
+  POOL (weighted, divine): d100=59 → Utility
+    d26=17 -> Dimensional Pocket [Utility] | T1 value: 250
+  POOL (weighted, divine): d100=44 → Resource
+    d26=5 -> Mana Leech [Resource] | T1 value: 8
+  POOL (weighted, divine): d100=15 → Defensive
+    d23=1 -> Warding [Defensive] | T1 value: +4
+  POOL (weighted, divine): d100=23 → Defensive
+    d23=10 -> Second Wind [Defensive]
+  GREATER [Dimensional Pocket]: d100=88 vs 25% -> no
+  GREATER [Mana Leech]: d100=10 vs 25% -> GREATER
+  GREATER [Warding]: d100=59 vs 25% -> no
+  GREATER [Second Wind]: d100=73 vs 25% -> no
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=8 -> H Critical/Precision; entry d10=8 (23H-8)
+  ASPECT: d10=5 -> E Skill Transformation; entry d8=5 (24E-5)
+  temper UDRP add-on 1d4+1 -> 3
+  aspect UDRP add-on 3d3+3 -> 8
+
+### Hadda · CR 16 · T1 · Legendary (4 affixes, kept) · archetype arcane · MW property kept: flaming burst
+  POOL (weighted, arcane): d100=41 → Resource
+    d26=21 -> Souldrinking [Resource · book] | +1 = 2,000 gp
+  POOL (weighted, arcane): d100=5 → Offensive
+    d70=66 -> MASTER RUNE OF SKALF BLACKHAMMER [Offensive · wfb] | +2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  POOL (weighted, arcane): d100=1 → Offensive
+    d70=1 -> Striking [Offensive] | T1 value: +4
+  POOL (weighted, arcane): d100=2 → Offensive
+  pool restriction: Offensive used 2x -> reroll pool
+  POOL (weighted, arcane): d100=52 → Utility
+    d26=23 -> Morphing [Utility · book] | +1 = 2,000 gp
+  GREATER [Souldrinking]: d100=73 vs 25% -> no
+  GREATER [MASTER RUNE OF SKALF BLACKHAMMER]: d100=67 vs 25% -> no
+  GREATER [Striking]: d100=41 vs 25% -> no
+  GREATER [Morphing]: d100=7 vs 25% -> GREATER
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=6 -> F Minion/Companion — LOGIC: needs minions -> reroll
+  TEMPER: d10=10 -> J Forbidden — DM gate -> reroll
+  TEMPER: d10=7 -> G Curse/Control — LOGIC: no condition on the piece -> reroll
+  TEMPER: d10=8 -> H Critical/Precision; entry d10=5 (23H-5)
+  ASPECT: d10=10 -> J Mythic Behavior; entry d6=1 (24J-1)
+  temper UDRP add-on 1d4+1 -> 2
+  aspect UDRP add-on 3d3+3 -> 11
+
+### Tarvash · CR 17 · T1 · Rare (3 affixes, kept) · archetype martial · MW property kept: None
+  POOL (weighted, martial): d100=27 → Defensive
+    d23=20 -> Parrying [Defensive · book] | +2 = 8,000 gp
+  POOL (weighted, martial): d100=2 → Offensive
+    d70=14 -> Riposte [Offensive]
+  POOL (weighted, martial): d100=36 → Defensive
+    d23=9 -> Shield Wall [Defensive] | T1 value: +4
+  GREATER [Parrying]: d100=92 vs 10% -> no
+  GREATER [Riposte]: d100=80 vs 10% -> no
+  GREATER [Shield Wall]: d100=19 vs 10% -> no
+  TEMPER SLOTS: Rare d100=79 -> 0
+
+### Aerendyl · CR 16 · T1 · Rare (3 affixes, kept) · archetype martial · MW property kept: None
+  POOL (weighted, martial): d100=81 → Skill/Class
+    d29=10 -> Animal Bond [Skill/Class] — LOGIC: needs animal -> reroll
+    d29=10 -> Animal Bond [Skill/Class] — LOGIC: needs animal -> reroll
+    d29=11 -> Weapon Mastery [Skill/Class] | T1 value: +2
+  POOL (weighted, martial): d100=19 → Offensive
+    d70=57 -> MASTER RUNE OF DRAGON SLAYING [Offensive · wfb] | +3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  POOL (weighted, martial): d100=34 → Defensive
+    d23=11 -> Undying [Defensive] | T1 value: 5
+  GREATER [Weapon Mastery]: d100=45 vs 10% -> no
+  GREATER [MASTER RUNE OF DRAGON SLAYING]: d100=71 vs 10% -> no
+  GREATER [Undying]: d100=89 vs 10% -> no
+  TEMPER SLOTS: Rare d100=14 -> 1
+  TEMPER: d10=4 -> D Resource — LOGIC: needs spells -> reroll
+  TEMPER: d10=8 -> H Critical/Precision; entry d10=2 (23H-2)
+  temper UDRP add-on 1d4+1 -> 2
+
+### Kesh · CR 16 · T1 · Legendary (4 affixes, kept) · archetype martial · MW property kept: shocking burst
+  POOL (weighted, martial): d100=80 → Skill/Class
+    d29=18 -> Arcane Might [Skill/Class · book] — LOGIC: needs arcane -> reroll
+    d29=10 -> Animal Bond [Skill/Class] | T1 value: +5
+  POOL (weighted, martial): d100=94 → Condition/Control
+    d46=11 -> Mind Fog [Condition/Control] | T1 value: –6
+  POOL (weighted, martial): d100=41 → Defensive
+    d23=10 -> Second Wind [Defensive] — HOST DUPLICATE -> reroll
+    d23=12 -> Deflecting [Defensive] | T1 value: 25
+  POOL (weighted, martial): d100=15 → Offensive
+    d70=59 -> RUNE OF CLEAVING [Offensive · wfb] | +1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  GREATER [Animal Bond]: d100=46 vs 25% -> no
+  GREATER [Mind Fog]: d100=29 vs 25% -> no
+  GREATER [Deflecting]: d100=99 vs 25% -> no
+  GREATER [RUNE OF CLEAVING]: d100=24 vs 25% -> GREATER
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=5 -> E Mobility; entry d10=3 (23E-3)
+  ASPECT: d10=6 -> F Summon Alteration; entry 7 — LOGIC: needs summons -> reroll
+  ASPECT: d10=10 -> J Mythic Behavior; entry d6=5 (24J-5)
+  temper UDRP add-on 1d4+1 -> 5
+  aspect UDRP add-on 3d3+3 -> 11
+
+### Marit · CR 17 · T1 · Legendary (4 affixes, kept) · archetype shadow · MW property kept: None
+  POOL (weighted, shadow): d100=28 → Defensive
+    d23=13 -> Stoneskin [Defensive] | T1 value: 5
+  POOL (weighted, shadow): d100=85 → Elemental
+    d45=7 -> Radiant [Elemental] | T1 value: +3d6
+  POOL (weighted, shadow): d100=92 → Condition/Control
+    d46=41 -> FREEZE TARGET [Condition/Control · d2] | +2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  POOL (weighted, shadow): d100=42 → Utility
+    d26=20 -> Changeling [Utility · book] — LOGIC: needs spear -> reroll
+    d26=11 -> Spider's Gift [Utility]
+  GREATER [Stoneskin]: d100=77 vs 25% -> no
+  GREATER [Radiant]: d100=85 vs 25% -> no
+  GREATER [FREEZE TARGET]: d100=50 vs 25% -> no
+  GREATER [Spider's Gift]: d100=65 vs 25% -> no
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=1 -> A Weapon Technique; entry d10=4 (23A-4)
+  ASPECT: d10=7 -> G Mobility; entry d8=6 (24G-6)
+  temper UDRP add-on 1d4+1 -> 4
+  aspect UDRP add-on 3d3+3 -> 9
+
+### Brunna · CR 16 · T1 · Legendary (4 affixes, kept) · archetype shadow · MW property kept: icy burst
+  POOL (weighted, shadow): d100=35 → Resource
+    d26=13 -> Catalyst [Resource] — LOGIC: needs caster -> reroll
+    d26=6 -> Endurance [Resource] | T1 value: +8
+  POOL (weighted, shadow): d100=91 → Condition/Control
+    d46=7 -> Blinding [Condition/Control] | T1 value: 25
+  POOL (weighted, shadow): d100=16 → Offensive
+    d70=63 -> RUNE OF STRIKING [Offensive · wfb] | +1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  POOL (weighted, shadow): d100=18 → Offensive
+    d70=66 -> MASTER RUNE OF SKALF BLACKHAMMER [Offensive · wfb] — HOST DUPLICATE -> reroll
+    d70=25 -> Ghost Strike [Offensive · book] | +1 = 2,000 gp
+  GREATER [Endurance]: d100=67 vs 25% -> no
+  GREATER [Blinding]: d100=19 vs 25% -> GREATER
+  GREATER [RUNE OF STRIKING]: d100=56 vs 25% -> no
+  GREATER [Ghost Strike]: d100=73 vs 25% -> no
+  CAPSTONE (MW 20, kept): d3=1 -> Endurance becomes Greater
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=3 -> C Defensive; entry d10=3 (23C-3)
+  ASPECT: d10=7 -> G Mobility; entry d8=5 (24G-5)
+  temper UDRP add-on 1d4+1 -> 3
+  aspect UDRP add-on 3d3+3 -> 7
+
+### Zaheda · CR 16 · T1 · Legendary (4 affixes, kept) · archetype divine · MW property kept: None
+  POOL (weighted, divine): d100=41 → Resource
+    d26=12 -> Battle Trance [Resource] | T1 value: +3
+  POOL (weighted, divine): d100=29 → Defensive
+    d23=23 -> LIFE REGENERATION [Defensive · d2] — LOGIC: weapon property on a non-weapon -> reroll
+    d23=16 -> Absorption [Defensive] | T1 value: 50
+  POOL (weighted, divine): d100=91 → Condition/Control
+  Condition/Control: on-hit pool, the piece is not a weapon (LOGIC) -> reroll pool
+  POOL (weighted, divine): d100=95 → Summoning/Companion
+    d9=5 -> Undead Servitor [Summoning/Companion] | T1 value: 12
+  POOL (weighted, divine): d100=52 → Utility
+    d26=16 -> Chameleon [Utility]
+  GREATER [Battle Trance]: d100=4 vs 25% -> GREATER
+  GREATER [Absorption]: d100=97 vs 25% -> no
+  GREATER [Undead Servitor]: d100=75 vs 25% -> no
+  GREATER [Chameleon]: d100=7 vs 25% -> GREATER
+  CAPSTONE (MW 20, kept): d2=2 -> Undead Servitor becomes Greater
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=4 -> D Resource; entry d10=8 (23D-8)
+  ASPECT: d10=1 -> A Damage Conversion; entry 4 — LOGIC: weapon damage on a non-weapon -> reroll
+  ASPECT: d10=6 -> F Summon Alteration; entry d8=6 (24F-6)
+  temper UDRP add-on 1d4+1 -> 3
+  aspect UDRP add-on 3d3+3 -> 7
+
+### Ysmay · CR 16 · T1 · Rare (3 affixes, kept) · archetype martial · MW property kept: None
+  POOL (weighted, martial): d100=55 → Utility
+    d26=5 -> Linguist [Utility]
+  POOL (weighted, martial): d100=40 → Defensive
+    d23=1 -> Warding [Defensive] — HOST DUPLICATE -> reroll
+    d23=14 -> Aegis [Defensive] | T1 value: +5
+  POOL (weighted, martial): d100=67 → Skill/Class
+    d29=19 -> Divine Wrath [Skill/Class · book] — LOGIC: needs turn -> reroll
+    d29=2 -> Sacred Word [Skill/Class] — LOGIC: needs divine -> reroll
+    d29=20 -> Ki Focus [Skill/Class · book] — LOGIC: needs ki -> reroll
+    d29=13 -> Channel [Skill/Class] — LOGIC: needs caster -> reroll
+    d29=24 -> Berserker [Skill/Class · book] — LOGIC: needs rage -> reroll
+    d29=1 -> Arcane Amplification [Skill/Class] — LOGIC: needs arcane -> reroll
+    d29=12 -> Familiar Bond [Skill/Class] — LOGIC: needs familiar -> reroll
+    d29=1 -> Arcane Amplification [Skill/Class] — LOGIC: needs arcane -> reroll
+    d29=5 -> Commander's Voice [Skill/Class] | T1 value: +5
+  GREATER [Linguist]: d100=52 vs 10% -> no
+  GREATER [Aegis]: d100=15 vs 10% -> no
+  GREATER [Commander's Voice]: d100=17 vs 10% -> no
+  TEMPER SLOTS: Rare d100=45 -> 1
+  TEMPER: d10=2 -> B Elemental Augment — LOGIC: no elemental damage on the piece -> reroll
+  TEMPER: d10=6 -> F Minion/Companion — LOGIC: needs minions -> reroll
+  TEMPER: d10=5 -> E Mobility; entry d10=7 (23E-7)
+  temper UDRP add-on 1d4+1 -> 2
+
+### Dace · CR 16 · T1 · Rare (3 affixes, kept) · archetype hybrid · MW property kept: None
+  POOL (weighted, hybrid): d100=14 → Offensive
+    d70=6 -> Lethal Focus [Offensive]
+  POOL (weighted, hybrid): d100=67 → Skill/Class
+    d29=24 -> Berserker [Skill/Class · book] — LOGIC: needs rage -> reroll
+    d29=22 -> Mighty Smiting [Skill/Class · book] — LOGIC: needs smite -> reroll
+    d29=3 -> Sneak's Edge [Skill/Class] — LOGIC: needs sneak -> reroll
+    d29=24 -> Berserker [Skill/Class · book] — LOGIC: needs rage -> reroll
+    d29=22 -> Mighty Smiting [Skill/Class · book] — LOGIC: needs smite -> reroll
+    d29=27 -> Sweeping [Skill/Class · book] | +1 = 2,000 gp
+  POOL (weighted, hybrid): d100=28 → Defensive
+    d23=6 -> Life Shield [Defensive] | T1 value: 25
+  GREATER [Lethal Focus]: d100=18 vs 10% -> no
+  GREATER [Sweeping]: d100=43 vs 10% -> no
+  GREATER [Life Shield]: d100=18 vs 10% -> no
+  TEMPER SLOTS: Rare d100=81 -> 0
+
+### Osmund · CR 12 · T2 · Legendary (4 affixes, kept) · archetype divine · MW property kept: ghost touch
+  POOL (weighted, divine): d100=9 → Offensive
+    d70=15 -> Penetrating Strikes [Offensive]
+  POOL (weighted, divine): d100=86 → Elemental
+    d45=6 -> Shadowtouch [Elemental] | T2 value: +2d6
+  POOL (weighted, divine): d100=40 → Resource
+    d26=4 -> Leech [Resource] | T2 value: 3
+  POOL (weighted, divine): d100=48 → Resource
+    d26=21 -> Souldrinking [Resource · book] — HOST DUPLICATE -> reroll
+    d26=25 -> CHANCE TO CAST ON ATTACK [Resource · d2] | +2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  GREATER [Penetrating Strikes]: d100=92 vs 25% -> no
+  GREATER [Shadowtouch]: d100=58 vs 25% -> no
+  GREATER [Leech]: d100=51 vs 25% -> no
+  GREATER [CHANCE TO CAST ON ATTACK]: d100=59 vs 25% -> no
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=3 -> C Defensive; entry d10=2 (23C-2)
+  ASPECT: d10=1 -> A Damage Conversion; entry d8=3 (24A-3)
+  temper UDRP add-on 1d4+1 -> 3
+  aspect UDRP add-on 3d3+3 -> 7
+
+### Wenna · CR 14 · T1 · Rare (3 affixes, kept) · archetype arcane · MW property kept: None
+  POOL (weighted, arcane): d100=82 → Elemental
+    d45=8 -> Stormborn [Elemental] | T1 value: +2d6
+  POOL (weighted, arcane): d100=56 → Utility
+    d26=14 -> Trackless [Utility] | T1 value: +20
+  POOL (weighted, arcane): d100=54 → Utility
+    d26=9 -> Pack Mule [Utility] | T1 value: +6
+  GREATER [Stormborn]: d100=60 vs 10% -> no
+  GREATER [Trackless]: d100=16 vs 10% -> no
+  GREATER [Pack Mule]: d100=9 vs 10% -> GREATER
+  TEMPER SLOTS: Rare d100=20 -> 1
+  TEMPER: d10=1 -> A Weapon Technique; entry d10=7 (23A-7)
+  temper UDRP add-on 1d4+1 -> 3
+
+### Faelith · CR 14 · T1 · Legendary (4 affixes, kept) · archetype martial · MW property kept: bashing
+  POOL (weighted, martial): d100=70 → Skill/Class
+    d29=11 -> Weapon Mastery [Skill/Class] — HOST DUPLICATE -> reroll
+    d29=20 -> Ki Focus [Skill/Class · book] — LOGIC: needs ki -> reroll
+    d29=21 -> Hunting [Skill/Class · book] — LOGIC: needs favored_enemy -> reroll
+    d29=21 -> Hunting [Skill/Class · book] — LOGIC: needs favored_enemy -> reroll
+    d29=17 -> Signature Move [Skill/Class] | T1 value: +3
+  POOL (weighted, martial): d100=84 → Elemental
+    d45=15 -> Banefire [Elemental] | T1 value: +5d6
+  POOL (weighted, martial): d100=44 → Defensive
+    d23=8 -> Thorns [Defensive] | T1 value: 3d6
+  POOL (weighted, martial): d100=90 → Elemental
+    d45=45 -> RUNE OF FIRE [Elemental · wfb] | +1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  GREATER [Signature Move]: d100=7 vs 25% -> GREATER
+  GREATER [Banefire]: d100=64 vs 25% -> no
+  GREATER [Thorns]: d100=15 vs 25% -> GREATER
+  GREATER [RUNE OF FIRE]: d100=20 vs 25% -> GREATER
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=7 -> G Curse/Control — LOGIC: no condition on the piece -> reroll
+  TEMPER: d10=6 -> F Minion/Companion — LOGIC: needs minions -> reroll
+  TEMPER: d10=4 -> D Resource — LOGIC: needs spells -> reroll
+  TEMPER: d10=8 -> H Critical/Precision; entry d10=4 (23H-4)
+  ASPECT: d10=8 -> H Curse/Control Engine; entry 4 — LOGIC: no condition on the piece -> reroll
+  ASPECT: d10=5 -> E Skill Transformation; entry 3 — LOGIC: reshapes spells -> reroll
+  ASPECT: d10=7 -> G Mobility; entry d8=4 (24G-4)
+  temper UDRP add-on 1d4+1 -> 3
+  aspect UDRP add-on 3d3+3 -> 8
+
+### Patience · CR 13 · T1 · Rare (3 affixes, kept) · archetype martial · MW property kept: None
+  POOL (weighted, martial): d100=88 → Elemental
+    d45=30 -> Anarchic [Elemental · book] | +2 = 8,000 gp
+  POOL (weighted, martial): d100=21 → Offensive
+    d70=56 -> MASTER RUNE OF DEATH [Offensive · wfb] | +3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  POOL (weighted, martial): d100=51 → Resource
+    d26=25 -> CHANCE TO CAST ON ATTACK [Resource · d2] — HOST DUPLICATE -> reroll
+    d26=11 -> Souldrinker [Resource] — LOGIC: needs caster -> reroll
+    d26=4 -> Leech [Resource] — HOST DUPLICATE -> reroll
+    d26=8 -> Thrift [Resource] | T1 value: 50%
+  GREATER [Anarchic]: d100=6 vs 10% -> GREATER
+  GREATER [MASTER RUNE OF DEATH]: d100=67 vs 10% -> no
+  GREATER [Thrift]: d100=14 vs 10% -> no
+  TEMPER SLOTS: Rare d100=52 -> 0
+
+### Rhun · CR 13 · T1 · Legendary (4 affixes, kept) · archetype martial · MW property kept: None
+  POOL (weighted, martial): d100=84 → Elemental
+    d45=43 -> Prismatic Burst [Elemental · book] | 30,000 gp (flat)
+  POOL (weighted, martial): d100=89 → Elemental
+    d45=11 -> Prismatic [Elemental] | T1 value: +2d8
+  POOL (weighted, martial): d100=5 → Offensive
+    d70=43 -> Vicious [Offensive · book] | +1 = 2,000 gp
+  POOL (weighted, martial): d100=51 → Resource
+    d26=13 -> Catalyst [Resource] — LOGIC: needs caster -> reroll
+    d26=11 -> Souldrinker [Resource] — LOGIC: needs caster -> reroll
+    d26=11 -> Souldrinker [Resource] — LOGIC: needs caster -> reroll
+    d26=4 -> Leech [Resource] — HOST DUPLICATE -> reroll
+    d26=6 -> Endurance [Resource] — HOST DUPLICATE -> reroll
+    d26=19 -> Vampiric [Resource · book] | +2 = 8,000 gp
+  GREATER [Prismatic Burst]: d100=90 vs 25% -> no
+  GREATER [Prismatic]: d100=3 vs 25% -> GREATER
+  GREATER [Vicious]: d100=94 vs 25% -> no
+  GREATER [Vampiric]: d100=63 vs 25% -> no
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=2 -> B Elemental Augment; entry d10=6 (23B-6)
+  ASPECT: d10=2 -> B Conditional Damage Spike; entry d8=5 (24B-5)
+  temper UDRP add-on 1d4+1 -> 5
+  aspect UDRP add-on 3d3+3 -> 12
+
+### Edwyn · CR 13 · T1 · Legendary (4 affixes, kept) · archetype arcane · MW property kept: defending
+  POOL (weighted, arcane): d100=8 → Offensive
+    d70=25 -> Ghost Strike [Offensive · book] — HOST DUPLICATE -> reroll
+    d70=47 -> Fleshgrinding [Offensive · book] | +2 = 8,000 gp
+  POOL (weighted, arcane): d100=76 → Elemental
+    d45=28 -> Holy [Elemental · book] | +2 = 8,000 gp
+  POOL (weighted, arcane): d100=87 → Elemental
+    d45=18 -> Flaming Burst [Elemental · book] | +2 = 8,000 gp
+  POOL (weighted, arcane): d100=78 → Elemental
+  pool restriction: Elemental used 2x -> reroll pool
+  POOL (weighted, arcane): d100=85 → Elemental
+  pool restriction: Elemental used 2x -> reroll pool
+  POOL (weighted, arcane): d100=15 → Defensive
+    d23=15 -> Nimble [Defensive] | T1 value: +4
+  GREATER [Fleshgrinding]: d100=17 vs 25% -> GREATER
+  GREATER [Holy]: d100=4 vs 25% -> GREATER
+  GREATER [Flaming Burst]: d100=29 vs 25% -> no
+  GREATER [Nimble]: d100=46 vs 25% -> no
+  TEMPER SLOTS: Legendary -> 1
+  TEMPER: d10=2 -> B Elemental Augment; entry d10=3 (23B-3)
+  ASPECT: d10=7 -> G Mobility; entry d8=2 (24G-2)
+  temper UDRP add-on 1d4+1 -> 4
+  aspect UDRP add-on 3d3+3 -> 8
+
+### Ashavel · CR 14 · T1 · Rare (3 affixes, kept) · archetype shadow · MW property kept: None
+  POOL (weighted, shadow): d100=38 → Resource
+    d26=10 -> Lifedrinker [Resource] | T1 value: 25
+  POOL (weighted, shadow): d100=9 → Offensive
+    d70=23 -> Fiercebane [Offensive · book] | +1 = 2,000 gp
+  POOL (weighted, shadow): d100=81 → Skill/Class
+    d29=2 -> Sacred Word [Skill/Class] — LOGIC: needs divine -> reroll
+    d29=16 -> Wardbreaker [Skill/Class] — LOGIC: needs caster -> reroll
+    d29=6 -> Bladesinger [Skill/Class] | T1 value: +3
+  GREATER [Lifedrinker]: d100=8 vs 10% -> GREATER
+  GREATER [Fiercebane]: d100=16 vs 10% -> no
+  GREATER [Bladesinger]: d100=99 vs 10% -> no
+  TEMPER SLOTS: Rare d100=7 -> 1
+  TEMPER: d10=9 -> I Blood/Shadow/Death; entry d10=1 (23I-1)
+  temper UDRP add-on 1d4+1 -> 5
+
+### Ivrael (Hand) · CR 14 · T1 · Rare (3 affixes, kept) · archetype martial · MW property kept: None
+  POOL (weighted, martial): d100=54 → Utility
+    d26=25 -> Metalline [Utility · book] | +2 = 8,000 gp
+  POOL (weighted, martial): d100=33 → Defensive
+    d23=10 -> Second Wind [Defensive] — HOST DUPLICATE -> reroll
+    d23=3 -> Stalwart [Defensive] | T1 value: +4
+  POOL (weighted, martial): d100=14 → Offensive
+    d70=33 -> Precise [Offensive · book] — LOGIC: needs ranged_or_thrown -> reroll
+    d70=58 -> MASTER RUNE OF SMITING [Offensive · wfb] | +3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  GREATER [Metalline]: d100=63 vs 10% -> no
+  GREATER [Stalwart]: d100=12 vs 10% -> no
+  GREATER [MASTER RUNE OF SMITING]: d100=91 vs 10% -> no
+  TEMPER SLOTS: Rare d100=56 -> 0
+
+### Teodric (Hand) · CR 14 · T1 · Rare (3 affixes, kept) · archetype arcane · MW property kept: None
+  POOL (weighted, arcane): d100=76 → Elemental
+    d45=35 -> Sacred Burst [Elemental · book] | +1 = 2,000 gp
+  POOL (weighted, arcane): d100=62 → Skill/Class
+    d29=22 -> Mighty Smiting [Skill/Class · book] — LOGIC: needs smite -> reroll
+    d29=17 -> Signature Move [Skill/Class] — HOST DUPLICATE -> reroll
+    d29=6 -> Bladesinger [Skill/Class] — HOST DUPLICATE -> reroll
+    d29=5 -> Commander's Voice [Skill/Class] — HOST DUPLICATE -> reroll
+    d29=6 -> Bladesinger [Skill/Class] — HOST DUPLICATE -> reroll
+    d29=10 -> Animal Bond [Skill/Class] — HOST DUPLICATE -> reroll
+    d29=24 -> Berserker [Skill/Class · book] — LOGIC: needs rage -> reroll
+    d29=3 -> Sneak's Edge [Skill/Class] — LOGIC: needs sneak -> reroll
+    d29=7 -> Metamagic Font [Skill/Class]
+  POOL (weighted, arcane): d100=1 → Offensive
+    d70=25 -> Ghost Strike [Offensive · book] — HOST DUPLICATE -> reroll
+    d70=36 -> Quick Loading [Offensive · book] — LOGIC: needs crossbow -> reroll
+    d70=57 -> MASTER RUNE OF DRAGON SLAYING [Offensive · wfb] — HOST DUPLICATE -> reroll
+    d70=51 -> IGNORE TARGET'S DEFENSE [Offensive · d2] | +3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).
+  GREATER [Sacred Burst]: d100=28 vs 10% -> no
+  GREATER [Metamagic Font]: d100=15 vs 10% -> no
+  GREATER [IGNORE TARGET'S DEFENSE]: d100=33 vs 10% -> no
+  TEMPER SLOTS: Rare d100=30 -> 1
+  TEMPER: d10=5 -> E Mobility; entry d10=7 (23E-7)
+  temper UDRP add-on 1d4+1 -> 5
+
+### Durgan (Hand) · CR 14 · T1 · Rare (3 affixes, kept) · archetype arcane · MW property kept: None
+  POOL (weighted, arcane): d100=89 → Elemental
+    d45=6 -> Shadowtouch [Elemental] — HOST DUPLICATE -> reroll
+    d45=32 -> Holy Surge [Elemental · book] — LOGIC: needs melee -> reroll
+    d45=27 -> Thundering [Elemental · book] | +1 = 2,000 gp
+  POOL (weighted, arcane): d100=74 → Elemental
+    d45=28 -> Holy [Elemental · book] — HOST DUPLICATE -> reroll
+    d45=27 -> Thundering [Elemental · book] — HOST DUPLICATE -> reroll
+    d45=37 -> Profane Burst [Elemental · book] | +1 = 2,000 gp
+  POOL (weighted, arcane): d100=91 → Elemental
+  pool restriction: Elemental used 2x -> reroll pool
+  POOL (weighted, arcane): d100=8 → Offensive
+    d70=35 -> Distance [Offensive · book] | +1 = 2,000 gp
+  GREATER [Thundering]: d100=6 vs 10% -> GREATER
+  GREATER [Profane Burst]: d100=41 vs 10% -> no
+  GREATER [Distance]: d100=76 vs 10% -> no
+  TEMPER SLOTS: Rare d100=41 -> 1
+  TEMPER: d10=10 -> J Forbidden — DM gate -> reroll
+  TEMPER: d10=7 -> G Curse/Control — LOGIC: no condition on the piece -> reroll
+  TEMPER: d10=7 -> G Curse/Control — LOGIC: no condition on the piece -> reroll
+  TEMPER: d10=10 -> J Forbidden — DM gate -> reroll
+  TEMPER: d10=1 -> A Weapon Technique; entry d10=2 (23A-2)
+  temper UDRP add-on 1d4+1 -> 5
+
+### Lorne (Hand) · CR 13 · T1 · Rare (3 affixes, kept) · archetype divine · MW property kept: None
+  POOL (weighted, divine): d100=70 → Skill/Class
+    d29=19 -> Divine Wrath [Skill/Class · book] | +1 = 2,000 gp
+  POOL (weighted, divine): d100=97 → Summoning/Companion
+    d9=7 -> Shadow Clone [Summoning/Companion]
+  POOL (weighted, divine): d100=30 → Resource
+    d26=11 -> Souldrinker [Resource] | T1 value: 20
+  GREATER [Divine Wrath]: d100=6 vs 10% -> GREATER
+  GREATER [Shadow Clone]: d100=52 vs 10% -> no
+  GREATER [Souldrinker]: d100=89 vs 10% -> no
+  TEMPER SLOTS: Rare d100=48 -> 1
+  TEMPER: d10=3 -> C Defensive; entry d10=4 (23C-4)
+  temper UDRP add-on 1d4+1 -> 3
+
+======================================================================
+AUDIT REROLLS (6 Oct 2026): illogical draws the filter missed, found on hand review; rerolled within the same pool/table
+-- Faelith: Signature Move (raises a class ability's save DC; a fighter has none) -> reroll within Skill/Class; Greater re-checked
+    d29=3 -> Sneak's Edge — LOGIC: needs sneak -> reroll
+    d29=19 -> Divine Wrath — HOST DUPLICATE -> reroll
+    d29=24 -> Berserker — LOGIC: needs rage -> reroll
+    d29=15 -> Battle Meditation [Skill/Class]
+  GREATER [Battle Meditation]: d100=40 vs 25% -> no
+-- Edwyn: temper 23B-3 Chain Lightning (no lightning damage on the glove) -> reroll the temper
+  TEMPER: d10=10 -> J Forbidden — DM gate -> reroll
+  TEMPER: d10=10 -> J Forbidden — DM gate -> reroll
+  TEMPER: d10=9 -> I Blood/Shadow/Death; entry d10=6 (23I-6)
+-- Durgan: temper 23A-2 Whirlwind (melee technique on a heavy crossbow) -> reroll the temper
+  TEMPER: d10=8 -> H Critical/Precision; entry d10=9 (23H-9)
+-- Durgan: 23H-9 Momentum Crit (immediate extra attack; a heavy crossbow needs a full round to reload) -> reroll
+  TEMPER: d10=9 -> I Blood/Shadow/Death; entry d10=9 (23I-9)

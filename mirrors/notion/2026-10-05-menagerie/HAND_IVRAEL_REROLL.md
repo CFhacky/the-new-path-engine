@@ -1,5 +1,7 @@
 # Ivrael Quillatar — signature weapon reroll (6 Oct 2026)
 
+> **Superseded** by the full-corpus pass (`FULL_CORPUS_CARDS.md`, card H1). Kept for the dice record.
+
 > **Why.** Chad's ruling (6 Oct 2026): item rolls must make **logical sense** for the bearer. Ivrael's 5 Oct roll failed that test twice:
 > - It overwrote his authored look, a long single-edged elven blade worn edge-up, with a rolled battleaxe.
 > - It put a spell-slot affix (Souldrinker) on a fighter with no spells.

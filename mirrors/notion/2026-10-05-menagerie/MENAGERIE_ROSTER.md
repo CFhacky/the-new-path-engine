@@ -1086,8 +1086,7 @@ Advantages: Combat Reflexes; Ambidexterity; Trained by a Master; Night Vision 3.
 Full cards, stat-block errata and the module manifest are in `MENAGERIE_SIGNATURE_ITEMS.md` (Notion child page *The Menagerie — Signature Items*, `3f1e8214-84b0-8183-9a95-f646f647de07`). The arc manifest is appended on the Affix Registry. Change Log: `3f1e8214-84b0-81ba-a5f1-c3048cc8bbb2`. Nothing here has happened in play.
 
 **Open after round five:**
-- Five readings: the empty-socket contents (seal, charm, shard, strange); the division rule for companion draws; Arcane Amplification on Osmund; Wardbreaker on fighters; Zaheda's notebook in tiger form.
-- **Ysmay's Undeath Covenant** (binding roll): how it got into her sword, and whether she knows.
+- Three readings: the empty-socket contents (seal, charm, shard, strange); the division rule for companion draws; Zaheda's notebook in tiger form.
 - **Edwyn's faith** and **the priestess who ended Quavein's house**, both left open.
 
 ---
@@ -1124,3 +1123,40 @@ Full set: `MENAGERIE_PAIRINGS.md` (Notion `3f1e8214-84b0-8177-899a-ed9a136e5410`
 - **The quarrel stays between three priests**, with nobody above them to settle it: the seat's holder is Arik, who doesn't know he has priests.
 - **Nym enforces it herself.** Yashiori's 24-hour ban and Eight Vats' year-and-a-day ban are her deliberate tools, used on the dead the others would take. She may quietly put down what they raise.
 - **The test comes when Arik learns he has priests.** Whoever he backs on the dead decides whether Nym was the office's voice all along, or one priest with a conviction.
+
+---
+
+## Round eight (6 Oct 2026): full-corpus pass on the signature items
+Chad ruled that every signature piece is re-rolled against the full corpus, excluding enchants laid on a weapon after it's made (WoW enchants, Magic Item Compendium augment crystals, runewords). The five Uniques stand. The other 21 kept rarity, masterwork, sockets, bases and releases; their affixes, tempers and aspects were rolled again, with no duplicates across the host and a reroll for anything the bearer can't use. Cards: `FULL_CORPUS_CARDS.md`.
+
+| Bearer | Piece |
+|---|---|
+| Quavein | *The Last Column*: Dimensional Pocket, Mana Leech (Greater), Warding, Second Wind |
+| Hadda | *The Pointing Trowel*: Souldrinking, Master Rune of Skalf Blackhammer, Striking, Morphing (Greater) |
+| Tarvash | Parrying Scimitars of Riposte |
+| Aerendyl | Undying Prayer-Cord of Dragon Slaying |
+| Kesh | *Inside Ten*: Animal Bond, Mind Fog, Deflecting, Rune of Cleaving (Greater) |
+| Marit | *Between the Joints*: Stoneskin, Radiant, Freeze Target, Spider's Gift |
+| Brunna | *The Hinge-Pins*: Endurance (capstone), Blinding (Greater), Rune of Striking, Ghost Strike |
+| Zaheda | *The Teacher's Hide*: Battle Trance, Absorption, Undead Servitor (capstone), Chameleon |
+| Ysmay | Aegis Bastard Sword of Command. **The Undeath Covenant is gone; she heals normally.** |
+| Dace | Lethal Shortspear of Sweeping |
+| Osmund | *Mourners' Brass*: Penetrating Strikes, Shadowtouch, Leech, Chance to Cast (*silence*) |
+| Wenna | Stormborn Handaxe of Trackless Passage |
+| Faelith | *The Wrong Note*: Battle Meditation, Banefire, Thorns (Greater), Rune of Fire (Greater) |
+| Patience | Anarchic Dire Flail of the Death Rune |
+| Rhun | *The Relief*: Prismatic Burst, Prismatic (Greater), Vicious, Vampiric |
+| Edwyn | *Compline*: Fleshgrinding (Greater), Holy (Greater), Flaming Burst, Nimble |
+| Ashavel | Fiercebane War-Fans of Lifedrinking |
+| Ivrael (Hand) | Metalline Longblade of Smiting |
+| Teodric (Hand) | Sacred Burst Bastard Sword of Ignored Defense |
+| Durgan (Hand) | Thundering Heavy Crossbow of Distance |
+| Lorne (Hand) | Longsword of Divine Wrath |
+
+**Retired item names:** the round-five Rare names for these eleven Rares, and Ivrael's earlier reroll from today. The ten Legendaries keep their names and lore.
+
+**Open after round eight:**
+- **Faelith's Wind aspect** needs non-heavy armour; the Stalker suit's category isn't ruled.
+- **Patience's alignment:** if he is lawful, the Anarchic flail gives him a negative level.
+- **Edwyn's Holy mitten:** fine unless he's evil.
+

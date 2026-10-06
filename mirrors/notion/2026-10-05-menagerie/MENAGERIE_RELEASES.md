@@ -91,8 +91,8 @@ She rolls an iron spike over her knuckles once, thumb to little finger, and thro
   - **20d6 piercing** (Reflex DC 26 half).
   - Anyone who fails is **pinned** to the nearest wall, floor or tabletop by the hands and feet. Tearing free takes a DC 30 Strength check and 6d6 damage.
 - **The ground stays thorned.** The whole area is difficult terrain. Each round another 10d6 storm falls wherever she points.
-- **Brunna flies** (the tucks' Featherfall) and works the pinned at leisure, one at a time.
-- **GURPS:** Innate Attack 20d impaling (Area 33 yd), Binding 20 (Unbreakable), Follow-Up; Flight; Limited Use 1/day.
+- **Brunna walks the thorns untouched** and works the pinned at leisure, one at a time. Once in the release she steps (Horizon) to any pinned body she can see.
+- **GURPS:** Innate Attack 20d impaling (Area 33 yd), Binding 20 (Unbreakable), Follow-Up; Warp 1/encounter; Limited Use 1/day.
 - **After:** a field of iron thorns and what hangs on them. The shrike always leaves the larder where you can see it.
 
 ## IX. Mercy Vantreth — *The Reef*
@@ -125,7 +125,7 @@ She closes her failing eyes. When she opens them the sun is gone.
   - Ysmay sees perfectly in it, the way she always has.
 - **Each round** she moves anywhere in the dark without passing through the space between, and strikes **four different creatures**, once each, from above or behind.
   - Every strike is an **automatic critical hit**: the old sword, ×2, with battle cunning.
-- **The Covenant.** In the dark she does not bleed. Damage that would drop her below 1 HP is deferred until the release ends.
+- **The debt waits.** In the dark she does not bleed. Damage that would drop her below 1 HP is deferred until the release ends.
 - **GURPS:** Darkness (Area 167 yd, Total) with Silence, Warp (Limited: within the darkness), Extra Attack 3 (Accessibility: from behind), Unkillable 2 for the duration; Limited Use 1/day.
 - **After:** the light comes back slowly, like a door opening. Whatever was owed comes due on her at once, and she pays it standing. She says one name each time, never the same one: the charges she was a heartbeat late for.
 
@@ -158,7 +158,7 @@ The censer swings once, and the pauper's-pit smoke pours out in a flood.
 - A **40-ft cloud** of grey smoke: full concealment for everyone but Osmund.
 - **6d6 negative energy** a round to every living creature inside (Fort DC 21 half).
 - Anything that dies in the smoke **rises** at once as a zombie under his command, to a maximum of 4.
-- **GURPS:** Obscure (Vision) Area 13 yd, Innate Attack 6d toxic (negative, Area), Death Knight Ally Group (max 4); Limited Use 1/day.
+- **GURPS:** Obscure (Vision) Area 13 yd, Innate Attack 6d toxic (negative, Area), Ally Group (raised zombies, max 4); Limited Use 1/day.
 - **After:** the smoke smells of a cheap funeral. Somewhere, three old women are pleased.
 
 ## Lt II. Kerra Lisle — *Ten Paces*
@@ -204,7 +204,7 @@ He lays the mailed hand flat on the air, the way the brothers laid it on the alt
 - A **30-ft dome** of sung abjuration:
   - No spell or spell-like effect from outside enters it.
   - At the start of each round, every enemy effect inside is targeted by *greater dispel magic* (CL 13).
-- His permanent summoned creature sings with him. Its attacks bypass all DR for the duration.
+- The mitten sings with him. If he lets it go to grind (Fleshgrinding), its damage bypasses all DR for the duration.
 - **GURPS:** Neutralize (Area 10 yd, each turn) with Magic Resistance 10 (Area, Accessibility: from outside); Limited Use 1/day.
 - **After:** silence, then his humming, picking up where the hymn left off.
 
@@ -235,8 +235,8 @@ He hums the three bars of the Moonsea shanty, and the staff splits into its two 
 He counts the exits aloud in Elvish. When he reaches the end, there is only one.
 - Within **40 ft**, every exit but one is sealed by force walls. Ivrael stands in the one left open.
 - Every enemy within 40 ft must attack him for the 3 rounds (Will DC 21 negates, one save). He gets an attack of opportunity on each one that comes at him.
-- While the Counted Door holds, his Bladesinger dodge bonus doubles to **+6**. Everything forced to come at him is swinging at the hardest target in the room.
-- **GURPS:** Force Wall (Area 13 yd, all but one exit), Affliction (Compulsive Attack, Area), Counter Attack against all, Enhanced Parry +6; Limited Use 1/day.
+- While the Counted Door holds, his Stalwart bonus doubles to **+8 on all saves**, and the Rune of Smiting rolls its damage dice a third time on each attack of opportunity. Everything forced to come at him meets a man nothing moves.
+- **GURPS:** Force Wall (Area 13 yd, all but one exit), Affliction (Compulsive Attack, Area), Counter Attack against all, Will +8, a third injury roll on counter-attacks; Limited Use 1/day.
 - **After:** the walls drop and the door is just a door. He counts the exits again, quieter.
 
 ## Lt VI (Hand). Durgan Emberlode — *The Banked Coal*
@@ -244,7 +244,7 @@ His breath stops smoking. Then the dragon in his blood stops hiding.
 - The scale-scarring on his neck becomes scales: **+4 natural armor** and fire immunity for the duration.
 - Each round he breathes a **60-ft cone of fire, 10d6** (Reflex DC 21 half).
 - Anything within 10 ft of him takes **3d6 fire** at the start of its turn.
-- His spells cast in the release count as maximised. Teodric's sword is not the only Overcharge in the Hand.
+- His spells cast in the release count as maximised.
 - **GURPS:** Innate Attack 10d burning (Cone 20 yd), Damage Aura 3d burning (3 yd), DR 4 and Immunity (fire); Limited Use 1/day.
 - **After:** the frost doesn't settle on anything near him for a day. The scales go back to scars, a little further up his jaw each time.
 
@@ -259,9 +259,9 @@ She touches the mask's chin, wets Yashiori, and the Storm King's oldest trick fi
 ## Lt VIII (Hand). Teodric Halvane — *Old Friends*
 He speaks to everyone in the room as if he has known them for years. For three rounds, they believe it.
 - Within **40 ft**, every enemy is charmed (Will DC 21; enchanters and the mind-blank warded excepted). They lower their weapons, they don't attack anyone they see Teodric speak to, and **each answers one question truthfully each round**.
-- His sword's dispelling stroke runs each round at **CL 16** against one target in the area, at no action.
+- Whoever breaks the charm and comes at him is fighting a sword that ignores armour: under 17 HD, every stroke is a touch attack.
 - Damage breaks the charm only on the creature that took it.
-- **GURPS:** Mind Control (Area 13 yd, charm only) with Truthfulness 1/turn; Neutralize (Magic) each turn; Limited Use 1/day.
+- **GURPS:** Mind Control (Area 13 yd, charm only) with Truthfulness 1/turn; foes of Tier 2 and below defend at −3; Limited Use 1/day.
 - **After:** they remember everything they said. Brunna's prisoners talk before she gets to them, which is the only way she has ever lost one.
 
 ---

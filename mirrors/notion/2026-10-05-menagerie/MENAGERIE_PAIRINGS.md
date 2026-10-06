@@ -17,14 +17,14 @@
 <table header-row="true">
 <tr><td>Bearer</td><td>Art</td><td>Caster level · save DC</td><td>The spells that matter for pairing</td></tr>
 <tr><td>I Quavein</td><td>Cleric 17 (War/Water)</td><td>CL 17 · DC 19 + level</td><td><em>control water, ice storm, blade barrier, implosion, destruction, storm of vengeance, heal, harm, greater dispel magic, elemental swarm</em></td></tr>
-<tr><td>II Hadda</td><td>Wizard 16 (evoker)</td><td>CL 16 · DC 23 + level, evocation 25 + level (with The Pointing Trowel)</td><td><em>wall of force, forcecage, Bigby's crushing hand, Otiluke's telekinetic sphere, chain lightning, greater dispel magic</em></td></tr>
+<tr><td>II Hadda</td><td>Wizard 16 (evoker)</td><td>CL 16 · DC 18 + level, evocation 20 + level</td><td><em>wall of force, forcecage, Bigby's crushing hand, Otiluke's telekinetic sphere, chain lightning, greater dispel magic</em></td></tr>
 <tr><td>V Kesh</td><td>Ranger 16</td><td>CL 8 · DC 13 + level</td><td><em>freedom of movement, longstrider, barkskin</em></td></tr>
 <tr><td>VI Marit</td><td>Rogue/Assassin</td><td>assassin spells (Int)</td><td><em>obscuring mist, invisibility, greater invisibility, misdirection, freedom of movement</em></td></tr>
 <tr><td>VII Naevys</td><td>Sorcerer 16 (fey)</td><td>CL 16 · DC 19 + level</td><td><em>sunburst, cone of cold, polar ray, chain lightning, fireball, Otiluke's telekinetic sphere, Mordenkainen's sword</em></td></tr>
 <tr><td>X Zaheda</td><td>Druid 16</td><td>CL 16 · DC 19 + level; casts in tiger form</td><td><em>whirlwind, call lightning storm, wall of thorns, creeping doom, fire storm, sunburst, summon nature's ally VIII</em></td></tr>
 <tr><td>XII Ilvaera</td><td>Duskblade 17</td><td>CL 17 · DC 15 + level; channels touch spells</td><td><em>shocking grasp, vampiric touch, ray of enfeeblement, true strike</em></td></tr>
 <tr><td>XIII Dace</td><td>Psychic warrior 16</td><td>ML 16 (powers)</td><td><em>offensive and defensive precognition, expansion, inertial barrier, dimension slide</em></td></tr>
-<tr><td>Lt I Osmund</td><td>Cleric 12 (Trickery/Death)</td><td>CL 12 · DC 19 + level (with Mourners' Brass)</td><td><em>silence, hold person, greater command, harm, heal, slay living, mislead, death ward</em></td></tr>
+<tr><td>Lt I Osmund</td><td>Cleric 12 (Trickery/Death)</td><td>CL 12 · DC 17 + level</td><td><em>silence, hold person, greater command, harm, heal, slay living, mislead, death ward</em></td></tr>
 <tr><td>Lt II Kerra</td><td>Wizard 14 (transmuter)</td><td>CL 14 · DC 17 + level</td><td><em>haste, slow, polymorph, baleful polymorph, disintegrate, transmute rock to mud, stoneskin</em></td></tr>
 <tr><td>Lt III Wenna</td><td>Wizard 14 (enchanter)</td><td>CL 14 · DC 17, enchantment 19 + level</td><td><em>dominate person, mass suggestion, confusion, hold monster, feeblemind</em></td></tr>
 <tr><td>Lt XII Edwyn</td><td>Wizard 13 (abjurer)</td><td>CL 13 · DC 17 + level</td><td><em>mind fog, dimensional anchor, globe of invulnerability, wall of force, greater dispel magic, mislead</em></td></tr>
@@ -39,7 +39,7 @@ Not casters: Tarvash, Aerendyl, Mercy and the lieutenants Faelith, Patience and 
 ## I. Quavein + Osmund — *The Storm Office*
 - **Spells:** Osmund casts *death ward* on Quavein, then *silence* on the enemy's casters. Quavein walks in under the ward and casts *destruction*, which a *death ward* would have stopped if the enemy had one.
 - **Releases (pairing):** Osmund's funeral smoke goes into the gale. The storm carries it through the whole 120 ft. Everything that dies anywhere in the storm rises in the eye beside Quavein, and the zombie cap is 8, not 4.
-- **GURPS:** Death Knight Ally Group expanded to the storm's Area 40 yd (max 8).
+- **GURPS:** the raised-zombie Ally Group expanded to the storm's Area 40 yd (max 8).
 - **From across the field:** a black-green storm, grey smoke wound through it like a rope, and the dead standing up inside.
 
 ## II. Hadda + Kerra — *Second's Rights*
@@ -71,7 +71,7 @@ Not casters: Tarvash, Aerendyl, Mercy and the lieutenants Faelith, Patience and 
 - **Releases (pairing):** Rhun plants the pollaxe inside the Night Hunt.
 	- Anything moving towards Ysmay is stopped by him where she can see it and it can't see her.
 	- His allies-don't-fall clause covers her too, so her deferred damage stays deferred for the full 10 rounds even after his 3 rounds end.
-	- Covenant and Revenant together: the pair that won't stay down.
+	- Her deferred debt and his Revenant socket together: the pair that won't stay down.
 - **GURPS:** Unkillable on the captain extended to the release's full duration.
 - **From across the field:** nothing at all. It's dark.
 
@@ -91,12 +91,10 @@ Not casters: Tarvash, Aerendyl, Mercy and the lieutenants Faelith, Patience and 
 
 # 2. SPELL PAIRINGS ACROSS DIVISIONS (rules as written; order Lirien's)
 
-## Osmund + Ysmay — *The Wrong Medicine*
-- **The Covenant made useful.** Ysmay's sword makes positive energy hurt her and negative energy heal her.
-	- Osmund's *harm* **heals her for 120 HP** (CL 12).
-	- Quavein's *heal* would do **150 damage** to her.
-- **The rule for any Veil medic:** never heal Ysmay; harm her.
-- **From across the field:** a priest lays a hand on a wounded old woman, and she stands up.
+## Osmund + Ysmay — *The Quiet Watch*
+- **Spells:** Osmund casts *death ward* on Ysmay before the dark, and *heal* (120 HP, CL 12) when she comes out of it. She heals normally; the Covenant went with the first pass.
+- **The censer's silence:** 1 hit in 10 casts *silence* on whatever Osmund strikes. Inside the Night Hunt, which is already soundless, the caster he tags stays mute after the dark lifts.
+- **From across the field:** a priest swinging smoke at the edge of a darkness, and nobody in it calling for help.
 
 ## Hadda + Quavein — *The Cage and the Collapse*
 - Hadda's barred *forcecage* holds the target; the bars let a spell through.
@@ -222,24 +220,24 @@ Four captains clash with Brunna. Each of their releases takes her pinned away be
 <table header-row="true">
 <tr><td>Hand member · seat</td><td>Art · caster level</td><td>Spells (to 7th level)</td></tr>
 <tr><td>Nym Esharan · Lt VII (Naevys)</td><td>Cleric 14, Trickery/Death · CL 14</td><td>Domain: <em>disguise self, invisibility, nondetection, confusion, false vision, mislead, screen</em> / <em>cause fear, death knell, animate dead, death ward, slay living, create undead, destruction</em>. Core: <em>silence, dispel magic, greater command, harm, heal, blade barrier</em>. The trickster of the two: confusion, screens and false trails, which matches Yashiori's confusion on hit.</td></tr>
-<tr><td>Lorne Ashby · Lt IV (Aerendyl)</td><td>Cleric 13, Trickery/Death · CL 13</td><td>Same domains. Core: <em>prayer, dispel magic, freedom of movement, harm, heal, control undead</em>. The dead-handler of the two: he raises with <em>animate dead</em>, <em>create undead</em> and the Undead Servitor longsword (12 HD, 24 hours), and keeps them with <em>control undead</em>.</td></tr>
-<tr><td>Teodric Halvane · Lt VIII (Brunna)</td><td>Wizard 14, enchanter · CL 14</td><td><em>charm monster, modify memory, dominate person, mass suggestion, geas/quest, greater heroism, insanity, power word stun, greater dispel magic, dimension door, shield</em>. The sword's at-will Overcharge maximises his spells' dice.</td></tr>
-<tr><td>Durgan Emberlode · Lt VI (Marit)</td><td>Sorcerer 14, draconic (fire) · CL 14</td><td>Known: <em>scorching ray, fireball, haste, fire shield, wall of fire, cone of cold, chain lightning, disintegrate, delayed blast fireball, dimension door, shield</em>. The crossbow's Souldrinker recovers 6 spell levels on a kill.</td></tr>
+<tr><td>Lorne Ashby · Lt IV (Aerendyl)</td><td>Cleric 13, Trickery/Death · CL 13</td><td>Same domains. Core: <em>prayer, dispel magic, freedom of movement, harm, heal, control undead</em>. The dead-handler of the two: he raises with <em>animate dead</em>, <em>create undead</em> and and keeps them with <em>control undead</em>. His longsword puts undead down instead (Divine Wrath), and its Souldrinker recovers 6 spell levels on a kill.</td></tr>
+<tr><td>Teodric Halvane · Lt VIII (Brunna)</td><td>Wizard 14, enchanter · CL 14</td><td><em>charm monster, modify memory, dominate person, mass suggestion, geas/quest, greater heroism, insanity, power word stun, greater dispel magic, dimension door, shield</em>. The sword's Metamagic Font applies a metamagic feat 3/day at no level cost.</td></tr>
+<tr><td>Durgan Emberlode · Lt VI (Marit)</td><td>Sorcerer 14, draconic (fire) · CL 14</td><td>Known: <em>scorching ray, fireball, haste, fire shield, wall of fire, cone of cold, chain lightning, disintegrate, delayed blast fireball, dimension door, shield</em>. The crossbow's Blood Pact doubles one spell's damage 1/day, for 25% of his HP.</td></tr>
 </table>
 
 Ivrael Quillatar (Lt V, Kesh) is a fighter and casts nothing. He's paired below for his blade and his release.
 
-**The Hand has no releases.** The round-six releases went to the 13 captains and the 8 new lieutenants. The Hand's five hold the same rank and have none. **Open:** whether they get lesser releases too. Jin's orders win on Hand operations.
+**The Hand has releases** (Chad, 6 Oct 2026): five lesser releases on the lieutenants' frame, in section 5d. Jin's orders win on Hand operations.
 
 ## 5a. Captain and Hand lieutenant
 
 ### IV. Aerendyl + Lorne — *What Long Road Breaks, Lorne Keeps*
 - **Spells:** Lorne's *death ward* and *freedom of movement* go on Aerendyl before contact.
-- **With the release:** whatever Long Road crushes, Lorne raises inside the quake: the Undead Servitor's 12 HD corpse, then *animate dead* on the rest. Every dead thing he raises fights from the ground Aerendyl owns.
+- **With the release:** whatever Long Road crushes, Lorne raises inside the quake: *animate dead* and *create undead* on the dead. Every dead thing he raises fights from the ground Aerendyl owns.
 - **From across the field:** a barefoot elf holding a gatehouse, and the people it fell on getting up again.
 
 ### V. Kesh + Ivrael — *The Wall at Ten Paces* (no caster)
-- Inside ten paces Kesh's sickles hook the target prone. Ivrael, +3 dodge with his longblade, is the line they're hooked against.
+- Inside ten paces Kesh's sickles hook the target prone. Ivrael, +4 on every save and his longblade's dice rolled twice, is the line they're hooked against.
 
 ### VI. Marit + Durgan — *The Quarry Arrives on a Fire*
 - **With the release:** Durgan casts *delayed blast fireball* where Marit stands, timed to go off when the hounds bring her quarry (up to 5 rounds). The quarry comes through every wall on the plane and lands on it.
@@ -254,7 +252,7 @@ Ivrael Quillatar (Lt V, Kesh) is a fighter and casts nothing. He's paired below 
 ### VIII. Brunna + Teodric — *The Larder Talks*
 - **The problem:** Brunna kills prisoners if it's cleaner, and Lirien has stopped giving her capture jobs.
 - **The pairing:** Teodric casts *dominate person* or *modify memory* on someone pinned in the Larder. The pinned answer his questions before she finishes them, and the Veil gets its interrogation without a prisoner.
-- **His sword:** its dispelling stroke takes the wards off whoever she's pinned.
+- **His sword:** it ignores the armour of anything under 17 HD she's pinned.
 - **From across the field:** a dwarf waiting with a spike, and a grey-templed man talking quietly to someone nailed to a door.
 
 ## 5b. The Storm King's priests
@@ -263,8 +261,8 @@ The office now has **four priests in the host:**
 - **Osmund, Nym and Lorne** (all Trickery/Death).
 
 Arik doesn't know he has any of them.
-- **Ysmay's medics.** Osmund, Nym and Lorne all carry *harm*, and each one heals Ysmay through the Covenant (CL 12 / 14 / 13: 120 / 140 / 130). Quavein's *heal* is the one that hurts her.
-- **Raising versus the Root Country.** Lorne and Osmund raise the dead (Undead Servitor, Death Knight, *create undead*). Nym's Yashiori forbids it on her kills for 24 hours. **The same office argues with itself** over whether the dead belong to the field or to the Root Country.
+- **Four healers.** Quavein, Osmund, Nym and Lorne all carry *heal*. Ysmay heals normally now that the Covenant is gone.
+- **Raising versus the Root Country.** Lorne and Osmund raise the dead (*animate dead*, *create undead*, and Osmund's funeral smoke). Nym's Yashiori forbids it on her kills for 24 hours. **The same office argues with itself** over whether the dead belong to the field or to the Root Country.
 - **Four priests at once.** If all four stand in one fight:
 	- Quavein's Gale carries the funeral smoke.
 	- Nym confuses the line.
@@ -299,11 +297,11 @@ Arik doesn't know he has any of them.
 
 ## 5d. The Hand's releases in pairing (appended 6 Oct 2026; Chad: casting lines stand, the Hand gets releases)
 - **Aerendyl + Lorne:** in Long Road's quake, Lorne's dead come out of the shadows of whatever Aerendyl is holding up. Their strikes are flat-footed and +4d6 against anything that can't stand.
-- **Kesh + Ivrael:** the Counted Door forces every enemy towards Ivrael, through Kesh's ten paces. The sickles hook them prone on the way in, and Ivrael, at +6 dodge, is the wall they arrive at.
+- **Kesh + Ivrael:** the Counted Door forces every enemy towards Ivrael, through Kesh's ten paces. The sickles hook them prone on the way in, and Ivrael, at +8 on every save, is the wall they arrive at.
 - **Marit + Durgan:** the hounds bring the quarry, and Durgan breathes on the spot where it lands.
 - **Naevys + Nym:** Eight Vats puts the line to sleep, and the Hunt rides over the sleepers. Nym's dead go to the Root Country for a year and a day.
 - **Brunna + Teodric:** Old Friends questions the Larder. The pinned answer truthfully while they hang.
-- **Ysmay's medics (unchanged):** Lorne's release does nothing for her, but his *harm* still does.
+- **Ysmay:** Lorne's release does nothing for her; his *heal* does.
 - **Nym against Lorne and Osmund:** Eight Vats' year-and-a-day ban is now the sharpest point of the office's quarrel over the dead.
 
 ---

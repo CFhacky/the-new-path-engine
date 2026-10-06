@@ -25,3 +25,4 @@ Notion is canon. Nothing on the roster has happened in play beyond what the Blue
 
 This directory is immutable. A later export gets a new dated directory.
 - `HAND_IVRAEL_REROLL.md`, `roll_hand_ivrael_reroll.py`, `hand_ivrael_reroll.txt` — Ivrael's signature weapon rerolled under the logic criterion (Chad, 6 Oct 2026)
+- `FULL_CORPUS_CARDS.md`, `roll_full_corpus_pass.py`, `full_corpus_pass_rolls.txt`, `full_corpus_pass.json`, `corpus_affixes_source.json` — round eight: the 21 non-Unique signature pieces re-rolled against the full corpus (loot-engine pools + DMG/MIC weapon properties + D2 modifiers + Warhammer runes; post-creation enchants excluded). Supersedes round five for those pieces and the Ivrael reroll.

@@ -1,5 +1,7 @@
 # The Menagerie — signature items (loot-engine, 6 Oct 2026)
 
+> **Superseded for 21 pieces** by the full-corpus pass (`FULL_CORPUS_CARDS.md`, 6 Oct 2026). The four Unique cards here (Naevys, Mercy, Ilvaera, Kerra) still stand.
+
 ```
 PREFLIGHT
 Skills loaded: loot-engine (SKILL.md, affix-families.md Sections 11–25, unique-design.md, proc-conventions.md)

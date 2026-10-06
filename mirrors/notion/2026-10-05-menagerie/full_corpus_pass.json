@@ -1,0 +1,587 @@
+{
+ "Quavein": {
+  "affixes": [
+   {
+    "name": "Dimensional Pocket",
+    "pool": "Utility",
+    "src": "pool"
+   },
+   {
+    "name": "Mana Leech",
+    "pool": "Resource",
+    "src": "pool"
+   },
+   {
+    "name": "Warding",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "Second Wind",
+    "pool": "Defensive",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Mana Leech"
+  ],
+  "temper": "23H-8",
+  "aspect": "24E-5",
+  "temper_udrp": 3,
+  "aspect_udrp": 8
+ },
+ "Hadda": {
+  "affixes": [
+   {
+    "name": "Souldrinking",
+    "pool": "Resource",
+    "src": "book"
+   },
+   {
+    "name": "MASTER RUNE OF SKALF BLACKHAMMER",
+    "pool": "Offensive",
+    "src": "wfb"
+   },
+   {
+    "name": "Striking",
+    "pool": "Offensive",
+    "src": "pool"
+   },
+   {
+    "name": "Morphing",
+    "pool": "Utility",
+    "src": "book"
+   }
+  ],
+  "greater": [
+   "Morphing"
+  ],
+  "temper": "23H-5",
+  "aspect": "24J-1",
+  "temper_udrp": 2,
+  "aspect_udrp": 11
+ },
+ "Tarvash": {
+  "affixes": [
+   {
+    "name": "Parrying",
+    "pool": "Defensive",
+    "src": "book"
+   },
+   {
+    "name": "Riposte",
+    "pool": "Offensive",
+    "src": "pool"
+   },
+   {
+    "name": "Shield Wall",
+    "pool": "Defensive",
+    "src": "pool"
+   }
+  ],
+  "greater": [],
+  "temper": null,
+  "aspect": null,
+  "temper_udrp": 0,
+  "aspect_udrp": 0
+ },
+ "Aerendyl": {
+  "affixes": [
+   {
+    "name": "Weapon Mastery",
+    "pool": "Skill/Class",
+    "src": "pool"
+   },
+   {
+    "name": "MASTER RUNE OF DRAGON SLAYING",
+    "pool": "Offensive",
+    "src": "wfb"
+   },
+   {
+    "name": "Undying",
+    "pool": "Defensive",
+    "src": "pool"
+   }
+  ],
+  "greater": [],
+  "temper": "23H-2",
+  "aspect": null,
+  "temper_udrp": 2,
+  "aspect_udrp": 0
+ },
+ "Kesh": {
+  "affixes": [
+   {
+    "name": "Animal Bond",
+    "pool": "Skill/Class",
+    "src": "pool"
+   },
+   {
+    "name": "Mind Fog",
+    "pool": "Condition/Control",
+    "src": "pool"
+   },
+   {
+    "name": "Deflecting",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "RUNE OF CLEAVING",
+    "pool": "Offensive",
+    "src": "wfb"
+   }
+  ],
+  "greater": [
+   "RUNE OF CLEAVING"
+  ],
+  "temper": "23E-3",
+  "aspect": "24J-5",
+  "temper_udrp": 5,
+  "aspect_udrp": 11
+ },
+ "Marit": {
+  "affixes": [
+   {
+    "name": "Stoneskin",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "Radiant",
+    "pool": "Elemental",
+    "src": "pool"
+   },
+   {
+    "name": "FREEZE TARGET",
+    "pool": "Condition/Control",
+    "src": "d2"
+   },
+   {
+    "name": "Spider's Gift",
+    "pool": "Utility",
+    "src": "pool"
+   }
+  ],
+  "greater": [],
+  "temper": "23A-4",
+  "aspect": "24G-6",
+  "temper_udrp": 4,
+  "aspect_udrp": 9
+ },
+ "Brunna": {
+  "affixes": [
+   {
+    "name": "Endurance",
+    "pool": "Resource",
+    "src": "pool"
+   },
+   {
+    "name": "Blinding",
+    "pool": "Condition/Control",
+    "src": "pool"
+   },
+   {
+    "name": "RUNE OF STRIKING",
+    "pool": "Offensive",
+    "src": "wfb"
+   },
+   {
+    "name": "Ghost Strike",
+    "pool": "Offensive",
+    "src": "book"
+   }
+  ],
+  "greater": [
+   "Blinding",
+   "Endurance"
+  ],
+  "temper": "23C-3",
+  "aspect": "24G-5",
+  "temper_udrp": 3,
+  "aspect_udrp": 7
+ },
+ "Zaheda": {
+  "affixes": [
+   {
+    "name": "Battle Trance",
+    "pool": "Resource",
+    "src": "pool"
+   },
+   {
+    "name": "Absorption",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "Undead Servitor",
+    "pool": "Summoning/Companion",
+    "src": "pool"
+   },
+   {
+    "name": "Chameleon",
+    "pool": "Utility",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Battle Trance",
+   "Chameleon",
+   "Undead Servitor"
+  ],
+  "temper": "23D-8",
+  "aspect": "24F-6",
+  "temper_udrp": 3,
+  "aspect_udrp": 7
+ },
+ "Ysmay": {
+  "affixes": [
+   {
+    "name": "Linguist",
+    "pool": "Utility",
+    "src": "pool"
+   },
+   {
+    "name": "Aegis",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "Commander's Voice",
+    "pool": "Skill/Class",
+    "src": "pool"
+   }
+  ],
+  "greater": [],
+  "temper": "23E-7",
+  "aspect": null,
+  "temper_udrp": 2,
+  "aspect_udrp": 0
+ },
+ "Dace": {
+  "affixes": [
+   {
+    "name": "Lethal Focus",
+    "pool": "Offensive",
+    "src": "pool"
+   },
+   {
+    "name": "Sweeping",
+    "pool": "Skill/Class",
+    "src": "book"
+   },
+   {
+    "name": "Life Shield",
+    "pool": "Defensive",
+    "src": "pool"
+   }
+  ],
+  "greater": [],
+  "temper": null,
+  "aspect": null,
+  "temper_udrp": 0,
+  "aspect_udrp": 0
+ },
+ "Osmund": {
+  "affixes": [
+   {
+    "name": "Penetrating Strikes",
+    "pool": "Offensive",
+    "src": "pool"
+   },
+   {
+    "name": "Shadowtouch",
+    "pool": "Elemental",
+    "src": "pool"
+   },
+   {
+    "name": "Leech",
+    "pool": "Resource",
+    "src": "pool"
+   },
+   {
+    "name": "CHANCE TO CAST ON ATTACK",
+    "pool": "Resource",
+    "src": "d2"
+   }
+  ],
+  "greater": [],
+  "temper": "23C-2",
+  "aspect": "24A-3",
+  "temper_udrp": 3,
+  "aspect_udrp": 7
+ },
+ "Wenna": {
+  "affixes": [
+   {
+    "name": "Stormborn",
+    "pool": "Elemental",
+    "src": "pool"
+   },
+   {
+    "name": "Trackless",
+    "pool": "Utility",
+    "src": "pool"
+   },
+   {
+    "name": "Pack Mule",
+    "pool": "Utility",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Pack Mule"
+  ],
+  "temper": "23A-7",
+  "aspect": null,
+  "temper_udrp": 3,
+  "aspect_udrp": 0
+ },
+ "Faelith": {
+  "affixes": [
+   {
+    "name": "Battle Meditation",
+    "pool": "Skill/Class",
+    "src": "pool"
+   },
+   {
+    "name": "Banefire",
+    "pool": "Elemental",
+    "src": "pool"
+   },
+   {
+    "name": "Thorns",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "RUNE OF FIRE",
+    "pool": "Elemental",
+    "src": "wfb"
+   }
+  ],
+  "greater": [
+   "Thorns",
+   "RUNE OF FIRE"
+  ],
+  "temper": "23H-4",
+  "aspect": "24G-4",
+  "temper_udrp": 3,
+  "aspect_udrp": 8
+ },
+ "Patience": {
+  "affixes": [
+   {
+    "name": "Anarchic",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "MASTER RUNE OF DEATH",
+    "pool": "Offensive",
+    "src": "wfb"
+   },
+   {
+    "name": "Thrift",
+    "pool": "Resource",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Anarchic"
+  ],
+  "temper": null,
+  "aspect": null,
+  "temper_udrp": 0,
+  "aspect_udrp": 0
+ },
+ "Rhun": {
+  "affixes": [
+   {
+    "name": "Prismatic Burst",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "Prismatic",
+    "pool": "Elemental",
+    "src": "pool"
+   },
+   {
+    "name": "Vicious",
+    "pool": "Offensive",
+    "src": "book"
+   },
+   {
+    "name": "Vampiric",
+    "pool": "Resource",
+    "src": "book"
+   }
+  ],
+  "greater": [
+   "Prismatic"
+  ],
+  "temper": "23B-6",
+  "aspect": "24B-5",
+  "temper_udrp": 5,
+  "aspect_udrp": 12
+ },
+ "Edwyn": {
+  "affixes": [
+   {
+    "name": "Fleshgrinding",
+    "pool": "Offensive",
+    "src": "book"
+   },
+   {
+    "name": "Holy",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "Flaming Burst",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "Nimble",
+    "pool": "Defensive",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Fleshgrinding",
+   "Holy"
+  ],
+  "temper": "23I-6",
+  "aspect": "24G-2",
+  "temper_udrp": 4,
+  "aspect_udrp": 8
+ },
+ "Ashavel": {
+  "affixes": [
+   {
+    "name": "Lifedrinker",
+    "pool": "Resource",
+    "src": "pool"
+   },
+   {
+    "name": "Fiercebane",
+    "pool": "Offensive",
+    "src": "book"
+   },
+   {
+    "name": "Bladesinger",
+    "pool": "Skill/Class",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Lifedrinker"
+  ],
+  "temper": "23I-1",
+  "aspect": null,
+  "temper_udrp": 5,
+  "aspect_udrp": 0
+ },
+ "Ivrael (Hand)": {
+  "affixes": [
+   {
+    "name": "Metalline",
+    "pool": "Utility",
+    "src": "book"
+   },
+   {
+    "name": "Stalwart",
+    "pool": "Defensive",
+    "src": "pool"
+   },
+   {
+    "name": "MASTER RUNE OF SMITING",
+    "pool": "Offensive",
+    "src": "wfb"
+   }
+  ],
+  "greater": [],
+  "temper": null,
+  "aspect": null,
+  "temper_udrp": 0,
+  "aspect_udrp": 0
+ },
+ "Teodric (Hand)": {
+  "affixes": [
+   {
+    "name": "Sacred Burst",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "Metamagic Font",
+    "pool": "Skill/Class",
+    "src": "pool"
+   },
+   {
+    "name": "IGNORE TARGET'S DEFENSE",
+    "pool": "Offensive",
+    "src": "d2"
+   }
+  ],
+  "greater": [],
+  "temper": "23E-7",
+  "aspect": null,
+  "temper_udrp": 5,
+  "aspect_udrp": 0
+ },
+ "Durgan (Hand)": {
+  "affixes": [
+   {
+    "name": "Thundering",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "Profane Burst",
+    "pool": "Elemental",
+    "src": "book"
+   },
+   {
+    "name": "Distance",
+    "pool": "Offensive",
+    "src": "book"
+   }
+  ],
+  "greater": [
+   "Thundering"
+  ],
+  "temper": "23I-9",
+  "aspect": null,
+  "temper_udrp": 5,
+  "aspect_udrp": 0
+ },
+ "Lorne (Hand)": {
+  "affixes": [
+   {
+    "name": "Divine Wrath",
+    "pool": "Skill/Class",
+    "src": "book"
+   },
+   {
+    "name": "Shadow Clone",
+    "pool": "Summoning/Companion",
+    "src": "pool"
+   },
+   {
+    "name": "Souldrinker",
+    "pool": "Resource",
+    "src": "pool"
+   }
+  ],
+  "greater": [
+   "Divine Wrath"
+  ],
+  "temper": "23C-4",
+  "aspect": null,
+  "temper_udrp": 3,
+  "aspect_udrp": 0
+ }
+}

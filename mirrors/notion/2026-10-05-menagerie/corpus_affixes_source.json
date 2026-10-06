@@ -1,0 +1,1740 @@
+[
+ {
+  "src": "book",
+  "name": "Acidic Burst",
+  "source": "MIC p.29",
+  "verdict": "DELTA",
+  "base": "Corroding (Elemental 25-32)",
+  "effect": "functions as a corrosive weapon; on a critical hit adds acid damage by multiplier x2 1d10, x3 2d10, x4 3d10; does not harm the wielder; works even when Corrosive is not activated; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Anarchic",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "\"chaotically aligned\"; \"bypasses the corresponding damage reduction\"; \"extra 2d6 points of damage against all of lawful alignment\"; \"one negative level on any lawful creature attempting to wield it .\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Aquan",
+  "source": "MIC p.29",
+  "verdict": "DELTA",
+  "base": "Banefire (Elemental 93-96)",
+  "effect": "overcomes the damage reduction of any creature with the fire subtype; extra 2d6 vs such creatures; bestows one negative level on any fire-subtype creature that tries to wield it (lasts while held, ne\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Aquatic",
+  "source": "MIC p.29",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "the wielder suffers no underwater penalties for using the weapon, as if under freedom of movement.",
+  "price": "2,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Arcane Might",
+  "source": "MIC",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (mental) activation; sacrifice a prepared arcane spell (or an unused slot for a spontaneous caster) to gain a damage bonus equal to the spell's level on the next damage roll with the bow that t\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Auran",
+  "source": "MIC p.29",
+  "verdict": "DELTA",
+  "base": "Banefire (Elemental 93-96)",
+  "effect": "As Aquan, keyed to the earth subtype. Same delta, price and forks.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Axiomatic",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "\"lawfully aligned\"; \"bypasses the corresponding damage reduction\"; \"extra 2d6 points of damage against all of chaotic alignment\"; \"one negative level on any chaotic creature attempting to wield it ..\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Bane",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Banefire (Elemental 93-96)",
+  "effect": "\"excels at attacking one type or subtype of creature\"; \"Against its designated foe, its effective enhancement bonus is +2 better than its normal enhancement bonus. It deals an extra 2d6 points of dam\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Banishing",
+  "source": "MIC p.29",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "free-action activation when you strike an extraplanar creature of 26 HD or fewer; Will DC 20 negates or it is banished to its home plane for at least 24 hours; a creature that saves cannot be banishe\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Berserker",
+  "source": "MIC p.30",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "extra 1d8 damage on any successful attack while raging.",
+  "price": "+1 = 2,000 gp",
+  "flags": "name collision: names stay, never merge"
+ },
+ {
+  "src": "book",
+  "name": "Binding",
+  "source": "MIC p.30",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command) activation; the next successful attack before end of turn prevents the target from extradimensional travel for 10 minutes (as dimensional anchor); twice per day; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": "name collision: names stay, never merge"
+ },
+ {
+  "src": "book",
+  "name": "Blessed",
+  "source": "MIC p.30",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "counts as good-aligned for overcoming DR (continuous); three times per day auto-confirm all critical threats against evil foes for 1 round (bless weapon); other threat or confirmation effects (keen e\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Blindsighted",
+  "source": "MIC p.30",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "standard (command) activation; blindsight out to 30 ft for 1 minute while wielding; negated by silence; three times per day; the active weapon whispers (Listen DC 10).",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Bloodfeeding",
+  "source": "MIC p.30",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "each time the weapon damages a living creature it gains 1 blood point, stored up to 1 hour, maximum 10; when you deal damage you can spend up to 5 stored points, each dealing an extra 2 damage; no po\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Bloodstone",
+  "source": "MIC p.30",
+  "verdict": "DELTA",
+  "base": "Reservoir (Resource 49-54)",
+  "effect": "can store and cast one vampiric touch against a creature it strikes, as a spell storing weapon, automatically empowered; stores only that spell, one at a time; free (command) activation.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Blurstrike",
+  "source": "MIC p.30",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command) activation; the weapon fades for 1 round; the opponent is flat-footed against the first attack you make with it that round; creatures that do not rely on sight (blindsight) and creatu\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Body Feeder",
+  "source": "MIC p.31",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "on a critical hit against a living creature, gain temporary HP equal to half the damage dealt by the critical hit; lasts up to 1 minute; no stacking with any other source, including further crits wit\u2026",
+  "price": "+3 = 18,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Brash",
+  "source": "MIC p.31",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "if you enter a rage wielding it, the rage lasts 3 rounds longer; while raging with it you are immune to fear effects.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Brilliant Energy",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Armor Piercing (Offensive 19-24)",
+  "effect": "\"always gives off light as a torch (20-foot radius)\"; \"ignores nonliving matter\"; \"Armor and shield bonuses to AC (including any enhancement bonuses to that armor) do not count against it ... (Dexter\u2026",
+  "price": "+4 = 32,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Brutal Surge",
+  "source": "MIC p.31",
+  "verdict": "DELTA",
+  "base": "Knockback (Condition 49-54)",
+  "effect": "swift (command) after a successful melee attack: a bull rush against the target, no attack of opportunity, resolved with your size and Strength, +2 on the check if wielded in two hands; pushes the ta\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Changeling",
+  "source": "MIC",
+  "verdict": "DELTA",
+  "base": "Chameleon (Utility 91-96)",
+  "effect": "swift (command) once per round: change between spear, shortspear and longspear sized for you; at the same time choose any wood, stone, metal or combination appearance and decoration; the real composi\u2026",
+  "price": "2,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Chargebreaker",
+  "source": "MIC p.32",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "a charging creature hit by this weapon must succeed on a DC 14 Fortitude save or be knocked prone.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Charging",
+  "source": "MIC p.32",
+  "verdict": "COVERED",
+  "base": "Devastating Charge (Offensive 91-96)",
+  "effect": "while mounted, an extra 2d6 damage on a successful charge attack.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Collision",
+  "source": "MIC p.32",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "an extra 5 points of damage with each hit; ammunition.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Consumptive",
+  "source": "MIC p.32",
+  "verdict": "COVERED",
+  "base": "Shadowtouch (Elemental 39-44)",
+  "effect": "standard (command) toggle; sheathed in negative energy, harmless to the wielder, until a second command; extra 1d8 damage to any living creature on a hit; ammunition.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Corrosive",
+  "source": "MIC p.32",
+  "verdict": "COVERED",
+  "base": "Corroding (Elemental 25-32)",
+  "effect": "standard (command) toggle; acid does not harm the wielder; extra 1d6 acid on a hit; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Cursespewing",
+  "source": "MIC p.32",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "on any critical hit, bestows a curse: -4 on attack rolls, saves, skill checks and ability checks for 1 minute; multiple strikes do not stack; no save printed.",
+  "price": "+3 = 18,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dancing",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "\"As a standard action, a dancing weapon can be loosed to attack on its own. It fights for 4 rounds using the base attack bonus of the one who loosed it and then drops\"; \"cannot make attacks of opport\u2026",
+  "price": "+4 = 32,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Deadly Precision",
+  "source": "MIC p.33",
+  "verdict": "COVERED",
+  "base": "Sneak's Edge (Skill/Class 13-18)",
+  "effect": "extra 1d6 on a successful sneak attack or sudden strike; grants nothing without such a class feature; does not increase if you have both.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Defending",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Warding (Defensive 01-06)",
+  "effect": "\"allows the wielder to transfer some or all of the sword's enhancement bonus to his AC as a bonus that stacks with all others. As a free action, the wielder chooses how to allocate the weapon's enhan\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Defensive Surge",
+  "source": "MIC p.33",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command) after a successful melee attack in a round in which you use Combat Expertise or fight defensively: an additional +2 AC until your next turn; uses per day = 1 + Int bonus; once activat\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Desiccating",
+  "source": "MIC p.33",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "destroys water in a living creature; extra 1d4 damage (1d8 against plants and water-subtype elementals); ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Desiccating Burst",
+  "source": "MIC p.33",
+  "verdict": "DELTA",
+  "base": "Desiccating (MIC)",
+  "effect": "functions as Desiccating; on a critical hit extra damage by multiplier x2 1d8, x3 2d8, x4 3d8, doubled against plants and water-subtype elementals (applies even to creatures immune to crit extra dama\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Disarming",
+  "source": "MIC p.33",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "+2 bonus on your disarm attempts; opponents cannot disarm you of this weapon.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dislocator",
+  "source": "MIC p.33",
+  "verdict": "NEW",
+  "base": "Knockback (Condition 49-54)",
+  "effect": "swift (mental) activation; the next successful attack before end of turn teleports the target up to 10 ft in a direction you choose, Will DC 17 negates; cannot teleport into an occupied space (the at\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dislocator, Great",
+  "source": "MIC (synergy)",
+  "verdict": "NEW",
+  "base": "Knockback (Condition 49-54)",
+  "effect": "swift (mental) activation; the next successful attack before end of turn teleports the target up to 10 ft in a direction you choose, Will DC 17 negates; cannot teleport into an occupied space (the at\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dispelling",
+  "source": "MIC p.34",
+  "verdict": "COVERED",
+  "base": "Dispelling Strike (Condition 85-90)",
+  "effect": "free (command) activation on a strike against a creature or object: a targeted dispel magic effect (as the spell); three times per day.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dispelling, Greater",
+  "source": "MIC (synergy)",
+  "verdict": "COVERED",
+  "base": "Dispelling Strike (Condition 85-90)",
+  "effect": "as Dispelling but the target is hit with a targeted greater dispel magic; three times per day.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Disruption",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Radiant (Elemental 45-50), Turn Mastery (Skill/Class 43-48)",
+  "effect": "\"the bane of all undead. Any undead creature struck in combat must succeed on a DC 14 Will save or be destroyed. A weapon of disruption must be a bludgeoning weapon.\"",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Distance",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "\"This property can only be placed on a ranged weapon. A weapon of distance has double the range increment of other weapons of its kind.\"",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Divine Wrath",
+  "source": "MIC p.34",
+  "verdict": "NEW",
+  "base": "Turn Mastery (Skill/Class 43-48)",
+  "effect": "swift (mental); expend a turn undead attempt to imbue the weapon for 1 round; if your next successful attack hits an undead, extra 1d6 per point of Charisma bonus (minimum 1d6).",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Domineering",
+  "source": "MIC p.34",
+  "verdict": "DELTA",
+  "base": "Terrifying (Condition 25-30)",
+  "effect": "a creature hit becomes shaken for 1 minute, Will DC 16 negates; does not stack with itself or other fear effects (cannot make a shaken creature frightened).",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Doom Burst",
+  "source": "MIC p.34",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "on a critical hit, a wave of blackness makes the target shaken for 5 rounds with no save; applies even to creatures immune to crit extra damage; no stacking with itself or other fear.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dragondoom",
+  "source": "MIC p.34",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command), three times per day, deliver a smite against a Large or larger dragon-type creature; extra damage per size category above Medium: Large +1d6, Huge +2d6, Gargantuan +3d6, Colossal +4d\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Dragonhunter",
+  "source": "MIC p.34",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "a dragon-type creature hit by a projectile takes 1 point of Strength damage in addition to normal damage; the weapon's critical multiplier is +1 against dragons (Strength damage is not multiplied); e\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Eager",
+  "source": "MIC p.35",
+  "verdict": "DELTA",
+  "base": "Predator's Instinct (Offensive 73-78)",
+  "effect": "draw as a free action; +2 initiative; +2 damage on rolls made during a surprise round and the first round of combat.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Energy Aura",
+  "source": "MIC p.35",
+  "verdict": "DELTA",
+  "base": "Flaming / Freezing / Shocking / Corroding (Elemental)",
+  "effect": "standard (command) activation; each hit deals extra 1d6 of an energy type chosen on activation (acid, cold, electricity or fire), harmless to you; stays until you activate again; ammunition.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Energy Surge",
+  "source": "MIC p.35",
+  "verdict": "DELTA",
+  "base": "Flaming / Freezing / Shocking / Corroding (Elemental)",
+  "effect": "functions as the prerequisite weapon; swift (command) on a successful melee attack: a blast of the same energy deals extra 3d6; the prerequisite need not be active; uses per day = 1 + Con bonus; attu\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Enervating",
+  "source": "MIC p.35",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "on a critical hit against a living creature, one negative level on the target; if the subject survives it regains the level after 1 hour; the levels never become permanent drain.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Ethereal Reaver",
+  "source": "MIC p.35",
+  "verdict": "DELTA",
+  "base": "Ghost Touch (DMG) + Truesight (Utility 31-36)",
+  "effect": "functions as a ghost touch weapon; also lets you see invisible creatures as under see invisibility.",
+  "price": "+3 = 18,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Everbright",
+  "source": "MIC p.35",
+  "verdict": "NEW",
+  "base": "Blinding (Condition 43-48)",
+  "effect": "standard (command), twice per day, flash a brilliant light: all creatures within 20 feet of you are blinded for 1 round (Reflex DC 14 negates); the weapon is immune to acid and rust.",
+  "price": "2,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Fiercebane",
+  "source": "MIC p.36",
+  "verdict": "DELTA",
+  "base": "Bane (DMG)",
+  "effect": "acts as a bane weapon against the type or subtype it was attuned to; glows when a designated foe comes within 60 feet, even unseen; extra damage on every successful critical hit: x2 1d10, x3 2d10, x4\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Flaming",
+  "source": "DMG 223-227",
+  "verdict": "COVERED",
+  "base": "Flaming (Elemental 01-08)",
+  "effect": "\"Upon command, a flaming weapon is sheathed in fire. The fire does not harm the wielder. The effect remains until another command is given. A flaming weapon deals an extra 1d6 points of fire damage o\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Flaming Burst",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Flaming (Elemental 01-08)",
+  "effect": "\"functions as a flaming weapon that also explodes with flame upon striking a successful critical hit. The fire does not harm the wielder\"; \"an extra 1d10 points of fire damage on a successful critica\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Fleshgrinding",
+  "source": "MIC",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "free (command) when you deal damage to a living creature in melee: you let go and the weapon animates, grinding itself into the foe; at the start of your turn each round for 5 rounds it automatically\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Force",
+  "source": "MIC p.36",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "ammunition becomes a force attack: automatically overcomes damage reduction, no miss chance against incorporeal targets, no damage to creatures immune to force; same damage as normal ammunition.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Frost",
+  "source": "DMG 223-227",
+  "verdict": "COVERED",
+  "base": "Freezing (Elemental 09-16)",
+  "effect": "upon command the weapon is sheathed in icy cold, harmless to the wielder, until another command; extra 1d6 cold damage on a successful hit (OCR \"dds\", read as 1d6 from the Flaming and Shock siblings,\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "OCR-uncertain"
+ },
+ {
+  "src": "book",
+  "name": "Ghost Strike",
+  "source": "MIC p.36",
+  "verdict": "DELTA",
+  "base": "Ghost Touch (DMG)",
+  "effect": "functions as ghost touch; sneak attacks and critical hits against undead affect them as if they were living creatures.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Ghost Touch",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Penetrating Strikes (Offensive 85-90)",
+  "effect": "deals damage normally against incorporeal creatures regardless of its bonus (their 50% chance to avoid damage does not apply); an incorporeal creature can pick up and move the weapon at any time, and\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Harmonizing",
+  "source": "MIC p.36",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "+2 competence bonus on Perform (sing); if you hold it when you begin a bardic music effect, one round later the weapon continues the performance for 10 rounds, until you begin another effect, or unti\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Heavenly Burst",
+  "source": "MIC p.37",
+  "verdict": "NEW",
+  "base": "Radiant (Elemental 45-50)",
+  "effect": "on a critical hit against an evil creature, a shower of radiance deals 3d6 damage and blinds it for 1 round; a successful DC 14 Fortitude save negates the blindness; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Hideaway",
+  "source": "MIC p.37",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command): folds into a bundle two size categories smaller than you; +2 Sleight of Hand to conceal it as if it were a dagger; a second command (swift) unfolds it.",
+  "price": "2,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Holy",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Radiant (Elemental 45-50)",
+  "effect": "imbued with holy power; the weapon is good-aligned and bypasses the matching damage reduction; extra 2d6 damage against all evil creatures; one negative level on any evil creature wielding it (lasts\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Holy Surge",
+  "source": "MIC p.37",
+  "verdict": "DELTA",
+  "base": "Holy (DMG)",
+  "effect": "functions as a holy weapon (continuous); on a successful melee attack, command a burst: against an evil target extra 3d6, against a non-evil target nothing and the use is wasted; uses per day = 1 + C\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Hunting",
+  "source": "MIC p.37",
+  "verdict": "NEW",
+  "base": "Hunter's Mark (Offensive 55-60)",
+  "effect": "increases your damage bonus by 4 against your favored enemies (ranger class feature).",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Icy Burst",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Freezing (Elemental 09-16)",
+  "effect": "functions as a frost weapon that also explodes with frost on a critical hit; on a crit, extra 1d10 cold (x3 multiplier: 2d10; x4: 3d10); the frost does not harm the wielder; ammunition carries the co\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Ignan",
+  "source": "MIC p.37",
+  "verdict": "DELTA",
+  "base": "Banefire (Elemental 93-96)",
+  "effect": "Opposed-subtype weapon keyed to the water subtype; identical to Aquan (batch 01): DR bypass, extra 2d6 vs such targets, negative level on a water-subtype wielder. Same delta over Banefire, price (+2\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Illuminating",
+  "source": "MIC p.37",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "when drawn, glows with bright light in a 20-foot radius and shadowy light for another 20 feet.",
+  "price": "500 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Illusion Bane",
+  "source": "MIC p.37",
+  "verdict": "NEW",
+  "base": "Dispelling Strike (Condition 85-90)",
+  "effect": "attacks ignore any miss chance created by an illusion effect (including effects that mimic illusions, such as displacement), though you must still target the correct square against total concealment;\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Illusion Theft",
+  "source": "MIC p.38",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "functions as illusion bane; the first illusion spell the weapon dispels is stored in it (spell storing rules, but any level, only a spell it dispelled, no need to strike a creature to activate); the\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Impact",
+  "source": "MIC p.38",
+  "verdict": "COVERED",
+  "base": "Keen Edge (Offensive 13-18)",
+  "effect": "doubles the threat range of a bludgeoning weapon (a quarterstaff 19-20, a heavy flail 17-20); does not stack with other threat-range effects.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Impaling",
+  "source": "MIC p.38",
+  "verdict": "NEW",
+  "base": "Armor Piercing (Offensive 19-24)",
+  "effect": "swift (command), three times per day: the next attack before end of turn is resolved as a touch attack (declare before the attack roll; a miss wastes the use).",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Impedance",
+  "source": "MIC p.38",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "mimics the impeded magic planar trait: a creature struck has its spellcasting and spell-like abilities impeded for 1d6 rounds; to cast an impeded spell it must pass a Spellcraft, Intelligence or Char\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Implacable",
+  "source": "MIC p.38",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "when it damages a living creature the wound bleeds: 2 additional damage at the start of each of the wielder's turns for 5 rounds; multiple wounds are cumulative (three hits in a round = 6 per round f\u2026",
+  "price": "+3 = 18,000 gp",
+  "flags": "ruled"
+ },
+ {
+  "src": "book",
+  "name": "Incorporeal Binding",
+  "source": "MIC p.39",
+  "verdict": "DELTA",
+  "base": "Ghost Touch (DMG)",
+  "effect": "functions as ghost touch; an incorporeal creature damaged by it loses its incorporeal 50% miss chance and its 50% chance to ignore spells for 1 round, but keeps immunity to nonmagical attacks, passin\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Keen",
+  "source": "DMG 223-227",
+  "verdict": "COVERED",
+  "base": "Keen Edge (Offensive 13-18)",
+  "effect": "doubles the weapon's threat range (a 19-20 longsword threatens on 17-20); only piercing or slashing weapons; does not stack with keen edge or Improved Critical.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Ki Focus",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "the weapon channels the wielder's ki, letting her use special ki attacks through it as if they were unarmed attacks: the monk's stunning attack, ki strike and quivering palm, and the Stunning Fist fe\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "OCR-uncertain"
+ },
+ {
+  "src": "book",
+  "name": "Knockback",
+  "source": "MIC p.39",
+  "verdict": "COVERED",
+  "base": "Knockback (Condition 49-54)",
+  "effect": "swift (command), three times per day: the next hit before end of turn forces a DC 19 Fortitude save or the target is pushed back 5 feet; no effect if it cannot move back; only creatures of your size\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Lucky",
+  "source": "MIC p.39",
+  "verdict": "COVERED",
+  "base": "Battle Meditation (Skill/Class 85-90)",
+  "effect": "free (mental), once per day, reroll a single failed attack roll.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Magebane",
+  "source": "MIC p.39",
+  "verdict": "DELTA",
+  "base": "Bane (DMG)",
+  "effect": "against any creature that can cast arcane spells or use invocations, effective enhancement +2 and an extra 2d6; can be added to a cold iron weapon without the extra 2,000 gp; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Maiming",
+  "source": "MIC p.39",
+  "verdict": "COVERED",
+  "base": "Lethal Focus (Offensive 31-36)",
+  "effect": "on a critical hit extra damage by multiplier: x2 1d6, x3 2d6, x4 3d6.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Manifester",
+  "source": "MIC p.39",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "when manifesting a power, the bearer may draw 5 power points from the weapon, all on one power, and that power cannot take points from any other source; once per day.",
+  "price": "12,000 gp (flat)",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Merciful",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "the weapon deals an extra 1d6 damage (OCR \"td\u00e9\", read as 1d6 by the sibling abilities, OCR-uncertain) and all damage it deals is nonlethal; on command the weapon suppresses this until commanded to re\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "OCR-uncertain"
+ },
+ {
+  "src": "book",
+  "name": "Metalline",
+  "source": "MIC p.39",
+  "verdict": "DELTA",
+  "base": "Penetrating Strikes (Offensive 85-90)",
+  "effect": "standard (command): change the weapon's composition to adamantine, alchemical silver, cold iron or ordinary steel.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Mighty Cleaving",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Cleave Through (temper 23A-1)",
+  "effect": "allows a wielder with the Cleave feat to make one additional cleave attempt in a round.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Mighty Smiting",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "if you have a smite ability, +2 on smite attack and damage rolls and one extra smite per day while wielding; only one extra smite per day regardless of wielders; if you have several smites you choose\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Mindcrusher",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "a psionic creature struck loses power points equal to half the hit point damage dealt (base weapon damage only; Strength and extras do not count); a creature with no power points, including nonpsioni\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Mindfeeder",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "on a critical hit gain 1 temporary power point per 5 damage dealt by the crit, lasting up to 1 minute, gained even if the target has none; temporary points overlap rather than stack (higher value win\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Morphing",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "standard activation: reshape into any other melee or thrown weapon of the same size and type (light, one-handed, two-handed); double weapons keep the magical bonus on one end only and the other end i\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Necrotic Focus",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "serves as a channel for your ability drain or energy drain supernatural ability: while wielding it you deal ability drain or bestow negative levels through it as with natural weapons; if a save is al\u2026",
+  "price": "+3 = 18,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Paralytic Burst",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "Dazing (Condition 17-24)",
+  "effect": "on a critical hit a wave of green energy paralyzes the target for 1 round (Will DC 17 negates); applies even to creatures that take no extra damage from crits.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Paralyzing",
+  "source": "MIC p.40",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift activation, once per day: the next creature struck must make a DC 17 Will save or be paralyzed; each round on its turn it can make a new save to end the effect; otherwise it lasts 10 rounds.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Parrying",
+  "source": "MIC p.41",
+  "verdict": "DELTA",
+  "base": "Warding (Defensive 01-06) + Stalwart (Defensive 13-18)",
+  "effect": "+1 insight bonus to AC and +1 insight bonus on saves whenever you hold it, even when flat-footed.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Power Storing",
+  "source": "MIC p.41",
+  "verdict": "DELTA",
+  "base": "Spell Storing (DMG) / Reservoir (Resource 49-54)",
+  "effect": "store a single targeted power of up to 5 power points (manifesting time 1 standard action); when the weapon strikes and damages a creature it can manifest the power on it; once manifested the weapon\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Precise",
+  "source": "MIC p.41",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "shoot or throw at an opponent engaged in melee without the standard -4 penalty; does not apply if you already have Precise Shot.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Prismatic Burst",
+  "source": "MIC p.41",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "on any critical hit, multicolored light subjects the target to a prismatic spray (save DC 20, PH 264); applies even to targets that take no extra damage from crits.",
+  "price": "30,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Profane",
+  "source": "MIC p.41",
+  "verdict": "DELTA",
+  "base": "Shadowtouch (Elemental 39-44)",
+  "effect": "standard (command) toggle sheathing the weapon in negative energy; unless you have no Constitution score you take 1 point of Constitution damage per round the effect is on; while active, an extra 1d6\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Profane Burst",
+  "source": "MIC p.41",
+  "verdict": "DELTA",
+  "base": "Profane (MIC)",
+  "effect": "functions as Profane; on a critical hit extra negative energy damage x2 1d10, x3 2d10, x4 3d10, or against a good outsider 2d10 / 4d10 / 6d10 (applies even to crit-immune targets); the burst harms on\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Psibane",
+  "source": "MIC p.42",
+  "verdict": "DELTA",
+  "base": "Bane (DMG)",
+  "effect": "against a creature with the psionic subtype, effective enhancement +2 and extra 2d6; one negative level on any psionic creature wielding it; ammunition.",
+  "price": "+2 = 8,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Psychic",
+  "source": "MIC p.42",
+  "verdict": "NEW",
+  "base": "Striking (Offensive 01-06)",
+  "effect": "the weapon's enhancement bonus depends on the wielder's current power point reserve: 0 (including any wielder with no power points) +1, 1-29 +2, 30-79 +3, 80-129 +4, 130 or more +5; it falls to a min\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Psychokinetic",
+  "source": "MIC p.42",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "standard (command): extra 1d4 force damage on a hit, not reduced by damage reduction, affecting incorporeal creatures even when the attack would miss through the incorporeal chance; harmless to you;\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Psychokinetic Burst",
+  "source": "MIC p.42",
+  "verdict": "DELTA",
+  "base": "Psychokinetic (MIC)",
+  "effect": "functions as Psychokinetic; on a critical hit extra force damage x2 1d6, x3 2d6, x4 3d6 (applies even to crit-immune targets), not reduced by DR, affects incorporeal; works even when the base is not\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Quick Loading",
+  "source": "MIC",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "an extradimensional space holds up to 100 bolts; reloading a hand or light crossbow is a free action (allowing a full attack rate), a heavy crossbow a move action; different bolt types can be held an\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Resounding",
+  "source": "MIC p.43",
+  "verdict": "NEW",
+  "base": "Commander's Voice (Skill/Class 25-30)",
+  "effect": "when you strike a foe, allies including you within 30 feet gain a +1 morale bonus on attack rolls and on saves against fear for 1 round.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Returning",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "only on a weapon that can be thrown; the weapon flies back to the thrower just before the thrower's next turn, ready to use again that turn; catching it is a free action; if the character cannot catc\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Revealing",
+  "source": "MIC p.43",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "an opponent struck is outlined in magical flames, as faerie fire, for 1 round.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Sacred",
+  "source": "MIC p.43",
+  "verdict": "DELTA",
+  "base": "Radiant (Elemental 45-50)",
+  "effect": "standard (command) toggle sheathing the weapon in positive energy; if you are undead you take 1 point of Charisma damage per round you hold it active; while active, extra 1d6 to any undead target (2d\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Sacred Burst",
+  "source": "MIC p.43",
+  "verdict": "DELTA",
+  "base": "Sacred (MIC)",
+  "effect": "functions as Sacred; on a critical hit extra positive energy damage x2 1d10, x3 2d10, x4 3d10, or vs an evil outsider 2d10 / 4d10 / 6d10 (applies even to crit-immune targets); harmless to you unless\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Screaming",
+  "source": "MIC p.43",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "standard (command): the weapon vibrates and each hit deals an extra 1d4 sonic damage to the target only; negated in an area of magical silence; no extra effect on creatures with acute hearing.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Screaming Burst",
+  "source": "MIC p.43",
+  "verdict": "DELTA",
+  "base": "Screaming (MIC)",
+  "effect": "functions as Screaming; on a critical hit extra sonic damage x2 1d8, x3 2d8, x4 3d8 (even to crit-immune targets); only the target is harmed; continuous; ammunition. Burst template over Screaming (DM\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Seeking",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "only ranged weapons; the weapon veers toward its target, negating any miss chances that would otherwise apply, such as from concealment; the wielder still has to aim at the right square (arrows shot\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Shadowstrike",
+  "source": "MIC p.44",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (mental), once per day: add 5 feet of reach to the weapon for a single attack; the target is denied its Dexterity bonus to AC for that attack.",
+  "price": "5,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Shattermantle",
+  "source": "MIC p.44",
+  "verdict": "NEW",
+  "base": "Wardbreaker (Skill/Class 91-96)",
+  "effect": "each time the weapon strikes a foe with spell resistance, that SR is reduced by 2 for 1 round; hits in the same round stack (three hits = -6 until the start of your next turn).",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Shielding",
+  "source": "MIC p.44",
+  "verdict": "NEW",
+  "base": "Shield Wall (Defensive 49-54)",
+  "effect": "swift (command): the weapon becomes a heavy steel shield with the same enhancement bonus (for AC and shield bashes).",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Shock",
+  "source": "DMG 223-227",
+  "verdict": "COVERED",
+  "base": "Shocking (Elemental 17-24)",
+  "effect": "\"Upon command, a shock weapon is sheathed in crackling electricity. The electricity does not harm the wielder. The effect remains until another command is given. A shock weapon deals an extra 1d6 poi\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Shocking Burst",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Shocking (Elemental 17-24)",
+  "effect": "\"functions as a shock weapon that also explodes with electricity upon striking a successful critical hit... an extra 1d10 points of electricity damage on a successful critical hit. If the weapon's cr\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Sizing",
+  "source": "MIC p.44",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command): changes the weapon's size category to any other you desire.",
+  "price": "5,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Slow Burst",
+  "source": "MIC p.44",
+  "verdict": "DELTA",
+  "base": "Slowing (Condition 01-08)",
+  "effect": "on a critical hit the target is slowed (as slow) for 3 rounds, Will DC 14 negates; applies even to crit-immune targets.",
+  "price": "5,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Soulbound",
+  "source": "MIC p.44",
+  "verdict": "NEW",
+  "base": "Striking (Offensive 01-06)",
+  "effect": "serves as a receptacle for essentia; each essentia point invested raises the enhancement bonus on attack and damage by 1, to a maximum +3; capacity is the lower of 2 and your normal essentia capacity\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Soulbound, Greater",
+  "source": "MIC p.44",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "as Soulbound with essentia capacity 4 and a maximum enhancement +5. Price: printed +2 = 8,000 gp. Forks: as Soulbound.",
+  "price": "+2 = 8,000 gp",
+  "flags": "INACTIVE (psionic/incarnum)"
+ },
+ {
+  "src": "book",
+  "name": "Soulbreaker",
+  "source": "MIC (synergy)",
+  "verdict": "DELTA",
+  "base": "Enervating (MIC)",
+  "effect": "functions as an enervating weapon, but its negative levels do not fade after 1 hour: after a delay the OCR renders as \"24h\" (OCR-uncertain), if the levels have not been purged the subject must make a\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "OCR-uncertain; ruled"
+ },
+ {
+  "src": "book",
+  "name": "Souldrinking",
+  "source": "MIC (synergy)",
+  "verdict": "DELTA",
+  "base": "Enervating (MIC)",
+  "effect": "functions as an enervating weapon; on a critical hit against a living creature it grants you 5 temporary hit points and a +2 morale bonus on melee damage rolls for 10 minutes; the temporary hit point\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Speed",
+  "source": "DMG 223-227",
+  "verdict": "COVERED",
+  "base": "Rapid Assault (Offensive 25-30)",
+  "effect": "\"When making a full attack action, the wielder of a speed weapon may take one extra attack with it. The attack uses the wielder's full base attack bonus, plus any modifiers appropriate to the situati\u2026",
+  "price": "+3 = 18,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Spell Storing",
+  "source": "DMG 223-227",
+  "verdict": "DELTA",
+  "base": "Reservoir (Resource 49-54)",
+  "effect": "\"store a single targeted spell of up to 3rd level in the weapon. (The spell must have a casting time of 1 standard action.) Anytime the weapon strikes a creature and the creature takes damage from it\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Spellstrike",
+  "source": "MIC",
+  "verdict": "DELTA",
+  "base": "Defending (DMG) / Stalwart (Defensive 13-18)",
+  "effect": "free (mental): transfer some or all of the weapon's enhancement bonus as a bonus on your saving throws against spells and spell-like abilities; allocate at the start of your turn before using the wea\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": "OCR-uncertain"
+ },
+ {
+  "src": "book",
+  "name": "Stunning",
+  "source": "MIC (synergy)",
+  "verdict": "DELTA",
+  "base": "Dazing (Condition 17-24)",
+  "effect": "functions as a screaming weapon; on a successful critical hit the target must succeed on a DC 17 Fortitude save or be stunned for 1 round; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Stunning Surge",
+  "source": "MIC",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (command) on a successful melee attack: a surge of magical energy; unless the target succeeds on a Fortitude save (DC 10 + one-half your character level + your Charisma modifier) it is stunned\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Stygian",
+  "source": "MIC p.45",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "swift (mental), three times per day: the next successful attack before end of turn bestows one negative level on the target, lasting 10 minutes (so it cannot become a permanent level decrease), in ad\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Sundering",
+  "source": "MIC p.45",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "attack as if you have the Improved Sunder feat; an extra 1d6 damage on a sunder attempt.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Sweeping",
+  "source": "MIC p.45",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "+2 competence bonus on any Strength check made to trip an opponent with the weapon.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Terran",
+  "source": "MIC p.46",
+  "verdict": "DELTA",
+  "base": "Banefire (Elemental 93-96)",
+  "effect": "Opposed-subtype weapon keyed to the air subtype; identical to Aquan (batch 01): DR bypass, extra 2d6, negative level on an air-subtype wielder. Price +2 = 8,000 gp. The four elemental weapons (Aquan,\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Throwing",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "\"This ability can only be placed on a melee weapon. A melee weapon crafted with this ability gains a range increment of 10 feet and can be thrown by wielder proficient in its normal use.\"",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Thundering",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Stormborn (Elemental 51-56), Lethal Focus (Offensive 31-36), Blinding (Condition 43-48)",
+  "effect": "\"creates a cacophonous roar like thunder upon striking a successful critical hit. The sonic energy does not harm the wielder... an extra 1d8 points of sonic damage on a successful critical hit. If th\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Transmuting",
+  "source": "MIC p.46",
+  "verdict": "DELTA",
+  "base": "Penetrating Strikes (Offensive 85-90)",
+  "effect": "after a successful hit against a creature with DR, resolved normally; at the start of your next turn the weapon takes on the properties needed to overcome that creature's DR for 10 rounds, or until y\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Unholy",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Banefire (Elemental 93-96)",
+  "effect": "imbued with unholy power; the weapon is evil-aligned and bypasses the matching damage reduction; extra 2d6 damage against all good creatures; one negative level on any good creature wielding it (last\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Unholy Surge",
+  "source": "MIC p.46",
+  "verdict": "DELTA",
+  "base": "Unholy (DMG)",
+  "effect": "Mirror of Holy Surge (batch 05): functions as unholy (continuous); on a successful melee attack, command a burst of 3d6 against a good-aligned target (wasted on a non-good one); uses per day = 1 + Ch\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Vampiric",
+  "source": "MIC p.46",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "an extra 1d6 damage to any living creature it hits, and you heal damage equal to that amount.",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Vanishing",
+  "source": "MIC p.46",
+  "verdict": "COVERED",
+  "base": "Phasewalk (Utility 37-42)",
+  "effect": "swift (command), once per day after a successful melee attack, transport yourself and carried equipment to any spot within 60 feet, with the limits of dimension door.",
+  "price": "8,000 gp (flat)",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Venomous",
+  "source": "MIC p.46",
+  "verdict": "DELTA",
+  "base": "none (pool 'Venomous' is a different affix; names stay)",
+  "effect": "swift (command), three times per day: the weapon coats itself in injury poison (Fort DC 14, 1d4 Str initial and 1d4 Str secondary) lasting 1 minute or until your next successful attack; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": "name collision: names stay, never merge"
+ },
+ {
+  "src": "book",
+  "name": "Vicious",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Wounding (Offensive 07-12), Berserker (Offensive 61-66)",
+  "effect": "\"When a vicious weapon strikes an opponent, it creates a flash of disruptive energy that resonates between the opponent and the wielder. This energy deals an extra 2d6 points of damage to the opponen\u2026",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Vorpal",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "\"allows the weapon to sever the heads of those it strikes. Upon a roll of natural 20 (followed by a successful roll to confirm the critical hit), the weapon severs the opponent's head (if it has one)\u2026",
+  "price": "+5 = 50,000 gp",
+  "flags": "ruled"
+ },
+ {
+  "src": "book",
+  "name": "Warning",
+  "source": "MIC p.47",
+  "verdict": "COVERED",
+  "base": "Timesense (Utility fragment 97-100)",
+  "effect": "+5 insight bonus on initiative checks as long as it is held.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Weakening",
+  "source": "MIC p.47",
+  "verdict": "DELTA",
+  "base": "none (pool 'Weakening' is a different affix; names stay)",
+  "effect": "on a critical hit the target takes a -4 penalty to its Strength score (minimum 1) for 10 minutes; multiple strikes do not stack; ammunition.",
+  "price": "+1 = 2,000 gp",
+  "flags": "name collision: names stay, never merge"
+ },
+ {
+  "src": "book",
+  "name": "Whirling",
+  "source": "MIC p.47",
+  "verdict": "NEW",
+  "base": "none",
+  "effect": "full-round (mental), three times per day: instead of your regular attacks, make one melee attack at full attack bonus against each opponent within reach; otherwise as the Whirlwind Attack feat.",
+  "price": "+1 = 2,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "book",
+  "name": "Wounding",
+  "source": "DMG 223-227",
+  "verdict": "NEW",
+  "base": "Weakening (Condition 37-42)",
+  "effect": "\"A wounding weapon deals 1 point of constitution damage from blood loss when it hits a creature. A critical hit does not multiply the Constitution damage. Creatures immune to critical hits (such as p\u2026",
+  "price": "+2 = 8,000 gp",
+  "flags": ""
+ },
+ {
+  "src": "d2",
+  "name": "IGNORE TARGET'S DEFENSE",
+  "tier": 2,
+  "verdict": "NEW",
+  "price": "+3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Melee and ranged. The wielder's attacks with this weapon against creatures of under 17 Hit Dice (the source's normal and minion monsters and character summons; not player characters, mercenaries, elites or bosses) resolve as touch attacks (the target's armor, shield and natural armor bonuses to AC are ignored; Dex, dodge and deflection still apply). Always on, no d100.",
+  "gurps": "The defender's Parry, Block and Dodge are rolled at -3 (a defender with 0 Defense in the source rolls as undefended); against Tier 1 targets and player characters the weapon has no effect."
+ },
+ {
+  "src": "d2",
+  "name": "CHANCE TO CAST ON ATTACK",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each attack roll the wielder makes with this weapon, hit or miss (the source triggers on the attack attempt), 01-10 fires. On fire the weapon casts a spell chosen at creation (level 1 to 3, caster level 5, normal save DC for the spell level), centered on the target or the wielder as the spell requires. Melee weapons only. Procs never proc other procs.",
+  "gurps": "On the same d100 per attack roll: the chosen spell as an Innate Attack, resisted as the spell requires."
+ },
+ {
+  "src": "d2",
+  "name": "CHANCE TO CAST ON STRIKING",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each successful hit with this weapon (the hit must connect and not be blocked or dodged; damage is not required), 01-10 fires. On fire the weapon casts a spell chosen at creation (level 1 to 3, caster level 5, normal save DC), centered on the target (self-centered spells such as a nova or an aura center on the wielder). Melee weapons only.",
+  "gurps": "On the same d100 per successful strike: the chosen spell as an Innate Attack."
+ },
+ {
+  "src": "d2",
+  "name": "CRUSHING BLOW",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each damaging melee hit, 01-10 fires. On fire the target takes extra damage equal to one quarter of its current hit points, maximum 25, before normal damage. Not multiplied on a critical hit; ignores DR/X; reduced by percentage-type resistances; creatures immune to physical damage take none. Creatures of 17+ Hit Dice take one eighth of current hit points instead (maximum 25).",
+  "gurps": "Crushing Attack (Follow-Up) on the same d100: injury equal to 1/4 of the target's current HP, maximum 25 HP, applied after DR; against Tier 1 targets 1/8."
+ },
+ {
+  "src": "d2",
+  "name": "FREEZE TARGET",
+  "tier": 3,
+  "verdict": "DELTA",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each damaging hit, 01-10 fires. On fire the target must succeed on a Fortitude save (DC 14) or be held (frozen) for 1d2 rounds (the source's 1 to 9 seconds); on a success it is chilled instead (land speed x0.7, -1 on attacks, 1 round). Creatures of 17+ Hit Dice and creatures immune to cold are only chilled. Does not stack.",
+  "gurps": "On the same d100: Quick Contest of the target's HT against effective skill 14; on failure Affliction (Immobilized) for 1d6 seconds (source 1 to 9); on success or against Tier 1, Reduced Move 30% for 5 seconds."
+ },
+ {
+  "src": "d2",
+  "name": "FIRES EXPLOSIVE ARROWS OR BOLTS",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Ranged weapons only. Each damaging hit also bursts in a 5-ft radius around the target for 1d6 fire damage, Reflex DC 13 half (the Magic-rung value; the source gives no Exploding Arrow damage). No d100; every hit. Does not apply when the wielder uses a skill-based shot.",
+  "gurps": "Innate Attack (Burning, Explosion 1) 1d on every damaging hit, centered on the target."
+ },
+ {
+  "src": "d2",
+  "name": "FIRES MAGIC ARROWS",
+  "tier": 4,
+  "verdict": "NEW",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Ranged weapons only. Every damaging hit counts as magic and deals +1d4 force damage (the Magic-rung value; the source gives no Magic Arrow damage). Force damage ignores DR/X and incorporeal miss chances. No d100.",
+  "gurps": "Innate Attack (Crushing [Cosmic]) 1d Follow-Up on every damaging hit, ignoring worn DR."
+ },
+ {
+  "src": "d2",
+  "name": "HIT BLINDS TARGET",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each damaging hit, 01-10 fires. On fire the target is blinded for 1 round unless it succeeds on a Fortitude save (DC 14); a blinded creature can fight only at melee reach and cannot use special attacks or spell-like abilities at range. Creatures of 17+ Hit Dice are immune. Flee takes precedence if both effects fire.",
+  "gurps": "On the same d100: Quick Contest HT against effective skill 14; on failure Affliction (Blindness) for 6 seconds."
+ },
+ {
+  "src": "d2",
+  "name": "HIT CAUSES MONSTER TO FLEE",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each damaging hit, 01-10 fires. On fire the target must succeed on a Will save (DC 13) or flee from the attacker for 1d4 rounds (fear). Creatures of 17+ Hit Dice and mindless creatures are immune. Flee takes precedence over blind.",
+  "gurps": "On the same d100: Quick Contest Will against effective skill 13; on failure Terror for 1d4 seconds-rounds (4 to 24 seconds), exact 1d4 x 6 seconds."
+ },
+ {
+  "src": "d2",
+  "name": "LIFE REGENERATION",
+  "tier": 4,
+  "verdict": "NEW",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "While wielded the wielder has fast healing 1 (the Magic rung of the source's +3 to +5 life regeneration; the source gives no time unit). Fast healing is magical healing: it ends Fatal Wound stacks.",
+  "gurps": "Regeneration (slow) 1 HP per second while wielded, Gadget."
+ },
+ {
+  "src": "d2",
+  "name": "OPEN WOUNDS",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each damaging hit, 01-10 fires. On fire the target bleeds 3 HP at the start of its turn for 2 rounds (8 s) and for that time cannot regenerate or benefit from fast healing (magical healing still works). Untyped, ignores DR, bloodless creatures immune. A new proc refreshes the timer and does not stack. Against creatures of 17+ Hit Dice the bleed is 1 HP per round.",
+  "gurps": "On the same d100: Follow-Up Toxic Attack 6 HP spread over exactly 8 seconds; suppresses regeneration for 8 seconds."
+ },
+ {
+  "src": "d2",
+  "name": "PIERCING ATTACK",
+  "tier": 4,
+  "verdict": "NEW",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Ranged weapons only. On each damaging hit, d100 01-25 fires (the Magic-rung of the source's 25 to 100% item values): the missile continues to the next creature in a straight line within 10 ft behind the target, which is attacked as normal; this repeats up to 4 times (5 targets). A shield or block does not stop the missile.",
+  "gurps": "On the same d100: the missile continues to the next target behind, up to 4 times; each target gets its own active defenses."
+ },
+ {
+  "src": "d2",
+  "name": "PREVENT MONSTER HEAL",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Proc: one d100 on each damaging hit, 01-10 fires. On fire the target cannot regenerate or benefit from fast healing for 80 minutes (the source's duration); magical healing and potions still work. Not applied by allies or summoned creatures, and not against named bosses.",
+  "gurps": "On the same d100: regeneration and fast healing suppressed for 80 minutes."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF ALARIC THE MAD",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "The weapon's attacks ignore armor and shield bonuses to AC (including enhancement bonuses to that armor) and ignore worn DR (the engine's ignores-armor flag). Natural armor, Dex, dodge and deflection still apply. Unlike Brilliant Energy it harms undead, constructs and objects normally. Always on. Master rune: one per item and per army.",
+  "gurps": "The weapon's attacks skip worn DR (ignores_armor flag); the defender's 3d6 active defenses are unchanged."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF DEATH",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Heroic Killing Blow: on a confirmed natural 20 the engine forces a Lethal-severity result on the location table (the same table as the Vorpal ruling), against a target of any size. Not a death effect and no separate save. Master rune.",
+  "gurps": "On a confirmed critical hit, the same Lethal-severity location result; no size limit."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF DRAGON SLAYING",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Against creatures of the dragon type (including drakes and wyrms): the weapon acts as a bane weapon (+2 effective enhancement bonus and +2d6 damage) and every damaging hit adds one extra roll of the weapon's damage dice (Multiple Wounds (2)). Master rune.",
+  "gurps": "Innate Attack (Bane) 2d Follow-Up against dragons, and the injury is doubled (a second damage roll)."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF SMITING",
+  "tier": 2,
+  "verdict": "NEW",
+  "price": "+3 = 18,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Multiple Wounds (D6): every damaging hit adds one extra roll of the weapon's damage dice (dice only: no Strength, no extra dice, not multiplied on a critical hit). Master rune.",
+  "gurps": "Each damaging hit's injury is rolled twice (the second roll the weapon dice only)."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF CLEAVING",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "1 rune: the weapon ignores 2 points of DR (Armour Piercing (1)). 2 runes: also +2 Strength (untyped, one WFB Strength step) while wielded. 3 runes: also Killing Blow: the threat range widens by one step and a confirmed natural 20 against a same-size or smaller target forces a Lethal-severity location result.",
+  "gurps": "Armor Divisor (2) at 1 rune; ST +1 at 2 runes; at 3 runes the same Lethal-severity crit result against same-size targets."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF DAEMON SLAYING",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Against creatures with the demon, devil or daemon subtype (the Daemonic rule). 1 rune: +1 effective enhancement bonus and +1d6 damage. 2 runes: +2 effective enhancement, +2d6, and one extra roll of the weapon's damage dice on a damaging hit (Multiple Wounds (D3), read as one extra roll). 3 runes: hits on a natural 2 or higher, +4d6, one extra damage roll, and the target's SR, ward and deflection bonuses do not apply (no ward saves).",
+  "gurps": "Innate Attack (Bane) 1d / 2d / 4d against daemons, with the extra injury roll at 2 and 3 runes; at 3 runes no ward or Magic Resistance applies."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF FIRE",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "1 rune: Flaming Attacks (the Flaming row's +1d6 fire damage on a hit). 2 runes: also a breath weapon once per encounter, a 15-ft cone of 2d6 fire (Reflex DC 14 half). 3 runes: the breath weapon is 3d6 and the burned target takes one further 1d6 fire damage at the start of its next turn (Multiple Wounds (D3), read as a second damage roll).",
+  "gurps": "Innate Attack Burning 1d Follow-Up on every damaging hit (1 rune); plus an Innate Attack Burning cone 2d once per encounter (2 runes); 3d plus a second 1d the next second (3 runes)."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF FURY",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "1 rune: +1 Attack, an extra attack at the highest base attack bonus once per day as a swift action (Rapid Assault T5). 2 runes: three times per day, plus the Frenzy special rule read as rage (+2 Str, -2 AC, must engage) once per encounter. 3 runes: an extra attack at will, rage, and after each hit that deals damage the weapon grants one further attack (the further attacks do not chain).",
+  "gurps": "Altered Time Rate (limited uses 1/day, 3/day, at will matching 3.5e) plus Berserk at 2 and 3 runes."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF MIGHT",
+  "tier": 2,
+  "verdict": "NEW",
+  "price": "+2 / +3 = 8,000 / 18,000 gp by rune count (Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "1 rune (Rare): against creatures of Large size or larger (the source's Toughness 5 or higher) the wielder's Strength bonus to damage is doubled. 2 runes (Unique): also one extra roll of the weapon's damage dice on a damaging hit against them (Multiple Wounds (D3), read as one extra roll). A third rune has no further effect.",
+  "gurps": "Striking ST x2 on damage against SM +1 or larger; second damage roll at 2 runes."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF STRIKING",
+  "tier": 2,
+  "verdict": "DELTA",
+  "price": "+1 / +2 / +3 = 2,000 / 8,000 / 18,000 gp by rune count (Magic / Rare / Unique) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "1 rune: +1 attack bonus (one WFB Weapon Skill step, the Striking row). 2 runes: +2 attack bonus and once per round the wielder may reroll one missed attack. 3 runes: +4 attack bonus and the reroll (the source's Weapon Skill 10).",
+  "gurps": "Weapon Bond +1 / +2 / +4 to weapon skill, with a reroll of one missed attack per second at 2 and 3 runes."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF BREAKING",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "On a damaging hit against a creature wielding a magic weapon, that weapon must succeed on a Fortitude save (the owner's save bonus, DC 20) or be destroyed; one check per round. A creature with several magic weapons risks one at random. Artifacts are immune. A creature whose weapon is destroyed is armed with an ordinary weapon of the same kind. Master rune.",
+  "gurps": "On the same hit: Quick Contest of the weapon owner's HT against effective skill 20; on failure the weapon breaks."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF FLIGHT",
+  "tier": 3,
+  "verdict": "DELTA",
+  "price": "+2 = 8,000 gp (Throwing +1 and Returning +1) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "The weapon can be thrown with a 20-ft range increment, hits on any natural 2 or higher, and returns to the wielder's hand (Throwing +1 and Returning +1). Any other runes take effect on the thrown hit. It can still be used in melee.",
+  "gurps": "Throwing range ST x 1; the thrown attack succeeds on any roll of skill 16 or better; the weapon returns to the hand."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF SKALF BLACKHAMMER",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "The weapon ignores the target's DR/X and natural armor bonus unless the target wears magic armor; against a target in magic armor it ignores DR/X only. Master rune.",
+  "gurps": "The weapon's attacks ignore natural DR (and worn DR on a target in nonmagical armor); against magic armor, ignore natural DR only."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF SNORRI SPANGELHELM",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "The weapon's attack rolls hit on any natural 2 or higher (a natural 1 still misses); a hit is a critical threat only if the roll is within the threat range. Master rune.",
+  "gurps": "The weapon's effective skill is never below 16 for attack rolls; the defender still rolls any active defense."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF SWIFTNESS",
+  "tier": 3,
+  "verdict": "NEW",
+  "price": "+2 = 8,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Always Strikes First: in melee the wielder's attacks resolve before any opposing melee attack in every round regardless of initiative order, and he wins ties. Master rune.",
+  "gurps": "The wielder's attacks resolve before any opposing attack in the same second."
+ },
+ {
+  "src": "wfb",
+  "name": "RUNE OF DISMAY",
+  "tier": 3,
+  "verdict": "DELTA",
+  "price": "+1 / +2 = 2,000 / 8,000 gp by rune count (Magic / Rare) (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "1 rune (Magic): Fear. Each enemy that first attacks the wielder in an encounter must succeed on a Will save (DC 13) or be shaken for 1d4 rounds. 2 runes (Rare): Terror. The save is DC 15 and a failure leaves the enemy frightened for 1d4 rounds. Mindless creatures and creatures of 17+ Hit Dice are immune. A third rune has no further effect.",
+  "gurps": "A Fright Check at -1 (Fear) or -2 (Terror) for each enemy that first attacks the wielder; Terror on failure for 1d4 seconds-rounds."
+ },
+ {
+  "src": "wfb",
+  "name": "GRUDGE RUNE",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "At the start of each encounter the wielder designates one enemy creature as a swift action; against it the wielder gets +1 on attack rolls and may once per round reroll one damage roll and keep the better. One designation per Grudge Rune carried; multiples have no further effect.",
+  "gurps": "Hunter's Mark accessibility (marked target only) with +1 skill and a damage reroll per second against it."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF BANISHMENT",
+  "tier": 4,
+  "verdict": "DELTA",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "The weapon functions as ghost touch, and against undead and incorporeal creatures the wielder may once per round reroll one damage roll and keep the better. Master rune.",
+  "gurps": "Affects Insubstantial on all attacks; against undead, one damage reroll per second-turn, take the better."
+ },
+ {
+  "src": "wfb",
+  "name": "MASTER RUNE OF KRAGG THE GRIM",
+  "tier": 4,
+  "verdict": "NEW",
+  "price": "+1 = 2,000 gp (bonus-equivalent squared x 2,000 gp; Crusader rate card).",
+  "effect": "Utility rune: lets a two-handed weapon (a great weapon) carry runes at all. It has no combat effect and uses one of the item's three rune slots. Master rune.",
+  "gurps": "No GURPS effect; a rules permission only."
+ }
+]
