@@ -531,7 +531,55 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 - **The Urashima completion (P).** Refused twice, the myth recasts (Primer §2.3), and **the next hands are Arik's.** In the holder's hand the opening is the lawful one (§4.4, the box rule), so **the beat is played, not broken. The myth completes.** When Arik opens the box:
 	- **The smoke comes out:** the island's years, smelling of wet stone, cedar smoke and salt. **Because the box was his to open, the years go back to the sea and touch no one.**
 	- **Sōta's *Unfinished* status clears.** His story was finished by someone else's hands, which is the mercy at the end of his thread.
-	- **The completion boon** goes to the one who played the last beat, which is Arik. **(P, for Chad:** what a folk tale's boon is worth to the Storm King; the Urashima version is mastery over one passage of years: once, he may let a day pass as a breath, or a breath as a day.)
+	- **The completion boon** goes to the one who played the last beat, which is Arik: **The Palace Hours** (below).
+
+**The Palace Hours: the Urashima completion boon (P; full spec at Chad's request, 7 Oct 2026)**
+
+*Why this boon.* Urashima's story is about the palace's time against the world's time. He spent three days under the sea and came home to find three hundred years gone. The box held the difference, and opening it let the years out. A completed Urashima myth gives its last actor **one handful of that palace time**: the power to make time run at the palace's rate, once.
+
+*What it is.* A single use, kept until spent, with no expiry. Arik chooses one of two modes when he spends it.
+
+**Mode A: A Day as a Breath** (time compressed: a day inside, a breath outside).
+- **Effect:** Arik and up to eight willing creatures within 30 ft live **a full 24 hours** while the world outside them passes one breath (one round).
+- **The space:** they stand in a pale green-gold room of sea-light, the size of the 30-ft circle. Sound from outside does not come in, and the world beyond the edge is a still picture.
+- **What a day buys:**
+	- Rest: 8 hours' sleep, natural healing for a day, and **prepared casters and clerics can recover their spells**.
+	- Counsel: a full war council, a full interrogation (if the prisoner is brought inside), study.
+	- Ritual: any rite of 24 hours or less completes.
+	- Crafting, mending of gear, and recovering from exhaustion.
+- **What it cannot do:**
+	- Nothing inside can touch anything outside. No attack, spell, missile or gaze crosses the edge until the day ends.
+	- No one outside can enter.
+	- Nobody inside can leave early. The day runs its full length.
+- **When it ends:** everyone inside **has lived the day.** They are a day hungrier, a day older and a day more tired, and every spell or effect with a duration has run a day. Then the round resumes where it stopped.
+- **The table use:** in the middle of the worst fight of the campaign, Arik buys his commanders and casters a full night's rest and a full council, and comes back on the same heartbeat.
+- **3.5e:** Su, standard action, one use. It is a stronger cousin of *time stop*: no gap in action for anyone outside, a fixed 24 hours inside, and the inside sealed from the outside in both directions.
+- **GURPS:** Altered Time Rate (Accelerated to a day per second, Area 10 yd, Selective, Cosmic, Single Use), with the Barrier enhancement both ways for the duration.
+
+**Mode B: A Breath as a Day** (time accelerated: a day falls on a target in one breath).
+- **Effect:** one creature, object, or 30-ft-radius area within 120 ft **has a full day pass for it in a single breath.** The world around it sees nothing but a flicker, and the smell of the box: wet stone, cedar smoke and salt.
+- **What the day does:**
+	- **Every timed effect on the target advances 24 hours.** That means buffs, summoned creatures, wards, curses, poisons, diseases, countdowns and the duration of illusions. Effects shorter than a day end.
+	- **The body lives a day:** hunger, thirst, a day of bleeding, a day of fatigue, a day of natural healing.
+	- **Objects get a day:** fires burn down, water evaporates, rations spoil, ice melts, a day's work is undone or completed.
+- **Unwilling creatures:** Will DC 25 negates for the creature itself. Objects, areas and the effects inside them get no save.
+- **The table use:**
+	- Strip every enemy buff and dismiss every summoned creature in a Red Wizard cadre at once.
+	- Run out a 24-hour ward, or a gate that holds for a day.
+	- **Push a body past Yashiori's 24-hour Root Country ban.** It cuts both ways: Arik could settle the quarrel over the dead with one breath.
+	- Spoil a besieger's water, or end an ally's curse that runs on a day-count.
+	- **Danger:** it also advances the clock on any countdown curse **toward** its ending. Used on the Mask of the Occupied Oni's three-day reforging, it brings Kureha a day closer.
+- **3.5e:** Su, standard action, one use.
+- **GURPS:** Affliction (Advance Time 1 day; Area 10 yd or single target; Will-5 resists for creatures; Single Use).
+
+**What it is not.**
+- No time travel, no going back, and **no more than one day** either way. The palace gave Urashima three hundred years, but **it gives his last actor one day**, because the rest went back to the sea when the box opened lawfully.
+- No killing by age. A day is a day.
+
+**The cost and the hook.**
+- **No price is charged to Arik.** The myth completed in his hand and the years went home to the sea, so the boon is clean.
+- **But it is palace time, and the palace has a king.** In Kozakuran myth the sea-palace belongs to **Ryūjin, the dragon king of the sea**, whose daughter kept Urashima. The day Arik spends the Palace Hours, **the sea's own court learns who holds a handful of its time.**
+- **It is also the first thing of the sea Arik has ever held.** Susanoo was given the sea by his father and refused it (the Sea Mandate, see the pre-wrath notes). **Spending the boon is the first rhyme of that refused mandate.** It starts a Myth Pressure clock toward the sea that he may not want.
 - **What it does to the opposition:**
 	- **The Orochi remnant** wants the box opened. A bound carrier is useless to it, so **it waits for the handover** and works on Nym.
 	- **Kitsuki** goes after Sōta, not the box: break the geas and the old story does the rest.
@@ -863,7 +911,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 8b. ~~Electra's pursuit east~~: **RULED, she goes after the parley and tags Nym** (K19). Open: the parley's length, which sets her arrival stage, normally S5.
 8d. ~~Nym and the island~~: **RULED (7 Oct): the ban stays; the default is influencing a local** (Option E, Hamaura Sōta).
 8g. **The box rule** (§4.4): an opened box undoes the leave and the opener ages 3d6 × 10 years. Confirm or tune it.
-8h. **The geas** (§4.4): **RULED (Chad, 7 Oct).** Sōta asks; Nym lays it in the boat after the leave (*"into my hands"*). **Nym binds herself: *"into his hands," meaning Arik's.*** The discovery is now forced by the geas. Open: R4 (when it lands in Arik's lane); the Urashima completion boon; Lorne's reading of the surrender.
+8h. **The geas** (§4.4): **RULED (Chad, 7 Oct).** Sōta asks; Nym lays it in the boat after the leave (*"into my hands"*). **Nym binds herself: *"into his hands," meaning Arik's.*** The discovery is now forced by the geas. Open: R4 (when it lands in Arik's lane); the Palace Hours boon (§4.4, spec'd 7 Oct, P); Lorne's reading of the surrender.
 8e. **The changed-shape rule** (S4, Option B): does the island treat *alter self* or *polymorph* as a lie? And does Electra's true form count as neither man nor woman (Option D)?
 8f. **Quavein** (CP7): does anyone tell the Bursar, and does his ledger already know?
 8c. **Envoy reading of Electra** in Kozakura (primer, P).
