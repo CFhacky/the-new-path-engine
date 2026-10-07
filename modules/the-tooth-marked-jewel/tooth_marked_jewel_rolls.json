@@ -89,6 +89,30 @@
     13
    ],
    "result": 6
+  },
+  {
+   "id": "TJ-9",
+   "question": "Hamaura Sota's reaction to the masked foreigners at Isohama (GURPS reaction, no modifier): 3-6 Bad, 7-9 Poor, 10-12 Neutral, 13-15 Good, 16-18 Very Good",
+   "throws": [
+    7,
+    15,
+    8,
+    14
+   ],
+   "result": 8,
+   "date": "2026-10-07"
+  },
+  {
+   "id": "TJ-10",
+   "question": "Where his Urashima clock (4) stands when they meet him: 3-8 = 1 (the turtle only), 9-13 = 2 (turtle + he has already been out to the island's waters and seen the palace-light), 14-18 = 3 (he already holds a lacquered box he was told never to open)",
+   "throws": [
+    7,
+    10,
+    13,
+    8
+   ],
+   "result": 8,
+   "date": "2026-10-07"
   }
  ]
 }

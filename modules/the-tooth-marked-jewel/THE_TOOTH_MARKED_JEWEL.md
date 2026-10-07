@@ -465,6 +465,59 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 
 **His private thought (for the GM):** *"A washed man with a soldier's back, and a woman left in the boat who didn't ask to land. The knife he carries smells of brewery, and it isn't his. The old men said the daughters' father would send for his tooth one day. They didn't say he'd send this."*
 
+### 4.4 Hamaura Sōta, the man who can land (G NPC; name-checked; Chad, 7 Oct 2026: "it leads to us having to influence a local… who can be a character of their own mythology")
+
+*Human (Kozakuran) male, 24. Diver of Isohama: the one man the village's women divers (ama) let dive with them. Expert 5, CR 4 (P). GURPS ~110 CP: Swimming-17, Breath Control-16, Boating-13, Weather Sense-12, Survival (Sea)-13. Honesty (12). Sense of Duty (his mother).*
+
+**Why him.** The island admits no women, so **Nym cannot land** (K5), and neither can Electra in her chosen form. The empire's agent needs a man who can wash, land, find the bead, and **whom the island will believe**. Sōta is that man. Nobody in Arik's service sent the agent who finds him, and **Arik will never know his name.**
+
+**Description.** Five foot seven and built for one thing: shoulders broad and round from hauling himself up a rope against the tide, a narrow waist, and a barrel of a chest that can hold one breath for three minutes. His skin is burned dark by salt and wind, darker on the back than the front, the way divers' skin goes. His hair is long and tied in a knot with a twist of straw. Both ears are thickened and slightly misshapen from pressure. He has a white scar across the back of his right hand where a net-line cut him to the bone. Ashore he wears a patched indigo work-coat over a loincloth; in the water, only the loincloth and a white cotton headscarf **stitched with the divers' charms: a five-pointed star and a grid of four lines by five**, against whatever lives down there. He carries a wooden float-tub on a line and a short iron pry-bar for abalone. He smells of seaweed, cold salt and pine-smoke from the divers' hut. When he surfaces he lets his breath out in a long thin whistle, *hyuuuu*, the sea-whistle every ama on the coast makes. Children on the breakwater can tell which diver is coming up by the pitch, and his is the lowest.
+
+**Voice.** Few words, a dry joke at the end of most of them. He never says anything about the island, not even its name, and calls it *"out there."* *"Out there doesn't care who you are. It cares if you're washed. You're not washed. None of you are washed."*
+
+**His mythology (the Urashima rhyme).** Urashima Tarō was a fisherman who saved a turtle and was carried to the palace beneath the sea, where a sea-king's daughter kept him. He came home with a lacquered box he was told never to open. Three hundred years had passed. He opened it, and the years came out as smoke.
+- **Act:** three summers ago Sōta cut a sea turtle out of a drift-net and carried it back to the water. Since then, **a turtle surfaces beside him whenever he dives within sight of the island.**
+- **Place:** he lives and dives on the strait.
+- Two axes give a folk-tale clock, size 4. **(D, TJ-10 = 8): the clock stands at 1 when the empire's agent meets him.** It is the turtle only: he has not yet been "out there," and he has no box.
+- **The island is his palace beneath the sea, and the sword-daughters are its princess.** The clock's remaining beats are:
+	1. *Taken to the palace:* he lands on Okitsu.
+	2. *Given the box:* the daughters' leave.
+	3. *The box opened:* the years come out.
+	- Each one Myth Pressure pushes toward him (Kozakura Primer §2).
+
+**The box (G; it fires on the lawful path).** When the daughters grant leave, the bead does not come off the island loose. Ichiki brings it down the stair **in a small box of black lacquer tied with a five-coloured cord**, and gives it to whoever petitioned. Rule (P):
+- **Unopened until it is in the holder's hand:** the leave holds, and the holder receives the Bridle (§4.1, power 6).
+- **Opened on the road, by anyone:** the leave is undone. The curse (*Nothing Leaves*) attaches as if the bead were stolen, and the holder will receive the Feed. **The one who opened it takes the years**: they age 3d6 × 10 years at once (an elf takes the same years against an elf's span). The smell that comes out is the island's: wet stone, cedar smoke and salt.
+- **Myth Pressure pushes the carrier to open it.** Every night it travels, the carrier rolls Will DC 12 + the Urashima clock, or opens the cord "just to look." For anyone carrying it other than Sōta, it is DC 10.
+- **This is Sōta's tragedy waiting:** his story ends with him opening it. **Whether he carries it, and whether the empire's agent lets him, is the moral weight of the island.**
+
+**Reaction (D, TJ-9 = 8): Poor.** To Isohama, masked foreigners are oni walking (Kozakura Primer §7), and his mother has told him what the last foreigner who asked about *out there* got. He will talk; he will not go.
+
+**Turning him (the agent's work; GURPS reaction re-rolled with these modifiers, or roleplayed):**
+
+| Lever | Modifier | What it costs |
+|---|---|---|
+| **Masks off** when they talk to him | +2 | The Hand's faces become known on the strait |
+| **Through the ama hut** (only a woman can enter the divers' hut, which makes it **Nym's** lever or later Electra's) | +2 | His mother, Hamaura Ume, decides whether the hut hears it |
+| **The truth unadorned:** the office, its holder, and that the holder does not know | +2, and **required anyway for a lawful petition** | **A Kozakuran fisherman now carries the empire's secret.** Arik doesn't know it, and a diver on the strait does. |
+| **Coin** | +1, once only | Silver from foreigners is bad luck on the boats. Word gets around. |
+| **His myth, played on purpose** ("the sea chose you, the turtle knows you") | +3 | **Deliberate casting** (Primer §2.4): +1 Urashima tick per scene, and the myth knows. The box's beat arrives early and harsh. |
+| **Coercion** (his mother, his boat) | +2 to compliance, −6 to his honesty on the island | **A coerced man petitions badly.** The daughters hear the fear, and the answer drops a step. |
+
+**What he does on the island (his choices, rolled or played):** he can petition honestly (he is Honest; truth unadorned is easy for him if he has been told it), steal (only if the agent made him a thief), or **refuse at the shrine**, which he does if he learns at the top of 1,140 steps that he was lied to. His reaction to the petition's answer is his own.
+
+**What the empire gets (unsanctioned).**
+- An asset on the strait who can land on the Island Not Spoken Of, with a thousand years of offerings on it.
+- A diver who knows Isohama's boats and the women divers' network along the coast.
+- A thread into Kozakura that touches **Operation Lacquer Road**, the empire's existing Kozakura supply contact.
+- **The Veil gets an asset it didn't recruit, run by priests it doesn't know are priests,** for a throne that doesn't know it has them. When Electra arrives, **he goes into her file.**
+
+**Hamaura Ume (G NPC; name-checked).** His mother, 52, headwoman of Isohama's women divers. She is short and heavy-shouldered, with grey hair cropped to the ears and a face lined like old rope. She has dived forty winters and lost a sister to the strait. She keeps the hut, the charms and the rules. **She is the first door for Nym**, a woman who can sit at the hut's fire where Lorne cannot. She will not let her son go *out there* for strangers unless she believes it is the sea's business. **The divers' own warning:** the sea is not the island, and someone once tried to let the sea carry a thing off Okitsu for him. The tide laid it back on the island's shingle with him drowned beside it. *There is no loophole in the water.*
+
+**Private thoughts.**
+- Sōta: *"The turtle came up again yesterday, right where the foreign woman was standing on the breakwater. Mother says don't look at it. I looked at it."*
+- Ume: *"A woman priest who can't land, a man priest who wants my son, and a turtle that won't leave him alone. I know this story. Nobody likes how it ends."*
+
 ---
 
 ## 5. The route, stage by stage
@@ -509,7 +562,8 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 - **Schism beat:** Lorne pours his own dawn offering into the eighth vat. The Two Winners +1.
 
 ### S3 — The crossing (the strait)
-- **From:** Isohama (G), a fishing port at the valley's mouth: stone breakwater, drying racks of squid, tar and smoke.
+- **From:** Isohama (G), a fishing port at the valley's mouth: stone breakwater, drying racks of squid, tar and smoke, and the women divers' hut on the shingle with its charms painted over the door.
+- **The local (§4.4):** this is where the empire's agent meets **Hamaura Sōta** and his mother. Turning him is the stage's work. Reaction starts Poor (TJ-9).
 - **The run:** **38 miles** to Okitsu-no-shima in Uktar seas. Boats go only for the shrine rotation. A captain will sail for 300 gp or for a reason he believes (Diplomacy DC 20, or Bluff DC 25 because he has heard every lie about that island). Boating/Profession (sailor) DC 18 for the passage, 10–14 hours.
 - **On the headland** as they put out: **Sone Takamichi** watches from the cape shrine with the white deer beside him. He does not act; the bead has not moved.
 - **In the water:** eight long wakes run alongside the boat from mid-strait. Nothing surfaces. Spot DC 20: the wakes keep station like an escort. **The remnant wants them to reach the shore.**
@@ -518,11 +572,15 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 ### S4 — The island (Okitsu-no-shima)
 **The problem (K5 + the island's first rule):** Nym, the priest who saw the bridle, carries Yashiori, keeps the dawn-list and is the only one who can find the bead by the dew on the grip. **She cannot land.** The island admits no women.
 
-**The Nym options (CP2b; the GM rules, or the players choose):**
+**The Nym options (CP2b). Chad, 7 Oct 2026: keep the ban; it leads to influencing a local. Default is E.**
 
 | Option | How it plays | Cost |
 |---|---|---|
-| **A. Lorne lands alone with her dagger** (default) | Nym hands Yashiori to Lorne in the boat. **The man who saw the other winner** washes, wades in, and carries her blade to the daughters' shrine. He finds the bead by the dew. **He chooses which reading he petitions with**, or whether he petitions at all. | The sharpest schism beat in the arc: The Two Winners +2 if he steals, +1 if he petitions on his own reading. Yashiori's dawn rite must be kept by its bearer. **On the island, the bearer is Lorne.** |
+| **E. Sōta lands (default)** | The empire's agent turns Hamaura Sōta (§4.4). He washes, carries Yashiori ashore (Ichiki will not search a diver he has known since boyhood), finds the bead by the dew, and petitions, or steals if they made him a thief. **The Urashima clock ticks on landing.** On leave, he is handed **the box**. | The empire's secret, told to a fisherman. A man whose story ends with the box opened. The Two Winners clock: whichever priest recruited him owns how he petitions. |
+
+| Option | How it plays | Cost |
+|---|---|---|
+| **A. Lorne lands alone with her dagger** | Nym hands Yashiori to Lorne in the boat. **The man who saw the other winner** washes, wades in, and carries her blade to the daughters' shrine. He finds the bead by the dew. **He chooses which reading he petitions with**, or whether he petitions at all. | The sharpest schism beat in the arc: The Two Winners +2 if he steals, +1 if he petitions on his own reading. Yashiori's dawn rite must be kept by its bearer. **On the island, the bearer is Lorne.** |
 | **B. Nym lands in a changed shape** | *Alter self* or *polymorph* to a man's body. **Rule (P): the island sees a changed shape as a lie** (truth unadorned). Landing in one breaks the daughters' Rule: +2 PP, and the petition's answer drops one step. Illusions such as *disguise self* do not survive the washing at all. | She can still find the bead. She can never win a clean leave. Under the sea-curse rules, a stolen bead brings the holder the **Feed**, which is the opposite of her own reading. |
 | **C. Nym petitions from the waterline** | She stands in the surf below the tide-line, which is not the island, and petitions at dawn from the sea. Ichiki can carry her words up the stair, but only if she has turned him (the truth unadorned, told to a priest who refused her). | The daughters' answer comes one step harsher; they hear a woman from the sea, and it is their father's priest asking. **The price is still a mask, and hers stays in the boat**, so Lorne must give his or no leave is granted. |
 | **D. Electra's true form** (only if she has caught up; P) | Electra lands **in her true shape: grey, featureless, neither man nor woman.** The island allows it, because the shape is no lie. She does it by **dropping every face she owns**, as she did before the angel. | She lands as the faceless one (*noppera-bō*) in a realm that knows the name. Myth Pressure ticks on her hard. **Timing makes this unlikely:** she leaves after the parley, so she usually arrives at S5. |
@@ -677,6 +735,7 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 | CP4b | **The way home** | Medium | **Through Eastern Anauroch** (fast, wind walk, home ground): every dragon within 60 ft knows (Scale Remembers), and Jörmun may reach Arik first. **Round it** (slower, through the Moonsea or by sea): Calloway's ground, and days added to every pursuer's clock. |
 | CP5 | **Delivery** (S6) | Terminal | **Place it in his hand** → forces the discovery and completes the pledge if he closes his hand. **Enshrine it in his name and say nothing** → the office is fed, the holder never receives it, nothing is registered, the secret holds. That is the sect choosing the seat over the man, which Jin would call the one sin of the office. |
 | CP7 | **Quavein** (K20) | Heavy | **Tell the Bursar.** The office's captain-rank priest, the warrior face, may claim the quest, bless it, or write it in his black book as a debt. **Whoever tells him first gets him as the schism's judge.** **Keep it from him:** if he learns from his ledger, which is likely, he collects. |
+| CP8 | **Hamaura Sōta** (§4.4) | Heavy | **How he's turned** (truth, coin, his own myth, coercion), **who carries the box home** (he does and Myth Pressure pulls the cord; or the agent takes it and the Will save falls to the agent), and **what happens to him after** (a kept asset on the strait, or a spent one who opens it). |
 | CP2b | **Nym and the island** (S4) | Heavy | Lorne lands with her dagger / Nym lands in a changed shape / Nym petitions from the waterline / Electra's true form. See S4. |
 | CP6 | **The Two Winners** (§3.2) | Heavy, slow | When the clock fills: does Lorne leave, stay and serve the temperament inside the sect, or get brought back? The discovery scene then has to answer **which priest Arik sanctions**. |
 
@@ -722,6 +781,9 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 | TJ-7 | Amaterasu's watch begins | 10, 10, 9, 6 | **9** | **S2** (the deer at the torii) |
 | TJ-8 | Enma's wardens: delay after the first Yashiori kill on Kara-Turan soil | 5, 15, 6, 13 | **6** | **The same night** |
 
+| TJ-9 | Hamaura Sōta's reaction to the masked foreigners | 7, 15, 8, 14 | **8** | **Poor.** He will talk; he will not go. |
+| TJ-10 | Where his Urashima clock stands when they meet | 7, 10, 13, 8 | **8** | **1 (the turtle only)** |
+
 **Rolls held for play (not thrown):** Jin's reaction (CP1); the daughters' answer (S4, 3d6 + Diplomacy margin); Sone's bout (opposed grapples / Sumo contests); the wardens' jurisdiction contest; The Two Winners clock advances.
 
 ---
@@ -752,7 +814,8 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 7. **The Veil shadow route to Kara-Tur** (S1 option 3): the Shadow Gate Network page was not read for this draft.
 8a. ~~Electra's choice~~: **RULED, she holds it and opens a file** (K19).
 8b. ~~Electra's pursuit east~~: **RULED, she goes after the parley and tags Nym** (K19). Open: the parley's length, which sets her arrival stage, normally S5.
-8d. **Nym and the island** (CP2b, S4): which option is default. I propose A, Lorne lands with her dagger.
+8d. ~~Nym and the island~~: **RULED (7 Oct): the ban stays; the default is influencing a local** (Option E, Hamaura Sōta).
+8g. **The box rule** (§4.4): an opened box undoes the leave and the opener ages 3d6 × 10 years. Confirm or tune it.
 8e. **The changed-shape rule** (S4, Option B): does the island treat *alter self* or *polymorph* as a lie? And does Electra's true form count as neither man nor woman (Option D)?
 8f. **Quavein** (CP7): does anyone tell the Bursar, and does his ledger already know?
 8c. **Envoy reading of Electra** in Kozakura (primer, P).
