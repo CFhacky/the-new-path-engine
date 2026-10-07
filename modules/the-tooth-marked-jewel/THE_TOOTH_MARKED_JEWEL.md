@@ -928,3 +928,30 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 - The repo mirror (this file) stays on branch `claude/sleepy-hawking-oap9se`.
 - A Change Log entry in the 📋 Canon Change Log, Session field blank, PROJECTED, nothing played.
 - A cross-link line appended (append-only) to the Hand roster and the Kusanagi page's banked-hooks list.
+
+### 11.1 The Pale Name's Kozakuran titles (APPROVED, Chad 7 Oct; design canon, nothing played)
+
+**The root.** The *Nihon Shoki* writes the god as **素戔嗚尊**. Its first character, **素** (*su*), is undyed white silk: plain, bare, pale. **嗚** is a wail. Read through those characters, the office's name is "the bare one who wails," so the Pale Name has always sat inside it. When Kitsuki or an onmyōji notices this, it is a revelation scene (a candidate recognition event, unpriced; see item 5).
+
+**Before the claim:**
+
+| Title | Meaning | Register |
+|---|---|---|
+| **Shirana-no-Kami** (白名神) | "The White-Name God"; also *shirana*, "unknown" | Scholars and onmyōji, in writing |
+| **Marebito** (稀人) | The visiting stranger-god from across the sea | Villagers and shrine folk |
+| **Araburu kami** (荒ぶる神) | A raging, unsubdued god (the Kojiki's term for gods outside heaven's order) | Amaterasu's court, as an accusation |
+
+- Rank: ***mui*** (無位), unranked in the divine register.
+- Suffix: ***-no-Kami***.
+
+**After the claim:**
+
+| Title | Meaning | Register |
+|---|---|---|
+| **Takehaya Susanoo-no-Mikoto** (建速素戔嗚尊) | "Brave, Swift, Impetuous Male, Augustness" | The office's full title |
+| **Shō Ichii** (正一位) | Senior First Rank, the top of the divine register | What Celestial Bureau registration (§4.1, Pledge of the Clean Heart) looks like in Kozakuran paperwork: the sect's primacy in one line |
+| **Gozu Tennō** (牛頭天王) | The Ox-Headed Heavenly King, the plague-lord | Those who fear him rather than worship him |
+
+**The change, as the world shows it.** *-no-Kami* becomes *-no-Mikoto*, and *mui* becomes *Shō Ichii*. Shrine tablets, placards, prayers and court registers are rewritten, so the ecology and Myth Pressure systems have a visible tell.
+
+**Meter hook (unpriced, see item 5).** In the *Izumo Fudoki*, Susanoo said of Susa: *"This is a small country, but a good place. I will not set my name on trees and stones,"* and he laid his own spirit into the land, which took his name. If Arik ever sets his name into a Kozakuran place, that is the largest recognition event this arc can produce. Price it at or above the vision.

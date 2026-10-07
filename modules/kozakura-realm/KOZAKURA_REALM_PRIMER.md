@@ -303,3 +303,19 @@ Kozakurans meet a stranger through two questions: **is it a person, or is it a y
 5. **Drow reading** (§7): commoners at −4, shrines 50/50 bar or prostrate.
 6. **Kappa and Bane of the Eight:** reptilian or not (§4.2)?
 7. **Period frame:** a warring-states Kozakura (§9), with no published rulers imported.
+
+---
+
+## 13. The Pale Name in Kozakuran (APPROVED, Chad 7 Oct)
+
+The full entry is in *The Tooth-Marked Jewel* §11.1. In short:
+
+- **The root.** The Nihon Shoki spelling **素戔嗚尊** opens on **素**, "undyed, bare, pale." The Pale Name is the first syllable of the office.
+- **Before the claim:**
+	- **Shirana-no-Kami** (白名神), "the White-Name God / the Unknown." This is the scholars' name.
+	- **Marebito**, the stranger-god, as the villages say it.
+	- **Araburu kami**, the Sun court's accusation.
+	- Unranked (***mui***).
+- **After the claim:** **Takehaya Susanoo-no-Mikoto, Shō Ichii** (Senior First Rank). The plague cults call him **Gozu Tennō**.
+- **How the realm shows the change:** the suffix moves from *-no-Kami* to *-no-Mikoto* and the rank from *mui* to *Shō Ichii* on every shrine tablet and register. This is the Kozakuran form of §7's outsider readings applied to Arik himself.
+- **Myth Pressure:** naming a place (the Susa rhyme from the Izumo Fudoki) is a Token + Act beat for the Susanoo clock (§2.5). Its price is open (jewel doc §11, item 5).
