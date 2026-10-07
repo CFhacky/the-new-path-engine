@@ -65,6 +65,7 @@ Deviations: adventure-arc-builder not loaded; this is a design document, not yet
 | K16 | Electra is Arik's plenipotentiary for the Thayan parley, Uktar–Nightal 1498, Eastern Anauroch, under a sealed, issue-specific commission. Arik does not attend. | LOG-704, LOG-767 | R (Chad) |
 | K17 | Electra's current mechanics are the **July** Complete Character Sheet: Wizard (War Magic) 14 / Rogue (Mastermind) 5 / Aberrant Mind 3, CR 18, Commander of Bloodaxe Military Intelligence, Staff of Thunder and Lightning. The April page stays her narrative home (divine scar, personas, Choice Journal). | Chad, 6 Oct 2026; Change Log 6 Oct | R (Chad) |
 | K18 | **Electra notices the vision.** | Chad, 6 Oct 2026 | R (Chad) |
+| K19 | **Electra holds it and opens a file.** She does not report to Arik. She possibly goes east after the priests. | Chad, 7 Oct 2026 | R (Chad); the pursuit is conditional |
 
 **Myth anchors used (real-world sources, adapted as Kara-Turan):**
 - **The oath-contest (ukei).** Amaterasu chewed Susanoo's ten-span sword and breathed out three goddesses. Susanoo chewed the jewel-strings from her hair and arms and breathed out five gods. She claimed the five as hers, because the jewels were hers. He declared he had won (gentle daughters from his sword proved a clean heart), then wrecked her hall.
@@ -229,7 +230,7 @@ Lorne stood a moment longer at the gap in the ring, looking out at the plain whe
 
 **What this makes her.** The first person in Arik's service who can know that he has priests. She commands Bloodaxe Military Intelligence; the priests are Veil agents in Jin's Hand. So **a counter-intelligence finding crosses the line between two services**, and lands on a woman whose own question is whether an instrument can choose its master.
 
-**Her choice (unplayed; Chad's or the dice's).** Whatever she chooses, she logs it in the Choice Journal.
+**Her choice: RULED (Chad, 7 Oct 2026): she holds it and opens a file.** The table below is kept for the record of what she passed over.
 
 | Option | What it sets off |
 |---|---|
@@ -237,6 +238,48 @@ Lorne stood a moment longer at the gap in the ring, looking out at the plain whe
 | **Hold it and open a file** | Her default lean (P). It is intelligence first: she wants to know if it is real before she puts it in front of him. **Her own mirror question**, an instrument that chose its master, makes her protect them longer than she should. |
 | **Go to Nym privately** | Silence in exchange for access. She becomes the sanctioned eye inside an unsanctioned sect, or the third member of it. |
 | **Tell Lirien** | The priests are Veil agents. Lirien learns her network has been running a cult inside itself. The fallout routes through `hybrid-intelligence-ops`. |
+
+### 2.6 The Red Saddle file and the pursuit east (K19)
+
+**The Choice Journal entry (the night of 12 Uktar, in her cipher):**
+> *Chose not to report the Red Saddle event to A. Chose to open a file. (Own preference? Checked twice. Yes. I want to know whether it is real before I put it in front of him, and I want to know whether two men can choose a master who never asked for them. I know why I want to know that. Noted.)*
+
+**The file (Bloodaxe Military Intelligence, compartment of one).**
+
+| Field | Entry |
+|---|---|
+| **Subjects** | Nym Esharan (elf, Cleric 14) and Lorne Ashby (half-elf, Cleric 13). Veil, attached to Jin's Hand. **Not her service.** |
+| **Finding** | Unsanctioned worship of the Storm King's office, which Arik holds. A daily dawn rite on the blade Yashiori. The event of 12 Uktar on the Red Saddle. The two priests disagree about its meaning. |
+| **Evidence** | Hail rings and the doorway gap (bearing east, a hand north); fused glass; tracks; rice spirit; surface thoughts: *Storm King*, *the bout*, *the bitten grip*, *it threw him / it had him by the belt*. Her staff's pull, her scar's burn, and the strain on her anchor on Arik **are her own sensations and are filed as unverified.** |
+| **Assessment** | Unknown whether a threat, an asset or a theology. **The possibility that the office is acting on Arik is not excluded.** |
+| **Distribution** | None. Not Arik, not Lirien, not Jin. |
+| **Why held** | To verify before reporting. (Her journal adds the real reason.) |
+
+**What holding it costs her (live from 12 Uktar):**
+- **She holds intelligence on another service's agents** without telling their chief (Lirien) or their officer (Jin). If it comes out, it is an inter-service breach, and it lands on the one woman whose trust status is still Conditional.
+- **Her betrayal-potential ladder** (July sheet, Strain stage): denser journal entries and more requests to be checked. **Holding a secret alone is exactly the condition her sheet says the sleeper programming thrives in.** It doesn't fire on its own, but it moves the needle.
+- **Jin.** If Jin learns a Military Intelligence commander has a file on his priests, his position is simple: the seat's business, handled by the seat's servants. He may not mind. He will not forget.
+
+**The pursuit east ("possibly," per Chad).** Proposed shape (P). Chad sets whether and when.
+
+1. **The tag.** Before the priests leave (13 Uktar by wind walk), she brushes Nym at the Crown in a borrowed face for one touch. That touch is the prior contact her soul-tracing needs (Soulthread Trace, narrative codex). Otherwise she follows the bearing and the dawn-list seal, as they do.
+2. **The commission problem.** Her sealed commission covers the Thayan matter, Uktar–Nightal 1498 (K16), and the dual-assent structure ties her to the parley.
+
+	| When she goes | What it means |
+	|---|---|
+	| **After the parley resolves** (default, P) | She keeps faith with the seal. She reaches Kozakura weeks behind the priests, likely meeting them **on the return (S5)** or at the island. She becomes **a pursuer and a protector at once.** |
+	| **Mid-parley** | She breaks the commission's scope. Jörmun and Cha Hae-In notice. **It is a breach of Arik's seal to protect Arik's secret from Arik**, and that is a scene of its own when it surfaces. |
+	| **Doesn't go** | The file stays in her hand. She is in the room for the discovery (§9) with a dossier she has kept from him. |
+
+3. **Getting there.** She is the fastest of anyone.
+	- Greater teleport (7th level, Wizard 14) needs a known destination. **Following the tag gives her one.**
+	- The narrative codex's Greater Teleportation (no range limit, no error) does the same.
+	- She can be in Kozakura in **a day** once she chooses to go.
+4. **What Kozakura does with her** (primer draft, P):
+	- **The divine scar** is a celestial beacon. Amaterasu's white deer finds her within a mile on arrival, and the court knows a celestial-touched outsider has landed.
+	- **Mezu's ledger** reads everything a creature has killed. **Her centuries as Narberal Gamma** are on it, so Enma's jailers have a docket on her that predates the Hand.
+	- **Myth Pressure** reads her as **the fox**: Tamamo-no-Mae (the instrument exposed) or Kuzunoha (the shapeshifter whose chosen life was real). Her Choice Journal is evidence for the second reading.
+	- **The Envoy (P):** she carries Arik's seal and acts for him unknown to him, so the realm may read her as the **second envoy**, on the returning-arrow beat. With Dispater's sleeper programming in her, that is the most dangerous beat in the realm.
 
 **Envoy note (primer draft, P).** If Arik later sends Electra into Kozakura, the realm reads the priests as the first envoys and her as the second, which puts her on **the returning-arrow beat**. For a woman carrying Dispater's sleeper programming, a myth whose beat is "the sovereign's tool turns" is the worst possible fit, and the most dramatic one. Not ruled.
 
@@ -684,8 +727,9 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 5. **Pale Name meter price** for the vision and for each outcome (R3).
 6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
 7. **The Veil shadow route to Kara-Tur** (S1 option 3): the Shadow Gate Network page was not read for this draft.
-8a. **Electra's choice** (§2.5): report, hold, approach Nym, or tell Lirien. Rule it, or roll it at play through `personality_roll.py`.
-8b. **Electra as envoy to Kozakura** (§2.5 note; primer). Not ruled.
+8a. ~~Electra's choice~~: **RULED, she holds it and opens a file** (K19).
+8b. **Electra's pursuit east** (§2.6): whether, and when (after the parley, mid-parley, or not at all). The tag on Nym at the Crown, yes or no.
+8c. **Envoy reading of Electra** in Kozakura (primer, P).
 8. **Adventure-arc-builder:** if this should become a playable module, run it through the Notion adventure-arc-builder next. This document is its design brief.
 
 **On approval (not done yet):**
