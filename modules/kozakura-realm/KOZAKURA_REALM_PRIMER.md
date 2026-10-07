@@ -472,3 +472,72 @@ The Yata mirror, the Sun's spirit-seat, has not been looked on in centuries; it 
 4. **Teruko's build:** Option A (CR 16) or another.
 5. **Teruko's crossing:** the Choice Point in §15.7. Does the arc allow the mirror out of Kozakura at all?
 6. **Where the jewel arc meets her:** default at **S5**, on the road from Isohama, when Electra arrives and the track reaches 3.
+
+### 14.6 The ecology roll is now Kozakura's own (P, Chad 7 Oct)
+§14.2's pointer to the UDRP Monster Ecology Module is **superseded inside Kozakura** by **KOZAKURA_SPIRIT_ECOLOGY.md** (with `kozakura_ecology.py`). The Calamity tier enters it in four places:
+- **Realm Pulse:** 3d6 lower median **+ 2 × tier**, so each tier mostly lands in its own band.
+- **Situation scale:** + half the tier.
+- **Cost:** + the tier, and the local response − the tier.
+- **The cause:** the Calamity override. **Cascade** rolls of 7+ raise the Calamity themselves.
+
+### 14.7 The tiers in full (P; to choose the starting tier)
+What a traveller sees, what the mission pays, and what the Pulse usually gives at each tier.
+
+**Tier 0: Ordinary.** *Pulse usually Background–Active (8–11).*
+- **The road:** busy with pilgrims, rice-tax carts, iron-sand pack-horses. Inns full, ferries on schedule. The Night Parade is a story told to children.
+- **The villages:** offerings fresh, straw ropes renewed at New Year. Yokai trouble is local, one at a time, and the priest knows how to handle it.
+- **The sea:** the strait is winter-rough but working; Isohama's divers go out on calm days.
+- **The court and Teruko:** in office, behind the Saikū's walls, writing poems.
+- **What the mission pays:** the ordinary costs (PP, the outsider reading, Myth Pressure). Nothing pushes from outside.
+
+**Tier 1: Restless.** *Pulse usually Active–Restless (10–13).*
+- **The road:** pilgrim traffic doubles toward the great shrines. Prices for salt, charms and sake up by a quarter. Tremors at night that nobody mentions in the morning.
+- **The villages:** shrines busy; the onmyōji are booked. Birds behave wrongly (crows silent at dusk, cranes flying the wrong way). Thin hours last an hour longer. **The Parade has walked twice this month** somewhere within a day's ride.
+- **The sea:** fog banks out of season; one boat in ten comes back with a story.
+- **The court and Teruko:** the Bureau of Divination reads omens and says nothing in public. Teruko knows. She has stopped sleeping well.
+- **What the mission pays:** +1 on encounter frequency; Myth Pressure nudges come with weather (nudge 1) more often; the outsider reading is sharper (strangers arriving as omens start).
+
+**Tier 2: Summer Flies.** *Pulse usually Restless–Summer Flies (12–15).*
+- **The road:** **tolls** at fords and passes, some to men, some to kappa and tengu. A bridge down in every second valley. The first burned hamlets; the first refugees carrying their ancestor tablets.
+- **The villages:** each picks a patron: the river kami or the kappa, the shrine or the tengu. **They pay both and are punished by both.** Strangers are suspects: who brought this?
+- **The sea:** an out-of-season typhoon has wrecked a fleet; Isohama lost boats. The strait runs one day in two. **Sōta's mother will not let him out for strangers without a reason the sea would accept.**
+- **The court and Teruko:** **Stage 1, blamed.** Investigators at the Saikū. Her ladies dismissed. She sees them coming and cannot lie to them.
+- **What the mission pays:** routes bend and cost days; every kami bargain costs double; reactions −1 for foreigners (blame); **masked men walking in this are read as the cause.**
+
+**Tier 3: Unseated.** *Pulse usually Summer Flies–Unseated (14–17).*
+- **The road:** **oni companies hold passes** and charge tribute in rice and people. Bandits in oni masks, and real oni wearing bandits. The great quake has come: a castle town burned for three days. Snow in the lowlands a month early.
+- **The villages:** famine starting. Refugees on every road; shrines refuse the polluted at the torii (PP 3+). Tsukumogami wake in abandoned houses and will not take new owners.
+- **The sea:** the strait is unworkable one day in three. The divers say the island daughters are angry.
+- **The court and Teruko:** **Stage 2, stripped.** A fifteen-year-old princess is divined as saiō; the Calamity worsens. Teruko is under escort to the capital and formally nobody. **Electra's command threshold** (§14.5).
+- **What the mission pays:** travel is a military problem; **every Pulse has a disaster in it about half the time**; the Hand's skills become the most useful thing in the province, and the most suspected.
+
+**Tier 4: The Long Night.** *Pulse usually Unseated–Long Night (16–19).*
+- **The land:** sunrise three hours late, sunset early. Rivers freeze at the fords. The harvest has failed; stores are being eaten.
+- **The spirits:** the Parade walks every night. **Myth Pressure clocks tick double.** Oni lords hold towns as fiefs.
+- **The people:** mass death in the hill provinces. Storm cults and Sun cults in open war; **a storm-god priest is lynched or crowned depending on the village.**
+- **The court and Teruko:** **Stage 3, the cave faction** moves to march her to an Iwato.
+- **What the mission pays:** Nym's and Lorne's office becomes either the realm's hope or its scapegoat. The jewel quest becomes a footnote to survival unless they make it the cure.
+
+**Tier 5: Iwato.** *Pulse usually Long Night–Iwato (18+).*
+- **The land:** perpetual dusk. No crops, no calendar.
+- **The spirits:** every rhyme is casting. The lesser gods roar like summer flies; the gods act in sight.
+- **The court and Teruko:** the rite at the cave, or the end.
+- **What it is:** the climax tier. Reaching it inside the jewel arc makes the cave rite the arc's ending.
+
+### 14.8 Choosing the starting tier (P)
+The tier rises during the arc **from triggers, not a calendar** (§14.2's default pace is withdrawn in favor of this). The triggers likely to fire in a month of the jewel arc:
+- the first **Yashiori kill** on Kozakuran soil (TJ-8 already puts the wardens on that night): +1;
+- **Kashima a month unattended** while Sone hunts the bead: +1;
+- a **Susanoo-clock tick** by whoever plays the role (Nym, Lorne, Kitsuki), possible;
+- a **Pulse cascade** of 7+, possible at tier 2+.
+
+So **expect +2, perhaps +3, over the arc.**
+
+| Start (12 Uktar) | Likely end of arc | What it does to the story |
+|---|---|---|
+| **0** | 2, maybe 3 | **The vision is the first domino.** Onmyōji can date the first omens to the dawn of 12 Uktar, and so can Electra's file. The mission is the obvious suspect, which sharpens guilt and the storm-sect readings. Teruko is probably still in office when they pass, so the meeting is through the blinds. Smallest spectacle, strongest causation. |
+| **1** *(recommended)* | 3, maybe 4 | **Something was stirring before the vision.** The vision showed a struggle already under way, and the omens predate it by weeks, so the cause stays ambiguous. The mission arrives into rising unease and watches it break. **Teruko is stripped around the return (S5) and Electra's command opens when she arrives.** The cave rite stays out of reach, which leaves Teruko's crossing for the next arc. The longest visible escalation curve for the ecology rolls. |
+| **2** | 4, maybe 5 | **Kozakura was already in trouble in the autumn.** The mission walks into a crisis not of its making: less guilt, more chaos. Teruko is stripped before the island (S3–S4), so Electra's command opens on arrival. **The cave rite becomes reachable inside this arc**, and may become its ending. The jewel quest competes with survival. |
+| **3** | 5 | **In medias res apocalypse.** Teruko already on the road, oni holding passes from the first day, Electra commanding from the moment she lands. The cave rite is the arc's climax. The biggest swing, and it risks swamping the jewel. |
+
+**Or roll it:** 3d6 lower median at 12 Uktar: ≤8 → 0 (≈28%), 9–10 → 1 (≈41%), 11–12 → 2 (≈26%), 13+ → 3 (≈6%).
