@@ -51,7 +51,7 @@ Deviations: adventure-arc-builder not loaded; this is a design document, not yet
 | K2 | Kusanagi's fealty feeds the Pale Name. Her half-second vision of Arik as Susanoo (Yoshitoshi iconography) keeps four readings open forever. The coldest one is adopted alongside: the Fourth Tail showed her the image to get the kneeling, because a sworn host is a protected host. | Kusanagi page | S |
 | K3 | The Atsuta box holds the wrong sword. Opening it tells Kusanagi someone looked. | Kusanagi page | S |
 | K4 | Kusanagi's shrine blade carries **the Sickness**: drawn near a reigning sovereign, 1 Con damage per hour. She never draws it in Arik's hall. | Kusanagi page | S |
-| K5 | Nym Esharan (elf Cleric 14) and Lorne Ashby (half-elf Cleric 13), Trickery/Death, serve the Storm King's office. **Arik does not know he has priests.** | LOG-832; Hand roster | R (Chad) |
+| K5 | Nym Esharan (elf **woman**, Cleric 14) and Lorne Ashby (half-elf man, Cleric 13), Trickery/Death, serve the Storm King's office. **Arik does not know he has priests.** | LOG-832; LOG-855 (Nym is a woman, overriding the rolled male); Hand roster | R (Chad) |
 | K6 | Forward note, not ruled: when Arik finds out, he takes the Emperor-of-Mankind line. Worship is denied as a rule, and these priests are a sanctioned exception. | LOG-832 | Open (Chad) |
 | K7 | Enma-Ō stays in the cosmology. His hells and Susanoo's Root Country are separate afterlives. Oni are Enma's wardens, and the Hand wears their faces. Whether Enma notices is an open hook. | LOG-832 | R (Chad), hook open |
 | K8 | **Yashiori**: +2 elven dagger. Eighth Straining (confusion on hit, 3/day, Will DC 21). The Root Country (the slain can't be animated for 24 h). Drunk Serpent (crit 15–20 vs confused or sleeping targets). **Appetite:** wetted at dawn with strong drink or 1 hp of the bearer's blood, offered in the Storm King's name; a missed dawn puts it dormant. It came to Nym "with a list of the dawns it had never missed", from "a Storm's Edge house in Kara-Tur" where it cut the eight seals on the vats at the Orochi festival. Thay will pay to recover or destroy it. Enma's wardens "may object". | 05b | S (authored card) |
@@ -65,7 +65,9 @@ Deviations: adventure-arc-builder not loaded; this is a design document, not yet
 | K16 | Electra is Arik's plenipotentiary for the Thayan parley, Uktar–Nightal 1498, Eastern Anauroch, under a sealed, issue-specific commission. Arik does not attend. | LOG-704, LOG-767 | R (Chad) |
 | K17 | Electra's current mechanics are the **July** Complete Character Sheet: Wizard (War Magic) 14 / Rogue (Mastermind) 5 / Aberrant Mind 3, CR 18, Commander of Bloodaxe Military Intelligence, Staff of Thunder and Lightning. The April page stays her narrative home (divine scar, personas, Choice Journal). | Chad, 6 Oct 2026; Change Log 6 Oct | R (Chad) |
 | K18 | **Electra notices the vision.** | Chad, 6 Oct 2026 | R (Chad) |
-| K19 | **Electra holds it and opens a file.** She does not report to Arik. She possibly goes east after the priests. | Chad, 7 Oct 2026 | R (Chad); the pursuit is conditional |
+| K19 | **Electra holds it and opens a file.** She does not report to Arik. She goes east after the priests **after the Thayan parley resolves**, and **she tags Nym** at the Crown before they leave. | Chad, 7 Oct 2026 (file); 7 Oct 2026 (after the parley; the tag) | R (Chad) |
+| K20 | **The office has four priests**, all in the Menagerie: **Quavein Orlzynn** ("the Bursar": drow, Cleric 17, Captain of Division I; War/Water, *the warrior face*: Susanoo with the sword drawn, the storm on the sea), **Osmund Tarrow** (human, Cleric 12, his lieutenant; Trickery/Death, *the quiet face*), **Nym** (Lt VII under Naevys Tolúrin, "the Barefaced") and **Lorne** (Lt IV under Aerendyl Ostahr). Quavein's private ledger "may be kept for the office too" (hook). | Menagerie roster rulings, 5–6 Oct 2026 | R (Chad) |
+| K21 | **Raising the dead is Nym's conviction, not the office's law.** Nym holds that the dead belong to the Root Country and that keeping them there is *her* office. Lorne and Osmund raise the dead and are not heretics. Nym enforces her view with Yashiori's 24-hour ban and her release **Eight Vats** (eight targets in drunken sleep, automatic criticals, her kills unraisable for a year and a day). It resolves when Arik learns he has priests. | LOG-854, LOG-855 | R (Chad) |
 
 **Myth anchors used (real-world sources, adapted as Kara-Turan):**
 - **The oath-contest (ukei).** Amaterasu chewed Susanoo's ten-span sword and breathed out three goddesses. Susanoo chewed the jewel-strings from her hair and arms and breathed out five gods. She claimed the five as hers, because the jewels were hers. He declared he had won (gentle daughters from his sword proved a clean heart), then wrecked her hall.
@@ -83,8 +85,8 @@ Deviations: adventure-arc-builder not loaded; this is a design document, not yet
 
 - **When:** dawn, **12 Uktar 1498 DR** (D, TJ-1 = 12). The rite is Yashiori's daily wetting. Nothing else is needed to trigger it.
 - **Where (G):** **the Red Saddle**, a sandstone ridge 14 miles west-south-west of the Crown of Eight Springs and outside Jörmun's 10-mile line (R5). It runs half a mile north to south and is 60 ft wide at its crown. The **rite-stone** is a flat slab of red sandstone 4 ft by 3 ft at the highest point, tilted a hand's breadth toward the east. Nym chose it because it faces the dawn over open plain with nothing in the way.
-- **Who (D, TJ-2 = 11):** **both priests witness it.** Nym kneels at the slab. Lorne crouches six paces behind and to his right, the witness's place, out of the line of the dawn.
-- **What Lorne sees differs.** On the same bout, **Lorne sees the maned figure throwing the pale one.** Nym sees the pale one bending the maned one to the belt. Neither is lying. This seeds a schism inside a two-man sect (§3.3, §8 CP6).
+- **Who (D, TJ-2 = 11):** **both priests witness it.** Nym kneels at the slab. Lorne crouches six paces behind and to her right, the witness's place, out of the line of the dawn.
+- **What Lorne sees differs.** On the same bout, **Lorne sees the maned figure throwing the pale one.** Nym sees the pale one bending the maned one to the belt. Neither is lying. This seeds a schism between the office's priests (§3.2, §8 CP6).
 - **Duration:** one held breath, about 20 seconds by the hail's own fall time. It does not repeat. Another wetting at the same stone the next dawn produces ordinary weather.
 
 ### 2.2 The beats (physical, in order)
@@ -97,7 +99,7 @@ Deviations: adventure-arc-builder not loaded; this is a design document, not yet
 | 4 | **Lightning that strikes, then refuses.** Bolts drop from cloud that was not there a breath before, stop a hand's width above the ridge, hang crackling, and withdraw upward. Three of them. | Three fused glass spots on the ridge, each the size of a palm, where the hanging bolts heated the sand without touching it. | Spellcraft DC 22: no spell signature. The effect reads as weather that changed its mind. |
 | 5 | **Two figures wrestle in the storm-front**, over the plain to the east, as tall as the Crown's wall is long. Sumo grammar: a belt grip, knees bent, one driving in. | Nothing physical. | Knowledge (religion) DC 25 / Theology-14: gods wrestling for a land, the first bout. |
 | 6 | **The bout breaks off** at the moment of the throw. Storm, figures and wind are gone at once. | Silence, and the *tik* of melting hail. | — |
-| 7 | **The blade takes both offerings.** The rice spirit is gone from Yashiori's edge, and there is blood on it, Nym's, though he did not cut himself. A shallow nick sits on the heel of his left glove's thumb, through the silk. | 1 hp gone from Nym, unexplained. | Heal DC 15: a self-inflicted angle, from his own blade. |
+| 7 | **The blade takes both offerings.** The rice spirit is gone from Yashiori's edge, and there is blood on it, Nym's, though she did not cut herself. A shallow nick sits on the heel of her left glove's thumb, through the silk. | 1 hp gone from Nym, unexplained. | Heal DC 15: a self-inflicted angle, from her own blade. |
 | 8 | **The grip is bitten.** Two crescents of small dents are pressed into Yashiori's amber bone grip, an upper and a lower arc, the width of a human mouth. | **Permanent.** The tooth-marks stay. | Heal DC 18 / Physiology-12: a human bite, or something with a human jaw. |
 
 **The two figures (for the GM's eye; the prose carries it):**
@@ -120,17 +122,17 @@ The Red Saddle ran north to south for half a mile, a spine of broken sandstone s
 
 The air on the ridge was dry enough to split a lip. It smelled of cold stone and old dust, and of the gun oil Lorne worked into his crossbow's swivel every night whether it needed it or not.
 
-Nym Esharan knelt at the slab's western edge with the dawn in front of him.
+Nym Esharan knelt at the slab's western edge with the dawn in front of her.
 
-He was long in the bone and spare through the chest, the build elves of his line carried when they had spent their prime working rather than eating. The Strider suit fitted him close: matte gunmetal plates over a quilted underlayer, the fittings at shoulder and knee done in shakudō gone dark as old bronze. Down the spine ran a single band of guilloche engraving cut by a Forgedeep hand, fine parallel lines that followed the strain through the plates the way water finds a gully. Black silk gloves reached to his elbows, with silver thread worked through them in a pattern that showed only when he turned his wrist to the light. A sling of wax-sealed vials hung at his left hip, eleven of them, each stopper marked with a thumbprint of colored wax. His holy symbol hung at his throat on a plain cord, a disc of black iron filed so flat and clean that it named no god to anyone who looked.
+She was long in the bone and narrow through the hip, spare across the shoulders, the build elves of her line carried when they had spent their prime working rather than eating. The Strider suit fitted her close: matte gunmetal plates over a quilted underlayer, the fittings at shoulder and knee done in shakudō gone dark as old bronze. Down the spine ran a single band of guilloche engraving cut by a Forgedeep hand, fine parallel lines that followed the strain through the plates the way water finds a gully. Black silk gloves reached to her elbows, with silver thread worked through them in a pattern that showed only when she turned her wrist to the light. A sling of wax-sealed vials hung at her left hip, eleven of them, each stopper marked with a thumbprint of colored wax. Her holy symbol hung at her throat on a plain cord, a disc of black iron filed so flat and clean that it named no god to anyone who looked.
 
-He had pushed the mask up onto his forehead for the rite. Zalantar, the Veil's dark wood, carved into an oni's snarl with short horns, tusks and a heavy brow, and lacquered crimson by his own hand. The grain showed pale at the horn-tips, where his thumb rested when he wore it down. Under it his face was narrow and long, high at the cheekbone, his skin the grey-white of birch bark in winter. Black hair was cropped close to the skull so it never caught in the mask's ties. Grey eyes, flecked amber near the pupil. A thin white scar ran from the left corner of his mouth to the hinge of his jaw and pulled that side a fraction tighter when he spoke.
+She had pushed the mask up onto her forehead for the rite. Zalantar, the Veil's dark wood, carved into an oni's snarl with short horns, tusks and a heavy brow, and lacquered crimson by her own hand. The grain showed pale at the horn-tips, where her thumb rested when she wore it down. Under it her face was narrow and long, high at the cheekbone, with a wide, thin-lipped mouth and skin the grey-white of birch bark in winter. Black hair was cropped close to the skull so it never caught in the mask's ties, with a single lock left long behind the left ear and bound in black thread. Grey eyes, flecked amber near the pupil. A thin white scar ran from the left corner of her mouth to the hinge of her jaw and pulled that side a fraction tighter when she spoke.
 
-Lorne Ashby crouched six paces behind him and to the right, out of the line of the dawn, where the rite put its witness. He was a head shorter than Nym and lean as a coachman's whip, with the rounder jaw and heavier brow of his human side and ears that came to a blunt point. He wore his sandy hair tied back with a strip of rawhide. Freckles crossed a nose broken once and set crooked by someone in a hurry. His Stalker suit sat heavier than Nym's: russet-burnished plates with Bloodaxe interlace, beasts biting one another's tails, running in black niello down both vambraces. A hand crossbow rode on a swivel mount at the center of his chest, and the split staff lay across his thighs with both rods locked. His own mask, zalantar as well, hung from his belt by its cord, face down against his hip.
+Lorne Ashby crouched six paces behind her and to the right, out of the line of the dawn, where the rite put its witness. He was a head shorter than Nym and lean as a coachman's whip, with the rounder jaw and heavier brow of his human side and ears that came to a blunt point. He wore his sandy hair tied back with a strip of rawhide. Freckles crossed a nose broken once and set crooked by someone in a hurry. His Stalker suit sat heavier than Nym's: russet-burnished plates with Bloodaxe interlace, beasts biting one another's tails, running in black niello down both vambraces. A hand crossbow rode on a swivel mount at the center of his chest, and the split staff lay across his thighs with both rods locked. His own mask, zalantar as well, hung from his belt by its cord, face down against his hip.
 
 He was humming. Three bars of a Moonsea shanty, the same three, over and over, low enough that the wind took most of it.
 
-"You'll hum through the rite," Nym said without turning his head.
+"You'll hum through the rite," Nym said without turning her head.
 
 "I hum through everything. Gods like a tune."
 
@@ -138,21 +140,21 @@ He was humming. Three bars of a Moonsea shanty, the same three, over and over, l
 
 "Then he can tell me." Lorne shifted his weight off one knee onto the other. *Crunch* went the frost. "He's never told you anything."
 
-Nym let that go. He drew Yashiori from the sheath at the small of his back. A slim leaf-blade of moon-elf work, the length of his hand from wrist to fingertip, its bone grip stained amber all the way through, as if the bone had drunk. The smell came off it the moment it cleared the leather, rice wine, sweet and sour together. He had cleaned the blade after the last wetting and after every one before it, and it had never once smelled of anything else.
+Nym let that go. She drew Yashiori from the sheath at the small of her back. A slim leaf-blade of moon-elf work, the length of her hand from wrist to fingertip, its bone grip stained amber all the way through, as if the bone had drunk. The smell came off it the moment it cleared the leather, rice wine, sweet and sour together. She had cleaned the blade after the last wetting and after every one before it, and it had never once smelled of anything else.
 
-The gourd lay on the slab beside his knee: lacquered black, the size of two fists, full of clear rice spirit he bought from a Shou caravan-master at the Golden Way's western end, at four times what it was worth. He worked the stopper free with his teeth. Then he touched the mask's chin with two fingers of his left hand, the way he did before every casting, and held the blade flat over the stone.
+The gourd lay on the slab beside her knee: lacquered black, the size of two fists, full of clear rice spirit she bought from a Shou caravan-master at the Golden Way's western end, at four times what it was worth. She worked the stopper free with her teeth. Then she touched the mask's chin with two fingers of her left hand, the way she did before every casting, and held the blade flat over the stone.
 
-"In the Storm King's name," he said in Elvish. He said it again in Kozakuran, and the vowels were still wrong.
+"In the Storm King's name," she said in Elvish. She said it again in Kozakuran, and the vowels were still wrong.
 
-He poured. The spirit ran the length of the blade in a thin bright sheet, gathered at the point and fell onto the red stone. *Tip. Tip. Tip.*
+She poured. The spirit ran the length of the blade in a thin bright sheet, gathered at the point and fell onto the red stone. *Tip. Tip. Tip.*
 
 The rim of the sun cleared the plain.
 
-The first hailstone struck the slab beside his knee. *Tik.* It bounced once and lay there, a white bead the size of a pea, in a sky with no cloud in it from one horizon to the other.
+The first hailstone struck the slab beside her knee. *Tik.* It bounced once and lay there, a white bead the size of a pea, in a sky with no cloud in it from one horizon to the other.
 
 Then the rest came down.
 
-They fell in a ring. Nym saw it form: a circle of white an arm's length out from the slab, every stone landing on the line, *tik-tik-tak-tik*, rattling off the gravel and the frost. Inside the ring the ground stayed bare. Outside it stayed bare. Another ring dropped a man's length wider, and the stones were bigger now, grape-sized, cracking where they hit. Then a third. A fourth. The sound built from a patter to a rattle to a long hissing roar, and Lorne said something Nym did not hear. Nym counted. He could not stop himself counting. Five. Six. The sixth ring fell across Lorne's boots and Lorne did not move them. The eighth ring came down fifty feet across, white on the red ridge in the first raw light of the sun, and on its eastern side, dead in the line of the dawn, it stopped short. A gap the width of a doorway. The hail on either side of it lay heaped against nothing, as if it had struck a wall.
+They fell in a ring. Nym saw it form: a circle of white an arm's length out from the slab, every stone landing on the line, *tik-tik-tak-tik*, rattling off the gravel and the frost. Inside the ring the ground stayed bare. Outside it stayed bare. Another ring dropped a man's length wider, and the stones were bigger now, grape-sized, cracking where they hit. Then a third. A fourth. The sound built from a patter to a rattle to a long hissing roar, and Lorne said something Nym did not hear. Nym counted. She could not stop herself counting. Five. Six. The sixth ring fell across Lorne's boots and Lorne did not move them. The eighth ring came down fifty feet across, white on the red ridge in the first raw light of the sun, and on its eastern side, dead in the line of the dawn, it stopped short. A gap the width of a doorway. The hail on either side of it lay heaped against nothing, as if it had struck a wall.
 
 The wind rose from every side at once.
 
@@ -160,7 +162,7 @@ It came up off the plain with a sound Nym had heard before, once, a hundred year
 
 Lightning dropped out of a sky that had no business holding it.
 
-The bolt came straight down at the ridge, blue-white, and stopped. It hung a hand's width above the sand forty feet north of the slab, a rope of fire hissing and spitting, *krrrrrsssh*, and the stink of it filled Nym's mouth, struck flint and hot iron. Every hair on his arms lifted under the silk. Silver thread sparked at his wrists. Then the bolt went back up the way it had come, slowly, the way a hand withdraws from a dog that has not decided whether to bite. A second came down south of him and did the same. A third hung over the gap in the eighth ring and quivered there, humming at a pitch he felt in his back teeth, and withdrew.
+The bolt came straight down at the ridge, blue-white, and stopped. It hung a hand's width above the sand forty feet north of the slab, a rope of fire hissing and spitting, *krrrrrsssh*, and the stink of it filled Nym's mouth, struck flint and hot iron. Every hair on her arms lifted under the silk. Silver thread sparked at her wrists. Then the bolt went back up the way it had come, slowly, the way a hand withdraws from a dog that has not decided whether to bite. A second came down south of her and did the same. A third hung over the gap in the eighth ring and quivered there, humming at a pitch she felt in her back teeth, and withdrew.
 
 Out on the plain, in the storm-front the wind had raised, two shapes were wrestling.
 
@@ -178,11 +180,11 @@ On the ridge the hail lay in eight rings around the slab and started to melt. *T
 
 Nym looked down at Yashiori.
 
-The rice spirit was gone from the blade. Every drop of it. Where it had run, a thin dark line of blood lay along the edge, from the heel to the point, and when he turned his left hand over there was a nick in the heel of the thumb, through the silk, shallow and clean. He had not felt it go in.
+The rice spirit was gone from the blade. Every drop of it. Where it had run, a thin dark line of blood lay along the edge, from the heel to the point, and when she turned her left hand over there was a nick in the heel of the thumb, through the silk, shallow and clean. She had not felt it go in.
 
-He turned the dagger to see the grip. Two crescents of small dents had been pressed into the amber bone, an upper arc and a lower one, the span of a mouth. They had not been there when he drew it.
+She turned the dagger to see the grip. Two crescents of small dents had been pressed into the amber bone, an upper arc and a lower one, the span of a mouth. They had not been there when she drew it.
 
-Behind him the frost crunched. Lorne had stood. His face had gone the color of the ash in a cold fire, and his right hand rested on the crossbow's swivel without seeming to know it was there.
+Behind her the frost crunched. Lorne had stood. His face had gone the color of the ash in a cold fire, and his right hand rested on the crossbow's swivel without seeming to know it was there.
 
 "It threw him," Lorne said.
 
@@ -196,19 +198,19 @@ They looked at each other across six paces of melting ice.
 
 "Well," Lorne said at last. "One of us is wrong."
 
-"Or neither of us is." Nym stood. His knees cracked; he had knelt longer than he thought. He walked to the eighth ring and stopped at the gap. Fifty feet out from the slab, the hail heaped on either side of it in two neat drifts, the space between them bare gravel with the frost still on it. The ice had not even dusted it. He put his boot in the gap, then took it out again.
+"Or neither of us is." Nym stood. Her knees cracked; she had knelt longer than she thought. She walked to the eighth ring and stopped at the gap. Fifty feet out from the slab, the hail heaped on either side of it in two neat drifts, the space between them bare gravel with the frost still on it. The ice had not even dusted it. She put her boot in the gap, then took it out again.
 
-"Bearing," he said.
+"Bearing," she said.
 
-Lorne came up beside him, unclipped the hand crossbow from its swivel and sighted down the stock through the gap at the horizon, the way he would lay a bolt on a man three hundred yards out. He held it a long time.
+Lorne came up beside her, unclipped the hand crossbow from its swivel and sighted down the stock through the gap at the horizon, the way he would lay a bolt on a man three hundred yards out. He held it a long time.
 
 "East," he said. "A hand's width north of east. Nothing out there for a thousand miles but the Hordelands." He lowered the bow. "And past them, the sea."
 
-Nym went back to the slab. He knelt, picked up Yashiori and worked the oiled packet out of the sheath's lining, where it had ridden since the day the dagger came to him. Forty leaves of rice paper folded small, each one covered in a narrow column of brush-script, one entry to a dawn. A list of the dawns it had never missed. He had read every leaf. He unfolded the first one, the oldest, and held it to the light. In the top corner, faint and brown, an inkstone seal: eight vats in a ring, and a ninth cup set in the middle.
+Nym went back to the slab. She knelt, picked up Yashiori and worked the oiled packet out of the sheath's lining, where it had ridden since the day the dagger came to her. Forty leaves of rice paper folded small, each one covered in a narrow column of brush-script, one entry to a dawn. A list of the dawns it had never missed. She had read every leaf. She unfolded the first one, the oldest, and held it to the light. In the top corner, faint and brown, an inkstone seal: eight vats in a ring, and a ninth cup set in the middle.
 
-He folded the packet away. Then he reached up and drew the mask down over his face, and the crimson snarl settled into place, and the zalantar was cold against his skin.
+She folded the packet away. Then she reached up and drew the mask down over her face, and the crimson snarl settled into place, and the zalantar was cold against her skin.
 
-"Pack the gourd," he said. "We're going east."
+"Pack the gourd," she said. "We're going east."
 
 Lorne stood a moment longer at the gap in the ring, looking out at the plain where the ground had or had not split. Then he hung the crossbow back on its swivel, crouched for the gourd, and started down the ridge after the priest with the shanty gone out of his mouth.
 
@@ -260,14 +262,14 @@ Lorne stood a moment longer at the gap in the ring, looking out at the plain whe
 - **Her betrayal-potential ladder** (July sheet, Strain stage): denser journal entries and more requests to be checked. **Holding a secret alone is exactly the condition her sheet says the sleeper programming thrives in.** It doesn't fire on its own, but it moves the needle.
 - **Jin.** If Jin learns a Military Intelligence commander has a file on his priests, his position is simple: the seat's business, handled by the seat's servants. He may not mind. He will not forget.
 
-**The pursuit east ("possibly," per Chad).** Proposed shape (P). Chad sets whether and when.
+**The pursuit east: RULED (Chad, 7 Oct 2026): she goes after the Thayan parley resolves, and she tags Nym before the priests leave.**
 
-1. **The tag.** Before the priests leave (13 Uktar by wind walk), she brushes Nym at the Crown in a borrowed face for one touch. That touch is the prior contact her soul-tracing needs (Soulthread Trace, narrative codex). Otherwise she follows the bearing and the dawn-list seal, as they do.
-2. **The commission problem.** Her sealed commission covers the Thayan matter, Uktar–Nightal 1498 (K16), and the dual-assent structure ties her to the parley.
+1. **The tag (ruled).** On 12 Uktar, after the dawn, she brushes Nym at the Crown in a borrowed face for one touch: a jostle in the commissary line, a hand on a sleeve. That touch is the prior contact her soul-tracing needs (Soulthread Trace, narrative codex). From then on she can find Nym anywhere on the plane, along with direction, distance and **the state of Nym's soul**, which she can read as warm, cold, sharp or under pressure. **Nym will not know she was touched.** A Spot DC 30 the moment it happens is her only chance.
+2. **The timing (ruled: after the parley).** Her sealed commission covers the Thayan matter, Uktar–Nightal 1498 (K16). She keeps faith with the seal and goes only when the parley is resolved. The rows below are kept for the record; the first is canon.
 
 	| When she goes | What it means |
 	|---|---|
-	| **After the parley resolves** (default, P) | She keeps faith with the seal. She reaches Kozakura weeks behind the priests, likely meeting them **on the return (S5)** or at the island. She becomes **a pursuer and a protector at once.** |
+	| **After the parley resolves** (**RULED**) | She keeps faith with the seal. She reaches Kozakura weeks behind the priests, likely meeting them **on the return (S5)** or at the island. She becomes **a pursuer and a protector at once.** |
 	| **Mid-parley** | She breaks the commission's scope. Jörmun and Cha Hae-In notice. **It is a breach of Arik's seal to protect Arik's secret from Arik**, and that is a scene of its own when it surfaces. |
 	| **Doesn't go** | The file stays in her hand. She is in the room for the discovery (§9) with a dossier she has kept from him. |
 
@@ -299,11 +301,16 @@ The design rule: **every physical residue in §2.2 is consistent with every read
 **The cold reading, adopted alongside (as Kusanagi's Fourth Tail reading is):** the **Orochi remnant** staged it, or bent it. The island's rule, *nothing leaves*, is the only thing keeping the tooth-marked bead out of the serpent's reach. A bead in motion can be taken. The eight shadows behind the maned figure are the tell for anyone who wants to read it this way. The bite on the grip could be Susanoo's, or the bite of something that remembers being bitten. **Consequence:** the remnant has an interest in the quest succeeding as far as the island's shore and failing everywhere after.
 
 ### 3.1 How each witness reads it (defaults; play can move them)
-- **Nym** holds reading 4 and lets the others stand. To him the bout is an order without words: the bridle needs the bead.
+- **Nym** holds reading 4 and lets the others stand. To her the bout is an order without words: the bridle needs the bead.
 - **Lorne** holds reading 3, darkened by what he saw. The temperament won, or will. The office is not being broken; it is breaking its holder. If that is true, the bead feeds the maned one, and Lorne has to decide which of the two figures he serves.
 
-### 3.2 The schism seed (from TJ-2)
-A sect of two now has two theologies. Nothing forces it into the open early. Each stage in §5 lists one beat where it can surface. **Track it as a clock (G): "The Two Winners", 0/4.** It advances when the priests act on different readings in the same scene, and when it fills, the sect splits. Lorne then serves the temperament: the rage, the grief, the appetite. That is still the same office, so his spells still come. The open question for the discovery scene becomes **which of his priests Arik sanctions.**
+### 3.2 The schism: The Two Winners, on top of the quarrel over the dead (TJ-2 + K21)
+The office already has four priests (K20). Nym and Lorne already disagree about the dead (K21): Lorne raises them; Nym keeps them in the Root Country, and her dagger and her release make sure of it. **The vision gives that quarrel a theology.**
+- **Nym's reading (the bridle):** the pale one is breaking the office's temperament to the belt. A god who holds his own grief in check keeps his dead where they belong. **Her conviction about the dead is the bridle's doctrine.**
+- **Lorne's reading (the throw):** the temperament threw its holder. The office is grief, rage and appetite, and its dead get up when it needs them. **His raising is the throw's doctrine.**
+- **Osmund** raises as Lorne does, so he leans Lorne's way without having seen anything. **Quavein**, the warrior face and the only captain-rank priest, keeps the ledger and has not been told. **Whoever tells Quavein first gets the office's ranking priest as a judge** (CP7).
+
+**Clock (G): "The Two Winners", 0/4.** It advances when Nym and Lorne act on different readings in the same scene, and **whenever one of them raises or forbids the raising of the dead in the other's presence.** When it fills, the office's priests split. The likely line is **Nym** against **Lorne and Osmund**, with **Quavein** deciding where the weight falls. Both factions still draw spells, because the office has never ruled. **The discovery scene then has to answer two questions at once: which priest Arik sanctions, and whose doctrine of the dead he backs.** Per K21, that answer decides whether Nym was the office's voice all along.
 
 ---
 
@@ -439,7 +446,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 - **The shrine (Okitsu-miya):** a plain cypress hall, 24 ft by 16 ft, built against the foot of a cluster of granite boulders the size of houses at the 300-ft contour, with a roof of cypress bark. Light is green and dim at noon. It smells of wet stone, leaf-rot, salt and cedar smoke. The sound is surf below, wind in the canopy, and crows.
 - **The offering field:** among and under the boulders behind the hall, a thousand years of offerings lie where they were set down, never cleared. Bronze mirrors green with age. Iron blades rusted to lace. Gilt-bronze horse-trappings. Gold rings. Glass beads. **Magatama in their thousands.** The ground is a crust of old treasure under leaf mould, about **60 ft by 90 ft**, with boulders for walls and roof. Nothing there has been counted, because counting it would be speaking of it.
 - **The island's four rules (S from Okinoshima, adapted):**
-	1. **No women.** (The Hand rolled five men. Kusanagi cannot land, which keeps her and the Fourth Tail out of Stage 4.)
+	1. **No women.** **Nym cannot land** (K5), nor can Kusanagi, nor Electra in her chosen form (§2.6). See S4 for how the arc handles it.
 	2. **Men strip and wash in the sea** before they set foot on the shingle. They come ashore naked, unarmed and **unmasked**. Kit can be landed afterward only with the resident priest's permission, and he does not give it.
 	3. **Nothing leaves.** Not a pebble, not a leaf, not a drop of the spring water.
 	4. **What is seen is not spoken of.** The island's common name on the mainland is *the Island Not Spoken Of*.
@@ -456,7 +463,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 
 **What he knows:** where the bead lies, roughly (the eastern edge of the field, "where the old ones put the things that bit"). What the daughters asked of the last man who petitioned for something to leave, eighty years ago: they asked for the thing he used most to lie, and he gave it.
 
-**His private thought (for the GM):** *"Washed men with soldiers' backs, and the thin one's knife smells of brewery. The old men said the daughters' father would send for his tooth one day. They didn't say he'd send this."*
+**His private thought (for the GM):** *"A washed man with a soldier's back, and a woman left in the boat who didn't ask to land. The knife he carries smells of brewery, and it isn't his. The old men said the daughters' father would send for his tooth one day. They didn't say he'd send this."*
 
 ---
 
@@ -477,7 +484,7 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 - **Leads in hand:** the bearing (east, a hand's width north), the bitten grip, and the **dawn-list seal**: eight vats in a ring with a ninth cup in the middle, the seal of **Yashio-dono, the Hall of the Eight Strainings** (G).
 - **Identifying the seal:** Knowledge (religion) DC 25 or Theology (Kara-Turan)-14. Or legwork among the Shou caravan-traders at the Golden Way's western end, routed through `hybrid-information-gathering` (Gather Information DC 22, one day, ~40 gp in drink and goodwill). A success gives "a brewing shrine of the storm god in Kozakura's iron country, the house that brews the Orochi festival's sake". A margin of 5+ adds "the festival opens its eighth vat at first frost".
 - **Getting east.** Kozakura is about 5,000 miles away as the wind blows. Four routes:
-	1. **Wind walk (default, the priests alone).** *Wind walk* is a cleric 6th-level spell: Nym can carry himself plus up to four others. At 600 ft per round that is about 68 mph, for up to 14 hours a casting, so roughly **950 miles a day and 5–6 days east**. Storm-god priests riding the wind to their god's country: the fiction does the work. Each day's flight still ends in a dawn rite somewhere on the way.
+	1. **Wind walk (default, the priests alone).** *Wind walk* is a cleric 6th-level spell: Nym can carry herself plus up to four others. At 600 ft per round that is about 68 mph, for up to 14 hours a casting, so roughly **950 miles a day and 5–6 days east**. Storm-god priests riding the wind to their god's country: the fiction does the work. Each day's flight still ends in a dawn rite somewhere on the way.
 	2. **Shadow walk or greater teleport** through **Teodric Halvane** (Wizard 14) or **Durgan Emberlode** (Sorcerer 14). Faster, but it puts more of the Hand into the arc, which brings Jin into it (CP1). Greater teleport needs a destination someone has seen, and none of them has seen Kozakura.
 	3. **The Veil's shadow route** to Kara-Tur, if one exists. SR: Shadow Gate Network GM Reference, not read for this draft.
 	4. **The long road**: the Golden Way through the Hordelands and Shou Lung. That is months, and S2's festival clock runs out first.
@@ -509,22 +516,36 @@ A sect of two now has two theologies. Nothing forces it into the open early. Eac
 - **Schism beat:** Lorne reads the escort as the maned one's favor ("He's seeing us in"). If Nym contradicts him in front of the captain, The Two Winners +1.
 
 ### S4 — The island (Okitsu-no-shima)
-- **Landing.** The boat grounds on the black shingle. Ichiki Shōun stands at the foot of the stair and watches. Every man strips and wades in to the chest. *Misogi*: winter sea, Fort DC 15 or 1d6 nonlethal from cold, which the cold-hardened ignore.
-	- **The masks stay in the boat.** The Hand comes ashore faceless for the first time since they lacquered the wood.
-	- The kit stays too. Yashiori can be landed only by trickery, by stealing it ashore, or with Ichiki's leave, which he refuses (TJ-3).
-- **Without Yashiori the bead is hard to find** (DC 35, §4.1). Getting the dagger ashore is the first real Trickery problem of the arc. Options: Sleight of Hand DC 25 against Ichiki's Spot, wrapped in a hair-knot, or carried in the mouth.
-- **The petition (the lawful path).** At dawn the petitioner stands before the shrine and says why the thing must leave.
-	1. **Ichiki first.** He refuses (Poor). Turning him needs **the truth unadorned**, so any Bluff or magical persuasion fails automatically on the island. A Diplomacy check (DC 25; GURPS reaction re-rolled at +2 if the truth is told whole) succeeds only if the speaker names the office, its holder and the fact that the holder does not know. **For Nym and Lorne that means telling a stranger, out loud, the secret their sect exists inside.**
-	2. **The daughters answer in weather.**
-		- A **flat calm at the shrine** means granted, with a price.
-		- **Wind from the land** means refused; leave with nothing.
-		- **A squall** means the petition is heard but the petitioner lied somewhere, so try again or be refused.
-		- Roll at play: 3d6 + the margin of the Diplomacy check. 3–9 refused, 10–14 squall, 15+ calm.
-	3. **The price (G; Ichiki knows the precedent):** *the thing you use most to lie.* **The masks.** Every petitioner leaves his crimson oni face on the offering field, a lacquered oni among the bronze mirrors.
-		- Consequence: the masks pass out of Enma's warden-faces and into the daughters' keeping (§6.2). The Hand is down two faces.
-		- **Jin and the rest of the Hand must decide whether those masks were Nym's and Lorne's to give.** Each member chose his own wood (K9).
-- **The theft (the other path).** Find the bead by the dew on the grip, take it and go. Ichiki cannot stop them and does not try. He watches, repeats the last word they said, and goes into the shrine to pray. The **Nothing Leaves** curse attaches (§4.1). The sea starts worsening from the moment the boat pushes off.
-- **Schism beat:** if Lorne will not give his mask, the petition fails for him alone. The daughters grant leave to the bead and not to him, and he leaves with the curse's first clause (the Unspoken) on him personally. The Two Winners +1.
+**The problem (K5 + the island's first rule):** Nym, the priest who saw the bridle, carries Yashiori, keeps the dawn-list and is the only one who can find the bead by the dew on the grip. **She cannot land.** The island admits no women.
+
+**The Nym options (CP2b; the GM rules, or the players choose):**
+
+| Option | How it plays | Cost |
+|---|---|---|
+| **A. Lorne lands alone with her dagger** (default) | Nym hands Yashiori to Lorne in the boat. **The man who saw the other winner** washes, wades in, and carries her blade to the daughters' shrine. He finds the bead by the dew. **He chooses which reading he petitions with**, or whether he petitions at all. | The sharpest schism beat in the arc: The Two Winners +2 if he steals, +1 if he petitions on his own reading. Yashiori's dawn rite must be kept by its bearer. **On the island, the bearer is Lorne.** |
+| **B. Nym lands in a changed shape** | *Alter self* or *polymorph* to a man's body. **Rule (P): the island sees a changed shape as a lie** (truth unadorned). Landing in one breaks the daughters' Rule: +2 PP, and the petition's answer drops one step. Illusions such as *disguise self* do not survive the washing at all. | She can still find the bead. She can never win a clean leave. Under the sea-curse rules, a stolen bead brings the holder the **Feed**, which is the opposite of her own reading. |
+| **C. Nym petitions from the waterline** | She stands in the surf below the tide-line, which is not the island, and petitions at dawn from the sea. Ichiki can carry her words up the stair, but only if she has turned him (the truth unadorned, told to a priest who refused her). | The daughters' answer comes one step harsher; they hear a woman from the sea, and it is their father's priest asking. **The price is still a mask, and hers stays in the boat**, so Lorne must give his or no leave is granted. |
+| **D. Electra's true form** (only if she has caught up; P) | Electra lands **in her true shape: grey, featureless, neither man nor woman.** The island allows it, because the shape is no lie. She does it by **dropping every face she owns**, as she did before the angel. | She lands as the faceless one (*noppera-bō*) in a realm that knows the name. Myth Pressure ticks on her hard. **Timing makes this unlikely:** she leaves after the parley, so she usually arrives at S5. |
+
+**Landing (whoever lands).** The boat grounds on the black shingle. Ichiki Shōun stands at the foot of the stair and watches. Every man who lands strips and wades in to the chest. *Misogi*: winter sea, Fort DC 15 or 1d6 nonlethal from cold, which the cold-hardened ignore.
+- **The masks stay in the boat.** Whoever lands comes ashore faceless.
+- The kit stays too. Yashiori can be landed only by trickery, by stealing it ashore, or with Ichiki's leave, which he refuses (TJ-3). Options: Sleight of Hand DC 25 against Ichiki's Spot, wrapped in a hair-knot, or carried in the mouth.
+- **Without Yashiori the bead is hard to find** (DC 35, §4.1).
+
+**The petition (the lawful path).** At dawn the petitioner stands before the shrine and says why the thing must leave.
+1. **Ichiki first.** He refuses (Poor). Turning him needs **the truth unadorned**, so any Bluff or magical persuasion fails automatically on the island. A Diplomacy check (DC 25; GURPS reaction re-rolled at +2 if the truth is told whole) succeeds only if the speaker names the office, its holder and the fact that the holder does not know. **For whichever priest petitions, that means telling a stranger, out loud, the secret the office's priesthood exists inside.**
+2. **The daughters answer in weather.**
+	- A **flat calm at the shrine** means granted, with a price.
+	- **Wind from the land** means refused; leave with nothing.
+	- **A squall** means the petition is heard but the petitioner lied somewhere, so try again or be refused.
+	- Roll at play: 3d6 + the margin of the Diplomacy check (−3 for Option C). 3–9 refused, 10–14 squall, 15+ calm.
+3. **The price (G; Ichiki knows the precedent):** *the thing you use most to lie.* **The masks.** Every petitioner leaves his crimson oni face on the offering field, a lacquered oni among the bronze mirrors.
+	- Consequence: the masks pass out of Enma's warden-faces and into the daughters' keeping (§6.2). The Hand is down a face for each petitioner.
+	- **Jin and the rest of the Hand must decide whether those masks were theirs to give.** Each member chose his or her own wood (K9).
+
+**The theft (the other path).** Find the bead by the dew on the grip, take it and go. Ichiki cannot stop them and does not try. He watches, repeats the last word they said, and goes into the shrine to pray. The **Nothing Leaves** curse attaches (§4.1), and the sea starts worsening the moment the boat pushes off.
+
+**Schism beat:** if Lorne lands alone (Option A), **what he does at the shrine is the schism.** If he petitions on Nym's reading, the Two Winners clock holds. If he petitions on his own, +1. If he steals, +2, and Nym learns in the boat that her blade came back with a stolen tooth.
 
 ### S5 — The return (strait → Kozakura → west)
 Everyone who became aware at S2 is now moving (§6 for their methods).
@@ -655,6 +676,8 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 | CP4 | **Kusanagi** | Heavy | **Involve her:** she opens doors in Kozakura, and Hiruta and Kitsuki know her old name. But she cannot land on the island, **the Fourth Tail feels the bead within 60 ft**, and she is Arik's sworn retainer: **the secret reaches Arik early.** **The Atsuta box** shows the bead's resting place without the dawn-list leads, but opening it tells Kusanagi someone looked (K3), which also brings the discovery early. **Leave her out:** slower, safer. |
 | CP4b | **The way home** | Medium | **Through Eastern Anauroch** (fast, wind walk, home ground): every dragon within 60 ft knows (Scale Remembers), and Jörmun may reach Arik first. **Round it** (slower, through the Moonsea or by sea): Calloway's ground, and days added to every pursuer's clock. |
 | CP5 | **Delivery** (S6) | Terminal | **Place it in his hand** → forces the discovery and completes the pledge if he closes his hand. **Enshrine it in his name and say nothing** → the office is fed, the holder never receives it, nothing is registered, the secret holds. That is the sect choosing the seat over the man, which Jin would call the one sin of the office. |
+| CP7 | **Quavein** (K20) | Heavy | **Tell the Bursar.** The office's captain-rank priest, the warrior face, may claim the quest, bless it, or write it in his black book as a debt. **Whoever tells him first gets him as the schism's judge.** **Keep it from him:** if he learns from his ledger, which is likely, he collects. |
+| CP2b | **Nym and the island** (S4) | Heavy | Lorne lands with her dagger / Nym lands in a changed shape / Nym petitions from the waterline / Electra's true form. See S4. |
 | CP6 | **The Two Winners** (§3.2) | Heavy, slow | When the clock fills: does Lorne leave, stay and serve the temperament inside the sect, or get brought back? The discovery scene then has to answer **which priest Arik sanctions**. |
 
 ---
@@ -728,7 +751,10 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 6. **Builds (SR, Phase 6 pipeline):** Gozu and Mezu, the white deer, the wakes, Sone, Kitsuki, Calloway, sohei.
 7. **The Veil shadow route to Kara-Tur** (S1 option 3): the Shadow Gate Network page was not read for this draft.
 8a. ~~Electra's choice~~: **RULED, she holds it and opens a file** (K19).
-8b. **Electra's pursuit east** (§2.6): whether, and when (after the parley, mid-parley, or not at all). The tag on Nym at the Crown, yes or no.
+8b. ~~Electra's pursuit east~~: **RULED, she goes after the parley and tags Nym** (K19). Open: the parley's length, which sets her arrival stage, normally S5.
+8d. **Nym and the island** (CP2b, S4): which option is default. I propose A, Lorne lands with her dagger.
+8e. **The changed-shape rule** (S4, Option B): does the island treat *alter self* or *polymorph* as a lie? And does Electra's true form count as neither man nor woman (Option D)?
+8f. **Quavein** (CP7): does anyone tell the Bursar, and does his ledger already know?
 8c. **Envoy reading of Electra** in Kozakura (primer, P).
 8. **Adventure-arc-builder:** if this should become a playable module, run it through the Notion adventure-arc-builder next. This document is its design brief.
 
