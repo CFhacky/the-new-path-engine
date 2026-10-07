@@ -533,11 +533,17 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 	- **Sōta's *Unfinished* status clears.** His story was finished by someone else's hands, which is the mercy at the end of his thread.
 	- **The completion boon** goes to the one who played the last beat, which is Arik: **The Palace Hours** (below).
 
-**The Palace Hours: the Urashima completion boon (P; full spec at Chad's request, 7 Oct 2026)**
+**The Palace Hours: the Urashima completion boon (RULED, Chad, 7 Oct 2026: keep it, once ever)**
+
+*How it relates to the jewel.* These are **separate rewards from separate sources.** On the lawful path, opening the box gives Arik:
+1. **The jewel (Hagata-no-Tama)**, with all its powers (§4.1): the Pledge, the Bridle, Hail of the Eight Rings, and the always-on layers. **This is the quest's prize.**
+2. **The Palace Hours, once ever.** This is the bonus for completing **Sōta's Urashima story** (the box carried unopened, then opened lawfully by the one it was meant for). It is not a power of the jewel.
+
+On the theft path there is no box and no Urashima completion, so Arik gets the jewel with the Feed and **no Palace Hours.**
 
 *Why this boon.* Urashima's story is about the palace's time against the world's time. He spent three days under the sea and came home to find three hundred years gone. The box held the difference, and opening it let the years out. A completed Urashima myth gives its last actor **one handful of that palace time**: the power to make time run at the palace's rate, once.
 
-*What it is.* A single use, kept until spent, with no expiry. Arik chooses one of two modes when he spends it.
+*What it is.* **Once ever** (ruled). A single use, kept until spent, with no expiry and no recharge. Arik chooses one of two modes when he spends it.
 
 **Mode A: A Day as a Breath** (time compressed: a day inside, a breath outside).
 - **Effect:** Arik and up to eight willing creatures within 30 ft live **a full 24 hours** while the world outside them passes one breath (one round).
@@ -911,7 +917,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 8b. ~~Electra's pursuit east~~: **RULED, she goes after the parley and tags Nym** (K19). Open: the parley's length, which sets her arrival stage, normally S5.
 8d. ~~Nym and the island~~: **RULED (7 Oct): the ban stays; the default is influencing a local** (Option E, Hamaura Sōta).
 8g. **The box rule** (§4.4): an opened box undoes the leave and the opener ages 3d6 × 10 years. Confirm or tune it.
-8h. **The geas** (§4.4): **RULED (Chad, 7 Oct).** Sōta asks; Nym lays it in the boat after the leave (*"into my hands"*). **Nym binds herself: *"into his hands," meaning Arik's.*** The discovery is now forced by the geas. Open: R4 (when it lands in Arik's lane); the Palace Hours boon (§4.4, spec'd 7 Oct, P); Lorne's reading of the surrender.
+8h. **The geas** (§4.4): **RULED (Chad, 7 Oct).** Sōta asks; Nym lays it in the boat after the leave (*"into my hands"*). **Nym binds herself: *"into his hands," meaning Arik's.*** The discovery is now forced by the geas. Open: R4 (when it lands in Arik's lane); Lorne's reading of the surrender. **Palace Hours: RULED, kept, once ever** (§4.4).
 8e. **The changed-shape rule** (S4, Option B): does the island treat *alter self* or *polymorph* as a lie? And does Electra's true form count as neither man nor woman (Option D)?
 8f. **Quavein** (CP7): does anyone tell the Bursar, and does his ledger already know?
 8c. **Envoy reading of Electra** in Kozakura (primer, P).
