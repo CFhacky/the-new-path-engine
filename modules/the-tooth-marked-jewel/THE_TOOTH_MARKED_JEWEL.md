@@ -491,6 +491,39 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 - **Myth Pressure pushes the carrier to open it.** Every night it travels, the carrier rolls Will DC 12 + the Urashima clock, or opens the cord "just to look." For anyone carrying it other than Sōta, it is DC 10.
 - **This is Sōta's tragedy waiting:** his story ends with him opening it. **Whether he carries it, and whether the empire's agent lets him, is the moral weight of the island.**
 
+**The geas (default path; Chad, 7 Oct 2026).** Sōta asks to be bound, and Nym binds him in the boat after the leave.
+
+- **The spell:** *geas/quest* (Cleric 6; Nym prepares it at CL 14).
+	- No save; SR applies, and he has none.
+	- It lasts until the task is done.
+	- If he is prevented from obeying, he takes −2 to every ability score per day, to a cap of −8.
+	- **To break it:** *break enchantment*, *limited wish*, *miracle* or *wish*. *Remove curse* works only at CL 16+.
+	- **Kitsuki Masatane** (Cleric 15) is the one opponent with a real chance: *break enchantment*, 1d20+15 against DC 25, about 55%.
+	- GURPS: Geas (Mind Control), with Compulsion (task) and a Cosmic tie to the box.
+- **Why he asks for it.** Every Kozakuran child knows how the Urashima tale ends. **Once he has been told the truth** (§4.4 levers), he understands what the box will do to him, and asks to be bound so his hands cannot open it.
+	- **Asked for, it is not coercion.** It costs nothing with the island, the daughters or his mother.
+	- **Laid on him unasked,** he finds out when his fingers will not open the cord. Trust ends that moment, Ume hears, and the women divers' network turns on the Hand. The empire loses an asset it never knew it had.
+- **When it is laid: in the boat, after the leave, with the box in his hands.** Laid before the landing, the daughters hear a compelled man and the petition's answer drops a step. Laid after, he petitioned free, and the geas binds only the road home.
+- **The wording (Nym's choice, and a Trickery priest's art):**
+
+	| Wording | Effect |
+	|---|---|
+	| ***"Do not open it. Put it into my hands."*** (default) | It binds him to **Nym**, not to the office. **Lorne hears it** (The Two Winners +1): she has claimed the bead for her side of the quarrel over the dead. |
+	| *"…into the hands of the Storm King's priest."* | Neutral, and Lorne's hands satisfy it as well as hers. |
+	| *"…into the hands of the one who holds the seat."* | He must walk it to **Arik** himself. That forces the discovery scene with a Kozakuran diver standing in the hall. |
+
+- **The geas against the myth.**
+	1. **The geas wins outright.** While bound, Sōta makes **no** nightly Will roll against the cord. He cannot open it.
+	2. **That breaks the Urashima beat.** The myth bites (Primer §2.3): Sōta is *Unfinished* until someone plays the beat.
+	3. **The handover is the recasting.** When he puts the box into Nym's hands, **the role goes with it.** She becomes the one carrying a lacquered box she must never open, and inherits the Urashima clock where it stands.
+	4. **She has no geas.** Each night she carries it she rolls Will DC 12 + the clock (Wis-based; she is a Cleric 14).
+	5. **Her answer, if she takes it:** she lays the same geas on herself. A Trickery priestess binding her own hands is the character beat. *"Do not open it. Put it into his hands."* **His hands means Arik's**, and that wording forces the discovery.
+- **What it does to the opposition:**
+	- **The Orochi remnant** wants the box opened. A bound carrier is useless to it, so **it waits for the handover** and works on Nym.
+	- **Kitsuki** goes after Sōta, not the box: break the geas and the old story does the rest.
+	- **Sone** doesn't care how the bead travels. His bout is for the bead.
+- **What it does to Sōta.** The geas is mercy disguised as compulsion: it is the one thing that keeps him from his story's ending. When it discharges in Nym's hands he is free, *Unfinished*, and his myth has moved on to someone else. His own beat 4 can still come later, through any box. **His story isn't over; it's postponed.**
+
 **Reaction (D, TJ-9 = 8): Poor.** To Isohama, masked foreigners are oni walking (Kozakura Primer §7), and his mother has told him what the last foreigner who asked about *out there* got. He will talk; he will not go.
 
 **Turning him (the agent's work; GURPS reaction re-rolled with these modifiers, or roleplayed):**
@@ -735,7 +768,7 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 | CP4b | **The way home** | Medium | **Through Eastern Anauroch** (fast, wind walk, home ground): every dragon within 60 ft knows (Scale Remembers), and Jörmun may reach Arik first. **Round it** (slower, through the Moonsea or by sea): Calloway's ground, and days added to every pursuer's clock. |
 | CP5 | **Delivery** (S6) | Terminal | **Place it in his hand** → forces the discovery and completes the pledge if he closes his hand. **Enshrine it in his name and say nothing** → the office is fed, the holder never receives it, nothing is registered, the secret holds. That is the sect choosing the seat over the man, which Jin would call the one sin of the office. |
 | CP7 | **Quavein** (K20) | Heavy | **Tell the Bursar.** The office's captain-rank priest, the warrior face, may claim the quest, bless it, or write it in his black book as a debt. **Whoever tells him first gets him as the schism's judge.** **Keep it from him:** if he learns from his ledger, which is likely, he collects. |
-| CP8 | **Hamaura Sōta** (§4.4) | Heavy | **How he's turned** (truth, coin, his own myth, coercion), **who carries the box home** (he does and Myth Pressure pulls the cord; or the agent takes it and the Will save falls to the agent), and **what happens to him after** (a kept asset on the strait, or a spent one who opens it). |
+| CP8 | **Hamaura Sōta** (§4.4) | Heavy | **How he's turned** (truth, coin, his own myth, coercion). **The geas** (default: he asks, Nym lays it in the boat after the leave, worded *"into my hands"*): asked or unasked, and the wording. **Who carries the box after the handover:** Nym inherits the Urashima role and the nightly roll unless she binds herself. **What happens to him after:** a kept asset on the strait, or a spent one. |
 | CP2b | **Nym and the island** (S4) | Heavy | Lorne lands with her dagger / Nym lands in a changed shape / Nym petitions from the waterline / Electra's true form. See S4. |
 | CP6 | **The Two Winners** (§3.2) | Heavy, slow | When the clock fills: does Lorne leave, stay and serve the temperament inside the sect, or get brought back? The discovery scene then has to answer **which priest Arik sanctions**. |
 
@@ -816,6 +849,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 8b. ~~Electra's pursuit east~~: **RULED, she goes after the parley and tags Nym** (K19). Open: the parley's length, which sets her arrival stage, normally S5.
 8d. ~~Nym and the island~~: **RULED (7 Oct): the ban stays; the default is influencing a local** (Option E, Hamaura Sōta).
 8g. **The box rule** (§4.4): an opened box undoes the leave and the opener ages 3d6 × 10 years. Confirm or tune it.
+8h. **The geas** (§4.4): **RULED as the default path (Chad, 7 Oct):** Sōta asks; Nym lays it in the boat after the leave; the wording is *"into my hands"*. The handover recasts the Urashima role onto Nym. Open: whether she binds herself, and with which wording.
 8e. **The changed-shape rule** (S4, Option B): does the island treat *alter self* or *polymorph* as a lie? And does Electra's true form count as neither man nor woman (Option D)?
 8f. **Quavein** (CP7): does anyone tell the Bursar, and does his ledger already know?
 8c. **Envoy reading of Electra** in Kozakura (primer, P).
