@@ -319,3 +319,156 @@ The full entry is in *The Tooth-Marked Jewel* §11.1. In short:
 - **After the claim:** **Takehaya Susanoo-no-Mikoto, Shō Ichii** (Senior First Rank). The plague cults call him **Gozu Tennō**.
 - **How the realm shows the change:** the suffix moves from *-no-Kami* to *-no-Mikoto* and the rank from *mui* to *Shō Ichii* on every shrine tablet and register. This is the Kozakuran form of §7's outsider readings applied to Arik himself.
 - **Myth Pressure:** naming a place (the Susa rhyme from the Izumo Fudoki) is a Token + Act beat for the Susanoo clock (§2.5). Its price is open (jewel doc §11, item 5).
+
+---
+
+## 14. The Calamity: the Summer Flies (P; Chad 7 Oct: "a Ragnarok of a kind")
+
+> *When the Sun hid in the Rock-Cave, the voices of the myriad gods swarmed like summer flies, and every kind of calamity arose.* (Kojiki, the Iwato-gakure)
+
+Kozakura's end-of-the-world story is already written, and the mirror is what ended it. **The Calamity is the cave myth running again:** the Sun is withdrawing, the high order loosens, and the lesser powers fight over the gap. **This is the environment the Tooth-Marked Jewel mission finds** (Uktar–Nightal 1498, Jörmun clock). Nothing in this section has happened in play.
+
+### 14.1 Why the Sun is withdrawing (deliberately ambiguous)
+In the myth, she hid because of Susanoo's offenses. In 1498:
+- the Susanoo seat is waking (the Aspect wrestling the office, the vision of 12 Uktar);
+- the bitten bead is moving;
+- the Yashiori are feeding.
+
+**Nobody can prove the link, and three readings compete:**
+
+| Reader | Reading | What it makes them do |
+|---|---|---|
+| The court and the Bureau of Divination | **Pollution.** Someone has defiled the Sun's house. | They investigate the saiō (§15.4). |
+| The storm sects (Nym's line; the Yakumo-ha) | **The Storm returns.** The rough brother is back, and the Sun is sulking as she did before. | Each claims the coming primacy, and each blames the other's god. |
+| Onmyōji, yamabushi and the old women of the shore | **The cave.** The Sun is in the Rock-Cave again, and it ends the way it ended before: with the mirror at the door. | They look for the mirror (§15). |
+
+The GM may decide the truth privately; the table never gets it for free.
+
+### 14.2 The Calamity track (0–5)
+One realm-wide track. **The tier is the modifier on every ecology roll in Kozakura**: add it as a positive shift to monster-ecology encounter frequency and conflict results (Monster Ecology Generator, Notion `334e8214-84b0-8120-9333-e9ee9656ae4c`; exact procedure SR, from that page).
+
+| Tier | Name | The land | The spirits | The people | The court and Teruko |
+|---|---|---|---|---|---|
+| **0** | Ordinary | Seasonal weather | Rules kept; bargains honored | Ordinary hardship | The saiō in her palace |
+| **1** | Restless | Tremors; out-of-season fogs; birds wrong | Thin hours lengthen by an hour; the Night Parade walks twice a month | Rumor, shrine traffic up, prices rise | Omens read at court |
+| **2** | **Summer Flies** | A typhoon out of season; a sharp quake; **first frost a month early** | **Lesser yokai war over territory** (§14.4). Kami bargains cost double | Villages pick patrons; tolls on the roads; the first burned hamlets | **Stage 1: blamed.** Investigators at the Saikū; her ladies dismissed |
+| **3** | **Unseated** | A great quake (§14.3); snow in the lowlands; the strait unworkable 1 day in 3 | **Oni clans take passes and towns.** Kitsuki-style sects arm. Tsukumogami wake in numbers | Refugees on every road; bandits; famine begins | **Stage 2: stripped.** The release fails (§15.4). Two saiō. **Electra's command threshold (§14.5)** |
+| **4** | **The Long Night** | Sunrise late, sunset early (days 3 hours short); rivers freeze; crops fail | Myth Pressure clocks tick **double**; the Parade walks every night | Mass death; cults of the Storm and of the Sun at open war | **Stage 3: the cave faction** moves to march her to an Iwato |
+| **5** | **Iwato** | Perpetual dusk across the islands | Every rhyme is casting; the lesser gods roar | The realm stops working | The rite at the cave, or the end |
+
+**What raises it (+1 each; the GM tracks it, and every tick is logged):**
+- A tick of **Arik's Susanoo clock** (§2.5) while the clock runs in Kozakura, whoever is acting it.
+- A **Yashiori kill on Kozakuran soil**.
+- **A month with Kashima's keystone unattended** (§14.3) while Sone Takamichi is abroad hunting the bead.
+- A **Wrecked Hall** event: any violent act in a hall of the Sun, by anyone (the myth's own trigger).
+- **The mirror leaving Kozakura** (§15.7): +1 per month she is gone.
+
+**What lowers it (−1 each, and only by a played rite or myth beat, never by time):**
+- A great harae at the Sun's shrine with the saiō present.
+- Kashima's keystone re-pinned (Sone home, or someone takes his duty at Kashima).
+- An **oath-contest** (*ukei*) between the Sun's side and the Storm's side, played in full (the myth's first reconciliation).
+- **The rite at the cave** with the mirror (Teruko) at the door: drops the track **to 0** and ends the Calamity. This is the myth completing.
+
+**Starting tier (P):** 1 at 12 Uktar 1498; the default arc pace reaches **2 by the mission's landfall (S2)** and **3 at S5**, when Electra arrives. Rolls replace this pace once Chad approves the track.
+
+### 14.3 The three disasters and their roots
+| Disaster | Root | Notes |
+|---|---|---|
+| **Earthquakes** | **The great catfish** (*namazu*) under the islands, pinned by Kashima's keystone (*kaname-ishi*) through the hand of Takemikazuchi. | Kashima sent Sone and the white deer after the bead. **Every month the god's attention is abroad, the stone slips.** Opposing Sone has a seismic cost, and killing him has a larger one. Great quake: Reflex DC 20 or 4d6 in a collapsing structure; towns burn after. |
+| **Typhoons** | Susanoo's own weather | Every storm is testimony for the Pale Name (§13). Whether storms count toward the recognition meter: **open** (jewel doc §11, item 5). |
+| **Harsh winter** | The Sun withdrawn | Cold-weather rules from Tier 2; Tier 4 shortens days (fewer daylight travel hours, Survival DC +4). |
+
+### 14.4 The Summer Flies: who fights whom (Tier 2+)
+The lesser powers fight over what the high order no longer holds. Humans are terrain.
+- **Kappa against river kami** for the fords: crossings demand a sacrifice to one side and offend the other.
+- **Tengu against the yamabushi** for the mountain roads: passes close; the tengu take apprentices by force.
+- **Kitsune split:** the zenko (Inari's) keep the rice stores; the yako sell protection and lie about it.
+- **Oni clans** (Shuten-dōji's lineage and the Ōeyama remnants) come down from the mountains and take towns as fiefs; at Tier 3 they field companies. The Akaki Valleys' Red Gate (canon) is the front line in Tenmei.
+- **Tanuki** run the black market in salt, rice and charms.
+- **The Night Parade** splinters into rival processions that meet at crossroads and fight.
+- **Tsukumogami** wake in the abandoned houses of the dead and refuse new owners.
+- **Humans caught in it:** villages pay two patrons and are punished by both; bandits wear oni masks; shrines turn away the polluted refugees (PP, §3.3); onmyōji sell protection that sometimes works.
+
+### 14.5 Electra's command threshold (P)
+At **Tier 3**, when the court strips the saiō and its own remedy fails, the institutions that should run the crisis are visibly broken. From then on, **Electra may take charge of the mission** (the priests, Sōta, any locals bound to it) as its acting commander:
+- the priests accept it on a reaction roll at +4 (the Calamity's evidence), or under her commission's authority if she chooses to reveal it;
+- she can stand where men cannot (behind the saiō's blinds, in the divers' hut);
+- the decision is hers to take and costs her the file's secrecy in part: commanding them means they learn she knew.
+The threshold is a permission, not an obligation. Chad may move it to a different trigger.
+
+---
+
+## 15. Teruko, the saiō: the mirror as a woman (P; character approved in chat 7 Oct, no name check needed)
+
+### 15.1 The premise
+The Yata mirror, the Sun's spirit-seat, has not been looked on in centuries; it sits wrapped in its box at the Sun's Inner Shrine (G: at Watarai, Kozakura's Ise). **The bronze in the box is only bronze now.** Generations ago the mirror's spirit moved into the princess serving it, the way a kami settles into a vessel (*yorishiro*), and it has passed from saiō to saiō since.
+- **The regalia are untouched.** The box is in the shrine, the emperor holds his three treasures, and the dynastic stop condition holds.
+- **The precedent is the founding legend.** Princess Yamatohime carried the mirror across the provinces until the Sun chose Ise; her title was ***mitsueshiro*, "the august staff-substitute,"** the staff the god walks with. That is what Teruko has become.
+- **Almost nobody knows.** Fewer than ten people: the high priest at Watarai, two court diviners, the emperor, and Teruko.
+
+### 15.2 Who she is
+**Princess Teruko** (照子, "shining child"), the emperor's half-sister. 34; saiō for 19 years. Small and straight-backed, with the stillness of a woman who has been watched since girlhood. Long black hair worn loose to the waist in the old court way, and on one side of it the **boxwood farewell comb** the emperor set there at her departure. White inner robes under layered robes of pale gold and vermilion; a sheer white veil hanging from a wide-brimmed hat, which she wears whenever she is outside her own rooms. Her eyes, when they can be seen, are dark and do not blink often enough. She writes poetry that the capital still copies, keeps a moss garden, and corresponds with a dozen women at court. She cannot lie and knows how rare that makes her.
+
+### 15.3 How the tradition treats her (S, adapted)
+- **Chosen by divination** (a cracked tortoise shell) at each reign's start from the unmarried princesses; neither she nor her family chooses.
+- **Purified in stages:** a year in a hall inside the palace, a year at the **Nonomiya** (the brushwood-fenced palace in the fields), then the procession to Ise.
+- **The farewell comb.** The emperor sets it in her hair and says one line: *"Do not turn toward the capital."* She may not look back.
+- **Her own court.** She lives not at the shrine but at the **Saikū**, a walled town of about 500 officials, guards and ladies with its own government office. She enters the Inner Shrine three times a year (the rites of the 6th, 9th and 12th months).
+- **Taboo words** inside the Saikū: death is "recovering," blood "sweat," weeping "dripping brine," illness "resting," a grave "a clod of earth," monks "long-hairs," sutras "dyed paper." **Saying "blood" in her hearing pollutes the compound** (+1 PP to the speaker, §3.3).
+- **Nobody looks at her directly.** Men speak through bamboo blinds or a lady-in-waiting; being in a room with her unscreened is a scandal; **touching her is an offense against the Sun and the throne at once.**
+- **Chastity is the institution.** The *Tales of Ise* (ep. 69) night between a courtier and the Ise saiō is the most famous scandal in the literature.
+- **Release:** on the emperor's death or abdication, a close relative's death (mourning pollution), or her own impurity. On an emperor's death she returns by a different road, quietly. **For Teruko, release does not move the mirror; only her death does.**
+
+### 15.4 What the court does to her in the Calamity (tied to §14.2)
+1. **Stage 1, blamed (Tier 2).** The Bureau of Divination reads pollution and looks first at the saiō. Investigators at the Saikū; her ladies dismissed; her household purged around her.
+2. **Stage 2, stripped (Tier 3).** The court releases her and divines a new saiō: a frightened 15-year-old princess (G, unnamed). Purification proceeds, the Calamity worsens, and nobody can say why. **Two saiō: one empty, one carrying the mirror and formally nobody.** By custom she must go back to the capital under escort.
+3. **Stage 3, the cave faction (Tier 4).** Someone reads the myth correctly: if the Sun is in the cave, you hang the mirror at the door. A faction (onmyōji, Sun-shrine hardliners) moves to march Teruko to an Iwato, whether she survives the rite or not.
+
+### 15.5 Build (both systems)
+**3.5e (recommended): Aristocrat 1 / Cleric of Amaterasu 11 / Divine Oracle 4, Living Shintai template (+1). CR 16.** Domains Sun and Knowledge. Divine Oracle gives prophecy and an uncanny danger sense, so she is hard to ambush. Aristocrat 1 is the court (Diplomacy, Sense Motive, etiquette).
+- Alternatives: **B** Aristocrat 1 / Shugenja (fire) 11 / Divine Oracle 4 (more native; Oracle prerequisites to verify against Shugenja); **C** Aristocrat 8 / Cleric 4 + template, ~CR 10 (pure court; the template carries her).
+- **Why CR 16:** above the Hand (13–14), below Arik (18–20). The Hand cannot brush her aside, and Arik could end her with one bad decision. **She is killable by any of the Hand, and nobody should want to be the one who does it.**
+
+**Living Shintai template (+1 CR):**
+- **Unclouded:** with her eyes unveiled, everything within 30 ft is seen as it truly is: illusions, disguises, polymorphs, assumed identities and possessors fail in her sight (as *true seeing*), and she sees **the self a creature carries**.
+- **The Face** (3/day, 30 ft): the target sees itself truly. Will DC 10 + ½ HD + Cha (≈22 at Cha 18). Failure: dazed 1 round, must answer one question about itself truthfully, and anything maintaining a false self (disguise, persona, possession, **implanted programming**) is suppressed for 1 minute.
+- **Drawing Out** (1/day, 120 ft): the cave myth. One hidden or withdrawn being (invisible, ethereal, hiding, a god sulking in a vessel) must step into view on a failed Will save.
+- **The Sun Looks Through Her:** Amaterasu can watch through her eyes at will; she always knows when.
+- **Weaknesses:** she cannot lie (both systems); veiled, the template's powers are blind; she is subject to her own Face when she sees her reflection (the Saikū has no polished surfaces).
+
+**GURPS (sketch):** ST 9, DX 11, IQ 14, HT 11; Will 18, Per 16. *Advantages:* Status 6, Clerical Investment, Power Investiture 5 (Amaterasu), Empathy, Danger Sense, See Invisible, Detect (Illusion/Shapeshift/Possession); the Face as Affliction 1 (Will-based; Daze + Truthfulness, 1 minute; Mental; Vision-based); Drawing Out as the same with a Reveal enhancement. *Disadvantages:* Truthfulness (cannot lie), Vow (chastity; never leave service without dispensation), Duty (Ise, 15-), Sense of Duty (the dynasty), Secret (the mirror). Point total set against the Hand's sheets at build (SR).
+
+### 15.6 Teruko and Myth Pressure
+- **She is the Wrecked Hall's maiden.** Arik's Susanoo clock's next beat is the Wrecked Hall (§2.5), where a weaving-maiden of the Sun died of the storm god's outrage. **Arik, or anyone acting the Susanoo role, within sight of the saiō in a hall of the Sun rhymes on Role and Place: two axes, a clock.** The myth wants her dead by the storm's hand.
+- **She is also the cure.** The mirror is the only thing that has ever drawn the Sun out of hiding (§14.2, the rite at the cave).
+- **The bead.** The Tooth-Marked Jewel is one of **the Sun's own jewels**, the one the storm god bit in the oath-contest. Unclouded sees it for what it is. Teruko knows the bead on sight, and the Sun, looking through her, knows it too.
+
+### 15.7 Would she leave with the party? (P; the design answer)
+**Not at first, and never as cargo. She leaves on her own reading, in stages, and each stage has a price.**
+
+| When | Does she go with them? | Why | Price |
+|---|---|---|---|
+| **Tier 0–2** (she still holds office) | **No.** | Vow, dispensation and the farewell comb. Leaving her post is apostasy and abandons her household under investigation. The party can meet her only through the blinds, through Electra or Nym. | — |
+| **Tier 3** (Stage 2, stripped) | **Yes, inside Kozakura, if they are useful to her.** | She is formally nobody and under escort to the capital. **She slips the escort** and goes where the mirror reads the remedy lies: toward a cave, a shrine, or the bead. The mission's road and hers overlap. | The court reads it as abduction if she is seen with foreigners. Sone and the Sun's hardliners hunt the party for it. |
+| **Tier 4+** (or once she has seen the bead) | **Across the strait: her choice, a Choice Point.** | If she reads that the cause sits with the Storm's office itself, the remedy is a **new oath-contest across the river with the storm god in person**, and the Sun's jewel is going west in his priests' hands. She will not let it go without the Sun's eye on it. | **Calamity +1 per month the mirror is out of Kozakura.** She leaves to fix the cause while the realm gets worse. Amaterasu's court reads it as the Sun's mirror stolen: war, not a lawsuit. |
+
+**How she travels, if she does:**
+- In a curtained palanquin or on foot behind a veil; **men of the party never unscreened with her.**
+- **Electra is the natural keeper of her person** (a woman, in command at Tier 3, §14.5). **Nym** can stand with her too, though she is the priestess of the Sun's rival brother. That relationship is poison, and worth playing.
+- **Hamaura Ume** (the jewel doc's diver headwoman) is the local option for a lady-in-waiting if the court's women are gone.
+- The comb's command was *"do not turn toward the capital."* **West is not the capital.** She will notice that, and so will the onmyōji.
+
+**Myth Pressure on the crossing:** the bead went from Sun to Storm in the oath-contest. **The mirror following it west is the Sun going to the Storm herself:** Role + Token, a clock, and the Wrecked Hall waiting at the far end. Her arrival in Arik's lane would be the biggest scene this arc can produce, and the most dangerous.
+
+### 15.8 Teruko's hooks
+- **Electra:** the Face suppresses implanted programming for a minute. Teruko can show Electra what was written into her, and could be used to read it out. Electra, in turn, sees what Teruko is, and files it.
+- **The Pale Name:** Unclouded sees the self a creature carries. Looking at Arik, she would see which storm god is in there: recognition in its strongest form. **Price it before she ever lifts the veil near him** (jewel doc §11, item 5).
+- **Succession:** if she dies, divination picks the next unmarried princess, and the mirror moves to her. Killing Teruko does not remove the mirror; it hands it to a child, and leaves a blood debt with the Sun.
+
+### 15.9 Open items for Chad (§14–15)
+1. **The Calamity track:** approve the tiers, the raise and lower triggers, and Electra's threshold at Tier 3.
+2. **Starting tier and pace:** 1 on 12 Uktar, 2 at S2, 3 at S5, or roll it.
+3. **The cause:** does the GM fix the truth privately, and what is it?
+4. **Teruko's build:** Option A (CR 16) or another.
+5. **Teruko's crossing:** the Choice Point in §15.7. Does the arc allow the mirror out of Kozakura at all?
+6. **Where the jewel arc meets her:** default at **S5**, on the road from Isohama, when Electra arrives and the track reaches 3.
