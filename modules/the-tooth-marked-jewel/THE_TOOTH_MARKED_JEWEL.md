@@ -517,7 +517,21 @@ The office already has four priests (K20). Nym and Lorne already disagree about 
 	2. **That breaks the Urashima beat.** The myth bites (Primer §2.3): Sōta is *Unfinished* until someone plays the beat.
 	3. **The handover is the recasting.** When he puts the box into Nym's hands, **the role goes with it.** She becomes the one carrying a lacquered box she must never open, and inherits the Urashima clock where it stands.
 	4. **She has no geas.** Each night she carries it she rolls Will DC 12 + the clock (Wis-based; she is a Cleric 14).
-	5. **Her answer, if she takes it:** she lays the same geas on herself. A Trickery priestess binding her own hands is the character beat. *"Do not open it. Put it into his hands."* **His hands means Arik's**, and that wording forces the discovery.
+	5. **RULED (Chad, 7 Oct 2026): she binds herself.** The moment Sōta puts the box into her hands, Nym lays *geas/quest* on herself: ***"Do not open it. Put it into his hands."*** **His hands are Arik's.** That wording forces the discovery (below).
+
+**Nym's self-geas: what follows (default path, ruled).**
+- **She cannot open the box.** The geas beats the myth again, so she makes **no** nightly roll. **That is the Urashima beat refused a second time** (Sōta, then Nym).
+- **She must reach Arik.** For every day anyone or anything keeps her from moving toward him, she takes −2 to every ability score, to −8.
+	- **Everyone who would rather delay her now costs her body:** Jin's orders, Naevys's division work, Lirien's perimeter, Electra's file, Kitsuki's paper war, Sone's bout.
+	- **Sone's bout:** if she loses it, the geas still holds. She cannot hand the bead back to the island, so she is bound to break her word to Kashima or rot. That is a hard scene.
+	- **Clock seam (R4):** the geas makes Chad's call on *when* the discovery lands in Arik's lane unavoidable. She walks toward him from the Jörmun clock until she arrives.
+- **Electra (K19)** has a tag on Nym's soul and will read **pressure** on it: the geas shows as a soul under duress. She can find Nym, escort her, or try to stop her, and stopping her costs Nym. **The file and the geas meet on the road west.**
+- **The schism:** Sōta's geas said *"into my hands"*, which was her claim on the bead. Her own says *"into his"*, which hands the claim to the seat. **Lorne reads it either way:** as surrender (The Two Winners −1), or as the bridle doctrine made flesh, a priest who will not keep what is the god's (no change). The GM chooses by Lorne's tell.
+- **Jin** hears that a Hand priest is geased to walk into the Emperor's presence with an offering. By his code (serve the seat, never sit it), she is doing the one thing the office is for. **He may escort her himself.** He will not stop her.
+- **The Urashima completion (P).** Refused twice, the myth recasts (Primer §2.3), and **the next hands are Arik's.** In the holder's hand the opening is the lawful one (§4.4, the box rule), so **the beat is played, not broken. The myth completes.** When Arik opens the box:
+	- **The smoke comes out:** the island's years, smelling of wet stone, cedar smoke and salt. **Because the box was his to open, the years go back to the sea and touch no one.**
+	- **Sōta's *Unfinished* status clears.** His story was finished by someone else's hands, which is the mercy at the end of his thread.
+	- **The completion boon** goes to the one who played the last beat, which is Arik. **(P, for Chad:** what a folk tale's boon is worth to the Storm King; the Urashima version is mastery over one passage of years: once, he may let a day pass as a breath, or a breath as a day.)
 - **What it does to the opposition:**
 	- **The Orochi remnant** wants the box opened. A bound carrier is useless to it, so **it waits for the handover** and works on Nym.
 	- **Kitsuki** goes after Sōta, not the box: break the geas and the old story does the rest.
@@ -776,7 +790,7 @@ Yashiori's Root Country makes it a Thayan prize (05b). This arc does not activat
 
 ## 9. The discovery: how the arc ends at Arik
 
-**The forcing logic.** The pledge must be *received*, and only the holder can receive it (§4.1). Every success path ends with two masked Veil agents, or two unmasked ones if the island took their faces, standing in front of Arik with a jade bead and a confession. **Failure paths reach him too, worse:** through Calloway's story, Kitsuki's Bureau suit, or a priest's trial in Enma's court.
+**The forcing logic (now doubled).** Nym's self-geas (§4.4) **walks her into Arik's presence**: she cannot stop or turn aside without paying for every day of it. The pledge must be *received*, and only the holder can receive it (§4.1). Every success path ends with two masked Veil agents, or two unmasked ones if the island took their faces, standing in front of Arik with a jade bead and a confession. **Failure paths reach him too, worse:** through Calloway's story, Kitsuki's Bureau suit, or a priest's trial in Enma's court.
 
 **The Electra route (K18).** This is the earliest possible discovery. She knows from 12 Uktar. **When she tells Arik, if she does, decides whether the discovery comes before the quest, during it, or after the bead arrives** (§2.5). If she holds the file, she is in the room for the discovery scene with a dossier she has kept from him. That is its own scene.
 
@@ -849,7 +863,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 8b. ~~Electra's pursuit east~~: **RULED, she goes after the parley and tags Nym** (K19). Open: the parley's length, which sets her arrival stage, normally S5.
 8d. ~~Nym and the island~~: **RULED (7 Oct): the ban stays; the default is influencing a local** (Option E, Hamaura Sōta).
 8g. **The box rule** (§4.4): an opened box undoes the leave and the opener ages 3d6 × 10 years. Confirm or tune it.
-8h. **The geas** (§4.4): **RULED as the default path (Chad, 7 Oct):** Sōta asks; Nym lays it in the boat after the leave; the wording is *"into my hands"*. The handover recasts the Urashima role onto Nym. Open: whether she binds herself, and with which wording.
+8h. **The geas** (§4.4): **RULED (Chad, 7 Oct).** Sōta asks; Nym lays it in the boat after the leave (*"into my hands"*). **Nym binds herself: *"into his hands," meaning Arik's.*** The discovery is now forced by the geas. Open: R4 (when it lands in Arik's lane); the Urashima completion boon; Lorne's reading of the surrender.
 8e. **The changed-shape rule** (S4, Option B): does the island treat *alter self* or *polymorph* as a lie? And does Electra's true form count as neither man nor woman (Option D)?
 8f. **Quavein** (CP7): does anyone tell the Bursar, and does his ledger already know?
 8c. **Envoy reading of Electra** in Kozakura (primer, P).
