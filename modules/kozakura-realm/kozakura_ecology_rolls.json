@@ -1,0 +1,154 @@
+{
+ "method": "Python secrets; pulse = 3d6 x4 lower median + 2x tier; layer tables native dice",
+ "rolls": [
+  {
+   "utc": "2026-10-07T18:45:23",
+   "label": "Pulse 1: the tenday of the mission's arrival in Kozakura (S1 into S2, Kurogane valley), Calamity tier 1",
+   "tier": 1,
+   "log": [
+    {
+     "step": "pulse",
+     "throws": [
+      11,
+      8,
+      13,
+      10
+     ],
+     "median": 10,
+     "total": 12,
+     "band": "Restless"
+    },
+    {
+     "step": "0 scale (d6+ceil(tier/2))",
+     "raw": 4,
+     "result": "A displacement"
+    },
+    {
+     "step": "1A category (d12)",
+     "raw": 12,
+     "result": "Wrong"
+    },
+    {
+     "step": "1B behavior (d8)",
+     "raw": 7,
+     "result": "Displaced"
+    },
+    {
+     "step": "1C cause (d8, Calamity override)",
+     "raw": 8,
+     "result": "Ancient cycle"
+    },
+    {
+     "step": "2A hits (d8)",
+     "raw": 6,
+     "result": "The lord's house"
+    },
+    {
+     "step": "2B cost (d6+tier)",
+     "raw": 1,
+     "result": "Sickness/livestock/property"
+    },
+    {
+     "step": "2C response (d6-tier, min 1)",
+     "raw": 1,
+     "result": "Nothing"
+    },
+    {
+     "step": "3A approach (d8)",
+     "raw": 3,
+     "result": "Restore the Rule"
+    },
+    {
+     "step": "3B complication (d8)",
+     "raw": 6,
+     "result": "Unknown Rule"
+    },
+    {
+     "step": "3C requirement (d6)",
+     "raw": 2,
+     "result": "Mission intervention, a day"
+    },
+    {
+     "step": "4A cascade (d6+floor(tier/2))",
+     "raw": 1,
+     "result": "Clean"
+    },
+    {
+     "step": "4B thread (d8)",
+     "raw": 5,
+     "result": "The dead"
+    },
+    {
+     "step": "0 scale (d6+ceil(tier/2))",
+     "raw": 1,
+     "result": "A dispute"
+    },
+    {
+     "step": "1A category (d12)",
+     "raw": 1,
+     "result": "Household/tsukumogami"
+    },
+    {
+     "step": "1B behavior (d8)",
+     "raw": 2,
+     "result": "Claiming"
+    },
+    {
+     "step": "1C cause (d8, Calamity override)",
+     "raw": 5,
+     "result": "A myth rhyming"
+    },
+    {
+     "step": "2A hits (d8)",
+     "raw": 6,
+     "result": "The lord's house"
+    },
+    {
+     "step": "2B cost (d6+tier)",
+     "raw": 5,
+     "result": "Deaths 6+"
+    },
+    {
+     "step": "2C response (d6-tier, min 1)",
+     "raw": 2,
+     "result": "Nothing"
+    },
+    {
+     "step": "3A approach (d8)",
+     "raw": 1,
+     "result": "Exorcism/blade"
+    },
+    {
+     "step": "3B complication (d8)",
+     "raw": 1,
+     "result": "Sacred"
+    },
+    {
+     "step": "3C requirement (d6)",
+     "raw": 3,
+     "result": "Mission intervention, a day"
+    },
+    {
+     "step": "4A cascade (d6+floor(tier/2))",
+     "raw": 1,
+     "result": "Clean"
+    },
+    {
+     "step": "4B thread (d8)",
+     "raw": 4,
+     "result": "The Orochi remnant"
+    },
+    {
+     "step": "Restless band: Myth Pressure nudge (d6, primer §2.2) on the nearest rhyme",
+     "raw": 4,
+     "result": "Omen animals"
+    },
+    {
+     "step": "Situation 2 death count (Deaths 6+: 1d6+5)",
+     "raw": 5,
+     "result": 10
+    }
+   ]
+  }
+ ]
+}

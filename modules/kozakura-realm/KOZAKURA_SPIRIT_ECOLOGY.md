@@ -257,3 +257,62 @@ Replaces the parent's Korgan / Seren / Vara sequence.
 - **Kill it.** +3 PP for the killer, the ford ownerless, and the rival (the Orochi brood upriver, 4A row 4–5) takes it.
 
 **The Wider Picture.** Every owner in this valley that goes quiet makes room for something hungrier. The brewery's knife is waking above a river whose owner just fell silent. Somebody is going to own that water by midwinter.
+
+---
+
+## 10. Pulse log
+
+Every Pulse is recorded in `kozakura_ecology_rolls.json` with its throws. The readings below are **the world as the mission finds it**: rolled world state, not events in play. Nobody has acted on them yet.
+
+### Pulse 1: the tenday the mission arrives (S1 into S2, Kurogane valley). Calamity tier 1. Rolled 7 Oct 2026 at Chad's call.
+
+**Pulse:** throws 11, 8, 13, 10 → lower median 10 + 2 × 1 = **12, Restless.** Two situations; one rhymes with an active myth (a Myth Pressure nudge). No disaster roll at this band.
+
+| Layer | Situation 1 | Situation 2 |
+|---|---|---|
+| Scale | 4 + 1 → **displacement** | 1 + 1 → **dispute** |
+| Category | 12 **Wrong** | 1 **Household / tsukumogami** |
+| Behavior | 7 **Displaced** | 2 **Claiming** |
+| Cause | 8 **Ancient cycle** | 5 **A myth rhyming** |
+| Hits | 6 **The lord's house** | 6 **The lord's house** |
+| Cost | 1 + 1 → **sickness, livestock, property** | 5 + 1 → **deaths 6+** (1d6+5 = **10**) |
+| Local response | 1 − 1 → **nothing** | 2 − 1 → **nothing** |
+| Approach | 3 **Restore the Rule** | 1 **Exorcism / blade** |
+| Complication | 6 **Unknown Rule** | 1 **Sacred** |
+| Requirement | 2 **the mission, a day** | 3 **the mission, a day** |
+| Cascade | 1 + 0 → **clean** | 1 + 0 → **clean** |
+| Thread | 5 **The dead** | 4 **The Orochi remnant** |
+| Nudge (Restless band) | — | d6 = 4 **omen animals** |
+
+**Both situations land in the same house:** the hall of the **lord of Kurogane** (G; the valley's land-steward, unnamed until Chad names him), a mile downriver from Yashio-dono and the brewery's festival patron. The house is doing nothing about either. That is the story: a lord's household paralyzed by two things at once, a day's walk from where the mission is going anyway.
+
+**Calamity check:** both cascades clean. **No raise. The tier stays at 1.**
+
+#### Situation 2: the festival cask (the rhyme)
+
+**The Petition** (the lord's steward, in a careful hand, sent to Yashio-dono, not to strangers). *Ten of this house have died in their sleep since the autumn feast: my lord's two sons, his wife's brother, four retainers, three maids. Each drank at the feast. Each died dreaming, the women say, of heads. The cask the brewery-house gave my lord's grandfather's grandfather stands in the hall where it always stood, and it is full again each morning though no one fills it. The servants will not pass it. My lord will not let it be moved, and will not speak of it. Snakes lie across the threshold each dawn, in Uktar, when snakes sleep.*
+
+**The Reading** (what an onmyōji or Hiruta would say). The cask is a **tsukumogami**: a hundred years in one house, filled every autumn from Yashio-dono's **eighth vat**. It woke at its hundredth New Year, and what woke in it is a **splinter of the Orochi remnant** (§6.4 of the jewel doc). It is **claiming the house** from the hearth-kami: that is the dispute. **The myth it rhymes with is the Orochi's own:** an old couple's house losing its children one by one to the drink, with one left. **The lord's youngest daughter is alive, and the cask wants her to pour for it on festival night.** That is the Kushinada role, and it is open. Omen animals (the nudge): **snakes on the threshold.**
+- **Myth Pressure:** a storm god's priests entering this house rhyme on **Role** at once (the storm god arrives at the grieving house). With the daughter and the drink, that is **Role + Token + Act** for anyone who offers to deal with it: a strong rhyme on the Orochi myth (clock 8).
+
+**The Choices.**
+- **The blade (the module's approach).** Break the cask and kill what is in it. **It is sacred**: a consecrated vessel of the brewery shrine. The breaker takes **+3 PP**, Hiruta's house is offended, and the lord's grandfather's gift is destroyed under his eyes. Cascade clean: it ends.
+- **Play the myth.** Eight cups, a screen, a sword: the Orochi's own ending. Whoever plays the storm god takes the beat and the Boon, and **the Orochi clock starts for them.** Nym's office makes her the natural actor. So does Lorne's.
+- **Starve it.** Stop the eighth vat's sake reaching it. That means Hiruta, and the festival, and the remnant noticing.
+
+**The Wider Picture.** The remnant is already in the valley's houses, one cask at a time, fed from the vat the brewery cannot empty. The mission walks into a story that has its parts written and one actor missing.
+
+#### Situation 1: the thing at the old well
+
+**The Petition** (the same steward, a second, shorter page). *The rice in the north storehouse rots overnight. Two of my lord's horses are sick and will not drink from the well. At night something walks the back garden by the old well. It smells of turned earth. The cook says it stood at her door and asked her a question, and she did not answer. No one will go near the well. My lord has said nothing.*
+
+**The Reading.** The well is **older than the house**: in the iron-sand country, the old scrolls put **the slope to Yomi** close by, and wells here go down (primer §5). The shrine's oldest scroll records the **cycle**: in a restless age the boulder at the slope settles, and what is on the other side comes up. **This one is Wrong** (the Owner Test fails): it is dead, it ate at Yomi's hearth, and it has no place in the living land. **Displaced**, it rots what it touches without meaning to. **Its Rule is unknown** until read (DC 20; DC 25 for its Weakness).
+- **GM-side (P, for Chad):** it is **one of the house's own founders**, displaced up the well, asking the question the cook did not answer: *"What is my name?"* Its tablet is in the house shrine, half-burnt in an old fire, the name unreadable. **Restoring the Rule** means finding the name and sending it back down with peach wood and the boulder rite.
+- **Nym's Death domain** (her office's grant) gives her the reading at +4. **The dead notice who answers them**: whoever restores the Rule is known to Enma's court from that night (ties to the wardens, jewel §6.2).
+
+**The Choices.**
+- **Restore the Rule (the module's approach).** Find the name, answer the question, close the well with peach and the rite. A day. Clean.
+- **Destroy it.** Possible; it is weak. But it is someone's ancestor, and it will be back next cycle, angrier, with nothing to ask.
+- **Ignore it.** The storehouse rots, the horses die, and at tier 2 the cook answers its question wrong.
+
+**The Wider Picture.** Restless at tier 1 means the old seams are opening before anyone has admitted there is a crisis. The dead are coming up the wells in the same valley where the serpent is coming out of the casks.
