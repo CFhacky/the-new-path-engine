@@ -541,3 +541,12 @@ So **expect +2, perhaps +3, over the arc.**
 | **3** | 5 | **In medias res apocalypse.** Teruko already on the road, oni holding passes from the first day, Electra commanding from the moment she lands. The cave rite is the arc's climax. The biggest swing, and it risks swamping the jewel. |
 
 **Or roll it:** 3d6 lower median at 12 Uktar: ≤8 → 0 (≈28%), 9–10 → 1 (≈41%), 11–12 → 2 (≈26%), 13+ → 3 (≈6%).
+
+### 14.9 The starting tier: ROLLED (Chad 7 Oct, "roll it")
+**TJ-11:** throws 18, 13, 10, 8 → lower median **10** → **Tier 1, Restless, at dawn on 12 Uktar 1498.** Recorded in the jewel doc's rolls ledger (§10) and `tooth_marked_jewel_rolls.json`.
+
+What this fixes:
+- **The omens predate the vision.** Kozakura has been restless for weeks before 12 Uktar: night tremors, birds wrong, the Parade out twice a month, fog on the strait. The cause stays ambiguous: the vision showed a struggle already under way, not its start.
+- **The mission arrives into rising unease** (§14.7, Tier 1) and, with the expected +2 to +3 from triggers, **likely sees Tier 3 by the return**: Teruko stripped around S5, as Electra arrives, and Electra's command threshold opening with her.
+- **The cave rite is probably out of reach in this arc**, which leaves Teruko's crossing for the next one, unless the dice run hot.
+- From here the tier moves **only by trigger and cascade**, and every change is logged.

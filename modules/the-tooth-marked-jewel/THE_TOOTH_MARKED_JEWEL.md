@@ -884,6 +884,7 @@ Method: Python `secrets`, 3d6, four throws, **lower median** (second-lowest of f
 
 | TJ-9 | Hamaura Sōta's reaction to the masked foreigners | 7, 15, 8, 14 | **8** | **Poor.** He will talk; he will not go. |
 | TJ-10 | Where his Urashima clock stands when they meet | 7, 10, 13, 8 | **8** | **1 (the turtle only)** |
+| TJ-11 | Calamity starting tier at 12 Uktar 1498 (primer §14.8; ≤8 → 0, 9–10 → 1, 11–12 → 2, 13+ → 3) | 18, 13, 10, 8 | **10** | **Tier 1, Restless** (rolled 7 Oct at Chad's call) |
 
 **Rolls held for play (not thrown):** Jin's reaction (CP1); the daughters' answer (S4, 3d6 + Diplomacy margin); Sone's bout (opposed grapples / Sumo contests); the wardens' jurisdiction contest; The Two Winners clock advances.
 

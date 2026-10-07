@@ -113,6 +113,19 @@
    ],
    "result": 8,
    "date": "2026-10-07"
+  },
+  {
+   "id": "TJ-11",
+   "question": "Calamity starting tier at 12 Uktar 1498 (primer \u00a714.8): <=8 -> 0, 9-10 -> 1, 11-12 -> 2, 13+ -> 3",
+   "throws": [
+    18,
+    13,
+    10,
+    8
+   ],
+   "result": 10,
+   "outcome": "tier 1",
+   "date": "2026-10-07"
   }
  ]
 }
