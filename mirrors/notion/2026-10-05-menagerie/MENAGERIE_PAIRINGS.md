@@ -62,7 +62,7 @@ Not casters: Tarvash, Aerendyl, Mercy and the lieutenants Faelith, Patience and 
 
 ## X. Zaheda + Patience — *Reading the Margin*
 - **Spells:** Zaheda's *wall of thorns* boxes the field, and Patience fights inside it with the flail. He's a tiefling, so cold, fire and electricity resistance 5 lets him stand in her *call lightning storm* longer than anyone else.
-- **Releases (pairing):** Patience is learning her cipher. Inside the Page, he can **write a name** too: one ink tiger per round answers to him. His Thrice whirl doesn't harm ink tigers.
+- **Releases (pairing):** Patience is learning her cipher. Inside the Page, he can **write an entry** too: one per round, and its tiger answers to him. He only has her cipher, not her book, so his entries count as **descriptions** unless she has already written that name; then his tiger rises out of the subject's shadow like hers. His Thrice whirl doesn't harm ink tigers.
 - **GURPS:** Ally Group, 1 per turn under the lieutenant's command.
 - **From across the field:** a tiefling with a whirling flail, and the ink tigers giving him room.
 

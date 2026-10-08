@@ -111,12 +111,24 @@ He swallows twice. Then the sea arrives where there was no sea.
 She opens the notebook and writes across the air. The ink keeps going, out of the book and across the ground, until the whole field is her margin.
 - **The page:** a **200-ft radius** fills with Aljibah script in wet black ink.
   - It is difficult terrain for everyone but Zaheda and what she writes.
-- **Tigers.** Each round she writes up to **four** names. A **dire tiger made of ink** rises at each named creature and fights it to the death.
+- **Entries, not names.** Each round she writes up to **four** entries. An entry is what the Margin always was: **who, and how.** A **dire ink tiger** rises for each entry and fights its subject to the death.
   - Each tiger: AC 22, 120 HP, claws and bite +24 (2d6+12 each), pounce, rake.
+- **Who: a name, or a description.**
+  - **A name she knows** (written in her notebook before the release, or spoken aloud in her hearing; *"Say it again. I want the exact words."*): the tiger rises **out of its subject's own shadow**.
+    - The subject **cannot hide from it**: invisibility, illusion, disguise, blink and displacement fail against its tiger.
+    - The subject **cannot leave the page** by teleport, shadow-walk or plane travel while its tiger stands (as *dimensional anchor*; Will DC 26 negates the anchor only).
+  - **A description** ("the archer on the north wall"): the tiger rises at the page's nearest edge and has to reach its subject. None of the above applies.
+- **How: one word after the name**, chosen as she writes it.
+  - ***Throat*** — the tiger's first hit grabs and holds the throat. While held, the subject can't speak: no verbal components, no commands, no calling for help.
+  - ***Heel*** — the tiger's first hit pins the subject where it stands: speed 0 until it breaks the hold (Str or Escape Artist DC 26).
+  - ***Eyes*** — the subject sees only its tiger: it is blinded to everything else while its tiger stands (Will DC 26 negates).
+- **The same name twice.** She may write one subject more than once; each entry raises its own tiger. Three entries on one name and Pack fires (+2 to hit, +1d6 damage for each tiger).
+- **Crossing out.** When a written subject dies, she crosses the entry out as a free action. Its ink runs back into the page: **she writes one extra entry next round** for every name crossed out this round. Fast kills feed the page.
+- **Uncrossed.** A subject that survives the release stays **uncrossed in the book**. The next time she calls the Page, its entry is already written: its tiger rises in round 1, out of its shadow, without costing her an entry, wherever it now stands within the page.
 - **Zaheda becomes the teacher:** a tiger the size of a house (Huge; Str 36; claws +30, 3d6+13 each; bite 4d6+13; rake).
   - The notebook does not meld; it opens on the ground beside her and keeps writing.
-- **GURPS:** Ally Group (4 per turn, ink tigers, Summonable), Alternate Form (Huge tiger, ST 40); Obscure; Limited Use 1/day.
-- **After:** the ink dries to a dark stain that cannot be scrubbed out, in a script nobody else alive can read. Every name she wrote is in the book. They are crossed out.
+- **GURPS:** Ally Group (4 per turn, ink tigers, Summonable; +1 per kill), Alternate Form (Huge tiger, ST 40); Obscure. Known names: Allies arrive by Warp (Accessibility: subject's shadow), with See Invisible and Detect against the subject, and Affliction (no teleport) on it. Methods: Binding (throat: Mute), Binding (heel: Immobile), Affliction (eyes: Blindness, except to its tiger). Limited Use 1/day.
+- **After:** the ink dries to a dark stain that cannot be scrubbed out, in a script nobody else alive can read. Every name she wrote is in the book. Most are crossed out. The ones that aren't are why people who survive the Page leave the city.
 
 ## XI. Ysmay Corran — *The Night Hunt*
 She closes her failing eyes. When she opens them the sun is gone.
