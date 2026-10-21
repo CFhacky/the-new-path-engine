@@ -7,7 +7,7 @@
 ## Rules for pairing
 - **Spells combine as written.** A spell pairing invents nothing: it is two spells cast in the order shown. The value is in knowing who carries what.
 - **Two releases overlapping:** both apply in full. A **named release pairing** adds the one effect listed, and only while both releases are running and their areas overlap.
-- **Who a release spares:** every Nightwind-attuned creature (sworn Veil). Everyone else in the area is fair game. Pairings below assume this.
+- **Who a release spares:** every Nightwind-attuned creature (sworn Veil), and anything a sworn bearer summons or raises while it serves. Everyone else in the area is fair game. Pairings below assume this.
 - **How many at once:** two releases on one field need Lirien's order; three or more need Arik's.
 - **Who gives the order:**
 	- A captain orders their own lieutenant.

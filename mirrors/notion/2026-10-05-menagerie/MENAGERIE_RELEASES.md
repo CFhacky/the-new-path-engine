@@ -12,7 +12,7 @@
   - Save DC **21**. Smaller ground, smaller dice.
 - **Light bookkeeping.** Each release has the image, what it does at the table, a GURPS line, and what is left afterwards.
 - **GURPS throughout:** Limited Use 1/day, with the 3.5e radius converted at 1 yd per 3 ft.
-- **Who a release spares (Chad, 21 Oct 2026).** Every creature attuned to **Nightwind** (sworn Veil: the same attunement that carries the Writ) is untouched by a release's damage, binding, darkness, silence, terrain and compulsion. Everyone else in the area is fair game: hirelings, guides, prisoners, and the empire's own soldiers. Effects on things rather than creatures still apply (light swallowed, fire put out, walls cut down).
+- **Who a release spares (Chad, 21 Oct 2026).** Every creature attuned to **Nightwind** (sworn Veil: the same attunement that carries the Writ) is untouched by a release's damage, binding, darkness, silence, terrain and compulsion. Everyone else in the area is fair game: hirelings, guides, prisoners, and the empire's own soldiers. Effects on things rather than creatures still apply (light swallowed, fire put out, walls cut down). Anything a sworn bearer **summons or raises** (hounds, ink tigers, zombies, raised dead) counts as attuned while it serves. Wenna's pressed do not: they fight for the Veil, but they are not sworn.
 - **More than one release on a field (Chad, 21 Oct 2026).** One release is the bearer's call. **Two** on the same field need **Lirien's** order. **Three or more** need **Arik's**.
 
 ---
