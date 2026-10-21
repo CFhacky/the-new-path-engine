@@ -286,3 +286,10 @@ The staff that splits into two short rods · Rare · T1 · CL 13 · *rebased 6 O
 - ER 6 on a kill. Magic Resistance +4.
 
 *The staff puts the dead down.* Lorne still raises with his spells; the head rod ends anyone else's dead, and his shadow takes the other rod. It is the staff from Tethford, the man who stepped out of a two-foot rock's shadow. His hand crossbow stays unmagicked kit.
+
+---
+
+## Errata — 21 Oct 2026: Blood Pact (Chad: release logic pass)
+Durgan's temper 23I-9 **Blood Pact** doubles the **dice rolled** for one spell or attack, 1/day, for 25% of his maximum HP. A maximised spell rolls no dice, so Blood Pact can't double it. Inside *The Banked Coal*, where his spells count as maximised, he chooses: a maximised spell, or a rolled one with its dice doubled.
+
+**Also from the same pass (Releases page):** every release spares Nightwind-attuned creatures (sworn Veil); two releases on one field need Lirien's order, three or more need Arik's. Hand specifics: Ivrael's Counted Door forms a 40-ft ring with one gap (where he stands) in the open; Lorne's shadow clone comes through the shadows in round 1 if he has no raised dead; Teodric asks one question a round and every charmed creature answers it aloud.
