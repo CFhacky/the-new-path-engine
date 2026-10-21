@@ -12,6 +12,8 @@
   - Save DC **21**. Smaller ground, smaller dice.
 - **Light bookkeeping.** Each release has the image, what it does at the table, a GURPS line, and what is left afterwards.
 - **GURPS throughout:** Limited Use 1/day, with the 3.5e radius converted at 1 yd per 3 ft.
+- **Who a release spares (Chad, 21 Oct 2026).** Every creature attuned to **Nightwind** (sworn Veil: the same attunement that carries the Writ) is untouched by a release's damage, binding, darkness, silence, terrain and compulsion. Everyone else in the area is fair game: hirelings, guides, prisoners, and the empire's own soldiers. Effects on things rather than creatures still apply (light swallowed, fire put out, walls cut down).
+- **More than one release on a field (Chad, 21 Oct 2026).** One release is the bearer's call. **Two** on the same field need **Lirien's** order. **Three or more** need **Arik's**.
 
 ---
 
@@ -44,6 +46,7 @@ A hawk's two-note whistle, and he is gone, 500 feet straight up, a dot against t
 - **Each round** he drops onto any point within a mile of where he left.
   - **Impact:** a **40-ft radius**, **20d6 bludgeoning** (Reflex DC 26 half). Anything built over the point collapses.
   - Whoever was directly beneath him takes **both scimitars as automatic critical hits**.
+- **Under a roof** he goes up through it. The first Stoop brings the ceiling down on everything below; after that he drops from open sky.
 - **Back up:** he rises again at the end of his turn. Nothing on the ground can reach him between drops except ranged attacks at −10.
 - **GURPS:** Innate Attack 20d crushing (Explosion 4) on landing, Super Jump / Flight (Limited: vertical); Limited Use 1/day.
 - **After:** a courtyard of craters. The people he pressed into the Veil hear the whistle and go to ground before the first stone falls.
@@ -54,7 +57,7 @@ The low note he hums while walking drops an octave, and for a hundred feet in ev
   - No opposed roll for anything Gargantuan or smaller.
   - Whatever he holds takes **15d6 a round** and cannot act except to try to escape (DC 36).
 - **Quake.** The ground heaves with every step he takes: everyone else within 100 ft is knocked prone each round (Reflex DC 26 negates).
-- **Throw.** As a move action he tears a section of wall, a cart or a column free and throws it 120 ft: **15d6** in a 20-ft radius.
+- **Throw.** As a move action he throws **whatever he is holding**, a section of wall, a cart, a column or the creature he was crushing, 120 ft: **15d6** in a 20-ft radius, and a thrown creature takes it too. Throwing ends the hold.
 - **GURPS:** Lifting ST +60 and Striking ST +40 (Grappling only), Innate Attack 15d crushing (Area 7 yd, thrown); Earthquake Area 33 yd; Limited Use 1/day.
 - **After:** he walks out the way he came in, on foot, humming the old note. Nothing on the Shadow Gate network records that he was ever there.
 
@@ -63,6 +66,7 @@ He unfolds his arms. The milky eye sees for once, and everything inside a thousa
 - **Outside ten paces** (each round): a volley that blots out the sun.
   - An **80-ft radius** anywhere within 1,000 ft takes **15d6 piercing** (Reflex DC 26 half). Shields and cover give no benefit.
 - **Inside ten paces:** any enemy that starts its turn within 30 ft of him, or enters that space, is cut by both sickles automatically: **8d6** and hooked prone. There is no limit on the number.
+- **At the range he wants.** Within 1,000 ft he ignores range penalties, cover and concealment.
 - **GURPS:** Innate Attack 15d impaling (Area 27 yd, Range 333 yd, Rapid Fire), plus a Damage Aura of 8d cutting at 10 yd (with Knockdown); Limited Use 1/day.
 - **After:** the arrows stand in the ground like wheat. Each year Kesh stands ten paces from the harbour official who burned his eye, and does not draw. He knows what he could do.
 
@@ -71,8 +75,9 @@ She opens the oilcloth coat, and every tooth on the string becomes a hound.
 - **The pack:** **forty** grey hounds the size of ponies pour out of the coat into the street.
   - Each one: AC 25; 40 HP; bite +22, 3d6 plus trip; scent; 80 ft speed.
 - **Nothing hides from them.** The hounds find every hidden or invisible creature within 300 ft in the first round, and hunt them.
-- **The quarry.** Marit names one creature she has ever tracked, and it does not need to be in sight. The hounds bring it to her, from anywhere on the plane, by the end of the release. It comes through walls and wards, and **dimensional anchor** does not stop it.
+- **The quarry.** Marit names one creature she has ever tracked, and it does not need to be in sight. The hounds bring it to her, from anywhere on the plane, by the end of the release. It comes through walls and wards, and **dimensional anchor** does not stop it. It arrives **prone and held in the hounds' jaws**. If it is dead or off the plane, the hounds come back with nothing, and she knows which.
 - **GURPS:** Ally Group (40 hound-shades, Summonable, 1/day) with Detect (Hidden) and Tracking 20; Warp (Accessibility: the named quarry, to her); Limited Use 1/day.
+- **One more hound.** Every quarry the pack has ever brought adds a hound to it: forty, plus every life she has dragged to her feet.
 - **After:** the teeth are back on the string, and there is one more. She never says whose.
 
 ## VII. Naevys Tolúrin — *The Hunt Rides Through*
@@ -91,7 +96,7 @@ She rolls an iron spike over her knuckles once, thumb to little finger, and thro
   - **20d6 piercing** (Reflex DC 26 half).
   - Anyone who fails is **pinned** to the nearest wall, floor or tabletop by the hands and feet. Tearing free takes a DC 30 Strength check and 6d6 damage.
 - **The ground stays thorned.** The whole area is difficult terrain. Each round another 10d6 storm falls wherever she points.
-- **Brunna walks the thorns untouched** and works the pinned at leisure, one at a time. Once in the release she steps (Horizon) to any pinned body she can see.
+- **Brunna walks the thorns untouched** and works the pinned at leisure, one at a time. The pinned are **helpless to her**: she kills (coup de grace) or questions each one she reaches. Once in the release she steps (Horizon) to any pinned body she can see.
 - **GURPS:** Innate Attack 20d impaling (Area 33 yd), Binding 20 (Unbreakable), Follow-Up; Warp 1/encounter; Limited Use 1/day.
 - **After:** a field of iron thorns and what hangs on them. The shrike always leaves the larder where you can see it.
 
@@ -137,7 +142,7 @@ She closes her failing eyes. When she opens them the sun is gone.
   - Ysmay sees perfectly in it, the way she always has.
 - **Each round** she moves anywhere in the dark without passing through the space between, and strikes **four different creatures**, once each, from above or behind.
   - Every strike is an **automatic critical hit**: the old sword, ×2, with battle cunning.
-- **The debt waits.** In the dark she does not bleed. Damage that would drop her below 1 HP is deferred until the release ends.
+- **The debt waits.** In the dark she does not bleed. Damage that would drop her below 1 HP is deferred until the release ends. When it comes due it can kill her: if the debt takes her past −10, she dies standing.
 - **GURPS:** Darkness (Area 167 yd, Total) with Silence, Warp (Limited: within the darkness), Extra Attack 3 (Accessibility: from behind), Unkillable 2 for the duration; Limited Use 1/day.
 - **After:** the light comes back slowly, like a door opening. Whatever was owed comes due on her at once, and she pays it standing. She says one name each time, never the same one: the charges she was a heartbeat late for.
 
@@ -147,7 +152,7 @@ She whispers the apology in Elvish once, to all of them at once, and means it. T
   - A **150-ft cone** takes **12d6 piercing**, plus the touch spell she has channelled, delivered to **every creature hit**.
   - That is 5d6 more from *shocking grasp*, or *vampiric touch*, or *slow*, as she chooses.
 - **Each round** she can throw again: a new cone and a new spell.
-- **Darts stay in the wound.** Until they are pulled (a full-round action each), they give her a channelled touch spell's worth of reach on that target: she can deliver another touch spell to it at any range.
+- **Darts stay in the wound.** Until the release ends or they are pulled (a full-round action each), they give her a channelled touch spell's worth of reach on that target: she can deliver another touch spell to it at any range.
 - **GURPS:** Innate Attack 12d impaling (Cone 50 yd, Rapid Fire 100+), with a Follow-Up spell delivered on every hit; Limited Use 1/day.
 - **After:** the darts come home to the quiver, all twenty of them, clean. The ground looks as if a manticore spent a week shedding there.
 
@@ -175,7 +180,7 @@ The censer swings once, and the pauper's-pit smoke pours out in a flood.
 
 ## Lt II. Kerra Lisle — *Ten Paces*
 She draws a line in the dirt with the rapier and starts to count aloud.
-- A **30-ft dueling circle** of force rises. Nothing enters or leaves for 3 rounds.
+- A **30-ft dueling circle** of force rises around **Kerra and her principal**. Nothing enters or leaves for 3 rounds.
 - On the third round she reaches "ten." Every enemy in the circle takes **10d6 force** (Will DC 21 half), and her principal gains a free attack against each of them.
 - **GURPS:** Force Wall (Area 10 yd, Cage) with a delayed Innate Attack 10d crushing (force); Limited Use 1/day.
 - **After:** the line in the dirt stays. Duellists in Waterdeep have started to step around marks like it.
@@ -190,7 +195,7 @@ She takes the reed out of her mouth and gives an order in a voice off a Luskan q
 ## Lt IX. Faelith Ammarin — *The Wall Song*
 She sings the wall-note, off-key on purpose, and the old company answers.
 - A **60-ft line** of spectral elven tower shields rises beside her.
-  - Allies behind it have total cover.
+  - Allies behind it have total cover, and the wall is **one-way, like an arrow slit**: they strike and shoot out through it, and nothing comes in.
   - Anything that strikes the wall rebounds onto its attacker for **8d6** (no save).
 - Faelith herself cannot be moved and heals **10 HP** a round while she sings.
 - **GURPS:** Force Wall (Line 20 yd, Total Cover), Damage Reflection 8d, Immovable; Regeneration (Fast); Limited Use 1/day.
@@ -206,8 +211,8 @@ His tail taps the ground three times, then nine.
 
 ## Lt XI. Rhun Talbridge — *Stand Watch*
 He plants the pollaxe butt-down and does not move.
-- In a **30-ft radius**, any enemy that moves takes a pollaxe strike: **5d6 + weapon damage**, and its movement ends.
-- **Allies within 30 ft** cannot drop below 1 HP for the 3 rounds.
+- In a **30-ft radius**, any enemy that moves (a 5-ft step included) takes a pollaxe strike: **5d6 + weapon damage**, and its movement ends.
+- **Rhun and allies within 30 ft** cannot drop below 1 HP for the 3 rounds.
 - **GURPS:** Counter Attack (Area 10 yd, ends movement); Unkillable 1 for allies in the area (3 turns); Limited Use 1/day.
 - **After:** a watch relieved by nothing. Ysmay never has to look behind her.
 
@@ -239,13 +244,14 @@ He hums the three bars of the Moonsea shanty, and the staff splits into its two 
 - For 3 rounds, **every shadow within 100 ft is a door** for Lorne and for up to **four** of his raised dead.
 	- Each round they step out wherever they like.
 	- Whatever they strike out of a shadow is flat-footed against that attack and takes **+4d6**.
+	- If he has no raised dead when he calls it, his **shadow clone** comes through the shadows in round 1. The dead join as they are made.
 - Anything slain in the area rises as his servitor at the end of the round (Fort DC 21 for the corpse's spirit to refuse), to a maximum of 4.
 - **GURPS:** Warp (Accessibility: shadow to shadow, Area 33 yd, includes 4 Allies); Follow-Up 4d on attacks from shadow; Ally Group (raised, max 4); Limited Use 1/day.
 - **After:** the shanty stops on the third bar. The dead he raised go back into the shadows and don't come out.
 
 ## Lt V (Hand). Ivrael Quillatar — *The Counted Door*
 He counts the exits aloud in Elvish. When he reaches the end, there is only one.
-- Within **40 ft**, every exit but one is sealed by force walls. Ivrael stands in the one left open.
+- Within **40 ft**, every exit but one is sealed by force walls. Ivrael stands in the one left open. **In the open**, the walls form a 40-ft ring with one gap, and the gap is where he stands.
 - Every enemy within 40 ft must attack him for the 3 rounds (Will DC 21 negates, one save). He gets an attack of opportunity on each one that comes at him.
 - While the Counted Door holds, his Stalwart bonus doubles to **+8 on all saves**, and the Rune of Smiting rolls its damage dice a third time on each attack of opportunity. Everything forced to come at him meets a man nothing moves.
 - **GURPS:** Force Wall (Area 13 yd, all but one exit), Affliction (Compulsive Attack, Area), Counter Attack against all, Will +8, a third injury roll on counter-attacks; Limited Use 1/day.
@@ -256,7 +262,7 @@ His breath stops smoking. Then the dragon in his blood stops hiding.
 - The scale-scarring on his neck becomes scales: **+4 natural armor** and fire immunity for the duration.
 - Each round he breathes a **60-ft cone of fire, 10d6** (Reflex DC 21 half).
 - Anything within 10 ft of him takes **3d6 fire** at the start of its turn.
-- His spells cast in the release count as maximised.
+- His spells cast in the release count as maximised. (Blood Pact doubles dice **rolled**; a maximised spell rolls none. Inside the release he chooses: maximised, or rolled and doubled.)
 - **GURPS:** Innate Attack 10d burning (Cone 20 yd), Damage Aura 3d burning (3 yd), DR 4 and Immunity (fire); Limited Use 1/day.
 - **After:** the frost doesn't settle on anything near him for a day. The scales go back to scars, a little further up his jaw each time.
 
@@ -270,7 +276,7 @@ She touches the mask's chin, wets Yashiori, and the Storm King's oldest trick fi
 
 ## Lt VIII (Hand). Teodric Halvane — *Old Friends*
 He speaks to everyone in the room as if he has known them for years. For three rounds, they believe it.
-- Within **40 ft**, every enemy is charmed (Will DC 21; enchanters and the mind-blank warded excepted). They lower their weapons, they don't attack anyone they see Teodric speak to, and **each answers one question truthfully each round**.
+- Within **40 ft**, every enemy is charmed (Will DC 21; enchanters and the mind-blank warded excepted). They lower their weapons and don't attack anyone Teodric **addresses by name**. Each round he asks **one question**, and **every charmed creature answers it truthfully, aloud, at once**.
 - Whoever breaks the charm and comes at him is fighting a sword that ignores armour: under 17 HD, every stroke is a touch attack.
 - Damage breaks the charm only on the creature that took it.
 - **GURPS:** Mind Control (Area 13 yd, charm only) with Truthfulness 1/turn; foes of Tier 2 and below defend at −3; Limited Use 1/day.

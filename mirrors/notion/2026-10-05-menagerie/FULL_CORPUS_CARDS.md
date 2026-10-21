@@ -423,7 +423,7 @@ The short hammer he never seems to use · Rare · T1 · CL 14 · *rebased 6 Oct 
 - **Distance:** thrown range increment **40 ft**, double. (Ruling: a thrown weapon counts as a ranged weapon for Distance.)
 - **Thundering (Greater):** on a critical hit, **+1d10 sonic** (base 1d8 at ×2), and the target is **deafened** permanently unless it makes Fort **DC 16** (base 14).
 - **Profane Burst (Magic Item Compendium):** negative energy on a hit while active; on a critical hit, +1d10 (2d10 against good outsiders). Each burst costs Durgan **1d4 Con**.
-- **Temper 23I-9 Blood Pact:** 1/day, spend 25% of his maximum HP to **double one spell's or attack's damage**. A doubled *delayed blast fireball* is the point. (Rerolled twice: Whirlwind and Momentum Crit were rolled against the crossbow; neither suits a sorcerer's hammer either, so the reroll stands.)
+- **Temper 23I-9 Blood Pact:** 1/day, spend 25% of his maximum HP to **double the dice rolled** for one spell or attack. A doubled *delayed blast fireball* is the point. A maximised spell rolls no dice, so Blood Pact can't double it (ruling, 21 Oct 2026). (Rerolled twice: Whirlwind and Momentum Crit were rolled against the crossbow; neither suits a sorcerer's hammer either, so the reroll stands.)
 - Market: +3 bonus-equivalent, **18,301 gp**. **UDRP 12.**
 ### GURPS 4e
 - Fine throwing hammer; range ×2. Crushing (sonic) critical rider, plus Deafness.
