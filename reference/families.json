@@ -48,7 +48,7 @@
       "json": "reference/creature_index.json",
       "markdown": "reference/creature_index.md",
       "entry_path": "books[].creatures",
-      "expected_count": 1498
+      "expected_count": 1499
     },
     {
       "id": "dnd5e_creature",
