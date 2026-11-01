@@ -1,7 +1,7 @@
 # The Path Engine Codex — offline reference browser
 
 A downstream **presentation layer** for THE NEW PATH ENGINE reference layer:
-`build_codex.py` folds all 42 committed reference families registered in
+`build_codex.py` folds all 44 committed reference families registered in
 `reference/families.json` into ONE self-contained, searchable HTML page and —
 where it safely can — splices in each entry's **full book-verbatim stat block /
 description**, so the page is usable at the
@@ -18,7 +18,8 @@ Notion (canon)  >  native 3.5e / GURPS resolver modules  >  reference layer  >  
 
 Every row keeps its `system` label — **D&D 3.5e**, **GURPS 4e**, **GURPS 3e**,
 **D&D 5e**, **AD&D 2e**, **WFRP**, **WH40K Roleplay**, **WH40K** (wargame),
-**WHFB** (wargame) — and its **book + page citation**. Nothing here is native canon,
+**WHFB** (wargame), **WH40K Novel** — and its **book + page citation** (chapter:verse
+for the novel rows). Nothing here is native canon,
 and the full-text blocks are book-RAW (sliced verbatim, never paraphrased or invented).
 
 ## The built page is NOT committed
@@ -49,7 +50,7 @@ works offline.
 
 | Input | Role |
 |---|---|
-| `reference/families.json` | canonical registry of all 42 families, their files, explicit accepted-entry paths, systems, and locked counts |
+| `reference/families.json` | canonical registry of all 44 families, their files, explicit accepted-entry paths, systems, and locked counts |
 | `reference/*_index.json` | committed family data (rows carry `[start,end]` spans where available; harvesters may also emit an exact relative source path) |
 | `scripts/spells_srd35.json` | clean SRD 3.5 spell text (Open Game Content) — the 605 SRD core spells |
 | `I:\Sourcebooks\_md`, `_text` | the OCR sources, sliced by each row's line span |
@@ -109,6 +110,12 @@ works offline.
   ambiguous sections remain explicit `NO COVERAGE`.
 - **Magic items** — use the exact MIC, DMG, or A&EG OCR path emitted by
   `item_harvest.py`; all 1,454 spans attach without fuzzy filename matching.
+- **TEATD warp realms** — the 55 `WH40K Novel` rows from *The End and the Death*
+  Vols I–III carry no line spans, so they attach no verbatim block. Each card
+  shows the harvested fields (classification, SOURCE-VERIFIED facts, the
+  chapter:verse attestations and their quotes, and the myth key, which is
+  labelled INFERRED) with the chapter:verse citation in the page slot. Novel
+  attestation, never rules and never canon.
 - **Remaining legacy rows** — fuzzy-match a source filename, then slice by
   `[start:end]`.
 - **Every slice** is validated: the entry name—or its source-verified canonical
@@ -128,7 +135,8 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**14,360 of 18,296 entries** carry the full verbatim block. Strong: D&D 3.5e
+**14,360 of 18,351 entries** carry the full verbatim block (measured at 18,296;
+the 55 TEATD realm rows added since attach none by design). Strong: D&D 3.5e
 creatures 99% / powers 99% / spells, magic items, epic spells, epic items,
 epic monsters, maneuvers, soulmelds, vestiges, shadow mysteries, and utterances
 100% / prestige
