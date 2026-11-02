@@ -171,6 +171,7 @@ class Creature:
     hp: str | None = None
     ac: str | None = None
     cr: str | None = None
+    description_spans: List[List[int]] | None = None  # disjoint source blocks, when the printed page floats its stat tablet
 
     def quick_fields(self) -> int:
         return sum(1 for v in (self.size, self.hit_dice, self.hp, self.ac, self.cr) if v)
@@ -230,6 +231,24 @@ def index_book(path: Path) -> Tuple[List[str], List[Creature]]:
         used.add(at)
         starts.append((at, lines[at].strip().title()))
 
+    # Filter false-positive headings BEFORE computing spans. Previously a rejected
+    # OCR fragment after VROCK cut its retained entry to just two source lines.
+    starts = [(at, name) for at, name in starts if not _garbage_name(name)]
+
+    # BoVD's 3.0 Shadow Demon is an unlabeled/columnar stat tablet, without the
+    # 3.5e "Hit Dice:" marker. The original book extraction contains the tablet
+    # and later abilities under a second heading. Detect the actual source
+    # signature rather than claiming the entry has NO COVERAGE.
+    if book == "Book of Vile Darkness":
+        for i, line in enumerate(lines):
+            if line.strip().casefold() != "shadow demon":
+                continue
+            block = "\n".join(lines[i + 1:i + 12])
+            if ("Medium-Size Outsider" in block and
+                    re.search(r"10d8\s*\(45\s*hp\)", block)):
+                starts.append((i, "Shadow Demon"))
+                break
+
     starts.sort()
     creatures: List[Creature] = []
     for k, (s, name) in enumerate(starts):
@@ -237,6 +256,29 @@ def index_book(path: Path) -> Tuple[List[str], List[Creature]]:
         e = min(e, s + 200)
         creature = Creature(name=name, book=book, page=pages[s], start=s, end=e)
         parse_quick_fields(creature, "\n".join(lines[s:e]))
+        if book == "Book of Vile Darkness" and name == "Shadow Demon":
+            header = "\n".join(lines[s:min(n, s + 80)])
+            dice = re.search(r"(\d+d\d+)\s*\(\s*(\d+)\s*hp\)", header)
+            if not dice:
+                raise ValueError("BoVD Shadow Demon source signature changed")
+            creature.size, creature.type = "Medium", "Outsider"
+            creature.hit_dice, creature.hp = dice.group(1), dice.group(2)
+            ac = re.search(r"(?m)^\s*(\d{2})\s*\(\+7\s*Dex", header)
+            creature.ac = ac.group(1) if ac else None
+            # The original 3.0 source has bare "8" after Organization: Solitary.
+            creature.cr = "8" if re.search(r"(?m)^Solitary\s*\n\s*8\s*$", header) else None
+            stop = next((k for k in range(s + 10, min(n, s + 120))
+                         if lines[k].strip().startswith("Chasme (Tanar")), min(n, s + 75))
+            section = next((k for k in range(s + 100, min(n, s + 500))
+                            if lines[k].strip() == "SHADOW DEMON"), None)
+            if section is None:
+                raise ValueError("BoVD Shadow Demon narrative powers section missing")
+            tail = next((k for k in range(section + 5, min(n, section + 220))
+                         if lines[k].strip() == "CHASME"), None)
+            if tail is None:
+                raise ValueError("BoVD Shadow Demon narrative powers boundary missing")
+            creature.end = stop
+            creature.description_spans = [[s, stop], [section, tail]]
         creatures.append(creature)
     creatures = [c for c in creatures if not _garbage_name(c.name)]
     return lines, creatures
@@ -298,7 +340,11 @@ def write_index(corpus: Corpus) -> Tuple[int, int]:
         total += len(creatures)
         parsed_well += sum(1 for c in creatures if c.quick_fields() >= 3)
         books_out.append(
-            {"book": book, "creatures": [asdict(c) for c in creatures]}
+            {"book": book, "creatures": [
+                {k: v for k, v in asdict(c).items()
+                 if k != "description_spans" or v}
+                for c in creatures
+            ]}
         )
         md.append(f"## {book} — {len(creatures)} stat blocks")
         md.append("")
@@ -339,7 +385,9 @@ def export_packet(corpus: Corpus, name: str, book: Optional[str], out: Optional[
         return 1
     packets = []
     for lines, c in hits:
-        body = [ln for ln in lines[c.start:c.end] if not PAGE.search(ln)]
+        spans = c.description_spans or [[c.start, c.end]]
+        body = [ln for start, end in spans for ln in lines[start:end]
+                if not PAGE.search(ln)]
         packets.append(
             {
                 "packet": "creature-for-translation",

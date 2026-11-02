@@ -135,8 +135,9 @@ harvester's `special_rules_no_coverage` list.
 
 ## Coverage (as of this build)
 
-**14,360 of 18,351 entries** carry the full verbatim block (measured at 18,296;
-the 55 TEATD realm rows added since attach none by design). Strong: D&D 3.5e
+**14,360 entries** carry the full verbatim block, measured when the registry held
+18,296. It now holds 18,352: the 55 TEATD realm rows attach none by design, and
+the restored creature row has not been re-measured. Strong: D&D 3.5e
 creatures 99% / powers 99% / spells, magic items, epic spells, epic items,
 epic monsters, maneuvers, soulmelds, vestiges, shadow mysteries, and utterances
 100% / prestige

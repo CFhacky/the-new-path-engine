@@ -518,7 +518,7 @@ Illus. by F. Vohwinkel"""
     assert "Illus. by" not in caption_cleaned
     specs = _family_specs()
     assert len(specs) == 44
-    assert sum(spec["expected_count"] for spec in specs) == 18_351
+    assert sum(spec["expected_count"] for spec in specs) == 18_352
     assert any(spec["id"] == "teatd_realm"
                and spec["systems"] == ["WH40K Novel"]
                and spec["expected_count"] == 55
@@ -529,7 +529,7 @@ Illus. by F. Vohwinkel"""
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance, OCR aliases, and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
-    print("selftest: 44-family registry totals 18,351 rows (55 TEATD realms)")
+    print("selftest: 44-family registry totals 18,352 rows (55 TEATD realms)")
     print("selftest: PASS")
 
 
@@ -659,6 +659,10 @@ def build(report=False):
                 full = r["special_rules"].strip()
             elif fam == "spell":
                 full = spell_full(r)
+            elif fam == "creature" and r.get("description_spans"):
+                full = slice_full_spans(
+                    r.get("book", ""), r["description_spans"], r["name"],
+                    _exact_source_file(r), limit=None)
             elif (fam == "power" and isinstance(r.get("description_start"), int)
                   and isinstance(r.get("description_end"), int)):
                 full = slice_full(
