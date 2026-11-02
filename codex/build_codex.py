@@ -15,7 +15,7 @@ Authority order is unchanged and this view is at the bottom of it:
     Notion (canon) > native 3.5e / GURPS resolver modules > reference layer >
     THIS VIEW (the codex).
 Every row keeps its `system` label (D&D 3.5e / GURPS 4e / WH40K Roleplay / WFRP /
-WH40K / WHFB / ...) and its book + page citation. Nothing here is native canon.
+WH40K / WHFB / WH40K Novel / ...) and its book + page (or chapter:verse) citation. Nothing here is native canon.
 
 WHY THE BUILT PAGE IS NOT COMMITTED
 -----------------------------------
@@ -27,7 +27,7 @@ publish `codex/build/engine_reference.html` as a private Artifact.
 
 INPUTS
 ------
-- reference/families.json    canonical registry of 43 family files and their
+- reference/families.json    canonical registry of 44 family files and their
                               explicit accepted-entry paths
 - reference/*_index.json      committed family files (name/fields/citation +
                               [start,end] spans and exact paths where emitted)
@@ -519,13 +519,17 @@ Illus. by F. Vohwinkel"""
     specs = _family_specs()
     assert len(specs) == 44
     assert sum(spec["expected_count"] for spec in specs) == 18_352
+    assert any(spec["id"] == "teatd_realm"
+               and spec["systems"] == ["WH40K Novel"]
+               and spec["expected_count"] == 55
+               for spec in specs)
     assert any(spec["id"] == "terms_and_affixes"
                and spec["json"].endswith("terms_and_affixes_index.json")
                for spec in specs)
     print("selftest: manifest path excludes diagnostic siblings")
     print("selftest: source provenance, OCR aliases, and system aliases inherited")
     print("selftest: psionic page furniture removed from exact spans")
-    print("selftest: 44-family registry totals 18,352 rows")
+    print("selftest: 44-family registry totals 18,352 rows (55 TEATD realms)")
     print("selftest: PASS")
 
 

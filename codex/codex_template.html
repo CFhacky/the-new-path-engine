@@ -166,11 +166,11 @@ function start(){
 
 var SYSHUE={
  'D&D 3.5e':'#8a8138','D&D 5e':'#b05a49','AD&D 2e':'#a07a3c','GURPS 4e':'#3f8393','GURPS 3e':'#5f8f6a',
- 'WFRP':'#a05f77','WH40K Roleplay':'#4f74a8','WH40K':'#7d7fa6','WHFB':'#9a7a48'
+ 'WFRP':'#a05f77','WH40K Roleplay':'#4f74a8','WH40K':'#7d7fa6','WHFB':'#9a7a48','WH40K Novel':'#8c6f9a'
 };
 function sysHue(s){return SYSHUE[s]||'#7d8683';}
 
-var FAMTOK={dnd5e:'D&D 5e',ad2e:'AD&D 2e',gurps3e:'GURPS 3e',gurps:'GURPS',wh40krp:'40K RP',wh40k:'40K',whfb:'WHFB',wfrp:'WFRP',epic:'Epic'};
+var FAMTOK={dnd5e:'D&D 5e',ad2e:'AD&D 2e',gurps3e:'GURPS 3e',gurps:'GURPS',wh40krp:'40K RP',wh40k:'40K',whfb:'WHFB',wfrp:'WFRP',epic:'Epic',teatd:'TEATD'};
 function famLabel(fam){
   return fam.split('_').map(function(t){
     if(FAMTOK[t])return FAMTOK[t];
@@ -194,7 +194,7 @@ for(var i=0;i<DATA.length;i++){
 // ---- filters UI ----
 var activeSys=null, activeFam='all', query='';
 var syschips=document.getElementById('syschips');
-var SYSLABEL={'WH40K':'WH40K · wargame','WHFB':'WHFB · wargame','WH40K Roleplay':'WH40K · RP','WFRP':'WFRP · RP'};
+var SYSLABEL={'WH40K':'WH40K · wargame','WHFB':'WHFB · wargame','WH40K Roleplay':'WH40K · RP','WFRP':'WFRP · RP','WH40K Novel':'WH40K · novel'};
 var sysList=Object.keys(sysCounts).sort();
 sysList.forEach(function(sys){
   var b=document.createElement('button');
