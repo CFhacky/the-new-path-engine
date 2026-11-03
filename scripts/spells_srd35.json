@@ -801,7 +801,7 @@
  },
  "divine favor": {
   "name": "Divine Favor",
-  "text": "Evocation\n\nLevel: Clr 1, Pal 1\n\nComponents: V, S, DF\n\nCasting Time: 1 standard action\n\nRange: Personal\n\nTarget: You\n\nDuration: 1 minute\n\nCalling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +6). The bonus doesn't apply to spell damage.",
+  "text": "Evocation\n\nLevel: Clr 1, Pal 1\n\nComponents: V, S, DF\n\nCasting Time: 1 standard action\n\nRange: Personal\n\nTarget: You\n\nDuration: 1 minute\n\nCalling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +3). The bonus doesn't apply to spell damage.",
   "source": "SRD 3.5"
  },
  "divine power": {
