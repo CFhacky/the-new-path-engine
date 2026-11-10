@@ -94,12 +94,17 @@ import base64
 import collections
 import glob
 import gzip
+import hashlib
+import sys
 import json
 import os
 import re
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 
 REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "scripts"))
+from source_paths import local_path, resolve_source, sourcebooks_root
+
 REF = REPO / "reference"
 MANIFEST = REF / "families.json"
 SRD_JSON = REPO / "scripts" / "spells_srd35.json"
@@ -115,6 +120,18 @@ SOURCE_ROOTS = [
 # Legacy fallback for spell indices created before spell_harvest.py emitted each
 # source's exact relative extraction path.
 SPELL_COMPENDIUM_PREMIUM = r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md"
+
+
+def configure_sources(root=None):
+    global SOURCE_ROOTS, SPELL_COMPENDIUM_PREMIUM
+    root = sourcebooks_root(root)
+    if root:
+        SOURCE_ROOTS = [str(root / "_md" / "_bestiary"),
+                        str(root / "_md"), str(root / "_text")]
+    SPELL_COMPENDIUM_PREMIUM = str(resolve_source(
+        r"I:\Sourcebooks\_text\D&D 3.5e\Magic and Items\Spell Compendium (Premium).md", root))
+    return root
+
 
 CAP = 4200  # exact vestige/mystery/maneuver/prestige/GURPS/epic spans bypass it
 
@@ -538,17 +555,18 @@ def _exact_source_file(row):
     source_path = row.get("_source_path")
     if not source_path:
         return None
-    path = Path(source_path)
-    if path.is_absolute():
+    path = resolve_source(source_path)
+    if path.is_absolute() or PureWindowsPath(source_path).drive:
         return str(path)
     corpus = row.get("_corpus")
     if corpus:
-        return str(Path(corpus) / path)
+        return str(resolve_source(corpus) / local_path(source_path))
     repo_path = REPO / path
     return str(repo_path) if repo_path.exists() else None
 
 
 def build(report=False):
+    root = configure_sources()
     fileidx = _build_file_index()
     line_cache = {}
 
@@ -653,10 +671,24 @@ def build(report=False):
             raise ValueError(
                 f"{fam}: registry expects {spec['expected_count']} rows, found {len(rows)}"
             )
+        epic_source = None
+        if fam in ("epic_spell", "epic_monster"):
+            epic_source = _exact_source_file({"_corpus": obj.get("corpus"),
+                                              "_source_path": obj.get("source_path")})
+            fp = Path(epic_source) if epic_source else None
+            if (not fp or not fp.is_file() or
+                    hashlib.sha256(fp.read_bytes()).hexdigest() != obj.get("source_sha256")):
+                print(f"NO COVERAGE: {fam}: exact source missing or SHA-256 mismatch")
+                epic_source = None
         for r in rows:
             tot[fam] += 1
             if isinstance(r.get("special_rules"), str) and r["special_rules"].strip():
                 full = r["special_rules"].strip()
+            elif fam in ("epic_spell", "epic_monster"):
+                full = (slice_full(
+                    r.get("book", ""), r.get("start", 0), r.get("end", 0),
+                    r.get("description_key") or r["name"], epic_source, limit=None,
+                ) if epic_source else "")
             elif fam == "spell":
                 full = spell_full(r)
             elif fam == "creature" and r.get("description_spans"):
@@ -692,10 +724,6 @@ def build(report=False):
                 full = slice_full(r.get("book", ""), r["start"], r["end"], r["name"],
                                   _exact_source_file(r), limit=None)
             elif fam == "epic_item" and "start" in r and "end" in r:
-                full = slice_full(r.get("book", ""), r["start"], r["end"],
-                                  r.get("description_key") or r["name"],
-                                  _exact_source_file(r), limit=None)
-            elif fam == "epic_monster" and "start" in r and "end" in r:
                 full = slice_full(r.get("book", ""), r["start"], r["end"],
                                   r.get("description_key") or r["name"],
                                   _exact_source_file(r), limit=None)
@@ -781,6 +809,11 @@ def build(report=False):
     print(f"  {out}  ({out.stat().st_size / 1e6:.2f} MB, limit 16 MB)")
     if out.stat().st_size > 16_000_000:
         print("  WARNING: over the 16 MB Artifact ceiling — lower CAP or trim families")
+    coverage = {"entries": len(rows_out), "with_full_text": with_full,
+                "sourcebooks_root": str(root) if root else None,
+                "families": {fam: {"full": cov[fam], "total": tot[fam]}
+                             for fam in sorted(tot)}}
+    (BUILD / "coverage.json").write_text(json.dumps(coverage, indent=2) + "\n", encoding="utf-8")
     if report:
         print("\nper-family full-text coverage:")
         for fam in sorted(tot):
@@ -791,7 +824,10 @@ def main():
     ap = argparse.ArgumentParser(description="Build the Path Engine Codex offline browser.")
     ap.add_argument("--report", action="store_true", help="print per-family full-text coverage")
     ap.add_argument("--selftest", action="store_true", help="run embedded regression checks")
+    ap.add_argument("--sourcebooks", type=Path, help="local Sourcebooks root (or NEW_PATH_SOURCEBOOKS)")
     args = ap.parse_args()
+    if args.sourcebooks:
+        os.environ["NEW_PATH_SOURCEBOOKS"] = str(args.sourcebooks.resolve())
     if args.selftest:
         selftest()
         return

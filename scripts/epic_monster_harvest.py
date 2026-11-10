@@ -52,6 +52,7 @@ PROVENANCE
 from __future__ import annotations
 
 import argparse
+from source_paths import sourcebooks_root
 import hashlib
 import json
 import re
@@ -846,7 +847,20 @@ def main() -> int:
     ap.add_argument("--extract-source", action="store_true",
                     help="rebuild the external two-column OCR description source")
     ap.add_argument("--selftest", action="store_true")
+    ap.add_argument("--sourcebooks", type=Path, help="local Sourcebooks root (or NEW_PATH_SOURCEBOOKS)")
+    ap.add_argument("--pdf", type=Path, help="explicit owned PDF input")
+    ap.add_argument("--tesseract", type=Path, help="Tesseract executable path")
     args = ap.parse_args()
+    global CORPUS, SOURCE, PDF_SOURCE, TESSERACT
+    root = sourcebooks_root(args.sourcebooks)
+    if root:
+        CORPUS = root / "_text"
+        SOURCE = CORPUS / SOURCE_REL
+        PDF_SOURCE = root / "D&D 3.5e" / "DM Toolkits" / "Epic Level Handbook.pdf"
+    if args.pdf:
+        PDF_SOURCE = args.pdf
+    if args.tesseract:
+        TESSERACT = args.tesseract
 
     if args.extract_source:
         return extract_description_source()

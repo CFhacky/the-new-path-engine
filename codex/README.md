@@ -35,12 +35,23 @@ Artifact.
 ```bash
 python codex/build_codex.py            # build the page
 python codex/build_codex.py --report   # build + per-family full-text coverage
+# Use a laptop backup directly (PowerShell also accepts this CLI):
+python codex/build_codex.py --sourcebooks "D:\Backup\I-drive\Sourcebooks" --report
 ```
+
+`--sourcebooks` takes precedence over the `NEW_PATH_SOURCEBOOKS` environment
+variable. Set that variable when invoking `scripts/reference_audit.py
+--build-codex --report`; its builder subprocess inherits it. Relative and
+absolute source paths under the historical `I:\Sourcebooks` and
+`D:\Backup\I-drive\Sourcebooks` roots resolve under this local root without
+rewriting reference provenance. An explicit root does not fall back to the old
+drive. Repository-owned sources remain relative to the repository.
 
 Produces (git-ignored):
 
 - `codex/build/engine_reference.html` — the self-contained page (gzip-embedded, ~9 MB)
 - `codex/build/engine_data.json` — the consolidated dataset (for debugging)
+- `codex/build/coverage.json` — measured totals and per-family attachment counts
 
 Then publish `engine_reference.html` as a private claude.ai Artifact and open it from
 any browser signed into your account — it runs entirely client-side, so once loaded it
@@ -133,11 +144,36 @@ page blank instead of inventing a Player's Handbook page.
 Empty WH40K and WHFB rule attachments are named explicitly under each
 harvester's `special_rules_no_coverage` list.
 
-## Coverage (as of this build)
+## Measured recovery build, 2026-11-10
 
-**14,360 entries** carry the full verbatim block, measured when the registry held
-18,296. It now holds 18,352: the 55 TEATD realm rows attach none by design, and
-the restored creature row has not been re-measured. Strong: D&D 3.5e
+At PR #6 commit `0282a9c`, the laptop build measured **14,361 / 18,352**
+full-text attachments after exact recovery of both missing ELH source files.
+Epic spells: **70/70**. Epic monsters: **64/64**, from 50 shared source blocks.
+Both file hashes match the original committed indices; all 134 Codex blocks
+match their bounded source slices. The HTML's embedded payload matches the
+validated JSON. All 17 laptop unit tests and both live epic selftests passed.
+
+The baseline immediately before recovery was **14,227 / 18,352**, with both
+epic families at zero. Source resolution also passed a full build with every
+`I:` file read rejected. No source text or generated Codex is committed or
+published. See [the execution record and pinned recovery procedure](../docs/harvest/ELH_RECOVERY.md).
+These measurements are specific to that commit and local corpus, not a promise
+that every checkout has the same source coverage.
+
+## Historical coverage (not a current build measurement)
+
+The earlier measurement was **14,360 attachments at 18,296 entries**. PR #5's
+November 2 laptop build at `0a0af47` instead measured **14,226 / 18,351**:
+epic spells **0/70**, epic monsters **0/64**, because both external OCR files
+were absent from the backup. Main at `b013b28` has **18,352 registry entries**;
+its attachment total is measured in the November 10 section above. The 100% epic coverage below
+is historical, not verified coverage of that backup.
+
+See [the recovery procedure](../docs/harvest/ELH_RECOVERY.md) for hashes,
+regeneration commands and acceptance gates. A successful build writes measured
+per-family counts to ignored `codex/build/coverage.json`.
+
+Earlier coverage by family: D&D 3.5e
 creatures 99% / powers 99% / spells, magic items, epic spells, epic items,
 epic monsters, maneuvers, soulmelds, vestiges, shadow mysteries, and utterances
 100% / prestige
