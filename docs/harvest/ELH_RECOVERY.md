@@ -17,6 +17,61 @@ and **0/64 epic monsters**. The earlier **14,360** attachment count and the
 August 29 100% epic measurements are historical. Do not add 134 to the last
 build and describe that as a measured current total.
 
+## Laptop execution, 2026-11-10
+
+The laptop reconnected and the owned PDF was found at the documented Samsung
+backup path. A detached worktree of PR #6 commit `0282a9c` was used; the existing
+engine checkout was left untouched. A fresh full baseline build measured
+**14,227 / 18,352** attachments, epic spells **0/70**, epic monsters **0/64**.
+The structural audit passed with 44 families and zero errors. All 17 unit tests
+passed on the laptop, including the source-dependent Pale Name check.
+
+A second baseline build installed a Python audit hook rejecting every `I:`
+file open; it completed successfully, opening 125 files directly under the
+configured backup root. The pre-existing `subst` mapping was left alone, but
+this verifies that the builder did not depend on it.
+
+Both extractions were regenerated using the committed harvesters and matched
+the original SHA-256 values exactly. All 70 spell spans and all 64 monster
+spans (50 shared blocks) passed the read-only recovery check. Both files were
+copied byte-for-byte to the backup; both live harvester selftests passed.
+
+The final full build and structural smoke audit passed:
+
+| Measurement | Baseline | Recovered build |
+|---|---:|---:|
+| Registry/Codex rows | 18,352 | 18,352 |
+| Full-text attachments | 14,227 | 14,361 |
+| Epic spells | 0/70 | 70/70 |
+| Epic monsters | 0/64 | 64/64 |
+
+Every one of the 134 rebuilt epic attachments was compared to its exact,
+bounded, hash-verified source slice. The HTML's gzip/base64 payload was decoded
+independently and matched the validated `engine_data.json` exactly: 18,352 rows,
+14,361 attachments. HTML size: **9,618,068 bytes**; SHA-256:
+`5ecc43ad73ca57e1187d4bdf5ccd6fdaeb2320f7f3efd08b787904444e34a6e7`.
+The reference directory remains byte-identical to main `b013b28`.
+
+The built page is local to the laptop at
+`C:\Users\sumzj\Documents\GitHub\the-new-path-engine-elh-recovery\codex\build\engine_reference.html`.
+It was not uploaded or published. HTML payload integrity was tested; browser
+rendering and interaction were not inspected from this remote session.
+
+This run records a reproducible OCR environment:
+
+- Python 3.14.8; PyMuPDF 2.1; Pillow 13.0.0; pytesseract 0.3.13.
+- Tesseract 5.4.0.20240606 (UB-Mannheim package from the winget registry),
+  leptonica 1.84.1; executable SHA-256
+  `babb405f4366b480d02cd8ff2bac8d497170f6c1711ce6f3d5d8bf0fb7fa6ed9`.
+- Default English traineddata SHA-256
+  `7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2`.
+- Owned PDF SHA-256
+  `25519d83618762dd00b965980a1731bfc1766e15d711573a0458331965f9d322`.
+
+Private logs, environment metadata and candidate extractions remain on the
+laptop in `C:\Users\sumzj\Documents\ELH-Recovery-20261110`. No sourcebook
+body text or generated Codex is included in this repository.
+
 ## Original production and provenance
 
 - Spells: commit `9b45727` introduced description extraction;
@@ -85,7 +140,9 @@ reference indices. Exit 0 is required; missing/mismatched input exits 1.
 
 ## 2. Regenerate candidates from the owned PDF if originals cannot be found
 
-Use a fresh directory outside the repository. These commands do not regenerate
+Use a fresh directory outside the repository. The package versions below match
+the successful November 10 replays; verify output hashes on every machine.
+These commands do not regenerate
 indices. In particular, **do not run either harvester with no action flag**:
 that would replace its committed reference index with newly measured spans.
 
@@ -96,7 +153,7 @@ $candidate = Join-Path $env:TEMP ('elh-recovery-' + [guid]::NewGuid().ToString()
 New-Item -ItemType Directory -Path $candidate | Out-Null
 python -m venv (Join-Path $candidate 'venv')
 $py = Join-Path $candidate 'venv\Scripts\python.exe'
-& $py -m pip install PyMuPDF Pillow pytesseract
+& $py -m pip install PyMuPDF==2.1 Pillow==13.0.0 pytesseract==0.3.13
 if ($LASTEXITCODE -ne 0) { throw 'OCR dependency installation failed' }
 Get-FileHash -LiteralPath $pdf -Algorithm SHA256
 & $tess --version

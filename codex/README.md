@@ -144,13 +144,29 @@ page blank instead of inventing a Player's Handbook page.
 Empty WH40K and WHFB rule attachments are named explicitly under each
 harvester's `special_rules_no_coverage` list.
 
+## Measured recovery build, 2026-11-10
+
+At PR #6 commit `0282a9c`, the laptop build measured **14,361 / 18,352**
+full-text attachments after exact recovery of both missing ELH source files.
+Epic spells: **70/70**. Epic monsters: **64/64**, from 50 shared source blocks.
+Both file hashes match the original committed indices; all 134 Codex blocks
+match their bounded source slices. The HTML's embedded payload matches the
+validated JSON. All 17 laptop unit tests and both live epic selftests passed.
+
+The baseline immediately before recovery was **14,227 / 18,352**, with both
+epic families at zero. Source resolution also passed a full build with every
+`I:` file read rejected. No source text or generated Codex is committed or
+published. See [the execution record and pinned recovery procedure](../docs/harvest/ELH_RECOVERY.md).
+These measurements are specific to that commit and local corpus, not a promise
+that every checkout has the same source coverage.
+
 ## Historical coverage (not a current build measurement)
 
 The earlier measurement was **14,360 attachments at 18,296 entries**. PR #5's
 November 2 laptop build at `0a0af47` instead measured **14,226 / 18,351**:
 epic spells **0/70**, epic monsters **0/64**, because both external OCR files
 were absent from the backup. Main at `b013b28` has **18,352 registry entries**;
-its attachment total has not been measured here. The 100% epic coverage below
+its attachment total is measured in the November 10 section above. The 100% epic coverage below
 is historical, not verified coverage of that backup.
 
 See [the recovery procedure](../docs/harvest/ELH_RECOVERY.md) for hashes,
